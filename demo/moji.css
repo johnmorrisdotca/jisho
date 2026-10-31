@@ -1,0 +1,133 @@
+/* Moji's own: the lists, the grid of kanji and the card of the one chosen. Everything else is family.css. */
+:root {
+  --intro-room: 11.5rem;
+  --intro-room-wide: 6.5rem;
+}
+.setup {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.setup .fam-row {
+  gap: 8px 14px;
+}
+.fam-seg button {
+  min-width: 44px;
+}
+.moji-input {
+  min-height: 44px;
+  min-width: 0;
+  flex: 1 1 12rem;
+  padding: 0 12px;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  background: transparent;
+}
+.moji-board {
+  display: grid;
+  gap: 14px;
+  align-items: start;
+}
+@media (min-width: 900px) {
+  .moji-board {
+    grid-template-columns: minmax(0, 1fr) 22rem;
+  }
+  .moji-card {
+    position: sticky;
+    top: 12px;
+    order: 2;
+  }
+}
+.moji-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(44px, 1fr));
+  gap: 4px;
+  min-width: 0;
+  max-height: 34rem;
+  overflow-y: auto;
+  padding: 2px;
+}
+.moji-grid button {
+  min-height: 44px;
+  padding: 0;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: transparent;
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  content-visibility: auto;
+  contain-intrinsic-size: 44px;
+}
+.moji-grid button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--page);
+  border-color: var(--ink);
+}
+.moji-big {
+  font-size: 4.5rem;
+  line-height: 1.1;
+  margin: 0;
+}
+.moji-card dl {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 4px 12px;
+  margin: 8px 0 0;
+}
+.moji-card dt {
+  color: var(--muted);
+}
+.moji-card dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.moji-alike {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.moji-alike button {
+  min-width: 44px;
+  min-height: 44px;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.more {
+  display: grid;
+  gap: 10px;
+  margin-top: 24px;
+  min-width: 0;
+}
+.more > * {
+  min-width: 0;
+  max-width: 100%;
+}
+.more h2 {
+  margin: 0;
+}
+.more p {
+  margin: 0;
+  max-width: 72ch;
+  line-height: 1.55;
+  color: var(--muted);
+}
+.uses {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.uses code {
+  overflow-wrap: anywhere;
+}
+/* Keep navigation width stable across languages. */
+header nav a[data-say="pageDocs"] {
+  inline-size: 8rem;
+  justify-content: center;
+  flex: none;
+}

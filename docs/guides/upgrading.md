@@ -1,0 +1,14 @@
+---
+title: "Upgrading"
+section: upgrading
+order: 6
+description: "What changes between versions, and what a data refresh does."
+---
+
+## Before the first release
+
+There is no earlier version to come from.
+
+## A data refresh
+
+The EDRDG asks that a package using its files keeps them current, so KANJIDIC2 is fetched every month, and a change is a patch release. A reading or a meaning may change in a patch; the grades, levels and pair scores come from files that rarely do.

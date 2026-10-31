@@ -1,0 +1,18 @@
+---
+name: Fix a translation
+about: A Japanese string that reads wrongly or unnaturally, or a better word for a term of the picker
+title: "Translation: "
+labels: translation
+---
+
+Every string of the picker is listed beside its English in `docs/strings-ja.md`. Every Japanese string is in the package's words, `src/strings.ts` (`BUSHU_STRINGS.ja`), or the demo's table, `demo/demo.js` (`WORDS.ja`), beside its English.
+
+**Which string** (its name in that table, such as `chooseSome` or `foundMore`):
+
+**What it says now:**
+
+**What it should say:**
+
+**Why** (wrong meaning, unnatural, a term that learners and dictionaries do not use, too long for its button):
+
+Are you a native reader of Japanese? (It helps to know; every correction is welcome either way.)

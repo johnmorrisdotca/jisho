@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a security problem
+    url: https://github.com/johnmorrisdotca/moji/blob/main/SECURITY.md
+    about: "Markup or script that gets out of the picker, or a way to make the lookup run for long: please write privately, as the policy says."

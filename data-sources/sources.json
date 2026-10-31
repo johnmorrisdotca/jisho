@@ -1,0 +1,63 @@
+{
+  "kanjidic2": {
+    "address": "http://ftp.edrdg.org/pub/Nihongo/kanjidic2.xml.gz",
+    "terms": "https://www.edrdg.org/edrdg/licence.html",
+    "licence": "CC BY-SA 4.0 and the Group's conditions",
+    "dateOfCreation": "2026-10-31",
+    "sha256": "8e70bfa3a7a7df640e3ba254a80438201904d95df0fb23c9323476c2676d3346",
+    "retrieved": "2026-10-31"
+  },
+  "jlpt": {
+    "author": "Jonathan Waller",
+    "site": "http://www.tanos.co.uk/jlpt/",
+    "licence": "Creative Commons BY",
+    "note": "tanos.co.uk did not resolve on 2026-10-31; each page was read from the Internet Archive's copy, retrieved that day.",
+    "terms": {
+      "address": "https://web.archive.org/web/20251114165345/http://www.tanos.co.uk/jlpt/sharing/",
+      "archived": "2025-11-14"
+    },
+    "pages": {
+      "N1": {
+        "address": "https://web.archive.org/web/20200731061258/http://www.tanos.co.uk/jlpt/jlpt1/kanji/",
+        "archived": "2020-07-31",
+        "sha256OfThePageAsServed": "efd084265593601dfa6e9cdaf294c06f1b34a72df6cafd32fd762a5e11de52e7"
+      },
+      "N2": {
+        "address": "https://web.archive.org/web/20200726143733/http://www.tanos.co.uk/jlpt/jlpt2/kanji/",
+        "archived": "2020-07-26",
+        "sha256OfThePageAsServed": "a26efd502e549e7fb7e1828001bfb25f64d4b1a112d6f5b40a1b55f38a7828d3"
+      },
+      "N3": {
+        "address": "https://web.archive.org/web/20200724122309/http://www.tanos.co.uk/jlpt/jlpt3/kanji/",
+        "archived": "2020-07-24",
+        "sha256OfThePageAsServed": "7834073fb9cd6c0dd830cda1c800ae5ad3b0539f1d8df18fcd1a3865b403915f"
+      },
+      "N4": {
+        "address": "https://web.archive.org/web/20200716184232/http://www.tanos.co.uk/jlpt/jlpt4/kanji/",
+        "archived": "2020-07-16",
+        "sha256OfThePageAsServed": "6f33d01a4d406992f9dd8bd5e619a478f904236fdcd94f254d1c5b7127f9facc"
+      },
+      "N5": {
+        "address": "https://web.archive.org/web/20200806005029/http://www.tanos.co.uk/jlpt/jlpt5/kanji/",
+        "archived": "2020-08-06",
+        "sha256OfThePageAsServed": "2b3d8390ecd84a43216cca3a8642d7c62ddbab0c04c7a4ed9879ab0854900cf2"
+      }
+    }
+  },
+  "lookAlike": {
+    "author": "Lars Yencken",
+    "site": "https://lars.yencken.org/datasets/kanji-confusion/",
+    "licence": "CC BY 3.0",
+    "retrieved": "2026-10-31",
+    "files": {
+      "jyouyou__strokeEditDistance.csv": {
+        "address": "https://lars.yencken.org/datasets/kanji-confusion/jyouyou__strokeEditDistance.csv",
+        "sha256": "a61ff86973b77d53fdb9f7298b623acb2aececfd04fd22a565a9786addca8f72"
+      },
+      "jyouyou__yehAndLiRadical.csv": {
+        "address": "https://lars.yencken.org/datasets/kanji-confusion/jyouyou__yehAndLiRadical.csv",
+        "sha256": "ca61de15ea13c811fd758e4fbba6e2d10e52c00e2c3f77a5e89979bb53cdcd12"
+      }
+    }
+  }
+}
