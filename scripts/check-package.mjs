@@ -14,7 +14,7 @@ import { fileURLToPath } from "node:url";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const pkg = JSON.parse(readFileSync(join(root, "package.json"), "utf8"));
 const windows = process.platform === "win32";
-const scratch = mkdtempSync(join(tmpdir(), "bushu-package-"));
+const scratch = mkdtempSync(join(tmpdir(), "moji-package-"));
 
 /** Run a command and hand back what it printed. On Windows, npm and the installed commands are .cmd files, which only a shell runs; node itself is run directly. */
 function run(command, args, cwd, viaShell = false) {
