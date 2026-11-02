@@ -3,7 +3,7 @@
 <p align="center"><strong>Moji 文字: Kanji data for JavaScript: the school grades, JLPT levels, readings, meanings and look-alike pairs of 2,999 kanji.</strong><br>
 Every table is an entry point of its own and is machine output from public sources, each named with its licence: KANJIDIC2, Jonathan Waller's JLPT lists and Lars Yencken's kanji confusion datasets. Typed, with no dependencies, and a demo to try it in.</p>
 
-<p align="center" lang="ja">2,999字の漢字の学年、JLPTレベル、読み、意味、形の似た漢字の組を収めた、依存パッケージのないTypeScriptデータセットです。</p>
+<p align="center" lang="ja">2,999字の漢字の学年、JLPTレベル、読み、意味、形の似た漢字の組を収めた、型付きで外部依存のないJavaScript向けのデータセットです。</p>
 
 <p align="center">
   <a href="https://github.com/johnmorrisdotca/moji/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/johnmorrisdotca/moji/actions/workflows/ci.yml/badge.svg"></a>
