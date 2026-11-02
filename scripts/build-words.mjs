@@ -4,16 +4,17 @@
 //   node scripts/build-words.mjs                  fetches JMdict_e from the EDRDG
 //   node scripts/build-words.mjs JMdict_e.gz      reads a copy already here
 //
-// It writes the common words (about 26,000 rows, one file), then the whole dictionary twice over, in pieces small enough for one
-// lookup to fetch one: the rows by reading, and an index from each written form to its readings. Both are cut where a reading or
-// a form changes, so that no key is split across two pieces, and the first key of each piece is in the manifest. See
-// docs/guides/words.md.
+// It writes the default words, which hold only what is fit for children: the common words (about 26,000 rows, one file), then the
+// whole dictionary twice over, in pieces small enough for one lookup to fetch one: the rows by reading, and an index from each
+// written form to its readings. Both are cut where a reading or a form changes, so that no key is split across two pieces, and the
+// first key of each piece is in the manifest. Everything the default words leave out goes in files of their own, which a lookup
+// fetches only when it asks for everything. See docs/guides/words.md.
 import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import process from "node:process";
 import { gunzipSync } from "node:zlib";
-
-import { foldKana, packRow, releaseOf, rowsOfDictionary } from "./words-parse.mjs";
+import { packRow, releaseOf, rowsOfDictionary } from "./words-parse.mjs";
+import { patched, tablesOf } from "./words-tables.mjs";
 
 const JMDICT_URL = "http://ftp.edrdg.org/pub/Nihongo/JMdict_e.gz";
 const OUT = "src/data/words";
@@ -102,38 +103,14 @@ function main(zipped) {
 
   const rows = rowsOfDictionary(xml);
   if (rows.length < 200_000) throw new Error(`JMdict gave ${rows.length} rows: far too few, read the source.`);
-  const lines = rows.map(packRow);
-  const keyed = rows.map((row, at) => [foldKana(row.reading), lines[at], row, at]);
-
-  // 1. The common words, in one file.
-  const common = keyed.filter(([, , row]) => row.common).map(([, line]) => line);
-
-  // 2. The rows by reading, sorted by the reading folded to hiragana and, within one, the commonest first (already the order).
-  const byReading = keyed
-    .map(([key, line, , at]) => [key, line, at])
-    .sort((a, b) => (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : a[2] - b[2]))
-    .map(([key, line]) => [key, line]);
-  const readingPieces = cut(byReading, READING_PIECE_BYTES);
-
-  // 3. The index: each written form with its readings, the commonest word's first. A reading that is not kana alone cannot be
-  // asked for as kana, so it is listed as a form of its own.
-  const readingsOf = new Map();
-  for (const row of rows) {
-    for (const form of row.forms) {
-      const held = readingsOf.get(form) ?? [];
-      if (!held.includes(row.reading)) held.push(row.reading);
-      readingsOf.set(form, held);
-    }
-    if (!KANA_TEXT.test(row.reading)) {
-      const held = readingsOf.get(row.reading) ?? [];
-      if (!held.includes(row.reading)) held.push(row.reading);
-      readingsOf.set(row.reading, held);
-    }
-  }
-  const byForm = [...readingsOf]
-    .sort((a, b) => (a[0] < b[0] ? -1 : 1))
-    .map(([form, readings]) => [form, `${form}\t${readings.join("|")}`]);
-  const formPieces = cut(byForm, FORM_PIECE_BYTES);
+  const tables = tablesOf(rows);
+  const { common, commonPatch, counts } = tables;
+  const readingPieces = cut(tables.readings, READING_PIECE_BYTES);
+  const formPieces = cut(tables.forms, FORM_PIECE_BYTES);
+  // The patch must turn the default common words back into every common word as JMdict has it.
+  const everyCommon = rows.filter((row) => row.common).map((row) => packRow(row));
+  if (JSON.stringify(patched(common, commonPatch)) !== JSON.stringify(everyCommon))
+    throw new Error("The patch of the common words does not make every common word again.");
 
   rmSync(OUT, { recursive: true, force: true });
   mkdirSync(OUT, { recursive: true });
@@ -143,7 +120,7 @@ function main(zipped) {
     `${OUT}/common.data.ts`,
     dataFile({
       imports: `import type { PackedWords } from "../../words.ts";\n`,
-      summary: `The ${common.length.toLocaleString("en-US")} common words of JMdict, which tags a word common when any of its written forms or readings is in news1, ichi1, spec1, spec2 or gai1. Each row: reading, written forms joined by "|", English meaning, flags, and the meaning for children where it differs.`,
+      summary: `The ${common.length.toLocaleString("en-US")} common words of JMdict that are fit for children, which tags a word common when any of its written forms or readings is in news1, ichi1, spec1, spec2 or gai1. Each row: reading, written forms joined by "|", English meaning, flags. Nothing that is not for children is in it.`,
       type: "PackedWords",
       name: "COMMON_WORDS",
       entry: "words-common",
@@ -152,6 +129,24 @@ function main(zipped) {
   release: ${JSON.stringify(release)},
   rows: [
 ${rowsLiteral(common)}
+  ],
+}`,
+    }),
+  );
+
+  writeFileSync(
+    `${OUT}/common-extra.data.ts`,
+    dataFile({
+      imports: `import type { PackedPatch } from "../../words.ts";\n`,
+      summary: `What to do to the common words to have every common word as JMdict has it: each line is a position, "r" to replace the row there or "i" to insert one before it, and the row. Only for a host that asks for everything.`,
+      type: "PackedPatch",
+      name: "COMMON_EXTRA",
+      entry: "words-common-extra",
+      body: `{
+  source: "JMdict",
+  release: ${JSON.stringify(release)},
+  edits: [
+${rowsLiteral(commonPatch)}
   ],
 }`,
     }),
@@ -186,9 +181,13 @@ ${rowsLiteral(piece.lines)}
   writePieces(
     "r",
     readingPieces,
-    'Rows of JMdict by reading, each: reading, written forms joined by "|", English meaning, flags, and the meaning for children where it differs.',
+    'Rows of JMdict that are fit for children, by reading, each: reading, written forms joined by "|", English meaning, flags.',
   );
-  writePieces("f", formPieces, 'Written forms of JMdict, each: form, then the readings it has joined by "|".');
+  writePieces(
+    "f",
+    formPieces,
+    'Written forms of JMdict that are fit for children, each: form, then the readings it has joined by "|".',
+  );
 
   writeFileSync(
     `${OUT}/manifest.data.ts`,
@@ -200,7 +199,7 @@ ${rowsLiteral(piece.lines)}
       body: `{
   source: "JMdict",
   release: ${JSON.stringify(release)},
-  rowCount: ${rows.length},
+  rowCount: ${counts.cleanRows},
   readings: {
     starts: [${starts(readingPieces)}],
     load: [
@@ -217,16 +216,39 @@ ${loaders("f", formPieces)}
     }),
   );
 
+  writeFileSync(
+    `${OUT}/extra.data.ts`,
+    dataFile({
+      imports: `import type { WordsExtra } from "../../words.ts";\n`,
+      summary: `Everything the other pieces leave out, for a host that asks for everything: each key's whole answer, as JMdict has it, wherever it is not the same as the answer for children. Rows are as in the other pieces, and forms are each: form, then the readings it has joined by "|". ${counts.rows.toLocaleString("en-US")} rows in the dictionary in all.`,
+      type: "WordsExtra",
+      name: "EXTRA",
+      body: `{
+  source: "JMdict",
+  release: ${JSON.stringify(release)},
+  rowCount: ${counts.rows},
+  rows: [
+${rowsLiteral(tables.extraReadings.map(([, line]) => line))}
+  ],
+  forms: [
+${rowsLiteral(tables.extraForms.map(([, line]) => line))}
+  ],
+}`,
+    }),
+  );
+
   recordSource({ release, sha256 });
   const kb = (n) => `${(n / 1e3).toFixed(0)} kB`;
   const size = (pieces) => pieces.map((piece) => Buffer.byteLength(piece.lines.join("\n")));
+  const bytes = (lines) => Buffer.byteLength(lines.join("\n"));
   console.log(`JMdict ${release}, SHA-256 ${sha256}`);
   console.log(
-    `${rows.length} rows, ${common.length} of them common, ${rows.filter((row) => row.kids !== undefined).length} with a sense left out for children`,
+    `${counts.rows} rows; ${counts.cleanRows} for children, ${counts.rows - counts.cleanRows} left out whole; ${counts.common} common for children of ${counts.commonAll}`,
   );
   console.log(`${readingPieces.length} pieces by reading, the largest ${kb(Math.max(...size(readingPieces)))}`);
+  console.log(`${formPieces.length} pieces of written forms, the largest ${kb(Math.max(...size(formPieces)))}`);
   console.log(
-    `${formPieces.length} pieces of written forms (${readingsOf.size} forms), the largest ${kb(Math.max(...size(formPieces)))}`,
+    `extra: ${tables.extraReadings.length} rows ${kb(bytes(tables.extraReadings.map(([, line]) => line)))}, ${tables.extraForms.length} forms ${kb(bytes(tables.extraForms.map(([, line]) => line)))}, ${commonPatch.length} common edits`,
   );
 }
 

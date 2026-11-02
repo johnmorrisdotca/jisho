@@ -173,13 +173,54 @@ test("for children leaves out the senses that are not, and Everything puts them 
 test("says so, and does not make a word up, when there is nothing to show", async ({ page }) => {
   const errors = await open(page, "?lang=en&view=words");
   await lookUp(page, "ぬぬぬぬぬ");
-  await expect(page.getByTestId("word-count")).toHaveText("JMdict has no word for ぬぬぬぬぬ.");
+  await expect(page.getByTestId("word-count")).toHaveText("No word to show for ぬぬぬぬぬ.");
   await expect(page.getByTestId("word-item")).toHaveCount(0);
   await lookUp(page, "チンピラ");
-  await expect(page.getByTestId("word-count")).toContainText("none of them for children");
+  await expect(page.getByTestId("word-count")).toHaveText("No word to show for チンピラ.");
   await expect(page.getByTestId("word-item")).toHaveCount(0);
   await tap(page.getByTestId("audience").getByRole("button", { name: "Everything" }));
   await expect(first(page)).toContainText("hoodlum");
+  await expect(page.getByTestId("word-count")).toHaveText("2 words for チンピラ.");
+  await lookUp(page, "ぬぬぬぬぬ");
+  await expect(page.getByTestId("word-count")).toHaveText("JMdict has no word for ぬぬぬぬぬ.");
+  await sound(page, errors);
+});
+
+/** The addresses of every piece of the words a page asks for, as they are asked. */
+function watch(page) {
+  const asked = [];
+  page.on("request", (request) => {
+    const { pathname } = new URL(request.url());
+    if (/\/dist\/(?:words|data\/words\/)/.test(pathname)) asked.push(pathname.slice(pathname.lastIndexOf("/") + 1));
+  });
+  return asked;
+}
+const isExtra = (name) => /^(?:common-)?extra\.data\./.test(name) || /^common-extra\.data\./.test(name);
+
+test("a lookup for children asks for none of the files that hold what is not, and Everything asks for them", async ({
+  page,
+}) => {
+  const asked = watch(page);
+  const errors = await open(page, "?lang=en&view=words");
+  for (const text of ["かみ", "外人", "チンピラ", "ほもびでお", "吐かす"]) {
+    await lookUp(page, text);
+    await expect(page.getByTestId("word-count")).toContainText(text);
+    await expect(page.getByTestId("word-count")).not.toContainText("Looking");
+  }
+  await expect(page.getByTestId("word-item")).toHaveCount(0);
+  expect(asked.length, "the pieces of the words were asked for").toBeGreaterThan(3);
+  expect(asked.filter(isExtra), "a file of what is not for children was asked for").toEqual([]);
+  await tap(page.getByTestId("audience").getByRole("button", { name: "Everything" }));
+  await expect(first(page)).toContainText("omit");
+  expect(asked.filter(isExtra), "Everything asks for the extra file").toEqual(["extra.data.js"]);
+  await sound(page, errors);
+});
+
+test("a lookup for children is not given the file when the page opens on a word, either", async ({ page }) => {
+  const asked = watch(page);
+  const errors = await open(page, "?lang=en&view=words&word=外人");
+  await expect(first(page)).toContainText("outsider");
+  expect(asked.filter(isExtra)).toEqual([]);
   await sound(page, errors);
 });
 

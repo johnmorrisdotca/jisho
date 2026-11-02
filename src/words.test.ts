@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { COMMON_WORDS } from "./data/words/common.data.ts";
+import { COMMON_EXTRA } from "./data/words/common-extra.data.ts";
 import { MANIFEST } from "./data/words/manifest.data.ts";
 import {
   allWords,
@@ -86,23 +87,22 @@ describe("a word with no meaning", () => {
 });
 
 describe("what is not for children", () => {
-  it("is left out unless the host asks for it: ほもびでお has nothing fit to say", async () => {
+  it("is not there unless the host asks for it: ほもびでお has nothing fit to say, and asking for everything gives it back", async () => {
     const words = await loadWords("ほもびでお");
     expect(words.forChildren).toBe(true);
     expect(wordsOf(words, "ほもびでお")).toEqual([]);
     expect(meaningOf(words, "ほもびでお")).toBeNull();
-    expect(wordsOf(words, "ほもびでお", { forChildren: false })[0]?.meaning).toBe(
-      "gay porn video, gay pornographic video",
-    );
     const adults = await loadWords("ほもびでお", { forChildren: false });
-    expect(meaningOf(adults, "ほもびでお")).toMatch(/gay porn/);
-    expect(wordsOf(adults, "ほもびでお", { forChildren: true })).toEqual([]);
+    expect(adults.forChildren).toBe(false);
+    expect(wordsOf(adults, "ほもびでお")[0]?.meaning).toBe("gay porn video, gay pornographic video");
+    expect(wordsOf(adults, "ホモビデオ")[0]?.reading).toBe("ホモビデオ");
   });
 
   it("is cut out of a word that has other senses, and the others stay", async () => {
     const words = await loadWords("いぬ");
     expect(wordsOf(words, "いぬ")[0]?.meaning).not.toMatch(/rat|squealer/);
-    expect(wordsOf(words, "いぬ", { forChildren: false })[0]?.meaning).toMatch(/squealer/);
+    const adults = await loadWords("いぬ", { forChildren: false });
+    expect(wordsOf(adults, "いぬ")[0]?.meaning).toMatch(/squealer/);
   });
 
   it("is cut from real words by every mark: vulgar, derogatory and sensitive senses go, the plain ones stay", async () => {
@@ -112,39 +112,76 @@ describe("what is not for children", () => {
       ["ピザ", /ugly/, "pizza"],
       ["外人", /Westerner|gaijin/, "outsider"],
     ] as const;
-    const words = await loadWords([...asked.map(([text]) => text), "チンピラ", "ジプシー"]);
-    for (const [text, unfit, kept] of asked) {
-      const shown = wordsOf(words, text)
+    const texts = [...asked.map(([text]) => text), "チンピラ", "ジプシー"];
+    const words = await loadWords(texts);
+    const adults = await loadWords(texts, { forChildren: false });
+    const said = (from: typeof words, text: string) =>
+      wordsOf(from, text)
         .map((one) => one.meaning)
         .join(" | ");
-      expect(shown, text).not.toMatch(unfit);
-      expect(shown, text).toContain(kept);
-      expect(
-        wordsOf(words, text, { forChildren: false })
-          .map((one) => one.meaning)
-          .join(" | "),
-        text,
-      ).toMatch(unfit);
+    for (const [text, unfit, kept] of asked) {
+      expect(said(words, text), text).not.toMatch(unfit);
+      expect(said(words, text), text).toContain(kept);
+      expect(said(adults, text), text).toMatch(unfit);
+      expect(said(adults, text), text).toContain(kept);
     }
-    // Every sense of these is marked, so there is nothing to say and the answer is none.
+    // Every sense of these is marked, so for children there is nothing to say and the answer is none.
     expect(wordsOf(words, "チンピラ")).toEqual([]);
     expect(wordsOf(words, "ジプシー")).toEqual([]);
+    expect(said(adults, "チンピラ")).toMatch(/hoodlum/);
   });
 
-  it("never survives in the common words either, for any mark", async () => {
+  it("is cut from a written form's answer as well: 吐かす is a form of ぬかす only for the sense that is not for children", async () => {
+    const words = await loadWords(["吐かす", "抜かす", "ぬかす"]);
+    const adults = await loadWords(["吐かす", "ぬかす"], { forChildren: false });
+    expect(wordsOf(words, "吐かす")).toEqual([]);
+    expect(wordsOf(words, "抜かす")[0]).toMatchObject({ reading: "ぬかす", forms: ["抜かす"] });
+    expect(wordsOf(words, "ぬかす")[0]?.forms).toEqual(["抜かす"]);
+    expect(wordsOf(adults, "吐かす")[0]).toMatchObject({ reading: "ぬかす", written: "吐かす" });
+    expect(wordsOf(adults, "ぬかす")[0]?.forms).toEqual(["抜かす", "吐かす"]);
+  });
+
+  it("is cut from the words with more than one reading, and a reading only such a sense applies to is not one of the word", async () => {
+    const words = await loadWords(["そいつ", "そやつ"]);
+    const adults = await loadWords(["そいつ", "そやつ"], { forChildren: false });
+    expect(wordsOf(words, "そいつ").length).toBeGreaterThan(0);
+    expect(wordsOf(words, "そやつ")).toEqual([]);
+    expect(wordsOf(adults, "そやつ").length).toBeGreaterThan(0);
+  });
+
+  it("cannot be added to words for the other people, and has no sense of its own to be turned on in a lookup", async () => {
+    const children = await loadWords("かみ");
+    await expect(loadWords("いぬ", { forChildren: false, previous: children })).rejects.toThrow(
+      /cannot be added together/,
+    );
+    const adults = await loadWords("かみ", { forChildren: false });
+    await expect(loadWords("いぬ", { previous: adults, forChildren: true })).rejects.toThrow(
+      /cannot be added together/,
+    );
+    expect(wordsOf(await loadWords("いぬ", { previous: adults }), "かみ")[0]?.written).toBe("紙");
+  });
+
+  it("is the same as it was in everything, for the words that have none of it", async () => {
+    const [children, adults] = await Promise.all([loadWords("かみ"), loadWords("かみ", { forChildren: false })]);
+    const asked = (words: typeof children) => wordsOf(words, "かみ").map((one) => [one.written, one.meaning]);
+    expect(asked(adults)).toEqual(asked(children));
+  });
+
+  it("is a patch of the common words that makes every common word again, and asking for it takes the patch", async () => {
     const children = readCommonWords(COMMON_WORDS);
-    const adults = readCommonWords(COMMON_WORDS, { forChildren: false });
-    const rows = COMMON_WORDS.rows.map(readRow);
-    const marked = rows.filter((one) => one.kids !== undefined);
-    expect(marked.length).toBeGreaterThan(30);
-    for (const row of marked) {
-      const text = row.forms[0] ?? row.reading;
-      const kept = wordsOf(children, text).find((one) => one.reading === row.reading);
-      if (row.kids === "") expect(kept, text).toBeUndefined();
-      else expect(kept?.meaning, text).toBe(row.kids);
-      expect(wordsOf(adults, text).find((one) => one.reading === row.reading)?.meaning, text).toBe(row.meaning);
-    }
-    expect(allWords(children).length).toBe(rows.filter((one) => one.kids !== "").length);
+    expect(() => readCommonWords(COMMON_WORDS, { forChildren: false })).toThrow(/COMMON_EXTRA/);
+    const adults = readCommonWords(COMMON_WORDS, { forChildren: false, extra: COMMON_EXTRA });
+    expect(allWords(adults).length).toBeGreaterThan(allWords(children).length);
+    expect(allWords(adults).length - allWords(children).length).toBeLessThan(100);
+    expect(wordsOf(children, "ハーモニカ").map((one) => one.meaning)).toEqual([
+      "harmonica, mouth organ; hypodermic syringe",
+    ]);
+    expect(wordsOf(adults, "ハーモニカ")[0]?.meaning).toMatch(/cunnilingus/);
+    // A word with nothing in it for children is not among the common words for them, and is for everything.
+    const loaded = await loadCommonWords({ forChildren: false });
+    expect(allWords(loaded)).toEqual(allWords(adults));
+    const fewer = allWords(children).map((one) => `${one.reading}${one.meaning}`);
+    expect(new Set(fewer).size).toBeGreaterThan(20_000);
   });
 });
 

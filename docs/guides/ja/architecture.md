@@ -20,7 +20,9 @@ src/
     ├── kanji.data.ts       読み、意味、画数、順位
     ├── look-alike.data.ts  形の似た漢字の組
     └── words/              単語（スクリプトが書き出す）
-        ├── common.data.ts    よく使う単語を一つの表に
+        ├── common.data.ts    子ども向けのよく使う単語を一つの表に
+        ├── common-extra.data.ts  よく使う単語をすべてそろえるために加えるもの
+        ├── extra.data.ts     チャンクに入れなかったものすべて（頼まれたときだけ取得）
         ├── manifest.data.ts  各チャンクの始まりと取得の方法
         ├── r000.data.ts …    読みで分けた行のチャンク
         └── f00.data.ts …     表記から読みへの索引のチャンク

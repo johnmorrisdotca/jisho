@@ -40,7 +40,7 @@ const WORDS = {
     wordCountOne: "1 word for {text}.",
     wordCountMany: "{n} words for {text}.",
     wordNone: "JMdict has no word for {text}.",
-    wordHidden: "JMdict has words for {text}, none of them for children. Choose Everything to read them.",
+    wordNoneChildren: "No word to show for {text}.",
     wordLoading: "Looking up {text}…",
     wordFailed: "Could not look {text} up. Try again.",
     wordCommon: "common",
@@ -105,7 +105,7 @@ const WORDS = {
     wordCountOne: "「{text}」の単語は1語見つかりました。",
     wordCountMany: "「{text}」の単語は{n}語見つかりました。",
     wordNone: "JMdictに「{text}」の単語はありません。",
-    wordHidden: "JMdictに「{text}」の単語はありますが、子ども向けのものはありません。「すべて」を選ぶと表示されます。",
+    wordNoneChildren: "「{text}」について表示できる単語はありません。",
     wordLoading: "「{text}」を調べています…",
     wordFailed: "「{text}」を調べられませんでした。もう一度お試しください。",
     wordCommon: "よく使う",
@@ -298,8 +298,8 @@ function choice(holder, items, current, pick) {
   });
 }
 
-// What has been looked up: the words JMdict holds for the text, loaded once with everything in them. Which senses are shown is
-// chosen when they are read, so changing who it is for fetches nothing.
+// What has been looked up: the words JMdict holds for the text, for the people they were loaded for. For children nothing that is
+// not for them is fetched; choosing Everything fetches the file that holds the rest, once, and looks the text up again.
 let looked = null;
 let pending = null;
 let failed = null;
@@ -317,7 +317,7 @@ async function lookUp(text) {
   writeAddress();
   if (clean === "") return;
   try {
-    const words = await loadWords(clean, { forChildren: false });
+    const words = await loadWords(clean, { forChildren: state.children });
     if (ask === asking) looked = { text: clean, words };
   } catch {
     if (ask === asking) failed = clean;
@@ -387,8 +387,10 @@ function drawWords() {
     state.children,
     (id) => {
       state.children = id;
-      drawWords();
-      writeAddress();
+      if (state.word === "") {
+        drawWords();
+        writeAddress();
+      } else void lookUp(state.word);
     },
   );
   const list = $("word-list");
@@ -404,11 +406,10 @@ function drawWords() {
     list.replaceChildren();
   } else {
     const { text, words } = looked;
-    const found = wordsOf(words, text, { forChildren: state.children });
-    const all = wordsOf(words, text, { forChildren: false });
+    const found = wordsOf(words, text);
     count.textContent =
       found.length === 0
-        ? t(all.length > 0 ? "wordHidden" : "wordNone", { text })
+        ? t(words.forChildren ? "wordNoneChildren" : "wordNone", { text })
         : t(found.length === 1 ? "wordCountOne" : "wordCountMany", { n: found.length, text });
     list.replaceChildren(...found.map(wordItem));
     list.dataset.release = words.release;

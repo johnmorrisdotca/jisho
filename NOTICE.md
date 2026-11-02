@@ -8,10 +8,10 @@ The code of this package is under the MIT licence (see [LICENSE](LICENSE)). The 
 | `jlpt` | `src/data/jlpt.data.ts` | Jonathan Waller's JLPT Resources, tanos.co.uk | Creative Commons "BY" (CC BY) |
 | `kanji` | `src/data/kanji.data.ts` | KANJIDIC2, with the levels from Waller's lists | CC BY-SA 4.0 and the Group's conditions; the levels CC BY |
 | `look-alike` | `src/data/look-alike.data.ts` | Lars Yencken's kanji confusion datasets | CC BY 3.0 |
-| `words-common`, and the pieces `words` fetches | `src/data/words/` | JMdict, of the EDRDG | CC BY-SA 4.0 and the Group's conditions |
+| `words-common`, `words-common-extra`, and the pieces `words` fetches | `src/data/words/` | JMdict, of the EDRDG | CC BY-SA 4.0 and the Group's conditions |
 | `.` | everything else in `src/` | this package | MIT |
 
-Which rows are kept (every kanji with a school grade; a pair at or over a set score; every reading of JMdict with a meaning, and the form of a meaning for children) and the functions that read them are this package's own work. Nobody named here has reviewed or endorsed this package.
+Which rows are kept (every kanji with a school grade; a pair at or over a set score; every reading of JMdict with a meaning, and which of it is for children) and the functions that read them are this package's own work. Nobody named here has reviewed or endorsed this package.
 
 ## KANJIDIC2: the grades, readings, meanings, strokes and frequency ranks
 
@@ -39,7 +39,7 @@ What the Group's conditions ask, and where this package does it:
 
 The date and SHA-256 of the file used are in [data-sources/sources.json](data-sources/sources.json), and its date in `release` in the data.
 
-**What was kept and what was left out.** Every reading of every entry that has an English meaning is a row. Written forms JMdict marks search-only (`sK`, `sk`) or irregular or outdated (`iK`, `ik`, `oK`, `ok`) are not written forms here, and a reading carrying those marks is kept behind the regular readings and is never called common. A meaning is cut to two senses and about 60 characters, so it is a short gloss and not JMdict's entry. A sense JMdict marks vulgar (`vulg`), X-rated (`X`), sensitive (`sens`) or derogatory (`derog`) is kept in the data, and `forChildren` leaves it out of what a lookup says. Those senses are still in the files, which any browser that fetches a piece can read: the option decides what this package's functions say, and it does not take the text out of the files.
+**What was kept and what was left out.** Every reading of every entry that has an English meaning is a row. Written forms JMdict marks search-only (`sK`, `sk`) or irregular or outdated (`iK`, `ik`, `oK`, `ok`) are not written forms here, and a reading carrying those marks is kept behind the regular readings and is never called common. A meaning is cut to two senses and about 60 characters, so it is a short gloss and not JMdict's entry. A sense JMdict marks vulgar (`vulg`), X-rated (`X`), sensitive (`sens`) or derogatory (`derog`) is not for children. None of it is in a file a default lookup fetches: the common table (`words-common`), the manifest and the pieces hold only the senses that are for children, the written forms and readings that one of those senses applies to, and the words that have at least one, so a word of which every sense is marked is not in them at all. All that was left out is in `extra.data` and `common-extra.data` (`words-common-extra`), which a lookup fetches only when the host says `forChildren: false`. Those files are in the package and are public, as is the rest of the data: the separation decides what this package's functions fetch and say, and it does not hide the text from anybody who asks for the files. JMdict's marks are its own and are not complete.
 
 ## Jonathan Waller's JLPT lists: the levels
 

@@ -20,7 +20,9 @@ src/
     ├── kanji.data.ts       readings, meanings, strokes and ranks
     ├── look-alike.data.ts  the pairs that look alike
     └── words/              the words, written by a script
-        ├── common.data.ts    the common words, in one table
+        ├── common.data.ts    the common words fit for children, in one table
+        ├── common-extra.data.ts  what to add to them to have every common word
+        ├── extra.data.ts     everything the pieces leave out, fetched only when asked for
         ├── manifest.data.ts  where each piece starts, and how to fetch it
         ├── r000.data.ts …    pieces of rows, by reading
         └── f00.data.ts …     pieces of the index from each written form to its readings

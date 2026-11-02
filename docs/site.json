@@ -35,8 +35,12 @@
       "ja": "読みや表記から単語を引く"
     },
     "./words-common": {
-      "en": "The 26,061 common words, in one table",
-      "ja": "よく使う単語26,061語を一つの表に"
+      "en": "The common words fit for children, in one table",
+      "ja": "子ども向けのよく使う単語を一つの表に"
+    },
+    "./words-common-extra": {
+      "en": "What to add to the common words to have all of them",
+      "ja": "よく使う単語をすべてそろえるために加えるもの"
     }
   }
 }

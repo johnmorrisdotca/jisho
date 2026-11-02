@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.ts";
 
 /**
- * Rows of JMdict by reading, each: reading, written forms joined by "|", English meaning, flags, and the meaning for children where it differs. Piece 2 of 255, from "あいぼ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that are fit for children, by reading, each: reading, written forms joined by "|", English meaning, flags. Piece 2 of 254, from "あいぼりー". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,11 +9,6 @@ import type { WordsPiece } from "../../words.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "あいぼ\t哀慕\tcherish the memory of, yearn for\t",
-    "あいぼ\t愛慕\tlove, attachment, adoration\ts",
-    "あいぼう\t相棒\tpartner, pal, accomplice\tC",
-    "あいぼし\t相星\twrestlers with the same win-loss record at the end of a tournament\t",
-    "アイボリ\t\tivory\tC",
     "アイボリー\t\tivory\tC",
     "アイボリーいたがみ\tアイボリー板紙\tivory paper\t",
     "アイボリーいろ\tアイボリー色\tivory (color)\t",
@@ -452,7 +447,7 @@ export const PIECE: WordsPiece = {
     "あおあし\t青葦|青蘆\tlush waterside reeds\t",
     "あおあししぎ\t青足鴫\tgreenshank (species of sandpiper, Tringa nebularia)\tU",
     "アオアシシギ\t\tgreenshank (species of sandpiper, Tringa nebularia)\tU",
-    "あおあらし\t青嵐\twind blowing through fresh verdure; mountain air\t",
+    "あおあらし\t青嵐\twind blowing through fresh verdure\t",
     "あおい\t青い|蒼い|碧い\tblue, azure; green\taC",
     "あおい\t葵\tmallow (any plant of family Malvaceae)\tU",
     "アオイ\t\tmallow (any plant of family Malvaceae)\tU",
@@ -644,7 +639,6 @@ export const PIECE: WordsPiece = {
     "あおに\t青丹\tgreenish-black earth; green verditer\t",
     "あおに\t青二\t2 of batons (high-scoring card in mekuri karuta)\t",
     "あおにく\t青肉\tgreen flesh (melon, etc.)\t",
-    "あおにさい\t青二才\tgreen youth, immature youth, novice\t\t",
     "あおにび\t青鈍\tgrey tinged with green, grey tinged with blue\t",
     "あおぬた\t青饅|青ぬた\tsalad of fish and vegetables, dressed with crushed mustard leaves and greens seasoned with sake lees, miso and vinegar\t",
     "あおね\t青嶺\tlush mountain, green mountain\t",
@@ -671,7 +665,7 @@ export const PIECE: WordsPiece = {
     "あおば\t青葉\tfresh leaves\tC",
     "あおば\t\t(former) regular (stops at every station) Tōhoku-line Shinkansen\t",
     "あおば\t青歯\tBluetooth (variety of short-range wireless LAN)\t",
-    "あおばえ\t青蠅|青蝿|蒼蠅|蒼蝿\tbluebottle fly; little pest\t\tbluebottle fly",
+    "あおばえ\t青蠅|青蝿|蒼蠅|蒼蝿\tbluebottle fly\t",
     "アオバスズメダイ\t\tblack-axil chromis (Chromis atripectoralis)\t",
     "アオバズク\t\tbrown hawk owl (Ninox scutulata)\tU",
     "あおばずく\t青葉木菟|青葉梟\tbrown hawk owl (Ninox scutulata)\tU",
@@ -685,7 +679,7 @@ export const PIECE: WordsPiece = {
     "あおひげ\t青ひげ|青髭|青ヒゲ|青髯\tgrey appearance after shaving one's beard\t",
     "あおひとくさ\t青人草\tthe people, the public, citizenry\t",
     "あおびかり\t青光り\tbluish sheen, steel-blue sheen\ts",
-    "あおびょうたん\t青瓢箪|青びょうたん\tgreen calabash, unripe gourd; pale and sickly person\t\tgreen calabash, unripe gourd",
+    "あおびょうたん\t青瓢箪|青びょうたん\tgreen calabash, unripe gourd\t",
     "あおふだ\t青札\tblue tag, blue card, blue ticket\t",
     "あおぶくれ\t青膨れ|青脹れ|青ぶくれ\tdropsical (blue-green) swelling\ts",
     "あおぶさ\t青房|青総\tgreen tassel hung above the northeast corner of the ring\t",
@@ -739,7 +733,7 @@ export const PIECE: WordsPiece = {
     "あおやさい\t青野菜\tgreen crop, green vegetable\t",
     "アオヤサイ\t\tgreen crop, green vegetable\t",
     "あおやなぎ\t青柳\tgreen willow (i.e. one that has budded)\tC",
-    "あおやま\t青山\tlush mountain, green mountain; grave, burial place\tC",
+    "あおやま\t青山\tlush mountain, green mountain\tC",
     "あおやまがくいんじょしたんきだいがく\t青山学院女子短期大学\tAoyama Gakuin Women's Junior College\t",
     "あおやまがくいんだいがく\t青山学院大学\tAoyama Gakuin University\t",
     "あおゆ\t青柚\tgreen yuzu, unripe yuzu\t",
@@ -760,7 +754,7 @@ export const PIECE: WordsPiece = {
     "あおる\t呷る\tto gulp down (alcohol, poison, etc.), to quaff, to down\tgU",
     "あおんそく\t亜音速\tsubsonic speed\t",
     "あおんたい\t亜温帯\tsubtemperate zone\t",
-    "あか\t銅\tcopper (Cu); bronze (medal)\tC",
+    "あか\t銅\tcopper (Cu)\tC",
     "あか\t垢\tdirt, filth, grime\tC",
     "あか\t赤|紅|朱\tred, crimson, scarlet\tC",
     "あか\t亜科\tsubfamily\t",
@@ -788,7 +782,7 @@ export const PIECE: WordsPiece = {
     "アカイソハゼ\t\tEviota masudai (species of pygmy goby)\t",
     "あかいはね\t赤い羽根\tAkaihane (fund-raising organisation for welfare services)\t",
     "あかいりょだん\t赤い旅団\tRed Brigades\t",
-    "あかいろ\t赤色\tred, red color; communist, socialist, left-wing\tC",
+    "あかいろ\t赤色\tred, red color\tC",
     "あかいわし\t赤鰯|赤いわし\tpickled sardines, dried sardines; rusty and blunt sword\tU",
     "あかいんげんまめ\t赤いんげん豆|赤隠元豆\tred kidney bean\t",
     "あかインゲンまめ\t赤インゲン豆\tred kidney bean\t",
@@ -875,7 +869,7 @@ export const PIECE: WordsPiece = {
     "アカガエルか\tアカガエル科\tRanidae (family of frogs)\t",
     "あかがし\t赤樫\tJapanese evergreen oak (Quercus acuta)\tU",
     "アカガシ\t\tJapanese evergreen oak (Quercus acuta)\tU",
-    "あかがね\t銅|赤金\tcopper (Cu); bronze (medal)\tC",
+    "あかがね\t銅|赤金\tcopper (Cu)\tC",
     "あかがねいろ\t銅色|あかがね色\tbronze color, copper color\t",
     "あかがねこう\t赤金鉱\takaganeite\t",
     "あかがねこうぼ\t銅酵母\tcopper yeast, copper-enriched yeast\t",
@@ -1037,5 +1031,13 @@ export const PIECE: WordsPiece = {
     "あかちょうちん\t赤ちょうちん|赤提灯\tred paper lantern; cheap eating and drinking place\t",
     "あかチン\t赤チン\tmercurochrome, merbromin solution\t",
     "あかっつら\t赤面|赭面\tred face; villain (in kabuki, jōruri, etc.)\t",
+    "あかっぱじ\t赤っ恥\tgreat shame (endured in the public eye), deep embarrassment\t",
+    "あかっぽい\t赤っぽい\treddish\ta",
+    "あかつ\t分つ|頒つ\tto divide, to separate; to share, to distribute\t",
+    "あかつき\t暁\tdawn, daybreak; event (e.g. \"in the event of ...\"), occasion\tC",
+    "あかつきおき\t暁起き\twaking up just before daybreak\t",
+    "あかつきげんしょう\t暁現象\tdawn phenomenon, dawn effect\t",
+    "あかつきのそら\t暁の空\tdawning sky\t",
+    "アカツキハギ\t\tAchilles tang (Acanthurus achilles)\t",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.ts";
 
 /**
- * Rows of JMdict by reading, each: reading, written forms joined by "|", English meaning, flags, and the meaning for children where it differs. Piece 3 of 255, from "あかっぱ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that are fit for children, by reading, each: reading, written forms joined by "|", English meaning, flags. Piece 3 of 254, from "あかつきや". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,14 +9,6 @@ import type { WordsPiece } from "../../words.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "あかっぱじ\t赤っ恥\tgreat shame (endured in the public eye), deep embarrassment\t",
-    "あかっぽい\t赤っぽい\treddish\ta",
-    "あかつ\t分つ|頒つ\tto divide, to separate; to share, to distribute\t",
-    "あかつき\t暁\tdawn, daybreak; event (e.g. \"in the event of ...\"), occasion\tC",
-    "あかつきおき\t暁起き\twaking up just before daybreak\t",
-    "あかつきげんしょう\t暁現象\tdawn phenomenon, dawn effect\t",
-    "あかつきのそら\t暁の空\tdawning sky\t",
-    "アカツキハギ\t\tAchilles tang (Acanthurus achilles)\t",
     "あかつきやみ\t暁闇\tmoonless dawn\t",
     "アカツクシガモ\t\truddy shelduck (Tadorna ferruginea), ruddy sheldrake\tU",
     "あかつくしがも\t赤筑紫鴨\truddy shelduck (Tadorna ferruginea), ruddy sheldrake\tU",
@@ -55,7 +47,7 @@ export const PIECE: WordsPiece = {
     "あかでん\t赤電\tlast train (of the day)\t",
     "あかでんしゃ\t赤電車\tlast train (of the day)\t",
     "あかでんわ\t赤電話\tpublic telephone (orig. red), payphone\t",
-    "あかとき\t暁\tdawn, daybreak; event (e.g. \"in the event of ...\"), occasion\t",
+    "あかとき\t暁\tdawn, daybreak\t",
     "あかときやみ\t暁闇\tmoonless dawn\t",
     "あかとび\t赤鳶\tred kite (Milvus milvus)\tU",
     "アカトビ\t\tred kite (Milvus milvus)\tU",
@@ -110,8 +102,8 @@ export const PIECE: WordsPiece = {
     "あかパプリカ\t赤パプリカ\tred bell pepper\t",
     "アカパンカビ\t\tNeurospora crassa (species of red bread mould)\tU",
     "あかパンかび\t赤パン黴\tNeurospora crassa (species of red bread mould)\tU",
-    "あかひげ\t赤ひげ|赤髭|赤鬚\tred beard, person with a red beard; Westerner\t\tred beard, person with a red beard",
-    "アカヒゲ\t赤ひげ|赤髭|赤鬚\tred beard, person with a red beard; Westerner\t\tred beard, person with a red beard",
+    "あかひげ\t赤ひげ|赤髭|赤鬚\tred beard, person with a red beard\t",
+    "アカヒゲ\t赤ひげ|赤髭|赤鬚\tred beard, person with a red beard\t",
     "アカヒメジ\t\tyellowfin goatfish (Mulloidichthys vanicolensis)\t",
     "あかひれ\t赤鰭\twhite cloud mountain minnow (Tanichthys albonubes)\tU",
     "アカヒレ\t\twhite cloud mountain minnow (Tanichthys albonubes)\tU",
@@ -366,7 +358,7 @@ export const PIECE: WordsPiece = {
     "アキシアル・ジェット\t\taxial jet\t",
     "アキシアル・ピストン・ポンプ\t\taxial piston pump\t",
     "あきしつ\t空き室\tvacant room, vacancy, unoccupied room\t",
-    "あきしも\t秋霜\tautumn frost, fall frost; harshness, strictness, rigour\t",
+    "あきしも\t秋霜\tautumn frost, fall frost\t",
     "アキシャル\t\taxial\t",
     "アキシャルオフセット\t\taxial offset\t",
     "アキシャル・オフセット\t\taxial offset\t",
@@ -483,7 +475,6 @@ export const PIECE: WordsPiece = {
     "あきまへん\t\tuseless, no good, hopeless; cannot, must not, not allowed\t",
     "あきみせ\t空き店|明き店\tempty store, vacant store\t",
     "あきめく\t秋めく\tto become autumnal\tg",
-    "あきめくら\t明き盲|明盲|明きめくら\tilliterate or blind person\t\t",
     "アキメネス\t\tachimenes\t",
     "あきもせず\t飽きもせず\tuntiringly, persistently, without losing interest\t",
     "あきもの\t秋物\tautumn clothing, autumn wear; autumn goods\t",
@@ -909,7 +900,6 @@ export const PIECE: WordsPiece = {
     "あくたれぐち\t悪たれ口\tabuse, insult, slander\t",
     "あくたれこぞう\t悪たれ小僧\tbad boy, naughty boy\t",
     "あくたれる\t悪たれる\tto do mischief, to use abusive language\ti",
-    "あくたろう\t悪太郎\tstupid brat, mischievous kid, troublemaker\t\t",
     "アクター\t\tactor\t",
     "あくだま\t悪玉\tbad character, bad person, villain\t",
     "あくだまか\t悪玉化\tscapegoating\ts",
@@ -1025,5 +1015,27 @@ export const PIECE: WordsPiece = {
     "アクティベーション\t\tactivation; product activation\t",
     "アクティベーションキー\t\tactivation key, activation code\t",
     "アクティベーションコード\t\tactivation code\t",
+    "アクティベーション・キー\t\tactivation key, activation code\t",
+    "アクティベーション・コード\t\tactivation code\t",
+    "アクティベータ\t\tactivator\t",
+    "アクティベーター\t\tactivator\t",
+    "アクティベート\t\tactivation (of software, a device, etc.)\ts",
+    "アクティング\t\tacting\t",
+    "アクティングアウト\t\tacting out\t",
+    "アクティング・アウト\t\tacting out\t",
+    "アクティヴ\t\tactive\t",
+    "アクティヴィティ\t\tactivity\t",
+    "アクティヴィティー\t\tactivity\t",
+    "アクテビティ\t\tactivity\t",
+    "アクテビティー\t\tactivity\t",
+    "あくてん\t悪天\tbad weather\t",
+    "あくてんこう\t悪天候\tbad weather\tC",
+    "あくてんし\t悪天使\tevil angels\t",
+    "あくと\t踵\theel (of foot, shoe, stocking, etc.)\tCU",
+    "あくと\t悪徒\trascal, scoundrel, villain\t",
+    "アクト\t\tact\t",
+    "あくとう\t悪党\tscoundrel, rascal, villain\t",
+    "あくとう\t悪投\tbad throw, wild throw\ts",
+    "あくとう\t悪闘\tdifficult battle\t",
   ],
 };

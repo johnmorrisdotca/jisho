@@ -1,9 +1,9 @@
 <h1 align="center">Moji <sub>文字</sub> — Japanese word and kanji data for JavaScript</h1>
 
 <p align="center"><strong>Moji 文字: Japanese word and kanji data for JavaScript: look words up by reading or written form, and read the school grades, JLPT levels, readings, meanings and look-alike pairs of 2,999 kanji.</strong><br>
-The words are JMdict's, in small pieces that a lookup fetches as it needs them, with the senses not for children left out unless you ask. Every table is machine output from public sources, each named with its licence: JMdict and KANJIDIC2, Jonathan Waller's JLPT lists and Lars Yencken's kanji confusion datasets. Typed, with no dependencies, and a demo to try it in.</p>
+The words are JMdict's, in small pieces that a lookup fetches as it needs them, with everything that is not for children kept in files of their own, which are never fetched unless you ask. Every table is machine output from public sources, each named with its licence: JMdict and KANJIDIC2, Jonathan Waller's JLPT lists and Lars Yencken's kanji confusion datasets. Typed, with no dependencies, and a demo to try it in.</p>
 
-<p align="center" lang="ja">JavaScript向けの、日本語の単語と漢字のデータセットです。JMdictの単語を読みや表記から引け、必要な小さなチャンクだけを取得します。子ども向けでない語義は、指定しない限り除かれます。2,999字の漢字の学年、JLPTレベル、読み、意味、形の似た漢字の組も収め、型付きで外部依存はありません。</p>
+<p align="center" lang="ja">JavaScript向けの、日本語の単語と漢字のデータセットです。JMdictの単語を読みや表記から引け、必要な小さなチャンクだけを取得します。子ども向けでない語義は別のファイルに分けてあり、頼まない限り取得されません。2,999字の漢字の学年、JLPTレベル、読み、意味、形の似た漢字の組も収め、型付きで外部依存はありません。</p>
 
 <p align="center">
   <a href="https://github.com/johnmorrisdotca/moji/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/johnmorrisdotca/moji/actions/workflows/ci.yml/badge.svg"></a>
@@ -60,7 +60,7 @@ console.log(lookAlikes(LOOK_ALIKE, "土")[0]?.kanji); // the closest look-alike 
 
 ## Who it is for
 
-- **Games and quizzes** that take any kana as a guess and want to show what it means, with the senses not for children left out, and that fetch a few kilobytes to do it.
+- **Games and quizzes** that take any kana as a guess and want to show what it means, with nothing in the answer that is not for children, and that fetch a few kilobytes to do it.
 - **Language learning apps** that look words up by reading or written form, and order kanji by school year or JLPT level, and want to warn a learner about the pair they are about to confuse.
 - **Text tools** that say how hard a piece of Japanese is, from the kanji in it.
 - **Quizzes** that need a list of kanji with their readings and meanings, and wrong answers that look right.
@@ -68,14 +68,14 @@ console.log(lookAlikes(LOOK_ALIKE, "土")[0]?.kanji); // the closest look-alike 
 
 ## Features
 
-- **[Words](#the-words)**: JMdict's 265,951 rows, found by reading or written form, commonest first, each with a short English meaning, in 255 pieces by reading and 71 of an index of written forms, so a lookup fetches about 25 kB gzipped.
-- **For children by default**: a sense JMdict marks vulgar, X-rated, sensitive or derogatory is left out unless the host asks for it.
+- **[Words](#the-words)**: JMdict's rows, found by reading or written form, commonest first, each with a short English meaning, in 254 pieces by reading and 71 of an index of written forms, so a lookup fetches about 25 kB gzipped.
+- **For children by default, and in the files**: a sense JMdict marks vulgar, X-rated, sensitive or derogatory, and a word with nothing else to say, is not in any file a default lookup fetches. It is in one file of its own, fetched only when the host asks for everything.
 - **[School grades](#the-school-grades)**: 2,999 kanji by grade, 1,026 of them taught in elementary school and 2,136 in all for everyday use.
 - **[JLPT levels](#the-jlpt-levels)**: 2,211 kanji on Jonathan Waller's five lists, N5 to N1.
 - **[A table of the kanji](#the-table)**: strokes, grade, level, newspaper rank, on and kun readings, and meanings in English and French.
 - **[Look-alike pairs](#the-look-alike-pairs)**: 7,211 pairs with two published scores each, by strokes and by parts.
 - **Plain functions**: which grade, which level, the kanji in a text, a search by reading or meaning.
-- **Each table an entry point**: importing the grades loads 8 KB gzipped, not the table of 146 KB. The 26,061 common words are one table of their own.
+- **Each table an entry point**: importing the grades loads 8 KB gzipped, not the table of 146 KB. The 26,039 common words fit for children are one table of their own.
 
 ### What's in it
 
@@ -229,14 +229,16 @@ console.log(wordsOf(words, "カミ")[0]?.written); // 紙
 
 ### Children play here
 
-A sense JMdict marks vulgar, X-rated, sensitive or derogatory is left out unless the host says `forChildren: false`, and a word with nothing fit to show has nothing to say.
+A sense JMdict marks vulgar, X-rated, sensitive or derogatory is not in the files a lookup fetches unless the host says `forChildren: false`, and a word with nothing else to say is not found. The text is in a file of its own that is fetched only then.
 
 ```ts
 import { loadWords, meaningOf } from "@johnmorrisdotca/moji/words";
 
 const words = await loadWords("ほもびでお");
-console.log(meaningOf(words, "ほもびでお")); // null
-console.log(meaningOf(words, "ほもびでお", { forChildren: false })); // gay porn video, gay pornographic video
+console.log(meaningOf(words, "ほもびでお")); // null: nothing was fetched that says otherwise
+
+const everything = await loadWords("ほもびでお", { forChildren: false });
+console.log(meaningOf(everything, "ほもびでお")); // gay porn video, gay pornographic video
 ```
 
 ### Add to what is loaded
@@ -350,7 +352,7 @@ console.log([...alike, ...fillers].slice(0, 3));
 
 ### The words
 
-JMdict's English dictionary, one row for each reading of each entry that has an English meaning: 265,951 rows, 26,061 of them common. A row has the reading, the written forms that go with it (the commonest first), a meaning, the kinds of word it is, and where a sense is not for children, the meaning without it.
+JMdict's English dictionary, one row for each reading of each entry that has an English meaning: 265,951 rows. 265,104 rows are fit for children, with only the senses that are and only the written forms that go with them, and 26,039 of those are common. A row has the reading, the written forms that go with it (the commonest first), a meaning, and the kinds of word it is.
 
 | Field of a `Word` | What it is |
 | --- | --- |
@@ -361,7 +363,9 @@ JMdict's English dictionary, one row for each reading of each entry that has an 
 | `kinds` | Letters: g godan, i ichidan, a i-adjective, s suru, k kuru |
 | `common` | Whether JMdict marks it common: `news1`, `ichi1`, `spec1`, `spec2` or `gai1` on a form or reading |
 
-From JMdict of 2026-11-02. The rows are cut into 255 pieces by reading and 71 of an index from each written form to its readings. A piece is at most about 100 kB and a lookup fetches the one or two it needs, about 25 kB gzipped each. The common words are one table, `words-common`, of about 640 kB gzipped.
+From JMdict of 2026-11-02. The rows fit for children are cut into 254 pieces by reading and 71 of an index from each written form to its readings. A piece is at most about 100 kB and a lookup fetches the one or two it needs, about 25 kB gzipped each. The common words are one table, `words-common`, of about 640 kB gzipped.
+
+What is left out of those is in files of their own: 847 rows of words of which every sense is marked, the marked senses, and the written forms and readings that only such a sense applies to. It is one file, `extra.data`, of about 90 kB gzipped, and a small one for the common words, `words-common-extra`. `loadWords(…, { forChildren: false })` fetches them, once; a lookup for children never does.
 
 A guess in kana finds a word whichever kana it is typed in, and the table reaches every kana reading of 3, 4 and 5 kana that Kotoba's Gomoji lists take as a guess, so a player can be shown what each one means. A reading JMdict marks irregular or outdated is kept so that this holds, behind the regular ones, and is never called common.
 
@@ -425,7 +429,8 @@ The [API reference](https://johnmorrisdotca.github.io/moji/api.html) lists every
 | `@johnmorrisdotca/moji/kanji` | `KANJI`: the table, read with `readKanji` |
 | `@johnmorrisdotca/moji/look-alike` | `LOOK_ALIKE`: the pairs, read with `lookAlikes` |
 | `@johnmorrisdotca/moji/words` | `loadWords`, `loadCommonWords` and `wordsOf`: the words, in pieces fetched as needed |
-| `@johnmorrisdotca/moji/words-common` | `COMMON_WORDS`: the 26,061 common words, read with `readCommonWords` |
+| `@johnmorrisdotca/moji/words-common` | `COMMON_WORDS`: the 26,039 common words fit for children, read with `readCommonWords` |
+| `@johnmorrisdotca/moji/words-common-extra` | `COMMON_EXTRA`: what to add to them to have every common word, for a host that asks for everything |
 
 ### The calls to learn first
 
@@ -438,7 +443,7 @@ The [API reference](https://johnmorrisdotca.github.io/moji/api.html) lists every
 | `lookAlikes(LOOK_ALIKE, kanji, { atLeast, max })` | The kanji most like one kanji |
 | `kanjiIn(text)` | The kanji in a piece of text, once each |
 | `loadWords(texts, { forChildren, previous })` | Fetches what JMdict holds for the texts, and nothing else |
-| `wordsOf(words, text, { forChildren })`, `meaningOf(words, text)` | The words for a reading or a written form, commonest first, and the meaning of the first or null |
+| `wordsOf(words, text)`, `meaningOf(words, text)` | The words for a reading or a written form, commonest first, and the meaning of the first or null |
 | `loadCommonWords()` | The common words in one table, for many lookups |
 
 ## Theming
@@ -448,7 +453,7 @@ The package draws nothing, so there is nothing of its own to theme: it hands bac
 ## Limits
 
 - Meanings are English only, from JMdict_e, and short: two senses at most, cut at about 60 characters. They are a gloss to show beside a word, not JMdict's whole entry.
-- `forChildren` decides what the functions say. The text of the senses it leaves out is still in the data files, which anybody who fetches a piece can read, and a sense JMdict has not marked is not left out: the marks are JMdict's and are not complete.
+- What is not for children is kept out of the files a default lookup fetches, so it never reaches a browser that did not ask for it. It is still in the package (`extra.data` and `common-extra.data`), so anybody who installs it or asks for those files can read it. A sense JMdict has not marked is not left out: the marks are JMdict's and are not complete.
 - A lookup is exact: no inflected form (食べた finds nothing, 食べる does), no search by meaning and no romaji.
 - The dictionary is about 30 MB in all. A server that bundles `words` carries it; see [Look words up](https://johnmorrisdotca.github.io/moji/docs/guides/words.html).
 - 2,999 kanji: those with a school grade in KANJIDIC2. Rarer kanji have no row.

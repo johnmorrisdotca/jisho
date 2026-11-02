@@ -91,10 +91,15 @@ export function entriesOf(xml) {
 }
 
 /**
- * The rows of one entry: one for each reading it has, a reading JMdict calls irregular or outdated last. Each is an object with the reading, the written forms that go with it (best
- * first, none for a word with no kanji), the meaning, the kinds of word, whether JMdict calls it common, whether it is usually
- * written in kana (by its first sense), the rank, and `kids`: the meaning with the senses that are not for children left out, or
- * undefined when that is the same text.
+ * The rows of one entry: one for each reading it has, a reading JMdict calls irregular or outdated last. Each is an object with the
+ * reading, the written forms that go with it (best first, none for a word with no kanji), the meaning, the kinds of word, whether
+ * JMdict calls it common, whether it is usually written in kana (by its first sense), the rank, and `clean`: what is left of the
+ * row when what is not for children is taken out, or null when nothing is.
+ *
+ * A sense JMdict marks vulgar, X-rated, sensitive or derogatory is not for children. `clean` has the meaning of the senses that are,
+ * and the written forms that some such sense applies to (a sense JMdict limits to some forms, with `stagk`, does not carry the
+ * others); it is null for a reading that no such sense applies to (limited with `stagr`), and for a word of which every sense is
+ * marked. The row itself is everything, as JMdict has it.
  *
  * @returns The rows, or none for an entry with no reading or no meaning.
  */
@@ -123,14 +128,12 @@ export function rowsOfEntry(entry) {
     unfit: tags(body, "misc").some((one) => NOT_FOR_CHILDREN.test(code(one))),
     pos: tags(body, "pos").map(code),
     usuallyKana: tags(body, "misc").some((one) => code(one) === "uk"),
+    onlyForms: tags(body, "stagk").map(decode),
+    onlyReadings: tags(body, "stagr").map(decode),
   }));
   if (senses.length === 0) return [];
   const meaning = meaningOf(senses.map((sense) => sense.glosses));
   if (meaning === "") return [];
-  const fit = senses.filter((sense) => !sense.unfit);
-  const forChildren = meaningOf(fit.map((sense) => sense.glosses));
-  // Where the senses left out were not among the ones the meaning shows, the two are the same text and one is kept.
-  const kids = forChildren === meaning ? undefined : forChildren;
 
   const priorities = [
     ...forms.flatMap((form) => form.priorities),
@@ -147,21 +150,37 @@ export function rowsOfEntry(entry) {
     ...forms.filter((form) => form.priorities.length === 0),
   ];
 
-  return readings.map((reading) => ({
-    reading: reading.text,
-    forms: reading.noKanji
+  return readings.map((reading) => {
+    const written = reading.noKanji
       ? []
       : ordered
           .filter((form) => reading.only.length === 0 || reading.only.includes(form.text))
-          .map((form) => form.text),
-    meaning,
-    kids,
-    kinds,
-    // An irregular reading is never a common one, and comes after the regular ones that share it.
-    common: taggedCommon && !reading.irregular,
-    usuallyKana,
-    rank: reading.irregular ? UNRANKED + 1 : rank,
-  }));
+          .map((form) => form.text);
+    const fit = senses.filter(
+      (sense) => !sense.unfit && (sense.onlyReadings.length === 0 || sense.onlyReadings.includes(reading.text)),
+    );
+    const fitMeaning = meaningOf(fit.map((sense) => sense.glosses));
+    const clean =
+      fitMeaning === ""
+        ? null
+        : {
+            forms: written.filter((form) =>
+              fit.some((sense) => sense.onlyForms.length === 0 || sense.onlyForms.includes(form)),
+            ),
+            meaning: fitMeaning,
+          };
+    return {
+      reading: reading.text,
+      forms: written,
+      meaning,
+      clean,
+      kinds,
+      // An irregular reading is never a common one, and comes after the regular ones that share it.
+      common: taggedCommon && !reading.irregular,
+      usuallyKana,
+      rank: reading.irregular ? UNRANKED + 1 : rank,
+    };
+  });
 }
 
 /** Every row of a JMdict file, the commonest first and in the dictionary's order among equals. */
@@ -178,14 +197,16 @@ export function foldKana(text) {
 const FIELD_BREAK = /[\t\n]/;
 const LIST_BREAK = /[\t\n|]/;
 
-/** A row as one line: reading, forms joined by "|", meaning, flags and, when some sense was left out, the meaning for children. */
+/** A row as one line: reading, forms joined by "|", meaning, flags. */
 export function packRow(row) {
   const flags = `${row.kinds}${row.common ? "C" : ""}${row.usuallyKana ? "U" : ""}`;
   for (const part of [row.reading, ...row.forms])
     if (LIST_BREAK.test(part)) throw new Error(`A separator in the row for ${row.reading}: ${part}`);
-  for (const part of [row.meaning, row.kids ?? ""])
-    if (FIELD_BREAK.test(part)) throw new Error(`A separator in the row for ${row.reading}: ${part}`);
-  const fields = [row.reading, row.forms.join("|"), row.meaning, flags];
-  if (row.kids !== undefined) fields.push(row.kids);
-  return fields.join("\t");
+  if (FIELD_BREAK.test(row.meaning)) throw new Error(`A separator in the row for ${row.reading}: ${row.meaning}`);
+  return [row.reading, row.forms.join("|"), row.meaning, flags].join("\t");
+}
+
+/** The line of what is left of a row for children, or null when nothing is: the same line as `packRow` where nothing was taken out. */
+export function packClean(row) {
+  return row.clean === null ? null : packRow({ ...row, ...row.clean });
 }

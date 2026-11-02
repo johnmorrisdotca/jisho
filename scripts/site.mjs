@@ -75,7 +75,7 @@ const page = `<!doctype html>
           <span class="fam-label" id="examples-label" data-say="wordExamples"></span>
           <div class="moji-examples" id="examples" role="group" aria-labelledby="examples-label" data-testid="examples" lang="ja"></div>
         </div>
-        <div class="fam-row" data-help-en="For children leaves out the senses JMdict marks vulgar, X-rated, sensitive or derogatory." data-help-ja="「子ども向け」では、JMdictが下品、性的、配慮が必要、侮辱的と記している語義を除きます。">
+        <div class="fam-row" data-help-en="For children, nothing JMdict marks vulgar, X-rated, sensitive or derogatory is fetched or shown. Everything fetches one more file and shows it." data-help-ja="「子ども向け」では、JMdictが下品、性的、配慮が必要、侮辱的と記しているものを、取得も表示もしません。「すべて」では、ファイルをもう一つ取得して、それも表示します。">
           <span class="fam-label" id="audience-label" data-say="audienceLabel"></span>
           <div class="fam-seg" id="audience" role="group" aria-labelledby="audience-label" data-testid="audience"></div>
         </div>

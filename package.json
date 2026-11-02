@@ -1,7 +1,7 @@
 {
   "name": "@johnmorrisdotca/moji",
   "version": "0.1.1",
-  "description": "Moji 文字 — Japanese word and kanji data for JavaScript: the words of JMdict looked up by reading or written form, in small pieces fetched as needed, with the senses not for children left out; and the school grades, JLPT levels, readings, meanings and look-alike pairs of 2,999 kanji. Typed. Zero dependencies.",
+  "description": "Moji 文字 — Japanese word and kanji data for JavaScript: the words of JMdict looked up by reading or written form, in small pieces fetched as needed, with everything not for children kept in files of their own that are never fetched unless asked for; and the school grades, JLPT levels, readings, meanings and look-alike pairs of 2,999 kanji. Typed. Zero dependencies.",
   "keywords": [
     "child-safe",
     "cjk",
@@ -91,6 +91,11 @@
       "types": "./dist/data/words/common.data.d.ts",
       "import": "./dist/data/words/common.data.js",
       "default": "./dist/data/words/common.data.js"
+    },
+    "./words-common-extra": {
+      "types": "./dist/data/words/common-extra.data.d.ts",
+      "import": "./dist/data/words/common-extra.data.js",
+      "default": "./dist/data/words/common-extra.data.js"
     }
   },
   "files": [

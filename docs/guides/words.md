@@ -44,29 +44,33 @@ console.log(wordsOf(second,"かみ").length>0,wordsOf(second,"いぬ").length>0)
 
 ## Children play here
 
-Every sense JMdict marks vulgar, X-rated, sensitive or derogatory is left out of what a lookup says, unless you ask for it. This is the default, so a host that shows words to people of any age gets the stricter answer without doing anything. If nothing fit is left, the word has nothing to say and is not in the answer.
+By default nothing that is not for children is fetched, and none of it is in what comes back. Every sense JMdict marks vulgar, X-rated, sensitive or derogatory, every written form or reading that only such a sense applies to, and every word of which each sense is marked, is not in the files a lookup fetches. A word with nothing left to say is not found: `wordsOf` gives an empty list and `meaningOf` gives `null`, as for a word JMdict does not have. A host that shows words to people of any age gets the stricter answer without doing anything.
 
 ```ts
 import {loadWords,wordsOf} from "@johnmorrisdotca/moji/words";
 const words=await loadWords("ほもびでお");
 console.log(wordsOf(words,"ほもびでお"));
-console.log(wordsOf(words,"ほもびでお",{forChildren:false}).map((one)=>one.meaning));
+const everything=await loadWords("ほもびでお",{forChildren:false});
+console.log(wordsOf(everything,"ほもびでお").map((one)=>one.meaning));
 ```
 
-Pass `{ forChildren: false }` to `loadWords` or to a single `wordsOf` for a learner who is an adult and wants what JMdict says. The marks are the same ones [Kotoba](https://github.com/johnmorrisdotca/kotoba) uses to keep what is not for everyone out of its word lists.
+Pass `{ forChildren: false }` to `loadWords` for a learner who is an adult and wants what JMdict says. That fetches one more file, once, `extra.data`, about 90 kB gzipped, which holds all that was left out, and the words you get are everything JMdict has: the same answers as if nothing had been left out. Words for children and words for everything cannot be added together, so `previous` must be for the same people as the new call.
 
-The option decides what this package's functions say. The text of the left-out senses is still in the data files, so a person who reads the files can read it.
+The marks are the same ones [Kotoba](https://github.com/johnmorrisdotca/kotoba) uses to keep what is not for everyone out of its word lists. They are JMdict's own and are not complete: a sense JMdict has not marked is in the files for children.
+
+The files that hold what was left out, `extra.data` and `common-extra.data`, are in the package and public like the rest of the data. Keeping them out of what a lookup fetches means a browser that did not ask for them never gets them; it does not hide the text from anybody who installs the package or requests the files.
 
 ## Which table, and how big
 
 | You want | Use | What is fetched |
 | --- | --- | --- |
 | The meaning of a guess, a word you meet, a few words | `loadWords` | One piece of about 25 kB gzipped for a reading; for a written form, one piece of about 30 kB for the index and then one of about 25 kB for the rows |
+| The same for everything JMdict says | `loadWords(…, { forChildren: false })` | The same, and once one file more of about 90 kB gzipped |
 | Many words, all common ones | `loadCommonWords`, or `readCommonWords(COMMON_WORDS)` with `words-common` | One table of about 640 kB gzipped; a lookup then waits for nothing |
 
-The dictionary is 255 pieces of rows, cut by reading, and 71 pieces of an index from each written form to its readings, cut by form. `words` holds where each piece starts, and a lookup finds its piece by comparing the text with those starts. No piece is more than about 100 kB, and none is fetched until a lookup needs it.
+The dictionary is 254 pieces of rows, cut by reading, and 71 pieces of an index from each written form to its readings, cut by form. `words` holds where each piece starts, and a lookup finds its piece by comparing the text with those starts. No piece is more than about 100 kB, and none is fetched until a lookup needs it.
 
-The common table holds the 26,061 words JMdict marks common (a form or reading in `news1`, `ichi1`, `spec1`, `spec2` or `gai1`). It answers for any text, and answers only with common words: a reading shared with a rare word finds the common ones alone. `scope` on the words says which kind you have.
+The common table holds the 26,039 words JMdict marks common that are fit for children (a form or reading in `news1`, `ichi1`, `spec1`, `spec2` or `gai1`). It answers for any text, and answers only with common words: a reading shared with a rare word finds the common ones alone. `scope` on the words says which kind you have. For everything, `loadCommonWords({ forChildren: false })` fetches `common-extra.data` too, about 10 kB gzipped, which says what to add and change; with `readCommonWords` you pass it yourself as `extra`.
 
 ## In a browser
 
@@ -88,6 +92,6 @@ A server keeps the pieces it has read in memory, so a second lookup in the same 
 
 ## How the words are made
 
-`pnpm words` (`scripts/build-words.mjs`) writes `src/data/words/` from JMdict_e, and a workflow runs it on the 1st of every month, as the EDRDG asks. A row is one reading of one entry, with the written forms that go with it, a meaning of up to two senses cut at a whole gloss inside about 60 characters, flags, and the meaning for children where it differs. [Where the data comes from](data-sources.md) has the licence.
+`pnpm words` (`scripts/build-words.mjs`) writes `src/data/words/` from JMdict_e, and a workflow runs it on the 1st of every month, as the EDRDG asks. A row is one reading of one entry, with the written forms that go with it, a meaning of up to two senses cut at a whole gloss inside about 60 characters, and flags. The pieces hold the rows as they are for children, and `extra.data` the whole answer, as JMdict has it, for every reading and written form where that is not the same. [Where the data comes from](data-sources.md) has the licence.
 
 An entry is a row for each reading it has. The meaning shows the plain gloss of a sense first, and a literal rendering, an explanation or a bracketed note behind it. A reading JMdict marks irregular or outdated is kept, so that any kana a game takes as a guess has a meaning, but it comes after the regular readings and is never called common.

@@ -8,12 +8,14 @@ import {
   glossesOf,
   kindLetters,
   meaningOf,
+  packClean,
   packRow,
   rankOf,
   releaseOf,
   rowsOfDictionary,
   rowsOfEntry,
 } from "../scripts/words-parse.mjs";
+import { patched, tablesOf } from "../scripts/words-tables.mjs";
 
 const entry = (body) => `\n<ent_seq>1</ent_seq>\n${body}\n`;
 const sense = (pos, misc, glosses) =>
@@ -137,38 +139,104 @@ describe("what is not for children", () => {
     );
 
   for (const mark of ["vulg", "X", "sens", "derog"]) {
-    it(`leaves out a sense marked ${mark}, and keeps the meaning for adults whole`, () => {
+    it(`leaves out a sense marked ${mark} from what is for children, and keeps the whole for everything`, () => {
       const [row] = rows([mark]);
       expect(row?.meaning).toBe("polite word; rude word");
-      expect(row?.kids).toBe("polite word; another");
+      expect(row?.clean?.meaning).toBe("polite word; another");
     });
   }
 
   it("keeps a sense with any other mark", () => {
-    expect(rows(["col"])[0]?.kids).toBeUndefined();
+    const [row] = rows(["col"]);
+    expect(row?.clean?.meaning).toBe(row?.meaning);
+    expect(packClean(row ?? {})).toBe(packRow(row ?? {}));
   });
 
-  it("leaves nothing when every sense is marked, and says so with an empty text and not with a missing one", () => {
+  it("has no row for children when every sense is marked", () => {
     const [row] = rowsOfEntry(
       entry(`<r_ele><reb>ホモビデオ</reb></r_ele>${sense(["n"], ["sens"], ["gay porn video"])}`),
     );
-    expect(row?.kids).toBe("");
-    expect(packRow(row ?? {})).toBe("ホモビデオ\t\tgay porn video\t\t");
+    expect(row?.clean).toBeNull();
+    expect(packClean(row ?? {})).toBeNull();
+    expect(packRow(row ?? {})).toBe("ホモビデオ\t\tgay porn video\t");
   });
 
-  it("is the same text where the sense left out was past the ones the meaning shows", () => {
-    const [row] = rowsOfEntry(
+  it("leaves out a written form that only a marked sense applies to, and a reading that only one does", () => {
+    const [first, second] = rowsOfEntry(
       entry(
-        `<r_ele><reb>い</reb></r_ele>${sense(["n"], [], ["a"])}${sense(["n"], [], ["b"])}${sense(["n"], ["derog"], ["c"])}`,
+        `<k_ele><keb>抜かす</keb></k_ele><k_ele><keb>吐かす</keb></k_ele><r_ele><reb>ぬかす</reb></r_ele><r_ele><reb>ぬかせ</reb></r_ele>` +
+          `<sense><pos>&v5s;</pos><stagk>抜かす</stagk><gloss>to omit</gloss></sense>` +
+          `<sense><pos>&v5s;</pos><stagk>吐かす</stagk><stagr>ぬかせ</stagr><misc>&vulg;</misc><gloss>to speak</gloss></sense>`,
       ),
     );
-    expect(row?.meaning).toBe("a; b");
-    expect(row?.kids).toBeUndefined();
+    expect(first?.forms).toEqual(["抜かす", "吐かす"]);
+    expect(first?.clean).toEqual({ forms: ["抜かす"], meaning: "to omit" });
+    expect(second?.clean).toEqual({ forms: ["抜かす"], meaning: "to omit" });
+    const [only] = rowsOfEntry(
+      entry(
+        `<r_ele><reb>あ</reb></r_ele><r_ele><reb>い</reb></r_ele><sense><stagr>あ</stagr><gloss>plain</gloss></sense><sense><stagr>い</stagr><misc>&derog;</misc><gloss>rude</gloss></sense>`,
+      ),
+    );
+    expect(only?.clean?.meaning).toBe("plain");
+    const second2 = rowsOfEntry(
+      entry(
+        `<r_ele><reb>あ</reb></r_ele><r_ele><reb>い</reb></r_ele><sense><stagr>あ</stagr><gloss>plain</gloss></sense><sense><stagr>い</stagr><misc>&derog;</misc><gloss>rude</gloss></sense>`,
+      ),
+    )[1];
+    expect(second2?.clean).toBeNull();
+  });
+});
+
+describe("the tables", () => {
+  const dictionary = [
+    entry(
+      `<k_ele><keb>紙</keb><ke_pri>ichi1</ke_pri></k_ele><r_ele><reb>かみ</reb></r_ele>${sense(["n"], [], ["paper"])}`,
+    ),
+    entry(
+      `<r_ele><reb>ホモビデオ</reb></r_ele><r_ele><reb>ホモ・ビデオ</reb></r_ele>${sense(["n"], ["sens"], ["rude video"])}`,
+    ),
+    entry(
+      `<k_ele><keb>外人</keb><ke_pri>ichi1</ke_pri></k_ele><r_ele><reb>がいじん</reb></r_ele>${sense(["n"], ["sens"], ["foreigner"])}${sense(["n"], [], ["outsider"])}`,
+    ),
+  ]
+    .map((one) => `<entry>${one}`)
+    .join("");
+  const rows = rowsOfDictionary(dictionary);
+  const tables = tablesOf(rows);
+
+  it("hold nothing in the default tables that is not for children: the word, its readings, its forms and its sense", () => {
+    const text = JSON.stringify([tables.common, tables.readings, tables.forms]);
+    for (const left of ["ホモビデオ", "ほもびでお", "ホモ・ビデオ", "rude video", "foreigner"])
+      expect(text, left).not.toContain(left);
+    for (const kept of ["かみ", "paper", "outsider", "外人"]) expect(text, kept).toContain(kept);
+    expect(tables.counts).toMatchObject({ rows: 4, cleanRows: 2 });
+  });
+
+  it("hold what was left out whole in the extra ones, for the keys whose answer is not the same", () => {
+    expect(tables.extraReadings.map(([key]) => key)).toEqual(["がいじん", "ほもびでお", "ほも・びでお"]);
+    expect(tables.extraReadings.map(([, line]) => line).join("\n")).toContain("foreigner; outsider");
+    expect(tables.extraForms).toEqual([]);
+    expect(tables.extraReadings.some(([key]) => key === "かみ")).toBe(false);
+  });
+
+  it("have a patch that turns the common words for children back into every common word", () => {
+    expect(tables.common).toHaveLength(2);
+    expect(tables.commonPatch).toHaveLength(1);
+    const every = rows.filter((row) => row.common).map((row) => packRow(row));
+    expect(patched(tables.common, tables.commonPatch)).toEqual(every);
+    expect(every).toHaveLength(2);
+  });
+
+  it("are the same in every order of the dictionary: a patch inserts and replaces at the right places", () => {
+    const lines = ["a", "b", "c", "d"];
+    const patch = ["0\ti\tx", "2\tr\tB", "4\ti\ty"];
+    expect(patched(lines, patch)).toEqual(["x", "a", "B", "c", "y", "d"]);
+    expect(patched(lines, [])).toEqual(lines);
   });
 });
 
 describe("the stored row", () => {
-  it("is tab-apart fields: reading, forms, meaning, flags, and the meaning for children only where it differs", () => {
+  it("is tab-apart fields: reading, forms, meaning and flags", () => {
     const [row] = rowsOfEntry(
       entry(
         `<k_ele><keb>紙</keb><ke_pri>ichi1</ke_pri></k_ele><r_ele><reb>かみ</reb></r_ele>${sense(["n"], [], ["paper"])}`,

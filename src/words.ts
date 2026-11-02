@@ -8,8 +8,7 @@ import { MANIFEST } from "./data/words/manifest.data.ts";
 
 /**
  * A table of words as an entry point exports it: where it was made from, the JMdict release, and one string a row. A row is the
- * reading, the written forms joined by "|", the meaning, flags and, where a sense is not for children, the meaning without it,
- * apart by tabs.
+ * reading, the written forms joined by "|", the meaning and flags, apart by tabs.
  *
  * @example
  * ```ts
@@ -26,6 +25,47 @@ export type PackedWords = {
   readonly release: string;
   /** One string a row. */
   readonly rows: readonly string[];
+};
+
+/**
+ * What to do to the common words to have every one as JMdict has it, with what is not for children in it: each edit is a position,
+ * then "r" to replace the row there or "i" to insert one before it, then the row, apart by tabs.
+ *
+ * @example
+ * ```ts
+ * import type { PackedPatch } from "@johnmorrisdotca/moji/words";
+ *
+ * const patch: PackedPatch = { source: "JMdict", release: "2026-11-02", edits: ["0\ti\tあ\t\tah\tC"] };
+ * console.log(patch.edits.length);
+ * ```
+ */
+export type PackedPatch = {
+  readonly source: string;
+  readonly release: string;
+  readonly edits: readonly string[];
+};
+
+/**
+ * Everything the pieces leave out, for a host that asks for everything: for each key whose answer is not the same for everything as
+ * for children, the whole answer as JMdict has it. Fetched only then.
+ *
+ * @example
+ * ```ts
+ * import type { WordsExtra } from "@johnmorrisdotca/moji/words";
+ *
+ * const extra: WordsExtra = { source: "JMdict", release: "2026-11-02", rowCount: 0, rows: [], forms: [] };
+ * console.log(extra.rowCount);
+ * ```
+ */
+export type WordsExtra = {
+  readonly source: string;
+  readonly release: string;
+  /** How many rows the dictionary has in all, with the ones for children. */
+  readonly rowCount: number;
+  /** Rows, as in a piece. */
+  readonly rows: readonly string[];
+  /** Written forms, as in a piece of the index. */
+  readonly forms: readonly string[];
 };
 
 /**
@@ -75,7 +115,7 @@ export type PieceSet = {
 export type WordsManifest = {
   readonly source: string;
   readonly release: string;
-  /** How many rows the dictionary has in all. */
+  /** How many rows the pieces hold, which are the ones fit for children. */
   readonly rowCount: number;
   /** The rows, cut by reading folded to hiragana. */
   readonly readings: PieceSet;
@@ -110,7 +150,7 @@ export type Word = {
 };
 
 /**
- * A row read from a table, with the meaning for children kept beside the meaning. Read it with `wordsOf`.
+ * A row read from a table. Read it with `wordsOf`.
  *
  * @example
  * ```ts
@@ -123,8 +163,6 @@ export type WordRow = {
   readonly reading: string;
   readonly forms: readonly string[];
   readonly meaning: string;
-  /** The meaning with the senses that are not for children left out; "" when none is left; undefined when it is the same text. */
-  readonly kids: string | undefined;
   readonly kinds: string;
   readonly common: boolean;
   readonly usuallyKana: boolean;
@@ -146,14 +184,14 @@ export type Words = {
   readonly release: string;
   /** "all" when each text asked for has every word JMdict holds for it; "common" when the table is the common words alone. */
   readonly scope: "all" | "common";
-  /** Whether a lookup leaves out the senses that are not for children, unless the call says otherwise. */
+  /** What they were loaded for: true when nothing that is not for children was fetched, and none is in them. */
   readonly forChildren: boolean;
   /** The rows found for each text, by the key `wordsOf` makes of it. Read it with `wordsOf`. */
   readonly entries: ReadonlyMap<string, readonly WordRow[]>;
 };
 
 /**
- * How a lookup treats what is not for children.
+ * Who the words are for.
  *
  * @example
  * ```ts
@@ -165,8 +203,9 @@ export type Words = {
  */
 export type WordsOptions = {
   /**
-   * Leave out every sense JMdict marks vulgar, X-rated, sensitive or derogatory, and a word with nothing else to say. True unless
-   * you say false: a host that shows words to people of any age gets the stricter answer without asking for it.
+   * True unless you say false: nothing that is not for children is fetched or said. Every sense JMdict marks vulgar, X-rated,
+   * sensitive or derogatory, and every written form or reading only such a sense applies to, is in files of their own that are not
+   * fetched, and a word with nothing else to say is not found. False fetches those files too and gives everything JMdict has.
    */
   readonly forChildren?: boolean;
 };
@@ -183,7 +222,7 @@ export type WordsOptions = {
  * ```
  */
 export type LoadWordsOptions = WordsOptions & {
-  /** Words loaded before: what they hold is kept, and pieces they came from are not fetched again. */
+  /** Words loaded before, for the same people: what they hold is kept, and pieces they came from are not fetched again. */
   readonly previous?: Words;
 };
 
@@ -228,20 +267,16 @@ function keyOf(text: string): string {
  * ```
  */
 export function readRow(line: string): WordRow {
-  const [reading = "", forms = "", meaning = "", flags = "", kids] = line.split("\t");
+  const [reading = "", forms = "", meaning = "", flags = ""] = line.split("\t");
   return {
     reading,
     forms: forms === "" ? [] : forms.split("|"),
     meaning,
-    kids,
     kinds: flags.replace(/[CU]/g, ""),
     common: flags.includes("C"),
     usuallyKana: flags.includes("U"),
   };
 }
-
-/** The reading a stored line starts with, without reading the rest of it. */
-const readingOfLine = (line: string): string => line.slice(0, line.indexOf("\t"));
 
 /** The way to show a row's word when nobody asked for a particular form. */
 function shown(row: WordRow): string {
@@ -257,8 +292,8 @@ function shown(row: WordRow): string {
  *
  * @param words - What `loadWords` or `loadCommonWords` gave back.
  * @param text - A reading or a written form that was loaded.
- * @param options - `forChildren` to override what the words were loaded with.
- * @returns The words, none when the dictionary (or, for the common words, the common table) holds none or nothing fit to show.
+ * @returns The words, none when the dictionary (or, for the common words, the common table) holds none, or none that the words
+ *   were loaded for.
  * @example
  * ```ts
  * import { loadWords, wordsOf } from "@johnmorrisdotca/moji/words";
@@ -267,38 +302,30 @@ function shown(row: WordRow): string {
  * console.log(wordsOf(words, "かみ").slice(0, 3).map((one) => `${one.written} ${one.meaning}`));
  * ```
  */
-export function wordsOf(words: Words, text: string, options: WordsOptions = {}): Word[] {
+export function wordsOf(words: Words, text: string): Word[] {
   const key = keyOf(text);
   const rows = words.entries.get(key);
   if (rows === undefined) {
     if (words.scope === "common") return [];
     throw new RangeError(`"${text}" was not loaded: ask loadWords for it before wordsOf.`);
   }
-  const children = options.forChildren ?? words.forChildren;
   const asked = !isKana(text);
-  return rows.flatMap((row) => {
-    const meaning = children ? (row.kids ?? row.meaning) : row.meaning;
-    if (meaning === "") return [];
-    return [
-      {
-        written: asked ? text : shown(row),
-        reading: row.reading,
-        forms: row.forms,
-        meaning,
-        kinds: row.kinds,
-        common: row.common,
-      },
-    ];
-  });
+  return rows.map((row) => ({
+    written: asked ? text : shown(row),
+    reading: row.reading,
+    forms: row.forms,
+    meaning: row.meaning,
+    kinds: row.kinds,
+    common: row.common,
+  }));
 }
 
 /**
- * The meaning of the commonest word a text has, or null: a text with no word, or none fit to show, has no meaning, and the answer
- * is never a placeholder.
+ * The meaning of the commonest word a text has, or null: a text with no word, or none for the people the words were loaded for,
+ * has no meaning, and the answer is never a placeholder.
  *
  * @param words - What `loadWords` or `loadCommonWords` gave back.
  * @param text - A reading or a written form that was loaded.
- * @param options - `forChildren` to override what the words were loaded with.
  * @returns The meaning, or null.
  * @example
  * ```ts
@@ -307,8 +334,8 @@ export function wordsOf(words: Words, text: string, options: WordsOptions = {}):
  * console.log(meaningOf(await loadWords(["紙"]), "紙")); // paper
  * ```
  */
-export function meaningOf(words: Words, text: string, options: WordsOptions = {}): string | null {
-  return wordsOf(words, text, options)[0]?.meaning ?? null;
+export function meaningOf(words: Words, text: string): string | null {
+  return wordsOf(words, text)[0]?.meaning ?? null;
 }
 
 /**
@@ -332,7 +359,6 @@ export function isLoaded(words: Words, text: string): boolean {
  * Every word that has been loaded, once each, the commonest first for the common table. For a search that reads the meanings too.
  *
  * @param words - What `loadWords` or `loadCommonWords` gave back.
- * @param options - `forChildren` to override what the words were loaded with.
  * @returns The words.
  * @example
  * ```ts
@@ -341,24 +367,43 @@ export function isLoaded(words: Words, text: string): boolean {
  * console.log(allWords(await loadCommonWords()).length); // about 26,000
  * ```
  */
-export function allWords(words: Words, options: WordsOptions = {}): Word[] {
-  const children = options.forChildren ?? words.forChildren;
+export function allWords(words: Words): Word[] {
   const seen = new Set<WordRow>();
   const out: Word[] = [];
   for (const rows of words.entries.values()) {
     for (const row of rows) {
       if (seen.has(row)) continue;
       seen.add(row);
-      const meaning = children ? (row.kids ?? row.meaning) : row.meaning;
-      if (meaning === "") continue;
       out.push({
         written: shown(row),
         reading: row.reading,
         forms: row.forms,
-        meaning,
+        meaning: row.meaning,
         kinds: row.kinds,
         common: row.common,
       });
+    }
+  }
+  return out;
+}
+
+/** The rows of the common words once a patch has been laid over them: every row as JMdict has it. */
+function patchedRows(rows: readonly string[], patch: PackedPatch): string[] {
+  const edits = new Map(
+    patch.edits.map((edit) => {
+      const [at = "", kind = "", ...line] = edit.split("\t");
+      return [Number(at), { kind, line: line.join("\t") }] as const;
+    }),
+  );
+  const inserted = [...edits.values()].filter((edit) => edit.kind === "i").length;
+  const out: string[] = [];
+  let from = 0;
+  for (let at = 0; at < rows.length + inserted; at++) {
+    const edit = edits.get(at);
+    if (edit === undefined) out.push(rows[from++] ?? "");
+    else {
+      out.push(edit.line);
+      if (edit.kind === "r") from++;
     }
   }
   return out;
@@ -368,8 +413,11 @@ export function allWords(words: Words, options: WordsOptions = {}): Word[] {
  * The common words as a table the caller already has, read into words: a lookup by reading or written form with no waiting.
  * Only the common words are in it, so a reading shared with a rare word finds the common ones alone.
  *
+ * The table holds only what is fit for children. To have everything, pass `forChildren: false` and `extra`, the table that says
+ * what to add and change (`COMMON_EXTRA`, from `@johnmorrisdotca/moji/words-common-extra`); without it that is a mistake and throws.
+ *
  * @param table - `COMMON_WORDS`, from `@johnmorrisdotca/moji/words-common`.
- * @param options - `forChildren`, true unless you say false.
+ * @param options - `forChildren`, true unless you say false, and for false the `extra` table.
  * @returns The words, ready for `wordsOf`.
  * @example
  * ```ts
@@ -379,24 +427,32 @@ export function allWords(words: Words, options: WordsOptions = {}): Word[] {
  * console.log(wordsOf(readCommonWords(COMMON_WORDS), "紙")[0]?.meaning); // paper
  * ```
  */
-export function readCommonWords(table: PackedWords, options: WordsOptions = {}): Words {
+export function readCommonWords(
+  table: PackedWords,
+  options: WordsOptions & { readonly extra?: PackedPatch } = {},
+): Words {
+  const forChildren = options.forChildren ?? true;
+  if (!forChildren && options.extra === undefined)
+    throw new TypeError("Everything needs the table of what to add: pass extra, COMMON_EXTRA from words-common-extra.");
+  const lines = forChildren || options.extra === undefined ? table.rows : patchedRows(table.rows, options.extra);
   const entries = new Map<string, WordRow[]>();
   const add = (key: string, row: WordRow) => {
     const held = entries.get(key);
     if (held === undefined) entries.set(key, [row]);
     else if (!held.includes(row)) held.push(row);
   };
-  for (const line of table.rows) {
+  for (const line of lines) {
     const row = readRow(line);
     add(foldKana(row.reading), row);
     for (const form of row.forms) add(form, row);
   }
-  return { release: table.release, scope: "common", forChildren: options.forChildren ?? true, entries };
+  return { release: table.release, scope: "common", forChildren, entries };
 }
 
 /**
  * The common words, fetched in one piece: about 26,000 rows and some 600 kB gzipped, for a page that looks up many words, all of
- * them common. Anything else is `loadWords`.
+ * them common. For children, that is one file. For everything it is that and one more, of what to add and change. Anything that
+ * is not common is `loadWords`.
  *
  * @param options - `forChildren`, true unless you say false.
  * @returns The common words, ready for `wordsOf`.
@@ -408,7 +464,12 @@ export function readCommonWords(table: PackedWords, options: WordsOptions = {}):
  * ```
  */
 export async function loadCommonWords(options: WordsOptions = {}): Promise<Words> {
-  return readCommonWords((await import("./data/words/common.data.ts")).COMMON_WORDS, options);
+  const forChildren = options.forChildren ?? true;
+  const [table, extra] = await Promise.all([
+    import("./data/words/common.data.ts").then((one) => one.COMMON_WORDS),
+    forChildren ? undefined : import("./data/words/common-extra.data.ts").then((one) => one.COMMON_EXTRA),
+  ]);
+  return readCommonWords(table, { forChildren, extra });
 }
 
 /** The index of the last piece that starts at or before a key. */
@@ -426,6 +487,21 @@ function pieceOf(starts: readonly string[], key: string): number {
 /** Pieces already fetched and indexed, by kind and number, so that a second lookup in the same piece fetches nothing. */
 const fetched = new Map<string, Promise<ReadonlyMap<string, readonly string[]>>>();
 
+/** A table of lines indexed by the key of each. */
+function indexLines(lines: readonly string[], keyOfLine: (line: string) => string): Map<string, string[]> {
+  const index = new Map<string, string[]>();
+  for (const line of lines) {
+    const key = keyOfLine(line);
+    const held = index.get(key);
+    if (held === undefined) index.set(key, [line]);
+    else held.push(line);
+  }
+  return index;
+}
+
+const readingOfRow = (line: string) => foldKana(line.slice(0, line.indexOf("\t")));
+const formOfLine = (line: string) => line.slice(0, line.indexOf("\t"));
+
 /** A piece, indexed by the key of each of its lines. Failing to fetch it is not remembered. */
 function indexed(
   name: string,
@@ -437,24 +513,33 @@ function indexed(
   if (cached !== undefined) return cached;
   const load = set.load[at];
   if (load === undefined) throw new RangeError(`The ${name} piece ${at} does not exist.`);
-  const made = load().then((piece) => {
-    const index = new Map<string, string[]>();
-    for (const line of piece.rows) {
-      const key = keyOfLine(line);
-      const held = index.get(key);
-      if (held === undefined) index.set(key, [line]);
-      else held.push(line);
-    }
-    return index;
-  });
+  const made = load().then((piece) => indexLines(piece.rows, keyOfLine));
   fetched.set(`${name}${at}`, made);
   made.catch(() => fetched.delete(`${name}${at}`));
   return made;
 }
 
-const readingPiece = (at: number) =>
-  indexed("readings", MANIFEST.readings, at, (line) => foldKana(readingOfLine(line)));
-const formPiece = (at: number) => indexed("forms", MANIFEST.forms, at, (line) => line.slice(0, line.indexOf("\t")));
+const readingPiece = (at: number) => indexed("readings", MANIFEST.readings, at, readingOfRow);
+const formPiece = (at: number) => indexed("forms", MANIFEST.forms, at, formOfLine);
+
+/** What is left out of the pieces, fetched once and only when asked for, indexed by key. */
+let extraFetched:
+  | Promise<{ rows: ReadonlyMap<string, readonly string[]>; forms: ReadonlyMap<string, readonly string[]> }>
+  | undefined;
+
+function extraPieces() {
+  if (extraFetched === undefined) {
+    const made = import("./data/words/extra.data.ts").then((one) => ({
+      rows: indexLines(one.EXTRA.rows, readingOfRow),
+      forms: indexLines(one.EXTRA.forms, formOfLine),
+    }));
+    extraFetched = made;
+    made.catch(() => {
+      extraFetched = undefined;
+    });
+  }
+  return extraFetched;
+}
 
 /**
  * Fetches what JMdict holds for some texts, and nothing else: the pieces of the table those texts are in, a few kilobytes each,
@@ -463,8 +548,11 @@ const formPiece = (at: number) => indexed("forms", MANIFEST.forms, at, (line) =>
  * A text of kana alone (かみ, カミ) is a reading and costs one piece. Any other text (紙) is a written form: its readings are
  * found first and then their pieces, so it costs one more. Texts already in `previous` cost nothing.
  *
+ * By default nothing that is not for children is fetched, and none of it is in what comes back. With `forChildren: false` one
+ * file more is fetched, once, with everything that was left out, and the words are everything JMdict has.
+ *
  * @param texts - A reading or a written form, or a list of them.
- * @param options - `forChildren`, true unless you say false, and `previous` words to add to.
+ * @param options - `forChildren`, true unless you say false, and `previous` words, for the same people, to add to.
  * @returns The words, ready for `wordsOf`.
  * @example
  * ```ts
@@ -477,19 +565,23 @@ const formPiece = (at: number) => indexed("forms", MANIFEST.forms, at, (line) =>
  */
 export async function loadWords(texts: string | readonly string[], options: LoadWordsOptions = {}): Promise<Words> {
   const { previous } = options;
+  const forChildren = options.forChildren ?? previous?.forChildren ?? true;
   if (previous?.scope === "common")
     throw new TypeError("The common words hold every text already: there is nothing to add.");
+  if (previous !== undefined && previous.forChildren !== forChildren)
+    throw new TypeError("Words for children and words for everything cannot be added together: load the texts again.");
   const entries = new Map(previous?.entries);
   const wanted = [...new Set(typeof texts === "string" ? [texts] : texts)].filter((text) => !entries.has(keyOf(text)));
   const kana = wanted.filter(isKana);
   const written = wanted.filter((text) => !isKana(text));
+  const extra = forChildren ? undefined : await extraPieces();
 
   // A written form is asked of the index first, which says which readings to fetch.
   const formAt = [...new Set(written.map((text) => pieceOf(MANIFEST.forms.starts, text)))];
   const indexes = new Map(await Promise.all(formAt.map(async (at) => [at, await formPiece(at)] as const)));
   const readingsOf = new Map(
     written.map((text) => {
-      const lines = indexes.get(pieceOf(MANIFEST.forms.starts, text))?.get(text) ?? [];
+      const lines = extra?.forms.get(text) ?? indexes.get(pieceOf(MANIFEST.forms.starts, text))?.get(text) ?? [];
       return [text, lines.flatMap((line) => line.slice(line.indexOf("\t") + 1).split("|"))] as const;
     }),
   );
@@ -497,7 +589,9 @@ export async function loadWords(texts: string | readonly string[], options: Load
   const keys = new Set([...kana.map(foldKana), ...[...readingsOf.values()].flat().map(foldKana)]);
   const pieceAt = [...new Set([...keys].map((key) => pieceOf(MANIFEST.readings.starts, key)))];
   const pieces = new Map(await Promise.all(pieceAt.map(async (at) => [at, await readingPiece(at)] as const)));
-  const linesOf = (key: string) => pieces.get(pieceOf(MANIFEST.readings.starts, key))?.get(key) ?? [];
+  // What is left out of a reading's answer is whole in the extra table, which is then the answer.
+  const linesOf = (key: string) =>
+    extra?.rows.get(key) ?? pieces.get(pieceOf(MANIFEST.readings.starts, key))?.get(key) ?? [];
 
   for (const text of kana) entries.set(foldKana(text), linesOf(foldKana(text)).map(readRow));
   for (const text of written) {
@@ -508,10 +602,5 @@ export async function loadWords(texts: string | readonly string[], options: Load
     );
     entries.set(text, found);
   }
-  return {
-    release: MANIFEST.release,
-    scope: "all",
-    forChildren: options.forChildren ?? previous?.forChildren ?? true,
-    entries,
-  };
+  return { release: MANIFEST.release, scope: "all", forChildren, entries };
 }

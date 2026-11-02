@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.ts";
 
 /**
- * Rows of JMdict by reading, each: reading, written forms joined by "|", English meaning, flags, and the meaning for children where it differs. Piece 1 of 255, from "". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that are fit for children, by reading, each: reading, written forms joined by "|", English meaning, flags. Piece 1 of 254, from "". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -12,11 +12,11 @@ export const PIECE: WordsPiece = {
     "〜\t\ttilde symbol\t",
     "あ\t\tah, oh; hey!\tC",
     "ア\t\tah, oh; hey!\tC",
-    "あ\t唖\tmuteness, speech impairment; mute, deaf-mute\t\tmuteness, speech impairment",
+    "あ\t唖\tmuteness, speech impairment\t",
     "あ\t亜\tsub-, second-rate, inferior\t",
     "ア\t\tsub-, second-rate, inferior\t",
     "あ\t阿\tfirst Sanskrit alphabet letter; Africa\t",
-    "あ\t我|吾\tI, me; oneself\t",
+    "あ\t我|吾\tI, me\t",
     "あ〜\t\tah!, oh!, alas!; yes, indeed, that is correct\t",
     "あ〜あ\t\tah!, oh!, alas!; yes, indeed, that is correct\t",
     "あ〜っ\t\tah!, oh!, alas!; yes, indeed, that is correct\t",
@@ -719,15 +719,13 @@ export const PIECE: WordsPiece = {
     "あいちょうをおびた\t哀調を帯びた|哀調をおびた\tplaintive (melody, tone, etc.), sad, mournful\t",
     "あいちようすいこうだん\t愛知用水公団\tAichi Waterworks Corporation\t",
     "あいった\t阿逸多\tMaitreya (bodhisattva); Ajita (one of the sixteen arhats)\t",
-    "あいつ\t彼奴\the, she, that guy; that, that one, that thing\tCU\tthat, that one, that thing",
+    "あいつ\t彼奴\tthat, that one, that thing\tCU",
     "あいついで\t相次いで\tone after the other, successively\t",
     "あいつう\t哀痛\tgrieving, mourning, being very sad\ts",
     "あいつうじる\t相通じる\tto be common (to), to have (something) in common (with)\ti",
     "あいつうずる\t相通ずる\tto be common (to), to have (something) in common (with)\t",
     "あいつぐ\t相次ぐ|相継ぐ\tto follow in succession, to happen one after another\tgC",
     "あいつとめる\t相勤める\tto work (for), to be employed (at), to serve (in)\ti",
-    "あいつら\tあいつ等|彼奴ら|彼奴等\tthey, those guys, those fellows\tCU\t",
-    "アイツら\tあいつ等|彼奴ら|彼奴等\tthey, those guys, those fellows\tU\t",
     "あいづくり\t相作り\tdish of white and red-fleshed fish arranged next to each other\t",
     "あいづこてつかい\t会津小鉄会\tAizukotetsu-kai (yakuza syndicate)\t",
     "あいづせんそう\t会津戦争\tBattle of Aizu (1868)\t",
@@ -931,7 +929,7 @@ export const PIECE: WordsPiece = {
     "あいのきょうげん\t間の狂言\tkyogen interlude\t",
     "あいのくさび\t間の楔|合の楔|合いの楔\twedge (for securing objects together); tie, bond\t",
     "あいのけっしょう\t愛の結晶\tfruit of love, children\t",
-    "あいのこ\t間の子|合いの子|あいの子|合の子\tperson of mixed parentage, crossbreed, Eurasian; hybrid\t\thybrid, crossbreed",
+    "あいのこ\t間の子|合いの子|あいの子|合の子\thybrid, crossbreed\t",
     "あいのこぶね\t間の子船\tsemi-Western, semi-Japanese wooden sailing boat, popular during the latter half of the Meiji period and the Taisho period\t",
     "あいのこべんとう\t合の子弁当|合いの子弁当\tchildren's lunch box of cooked rice and a Western-style side dish (popular late Meiji and Taisho periods)\t",
     "あいのさんか\t愛の賛歌\tHymne a l'amour (song popularized by Edith Piaf)\t",
@@ -1037,5 +1035,10 @@ export const PIECE: WordsPiece = {
     "あいべや\t相部屋\tsharing a room, dormitory room\t",
     "アイホ\t\tice hockey\t",
     "アイホンかぶしきかいしゃ\tアイホン株式会社\tAiphone Co., Ltd.\t",
+    "あいぼ\t哀慕\tcherish the memory of, yearn for\t",
+    "あいぼ\t愛慕\tlove, attachment, adoration\ts",
+    "あいぼう\t相棒\tpartner, pal, accomplice\tC",
+    "あいぼし\t相星\twrestlers with the same win-loss record at the end of a tournament\t",
+    "アイボリ\t\tivory\tC",
   ],
 };
