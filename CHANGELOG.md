@@ -6,6 +6,12 @@ All notable changes to this project are written here. The format follows
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-11-02
+
+### Changed
+
+- The README's JLPT N3 picture ends after ten whole rows instead of cutting a row through, and its text says it shows the first ten rows of the 367 kanji (the grid scrolls in the demo).
+
 ## [0.1.0] - 2026-11-02
 
 ### Added
