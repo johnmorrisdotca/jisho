@@ -1,0 +1,44 @@
+name: JMdict refresh
+
+# THE WORDS, KEPT CURRENT. EDRDG's licence (clause 4, https://www.edrdg.org/edrdg/licence.html, read 2026-11-02) asks a
+# package that uses its files for "a procedure for regular updating… at least once a month".
+#
+# On the 1st of each month this fetches the newest JMdict and writes src/data/words/ again (scripts/build-words.mjs). If it
+# changed, it pushes the new data to a branch, data/jmdict-YYYY-MM, and FAILS on purpose, so the failure is the reminder: land
+# the branch on main with a patch version in CHANGELOG.md, then tag it. It opens no pull request and never pushes to main. A
+# push to a branch that is not main starts no other workflow here, so a month with a change costs one short run. This repository
+# is public, so the run is free.
+on:
+  schedule:
+    - cron: "41 6 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      - name: Fetch the newest JMdict and write the words again
+        run: node scripts/build-words.mjs
+      - name: Leave the new words on a branch, and say so by failing
+        run: |
+          if git diff --quiet -- src/data/words && [ -z "$(git ls-files --others --exclude-standard -- src/data/words)" ]; then
+            echo "The words are what JMdict's newest release makes. Nothing to land."
+            exit 0
+          fi
+          branch="data/jmdict-$(date -u +%Y-%m)"
+          git config user.name "$GITHUB_ACTOR"
+          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add src/data/words data-sources/sources.json
+          git commit -m "The words from JMdict's newest release"
+          git push --force origin "$branch"
+          echo "::error::JMdict changed the words. Land $branch on main with a new version in CHANGELOG.md and a tag, then delete the branch."
+          exit 1

@@ -33,6 +33,14 @@ await takePictures({
     { subject: "kanji-card", views: ["desk"], url: address("g1", "山"), ready: READY, target: "#card" },
     // 土 and what it can be mistaken for.
     { subject: "look-alike", views: ["desk"], url: address("g1", "土"), ready: READY, target: "#card" },
+    // A word by its reading: かみ is paper, god and hair.
+    {
+      subject: "words",
+      views: ["desk"],
+      url: "/?lang=en&help=off&view=words&word=%E3%81%8B%E3%81%BF",
+      ready: '[data-testid="word-item"]',
+      target: "#words-view",
+    },
     // A search by meaning.
     {
       subject: "search",

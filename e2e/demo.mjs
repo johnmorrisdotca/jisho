@@ -35,7 +35,11 @@ async function sound(page, errors) {
   const over = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
   expect(over, "the page scrolls sideways").toBeLessThanOrEqual(0);
   const small = await page.evaluate(() =>
-    [...document.querySelectorAll(".moji-grid button, .moji-alike button, .fam-seg button, input")]
+    [
+      ...document.querySelectorAll(
+        ".moji-grid button, .moji-alike button, .moji-examples button, .moji-word-form button, .fam-seg button, input",
+      ),
+    ]
       .filter((el) => {
         const box = el.getBoundingClientRect();
         return box.width > 0 && box.height > 0 && (box.width < 44 || box.height < 44);
@@ -53,6 +57,7 @@ test("opens on grade 1, with its eighty kanji and its sources named", async ({ p
   await expect(page.getByTestId("source-kanjidic")).toContainText("KANJIDIC2");
   await expect(page.getByTestId("source-waller")).toContainText("tanos.co.uk");
   await expect(page.getByTestId("source-yencken")).toContainText("Yencken");
+  await expect(page.getByTestId("source-jmdict")).toContainText("JMdict");
   await sound(page, errors);
 });
 
@@ -95,6 +100,99 @@ test("speaks Japanese when asked, and back", async ({ page }) => {
   const errors = await open(page);
   await tap(page.locator('[data-lang="ja"]'));
   await expect(page.getByTestId("count")).toHaveText("80字です。");
+  await tap(page.locator('[data-lang="en"]'));
+  await expect(page.getByTestId("count")).toHaveText("80 kanji.");
+  await sound(page, errors);
+});
+
+/** Opens the words, types something and presses Enter, as a person does. */
+async function lookUp(page, text) {
+  const box = page.getByTestId("word");
+  await box.fill(text);
+  await box.press("Enter");
+}
+
+const first = (page) => page.getByTestId("word-item").first();
+
+test("a reading finds its words, the commonest first: かみ is paper, god and hair", async ({ page }) => {
+  const errors = await open(page);
+  await tap(page.getByTestId("view").getByRole("button", { name: "Words" }));
+  await expect(page.getByTestId("words-view")).toBeVisible();
+  await expect(page.getByTestId("grid")).toBeHidden();
+  await expect(page.getByTestId("word-count")).toHaveText("Type a reading in kana, or a word in kanji.");
+  await lookUp(page, "かみ");
+  await expect(page.getByTestId("word-count")).toContainText("words for かみ.");
+  const items = page.getByTestId("word-item");
+  await expect(items.nth(0)).toContainText("紙");
+  await expect(items.nth(0)).toContainText("paper");
+  await expect(items.nth(0)).toContainText("common");
+  await expect(items.nth(1)).toContainText("神");
+  await expect(items.nth(1)).toContainText("god");
+  await expect(items.nth(2)).toContainText("髪");
+  await expect(items.nth(2)).toContainText("hair");
+  await expect(page).toHaveURL(/view=words/);
+  await expect(page).toHaveURL(/word=%E3%81%8B%E3%81%BF/);
+  await expect(page.getByTestId("word-release")).toContainText("JMdict release 20");
+  await sound(page, errors);
+});
+
+test("a written form finds its reading: 紙 is かみ, and katakana finds what hiragana does", async ({ page }) => {
+  const errors = await open(page, "?lang=en&view=words");
+  await lookUp(page, "紙");
+  await expect(first(page)).toContainText("かみ");
+  await expect(first(page)).toContainText("paper");
+  await lookUp(page, "カミ");
+  await expect(page.getByTestId("word-count")).toContainText("カミ");
+  await expect(first(page)).toContainText("紙");
+  await sound(page, errors);
+});
+
+test("an example is a button that looks the word up", async ({ page }) => {
+  const errors = await open(page, "?lang=en&view=words");
+  await tap(page.getByTestId("examples").getByRole("button", { name: "さくら" }));
+  await expect(page.getByTestId("word-count")).toContainText("for さくら.");
+  await expect(page.getByTestId("word")).toHaveValue("さくら");
+  await expect(first(page)).toContainText("cherry");
+  await sound(page, errors);
+});
+
+test("for children leaves out the senses that are not, and Everything puts them back", async ({ page }) => {
+  const errors = await open(page, "?lang=en&view=words&word=外人");
+  await expect(page.getByTestId("word-count")).toHaveText("2 words for 外人.");
+  await expect(first(page)).toContainText("outsider");
+  await expect(first(page)).not.toContainText("Westerner");
+  await tap(page.getByTestId("audience").getByRole("button", { name: "Everything" }));
+  await expect(first(page)).toContainText("Westerner");
+  await expect(page).toHaveURL(/children=off/);
+  await tap(page.getByTestId("audience").getByRole("button", { name: "Children" }));
+  await expect(first(page)).not.toContainText("Westerner");
+  await expect(page).not.toHaveURL(/children=off/);
+  await sound(page, errors);
+});
+
+test("says so, and does not make a word up, when there is nothing to show", async ({ page }) => {
+  const errors = await open(page, "?lang=en&view=words");
+  await lookUp(page, "ぬぬぬぬぬ");
+  await expect(page.getByTestId("word-count")).toHaveText("JMdict has no word for ぬぬぬぬぬ.");
+  await expect(page.getByTestId("word-item")).toHaveCount(0);
+  await lookUp(page, "チンピラ");
+  await expect(page.getByTestId("word-count")).toContainText("none of them for children");
+  await expect(page.getByTestId("word-item")).toHaveCount(0);
+  await tap(page.getByTestId("audience").getByRole("button", { name: "Everything" }));
+  await expect(first(page)).toContainText("hoodlum");
+  await sound(page, errors);
+});
+
+test("the words speak Japanese when asked, and the way back to the kanji works", async ({ page }) => {
+  const errors = await open(page, "?lang=en&view=words&word=紙");
+  await expect(first(page)).toContainText("paper");
+  await tap(page.locator('[data-lang="ja"]'));
+  await expect(page.getByTestId("word-count")).toContainText("単語は");
+  await expect(page.getByTestId("view").getByRole("button", { name: "単語" })).toHaveAttribute("aria-pressed", "true");
+  await tap(page.getByTestId("view").getByRole("button", { name: "漢字" }));
+  await expect(page.getByTestId("grid").locator("button")).toHaveCount(80);
+  await expect(page.getByTestId("words-view")).toBeHidden();
+  await expect(page).not.toHaveURL(/view=words/);
   await tap(page.locator('[data-lang="en"]'));
   await expect(page.getByTestId("count")).toHaveText("80 kanji.");
   await sound(page, errors);

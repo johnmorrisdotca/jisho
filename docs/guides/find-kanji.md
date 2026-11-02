@@ -44,3 +44,5 @@ console.log(lookAlikes(LOOK_ALIKE,"千",{atLeast:60}).map((one)=>one.kanji));
 ```
 
 `atLeast` is the lowest score to take, and `max` how many to give back; [how the pairs are measured](look-alike.md) says how to choose them.
+
+For words rather than kanji, see [Look words up](words.md).

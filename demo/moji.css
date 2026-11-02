@@ -64,6 +64,80 @@
   color: var(--page);
   border-color: var(--ink);
 }
+[data-kanji-view][hidden],
+.moji-words-view[hidden],
+.moji-board[hidden] {
+  display: none;
+}
+.moji-words-view {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+.moji-word-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+}
+.moji-word-form .fam-button {
+  min-height: 44px;
+  min-width: 44px;
+}
+.moji-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.moji-examples button {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: transparent;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.moji-words {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 8px;
+  align-content: start;
+  min-width: 0;
+  max-height: 30rem;
+  margin: 0;
+  padding: 2px;
+  list-style: none;
+  overflow-y: auto;
+}
+.moji-words li {
+  display: grid;
+  gap: 2px;
+  align-content: start;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.moji-words p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.moji-written {
+  font-size: 1.7rem;
+  line-height: 1.2;
+}
+.moji-reading {
+  color: var(--muted);
+}
+.moji-tag {
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
 .moji-big {
   font-size: 4.5rem;
   line-height: 1.1;

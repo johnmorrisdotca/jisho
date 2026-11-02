@@ -59,5 +59,13 @@
         "sha256": "ca61de15ea13c811fd758e4fbba6e2d10e52c00e2c3f77a5e89979bb53cdcd12"
       }
     }
+  },
+  "jmdict": {
+    "address": "http://ftp.edrdg.org/pub/Nihongo/JMdict_e.gz",
+    "terms": "https://www.edrdg.org/edrdg/licence.html",
+    "licence": "CC BY-SA 4.0 and the Group's conditions",
+    "dateOfCreation": "2026-11-02",
+    "sha256": "2dbbfe0b1214911766bbc128a0935618b925be917e7d1c50f3536a89b0e8786d",
+    "retrieved": "2026-11-02"
   }
 }

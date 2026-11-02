@@ -3,7 +3,7 @@
   "entries": {
     ".": {
       "minified": 1492,
-      "gzip": 814
+      "gzip": 815
     },
     "./grades": {
       "minified": 18121,
@@ -20,6 +20,14 @@
     "./look-alike": {
       "minified": 160804,
       "gzip": 35421
+    },
+    "./words": {
+      "minified": 39824422,
+      "gzip": 8911316
+    },
+    "./words-common": {
+      "minified": 2025374,
+      "gzip": 639899
     }
   }
 }

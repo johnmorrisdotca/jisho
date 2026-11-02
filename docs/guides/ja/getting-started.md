@@ -2,7 +2,7 @@
 title: "はじめに"
 section: tutorial
 order: 1
-description: "パッケージを入れ、学年とレベルを読み、漢字を調べます。"
+description: "パッケージを入れ、単語を引き、学年とレベルを読み、漢字を調べます。"
 ---
 
 ## インストール
@@ -34,6 +34,16 @@ const byKanji=new Map(readKanji(KANJI).map((one)=>[one.kanji,one]));
 console.log(byKanji.get("山")?.meanings);
 ```
 
+## 単語を引く
+
+単語は小さなチャンクに分かれていて、引くときに必要なものだけを取得します。そのため`loadWords`は非同期で`await`が必要ですが、`wordsOf`はすぐに答えます。
+
+```ts
+import {loadWords,wordsOf} from "@johnmorrisdotca/moji/words";
+const words=await loadWords("かみ");
+console.log(wordsOf(words,"かみ")[0]?.meaning);
+```
+
 ## 次に読むもの
 
-[漢字を探す](find-kanji.md)に手順があります。[形の似た漢字の測り方](look-alike.md)にはスコアの意味があり、[データの出どころ](data-sources.md)には出典の示し方があります。
+[単語を引く](words.md)には、読みや表記で単語を引く方法、子ども向けでないものを除く方法、サーバーのバンドルにこの辞書を入れない方法があります。[漢字を探す](find-kanji.md)に手順があります。[形の似た漢字の測り方](look-alike.md)にはスコアの意味があり、[データの出どころ](data-sources.md)には出典の示し方があります。

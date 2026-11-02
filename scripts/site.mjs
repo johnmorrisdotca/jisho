@@ -10,6 +10,8 @@ const ICON =
   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232f5d4a'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle' fill='white'%3E%E5%AD%97%3C/text%3E%3C/svg%3E";
 
 const uses = [
+  `import { loadWords, wordsOf } from "@johnmorrisdotca/moji/words";`,
+  `wordsOf(await loadWords("かみ"), "かみ")  // 紙, 神, 髪… with a meaning each; a few kilobytes are fetched`,
   `import { gradeOf, kanjiOfLevel, lookAlikes, readKanji } from "@johnmorrisdotca/moji";`,
   `gradeOf(GRADES, "語")  // 2, with GRADES from "@johnmorrisdotca/moji/grades"`,
   `kanjiOfLevel(JLPT, "N5")  // the 79 kanji of N5, with JLPT from "@johnmorrisdotca/moji/jlpt"`,
@@ -23,12 +25,12 @@ const page = `<!doctype html>
   <head>
     ${familyHead({
       id,
-      title: "Moji 文字 — Kanji data for JavaScript",
+      title: "Moji 文字 — Japanese word and kanji data for JavaScript",
       description:
-        "School grades, JLPT levels, readings, meanings and look-alike pairs for 2,999 kanji, in a typed package with no dependencies.",
-      ogTitle: "Moji kanji data",
+        "Look Japanese words up by reading or written form, and read the school grades, JLPT levels, readings, meanings and look-alike pairs of 2,999 kanji, in a typed package with no dependencies.",
+      ogTitle: "Moji Japanese word and kanji data",
       ogDescription:
-        "Choose a school grade or a JLPT level, read each kanji, and see which kanji it can be mistaken for.",
+        "Type a reading or a word and see what it means, or choose a school grade or a JLPT level and read each kanji.",
     })}
     <link rel="icon" href="${ICON}" />
     <link rel="stylesheet" href="family.css" />
@@ -45,21 +47,43 @@ const page = `<!doctype html>
       })}
       <section class="setup" aria-labelledby="choose-title">
         <h2 id="choose-title" data-say="chooseTitle"></h2>
-        <div class="fam-row" data-help-en="Choose a list of kanji: a year of Japanese school, the rest of the everyday kanji, those allowed in names, or a level of the Japanese Language Proficiency Test." data-help-ja="漢字のリストを選びます。学校の学年、そのほかの常用漢字、人名に使える漢字、日本語能力試験のレベルから選べます。">
+        <div class="fam-row" data-help-en="Look words up, or read the kanji lists." data-help-ja="単語を引くか、漢字のリストを見るかを選びます。">
+          <span class="fam-label" id="view-label" data-say="viewLabel"></span>
+          <div class="fam-seg" id="view" role="group" aria-labelledby="view-label" data-testid="view"></div>
+        </div>
+        <div class="fam-row" data-kanji-view data-help-en="Choose a list of kanji: a year of Japanese school, the rest of the everyday kanji, those allowed in names, or a level of the Japanese Language Proficiency Test." data-help-ja="漢字のリストを選びます。学校の学年、そのほかの常用漢字、人名に使える漢字、日本語能力試験のレベルから選べます。">
           <span class="fam-label" id="grades-label" data-say="schoolGrades"></span>
           <div class="fam-seg" id="grades" role="group" aria-labelledby="grades-label" data-testid="grades"></div>
         </div>
-        <div class="fam-row">
+        <div class="fam-row" data-kanji-view>
           <span class="fam-label" id="levels-label" data-say="jlptLevels"></span>
           <div class="fam-seg" id="levels" role="group" aria-labelledby="levels-label" data-testid="levels"></div>
         </div>
-        <div class="fam-row" data-help-en="Type a kanji, a reading or a meaning, in English or French." data-help-ja="漢字、読み、または英語かフランス語の意味を入力します。">
+        <div class="fam-row" data-kanji-view data-help-en="Type a kanji, a reading or a meaning, in English or French." data-help-ja="漢字、読み、または英語かフランス語の意味を入力します。">
           <label class="fam-label" for="search" data-say="searchLabel"></label>
           <input class="moji-input" id="search" data-testid="search" type="search" autocomplete="off" spellcheck="false">
         </div>
-        <p class="fam-muted" id="count" data-testid="count" aria-live="polite"></p>
+        <p class="fam-muted" id="count" data-testid="count" data-kanji-view aria-live="polite"></p>
       </section>
-      <section class="moji-board" aria-labelledby="choose-title">
+      <section class="moji-words-view" id="words-view" data-testid="words-view" aria-labelledby="choose-title" hidden>
+        <form class="moji-word-form" id="word-form" role="search">
+          <label class="fam-label" for="word" data-say="wordLabel"></label>
+          <input class="moji-input" id="word" name="word" data-testid="word" type="search" lang="ja" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
+          <button class="fam-button" type="submit" data-testid="word-go" data-say="wordGo"></button>
+        </form>
+        <div class="fam-row" data-help-en="Tap a word to look it up." data-help-ja="単語を押すと、その単語を調べます。">
+          <span class="fam-label" id="examples-label" data-say="wordExamples"></span>
+          <div class="moji-examples" id="examples" role="group" aria-labelledby="examples-label" data-testid="examples" lang="ja"></div>
+        </div>
+        <div class="fam-row" data-help-en="For children leaves out the senses JMdict marks vulgar, X-rated, sensitive or derogatory." data-help-ja="「子ども向け」では、JMdictが下品、性的、配慮が必要、侮辱的と記している語義を除きます。">
+          <span class="fam-label" id="audience-label" data-say="audienceLabel"></span>
+          <div class="fam-seg" id="audience" role="group" aria-labelledby="audience-label" data-testid="audience"></div>
+        </div>
+        <p class="fam-muted" id="word-count" data-testid="word-count" aria-live="polite"></p>
+        <ul class="moji-words" id="word-list" data-testid="word-list" aria-labelledby="word-count" tabindex="0"></ul>
+        <p class="fam-muted" id="word-release" data-testid="word-release"></p>
+      </section>
+      <section class="moji-board" id="kanji-view" aria-labelledby="choose-title">
         <div class="moji-grid" id="grid" data-testid="grid" lang="ja"></div>
         <article class="fam-panel moji-card" id="card" data-testid="card" aria-live="polite"></article>
       </section>
@@ -69,6 +93,7 @@ const page = `<!doctype html>
         <p data-say="sourceKanjidic" data-testid="source-kanjidic"></p>
         <p data-say="sourceWaller" data-testid="source-waller"></p>
         <p data-say="sourceYencken" data-testid="source-yencken"></p>
+        <p data-say="sourceJmdict" data-testid="source-jmdict"></p>
       </section>
       <section class="more" aria-labelledby="more-title">
         <h2 id="more-title" data-say="moreTitle"></h2>

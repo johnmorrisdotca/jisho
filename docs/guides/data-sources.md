@@ -2,10 +2,10 @@
 title: "Where the data comes from"
 section: explanation
 order: 4
-description: "The three sources, their terms, and what you must credit."
+description: "The four sources, their terms, and what you must credit."
 ---
 
-## Three sources, each with its own terms
+## Four sources, each with its own terms
 
 | Entry point | Made from | Terms |
 | --- | --- | --- |
@@ -13,12 +13,17 @@ description: "The three sources, their terms, and what you must credit."
 | `jlpt` | Jonathan Waller's JLPT Resources, tanos.co.uk | CC BY |
 | `kanji` | KANJIDIC2, with Waller's levels | CC BY-SA 4.0 and the Group's conditions; the levels CC BY |
 | `look-alike` | Lars Yencken's kanji confusion datasets | CC BY 3.0 |
+| `words-common`, and the pieces `words` fetches | JMdict, of the Electronic Dictionary Research and Development Group | CC BY-SA 4.0 and the Group's conditions |
 
 The full notices are in [NOTICE.md](../../NOTICE.md), and each file's address, date and SHA-256 in [sources.json](../../data-sources/sources.json).
 
 ## What you must do
 
-A page that shows the data credits it. A page showing KANJIDIC2's data must say so on that screen, and a project that passes on `grades` or `kanji` passes on the share-alike terms for those tables. Code that merely imports them is not changed by that. NOTICE.md has wording to use.
+A page that shows the data credits it. A page showing KANJIDIC2's or JMdict's data must say so on that screen, and a project that passes on `grades`, `kanji` or the words passes on the share-alike terms for those tables. Code that merely imports them is not changed by that. NOTICE.md has wording to use.
+
+## The words, and keeping them current
+
+The words are JMdict's, which the EDRDG asks a package to keep current: the 1st of every month a workflow fetches the newest JMdict, writes the words again and, if they changed, leaves them on a branch for a patch release. The release date is in the data (`release`), and the date and SHA-256 of the file used are in `data-sources/sources.json`. A page that shows a word credits JMdict, and NOTICE.md has wording to use.
 
 ## The JLPT levels are one person's
 

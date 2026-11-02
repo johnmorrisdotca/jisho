@@ -1,8 +1,8 @@
 {
-  "job": "Kanji data for JavaScript",
+  "job": "Japanese word and kanji data for JavaScript",
   "pitch": {
-    "en": "School grades, JLPT levels, readings, meanings and look-alike pairs for 2,999 kanji, each table an entry point of its own.",
-    "ja": "2,999字の漢字の学年、JLPTレベル、読み、意味、形の似た漢字の組を収め、表ごとに独立したエントリポイントがあります。"
+    "en": "The words of JMdict looked up by reading or written form, in small pieces fetched as needed, and the school grades, JLPT levels, readings, meanings and look-alike pairs of 2,999 kanji, each table an entry point of its own.",
+    "ja": "JMdictの単語を読みや表記から引け、必要な小さなチャンクだけを取得します。2,999字の漢字の学年、JLPTレベル、読み、意味、形の似た漢字の組も収め、表ごとに独立したエントリポイントがあります。"
   },
   "name": {
     "en": "Moji is the Japanese word 文字 for a written character.",
@@ -29,6 +29,14 @@
     "./look-alike": {
       "en": "Pairs of kanji that look alike",
       "ja": "形の似た漢字の組"
+    },
+    "./words": {
+      "en": "Look words up by reading or written form",
+      "ja": "読みや表記から単語を引く"
+    },
+    "./words-common": {
+      "en": "The 26,061 common words, in one table",
+      "ja": "よく使う単語26,061語を一つの表に"
     }
   }
 }

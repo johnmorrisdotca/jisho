@@ -2,10 +2,10 @@
 title: "データの出どころ"
 section: explanation
 order: 4
-description: "三つの出典、その条件、示すべきこと。"
+description: "四つの出典、その条件、示すべきこと。"
 ---
 
-## 三つの出典と、それぞれの条件
+## 四つの出典と、それぞれの条件
 
 | エントリポイント | 元のデータ | 条件 |
 | --- | --- | --- |
@@ -13,12 +13,17 @@ description: "三つの出典、その条件、示すべきこと。"
 | `jlpt` | Jonathan WallerのJLPT Resources（tanos.co.uk） | CC BY |
 | `kanji` | KANJIDIC2とWallerのレベル | CC BY-SA 4.0と同グループの条件。レベルはCC BY |
 | `look-alike` | Lars Yenckenのkanji confusionデータ | CC BY 3.0 |
+| `words-common`と、`words`が取得するチャンク | Electronic Dictionary Research and Development GroupのJMdict | CC BY-SA 4.0と同グループの条件 |
 
 全文は[NOTICE.md](../../../NOTICE.md)（英語）に、各ファイルのアドレス、日付、SHA-256は[sources.json](../../../data-sources/sources.json)にあります。
 
 ## 必要な対応
 
-データを表示するページは、出典を示します。KANJIDIC2のデータを表示するページでは、その画面に示す必要があります。`grades`や`kanji`を配布するプロジェクトは、その表については継承（シェアアライク）の条件も引き継ぎます。インポートするだけのコードは影響を受けません。文例はNOTICE.mdにあります。
+データを表示するページは、出典を示します。KANJIDIC2やJMdictのデータを表示するページでは、その画面に示す必要があります。`grades`、`kanji`、単語を配布するプロジェクトは、その表については継承（シェアアライク）の条件も引き継ぎます。インポートするだけのコードは影響を受けません。文例はNOTICE.mdにあります。
+
+## 単語と、最新の状態の保ち方
+
+単語はJMdictのものです。EDRDGはパッケージに最新の状態を保つよう求めているので、毎月1日にワークフローが最新のJMdictを取得して単語を書き出し、変更があればパッチリリース用にブランチに残します。リリース日はデータの`release`に、使ったファイルの日付とSHA-256は`data-sources/sources.json`にあります。単語を表示するページはJMdictを出典として示します。文例はNOTICE.mdにあります。
 
 ## JLPTレベルは一個人のリストです
 

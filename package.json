@@ -1,19 +1,26 @@
 {
   "name": "@johnmorrisdotca/moji",
   "version": "0.1.1",
-  "description": "Moji 文字 — Kanji data for JavaScript: school grades, JLPT levels, readings, meanings and look-alike pairs for 2,999 kanji, from KANJIDIC2, Jonathan Waller's lists and Lars Yencken's studies. Typed, by entry point. Zero dependencies.",
+  "description": "Moji 文字 — Japanese word and kanji data for JavaScript: the words of JMdict looked up by reading or written form, in small pieces fetched as needed, with the senses not for children left out; and the school grades, JLPT levels, readings, meanings and look-alike pairs of 2,999 kanji. Typed. Zero dependencies.",
   "keywords": [
+    "child-safe",
     "cjk",
     "confusable-kanji",
     "dataset",
+    "dictionary",
+    "edrdg",
     "japanese",
+    "japanese-dictionary",
     "japanese-language",
+    "japanese-words",
     "jinmeiyo-kanji",
     "jlpt",
     "jlpt-kanji",
     "jlpt-n1",
     "jlpt-n5",
+    "jmdict",
     "joyo-kanji",
+    "kana",
     "kanji",
     "kanji-data",
     "kanjidic",
@@ -21,14 +28,18 @@
     "kunyomi",
     "kyoiku-kanji",
     "language-learning",
+    "lazy-loading",
     "look-alike-kanji",
     "moji",
     "onyomi",
+    "reading",
     "readings",
     "school-grades",
     "similar-kanji",
     "stroke-count",
     "typescript",
+    "vocabulary",
+    "word-lookup",
     "zero-dependency"
   ],
   "homepage": "https://johnmorrisdotca.github.io/moji/",
@@ -70,6 +81,16 @@
       "types": "./dist/data/look-alike.data.d.ts",
       "import": "./dist/data/look-alike.data.js",
       "default": "./dist/data/look-alike.data.js"
+    },
+    "./words": {
+      "types": "./dist/words.d.ts",
+      "import": "./dist/words.js",
+      "default": "./dist/words.js"
+    },
+    "./words-common": {
+      "types": "./dist/data/words/common.data.d.ts",
+      "import": "./dist/data/words/common.data.js",
+      "default": "./dist/data/words/common.data.js"
     }
   },
   "files": [
@@ -96,6 +117,7 @@
     "screenshots:readme": "pnpm site && node scripts/readme-pictures.mjs",
     "test:readme": "pnpm build && node scripts/check-readme-examples.mjs",
     "data": "node scripts/build-data.mjs",
+    "words": "node scripts/build-words.mjs",
     "docs:site": "pnpm build && node scripts/docs-site.mjs build",
     "docs:check": "pnpm build && node scripts/docs-site.mjs check",
     "size": "node scripts/docs-site.mjs size",

@@ -44,3 +44,5 @@ console.log(lookAlikes(LOOK_ALIKE,"千",{atLeast:60}).map((one)=>one.kanji));
 ```
 
 `atLeast`は取り入れる最低のスコア、`max`は返す数の上限です。選び方は[形の似た漢字の測り方](look-alike.md)にあります。
+
+漢字ではなく単語を引くときは、[単語を引く](words.md)を見てください。

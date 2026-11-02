@@ -2,7 +2,7 @@
 title: "Getting started"
 section: tutorial
 order: 1
-description: "Install the package, read a grade and a level, and look a kanji up."
+description: "Install the package, look a word up, read a grade and a level, and look a kanji up."
 ---
 
 ## Install
@@ -34,6 +34,16 @@ const byKanji=new Map(readKanji(KANJI).map((one)=>[one.kanji,one]));
 console.log(byKanji.get("山")?.meanings);
 ```
 
+## Look a word up
+
+Words are fetched in small pieces, only the ones a lookup needs, so `loadWords` waits and `wordsOf` does not.
+
+```ts
+import {loadWords,wordsOf} from "@johnmorrisdotca/moji/words";
+const words=await loadWords("かみ");
+console.log(wordsOf(words,"かみ")[0]?.meaning);
+```
+
 ## What to read next
 
-[Find kanji](find-kanji.md) has the recipes, [how the look-alike pairs are measured](look-alike.md) says what a score means, and [where the data comes from](data-sources.md) says what you must credit.
+[Look words up](words.md) says how to look a word up by its reading or its written form, how to keep what is not for children out, and how to keep the dictionary out of a server's bundle. [Find kanji](find-kanji.md) has the recipes, [how the look-alike pairs are measured](look-alike.md) says what a score means, and [where the data comes from](data-sources.md) says what you must credit.

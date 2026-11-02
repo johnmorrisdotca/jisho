@@ -1,5 +1,6 @@
-// The demo page's own script: pick a list, read a kanji, follow a look-alike. The tables are the package's entry points, each
-// fetched when the page opens; the functions are its main entry. The list and the kanji are in the address, so a link shares them.
+// The demo page's own script: look a word up, or pick a list, read a kanji and follow a look-alike. The kanji tables are the
+// package's entry points, each fetched when the page opens; the words are fetched a few kilobytes at a time, as they are asked for.
+// What is shown is in the address, so a link shares it.
 import { GRADES } from "./dist/data/grades.data.js";
 import { JLPT } from "./dist/data/jlpt.data.js";
 import { KANJI } from "./dist/data/kanji.data.js";
@@ -13,6 +14,7 @@ import {
   SCHOOL_GRADES,
   searchKanji,
 } from "./dist/index.js";
+import { loadWords, wordsOf } from "./dist/words.js";
 
 const $ = (id) => document.getElementById(id);
 
@@ -22,10 +24,29 @@ const WORDS = {
     pageDocs: "Docs",
     pageApi: "API",
     pitch:
-      "School grades, JLPT levels, readings, meanings and look-alike pairs for 2,999 kanji. Choose a list, tap a kanji, and follow it to the kanji it can be mistaken for.",
+      "Look Japanese words up by reading or written form, with a short English meaning each. Or choose a list of the 2,999 kanji, tap one, and follow it to the kanji it can be mistaken for.",
     name: "Moji (文字) is Japanese for a written character.",
     nameLink: "About the name",
-    chooseTitle: "Choose a list",
+    chooseTitle: "What to look up",
+    viewLabel: "Look up",
+    viewKanji: "Kanji",
+    viewWords: "Words",
+    wordLabel: "Word",
+    wordGo: "Look up",
+    wordExamples: "Try",
+    audienceLabel: "For",
+    audienceChildren: "Children",
+    audienceEverything: "Everything",
+    wordCountOne: "1 word for {text}.",
+    wordCountMany: "{n} words for {text}.",
+    wordNone: "JMdict has no word for {text}.",
+    wordHidden: "JMdict has words for {text}, none of them for children. Choose Everything to read them.",
+    wordLoading: "Looking up {text}…",
+    wordFailed: "Could not look {text} up. Try again.",
+    wordCommon: "common",
+    wordReadAs: "read",
+    wordPrompt: "Type a reading in kana, or a word in kanji.",
+    wordRelease: "JMdict release {release}.",
     schoolGrades: "School",
     jlptLevels: "JLPT",
     searchLabel: "Search",
@@ -57,18 +78,40 @@ const WORDS = {
       "JLPT levels from Jonathan Waller's JLPT Resources, tanos.co.uk (CC BY). The test itself has published no list of kanji since 2010, so these are one person's.",
     sourceYencken:
       "Look-alike pairs from Lars Yencken's kanji confusion datasets (CC BY 3.0). They cover the 1,945 everyday kanji of before 2010, so a newer kanji has none.",
+    sourceJmdict:
+      "Words from JMdict, the property of the Electronic Dictionary Research and Development Group, used under the Group's licence (CC BY-SA 4.0).",
     moreTitle: "Using it",
-    moreText: "Each table is its own entry point, so a page loads only what it reads.",
+    moreText:
+      "Each table is its own entry point, so a page loads only what it reads. Words are fetched in pieces of a few kilobytes, only the ones a lookup needs.",
     foot: "The code is under the MIT licence; the data keeps its sources' licences. Nothing here is stored or sent anywhere.",
   },
   ja: {
     pageDocs: "ドキュメント",
     pageApi: "API（英語）",
     pitch:
-      "2,999字の漢字の学年、JLPTレベル、読み、意味、形の似た漢字の組を収めています。リストを選んで漢字を押すと、見間違えやすい漢字をたどれます。",
+      "日本語の単語を読みや表記から引け、それぞれに短い英語の意味が付きます。2,999字の漢字のリストを選び、漢字を押して、見間違えやすい漢字をたどることもできます。",
     name: "「Moji」は「文字」のこと。書かれた一字一字を指します。",
     nameLink: "名前について（英語）",
-    chooseTitle: "リストを選ぶ",
+    chooseTitle: "調べるもの",
+    viewLabel: "表示",
+    viewKanji: "漢字",
+    viewWords: "単語",
+    wordLabel: "単語",
+    wordGo: "調べる",
+    wordExamples: "例",
+    audienceLabel: "対象",
+    audienceChildren: "子ども向け",
+    audienceEverything: "すべて",
+    wordCountOne: "「{text}」の単語は1語見つかりました。",
+    wordCountMany: "「{text}」の単語は{n}語見つかりました。",
+    wordNone: "JMdictに「{text}」の単語はありません。",
+    wordHidden: "JMdictに「{text}」の単語はありますが、子ども向けのものはありません。「すべて」を選ぶと表示されます。",
+    wordLoading: "「{text}」を調べています…",
+    wordFailed: "「{text}」を調べられませんでした。もう一度お試しください。",
+    wordCommon: "よく使う",
+    wordReadAs: "読み",
+    wordPrompt: "読みをかなで、または単語を漢字で入力してください。",
+    wordRelease: "JMdictの{release}版です。",
     schoolGrades: "学年",
     jlptLevels: "JLPT",
     searchLabel: "検索",
@@ -100,8 +143,11 @@ const WORDS = {
       "JLPTレベルはJonathan WallerのJLPT Resources（tanos.co.uk、CC BY）から。試験そのものは2010年以降、漢字のリストを公開していないので、これは一個人によるリストです。",
     sourceYencken:
       "形の似た漢字の組はLars Yenckenのkanji confusionデータ（CC BY 3.0）から。2010年より前の常用漢字1,945字が対象なので、2010年以降に加わった漢字にはありません。",
+    sourceJmdict:
+      "単語はJMdictから。JMdictはElectronic Dictionary Research and Development Groupの所有物で、同グループのライセンス（CC BY-SA 4.0）のもとで使っています。",
     moreTitle: "使い方",
-    moreText: "表はそれぞれ独立したエントリポイントなので、ページは読むものだけを読み込みます。",
+    moreText:
+      "表はそれぞれ独立したエントリポイントなので、ページは読むものだけを読み込みます。単語は数キロバイトずつに分かれていて、引くときに必要な分だけを取得します。",
     foot: "コードはMITライセンスです。データはそれぞれの出典のライセンスに従います。ここでは何も保存せず、どこにも送りません。",
   },
 };
@@ -127,10 +173,14 @@ const byKanji = new Map(kanji.map((one) => [one.kanji, one]));
 
 const query = new URLSearchParams(location.search);
 const state = {
+  view: query.get("view") === "words" ? "words" : "kanji",
   list: query.get("list") ?? "g1",
   kanji: query.get("kanji"),
   search: "",
+  word: query.get("word") ?? "",
+  children: query.get("children") !== "off",
 };
+const EXAMPLES = ["かみ", "紙", "さくら", "ありがとう", "はし"];
 
 const gradeName = (grade) => (grade <= 6 ? t("grade", { n: grade }) : t(`grade${grade}`));
 const listed = () =>
@@ -141,6 +191,12 @@ function writeAddress() {
   next.set("list", state.list);
   if (state.kanji === null) next.delete("kanji");
   else next.set("kanji", state.kanji);
+  if (state.view === "words") next.set("view", "words");
+  else next.delete("view");
+  if (state.word === "") next.delete("word");
+  else next.set("word", state.word);
+  if (state.children) next.delete("children");
+  else next.set("children", "off");
   history.replaceState(history.state, "", `${location.pathname}?${next}${location.hash}`);
 }
 
@@ -222,7 +278,150 @@ function drawCard() {
   card.replaceChildren(big, facts);
 }
 
+/** A row of buttons of which one is pressed. */
+function choice(holder, items, current, pick) {
+  if (holder.childElementCount === 0) {
+    holder.append(
+      ...items.map(({ id }) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.dataset.choice = String(id);
+        button.addEventListener("click", () => pick(id));
+        return button;
+      }),
+    );
+  }
+  items.forEach(({ id, label }, at) => {
+    const button = holder.children[at];
+    button.textContent = label;
+    button.setAttribute("aria-pressed", String(id === current));
+  });
+}
+
+// What has been looked up: the words JMdict holds for the text, loaded once with everything in them. Which senses are shown is
+// chosen when they are read, so changing who it is for fetches nothing.
+let looked = null;
+let pending = null;
+let failed = null;
+let asking = 0;
+
+async function lookUp(text) {
+  const clean = text.trim();
+  state.word = clean;
+  $("word").value = clean;
+  const ask = ++asking;
+  looked = null;
+  failed = null;
+  pending = clean === "" ? null : clean;
+  drawWords();
+  writeAddress();
+  if (clean === "") return;
+  try {
+    const words = await loadWords(clean, { forChildren: false });
+    if (ask === asking) looked = { text: clean, words };
+  } catch {
+    if (ask === asking) failed = clean;
+  }
+  if (ask !== asking) return;
+  pending = null;
+  drawWords();
+}
+
+function wordItem(word) {
+  const item = document.createElement("li");
+  item.dataset.testid = "word-item";
+  const written = document.createElement("p");
+  written.className = "moji-written";
+  written.lang = "ja";
+  written.textContent = word.written;
+  const reading = document.createElement("p");
+  reading.className = "moji-reading";
+  reading.lang = "ja";
+  reading.textContent = word.written === word.reading ? "" : word.reading;
+  reading.hidden = reading.textContent === "";
+  const meaning = document.createElement("p");
+  meaning.className = "moji-meaning";
+  meaning.lang = "en";
+  meaning.textContent = word.meaning;
+  item.append(written, reading, meaning);
+  if (word.common) {
+    const tag = document.createElement("p");
+    tag.className = "moji-tag";
+    tag.textContent = t("wordCommon");
+    item.append(tag);
+  }
+  return item;
+}
+
+function drawWords() {
+  choice(
+    $("view"),
+    [
+      { id: "kanji", label: t("viewKanji") },
+      { id: "words", label: t("viewWords") },
+    ],
+    state.view,
+    (id) => {
+      state.view = id;
+      draw();
+    },
+  );
+  const examples = $("examples");
+  if (examples.childElementCount === 0) {
+    examples.append(
+      ...EXAMPLES.map((text) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.textContent = text;
+        button.addEventListener("click", () => void lookUp(text));
+        return button;
+      }),
+    );
+  }
+  choice(
+    $("audience"),
+    [
+      { id: true, label: t("audienceChildren") },
+      { id: false, label: t("audienceEverything") },
+    ],
+    state.children,
+    (id) => {
+      state.children = id;
+      drawWords();
+      writeAddress();
+    },
+  );
+  const list = $("word-list");
+  const count = $("word-count");
+  if (pending !== null) {
+    count.textContent = t("wordLoading", { text: pending });
+    list.replaceChildren();
+  } else if (failed !== null) {
+    count.textContent = t("wordFailed", { text: failed });
+    list.replaceChildren();
+  } else if (looked === null) {
+    count.textContent = t("wordPrompt");
+    list.replaceChildren();
+  } else {
+    const { text, words } = looked;
+    const found = wordsOf(words, text, { forChildren: state.children });
+    const all = wordsOf(words, text, { forChildren: false });
+    count.textContent =
+      found.length === 0
+        ? t(all.length > 0 ? "wordHidden" : "wordNone", { text })
+        : t(found.length === 1 ? "wordCountOne" : "wordCountMany", { n: found.length, text });
+    list.replaceChildren(...found.map(wordItem));
+    list.dataset.release = words.release;
+  }
+  $("word-release").textContent = looked === null ? "" : t("wordRelease", { release: looked.words.release });
+}
+
 function draw() {
+  const inWords = state.view === "words";
+  for (const part of document.querySelectorAll("[data-kanji-view]")) part.hidden = inWords;
+  $("kanji-view").hidden = inWords;
+  $("words-view").hidden = !inWords;
+  drawWords();
   segment(
     $("grades"),
     SCHOOL_GRADES.map((grade) => ({ id: `g${grade}`, label: gradeName(grade) })),
@@ -261,10 +460,16 @@ function draw() {
   writeAddress();
 }
 
+$("word-form").addEventListener("submit", (event) => {
+  event.preventDefault();
+  void lookUp($("word").value);
+});
+
 $("search").addEventListener("input", (event) => {
   state.search = event.target.value;
   draw();
 });
 
 draw();
+if (state.view === "words" && state.word !== "") void lookUp(state.word);
 document.documentElement.dataset.ready = "true";
