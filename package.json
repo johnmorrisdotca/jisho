@@ -1,6 +1,6 @@
 {
   "name": "@johnmorrisdotca/moji",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Moji 文字 — Kanji data for JavaScript: school grades, JLPT levels, readings, meanings and look-alike pairs for 2,999 kanji, from KANJIDIC2, Jonathan Waller's lists and Lars Yencken's studies. Typed, by entry point. Zero dependencies.",
   "keywords": [
     "cjk",

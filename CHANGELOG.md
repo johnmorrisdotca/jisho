@@ -6,6 +6,8 @@ All notable changes to this project are written here. The format follows
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-11-02
+
 ### Added
 
 - School grades for 2,999 kanji (`/grades`), from KANJIDIC2.
