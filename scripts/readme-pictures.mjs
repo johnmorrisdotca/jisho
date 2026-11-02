@@ -11,7 +11,24 @@ await takePictures({
     { subject: "hero", views: ["desk", "phone"], url: address("N5", "日"), height: 780, ready: READY },
     // Each list is a grid: a school year, and a level of the JLPT.
     { subject: "school-grade", views: ["desk"], url: address("g2", "語"), ready: READY, target: ".moji-board" },
-    { subject: "jlpt-level", views: ["desk"], url: address("N3", "政"), ready: READY, target: ".moji-board" },
+    // N3 holds 367 kanji and the grid scrolls: the window ends after ten whole rows, so no row is cut through.
+    {
+      subject: "jlpt-level",
+      views: ["desk"],
+      url: address("N3", "政"),
+      ready: READY,
+      target: ".moji-board",
+      async prepare(page) {
+        await page.locator(".moji-grid").evaluate((grid) => {
+          const buttons = [...grid.querySelectorAll("button")];
+          const first = buttons[0].getBoundingClientRect().top;
+          const second = buttons
+            .find((button) => button.getBoundingClientRect().top > first + 1)
+            .getBoundingClientRect().top;
+          grid.style.maxHeight = `${(second - first) * 10}px`;
+        });
+      },
+    },
     // One kanji in full.
     { subject: "kanji-card", views: ["desk"], url: address("g1", "山"), ready: READY, target: "#card" },
     // 土 and what it can be mistaken for.

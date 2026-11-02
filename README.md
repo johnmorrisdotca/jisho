@@ -85,7 +85,7 @@ console.log(lookAlikes(LOOK_ALIKE, "土")[0]?.kanji); // the closest look-alike 
 <td align="center" valign="top">
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/moji/main/docs/images/jlpt-level-desk-dark.webp">
-<img src="https://raw.githubusercontent.com/johnmorrisdotca/moji/main/docs/images/jlpt-level-desk-light.webp" alt="The 367 kanji of JLPT N3 in a grid in the order of Waller's list, 政 chosen, with its card beside the grid." width="360">
+<img src="https://raw.githubusercontent.com/johnmorrisdotca/moji/main/docs/images/jlpt-level-desk-light.webp" alt="The first ten rows of the 367 kanji of JLPT N3, in the order of Waller's list, 政 chosen, with its card beside the grid." width="360">
 </picture><br>
 <sub>A JLPT level: N3, in the order of the list.</sub>
 </td>
