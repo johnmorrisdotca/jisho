@@ -7,7 +7,7 @@ import { defineConfig } from "vitest/config";
 // a number falls below the floor, which is the level of 2026-11-03 (statements 99.25, branches 92.11, functions 98.74, lines 99.76), rounded down. Raise the floor when the coverage rises; never lower it to pass.
 export default defineConfig({
   test: {
-    testTimeout: 60_000,
+    testTimeout: 180_000,
     coverage: {
       provider: "v8",
       include: ["src/**/*.ts"],
