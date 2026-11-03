@@ -11,9 +11,10 @@ const ICON =
   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232f5d4a'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle' fill='white'%3E%E8%BE%9E%3C/text%3E%3C/svg%3E";
 
 const uses = [
-  `import { findByMeaning, findInflected, loadWords, wordsOf, wordsWithKanji } from "@johnmorrisdotca/jisho/words";`,
+  `import { findByMeaning, findInflected, loadWords, readText, wordsOf, wordsWithKanji } from "@johnmorrisdotca/jisho/words";`,
   `wordsOf(await loadWords("かみ"), "かみ")  // 紙, 神, 髪… with a meaning each; about 25 kB is fetched`,
   `(await findInflected("食べなかった"))[0]  // 食べる, with the path negative, past`,
+  `await readText("私は食べなかった")  // the words of a text, with furigana, meaning and levels; studyList(result) takes them away`,
   `await findByMeaning("water")  // 水 and the commonest words whose meaning holds water`,
   `await wordsWithKanji("山")  // 山, 火山, 登山… the commonest words written with 山`,
   `import { gradeOf, kanjiOfLevel, lookAlikes, readKanji } from "@johnmorrisdotca/jisho";`,
@@ -94,6 +95,36 @@ const page = `<!doctype html>
         <p class="fam-muted" id="word-count" data-testid="word-count" aria-live="polite"></p>
         <ul class="jisho-words" id="word-list" data-testid="word-list" aria-labelledby="word-count" tabindex="0"></ul>
         <p class="fam-muted" id="word-release" data-testid="word-release"></p>
+      </section>
+      <section class="jisho-words-view" id="reader-view" data-testid="reader-view" aria-labelledby="choose-title" hidden>
+        <div class="jisho-reader">
+        <div class="jisho-reader-text">
+        <form class="jisho-reader-form" id="reader-form">
+          <label class="fam-label" for="reader-text" data-say="readerLabel"></label>
+          <textarea class="jisho-input jisho-textarea" id="reader-text" name="text" data-testid="reader-text" rows="3" maxlength="5000" lang="ja" autocomplete="off" autocapitalize="off" spellcheck="false" data-say-placeholder="readerPlaceholder"></textarea>
+          <button class="fam-button" type="submit" data-testid="reader-go" data-say="readerGo"></button>
+        </form>
+        <div class="fam-row" data-help-en="Each word is the longest stretch the dictionary has a word for, or a conjugated form of one. Tap a word for its card. Names and rare words may be cut into small words or not found." data-help-ja="各語は、辞書に語がある最も長い部分か、その活用形です。語を押すとカードが開きます。名前や珍しい語は、小さな語に分かれたり、見つからなかったりします。">
+          <span class="fam-label" id="reader-examples-label" data-say="readerTry"></span>
+          <div class="jisho-examples jisho-reader-examples" id="reader-examples" role="group" aria-labelledby="reader-examples-label" data-testid="reader-examples" lang="ja"></div>
+        </div>
+        <p class="fam-muted" id="reader-count" data-testid="reader-count" aria-live="polite"></p>
+        <div class="jisho-reader-out" id="reader-out" data-testid="reader-out" lang="ja"></div>
+        <p class="fam-muted" id="reader-unknown" data-testid="reader-unknown" lang="ja" hidden></p>
+        </div>
+        <div class="jisho-reader-side">
+        <article class="fam-panel jisho-card jisho-reader-card" id="reader-card" data-testid="reader-card" aria-live="polite" hidden></article>
+        <h2 id="reader-study-title" data-say="readerStudy"></h2>
+        <div class="fam-row">
+          <div class="fam-seg" role="group" data-say-label="readerKanjiOnly"><button type="button" id="reader-kanji-only" data-testid="reader-kanji-only" aria-pressed="false" data-say="readerKanjiOnly"></button></div>
+          <button class="fam-button" type="button" id="reader-copy" data-testid="reader-copy" data-say="readerCopy"></button>
+          <button class="fam-button" type="button" id="reader-csv" data-testid="reader-csv" data-say="readerCsv"></button>
+        </div>
+        <p class="fam-muted" id="reader-copied" data-testid="reader-copied" aria-live="polite"></p>
+        <p class="fam-muted" id="reader-study-count" data-testid="reader-study-count"></p>
+        <ul class="jisho-words" id="reader-study" data-testid="reader-study" aria-labelledby="reader-study-title" tabindex="0"></ul>
+        </div>
+        </div>
       </section>
       <section class="jisho-board" id="kanji-view" aria-labelledby="choose-title">
         <div class="jisho-grid" id="grid" data-testid="grid" lang="ja"></div>

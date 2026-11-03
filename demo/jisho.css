@@ -66,6 +66,7 @@
 }
 [data-kanji-view][hidden],
 .jisho-words-view[hidden],
+#reader-card[hidden],
 .jisho-board[hidden] {
   display: none;
 }
@@ -226,4 +227,93 @@ header nav a[data-say="pageDocs"] {
   inline-size: 8rem;
   justify-content: center;
   flex: none;
+}
+
+.jisho-reader-form {
+  display: grid;
+  gap: 8px;
+  justify-items: start;
+}
+.jisho-textarea {
+  width: 100%;
+  min-height: 7rem;
+  padding: 10px 12px;
+  resize: vertical;
+  font: inherit;
+  font-size: 1.1rem;
+  color: inherit;
+}
+.jisho-reader-examples button {
+  text-align: left;
+  font-size: 1rem;
+}
+.jisho-reader-out {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 6px 2px;
+  font-size: 1.5rem;
+  line-height: 2.4;
+  overflow-wrap: anywhere;
+}
+.jisho-token {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 4px;
+  border: 0;
+  border-bottom: 2px solid var(--rule);
+  border-radius: 6px 6px 0 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.jisho-token[aria-pressed="true"] {
+  background: var(--surface);
+  border-bottom-color: var(--ink);
+}
+.jisho-token rt {
+  font-size: 0.5em;
+  color: var(--muted);
+}
+.jisho-unknown {
+  border-bottom: 2px dashed var(--muted);
+  color: var(--muted);
+}
+.jisho-reader-card .jisho-big ruby {
+  font-size: 2.4rem;
+}
+.jisho-token-kanji {
+  margin: 0;
+}
+.jisho-reader {
+  display: grid;
+  gap: 14px;
+  align-items: start;
+}
+.jisho-reader > div {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  align-content: start;
+}
+@media (min-width: 900px) {
+  .jisho-reader {
+    grid-template-columns: minmax(0, 1fr) 24rem;
+  }
+}
+.jisho-reader .jisho-words {
+  grid-template-columns: 1fr;
+  max-height: 22rem;
+}
+.jisho-reader h2 {
+  margin: 4px 0 0;
+  font-size: 1.1rem;
+}
+.jisho-reader .jisho-card {
+  position: static;
+  order: 0;
+}
+.jisho-reader p:empty {
+  display: none;
 }

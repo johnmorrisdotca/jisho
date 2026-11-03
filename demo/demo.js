@@ -15,6 +15,7 @@ import {
   searchKanji,
 } from "./dist/index.js";
 import { findByMeaning, inflectedOf, kanjiOfWord, loadWords, wordsWithKanji } from "./dist/words.js";
+import { createReader, READER_WORDS } from "./reader.js";
 
 const $ = (id) => document.getElementById(id);
 
@@ -185,7 +186,7 @@ function docsLink(lang) {
 }
 const language = familyLanguage({
   id: "jisho",
-  words: WORDS,
+  words: { en: { ...WORDS.en, ...READER_WORDS.en }, ja: { ...WORDS.ja, ...READER_WORDS.ja } },
   onChange: (lang) => {
     docsLink(lang);
     draw();
@@ -238,7 +239,8 @@ const pathText = (path) =>
 
 const query = new URLSearchParams(location.search);
 const state = {
-  view: query.get("view") === "words" ? "words" : "kanji",
+  view: ["words", "reader"].includes(query.get("view")) ? query.get("view") : "kanji",
+  text: (query.get("text") ?? "").slice(0, 500),
   list: query.get("list") ?? "g1",
   kanji: query.get("kanji"),
   search: "",
@@ -246,6 +248,7 @@ const state = {
   by: ["meaning", "kanji"].includes(query.get("by")) ? query.get("by") : "reading",
   mode: query.get("mode") === "unfiltered" ? "unfiltered" : "safe",
 };
+const reader = createReader({ t, state, pathText, writeAddress });
 const EXAMPLES = {
   reading: ["かみ", "紙", "さくら", "ありがとう", "食べなかった", "kami"],
   meaning: ["water", "dog", "go out", "paper", "thank you"],
@@ -262,8 +265,10 @@ function writeAddress() {
   next.set("list", state.list);
   if (state.kanji === null) next.delete("kanji");
   else next.set("kanji", state.kanji);
-  if (state.view === "words") next.set("view", "words");
-  else next.delete("view");
+  if (state.view === "kanji") next.delete("view");
+  else next.set("view", state.view);
+  if (state.view === "reader" && state.text !== "") next.set("text", state.text);
+  else next.delete("text");
   if (state.word === "") next.delete("word");
   else next.set("word", state.word);
   if (state.by === "reading") next.delete("by");
@@ -492,6 +497,7 @@ function drawWords() {
     [
       { id: "kanji", label: t("viewKanji") },
       { id: "words", label: t("viewWords") },
+      { id: "reader", label: t("viewReader") },
     ],
     state.view,
     (id) => {
@@ -576,11 +582,13 @@ function drawWords() {
 }
 
 function draw() {
-  const inWords = state.view === "words";
-  for (const part of document.querySelectorAll("[data-kanji-view]")) part.hidden = inWords;
-  $("kanji-view").hidden = inWords;
-  $("words-view").hidden = !inWords;
+  const inKanji = state.view === "kanji";
+  for (const part of document.querySelectorAll("[data-kanji-view]")) part.hidden = !inKanji;
+  $("kanji-view").hidden = !inKanji;
+  $("words-view").hidden = state.view !== "words";
+  $("reader-view").hidden = state.view !== "reader";
   drawWords();
+  if (state.view === "reader") reader.draw();
   segment(
     $("grades"),
     SCHOOL_GRADES.map((grade) => ({ id: `g${grade}`, label: gradeName(grade) })),
@@ -631,4 +639,5 @@ $("search").addEventListener("input", (event) => {
 
 draw();
 if (state.view === "words" && state.word !== "") void lookUp(state.word);
+if (state.view === "reader" && state.text !== "") void reader.read(state.text);
 document.documentElement.dataset.ready = "true";

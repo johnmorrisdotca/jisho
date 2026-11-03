@@ -37,7 +37,7 @@ async function sound(page, errors) {
   const small = await page.evaluate(() =>
     [
       ...document.querySelectorAll(
-        ".jisho-grid button, .jisho-alike button, .jisho-examples button, .jisho-word-form button, .jisho-word-kanji button, .jisho-card dd button, .fam-seg button, input",
+        ".jisho-grid button, .jisho-token, .jisho-alike button, .jisho-examples button, .jisho-word-form button, .jisho-word-kanji button, .jisho-card dd button, .fam-seg button, input",
       ),
     ]
       .filter((el) => {
@@ -346,6 +346,88 @@ test("the ways to find words speak Japanese when asked", async ({ page }) => {
     "true",
   );
   await expect(page.getByTestId("word-count")).toContainText("英語の単語");
+  await tap(page.locator('[data-lang="en"]'));
+  await sound(page, errors);
+});
+
+test("the Reader cuts a text into words with furigana, and a tap on a word opens its card", async ({ page }) => {
+  const asked = watch(page);
+  const errors = await open(page, "?lang=en&view=reader");
+  await expect(page.getByTestId("reader-view")).toBeVisible();
+  await expect(page.getByTestId("grid")).toBeHidden();
+  await expect(page.getByTestId("reader-count")).toHaveText("Paste a sentence or a few, and tap Read.");
+  await tap(page.getByTestId("reader-examples").getByRole("button").first());
+  await expect(page.getByTestId("reader-count")).toContainText("words, 0 not found.");
+  await expect(page.getByTestId("reader-text")).toHaveValue("昨日、友達と学校に行きました。");
+  await expect(page.getByTestId("token")).toHaveCount(6);
+  await expect(page.getByTestId("reader-out").locator("rt").first()).toHaveText("きのう");
+  await tap(page.getByTestId("token").nth(5));
+  const card = page.getByTestId("reader-card");
+  await expect(card).toContainText("to go");
+  await expect(card).toContainText("from 行く: polite, past");
+  await expect(card).toContainText("N5");
+  await expect(card.locator("rt")).toHaveText(["い"]);
+  await expect(page).toHaveURL(/view=reader/);
+  expect(asked.filter(isExtra), "safe mode asked for what it leaves out").toEqual([]);
+  expect(asked.length, "the pieces a sentence needs").toBeLessThan(60);
+  await sound(page, errors);
+});
+
+test("the Reader lists what it cannot find, keeps what is not Japanese, and says nothing is wrong with an empty text", async ({
+  page,
+}) => {
+  const errors = await open(page, "?lang=en&view=reader");
+  await page.getByTestId("reader-text").fill("私は ぬぬぬぬぬ を 3 回食べた。");
+  await tap(page.getByTestId("reader-go"));
+  await expect(page.getByTestId("reader-unknown")).toHaveText("Not found: ぬぬぬぬぬ");
+  await expect(page.getByTestId("unknown")).toHaveText("ぬぬぬぬぬ");
+  await expect(page.getByTestId("reader-out")).toContainText("3");
+  await page.getByTestId("reader-text").fill("");
+  await tap(page.getByTestId("reader-go"));
+  await expect(page.getByTestId("reader-count")).toHaveText("Paste a sentence or a few, and tap Read.");
+  await page.getByTestId("reader-text").fill("   ");
+  await tap(page.getByTestId("reader-go"));
+  await expect(page.getByTestId("reader-count")).toHaveText("Paste a sentence or a few, and tap Read.");
+  await sound(page, errors);
+});
+
+test("the study list holds each word once, copies as text, and saves as CSV", async ({ page }) => {
+  const errors = await open(page, "?lang=en&view=reader");
+  try {
+    await page.context().grantPermissions(["clipboard-read", "clipboard-write"]);
+  } catch {
+    // WebKit has no such permission: the copy then says it could not.
+  }
+  await page.getByTestId("reader-text").fill("私は食べなかった。私は食べた。");
+  await tap(page.getByTestId("reader-go"));
+  await expect(page.getByTestId("study-item")).toHaveCount(3);
+  await expect(page.getByTestId("study-item").nth(2)).toContainText("食べる");
+  await expect(page.getByTestId("study-item").nth(2)).toContainText("×2");
+  await tap(page.getByTestId("reader-kanji-only"));
+  await expect(page.getByTestId("study-item")).toHaveCount(2);
+  await tap(page.getByTestId("reader-copy"));
+  await expect(page.getByTestId("reader-copied")).toHaveText(/Copied 2 words\.|Could not copy/);
+  const [download] = await Promise.all([page.waitForEvent("download"), tap(page.getByTestId("reader-csv"))]);
+  expect(download.suggestedFilename()).toBe("jisho-study-list.csv");
+  const body = readFileSync(await download.path(), "utf8");
+  expect(body).toContain("written,reading,meaning,level,grade,count,example");
+  expect(body).toContain("食べる,たべる,");
+  await sound(page, errors);
+});
+
+test("the Reader speaks Japanese when asked, and a text in the address is read when the page opens", async ({
+  page,
+}) => {
+  const errors = await open(page, "?lang=en&view=reader&text=%E9%A3%9F%E3%81%B9%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F");
+  await expect(page.getByTestId("token")).toHaveCount(1);
+  await expect(page.getByTestId("reader-card")).toContainText("from 食べる: negative, past");
+  await tap(page.locator('[data-lang="ja"]'));
+  await expect(page.getByTestId("reader-card")).toContainText("食べるから：否定、過去");
+  await expect(page.getByTestId("reader-count")).toContainText("1語");
+  await expect(page.getByTestId("view").getByRole("button", { name: "リーダー" })).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
   await tap(page.locator('[data-lang="en"]'));
   await sound(page, errors);
 });

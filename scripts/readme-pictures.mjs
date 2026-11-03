@@ -53,6 +53,14 @@ await takePictures({
       ready: '[data-testid="word-item"]',
       target: "#words-view",
     },
+    // A text cut into words, with furigana, the card of the first word, and the study list beside it.
+    {
+      subject: "reader",
+      views: ["desk"],
+      url: "/?lang=en&help=off&view=reader&text=%E6%98%A8%E6%97%A5%E3%80%81%E5%8F%8B%E9%81%94%E3%81%A8%E5%AD%A6%E6%A0%A1%E3%81%AB%E8%A1%8C%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%E4%BB%8A%E6%97%A5%E3%81%AF%E3%81%84%E3%81%84%E5%A4%A9%E6%B0%97%E3%81%A7%E3%81%99%E3%81%AD%E3%80%82",
+      ready: '[data-testid="token"]',
+      target: ".jisho-reader",
+    },
     // The words found by their English meaning: water is 水.
     {
       subject: "words-meaning",
