@@ -41,6 +41,22 @@ await takePictures({
       ready: '[data-testid="word-item"]',
       target: "#words-view",
     },
+    // The words found by their English meaning: water is 水.
+    {
+      subject: "words-meaning",
+      views: ["desk"],
+      url: "/?lang=en&help=off&view=words&by=meaning&word=water",
+      ready: '[data-testid="word-item"]',
+      target: "#words-view",
+    },
+    // The words written with a kanji, each leading to its kanji.
+    {
+      subject: "words-kanji",
+      views: ["desk"],
+      url: "/?lang=en&help=off&view=words&by=kanji&word=%E5%B1%B1",
+      ready: '[data-testid="word-item"]',
+      target: "#words-view",
+    },
     // A search by meaning.
     {
       subject: "search",

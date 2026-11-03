@@ -5,9 +5,13 @@ order: 6
 description: "What changes between versions, and what a data refresh does."
 ---
 
-## Before the first release
+## From 2.0.0 to 2.1.0
 
-There is no earlier version to come from.
+Nothing you call changes, and everything 2.0.0 gave is kept. A `Word` has two more fields, `rank` and `priority`, and a text is made plain before it is looked up (`ｶﾐ`, a stray space or an invisible character find what `カミ` does), so a lookup that threw or found nothing for such a text now finds the word. A piece that cannot be fetched rejects with a `WordsLoadError` where it rejected with whatever the bundler or the browser threw. New: `findByMeaning`, `wordsWithKanji`, `kanjiOfWord`, `searchMeanings`, `romajiToKana`, `kanaFromRomaji`, `normalizeText`, `commonestFirst`, `priorityTags`, `rankOfTags` and the `romaji` option. The package is 3.7 MB larger to download (10.2 to 13.9 MB) for the new indexes, which only the new lookups fetch.
+
+## Before 2.0.0
+
+`forChildren` became `mode`: see the changelog.
 
 ## A data refresh
 

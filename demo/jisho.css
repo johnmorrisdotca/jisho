@@ -139,6 +139,23 @@
   text-transform: uppercase;
   color: var(--muted);
 }
+.jisho-word-kanji {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+.jisho-word-kanji button,
+.jisho-card dd > button {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 10px;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: transparent;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
 .jisho-big {
   font-size: 4.5rem;
   line-height: 1.1;

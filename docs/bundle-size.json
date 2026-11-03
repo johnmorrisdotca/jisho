@@ -22,16 +22,16 @@
       "gzip": 35421
     },
     "./words": {
-      "minified": 44376230,
-      "gzip": 9967316
+      "minified": 65448674,
+      "gzip": 13742785
     },
     "./words-common": {
-      "minified": 2651208,
-      "gzip": 807305
+      "minified": 2747153,
+      "gzip": 823320
     },
     "./words-common-extra": {
-      "minified": 70805,
-      "gzip": 22447
+      "minified": 72668,
+      "gzip": 22990
     }
   }
 }

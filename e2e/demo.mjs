@@ -37,7 +37,7 @@ async function sound(page, errors) {
   const small = await page.evaluate(() =>
     [
       ...document.querySelectorAll(
-        ".jisho-grid button, .jisho-alike button, .jisho-examples button, .jisho-word-form button, .fam-seg button, input",
+        ".jisho-grid button, .jisho-alike button, .jisho-examples button, .jisho-word-form button, .jisho-word-kanji button, .jisho-card dd button, .fam-seg button, input",
       ),
     ]
       .filter((el) => {
@@ -119,7 +119,7 @@ test("a reading finds its words, the commonest first: かみ is paper, god and h
   await tap(page.getByTestId("view").getByRole("button", { name: "Words" }));
   await expect(page.getByTestId("words-view")).toBeVisible();
   await expect(page.getByTestId("grid")).toBeHidden();
-  await expect(page.getByTestId("word-count")).toHaveText("Type a reading in kana, or a word in kanji.");
+  await expect(page.getByTestId("word-count")).toHaveText("Type a reading in kana or romaji, or a word in kanji.");
   await lookUp(page, "かみ");
   await expect(page.getByTestId("word-count")).toContainText("words for かみ.");
   const items = page.getByTestId("word-item");
@@ -199,7 +199,11 @@ function watch(page) {
   return asked;
 }
 /** The files that hold what safe mode leaves out: their manifest, their pieces, and the common words' patch. */
-const isExtra = (name) => /^(?:extra-manifest|common-extra)\.data\./.test(name) || /^x[rf]\d+\.data\./.test(name);
+const isExtra = (name) =>
+  /^(?:extra-manifest|index-extra-manifest|common-extra)\.data\./.test(name) || /^x[rfmk]\d+\.data\./.test(name);
+/** The files of the indexes by meaning and by kanji: only a lookup by meaning or by kanji asks for them. */
+const isIndex = (name) =>
+  /^(?:index-manifest|index-extra-manifest)\.data\./.test(name) || /^x?[mk]\d+\.data\./.test(name);
 
 test("a safe lookup asks for none of the files that hold what safe mode leaves out, and Unfiltered asks for them", async ({
   page,
@@ -214,6 +218,7 @@ test("a safe lookup asks for none of the files that hold what safe mode leaves o
   await expect(page.getByTestId("word-item")).toHaveCount(0);
   expect(asked.length, "the pieces of the words were asked for").toBeGreaterThan(3);
   expect(asked.filter(isExtra), "a file of what safe mode leaves out was asked for").toEqual([]);
+  expect(asked.filter(isIndex), "a lookup by reading asked for an index").toEqual([]);
   await tap(page.getByTestId("audience").getByRole("button", { name: "Unfiltered" }));
   await expect(first(page)).toContainText("omit");
   const extra = asked.filter(isExtra);
@@ -244,5 +249,83 @@ test("the words speak Japanese when asked, and the way back to the kanji works",
   await expect(page).not.toHaveURL(/view=words/);
   await tap(page.locator('[data-lang="en"]'));
   await expect(page.getByTestId("count")).toHaveText("80 kanji.");
+  await sound(page, errors);
+});
+
+const by = (page, name) => tap(page.getByTestId("by").getByRole("button", { name }));
+
+test("an English meaning finds the commonest words that hold it: water is 水", async ({ page }) => {
+  const asked = watch(page);
+  const errors = await open(page, "?lang=en&view=words");
+  await expect(page.getByTestId("by").getByRole("button", { name: "Reading or word" })).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  await by(page, "English meaning");
+  await expect(page.getByTestId("word-count")).toHaveText("Type an English word or two, such as water or go out.");
+  await lookUp(page, "water");
+  await expect(first(page)).toContainText("水");
+  await expect(first(page)).toContainText("water");
+  await expect(page.getByTestId("word-count")).toContainText("for water.");
+  await expect(page).toHaveURL(/by=meaning/);
+  await tap(page.getByTestId("examples").getByRole("button", { name: "go out" }));
+  await expect(page.getByTestId("word-count")).toContainText("for go out.");
+  await expect(page.getByTestId("word")).toHaveValue("go out");
+  expect(asked.filter(isExtra), "safe mode asked for what it leaves out").toEqual([]);
+  expect(asked.filter(isIndex).length, "the index was asked for").toBeGreaterThan(1);
+  await sound(page, errors);
+});
+
+test("an English meaning in Unfiltered finds what safe mode leaves out, and says so when it has nothing", async ({
+  page,
+}) => {
+  const errors = await open(page, "?lang=en&view=words&by=meaning&word=cunnilingus");
+  await expect(page.getByTestId("word-count")).toContainText("cunnilingus");
+  await expect(page.getByTestId("word-list")).not.toContainText("harmonica");
+  await tap(page.getByTestId("audience").getByRole("button", { name: "Unfiltered" }));
+  await expect(page.getByTestId("word-list")).toContainText("ハーモニカ");
+  await lookUp(page, "zxqvwj");
+  await expect(page.getByTestId("word-count")).toHaveText("JMdict has no word for zxqvwj.");
+  await sound(page, errors);
+});
+
+test("a kanji finds the words written with it, and a word leads to its kanji and back", async ({ page }) => {
+  const errors = await open(page, "?lang=en&view=words");
+  await by(page, "Kanji in it");
+  await tap(page.getByTestId("examples").getByRole("button", { name: "山" }));
+  await expect(first(page)).toContainText("山");
+  await expect(first(page)).toContainText("mountain");
+  await expect(page).toHaveURL(/by=kanji/);
+  await tap(first(page).getByTestId("word-kanji").getByRole("button", { name: "Open the kanji 山" }));
+  await expect(page.getByTestId("words-view")).toBeHidden();
+  await expect(page.locator(".jisho-big")).toHaveText("山");
+  await expect(page.getByTestId("card")).toContainText("N5");
+  await tap(page.getByTestId("card-words"));
+  await expect(page.getByTestId("words-view")).toBeVisible();
+  await expect(page.getByTestId("word")).toHaveValue("山");
+  await expect(first(page)).toContainText("山");
+  await lookUp(page, "やま");
+  await expect(page.getByTestId("word-count")).toHaveText("There is no kanji in やま to look up.");
+  await sound(page, errors);
+});
+
+test("Latin letters are read as romaji", async ({ page }) => {
+  const errors = await open(page, "?lang=en&view=words");
+  await lookUp(page, "kami");
+  await expect(first(page)).toContainText("紙");
+  await lookUp(page, "Tōkyō");
+  await expect(first(page)).toContainText("東京");
+  await sound(page, errors);
+});
+
+test("the ways to find words speak Japanese when asked", async ({ page }) => {
+  const errors = await open(page, "?lang=en&view=words&by=meaning");
+  await tap(page.locator('[data-lang="ja"]'));
+  await expect(page.getByTestId("by").getByRole("button", { name: "英語の意味" })).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  await expect(page.getByTestId("word-count")).toContainText("英語の単語");
+  await tap(page.locator('[data-lang="en"]'));
   await sound(page, errors);
 });

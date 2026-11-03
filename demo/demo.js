@@ -1,4 +1,4 @@
-// The demo page's own script: look a word up, or pick a list, read a kanji and follow a look-alike. The kanji tables are the
+// The demo page's own script: look a word up by its reading, its English meaning or a kanji in it, or pick a list, read a kanji and follow a look-alike. The kanji tables are the
 // package's entry points, each fetched when the page opens; the words are fetched a few kilobytes at a time, as they are asked for.
 // What is shown is in the address, so a link shares it.
 import { GRADES } from "./dist/data/grades.data.js";
@@ -14,7 +14,7 @@ import {
   SCHOOL_GRADES,
   searchKanji,
 } from "./dist/index.js";
-import { loadWords, wordsOf } from "./dist/words.js";
+import { findByMeaning, kanjiOfWord, loadWords, wordsOf, wordsWithKanji } from "./dist/words.js";
 
 const $ = (id) => document.getElementById(id);
 
@@ -24,7 +24,7 @@ const WORDS = {
     pageDocs: "Docs",
     pageApi: "API",
     pitch:
-      "Look Japanese words up by reading or written form, with a short English meaning each. Or choose a list of the 2,999 kanji, tap one, and follow it to the kanji it can be mistaken for.",
+      "Look Japanese words up by reading, written form, English meaning or a kanji in them, with a short English meaning each. Or choose a list of the 2,999 kanji, tap one, and follow it to the kanji it can be mistaken for.",
     name: "Jisho (辞書) is Japanese for a dictionary.",
     nameLink: "About the name",
     chooseTitle: "What to look up",
@@ -33,6 +33,16 @@ const WORDS = {
     viewWords: "Words",
     wordLabel: "Word",
     wordGo: "Look up",
+    byLabel: "Find by",
+    byReading: "Reading or word",
+    byMeaning: "English meaning",
+    byKanji: "Kanji in it",
+    byHelp:
+      "Reading or word: kana, romaji or kanji. English meaning: the commonest words whose meaning holds what you type. Kanji in it: the words written with a kanji.",
+    wordKanjiOpen: "Open the kanji {kanji}",
+    wordNoKanji: "There is no kanji in {text} to look up.",
+    cardWords: "Words",
+    cardWordsButton: "Words with {kanji}",
     wordExamples: "Try",
     audienceLabel: "Mode",
     audienceSafe: "Safe",
@@ -45,7 +55,9 @@ const WORDS = {
     wordFailed: "Could not look {text} up. Try again.",
     wordCommon: "common",
     wordReadAs: "read",
-    wordPrompt: "Type a reading in kana, or a word in kanji.",
+    wordPrompt: "Type a reading in kana or romaji, or a word in kanji.",
+    wordPromptMeaning: "Type an English word or two, such as water or go out.",
+    wordPromptKanji: "Type a kanji to see the words written with it.",
     wordRelease: "JMdict release {release}.",
     schoolGrades: "School",
     jlptLevels: "JLPT",
@@ -89,7 +101,7 @@ const WORDS = {
     pageDocs: "ドキュメント",
     pageApi: "API（英語）",
     pitch:
-      "日本語の単語を読みや表記から引け、それぞれに短い英語の意味が付きます。2,999字の漢字のリストを選び、漢字を押して、見間違えやすい漢字をたどることもできます。",
+      "日本語の単語を読み、表記、英語の意味、含まれる漢字から引け、それぞれに短い英語の意味が付きます。2,999字の漢字のリストを選び、漢字を押して、見間違えやすい漢字をたどることもできます。",
     name: "「Jisho」は「辞書」のローマ字表記です。日本語の単語と漢字を収めています。",
     nameLink: "名前について（英語）",
     chooseTitle: "調べるもの",
@@ -98,6 +110,16 @@ const WORDS = {
     viewWords: "単語",
     wordLabel: "単語",
     wordGo: "調べる",
+    byLabel: "検索方法",
+    byReading: "読みか単語",
+    byMeaning: "英語の意味",
+    byKanji: "含まれる漢字",
+    byHelp:
+      "読みか単語：かな、ローマ字、漢字で引きます。英語の意味：入力した語を意味に含む、よく使う単語を探します。含まれる漢字：その漢字で書かれる単語を探します。",
+    wordKanjiOpen: "漢字「{kanji}」を開く",
+    wordNoKanji: "「{text}」には漢字が含まれていません。",
+    cardWords: "単語",
+    cardWordsButton: "「{kanji}」を含む単語",
     wordExamples: "例",
     audienceLabel: "モード",
     audienceSafe: "セーフ",
@@ -110,7 +132,9 @@ const WORDS = {
     wordFailed: "「{text}」を調べられませんでした。もう一度お試しください。",
     wordCommon: "よく使う",
     wordReadAs: "読み",
-    wordPrompt: "読みをかなで、または単語を漢字で入力してください。",
+    wordPrompt: "読みをかなやローマ字で、または単語を漢字で入力してください。",
+    wordPromptMeaning: "英語の単語を一つか二つ入力してください（例：water、go out）。",
+    wordPromptKanji: "漢字を入力すると、その漢字を含む単語を表示します。",
     wordRelease: "JMdictの{release}版です。",
     schoolGrades: "学年",
     jlptLevels: "JLPT",
@@ -178,9 +202,15 @@ const state = {
   kanji: query.get("kanji"),
   search: "",
   word: query.get("word") ?? "",
+  by: ["meaning", "kanji"].includes(query.get("by")) ? query.get("by") : "reading",
   mode: query.get("mode") === "unfiltered" ? "unfiltered" : "safe",
 };
-const EXAMPLES = ["かみ", "紙", "さくら", "ありがとう", "はし"];
+const EXAMPLES = {
+  reading: ["かみ", "紙", "さくら", "ありがとう", "kami"],
+  meaning: ["water", "dog", "go out", "paper", "thank you"],
+  kanji: ["山", "日", "水", "語"],
+};
+const PROMPTS = { reading: "wordPrompt", meaning: "wordPromptMeaning", kanji: "wordPromptKanji" };
 
 const gradeName = (grade) => (grade <= 6 ? t("grade", { n: grade }) : t(`grade${grade}`));
 const listed = () =>
@@ -195,6 +225,8 @@ function writeAddress() {
   else next.delete("view");
   if (state.word === "") next.delete("word");
   else next.set("word", state.word);
+  if (state.by === "reading") next.delete("by");
+  else next.set("by", state.by);
   if (state.mode === "safe") next.delete("mode");
   else next.set("mode", "unfiltered");
   history.replaceState(history.state, "", `${location.pathname}?${next}${location.hash}`);
@@ -256,6 +288,17 @@ function drawCard() {
   fact(facts, t("cardKun"), join(one.kun));
   fact(facts, t("cardMeanings"), one.meanings.length === 0 ? t("cardNone") : one.meanings.join(", "));
   if (one.meaningsFr.length > 0) fact(facts, t("cardFrench"), one.meaningsFr.join(", "));
+  const words = document.createElement("button");
+  words.type = "button";
+  words.dataset.testid = "card-words";
+  words.textContent = t("cardWordsButton", { kanji: one.kanji });
+  words.addEventListener("click", () => {
+    state.view = "words";
+    state.by = "kanji";
+    draw();
+    void lookUp(one.kanji);
+  });
+  fact(facts, t("cardWords"), words);
   const alike = lookAlikes(LOOK_ALIKE, one.kanji);
   if (alike.length === 0) fact(facts, t("cardAlike"), t("cardNoAlike"));
   else {
@@ -305,6 +348,15 @@ let pending = null;
 let failed = null;
 let asking = 0;
 
+/** What a lookup gives, by what it is asked by: the words, and the JMdict release when the lookup read it. */
+async function search(text) {
+  const { by, mode } = state;
+  if (by === "meaning") return { text, by, mode, words: await findByMeaning(text, { mode, limit: 20 }), release: "" };
+  if (by === "kanji") return { text, by, mode, words: await wordsWithKanji(text, { mode, limit: 20 }), release: "" };
+  const loaded = await loadWords(text, { mode, romaji: true });
+  return { text, by, mode, words: wordsOf(loaded, text, { romaji: true }), release: loaded.release };
+}
+
 async function lookUp(text) {
   const clean = text.trim();
   state.word = clean;
@@ -317,8 +369,8 @@ async function lookUp(text) {
   writeAddress();
   if (clean === "") return;
   try {
-    const words = await loadWords(clean, { mode: state.mode });
-    if (ask === asking) looked = { text: clean, words };
+    const found = await search(clean);
+    if (ask === asking) looked = found;
   } catch {
     if (ask === asking) failed = clean;
   }
@@ -359,6 +411,29 @@ function wordItem(word) {
     tag.textContent = t("wordCommon");
     item.append(tag);
   }
+  const its = kanjiOfWord(word, kanji);
+  if (its.length > 0) {
+    const row = document.createElement("div");
+    row.className = "jisho-word-kanji";
+    row.lang = "ja";
+    row.dataset.testid = "word-kanji";
+    for (const one of its) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.textContent = one.kanji;
+      button.setAttribute("aria-label", t("wordKanjiOpen", { kanji: one.kanji }));
+      button.addEventListener("click", () => {
+        state.view = "kanji";
+        state.list = `g${one.grade}`;
+        state.search = "";
+        $("search").value = "";
+        state.kanji = one.kanji;
+        draw();
+      });
+      row.append(button);
+    }
+    item.append(row);
+  }
   return item;
 }
 
@@ -375,10 +450,33 @@ function drawWords() {
       draw();
     },
   );
+  choice(
+    $("by"),
+    [
+      { id: "reading", label: t("byReading") },
+      { id: "meaning", label: t("byMeaning") },
+      { id: "kanji", label: t("byKanji") },
+    ],
+    state.by,
+    (id) => {
+      state.by = id;
+      asking++;
+      looked = null;
+      failed = null;
+      pending = null;
+      state.word = "";
+      $("word").value = "";
+      drawWords();
+      writeAddress();
+    },
+  );
+  $("word").lang = state.by === "meaning" ? "en" : "ja";
+  $("examples").lang = state.by === "meaning" ? "en" : "ja";
   const examples = $("examples");
-  if (examples.childElementCount === 0) {
-    examples.append(
-      ...EXAMPLES.map((text) => {
+  if (examples.dataset.by !== state.by) {
+    examples.dataset.by = state.by;
+    examples.replaceChildren(
+      ...EXAMPLES[state.by].map((text) => {
         const button = document.createElement("button");
         button.type = "button";
         button.textContent = text;
@@ -411,19 +509,21 @@ function drawWords() {
     count.textContent = t("wordFailed", { text: failed });
     list.replaceChildren();
   } else if (looked === null) {
-    count.textContent = t("wordPrompt");
+    count.textContent = t(PROMPTS[state.by]);
     list.replaceChildren();
   } else {
-    const { text, words } = looked;
-    const found = wordsOf(words, text);
+    const { text, words: found, mode, by } = looked;
     count.textContent =
-      found.length === 0
-        ? t(words.mode === "safe" ? "wordNoneSafe" : "wordNone", { text })
-        : t(found.length === 1 ? "wordCountOne" : "wordCountMany", { n: found.length, text });
+      by === "kanji" && !/\p{Script=Han}/u.test(text)
+        ? t("wordNoKanji", { text })
+        : found.length === 0
+          ? t(mode === "safe" ? "wordNoneSafe" : "wordNone", { text })
+          : t(found.length === 1 ? "wordCountOne" : "wordCountMany", { n: found.length, text });
     list.replaceChildren(...found.map(wordItem));
-    list.dataset.release = words.release;
+    list.dataset.release = looked.release;
   }
-  $("word-release").textContent = looked === null ? "" : t("wordRelease", { release: looked.words.release });
+  $("word-release").textContent =
+    looked === null || looked.release === "" ? "" : t("wordRelease", { release: looked.release });
 }
 
 function draw() {

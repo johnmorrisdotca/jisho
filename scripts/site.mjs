@@ -10,8 +10,10 @@ const ICON =
   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232f5d4a'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle' fill='white'%3E%E8%BE%9E%3C/text%3E%3C/svg%3E";
 
 const uses = [
-  `import { loadWords, wordsOf } from "@johnmorrisdotca/jisho/words";`,
+  `import { findByMeaning, loadWords, wordsOf, wordsWithKanji } from "@johnmorrisdotca/jisho/words";`,
   `wordsOf(await loadWords("かみ"), "かみ")  // 紙, 神, 髪… with a meaning each; a few kilobytes are fetched`,
+  `await findByMeaning("water")  // 水 and the commonest words whose meaning holds water`,
+  `await wordsWithKanji("山")  // 山, 火山, 登山… the commonest words written with 山`,
   `import { gradeOf, kanjiOfLevel, lookAlikes, readKanji } from "@johnmorrisdotca/jisho";`,
   `gradeOf(GRADES, "語")  // 2, with GRADES from "@johnmorrisdotca/jisho/grades"`,
   `kanjiOfLevel(JLPT, "N5")  // the 79 kanji of N5, with JLPT from "@johnmorrisdotca/jisho/jlpt"`,
@@ -27,7 +29,7 @@ const page = `<!doctype html>
       id,
       title: "Jisho 辞書 — Japanese word and kanji data for JavaScript",
       description:
-        "Look Japanese words up by reading or written form, and read the school grades, JLPT levels, readings, meanings and look-alike pairs of 2,999 kanji, in a typed package with no dependencies.",
+        "Look Japanese words up by reading, written form, English meaning or a kanji in them, and read the school grades, JLPT levels, readings, meanings and look-alike pairs of 2,999 kanji, in a typed package with no dependencies.",
       ogTitle: "Jisho Japanese word and kanji data",
       ogDescription:
         "Type a reading or a word and see what it means, or choose a school grade or a JLPT level and read each kanji.",
@@ -66,6 +68,10 @@ const page = `<!doctype html>
         <p class="fam-muted" id="count" data-testid="count" data-kanji-view aria-live="polite"></p>
       </section>
       <section class="jisho-words-view" id="words-view" data-testid="words-view" aria-labelledby="choose-title" hidden>
+        <div class="fam-row" data-help-en="Reading or word: kana, romaji or kanji. English meaning: the commonest words whose meaning holds what you type. Kanji in it: the words written with a kanji." data-help-ja="読みか単語：かな、ローマ字、漢字で引きます。英語の意味：入力した語を意味に含む、よく使う単語を探します。含まれる漢字：その漢字で書かれる単語を探します。">
+          <span class="fam-label" id="by-label" data-say="byLabel"></span>
+          <div class="fam-seg" id="by" role="group" aria-labelledby="by-label" data-testid="by"></div>
+        </div>
         <form class="jisho-word-form" id="word-form" role="search">
           <label class="fam-label" for="word" data-say="wordLabel"></label>
           <input class="jisho-input" id="word" name="word" data-testid="word" type="search" lang="ja" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">

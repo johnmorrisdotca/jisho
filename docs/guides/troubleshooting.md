@@ -29,6 +29,14 @@ You may have a compatibility character, which looks the same and is a different 
 
 It throws for a text that `loadWords` was not asked for, instead of answering with no words, which would say the dictionary has none. Load it first, or pass the words you have as `previous` to `loadWords` and add to them. The common table, from `loadCommonWords`, answers for every text.
 
+## A lookup rejects with a `WordsLoadError`
+
+A piece of the dictionary could not be fetched, even on the second try. `error.piece` says which ("the readings piece 12 of 294"), and `error.cause` is what the fetch rejected with: the network was down, the host does not serve the file, or a bundler left the piece out of the build. Nothing is remembered of the failure, so asking again tries again. [Look words up](words.md) has the details.
+
+## `findByMeaning` does not find a word
+
+It finds a word by the whole words of its glosses, from an index of the commonest twenty words for each English term, and a word JMdict does not rank by the terms of its first gloss alone. A word with a very common term in its gloss may be beyond the twenty; try a phrase that follows the gloss (`go out`), or the term that is rarer. It does not stem (`walking` does not find "walk") and it is English only.
+
 ## A server's bundle got very large
 
-Something imported `@johnmorrisdotca/jisho/words` where a bundler follows it, and the bundler reached every piece of the dictionary, about 30 MB. [Look words up](words.md) says how to keep it out.
+Something imported `@johnmorrisdotca/jisho/words` where a bundler follows it, and the bundler reached every piece of the dictionary, about 48 MB. [Look words up](words.md) says how to keep it out.

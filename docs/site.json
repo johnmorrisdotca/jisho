@@ -1,8 +1,8 @@
 {
   "job": "Japanese word and kanji data for JavaScript",
   "pitch": {
-    "en": "The words of JMdict looked up by reading or written form, in small pieces fetched as needed, safe by default or unfiltered with every sense's marks, and the school grades, JLPT levels, readings, meanings and look-alike pairs of 2,999 kanji, each table an entry point of its own.",
-    "ja": "JMdictの単語を読みや表記から引け、必要な小さなチャンクだけを取得します。初期値はセーフモードで、各語義にはJMdictの印が付き、「フィルターなし」も選べます。2,999字の漢字の学年、JLPTレベル、読み、意味、形の似た漢字の組も収め、表ごとに独立したエントリポイントがあります。"
+    "en": "The words of JMdict looked up by reading, written form, English meaning, a kanji in them or romaji, in small pieces fetched as needed, safe by default or unfiltered with every sense's marks, and the school grades, JLPT levels, readings, meanings and look-alike pairs of 2,999 kanji, each table an entry point of its own.",
+    "ja": "JMdictの単語を読み、表記、英語の意味、含まれる漢字、ローマ字から引け、必要な小さなチャンクだけを取得します。初期値はセーフモードで、各語義にはJMdictの印が付き、「フィルターなし」も選べます。2,999字の漢字の学年、JLPTレベル、読み、意味、形の似た漢字の組も収め、表ごとに独立したエントリポイントがあります。"
   },
   "name": {
     "en": "Jisho is the Japanese word 辞書 for a dictionary: this one holds Japanese words and kanji.",
@@ -31,8 +31,8 @@
       "ja": "形の似た漢字の組"
     },
     "./words": {
-      "en": "Look words up by reading or written form",
-      "ja": "読みや表記から単語を引く"
+      "en": "Look words up by reading, written form, English meaning, kanji or romaji",
+      "ja": "読み、表記、英語の意味、漢字、ローマ字から単語を引く"
     },
     "./words-common": {
       "en": "The common words that safe mode keeps, in one table",
