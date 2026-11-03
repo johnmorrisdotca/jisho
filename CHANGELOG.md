@@ -6,6 +6,23 @@ All notable changes to this project are written here. The format follows
 
 ## [Unreleased]
 
+## [2.4.0] - 2026-11-03
+
+A minor version: nothing that 2.3.0 gave is taken away.
+
+### Added
+
+- **Read a text.** `readText(text, { mode, block, allow })` cuts Japanese into words. From each place it takes the longest stretch the dictionary has a word for, as it stands or as a conjugated form (食べなかった is 食べる), and weighs the few longest against the word that follows each, so that 今日はいい天気 is 今日, は and いい天気. Each `ReadToken` has the text as written, its `kind` (`word`, `unknown`, or `other` for spaces, punctuation, Latin letters and digits), the dictionary `word`, its `form` and the `path` to the text, its `furigana` (the text in pieces, each kanji piece with the kana that read it), its `reading` in hiragana, its `meaning`, the hardest JLPT `level` among its kanji (Jisho has levels for kanji and none for words), each kanji's school grade and level, and the other words the text could be (`alternatives`). Japanese that no word fits is `unknown` and is listed in `result.unknown`. A text is read up to `MAX_READ_LENGTH` (5,000) characters, and `truncated` says when it was cut. It fetches only Jisho's own pieces, as the text needs them: a first sentence of fifteen characters took about 30, and later text reuses them.
+- Three rules keep the dictionary's rare words from taking over: a stretch counts when its word is common, or it has a kanji, or it is four characters or longer; a single katakana is never a word; and a text of kana alone is read as the word usually written in kana (は is the particle, not 葉 or 歯). A word of kanji that ends in は and begins with a word is the pair (今日は is 今日 and は).
+- `studyList(result, { kanjiOnly })` and `studyListText(rows, "csv" | "tsv")`: the words of a text once each, in order, with reading, meaning, level, the highest school grade among the kanji, how often the text has the word and the form it first came in, as rows and as CSV (a header, quoting what needs it) or TSV (tabs, no header, to paste or import).
+- `furiganaOf(written, reading)` and `furiganaOfSurface(surface, base, reading)`: which kana read which kanji of a word, and of a conjugated form of it (食べなかった is 食 (た) and べなかった; 来 takes the reading its ending asks for).
+- An `InflectedWord` has `form`, the dictionary form as it was looked up.
+- The demo has a Reader tab: paste a text and tap Read, see it as words with furigana above them, tap a word for its card (dictionary form and path, level, each kanji's grade, other readings), the words not found, and the study list with Copy, Download CSV and a switch to leave out the words with no kanji. The text is kept in the address. A picture of it in the README, a guide in English and Japanese, a troubleshooting entry and an upgrade note.
+
+### Limits
+
+It has no grammar: it takes the longest word, so a rare long word can win, a name (ジョンモリス) is not found or is cut into small words, and a word with several readings gets the commonest one JMdict ranks, which for a single kanji can be the wrong one (本 is もと before ほん; `alternatives` has the others). In safe mode a word the mode leaves out is not found, so its text is listed as unknown.
+
 ## [2.3.0] - 2026-11-03
 
 A minor version: nothing that 2.2.0 gave is taken away.

@@ -26,8 +26,8 @@
       "gzip": 35421
     },
     "./words": {
-      "minified": 65420601,
-      "gzip": 13770000
+      "minified": 65457572,
+      "gzip": 13787000
     },
     "./words-common": {
       "minified": 2748824,
