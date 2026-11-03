@@ -2,28 +2,69 @@
 title: "活用した形の単語を引く"
 section: how-to
 order: 3
-description: "Hikidashiの`dictionaryForms`とJishoが示す語の種類を組み合わせて、「食べました」から「食べる」を見つけます。"
+description: "「食べなかった」から「食べる」を、「否定→過去」という道すじ付きで見つけます。組み込みの規則、語の種類の確認、対応する形と対応しない形を説明します。"
 ---
 
-## 文の中の形のままの単語
+## 文に書かれた形のままの単語
 
-Jisho自身は、辞書に載っているものを引くだけで、活用の処理を持ちません。「食べました」では何も見つからず、「食べる」なら見つかります。[Hikidashi](https://github.com/johnmorrisdotca/hikidashi)の`dictionaryForms`は、書かれた語の元になりうる辞書形を、それぞれがどの種類の語でなければならないかとともに挙げます。`Word`の`kinds`はJMdictがその単語を何の種類としているかを示すので、両方を合わせると単語が分かります。HikidashiはJishoの依存先ではありません。
+文の中では、動詞や形容詞は活用した形で書かれます。たとえば「食べなかった」「高くて」「勉強していた」です。辞書に載っているのは「食べる」「高い」「勉強」です。`findInflected`は、書かれたとおりの文字列と、そのもとになりうる辞書形のすべてを引き、両者がどうつながるかを答えます。
 
 ```ts
-import {dictionaryForms} from "@johnmorrisdotca/hikidashi/deinflect";
-import {loadWords,wordsOf} from "@johnmorrisdotca/jisho/words";
-const LETTER={godan:"g",ichidan:"i",iAdjective:"a",suru:"s",kuru:"k"} as const;
-async function dictionaryWords(written:string){
-  const proposals=dictionaryForms(written);
-  const words=await loadWords([written,...proposals.map((one)=>one.base)]);
-  return [
-    ...wordsOf(words,written),
-    ...proposals.flatMap((one)=>wordsOf(words,one.base).filter((word)=>word.kinds.includes(LETTER[one.wordClass]))),
-  ];
+import {findInflected} from "@johnmorrisdotca/jisho/words";
+for (const text of ["食べなかった","高くて","勉強していた"]){
+  const [found]=await findInflected(text);
+  console.log(text,found?.word.written,found?.path.join(", "));
 }
-console.log((await dictionaryWords("食べました"))[0]?.written);
-console.log((await dictionaryWords("行きます"))[0]?.written);
 ```
+
+`path`は、辞書形からその文字列を作るために行った変化を、内側から順に並べたものです。「食べなかった」は、「食べる」を否定にして（食べない）、さらに過去にした形です。辞書にそのまま載っている語は`path`が空で、先頭に来ます。
+
+## しくみ
+
+規則の表（数十個のひな形から作ります）が、学習者と同じように、外側の語尾から1つずつ外していきます。「食べなかった」は「食べない」の過去で、「食べない」は「食べる」の否定です。この段階では、実在しない形（「食べなかう」など）も候補に出ます。そこで辞書が、その候補がどの種類の語でなければならないかを使って確かめます。`Word`の`kinds`は、JMdictがその語を五段（`g`）、一段（`i`）、い形容詞（`a`）、な形容詞（`n`）、する動詞（`s`）、来る（`k`）のどれとしているかを示します。そのため、「取った」は五段動詞の「取る」であり、一段の「取る」ではありません。
+
+規則は通信なしで動き、gzip圧縮後で約2 kBです。ほかの辞書を使うページのために、単独のエントリポイントにもなっています。
+
+```ts
+import {deinflect} from "@johnmorrisdotca/jisho/deinflect";
+console.log(deinflect("食べなかった").filter((one)=>one.base==="食べる"));
+```
+
+## たくさんの文字列をまとめて
+
+文字列を`inflected: true`付きで読み込むと、それぞれのもとになりうる辞書形も読み込まれます。結果は`inflectedOf`で読みます。待ち時間はありません。`inflected: true`なしで読み込んだ文字列を渡すと、「辞書に無い」と答えるのではなく、エラーになります。
+
+```ts
+import {inflectedOf,loadWords} from "@johnmorrisdotca/jisho/words";
+const words=await loadWords(["見ませんでした","書いている"],{inflected:true});
+console.log(inflectedOf(words,"見ませんでした")[0]?.path);
+console.log(inflectedOf(words,"書いている")[0]?.word.written);
+```
+
+`inflectedOf`は、よく使う語の表（`loadCommonWords`）に対しても、追加の読み込みなしで使えます。
+
+## かかる量
+
+ふつうの検索は、gzip圧縮後で約25 kBのピースを1つか2つ取得します。候補の文字列ごとに検索が必要ですが、1つの語の候補はほとんど同じ1〜2個のピースに入るので、活用した文字列は、ふつうの検索より数ピース多いだけです。語尾に合う規則がない文字列は、ふつうの検索と同じ量で済みます。
+
+## 対応している形
+
+- 五段動詞、一段動詞、する（「勉強した」は「勉強」、「愛した」は「愛する」）、来る（漢字とかな）。
+- い形容詞と、「だ」「です」「ではない」などを伴うな形容詞（「静かだった」は「静か」）。
+- 丁寧（ます）、否定、過去、て形、条件（ばとたら）、意志、たり、可能、受け身、使役、使役受け身。
+- たい、そう、すぎる、やすい、にくい、ながら、なさい。
+- て形のあとに来る補助の動詞：ている、てしまう（ちゃう）、ておく（とく）、てみる、ていく、てくる、てくれる、てあげる、てもらう、てください。
+- これらの組み合わせ：「食べさせられたくなかった」は「食べる」の使役、受け身、たい、否定、過去です。
+
+## 対応していない形
+
+- 命令形（食べろ）、敬語の形、「〜ず」、「〜なければならない」全体。
+- 語幹だけの形（食べ）。
+- 「だ」を伴う名詞（学生だった）。JMdictが印を付けているのはな形容詞で、名詞には付いていないため、読めるのはな形容詞だけです。
+- 「愛する」のように独自の活用をする語（愛さない）。これはJMdictにも載っている五段の「愛す」として見つかります。
+- 打ち間違いは、何も見つかりません。
+
+規則は、395個の形のゴールデンセット（各形に辞書形、種類、道すじを付けたもの）で確かめています。これは、プログラムの出力ではなく、活用の規則から書き起こしたものです。母語話者による確認はまだ受けておらず、各項目にもそう書いてあります。
 
 ## 関連
 

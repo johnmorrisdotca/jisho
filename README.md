@@ -72,6 +72,7 @@ console.log(lookAlikes(LOOK_ALIKE, "土")[0]?.kanji); // the closest look-alike 
 
 - **[Words](#the-words)**: JMdict's rows, found by reading or written form, commonest first, each with a short English meaning and how common it is, in 294 pieces by reading and 71 of an index of written forms, so a lookup fetches about 25 kB gzipped.
 - **[Find by meaning, by kanji, or in romaji](#find-words-by-what-they-mean-or-by-a-kanji)**: `findByMeaning("water")`, `wordsWithKanji("山")` and `loadWords("kami", { romaji: true })`, each with an index in small pieces of its own that a plain lookup never fetches.
+- **[Conjugated words](#a-word-as-a-sentence-writes-it)**: `findInflected("食べなかった")` finds 食べる and says how, `negative, past`, from a rule table of 2 kB gzipped that works offline; the dictionary keeps only the proposals that are the right kind of word.
 - **Odd input is nothing, never a crash**: full-width and half-width, stray spaces, invisible characters and far too much text are made plain or answered with no words, and a piece that cannot be fetched is asked for once more and then rejects with a `WordsLoadError` that names it.
 - **Safe by default, unfiltered when asked**: `mode: "safe"` leaves out a sense JMdict marks vulgar, X-rated, sensitive or derogatory, and a word with nothing else to say, and fetches only files that hold none of it. `mode: "unfiltered"` is everything JMdict has. Every sense carries its marks, and the consumer's own `block` and `allow` lists, and a few small tools, do the rest. Jisho keeps no list of words of its own.
 - **[School grades](#the-school-grades)**: 2,999 kanji by grade, 1,026 of them taught in elementary school and 2,136 in all for everyday use.
@@ -146,6 +147,15 @@ console.log(lookAlikes(LOOK_ALIKE, "土")[0]?.kanji); // the closest look-alike 
 <img src="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/words-kanji-desk-light.webp" alt="The Words view with Find by set to the kanji in it and 山 looked up: cards for 山, 火山, 青山, 聖山 and more, each with a button for each of its kanji that leads to that kanji's card." width="360">
 </picture><br>
 <sub>Words written with 山, each leading to its kanji.</sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" colspan="2">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/words-conjugated-desk-dark.webp">
+<img src="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/words-conjugated-desk-light.webp" alt="The Words view with 食べなかった looked up: one card, 食べる (たべる), to eat, marked common, and under its meaning the line from 食べる: negative, past." width="360">
+</picture><br>
+<sub>A conjugated word: 食べなかった is 食べる, negative, past.</sub>
 </td>
 </tr>
 </table>
@@ -313,25 +323,27 @@ console.log(wordsOf(words, "かみ").slice(0, 3).map((one) => [one.written, one.
 
 ### A word as a sentence writes it
 
-Jisho looks up what the dictionary lists and does no conjugation of its own. For 食べました, take the proposals of [Hikidashi](https://github.com/johnmorrisdotca/hikidashi)'s `dictionaryForms` and keep the ones the dictionary says are that kind of word:
+`findInflected` looks a text up as it is written, conjugated or not: 食べなかった finds 食べる, and says how the one comes from the other, `negative, past`. A rule table of the endings (godan, ichidan, する, 来る, い and な adjectives; polite, negative, past, te, conditional, volitional, potential, passive, causative, want-to, looks-like and chains of them) proposes the dictionary forms, and the dictionary keeps only those that are the kind of word the ending needs, so 取った is 取る and never an ichidan 取る. It costs the pieces of the proposals, a few more than a plain lookup.
 
 ```ts
-import { dictionaryForms } from "@johnmorrisdotca/hikidashi/deinflect";
-import { loadWords, wordsOf } from "@johnmorrisdotca/jisho/words";
+import { findInflected } from "@johnmorrisdotca/jisho/words";
 
-const LETTER = { godan: "g", ichidan: "i", iAdjective: "a", suru: "s", kuru: "k" } as const;
-
-async function dictionaryWords(written: string) {
-  const proposals = dictionaryForms(written);
-  const words = await loadWords([written, ...proposals.map((one) => one.base)]);
-  return [
-    ...wordsOf(words, written),
-    ...proposals.flatMap((one) => wordsOf(words, one.base).filter((word) => word.kinds.includes(LETTER[one.wordClass]))),
-  ];
+for (const text of ["食べなかった", "高くて", "勉強していた"]) {
+  const [found] = await findInflected(text);
+  console.log(text, found?.word.written, found?.path.join(", ")); // 食べなかった 食べる negative, past
 }
+```
 
-console.log((await dictionaryWords("食べました"))[0]?.written); // 食べる
-console.log((await dictionaryWords("高くて"))[0]?.written); // 高い
+For many texts, load them with `inflected: true` and read each with `inflectedOf`, which waits for nothing. The rules alone, with no dictionary and no fetch, are `deinflect` at `@johnmorrisdotca/jisho/deinflect` (about 2.1 kB gzipped); they only propose, and what is real is for the dictionary to say.
+
+```ts
+import { deinflect } from "@johnmorrisdotca/jisho/deinflect";
+import { inflectedOf, loadWords } from "@johnmorrisdotca/jisho/words";
+
+const words = await loadWords(["見ませんでした", "書いている"], { inflected: true });
+console.log(inflectedOf(words, "見ませんでした")[0]?.path); // ["polite", "negative", "past"]
+console.log(inflectedOf(words, "書いている")[0]?.word.written); // 書く
+console.log(deinflect("食べさせられた").map((one) => one.base).includes("食べる")); // true
 ```
 
 ### Leave out by mark
@@ -466,7 +478,7 @@ JMdict's English dictionary, one row for each reading of each entry that has an 
 | `forms` | Every written form, the commonest first; none for a word with no kanji |
 | `meaning` | Up to two senses of up to three glosses, cut at a whole gloss inside about 60 characters, the plain gloss of a sense first, made from the senses the word has |
 | `senses` | Its first four senses, each with its `marks` (JMdict's usage, field and dialect codes) and up to three `glosses` |
-| `kinds` | Letters: g godan, i ichidan, a i-adjective, s suru, k kuru |
+| `kinds` | Letters: g godan, i ichidan, a i-adjective, n na-adjective, s suru, k kuru |
 | `common` | Whether JMdict marks it common: `news1`, `ichi1`, `spec1`, `spec2` or `gai1` on a form or reading |
 | `priority`, `rank` | The priority tags JMdict gives it (`news1`, `ichi1`, `nf05`…) and one number made from them, lower being commoner: 250 to 24,000, and 100,000 for a word with none |
 
@@ -533,11 +545,12 @@ The [API reference](https://johnmorrisdotca.github.io/jisho/api.html) lists ever
 | Entry point | What it holds |
 | --- | --- |
 | `@johnmorrisdotca/jisho` | The types and the functions that read the tables. No data |
+| `@johnmorrisdotca/jisho/deinflect` | `deinflect`: the dictionary forms a conjugated word could come from, and the path. No data, no fetch |
 | `@johnmorrisdotca/jisho/grades` | `GRADES`: each school grade's kanji |
 | `@johnmorrisdotca/jisho/jlpt` | `JLPT`: each level's kanji |
 | `@johnmorrisdotca/jisho/kanji` | `KANJI`: the table, read with `readKanji` |
 | `@johnmorrisdotca/jisho/look-alike` | `LOOK_ALIKE`: the pairs, read with `lookAlikes` |
-| `@johnmorrisdotca/jisho/words` | `loadWords`, `loadCommonWords`, `wordsOf`, `findByMeaning`, `wordsWithKanji` and `romajiToKana`: the words, in pieces fetched as needed |
+| `@johnmorrisdotca/jisho/words` | `loadWords`, `loadCommonWords`, `wordsOf`, `findByMeaning`, `wordsWithKanji`, `findInflected` and `romajiToKana`: the words, in pieces fetched as needed |
 | `@johnmorrisdotca/jisho/words-common` | `COMMON_WORDS`: the 26,039 common words that safe mode keeps, read with `readCommonWords` |
 | `@johnmorrisdotca/jisho/words-common-extra` | `COMMON_EXTRA`: what to add to them to have every common word, for unfiltered mode |
 
@@ -551,10 +564,12 @@ The [API reference](https://johnmorrisdotca.github.io/jisho/api.html) lists ever
 | `searchKanji(rows, text)` | The rows that hold a kanji, reading or meaning |
 | `lookAlikes(LOOK_ALIKE, kanji, { atLeast, max })` | The kanji most like one kanji |
 | `kanjiIn(text)` | The kanji in a piece of text, once each |
-| `loadWords(texts, { mode, block, allow, previous, romaji })` | Fetches what JMdict holds for the texts, and nothing else |
+| `loadWords(texts, { mode, block, allow, previous, romaji, inflected })` | Fetches what JMdict holds for the texts (and, for `inflected`, for the forms they could come from), and nothing else |
 | `wordsOf(words, text, { romaji })`, `meaningOf(words, text)` | The words for a reading or a written form, commonest first, and the meaning of the first or null |
 | `findByMeaning(text, { limit, mode, block, allow })` | The commonest words whose English meaning holds the whole word or phrase |
 | `wordsWithKanji(kanji, { limit, mode, block, allow })`, `kanjiOfWord(word, table)` | The commonest words written with a kanji, and the entries of the kanji table for the kanji in a word |
+| `findInflected(text, { mode, block, allow, romaji })`, `inflectedOf(words, text)` | The words for a conjugated text with the path from the dictionary form (`negative, past`), fetching, and from words loaded with `inflected: true` |
+| `deinflect(text)` | The dictionary forms a conjugated text could come from, from the endings alone: no data, no fetch |
 | `searchMeanings(words, text)` | The same search over words already loaded, such as the common table, with nothing fetched |
 | `romajiToKana(text)`, `kanaFromRomaji(text)` | Romaji as hiragana, and every way a long vowel can read |
 | `normalizeText(text)` | A text made plain: NFKC, spaces, invisible characters and the long vowel mark |
@@ -571,7 +586,7 @@ The package draws nothing, so there is nothing of its own to theme: it hands bac
 - Meanings are English only, from JMdict_e, and short: two senses at most, cut at about 60 characters. They are a gloss to show beside a word, not JMdict's whole entry.
 - Safe mode keeps what it leaves out in pieces of their own, fetched only unfiltered, so it never reaches a browser that did not ask. The pieces are in the package, so anybody who installs it or asks for them can read them. JMdict's marks are its own and are not complete: a sense it has not marked is not left out, and a consumer that needs more brings its own `block` list, which Jisho does not supply.
 - Options are checked: `block` and `allow` must be lists of texts and `mode` must be `"safe"` or `"unfiltered"`; anything else throws a `TypeError` before anything is fetched, rather than turning the filter off.
-- A lookup is exact: no inflected form (食べた finds nothing, 食べる does; [the recipe above](#a-word-as-a-sentence-writes-it) uses Hikidashi for that). The text is made plain first, but a typo finds nothing.
+- `wordsOf` and `loadWords` are exact: 食べた finds nothing, 食べる does. `findInflected` reads conjugated forms: godan, ichidan, する (and a noun with する), 来る, い and な adjectives, in the polite, negative, past, te, conditional, volitional, potential, passive, causative, want-to, looks-like, too-much, easy-to and hard-to forms, and the helper verbs a te-form leads (ている, てしまう, ておく, てみる, ていく, てくる, てくれる, てあげる, てもらう), and their chains. It does not read the imperative, honorific (keigo) forms, 〜ず, 〜なければならない, a noun with だ (only な adjectives), or the stem alone (食べ). A な adjective needs its dictionary form (静かだった finds 静か); 愛する-type verbs that conjugate their own way (愛さない) are found only as godan 愛す. The rules are tested on a golden set of 395 forms written from the conjugation rules, and no native reader has checked it yet. The text is made plain first, but a typo finds nothing.
 - The English search finds a word by whole words of its glosses, from an index of twenty words for each term (up to ten whose gloss is exactly it, then the commonest that hold it): a very common term (`go`, `water`) reaches only those twenty, and a word JMdict does not rank is found by its first gloss alone. It has no stemming (`walking` does not find "walk").
 - A process keeps the pieces it has read, at most 64 at a time; the one asked for longest ago is let go. Looking up every piece once took a process from 49 MB to 266 MB before this limit.
 - The dictionary is about 48 MB in all, and 13.7 MB gzipped as one bundle. A server that bundles `words` carries it, and a bundler that follows every piece carries all of it; see [Look words up](https://johnmorrisdotca.github.io/jisho/docs/guides/words.html).

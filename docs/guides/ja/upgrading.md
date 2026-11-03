@@ -5,6 +5,10 @@ order: 6
 description: "バージョンごとの変更と、データ更新の扱い。"
 ---
 
+## 2.2.0から2.3.0へ
+
+呼び出し側で変わるものはありません。新しく加わったのは、`findInflected`、`inflectedOf`、`loadWords`の`inflected`オプション（活用した文字列を、道すじ付きで辞書形から見つける）と、`deinflect`（単独のエントリポイント`@johnmorrisdotca/jisho/deinflect`でも使えます）です。`Word`の`kinds`に、な形容詞（静か）を表す`n`が入ることがあります。これまで空だった語に`n`が付くので、空の`kinds`を「動詞でもい形容詞でもない」と読んでいたコードは、`n`も許してください。規則のぶん、パッケージは約2 kB（gzip圧縮後）大きくなります。データは同じJMdictですが、チャンクの区切り位置が少し変わりました。Hikidashiを使う方法は不要になり、Hikidashiは開発用の依存先でもなくなりました。
+
 ## 2.0.0から2.1.0へ
 
 呼び出し側で変わるものはなく、2.0.0にあったものはすべて残っています。`Word`に`rank`と`priority`の二つのフィールドが増え、文字列は引く前に整えられるようになりました（`ｶﾐ`や余分な空白、見えない文字でも`カミ`と同じ単語が見つかります）。そのため、そうした文字列で例外が出たり何も見つからなかったりした検索でも、単語が見つかるようになります。取得できないチャンクは、これまではバンドラーやブラウザーが投げたエラーで拒否されていましたが、`WordsLoadError`で拒否されるようになりました。新しく加わったのは、`findByMeaning`、`wordsWithKanji`、`kanjiOfWord`、`searchMeanings`、`romajiToKana`、`kanaFromRomaji`、`normalizeText`、`commonestFirst`、`priorityTags`、`rankOfTags`と`romaji`オプションです。新しい索引のために、ダウンロードするパッケージは3.7 MB大きくなります（10.2 MBから13.9 MB）。索引を取得するのは新しい検索だけです。

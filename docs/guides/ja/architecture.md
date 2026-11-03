@@ -14,6 +14,8 @@ src/
 ├── index.ts   型と、漢字の表を読む関数
 ├── words.ts   単語を引く（必要なチャンクを取得）
 ├── words-filter.ts  引いた結果を絞る小さな道具
+├── words-inflected.ts 活用した文字列を、もとの辞書形から見つける（findInflected、inflectedOf）
+├── deinflect.ts  語尾の規則の表：活用した語のもとになりうる辞書形と道すじ。データなし
 ├── version.ts パッケージのバージョン
 └── data/      表（それぞれ独立したエントリポイント）
     ├── grades.data.ts      学年

@@ -18,7 +18,7 @@ console.log(wordsOf(words,"紙")[0]?.reading);
 
 A text of kana alone is a reading, and hiragana and katakana find the same words: `カミ` finds what `かみ` does. Any other text is a written form. A reading shared by several words gives them commonest first, each with its written form: かみ is 紙 (paper), 神 (god) and 髪 (hair), then the rarer ones.
 
-Each word is a `Word`: `written` is the way to show it, `reading` is how it is read, `forms` are every written form, `meaning` is a short English meaning made from its `senses`, each with the `marks` JMdict gives it and its `glosses`, `kinds` are letters for the kinds of word it is (g godan, i ichidan, a i-adjective, s suru, k kuru) and `common` says whether JMdict marks it common, `priority` lists the priority tags JMdict gives it and `rank` is one number made from them (see [how common a word is](word-rank.md)).
+Each word is a `Word`: `written` is the way to show it, `reading` is how it is read, `forms` are every written form, `meaning` is a short English meaning made from its `senses`, each with the `marks` JMdict gives it and its `glosses`, `kinds` are letters for the kinds of word it is (g godan, i ichidan, a i-adjective, n na-adjective, s suru, k kuru) and `common` says whether JMdict marks it common, `priority` lists the priority tags JMdict gives it and `rank` is one number made from them (see [how common a word is](word-rank.md)).
 
 A text with no word answers with an empty list, and `meaningOf` answers with `null`. Nothing is ever made up in their place.
 

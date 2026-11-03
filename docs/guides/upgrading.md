@@ -5,6 +5,10 @@ order: 6
 description: "What changes between versions, and what a data refresh does."
 ---
 
+## From 2.2.0 to 2.3.0
+
+Nothing you call changes. New: `findInflected`, `inflectedOf` and the `inflected` option of `loadWords` (a conjugated text found by its dictionary form, with the path), and `deinflect`, also at its own entry point, `@johnmorrisdotca/jisho/deinflect`. A `Word`'s `kinds` can now hold `n`, for a な adjective (静か), where it held nothing: code that took an empty `kinds` to mean "not a verb or い adjective" must also allow `n`. The package is about 2 kB gzipped larger for the rules, and the data is the same JMdict, cut into pieces at slightly different places. The Hikidashi recipe is no longer needed, and Hikidashi is no longer a development dependency.
+
 ## From 2.1.0 to 2.2.0
 
 Nothing you call correctly changes. A call that had a mistake in it, which used to be quietly accepted, now throws a `TypeError` before anything is fetched:

@@ -18,7 +18,7 @@ console.log(wordsOf(words,"紙")[0]?.reading);
 
 かなだけの文字列は読みとして扱い、ひらがなとカタカナは同じ単語を見つけます。`カミ`は`かみ`と同じ結果になります。そのほかの文字列は表記として扱います。一つの読みに複数の単語があるときは、よく使う順に、それぞれの表記を付けて返します。「かみ」なら、紙（paper）、神（god）、髪（hair）のあとに、あまり使われない語が続きます。
 
-返ってくる各単語は`Word`です。`written`は表示に使う表記、`reading`は読み、`forms`はすべての表記、`meaning`は短い英語の意味（`senses`から作られます）、`senses`は各語義で、JMdictが付けた`marks`（印）と`glosses`（訳語）を持ち、`kinds`は語の種類を表す文字（g 五段、i 一段、a い形容詞、s する動詞、k 来る）、`common`はJMdictがよく使う語としているかどうか、`priority`はJMdictが付けた優先度のタグ、`rank`はそこから作った一つの数です（[どれくらいよく使う語か](word-rank.md)を参照）。
+返ってくる各単語は`Word`です。`written`は表示に使う表記、`reading`は読み、`forms`はすべての表記、`meaning`は短い英語の意味（`senses`から作られます）、`senses`は各語義で、JMdictが付けた`marks`（印）と`glosses`（訳語）を持ち、`kinds`は語の種類を表す文字（g 五段、i 一段、a い形容詞、n な形容詞、s する動詞、k 来る）、`common`はJMdictがよく使う語としているかどうか、`priority`はJMdictが付けた優先度のタグ、`rank`はそこから作った一つの数です（[どれくらいよく使う語か](word-rank.md)を参照）。
 
 単語のない文字列に対しては、`wordsOf`は空のリストを、`meaningOf`は`null`を返します。代わりの答えを作ることはありません。
 

@@ -25,6 +25,10 @@ You may have a compatibility character, which looks the same and is a different 
 
 `meaningOf` answers null and `wordsOf` an empty list when JMdict has no word for the text, and also when every sense it has is one JMdict marks vulgar, X-rated, sensitive or derogatory, because words are in safe mode unless you pass `mode: "unfiltered"`, and safe mode does not fetch what it leaves out. Nothing is wrong. Look the text up unfiltered to tell the two apart.
 
+## A conjugated word finds nothing
+
+`wordsOf` and `loadWords` look up exactly what the dictionary lists, so 食べなかった finds nothing there. Use [`findInflected`](conjugated-words.md), or load with `inflected: true` and read with `inflectedOf`. If that finds nothing too, the form may be one it does not read (the imperative, honorific forms, a noun with だ) or a typo: [what is covered](conjugated-words.md#what-is-covered) lists both.
+
 ## `wordsOf` says a text was not loaded
 
 It throws for a text that `loadWords` was not asked for, instead of answering with no words, which would say the dictionary has none. Load it first, or pass the words you have as `previous` to `loadWords` and add to them. The common table, from `loadCommonWords`, answers for every text.
