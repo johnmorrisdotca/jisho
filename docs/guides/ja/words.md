@@ -96,6 +96,7 @@ console.log(withoutMarks(wordsOf(words,"かみ"),["arch","obs"]).map((one)=>one.
 - [ローマ字で単語を引く](romaji.md)
 - [どれくらいよく使う語か](word-rank.md)
 - [活用した形の単語を引く](conjugated-words.md)
+- [テキストを読む](read-text.md)：テキストを単語に分け、ふりがな、意味、レベル、学習リストを得る。
 - [変わった入力と、読み込めないチャンク](odd-input-and-errors.md)
 
 ## どの表を使うか、大きさはどれくらいか

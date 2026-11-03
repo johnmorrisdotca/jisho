@@ -96,6 +96,7 @@ Each of these has a guide of its own:
 - [Look words up in romaji](romaji.md)
 - [How common a word is](word-rank.md)
 - [Look up a conjugated word](conjugated-words.md)
+- [Read a text](read-text.md): cut a text into words, with furigana, meanings and levels, and a study list.
 - [Odd input and pieces that will not load](odd-input-and-errors.md)
 
 ## Which table, and how big

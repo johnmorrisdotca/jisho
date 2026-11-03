@@ -29,6 +29,10 @@ You may have a compatibility character, which looks the same and is a different 
 
 `wordsOf` and `loadWords` look up exactly what the dictionary lists, so 食べなかった finds nothing there. Use [`findInflected`](conjugated-words.md), or load with `inflected: true` and read with `inflectedOf`. If that finds nothing too, the form may be one it does not read (the imperative, honorific forms, a noun with だ) or a typo: [what is covered](conjugated-words.md#what-is-covered) lists both.
 
+## `readText` cuts a word wrongly, or does not find a word
+
+It takes the longest word the dictionary has, with no grammar, so a rare long word can win, a name is not found or is cut into small words, and a word with several readings gets the commonest one JMdict ranks (the card's `alternatives` has the others). In safe mode a word the mode leaves out is not found, so its text is listed in `unknown`: read it with `mode: "unfiltered"` to tell the two apart. See [read a text](read-text.md#how-the-words-are-chosen).
+
 ## `wordsOf` says a text was not loaded
 
 It throws for a text that `loadWords` was not asked for, instead of answering with no words, which would say the dictionary has none. Load it first, or pass the words you have as `previous` to `loadWords` and add to them. The common table, from `loadCommonWords`, answers for every text.

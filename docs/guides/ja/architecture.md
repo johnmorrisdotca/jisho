@@ -15,6 +15,9 @@ src/
 ├── words.ts   単語を引く（必要なチャンクを取得）
 ├── words-filter.ts  引いた結果を絞る小さな道具
 ├── words-inflected.ts 活用した文字列を、もとの辞書形から見つける（findInflected、inflectedOf）
+├── reader.ts     readText：テキストを最長一致で単語に分け、ふりがな、意味、レベルを付ける
+├── furigana.ts   単語（と、その活用形）のどのかなが、どの漢字を読むか
+├── study-list.ts 読んだテキストの単語を1つずつ並べた表（行、CSV、TSV）
 ├── deinflect.ts  語尾の規則の表：活用した語のもとになりうる辞書形と道すじ。データなし
 ├── version.ts パッケージのバージョン
 └── data/      表（それぞれ独立したエントリポイント）

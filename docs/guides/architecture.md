@@ -23,6 +23,9 @@ src/
 ├── words-search.ts words by what they mean, and by a kanji in them
 ├── words-filter.ts  the small tools for what a lookup returned
 ├── words-inflected.ts findInflected and inflectedOf: a conjugated text, found by the dictionary form it comes from
+├── reader.ts     readText: a text cut into words by the longest match, with furigana, meanings and levels
+├── furigana.ts   which kana read which kanji of a word, and of a conjugated form of it
+├── study-list.ts the words of a text that was read, once each, as rows and as CSV or TSV
 ├── deinflect.ts  the rule table of endings: the dictionary forms a conjugated word could come from, and the path. No data
 ├── romaji.ts  romaji into hiragana, Hepburn and Kunrei
 ├── version.ts the package's version

@@ -5,6 +5,10 @@ order: 6
 description: "What changes between versions, and what a data refresh does."
 ---
 
+## From 2.3.0 to 2.4.0
+
+Nothing you call changes. New: `readText`, `studyList`, `studyListText`, `furiganaOf` and `furiganaOfSurface` (read a text, with the words, their furigana, meanings and levels, and a study list), and an `InflectedWord` now has `form`, the dictionary form as it was looked up. The words entry gains about 17 kB gzipped when a bundler follows every piece (the reader, and the grade and JLPT tables of the kanji, 14 kB, which it fetches only when `readText` is called).
+
 ## From 2.2.0 to 2.3.0
 
 Nothing you call changes. New: `findInflected`, `inflectedOf` and the `inflected` option of `loadWords` (a conjugated text found by its dictionary form, with the path), and `deinflect`, also at its own entry point, `@johnmorrisdotca/jisho/deinflect`. A `Word`'s `kinds` can now hold `n`, for a な adjective (静か), where it held nothing: code that took an empty `kinds` to mean "not a verb or い adjective" must also allow `n`. The package is about 2 kB gzipped larger for the rules, and the data is the same JMdict, cut into pieces at slightly different places. The Hikidashi recipe is no longer needed, and Hikidashi is no longer a development dependency.

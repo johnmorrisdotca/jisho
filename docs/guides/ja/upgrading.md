@@ -5,6 +5,10 @@ order: 6
 description: "バージョンごとの変更と、データ更新の扱い。"
 ---
 
+## 2.3.0から2.4.0へ
+
+呼び出し側で変わるものはありません。新しく加わったのは、`readText`、`studyList`、`studyListText`、`furiganaOf`、`furiganaOfSurface`（テキストを読み、単語、ふりがな、意味、レベル、学習リストを得る）です。`InflectedWord`には、引いたときの辞書形を表す`form`が加わりました。バンドラーがすべてのチャンクをたどる場合、wordsのエントリはgzip圧縮後で約17 kB大きくなります（リーダー本体と、漢字の学年とJLPTの表（14 kB）。表は`readText`を呼んだときだけ取得されます）。
+
 ## 2.2.0から2.3.0へ
 
 呼び出し側で変わるものはありません。新しく加わったのは、`findInflected`、`inflectedOf`、`loadWords`の`inflected`オプション（活用した文字列を、道すじ付きで辞書形から見つける）と、`deinflect`（単独のエントリポイント`@johnmorrisdotca/jisho/deinflect`でも使えます）です。`Word`の`kinds`に、な形容詞（静か）を表す`n`が入ることがあります。これまで空だった語に`n`が付くので、空の`kinds`を「動詞でもい形容詞でもない」と読んでいたコードは、`n`も許してください。規則のぶん、パッケージは約2 kB（gzip圧縮後）大きくなります。データは同じJMdictですが、チャンクの区切り位置が少し変わりました。Hikidashiを使う方法は不要になり、Hikidashiは開発用の依存先でもなくなりました。

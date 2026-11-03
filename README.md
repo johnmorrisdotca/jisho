@@ -73,6 +73,7 @@ console.log(lookAlikes(LOOK_ALIKE, "土")[0]?.kanji); // the closest look-alike 
 - **[Words](#the-words)**: JMdict's rows, found by reading or written form, commonest first, each with a short English meaning and how common it is, in 294 pieces by reading and 71 of an index of written forms, so a lookup fetches about 25 kB gzipped.
 - **[Find by meaning, by kanji, or in romaji](#find-words-by-what-they-mean-or-by-a-kanji)**: `findByMeaning("water")`, `wordsWithKanji("山")` and `loadWords("kami", { romaji: true })`, each with an index in small pieces of its own that a plain lookup never fetches.
 - **[Conjugated words](#a-word-as-a-sentence-writes-it)**: `findInflected("食べなかった")` finds 食べる and says how, `negative, past`, from a rule table of 2 kB gzipped that works offline; the dictionary keeps only the proposals that are the right kind of word.
+- **[Read a text](#read-a-text)**: `readText("私は寿司を食べなかった。")` cuts Japanese into words by the longest match on the dictionary and on conjugated forms, with the furigana, meaning, JLPT level and kanji grades of each, lists what it cannot find, and `studyList` takes the words away as rows, CSV or TSV. No tokenizer: Jisho's own pieces, fetched as the text needs them.
 - **Odd input is nothing, never a crash**: full-width and half-width, stray spaces, invisible characters and far too much text are made plain or answered with no words, and a piece that cannot be fetched is asked for once more and then rejects with a `WordsLoadError` that names it.
 - **Safe by default, unfiltered when asked**: `mode: "safe"` leaves out a sense JMdict marks vulgar, X-rated, sensitive or derogatory, and a word with nothing else to say, and fetches only files that hold none of it. `mode: "unfiltered"` is everything JMdict has. Every sense carries its marks, and the consumer's own `block` and `allow` lists, and a few small tools, do the rest. Jisho keeps no list of words of its own.
 - **[School grades](#the-school-grades)**: 2,999 kanji by grade, 1,026 of them taught in elementary school and 2,136 in all for everyday use.
@@ -156,6 +157,15 @@ console.log(lookAlikes(LOOK_ALIKE, "土")[0]?.kanji); // the closest look-alike 
 <img src="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/words-conjugated-desk-light.webp" alt="The Words view with 食べなかった looked up: one card, 食べる (たべる), to eat, marked common, and under its meaning the line from 食べる: negative, past." width="360">
 </picture><br>
 <sub>A conjugated word: 食べなかった is 食べる, negative, past.</sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" colspan="2">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/reader-desk-dark.webp">
+<img src="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/reader-desk-light.webp" alt="The Reader view: a text of two sentences cut into eleven words, each with its furigana above it, the card of 昨日 beside it with its meaning, level N3 and the grade of each kanji, and the study list of the words below the card." width="560">
+</picture><br>
+<sub>A text cut into words, with the card of the first and the study list beside it.</sub>
 </td>
 </tr>
 </table>
@@ -345,6 +355,23 @@ console.log(inflectedOf(words, "見ませんでした")[0]?.path); // ["polite",
 console.log(inflectedOf(words, "書いている")[0]?.word.written); // 書く
 console.log(deinflect("食べさせられた").map((one) => one.base).includes("食べる")); // true
 ```
+
+### Read a text
+
+`readText` cuts a text into words. From each place it takes the longest stretch the dictionary has a word for, as it stands or as a conjugated form (食べなかった is 食べる), and looks ahead one word so that 今日はいい天気 is 今日, は and いい天気, not 今日, はい and い天気. Each word has its `furigana` (the kanji with the kana that read them), its `reading` in hiragana, its `meaning`, the hardest JLPT `level` among its kanji and each kanji's grade and level. Japanese that no word fits is `unknown` and is listed; spaces, punctuation, Latin letters and digits are kept as `other`. It fetches Jisho's own pieces as the text needs them, about 25 kB gzipped each: a first sentence of fifteen characters took about 30 of them, and the next text reuses what is already fetched.
+
+```ts
+import { readText, studyList, studyListText } from "@johnmorrisdotca/jisho/words";
+
+const result = await readText("私は寿司を食べなかった。");
+console.log(result.tokens.map((token) => token.text)); // ["私", "は", "寿司", "を", "食べなかった", "。"]
+const token = result.tokens[4];
+console.log(token?.furigana, token?.form, token?.path); // 食 (た) べなかった, 食べる, ["negative", "past"]
+console.log(result.unknown); // []
+console.log(studyListText(studyList(result), "csv").split("\n")[1]); // 私,わたし,"I, me",N4,6,1,私
+```
+
+`studyList(result)` gives each word once, in order, with how often it came and the form it first came in; `studyListText(rows, "csv")` has a header and quotes what needs it, and `"tsv"` has tabs and no header, to paste into a spreadsheet or import into a flashcard program. Jisho has JLPT levels for kanji and none for words, so a word's level is that of its hardest kanji, and null for a word with no kanji.
 
 ### Leave out by mark
 
@@ -550,7 +577,7 @@ The [API reference](https://johnmorrisdotca.github.io/jisho/api.html) lists ever
 | `@johnmorrisdotca/jisho/jlpt` | `JLPT`: each level's kanji |
 | `@johnmorrisdotca/jisho/kanji` | `KANJI`: the table, read with `readKanji` |
 | `@johnmorrisdotca/jisho/look-alike` | `LOOK_ALIKE`: the pairs, read with `lookAlikes` |
-| `@johnmorrisdotca/jisho/words` | `loadWords`, `loadCommonWords`, `wordsOf`, `findByMeaning`, `wordsWithKanji`, `findInflected` and `romajiToKana`: the words, in pieces fetched as needed |
+| `@johnmorrisdotca/jisho/words` | `loadWords`, `loadCommonWords`, `wordsOf`, `findByMeaning`, `wordsWithKanji`, `findInflected`, `readText` and `romajiToKana`: the words, in pieces fetched as needed |
 | `@johnmorrisdotca/jisho/words-common` | `COMMON_WORDS`: the 26,039 common words that safe mode keeps, read with `readCommonWords` |
 | `@johnmorrisdotca/jisho/words-common-extra` | `COMMON_EXTRA`: what to add to them to have every common word, for unfiltered mode |
 
@@ -569,6 +596,9 @@ The [API reference](https://johnmorrisdotca.github.io/jisho/api.html) lists ever
 | `findByMeaning(text, { limit, mode, block, allow })` | The commonest words whose English meaning holds the whole word or phrase |
 | `wordsWithKanji(kanji, { limit, mode, block, allow })`, `kanjiOfWord(word, table)` | The commonest words written with a kanji, and the entries of the kanji table for the kanji in a word |
 | `findInflected(text, { mode, block, allow, romaji })`, `inflectedOf(words, text)` | The words for a conjugated text with the path from the dictionary form (`negative, past`), fetching, and from words loaded with `inflected: true` |
+| `readText(text, { mode, block, allow })` | A text cut into words by the longest match, each with furigana, reading, meaning, JLPT level and kanji grades, and the stretches no word fits |
+| `studyList(result, { kanjiOnly })`, `studyListText(rows, "csv" or "tsv")` | The words of a text that was read, once each, as rows, and as text to copy or save |
+| `furiganaOf(written, reading)`, `furiganaOfSurface(surface, base, reading)` | Which kana read which kanji of a word, and of a conjugated form of it |
 | `deinflect(text)` | The dictionary forms a conjugated text could come from, from the endings alone: no data, no fetch |
 | `searchMeanings(words, text)` | The same search over words already loaded, such as the common table, with nothing fetched |
 | `romajiToKana(text)`, `kanaFromRomaji(text)` | Romaji as hiragana, and every way a long vowel can read |
@@ -595,6 +625,7 @@ The package draws nothing, so there is nothing of its own to theme: it hands bac
 - The look-alike pairs cover the 1,945 jōyō kanji of before 2010: the 196 added in 2010 and nearly all the kanji for names have none.
 - No meanings in Japanese: KANJIDIC2 has none. English for almost all, French for two in three.
 - No stroke order and no radicals: [Bushu](https://github.com/johnmorrisdotca/bushu) has the parts.
+- `readText` takes the longest word, not the best reading of a sentence: it has no grammar, so a rare word that happens to be longer can win, a name is not found or is cut into small words (ジョンモリス), and a word with several readings gets the commonest one JMdict ranks, which for one kanji can be the wrong one (本 is もと before ほん; the card lists the others). In safe mode a word the mode leaves out is not found, so its text is listed as not found. It reads up to 5,000 characters and is not a tool for books; a page of text fetches tens of pieces. The levels are those of the kanji, not of the word.
 
 ## Accessibility
 
