@@ -77,6 +77,14 @@ await takePictures({
       ready: '[data-testid="word-item"]',
       target: "#words-view",
     },
+    // The page made for an iframe: the words read かみ, and the card of 山, and nothing else.
+    {
+      subject: "embed",
+      views: ["desk"],
+      url: "/embed.html?lang=en&word=%E3%81%8B%E3%81%BF&limit=3&kanji=%E5%B1%B1",
+      ready: READY,
+      target: "#embed",
+    },
     // A search by meaning.
     {
       subject: "search",
