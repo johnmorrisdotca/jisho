@@ -6,6 +6,28 @@ All notable changes to this project are written here. The format follows
 
 ## [Unreleased]
 
+## [2.6.0] - 2026-11-03
+
+A minor version: nothing that 2.5.0 gave is taken away. The package is 12.6 MB larger to download (13.8 to 26.4 MB, 49 to 83 MB unpacked) for the whole entries and the example sentences, which two new entry points hold and fetch only when asked for.
+
+### Added
+
+- **The whole entry of a word.** `loadEntry(word)`, from `@johnmorrisdotca/jisho/entries`, fetches every sense of the word's entry of JMdict: its parts of speech, usage, field and dialect marks, cross-references, antonyms, notes, the languages a loanword comes from, every gloss with its kind (literal, explanation, figurative, trade name), the written forms and readings each sense is limited to, and the marks of the written forms and readings. A sense keeps the number JMdict gives it (`Entry.senses[].number`), so a cross-reference still means it when safe mode leaves a sense out; `referenceOf` reads a cross-reference into its word, reading and sense number. One piece of about 40 kB gzipped is fetched for an entry, and one more with `mode: "unfiltered"`. Safe mode, the default, leaves out the senses JMdict marks vulgar, X-rated, sensitive or derogatory, with the written forms and readings that only they apply to, and fetches nothing that holds them (3 pieces hold the 857 entries it cuts).
+- **Example sentences.** `loadExamples(word)`, from `@johnmorrisdotca/jisho/examples`, gives the sentences that show a word: 32,434 of 26,377 sentences of the Tatoeba project, as the EDRDG's JMdict_e_examp links them to the senses of 28,929 words. Each has the number of the sense it shows, the Japanese with its furigana, the English, the JLPT level of its kanji and its credit, and `exampleCredit(example)` makes the line a page has to show with it (`Tatoeba #162365, Japanese by alice, English by bob (CC BY 2.0 FR)`). One piece of about 20 kB gzipped is fetched for a word. Safe mode leaves out an example of a sense it cuts, a sentence the file also links to such a sense of another word, and a sentence in which it does not find the words that unfiltered mode does.
+- A `Word` has `id`, the number JMdict gives its entry. Each row of the data carries it, which is why the rows are 318 pieces of the same size and not 294.
+- The demo's word list has a "Full entry" button on each word: its card shows every sense with its marks, cross-references (each looks its word up), notes and loanword sources, and under each sense its example sentences with furigana, English, level and credit. The entry open is in the address (`entry=紙`), and the card follows the language and the mode.
+- `scripts/build-examples.mjs` (`pnpm examples`) makes the examples from JMdict_e_examp and Tatoeba's exports of Japanese and English sentences and their links; `data-sources/sources.json` records each file's address and SHA-256. Guides for both, in English and Japanese.
+
+### Changed
+
+- The words entry is 1.0 MB larger gzipped as one bundle (13.8 to 14.8 MB) for the entry numbers in the rows. A lookup fetches the same one piece of about 25 kB gzipped as before.
+- `package.json`'s `license` adds `CC-BY-2.0` for the sentences: SPDX has no identifier for the France port, CC BY 2.0 FR, which `NOTICE.md` names.
+- The monthly refresh workflow makes the entries with the words, and the examples with them.
+
+### Not added
+
+- JMdict's glosses in German, French, Russian, Spanish, Dutch, Hungarian, Swedish and Slovenian. The EDRDG licence statement puts only the Japanese and English parts of JMdict under CC BY-SA 4.0 and says the translations in other languages "are covered by separate copyright held by the compilers of that material". `NOTICE.md` says so, and the question of using them is with John (MODULES-338).
+
 ## [2.5.0] - 2026-11-03
 
 A minor version: nothing that 2.4.0 gave is taken away.
