@@ -11,7 +11,7 @@ description: "引く前に文字列がどう整えられるか、空や変わっ
 
 どんな文字列でも、検索は例外を投げません。空の文字列、文字列でないもの、単語としては長すぎるもの（100文字超）は、取得するものがなく、単語もありません。ただし、`wordsOf`は、読み込んでいない文字列に対しては、呼び出し側の誤りなので、これまでどおり`RangeError`を投げます。
 
-チャンクを取得できないときは、もう一度だけ取得を試み、それも失敗すると、`loadWords`、`loadCommonWords`、`findByMeaning`、`wordsWithKanji`は`WordsLoadError`で拒否されます。どのチャンクかが分かり（`error.piece`は「the readings piece 12 of 294」のような文字列、`error.kind`と`error.index`はプログラム向け、`error.cause`は取得が拒否された理由）、失敗は記憶されないので、もう一度頼めば、また取得を試みます。同時に行われた、同じチャンクへの検索は、一つの取得を共有します。
+チャンクを取得できないときは、もう一度だけ取得を試み、それも失敗すると、`loadWords`、`loadCommonWords`、`findByMeaning`、`wordsWithKanji`は`WordsLoadError`で拒否されます。どのチャンクかが分かり（`error.piece`は「the readings piece 12 of 318」のような文字列、`error.kind`と`error.index`はプログラム向け、`error.cause`は取得が拒否された理由）、失敗は記憶されないので、もう一度頼めば、また取得を試みます。同時に行われた、同じチャンクへの検索は、一つの取得を共有します。
 
 ```ts
 import {loadWords,WordsLoadError} from "@johnmorrisdotca/jisho/words";

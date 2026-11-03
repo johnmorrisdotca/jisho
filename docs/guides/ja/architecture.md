@@ -12,8 +12,13 @@ description: "ソースの構成とその理由。"
 ```text
 src/
 ├── index.ts   型と、漢字の表を読む関数
+├── entries.ts 完全な項目のエントリポイント：loadEntry、readEntry、referenceOf。wordsには入れていないので、単語を引くだけのページは完全な項目を読み込まない
 ├── words.ts   単語を引く（必要なチャンクを取得）
+├── words-manifests.ts チャンクの場所を書いた小さなファイル。データのファイルを名指しするのはここだけなので、entriesは単語のデータを持たない
 ├── words-filter.ts  引いた結果を絞る小さな道具
+├── examples.ts 例文のエントリポイント：loadExamples、exampleCredit、furiganaOfExample。wordsには入れていないので、単語を引くだけのページは例文を読み込まない
+├── words-examples.ts loadExamples：単語の例文を、示す語義に結び付けて、専用のチャンクから取得
+├── words-entry.ts  loadEntry：単語の完全な項目（すべての語義とJMdictが記すこと）を、専用のチャンクから取得
 ├── words-inflected.ts 活用した文字列を、もとの辞書形から見つける（findInflected、inflectedOf）
 ├── reader.ts     readText：テキストを最長一致で単語に分け、ふりがな、意味、レベルを付ける
 ├── furigana.ts   単語（と、その活用形）のどのかなが、どの漢字を読むか
@@ -25,11 +30,20 @@ src/
     ├── jlpt.data.ts        JLPTレベル
     ├── kanji.data.ts       読み、意味、画数、順位
     ├── look-alike.data.ts  形の似た漢字の組
+    ├── examples/           例文（スクリプトが書き出す）
+    │   ├── example-manifest.data.ts  例文のチャンクの始まりと取得の方法
+    │   ├── example-extra-manifest.data.ts  セーフモードが除く一覧についての同じもの（フィルターなしのときだけ取得）
+    │   ├── s000.data.ts …    例文のチャンク（JMdictの項目番号順）
+    │   └── xs0.data.ts …     セーフモードが例文を除く項目の完全な一覧（フィルターなしのときだけ取得）
     └── words/              単語（スクリプトが書き出す）
         ├── common.data.ts    セーフモードで残るよく使う単語を一つの表に
         ├── common-extra.data.ts  よく使う単語をすべてそろえるために加えるもの
         ├── manifest.data.ts  各チャンクの始まりと取得の方法
         ├── extra-manifest.data.ts  セーフモードが除くものを収めたチャンクについての同じもの
+        ├── entry-manifest.data.ts  完全な項目のチャンクの始まりと取得の方法
+        ├── entry-extra-manifest.data.ts  セーフモードが除く完全な項目についての同じもの（フィルターなしのときだけ取得）
+        ├── e000.data.ts …    完全な項目のチャンク（JMdictの番号順）
+        ├── xe0.data.ts …     セーフモードが除く語義を持つ完全な項目のチャンク（フィルターなしのときだけ取得）
         ├── r000.data.ts …    読みで分けた行のチャンク
         ├── f00.data.ts …     表記から読みへの索引のチャンク
         ├── xr0.data.ts …     セーフモードが除くものを読みで分けたチャンク（フィルターなしのときだけ取得）

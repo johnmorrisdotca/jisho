@@ -70,8 +70,10 @@ console.log(lookAlikes(LOOK_ALIKE, "土")[0]?.kanji); // the closest look-alike 
 
 ## Features
 
-- **[Words](#the-words)**: JMdict's rows, found by reading or written form, commonest first, each with a short English meaning and how common it is, in 294 pieces by reading and 71 of an index of written forms, so a lookup fetches about 25 kB gzipped.
+- **[Words](#the-words)**: JMdict's rows, found by reading or written form, commonest first, each with a short English meaning and how common it is, in 318 pieces by reading and 71 of an index of written forms, so a lookup fetches about 25 kB gzipped.
 - **[Find by meaning, by kanji, or in romaji](#find-words-by-what-they-mean-or-by-a-kanji)**: `findByMeaning("water")`, `wordsWithKanji("山")` and `loadWords("kami", { romaji: true })`, each with an index in small pieces of its own that a plain lookup never fetches.
+- **[The whole entry](#the-whole-entry)**: `loadEntry(word)` fetches every sense of a word with its part of speech, field, dialect, cross-references, antonyms, notes and loanword sources, and the marks of its written forms and readings, from an entry point of its own and one piece of about 40 kB gzipped, in safe mode unless asked otherwise.
+- **[Example sentences](#example-sentences)**: `loadExamples(word)` gives the sentences that show each sense of a word, 32,434 of them from the Tatoeba project, with the furigana, the English, the JLPT level of their kanji and each one's credit, from an entry point of its own and one piece of about 20 kB gzipped; safe mode leaves out the sentences that are not for it.
 - **[Conjugated words](#a-word-as-a-sentence-writes-it)**: `findInflected("食べなかった")` finds 食べる and says how, `negative, past`, from a rule table of 2 kB gzipped that works offline; the dictionary keeps only the proposals that are the right kind of word.
 - **[Read a text](#read-a-text)**: `readText("私は寿司を食べなかった。")` cuts Japanese into words by the longest match on the dictionary and on conjugated forms, with the furigana, meaning, JLPT level and kanji grades of each, lists what it cannot find, and `studyList` takes the words away as rows, CSV or TSV. No tokenizer: Jisho's own pieces, fetched as the text needs them.
 - **Odd input is nothing, never a crash**: full-width and half-width, stray spaces, invisible characters and far too much text are made plain or answered with no words, and a piece that cannot be fetched is asked for once more and then rejects with a `WordsLoadError` that names it.
@@ -287,7 +289,7 @@ console.log(wordsOf(words, "紙")[0]?.meaning); // paper
 const { loadWords } = await import("@johnmorrisdotca/jisho/words");
 ```
 
-A bundler that follows `loadWords` reaches every piece, about 48 MB, so a server that imports `words` at the top of a page carries all of it. [Look words up](https://johnmorrisdotca.github.io/jisho/docs/guides/words.html) says how to keep it out of a server's bundle, and how to look many common words up in one table.
+A bundler that follows `loadWords` reaches every piece, about 50 MB, so a server that imports `words` at the top of a page carries all of it. [Look words up](https://johnmorrisdotca.github.io/jisho/docs/guides/words.html) says how to keep it out of a server's bundle, and how to look many common words up in one table.
 
 ### In a page, when it is wanted
 
@@ -412,6 +414,45 @@ const words = await loadWords(["見ませんでした", "書いている"], { in
 console.log(inflectedOf(words, "見ませんでした")[0]?.path); // ["polite", "negative", "past"]
 console.log(inflectedOf(words, "書いている")[0]?.word.written); // 書く
 console.log(deinflect("食べさせられた").map((one) => one.base).includes("食べる")); // true
+```
+
+### The whole entry
+
+A word is a short row. `loadEntry` fetches its whole entry from JMdict: every sense with its part of speech, marks, cross-references, antonyms, notes and the languages a loanword comes from, and the marks of its written forms and readings. It is an entry point of its own, `@johnmorrisdotca/jisho/entries`, so a page that only looks words up never carries it, and safe mode leaves out the senses JMdict marks vulgar, X-rated, sensitive or derogatory and fetches nothing that holds them.
+
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/entry-senses-desk-dark.webp">
+<img src="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/entry-senses-desk-light.webp" alt="The full entry of 熱い in the demo: its written forms and readings, then each numbered sense with its part of speech, its marks, its cross-references as buttons, and its notes." width="360">
+</picture><br>
+<em>The full entry of 熱い: every sense, with what JMdict says of it.</em>
+
+```ts
+import { loadEntry, referenceOf } from "@johnmorrisdotca/jisho/entries";
+import { loadWords, wordsOf } from "@johnmorrisdotca/jisho/words";
+
+const word = wordsOf(await loadWords("あつい"), "あつい").find((one) => one.written === "暑い");
+const entry = word === undefined ? null : await loadEntry(word);
+console.log(entry?.senses[0]?.pos, entry?.senses[0]?.antonyms.map((one) => referenceOf(one).written));
+```
+
+### Example sentences
+
+`loadExamples` gives the sentences that show a word, each linked to the sense it shows (`Entry.senses[].number`), with the Japanese and its furigana, the English, the JLPT level of the hardest kanji in it and its credit. They are in `@johnmorrisdotca/jisho/examples`, an entry point of their own, and come from the Tatoeba project under CC BY 2.0 FR: `exampleCredit` makes the line that has to be shown with each one.
+
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/entry-desk-dark.webp">
+<img src="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/entry-desk-light.webp" alt="The demo's word list for 犬 with its full entry open beside it: its senses (the numbers 1 and 4, because safe mode leaves out two), and under the first one a sentence with furigana above its kanji, its English, its JLPT level and its Tatoeba credit." width="560">
+</picture><br>
+<em>A word, its full entry, and the sentence that shows its sense.</em>
+
+```ts
+import { exampleCredit, loadExamples } from "@johnmorrisdotca/jisho/examples";
+import { loadWords, wordsOf } from "@johnmorrisdotca/jisho/words";
+
+const word = wordsOf(await loadWords("猫"), "猫")[0];
+const [first] = word === undefined ? [] : await loadExamples(word);
+console.log(first?.japanese, first?.english);
+console.log(first === undefined ? "" : exampleCredit(first));
 ```
 
 ### Read a text
@@ -567,7 +608,7 @@ JMdict's English dictionary, one row for each reading of each entry that has an 
 | `common` | Whether JMdict marks it common: `news1`, `ichi1`, `spec1`, `spec2` or `gai1` on a form or reading |
 | `priority`, `rank` | The priority tags JMdict gives it (`news1`, `ichi1`, `nf05`…) and one number made from them, lower being commoner: 250 to 24,000, and 100,000 for a word with none |
 
-From JMdict of 2026-11-03. Safe mode's rows are cut into 294 pieces by reading and 71 of an index from each written form to its readings. A piece of rows is about 74 kB (24 kB gzipped) and a piece of the index of written forms about 120 kB (29 kB gzipped). A guess in kana fetches one piece, about 25 kB gzipped; a written form fetches two, one after the other (the index, then the rows it names), about 57 kB gzipped. The common words are one table, `words-common`, of about 820 kB gzipped.
+From JMdict of 2026-11-03. Safe mode's rows are cut into 318 pieces by reading and 71 of an index from each written form to its readings. A piece of rows is about 74 kB (24 kB gzipped) and a piece of the index of written forms about 120 kB (29 kB gzipped). A guess in kana fetches one piece, about 25 kB gzipped; a written form fetches two, one after the other (the index, then the rows it names), about 57 kB gzipped. The common words are one table, `words-common`, of about 820 kB gzipped.
 
 The indexes that find words by meaning and by kanji are pieces of their own: 172 of English terms (the readings of twenty words with each term: up to ten whose gloss is exactly the term, the commonest first, a word's first gloss before a later one, then the commonest that merely hold it; and the same for each pair of terms that follow each other in the gloss of a ranked word) and 50 of kanji (the commonest sixty words with each), each about 16 kB gzipped, and 9 and 4 more for what safe mode leaves out. What they cost, measured on 2026-11-03: `findByMeaning("water")` fetches 8 files, about 180 kB gzipped, in three steps one after another (the index's manifest, its piece, then the rows); `wordsWithKanji("山")` 9 files, about 210 kB. A server keeps what it fetched in memory, up to 64 pieces. A word JMdict ranks is found by every term of every gloss it keeps; a word it does not rank, which is most of the dictionary, by the terms of its first gloss. A plain lookup by reading never fetches them.
 
@@ -671,13 +712,13 @@ The package draws nothing, so there is nothing of its own to theme: it hands bac
 
 ## Limits
 
-- Meanings are English only, from JMdict_e, and short: two senses at most, cut at about 60 characters. They are a gloss to show beside a word, not JMdict's whole entry.
+- Meanings are English only, from JMdict_e. A word's `meaning` is short: two senses at most, cut at about 60 characters, to show beside a word. `loadEntry` has the whole entry. The package is 26.4 MB to download (it was 13.8 MB before the entries and the examples), of which the entries are 9.7 MB and the examples 2.9 MB, fetched only when asked for.
 - Safe mode keeps what it leaves out in pieces of their own, fetched only unfiltered, so it never reaches a browser that did not ask. The pieces are in the package, so anybody who installs it or asks for them can read them. JMdict's marks are its own and are not complete: a sense it has not marked is not left out, and a consumer that needs more brings its own `block` list, which Jisho does not supply.
 - Options are checked: `block` and `allow` must be lists of texts and `mode` must be `"safe"` or `"unfiltered"`; anything else throws a `TypeError` before anything is fetched, rather than turning the filter off.
 - `wordsOf` and `loadWords` are exact: 食べた finds nothing, 食べる does. `findInflected` reads conjugated forms: godan, ichidan, する (and a noun with する), 来る, い and な adjectives, in the polite, negative, past, te, conditional, volitional, potential, passive, causative, want-to, looks-like, too-much, easy-to and hard-to forms, and the helper verbs a te-form leads (ている, てしまう, ておく, てみる, ていく, てくる, てくれる, てあげる, てもらう), and their chains. It does not read the imperative, honorific (keigo) forms, 〜ず, 〜なければならない, a noun with だ (only な adjectives), or the stem alone (食べ). A な adjective needs its dictionary form (静かだった finds 静か); 愛する-type verbs that conjugate their own way (愛さない) are found only as godan 愛す. The rules are tested on a golden set of 395 forms written from the conjugation rules, and no native reader has checked it yet. The text is made plain first, but a typo finds nothing.
 - The English search finds a word by whole words of its glosses, from an index of twenty words for each term (up to ten whose gloss is exactly it, then the commonest that hold it): a very common term (`go`, `water`) reaches only those twenty, and a word JMdict does not rank is found by its first gloss alone. It has no stemming (`walking` does not find "walk").
 - A process keeps the pieces it has read, at most 64 at a time; the one asked for longest ago is let go. Looking up every piece once took a process from 49 MB to 266 MB before this limit.
-- The dictionary is about 48 MB in all, and 13.7 MB gzipped as one bundle. A server that bundles `words` carries it, and a bundler that follows every piece carries all of it; see [Look words up](https://johnmorrisdotca.github.io/jisho/docs/guides/words.html).
+- The dictionary is about 50 MB in all, and 14.8 MB gzipped as one bundle. A server that bundles `words` carries it, and a bundler that follows every piece carries all of it; see [Look words up](https://johnmorrisdotca.github.io/jisho/docs/guides/words.html).
 - 2,999 kanji: those with a school grade in KANJIDIC2. Rarer kanji have no row.
 - The JLPT levels are one person's lists, not the test's.
 - The look-alike pairs cover the 1,945 jōyō kanji of before 2010: the 196 added in 2010 and nearly all the kanji for names have none.
@@ -699,7 +740,7 @@ The demo and the guides are in English and Japanese; the Japanese has not yet be
 
 ## Roadmap
 
-- Words in other languages, from a source with terms that allow it; JMdict has glosses in other languages, which this package does not yet carry.
+- Words in other languages. JMdict has glosses in eight, but the EDRDG licence puts only its Japanese and English parts under CC BY-SA 4.0 and says the rest are under their compilers' own copyright, so none is used until a language's terms are read and allow it.
 - Look-alike scores for the kanji the two measures do not cover, measured here from a public set of stroke data.
 - Nothing from a commercial study service, and no hand-kept pairs: every row stays traceable to a published file.
 

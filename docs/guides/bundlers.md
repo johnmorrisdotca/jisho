@@ -11,7 +11,7 @@ The package is ES modules with types and no dependency. Install it, import it, a
 npm install @johnmorrisdotca/jisho
 ```
 
-Each piece of the dictionary is its own module, which `loadWords` imports when a lookup needs it. A bundler with code splitting makes each a file of its own, so the build holds the whole dictionary (616 files, about 40 MB in a Vite build) and a page fetches only the pieces it looks up. If you would rather not carry the files, [Look words up](words.md) says how to keep them out of a server's bundle.
+Each piece of the dictionary is its own module, which `loadWords` imports when a lookup needs it. A bundler with code splitting makes each a file of its own, so the build holds the whole dictionary (640 files, about 42 MB in a Vite build) and a page fetches only the pieces it looks up. If you would rather not carry the files, [Look words up](words.md) says how to keep them out of a server's bundle.
 
 ## Vite
 
@@ -81,4 +81,4 @@ webpack 5 needs no loader for the package. `chunkFilename` names the pieces so t
 
 ## What reached the bundle
 
-The entry the page loads is about 53 kB minified (15 kB gzipped) and the manifest that says where the pieces are 20 kB (4 kB gzipped); the rest is fetched as a lookup reaches it. [Look words up](words.md) gives what each kind of lookup costs.
+The entry the page loads is about 55 kB minified (16 kB gzipped) and the manifest that says where the pieces are 20 kB (4 kB gzipped); the rest is fetched as a lookup reaches it. [Look words up](words.md) gives what each kind of lookup costs.

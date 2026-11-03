@@ -39,7 +39,7 @@ It throws for a text that `loadWords` was not asked for, instead of answering wi
 
 ## A lookup rejects with a `WordsLoadError`
 
-A piece of the dictionary could not be fetched, even on the second try. `error.piece` says which ("the readings piece 12 of 294"), and `error.cause` is what the fetch rejected with: the network was down, the host does not serve the file, or a bundler left the piece out of the build. Nothing is remembered of the failure, so asking again tries again. [Look words up](words.md) has the details.
+A piece of the dictionary could not be fetched, even on the second try. `error.piece` says which ("the readings piece 12 of 318"), and `error.cause` is what the fetch rejected with: the network was down, the host does not serve the file, or a bundler left the piece out of the build. Nothing is remembered of the failure, so asking again tries again. [Look words up](words.md) has the details.
 
 ## `findByMeaning` does not find a word
 
@@ -47,4 +47,4 @@ It finds a word by the whole words of its glosses, from an index of twenty words
 
 ## A server's bundle got very large
 
-Something imported `@johnmorrisdotca/jisho/words` where a bundler follows it, and the bundler reached every piece of the dictionary, about 48 MB. [Look words up](words.md) says how to keep it out.
+Something imported `@johnmorrisdotca/jisho/words` where a bundler follows it, and the bundler reached every piece of the dictionary, about 50 MB. [Look words up](words.md) says how to keep it out.

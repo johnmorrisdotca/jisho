@@ -110,7 +110,7 @@ Each of these has a guide of its own:
 | Words with a kanji | `wordsWithKanji` | The same: the index piece for the kanji, and a piece for each word, about 190 kB gzipped for 10 words of 山 |
 | Romaji | `loadWords(…, { romaji: true })` | The same as the kana it reads as; a long vowel can read as more than one, so a few pieces more |
 
-The dictionary is 294 pieces of rows, cut by reading, and 71 pieces of an index from each written form to its readings, cut by form. `words` holds where each piece starts, and a lookup finds its piece by comparing the text with those starts. No piece is more than about 100 kB, and none is fetched until a lookup needs it.
+The dictionary is 318 pieces of rows, cut by reading, and 71 pieces of an index from each written form to its readings, cut by form. `words` holds where each piece starts, and a lookup finds its piece by comparing the text with those starts. No piece is more than about 100 kB, and none is fetched until a lookup needs it.
 
 The common table holds the 26,039 words JMdict marks common that safe mode keeps (a form or reading in `news1`, `ichi1`, `spec1`, `spec2` or `gai1`). It answers for any text, and answers only with common words: a reading shared with a rare word finds the common ones alone. `scope` on the words says which kind you have. Unfiltered, `loadCommonWords({ mode: "unfiltered" })` fetches `common-extra.data` too, about 22 kB gzipped, which says what to add and change; with `readCommonWords` you pass it yourself as `extra`.
 
@@ -124,7 +124,7 @@ const { loadWords, wordsOf } = await import("@johnmorrisdotca/jisho/words");
 
 ## On a server
 
-Import `words` only where a lookup is made. A bundler that follows `loadWords` reaches every piece, about 48 MB, so a server that imports it at the top of a page or a route carries all of it. To keep it out of the bundle:
+Import `words` only where a lookup is made. A bundler that follows `loadWords` reaches every piece, about 50 MB, so a server that imports it at the top of a page or a route carries all of it. To keep it out of the bundle:
 
 - Mark the package external, so that the server reads it from `node_modules` at run time: `serverExternalPackages: ["@johnmorrisdotca/jisho"]` in Next.js, or `external` in esbuild and webpack.
 - Do the lookup in the one route or action that needs it, never on a page's render path that every visit reaches.

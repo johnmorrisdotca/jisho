@@ -11,7 +11,7 @@ A text is made plain before it is looked up (`normalizeText` does it, and you ca
 
 Whatever the text is, a lookup does not throw. A text that is empty, is not a string, or is far too long to be a word (over 100 characters) is nothing to load and has no words. `wordsOf` still throws a `RangeError` for a text that was not loaded, because that is a mistake in the caller.
 
-A piece that cannot be fetched is asked for once more, and if that fails too, `loadWords`, `loadCommonWords`, `findByMeaning` and `wordsWithKanji` reject with a `WordsLoadError`. It says which piece (`error.piece` is "the readings piece 12 of 294", `error.kind` and `error.index` say it for a program, `error.cause` is what the fetch rejected with), and nothing is remembered of the failure, so asking again tries again. Lookups at the same moment for the same pieces share one fetch.
+A piece that cannot be fetched is asked for once more, and if that fails too, `loadWords`, `loadCommonWords`, `findByMeaning` and `wordsWithKanji` reject with a `WordsLoadError`. It says which piece (`error.piece` is "the readings piece 12 of 318", `error.kind` and `error.index` say it for a program, `error.cause` is what the fetch rejected with), and nothing is remembered of the failure, so asking again tries again. Lookups at the same moment for the same pieces share one fetch.
 
 ```ts
 import {loadWords,WordsLoadError} from "@johnmorrisdotca/jisho/words";
