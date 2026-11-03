@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 18 of 294, from "いっぱんきょうて". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 18 of 294, from "いっぱんきょうそ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "いっぱんきょうそうにゅうさつ\t一般競争入札\t\t¦open tendering¦open competitive bidding",
     "いっぱんきょうてい\t一般協定\t\t¦general agreement",
     "いっぱんきょうよう\t一般教養\t\t¦general education",
     "いっぱんきんこうりろん\t一般均衡理論\t\t¦general equilibrium theory",
@@ -52,7 +53,7 @@ export const PIECE: WordsPiece = {
     "いっぱんそうたいろん\t一般相対論\t\tabbr,physics¦general theory of relativity",
     "いっぱんぞくせい\t一般属性\t\tcomp¦general-attribute",
     "いっぱんたいしゅう\t一般大衆\t\t¦ordinary people¦general public¦public at large",
-    "いっぱんてき\t一般的\tC~n05\t¦general¦popular¦common",
+    "いっぱんてき\t一般的\tnC~n05\t¦general¦popular¦common",
     "いっぱんてきごうせい\t一般適合性\t\tcomp¦general conformance",
     "いっぱんデータほごきそく\t一般データ保護規則\t\t¦General Data Protection Regulation (EU, 2018)¦GDPR",
     "いっぱんとうひょう\t一般投票\t\t¦referendum¦popular vote¦plebiscite",
@@ -129,7 +130,7 @@ export const PIECE: WordsPiece = {
     "いっぺん\t一遍\tCU~mt48\tuk¦once¦one time\tuk¦exclusively¦only¦alone",
     "いっぺん\t一辺\t\t¦side of a geometric shape (e.g. triangle or rectangle)",
     "いっぺん\t一篇|一編\t\t¦piece (e.g. poetry)¦poem¦essay",
-    "いっぺん\t一偏\t\tobs¦wholly¦entirely¦nothing but\tarch¦intent¦single-minded¦wholehearted\tarch¦unbalanced¦one-sided¦prejudiced",
+    "いっぺん\t一偏\tn\tobs¦wholly¦entirely¦nothing but\tarch¦intent¦single-minded¦wholehearted\tarch¦unbalanced¦one-sided¦prejudiced",
     "いっぺんとう\t一辺倒\tC~n15\t¦complete devotion (to)¦total commitment (to)¦unvarying support (for)",
     "いっぺんに\t一遍に\tCU~i\tuk¦at the same time¦(all) at once¦in one go\tuk¦right away¦in an instant",
     "イッペー\t\t\trkb¦very¦exceedingly",
@@ -143,7 +144,7 @@ export const PIECE: WordsPiece = {
     "いっぽうこうつう\t一方交通\t\t¦one-way traffic",
     "いっぽうそのころ\t一方その頃|一方そのころ\t\t¦meanwhile¦at the same time",
     "いっぽうつうこう\t一方通行\tC~n24\tyoji¦one-way traffic\tyoji¦one-way (e.g. communication)¦one-sided",
-    "いっぽうてき\t一方的\tC~n05\t¦one-sided¦unilateral¦arbitrary",
+    "いっぽうてき\t一方的\tnC~n05\t¦one-sided¦unilateral¦arbitrary",
     "いっぽさがる\t一歩下がる\tg\t¦to take a step backward\tid¦to step back (i.e. to re-think something)¦to distance oneself (from)¦to take a back seat\tid¦to behave humbly\tid¦to budge (a little)¦to make one concession",
     "いっぽさき\t一歩先\t\t¦one step ahead",
     "いっぽずつ\t一歩ずつ\t\t¦stepwise¦one step at a time",
@@ -158,7 +159,7 @@ export const PIECE: WordsPiece = {
     "いっぽんあしだほう\t一本足打法\t\tbaseb¦one-legged batting stance¦raised-foot stance¦flamingo stance",
     "いっぽんか\t一本化\ts\t¦unification¦centralization¦integration",
     "いっぽんがち\t一本勝ち\ts\tMA¦winning by an ippon¦winning by a point",
-    "いっぽんぎ\t一本気\t\t¦single-minded (esp. personality or person)¦one-track mind",
+    "いっぽんぎ\t一本気\tn\t¦single-minded (esp. personality or person)¦one-track mind",
     "いっぽんぐそ\t一本糞|一本グソ\t\tcol¦long stool (that one is able to press out entirely in one go without it getting cut off)¦(long) sausage-shaped poop¦grogan",
     "いっぽんしめじ\t一本占地\tU\tuk¦livid pinkgill (species of poisonous mushroom, Entoloma sinuatum)",
     "イッポンシメジ\t\tU\tuk¦livid pinkgill (species of poisonous mushroom, Entoloma sinuatum)",
@@ -172,8 +173,8 @@ export const PIECE: WordsPiece = {
     "いっぽんだて\t一本立て\t\t¦single standard¦single base\t¦single-feature show",
     "いっぽんだてかわせ\t一本建て為替\t\t¦single rate",
     "いっぽんだてぜいりつ\t一本建税率|一本建て税率\t\t¦single-rate tariff (system)",
-    "いっぽんちょうし\t一本調子\t\tyoji¦monotone¦monotonous¦dull",
-    "いっぽんぢょうし\t一本調子\t\tyoji¦monotone¦monotonous¦dull",
+    "いっぽんちょうし\t一本調子\tn\tyoji¦monotone¦monotonous¦dull",
+    "いっぽんぢょうし\t一本調子\tn\tyoji¦monotone¦monotonous¦dull",
     "いっぽんつけ\t一本漬け|一本漬\t\t¦pickle on a stick (usually a cucumber)",
     "いっぽんづり\t一本釣り|一本釣\ts~m29\t¦fishing with a pole",
     "いっぽんとられた\t一本取られた|一本とられた\t\t¦touché¦you've got me there",
@@ -325,7 +326,7 @@ export const PIECE: WordsPiece = {
     "イデア\t\t\tphil¦idea (in Platonic thought)",
     "イデアリスト\t\t\t¦idealist",
     "イデアリズム\t\t\t¦idealism",
-    "イデアル\t\t\t¦ideal\tmath¦ideal (in a ring)",
+    "イデアル\t\tn\t¦ideal\tmath¦ideal (in a ring)",
     "イデアろん\tイデア論\t\t¦theory of ideas¦Platonic idealism",
     "イディオム\t\t\t¦idiom",
     "イディッシュ\t\t\t¦Yiddish",
@@ -335,7 +336,7 @@ export const PIECE: WordsPiece = {
     "イデオネラ・サカイエンシス\t\t\t¦Ideonella sakaiensis (plastic-eating bacterium)",
     "イデオム\t\t\t¦idiom",
     "イデオロギ\t\t\t¦ideology",
-    "イデオロギッシュ\t\t\t¦ideological",
+    "イデオロギッシュ\t\tn\t¦ideological",
     "イデオロギー\t\tC~ig\t¦ideology",
     "イデオローグ\t\t\t¦ideologue¦ideologist",
     "イデコ\tｉＤｅＣｏ\t\tfinc¦iDeCo¦individual-type defined contribution pension plan",
@@ -400,12 +401,12 @@ export const PIECE: WordsPiece = {
     "いでんしりゅうどう\t遺伝子流動\t\tgenet¦gene flow¦gene migration",
     "いでんしりょうほう\t遺伝子療法\t\t¦gene therapy",
     "いでんじょうほう\t遺伝情報\t\t¦genetic information",
-    "いでんせい\t遺伝性\t\t¦inheritable character¦inheritable¦hereditary",
+    "いでんせい\t遺伝性\tn\t¦inheritable character¦inheritable¦hereditary",
     "いでんせいしっかん\t遺伝性疾患\t\tmed¦hereditary disease¦hereditary disorder",
     "いでんせいなんちょう\t遺伝性難聴\t\tmed¦hereditary deafness¦genetic deafness",
     "いでんそうだん\t遺伝相談\t\t¦genetic counseling¦genetic counselling",
     "いでんちず\t遺伝地図\t\tgenet¦genetic map",
-    "いでんてき\t遺伝的\t\t¦genetic¦hereditary",
+    "いでんてき\t遺伝的\tn\t¦genetic¦hereditary",
     "いでんてきアルゴリズム\t遺伝的アルゴリズム\t\tcomp¦genetic algorithm¦GA",
     "いでんてきかじゅう\t遺伝的荷重\t\tgenet¦genetic load¦genetic burden",
     "いでんてきくみかえ\t遺伝的組換え\t\t¦genetic recombination",
@@ -493,7 +494,7 @@ export const PIECE: WordsPiece = {
     "いとだま\t糸玉\t\t¦thread ball¦clew",
     "いとづくり\t糸作り|糸づくり\t\t¦thin strips of raw fish and squid",
     "いとづめ\t糸爪\t\t¦groove in a shamisen player's fingernail caused by the friction of the string of the instrument",
-    "いとてき\t意図的\tC~n14\t¦intentional¦on purpose",
+    "いとてき\t意図的\tnC~n14\t¦intentional¦on purpose",
     "いとでんわ\t糸電話\t\t¦telephone made from two cans and a piece of string",
     "いととおし\t糸通し\t\t¦needle threader",
     "いととり\t糸取り\t\t¦silk reeling¦silk spinning¦filature",
@@ -664,7 +665,7 @@ export const PIECE: WordsPiece = {
     "いなかパン\t田舎パン\t\tfood¦pain de campagne¦French sourdough",
     "いなかびと\t田舎人\t\t¦country dweller",
     "いなかびる\t田舎びる\ti\t¦to become rustic¦to become countrified",
-    "いなかふう\t田舎風\t\t¦rustic¦country-style",
+    "いなかふう\t田舎風\tn\t¦rustic¦country-style",
     "いなかま\t田舎間\t\t¦standard measurement for the distance between pillars in eastern Japan (approx. 182 cm)\t¦Kanto-size tatami mat (approx. 176 cm by 88 cm)",
     "いなかまち\t田舎町\t\t¦country town¦rural town",
     "いなかまわり\t田舎回り\ts\t¦(theatrical) provincial tour",
@@ -697,7 +698,7 @@ export const PIECE: WordsPiece = {
     "イナズマヤッコ\t\t\t¦majestic angelfish (Pomacanthus navarchus)¦bluegirdled angelfish",
     "いなずまよこばい\t稲妻横這\tU\tuk¦zig-zag rice leafhopper (Recilia dorsalis)",
     "イナズマヨコバイ\t\tU\tuk¦zig-zag rice leafhopper (Recilia dorsalis)",
-    "いなせ\t鯔背\tU\tuk¦gallant¦dashing¦smart",
+    "いなせ\t鯔背\tnU\tuk¦gallant¦dashing¦smart",
     "いなたい\t\ta\tsl¦rural¦unrefined¦unsophisticated",
     "イナタい\t\ta\tsl¦rural¦unrefined¦unsophisticated",
     "イナタイ\t\ta\tsl¦rural¦unrefined¦unsophisticated",
@@ -874,6 +875,5 @@ export const PIECE: WordsPiece = {
     "いぬぼうカルタ\t犬棒かるた|犬棒カルタ\t\t¦inubō karuta (type of iroha karuta originating in Edo)",
     "いぬまき\t犬槙|犬槇\tU\tuk¦yew plum pine (Podocarpus macrophyllus)",
     "イヌマキ\t\tU\tuk¦yew plum pine (Podocarpus macrophyllus)",
-    "いぬもあるけばぼうにあたる\t犬も歩けば棒に当たる\tg\tproverb¦bad things happen to those who attempt things\tproverb¦good luck may come unexpectedly",
   ],
 };

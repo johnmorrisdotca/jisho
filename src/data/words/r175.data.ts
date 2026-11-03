@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 176 of 294, from "つかいのこり". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 176 of 294, from "つかいすてる". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,26 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "つかいすてる\t使い捨てる|遣い捨てる\ti\t¦to use and then throw away",
+    "つかいすてレンズ\t使い捨てレンズ\t\t¦disposable contact lenses",
+    "つかいずて\t使い捨て|遣い捨て|使い捨\tC~ni17\t¦throwaway¦disposable¦single-use",
+    "つかいたおす\t使い倒す\tg\t¦to use within an inch of its life¦to use every little bit of¦to get the most out of",
+    "つかいだす\t使い出す\tg\t¦to start using¦to try out",
+    "つかいだて\t使い立て\ts\t¦causing you trouble",
+    "つかいちん\t使い賃\t\t¦messenger tip or charge",
+    "つかいっぱ\t使いっぱ\t\tcol,abbr¦gofer¦dogsbody¦person who is made to do things or get things for someone else\tcol,abbr¦using continuously¦using non-stop",
+    "つかいっぱしり\t使いっ走り\t\t¦gofer¦dogsbody¦person who is made to do things or get things for someone else",
+    "つかいっぱなし\t使いっぱなし|使いっ放し\t\t¦using continuously¦using non-stop",
+    "つかいつくす\t使い尽くす\tg\t¦to use up¦to squander",
+    "つかいて\t使い手|遣い手\t~m46\t¦user¦consumer¦employer\t¦master (e.g. of swordsmanship)\t¦prodigal¦spendthrift",
+    "つかいで\t使いで|使い出|遣い出\t\t¦lasting quality¦good wearing ability¦going a long way",
+    "つかいどころ\t使いどころ|使い所|使い処\t\t¦use",
+    "つかいならす\t使い慣らす\tg\t¦to accustom oneself to using¦to train¦to break in (horses)",
+    "つかいなれる\t使い慣れる|使い馴れる\ti~m46\t¦to get used to using¦to get accustomed to using",
+    "つかいにやる\t使いにやる|使いに遣る\tg\t¦to send a person on an errand",
+    "つかいね\t束稲\t\t¦sheaf of rice¦bundle of rice plants",
+    "つかいのこし\t使い残し\t\t¦remnant¦remainder¦odds and ends",
+    "つかいのこす\t使い残す\tg\t¦to leave (something) unused¦to not use completely¦to leave money unspent",
     "つかいのこり\t使い残り\t\t¦remnant¦remainder¦odds and ends",
     "つかいのもの\t使いの者\t\t¦messenger¦envoy¦emissary",
     "つかいはしり\t使い走り\ts~m43\t¦running errands (for someone else)\t¦errand boy¦gofer¦dogsbody",
@@ -231,7 +251,7 @@ export const PIECE: WordsPiece = {
     "つきない\t尽きない\ta\t¦everlasting¦inexhaustible",
     "つきなか\t月中\t\t¦middle of the month¦mid-month",
     "つきなかば\t月半ば\t\t¦middle of the month",
-    "つきなみ\t月並み|月並|月次\tC~mi42\t¦every month\t¦trite¦commonplace¦conventional",
+    "つきなみ\t月並み|月並|月次\tnC~mi42\t¦every month\t¦trite¦commonplace¦conventional",
     "つきぬきにんどう\t突抜忍冬\tU\tuk¦trumpet honeysuckle¦Lonicera sempervirens",
     "ツキヌキニンドウ\t\tU\tuk¦trumpet honeysuckle¦Lonicera sempervirens",
     "つきぬく\t突き抜く|突抜く\tg\t¦to pierce¦to shoot through¦to penetrate",
@@ -707,28 +727,5 @@ export const PIECE: WordsPiece = {
     "つちになる\t土になる\tg\t¦to die",
     "つちにんぎょう\t土人形\t\t¦clay doll¦clay figure¦clay figurine",
     "つちのえ\t戊\t\t¦5th in rank¦fifth sign of the Chinese calendar",
-    "つちのえうま\t戊午\t\t¦Earth Horse (55th term of the sexagenary cycle, e.g. 1918, 1978, 2038)",
-    "つちのえさる\t戊申\t\t¦Earth Monkey (45th term of the sexagenary cycle, e.g. 1908, 1968, 2028)",
-    "つちのえたつ\t戊辰\t\t¦Earth Dragon (5th term of the sexagenary cycle, e.g. 1928, 1988, 2048)",
-    "つちのえとら\t戊寅\t\t¦Earth Tiger (15th term of the sexagenary cycle, e.g. 1938, 1998, 2058)",
-    "つちのえね\t戊子\t\t¦Earth Rat (25th term of the sexagenary cycle, e.g. 1948, 2008, 2068)",
-    "つちのこ\t槌の子\t\t¦tsuchinoko",
-    "ツチノコ\t\t\t¦tsuchinoko",
-    "つちのと\t己\t\t¦6th in rank¦sixth sign of the Chinese calendar",
-    "つちのとい\t己亥\t\t¦Earth Boar (36th term of the sexagenary cycle, e.g. 1959, 2019, 2079)",
-    "つちのとう\t己卯\t\t¦Earth Rabbit (16th term of the sexagenary cycle, e.g. 1939, 1999, 2059)",
-    "つちのとうし\t己丑\t\t¦Earth Ox (26th term of the sexagenary cycle, e.g. 1949, 2009, 2069)",
-    "つちのととり\t己酉\t\t¦Earth Rooster (46th term of the sexagenary cycle, e.g. 1909, 1969, 2029)",
-    "つちのとひつじ\t己未\t\t¦Earth Sheep (56th term of the sexagenary cycle, e.g. 1919, 1979, 2039)",
-    "つちのとみ\t己巳\t\t¦Earth Snake (6th term of the sexagenary cycle, e.g. 1929, 1989, 2049)",
-    "つちはんみょう\t土斑猫|地胆\tU\tuk¦blister beetle¦oil beetle (insects family Meloidae)",
-    "つちばし\t土橋\t\t¦earthen bridge",
-    "つちばち\t土蜂\tU\tuk¦scoliid wasp (any wasp of family Scoliidae)",
-    "ツチバチ\t\tU\tuk¦scoliid wasp (any wasp of family Scoliidae)",
-    "つちふき\t土吹\tU\tuk¦Chinese false gudgeon (Abbottina rivularis)",
-    "ツチフキ\t\tU\tuk¦Chinese false gudgeon (Abbottina rivularis)",
-    "つちふまず\t土踏まず|土不踏\t\t¦arch of the foot¦plantar arch",
-    "つちふる\t霾る|土降る\tg\t¦to rain dust¦to have a dust storm",
-    "つちふるい\t土篩\t\t¦earth sieve¦dirt sifter",
   ],
 };

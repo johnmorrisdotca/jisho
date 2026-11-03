@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 109 of 294, from "さん・せ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 109 of 294, from "さんを". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,14 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "さんをうちつける\t桟を打ち付ける|桟を打ちつける\ti\t¦to nail a crosspiece (to)",
+    "さんをおく\t算を置く\tg\t¦to calculate¦to divine",
+    "さんをなす\t産を成す\tg\t¦to amass a fortune",
+    "さんをみだす\t算を乱す\tg\tid¦to break and run (e.g. of a defeated army or panicking crowd)¦to flee in disorder¦to scatter in all directions",
+    "サン・オイル\t\t\t¦suntan lotion",
+    "サン・オブ・ア・ビッチ\t\t\t¦son of a bitch",
+    "サン・クチュール\t\t\t¦simple clothing made without seams, lining, padding, etc.",
+    "サン・サルバドル\t\t\t¦San Salvador (El Salvador)",
     "サン・セリフ\t\t\tprint¦sans serif",
     "サン・ディエゴ\t\tC~g\t¦San Diego",
     "サン・デッキ\t\t\t¦sun deck",
@@ -523,7 +531,7 @@ export const PIECE: WordsPiece = {
     "ざいじょう\t罪状\t~m27\t¦(nature of a) crime¦(criminal) charge",
     "ざいじょうきゅうめい\t罪状糾明\t\t¦closely examining (questioning) the concrete circumstances of a crime",
     "ざいじょうにんぴ\t罪状認否\t\t¦arraignment¦plea (of guilty or not guilty)",
-    "ざいじょうめいはく\t罪状明白\t\t¦being proven guilty of a crime¦having one's guilt for a crime made clear¦(the) nature of offense being (becoming) clear",
+    "ざいじょうめいはく\t罪状明白\tn\t¦being proven guilty of a crime¦having one's guilt for a crime made clear¦(the) nature of offense being (becoming) clear",
     "ざいす\t座椅子|座いす|坐椅子\t\t¦legless chair (used in a room with tatami flooring)",
     "ざいすう\t罪数\t\t¦number of crimes",
     "ざいせい\t財政\tC~ni01\t¦public finance\t¦financial affairs¦financial situation",
@@ -553,7 +561,7 @@ export const PIECE: WordsPiece = {
     "ざいせいせいさく\t財政政策|財政々策\t\t¦fiscal policy",
     "ざいせいちゅう\t在世中\t\t¦during one's lifetime",
     "ざいせいちょうせいききん\t財政調整基金\t\t¦financial adjustment monies¦public finance adjustment reserve funds stipulated in the Local Finance Act",
-    "ざいせいてき\t財政的\t\t¦economic¦financial¦fiscal",
+    "ざいせいてき\t財政的\tn\t¦economic¦financial¦fiscal",
     "ざいせいとうゆうし\t財政投融資\tC~n14\t¦Fiscal Investment and Loan Program¦FILP",
     "ざいせいなん\t財政難\tC~n18\t¦economic difficulties¦financial difficulties¦fiscal difficulties",
     "ざいせいねんど\t財政年度\t\t¦fiscal year¦financial year",
@@ -726,8 +734,8 @@ export const PIECE: WordsPiece = {
     "ザギンでシースー\t\t\tsl¦(going out for) sushi in Ginza",
     "ざく\t\t\tfood¦assorted vegetables for sukiyaki (esp. green onion)",
     "ざくぎり\tざく切り\ts\t¦cutting into chunks (esp. vegetables)",
-    "ザクザク\t\t\ton-mim¦walking on frost¦crunching (e.g. on gravel)\ton-mim¦lots of coins or jewels\ton-mim¦cutting into large pieces¦loosely weaving\ton-mim¦large (pieces, stitches, sand grains, etc.)",
-    "ざくざく\t\t\ton-mim¦walking on frost¦crunching (e.g. on gravel)\ton-mim¦lots of coins or jewels\ton-mim¦cutting into large pieces¦loosely weaving\ton-mim¦large (pieces, stitches, sand grains, etc.)",
+    "ザクザク\t\tn\ton-mim¦walking on frost¦crunching (e.g. on gravel)\ton-mim¦lots of coins or jewels\ton-mim¦cutting into large pieces¦loosely weaving\ton-mim¦large (pieces, stitches, sand grains, etc.)",
+    "ざくざく\t\tn\ton-mim¦walking on frost¦crunching (e.g. on gravel)\ton-mim¦lots of coins or jewels\ton-mim¦cutting into large pieces¦loosely weaving\ton-mim¦large (pieces, stitches, sand grains, etc.)",
     "ザクスカ\t\t\t¦hors d'oeuvre",
     "ざくつ\t座屈\ts\tciveng¦buckling",
     "ざくり\t\ts\ton-mim¦roughly¦approximately¦coarsely\ton-mim¦(cutting) in one stroke¦(breaking apart) with vigour\ton-mim¦gapingly¦(cutting) deeply¦(splitting) wide open\ton-mim¦rough (material)¦coarse",
@@ -836,7 +844,7 @@ export const PIECE: WordsPiece = {
     "ざっくざく\t\t\ton-mim¦crunch crunch¦thud thud¦tramp tramp",
     "ザックザック\t\t\ton-mim¦crunch crunch¦thud thud¦tramp tramp",
     "ざっくざっく\t\t\ton-mim¦crunch crunch¦thud thud¦tramp tramp",
-    "ざっくばらん\t\t\t¦frank¦candid¦outspoken",
+    "ざっくばらん\t\tn\t¦frank¦candid¦outspoken",
     "ざっくり\t\ts\ton-mim¦roughly¦approximately¦coarsely\ton-mim¦(cutting) in one stroke¦(breaking apart) with vigour\ton-mim¦gapingly¦(cutting) deeply¦(splitting) wide open\ton-mim¦rough (material)¦coarse",
     "ざっけん\t雑件\t\t¦assorted matters",
     "ざっけん\t雑犬\t\t¦mongrel¦mixed-breed dog¦dog of nondescript breed",
@@ -871,7 +879,7 @@ export const PIECE: WordsPiece = {
     "ざっそうだましい\t雑草魂\t\t¦tenacity of weeds¦stubbornness of weeds\tcol¦die hard spirit",
     "ざっそく\t雑則\t~m44\t¦miscellaneous rules¦miscellaneous provisions",
     "ざっそん\t雑損\t\t¦miscellaneous losses",
-    "ざった\t雑多\t~m31\t¦miscellaneous¦mixed¦unorganized",
+    "ざった\t雑多\tn~m31\t¦miscellaneous¦mixed¦unorganized",
     "ざっちょ\t雑著\t\t¦writings on many different topics\t¦book that cannot be classified in any category",
     "ザッツ\t\t\t¦that's (as in \"that's all\")",
     "ザッツ\t\t\tsports¦takeoff (in ski jumping)¦satz",
@@ -886,14 +894,14 @@ export const PIECE: WordsPiece = {
     "ザッハトルテ\t\t\tfood¦Sachertorte (chocolate cake filled with apricot jam and topped with chocolate icing)",
     "ザッハートルテ\t\t\tfood¦Sachertorte (chocolate cake filled with apricot jam and topped with chocolate icing)",
     "ざっぱい\t雑俳\t\t¦playful literature originating from haiku",
-    "ざっぱく\t雑駁|雑ぱく\t\t¦confused¦inconsistent¦incoherent",
+    "ざっぱく\t雑駁|雑ぱく\tn\t¦confused¦inconsistent¦incoherent",
     "ざっぴ\t雑費\t~m42\t¦miscellaneous expenses",
     "ざっぴょう\t雑兵\t\t¦common soldier¦private¦rank and file\t¦small fry¦underling",
     "ざっぴん\t雑品\t\t¦sundries¦odds and ends",
     "ザッピング\t\ts\t¦zapping (through TV channels)¦channel surfing",
     "ざっぽう\t雑報\t\t¦general news¦miscellaneous news",
     "ざっぽうらん\t雑報欄\t\t¦general news column",
-    "ざつ\t雑\tC~mi33\t¦rough¦crude¦sloppy\t¦miscellaneous",
+    "ざつ\t雑\tnC~mi33\t¦rough¦crude¦sloppy\t¦miscellaneous",
     "ザツィキ\t\t\t¦tzatziki",
     "ざつい\t雑い\ta\tosb¦coarse¦crude",
     "ざつえき\t雑役\t\t¦chore¦odd job",
@@ -935,16 +943,5 @@ export const PIECE: WordsPiece = {
     "ざつよう\t雑用\t~m26\t¦chores¦odd jobs¦miscellaneous affairs",
     "ざつよう\t雑徭\t\thist¦forced labour (labor) imposed upon commoners (ritsuryō period)",
     "ざつろく\t雑録\t\t¦miscellaneous records",
-    "ざつわ\t雑話\ts\t¦chitchat",
-    "ザディープ\t\t\twork¦The Deep (film)",
-    "ザデイアフター\t\t\twork¦The Day After (film)",
-    "ザデクライン\t\t\twork¦The Decline of Western Civilization (film)",
-    "ザデプス\t\t\twork¦Deepstar Six (film)",
-    "ざとう\t座頭\t\t¦blind man\t¦masseur (usu. blind)",
-    "ざとうくじら\t座頭鯨\tU\tuk¦humpback whale (Megaptera novaeangliae)",
-    "ザトウクジラ\t\tU\tuk¦humpback whale (Megaptera novaeangliae)",
-    "ざとうむし\t座頭虫\tU\tuk¦harvestman¦daddy longlegs (arachnid of order Opiliones)",
-    "ザドライバー\t\t\twork¦The Driver (film)",
-    "ザドリーミング\t\t\twork¦The Dreaming (film)",
   ],
 };

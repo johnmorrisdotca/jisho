@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 77 of 294, from "くるいば". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 77 of 294, from "くりーん・る". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,20 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "クリーン・ルーム\t\t\t¦clean room (e.g. in semiconductor manufacturing)¦cleanroom",
+    "クリーン・ローン\t\t\t¦clean loan",
+    "クリーヴァ\t\t\t¦cleaver",
+    "くる\t来る\tkC~ni16\t¦to come (spatially or temporally)¦to approach¦to arrive\tuk¦to come back¦to do ... and come back\tuk¦to come to be¦to become¦to get\t¦to come from¦to be caused by¦to derive from",
+    "くる\t繰る\tgC~mt38\t¦to reel¦to wind¦to spin (thread)\t¦to turn (pages)¦to flip through (a book)¦to leaf through (a book)\t¦to count (e.g. the days)\t¦to open one-by-one¦to close one-by-one (e.g. shutters)",
+    "くる\t佝僂|痀瘻\tU\tuk¦rickets\tuk¦person with rickets¦hunchback",
+    "くる\t刳る\tgU\tuk¦to gouge¦to hollow out¦to bore",
+    "くる\t枢\t\t¦pivot hinge (using extensions on the top and bottom of a door that fit into cavities in the frame)\t¦sliding wooden bolt (for holding a door or window shut)",
+    "くる\t呉る\t\tarch¦to give¦to let one have¦to do for one",
+    "クる\t来る\tk\t¦to come (spatially or temporally)¦to approach¦to arrive\tuk¦to come back¦to do ... and come back\tuk¦to come to be¦to become¦to get\t¦to come from¦to be caused by¦to derive from",
+    "クルアーン\t\tC~g\t¦Koran¦Qur'an¦Quran",
+    "くるい\t狂い\t\t¦madness¦insanity\t¦irregularity¦deviation¦being out of order\t¦fanaticism¦fanatic¦enthusiast",
+    "くるいざき\t狂い咲き\ts\t¦off-season flowering",
+    "くるいざく\t狂い咲く\tg\t¦to bloom out of season",
     "くるいばな\t狂い花\t\t¦off-season flowering",
     "くるう\t狂う\tgC~mi29\t¦to go mad¦to lose one's mind¦to go crazy\t¦to get out of order¦to go amiss¦to malfunction\t¦to go wrong (of a plan or expectation, etc.)¦to fall through¦to get mixed up\t¦to go crazy (over someone or something)¦to get enthusiastic¦to go wild",
     "くるおしい\t狂おしい\ta\t¦mad (with grief, love, etc.)¦crazy¦out of one's mind",
@@ -24,7 +38,7 @@ export const PIECE: WordsPiece = {
     "くるしいふところ\t苦しい懐\t\t¦tight budget",
     "くるしがる\t苦しがる\tg\t¦to suffer¦to complain of a pain",
     "くるしさ\t苦しさ\t\t¦pain¦anguish¦distress",
-    "くるしまぎれ\t苦し紛れ\t\t¦(out of) desperation¦(as a) last resort¦(driven by) pain",
+    "くるしまぎれ\t苦し紛れ\tn\t¦(out of) desperation¦(as a) last resort¦(driven by) pain",
     "くるしみ\t苦しみ\tC~ni08\t¦pain¦anguish¦distress",
     "くるしむ\t苦しむ\tgC~mi45\t¦to suffer¦to groan¦to be worried",
     "くるしめる\t苦しめる\tiC~ni17\t¦to torment¦to pain¦to inflict (physical) pain\t¦to harass¦to cause (emotional) pain¦to afflict",
@@ -173,7 +187,7 @@ export const PIECE: WordsPiece = {
     "くれい\t句例\t\t¦phrase example¦haiku example",
     "クレイアニメ\t\t\t¦clay animation",
     "クレイアニメーション\t\t\t¦clay animation",
-    "クレイジー\t\tC~s\t¦crazy",
+    "クレイジー\t\tnC~s\t¦crazy",
     "クレイジークライマー\t\t\tproduct¦Crazy Climber (video game)",
     "クレイドル\t\t\t¦docking station (for an electronic device)¦dock¦cradle",
     "クレイム\t\t\t¦claim (for compensation)¦customer complaint seeking compensation\t¦objection¦(general) complaint",
@@ -261,7 +275,7 @@ export const PIECE: WordsPiece = {
     "くれはてる\t暮れ果てる|暮果てる\ti\t¦to fall completely dark",
     "クレバス\t\t\t¦crevasse",
     "クレバネット\t\t\t¦cravenette",
-    "クレバー\t\t\t¦clever",
+    "クレバー\t\tn\t¦clever",
     "クレパス\t\t\tabbr¦pastel crayons",
     "クレヒス\t\t\tabbr,col¦credit history",
     "クレピネット\t\t\t¦crépinette",
@@ -310,7 +324,7 @@ export const PIECE: WordsPiece = {
     "クレー\t\tC~g\t¦clay\tabbr¦clay pigeon shooting¦clay target",
     "クレーコート\t\tC~g\tsports¦clay court (tennis)",
     "クレーしゃげき\tクレー射撃\t\t¦clay pigeon shooting",
-    "クレージー\t\tC~s\t¦crazy",
+    "クレージー\t\tnC~s\t¦crazy",
     "クレータ\t\tC~g\t¦crater\tcol¦pockmark",
     "クレーター\t\tC~g\t¦crater\tcol¦pockmark",
     "クレートトレーニング\t\t\t¦crate training¦housebreaking¦house-training",
@@ -407,7 +421,7 @@ export const PIECE: WordsPiece = {
     "くろうしぬく\t苦労し抜く\tg\t¦to go through all sorts of hardships",
     "くろうしのした\t黒牛の舌|黒牛舌魚\tU\tuk¦black cow-tongue (species of tonguefish, Paraplagusia japonica)",
     "クロウシノシタ\t\tU\tuk¦black cow-tongue (species of tonguefish, Paraplagusia japonica)",
-    "くろうしょう\t苦労性\t\t¦nervous temperament¦worry habit¦pessimistic nature",
+    "くろうしょう\t苦労性\tn\t¦nervous temperament¦worry habit¦pessimistic nature",
     "くろうすご\t黒臼子\tU\tuk¦Alaska blueberry (Vaccinium ovalifolium)¦early blueberry¦oval-leaf bilberry",
     "クロウスゴ\t\tU\tuk¦Alaska blueberry (Vaccinium ovalifolium)¦early blueberry¦oval-leaf bilberry",
     "くろうたどり\t黒歌鳥\tU\tuk¦blackbird (Turdus merula)",
@@ -863,7 +877,7 @@ export const PIECE: WordsPiece = {
     "くろまぐろ\t黒鮪\tU\tuk¦Pacific bluefin tuna (Thunnus orientalis)",
     "くろまじゅつ\t黒魔術\t\t¦black magic",
     "くろまだら\t黒斑\t\t¦black spot¦black speck",
-    "クロマチック\t\t\t¦chromatic",
+    "クロマチック\t\tn\t¦chromatic",
     "クロマチン\t\t\t¦chromatin",
     "くろまつ\t黒松\t~m39\t¦black pine (Pinus thunbergii)¦Japanese black pine",
     "クロマツ\t\t~m39\t¦black pine (Pinus thunbergii)¦Japanese black pine",
@@ -918,21 +932,5 @@ export const PIECE: WordsPiece = {
     "クロムてっこう\tクロム鉄鉱\t\t¦chromite",
     "クロムなめし\tクロム鞣\t\t¦tanning using chromium compounds (e.g. potassium dichromate)",
     "クロムバナジウムこう\tクロムバナジウム鋼\t\t¦chrome-vanadium steel",
-    "クロムみょうばん\tクロム明礬\t\t¦chrome alum",
-    "クロムモリブデンこう\tクロムモリブデン鋼\t\t¦chromium molybdenum steel¦chrome molybdenum steel",
-    "クロム・イエロー\t\t\t¦chrome yellow",
-    "クロム・グリーン\t\t\t¦chrome green (pigment made of chromium oxide, Cr2O3)",
-    "くろめ\t黒目|黒眼\t\t¦pupil and (dark) iris of the eye",
-    "くろめがち\t黒目がち|黒目勝ち\t\t¦large-pupilled¦dark-eyed¦having large irises",
-    "くろめがね\t黒眼鏡\t\t¦sunglasses¦shady glasses¦dark glasses",
-    "クロメクラウナギ\t\t\t¦brown hagfish (Eptatretus atami)",
-    "くろめまめ\t黒目豆\t\t¦black-eyed pea¦black-eyed bean",
-    "クロメマメ\t\t\t¦black-eyed pea¦black-eyed bean",
-    "くろめる\t黒める\ti\t¦to blacken (something)¦to make something black\t¦to talk wrong into right",
-    "くろも\t黒藻\tU\tuk¦hydrilla (species of aquatic plant, Hydrilla verticillata)\t¦Papenfussiella kuromo (species of brown algae)",
-    "クロモ\t\tU\tuk¦hydrilla (species of aquatic plant, Hydrilla verticillata)\t¦Papenfussiella kuromo (species of brown algae)",
-    "くろもじ\t黒文字\t\t¦Lindera umbellata (species of spicebush)\t¦toothpick\t¦natural wooden chopsticks (tea ceremony)\t¦black characters¦black text",
-    "クロモジ\t\t\t¦Lindera umbellata (species of spicebush)\t¦toothpick\t¦natural wooden chopsticks (tea ceremony)\t¦black characters¦black text",
-    "くろものかでん\t黒物家電\t\t¦black goods¦consumer electronics products",
   ],
 };

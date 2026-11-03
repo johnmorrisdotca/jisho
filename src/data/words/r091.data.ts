@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 92 of 294, from "こくさいかんき". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 92 of 294, from "こくさいかがくし". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,11 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "こくさいかがくしんこうざいだん\t国際科学振興財団\t\torganization¦Foundation for Advancement of International Science",
+    "こくさいカップル\t国際カップル\t\t¦international couple¦transnational couple¦couple with different nationalities",
+    "こくさいかもつ\t国際貨物\t\t¦international cargo",
+    "こくさいカルテル\t国際カルテル\t\t¦international cartel",
+    "こくさいかんかく\t国際感覚\t\t¦cosmopolitan (international) way of thinking¦feeling for the wider world",
     "こくさいかんきょうかいはつけんきゅうじょ\t国際環境開発研究所\t\torganization¦International Institute for Environment and Development",
     "こくさいかんけい\t国際関係\t\t¦international relations",
     "こくさいかんけいけんきゅうじょ\t国際関係研究所\t\torganization¦Institute for National Policy Research",
@@ -122,7 +127,7 @@ export const PIECE: WordsPiece = {
     "こくさいしょく\t国際色\t~m41\t¦international character",
     "こくさいしょくぶついでんしげんけんきゅうじょ\t国際植物遺伝資源研究所\t\torganization¦International Plant Genetic Resources Institute¦IPGRI",
     "こくさいしょくぶつせいちょうぶっしつかいぎ\t国際植物生長物質会議\t\torganization¦International Plant Growth Substance Association¦IPGSA",
-    "こくさいしょくゆたか\t国際色豊か\t\t¦very cosmopolitan¦very international",
+    "こくさいしょくゆたか\t国際色豊か\tn\t¦very cosmopolitan¦very international",
     "こくさいしょくりょうせいさくけんきゅうじょ\t国際食糧政策研究所\t\torganization¦International Food Policy Research Institute¦IFPRI",
     "こくさいしょし\t国際書誌\t\t¦international bibliography",
     "こくさいしんけいがんかがっかい\t国際神経眼科学会\t\torganization¦International Neuro-Ophthalmology Society¦INOS",
@@ -190,7 +195,7 @@ export const PIECE: WordsPiece = {
     "こくさいつうか\t国際通貨\t\t¦international currency",
     "こくさいつうかききん\t国際通貨基金\t\t¦International Monetary Fund¦IMF",
     "こくさいつうわ\t国際通話\t\ttelec¦international call",
-    "こくさいてき\t国際的\tC~ni02\t¦international¦worldwide¦cross-border",
+    "こくさいてき\t国際的\tnC~ni02\t¦international¦worldwide¦cross-border",
     "こくさいてきとりひき\t国際的取引き\t\t¦international trade",
     "こくさいてきにけねんされるこうしゅうえいせいじょうのきんきゅうじたい\t国際的に懸念される公衆衛生上の緊急事態\t\t¦Public Health Emergency of International Concern (formal WHO declaration)¦PHEIC",
     "こくさいてきぼうえき\t国際的貿易\t\t¦international trade",
@@ -400,7 +405,7 @@ export const PIECE: WordsPiece = {
     "こくすい\t国粋\t~m40\t¦national characteristics",
     "こくすいしゅぎ\t国粋主義\t~m42\t¦nationalism¦extreme patriotism",
     "こくすいしゅぎしゃ\t国粋主義者\t\t¦ultranationalist",
-    "こくすいてき\t国粋的\t\t¦nationalistic¦ultranationalistic",
+    "こくすいてき\t国粋的\tn\t¦nationalistic¦ultranationalistic",
     "こくすいねつ\t黒水熱\t\t¦blackwater fever",
     "こくする\t刻する\ts\tarch¦to carve¦to engrave\t¦to publish¦to author",
     "こくせい\t国政\tC~n04\t¦national politics¦political situation¦statecraft",
@@ -537,7 +542,7 @@ export const PIECE: WordsPiece = {
     "こくないせい\t国内製\t\t¦domestic¦of domestic manufacture",
     "こくないせん\t国内線\t\t¦domestic air route¦domestic airline (company)",
     "こくないそうせいさん\t国内総生産\t\t¦gross domestic product¦GDP",
-    "こくないてき\t国内的\t\t¦internal (to a country)¦interior¦home",
+    "こくないてき\t国内的\tn\t¦internal (to a country)¦interior¦home",
     "こくないテロ\t国内テロ\t\t¦domestic terrorism¦terrorism in one's own country",
     "こくないひなんみん\t国内避難民\t\t¦internally displaced person",
     "こくないほう\t国内法\t\t¦municipal (civic) law¦domestic law¦national law",
@@ -555,8 +560,8 @@ export const PIECE: WordsPiece = {
     "こくはいぶくろ\t克灰袋\t\t¦polyester bag for collecting volcanic ash",
     "こくはく\t告白\tsC~ni19\t¦confession (to a crime, wrongdoing, etc.)¦admission\t¦professing one's feelings (to someone one wants to go out with)¦declaration of love\tChristn¦profession (of faith)\tChristn¦confession (of sins)",
     "こくはく\t黒白\tC~mt33\t¦black and white¦right and wrong",
-    "こくはく\t酷薄|刻薄\t\t¦cruel¦inhumane¦callous",
-    "こくはくむじょう\t酷薄無情\t\trare¦cold-hearted¦merciless¦ruthless",
+    "こくはく\t酷薄|刻薄\tn\t¦cruel¦inhumane¦callous",
+    "こくはくむじょう\t酷薄無情\tn\trare¦cold-hearted¦merciless¦ruthless",
     "こくはくろく\t告白録\t\twork¦Confessiones (St. Augustine of Hippo)\twork¦Les Confessions (Rousseau)",
     "こくはつ\t告発\tsC~n06\t¦indictment¦prosecution¦complaint",
     "こくはつ\t黒髪\t~m35\t¦black hair",
@@ -685,7 +690,7 @@ export const PIECE: WordsPiece = {
     "こくみんたいいくたいかい\t国民体育大会\t~m36\t¦National Athletic Meet",
     "こくみんたいわしゅうかい\t国民対話集会\t\torganization¦National Issues Forum¦NIF",
     "こくみんちょうようれい\t国民徴用令\t\thist,law¦National Requisition Ordinance (1939)",
-    "こくみんてき\t国民的\tC~n10\t¦national (e.g. hero, pastime, consensus)¦relevant to all citizens¦popular on a national level",
+    "こくみんてき\t国民的\tnC~n10\t¦national (e.g. hero, pastime, consensus)¦relevant to all citizens¦popular on a national level",
     "こくみんてきえいゆう\t国民的英雄\t\t¦national hero¦hero of the nation",
     "こくみんてききばん\t国民的基盤\t\t¦based on a nation's people¦popular base",
     "こくみんてきぎょうじ\t国民的行事\t\t¦national event¦event that is enjoyed nationwide¦event with nationwide popularity",
@@ -697,12 +702,5 @@ export const PIECE: WordsPiece = {
     "こくみんねんきん\t国民年金\tC~n12\t¦national pension¦government pension system",
     "こくみんねんきんほう\t国民年金法\t\tlaw¦National Pension Act",
     "こくみんのきゅうじつ\t国民の休日\t\t¦citizen's holiday",
-    "こくみんのしゅくじつ\t国民の祝日\t\t¦public holiday¦national holiday",
-    "こくみんびょう\t国民病\t\t¦disease affecting an entire nation",
-    "こくみんふく\t国民服\t\thist¦national uniform (such as mandated for Japanese males in 1940)",
-    "こくみんふくししひょう\t国民福祉指標\t\trare¦net national welfare",
-    "こくみんふざい\t国民不在\t\t¦out of touch with the voters¦indifferent to the concerns of the people",
-    "こくみんへい\t国民兵\t\thist¦militiaman",
-    "こくみんほごけいかく\t国民保護計画\t\t¦Civil Protection Plan",
   ],
 };

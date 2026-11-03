@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 108 of 294, from "さんじゅつか". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 108 of 294, from "さんじゅっ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,14 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "さんじゅっぷん\t３０分|三十分\t\t¦thirty minutes¦half an hour",
+    "さんじゅつ\t算術\t\t¦arithmetic",
+    "さんじゅつ\t纂述\ts\trare¦gathering and writing up material",
+    "さんじゅつえんざん\t算術演算\t\tcomp¦arithmetic operation",
+    "さんじゅつえんざんきこう\t算術演算機構\t\tcomp¦arithmetic unit¦ALU",
+    "さんじゅつえんざんし\t算術演算子\t\tcomp¦arithmetic operator",
+    "さんじゅつえんざんそうち\t算術演算装置\t\tcomp¦arithmetic unit¦arithmetic logic unit¦ALU",
+    "さんじゅつえんざんめいれい\t算術演算命令\t\tcomp¦arithmetic instruction",
     "さんじゅつかさん\t算術加算\t\tcomp¦arithmetic addition",
     "さんじゅつきゅうすう\t算術級数\t\t¦arithmetical progression",
     "さんじゅつけいさん\t算術計算\ts\t¦arithmetical computation¦(performing) an arithmetical operation",
@@ -478,7 +486,7 @@ export const PIECE: WordsPiece = {
     "さんにんころし\t三人殺し|３人殺し\t\t¦triple murder",
     "さんにんこん\t３人婚|三人婚\t\trare¦three-way sexual relationship¦three-person marriage¦ménage à trois",
     "さんにんごろし\t三人殺し|３人殺し\t\t¦triple murder",
-    "さんにんさんよう\t三人三様\t\t¦each of the three being different from the other two¦each of the three having his (her) own way",
+    "さんにんさんよう\t三人三様\tn\t¦each of the three being different from the other two¦each of the three having his (her) own way",
     "さんにんしょう\t三人称\t\tgramm¦third person\t¦third-person reference term¦term used to refer to someone or something in the third person",
     "さんにんしょうたんすう\t三人称単数\t\tgramm¦third-person singular",
     "さんにんしょうたんすうげんざい\t三人称単数現在\t\tgramm¦third person singular present",
@@ -550,13 +558,13 @@ export const PIECE: WordsPiece = {
     "さんぱちしきほへいじゅう\t三八式歩兵銃\t\t¦Arisaka Type 38 rifle",
     "さんぱつ\t散発\tsC~n14\t¦sporadic¦scattering",
     "さんぱつ\t散髪\tsC~mi32\t¦hair-cutting¦(having a) haircut¦hair-dressing\t¦messy hair¦untied hair¦unkempt hair",
-    "さんぱつてき\t散発的\t\t¦sporadic",
+    "さんぱつてき\t散発的\tn\t¦sporadic",
     "さんぱつや\t散髪屋\t\t¦barber¦barbershop¦barber shop",
     "サンパン\t三板|舢板\t\t¦sampan (wooden boat)¦lighter¦ferry",
     "さんぱんしゅぎ\t三反主義\t\thist¦anti-communism, anti-capitalism, anti-fascism (policy of the Socialist Masses Party)",
     "さんひめ\t三姫\t\t¦the three princesses",
     "さんび\t賛美|讃美\tsC~mi36\t¦praise¦glorification¦extolment",
-    "さんび\t酸鼻\t\t¦appalling¦awful¦horrible",
+    "さんび\t酸鼻\tn\t¦appalling¦awful¦horrible",
     "さんび\t三備\t\thist¦Sanbi (the three former provinces of Bizen, Bitchū and Bingo)",
     "さんびか\t賛美歌|讃美歌|讚美歌\t~m39\tChristn¦hymn¦psalm",
     "さんびしん\t三美神\t\tgrmyth¦three Graces¦Charites",
@@ -605,7 +613,7 @@ export const PIECE: WordsPiece = {
     "さんぶん\t三分\ts\t¦trisection¦dividing into three (parts)",
     "さんぶん\t酸分\t\tchem¦acid content",
     "さんぶんし\t散文詩\t~m47\t¦prose poem",
-    "さんぶんてき\t散文的\t\t¦prosaic",
+    "さんぶんてき\t散文的\tn\t¦prosaic",
     "さんぶんのいち\t三分の一|３分の１\t\t¦one third¦a third part",
     "さんぶんのに\t三分の二\t\t¦two thirds",
     "さんぶんほう\t三分法\t\t¦trichotomy",
@@ -731,7 +739,7 @@ export const PIECE: WordsPiece = {
     "さんまやまんだら\t三昧耶曼荼羅\t\tBuddh¦samya mandala (in Shingon)",
     "サンマリノ\t\t\t¦San Marino",
     "サンマリノきょうわこく\tサンマリノ共和国|サン・マリノ共和国\t\t¦Republic of San Marino",
-    "さんまん\t散漫\tC~mt42\t¦vague¦desultory¦distracted",
+    "さんまん\t散漫\tnC~mt42\t¦vague¦desultory¦distracted",
     "サンマー\t\t\t¦summer",
     "さんみ\t酸味\tC~mt31\t¦sourness¦acidity",
     "さんみ\t三位\t\t¦third place¦third rank\t¦third rank (in the Japanese court system)\tChristn¦Trinity¦the Father, the Son, and the Holy Spirit",
@@ -843,7 +851,7 @@ export const PIECE: WordsPiece = {
     "さんれい\t三礼\t\t¦adoration which is performed three times or repeatedly¦act of worship which is performed three times or repeatedly",
     "さんれいざん\t三霊山\t\tabbr¦Japan's Three Holy Mountains (Mt. Fuji, Mt. Tate and Mt. Haku)",
     "さんれつ\t参列\tsC~n18\t¦attendance¦participation¦presence",
-    "さんれつ\t惨烈\t\t¦horrible¦cruel¦atrocious",
+    "さんれつ\t惨烈\tn\t¦horrible¦cruel¦atrocious",
     "さんれつしゃ\t参列者\t\t¦attendant¦attendee",
     "さんれん\t三連\t\t¦three-stranded",
     "さんれんおんぷ\t三連音符\t\tmusic¦triplet",
@@ -866,13 +874,5 @@ export const PIECE: WordsPiece = {
     "さんわそうごうけんきゅうしょ\t三和総合研究所\t\torganization¦SRIC Corporation¦Sanwa Research Institute Corporation",
     "さんわり\t三割|３割\t\t¦thirty percent¦30 percent",
     "さんわりじち\t三割自治\t\t¦the \"thirty-percent autonomy\" of local governments",
-    "さんをうちつける\t桟を打ち付ける|桟を打ちつける\ti\t¦to nail a crosspiece (to)",
-    "さんをおく\t算を置く\tg\t¦to calculate¦to divine",
-    "さんをなす\t産を成す\tg\t¦to amass a fortune",
-    "さんをみだす\t算を乱す\tg\tid¦to break and run (e.g. of a defeated army or panicking crowd)¦to flee in disorder¦to scatter in all directions",
-    "サン・オイル\t\t\t¦suntan lotion",
-    "サン・オブ・ア・ビッチ\t\t\t¦son of a bitch",
-    "サン・クチュール\t\t\t¦simple clothing made without seams, lining, padding, etc.",
-    "サン・サルバドル\t\t\t¦San Salvador (El Salvador)",
   ],
 };

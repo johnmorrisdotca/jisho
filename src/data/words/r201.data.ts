@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 202 of 294, from "にたん". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 202 of 294, from "にたい". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,34 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "にたいし\tに対し\t\t¦towards¦against¦regarding",
+    "にたいして\tに対して\tC~s\t¦towards¦against¦regarding",
+    "にたいする\tに対する\tC~s\t¦regarding¦in¦to",
+    "にたいもんだい\t二体問題\t\tphysics¦two-body problem",
+    "にたき\t煮炊き|煮焚き\ts\t¦cooking",
+    "にたく\t二択|２択\t\t¦choice between two things¦(having) two choices",
+    "ニタゾキサニド\t\t\tchem¦nitazoxanide",
+    "にたっと\t\t\t¦with a broad grin¦smirking",
+    "ニタッと\t\t\t¦with a broad grin¦smirking",
+    "にたつ\t煮立つ\tg~m46\t¦to boil¦to simmer",
+    "にたつく\t\tg\t¦to have (break out into) a broad (suggestive) grin",
+    "にたてる\t煮立てる\ti\t¦to boil or simmer",
+    "にたにた\t\ts\ton-mim¦with a broad grin¦smirking",
+    "ニタニタ\t\ts\ton-mim¦with a broad grin¦smirking",
+    "にたまご\t煮卵|煮玉子|煮たまご\t\tfood¦egg boiled, peeled, and steeped in soy sauce marinade",
+    "にたもの\t似た者\t\t¦similar people",
+    "にたものどうし\t似たもの同士|似た者同士\t\t¦two people alike¦two of a kind¦kissing cousins",
+    "にたものふうふ\t似た者夫婦\t\t¦married couple with similar tastes or dispositions\tproverb¦like husband, like wife",
+    "にたり\t似たり|荷足り\t\t¦fake¦copy\t¦barge¦lighter",
+    "ニタリ\t\t\ton-mim¦smirkingly¦smugly¦broadly",
+    "にたり\t\t\ton-mim¦smirkingly¦smugly¦broadly",
+    "ニタリ\t\t\t¦pelagic thresher (Alopias pelagicus)",
+    "ニタリがい\tニタリ貝\t\tsl¦Korean mussel (Mytilus coruscus)\t¦silicone receptacle used for male masturbation",
+    "にたりがい\t似たり貝\t\tsl¦Korean mussel (Mytilus coruscus)\t¦silicone receptacle used for male masturbation",
+    "ニタリクジラ\t\tU\tuk¦Bryde's whale (Balaenoptera brydei)",
+    "にたりくじら\tニタリ鯨|似鯨\tU\tuk¦Bryde's whale (Balaenoptera brydei)",
+    "にたりぶね\t荷足り船\t\t¦a barge¦a lighter",
+    "にたりよったり\t似たり寄ったり|似たりよったり\tn\t¦much the same",
     "ニたんちょう\tニ短調\t\tmusic¦D minor",
     "にだ\t荷駄\t\t¦pack¦horseload",
     "ニダ\t\t\tjoc,sl¦imitative Korean-style sentence ending",
@@ -82,7 +110,7 @@ export const PIECE: WordsPiece = {
     "にちじょうせい\t日常性\t\t¦ordinariness",
     "にちじょうせいかつ\t日常生活\tC~s\t¦everyday life¦daily life",
     "にちじょうせいかつどうさ\t日常生活動作\t\tmed¦activities of daily living¦ADL¦normal activities of daily life",
-    "にちじょうてき\t日常的\t\t¦mundane¦routine¦everyday",
+    "にちじょうてき\t日常的\tn\t¦mundane¦routine¦everyday",
     "にちじょうひん\t日常品\t\t¦everyday necessities¦daily necessities",
     "にちだい\t日大\t\torganization¦Nihon University (abbr)",
     "にちだく\t日諾\t\t¦Japan and Norway",
@@ -206,7 +234,7 @@ export const PIECE: WordsPiece = {
     "にっかんし\t日刊紙\t\t¦daily paper",
     "にっかんしんぶん\t日刊新聞\t\t¦daily newspaper",
     "にっかんスポーツ\t日刊スポーツ\t\twork¦Nikkan Sports (1946-) (daily sports newspaper)",
-    "にっかんてき\t肉感的\t\t¦sensual¦sexy¦voluptuous",
+    "にっかんてき\t肉感的\tn\t¦sensual¦sexy¦voluptuous",
     "にっかんトンネル\t日韓トンネル\t\tserv¦Japan-Korea Undersea Tunnel (proposed)",
     "にっかんへいごうじょうやく\t日韓併合条約\t\thist¦Japan-Korea Annexation Treaty (1910)",
     "にっかんワールドカップ\t日韓ワールドカップ\t\tev¦2002 FIFA World Cup",
@@ -354,7 +382,7 @@ export const PIECE: WordsPiece = {
     "にったい\t日台\t\t¦Japan and Taiwan¦Japanese-Taiwanese",
     "にったい\t日タイ|日泰\t\t¦Japan and Thailand¦Japanese-Thai",
     "にったいだい\t日体大\t\torganization¦Nippon Sport Science University (abbr)",
-    "ニッチ\t\t\t¦niche (market, industry, hobby, etc.)\tarchit¦niche\tecol¦niche",
+    "ニッチ\t\tn\t¦niche (market, industry, hobby, etc.)\tarchit¦niche\tecol¦niche",
     "ニッチさんぎょう\tニッチ産業\t\t¦niche industry",
     "ニッチしじょう\tニッチ市場\t\t¦niche market",
     "にっちもさっちも\t二進も三進も\tU\tuk¦in no way",
@@ -684,21 +712,5 @@ export const PIECE: WordsPiece = {
     "にっぽんじどうきょういくせんもんがっこう\t日本児童教育専門学校\t\torganization¦Japan Juvenile Education College",
     "にっぽんじどうしゃゆにゅうくみあい\t日本自動車輸入組合\t\torganization¦Japan Automobile Importers' Association",
     "にっぽんじどうとしょしゅっぱんきょうかい\t日本児童図書出版協会\t\torganization¦Japanese Association of Children's Book Publishers",
-    "にっぽんじどうはんばいきょうかい\t日本自動販売協会\t\torganization¦Japan Automatic Merchandising Association",
-    "にっぽんじビールきょうかい\t日本地ビール協会\t\torganization¦Japan Craft Beer Association¦JCBA",
-    "にっぽんじゅう\t日本中\tC~s\t¦throughout Japan",
-    "にっぽんじゅういこうしゅうえいせいがっかい\t日本獣医公衆衛生学会\t\torganization¦Japanese Society of Veterinary Public Health",
-    "にっぽんじゅんかんやくりがっかい\t日本循環薬理学会\t\torganization¦Japanese Association of Cardiovascular Pharmacology¦JACP",
-    "にっぽんじょういんくみあいれんらくかいぎ\t日本乗員組合連絡会議\t\torganization¦Airline Pilots' Association of Japan¦ALPA Japan",
-    "にっぽんじょうほうつうしんかぶしきがいしゃ\t日本情報通信株式会社\t\torganization¦Nippon Information and Communication Corporation",
-    "にっぽんじん\t日本人\tC~n01\t¦Japanese person",
-    "にっぽんじんこうがっかい\t日本人口学会\t\torganization¦Population Association of Japan",
-    "にっぽんじんこうぞうきがっかい\t日本人工臓器学会\t\torganization¦Japanese Society for Artificial Organs",
-    "にっぽんじんるいいでんがっかい\t日本人類遺伝学会\t\torganization¦Japan Society of Human Genetics",
-    "にっぽんじんるいがっかい\t日本人類学会\t\torganization¦Anthropological Society of Nippon",
-    "にっぽんすいぞうがっかい\t日本膵臓学会\t\torganization¦Japan Pancreas Society",
-    "にっぽんすいみんがっかい\t日本睡眠学会\t\torganization¦Japanese Society of Sleep Research¦JSSR",
-    "にっぽんずつうがっかい\t日本頭痛学会\t\torganization¦Japanese Headache Society¦JHS",
-    "にっぽんせいさくきんゆうこうこ\t日本政策金融公庫\t\torganization¦Japan Finance Corporation¦JFC",
   ],
 };

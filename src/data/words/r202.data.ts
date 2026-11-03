@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 203 of 294, from "にっぽんせいし". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 203 of 294, from "にっぽんじどうは". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,22 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "にっぽんじどうはんばいきょうかい\t日本自動販売協会\t\torganization¦Japan Automatic Merchandising Association",
+    "にっぽんじビールきょうかい\t日本地ビール協会\t\torganization¦Japan Craft Beer Association¦JCBA",
+    "にっぽんじゅう\t日本中\tC~s\t¦throughout Japan",
+    "にっぽんじゅういこうしゅうえいせいがっかい\t日本獣医公衆衛生学会\t\torganization¦Japanese Society of Veterinary Public Health",
+    "にっぽんじゅんかんやくりがっかい\t日本循環薬理学会\t\torganization¦Japanese Association of Cardiovascular Pharmacology¦JACP",
+    "にっぽんじょういんくみあいれんらくかいぎ\t日本乗員組合連絡会議\t\torganization¦Airline Pilots' Association of Japan¦ALPA Japan",
+    "にっぽんじょうほうつうしんかぶしきがいしゃ\t日本情報通信株式会社\t\torganization¦Nippon Information and Communication Corporation",
+    "にっぽんじん\t日本人\tC~n01\t¦Japanese person",
+    "にっぽんじんこうがっかい\t日本人口学会\t\torganization¦Population Association of Japan",
+    "にっぽんじんこうぞうきがっかい\t日本人工臓器学会\t\torganization¦Japanese Society for Artificial Organs",
+    "にっぽんじんるいいでんがっかい\t日本人類遺伝学会\t\torganization¦Japan Society of Human Genetics",
+    "にっぽんじんるいがっかい\t日本人類学会\t\torganization¦Anthropological Society of Nippon",
+    "にっぽんすいぞうがっかい\t日本膵臓学会\t\torganization¦Japan Pancreas Society",
+    "にっぽんすいみんがっかい\t日本睡眠学会\t\torganization¦Japanese Society of Sleep Research¦JSSR",
+    "にっぽんずつうがっかい\t日本頭痛学会\t\torganization¦Japanese Headache Society¦JHS",
+    "にっぽんせいさくきんゆうこうこ\t日本政策金融公庫\t\torganization¦Japan Finance Corporation¦JFC",
     "にっぽんせいしんほけんかんごがっかい\t日本精神保健看護学会\t\torganization¦Japan Academy of Psychiatric and Mental Health Nursing",
     "にっぽんせいじがっかい\t日本政治学会\t\torganization¦Japanese Political Science Association¦JPSA",
     "にっぽんせいてつ\t日本製鉄\t\tcompany¦Nippon Steel",
@@ -70,7 +86,7 @@ export const PIECE: WordsPiece = {
     "にっぽんつうやくがっかい\t日本通訳学会\t\torganization¦Japan Association for Interpretation Studies¦JAIS",
     "にっぽんづりかんきょうほぜんれんめい\t日本釣り環境保全連盟\t\torganization¦Japan Ecology Fishing Federation¦JFF",
     "にっぽんていとうしょうけんきょうかい\t日本抵当証券協会\t\torganization¦Japan Mortgage Association",
-    "にっぽんてき\t日本的\t\t¦(typically) Japanese",
+    "にっぽんてき\t日本的\tn\t¦(typically) Japanese",
     "にっぽんてっこうきょうかい\t日本鉄鋼協会\t\torganization¦Iron and Steel Institute of Japan",
     "にっぽんてっこうゆしゅつくみあい\t日本鉄鋼輸出組合\t\torganization¦Japan Iron & Steel Exporters' Association",
     "にっぽんテレビほうそうもう\t日本テレビ放送網\t\tcompany¦Nippon Television Network",
@@ -379,10 +395,10 @@ export const PIECE: WordsPiece = {
     "にひゃく\t２００|二百|２百|二〇〇\tC~ns02\t¦200¦two hundred",
     "にひゃくとおか\t二百十日\tC~n22\t¦210th day (from the first day of spring according to the lunar calendar)¦the storm day",
     "にひゃくはつか\t二百二十日\tC~n17\t¦220th day¦end of the storm period",
-    "ニヒリスティック\t\t\t¦nihilistic",
+    "ニヒリスティック\t\tn\t¦nihilistic",
     "ニヒリスト\t\t\t¦nihilist",
     "ニヒリズム\t\t\t¦nihilism",
-    "ニヒル\t\tC~g\t¦nihilistic",
+    "ニヒル\t\tnC~g\t¦nihilistic",
     "にびいろ\t鈍色\t\t¦dark gray¦dark grey",
     "にびたし\t煮浸し|煮びたし\t\t¦type of stew, usu. fish or vegetables in a mild broth¦fish grilled unseasoned and then simmered slowly in soy and mirin broth",
     "にびょうし\t二拍子\t\tmusic¦duple time¦duple meter¦duple metre",
@@ -658,25 +674,5 @@ export const PIECE: WordsPiece = {
     "ニホンザリガニ\t\tU\tuk¦Japanese crayfish (Cambaroides japonicus)",
     "にほんざる\t日本猿\tU\tuk¦Japanese macaque (Macaca fuscata)",
     "ニホンザル\t\tU\tuk¦Japanese macaque (Macaca fuscata)",
-    "にほんし\t日本史\tC~s\t¦Japanese history¦history of Japan",
-    "にほんし\t日本紙\tC~t\t¦Japanese paper¦washi",
-    "にほんしかせんもんいきこう\t日本歯科専門医機構\t\torganization¦Japanese Dental Specialty Board",
-    "にほんしかだいがく\t日本歯科大学\t\torganization¦Nippon Dental University",
-    "にほんしかだいがくとうきょうたんきだいがく\t日本歯科大学東京短期大学\t\torganization¦The Nippon Dental University College at Tokyo",
-    "にほんしき\t日本式\tC~n23\t¦Japanese style\tabbr¦Nihon-shiki romanization (of Japanese)",
-    "にほんしきローマじ\t日本式ローマ字\t\t¦Nihon-shiki romanization (of Japanese)",
-    "にほんしじょう\t日本市場\t\t¦the Japanese market",
-    "にほんしぜんほごきょうかい\t日本自然保護協会\t\torganization¦Nature Conservation Society of Japan",
-    "にほんしね\t日本死ね\t\tsl¦fuck Japan¦drop dead, Japan",
-    "にほんしほうしえんセンター\t日本司法支援センター\t\torganization¦Japan Legal Support Center",
-    "にほんしゃ\t日本車\t\t¦Japanese car¦car of Japanese make",
-    "にほんしゃかい\t日本社会\tC~s\t¦Japanese society",
-    "にほんしゃかいじぎょうだいがく\t日本社会事業大学\t\torganization¦Japan College of Social Work",
-    "にほんしゃかいとう\t日本社会党\t\thist¦Japan Socialist Party (1945-1996; succeeded by the Social Democratic Party of Japan)¦JSP",
-    "にほんしゅ\t日本酒\tC~ni11\t¦sake (rice wine)¦saké",
-    "にほんしゅうきょうれんめい\t日本宗教連盟\t\torganization¦Japanese Association of Religious Organizations",
-    "にほんしゅうじふきゅうきょうかい\t日本習字普及協会\t\torganization¦Japanese Calligraphy Promotion Organization",
-    "にほんしゅぎ\t日本主義\t\tarch¦Japanism¦Japanese nationalistic ideological movement",
-    "にほんしゅど\t日本酒度\t\t¦sake meter value¦SMV",
   ],
 };

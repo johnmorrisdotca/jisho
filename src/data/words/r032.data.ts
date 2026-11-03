@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 33 of 294, from "えーいーで". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 33 of 294, from "えーあいえふ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,18 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "エーアイエフエフ\tＡＩＦＦ|ａｉｆｆ\t\tcomp¦AIFF¦audio interchange file format",
+    "エーアイエンジニア\tＡＩエンジニア\t\t¦AI engineer",
+    "エーアイエージェント\tＡＩエージェント\t\tcomp¦AI agent",
+    "エーアイくさい\tＡＩ臭い|ＡＩくさい\ta\t¦looking like AI output¦(seemingly) AI-generated",
+    "エーアイスロップ\tＡＩスロップ\t\t¦AI slop",
+    "エーアイピーシー\tＡＩＰＣ\t\t¦AI PC",
+    "エーアールディーエス\tＡＲＤＳ\t\tmed¦acute respiratory distress syndrome¦ARDS",
+    "エーアールピージー\tＡＲＰＧ\t\tvidg¦action RPG¦action role-playing game¦ARPG",
+    "エーアールモデル\tＡＲモデル\t\tmath¦autoregressive model",
+    "エーいち\tＡ１\t\t¦A1 (paper size)",
+    "エーイー\tＡＥ\t\tphoto¦automatic exposure\t¦account executive",
+    "エーイーカメラ\tＡＥカメラ\t\tphoto¦auto-exposure camera",
     "エーイーディー\tＡＥＤ\t\tmed¦automated external defibrillator¦AED",
     "エーエス\tＡＳ\t\tinternet¦autonomous system¦AS\tmed¦Asperger syndrome\t¦artistic swimming\t¦Anglo-Saxon",
     "エーエスアイ\tＡＳＩ\t\tcomp¦artificial super intelligence¦ASI",
@@ -35,7 +47,7 @@ export const PIECE: WordsPiece = {
     "エーオー\tＡＯ\t\tabbr¦admissions office",
     "エーオーエル\tＡＯＬ\t\tcompany¦AOL¦America Online",
     "エーオーにゅうし\tＡＯ入試\t\t¦university admissions process based on school grades, essays, interviews, etc. (as opposed to an entrance exam)",
-    "えーかげん\tええ加減\t\tosb¦irresponsible¦perfunctory¦careless\tosb¦lukewarm¦half-baked¦halfhearted\tosb¦(already) enough\tosb¦considerably¦quite¦rather",
+    "えーかげん\tええ加減\tn\tosb¦irresponsible¦perfunctory¦careless\tosb¦lukewarm¦half-baked¦halfhearted\tosb¦(already) enough\tosb¦considerably¦quite¦rather",
     "エーカー\t\t~h\t¦acre",
     "エーがた\tＡ型\t\t¦type A (blood, influenza, hepatitis, etc.)",
     "エーがたかんえん\tＡ型肝炎\t\tmed¦hepatitis A",
@@ -70,7 +82,7 @@ export const PIECE: WordsPiece = {
     "エージズム\t\t\t¦agism¦ageism",
     "エージドビーフ\t\t\t¦aged beef",
     "エージド・ビーフ\t\t\t¦aged beef",
-    "エージレス\t\t\t¦ageless",
+    "エージレス\t\tn\t¦ageless",
     "エージング\t\t\t¦aging¦ageing",
     "エージングハラスメント\t\t\t¦harassment or bullying based on age",
     "エージング・ハラスメント\t\t\t¦harassment or bullying based on age",
@@ -249,7 +261,7 @@ export const PIECE: WordsPiece = {
     "おあいこ\tお相子\tU\tuk¦quits¦even¦square",
     "おあいそ\tお愛想\t\tpol¦compliments¦civilities¦courtesies\tpol¦hospitality¦special treatment¦entertainment\tpol¦bill (at a restaurant)¦check",
     "おあいそう\tお愛想\t\tpol¦compliments¦civilities¦courtesies\tpol¦hospitality¦special treatment¦entertainment\tpol¦bill (at a restaurant)¦check",
-    "おあいにくさま\tお生憎様\tU\tuk¦sorry\tuk¦too bad (for you)!¦tough luck!",
+    "おあいにくさま\tお生憎様\tnU\tuk¦sorry\tuk¦too bad (for you)!¦tough luck!",
     "オアかいろ\tＯＲ回路|オア回路\t\telectr¦OR circuit",
     "おあげ\tお揚げ\t\tpol,food¦abura-age",
     "オアゲート\tＯＲゲート\t\telectr¦OR gate¦OR circuit",
@@ -320,7 +332,7 @@ export const PIECE: WordsPiece = {
     "おいしいせいかつ\tおいしい生活\t\twork¦Small Time Crooks (film)",
     "おいしいところをもっていく\tおいしいところを持っていく|美味しいところを持っていく|おいしい所を持っていく|美味しい所を持っていく\tg\t¦to take a big bite\t¦to take the best part¦to steal all the good parts¦to steal the show",
     "おいしげる\t生い茂る\tg~m39\t¦to grow thickly¦to be overgrown¦to thrive",
-    "おいしそう\t美味しそう\tU\tuk¦delicious-looking¦tasty-looking\tuk,sl¦hot¦sexy¦desirable",
+    "おいしそう\t美味しそう\tnU\tuk¦delicious-looking¦tasty-looking\tuk,sl¦hot¦sexy¦desirable",
     "おいしゃさま\tお医者様|お医者さま|御医者様\t\thon¦doctor¦physician",
     "おいしゃさん\tお医者さん\tC~i\tpol¦doctor",
     "おいしゃさんごっこ\tお医者さんごっこ\t\t¦playing doctor¦playing doctor and patient",
@@ -443,7 +455,7 @@ export const PIECE: WordsPiece = {
     "オイラーのとうしき\tオイラーの等式\t\tmath¦Euler's identity¦Euler's equation",
     "おいり\t\t\t¦oiri (small, spherical, colorful rice candies from Kagawa Prefecture, used as a topping on dessert)",
     "オイリュトミー\t\t\t¦eurythmy",
-    "オイリー\t\t\t¦oily¦greasy",
+    "オイリー\t\tn\t¦oily¦greasy",
     "オイル\t\tC~g\t¦oil¦petroleum\t¦oil¦lubricant¦grease\t¦(cooking) oil\t¦ointment¦(massage) oil",
     "おいる\t老いる\tiC~mi38\t¦to age¦to grow old",
     "オイルエンジン\t\t\t¦oil engine",
@@ -799,7 +811,7 @@ export const PIECE: WordsPiece = {
     "おうしょうしゃ\t応召者\t\t¦draftee¦conscript",
     "おうしょうフードサービス\t王将フードサービス\t\torganization¦Ohsho Food Service Corporation",
     "おうしょうへい\t応召兵\t\t¦conscript¦draftee¦selectee",
-    "おうしょく\t黄色\tC~ni11\t¦yellow¦amber",
+    "おうしょく\t黄色\tnC~ni11\t¦yellow¦amber",
     "おうしょくくみあい\t黄色組合\t\t¦company union¦yellow union",
     "おうしょくしゅ\t黄色腫\t\tmed¦xanthoma",
     "おうしょくじんしゅ\t黄色人種\t\t¦yellow race¦Mongoloid race",
@@ -841,20 +853,5 @@ export const PIECE: WordsPiece = {
     "おうじれつ\t欧字列\t\tcomp¦alphabetic string",
     "おうじん\t応身\t\tBuddh¦nirmanakaya (response body, form taken by a buddha according to the capabilities of those who are to be saved)",
     "おうじん\t横陣\t\t¦line abreast¦rank",
-    "おうす\tお薄\t\t¦weak matcha",
-    "おうすい\t王水\t\t¦aqua regia",
-    "おうすい\t黄水\t\t¦bile¦gall",
-    "おうすうじえいすうじしゅうごう\t欧数字英数字集合\t\tcomp¦alphanumeric character set",
-    "おうすうじえいすうじデータ\t欧数字英数字データ\t\tcomp¦alphanumeric data",
-    "おうすうじコード\t欧数字コード\t\tcomp¦alphanumeric code",
-    "おうすうじコードかしゅうごう\t欧数字コード化集合\t\tcomp¦alphanumeric coded set",
-    "おうすうじしゅうごう\t欧数字集合\t\tcomp¦alphanumeric character set",
-    "おうすうじデータ\t欧数字データ\t\tcomp¦alphanumeric data",
-    "おうずる\t応ずる\tC~mi26\t¦to answer¦to respond¦to meet\t¦to satisfy¦to accept",
-    "おうせ\t逢瀬\t\t¦rendezvous¦tryst¦(lover's) meeting",
-    "おうせい\t王制\t~m30\t¦monarchical system",
-    "おうせい\t王政\t~m30\t¦monarchy¦imperial rule",
-    "おうせい\t旺盛\tC~ms41\t¦lively¦vigorous¦energetic\t¦full of (energy, appetite, curiosity, etc.)¦brimming with",
-    "おうせい\t王婿\t\t¦prince consort",
   ],
 };

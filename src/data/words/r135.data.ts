@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 136 of 294, from "じょうほうぶんせ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 136 of 294, from "じょうほうぶん". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "じょうほうぶんかがっかい\t情報文化学会\t\torganization¦Japan Information-Culture Society",
     "じょうほうぶんせき\t情報分析\t\tcomp¦information analysis",
     "じょうほうぶんせきセンタ\t情報分析センタ\t\tcomp¦information analysis centre",
     "じょうほうベース\t情報ベース\t\tcomp¦information-base",
@@ -39,7 +40,7 @@ export const PIECE: WordsPiece = {
     "じょうまえ\t錠前\t\t¦lock",
     "じょうまえや\t錠前屋\t\t¦locksmith",
     "じょうまえやぶり\t錠前破り\t\t¦breaking a lock¦picking a lock",
-    "じょうまん\t冗漫\t\t¦verbosity",
+    "じょうまん\t冗漫\tn\t¦verbosity",
     "じょうみ\t情味\t\t¦charm¦attractiveness¦humanity",
     "じょうみ\t上巳\t\t¦Doll's Festival (March 3)¦Girls' Festival¦Peach Festival",
     "じょうみゃく\t静脈\tC~n20\tanat¦vein",
@@ -243,7 +244,7 @@ export const PIECE: WordsPiece = {
     "じょくせ\t濁世\t\tBuddh¦this corrupt or degenerate world¦this world or life¦the world of mankind",
     "じょくそう\t褥瘡|蓐瘡\t\tmed¦bedsore¦pressure ulcer¦pressure sore",
     "じょくそう\t褥草|蓐草\t\trare¦straw or hay (laid out in barns for livestock)",
-    "じょくち\t辱知\t\t¦acquaintance",
+    "じょくち\t辱知\tn\t¦acquaintance",
     "じょくふ\t褥婦|じょく婦\t\t¦puerpera¦woman who has recently given birth",
     "じょくれい\t縟礼\t\t¦bothersome formalities",
     "じょくん\t叙勲\tsC~n19\t¦conferring of decorations",
@@ -281,7 +282,7 @@ export const PIECE: WordsPiece = {
     "じょごん\t助言\ts\t¦advice¦counsel¦suggestion",
     "じょごんしゃ\t助言者\t\t¦adviser¦advisor¦counsellor",
     "じょさい\t助祭\t\tChristn¦deacon (Catholic)",
-    "じょさい\t如才|如在\t\tarch¦sloppiness¦carelessness¦inattention",
+    "じょさい\t如才|如在\tn\tarch¦sloppiness¦carelessness¦inattention",
     "じょさい\t除災\t\t¦warding off calamities¦getting rid of bad luck",
     "じょさいがない\t如才がない|如才が無い\ta\t¦tactful¦adroit¦shrewd",
     "じょさいし\t女祭司\t\t¦priestess",
@@ -359,7 +360,7 @@ export const PIECE: WordsPiece = {
     "じょじし\t叙事詩\tC~mt31\t¦epic (poem)¦epic poetry",
     "じょじつ\t除日\t\tarch¦New Year's eve",
     "じょじつほう\t叙実法\t\tgramm¦indicative mood",
-    "じょじてき\t叙事的\t\t¦epic (e.g. poem)¦descriptive¦narrative",
+    "じょじてき\t叙事的\tn\t¦epic (e.g. poem)¦descriptive¦narrative",
     "じょじぶん\t叙事文\t\t¦narration¦description",
     "じょじゅつ\t叙述\tsC~mt46\t¦description¦account¦delineation\tgramm¦predication¦(a) predicative",
     "じょじゅつけいようし\t叙述形容詞\t\tgramm¦predicate adjective¦predicative adjective",
@@ -373,7 +374,7 @@ export const PIECE: WordsPiece = {
     "じょじょうか\t抒情歌|叙情歌\t\t¦lyric songs¦sentimental ballads",
     "じょじょうかようしゅう\t抒情歌謡集\t\twork¦Lyrical Ballads, with a Few Other Poems (collection of poems by William Wordsworth and Samuel Taylor Coleridge)",
     "じょじょうし\t叙情詩|抒情詩\t\t¦lyric (poem)¦lyric poetry",
-    "じょじょうてき\t叙情的|抒情的\t\t¦lyrical¦poetic¦expressive of emotion",
+    "じょじょうてき\t叙情的|抒情的\tn\t¦lyrical¦poetic¦expressive of emotion",
     "じょじょうふ\t女丈夫\t\t¦heroine¦brave woman¦spirited woman",
     "じょじょうぶ\t女丈夫\t\t¦heroine¦brave woman¦spirited woman",
     "じょじょうみんようしゅう\t抒情民謡集\t\twork¦Lyrical Ballads, with a Few Other Poems (collection of poems by William Wordsworth and Samuel Taylor Coleridge)",
@@ -441,7 +442,7 @@ export const PIECE: WordsPiece = {
     "じょせいせんようしゃりょう\t女性専用車両\t\t¦women-only carriage (e.g. on a train)",
     "じょせいぞう\t女性像\t\t¦female image",
     "じょせいだんたい\t女性団体\t\t¦women's organization¦women's group¦women's movement",
-    "じょせいてき\t女性的\tC~mi42\t¦feminine¦effeminate",
+    "じょせいてき\t女性的\tnC~mi42\t¦feminine¦effeminate",
     "じょせいてんのう\t女性天皇\t\t¦female emperor (of Japan)",
     "じょせいと\t女生徒\t\t¦girl student¦schoolgirl",
     "じょせいどうせいあいしゃ\t女性同性愛者\t\t¦lesbian",
@@ -712,7 +713,7 @@ export const PIECE: WordsPiece = {
     "じりつしんけいしっちょうしょう\t自律神経失調症\t~m46\tmed¦autonomic dysfunction¦autonomic failure¦dysautonomia",
     "じりつしんけいせいうんどうしっちょう\t自律神経性運動失調\t\t¦autonomic ataxia",
     "じりつしんけいせつ\t自律神経節\t\t¦autonomic ganglion",
-    "じりつてき\t自律的\t\t¦autonomous¦autonomic¦self-sustaining",
+    "じりつてき\t自律的\tn\t¦autonomous¦autonomic¦self-sustaining",
     "じりつどうさ\t自律動作\t\tcomp¦autonomous action",
     "じりつメッセージ\t自律メッセージ\t\tcomp¦autonomous message",
     "ジリひん\tジリ貧\t\t¦gradually becoming poor¦situation getting gradually worse and worse",
@@ -827,7 +828,7 @@ export const PIECE: WordsPiece = {
     "じんい\t人位\t\t¦person's rank",
     "じんいさいがい\t人為災害\t\t¦man-made disaster",
     "じんいせんたく\t人為選択\t\t¦artificial selection",
-    "じんいてき\t人為的\tC~n20\t¦artificial¦unnatural¦human-caused (e.g. mistake, error, disaster)",
+    "じんいてき\t人為的\tnC~n20\t¦artificial¦unnatural¦human-caused (e.g. mistake, error, disaster)",
     "じんいとうた\t人為淘汰\t\tyoji,biol¦artificial selection",
     "じんいとつぜんへんい\t人為突然変異\t\tgenet¦induced mutation",
     "じんいぶんるい\t人為分類\t\t¦artificial classification",
@@ -866,7 +867,7 @@ export const PIECE: WordsPiece = {
     "じんかくしょうがい\t人格障害\t\tdated,psy¦personality disorder",
     "じんかくしん\t人格神\t\t¦personified god¦anthropomorphic deity",
     "じんかくしんろん\t人格神論\t\trare¦theism (as refers to the existence of a personal Christian god)",
-    "じんかくてき\t人格的\t\t¦in terms of one's personality¦personal¦character (flaw, etc.)",
+    "じんかくてき\t人格的\tn\t¦in terms of one's personality¦personal¦character (flaw, etc.)",
     "じんかん\t人間\t\t¦the world",
     "じんかん\t甚寒\t\trare¦intense cold",
     "じんかんいたるところせいざんあり\t人間到る処青山あり|人間到る所青山あり\t\tproverb¦home is wherever one lays one's hat¦you can make your living anywhere in this world¦there's room for us all in the world",
@@ -938,6 +939,5 @@ export const PIECE: WordsPiece = {
     "じんけんキャラ\t人権キャラ\t\tsl,vidg¦indispensable character",
     "じんけんきゅうさいきかん\t人権救済機関\t\t¦organization to monitor human rights",
     "じんけんきょうかい\t人権協会\t\torganization¦Civil Rights Association",
-    "じんけんしんがい\t人権侵害\t\t¦human rights violation",
   ],
 };

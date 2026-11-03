@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 26 of 294, from "うでわ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 26 of 294, from "うでのさ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,15 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "うでのさえ\t腕の冴え\t\t¦dexterity¦skill",
+    "うでのみせどころ\t腕の見せ所|腕の見せどころ\t\t¦opportunity to show one's abilities¦time to show one's stuff¦one's province",
+    "うでのよい\t腕の良い|腕のよい\ta\t¦skilled¦skillful¦skilful",
+    "うでひしぎ\t腕ひしぎ|腕挫ぎ\t\tMA¦armlock",
+    "うでぶくろ\t腕袋\t\t¦arm glove¦arm warmer",
+    "うでまえ\t腕前\tC~ni21\t¦ability¦skill¦facility",
+    "うでまくら\t腕枕\ts\t¦using one's arms as a pillow",
+    "うでまくり\t腕まくり|腕捲り\ts\t¦rolling up one's sleeves",
+    "うでる\t茹でる|煠でる\tiC~i\t¦to boil (something in hot water)\t¦to treat with medicinal steam (a swelling, etc.)",
     "うでわ\t腕輪|腕環\t\t¦bracelet¦bangle",
     "うでわたり\t腕渡り\t\t¦brachiation¦swinging from branch to branch",
     "うでをあげる\t腕を上げる\ti\t¦to improve one's skill",
@@ -27,7 +36,7 @@ export const PIECE: WordsPiece = {
     "うとうと\t\tsC~i\ton-mim¦falling into a doze¦dozing off¦nodding off",
     "ウトウト\t\tsC~i\ton-mim¦falling into a doze¦dozing off¦nodding off",
     "うとうとしい\t疎々しい|疎疎しい\ta\t¦unfriendly¦distant¦cold",
-    "うとく\t有徳\t\t¦virtuous¦rich",
+    "うとく\t有徳\tn\t¦virtuous¦rich",
     "うとくうんゆ\t宇徳運輸\t\torganization¦Utoc Corporation",
     "うとそうそう\t烏兎匆々|烏兎匆匆|烏兎怱々|烏兎怱怱\t\tyoji¦days and nights passing by quickly¦months and years flying by¦time flies",
     "うとっと\t\ts\ton-mim¦falling into a doze¦dozing off¦nodding off",
@@ -141,8 +150,8 @@ export const PIECE: WordsPiece = {
     "うのみにする\t鵜呑みにする\ts\tid¦to swallow (e.g. a story)¦to accept without questioning\t¦to swallow (food) whole¦to gobble up¦to gulp down",
     "うのめたかのめ\t鵜の目鷹の目\t\tid¦eyes of a predator¦sharp eyes¦keen eyes",
     "うは\t右派\tC~n07\tpolitics¦right wing",
-    "ウハウハ\t\ts\tcol¦exhilarated¦all smiles¦tickled pink",
-    "うはうは\t\ts\tcol¦exhilarated¦all smiles¦tickled pink",
+    "ウハウハ\t\tns\tcol¦exhilarated¦all smiles¦tickled pink",
+    "うはうは\t\tns\tcol¦exhilarated¦all smiles¦tickled pink",
     "うはつ\t有髪\t\t¦untonsured (monk or priest or nun)",
     "うはつぞくたい\t有髪俗体\t\t¦(a Buddhist monk or priest or nun) without head shaven and not wearing religious garb",
     "うば\t祖母\tC~ni10\t¦grandmother",
@@ -198,8 +207,8 @@ export const PIECE: WordsPiece = {
     "ウフフ\t\t\tfem,on-mim¦tee-hee",
     "うふん\t\t\tfem,on-mim¦tee-hee\tfem,on-mim¦mmh (moan)¦aah",
     "うふーん\t\t\tfem,on-mim¦tee-hee\tfem,on-mim¦mmh (moan)¦aah",
-    "ウブ\t\tU\tuk¦inexperienced (in life experience)¦unsophisticated¦green\tuk¦inexperienced (in love)¦innocent¦naive",
-    "うぶ\t初|初心|産|生\tU\tuk¦inexperienced (in life experience)¦unsophisticated¦green\tuk¦inexperienced (in love)¦innocent¦naive",
+    "ウブ\t\tnU\tuk¦inexperienced (in life experience)¦unsophisticated¦green\tuk¦inexperienced (in love)¦innocent¦naive",
+    "うぶ\t初|初心|産|生\tnU\tuk¦inexperienced (in life experience)¦unsophisticated¦green\tuk¦inexperienced (in love)¦innocent¦naive",
     "うぶ\t右舞\t\t¦variety of court dance (Nara period)",
     "うぶ\t産\t\t¦birth-",
     "うぶい\t初い|初心い\ta\tobs¦innocent¦pure¦naive",
@@ -318,8 +327,8 @@ export const PIECE: WordsPiece = {
     "うまとび\t馬跳び|馬とび|馬飛び\t\t¦leapfrogging¦(game of) leapfrog",
     "うまとり\t馬取|馬取り\t\t¦stablehand¦groom",
     "うまどし\t午年|うま年\t\t¦year of the Horse",
-    "うまなみ\t馬並み\t\tsl¦hung like a horse¦big-dicked",
-    "ウマなみ\tウマ並み\t\tsl¦hung like a horse¦big-dicked",
+    "うまなみ\t馬並み\tn\tsl¦hung like a horse¦big-dicked",
+    "ウマなみ\tウマ並み\tn\tsl¦hung like a horse¦big-dicked",
     "うまに\t旨煮|甘煮\t\tfood¦fish, meat, and vegetables stewed in a thick, sweet sauce of soy sauce, sugar and mirin",
     "うまにけられる\t馬に蹴られる\ti\tid¦to suffer the consequences for interfering in a couple's relationship",
     "うまにのる\t馬に乗る\tg\t¦to get on a horse¦to mount a horse",
@@ -615,8 +624,8 @@ export const PIECE: WordsPiece = {
     "うやうやしい\t恭しい\ta\t¦polite¦respectful¦reverent",
     "うやまい\t敬い\t\t¦reverence¦respect¦honor",
     "うやまう\t敬う\tgC~i\t¦to show respect for¦to revere¦to honour",
-    "うやむや\t有耶無耶\tCU~i\tyoji,uk¦indefinite¦hazy¦vague",
-    "ウヤムヤ\t有耶無耶\tU\tyoji,uk¦indefinite¦hazy¦vague",
+    "うやむや\t有耶無耶\tnCU~i\tyoji,uk¦indefinite¦hazy¦vague",
+    "ウヤムヤ\t有耶無耶\tnU\tyoji,uk¦indefinite¦hazy¦vague",
     "うゆ\t\t\tsl¦yes¦yeah¦uh huh",
     "うゆう\t烏有\t\t¦nonexistence",
     "うゆうせんせい\t烏有先生\t\t¦fictitious person",
@@ -642,7 +651,7 @@ export const PIECE: WordsPiece = {
     "うらアカ\t裏垢|裏アカ\t\tnet-sl¦anonymous account (on social media; used alongside one's main account)¦secret account",
     "うらあて\t裏当て\t\t¦backing¦lining",
     "うらあみ\t裏編み\t\t¦purl (stitch)¦purl knitting",
-    "うらあわせ\t裏合わせ\t\t¦fitting things back to back¦agreement of minds",
+    "うらあわせ\t裏合わせ\tn\t¦fitting things back to back¦agreement of minds",
     "うらいた\t裏板\t\t¦roof boards¦ceiling\t¦back board (furniture)",
     "うらうずがい\t裏渦貝\tU\tuk¦Astralium haematragum (species of turban shell)",
     "ウラウズガイ\t\tU\tuk¦Astralium haematragum (species of turban shell)",
@@ -788,7 +797,7 @@ export const PIECE: WordsPiece = {
     "うらはく\t裏拍\t\tmusic¦upbeat¦syncopated beat",
     "うらはず\t末弭|末筈\t\t¦top knock (of a bow)",
     "うらはずかしい\tうら恥ずかしい|心恥かしい\ta\t¦inwardly embarrassed¦inwardly ashamed¦a bit shy",
-    "うらはら\t裏腹\tC~n12\t¦opposite¦reverse¦contrary\t¦front and back¦parallel to¦back to back",
+    "うらはら\t裏腹\tnC~n12\t¦opposite¦reverse¦contrary\t¦front and back¦parallel to¦back to back",
     "うらはらけい\t裏原系\t\t¦Ura-Hara fashion",
     "うらはり\t裏張り|裏貼り|裏張|裏貼\ts\t¦lining¦back-pasting",
     "うらば\t末葉\t\t¦end leaves¦top leaves¦last leaves",
@@ -815,14 +824,5 @@ export const PIECE: WordsPiece = {
     "うらぼん\t裏本\t\t¦under-the-counter porn mag (featuring uncensored photos)",
     "うらぼんえ\t盂蘭盆会\t\t¦Bon festival (Buddhist ceremony held around July 15)¦Feast of Lanterns",
     "うらぼんきょう\t盂蘭盆経\t\tBuddh¦Ullambana Sutra¦Yulanpen Sutra",
-    "うらま\t浦曲\t\tarch¦coastal indentations",
-    "うらまき\t裏巻き\t\tfood¦makizushi with the rice on the outside",
-    "うらまち\t裏町|裏街\t\t¦back street¦back alley¦slums",
-    "うらまつり\t裏祭り|裏祭\t\t¦day-after festival¦night-after festival¦(smaller) festival held the day (or night) after the main festival",
-    "うらまど\t裏窓\t\t¦back window¦rear window",
-    "うらまわし\t裏回し\t\t¦(skillfully) giving other participants in a variety TV show the chance to talk by asking them questions or calling them out",
-    "ウラマー\t\t\t¦ulama (body of authoritative Muslim scholars)¦ulema",
-    "うらみ\t恨み|怨み|憾み\tC~ni16\t¦resentment¦grudge¦malice\t¦matter for regret¦regret",
-    "うらみ\t浦回|浦廻|浦曲\t\tarch¦coastal indentations",
   ],
 };

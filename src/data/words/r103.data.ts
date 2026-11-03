@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 104 of 294, from "さがけんり". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 104 of 294, from "さがい". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,13 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "さがい\t詐害\ts\tlaw¦fraud¦defrauding¦fraudulent injury",
+    "さがいかだいがく\t佐賀医科大学\t\torganization¦Saga Medical School",
+    "さがく\t差額\tC~n12\t¦balance¦difference (in price, cost)¦margin",
+    "さがく\t左楽\t\tabbr,arch¦style of gagaku based on Tang-era Chinese music and ancient Indian song and dance",
+    "さがくベッド\t差額ベッド\t\t¦hospital bed not fully covered by national health insurance¦hospital bed incurring an extra charge",
+    "さがけん\t佐賀県\t\t¦Saga Prefecture",
+    "さがけんけい\t佐賀県警\t\torganization¦Saga Prefectural Police (abbr)",
     "さがけんりつびじゅつかん\t佐賀県立美術館\t\torganization¦Saga Prefectural Art Museum",
     "さがしあぐねる\t探しあぐねる|捜しあぐねる|探し倦ねる|捜し倦ねる\ti\trare¦to give up searching (for someone or something)",
     "さがしあてる\t探し当てる|捜し当てる\ti\t¦to find (after searching everywhere)¦to locate¦to discover",
@@ -136,7 +143,7 @@ export const PIECE: WordsPiece = {
     "さきばらい\t先払い\ts~m36\t¦payment in advance¦advance payment¦prepayment\t¦payment on delivery (e.g. business-reply mail, collect phone calls)\t¦forerunner",
     "さきひづけ\t先日付け|先日付\t\t¦dating forward¦post-dating",
     "さきふりこみ\t先振込み|先振り込み\t\t¦payment in advance (by bank transfer)",
-    "さきぶと\t先太\t\t¦thicker towards the end¦club-shaped",
+    "さきぶと\t先太\tn\t¦thicker towards the end¦club-shaped",
     "さきぶとり\t先太り\ts\t¦increasing over time¦prospering\t¦flaring¦growing thicker",
     "さきぶり\t\t\tjoc¦short time no see¦hello again\tjoc¦a short time (since the last time)¦first in a short while",
     "さきぶれ\t先触れ\t\t¦preliminary announcement¦previous announcement¦portent",
@@ -146,8 +153,8 @@ export const PIECE: WordsPiece = {
     "さきほどから\t先ほどから|先程から\t\t¦since some time ago¦for some time¦for quite a while",
     "さきほどらい\t先ほど来|先程来|先ほどらい\t\t¦since a little while ago",
     "さきぼう\t先棒\t\t¦front palanquin bearer\t¦flunky¦cat's-paw¦tool",
-    "さきぼそ\t先細\t\t¦tapering toward the end",
-    "さきぼそり\t先細り\ts~m27\t¦dwindling¦declining¦diminishing\t¦tapering (to a point)",
+    "さきぼそ\t先細\tn\t¦tapering toward the end",
+    "さきぼそり\t先細り\tns~m27\t¦dwindling¦declining¦diminishing\t¦tapering (to a point)",
     "さきぼそる\t先細る\tg\t¦to taper off",
     "さきまけ\t先負\t\t¦day that is unlucky in the morning and lucky in the afternoon (in the traditional calendar)¦day on which judgment and haste should be avoided",
     "さきまわり\t先回り\ts~m44\t¦going on ahead¦forestalling¦anticipating",
@@ -271,7 +278,7 @@ export const PIECE: WordsPiece = {
     "さくい\t\ta\t¦friendly¦sociable\t¦brittle¦fragile¦light",
     "さくイオン\t錯イオン\t\t¦complex ion",
     "さくいぎむ\t作為義務\t\tlaw¦duty of commission¦duty to act¦obligation to act",
-    "さくいてき\t作為的\t~m46\t¦intentional¦deliberate¦contrived",
+    "さくいてき\t作為的\tn~m46\t¦intentional¦deliberate¦contrived",
     "さくいどうし\t作為動詞\t\tgramm¦factitive verb",
     "さくいはん\t作為犯\t\t¦crime of commission",
     "さくいん\t索引\tC~ni20\t¦index (in a book)",
@@ -595,7 +602,7 @@ export const PIECE: WordsPiece = {
     "さけぐらい\t酒食らい\t\t¦heavy drinker",
     "さけごめ\t酒米\t\t¦brewer's rice",
     "さけさかな\t酒肴\t\t¦food and (alcoholic) drinks¦food eaten with an alcoholic drink¦accompaniment to a drink",
-    "さけずき\t酒好き\t~m41\t¦love of drink¦fondness for alcohol¦person who likes to drink",
+    "さけずき\t酒好き\tn~m41\t¦love of drink¦fondness for alcohol¦person who likes to drink",
     "さけずし\t酒寿司|酒鮨|酒ずし\t\tfood¦fermented sushi made with sake instead of vinegar (speciality of Kagoshima)",
     "さけだいこん\t鮭大根\t\tfood¦dish of salmon and daikon",
     "さけちゃづけ\t鮭茶漬け|鮭茶づけ\t\t¦chazuke with salmon",
@@ -696,7 +703,7 @@ export const PIECE: WordsPiece = {
     "ささ\t然然|然々\t\tarch¦such and such",
     "ささ\t細|小\t\t¦small¦little",
     "ささ\t酒\t\tdated¦alcohol¦sake",
-    "ささい\t些細|瑣細\tC~s\t¦trivial¦trifling¦slight",
+    "ささい\t些細|瑣細\tnC~s\t¦trivial¦trifling¦slight",
     "ささうしのした\t笹牛の舌\tU\tuk¦bamboo sole (Heteromycteris japonica)",
     "ササウシノシタ\t\tU\tuk¦bamboo sole (Heteromycteris japonica)",
     "ささうちわ\t笹団扇\tU\tuk¦Spathiphyllum patinii (species of peace lily)",
@@ -747,7 +754,7 @@ export const PIECE: WordsPiece = {
     "ささめごと\t私語\tU\tuk¦whispering¦whisper¦secret talk\tuk¦sweet talk¦sweet nothings¦lovers' talk",
     "ささめゆき\t細雪|ささめ雪\t~m46\t¦light snow fall¦small snow flakes",
     "ささめゆき\t細雪\t\twork¦The Makioka Sisters (1957 novel by Jun'ichirō Tanizaki)",
-    "ささやか\t細やか\tCU~mi29\tuk¦small¦little¦tiny",
+    "ささやか\t細やか\tnCU~mi29\tuk¦small¦little¦tiny",
     "ささやき\t囁き|私語\tU\tuk¦whispering¦whisper¦secret talk",
     "ささやきごえ\tささやき声|囁き声\t\t¦whisper¦murmur",
     "ささやきごと\t囁き言|私語\t\tarch¦whispering¦whisper¦secret talk",
@@ -839,12 +846,5 @@ export const PIECE: WordsPiece = {
     "さしかかる\t差し掛かる\tgC~mi39\t¦to come near (to)¦to approach\t¦to be on the verge of¦to be about to reach (a stage, period, etc.)¦to approach (e.g. a climax)\t¦to overhang¦to hang over",
     "さしかけ\t指し掛け|指しかけ\t\t¦unfinished game of shogi",
     "さしかけ\t差し掛け|差掛け|差しかけ\t\t¦holding (an umbrella) over something\t¦lean-to roof",
-    "さしかけごや\t差し掛け小屋|差しかけ小屋\t\trare¦lean-to",
-    "さしかける\t差し掛ける|差しかける|差掛ける\ti\t¦to hold (umbrella) over",
-    "さしかためる\t差し固める|差固める\ti\t¦to close or shut tight¦to warn sharply",
-    "さしかわす\t差し交わす|差交わす|差交す\tg\t¦to cross",
-    "さしがさ\t差し傘|差傘\t\trare¦umbrella¦parasol",
-    "さしがた\t矩形\t~m35\t¦rectangle",
-    "さしがね\t差し金|差金|指金\t\t¦carpenter's square\t¦instigation¦suggestion¦manipulation\tkabuki¦metal wire with a prop animal (e.g. butterfly, bird) attached to the end\t¦rod used to control the arm of a puppet (in bunraku)",
   ],
 };

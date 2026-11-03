@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 125 of 294, from "しりょくひ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 125 of 294, from "しりょくず". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "しりょくず\t示力図\t\tphysics¦force diagram",
     "しりょくひょう\t視力表\t\t¦eye chart¦eyesight test chart¦visual acuity chart",
     "しりょくをつくす\t死力を尽くす\tg\t¦to make frantic efforts¦to make an all-out effort¦to try desperately",
     "しりょふんべつ\t思慮分別\t\tyoji¦discreet and well-advised judgment¦wise and mature judgment¦making judgment with prudence",
@@ -43,7 +44,7 @@ export const PIECE: WordsPiece = {
     "シルエット・パズル\t\t\t¦dissection puzzle¦transformation puzzle¦silhouette puzzle",
     "しるか\t知るか\t\t¦I don't care¦how should I know?¦who cares?",
     "しるかぎり\t知る限り|知るかぎり\t\t¦as far as I know",
-    "シルキー\t\t\t¦silky",
+    "シルキー\t\tn\t¦silky",
     "シルキーシャーク\t\t\t¦silky shark (Carcharhinus falciformis, species of circumtropical requiem shark)",
     "シルキーバス\t\t\t¦bubble bath with very small bubbles",
     "シルキー・シャーク\t\t\t¦silky shark (Carcharhinus falciformis, species of circumtropical requiem shark)",
@@ -186,7 +187,7 @@ export const PIECE: WordsPiece = {
     "しれっと\t\ts\ton-mim¦nonchalantly¦calmly¦as if nothing happened",
     "シレッと\t\ts\ton-mim¦nonchalantly¦calmly¦as if nothing happened",
     "しれつ\t歯列\t\t¦row of teeth",
-    "しれつ\t熾烈|し烈\t\t¦fierce (fight, competition, etc.)¦severe¦hot",
+    "しれつ\t熾烈|し烈\tn\t¦fierce (fight, competition, etc.)¦severe¦hot",
     "しれつきゅう\t歯列弓\t\t¦dental arch",
     "しれつきょうせい\t歯列矯正\t\t¦orthodontia¦orthodontics",
     "しれつきょうせいき\t歯列矯正器\t\t¦(orthodontic) braces",
@@ -513,8 +514,8 @@ export const PIECE: WordsPiece = {
     "しわがれごえ\tしわがれ声|嗄れ声\t\t¦hoarse voice¦husky voice",
     "しわがれる\t嗄れる\tiU\tuk¦to become hoarse¦to become husky",
     "しわく\t思惑\t\tBuddh¦perceptive mental disturbances",
-    "しわくちゃ\t皺くちゃ|皺苦茶\tU\tuk¦crumpled¦wrinkled¦crinkled",
-    "シワクチャ\t皺くちゃ|皺苦茶\tU\tuk¦crumpled¦wrinkled¦crinkled",
+    "しわくちゃ\t皺くちゃ|皺苦茶\tnU\tuk¦crumpled¦wrinkled¦crinkled",
+    "シワクチャ\t皺くちゃ|皺苦茶\tnU\tuk¦crumpled¦wrinkled¦crinkled",
     "しわけ\t仕分け|仕訳|仕分\ts~m29\t¦classification¦sorting (out)¦grouping\t¦assortment journalizing (in bookkeeping)",
     "しわけしょ\t仕訳書\t\t¦specifications",
     "しわけちょう\t仕訳帳\t\t¦book-keeping journal",
@@ -577,8 +578,8 @@ export const PIECE: WordsPiece = {
     "しん\t神\t\t¦spirit¦psyche\t¦god¦deity¦divinity",
     "しん\t疹\t\tmed¦rash¦eruption¦...id",
     "しん\t箴\t\trare¦warning¦admonition\trare¦proverb¦maxim¦aphorism",
-    "しんあい\t親愛\tC~mi31\t¦deep affection\t¦dear¦beloved",
-    "しんあい\t信愛\ts\t¦love and believe in¦intimacy",
+    "しんあい\t親愛\tnC~mi31\t¦deep affection\t¦dear¦beloved",
+    "しんあい\t信愛\tns\t¦love and believe in¦intimacy",
     "しんあいじょしたんだい\t信愛女子短大\t\torganization¦Shin'ai Women's Junior College",
     "しんあずき\t新小豆\t\t¦freshly harvested adzuki beans",
     "しんアラブ\t親アラブ\t\t¦pro-Arab",
@@ -616,7 +617,7 @@ export const PIECE: WordsPiece = {
     "しんうち\t真打ち|真打|心打|心打ち\t~m27\t¦main performer¦star performer¦headliner\t¦rakugo storyteller of the highest rank",
     "しんうちゅう\t深宇宙\t\t¦deep space",
     "しんうん\t進運\t\t¦progress¦advance",
-    "しんえい\t新鋭\tC~n10\t¦young and energetic¦up-and-coming¦new and excellent",
+    "しんえい\t新鋭\tnC~n10\t¦young and energetic¦up-and-coming¦new and excellent",
     "しんえい\t親衛\tC~n16\t¦monarch's guards",
     "しんえい\t真影\t\t¦accurate portrait¦photographic portrait",
     "しんえいたい\t親衛隊\t\t¦bodyguards¦elite guards¦imperial guards\thist¦Schutzstaffel¦SS\t¦groupies¦ardent fans",
@@ -636,7 +637,7 @@ export const PIECE: WordsPiece = {
     "しんエネしゃ\t新エネ車\t\tabbr¦new energy vehicle¦NEV",
     "しんエネルギー\t新エネルギー\t\t¦alternative energy",
     "しんエネルギーしゃ\t新エネルギー車\t\t¦new energy vehicle¦NEV",
-    "しんえん\t深遠\t~m43\t¦profound¦deep¦unfathomable",
+    "しんえん\t深遠\tn~m43\t¦profound¦deep¦unfathomable",
     "しんえん\t深淵\t~m43\t¦abyss¦ravine",
     "しんえん\t心猿\t\t¦passion¦passions",
     "しんえん\t神苑\t\t¦shrine gardens",
@@ -649,7 +650,7 @@ export const PIECE: WordsPiece = {
     "しんえんど\t真円度\t\t¦circularity¦roundness",
     "しんえんにのぞむがごとし\t深淵に臨むが如し\t\t¦like looking out on an abyss¦like standing on the edge of an abyss",
     "しんえんるい\t真猿類\t\t¦simian¦anthropoid",
-    "しんおう\t深奥\t\t¦depths (of an art, one's mind, etc.)¦heart¦inner mysteries\t¦profound¦deep¦esoteric",
+    "しんおう\t深奥\tn\t¦depths (of an art, one's mind, etc.)¦heart¦inner mysteries\t¦profound¦deep¦esoteric",
     "しんおう\t震央\t\t¦epicentre (of an earthquake)¦epicenter",
     "しんおうきょり\t震央距離\t\t¦epicentral distance",
     "しんおうべいろせん\t親欧米路線\t\t¦alignment with the Western powers of America and Europe",
@@ -746,7 +747,7 @@ export const PIECE: WordsPiece = {
     "しんかんりょう\t新官僚\t\thist¦new bureaucrats",
     "シンカー\t\tC~g\tbaseb¦sinker",
     "しんがい\t侵害\tsC~n06\t¦infringement¦violation¦invasion",
-    "しんがい\t心外\tC~n24\t¦regrettable¦vexing¦upsetting\t¦unthinkable¦wholly unexpected",
+    "しんがい\t心外\tnC~n24\t¦regrettable¦vexing¦upsetting\t¦unthinkable¦wholly unexpected",
     "しんがい\t震駭\ts\t¦terror¦shock",
     "しんがい\t辛亥\t\t¦Metal Boar (48th term of the sexagenary cycle, e.g. 1911, 1971, 2031)",
     "しんがい\t震害\t\t¦earthquake damage",
@@ -755,7 +756,7 @@ export const PIECE: WordsPiece = {
     "しんがいさせる\t震駭させる\ti\t¦to frighten¦to terrify¦to shock",
     "しんがいしげき\t侵害刺激\t\t¦noxious stimulus¦NS¦noxious stimuli",
     "しんがいしゃ\t侵害者\t\t¦invader¦trespasser",
-    "しんがいせんばん\t心外千万\t\tyoji¦being totally upset (by)¦being completely nonplussed (by)¦being mortified (at)",
+    "しんがいせんばん\t心外千万\tn\tyoji¦being totally upset (by)¦being completely nonplussed (by)¦being mortified (at)",
     "しんがいねん\t新概念\tC~s\t¦new concept",
     "しんがいまくえん\t心外膜炎\t\tmed¦pericarditis",
     "しんがお\t新顔\tC~mt26\t¦newcomer¦new face",
@@ -819,10 +820,10 @@ export const PIECE: WordsPiece = {
     "シンガーソングライター\t\tC~g\t¦singer-songwriter",
     "シンガード\t\t\t¦shin guard",
     "シンガー・ソングライター\t\tC~g\t¦singer-songwriter",
-    "しんき\t新規\tC~ni05\t¦new¦fresh\t¦new item (e.g. customer, regulation)¦newly created object\t¦new customer",
+    "しんき\t新規\tnC~ni05\t¦new¦fresh\t¦new item (e.g. customer, regulation)¦newly created object\t¦new customer",
     "しんき\t神器\t~m35\t¦sacred treasure¦the three sacred treasures (sword, jewel, mirror)\t¦implement used in religious ceremonies",
-    "しんき\t新奇\t~m42\t¦novel¦original¦new",
-    "しんき\t心気|辛気\t\t¦mentality¦mood¦sentiment\t¦fretfulness¦tedium¦irritation",
+    "しんき\t新奇\tn~m42\t¦novel¦original¦new",
+    "しんき\t心気|辛気\tn\t¦mentality¦mood¦sentiment\t¦fretfulness¦tedium¦irritation",
     "しんき\t振起\ts\t¦encouragement¦stimulation",
     "しんき\t神気\t\t¦qi¦mysterious life force that makes up everything\t¦spirits¦mind\t¦divine atmosphere¦mysterious presence",
     "しんき\t心機\t\t¦mental state¦attitude",
@@ -886,6 +887,5 @@ export const PIECE: WordsPiece = {
     "しんきょく\t新曲\tC~n18\t¦new (musical) composition¦new piece¦new song",
     "しんきょく\t神曲\t\twork¦Divine Comedy (poem by Dante)¦Divina Commedia",
     "しんきょくめん\t新局面\t\t¦new phase¦new aspect¦new stage",
-    "しんきり\t心切り|芯切り\t\t¦candle wick trimmer¦snuffer¦douter",
   ],
 };

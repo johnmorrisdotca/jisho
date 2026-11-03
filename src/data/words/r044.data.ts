@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 45 of 294, from "かえさ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 45 of 294, from "かうんとな". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,17 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "カウントなし\tカウント無し\tU\tuk¦counting out¦disregarding¦not counting",
+    "カウント・アウト\t\t\tboxing¦count (after a knock-down)",
+    "かえ\t替え|換え|代え\tC~nm19\t¦change¦alteration\t¦substitute¦spare¦replacement\t¦rate of exchange",
+    "かえ\t\tC~s\tfam¦yes?¦no?¦isn't it?",
+    "かえ\t変え\t~m30\t¦changing¦change",
+    "かえ\t榧\tU\tuk¦kaya (Torreya nucifera)¦Japanese nutmeg tree",
+    "かえい\t嘉永\t\thist¦Kaei era (1848.2.28-1854.11.27)",
+    "かえうた\t替え歌|替歌\t~m34\t¦parody (of a song)¦new lyrics to an old melody¦song parody",
+    "かえき\t課役\t\t¦distribution of assignments",
+    "かえぎ\t替え着\t\t¦change of clothing¦spare clothing",
+    "かえことば\t代詞\t\tarch¦password",
     "カエサル\t\t\t¦Caesar",
     "カエサルのものはカエサルに\tカエサルの物はカエサルに\t\tquote¦render unto Caesar the things which are Caesar's",
     "かえし\t返し|反し\t\t¦reversal¦return\t¦return gift¦return favour\t¦barb (on a fishing hook)\t¦mixture of soy sauce, sugar and mirin",
@@ -163,7 +174,7 @@ export const PIECE: WordsPiece = {
     "かおつき\t顔つき|顔付き\tC~mis32\t¦features¦(outward) looks¦face",
     "かおつなぎ\t顔つなぎ|顔繋ぎ\ts\t¦maintaining contact (with)¦keeping in contact (with)¦keeping in touch (with)\t¦introducing (unacquainted people)¦getting acquainted (with one another)",
     "かおづくり\t顔づくり|顔作り\t\tarch¦shape of the head\tarch¦using make-up",
-    "カオティック\t\t\t¦chaotic",
+    "カオティック\t\tn\t¦chaotic",
     "かおない\t顔ない\ta\tsl¦embarrassed¦shocked¦unable to face (something)",
     "かおなじみ\t顔なじみ|顔馴染み|顔馴染\tC~i\t¦acquaintance¦friend¦familiar face",
     "かおにでる\t顔に出る\ti\t¦to show on one's face (of an emotion, feeling, etc.)",
@@ -350,7 +361,7 @@ export const PIECE: WordsPiece = {
     "かかわりあい\t関わり合い|係わり合い|関り合い\t\t¦relationship¦connection¦involvement",
     "かかわりあう\t関わり合う|関わりあう|係わり合う|かかわり合う\tg\t¦to get involved or entangled in¦to get mixed up in¦to have something to do with",
     "かかわる\t関わる|係わる|拘る\tgC~i\t¦to be involved (in)¦to get involved (in)¦to concern oneself (with)\t¦to relate to (a matter)¦to pertain to¦to concern\t¦to (seriously) affect¦to concern¦to have a serious bearing (on)\t¦to stick (to)¦to adhere (to)¦to be particular (about)",
-    "かかん\t果敢\tC~n15\t¦resolute¦determined¦bold",
+    "かかん\t果敢\tnC~n15\t¦resolute¦determined¦bold",
     "かかん\t下瞰\ts\t¦looking down on¦getting a bird's-eye view",
     "かかん\t加冠\ts\tarch¦crowning a boy with a traditional cap for the first time at a coming-of-age ceremony\tarch¦person in charge of crowning the boy at a coming-of-age ceremony",
     "かかん\t花冠\t\tbot¦corolla\t¦garland¦wreath",
@@ -359,13 +370,13 @@ export const PIECE: WordsPiece = {
     "かかん\t夏官\t\thist¦Ministry of War (Zhou dynasty China)",
     "かカン\t加槓\ts\tmahj¦forming a kong by adding a tile drawn from the wall to a declared pung",
     "かかん\t可汗\t\t¦khan",
-    "かかん\t可換\t\tmath¦commutative",
+    "かかん\t可換\tn\tmath¦commutative",
     "かかんかん\t可換環\t\tmath¦commutative ring",
     "かかんかんろん\t可換環論\t\tmath¦commutative algebra",
     "かかんきしょうこうぐん\t過換気症候群\t\tmed¦hyperventilation syndrome",
     "かかんぐん\t可換群\t\tmath¦Abelian group¦commutative group",
     "かかんしょう\t過干渉\t\t¦excessive meddling (esp. by parents)¦excessive interference",
-    "かかんしょうてき\t可干渉的\t\tphysics¦coherent",
+    "かかんしょうてき\t可干渉的\tn\tphysics¦coherent",
     "かかんせい\t可換性\t\tmath¦commutativity",
     "かかんそくせい\t可観測性\t\t¦observability",
     "かかんそくりょう\t可観測量\t\tphysics¦observable (quantity)",
@@ -471,8 +482,8 @@ export const PIECE: WordsPiece = {
     "かがくそうさけんきゅうしょ\t科学捜査研究所\t\t¦crime laboratory",
     "かがくちしき\t科学知識\t\t¦scientific knowledge",
     "かがくちょうみりょう\t化学調味料\t~m33\t¦chemical seasoning (esp. monosodium glutamate)",
-    "かがくてき\t科学的\tC~s\t¦scientific",
-    "かがくてき\t化学的\t\t¦chemical",
+    "かがくてき\t科学的\tnC~s\t¦scientific",
+    "かがくてき\t化学的\tn\t¦chemical",
     "かがくてきかんりほう\t科学的管理法\t\t¦scientific management",
     "かがくてききすうほう\t科学的記数法\t\tcomp¦scientific notation",
     "かがくてききょせい\t化学的去勢\t\t¦chemical castration",
@@ -661,7 +672,7 @@ export const PIECE: WordsPiece = {
     "かきことば\t書き言葉|書きことば\tC~i\t¦written word¦written language",
     "かきこみ\t書き込み|書込み\tsC~n23\t¦writing\t¦entry (e.g. to a form)\t¦posting (e.g. to a blog)",
     "かきこみ\t描き込み|描きこみ\t\t¦adding detail (to a drawing)",
-    "かきこみかのう\t書き込み可能\t\tcomp¦writable (e.g. a writable CD-ROM)",
+    "かきこみかのう\t書き込み可能\tn\tcomp¦writable (e.g. a writable CD-ROM)",
     "かきこみきょか\t書き込み許可\t\tcomp¦write permission",
     "かきこみきょかリング\t書込み許可リング\t\tcomp¦write-enable ring¦write ring¦file-protection ring",
     "かきこみきんし\t書き込み禁止\t\tcomp¦read-only",
@@ -770,13 +781,5 @@ export const PIECE: WordsPiece = {
     "かきフライ\t牡蠣フライ\tU\tuk¦fried oysters¦deep-fried oysters",
     "カキフライ\t\tU\tuk¦fried oysters¦deep-fried oysters",
     "かきぶり\t書きぶり|書き振り\t\t¦style of writing¦manner of writing",
-    "かきま\t垣間\t\tarch¦gap (in a fence or hedge)¦chink¦opening",
-    "かきまくる\t書きまくる|書き捲る|書き捲くる\tg\t¦to dash off¦to write freely",
-    "かきまぜきそく\tかき混ぜ規則\t\t¦scrambling",
-    "かきまぜる\tかき混ぜる|掻き混ぜる|掻き雑ぜる\ti\t¦to mix¦to stir¦to scramble",
-    "かきまちがい\t書き間違い|書間違い|書きまちがい\t\t¦slip of the pen¦mistake in writing¦misspelling",
-    "かきまちがえる\t書き間違える|書間違える\ti\t¦to write incorrectly (e.g. character)¦to make a mistake in writing",
-    "かきまゆ\t描き眉\t\trare¦painted eyebrows¦pencilled eyebrows",
-    "かきまわす\t掻き回す|かき回す\tg~j\t¦to stir¦to churn¦to poke (a fire)\t¦to rummage around\t¦to throw into confusion¦to throw into chaos¦to disturb",
   ],
 };

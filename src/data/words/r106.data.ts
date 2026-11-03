@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 107 of 294, from "さわりが". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 107 of 294, from "さわらぬ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,12 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "さわらぬかみにたたりなし\t触らぬ神に祟りなし|触らぬ神にたたりなし\t\tproverb¦let sleeping dogs lie¦wake not a sleeping lion",
+    "さわらび\t早蕨\t\t¦freshly budded bracken",
+    "さわらん\t沢蘭\tU\tuk¦Eleorchis japonica (species of orchid)",
+    "サワラン\t\tU\tuk¦Eleorchis japonica (species of orchid)",
+    "さわり\t障り\t\t¦hindrance¦obstacle¦impediment\t¦harm (to one's health)¦bad effect¦sickness\t¦menstruation¦period",
+    "さわり\t触り\t\t¦feel¦touch\t¦manner (towards others)\t¦most impressive part¦best part¦high point\tcol¦beginning",
     "さわりがね\t触り金\t\trare¦nut (on the head of a shamisen, supporting the second and third strings)",
     "さわる\t障る\tgC~i\t¦to be harmful to¦to hinder¦to interfere with",
     "さわる\t触る\tgC~mi36\t¦to touch¦to feel¦to handle\t¦to get involved (with)¦to approach\t¦to be harmful to¦to hinder¦to interfere with",
@@ -205,7 +211,7 @@ export const PIECE: WordsPiece = {
     "さんかチタン\t酸化チタン\t\tchem¦titanium oxide",
     "さんかちっそ\t酸化窒素\t\t¦nitrogen oxide (esp. nitric oxide, but also nitrous oxide, nitrogen dioxide, dinitrogen pentoxide, etc.)",
     "さんかっけい\t三角形|３角形\tC~ni20\t¦triangle",
-    "さんかてき\t酸化的\t\t¦oxidative",
+    "さんかてき\t酸化的\tn\t¦oxidative",
     "さんかてきリンさんか\t酸化的リン酸化\t\t¦oxidative phosphorylation",
     "さんかてきりんさんか\t酸化的燐酸化\t\t¦oxidative phosphorylation",
     "さんかてつ\t酸化鉄\t\t¦iron oxide",
@@ -304,7 +310,7 @@ export const PIECE: WordsPiece = {
     "さんきゃくざ\t三脚座\t\t¦tripod collar¦tripod mount",
     "サンキュ\t\tC~g\tcol¦thank you¦thanks",
     "さんきゅう\t産休\t~m25\tabbr¦maternity leave¦paternity leave",
-    "さんきゅう\t三級\t\t¦third grade¦third class¦tertiary",
+    "さんきゅう\t三級\tn\t¦third grade¦third class¦tertiary",
     "さんきゅう\t３９\t\tnet-sl¦thank you",
     "さんきゅうさんしん\t三球三振|３球三振\t\tbaseb¦three-pitch strikeout",
     "サンキュー\t\tC~g\tcol¦thank you¦thanks",
@@ -514,7 +520,7 @@ export const PIECE: WordsPiece = {
     "さんこうまでに\t参考までに\tC~s\t¦for reference¦for your information",
     "さんこうマニュアル\t参考マニュアル\t\tcomp¦reference manual",
     "さんこうみゃく\t三行脈\t\tbot¦trinerbate venation (of a leaf)¦trinerve",
-    "さんこく\t惨酷|酸酷\t\tarch¦atrocity¦cruelty¦brutality",
+    "さんこく\t惨酷|酸酷\tn\tarch¦atrocity¦cruelty¦brutality",
     "さんこく\t山谷\t\t¦mountains and valleys\t¦mountainous valley",
     "さんこく\t三国\t\twork¦Sanseido Kokugo Jiten (Japanese dictionary published by Sanseido) (abbr)",
     "さんこくじん\t三国人\t\t¦national of a third country",
@@ -605,12 +611,12 @@ export const PIECE: WordsPiece = {
     "さんざか\t山茶花\tU\tuk¦sasanqua (Camellia sasanqua)",
     "さんざし\t山査子|山楂子|山樝子\tU\tuk¦Japanese hawthorn (Crataegus cuneata)¦may¦quickthorn",
     "サンザシ\t\tU\tuk¦Japanese hawthorn (Crataegus cuneata)¦may¦quickthorn",
-    "さんざっぱら\t散々っぱら\tU\tuk¦thoroughly¦completely¦utterly\tuk¦severely¦harshly¦terribly",
+    "さんざっぱら\t散々っぱら\tnU\tuk¦thoroughly¦completely¦utterly\tuk¦severely¦harshly¦terribly",
     "さんざめく\t\tg\t¦to be boisterously noisy¦to do merrily (laughing, chattering, etc.)\t¦to shimmer¦to ripple¦to sparkle",
     "さんざる\t三猿\t\t¦three wise monkeys (who \"see no evil, hear no evil, and speak no evil\")",
-    "さんざん\t散々|散散\tC~mi30\t¦thoroughly¦completely¦utterly\t¦severely¦harshly¦terribly\tarch¦scattered¦disconnected¦dispersed",
+    "さんざん\t散々|散散\tnC~mi30\t¦thoroughly¦completely¦utterly\t¦severely¦harshly¦terribly\tarch¦scattered¦disconnected¦dispersed",
     "さんざん\t三山\t\t¦three mountains\t¦three shrines (of Kumano)\thist¦three kingdoms (of 14th and 15th-century Okinawa)",
-    "さんざんぱら\t散々ぱら\tU\tuk¦thoroughly¦completely¦utterly\tuk¦severely¦harshly¦terribly",
+    "さんざんぱら\t散々ぱら\tnU\tuk¦thoroughly¦completely¦utterly\tuk¦severely¦harshly¦terribly",
     "さんし\t蚕糸\tC~mt42\t¦silk thread¦silk yarn",
     "さんし\t３士|三士\t\tobs,mil¦recruit (former rank in the JSDF)",
     "さんし\t三思\ts\t¦deep reflection",
@@ -813,13 +819,5 @@ export const PIECE: WordsPiece = {
     "さんじゅうろっかせん\t三十六歌仙\t\thist¦the thirty-six immortal poets (of the Heian period; as named by Fujiwara no Kintō)",
     "さんじゅうろっけい\t三十六計\t\tyoji,hist¦the 36 (ancient Chinese military) strategies (of which the last resort was said to be beating a retreat)",
     "さんじゅうろっけいにげるにしかず\t三十六計逃げるに如かず|三十六計逃げるにしかず\t\tproverb¦the smartest thing in a tight situation is to beat a retreat",
-    "さんじゅっぷん\t３０分|三十分\t\t¦thirty minutes¦half an hour",
-    "さんじゅつ\t算術\t\t¦arithmetic",
-    "さんじゅつ\t纂述\ts\trare¦gathering and writing up material",
-    "さんじゅつえんざん\t算術演算\t\tcomp¦arithmetic operation",
-    "さんじゅつえんざんきこう\t算術演算機構\t\tcomp¦arithmetic unit¦ALU",
-    "さんじゅつえんざんし\t算術演算子\t\tcomp¦arithmetic operator",
-    "さんじゅつえんざんそうち\t算術演算装置\t\tcomp¦arithmetic unit¦arithmetic logic unit¦ALU",
-    "さんじゅつえんざんめいれい\t算術演算命令\t\tcomp¦arithmetic instruction",
   ],
 };

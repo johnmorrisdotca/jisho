@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 123 of 294, from "しょきじ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 123 of 294, from "しょきし". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "しょきしょうじょう\t初期症状\t\tmed¦early symptom",
     "しょきじょうたい\t初期状態\t\t¦initial state¦initial condition",
     "しょきせってい\t初期設定\ts\t¦default settings¦initial settings¦initial configuration\t¦initialization¦initialisation",
     "しょきせんたくこうもく\t初期選択項目\t\t¦initial choice",
@@ -54,7 +55,7 @@ export const PIECE: WordsPiece = {
     "しょく\t初句\t\t¦first five syllables (of a tanka)¦first line (of a poem)",
     "しょく\t食|蝕\t\tastron¦eclipse (solar, lunar, etc.)¦occultation",
     "しょく\t諸苦\t\tarch¦numerous sufferings¦various kinds of suffering",
-    "しょく\t俗\t\t¦layman (esp. as opposed to a Buddhist monk)¦laity¦man of the world\t¦local manners¦modern customs\t¦common¦popular\t¦vulgar¦low",
+    "しょく\t俗\tn\t¦layman (esp. as opposed to a Buddhist monk)¦laity¦man of the world\t¦local manners¦modern customs\t¦common¦popular\t¦vulgar¦low",
     "しょくあたり\t食あたり|食当たり|食中り\t\t¦food poisoning",
     "しょくあん\t職安\t~m25\tabbr¦Public Employment Security Office",
     "しょくあん\t食安\t\tabbr¦food safety",
@@ -100,7 +101,7 @@ export const PIECE: WordsPiece = {
     "しょくぎょうじん\t職業人\t\t¦professional¦careerman¦worker",
     "しょくぎょうせいなんちょう\t職業性難聴\t\t¦occupational hearing loss¦occupational deafness",
     "しょくぎょうだんたい\t職業団体\t\t¦trade association",
-    "しょくぎょうてき\t職業的\t\t¦professional",
+    "しょくぎょうてき\t職業的\tn\t¦professional",
     "しょくぎょうのうりょくかいはつがっこう\t職業能力開発学校\t\t¦business development skills school",
     "しょくぎょうのうりょくかいはつそうごうだいがっこう\t職業能力開発総合大学校\t\torganization¦Polytechnic University",
     "しょくぎょうのうりょくかいはつそくしんほう\t職業能力開発促進法\t\tlaw¦Vocational Abilities Development Promotion Act",
@@ -151,7 +152,7 @@ export const PIECE: WordsPiece = {
     "しょくしょ\t飾緒\t\t¦aiguillette (ornamental braided cord)",
     "しょくしょう\t職掌\t\t¦official duties¦office¦function",
     "しょくしょう\t食傷\ts\t¦surfeit¦glut¦being fed up\t¦food poisoning",
-    "しょくしょうぎみ\t食傷気味\t\t¦being sick and tired (of)¦being fed up (with)¦having one's fill (of)",
+    "しょくしょうぎみ\t食傷気味\tn\t¦being sick and tired (of)¦being fed up (with)¦having one's fill (of)",
     "しょくしょく\t惻々|惻惻\t\tform¦keenly felt¦heart-wrenching¦heart-rending",
     "しょくしん\t触診\ts~m43\tmed¦palpation",
     "しょくじ\t食事\tsC~ni03\t¦meal (e.g. lunch, dinner)\t¦diet",
@@ -425,7 +426,7 @@ export const PIECE: WordsPiece = {
     "しょくようしきそ\t食用色素\t\t¦food coloring¦food colouring¦food dye",
     "しょくようじょう\t食養生\t\t¦taking nourishing food¦eating a balanced diet",
     "しょくよく\t食欲|食慾\tC~ni13\t¦appetite (for food)",
-    "しょくよくおうせい\t食欲旺盛\t\t¦voracious¦having a hearty appetite",
+    "しょくよくおうせい\t食欲旺盛\tn\t¦voracious¦having a hearty appetite",
     "しょくよくげんたい\t食欲減退\t\t¦decrease in appetite¦loss of appetite",
     "しょくよくちゅうすう\t食欲中枢\t\tphysiol¦appetite center (of the brain)",
     "しょくよくていか\t食欲低下\t\t¦loss of appetite¦reduction in appetite¦anorexia",
@@ -532,7 +533,7 @@ export const PIECE: WordsPiece = {
     "しょさつ\t書札\t\t¦letter¦note¦document",
     "しょさつ\t初刷\t\t¦first print (run)",
     "しょさん\t所産\t~m34\t¦result¦fruit (of)¦product (of)",
-    "しょさん\t初産\t~m42\t¦first childbirth",
+    "しょさん\t初産\tn~m42\t¦first childbirth",
     "しょさん\t初参\ts\t¦being in someone's service for the first time¦participating for the first time\t¦visiting a shrine (or temple) for the first time",
     "しょさんぷ\t初産婦\t\tmed¦primipara¦woman giving birth for the first time",
     "しょざ\t初座\t\t¦first half of a tea ceremony (in which the charcoal is set and light food served)",
@@ -540,8 +541,8 @@ export const PIECE: WordsPiece = {
     "しょざいち\t所在地\tC~n14\t¦location¦address",
     "しょざいちほう\t所在地法\t\t¦local law¦law of the country where a property, etc. is located",
     "しょざいない\t所在無い|所在ない\ta\t¦bored¦having nothing to do¦idle",
-    "しょざいなげ\t所在なげ|所在無げ\t\t¦idle¦bored",
-    "しょざん\t初産\t~m42\t¦first childbirth",
+    "しょざいなげ\t所在なげ|所在無げ\tn\t¦idle¦bored",
+    "しょざん\t初産\tn~m42\t¦first childbirth",
     "しょし\t書誌\t~m43\t¦bibliography (list of books by an author or on a subject)\t¦bibliography (history or description of books)\t¦book",
     "しょし\t初志\t\t¦one's original intention¦one's original purpose¦one's original aim",
     "しょし\t庶子\t\t¦illegitimate child",
@@ -595,7 +596,7 @@ export const PIECE: WordsPiece = {
     "しょしょほうぼう\t所々方々|所所方方|処々方々|処処方方\t\trare¦everywhere",
     "しょしようそ\t書誌要素\t\t¦bibliographic element",
     "しょしん\t所信\tC~n09\t¦belief¦conviction¦opinion",
-    "しょしん\t初心\tC~ni21\t¦one's original intention¦one's initial enthusiasm\t¦inexperience¦naivety¦greenness",
+    "しょしん\t初心\tnC~ni21\t¦one's original intention¦one's initial enthusiasm\t¦inexperience¦naivety¦greenness",
     "しょしん\t初診\t~m34\t¦initial medical examination¦first visit (to a doctor, clinic, hospital, etc.)",
     "しょしん\t初審\t\t¦first trial",
     "しょしん\t書信\t\t¦letter",
@@ -660,9 +661,9 @@ export const PIECE: WordsPiece = {
     "しょせいくん\t処生訓\t\t¦guiding motto for one's life",
     "しょせいじ\t初生児\t\t¦newborn baby",
     "しょせいじゅつ\t処世術\t\t¦worldly wisdom¦secret of success in life",
-    "しょせいじょうず\t処世上手\t\t¦knowing how to get on in the world¦knowing the secret of success in life",
+    "しょせいじょうず\t処世上手\tn\t¦knowing how to get on in the world¦knowing the secret of success in life",
     "しょせいじんのしゅくじつ\t諸聖人の祝日\t\t¦All Saints Day",
-    "しょせいたっしゃ\t処世達者\t\t¦knowing how to get on in the world¦knowing the secret of success in life",
+    "しょせいたっしゃ\t処世達者\tn\t¦knowing how to get on in the world¦knowing the secret of success in life",
     "しょせいち\t初生値\t\t¦initial ratio",
     "しょせいてつがく\t処世哲学\t\t¦philosophy of living¦philosophy of making one's way through life",
     "しょせいひなかんべつし\t初生ひな鑑別師|初生雛鑑別師\t\t¦chicken sexer",
@@ -764,7 +765,7 @@ export const PIECE: WordsPiece = {
     "しょっきるい\t食器類\t\t¦dinnerware¦cutlery",
     "しょっきん\t蜀錦\t\t¦type of brocade",
     "しょっきん\t食禁\t\t¦dietary restriction (due to illness, requirements of a medicine, etc.)",
-    "ショッキング\t\tC~g\t¦shocking",
+    "ショッキング\t\tnC~g\t¦shocking",
     "ショッキングピンク\t\t\t¦hot pink¦shocking pink¦bright pink",
     "ショッキング・ピンク\t\t\t¦hot pink¦shocking pink¦bright pink",
     "ショック\t\tC~ig\t¦shock (emotional)\t¦shock (physical)¦impact¦jolt\t¦crisis (esp. financial)¦event that rattles the markets\tmed¦(circulatory) shock",

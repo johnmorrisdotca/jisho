@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The whole answer, as JMdict has it, for each reading whose answer is not the same in safe mode, each row: reading, written forms joined by "|", flags, then one field for each sense. Only for a lookup that asks for everything. Piece 9 of 9, from "れいは". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The whole answer, as JMdict has it, for each reading whose answer is not the same in safe mode, each row: reading, written forms joined by "|", flags, then one field for each sense. Only for a lookup that asks for everything. Piece 9 of 9, from "れい". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "レイア\t\tC~g\t¦rhea (bird of family Rheidae)\tgrmyth¦Rhea (goddess)\tastron¦Rhea (moon of Saturn)",
+    "レイアー\t\tC~g\t¦rhea (bird of family Rheidae)\tgrmyth¦Rhea (goddess)\tastron¦Rhea (moon of Saturn)",
     "れいはん\t冷飯\t~m43\t¦cold rice\tabbr¦hanger-on¦dependent\t¦disgraced former actor",
     "レクリェーション\t\tC~ig\t¦recreation\t¦re-creation",
     "レクリエーション\t\tC~ig\t¦recreation\t¦re-creation",

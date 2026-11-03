@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 138 of 294, from "すいかず". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 138 of 294, from "すいかし". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "すいかしんとう\t垂加神道\t\t¦Suika Shinto (fusion of Shinto with Chinese elements, esp. neo-Confucianism)¦Shidemasu Shinto",
     "スイカズラ\t\tU\tuk¦Japanese honeysuckle (Lonicera japonica)",
     "すいかずら\t忍冬|荵冬\tU\tuk¦Japanese honeysuckle (Lonicera japonica)",
     "スイカズラか\tスイカズラ科\t\t¦Caprifoliaceae (family of flowering plants comprising the honeysuckles)",
@@ -43,7 +44,7 @@ export const PIECE: WordsPiece = {
     "すいきょ\t推挙\ts~m40\t¦recommendation (of a person for a position)¦nomination",
     "すいきょ\t出挙\t\tarch¦loan with interest made to farmers",
     "すいきょう\t垂教\ts\t¦information¦instruction",
-    "すいきょう\t酔狂|粋狂|酔興\t\t¦whim¦caprice¦vagary",
+    "すいきょう\t酔狂|粋狂|酔興\tn\t¦whim¦caprice¦vagary",
     "すいきょしき\t推挙式\t\t¦first ring-entering ceremony of the newly promoted grand champion, performed at Meiji shrine",
     "すいきん\t水禽\t\t¦waterfowl¦aquatic bird",
     "すいきん\t水金\t\t¦liquid gold (used for applying gold to ceramics, etc.)\t¦Wednesday and Friday\t¦bribe¦sweetener¦douceur",
@@ -115,7 +116,7 @@ export const PIECE: WordsPiece = {
     "すいさし\t吸いさし|吸い差し\t\t¦half-smoked cigarette¦unfinished smoke¦cigarette butt",
     "すいさつ\t推察\ts~m34\t¦guess¦conjecture¦surmise",
     "すいさん\t水産\tC~ni08\t¦aquatic products¦fisheries",
-    "すいさん\t推参\ts\thum¦calling on (someone) uninvited¦dropping in on¦visiting without being invited\tdated¦presumptuous¦impertinent¦impudent",
+    "すいさん\t推参\tns\thum¦calling on (someone) uninvited¦dropping in on¦visiting without being invited\tdated¦presumptuous¦impertinent¦impudent",
     "すいさん\t推算\ts\t¦estimation¦rough calculation",
     "すいさん\t炊さん|炊爨\ts\t¦cooking (rice, grains)",
     "すいさんか\t水酸化\ts\t¦hydration",
@@ -143,7 +144,7 @@ export const PIECE: WordsPiece = {
     "すいさんひん\t水産品\t\t¦fishery product",
     "すいさんぶつ\t水産物\tC~n19\t¦marine products",
     "すいさんようしょく\t水産養殖\t\t¦aquaculture",
-    "すいざん\t衰残\t\t¦emaciated¦worn-out",
+    "すいざん\t衰残\tn\t¦emaciated¦worn-out",
     "すいざんけん\t水山蹇\t\t¦jian (hexagram 39 of the I Ching: obstruction)",
     "すいし\t水死\tsC~n17\t¦death by drowning",
     "すいし\t出師\t\t¦dispatch of troops¦despatch of troops¦expedition",
@@ -393,7 +394,7 @@ export const PIECE: WordsPiece = {
     "すいちゅうライト\t水中ライト\t\t¦underwater dive light",
     "すいちょう\t水鳥\tC~n18\t¦waterfowl¦water bird¦shorebird",
     "すいちょう\t衰兆\t\t¦signs of decline",
-    "すいちょく\t垂直\tC~ni18\t¦vertical\t¦perpendicular",
+    "すいちょく\t垂直\tnC~ni18\t¦vertical\t¦perpendicular",
     "すいちょくおうりょく\t垂直応力\t\tengr¦normal stress",
     "すいちょくかんせん\t垂直感染\t\tmed¦vertical transmission¦vertical infection",
     "すいちょくけん\t垂直圏\t\t¦vertical circle",
@@ -426,7 +427,7 @@ export const PIECE: WordsPiece = {
     "スイッチかんつうしん\tスイッチ間通信\t\tcomp¦interswitch signalling",
     "スイッチがはいる\tスイッチが入る\tg\tid¦to (suddenly) get into a specific mood",
     "スイッチじょうたいじょうけん\tスイッチ状態条件\t\tcomp¦switch-status condition",
-    "スイッチせんたくかのう\tスイッチ選択可能\t\tcomp¦switch-selectable",
+    "スイッチせんたくかのう\tスイッチ選択可能\tn\tcomp¦switch-selectable",
     "スイッチターン\t\t\t¦two-point turn",
     "スイッチト\t\t\t¦switched",
     "スイッチド\t\t\t¦switched",
@@ -565,7 +566,7 @@ export const PIECE: WordsPiece = {
     "すいぶん\t水分\tC~ni11\t¦water¦liquid¦fluid",
     "すいぶんかっせい\t水分活性\t\tchem¦water activity",
     "すいぶんほきゅう\t水分補給\ts\t¦hydration¦rehydration\t¦to hydrate¦to rehydrate¦to moisturize",
-    "すいへい\t水平\tC~ni15\t¦horizontal¦level¦even",
+    "すいへい\t水平\tnC~ni15\t¦horizontal¦level¦even",
     "すいへい\t水兵\t~m36\t¦(naval) sailor",
     "すいへい\t衰幣\t\t¦decline",
     "すいへいおうりょく\t水平応力\t\t¦lateral stress",
@@ -766,7 +767,7 @@ export const PIECE: WordsPiece = {
     "スイーツビール\t\t\ttradem¦dessert beer",
     "スイーツ・ビール\t\t\ttradem¦dessert beer",
     "スイーティー\t\t\t¦sweetie (sweet green-skinned citrus; cross between a grapefruit and a pomelo)¦oroblanco",
-    "スイート\t\tC~g\t¦sweet (flavour)\t¦sweet (of alcohol)\t¦sweet (e.g. melody)¦pleasant (e.g. atmosphere)¦pleasing",
+    "スイート\t\tnC~g\t¦sweet (flavour)\t¦sweet (of alcohol)\t¦sweet (e.g. melody)¦pleasant (e.g. atmosphere)¦pleasing",
     "スイート\t\tC~g\t¦suite (in a hotel)\tmusic¦suite",
     "スイートアーモンド\t\t\t¦sweet almond",
     "スイートアーモンドオイル\t\t\t¦sweet almond oil",
@@ -810,7 +811,7 @@ export const PIECE: WordsPiece = {
     "スウィーツ\t\t\t¦sweets (desserts, candy, etc.)",
     "スウィーティ\t\t\t¦sweetie (sweet green-skinned citrus; cross between a grapefruit and a pomelo)¦oroblanco",
     "スウィーティー\t\t\t¦sweetie (Citrus maxima x Citrus paradisi)¦oroblanco¦oro blanco",
-    "スウィート\t\tC~g\t¦sweet (flavour)\t¦sweet (of alcohol)\t¦sweet (e.g. melody)¦pleasant (e.g. atmosphere)¦pleasing",
+    "スウィート\t\tnC~g\t¦sweet (flavour)\t¦sweet (of alcohol)\t¦sweet (e.g. melody)¦pleasant (e.g. atmosphere)¦pleasing",
     "スウィート\t\tC~g\t¦suite (in a hotel)\tmusic¦suite",
     "スウィートハート\t\t\t¦sweetheart",
     "スウィートホーム\t\t\t¦loving home¦happy home¦newlyweds' home",
@@ -867,13 +868,13 @@ export const PIECE: WordsPiece = {
     "すうがくきょういくがっかい\t数学教育学会\t\torganization¦Mathematics Education Society of Japan¦MES",
     "すうがくけんてい\t数学検定\t\t¦Global Mathematics Certification¦Practical Mathematics Proficiency Test",
     "すうがくしゃ\t数学者\t\t¦mathematician",
-    "すうがくてき\t数学的\t\t¦mathematical",
+    "すうがくてき\t数学的\tn\t¦mathematical",
     "すうがくてききのうほう\t数学的帰納法\t\t¦mathematical induction",
     "すうがくてきモデルか\t数学的モデル化\t\tcomp¦mathematic modelling",
     "すうがくてきろんりがく\t数学的論理学\t\t¦mathematical logic",
     "すうがくパズル\t数学パズル\t\t¦mathematical puzzle",
     "すうがくモデル\t数学モデル\t\tcomp¦mathematic model",
-    "すうき\t数奇\t~m31\t¦misfortune¦adverse fortune¦hapless fate\t¦checkered (life, career, etc.)¦varied¦eventful",
+    "すうき\t数奇\tn~m31\t¦misfortune¦adverse fortune¦hapless fate\t¦checkered (life, career, etc.)¦varied¦eventful",
     "すうき\t枢機\t\t¦important point¦essential part¦vital point\t¦important state matters",
     "すうききょう\t枢機卿\t~m28\tChristn¦cardinal (Catholic Church)",
     "すうきけい\t枢機卿\t~m28\tChristn¦cardinal (Catholic Church)",
@@ -887,9 +888,9 @@ export const PIECE: WordsPiece = {
     "すうけん\t数検\t\tabbr¦Global Mathematics Certification¦Practical Mathematics Proficiency Test",
     "すうげつ\t数月\t\tobs¦several months",
     "すうこ\t数個\tC~n23\t¦several (objects, usu. from two to six)",
-    "すうこう\t崇高\tC~mt29\t¦lofty¦sublime¦noble\t¦the sublime (aesthetics)",
+    "すうこう\t崇高\tnC~mt29\t¦lofty¦sublime¦noble\t¦the sublime (aesthetics)",
     "すうこう\t趨向\ts\t¦tendency¦trend¦current",
-    "すうこう\t嵩高\t\tarch¦lofty (of a mountain)¦tall",
+    "すうこう\t嵩高\tn\tarch¦lofty (of a mountain)¦tall",
     "すうこう\t数行\t\t¦several lines (e.g. of flying birds)¦several streaks (e.g. of tears)",
     "すうこうび\t崇高美\t\t¦sublime beauty",
     "すうこく\t数刻\t\tform¦several hours¦a few hours",
@@ -949,8 +950,5 @@ export const PIECE: WordsPiece = {
     "すうちしていもじさんしょう\t数値指定文字参照\t\tcomp¦numeric character reference",
     "すうちせいぎょ\t数値制御\t\t¦numerical control¦NC",
     "すうちちず\t数値地図\t\t¦digital map¦electronic map",
-    "すうちてき\t数値的\t\tcomp¦numeric¦numerical",
-    "すうちデータ\t数値データ\t\tcomp¦numeric data",
-    "すうちひょうげん\t数値表現\t\tcomp¦numeric representation",
   ],
 };

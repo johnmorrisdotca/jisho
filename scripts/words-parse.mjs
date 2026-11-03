@@ -40,8 +40,8 @@ export const PRIORITY_LETTERS = {
   gai2: "h",
 };
 
-/** The five kinds of word a conjugation needs to know, as one letter each. */
-export const KIND_LETTERS = { g: "godan", i: "ichidan", a: "i-adjective", s: "suru", k: "kuru" };
+/** The six kinds of word a conjugation needs to know, as one letter each. */
+export const KIND_LETTERS = { g: "godan", i: "ichidan", a: "i-adjective", n: "na-adjective", s: "suru", k: "kuru" };
 
 const ENTITIES = { "&amp;": "&", "&lt;": "<", "&gt;": ">", "&quot;": '"', "&apos;": "'" };
 const decode = (text) => text.replace(/&(?:amp|lt|gt|quot|apos);/g, (entity) => ENTITIES[entity]);
@@ -61,6 +61,7 @@ export function kindLetters(codes) {
     if (/^v5/.test(one)) letters.add("g");
     else if (one === "v1" || one === "v1-s") letters.add("i");
     else if (one === "adj-i" || one === "adj-ix") letters.add("a");
+    else if (one === "adj-na") letters.add("n");
     else if (one === "vs" || one === "vs-i" || one === "vs-s") letters.add("s");
     else if (one === "vk") letters.add("k");
   }

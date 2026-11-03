@@ -99,7 +99,7 @@ describe("an entry becomes a row for each reading", () => {
   });
 
   it("reads the kinds of word a conjugation needs, from every sense", () => {
-    expect(kindLetters(["v5r", "vt", "v1", "vs-i", "adj-ix", "vk", "n"])).toBe("agiks");
+    expect(kindLetters(["v5r", "vt", "v1", "vs-i", "adj-ix", "adj-na", "vk", "n"])).toBe("agikns");
     expect(kindLetters(["n", "adv"])).toBe("");
   });
 
