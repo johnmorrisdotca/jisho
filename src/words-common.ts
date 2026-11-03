@@ -2,7 +2,7 @@
 
 import type { PackedPatch, PackedWords, WordRow, Words, WordsOptions } from "./words.types.ts";
 import { checkLists, modeOf } from "./words-filter.ts";
-import { commonExtra, commonTable } from "./words-pieces.ts";
+import { commonExtra, commonTable } from "./words-manifests.ts";
 import { readRow } from "./words-rows.ts";
 import { formKey, readingKey } from "./words-text.ts";
 

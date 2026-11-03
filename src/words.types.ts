@@ -99,6 +99,24 @@ export type WordsManifest = {
 };
 
 /**
+ * Where the pieces of the whole entries are: the first number of each, and how to fetch it.
+ *
+ * @example
+ * ```ts
+ * import type { EntryManifest } from "@johnmorrisdotca/jisho/entries";
+ *
+ * const empty: EntryManifest["entries"] = { starts: [""], load: [async () => ({ rows: [] })] };
+ * console.log(empty.starts);
+ * ```
+ */
+export type EntryManifest = {
+  readonly source: string;
+  readonly release: string;
+  /** The entries, cut by their number in base 36, five characters wide. */
+  readonly entries: PieceSet;
+};
+
+/**
  * One sense of a word: the marks JMdict gives it, and its glosses, the plain one first. A mark is a JMdict code: a kind of usage
  * such as `vulg`, `X`, `sens`, `derog`, `col`, `sl`, `arch`, `obs`, `uk`, a field such as `food` or `med`, or a dialect such as `ksb`.
  *
@@ -147,6 +165,8 @@ export type Word = {
   readonly rank: number;
   /** The priority tags JMdict gives it, as JMdict writes them (`news1`, `ichi1`, `spec2`, `gai1`, `nf05`…); none for a word it does not rank. */
   readonly priority: readonly string[];
+  /** The number JMdict gives its entry (`ent_seq`), which `loadEntry` takes to fetch the whole entry. Absent from a word you made yourself. */
+  readonly id?: number;
 };
 
 /**
@@ -168,6 +188,8 @@ export type WordRow = {
   readonly usuallyKana: boolean;
   /** The priority tags as a row stores them: letters, then the newspaper band's two digits. Read them with `priorityTags`. */
   readonly priority: string;
+  /** The number JMdict gives the entry, or undefined for a row that does not say. */
+  readonly id: number | undefined;
 };
 
 /**
@@ -304,4 +326,150 @@ export type Words = {
   readonly allow: readonly string[] | undefined;
   /** The rows found for each text, by the key `wordsOf` makes of it. Read it with `wordsOf`. */
   readonly entries: ReadonlyMap<string, readonly WordRow[]>;
+};
+
+/**
+ * A sense of a whole entry: everything JMdict says of it.
+ *
+ * @example
+ * ```ts
+ * import type { EntrySense } from "@johnmorrisdotca/jisho/entries";
+ *
+ * const sense: EntrySense = { pos: ["n"], marks: [], glosses: [{ text: "paper", kind: null }], onlyForms: [], onlyReadings: [], seeAlso: [], antonyms: [], notes: [], sources: [] };
+ * console.log(sense.glosses[0]?.text);
+ * ```
+ */
+export type EntrySense = {
+  /** The parts of speech, as JMdict's codes (`n`, `v5r`, `adj-i`, `vt`…). */
+  readonly pos: readonly string[];
+  /** The marks: usage, field and dialect codes, as a `Sense` has them. */
+  readonly marks: readonly string[];
+  /** Every gloss, the order JMdict has them in. */
+  readonly glosses: readonly EntryGloss[];
+  /** The written forms this sense is limited to; none when it is for all of them. */
+  readonly onlyForms: readonly string[];
+  /** The readings this sense is limited to; none when it is for all of them. */
+  readonly onlyReadings: readonly string[];
+  /** Cross-references, as JMdict writes them; read one with `referenceOf`. */
+  readonly seeAlso: readonly string[];
+  /** Antonyms, written the same way. */
+  readonly antonyms: readonly string[];
+  /** Notes on the sense, such as "usu. in the negative". */
+  readonly notes: readonly string[];
+  /** The languages a loanword comes from. */
+  readonly sources: readonly LoanSource[];
+};
+
+/**
+ * A gloss, and what kind of gloss it is when JMdict says: `lit` a literal rendering, `expl` an explanation, `fig` a figurative one, `tm` a trademark.
+ *
+ * @example
+ * ```ts
+ * import type { EntryGloss } from "@johnmorrisdotca/jisho/entries";
+ *
+ * const gloss: EntryGloss = { text: "paper", kind: null };
+ * console.log(gloss.text);
+ * ```
+ */
+export type EntryGloss = {
+  readonly text: string;
+  readonly kind: "lit" | "expl" | "fig" | "tm" | null;
+};
+
+/**
+ * The word a loanword comes from, in the language it comes from.
+ *
+ * @example
+ * ```ts
+ * import type { LoanSource } from "@johnmorrisdotca/jisho/entries";
+ *
+ * const source: LoanSource = { lang: "eng", text: "paper", partial: false, wasei: false };
+ * console.log(source.lang);
+ * ```
+ */
+export type LoanSource = {
+  /** The language, as a three-letter code (`eng`, `por`, `ger`…). */
+  readonly lang: string;
+  /** The word in that language; empty when JMdict names the language only. */
+  readonly text: string;
+  /** Whether the Japanese word is made from only a part of it. */
+  readonly partial: boolean;
+  /** Whether it is a word made in Japan from foreign parts (和製英語). */
+  readonly wasei: boolean;
+};
+
+/**
+ * The marks of a written form of an entry, such as `ateji` or `rK` (a rarely used form).
+ *
+ * @example
+ * ```ts
+ * import type { EntryForm } from "@johnmorrisdotca/jisho/entries";
+ *
+ * const form: EntryForm = { text: "紙", marks: [] };
+ * console.log(form.text);
+ * ```
+ */
+export type EntryForm = { readonly text: string; readonly marks: readonly string[] };
+
+/**
+ * A reading of an entry, with its marks and the written forms it is limited to.
+ *
+ * @example
+ * ```ts
+ * import type { EntryReading } from "@johnmorrisdotca/jisho/entries";
+ *
+ * const reading: EntryReading = { text: "かみ", marks: [], onlyForms: [], noKanji: false };
+ * console.log(reading.text);
+ * ```
+ */
+export type EntryReading = {
+  readonly text: string;
+  /** The marks, such as `gikun` or `ok`. */
+  readonly marks: readonly string[];
+  /** The written forms this reading goes with; none when it goes with all of them. */
+  readonly onlyForms: readonly string[];
+  /** Whether it is a reading of no kanji. */
+  readonly noKanji: boolean;
+};
+
+/**
+ * The whole entry of a word, as `loadEntry` gives it.
+ *
+ * @example
+ * ```ts
+ * import type { Entry } from "@johnmorrisdotca/jisho/entries";
+ *
+ * const entry: Entry = { id: 1, forms: [], readings: [{ text: "あ", marks: [], onlyForms: [], noKanji: false }], senses: [] };
+ * console.log(entry.id);
+ * ```
+ */
+export type Entry = {
+  /** The number JMdict gives it (`ent_seq`). */
+  readonly id: number;
+  /** Its written forms, with their marks. */
+  readonly forms: readonly EntryForm[];
+  /** Its readings, with theirs. */
+  readonly readings: readonly EntryReading[];
+  /** Every sense. */
+  readonly senses: readonly EntrySense[];
+};
+
+/**
+ * A cross-reference in its parts, from `referenceOf`.
+ *
+ * @example
+ * ```ts
+ * import type { Reference } from "@johnmorrisdotca/jisho/entries";
+ *
+ * const reference: Reference = { written: "神", reading: undefined, sense: 1 };
+ * console.log(reference.written);
+ * ```
+ */
+export type Reference = {
+  /** The word to look up. */
+  readonly written: string;
+  /** Its reading, if the reference says one. */
+  readonly reading: string | undefined;
+  /** The number of the sense, counting from 1, if the reference says one. */
+  readonly sense: number | undefined;
 };

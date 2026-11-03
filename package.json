@@ -68,6 +68,11 @@
       "import": "./dist/deinflect.js",
       "default": "./dist/deinflect.js"
     },
+    "./entries": {
+      "types": "./dist/entries.d.ts",
+      "import": "./dist/entries.js",
+      "default": "./dist/entries.js"
+    },
     "./grades": {
       "types": "./dist/data/grades.data.d.ts",
       "import": "./dist/data/grades.data.js",

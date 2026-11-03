@@ -5,7 +5,8 @@ import { deinflect } from "./deinflect.ts";
 import { kanaFromRomaji } from "./romaji.ts";
 import type { LoadWordsOptions, WordRow, Words } from "./words.types.ts";
 import { checkLists, modeOf } from "./words-filter.ts";
-import { extras, formOfLine, pieceOf, piecesFor, readingOfRow } from "./words-pieces.ts";
+import { extras } from "./words-manifests.ts";
+import { formOfLine, pieceOf, piecesFor, readingOfRow } from "./words-pieces.ts";
 import { readRow } from "./words-rows.ts";
 import { formKey, isKana, keyOf, normalizeText, readingKey } from "./words-text.ts";
 

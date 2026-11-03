@@ -4,7 +4,7 @@
  * asks again.
  */
 
-import type { IndexManifest, PieceSet, WordsManifest, WordsPiece } from "./words.types.ts";
+import type { PieceSet, WordsPiece } from "./words.types.ts";
 import { readingKey } from "./words-text.ts";
 
 /**
@@ -29,6 +29,8 @@ export type WordsPieceKind =
   | "extra-meanings"
   | "kanji"
   | "extra-kanji"
+  | "entries"
+  | "extra-entries"
   | "common"
   | "manifest";
 
@@ -189,7 +191,7 @@ export async function piecesFor(
 }
 
 /** A small file that is fetched once, by the kind it is: the manifest of what safe mode leaves out, or of the indexes. */
-function once<T>(kind: WordsPieceKind, load: () => Promise<T>): () => Promise<T> {
+export function once<T>(kind: WordsPieceKind, load: () => Promise<T>): () => Promise<T> {
   let made: Promise<T> | undefined;
   return () => {
     if (made === undefined) {
@@ -202,25 +204,3 @@ function once<T>(kind: WordsPieceKind, load: () => Promise<T>): () => Promise<T>
     return made;
   };
 }
-
-/** The pieces of what safe mode leaves out: their manifest is fetched only when a lookup asks for everything. */
-export const extras: () => Promise<WordsManifest> = once("manifest", () =>
-  import("./data/words/extra-manifest.data.ts").then((one) => one.EXTRA_MANIFEST),
-);
-
-/** The pieces of the indexes by meaning and by kanji: fetched only when one of those lookups is made. */
-export const indexes: () => Promise<IndexManifest> = once("manifest", () =>
-  import("./data/words/index-manifest.data.ts").then((one) => one.INDEX_MANIFEST),
-);
-
-/** The pieces of the indexes that hold what safe mode leaves out: fetched only when one of those lookups asks for everything. */
-export const extraIndexes: () => Promise<IndexManifest> = once("manifest", () =>
-  import("./data/words/index-extra-manifest.data.ts").then((one) => one.EXTRA_INDEX_MANIFEST),
-);
-
-/** The table of the common words, fetched once for the life of the process. */
-export const commonTable = once("common", () => import("./data/words/common.data.ts").then((one) => one.COMMON_WORDS));
-/** What to add to the common words for unfiltered mode. */
-export const commonExtra = once("common", () =>
-  import("./data/words/common-extra.data.ts").then((one) => one.COMMON_EXTRA),
-);

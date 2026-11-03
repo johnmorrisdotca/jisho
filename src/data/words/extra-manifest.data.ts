@@ -12,7 +12,7 @@ export const EXTRA_MANIFEST: WordsManifest = {
   release: "2026-11-03",
   rowCount: 265954,
   readings: {
-    starts: ["", "おま", "きりじ", "さんご", "じゅ", "ち", "にょし", "へちゃ", "れい"],
+    starts: ["", "おちば", "きゃ", "こんにゃろー", "しろく", "そうし", "とく", "ひがしや", "めく"],
     load: [
       () => import("./xr0.data.ts").then((one) => one.PIECE),
       () => import("./xr1.data.ts").then((one) => one.PIECE),

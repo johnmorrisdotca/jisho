@@ -9,7 +9,8 @@ import type { FindOptions, PieceSet, Word, Words } from "./words.types.ts";
 import { checkLists, modeOf } from "./words-filter.ts";
 import { loadWords } from "./words-load.ts";
 import { allWords } from "./words-lookup.ts";
-import { extraIndexes, formOfLine, indexed, indexes, pieceOf, type WordsPieceKind } from "./words-pieces.ts";
+import { extraIndexes, indexes } from "./words-manifests.ts";
+import { formOfLine, indexed, pieceOf, type WordsPieceKind } from "./words-pieces.ts";
 import { listed, wordOf } from "./words-rows.ts";
 import { formKey, keyOf, normalizeText, termsInOrder, withoutAsides } from "./words-text.ts";
 

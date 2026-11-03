@@ -18,6 +18,10 @@
       "en": "The dictionary forms a conjugated word could come from",
       "ja": "活用した語のもとになる辞書形"
     },
+    "./entries": {
+      "en": "The whole entry of a word: every sense, and everything JMdict says of it",
+      "ja": "単語の完全な項目：すべての語義と、JMdictが記すことのすべて"
+    },
     "./grades": {
       "en": "School grades",
       "ja": "学年"

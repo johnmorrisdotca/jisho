@@ -121,6 +121,8 @@ export function entriesOf(xml) {
  * @returns The rows, or none for an entry with no reading or no sense with a gloss.
  */
 export function rowsOfEntry(entry) {
+  const seq = /<ent_seq>(\d+)<\/ent_seq>/.exec(entry)?.[1];
+  const id = seq === undefined ? undefined : Number(seq);
   const forms = tags(entry, "k_ele")
     .map((body) => ({
       text: decode(tags(body, "keb")[0] ?? ""),
@@ -191,6 +193,7 @@ export function rowsOfEntry(entry) {
             senses: shown(fit),
           };
     return {
+      id,
       reading: reading.text,
       forms: written,
       senses: shown(senses),
@@ -234,9 +237,9 @@ function packSense(sense, reading) {
   return [sense.marks.join(","), ...sense.glosses].join(SENSE_BREAK);
 }
 
-/** A row as one line: reading, forms joined by "|", flags, then one field for each sense. */
+/** A row as one line: reading, forms joined by "|", flags (the kinds, C and U, "~" and the priority, "#" and the entry's number in base 36), then one field for each sense. */
 export function packRow(row) {
-  const flags = `${row.kinds}${row.common ? "C" : ""}${row.usuallyKana ? "U" : ""}${row.priority ? `~${row.priority}` : ""}`;
+  const flags = `${row.kinds}${row.common ? "C" : ""}${row.usuallyKana ? "U" : ""}${row.priority ? `~${row.priority}` : ""}${Number.isFinite(row.id) ? `#${row.id.toString(36)}` : ""}`;
   for (const part of [row.reading, ...row.forms])
     if (LIST_BREAK.test(part)) throw new Error(`A separator in the row for ${row.reading}: ${part}`);
   return [row.reading, row.forms.join("|"), flags, ...row.senses.map((sense) => packSense(sense, row.reading))].join(

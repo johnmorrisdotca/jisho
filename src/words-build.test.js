@@ -198,7 +198,7 @@ describe("what safe mode leaves out", () => {
     );
     expect(row?.clean).toBeNull();
     expect(packClean(row ?? {})).toBeNull();
-    expect(packRow(row ?? {})).toBe("ホモビデオ\t\t\tsens¦gay porn video");
+    expect(packRow(row ?? {})).toBe("ホモビデオ\t\t#1\tsens¦gay porn video");
   });
 
   it("leaves out a written form that only a marked sense applies to, and a reading that only one does", () => {
@@ -277,7 +277,7 @@ describe("the stored row", () => {
         `<k_ele><keb>紙</keb><ke_pri>ichi1</ke_pri></k_ele><r_ele><reb>かみ</reb></r_ele>${sense(["n"], ["col"], ["paper", "sheet"])}${sense(["n"], [], ["one"])}`,
       ),
     );
-    expect(packRow(row ?? {})).toBe("かみ\t紙\tC~i\tcol¦paper¦sheet\t¦one");
+    expect(packRow(row ?? {})).toBe("かみ\t紙\tC~i#1\tcol¦paper¦sheet\t¦one");
   });
 
   it("refuses a field with a tab, a line break or the sense break in it, which would be two fields", () => {
@@ -348,8 +348,8 @@ describe("the priority a row keeps", () => {
     expect(priorityOf(["gai2", "spec1", "ichi2"])).toBe("jsh");
     expect(priorityOf(["nf12", "nf04"])).toBe("04");
     expect(priorityOf([])).toBe("");
-    expect(packRow(priorities("ichi1", "news1", "nf03") ?? {})).toBe("かみ\t紙\tC~ni03\t¦paper");
-    expect(packRow(priorities() ?? {})).toBe("かみ\t紙\t\t¦paper");
+    expect(packRow(priorities("ichi1", "news1", "nf03") ?? {})).toBe("かみ\t紙\tC~ni03#1\t¦paper");
+    expect(packRow(priorities() ?? {})).toBe("かみ\t紙\t#1\t¦paper");
   });
 
   it("is read back as the tags, and makes the rank the build makes", () => {

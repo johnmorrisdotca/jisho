@@ -12,7 +12,8 @@ const DEFAULT = files.filter(
     name === "common.data.ts" ||
     name === "manifest.data.ts" ||
     name === "index-manifest.data.ts" ||
-    /^[rfmk]\d+\.data\.ts$/.test(name),
+    name === "entry-manifest.data.ts" ||
+    /^[rfmke]\d+\.data\.ts$/.test(name),
 );
 /** What only a host that asks for everything fetches. */
 const EXTRA = files.filter(
@@ -20,7 +21,8 @@ const EXTRA = files.filter(
     name === "extra-manifest.data.ts" ||
     name === "index-extra-manifest.data.ts" ||
     name === "common-extra.data.ts" ||
-    /^x[rfmk]\d+\.data\.ts$/.test(name),
+    name === "entry-extra-manifest.data.ts" ||
+    /^x[rfmke]\d+\.data\.ts$/.test(name),
 );
 const text = (names) => names.map((name) => readFileSync(`${FOLDER}/${name}`, "utf8")).join("\n");
 
@@ -31,7 +33,8 @@ describe("the files a default lookup fetches", () => {
   it("are every file but the extra ones, which are named for what they are", () => {
     expect(EXTRA).toContain("common-extra.data.ts");
     expect(EXTRA).toContain("extra-manifest.data.ts");
-    expect(EXTRA.filter((name) => /^x[rfmk]/.test(name)).length).toBeGreaterThan(5);
+    expect(EXTRA).toContain("entry-extra-manifest.data.ts");
+    expect(EXTRA.filter((name) => /^x[rfmke]/.test(name)).length).toBeGreaterThan(5);
     expect(DEFAULT.length + EXTRA.length).toBe(files.length);
     expect(DEFAULT.length).toBeGreaterThan(300);
   });
@@ -65,6 +68,27 @@ describe("the files a default lookup fetches", () => {
     }
   });
 
+  it("hold no sense JMdict marks vulgar, derogatory or sensitive in the whole entries either, and keep the plain ones", () => {
+    const lines = (names) =>
+      names.flatMap((name) =>
+        [...readFileSync(`${FOLDER}/${name}`, "utf8").matchAll(/^ {4}"((?:[^"\\]|\\.)*)",$/gm)].map((match) =>
+          JSON.parse(`"${match[1]}"`),
+        ),
+      );
+    const kept = lines(DEFAULT.filter((name) => /^e\d+\.data\.ts$/.test(name)));
+    const cut = lines(EXTRA.filter((name) => /^xe\d+\.data\.ts$/.test(name)));
+    const harmonica = (list) => list.find((line) => line.split("\t")[2]?.split("|").includes("ハーモニカ"));
+    expect(harmonica(kept), "the harmonica is kept").toContain("harmonica");
+    expect(harmonica(kept)).not.toContain("cunnilingus");
+    expect(harmonica(cut)).toContain("cunnilingus");
+    expect(harmonica(cut)).toContain("harmonica");
+    expect(kept.filter((line) => line.includes("gay porn"))).toEqual([]);
+    expect(cut.filter((line) => line.includes("gay porn")).length).toBeGreaterThan(0);
+    // An entry of which every sense is marked is in no default piece, and a sense marked is in no line of one.
+    expect(kept.length).toBeGreaterThan(200_000);
+    expect(cut.length).toBeGreaterThan(800);
+  });
+
   it("keep the plain senses of the words that have both: the harmonica, the lunch, the pizza, the outsider", () => {
     for (const kept of [
       "harmonica",
@@ -79,8 +103,11 @@ describe("the files a default lookup fetches", () => {
 
   it("do not name the files that do, so that nothing reaches for them: the manifest never imports an extra file", () => {
     expect(readFileSync(`${FOLDER}/manifest.data.ts`, "utf8")).not.toMatch(/extra|x[rf]\d/);
+    expect(readFileSync(`${FOLDER}/entry-manifest.data.ts`, "utf8")).not.toMatch(/extra|xe\d/);
     expect(readFileSync(`${FOLDER}/index-manifest.data.ts`, "utf8")).not.toMatch(/extra|x[mk]\d/);
-    expect(everyDefaultFile).not.toMatch(/import\("\.\/(?:common-|index-)?extra|import\("\.\/x[rfmk]\d/);
+    expect(everyDefaultFile).not.toMatch(
+      /import\("\.\/(?:common-|index-|entry-)?extra|import\("\.\/(?:entry-)?(?:x[rfmke]\d)/,
+    );
   });
 
   it("hold the keys of no extra row: every reading left out whole is in none of the pieces", () => {

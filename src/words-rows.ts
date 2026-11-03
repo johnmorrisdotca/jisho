@@ -98,11 +98,14 @@ function readSense(field: string): Sense {
  * ```ts
  * import { readRow } from "@johnmorrisdotca/jisho/words";
  *
- * console.log(readRow("かみ\t紙\tC~ni03\t¦paper").forms); // ["紙"]
+ * console.log(readRow("かみ\t紙\tC~ni03#1qmbk\t¦paper").forms); // ["紙"]
  * ```
  */
 export function readRow(line: string): WordRow {
-  const [reading = "", forms = "", stored = "", ...senses] = line.split("\t");
+  const [reading = "", forms = "", whole = "", ...senses] = line.split("\t");
+  const numbered = whole.indexOf("#");
+  const stored = numbered === -1 ? whole : whole.slice(0, numbered);
+  const id = numbered === -1 ? undefined : Number.parseInt(whole.slice(numbered + 1), 36);
   const at = stored.indexOf("~");
   const flags = at === -1 ? stored : stored.slice(0, at);
   return Object.freeze({
@@ -113,6 +116,7 @@ export function readRow(line: string): WordRow {
     common: flags.includes("C"),
     usuallyKana: flags.includes("U"),
     priority: at === -1 ? "" : stored.slice(at + 1),
+    id,
   });
 }
 
@@ -139,6 +143,7 @@ export function wordOf(row: WordRow, written: string): Word {
     common: row.common,
     rank,
     priority,
+    ...(row.id === undefined ? {} : { id: row.id }),
   };
 }
 

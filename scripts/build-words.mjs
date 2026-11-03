@@ -13,7 +13,8 @@ import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import process from "node:process";
 import { gunzipSync } from "node:zlib";
-import { packRow, releaseOf, rowsOfDictionary } from "./words-parse.mjs";
+import { cleanEntry, entriesOfDictionary, entryKey, packEntry } from "./words-entries.mjs";
+import { entriesOf, packRow, releaseOf, rowsOfDictionary } from "./words-parse.mjs";
 import { indexesOf, patched, tablesOf } from "./words-tables.mjs";
 
 const JMDICT_URL = "http://ftp.edrdg.org/pub/Nihongo/JMdict_e.gz";
@@ -26,6 +27,8 @@ const EXTRA_PIECE_BYTES = 48_000;
 const FORM_PIECE_BYTES = 96_000;
 /** About this many to a piece of the index by meaning, and of the index by kanji. */
 const INDEX_PIECE_BYTES = 48_000;
+/** About this many to a piece of the whole entries (they are longer than rows, and one lookup of an entry fetches one piece). */
+const ENTRY_PIECE_BYTES = 96_000;
 /** Readings that are not all kana (a middle dot is kana here, as it is in loanwords): they are looked up like a written form. */
 export const KANA_TEXT = /^[ぁ-ゖゝ-ゟァ-ヺ・-ヿ]+$/;
 
@@ -343,6 +346,66 @@ ${loaders(one.prefix, one.pieces)}
     `Where the pieces are of the indexes by meaning and by kanji that hold what safe mode leaves out: the first key of each, and how to fetch it. ${extraMeanings.pieces.length} pieces by meaning and ${extraKanji.pieces.length} by kanji. Only for a lookup that asks for everything.`,
   );
 
+  // The whole entries, by number, in pieces of their own with manifests of their own: the entries as safe mode has them, and, for the
+  // few that have a sense safe mode leaves out, the whole entry, which only an unfiltered lookup fetches.
+  const wholeEntries = entriesOfDictionary(entriesOf(xml));
+  const entryPieces = cut(
+    wholeEntries.flatMap((one) => {
+      const clean = cleanEntry(one);
+      return clean === null ? [] : [[entryKey(one.id), packEntry(clean)]];
+    }),
+    ENTRY_PIECE_BYTES,
+  );
+  const extraEntries = wholeEntries.filter((one) => one.senses.some((sense) => sense.unfit));
+  const extraEntryPieces = cut(
+    extraEntries.map((one) => [entryKey(one.id), packEntry(one)]),
+    EXTRA_PIECE_BYTES,
+  );
+  writePieces(
+    "e",
+    entryPieces,
+    "The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry.",
+  );
+  writePieces(
+    "xe",
+    extraEntryPieces,
+    "The whole entry, as JMdict has it, for each entry with a sense safe mode leaves out, in the same format. Only for a lookup of a whole entry that asks for everything.",
+  );
+  const entryManifest = (file, name, pieces, prefix, summary) =>
+    writeFileSync(
+      `${OUT}/${file}`,
+      dataFile({
+        imports: `import type { EntryManifest } from "../../words.types.ts";\n`,
+        summary,
+        type: "EntryManifest",
+        name,
+        body: `{
+  source: "JMdict",
+  release: ${JSON.stringify(release)},
+  entries: {
+    starts: [${starts(pieces)}],
+    load: [
+${loaders(prefix, pieces)}
+    ],
+  },
+}`,
+      }),
+    );
+  entryManifest(
+    "entry-manifest.data.ts",
+    "ENTRY_MANIFEST",
+    entryPieces,
+    "e",
+    `Where the pieces of the whole entries are: the first number of each, and how to fetch it. ${entryPieces.length} pieces.`,
+  );
+  entryManifest(
+    "entry-extra-manifest.data.ts",
+    "EXTRA_ENTRY_MANIFEST",
+    extraEntryPieces,
+    "xe",
+    `Where the pieces are of the whole entries that safe mode cuts: the first number of each, and how to fetch it. ${extraEntryPieces.length} pieces. Only for a lookup of a whole entry that asks for everything.`,
+  );
+
   recordSource({ release, sha256 });
   const kb = (n) => `${(n / 1e3).toFixed(0)} kB`;
   const size = (pieces) => pieces.map((piece) => Buffer.byteLength(piece.lines.join("\n")));
@@ -354,6 +417,9 @@ ${loaders(one.prefix, one.pieces)}
     );
   console.log(
     `${counts.rows} rows; ${counts.cleanRows} in safe mode, ${counts.rows - counts.cleanRows} left out whole; ${counts.common} common in safe mode of ${counts.commonAll}`,
+  );
+  console.log(
+    `entries: ${entryPieces.length} pieces of ${wholeEntries.length} entries, the largest ${kb(Math.max(...size(entryPieces)))}; ${extraEntryPieces.length} pieces of ${extraEntries.length} whole entries that safe mode cuts`,
   );
   console.log(`${readingPieces.length} pieces by reading, the largest ${kb(Math.max(...size(readingPieces)))}`);
   console.log(`${formPieces.length} pieces of written forms, the largest ${kb(Math.max(...size(formPieces)))}`);
