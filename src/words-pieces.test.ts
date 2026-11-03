@@ -2,7 +2,7 @@ import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { MANIFEST } from "./data/words/manifest.data.ts";
 import { loadWords, wordsOf } from "./words.ts";
 import type { PieceSet, WordsPiece } from "./words.types.ts";
-import { indexed, retry, WordsLoadError } from "./words-pieces.ts";
+import { cacheLimit, indexed, retry, WordsLoadError } from "./words-pieces.ts";
 
 const key = (line: string) => line.slice(0, line.indexOf("\t"));
 const piece: WordsPiece = { rows: ["a\t1", "b\t2"] };
@@ -15,6 +15,83 @@ function setOf(run: (call: number) => Promise<WordsPiece>): { set: PieceSet; cal
 
 beforeEach(() => {
   retry.delayMs = 0;
+});
+
+afterEach(() => {
+  cacheLimit.pieces = 64;
+});
+
+describe("the pieces a process keeps", () => {
+  /** A set of five pieces, counting how often each is fetched. */
+  function five(): { set: PieceSet; calls: number[] } {
+    const calls = [0, 0, 0, 0, 0];
+    return {
+      calls,
+      set: {
+        starts: ["a", "b", "c", "d", "e"],
+        load: calls.map((_, at) => async () => {
+          calls[at] = (calls[at] ?? 0) + 1;
+          return piece;
+        }),
+      },
+    };
+  }
+
+  it("are at most the limit: the one asked for longest ago is let go and fetched again if asked for", async () => {
+    cacheLimit.pieces = 3;
+    const { set, calls } = five();
+    for (const at of [0, 1, 2, 3, 4]) await indexed("readings", set, at, key);
+    expect(calls).toEqual([1, 1, 1, 1, 1]);
+    await indexed("readings", set, 4, key);
+    await indexed("readings", set, 3, key);
+    await indexed("readings", set, 2, key);
+    expect(calls).toEqual([1, 1, 1, 1, 1]);
+    await indexed("readings", set, 0, key);
+    await indexed("readings", set, 1, key);
+    expect(calls).toEqual([2, 2, 1, 1, 1]);
+  });
+
+  it("keep the piece asked for most recently, not the first fetched", async () => {
+    cacheLimit.pieces = 3;
+    const { set, calls } = five();
+    for (const at of [0, 1, 2]) await indexed("readings", set, at, key);
+    await indexed("readings", set, 0, key);
+    await indexed("readings", set, 3, key);
+    await indexed("readings", set, 0, key);
+    expect(calls).toEqual([1, 1, 1, 1, 0]);
+    await indexed("readings", set, 1, key);
+    expect(calls[1]).toBe(2);
+  });
+
+  it("keep a piece to the limit across sets, and still answer a lookup that needs more pieces than the limit", async () => {
+    cacheLimit.pieces = 2;
+    const a = five();
+    const b = five();
+    await indexed("readings", a.set, 0, key);
+    await indexed("forms", b.set, 0, key);
+    await indexed("forms", b.set, 1, key);
+    await indexed("readings", a.set, 0, key);
+    expect(a.calls[0]).toBe(2);
+    const words = await loadWords(["かみ", "紙", "神", "ことば", "やま", "みず", "ひと"]);
+    expect(wordsOf(words, "紙")[0]?.reading).toBe("かみ");
+  });
+
+  it("do not remember a piece that failed", async () => {
+    cacheLimit.pieces = 2;
+    let calls = 0;
+    const set: PieceSet = {
+      starts: [""],
+      load: [
+        async () => {
+          calls++;
+          if (calls <= 2) throw new TypeError("down");
+          return piece;
+        },
+      ],
+    };
+    await expect(indexed("readings", set, 0, key)).rejects.toBeInstanceOf(WordsLoadError);
+    expect((await indexed("readings", set, 0, key)).get("a")).toEqual(["a\t1"]);
+  });
 });
 
 describe("a piece is fetched once however many lookups ask at the same moment", () => {

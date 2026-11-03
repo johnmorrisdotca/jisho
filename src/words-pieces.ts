@@ -96,6 +96,35 @@ async function attempt<T>(run: () => Promise<T>, kind: WordsPieceKind, index?: n
 /** Fetched and indexed pieces, by the set they belong to and their number, so that a second lookup in the same piece fetches nothing. */
 const fetched = new WeakMap<PieceSet, Map<number, Promise<ReadonlyMap<string, readonly string[]>>>>();
 
+/**
+ * How many pieces the process keeps, over every set together; the one least recently asked for is let go when one more is fetched.
+ * A piece indexed in memory is a few megabytes, and the dictionary has hundreds, so a process that looks up everything would hold
+ * them all (49 MB to 266 MB measured). The words already looked up are not affected: they are rows of their own. A test sets it.
+ */
+export const cacheLimit = { pieces: 64 };
+
+type Held = Map<number, Promise<ReadonlyMap<string, readonly string[]>>>;
+/** The pieces kept, the least recently asked for first. */
+const recent: { held: Held; at: number }[] = [];
+
+/** Notes that a piece was asked for (a new one, or one kept), and lets go of the least recently asked for beyond the limit. */
+function remember(held: Held, at: number): void {
+  const was = recent.findIndex((one) => one.held === held && one.at === at);
+  if (was !== -1) recent.splice(was, 1);
+  recent.push({ held, at });
+  while (recent.length > Math.max(1, cacheLimit.pieces)) {
+    const oldest = recent.shift();
+    oldest?.held.delete(oldest.at);
+  }
+}
+
+/** Forgets a piece that failed to fetch. */
+function forget(held: Held, at: number): void {
+  held.delete(at);
+  const was = recent.findIndex((one) => one.held === held && one.at === at);
+  if (was !== -1) recent.splice(was, 1);
+}
+
 /** The lines of a piece, indexed by the key of each. */
 function indexLines(lines: readonly string[], keyOfLine: (line: string) => string): Map<string, string[]> {
   const index = new Map<string, string[]>();
@@ -132,15 +161,19 @@ export function indexed(
   at: number,
   keyOfLine: (line: string) => string,
 ): Promise<ReadonlyMap<string, readonly string[]>> {
-  const held = fetched.get(set) ?? new Map<number, Promise<ReadonlyMap<string, readonly string[]>>>();
+  const held: Held = fetched.get(set) ?? new Map();
   fetched.set(set, held);
   const cached = held.get(at);
-  if (cached !== undefined) return cached;
+  if (cached !== undefined) {
+    remember(held, at);
+    return cached;
+  }
   const load = set.load[at];
   if (load === undefined) return Promise.reject(new RangeError(`The ${kind} piece ${at} does not exist.`));
   const made = attempt(load, kind, at, set.load.length).then((piece: WordsPiece) => indexLines(piece.rows, keyOfLine));
   held.set(at, made);
-  made.catch(() => held.delete(at));
+  remember(held, at);
+  made.catch(() => forget(held, at));
   return made;
 }
 
