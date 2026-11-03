@@ -6,7 +6,30 @@ All notable changes to this project are written here. The format follows
 
 ## [Unreleased]
 
+## [2.2.0] - 2026-11-03
+
+A minor version: the one change of behaviour is that a mistake which used to be quietly accepted now throws, and each of those is a call that had a typo or a wrong type in it.
+
+### Fixed
+
+- **A `mode` other than `"safe"` or `"unfiltered"` no longer takes the filter off.** `loadWords("あげちん", { mode: "Safe" })` returned the unfiltered words, and so did `"SAFE"`, `""`, `"unsafe"` and `"bogus"`, in `loadWords`, `loadCommonWords` and `readCommonWords`, while `findByMeaning` and `wordsWithKanji` read it the other way round. One check (`modeOf`) now runs at the top of every entry point and throws a `TypeError` for anything else; no mode at all is still safe.
+- `findByMeaning` finds the obvious word. The index kept the commonest twenty words that held a term, so `drink` never gave 飲む, `walk` gave 歩く eighth and `eat` gave 食べる fourth. It now keeps up to ten words with an exact gloss first (a word whose first gloss it is before one that has it later, aside text such as "(esp. cool or cold)" left out), then the commonest that merely hold the term, and `searchMeanings` ranks the same way. A test holds 36 common English words to the word each must give in its top three. The meaning index is 172 pieces (it was 173) and the one for what safe mode leaves out 9 (it was 10).
+- `gradeOf` and `levelOf` take exactly one character. `gradeOf(GRADES, "")` was 1, `levelOf(JLPT, "")` was `"N5"` and `gradeOf(GRADES, "一右")` was 1, because the lookup was a substring search; anything else than one kanji is now `null`.
+- A caller can no longer change what the next caller sees: `word.senses[0].glosses.push("X")` showed up in every later lookup of that word. A row and every list in it, and the lists in a `Words`, are frozen, and a change throws a `TypeError`. `withoutMarks`, `withoutWords`, `onlyWords` and `commonestFirst` still return new arrays.
+- `block` or `allow` given as a text (`block: "神"`) threw "list.map is not a function" from deep inside a lookup. They, and the lists the tools take, are checked first and throw a `TypeError` that names the option.
+
+### Changed
+
+- The pieces a process has read are kept up to 64 at a time (`cacheLimit` in `words-pieces.ts`), the one asked for longest ago let go. Looking up every piece once took a process from 49 MB to 266 MB. Words you have loaded are yours and stay.
+- The documentation says what a lookup costs: a kana guess is one piece of about 25 kB gzipped, a written form two in a row (about 57 kB), `findByMeaning("water")` about 8 files and 180 kB in three steps, `wordsWithKanji("山")` 9 files and 210 kB; a piece of rows is about 74 kB and a piece of the written-form index about 120 kB. It no longer says "a few kilobytes" or "at most about 100 kB". The main entry is 0.9 kB gzipped (it was 0.8).
+- `NOTICE.md` says that `package.json`'s `CC-BY-4.0` for Waller's JLPT lists is there because SPDX has no versionless "BY": his page names no version.
 - The README opens with the package's thumbnail, and the demo carries it as its link preview (og:image) and publishes the card, a dark card and an icon on Pages at `thumbnail.png`, `thumbnail-dark.png` and `icon.png`.
+
+### Added
+
+- `pnpm test:coverage` (`@vitest/coverage-v8`, a development dependency) fails below today's level: statements 99, branches 92, functions 98, lines 99 (measured 99.25, 92.11, 98.74 and 99.76). `pnpm check` runs it.
+- `AGENTS.md` names the demo's local port block, 8500 to 8599. The demo's Playwright tests draw in software and run one worker.
+- Tests for each of the above: every wrong spelling of `mode`, the golden set of English words, the frozen rows, the cache limit and the list options.
 
 ## [2.1.0] - 2026-11-03
 
