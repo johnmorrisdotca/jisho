@@ -14,7 +14,7 @@ import {
   SCHOOL_GRADES,
   searchKanji,
 } from "./dist/index.js";
-import { findByMeaning, kanjiOfWord, loadWords, wordsOf, wordsWithKanji } from "./dist/words.js";
+import { findByMeaning, inflectedOf, kanjiOfWord, loadWords, wordsWithKanji } from "./dist/words.js";
 
 const $ = (id) => document.getElementById(id);
 
@@ -38,7 +38,7 @@ const WORDS = {
     byMeaning: "English meaning",
     byKanji: "Kanji in it",
     byHelp:
-      "Reading or word: kana, romaji or kanji. English meaning: the commonest words whose meaning holds what you type. Kanji in it: the words written with a kanji.",
+      "Reading or word: kana, romaji or kanji, conjugated or not (食べなかった finds 食べる). English meaning: the commonest words whose meaning holds what you type. Kanji in it: the words written with a kanji.",
     wordKanjiOpen: "Open the kanji {kanji}",
     wordNoKanji: "There is no kanji in {text} to look up.",
     cardWords: "Words",
@@ -54,6 +54,7 @@ const WORDS = {
     wordLoading: "Looking up {text}…",
     wordFailed: "Could not look {text} up. Try again.",
     wordCommon: "common",
+    wordPath: "from {form}: {path}",
     wordReadAs: "read",
     wordPrompt: "Type a reading in kana or romaji, or a word in kanji.",
     wordPromptMeaning: "Type an English word or two, such as water or go out.",
@@ -115,7 +116,7 @@ const WORDS = {
     byMeaning: "英語の意味",
     byKanji: "含まれる漢字",
     byHelp:
-      "読みか単語：かな、ローマ字、漢字で引きます。英語の意味：入力した語を意味に含む、よく使う単語を探します。含まれる漢字：その漢字で書かれる単語を探します。",
+      "読みか単語：かな、ローマ字、漢字で引きます。活用した形（「食べなかった」で「食べる」）も引けます。英語の意味：入力した語を意味に含む、よく使う単語を探します。含まれる漢字：その漢字で書かれる単語を探します。",
     wordKanjiOpen: "漢字「{kanji}」を開く",
     wordNoKanji: "「{text}」には漢字が含まれていません。",
     cardWords: "単語",
@@ -131,6 +132,7 @@ const WORDS = {
     wordLoading: "「{text}」を調べています…",
     wordFailed: "「{text}」を調べられませんでした。もう一度お試しください。",
     wordCommon: "よく使う",
+    wordPath: "{form}から：{path}",
     wordReadAs: "読み",
     wordPrompt: "読みをかなやローマ字で、または単語を漢字で入力してください。",
     wordPromptMeaning: "英語の単語を一つか二つ入力してください（例：water、go out）。",
@@ -195,6 +197,45 @@ const t = (key, values = {}) => language.word(key).replace(/\{(\w+)\}/g, (_match
 const kanji = readKanji(KANJI);
 const byKanji = new Map(kanji.map((one) => [one.kanji, one]));
 
+/** What a path of conjugation is called in Japanese: the demo says each step in the language it speaks. */
+const PATH_JA = {
+  polite: "丁寧",
+  negative: "否定",
+  past: "過去",
+  te: "て形",
+  volitional: "意志",
+  "ba-conditional": "条件（ば）",
+  "tara-conditional": "条件（たら）",
+  tari: "たり",
+  passive: "受け身",
+  potential: "可能",
+  "potential or passive": "可能か受け身",
+  causative: "使役",
+  "want to": "たい",
+  "looks like": "そう",
+  "too much": "すぎる",
+  "easy to": "やすい",
+  "hard to": "にくい",
+  while: "ながら",
+  "polite command": "なさい",
+  adverbial: "副詞形",
+  plain: "だ",
+  continuous: "ている",
+  completed: "てしまう",
+  prepared: "ておく",
+  try: "てみる",
+  "go on": "ていく",
+  come: "てくる",
+  "given to me": "てくれる",
+  "given to another": "てあげる",
+  received: "てもらう",
+  request: "てください",
+};
+const pathText = (path) =>
+  path
+    .map((step) => (language.lang === "ja" ? (PATH_JA[step] ?? step) : step))
+    .join(language.lang === "ja" ? "、" : ", ");
+
 const query = new URLSearchParams(location.search);
 const state = {
   view: query.get("view") === "words" ? "words" : "kanji",
@@ -206,7 +247,7 @@ const state = {
   mode: query.get("mode") === "unfiltered" ? "unfiltered" : "safe",
 };
 const EXAMPLES = {
-  reading: ["かみ", "紙", "さくら", "ありがとう", "kami"],
+  reading: ["かみ", "紙", "さくら", "ありがとう", "食べなかった", "kami"],
   meaning: ["water", "dog", "go out", "paper", "thank you"],
   kanji: ["山", "日", "水", "語"],
 };
@@ -353,8 +394,9 @@ async function search(text) {
   const { by, mode } = state;
   if (by === "meaning") return { text, by, mode, words: await findByMeaning(text, { mode, limit: 20 }), release: "" };
   if (by === "kanji") return { text, by, mode, words: await wordsWithKanji(text, { mode, limit: 20 }), release: "" };
-  const loaded = await loadWords(text, { mode, romaji: true });
-  return { text, by, mode, words: wordsOf(loaded, text, { romaji: true }), release: loaded.release };
+  const loaded = await loadWords(text, { mode, romaji: true, inflected: true });
+  const words = inflectedOf(loaded, text, { romaji: true }).map((one) => ({ ...one.word, path: one.path }));
+  return { text, by, mode, words, release: loaded.release };
 }
 
 async function lookUp(text) {
@@ -396,6 +438,13 @@ function wordItem(word) {
   meaning.lang = "en";
   meaning.textContent = word.meaning;
   item.append(written, reading, meaning);
+  if (word.path?.length > 0) {
+    const path = document.createElement("p");
+    path.className = "jisho-path";
+    path.dataset.testid = "word-path";
+    path.textContent = t("wordPath", { form: word.written, path: pathText(word.path) });
+    item.append(path);
+  }
   const marks = [...new Set(word.senses.flatMap((sense) => sense.marks))].filter((mark) => mark !== "uk");
   if (marks.length > 0) {
     const tags = document.createElement("p");

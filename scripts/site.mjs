@@ -11,8 +11,9 @@ const ICON =
   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232f5d4a'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle' fill='white'%3E%E8%BE%9E%3C/text%3E%3C/svg%3E";
 
 const uses = [
-  `import { findByMeaning, loadWords, wordsOf, wordsWithKanji } from "@johnmorrisdotca/jisho/words";`,
+  `import { findByMeaning, findInflected, loadWords, wordsOf, wordsWithKanji } from "@johnmorrisdotca/jisho/words";`,
   `wordsOf(await loadWords("かみ"), "かみ")  // 紙, 神, 髪… with a meaning each; about 25 kB is fetched`,
+  `(await findInflected("食べなかった"))[0]  // 食べる, with the path negative, past`,
   `await findByMeaning("water")  // 水 and the commonest words whose meaning holds water`,
   `await wordsWithKanji("山")  // 山, 火山, 登山… the commonest words written with 山`,
   `import { gradeOf, kanjiOfLevel, lookAlikes, readKanji } from "@johnmorrisdotca/jisho";`,

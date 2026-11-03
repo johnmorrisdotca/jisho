@@ -6,7 +6,11 @@ import { takePictures } from "./readme-pictures-lib.mjs";
 const READY = 'html[data-ready="true"]';
 const address = (list, kanji, lang = "en") => `/?lang=${lang}&help=off&list=${list}&kanji=${encodeURIComponent(kanji)}`;
 
+// `node scripts/readme-pictures.mjs words-conjugated` takes only the subjects named; the other pictures are left as they are.
+const only = process.argv.length > 2 ? process.argv.slice(2) : undefined;
+
 await takePictures({
+  only,
   shots: [
     { subject: "hero", views: ["desk", "phone"], url: address("N5", "日"), height: 780, ready: READY },
     // Each list is a grid: a school year, and a level of the JLPT.
@@ -38,6 +42,14 @@ await takePictures({
       subject: "words",
       views: ["desk"],
       url: "/?lang=en&help=off&view=words&word=%E3%81%8B%E3%81%BF",
+      ready: '[data-testid="word-item"]',
+      target: "#words-view",
+    },
+    // A conjugated word found by its dictionary form: 食べなかった is 食べる, negative, past.
+    {
+      subject: "words-conjugated",
+      views: ["desk"],
+      url: "/?lang=en&help=off&view=words&word=%E9%A3%9F%E3%81%B9%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F",
       ready: '[data-testid="word-item"]',
       target: "#words-view",
     },

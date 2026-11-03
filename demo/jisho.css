@@ -132,6 +132,10 @@
 .jisho-reading {
   color: var(--muted);
 }
+.jisho-path {
+  font-size: 0.9rem;
+  font-style: italic;
+}
 .jisho-marks,
 .jisho-tag {
   font-size: 0.75rem;

@@ -147,6 +147,26 @@ test("a written form finds its reading: 紙 is かみ, and katakana finds what h
   await sound(page, errors);
 });
 
+test("a conjugated word finds its dictionary form and the path: 食べなかった is 食べる, negative, past", async ({
+  page,
+}) => {
+  const errors = await open(page, "?lang=en&view=words");
+  await lookUp(page, "食べなかった");
+  await expect(first(page)).toContainText("食べる");
+  await expect(first(page)).toContainText("eat");
+  await expect(first(page).getByTestId("word-path")).toHaveText("from 食べる: negative, past");
+  await lookUp(page, "高くなかったです");
+  await expect(first(page)).toContainText("高い");
+  await expect(first(page).getByTestId("word-path")).toHaveText("from 高い: negative, past, polite");
+  await lookUp(page, "紙");
+  await expect(page.getByTestId("word-path")).toHaveCount(0);
+  await tap(page.locator('[data-lang="ja"]'));
+  await lookUp(page, "食べなかった");
+  await expect(first(page).getByTestId("word-path")).toHaveText("食べるから：否定、過去");
+  await tap(page.locator('[data-lang="en"]'));
+  await sound(page, errors);
+});
+
 test("an example is a button that looks the word up", async ({ page }) => {
   const errors = await open(page, "?lang=en&view=words");
   await tap(page.getByTestId("examples").getByRole("button", { name: "さくら" }));
