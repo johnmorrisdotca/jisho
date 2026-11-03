@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The kanji table from unpkg</title>
+  </head>
+  <body>
+    <p id="kanji" lang="ja"></p>
+    <script type="module">
+      import { readKanji } from "https://unpkg.com/@johnmorrisdotca/jisho/dist/index.js";
+      import { KANJI } from "https://unpkg.com/@johnmorrisdotca/jisho/dist/data/kanji.data.js";
+
+      const mountain = readKanji(KANJI).find((one) => one.kanji === "山");
+      document.querySelector("#kanji").textContent = `${mountain.kanji}: ${mountain.strokes} strokes, ${mountain.meanings.join(", ")}`;
+    </script>
+  </body>
+</html>

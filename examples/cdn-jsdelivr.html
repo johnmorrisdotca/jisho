@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jisho from jsDelivr</title>
+  </head>
+  <body>
+    <ul id="words" lang="ja"></ul>
+    <script type="module">
+      import { loadWords, wordsOf } from "https://cdn.jsdelivr.net/npm/@johnmorrisdotca/jisho/dist/words.js";
+
+      const words = await loadWords("かみ");
+      const items = wordsOf(words, "かみ")
+        .slice(0, 5)
+        .map((one) => Object.assign(document.createElement("li"), { textContent: `${one.written} ${one.meaning}` }));
+      document.querySelector("#words").replaceChildren(...items);
+    </script>
+  </body>
+</html>
