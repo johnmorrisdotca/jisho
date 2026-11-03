@@ -8,7 +8,7 @@ description: "パッケージを入れ、単語を引き、学年とレベルを
 ## インストール
 
 ```sh
-npm install @johnmorrisdotca/moji
+npm install @johnmorrisdotca/jisho
 ```
 
 ## リストを読む
@@ -16,9 +16,9 @@ npm install @johnmorrisdotca/moji
 表はそれぞれ独立したエントリポイントなので、インポートしてもその表だけが読み込まれます。
 
 ```ts
-import {gradeOf,kanjiOfLevel} from "@johnmorrisdotca/moji";
-import {GRADES} from "@johnmorrisdotca/moji/grades";
-import {JLPT} from "@johnmorrisdotca/moji/jlpt";
+import {gradeOf,kanjiOfLevel} from "@johnmorrisdotca/jisho";
+import {GRADES} from "@johnmorrisdotca/jisho/grades";
+import {JLPT} from "@johnmorrisdotca/jisho/jlpt";
 console.log(gradeOf(GRADES,"語"));
 console.log(kanjiOfLevel(JLPT,"N5").length);
 ```
@@ -28,8 +28,8 @@ console.log(kanjiOfLevel(JLPT,"N5").length);
 `readKanji`は、保存された表を普通の行に変えます。ページで何度も調べるなら、一度だけ`Map`を作って残しておきます。
 
 ```ts
-import {readKanji} from "@johnmorrisdotca/moji";
-import {KANJI} from "@johnmorrisdotca/moji/kanji";
+import {readKanji} from "@johnmorrisdotca/jisho";
+import {KANJI} from "@johnmorrisdotca/jisho/kanji";
 const byKanji=new Map(readKanji(KANJI).map((one)=>[one.kanji,one]));
 console.log(byKanji.get("山")?.meanings);
 ```
@@ -39,7 +39,7 @@ console.log(byKanji.get("山")?.meanings);
 単語は小さなチャンクに分かれていて、引くときに必要なものだけを取得します。そのため`loadWords`は非同期で`await`が必要ですが、`wordsOf`はすぐに答えます。
 
 ```ts
-import {loadWords,wordsOf} from "@johnmorrisdotca/moji/words";
+import {loadWords,wordsOf} from "@johnmorrisdotca/jisho/words";
 const words=await loadWords("かみ");
 console.log(wordsOf(words,"かみ")[0]?.meaning);
 ```

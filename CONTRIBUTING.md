@@ -86,8 +86,8 @@ package, attaches the tarball to a GitHub release and publishes it to npm by
 trusted publishing, with provenance and no token. A version already on npm is
 not published again.
 
-## Particular to Moji
+## Particular to Jisho
 
-Bug reports and ideas go in the [issues](https://github.com/johnmorrisdotca/moji/issues).
+Bug reports and ideas go in the [issues](https://github.com/johnmorrisdotca/jisho/issues).
 
 The data in `src/data/` is machine output: `pnpm data` writes it from KANJIDIC2 and from `data-sources/`, `pnpm words` writes `src/data/words/` from JMdict, and a row is never edited by hand. A wrong grade or reading belongs with the source, and the [NOTICE](NOTICE.md) says where each one is kept. Nothing goes in from a commercial study service, or from any source whose terms do not clearly allow it.

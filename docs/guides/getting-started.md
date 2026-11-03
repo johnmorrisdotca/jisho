@@ -8,7 +8,7 @@ description: "Install the package, look a word up, read a grade and a level, and
 ## Install
 
 ```sh
-npm install @johnmorrisdotca/moji
+npm install @johnmorrisdotca/jisho
 ```
 
 ## Read a list
@@ -16,9 +16,9 @@ npm install @johnmorrisdotca/moji
 Each table is an entry point of its own, so an import loads only that table.
 
 ```ts
-import {gradeOf,kanjiOfLevel} from "@johnmorrisdotca/moji";
-import {GRADES} from "@johnmorrisdotca/moji/grades";
-import {JLPT} from "@johnmorrisdotca/moji/jlpt";
+import {gradeOf,kanjiOfLevel} from "@johnmorrisdotca/jisho";
+import {GRADES} from "@johnmorrisdotca/jisho/grades";
+import {JLPT} from "@johnmorrisdotca/jisho/jlpt";
 console.log(gradeOf(GRADES,"語"));
 console.log(kanjiOfLevel(JLPT,"N5").length);
 ```
@@ -28,8 +28,8 @@ console.log(kanjiOfLevel(JLPT,"N5").length);
 `readKanji` turns the stored table into plain rows. Build a `Map` once and keep it, if a page looks up more than a few.
 
 ```ts
-import {readKanji} from "@johnmorrisdotca/moji";
-import {KANJI} from "@johnmorrisdotca/moji/kanji";
+import {readKanji} from "@johnmorrisdotca/jisho";
+import {KANJI} from "@johnmorrisdotca/jisho/kanji";
 const byKanji=new Map(readKanji(KANJI).map((one)=>[one.kanji,one]));
 console.log(byKanji.get("山")?.meanings);
 ```
@@ -39,7 +39,7 @@ console.log(byKanji.get("山")?.meanings);
 Words are fetched in small pieces, only the ones a lookup needs, so `loadWords` waits and `wordsOf` does not.
 
 ```ts
-import {loadWords,wordsOf} from "@johnmorrisdotca/moji/words";
+import {loadWords,wordsOf} from "@johnmorrisdotca/jisho/words";
 const words=await loadWords("かみ");
 console.log(wordsOf(words,"かみ")[0]?.meaning);
 ```

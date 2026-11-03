@@ -1,36 +1,36 @@
-<h1 align="center">Moji <sub>文字</sub> — Japanese word and kanji data for JavaScript</h1>
+<h1 align="center">Jisho <sub>辞書</sub> — Japanese word and kanji data for JavaScript</h1>
 
-<p align="center"><strong>Moji 文字: Japanese word and kanji data for JavaScript: look words up by reading or written form, and read the school grades, JLPT levels, readings, meanings and look-alike pairs of 2,999 kanji.</strong><br>
+<p align="center"><strong>Jisho 辞書: Japanese word and kanji data for JavaScript: look words up by reading or written form, and read the school grades, JLPT levels, readings, meanings and look-alike pairs of 2,999 kanji.</strong><br>
 The words are JMdict's, in small pieces that a lookup fetches as it needs them, with everything that is not for children kept in files of their own, which are never fetched unless you ask. Every table is machine output from public sources, each named with its licence: JMdict and KANJIDIC2, Jonathan Waller's JLPT lists and Lars Yencken's kanji confusion datasets. Typed, with no dependencies, and a demo to try it in.</p>
 
 <p align="center" lang="ja">JavaScript向けの、日本語の単語と漢字のデータセットです。JMdictの単語を読みや表記から引け、必要な小さなチャンクだけを取得します。子ども向けでない語義は別のファイルに分けてあり、頼まない限り取得されません。2,999字の漢字の学年、JLPTレベル、読み、意味、形の似た漢字の組も収め、型付きで外部依存はありません。</p>
 
 <p align="center">
-  <a href="https://github.com/johnmorrisdotca/moji/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/johnmorrisdotca/moji/actions/workflows/ci.yml/badge.svg"></a>
-  <a href="https://www.npmjs.com/package/@johnmorrisdotca/moji"><img alt="npm" src="https://img.shields.io/npm/v/@johnmorrisdotca/moji?color=2f5d4a"></a>
+  <a href="https://github.com/johnmorrisdotca/jisho/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/johnmorrisdotca/jisho/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://www.npmjs.com/package/@johnmorrisdotca/jisho"><img alt="npm" src="https://img.shields.io/npm/v/@johnmorrisdotca/jisho?color=2f5d4a"></a>
   <a href="./LICENSE"><img alt="MIT licence" src="https://img.shields.io/badge/licence-MIT-2f5d4a"></a>
   <a href="./NOTICE.md"><img alt="Data keeps its own licences" src="https://img.shields.io/badge/data-CC%20BY--SA%20and%20CC%20BY-2f5d4a"></a>
   <img alt="No dependencies" src="https://img.shields.io/badge/dependencies-0-2f5d4a">
   <img alt="TypeScript" src="https://img.shields.io/badge/types-TypeScript-3178c6">
-  <a href="https://johnmorrisdotca.github.io/moji/docs/api/main/index.html"><img alt="0.8 kB minified and gzipped" src="https://img.shields.io/badge/min%2Bgzip-0.8%20kB-2f5d4a"></a>
-  <a href="https://www.npmjs.com/package/@johnmorrisdotca/moji#provenance"><img alt="Published with npm provenance" src="https://img.shields.io/badge/npm-provenance-2f5d4a"></a>
+  <a href="https://johnmorrisdotca.github.io/jisho/docs/api/main/index.html"><img alt="0.8 kB minified and gzipped" src="https://img.shields.io/badge/min%2Bgzip-0.8%20kB-2f5d4a"></a>
+  <a href="https://www.npmjs.com/package/@johnmorrisdotca/jisho#provenance"><img alt="Published with npm provenance" src="https://img.shields.io/badge/npm-provenance-2f5d4a"></a>
 </p>
 
-<p align="center"><a href="https://johnmorrisdotca.github.io/moji/"><strong>Try the demo →</strong></a> · <a href="https://johnmorrisdotca.github.io/moji/docs/">Documentation</a> · <a href="https://johnmorrisdotca.github.io/moji/docs/guides/getting-started.html">Getting started</a> · <a href="https://johnmorrisdotca.github.io/moji/api.html">API reference</a></p>
+<p align="center"><a href="https://johnmorrisdotca.github.io/jisho/"><strong>Try the demo →</strong></a> · <a href="https://johnmorrisdotca.github.io/jisho/docs/">Documentation</a> · <a href="https://johnmorrisdotca.github.io/jisho/docs/guides/getting-started.html">Getting started</a> · <a href="https://johnmorrisdotca.github.io/jisho/api.html">API reference</a></p>
 
 <table align="center">
 <tr>
 <td align="center" valign="top">
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/moji/main/docs/images/hero-desk-dark.webp">
-<img src="https://raw.githubusercontent.com/johnmorrisdotca/moji/main/docs/images/hero-desk-light.webp" alt="The demo on a desk: the header with its language chooser, buttons for nine school grades and five JLPT levels with N5 chosen, a search box, a grid of 79 kanji, and the card of 日 with its strokes, grade, level, readings and meanings." width="720">
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/hero-desk-dark.webp">
+<img src="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/hero-desk-light.webp" alt="The demo on a desk: the header with its language chooser, buttons for nine school grades and five JLPT levels with N5 chosen, a search box, a grid of 79 kanji, and the card of 日 with its strokes, grade, level, readings and meanings." width="720">
 </picture><br>
 <em>On a desk: JLPT N5, with 日 open beside its list.</em>
 </td>
 <td align="center" valign="top">
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/moji/main/docs/images/hero-phone-dark.webp">
-<img src="https://raw.githubusercontent.com/johnmorrisdotca/moji/main/docs/images/hero-phone-light.webp" alt="The same demo on a phone, one column: the header and the buttons for the lists at the top of a narrow page." width="220">
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/hero-phone-dark.webp">
+<img src="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/hero-phone-light.webp" alt="The same demo on a phone, one column: the header and the buttons for the lists at the top of a narrow page." width="220">
 </picture><br>
 <em>On a phone.</em>
 </td>
@@ -41,15 +41,15 @@ The words are JMdict's, in small pieces that a lookup fetches as it needs them, 
 ## In 30 seconds
 
 ```sh
-npm install @johnmorrisdotca/moji
+npm install @johnmorrisdotca/jisho
 ```
 
 ```ts
-import { gradeOf, levelOf, lookAlikes } from "@johnmorrisdotca/moji";
-import { GRADES } from "@johnmorrisdotca/moji/grades";
-import { JLPT } from "@johnmorrisdotca/moji/jlpt";
-import { LOOK_ALIKE } from "@johnmorrisdotca/moji/look-alike";
-import { loadWords, wordsOf } from "@johnmorrisdotca/moji/words";
+import { gradeOf, levelOf, lookAlikes } from "@johnmorrisdotca/jisho";
+import { GRADES } from "@johnmorrisdotca/jisho/grades";
+import { JLPT } from "@johnmorrisdotca/jisho/jlpt";
+import { LOOK_ALIKE } from "@johnmorrisdotca/jisho/look-alike";
+import { loadWords, wordsOf } from "@johnmorrisdotca/jisho/words";
 
 const words = await loadWords("かみ"); // fetches one small piece of the dictionary
 console.log(wordsOf(words, "かみ").slice(0, 3).map((one) => `${one.written} ${one.meaning}`)); // 紙 paper, 神 god…
@@ -83,15 +83,15 @@ console.log(lookAlikes(LOOK_ALIKE, "土")[0]?.kanji); // the closest look-alike 
 <tr>
 <td align="center" valign="top">
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/moji/main/docs/images/school-grade-desk-dark.webp">
-<img src="https://raw.githubusercontent.com/johnmorrisdotca/moji/main/docs/images/school-grade-desk-light.webp" alt="The 160 kanji of the second school year in a grid, 語 chosen, with its card beside the grid." width="360">
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/school-grade-desk-dark.webp">
+<img src="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/school-grade-desk-light.webp" alt="The 160 kanji of the second school year in a grid, 語 chosen, with its card beside the grid." width="360">
 </picture><br>
 <sub>A school year: grade 2's 160 kanji.</sub>
 </td>
 <td align="center" valign="top">
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/moji/main/docs/images/jlpt-level-desk-dark.webp">
-<img src="https://raw.githubusercontent.com/johnmorrisdotca/moji/main/docs/images/jlpt-level-desk-light.webp" alt="The first ten rows of the 367 kanji of JLPT N3, in the order of Waller's list, 政 chosen, with its card beside the grid." width="360">
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/jlpt-level-desk-dark.webp">
+<img src="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/jlpt-level-desk-light.webp" alt="The first ten rows of the 367 kanji of JLPT N3, in the order of Waller's list, 政 chosen, with its card beside the grid." width="360">
 </picture><br>
 <sub>A JLPT level: N3, in the order of the list.</sub>
 </td>
@@ -99,15 +99,15 @@ console.log(lookAlikes(LOOK_ALIKE, "土")[0]?.kanji); // the closest look-alike 
 <tr>
 <td align="center" valign="top">
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/moji/main/docs/images/kanji-card-desk-dark.webp">
-<img src="https://raw.githubusercontent.com/johnmorrisdotca/moji/main/docs/images/kanji-card-desk-light.webp" alt="The card of 山: three strokes, grade 1, level N5, its rank in newspapers, its readings サン, セン and やま, and its meaning in English and French." width="300">
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/kanji-card-desk-dark.webp">
+<img src="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/kanji-card-desk-light.webp" alt="The card of 山: three strokes, grade 1, level N5, its rank in newspapers, its readings サン, セン and やま, and its meaning in English and French." width="300">
 </picture><br>
 <sub>One kanji in full, from the table.</sub>
 </td>
 <td align="center" valign="top">
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/moji/main/docs/images/look-alike-desk-dark.webp">
-<img src="https://raw.githubusercontent.com/johnmorrisdotca/moji/main/docs/images/look-alike-desk-light.webp" alt="The card of 土, with a row of buttons for the kanji it looks like, 士 and 工 among them, each leading to that kanji." width="300">
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/look-alike-desk-dark.webp">
+<img src="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/look-alike-desk-light.webp" alt="The card of 土, with a row of buttons for the kanji it looks like, 士 and 工 among them, each leading to that kanji." width="300">
 </picture><br>
 <sub>What 土 can be mistaken for.</sub>
 </td>
@@ -115,15 +115,15 @@ console.log(lookAlikes(LOOK_ALIKE, "土")[0]?.kanji); // the closest look-alike 
 <tr>
 <td align="center" valign="top">
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/moji/main/docs/images/words-desk-dark.webp">
-<img src="https://raw.githubusercontent.com/johnmorrisdotca/moji/main/docs/images/words-desk-light.webp" alt="A lookup of かみ in the Words view: nine cards, 紙 paper, 神 god, 髪 hair and the rarer words, each with its reading and a mark where it is common, and Children chosen for who it is for." width="360">
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/words-desk-dark.webp">
+<img src="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/words-desk-light.webp" alt="A lookup of かみ in the Words view: nine cards, 紙 paper, 神 god, 髪 hair and the rarer words, each with its reading and a mark where it is common, and Children chosen for who it is for." width="360">
 </picture><br>
 <sub>A word by its reading: かみ is paper, god and hair.</sub>
 </td>
 <td align="center" valign="top">
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/moji/main/docs/images/search-desk-dark.webp">
-<img src="https://raw.githubusercontent.com/johnmorrisdotca/moji/main/docs/images/search-desk-light.webp" alt="A search for the word water: the grid holds the kanji with that meaning, the commonest first, and 山's card stays beside it." width="360">
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/search-desk-dark.webp">
+<img src="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/search-desk-light.webp" alt="A search for the word water: the grid holds the kanji with that meaning, the commonest first, and 山's card stays beside it." width="360">
 </picture><br>
 <sub>A search by meaning, the commonest first.</sub>
 </td>
@@ -135,31 +135,31 @@ console.log(lookAlikes(LOOK_ALIKE, "土")[0]?.kanji); // the closest look-alike 
 ### Install
 
 ```sh
-npm install @johnmorrisdotca/moji
-pnpm add @johnmorrisdotca/moji
-yarn add @johnmorrisdotca/moji
+npm install @johnmorrisdotca/jisho
+pnpm add @johnmorrisdotca/jisho
+yarn add @johnmorrisdotca/jisho
 ```
 
 For a page with no bundler:
 
 ```html
 <script type="module">
-  import { gradeOf } from "https://cdn.jsdelivr.net/npm/@johnmorrisdotca/moji@0/+esm";
-  import { GRADES } from "https://cdn.jsdelivr.net/npm/@johnmorrisdotca/moji@0/grades/+esm";
+  import { gradeOf } from "https://cdn.jsdelivr.net/npm/@johnmorrisdotca/jisho@1/+esm";
+  import { GRADES } from "https://cdn.jsdelivr.net/npm/@johnmorrisdotca/jisho@1/grades/+esm";
   console.log(gradeOf(GRADES, "語"));
 </script>
 ```
 
 ### Install under another name
 
-Moji is the Japanese name; the English job is kanji data. npm can install a package under a name of your own:
+Jisho is the Japanese name; the English job is Japanese word and kanji data. npm can install a package under a name of your own:
 
 ```sh
-npm install kanji-data@npm:@johnmorrisdotca/moji
+npm install japanese-data@npm:@johnmorrisdotca/jisho
 ```
 
 ```ts no-check
-import { gradeOf } from "kanji-data";
+import { gradeOf } from "japanese-data";
 ```
 
 ### On a server or in a script
@@ -167,8 +167,8 @@ import { gradeOf } from "kanji-data";
 Import the tables you read. Nothing here needs a browser or a network.
 
 ```ts
-import { kanjiOfGrade } from "@johnmorrisdotca/moji";
-import { GRADES } from "@johnmorrisdotca/moji/grades";
+import { kanjiOfGrade } from "@johnmorrisdotca/jisho";
+import { GRADES } from "@johnmorrisdotca/jisho/grades";
 
 console.log(kanjiOfGrade(GRADES, 1).slice(0, 5));
 ```
@@ -178,27 +178,27 @@ console.log(kanjiOfGrade(GRADES, 1).slice(0, 5));
 `loadWords` fetches the pieces of the dictionary that the texts you give it are in, and `wordsOf` then reads them with no waiting. Fetch them when a page needs them, not when it opens:
 
 ```ts
-const { loadWords, wordsOf } = await import("@johnmorrisdotca/moji/words");
+const { loadWords, wordsOf } = await import("@johnmorrisdotca/jisho/words");
 const words = await loadWords(["かみ", "紙"]);
 console.log(wordsOf(words, "紙")[0]?.meaning); // paper
 ```
 
 ```ts no-check
 // In a server, import it only where a lookup is made, and mark the package external:
-// next.config.ts: serverExternalPackages: ["@johnmorrisdotca/moji"]
-const { loadWords } = await import("@johnmorrisdotca/moji/words");
+// next.config.ts: serverExternalPackages: ["@johnmorrisdotca/jisho"]
+const { loadWords } = await import("@johnmorrisdotca/jisho/words");
 ```
 
-A bundler that follows `loadWords` reaches every piece, about 30 MB, so a server that imports `words` at the top of a page carries all of it. [Look words up](https://johnmorrisdotca.github.io/moji/docs/guides/words.html) says how to keep it out of a server's bundle, and how to look many common words up in one table.
+A bundler that follows `loadWords` reaches every piece, about 30 MB, so a server that imports `words` at the top of a page carries all of it. [Look words up](https://johnmorrisdotca.github.io/jisho/docs/guides/words.html) says how to keep it out of a server's bundle, and how to look many common words up in one table.
 
 ### In a page, when it is wanted
 
 The table of the kanji is the largest of the kanji, at 146 KB gzipped, so a page can fetch it when it is first needed:
 
 ```ts
-import { readKanji } from "@johnmorrisdotca/moji";
+import { readKanji } from "@johnmorrisdotca/jisho";
 
-const { KANJI } = await import("@johnmorrisdotca/moji/kanji");
+const { KANJI } = await import("@johnmorrisdotca/jisho/kanji");
 console.log(readKanji(KANJI).length); // 2999
 ```
 
@@ -209,7 +209,7 @@ console.log(readKanji(KANJI).length); // 2999
 A word game that takes any kana as a guess can say what it means. A reading shared by several words gives them commonest first, each with its written form.
 
 ```ts
-import { loadWords, wordsOf } from "@johnmorrisdotca/moji/words";
+import { loadWords, wordsOf } from "@johnmorrisdotca/jisho/words";
 
 const words = await loadWords("かみ");
 for (const one of wordsOf(words, "かみ").slice(0, 3)) console.log(one.written, one.reading, one.meaning);
@@ -220,7 +220,7 @@ for (const one of wordsOf(words, "かみ").slice(0, 3)) console.log(one.written,
 A text with anything but kana in it is looked up as a written form, and hiragana and katakana find the same words.
 
 ```ts
-import { loadWords, wordsOf } from "@johnmorrisdotca/moji/words";
+import { loadWords, wordsOf } from "@johnmorrisdotca/jisho/words";
 
 const words = await loadWords(["神", "カミ"]);
 console.log(wordsOf(words, "神").map((one) => one.reading).slice(0, 3)); // かみ, しん, じん…
@@ -232,7 +232,7 @@ console.log(wordsOf(words, "カミ")[0]?.written); // 紙
 A sense JMdict marks vulgar, X-rated, sensitive or derogatory is not in the files a lookup fetches unless the host says `forChildren: false`, and a word with nothing else to say is not found. The text is in a file of its own that is fetched only then.
 
 ```ts
-import { loadWords, meaningOf } from "@johnmorrisdotca/moji/words";
+import { loadWords, meaningOf } from "@johnmorrisdotca/jisho/words";
 
 const words = await loadWords("ほもびでお");
 console.log(meaningOf(words, "ほもびでお")); // null: nothing was fetched that says otherwise
@@ -244,7 +244,7 @@ console.log(meaningOf(everything, "ほもびでお")); // gay porn video, gay po
 ### Add to what is loaded
 
 ```ts
-import { loadWords, wordsOf } from "@johnmorrisdotca/moji/words";
+import { loadWords, wordsOf } from "@johnmorrisdotca/jisho/words";
 
 const first = await loadWords("かみ");
 const second = await loadWords("いぬ", { previous: first });
@@ -256,7 +256,7 @@ console.log(wordsOf(second, "いぬ")[0]?.written); // 犬
 The common words are one table of about 640 kB gzipped, for a page that looks up many and needs none of the rare ones.
 
 ```ts
-import { loadCommonWords, meaningOf } from "@johnmorrisdotca/moji/words";
+import { loadCommonWords, meaningOf } from "@johnmorrisdotca/jisho/words";
 
 const words = await loadCommonWords();
 console.log(meaningOf(words, "山")); // mountain
@@ -267,8 +267,8 @@ console.log(meaningOf(words, "山")); // mountain
 `ELEMENTARY_GRADES` is grades 1 to 6, and `JOYO_GRADES` adds the rest of the everyday kanji.
 
 ```ts
-import { ELEMENTARY_GRADES, JOYO_GRADES, kanjiOfGrade } from "@johnmorrisdotca/moji";
-import { GRADES } from "@johnmorrisdotca/moji/grades";
+import { ELEMENTARY_GRADES, JOYO_GRADES, kanjiOfGrade } from "@johnmorrisdotca/jisho";
+import { GRADES } from "@johnmorrisdotca/jisho/grades";
 
 console.log(ELEMENTARY_GRADES.flatMap((grade) => kanjiOfGrade(GRADES, grade)).length); // 1026
 console.log(JOYO_GRADES.flatMap((grade) => kanjiOfGrade(GRADES, grade)).length); // 2136
@@ -279,8 +279,8 @@ console.log(JOYO_GRADES.flatMap((grade) => kanjiOfGrade(GRADES, grade)).length);
 A level does not count the levels below it, and is in the order of Waller's list.
 
 ```ts
-import { kanjiOfLevel } from "@johnmorrisdotca/moji";
-import { JLPT } from "@johnmorrisdotca/moji/jlpt";
+import { kanjiOfLevel } from "@johnmorrisdotca/jisho";
+import { JLPT } from "@johnmorrisdotca/jisho/jlpt";
 
 console.log(kanjiOfLevel(JLPT, "N5").slice(0, 3)); // ["日", "一", "国"]
 ```
@@ -290,8 +290,8 @@ console.log(kanjiOfLevel(JLPT, "N5").slice(0, 3)); // ["日", "一", "国"]
 `kanjiIn` takes the kanji out of a text, once each.
 
 ```ts
-import { kanjiIn, levelOf } from "@johnmorrisdotca/moji";
-import { JLPT } from "@johnmorrisdotca/moji/jlpt";
+import { kanjiIn, levelOf } from "@johnmorrisdotca/jisho";
+import { JLPT } from "@johnmorrisdotca/jisho/jlpt";
 
 console.log(kanjiIn("日本語を勉強します").map((one) => [one, levelOf(JLPT, one)]));
 ```
@@ -301,8 +301,8 @@ console.log(kanjiIn("日本語を勉強します").map((one) => [one, levelOf(JL
 Build a `Map` once if a page looks up more than a few.
 
 ```ts
-import { readKanji } from "@johnmorrisdotca/moji";
-import { KANJI } from "@johnmorrisdotca/moji/kanji";
+import { readKanji } from "@johnmorrisdotca/jisho";
+import { KANJI } from "@johnmorrisdotca/jisho/kanji";
 
 const byKanji = new Map(readKanji(KANJI).map((one) => [one.kanji, one]));
 const mountain = byKanji.get("山");
@@ -314,8 +314,8 @@ console.log(mountain?.strokes, mountain?.on, mountain?.kun, mountain?.meanings, 
 A kanji, an on or kun reading, or a meaning in English or French.
 
 ```ts
-import { readKanji, searchKanji } from "@johnmorrisdotca/moji";
-import { KANJI } from "@johnmorrisdotca/moji/kanji";
+import { readKanji, searchKanji } from "@johnmorrisdotca/jisho";
+import { KANJI } from "@johnmorrisdotca/jisho/kanji";
 
 console.log(searchKanji(readKanji(KANJI), "mountain")[0]?.kanji); // 山
 ```
@@ -325,8 +325,8 @@ console.log(searchKanji(readKanji(KANJI), "mountain")[0]?.kanji); // 山
 The score to start from, and how many to take, are yours.
 
 ```ts
-import { lookAlikes } from "@johnmorrisdotca/moji";
-import { LOOK_ALIKE } from "@johnmorrisdotca/moji/look-alike";
+import { lookAlikes } from "@johnmorrisdotca/jisho";
+import { LOOK_ALIKE } from "@johnmorrisdotca/jisho/look-alike";
 
 console.log(lookAlikes(LOOK_ALIKE, "土", { max: 3 }));
 console.log(lookAlikes(LOOK_ALIKE, "千", { atLeast: 60 }).map((one) => one.kanji));
@@ -337,9 +337,9 @@ console.log(lookAlikes(LOOK_ALIKE, "千", { atLeast: 60 }).map((one) => one.kanj
 A quiz can offer the kanji most like the right one, and fall back on the same grade when there are too few.
 
 ```ts
-import { gradeOf, kanjiOfGrade, lookAlikes } from "@johnmorrisdotca/moji";
-import { GRADES } from "@johnmorrisdotca/moji/grades";
-import { LOOK_ALIKE } from "@johnmorrisdotca/moji/look-alike";
+import { gradeOf, kanjiOfGrade, lookAlikes } from "@johnmorrisdotca/jisho";
+import { GRADES } from "@johnmorrisdotca/jisho/grades";
+import { LOOK_ALIKE } from "@johnmorrisdotca/jisho/look-alike";
 
 const right = "未";
 const alike = lookAlikes(LOOK_ALIKE, right, { max: 3 }).map((one) => one.kanji);
@@ -415,22 +415,22 @@ From Jonathan Waller's [JLPT Resources](http://www.tanos.co.uk/jlpt/), under CC 
 
 7,211 pairs from Lars Yencken's [kanji confusion datasets](https://lars.yencken.org/datasets/kanji-confusion/), under CC BY 3.0, each with two scores out of 100: by how few stroke edits separate two kanji, and by the parts they share. A pair is kept at 60 or more by strokes, or 70 or more by parts, and `lookAlikes` answers from 70 unless told otherwise.
 
-The two measures cover only the 1,945 jōyō kanji of before 2010, and keep only ten for each kanji, so an empty answer does not say a kanji has no look-alike. No pair is added by hand: see [how the pairs are measured](https://johnmorrisdotca.github.io/moji/docs/guides/look-alike.html).
+The two measures cover only the 1,945 jōyō kanji of before 2010, and keep only ten for each kanji, so an empty answer does not say a kanji has no look-alike. No pair is added by hand: see [how the pairs are measured](https://johnmorrisdotca.github.io/jisho/docs/guides/look-alike.html).
 
 ## API
 
-The [API reference](https://johnmorrisdotca.github.io/moji/api.html) lists every export of every entry point, made from the source, and the [documentation](https://johnmorrisdotca.github.io/moji/docs/) gives each its own page.
+The [API reference](https://johnmorrisdotca.github.io/jisho/api.html) lists every export of every entry point, made from the source, and the [documentation](https://johnmorrisdotca.github.io/jisho/docs/) gives each its own page.
 
 | Entry point | What it holds |
 | --- | --- |
-| `@johnmorrisdotca/moji` | The types and the functions that read the tables. No data |
-| `@johnmorrisdotca/moji/grades` | `GRADES`: each school grade's kanji |
-| `@johnmorrisdotca/moji/jlpt` | `JLPT`: each level's kanji |
-| `@johnmorrisdotca/moji/kanji` | `KANJI`: the table, read with `readKanji` |
-| `@johnmorrisdotca/moji/look-alike` | `LOOK_ALIKE`: the pairs, read with `lookAlikes` |
-| `@johnmorrisdotca/moji/words` | `loadWords`, `loadCommonWords` and `wordsOf`: the words, in pieces fetched as needed |
-| `@johnmorrisdotca/moji/words-common` | `COMMON_WORDS`: the 26,039 common words fit for children, read with `readCommonWords` |
-| `@johnmorrisdotca/moji/words-common-extra` | `COMMON_EXTRA`: what to add to them to have every common word, for a host that asks for everything |
+| `@johnmorrisdotca/jisho` | The types and the functions that read the tables. No data |
+| `@johnmorrisdotca/jisho/grades` | `GRADES`: each school grade's kanji |
+| `@johnmorrisdotca/jisho/jlpt` | `JLPT`: each level's kanji |
+| `@johnmorrisdotca/jisho/kanji` | `KANJI`: the table, read with `readKanji` |
+| `@johnmorrisdotca/jisho/look-alike` | `LOOK_ALIKE`: the pairs, read with `lookAlikes` |
+| `@johnmorrisdotca/jisho/words` | `loadWords`, `loadCommonWords` and `wordsOf`: the words, in pieces fetched as needed |
+| `@johnmorrisdotca/jisho/words-common` | `COMMON_WORDS`: the 26,039 common words fit for children, read with `readCommonWords` |
+| `@johnmorrisdotca/jisho/words-common-extra` | `COMMON_EXTRA`: what to add to them to have every common word, for a host that asks for everything |
 
 ### The calls to learn first
 
@@ -455,7 +455,7 @@ The package draws nothing, so there is nothing of its own to theme: it hands bac
 - Meanings are English only, from JMdict_e, and short: two senses at most, cut at about 60 characters. They are a gloss to show beside a word, not JMdict's whole entry.
 - What is not for children is kept out of the files a default lookup fetches, so it never reaches a browser that did not ask for it. It is still in the package (`extra.data` and `common-extra.data`), so anybody who installs it or asks for those files can read it. A sense JMdict has not marked is not left out: the marks are JMdict's and are not complete.
 - A lookup is exact: no inflected form (食べた finds nothing, 食べる does), no search by meaning and no romaji.
-- The dictionary is about 30 MB in all. A server that bundles `words` carries it; see [Look words up](https://johnmorrisdotca.github.io/moji/docs/guides/words.html).
+- The dictionary is about 30 MB in all. A server that bundles `words` carries it; see [Look words up](https://johnmorrisdotca.github.io/jisho/docs/guides/words.html).
 - 2,999 kanji: those with a school grade in KANJIDIC2. Rarer kanji have no row.
 - The JLPT levels are one person's lists, not the test's.
 - The look-alike pairs cover the 1,945 jōyō kanji of before 2010: the 196 added in 2010 and nearly all the kanji for names have none.
@@ -486,7 +486,7 @@ The main entry holds types and plain functions and no data; each table is an ent
 
 ## The name
 
-Moji (文字, *moji*) is Japanese for a written character: 文, writing, and 字, a character. It is the second half of Kumimoji (組み文字), another of the family.
+Jisho (辞書, *jisho*) is Japanese for a dictionary. This one holds Japanese words and kanji.
 
 ## Where it comes from, and where it is used
 
@@ -498,12 +498,12 @@ Made from public sources by `scripts/build-data.mjs` and `scripts/build-words.mj
 
 ### Used by
 
-Nothing yet. [Tell us](https://github.com/johnmorrisdotca/moji/issues/new?template=add-my-project.md) if you use it.
+Nothing yet. [Tell us](https://github.com/johnmorrisdotca/jisho/issues/new?template=add-my-project.md) if you use it.
 
 ### The family
 
 <!-- family:start (made by scripts/family-readme.mjs from scripts/family-template.mjs; change those, not this) -->
-Moji is one of thirty-three packages, each made for the same site, each at
+Jisho is one of thirty-three packages, each made for the same site, each at
 [github.com/johnmorrisdotca](https://github.com/johnmorrisdotca) or [github.com/spxis](https://github.com/spxis). The code of every one is MIT.
 
 **Games — board**
@@ -541,8 +541,8 @@ Moji is one of thirty-three packages, each made for the same site, each at
 **Language**
 
 - [Bushu](https://github.com/johnmorrisdotca/bushu) (部首): find a kanji by the parts it is made of. [Demo](https://johnmorrisdotca.github.io/bushu/).
-- [Moji](https://github.com/johnmorrisdotca/moji) (文字): school grades, JLPT levels, readings and look-alike pairs for 2,999 kanji. [Demo](https://johnmorrisdotca.github.io/moji/). Not on npm yet.
 - [Hikidashi](https://github.com/johnmorrisdotca/hikidashi) (引き出し): a drawer of small Japanese text tools: era dates, kanji numerals, readings and sentence difficulty. [Demo](https://johnmorrisdotca.github.io/hikidashi/).
+- [Jisho](https://github.com/johnmorrisdotca/jisho) (辞書): Japanese words looked up by reading or written form, and the grades, JLPT levels, readings and look-alike pairs of 2,999 kanji. [Demo](https://johnmorrisdotca.github.io/jisho/). Not on npm yet.
 - [Kotoba](https://github.com/johnmorrisdotca/kotoba) (言葉): word lists and word-game rules in English, French, German and Japanese. [Demo](https://johnmorrisdotca.github.io/kotoba/).
 
 **Geography & data**
@@ -564,7 +564,7 @@ Moji is one of thirty-three packages, each made for the same site, each at
 - [REST in Pieces](https://github.com/spxis/rest-in-pieces) (レスト・イン・ピーシーズ): seeded test data and REST APIs for frontend development, with latency and error drills. [Demo](https://spxis.github.io/rest-in-pieces/).
 
 
-**This package is Moji.** The demos of all thirty-three share one header and footer, so each links the rest.
+**This package is Jisho.** The demos of all thirty-three share one header and footer, so each links the rest.
 <!-- family:end -->
 
 ## Development
@@ -581,7 +581,7 @@ pnpm screenshots:readme # take this README's pictures again
 
 ## Contributing
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md). Bugs and ideas go in the [issues](https://github.com/johnmorrisdotca/moji/issues). A wrong grade, reading or level is usually the source's to fix: say which one you think is wrong.
+Read [CONTRIBUTING.md](CONTRIBUTING.md). Bugs and ideas go in the [issues](https://github.com/johnmorrisdotca/jisho/issues). A wrong grade, reading or level is usually the source's to fix: say which one you think is wrong.
 
 ## Changes
 

@@ -46,7 +46,7 @@
 const OWNER = "johnmorrisdotca";
 
 /** The day this file was last changed, in every repository at once. A test records the file's hash beside it. */
-export const FAMILY_TEMPLATE_VERSION = "2026-10-15d";
+export const FAMILY_TEMPLATE_VERSION = "2026-11-02";
 
 /** The packages, in the order the footer lists them. `kana` is the name as it is written in Japanese. */
 export const FAMILY = [
@@ -71,7 +71,7 @@ export const FAMILY = [
   { id: "korokoro", name: "Korokoro", kana: "コロコロ" },
   { id: "tane", name: "Tane", kana: "種" },
   { id: "bushu", name: "Bushu", kana: "部首" },
-  { id: "moji", name: "Moji", kana: "文字" },
+  { id: "jisho", name: "Jisho", kana: "辞書" },
   { id: "hikidashi", name: "Hikidashi", kana: "引き出し" },
   { id: "kotoba", name: "Kotoba", kana: "言葉" },
   { id: "address-plus", name: "address-plus", kana: "アドレスプラス", repo: "https://github.com/johnmorrisdotca/address-plus", site: "https://johnmorrisdotca.github.io/address-plus/" },
@@ -91,7 +91,7 @@ export const FAMILY_GROUPS = [
   { id: "cards", en: "Games — cards & tiles", ja: "カードと牌のゲーム", members: ["hitotsu", "jarajara", "kumimoji", "toranpu"] },
   { id: "puzzles", en: "Games — puzzles", ja: "パズルゲーム", members: ["houseki", "jirai", "karakuri", "kazu", "kyuubu", "meikyuu", "suido", "tobiishi", "tsunagi"] },
   { id: "random", en: "Games — dice & random", ja: "ダイスと乱数", members: ["korokoro", "tane"] },
-  { id: "language", en: "Language", ja: "ことばと文字", members: ["bushu", "moji", "hikidashi", "kotoba"] },
+  { id: "language", en: "Language", ja: "ことばと文字", members: ["bushu", "hikidashi", "jisho", "kotoba"] },
   { id: "geography", en: "Geography & data", ja: "地理とデータ", members: ["address-plus", "chizu", "hata", "kuni"] },
   { id: "sports", en: "Sports", ja: "スポーツ", members: ["dougu-sports", "kyogijo-stadiums", "senshu-jerseys", "taisen-brackets"] },
   { id: "developer", en: "Developer tools", ja: "開発ツール", members: ["rest-in-pieces"] },
@@ -101,7 +101,7 @@ export const FAMILY_GROUPS = [
  * The packages of FAMILY that are not on npm yet. Such a package's header has no npm pill, its footer says so in
  * place of the install line, and the README's line on it ends "Not on npm yet." Take the id out the day it is published.
  */
-export const FAMILY_NOT_ON_NPM = ["moji"];
+export const FAMILY_NOT_ON_NPM = ["jisho"];
 
 /**
  * One line on each package, for the README's "The family" block: lower case, no full stop, no number that can
@@ -128,7 +128,7 @@ export const FAMILY_PITCH = {
   hikidashi: "a drawer of small Japanese text tools: era dates, kanji numerals, readings and sentence difficulty",
   chizu: "maps of the world and of countries' regions, in English and Japanese, with a quiz and callouts",
   bushu: "find a kanji by the parts it is made of",
-  moji: "school grades, JLPT levels, readings and look-alike pairs for 2,999 kanji",
+  jisho: "Japanese words looked up by reading or written form, and the grades, JLPT levels, readings and look-alike pairs of 2,999 kanji",
   tobiishi: "peg solitaire with nine boards and seeded solvable challenges",
   jirai: "minesweeper on shaped grids with verified no-guess boards",
   gunjin: "five hidden-rank strategy games with pass-the-device play",
@@ -147,7 +147,7 @@ export const FAMILY_PITCH = {
 /** Japanese pitches for the new geography and developer members; awaiting native review. */
 export const FAMILY_PITCH_JA = {
   "address-plus": "アメリカ、カナダ、日本、オーストラリア、フランス、ドイツ、イギリスの住所を解析・整形",
-  moji: "2,999字の漢字の学年、JLPTレベル、読み、形の似た漢字の組",
+  jisho: "日本語の単語を読みや表記から引け、2,999字の漢字の学年、JLPTレベル、読み、形の似た漢字の組も収録",
   "hata": "国と行政区画の旗を、実際の縦横比のSVGで収録。ISOコードで引けます",
   "kuni": "世界の国と行政区画を、ISOコードと英語・日本語の名称つきで収録",
   "rest-in-pieces": "フロントエンド開発向けの、シード値で固定できるテストデータとREST API（遅延・エラーの再現つき）",

@@ -7,7 +7,7 @@ const site = join(dirname(fileURLToPath(import.meta.url)), "..", "site");
 async function serve(page) {
   const errors = [];
   page.on("pageerror", (error) => errors.push(error.message));
-  await page.route("http://moji.test/**", (route) => {
+  await page.route("http://jisho.test/**", (route) => {
     const { pathname } = new URL(route.request().url());
     const file = join(site, pathname.endsWith("/") ? `${pathname}index.html` : pathname);
     if (!existsSync(file)) return route.fulfill({ status: 404, body: "" });
@@ -21,7 +21,7 @@ async function serve(page) {
 for (const path of ["/"]) {
   test(`Docs follows the selected language on ${path}`, async ({ page }) => {
     const errors = await serve(page);
-    await page.goto(`http://moji.test${path}?lang=ja&seed=42`);
+    await page.goto(`http://jisho.test${path}?lang=ja&seed=42`);
     const docs = page.locator('[data-say="pageDocs"]');
     await expect(docs).toHaveText("ドキュメント");
     await expect(docs).toHaveAttribute("href", "docs/ja/index.html");
@@ -29,15 +29,15 @@ for (const path of ["/"]) {
     await expect(docs).toHaveAttribute("href", "docs/index.html");
     await page.locator('button[data-lang="ja"]').click();
     await docs.click();
-    await expect(page).toHaveURL("http://moji.test/docs/ja/index.html");
+    await expect(page).toHaveURL("http://jisho.test/docs/ja/index.html");
     await expect(page.locator("html")).toHaveAttribute("lang", "ja");
     expect(errors).toEqual([]);
   });
 }
 test("API anchors lead through a reference and back to the native table", async ({ page }) => {
   const errors = await serve(page);
-  await page.goto("http://moji.test/api.html");
-  await expect(page.locator("h1")).toHaveText("Moji API: every export");
+  await page.goto("http://jisho.test/api.html");
+  await expect(page.locator("h1")).toHaveText("Jisho API: every export");
   expect(await page.locator("article[id]").count()).toBeGreaterThan(20);
   await page.locator("#main-lookAlikes h3 a").click();
   await expect(page.locator("h1")).toContainText("lookAlikes");

@@ -12,7 +12,7 @@ import { MANIFEST } from "./data/words/manifest.data.ts";
  *
  * @example
  * ```ts
- * import type { PackedWords } from "@johnmorrisdotca/moji/words";
+ * import type { PackedWords } from "@johnmorrisdotca/jisho/words";
  *
  * const table: PackedWords = { source: "JMdict", release: "2026-11-02", rows: ["かみ\t紙\tpaper\tC"] };
  * console.log(table.rows.length);
@@ -33,7 +33,7 @@ export type PackedWords = {
  *
  * @example
  * ```ts
- * import type { PackedPatch } from "@johnmorrisdotca/moji/words";
+ * import type { PackedPatch } from "@johnmorrisdotca/jisho/words";
  *
  * const patch: PackedPatch = { source: "JMdict", release: "2026-11-02", edits: ["0\ti\tあ\t\tah\tC"] };
  * console.log(patch.edits.length);
@@ -51,7 +51,7 @@ export type PackedPatch = {
  *
  * @example
  * ```ts
- * import type { WordsExtra } from "@johnmorrisdotca/moji/words";
+ * import type { WordsExtra } from "@johnmorrisdotca/jisho/words";
  *
  * const extra: WordsExtra = { source: "JMdict", release: "2026-11-02", rowCount: 0, rows: [], forms: [] };
  * console.log(extra.rowCount);
@@ -73,7 +73,7 @@ export type WordsExtra = {
  *
  * @example
  * ```ts
- * import type { WordsPiece } from "@johnmorrisdotca/moji/words";
+ * import type { WordsPiece } from "@johnmorrisdotca/jisho/words";
  *
  * const piece: WordsPiece = { rows: ["かみ\t紙\tpaper\tC"] };
  * console.log(piece.rows.length);
@@ -90,7 +90,7 @@ export type WordsPiece = {
  *
  * @example
  * ```ts
- * import type { PieceSet } from "@johnmorrisdotca/moji/words";
+ * import type { PieceSet } from "@johnmorrisdotca/jisho/words";
  *
  * const set: PieceSet = { starts: [""], load: [async () => ({ rows: [] })] };
  * console.log(set.starts.length);
@@ -106,7 +106,7 @@ export type PieceSet = {
  *
  * @example
  * ```ts
- * import type { WordsManifest } from "@johnmorrisdotca/moji/words";
+ * import type { WordsManifest } from "@johnmorrisdotca/jisho/words";
  *
  * const empty: WordsManifest["readings"] = { starts: [""], load: [async () => ({ rows: [] })] };
  * console.log(empty.starts);
@@ -128,7 +128,7 @@ export type WordsManifest = {
  *
  * @example
  * ```ts
- * import type { Word } from "@johnmorrisdotca/moji/words";
+ * import type { Word } from "@johnmorrisdotca/jisho/words";
  *
  * const word: Word = { written: "紙", reading: "かみ", forms: ["紙"], meaning: "paper", kinds: "", common: true };
  * console.log(word.meaning);
@@ -154,7 +154,7 @@ export type Word = {
  *
  * @example
  * ```ts
- * import { readRow } from "@johnmorrisdotca/moji/words";
+ * import { readRow } from "@johnmorrisdotca/jisho/words";
  *
  * console.log(readRow("かみ\t紙\tpaper\tC").reading);
  * ```
@@ -173,7 +173,7 @@ export type WordRow = {
  *
  * @example
  * ```ts
- * import type { Words } from "@johnmorrisdotca/moji/words";
+ * import type { Words } from "@johnmorrisdotca/jisho/words";
  *
  * const read = (words: Words) => words.release;
  * console.log(typeof read);
@@ -195,7 +195,7 @@ export type Words = {
  *
  * @example
  * ```ts
- * import type { WordsOptions } from "@johnmorrisdotca/moji/words";
+ * import type { WordsOptions } from "@johnmorrisdotca/jisho/words";
  *
  * const adults: WordsOptions = { forChildren: false };
  * console.log(adults.forChildren);
@@ -215,7 +215,7 @@ export type WordsOptions = {
  *
  * @example
  * ```ts
- * import type { LoadWordsOptions } from "@johnmorrisdotca/moji/words";
+ * import type { LoadWordsOptions } from "@johnmorrisdotca/jisho/words";
  *
  * const options: LoadWordsOptions = { forChildren: true };
  * console.log(options.forChildren);
@@ -235,7 +235,7 @@ const KANA = /^[ぁ-ゖゝ-ゟァ-ヺ・-ヿ]+$/;
  * @returns The text with each katakana changed to the hiragana of the same sound.
  * @example
  * ```ts
- * import { foldKana } from "@johnmorrisdotca/moji/words";
+ * import { foldKana } from "@johnmorrisdotca/jisho/words";
  *
  * console.log(foldKana("カミ")); // かみ
  * ```
@@ -261,7 +261,7 @@ function keyOf(text: string): string {
  * @returns The row.
  * @example
  * ```ts
- * import { readRow } from "@johnmorrisdotca/moji/words";
+ * import { readRow } from "@johnmorrisdotca/jisho/words";
  *
  * console.log(readRow("かみ\t紙\tpaper\tC").forms); // ["紙"]
  * ```
@@ -296,7 +296,7 @@ function shown(row: WordRow): string {
  *   were loaded for.
  * @example
  * ```ts
- * import { loadWords, wordsOf } from "@johnmorrisdotca/moji/words";
+ * import { loadWords, wordsOf } from "@johnmorrisdotca/jisho/words";
  *
  * const words = await loadWords(["かみ"]);
  * console.log(wordsOf(words, "かみ").slice(0, 3).map((one) => `${one.written} ${one.meaning}`));
@@ -329,7 +329,7 @@ export function wordsOf(words: Words, text: string): Word[] {
  * @returns The meaning, or null.
  * @example
  * ```ts
- * import { loadWords, meaningOf } from "@johnmorrisdotca/moji/words";
+ * import { loadWords, meaningOf } from "@johnmorrisdotca/jisho/words";
  *
  * console.log(meaningOf(await loadWords(["紙"]), "紙")); // paper
  * ```
@@ -346,7 +346,7 @@ export function meaningOf(words: Words, text: string): string | null {
  * @returns True when `wordsOf` will answer. A common table answers for every text.
  * @example
  * ```ts
- * import { isLoaded, loadWords } from "@johnmorrisdotca/moji/words";
+ * import { isLoaded, loadWords } from "@johnmorrisdotca/jisho/words";
  *
  * console.log(isLoaded(await loadWords(["かみ"]), "かみ")); // true
  * ```
@@ -362,7 +362,7 @@ export function isLoaded(words: Words, text: string): boolean {
  * @returns The words.
  * @example
  * ```ts
- * import { allWords, loadCommonWords } from "@johnmorrisdotca/moji/words";
+ * import { allWords, loadCommonWords } from "@johnmorrisdotca/jisho/words";
  *
  * console.log(allWords(await loadCommonWords()).length); // about 26,000
  * ```
@@ -414,15 +414,15 @@ function patchedRows(rows: readonly string[], patch: PackedPatch): string[] {
  * Only the common words are in it, so a reading shared with a rare word finds the common ones alone.
  *
  * The table holds only what is fit for children. To have everything, pass `forChildren: false` and `extra`, the table that says
- * what to add and change (`COMMON_EXTRA`, from `@johnmorrisdotca/moji/words-common-extra`); without it that is a mistake and throws.
+ * what to add and change (`COMMON_EXTRA`, from `@johnmorrisdotca/jisho/words-common-extra`); without it that is a mistake and throws.
  *
- * @param table - `COMMON_WORDS`, from `@johnmorrisdotca/moji/words-common`.
+ * @param table - `COMMON_WORDS`, from `@johnmorrisdotca/jisho/words-common`.
  * @param options - `forChildren`, true unless you say false, and for false the `extra` table.
  * @returns The words, ready for `wordsOf`.
  * @example
  * ```ts
- * import { readCommonWords, wordsOf } from "@johnmorrisdotca/moji/words";
- * import { COMMON_WORDS } from "@johnmorrisdotca/moji/words-common";
+ * import { readCommonWords, wordsOf } from "@johnmorrisdotca/jisho/words";
+ * import { COMMON_WORDS } from "@johnmorrisdotca/jisho/words-common";
  *
  * console.log(wordsOf(readCommonWords(COMMON_WORDS), "紙")[0]?.meaning); // paper
  * ```
@@ -458,7 +458,7 @@ export function readCommonWords(
  * @returns The common words, ready for `wordsOf`.
  * @example
  * ```ts
- * import { loadCommonWords, wordsOf } from "@johnmorrisdotca/moji/words";
+ * import { loadCommonWords, wordsOf } from "@johnmorrisdotca/jisho/words";
  *
  * console.log(wordsOf(await loadCommonWords(), "かみ").map((one) => one.written)); // ["紙", "神", ...]
  * ```
@@ -556,7 +556,7 @@ function extraPieces() {
  * @returns The words, ready for `wordsOf`.
  * @example
  * ```ts
- * import { loadWords, wordsOf } from "@johnmorrisdotca/moji/words";
+ * import { loadWords, wordsOf } from "@johnmorrisdotca/jisho/words";
  *
  * const words = await loadWords(["かみ", "紙"]);
  * console.log(wordsOf(words, "かみ").map((one) => one.written)); // ["紙", "神", "髪", ...]

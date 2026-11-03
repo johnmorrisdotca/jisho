@@ -6,6 +6,10 @@ All notable changes to this project are written here. The format follows
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-11-02
+
+This package was published as `@johnmorrisdotca/moji` 0.1.x until now. Its entries are kept below as history.
+
 ### Added
 
 - Words (`/words`): `loadWords`, `wordsOf` and `meaningOf` look up the words of JMdict by reading (かみ: 紙 paper, 神 god, 髪 hair) or by written form (紙), each with a short English meaning, commonest first. The rows are cut into 254 pieces by reading and 71 of an index of written forms, and a lookup fetches only the pieces it needs, about 25 kB gzipped each. `loadWords` adds to words already loaded with `previous`, and `wordsOf` says when a text was not loaded instead of answering with no words.
@@ -17,7 +21,7 @@ All notable changes to this project are written here. The format follows
 
 ### Changed
 
-- The package is described as Japanese word and kanji data; the README, the guides and the package description say so.
+- The package is Jisho 辞書, a dictionary of Japanese words and kanji: its name, address (`github.com/johnmorrisdotca/jisho`), demo (`johnmorrisdotca.github.io/jisho/`), description, README and guides say so.
 
 ## [0.1.1] - 2026-11-02
 

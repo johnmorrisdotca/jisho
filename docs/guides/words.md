@@ -10,7 +10,7 @@ description: "Find a word by its reading or its written form, keep the senses no
 `loadWords` fetches what JMdict holds for the texts you give it, and nothing else. `wordsOf` then reads them with no waiting.
 
 ```ts
-import {loadWords,wordsOf} from "@johnmorrisdotca/moji/words";
+import {loadWords,wordsOf} from "@johnmorrisdotca/jisho/words";
 const words=await loadWords(["かみ","紙"]);
 console.log(wordsOf(words,"かみ").slice(0,3).map((one)=>`${one.written} ${one.meaning}`));
 console.log(wordsOf(words,"紙")[0]?.reading);
@@ -23,7 +23,7 @@ Each word is a `Word`: `written` is the way to show it, `reading` is how it is r
 A text with no word answers with an empty list, and `meaningOf` answers with `null`. Nothing is ever made up in their place.
 
 ```ts
-import {loadWords,meaningOf} from "@johnmorrisdotca/moji/words";
+import {loadWords,meaningOf} from "@johnmorrisdotca/jisho/words";
 const words=await loadWords(["紙","ぬぬぬぬぬ"]);
 console.log(meaningOf(words,"紙"));
 console.log(meaningOf(words,"ぬぬぬぬぬ"));
@@ -36,7 +36,7 @@ console.log(meaningOf(words,"ぬぬぬぬぬ"));
 A game asks about one guess at a time. Pass the words you have as `previous`, and what is already there is kept and not fetched again.
 
 ```ts
-import {loadWords,wordsOf} from "@johnmorrisdotca/moji/words";
+import {loadWords,wordsOf} from "@johnmorrisdotca/jisho/words";
 const first=await loadWords("かみ");
 const second=await loadWords("いぬ",{previous:first});
 console.log(wordsOf(second,"かみ").length>0,wordsOf(second,"いぬ").length>0);
@@ -47,7 +47,7 @@ console.log(wordsOf(second,"かみ").length>0,wordsOf(second,"いぬ").length>0)
 By default nothing that is not for children is fetched, and none of it is in what comes back. Every sense JMdict marks vulgar, X-rated, sensitive or derogatory, every written form or reading that only such a sense applies to, and every word of which each sense is marked, is not in the files a lookup fetches. A word with nothing left to say is not found: `wordsOf` gives an empty list and `meaningOf` gives `null`, as for a word JMdict does not have. A host that shows words to people of any age gets the stricter answer without doing anything.
 
 ```ts
-import {loadWords,wordsOf} from "@johnmorrisdotca/moji/words";
+import {loadWords,wordsOf} from "@johnmorrisdotca/jisho/words";
 const words=await loadWords("ほもびでお");
 console.log(wordsOf(words,"ほもびでお"));
 const everything=await loadWords("ほもびでお",{forChildren:false});
@@ -74,19 +74,19 @@ The common table holds the 26,039 words JMdict marks common that are fit for chi
 
 ## In a browser
 
-`import("@johnmorrisdotca/moji/words")` loads only the small part that finds pieces. Each piece is its own module, so a bundler with code splitting (Vite, webpack, Rollup, esbuild with `splitting`) makes each a file of its own and the browser fetches only the ones a lookup reaches. Fetch the words when a page needs them, not when it opens:
+`import("@johnmorrisdotca/jisho/words")` loads only the small part that finds pieces. Each piece is its own module, so a bundler with code splitting (Vite, webpack, Rollup, esbuild with `splitting`) makes each a file of its own and the browser fetches only the ones a lookup reaches. Fetch the words when a page needs them, not when it opens:
 
 ```ts no-run
-const { loadWords, wordsOf } = await import("@johnmorrisdotca/moji/words");
+const { loadWords, wordsOf } = await import("@johnmorrisdotca/jisho/words");
 ```
 
 ## On a server
 
 Import `words` only where a lookup is made. A bundler that follows `loadWords` reaches every piece, about 30 MB, so a server that imports it at the top of a page or a route carries all of it. To keep it out of the bundle:
 
-- Mark the package external, so that the server reads it from `node_modules` at run time: `serverExternalPackages: ["@johnmorrisdotca/moji"]` in Next.js, or `external` in esbuild and webpack.
+- Mark the package external, so that the server reads it from `node_modules` at run time: `serverExternalPackages: ["@johnmorrisdotca/jisho"]` in Next.js, or `external` in esbuild and webpack.
 - Do the lookup in the one route or action that needs it, never on a page's render path that every visit reaches.
-- If the host copies only the files a build can trace, make sure `node_modules/@johnmorrisdotca/moji/dist/data/words` is among them, or look words up in the browser instead.
+- If the host copies only the files a build can trace, make sure `node_modules/@johnmorrisdotca/jisho/dist/data/words` is among them, or look words up in the browser instead.
 
 A server keeps the pieces it has read in memory, so a second lookup in the same piece costs nothing.
 

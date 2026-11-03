@@ -1,7 +1,7 @@
 {
-  "name": "@johnmorrisdotca/moji",
-  "version": "0.1.1",
-  "description": "Moji 文字 — Japanese word and kanji data for JavaScript: the words of JMdict looked up by reading or written form, in small pieces fetched as needed, with everything not for children kept in files of their own that are never fetched unless asked for; and the school grades, JLPT levels, readings, meanings and look-alike pairs of 2,999 kanji. Typed. Zero dependencies.",
+  "name": "@johnmorrisdotca/jisho",
+  "version": "1.0.0",
+  "description": "Jisho 辞書 — Japanese word and kanji data for JavaScript: look words up by reading or written form, fetched a few kilobytes at a time, with nothing that is not for children in the default files; and the grades, JLPT levels, readings and look-alikes of 2,999 kanji. Typed, no dependencies.",
   "keywords": [
     "child-safe",
     "cjk",
@@ -14,6 +14,7 @@
     "japanese-language",
     "japanese-words",
     "jinmeiyo-kanji",
+    "jisho",
     "jlpt",
     "jlpt-kanji",
     "jlpt-n1",
@@ -30,7 +31,6 @@
     "language-learning",
     "lazy-loading",
     "look-alike-kanji",
-    "moji",
     "onyomi",
     "reading",
     "readings",
@@ -42,13 +42,13 @@
     "word-lookup",
     "zero-dependency"
   ],
-  "homepage": "https://johnmorrisdotca.github.io/moji/",
+  "homepage": "https://johnmorrisdotca.github.io/jisho/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johnmorrisdotca/moji.git"
+    "url": "git+https://github.com/johnmorrisdotca/jisho.git"
   },
   "bugs": {
-    "url": "https://github.com/johnmorrisdotca/moji/issues"
+    "url": "https://github.com/johnmorrisdotca/jisho/issues"
   },
   "author": "John Morris",
   "license": "(MIT AND CC-BY-SA-4.0 AND CC-BY-4.0 AND CC-BY-3.0)",

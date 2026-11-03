@@ -1,22 +1,22 @@
 // Builds the static demo for GitHub Pages into ./site: the page, written here from the family's shared header and footer,
-// with the family's stylesheet, Moji's own, the page's script and the compiled library beside it.
+// with the family's stylesheet, Jisho's own, the page's script and the compiled library beside it.
 import { cpSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
 
 import { API_CSS, apiPage } from "./api.mjs";
 import { FAMILY_SCRIPT, familyFooter, familyHead, familyHeader, familyUnreviewed } from "./family-template.mjs";
 
-const id = "moji";
+const id = "jisho";
 const ICON =
-  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232f5d4a'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle' fill='white'%3E%E5%AD%97%3C/text%3E%3C/svg%3E";
+  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232f5d4a'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle' fill='white'%3E%E8%BE%9E%3C/text%3E%3C/svg%3E";
 
 const uses = [
-  `import { loadWords, wordsOf } from "@johnmorrisdotca/moji/words";`,
+  `import { loadWords, wordsOf } from "@johnmorrisdotca/jisho/words";`,
   `wordsOf(await loadWords("かみ"), "かみ")  // 紙, 神, 髪… with a meaning each; a few kilobytes are fetched`,
-  `import { gradeOf, kanjiOfLevel, lookAlikes, readKanji } from "@johnmorrisdotca/moji";`,
-  `gradeOf(GRADES, "語")  // 2, with GRADES from "@johnmorrisdotca/moji/grades"`,
-  `kanjiOfLevel(JLPT, "N5")  // the 79 kanji of N5, with JLPT from "@johnmorrisdotca/moji/jlpt"`,
-  `readKanji(KANJI)  // 2,999 rows, with KANJI from "@johnmorrisdotca/moji/kanji"`,
-  `lookAlikes(LOOK_ALIKE, "土")  // 士 and the rest, with LOOK_ALIKE from "@johnmorrisdotca/moji/look-alike"`,
+  `import { gradeOf, kanjiOfLevel, lookAlikes, readKanji } from "@johnmorrisdotca/jisho";`,
+  `gradeOf(GRADES, "語")  // 2, with GRADES from "@johnmorrisdotca/jisho/grades"`,
+  `kanjiOfLevel(JLPT, "N5")  // the 79 kanji of N5, with JLPT from "@johnmorrisdotca/jisho/jlpt"`,
+  `readKanji(KANJI)  // 2,999 rows, with KANJI from "@johnmorrisdotca/jisho/kanji"`,
+  `lookAlikes(LOOK_ALIKE, "土")  // 士 and the rest, with LOOK_ALIKE from "@johnmorrisdotca/jisho/look-alike"`,
 ];
 const escapeHtml = (text) => text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
@@ -25,16 +25,16 @@ const page = `<!doctype html>
   <head>
     ${familyHead({
       id,
-      title: "Moji 文字 — Japanese word and kanji data for JavaScript",
+      title: "Jisho 辞書 — Japanese word and kanji data for JavaScript",
       description:
         "Look Japanese words up by reading or written form, and read the school grades, JLPT levels, readings, meanings and look-alike pairs of 2,999 kanji, in a typed package with no dependencies.",
-      ogTitle: "Moji Japanese word and kanji data",
+      ogTitle: "Jisho Japanese word and kanji data",
       ogDescription:
         "Type a reading or a word and see what it means, or choose a school grade or a JLPT level and read each kanji.",
     })}
     <link rel="icon" href="${ICON}" />
     <link rel="stylesheet" href="family.css" />
-    <link rel="stylesheet" href="moji.css" />
+    <link rel="stylesheet" href="jisho.css" />
   </head>
   <body>
     <main>
@@ -61,31 +61,31 @@ const page = `<!doctype html>
         </div>
         <div class="fam-row" data-kanji-view data-help-en="Type a kanji, a reading or a meaning, in English or French." data-help-ja="漢字、読み、または英語かフランス語の意味を入力します。">
           <label class="fam-label" for="search" data-say="searchLabel"></label>
-          <input class="moji-input" id="search" data-testid="search" type="search" autocomplete="off" spellcheck="false">
+          <input class="jisho-input" id="search" data-testid="search" type="search" autocomplete="off" spellcheck="false">
         </div>
         <p class="fam-muted" id="count" data-testid="count" data-kanji-view aria-live="polite"></p>
       </section>
-      <section class="moji-words-view" id="words-view" data-testid="words-view" aria-labelledby="choose-title" hidden>
-        <form class="moji-word-form" id="word-form" role="search">
+      <section class="jisho-words-view" id="words-view" data-testid="words-view" aria-labelledby="choose-title" hidden>
+        <form class="jisho-word-form" id="word-form" role="search">
           <label class="fam-label" for="word" data-say="wordLabel"></label>
-          <input class="moji-input" id="word" name="word" data-testid="word" type="search" lang="ja" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
+          <input class="jisho-input" id="word" name="word" data-testid="word" type="search" lang="ja" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
           <button class="fam-button" type="submit" data-testid="word-go" data-say="wordGo"></button>
         </form>
         <div class="fam-row" data-help-en="Tap a word to look it up." data-help-ja="単語を押すと、その単語を調べます。">
           <span class="fam-label" id="examples-label" data-say="wordExamples"></span>
-          <div class="moji-examples" id="examples" role="group" aria-labelledby="examples-label" data-testid="examples" lang="ja"></div>
+          <div class="jisho-examples" id="examples" role="group" aria-labelledby="examples-label" data-testid="examples" lang="ja"></div>
         </div>
         <div class="fam-row" data-help-en="For children, nothing JMdict marks vulgar, X-rated, sensitive or derogatory is fetched or shown. Everything fetches one more file and shows it." data-help-ja="「子ども向け」では、JMdictが下品、性的、配慮が必要、侮辱的と記しているものを、取得も表示もしません。「すべて」では、ファイルをもう一つ取得して、それも表示します。">
           <span class="fam-label" id="audience-label" data-say="audienceLabel"></span>
           <div class="fam-seg" id="audience" role="group" aria-labelledby="audience-label" data-testid="audience"></div>
         </div>
         <p class="fam-muted" id="word-count" data-testid="word-count" aria-live="polite"></p>
-        <ul class="moji-words" id="word-list" data-testid="word-list" aria-labelledby="word-count" tabindex="0"></ul>
+        <ul class="jisho-words" id="word-list" data-testid="word-list" aria-labelledby="word-count" tabindex="0"></ul>
         <p class="fam-muted" id="word-release" data-testid="word-release"></p>
       </section>
-      <section class="moji-board" id="kanji-view" aria-labelledby="choose-title">
-        <div class="moji-grid" id="grid" data-testid="grid" lang="ja"></div>
-        <article class="fam-panel moji-card" id="card" data-testid="card" aria-live="polite"></article>
+      <section class="jisho-board" id="kanji-view" aria-labelledby="choose-title">
+        <div class="jisho-grid" id="grid" data-testid="grid" lang="ja"></div>
+        <article class="fam-panel jisho-card" id="card" data-testid="card" aria-live="polite"></article>
       </section>
       ${familyUnreviewed({ id })}
       <section class="more" aria-labelledby="sources-title">
@@ -117,5 +117,5 @@ cpSync("dist", "site/dist", { recursive: true });
 writeFileSync("site/index.html", page);
 // The API reference, made from the source: every export of every entry point.
 writeFileSync("site/api.css", API_CSS);
-writeFileSync("site/api.html", apiPage({ id, name: "Moji", icon: ICON }));
+writeFileSync("site/api.html", apiPage({ id, name: "Jisho", icon: ICON }));
 console.log("site/ is ready: serve it, or let the Pages workflow publish it.");

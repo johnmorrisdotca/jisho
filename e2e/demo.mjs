@@ -11,7 +11,7 @@ const TYPES = { ".html": "text/html", ".js": "text/javascript", ".css": "text/cs
 async function open(page, address = "?lang=en") {
   const errors = [];
   page.on("pageerror", (error) => errors.push(String(error)));
-  await page.route("http://moji.test/**", (route) => {
+  await page.route("http://jisho.test/**", (route) => {
     const { pathname } = new URL(route.request().url());
     const file = join(site, pathname === "/" ? "index.html" : pathname);
     if (!existsSync(file)) return route.fulfill({ status: 404, body: "" });
@@ -20,7 +20,7 @@ async function open(page, address = "?lang=en") {
       contentType: TYPES[file.slice(file.lastIndexOf("."))] ?? "application/octet-stream",
     });
   });
-  await page.goto(`http://moji.test/${address}`);
+  await page.goto(`http://jisho.test/${address}`);
   await expect(page.locator("html")).toHaveAttribute("data-ready", "true");
   return errors;
 }
@@ -37,7 +37,7 @@ async function sound(page, errors) {
   const small = await page.evaluate(() =>
     [
       ...document.querySelectorAll(
-        ".moji-grid button, .moji-alike button, .moji-examples button, .moji-word-form button, .fam-seg button, input",
+        ".jisho-grid button, .jisho-alike button, .jisho-examples button, .jisho-word-form button, .fam-seg button, input",
       ),
     ]
       .filter((el) => {
@@ -78,9 +78,9 @@ test("a look-alike leads to the kanji it looks like, and back", async ({ page })
   const errors = await open(page, "?lang=en&kanji=土");
   const alike = page.locator('[data-testid="alike"]');
   await tap(alike.getByRole("button", { name: "士" }));
-  await expect(page.locator(".moji-big")).toHaveText("士");
+  await expect(page.locator(".jisho-big")).toHaveText("士");
   await tap(alike.getByRole("button", { name: "土" }));
-  await expect(page.locator(".moji-big")).toHaveText("土");
+  await expect(page.locator(".jisho-big")).toHaveText("土");
   await sound(page, errors);
 });
 

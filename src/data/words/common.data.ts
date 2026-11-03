@@ -9,7 +9,7 @@ import type { PackedWords } from "../../words.ts";
  *
  * @example
  * ```ts
- * import { COMMON_WORDS } from "@johnmorrisdotca/moji/words-common";
+ * import { COMMON_WORDS } from "@johnmorrisdotca/jisho/words-common";
  *
  * console.log(Object.keys(COMMON_WORDS));
  * ```

@@ -25,7 +25,7 @@ const WORDS = {
     pageApi: "API",
     pitch:
       "Look Japanese words up by reading or written form, with a short English meaning each. Or choose a list of the 2,999 kanji, tap one, and follow it to the kanji it can be mistaken for.",
-    name: "Moji (文字) is Japanese for a written character.",
+    name: "Jisho (辞書) is Japanese for a dictionary.",
     nameLink: "About the name",
     chooseTitle: "What to look up",
     viewLabel: "Look up",
@@ -90,7 +90,7 @@ const WORDS = {
     pageApi: "API（英語）",
     pitch:
       "日本語の単語を読みや表記から引け、それぞれに短い英語の意味が付きます。2,999字の漢字のリストを選び、漢字を押して、見間違えやすい漢字をたどることもできます。",
-    name: "「Moji」は「文字」のこと。書かれた一字一字を指します。",
+    name: "「Jisho」は「辞書」のローマ字表記です。日本語の単語と漢字を収めています。",
     nameLink: "名前について（英語）",
     chooseTitle: "調べるもの",
     viewLabel: "表示",
@@ -158,7 +158,7 @@ function docsLink(lang) {
     ?.setAttribute("href", lang === "ja" ? "docs/ja/index.html" : "docs/index.html");
 }
 const language = familyLanguage({
-  id: "moji",
+  id: "jisho",
   words: WORDS,
   onChange: (lang) => {
     docsLink(lang);
@@ -243,7 +243,7 @@ function drawCard() {
   }
   card.hidden = false;
   const big = document.createElement("p");
-  big.className = "moji-big";
+  big.className = "jisho-big";
   big.lang = "ja";
   big.textContent = one.kanji;
   const facts = document.createElement("dl");
@@ -260,7 +260,7 @@ function drawCard() {
   if (alike.length === 0) fact(facts, t("cardAlike"), t("cardNoAlike"));
   else {
     const row = document.createElement("div");
-    row.className = "moji-alike";
+    row.className = "jisho-alike";
     row.lang = "ja";
     row.dataset.testid = "alike";
     for (const other of alike) {
@@ -331,22 +331,22 @@ function wordItem(word) {
   const item = document.createElement("li");
   item.dataset.testid = "word-item";
   const written = document.createElement("p");
-  written.className = "moji-written";
+  written.className = "jisho-written";
   written.lang = "ja";
   written.textContent = word.written;
   const reading = document.createElement("p");
-  reading.className = "moji-reading";
+  reading.className = "jisho-reading";
   reading.lang = "ja";
   reading.textContent = word.written === word.reading ? "" : word.reading;
   reading.hidden = reading.textContent === "";
   const meaning = document.createElement("p");
-  meaning.className = "moji-meaning";
+  meaning.className = "jisho-meaning";
   meaning.lang = "en";
   meaning.textContent = word.meaning;
   item.append(written, reading, meaning);
   if (word.common) {
     const tag = document.createElement("p");
-    tag.className = "moji-tag";
+    tag.className = "jisho-tag";
     tag.textContent = t("wordCommon");
     item.append(tag);
   }

@@ -11,7 +11,7 @@ import type { PackedLookAlikes } from "../index.ts";
  *
  * @example
  * ```ts
- * import { LOOK_ALIKE } from "@johnmorrisdotca/moji/look-alike";
+ * import { LOOK_ALIKE } from "@johnmorrisdotca/jisho/look-alike";
  *
  * console.log(Object.keys(LOOK_ALIKE));
  * ```

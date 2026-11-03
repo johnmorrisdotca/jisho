@@ -10,7 +10,7 @@ description: "読みや表記から単語を探し、子ども向けでない語
 `loadWords`は、渡した文字列についてJMdictが持つものだけを取得し、それ以外は取得しません。取得したあとは`wordsOf`が待たずに読みます。
 
 ```ts
-import {loadWords,wordsOf} from "@johnmorrisdotca/moji/words";
+import {loadWords,wordsOf} from "@johnmorrisdotca/jisho/words";
 const words=await loadWords(["かみ","紙"]);
 console.log(wordsOf(words,"かみ").slice(0,3).map((one)=>`${one.written} ${one.meaning}`));
 console.log(wordsOf(words,"紙")[0]?.reading);
@@ -23,7 +23,7 @@ console.log(wordsOf(words,"紙")[0]?.reading);
 単語のない文字列に対しては、`wordsOf`は空のリストを、`meaningOf`は`null`を返します。代わりの答えを作ることはありません。
 
 ```ts
-import {loadWords,meaningOf} from "@johnmorrisdotca/moji/words";
+import {loadWords,meaningOf} from "@johnmorrisdotca/jisho/words";
 const words=await loadWords(["紙","ぬぬぬぬぬ"]);
 console.log(meaningOf(words,"紙"));
 console.log(meaningOf(words,"ぬぬぬぬぬ"));
@@ -36,7 +36,7 @@ console.log(meaningOf(words,"ぬぬぬぬぬ"));
 ゲームが一度に調べるのは、入力された言葉一つです。すでに取得したものを`previous`として渡すと、それは保たれ、もう一度取得されることはありません。
 
 ```ts
-import {loadWords,wordsOf} from "@johnmorrisdotca/moji/words";
+import {loadWords,wordsOf} from "@johnmorrisdotca/jisho/words";
 const first=await loadWords("かみ");
 const second=await loadWords("いぬ",{previous:first});
 console.log(wordsOf(second,"かみ").length>0,wordsOf(second,"いぬ").length>0);
@@ -47,7 +47,7 @@ console.log(wordsOf(second,"かみ").length>0,wordsOf(second,"いぬ").length>0)
 初期値では、子ども向けでないものは取得されず、返ってくる結果にも入りません。JMdictが下品、性的、配慮が必要、侮辱的と記している語義、そのような語義だけが当てはまる表記や読み、すべての語義に印が付いている単語は、検索が取得するファイルの中にありません。残る語義が一つもない単語は見つからず、`wordsOf`は空のリストを、`meaningOf`は`null`を返します。JMdictにない単語と同じです。年齢を問わず誰にでも単語を見せるサイトは、何もしなくても、より厳格な結果になります。
 
 ```ts
-import {loadWords,wordsOf} from "@johnmorrisdotca/moji/words";
+import {loadWords,wordsOf} from "@johnmorrisdotca/jisho/words";
 const words=await loadWords("ほもびでお");
 console.log(wordsOf(words,"ほもびでお"));
 const everything=await loadWords("ほもびでお",{forChildren:false});
@@ -74,19 +74,19 @@ JMdictの内容をそのまま知りたい大人の学習者には、`loadWords`
 
 ## ブラウザーで
 
-`import("@johnmorrisdotca/moji/words")`が読み込むのは、チャンクを見つける小さな部分だけです。チャンクはそれぞれ独立したモジュールなので、コード分割のできるバンドラー（Vite、webpack、Rollup、`splitting`を付けたesbuild）はチャンクごとにファイルを作り、ブラウザーは検索で必要になったものだけを取得します。単語はページを開くときではなく、必要になったときに取得します。
+`import("@johnmorrisdotca/jisho/words")`が読み込むのは、チャンクを見つける小さな部分だけです。チャンクはそれぞれ独立したモジュールなので、コード分割のできるバンドラー（Vite、webpack、Rollup、`splitting`を付けたesbuild）はチャンクごとにファイルを作り、ブラウザーは検索で必要になったものだけを取得します。単語はページを開くときではなく、必要になったときに取得します。
 
 ```ts no-run
-const { loadWords, wordsOf } = await import("@johnmorrisdotca/moji/words");
+const { loadWords, wordsOf } = await import("@johnmorrisdotca/jisho/words");
 ```
 
 ## サーバーで
 
 `words`は、検索を行う場所でだけインポートしてください。`loadWords`をたどるバンドラーはすべてのチャンク（約30 MB）に行き着くので、ページやルートの先頭でインポートするサーバーは、そのすべてを抱えることになります。バンドルから外すには次のようにします。
 
-- パッケージを外部扱いにし、サーバーが実行時に`node_modules`から読むようにします。Next.jsなら`serverExternalPackages: ["@johnmorrisdotca/moji"]`、esbuildやwebpackなら`external`です。
+- パッケージを外部扱いにし、サーバーが実行時に`node_modules`から読むようにします。Next.jsなら`serverExternalPackages: ["@johnmorrisdotca/jisho"]`、esbuildやwebpackなら`external`です。
 - 検索は、それを必要とする一つのルートかアクションの中で行い、すべての訪問が通るページの描画経路では行いません。
-- ビルドがたどれるファイルだけをホストにコピーする環境では、`node_modules/@johnmorrisdotca/moji/dist/data/words`がその中に入るようにするか、単語の検索をブラウザーで行います。
+- ビルドがたどれるファイルだけをホストにコピーする環境では、`node_modules/@johnmorrisdotca/jisho/dist/data/words`がその中に入るようにするか、単語の検索をブラウザーで行います。
 
 サーバーは読み込んだチャンクをメモリに保つので、同じチャンクの二度目の検索にコストはかかりません。
 

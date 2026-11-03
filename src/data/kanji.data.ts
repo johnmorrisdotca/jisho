@@ -14,7 +14,7 @@ import type { PackedKanji } from "../index.ts";
  *
  * @example
  * ```ts
- * import { KANJI } from "@johnmorrisdotca/moji/kanji";
+ * import { KANJI } from "@johnmorrisdotca/jisho/kanji";
  *
  * console.log(Object.keys(KANJI));
  * ```

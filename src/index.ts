@@ -1,5 +1,5 @@
 /**
- * Moji: Japanese kanji as data. The school grades, the JLPT levels, the readings and meanings and the pairs that look alike are
+ * Jisho: Japanese kanji as data. The school grades, the JLPT levels, the readings and meanings and the pairs that look alike are
  * each an entry point of their own, so a page loads only what it reads; this entry holds the types and the plain functions that
  * read them, and no data.
  */
@@ -12,7 +12,7 @@ export { VERSION } from "./version.ts";
  *
  * @example
  * ```ts
- * import type { SchoolGrade } from "@johnmorrisdotca/moji";
+ * import type { SchoolGrade } from "@johnmorrisdotca/jisho";
  *
  * const grade: SchoolGrade = 8;
  * console.log(grade);
@@ -25,7 +25,7 @@ export type SchoolGrade = 1 | 2 | 3 | 4 | 5 | 6 | 8 | 9 | 10;
  *
  * @example
  * ```ts
- * import { SCHOOL_GRADES } from "@johnmorrisdotca/moji";
+ * import { SCHOOL_GRADES } from "@johnmorrisdotca/jisho";
  *
  * console.log(SCHOOL_GRADES.length);
  * ```
@@ -37,7 +37,7 @@ export const SCHOOL_GRADES: readonly SchoolGrade[] = [1, 2, 3, 4, 5, 6, 8, 9, 10
  *
  * @example
  * ```ts
- * import { ELEMENTARY_GRADES } from "@johnmorrisdotca/moji";
+ * import { ELEMENTARY_GRADES } from "@johnmorrisdotca/jisho";
  *
  * console.log(ELEMENTARY_GRADES);
  * ```
@@ -49,7 +49,7 @@ export const ELEMENTARY_GRADES: readonly SchoolGrade[] = [1, 2, 3, 4, 5, 6];
  *
  * @example
  * ```ts
- * import { JOYO_GRADES } from "@johnmorrisdotca/moji";
+ * import { JOYO_GRADES } from "@johnmorrisdotca/jisho";
  *
  * console.log(JOYO_GRADES);
  * ```
@@ -61,7 +61,7 @@ export const JOYO_GRADES: readonly SchoolGrade[] = [1, 2, 3, 4, 5, 6, 8];
  *
  * @example
  * ```ts
- * import type { JlptLevel } from "@johnmorrisdotca/moji";
+ * import type { JlptLevel } from "@johnmorrisdotca/jisho";
  *
  * const level: JlptLevel = "N5";
  * console.log(level);
@@ -74,7 +74,7 @@ export type JlptLevel = "N5" | "N4" | "N3" | "N2" | "N1";
  *
  * @example
  * ```ts
- * import { JLPT_LEVELS } from "@johnmorrisdotca/moji";
+ * import { JLPT_LEVELS } from "@johnmorrisdotca/jisho";
  *
  * console.log(JLPT_LEVELS);
  * ```
@@ -82,11 +82,11 @@ export type JlptLevel = "N5" | "N4" | "N3" | "N2" | "N1";
 export const JLPT_LEVELS: readonly JlptLevel[] = ["N5", "N4", "N3", "N2", "N1"];
 
 /**
- * The shape of `GRADES`, from `@johnmorrisdotca/moji/grades`.
+ * The shape of `GRADES`, from `@johnmorrisdotca/jisho/grades`.
  *
  * @example
  * ```ts
- * import type { GradeTable } from "@johnmorrisdotca/moji";
+ * import type { GradeTable } from "@johnmorrisdotca/jisho";
  *
  * const table: GradeTable = { source: "KANJIDIC2", release: "2026-10-31", grades: { "1": "一右" } };
  * console.log(table.source);
@@ -102,11 +102,11 @@ export type GradeTable = {
 };
 
 /**
- * The shape of `JLPT`, from `@johnmorrisdotca/moji/jlpt`.
+ * The shape of `JLPT`, from `@johnmorrisdotca/jisho/jlpt`.
  *
  * @example
  * ```ts
- * import type { JlptTable } from "@johnmorrisdotca/moji";
+ * import type { JlptTable } from "@johnmorrisdotca/jisho";
  *
  * const table: JlptTable = { source: "a list", levels: { N5: "日一" } };
  * console.log(table.source);
@@ -122,13 +122,13 @@ export type JlptTable = {
 /**
  * The kanji of one grade.
  *
- * @param table - `GRADES`, from `@johnmorrisdotca/moji/grades`.
+ * @param table - `GRADES`, from `@johnmorrisdotca/jisho/grades`.
  * @param grade - The grade.
  * @returns The grade's kanji, one to an item; none for a grade the table does not hold.
  * @example
  * ```ts
- * import { kanjiOfGrade } from "@johnmorrisdotca/moji";
- * import { GRADES } from "@johnmorrisdotca/moji/grades";
+ * import { kanjiOfGrade } from "@johnmorrisdotca/jisho";
+ * import { GRADES } from "@johnmorrisdotca/jisho/grades";
  *
  * console.log(kanjiOfGrade(GRADES, 1).length); // 80
  * ```
@@ -140,13 +140,13 @@ export function kanjiOfGrade(table: GradeTable, grade: SchoolGrade): string[] {
 /**
  * Which grade a kanji is taught in.
  *
- * @param table - `GRADES`, from `@johnmorrisdotca/moji/grades`.
+ * @param table - `GRADES`, from `@johnmorrisdotca/jisho/grades`.
  * @param kanji - One kanji.
  * @returns The grade, or null when KANJIDIC2 gives the kanji none: that says it is outside the jōyō and jinmeiyō kanji.
  * @example
  * ```ts
- * import { gradeOf } from "@johnmorrisdotca/moji";
- * import { GRADES } from "@johnmorrisdotca/moji/grades";
+ * import { gradeOf } from "@johnmorrisdotca/jisho";
+ * import { GRADES } from "@johnmorrisdotca/jisho/grades";
  *
  * console.log(gradeOf(GRADES, "日"), gradeOf(GRADES, "鬱"), gradeOf(GRADES, "龘")); // 1 8 null
  * ```
@@ -158,13 +158,13 @@ export function gradeOf(table: GradeTable, kanji: string): SchoolGrade | null {
 /**
  * The kanji of one JLPT level, not counting the levels below it.
  *
- * @param table - `JLPT`, from `@johnmorrisdotca/moji/jlpt`.
+ * @param table - `JLPT`, from `@johnmorrisdotca/jisho/jlpt`.
  * @param level - The level.
  * @returns The level's kanji, in the order of the list; none for a level the table does not hold.
  * @example
  * ```ts
- * import { kanjiOfLevel } from "@johnmorrisdotca/moji";
- * import { JLPT } from "@johnmorrisdotca/moji/jlpt";
+ * import { kanjiOfLevel } from "@johnmorrisdotca/jisho";
+ * import { JLPT } from "@johnmorrisdotca/jisho/jlpt";
  *
  * console.log(kanjiOfLevel(JLPT, "N5").length); // 79
  * ```
@@ -176,13 +176,13 @@ export function kanjiOfLevel(table: JlptTable, level: JlptLevel): string[] {
 /**
  * Which JLPT level's list holds a kanji.
  *
- * @param table - `JLPT`, from `@johnmorrisdotca/moji/jlpt`.
+ * @param table - `JLPT`, from `@johnmorrisdotca/jisho/jlpt`.
  * @param kanji - One kanji.
  * @returns The level, or null when no list holds the kanji: that says nothing about how hard it is.
  * @example
  * ```ts
- * import { levelOf } from "@johnmorrisdotca/moji";
- * import { JLPT } from "@johnmorrisdotca/moji/jlpt";
+ * import { levelOf } from "@johnmorrisdotca/jisho";
+ * import { JLPT } from "@johnmorrisdotca/jisho/jlpt";
  *
  * console.log(levelOf(JLPT, "日"), levelOf(JLPT, "鬱")); // N5 null
  * ```
@@ -196,7 +196,7 @@ export function levelOf(table: JlptTable, kanji: string): JlptLevel | null {
  *
  * @example
  * ```ts
- * import type { Kanji } from "@johnmorrisdotca/moji";
+ * import type { Kanji } from "@johnmorrisdotca/jisho";
  *
  * const one: Kanji = { kanji: "日", strokes: 4, grade: 1, level: "N5", frequency: 1, on: ["ニチ"], kun: ["ひ"], meanings: ["day"], meaningsFr: ["jour"] };
  * console.log(one.meanings);
@@ -224,11 +224,11 @@ export type Kanji = {
 };
 
 /**
- * The shape of `KANJI`, from `@johnmorrisdotca/moji/kanji`.
+ * The shape of `KANJI`, from `@johnmorrisdotca/jisho/kanji`.
  *
  * @example
  * ```ts
- * import type { PackedKanji } from "@johnmorrisdotca/moji";
+ * import type { PackedKanji } from "@johnmorrisdotca/jisho";
  *
  * const packed: PackedKanji = { source: "KANJIDIC2", release: "2026-10-31", rows: [["日", 4, 1, "N5", 1, ["ニチ"], ["ひ"], ["day"], ["jour"]]] };
  * console.log(packed.rows.length);
@@ -256,12 +256,12 @@ export type PackedKanji = {
 /**
  * Reads the stored table into plain rows.
  *
- * @param packed - `KANJI`, from `@johnmorrisdotca/moji/kanji`.
+ * @param packed - `KANJI`, from `@johnmorrisdotca/jisho/kanji`.
  * @returns Every kanji, in the order of KANJIDIC2.
  * @example
  * ```ts
- * import { readKanji } from "@johnmorrisdotca/moji";
- * import { KANJI } from "@johnmorrisdotca/moji/kanji";
+ * import { readKanji } from "@johnmorrisdotca/jisho";
+ * import { KANJI } from "@johnmorrisdotca/jisho/kanji";
  *
  * console.log(readKanji(KANJI).length);
  * ```
@@ -287,7 +287,7 @@ export function readKanji(packed: PackedKanji): Kanji[] {
  * @returns The kanji in it; kana, Latin letters and punctuation are left out.
  * @example
  * ```ts
- * import { kanjiIn } from "@johnmorrisdotca/moji";
+ * import { kanjiIn } from "@johnmorrisdotca/jisho";
  *
  * console.log(kanjiIn("日本語を日本で")); // ["日", "本", "語"]
  * ```
@@ -304,8 +304,8 @@ export function kanjiIn(text: string): string[] {
  * @returns The rows that match: those that are the word typed first, then those that hold it, the commonest first in each.
  * @example
  * ```ts
- * import { readKanji, searchKanji } from "@johnmorrisdotca/moji";
- * import { KANJI } from "@johnmorrisdotca/moji/kanji";
+ * import { readKanji, searchKanji } from "@johnmorrisdotca/jisho";
+ * import { KANJI } from "@johnmorrisdotca/jisho/kanji";
  *
  * console.log(searchKanji(readKanji(KANJI), "mountain")[0]?.kanji); // 山
  * ```
@@ -327,11 +327,11 @@ export function searchKanji(kanji: readonly Kanji[], text: string): Kanji[] {
 }
 
 /**
- * The shape of `LOOK_ALIKE`, from `@johnmorrisdotca/moji/look-alike`.
+ * The shape of `LOOK_ALIKE`, from `@johnmorrisdotca/jisho/look-alike`.
  *
  * @example
  * ```ts
- * import type { PackedLookAlikes } from "@johnmorrisdotca/moji";
+ * import type { PackedLookAlikes } from "@johnmorrisdotca/jisho";
  *
  * const packed: PackedLookAlikes = { source: "a study", pairs: [["士土", 100, 67]] };
  * console.log(packed.pairs.length);
@@ -349,7 +349,7 @@ export type PackedLookAlikes = {
  *
  * @example
  * ```ts
- * import type { LookAlike } from "@johnmorrisdotca/moji";
+ * import type { LookAlike } from "@johnmorrisdotca/jisho";
  *
  * const one: LookAlike = { kanji: "士", score: 100, strokes: 100, parts: 67 };
  * console.log(one.kanji);
@@ -371,7 +371,7 @@ export type LookAlike = {
  *
  * @example
  * ```ts
- * import type { LookAlikeOptions } from "@johnmorrisdotca/moji";
+ * import type { LookAlikeOptions } from "@johnmorrisdotca/jisho";
  *
  * const options: LookAlikeOptions = { atLeast: 80, max: 3 };
  * console.log(options);
@@ -387,15 +387,15 @@ export type LookAlikeOptions = {
 /**
  * The kanji most like one kanji, the closest first.
  *
- * @param table - `LOOK_ALIKE`, from `@johnmorrisdotca/moji/look-alike`.
+ * @param table - `LOOK_ALIKE`, from `@johnmorrisdotca/jisho/look-alike`.
  * @param kanji - One kanji.
  * @param options - How low to go and how many to give back.
  * @returns The kanji that look like it; none when none reaches the score. None does not say a kanji has no look-alike: the two
  * measures cover only the 1,945 jōyō kanji of before 2010.
  * @example
  * ```ts
- * import { lookAlikes } from "@johnmorrisdotca/moji";
- * import { LOOK_ALIKE } from "@johnmorrisdotca/moji/look-alike";
+ * import { lookAlikes } from "@johnmorrisdotca/jisho";
+ * import { LOOK_ALIKE } from "@johnmorrisdotca/jisho/look-alike";
  *
  * console.log(lookAlikes(LOOK_ALIKE, "土").map((one) => one.kanji));
  * ```

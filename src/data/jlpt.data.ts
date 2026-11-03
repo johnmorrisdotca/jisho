@@ -7,7 +7,7 @@
  *
  * @example
  * ```ts
- * import { JLPT } from "@johnmorrisdotca/moji/jlpt";
+ * import { JLPT } from "@johnmorrisdotca/jisho/jlpt";
  *
  * console.log(Object.keys(JLPT));
  * ```

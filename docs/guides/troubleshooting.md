@@ -31,4 +31,4 @@ It throws for a text that `loadWords` was not asked for, instead of answering wi
 
 ## A server's bundle got very large
 
-Something imported `@johnmorrisdotca/moji/words` where a bundler follows it, and the bundler reached every piece of the dictionary, about 30 MB. [Look words up](words.md) says how to keep it out.
+Something imported `@johnmorrisdotca/jisho/words` where a bundler follows it, and the bundler reached every piece of the dictionary, about 30 MB. [Look words up](words.md) says how to keep it out.

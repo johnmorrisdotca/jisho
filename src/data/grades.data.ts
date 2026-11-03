@@ -8,7 +8,7 @@
  *
  * @example
  * ```ts
- * import { GRADES } from "@johnmorrisdotca/moji/grades";
+ * import { GRADES } from "@johnmorrisdotca/jisho/grades";
  *
  * console.log(Object.keys(GRADES));
  * ```

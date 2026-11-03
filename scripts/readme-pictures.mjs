@@ -10,16 +10,16 @@ await takePictures({
   shots: [
     { subject: "hero", views: ["desk", "phone"], url: address("N5", "日"), height: 780, ready: READY },
     // Each list is a grid: a school year, and a level of the JLPT.
-    { subject: "school-grade", views: ["desk"], url: address("g2", "語"), ready: READY, target: ".moji-board" },
+    { subject: "school-grade", views: ["desk"], url: address("g2", "語"), ready: READY, target: ".jisho-board" },
     // N3 holds 367 kanji and the grid scrolls: the window ends after ten whole rows, so no row is cut through.
     {
       subject: "jlpt-level",
       views: ["desk"],
       url: address("N3", "政"),
       ready: READY,
-      target: ".moji-board",
+      target: ".jisho-board",
       async prepare(page) {
-        await page.locator(".moji-grid").evaluate((grid) => {
+        await page.locator(".jisho-grid").evaluate((grid) => {
           const buttons = [...grid.querySelectorAll("button")];
           const first = buttons[0].getBoundingClientRect().top;
           const second = buttons
@@ -47,7 +47,7 @@ await takePictures({
       views: ["desk"],
       url: address("g1", "山"),
       ready: READY,
-      target: ".moji-board",
+      target: ".jisho-board",
       async prepare(page) {
         await page.locator("#search").fill("water");
       },

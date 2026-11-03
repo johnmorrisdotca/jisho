@@ -8,8 +8,8 @@ description: "Lists by grade and level, the kanji in a text, a search, and what 
 ## The elementary-school kanji
 
 ```ts
-import {ELEMENTARY_GRADES,JOYO_GRADES,kanjiOfGrade} from "@johnmorrisdotca/moji";
-import {GRADES} from "@johnmorrisdotca/moji/grades";
+import {ELEMENTARY_GRADES,JOYO_GRADES,kanjiOfGrade} from "@johnmorrisdotca/jisho";
+import {GRADES} from "@johnmorrisdotca/jisho/grades";
 console.log(ELEMENTARY_GRADES.flatMap((grade)=>kanjiOfGrade(GRADES,grade)).length);
 console.log(JOYO_GRADES.flatMap((grade)=>kanjiOfGrade(GRADES,grade)).length);
 ```
@@ -19,8 +19,8 @@ console.log(JOYO_GRADES.flatMap((grade)=>kanjiOfGrade(GRADES,grade)).length);
 `kanjiIn` takes the kanji out of a text, and `levelOf` says which list holds each one.
 
 ```ts
-import {kanjiIn,levelOf} from "@johnmorrisdotca/moji";
-import {JLPT} from "@johnmorrisdotca/moji/jlpt";
+import {kanjiIn,levelOf} from "@johnmorrisdotca/jisho";
+import {JLPT} from "@johnmorrisdotca/jisho/jlpt";
 console.log(kanjiIn("日本語を勉強します").map((one)=>[one,levelOf(JLPT,one)]));
 ```
 
@@ -29,16 +29,16 @@ console.log(kanjiIn("日本語を勉強します").map((one)=>[one,levelOf(JLPT,
 `searchKanji` takes a kanji, an on or kun reading, or a meaning in English or French. Those that are exactly the word come first, then those that hold it, the commonest first in each.
 
 ```ts
-import {readKanji,searchKanji} from "@johnmorrisdotca/moji";
-import {KANJI} from "@johnmorrisdotca/moji/kanji";
+import {readKanji,searchKanji} from "@johnmorrisdotca/jisho";
+import {KANJI} from "@johnmorrisdotca/jisho/kanji";
 console.log(searchKanji(readKanji(KANJI),"mountain").slice(0,3).map((one)=>one.kanji));
 ```
 
 ## What a kanji can be mistaken for
 
 ```ts
-import {lookAlikes} from "@johnmorrisdotca/moji";
-import {LOOK_ALIKE} from "@johnmorrisdotca/moji/look-alike";
+import {lookAlikes} from "@johnmorrisdotca/jisho";
+import {LOOK_ALIKE} from "@johnmorrisdotca/jisho/look-alike";
 console.log(lookAlikes(LOOK_ALIKE,"土").map((one)=>one.kanji));
 console.log(lookAlikes(LOOK_ALIKE,"千",{atLeast:60}).map((one)=>one.kanji));
 ```

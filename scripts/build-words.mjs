@@ -80,7 +80,7 @@ function dataFile({ summary, type, name, entry, body, imports }) {
       : ` *
  * @example
  * \`\`\`ts
- * import { ${name} } from "@johnmorrisdotca/moji/${entry}";
+ * import { ${name} } from "@johnmorrisdotca/jisho/${entry}";
  *
  * console.log(Object.keys(${name}));
  * \`\`\`

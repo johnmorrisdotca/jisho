@@ -110,7 +110,7 @@ mkdirSync(OUT, { recursive: true });
 const example = (name, entry) => ` *
  * @example
  * \`\`\`ts
- * import { ${name} } from "@johnmorrisdotca/moji/${entry}";
+ * import { ${name} } from "@johnmorrisdotca/jisho/${entry}";
  *
  * console.log(Object.keys(${name}));
  * \`\`\`

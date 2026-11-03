@@ -2,9 +2,9 @@
  *
  * @example
  * ```ts
- * import { VERSION } from "@johnmorrisdotca/moji";
+ * import { VERSION } from "@johnmorrisdotca/jisho";
  *
  * console.log(VERSION);
  * ```
  */
-export const VERSION = "0.1.1";
+export const VERSION = "1.0.0";
