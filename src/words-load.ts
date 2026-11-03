@@ -3,6 +3,7 @@
 import { MANIFEST } from "./data/words/manifest.data.ts";
 import { kanaFromRomaji } from "./romaji.ts";
 import type { LoadWordsOptions, WordRow, Words } from "./words.types.ts";
+import { modeOf } from "./words-filter.ts";
 import { extras, formOfLine, pieceOf, piecesFor, readingOfRow } from "./words-pieces.ts";
 import { readRow } from "./words-rows.ts";
 import { formKey, isKana, keyOf, normalizeText, readingKey } from "./words-text.ts";
@@ -54,7 +55,7 @@ function keysToLoad(texts: unknown, romaji: boolean | undefined): string[] {
  */
 export async function loadWords(texts: string | readonly string[], options: LoadWordsOptions = {}): Promise<Words> {
   const { previous } = options;
-  const mode = options.mode ?? previous?.mode ?? "safe";
+  const mode = options.mode === undefined ? modeOf(previous?.mode) : modeOf(options.mode);
   if (previous?.scope === "common")
     throw new TypeError("The common words hold every text already: there is nothing to add.");
   if (previous !== undefined && previous.mode !== mode)

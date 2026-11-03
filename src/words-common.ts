@@ -1,6 +1,7 @@
 /** The common words as one table, for a page that looks up many words, all of them common. */
 
 import type { PackedPatch, PackedWords, WordRow, Words, WordsOptions } from "./words.types.ts";
+import { modeOf } from "./words-filter.ts";
 import { commonExtra, commonTable } from "./words-pieces.ts";
 import { readRow } from "./words-rows.ts";
 import { formKey, readingKey } from "./words-text.ts";
@@ -49,7 +50,7 @@ export function readCommonWords(
   table: PackedWords,
   options: WordsOptions & { readonly extra?: PackedPatch } = {},
 ): Words {
-  const mode = options.mode ?? "safe";
+  const mode = modeOf(options.mode);
   if (mode === "unfiltered" && options.extra === undefined)
     throw new TypeError("Unfiltered needs the table of what to add: pass extra, COMMON_EXTRA from words-common-extra.");
   const lines = mode === "safe" || options.extra === undefined ? table.rows : patchedRows(table.rows, options.extra);
@@ -82,7 +83,7 @@ export function readCommonWords(
  * ```
  */
 export async function loadCommonWords(options: WordsOptions = {}): Promise<Words> {
-  const mode = options.mode ?? "safe";
+  const mode = modeOf(options.mode);
   const [table, extra] = await Promise.all([commonTable(), mode === "safe" ? undefined : commonExtra()]);
   return readCommonWords(table, { ...options, mode, extra });
 }

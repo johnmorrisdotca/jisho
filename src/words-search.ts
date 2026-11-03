@@ -6,6 +6,7 @@
 
 import { type Kanji, kanjiIn } from "./index.ts";
 import type { FindOptions, PieceSet, Word, Words } from "./words.types.ts";
+import { modeOf } from "./words-filter.ts";
 import { loadWords } from "./words-load.ts";
 import { allWords } from "./words-lookup.ts";
 import { extraIndexes, formOfLine, indexed, indexes, pieceOf, type WordsPieceKind } from "./words-pieces.ts";
@@ -99,17 +100,18 @@ export function searchMeanings(words: Words, text: string): Word[] {
  * ```
  */
 export async function findByMeaning(text: string, options: FindOptions = {}): Promise<Word[]> {
+  const mode = modeOf(options.mode);
   const query = termsInOrder(normalizeText(text));
   const first = query[0];
   if (first === undefined) return [];
   // One term is a key of the index; several are found by the first two, which the index keys as they follow each other, and the
   // rest of the phrase is held against the glosses once the words are read.
   const key = query[1] === undefined ? first : `${first} ${query[1]}`;
-  const readings = await readingsFor("meanings", options.mode === "unfiltered", key);
+  const readings = await readingsFor("meanings", mode === "unfiltered", key);
   if (readings.length === 0) return [];
   const limit = limitOf(options);
   const words = await loadWords(readings.slice(0, limit), {
-    mode: options.mode,
+    mode,
     block: options.block,
     allow: options.allow,
   });
@@ -136,12 +138,13 @@ export async function findByMeaning(text: string, options: FindOptions = {}): Pr
  * ```
  */
 export async function wordsWithKanji(kanji: string, options: FindOptions = {}): Promise<Word[]> {
+  const mode = modeOf(options.mode);
   const character = kanjiIn(formKey(normalizeText(kanji)))[0];
   if (character === undefined) return [];
-  const readings = await readingsFor("kanji", options.mode === "unfiltered", character);
+  const readings = await readingsFor("kanji", mode === "unfiltered", character);
   const limit = limitOf(options);
   const asked = readings.slice(0, limit);
-  const words = await loadWords(asked, { mode: options.mode, block: options.block, allow: options.allow });
+  const words = await loadWords(asked, { mode, block: options.block, allow: options.allow });
   const found = asked.flatMap((reading) =>
     (words.entries.get(keyOf(reading)) ?? []).flatMap((row) => {
       const form = row.forms.find((one) => formKey(one).includes(character));

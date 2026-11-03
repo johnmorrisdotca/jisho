@@ -4,13 +4,24 @@
  * to leave out and passes it.
  */
 
-import type { Sense, Word } from "./words.types.ts";
+import type { Sense, Word, WordsMode } from "./words.types.ts";
 import { foldKana } from "./words-text.ts";
 
 /** A meaning stops at a whole gloss inside this many characters, except that the first gloss is always whole. */
 export const MEANING_MAX = 60;
 const SENSES_SHOWN = 2;
 const GLOSSES_SHOWN = 3;
+
+/**
+ * The mode a caller asked for, checked once at the top of every entry point so that all of them agree: `"safe"` or
+ * `"unfiltered"`, and `"safe"` for no mode at all (`undefined`). Anything else (`"Safe"`, `"SAFE"`, `""`, `"bogus"`, `null`, a
+ * number) is a mistake, and it throws: a child-safe package never lets a typo or a config value take the filter off.
+ */
+export function modeOf(mode: unknown): WordsMode {
+  if (mode === undefined || mode === "safe") return "safe";
+  if (mode === "unfiltered") return "unfiltered";
+  throw new TypeError(`Unknown mode ${JSON.stringify(mode) ?? String(mode)}: use "safe" or "unfiltered".`);
+}
 
 /**
  * The marks that safe mode leaves out, which are those JMdict gives a sense that is vulgar (`vulg`), X-rated (`X`), sensitive
