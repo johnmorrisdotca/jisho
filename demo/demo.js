@@ -15,6 +15,7 @@ import {
   searchKanji,
 } from "./dist/index.js";
 import { findByMeaning, inflectedOf, kanjiOfWord, loadWords, wordsWithKanji } from "./dist/words.js";
+import { createEntryCard, ENTRY_WORDS } from "./entry.js";
 import { createReader, READER_WORDS } from "./reader.js";
 
 const $ = (id) => document.getElementById(id);
@@ -186,7 +187,10 @@ function docsLink(lang) {
 }
 const language = familyLanguage({
   id: "jisho",
-  words: { en: { ...WORDS.en, ...READER_WORDS.en }, ja: { ...WORDS.ja, ...READER_WORDS.ja } },
+  words: {
+    en: { ...WORDS.en, ...READER_WORDS.en, ...ENTRY_WORDS.en },
+    ja: { ...WORDS.ja, ...READER_WORDS.ja, ...ENTRY_WORDS.ja },
+  },
   onChange: (lang) => {
     docsLink(lang);
     draw();
@@ -247,8 +251,16 @@ const state = {
   word: query.get("word") ?? "",
   by: ["meaning", "kanji"].includes(query.get("by")) ? query.get("by") : "reading",
   mode: query.get("mode") === "unfiltered" ? "unfiltered" : "safe",
+  entry: query.get("entry") ?? "",
 };
 const reader = createReader({ t, state, pathText, writeAddress });
+const entryCard = createEntryCard({
+  t,
+  language,
+  state,
+  onLookUp: (text) => void lookUp(text),
+  onChange: () => writeAddress(),
+});
 const EXAMPLES = {
   reading: ["かみ", "紙", "さくら", "ありがとう", "食べなかった", "kami"],
   meaning: ["water", "dog", "go out", "paper", "thank you"],
@@ -275,6 +287,8 @@ function writeAddress() {
   else next.set("by", state.by);
   if (state.mode === "safe") next.delete("mode");
   else next.set("mode", "unfiltered");
+  if (state.entry === "" || state.view !== "words") next.delete("entry");
+  else next.set("entry", state.entry);
   history.replaceState(history.state, "", `${location.pathname}?${next}${location.hash}`);
 }
 
@@ -426,6 +440,14 @@ async function lookUp(text) {
   drawWords();
 }
 
+/** Presses the "Full entry" button of the word whose card is open, and no other. */
+function markEntry() {
+  for (const item of $("word-list").children)
+    item
+      .querySelector(".jisho-entry-button")
+      ?.setAttribute("aria-pressed", String(item.dataset.written === state.entry));
+}
+
 function wordItem(word) {
   const item = document.createElement("li");
   item.dataset.testid = "word-item";
@@ -487,6 +509,21 @@ function wordItem(word) {
       row.append(button);
     }
     item.append(row);
+  }
+  if (word.id !== undefined) {
+    const open = document.createElement("button");
+    open.type = "button";
+    open.className = "jisho-entry-button";
+    open.dataset.testid = "entry-open";
+    open.textContent = t("entryOpen");
+    open.setAttribute("aria-pressed", String(state.entry === word.written));
+    item.dataset.written = word.written;
+    open.addEventListener("click", () => {
+      void entryCard.show(word);
+      markEntry();
+      $("entry-card").scrollIntoView({ block: "nearest" });
+    });
+    item.append(open);
   }
   return item;
 }
@@ -560,6 +597,7 @@ function drawWords() {
   if (pending !== null) {
     count.textContent = t("wordLoading", { text: pending });
     list.replaceChildren();
+    entryCard.reset();
   } else if (failed !== null) {
     count.textContent = t("wordFailed", { text: failed });
     list.replaceChildren();
@@ -576,6 +614,10 @@ function drawWords() {
           : t(found.length === 1 ? "wordCountOne" : "wordCountMany", { n: found.length, text });
     list.replaceChildren(...found.map(wordItem));
     list.dataset.release = looked.release;
+    const named = state.entry === "" ? undefined : found.find((one) => one.written === state.entry);
+    if (named === undefined) entryCard.hide();
+    else if (entryCard.shown?.id !== named.id) void entryCard.show(named);
+    markEntry();
   }
   $("word-release").textContent =
     looked === null || looked.release === "" ? "" : t("wordRelease", { release: looked.release });
@@ -588,6 +630,7 @@ function draw() {
   $("words-view").hidden = state.view !== "words";
   $("reader-view").hidden = state.view !== "reader";
   drawWords();
+  entryCard.draw();
   if (state.view === "reader") reader.draw();
   segment(
     $("grades"),

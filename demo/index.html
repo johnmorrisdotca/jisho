@@ -49,7 +49,10 @@
           <div class="fam-seg" id="audience" role="group" aria-labelledby="audience-label" data-testid="audience"></div>
         </div>
         <p class="fam-muted" id="word-count" data-testid="word-count" aria-live="polite"></p>
-        <ul class="jisho-words" id="word-list" data-testid="word-list" aria-labelledby="word-count" tabindex="0"></ul>
+        <div class="jisho-board jisho-words-board">
+          <ul class="jisho-words" id="word-list" data-testid="word-list" aria-labelledby="word-count" tabindex="0"></ul>
+          <article class="fam-panel jisho-card jisho-entry-card" id="entry-card" data-testid="entry-card" aria-live="polite" hidden></article>
+        </div>
         <p class="fam-muted" id="word-release" data-testid="word-release"></p>
       </section>
       <section class="jisho-words-view" id="reader-view" data-testid="reader-view" aria-labelledby="choose-title" hidden>

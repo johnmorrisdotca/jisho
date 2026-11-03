@@ -85,6 +85,22 @@ await takePictures({
       ready: READY,
       target: "#embed",
     },
+    // The whole entry of 犬 beside the list, with the sentences that show its sense.
+    {
+      subject: "entry",
+      views: ["desk"],
+      url: "/?lang=en&help=off&view=words&word=%E7%8A%AC&entry=%E7%8A%AC",
+      ready: '[data-testid="entry-example"]',
+      target: "#words-view",
+    },
+    // The whole entry of a word with many senses and cross-references: あつい.
+    {
+      subject: "entry-senses",
+      views: ["desk"],
+      url: "/?lang=en&help=off&view=words&word=%E3%81%82%E3%81%A4%E3%81%84&entry=%E7%86%B1%E3%81%84",
+      ready: '[data-testid="entry-sense"]',
+      target: "#entry-card",
+    },
     // A search by meaning.
     {
       subject: "search",

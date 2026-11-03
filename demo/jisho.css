@@ -67,6 +67,7 @@
 [data-kanji-view][hidden],
 .jisho-words-view[hidden],
 #reader-card[hidden],
+#entry-card[hidden],
 .jisho-board[hidden] {
   display: none;
 }
@@ -316,4 +317,89 @@ header nav a[data-say="pageDocs"] {
 }
 .jisho-reader p:empty {
   display: none;
+}
+.jisho-entry-button {
+  justify-self: start;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+.jisho-entry-button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--page);
+  border-color: var(--ink);
+}
+.jisho-entry-title {
+  margin: 0;
+}
+.jisho-senses {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.jisho-sense {
+  display: grid;
+  gap: 2px;
+  padding-top: 8px;
+  border-top: 1px solid var(--rule);
+}
+.jisho-sense p {
+  margin: 0;
+}
+.jisho-sense-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+  align-items: center;
+}
+.jisho-number {
+  font-weight: 700;
+}
+.jisho-pos,
+.jisho-mark {
+  font-size: 0.8rem;
+  padding: 0 6px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--muted);
+}
+.jisho-fine {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.jisho-link {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 8px;
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.jisho-examples-list {
+  display: grid;
+  gap: 8px;
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.jisho-example {
+  padding-left: 10px;
+  border-left: 3px solid var(--rule);
+}
+.jisho-example p {
+  margin: 0;
+}
+.jisho-example-ja {
+  font-size: 1.15rem;
+  line-height: 1.9;
 }
