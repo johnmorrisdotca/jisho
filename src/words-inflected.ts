@@ -12,13 +12,15 @@ import { isLoaded, keysFor, wordsOf } from "./words-lookup.ts";
  * ```ts
  * import type { InflectedWord } from "@johnmorrisdotca/jisho/words";
  *
- * const found: InflectedWord = { word: { written: "食べる", reading: "たべる", forms: ["食べる"], meaning: "to eat", senses: [], kinds: "i", common: true, rank: 1, priority: [] }, path: ["negative", "past"] };
+ * const found: InflectedWord = { word: { written: "食べる", reading: "たべる", forms: ["食べる"], meaning: "to eat", senses: [], kinds: "i", common: true, rank: 1, priority: [] }, form: "食べる", path: ["negative", "past"] };
  * console.log(found.path.join(", "));
  * ```
  */
 export type InflectedWord = {
   /** The dictionary word. */
   readonly word: Word;
+  /** The dictionary form as it was looked up, spelled as the text spells it (in kana for a text in kana): the text itself when the path is empty. */
+  readonly form: string;
   /** What was done to its dictionary form to make the text, innermost first: 食べなかった is `["negative", "past"]`. Empty when the text is the word as the dictionary has it. */
   readonly path: readonly string[];
 };
@@ -45,13 +47,13 @@ export type InflectedWord = {
 export function inflectedOf(words: Words, text: string, options: LookupOptions = {}): InflectedWord[] {
   const found: InflectedWord[] = [];
   const seen = new Set<string>();
-  const add = (word: Word, path: readonly string[]) => {
+  const add = (word: Word, form: string, path: readonly string[]) => {
     const key = `${word.reading}\t${word.written}\t${word.kinds}\t${word.meaning}`;
     if (seen.has(key)) return;
     seen.add(key);
-    found.push({ word, path });
+    found.push({ word, form, path });
   };
-  for (const word of wordsOf(words, text, options)) add(word, []);
+  for (const word of wordsOf(words, text, options)) add(word, text, []);
   for (const key of keysFor(text, options.romaji)) {
     for (const { base, kind, path } of deinflect(key)) {
       if (!isLoaded(words, base)) {
@@ -59,7 +61,7 @@ export function inflectedOf(words: Words, text: string, options: LookupOptions =
           `The dictionary forms of "${text}" were not loaded: ask loadWords for it with inflected: true.`,
         );
       }
-      for (const word of wordsOf(words, base)) if (word.kinds.includes(kind)) add(word, path);
+      for (const word of wordsOf(words, base)) if (word.kinds.includes(kind)) add(word, base, path);
     }
   }
   return found;

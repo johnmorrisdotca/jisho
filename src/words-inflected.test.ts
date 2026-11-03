@@ -32,12 +32,14 @@ describe("findInflected", () => {
     const found = await findInflected("食べなかった");
     expect(found[0]?.word.written).toBe("食べる");
     expect(found[0]?.path).toEqual(["negative", "past"]);
+    expect(found[0]?.form).toBe("食べる");
     expect(found[0]?.word.meaning).toContain("eat");
   });
 
   it("gives the text's own words first, with no path, and then the words it could come from", async () => {
     const found = await findInflected("来た");
     expect(found[0]?.path).toEqual([]);
+    expect(found[0]?.form).toBe("来た");
     expect(found.some((one) => one.word.written === "来る" && same(one.path, ["past"]))).toBe(true);
     expect(found.findIndex((one) => one.path.length > 0)).toBeGreaterThan(0);
   });

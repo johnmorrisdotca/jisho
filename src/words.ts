@@ -11,7 +11,13 @@
 
 export type { Deinflection, DeinflectKind } from "./deinflect.ts";
 export { deinflect } from "./deinflect.ts";
+export type { FuriganaPart } from "./furigana.ts";
+export { furiganaOf, furiganaOfSurface } from "./furigana.ts";
+export type { KanjiFact, ReadResult, ReadToken } from "./reader.ts";
+export { MAX_READ_LENGTH, readText } from "./reader.ts";
 export { kanaFromRomaji, romajiToKana } from "./romaji.ts";
+export type { StudyRow } from "./study-list.ts";
+export { studyList, studyListText } from "./study-list.ts";
 export type {
   FindOptions,
   IndexManifest,

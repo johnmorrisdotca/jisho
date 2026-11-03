@@ -15,7 +15,7 @@ const PLAIN = /^[\u3041-\u3096\u30A1-\u30FA\u30FC\u3400-\u4DBF\u4E00-\u9FFF々a-
 
 /** Characters that draw nothing: controls, zero-width and bidirectional marks, variation selectors, tag characters. */
 // biome-ignore lint/complexity/useRegexLiterals: as a literal, the formatter rewrites these escapes as the raw invisible characters.
-const INVISIBLE = new RegExp(
+export const INVISIBLE = new RegExp(
   String.raw`[\u0000-\u0008\u000E-\u001F\u007F-\u009F\u00AD\u034F\u061C\u115F\u1160\u17B4\u17B5\u180B-\u180F\u200B-\u200F\u202A-\u202E\u2060-\u206F\u3164\uFE00-\uFE0F\uFEFF\uFFA0\uFFF0-\uFFFB\u{E0000}-\u{E0FFF}]`,
   "gu",
 );
