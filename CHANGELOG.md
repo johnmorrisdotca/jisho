@@ -6,6 +6,22 @@ All notable changes to this project are written here. The format follows
 
 ## [Unreleased]
 
+## [2.5.0] - 2026-11-03
+
+A minor version: nothing that 2.4.0 gave is taken away.
+
+### Added
+
+- **An embed page.** `embed.html` on the demo site is made for an `<iframe>`: it draws what its address says (`word=`, `meaning=`, `kanji=`, `with=`, `limit=`, `mode=`, `lang=`, `theme=`) and nothing else, in safe mode unless the address says `mode=unfiltered`. A guide, in English and Japanese, shows the frame and every option.
+- **Every way to use the package, tested.** `examples/` has a file for each: a script tag from jsDelivr and from unpkg, an iframe, Vite, webpack, React (with a server render), Vue, Svelte, Angular, TypeScript and Node. `pnpm test:usage` packs the package as npm does, builds, type-checks or runs each against that tarball, opens the ones with a page in a browser, and fails when a guide does not hold an example word for word. CI runs it. Four new guides, each in English and Japanese: a plain page and a CDN, Vite and webpack, React, Vue, Svelte and Angular, TypeScript and Node, and the iframe.
+- `scripts/check-standard.mjs`, kazoku-ui's check of the family's must-have list, copied unchanged and held to its recorded hash by a test, so `pnpm check` fails when a demo, an embed page, a documentation site in two languages, the family's files, a tested usage guide or a current picture goes missing.
+
+### Changed
+
+- The demo, the API reference and the docs use the family's language picker and theme switch (kazoku-ui, a development dependency), with the family's current template, stylesheet and documentation generator. `demo/index.html` is now a file with the family's header and footer put in by `scripts/site.mjs`.
+- The docs-site size test allows the few bytes of difference that a different gzip makes (a Mac and CI) and still holds the minified size exact.
+- The README's pictures are made again, and show the embed page.
+
 ## [2.4.0] - 2026-11-03
 
 A minor version: nothing that 2.3.0 gave is taken away.
