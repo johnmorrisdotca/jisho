@@ -1,9 +1,10 @@
 // Builds the static demo for GitHub Pages into ./site: the page, written here from the family's shared header and footer,
 // with the family's stylesheet, Jisho's own, the page's script and the compiled library beside it.
-import { cpSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
+import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 
 import { API_CSS, apiPage } from "./api.mjs";
 import { FAMILY_SCRIPT, familyFooter, familyHead, familyHeader, familyUnreviewed } from "./family-template.mjs";
+import { publishThumbnails, thumbnailHead } from "./family-thumbnail.mjs";
 
 const id = "jisho";
 const ICON =
@@ -22,6 +23,9 @@ const uses = [
 ];
 const escapeHtml = (text) => text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
+/** What the family's card shows, for a reader who cannot see it (the README's top picture says the same). */
+const ALT = "Jisho: the word cards for かみ, which is 紙 paper, 神 god and 髪 hair.";
+
 const page = `<!doctype html>
 <html lang="en">
   <head>
@@ -34,6 +38,7 @@ const page = `<!doctype html>
       ogDescription:
         "Type a reading or a word and see what it means, or choose a school grade or a JLPT level and read each kanji.",
     })}
+    ${thumbnailHead(JSON.parse(readFileSync("package.json", "utf8")), { alt: ALT })}
     <link rel="icon" href="${ICON}" />
     <link rel="stylesheet" href="family.css" />
     <link rel="stylesheet" href="jisho.css" />
@@ -121,6 +126,8 @@ mkdirSync("site", { recursive: true });
 cpSync("demo", "site", { recursive: true });
 cpSync("dist", "site/dist", { recursive: true });
 writeFileSync("site/index.html", page);
+// The family's card, dark card and icon, at <site>/thumbnail.png, thumbnail-dark.png and icon.png.
+publishThumbnails(".", "site");
 // The API reference, made from the source: every export of every entry point.
 writeFileSync("site/api.css", API_CSS);
 writeFileSync("site/api.html", apiPage({ id, name: "Jisho", icon: ICON }));

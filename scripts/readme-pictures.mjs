@@ -69,4 +69,29 @@ await takePictures({
       },
     },
   ],
+  // The family's thumbnail, dark thumbnail and icon (scripts/family-thumbnail.mjs): the first three words the demo finds
+  // for かみ (paper, god and hair), as its word cards; the icon is the kanji card's 山 alone.
+  thumbnail: {
+    url: "/?lang=en&help=off&view=words&word=%E3%81%8B%E3%81%BF",
+    ready: READY,
+    target: "#word-list",
+    label: "Jisho 辞書",
+    async prepare(page, { icon }) {
+      if (icon) return;
+      await page.locator('[data-testid="word-item"]').first().waitFor();
+      await page.locator("#word-list").evaluate((list) => {
+        for (const item of [...list.children].slice(3)) item.remove();
+        list.style.setProperty("display", "flex", "important");
+        list.style.setProperty("width", "max-content", "important");
+        for (const item of list.children) item.style.setProperty("width", "236px", "important");
+      });
+    },
+    icon: {
+      url: address("g1", "山"),
+      target: "#card .jisho-big",
+      // The glyph drawn large in the page, so the icon is not a small one blown up.
+      prepare: (page) =>
+        page.locator("#card .jisho-big").evaluate((big) => big.style.setProperty("font-size", "360px", "important")),
+    },
+  },
 });

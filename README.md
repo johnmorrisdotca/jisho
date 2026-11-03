@@ -1,3 +1,5 @@
+<p align="center"><a href="https://johnmorrisdotca.github.io/jisho/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/thumbnail-dark.png"><img src="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/thumbnail.png" alt="Jisho: the word cards for かみ, which is 紙 paper, 神 god and 髪 hair." width="1200"></picture></a></p>
+
 <h1 align="center">Jisho <sub>辞書</sub> — Japanese word and kanji data for JavaScript</h1>
 
 <p align="center"><strong>Jisho 辞書: Japanese word and kanji data for JavaScript: look words up by reading, written form, English meaning, a kanji in them or romaji, and read the school grades, JLPT levels, readings, meanings and look-alike pairs of 2,999 kanji.</strong><br>
