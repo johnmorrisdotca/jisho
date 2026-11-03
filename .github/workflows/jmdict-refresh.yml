@@ -4,10 +4,16 @@ name: JMdict refresh
 # package that uses its files for "a procedure for regular updating… at least once a month".
 #
 # On the 1st of each month this fetches the newest JMdict and writes src/data/words/ again (scripts/build-words.mjs). If it
-# changed, it pushes the new data to a branch, data/jmdict-YYYY-MM, and FAILS on purpose, so the failure is the reminder: land
-# the branch on main with a patch version in CHANGELOG.md, then tag it. It opens no pull request and never pushes to main. A
-# push to a branch that is not main starts no other workflow here, so a month with a change costs one short run. This repository
-# is public, so the run is free.
+# changed, it pushes the new data to a branch, data/jmdict-YYYY-MM, and opens a pull request from it (or, when one is already
+# open for that branch, updates it), titled with the month and saying what to do: land it on main with a patch version in
+# CHANGELOG.md, then tag it. The run then ENDS GREEN: the pull request is the reminder. It used to fail on purpose, and every
+# month with new data read as a failed run on the board that counts them. It never pushes to main. A push to a branch that is
+# not main starts no other workflow here, so a month with a change costs one short run. This repository is public, so the run
+# is free, and it uses only the workflow's own GITHUB_TOKEN with pull-requests: write.
+#
+# Opening a pull request with that token needs one repository setting, "Allow GitHub Actions to create and approve pull
+# requests" (Settings, Actions, General). Where it is off, GitHub refuses, and this says so in a warning that carries the
+# address to open the pull request by hand, and still ends green: the branch is pushed either way.
 on:
   schedule:
     - cron: "41 6 1 * *"
@@ -15,6 +21,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   refresh:
@@ -27,18 +34,31 @@ jobs:
           node-version: 24
       - name: Fetch the newest JMdict and write the words again
         run: node scripts/build-words.mjs
-      - name: Leave the new words on a branch, and say so by failing
+      - name: Leave the new words on a branch, with a pull request to land it
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           if git diff --quiet -- src/data/words && [ -z "$(git ls-files --others --exclude-standard -- src/data/words)" ]; then
             echo "The words are what JMdict's newest release makes. Nothing to land."
             exit 0
           fi
-          branch="data/jmdict-$(date -u +%Y-%m)"
+          month="$(date -u +%Y-%m)"
+          branch="data/jmdict-$month"
+          title="The words from JMdict's newest release, $month"
+          body="JMdict changed the words. This branch is what scripts/build-words.mjs writes from its newest release.
+
+          To land it: check the changes, add a patch version to CHANGELOG.md under Unreleased, merge it to main, and tag the version. Then delete the branch."
           git config user.name "$GITHUB_ACTOR"
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
           git checkout -b "$branch"
           git add src/data/words data-sources/sources.json
           git commit -m "The words from JMdict's newest release"
           git push --force origin "$branch"
-          echo "::error::JMdict changed the words. Land $branch on main with a new version in CHANGELOG.md and a tag, then delete the branch."
-          exit 1
+          open="$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')"
+          if [ -n "$open" ]; then
+            gh pr edit "$open" --title "$title" --body "$body" || echo "::warning::$branch is pushed, but pull request #$open could not be updated."
+            echo "Pull request #$open is open for $branch."
+          else
+            gh pr create --head "$branch" --base main --title "$title" --body "$body" ||
+              echo "::warning::JMdict changed the words and $branch is pushed, but GitHub refused the pull request (Settings, Actions, General, 'Allow GitHub Actions to create and approve pull requests' is off). Open it here: https://github.com/$GITHUB_REPOSITORY/compare/main...$branch"
+          fi

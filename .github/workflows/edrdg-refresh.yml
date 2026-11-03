@@ -4,11 +4,17 @@ name: EDRDG refresh
 # https://www.edrdg.org/edrdg/licence.html, read 2026-10-31) asks a package that uses its
 # files for "a procedure for regular updating… at least once a month".
 #
-# On the 1st of each month this fetches the newest KANJIDIC2 and writes
-# src/data/ again (scripts/build-data.mjs). If it changed, it pushes them to a branch, data/edrdg-YYYY-MM, and FAILS on purpose,
-# so the failure is the reminder: land the branch on main with a patch version in CHANGELOG.md, then tag it.
-# It opens no pull request and never pushes to main. A push to a branch that is not main starts no other workflow here.
-# Waller's lists and Yencken's scores are kept in data-sources/ and do not change, and are only read again.
+# On the 1st of each month this fetches the newest KANJIDIC2 and writes src/data/ again (scripts/build-data.mjs). If it changed,
+# it pushes the new data to a branch, data/edrdg-YYYY-MM, and opens a pull request from it (or, when one is already open for
+# that branch, updates it), titled with the month and saying what to do: land it on main with a patch version in CHANGELOG.md,
+# then tag it. The run then ENDS GREEN: the pull request is the reminder. It used to fail on purpose, and every month with new
+# data read as a failed run on the board that counts them. It never pushes to main. A push to a branch that is not main starts
+# no other workflow here, and it uses only the workflow's own GITHUB_TOKEN with pull-requests: write. Waller's lists and Yencken's
+# scores are kept in data-sources/ and do not change, and are only read again.
+#
+# Opening a pull request with that token needs one repository setting, "Allow GitHub Actions to create and approve pull
+# requests" (Settings, Actions, General). Where it is off, GitHub refuses, and this says so in a warning that carries the
+# address to open the pull request by hand, and still ends green: the branch is pushed either way.
 on:
   schedule:
     - cron: "23 6 1 * *"
@@ -16,6 +22,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   refresh:
@@ -28,18 +35,31 @@ jobs:
           node-version: 24
       - name: Fetch the newest files and write the data again
         run: node scripts/build-data.mjs
-      - name: Leave the new data on a branch, and say so by failing
+      - name: Leave the new data on a branch, with a pull request to land it
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           if git diff --quiet -- src/data; then
             echo "The data is what EDRDG's newest KANJIDIC2 makes. Nothing to land."
             exit 0
           fi
-          branch="data/edrdg-$(date -u +%Y-%m)"
+          month="$(date -u +%Y-%m)"
+          branch="data/edrdg-$month"
+          title="The grades, readings and meanings from EDRDG's newest KANJIDIC2, $month"
+          body="EDRDG's KANJIDIC2 changed the data. This branch is what scripts/build-data.mjs writes from its newest release.
+
+          To land it: check the changes, add a patch version to CHANGELOG.md under Unreleased, merge it to main, and tag the version. Then delete the branch."
           git config user.name "$GITHUB_ACTOR"
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
           git checkout -b "$branch"
           git add src/data
           git commit -m "The grades, readings and meanings from EDRDG's newest KANJIDIC2"
           git push --force origin "$branch"
-          echo "::error::EDRDG's files changed. Land $branch on main with a new version in CHANGELOG.md and a tag, then delete the branch."
-          exit 1
+          open="$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')"
+          if [ -n "$open" ]; then
+            gh pr edit "$open" --title "$title" --body "$body" || echo "::warning::$branch is pushed, but pull request #$open could not be updated."
+            echo "Pull request #$open is open for $branch."
+          else
+            gh pr create --head "$branch" --base main --title "$title" --body "$body" ||
+              echo "::warning::EDRDG's files changed and $branch is pushed, but GitHub refused the pull request (Settings, Actions, General, 'Allow GitHub Actions to create and approve pull requests' is off). Open it here: https://github.com/$GITHUB_REPOSITORY/compare/main...$branch"
+          fi
