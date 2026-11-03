@@ -224,7 +224,8 @@ The demo site has a page made to be framed. It draws what its address says (`wor
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/embed-desk-dark.webp">
 <img src="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/embed-desk-light.webp" alt="The embed page: the card of 山 with its strokes, grade, level, readings and meanings, above three words read かみ: 紙, 神 and 髪, each with its meaning." width="360">
-</picture>
+</picture><br>
+<em>The embed page for <code>?word=かみ&kanji=山</code>.</em>
 
 ```html
 <!doctype html>
