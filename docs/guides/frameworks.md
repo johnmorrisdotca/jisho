@@ -111,7 +111,7 @@ $effect(() => {
 ## Angular
 
 ```ts no-check
-import { Component, Input, type OnChanges, signal } from "@angular/core";
+import { Component, Input, type OnChanges, type OnInit, type SimpleChanges, signal } from "@angular/core";
 import { loadWords, type Word, wordsOf } from "@johnmorrisdotca/jisho/words";
 
 @Component({
@@ -125,11 +125,19 @@ import { loadWords, type Word, wordsOf } from "@johnmorrisdotca/jisho/words";
     </ul>
   `,
 })
-export class WordListComponent implements OnChanges {
+export class WordListComponent implements OnInit, OnChanges {
   @Input() text = "かみ";
   readonly words = signal<readonly Word[]>([]);
 
-  async ngOnChanges(): Promise<void> {
+  ngOnInit(): void {
+    void this.show();
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes["text"]?.firstChange === false) void this.show();
+  }
+
+  private async show(): Promise<void> {
     const asked = this.text;
     const loaded = await loadWords(asked);
     if (asked === this.text) this.words.set(wordsOf(loaded, asked).slice(0, 5));

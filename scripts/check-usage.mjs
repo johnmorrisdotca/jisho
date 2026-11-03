@@ -261,7 +261,10 @@ await step("webpack", async () => {
     );
   });
   if (stats.hasErrors()) throw new Error(stats.toString({ colors: false, errors: true }));
-  writeFileSync(join(out, "index.html"), `<!doctype html><html><body><script src="main.js"></script></body></html>`);
+  writeFileSync(
+    join(out, "index.html"),
+    `<!doctype html><html lang="en"><head><meta charset="utf-8" /></head><body><script src="main.js"></script></body></html>`,
+  );
   await opened(async (page) => {
     await serve(page, "https://app.test", out);
     await page.goto("https://app.test/");
