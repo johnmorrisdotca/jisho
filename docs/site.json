@@ -14,6 +14,10 @@
       "en": "The functions that read the tables",
       "ja": "表を読む関数"
     },
+    "./deinflect": {
+      "en": "The dictionary forms a conjugated word could come from",
+      "ja": "活用した語のもとになる辞書形"
+    },
     "./grades": {
       "en": "School grades",
       "ja": "学年"

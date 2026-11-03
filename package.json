@@ -63,6 +63,11 @@
       "import": "./dist/index.js",
       "default": "./dist/index.js"
     },
+    "./deinflect": {
+      "types": "./dist/deinflect.d.ts",
+      "import": "./dist/deinflect.js",
+      "default": "./dist/deinflect.js"
+    },
     "./grades": {
       "types": "./dist/data/grades.data.d.ts",
       "import": "./dist/data/grades.data.js",
@@ -133,7 +138,6 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.6.4",
-    "@johnmorrisdotca/hikidashi": "^1.1.1",
     "@playwright/test": "^1.63.0",
     "@vitest/coverage-v8": "5.0.5",
     "esbuild": "^0.28.0",

@@ -9,6 +9,8 @@
  * `words-text.ts` (what a row and a text are), `words-filter.ts` (the tools for what a lookup returned) and `romaji.ts`.
  */
 
+export type { Deinflection, DeinflectKind } from "./deinflect.ts";
+export { deinflect } from "./deinflect.ts";
 export { kanaFromRomaji, romajiToKana } from "./romaji.ts";
 export type {
   FindOptions,
@@ -29,6 +31,7 @@ export type {
 } from "./words.types.ts";
 export { loadCommonWords, readCommonWords } from "./words-common.ts";
 export { hasMarks, meaningFrom, onlyWords, SAFE_MARKS, withoutMarks, withoutWords } from "./words-filter.ts";
+export { findInflected, type InflectedWord, inflectedOf } from "./words-inflected.ts";
 export { loadWords } from "./words-load.ts";
 export { allWords, isLoaded, meaningOf, wordsOf } from "./words-lookup.ts";
 export { WordsLoadError, type WordsPieceKind } from "./words-pieces.ts";

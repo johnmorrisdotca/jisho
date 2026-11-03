@@ -5,6 +5,10 @@
       "minified": 1624,
       "gzip": 892
     },
+    "./deinflect": {
+      "minified": 7089,
+      "gzip": 2105
+    },
     "./grades": {
       "minified": 18121,
       "gzip": 8009
@@ -22,16 +26,16 @@
       "gzip": 35421
     },
     "./words": {
-      "minified": 65404713,
-      "gzip": 13741800
+      "minified": 65420601,
+      "gzip": 13770000
     },
     "./words-common": {
-      "minified": 2747153,
-      "gzip": 823320
+      "minified": 2748824,
+      "gzip": 826000
     },
     "./words-common-extra": {
-      "minified": 72668,
-      "gzip": 22990
+      "minified": 72687,
+      "gzip": 23060
     }
   }
 }

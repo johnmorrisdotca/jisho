@@ -139,7 +139,7 @@ export type Word = {
   readonly meaning: string;
   /** Its first four senses, each with its marks and glosses. The meaning is made from these. */
   readonly senses: readonly Sense[];
-  /** The kinds of word it is, as letters: g godan, i ichidan, a i-adjective, s suru, k kuru. Empty for any other. */
+  /** The kinds of word it is, as letters: g godan, i ichidan, a i-adjective, n na-adjective, s suru, k kuru. Empty for any other. */
   readonly kinds: string;
   /** Whether JMdict marks it as a common word. */
   readonly common: boolean;
@@ -223,6 +223,8 @@ export type LoadWordsOptions = WordsOptions & {
   readonly previous?: Words;
   /** Read a text of Latin letters as romaji and load the kana it could be (`kami` is かみ). Ask `wordsOf` the same way. Off unless given: `AI` and `CD` are written forms too. */
   readonly romaji?: boolean;
+  /** Also load the dictionary forms a text could be conjugated from (食べなかった loads 食べる), for `inflectedOf`. Off unless given: it fetches a few pieces more. */
+  readonly inflected?: boolean;
 };
 
 /**
