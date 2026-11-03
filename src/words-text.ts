@@ -144,6 +144,16 @@ export function termsInOrder(text: string): string[] {
   return found.filter((term) => !STOPPED.has(term));
 }
 
+/** A gloss without its asides: "water (esp. cool or cold)" is "water", and the asides inside asides go too. The same rule as `withoutAsides` in scripts/words-tables.mjs. */
+export function withoutAsides(gloss: string): string {
+  let text = gloss;
+  for (let before = ""; before !== text; ) {
+    before = text;
+    text = text.replace(/\([^()]*\)/g, " ");
+  }
+  return text;
+}
+
 /** The terms of an English text, once each: the same rule as `termsOf` in scripts/words-tables.mjs, which a test holds to it. */
 export function termsOf(text: string): string[] {
   return [...new Set(termsInOrder(text))];

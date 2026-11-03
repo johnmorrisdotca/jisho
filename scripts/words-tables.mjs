@@ -161,6 +161,8 @@ export const STOP_WORDS = [
 const STOPPED = new Set(STOP_WORDS);
 /** A gloss held to this many of the commonest words for each term of the meaning index, and a kanji to the second. */
 export const MEANING_CAP = 20;
+/** Of those, at most this many are words with a gloss that is exactly the term; the rest are the commonest that merely hold it. */
+export const MEANING_EXACT = 10;
 export const KANJI_CAP = 60;
 
 /** The terms of a text in order, as they follow each other: the same rule as `termsInOrder` in src/words-text.ts. */
@@ -201,20 +203,84 @@ function refsByKey(rows, keysOf, cap) {
   return index;
 }
 
+/** A gloss without its asides: "water (esp. cool or cold)" is "water". The same rule as `withoutAsides` in src/words-text.ts. */
+export function withoutAsides(gloss) {
+  let text = gloss;
+  for (let before = ""; before !== text; ) {
+    before = text;
+    text = text.replace(/\([^()]*\)/g, " ");
+  }
+  return text;
+}
+
+/** How well a gloss answers a key: 0 the first gloss of the first sense is exactly the key, 1 another gloss is, 2 a gloss only holds it. */
+export const HEADLINE = 0;
+export const EXACT = 1;
+export const HOLDS = 2;
+/** A word with an exact gloss that is not its first is ranked as if it were this much less common: 飲む (to drink) before 一気 (chug!, drink!). */
+export const EXACT_PENALTY = 20_000;
+
 /**
- * The terms of the glosses a row is found by. A word JMdict ranks has every term of every gloss it keeps; a word it does not
- * rank, which is most of the dictionary, has the terms of its first gloss alone, so that the index is a few megabytes and not thirty.
+ * The keys a row is found by in the index by meaning, each with how well the row's glosses answer it (`HEADLINE`, `EXACT` or
+ * `HOLDS`; `drink` is the headline of 飲む, whose first gloss is "to drink", and only an exact gloss of 一気, which has "drink!"
+ * as its second sense's second gloss). A word JMdict ranks has every term of every gloss it keeps; a word it does not rank, which
+ * is most of the dictionary, has the terms of its first gloss alone, so that the index is a few megabytes and not thirty.
  */
-function meaningKeys(row, senses) {
+export function meaningKeys(row, senses) {
   const ranked = row.rank < UNRANKED;
   const glosses = senses.flatMap((sense) => sense.glosses);
-  const terms = (ranked ? glosses : glosses.slice(0, 1)).flatMap(termsOf);
+  const keys = new Map();
+  const add = (key, tier) => keys.set(key, Math.min(keys.get(key) ?? HOLDS, tier));
+  const tierOf = (at) => (at === 0 ? HEADLINE : EXACT);
+  for (const [at, gloss] of (ranked ? glosses : glosses.slice(0, 1)).entries()) {
+    // A gloss that is one term once its asides are left out and the words every gloss has ("go (board game)", "to go") is exactly
+    // that term; the terms of its asides only hold it.
+    const whole = termsInOrder(withoutAsides(gloss));
+    for (const term of termsOf(gloss)) add(term, whole.length === 1 && whole[0] === term ? tierOf(at) : HOLDS);
+  }
   // A word JMdict ranks is also found by two terms that follow each other in a gloss: "go out" is a key, so a phrase finds its words.
-  const pairs = glosses.flatMap((gloss) => {
-    const found = termsInOrder(gloss);
-    return found.slice(1).map((term, at) => pairKey(found[at], term));
-  });
-  return ranked ? [...terms, ...pairs] : terms;
+  if (ranked)
+    for (const [at, gloss] of glosses.entries()) {
+      const found = termsInOrder(gloss);
+      const whole = termsInOrder(withoutAsides(gloss));
+      for (const [next, term] of found.slice(1).entries()) {
+        const key = pairKey(found[next], term);
+        add(key, whole.length === 2 && pairKey(whole[0], whole[1]) === key ? tierOf(at) : HOLDS);
+      }
+    }
+  return [...keys];
+}
+
+/**
+ * For each key of the index by meaning, the readings of its words: those whose gloss answers the key exactly first (at most
+ * `exactMost` of them, by rank with `EXACT_PENALTY` added where the gloss is not the word's first), then the commonest of the rest, up to `cap`
+ * in all. `rows` come commonest first. This is what makes `drink` give 飲む: the commonest twenty words that merely hold the term
+ * would not.
+ */
+function refsByMeaning(rows, cap, exactMost) {
+  const index = new Map();
+  for (const row of rows) {
+    for (const [key, tier] of meaningKeys(row, row.senses)) {
+      const held = index.get(key) ?? new Map();
+      index.set(key, held);
+      const was = held.get(row.reading);
+      const score = row.rank + (tier === EXACT ? EXACT_PENALTY : 0);
+      // A reading several words share counts by its best word.
+      if (tier !== HOLDS && (was === undefined || was.tier === HOLDS || score < was.score))
+        held.set(row.reading, { tier, score });
+      else if (was === undefined) held.set(row.reading, { tier, score });
+    }
+  }
+  return new Map(
+    [...index].map(([key, held]) => {
+      const readings = [...held.keys()];
+      const first = readings
+        .filter((reading) => held.get(reading).tier !== HOLDS)
+        .sort((a, b) => held.get(a).score - held.get(b).score)
+        .slice(0, exactMost);
+      return [key, [...first, ...readings.filter((reading) => !first.includes(reading)).slice(0, cap - first.length)]];
+    }),
+  );
 }
 
 const lineOf = ([key, readings]) => [key, `${key}\t${readings.join("|")}`];
@@ -231,13 +297,13 @@ const sortedLines = (index) => [...index].sort((a, b) => (a[0] < b[0] ? -1 : 1))
 export function indexesOf(rows) {
   const clean = rows.filter((row) => row.clean !== null).map((row) => ({ ...row, ...row.clean }));
   const sets = [
-    ["meanings", "extraMeanings", (row) => meaningKeys(row, row.senses), MEANING_CAP],
-    ["kanji", "extraKanji", (row) => kanjiOfForms(row.forms), KANJI_CAP],
+    ["meanings", "extraMeanings", (some) => refsByMeaning(some, MEANING_CAP, MEANING_EXACT)],
+    ["kanji", "extraKanji", (some) => refsByKey(some, (row) => kanjiOfForms(row.forms), KANJI_CAP)],
   ];
   const out = {};
-  for (const [name, extraName, keysOf, cap] of sets) {
-    const safe = refsByKey(clean, keysOf, cap);
-    const everything = refsByKey(rows, keysOf, cap);
+  for (const [name, extraName, refsOf] of sets) {
+    const safe = refsOf(clean);
+    const everything = refsOf(rows);
     out[name] = sortedLines(safe);
     out[extraName] = sortedLines(new Map([...everything].filter(([key, held]) => !same(held, safe.get(key) ?? []))));
   }

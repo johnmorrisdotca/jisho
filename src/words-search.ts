@@ -11,7 +11,7 @@ import { loadWords } from "./words-load.ts";
 import { allWords } from "./words-lookup.ts";
 import { extraIndexes, formOfLine, indexed, indexes, pieceOf, type WordsPieceKind } from "./words-pieces.ts";
 import { listed, wordOf } from "./words-rows.ts";
-import { formKey, keyOf, normalizeText, termsInOrder } from "./words-text.ts";
+import { formKey, keyOf, normalizeText, termsInOrder, withoutAsides } from "./words-text.ts";
 
 /** The most words a find gives, and so the most pieces of the dictionary it fetches; it is what the index holds for a term. */
 export const FIND_MOST = 20;
@@ -41,9 +41,33 @@ async function readingsFor(kind: "meanings" | "kanji", unfiltered: boolean, key:
 const containsRun = (hay: readonly string[], needle: readonly string[]) =>
   needle.length > 0 && hay.some((_, at) => needle.every((term, i) => hay[at + i] === term));
 
+/** How well a word answers a search: its first gloss is exactly it, another gloss is, or a gloss only holds it. The index is built the same way. */
+const HEADLINE = 0;
+const EXACT = 1;
+const HOLDS = 2;
+/** A word with an exact gloss that is not its first is ranked as if it were this much less common: 飲む (to drink) before 一気 (chug!, drink!). */
+const EXACT_PENALTY = 20_000;
+
+/** The tier of a word for a query, or undefined when no gloss of it holds the query. */
+function tierOf(word: Word, query: readonly string[]): number | undefined {
+  let tier: number | undefined;
+  let place = 0;
+  for (const sense of word.senses) {
+    for (const gloss of sense.glosses) {
+      const terms = termsInOrder(gloss);
+      const whole = termsInOrder(withoutAsides(gloss));
+      if (whole.length === query.length && whole.every((term, i) => term === query[i]))
+        tier = Math.min(tier ?? HOLDS, place === 0 ? HEADLINE : EXACT);
+      else if (containsRun(terms, query)) tier = Math.min(tier ?? HOLDS, HOLDS);
+      place++;
+    }
+  }
+  return tier;
+}
+
 /**
  * The words already loaded whose English meaning holds some words, the whole word at a time (`water` is a gloss with the word
- * water in it, `watermelon` is not), the ones whose gloss is exactly it first, then the commonest. It reads what is in `words`
+ * water in it, `watermelon` is not), the ones whose first gloss is exactly it first, then those with another gloss that is, then the commonest. It reads what is in `words`
  * and fetches nothing: for a table of common words, or words from `loadWords`. `to`, `the`, `a` and the other words every gloss
  * has are left out of the search, so `walk` finds "to walk".
  *
@@ -61,27 +85,19 @@ const containsRun = (hay: readonly string[], needle: readonly string[]) =>
 export function searchMeanings(words: Words, text: string): Word[] {
   const query = termsInOrder(normalizeText(text));
   if (query.length === 0) return [];
-  const found: { word: Word; exact: boolean; at: number }[] = [];
+  const found: { word: Word; group: number; score: number; at: number }[] = [];
   for (const [at, word] of allWords(words).entries()) {
-    let exact = false;
-    let held = false;
-    for (const sense of word.senses) {
-      for (const gloss of sense.glosses) {
-        const terms = termsInOrder(gloss);
-        if (terms.length === query.length && terms.every((term, i) => term === query[i])) exact = held = true;
-        else if (containsRun(terms, query)) held = true;
-      }
-    }
-    if (held) found.push({ word, exact, at });
+    const tier = tierOf(word, query);
+    if (tier !== undefined)
+      found.push({ word, group: tier === HOLDS ? 1 : 0, score: word.rank + (tier === EXACT ? EXACT_PENALTY : 0), at });
   }
-  return found
-    .sort((a, b) => Number(b.exact) - Number(a.exact) || a.word.rank - b.word.rank || a.at - b.at)
-    .map((one) => one.word);
+  return found.sort((a, b) => a.group - b.group || a.score - b.score || a.at - b.at).map((one) => one.word);
 }
 
 /**
- * Words found by what they mean in English, the commonest first. The index holds, for each English term, the readings of the
- * commonest twenty words that have it (every word JMdict ranks has all of its terms; a word it does not rank, only those of its
+ * Words found by what they mean in English, the best answers first. The index holds, for each English term, the readings of twenty
+ * words: up to ten whose gloss is exactly the term (`drink` is the first gloss of 飲む, "to drink"), the commonest first, then the
+ * commonest that merely have it (every word JMdict ranks has all of its terms; a word it does not rank, only those of its
  * first gloss), so `limit` words cost the term's piece, about 15 kB gzipped, and at most that many pieces of the dictionary.
  *
  * A text of several words finds the words whose glosses hold them one after the other (the index has every pair of terms that
@@ -90,7 +106,7 @@ export function searchMeanings(words: Words, text: string): Word[] {
  *
  * @param text - English: `water`, `go out`.
  * @param options - The mode, the lists, and the most words to give (10 unless given, and no more than 20).
- * @returns The words, the ones whose gloss is exactly the text first, then the commonest; none when nothing matches.
+ * @returns The words, the ones whose gloss is exactly the text first (a word's first gloss before a later one), then the commonest; none when nothing matches.
  * @example
  * ```ts
  * import { findByMeaning } from "@johnmorrisdotca/jisho/words";

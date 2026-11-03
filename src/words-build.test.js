@@ -21,11 +21,13 @@ import {
   indexesOf,
   KANJI_CAP,
   MEANING_CAP,
+  MEANING_EXACT,
   patched,
   STOP_WORDS,
   tablesOf,
   termsInOrder,
   termsOf,
+  withoutAsides,
 } from "../scripts/words-tables.mjs";
 import { priorityTags, rankOfTags, readRow } from "./words-rows.ts";
 import {
@@ -34,6 +36,7 @@ import {
   readingKey as tsReadingKey,
   termsInOrder as tsTermsInOrder,
   termsOf as tsTermsOf,
+  withoutAsides as tsWithoutAsides,
 } from "./words-text.ts";
 
 const entry = (body) => `\n<ent_seq>1</ent_seq>\n${body}\n`;
@@ -452,6 +455,55 @@ describe("the indexes by meaning and by kanji", () => {
     );
     expect(lineOf(indexesOf(many).meanings, "thing")?.split("\t")[1]?.split("|")).toHaveLength(MEANING_CAP);
     expect(KANJI_CAP).toBeGreaterThan(MEANING_CAP);
+  });
+
+  it("put the words whose gloss is exactly the term first, the commonest of them, then the commonest that merely hold it", () => {
+    const word = (writing, priority, glosses) =>
+      `<entry>${entry(`<k_ele><keb>${writing[0]}</keb>${priority}</k_ele><r_ele><reb>${writing[1]}</reb></r_ele>${glosses.map((one) => sense(["n"], [], one)).join("")}`)}`;
+    const drinks = rowsOfDictionary(
+      [
+        // Commonest by far, and only holds "drink": a bar where one can drink.
+        word(["酒場", "さかば"], "<ke_pri>news1</ke_pri><ke_pri>nf01</ke_pri>", [["bar where one can drink"]]),
+        // "drink!" is its second sense's second gloss: an exact gloss, but not what the word mainly means.
+        word(["一気", "いっき"], "<ke_pri>news1</ke_pri><ke_pri>nf03</ke_pri>", [["one breath"], ["chug!", "drink!"]]),
+        // The headline of the word, with an aside; less common than the others by its rank.
+        word(["飲む", "のむ"], "<ke_pri>ichi1</ke_pri>", [["to drink (alcohol)", "to swallow"]]),
+        // An aside only holds the term.
+        word(["飲物", "のみもの"], "", [["cola (soft drink)"]]),
+      ].join(""),
+    );
+    const readings = lineOf(indexesOf(drinks).meanings, "drink")?.split("\t")[1]?.split("|");
+    expect(readings).toEqual(["のむ", "いっき", "さかば", "のみもの"]);
+  });
+
+  it("keep at most MEANING_EXACT exact words, then fill to the cap with the commonest that hold the term", () => {
+    const rows = rowsOfDictionary(
+      Array.from(
+        { length: MEANING_CAP + 5 },
+        (_, at) =>
+          `<entry>${entry(`<k_ele><keb>字${at}</keb></k_ele><r_ele><reb>じ${String.fromCharCode(0x3041 + at)}</reb></r_ele>${sense(["n"], [], [at < 15 ? "thing" : "a thing of beauty"])}`)}`,
+      ).join(""),
+    );
+    const readings = lineOf(indexesOf(rows).meanings, "thing")?.split("\t")[1]?.split("|") ?? [];
+    expect(readings).toHaveLength(MEANING_CAP);
+    expect(readings.slice(0, MEANING_EXACT)).toEqual(readings.slice(0, MEANING_EXACT).sort());
+    // Ten exact words first (the first ten rows), then the rest of the cap: the other five exact ones are held like any other.
+    expect(
+      readings.slice(0, MEANING_EXACT).every((reading, at) => reading === `じ${String.fromCharCode(0x3041 + at)}`),
+    ).toBe(true);
+  });
+
+  it("leave the asides out of a gloss, nested ones too, the same way the lookup does", () => {
+    for (const text of [
+      "water (esp. cool or cold)",
+      "dog (Canis (lupus) familiaris)",
+      "(playing a) game (of go)",
+      "(",
+      "a (b",
+      "",
+    ])
+      expect(withoutAsides(text), text).toBe(tsWithoutAsides(text));
+    expect(termsInOrder(withoutAsides("dog (Canis (lupus) familiaris)"))).toEqual(["dog"]);
   });
 
   it("make the terms the lookup makes, with the same words left out", () => {
