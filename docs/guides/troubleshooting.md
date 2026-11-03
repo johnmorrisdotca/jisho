@@ -35,7 +35,7 @@ A piece of the dictionary could not be fetched, even on the second try. `error.p
 
 ## `findByMeaning` does not find a word
 
-It finds a word by the whole words of its glosses, from an index of the commonest twenty words for each English term, and a word JMdict does not rank by the terms of its first gloss alone. A word with a very common term in its gloss may be beyond the twenty; try a phrase that follows the gloss (`go out`), or the term that is rarer. It does not stem (`walking` does not find "walk") and it is English only.
+It finds a word by the whole words of its glosses, from an index of twenty words for each English term (up to ten whose gloss is exactly the term, then the commonest that hold it), and a word JMdict does not rank by the terms of its first gloss alone. A word that only holds a very common term in its gloss may be beyond the twenty; try a phrase that follows the gloss (`go out`), or the term that is rarer. It does not stem (`walking` does not find "walk") and it is English only.
 
 ## A server's bundle got very large
 

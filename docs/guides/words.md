@@ -129,7 +129,7 @@ Import `words` only where a lookup is made. A bundler that follows `loadWords` r
 - Do the lookup in the one route or action that needs it, never on a page's render path that every visit reaches.
 - If the host copies only the files a build can trace, make sure `node_modules/@johnmorrisdotca/jisho/dist/data/words` is among them, or look words up in the browser instead.
 
-A server keeps the pieces it has read in memory, so a second lookup in the same piece costs nothing.
+A server keeps the pieces it has read in memory, up to 64 of them (the one asked for longest ago is let go), so a second lookup in the same piece costs nothing. The words you loaded are yours and stay.
 
 ## What it costs
 

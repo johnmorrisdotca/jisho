@@ -12,7 +12,7 @@ const ICON =
 
 const uses = [
   `import { findByMeaning, loadWords, wordsOf, wordsWithKanji } from "@johnmorrisdotca/jisho/words";`,
-  `wordsOf(await loadWords("かみ"), "かみ")  // 紙, 神, 髪… with a meaning each; a few kilobytes are fetched`,
+  `wordsOf(await loadWords("かみ"), "かみ")  // 紙, 神, 髪… with a meaning each; about 25 kB is fetched`,
   `await findByMeaning("water")  // 水 and the commonest words whose meaning holds water`,
   `await wordsWithKanji("山")  // 山, 火山, 登山… the commonest words written with 山`,
   `import { gradeOf, kanjiOfLevel, lookAlikes, readKanji } from "@johnmorrisdotca/jisho";`,

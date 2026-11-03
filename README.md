@@ -62,7 +62,7 @@ console.log(lookAlikes(LOOK_ALIKE, "土")[0]?.kanji); // the closest look-alike 
 
 ## Who it is for
 
-- **Games and quizzes** that take any kana as a guess and want to show what it means, with the safe mode's answer by default, and that fetch a few kilobytes to do it.
+- **Games and quizzes** that take any kana as a guess and want to show what it means, with the safe mode's answer by default, and that fetch about 25 kB (gzipped) to do it.
 - **Language learning apps** that look words up by reading or written form, and order kanji by school year or JLPT level, and want to warn a learner about the pair they are about to confuse.
 - **Text tools** that say how hard a piece of Japanese is, from the kanji in it.
 - **Quizzes** that need a list of kanji with their readings and meanings, and wrong answers that look right.
@@ -193,7 +193,7 @@ import { GRADES } from "@johnmorrisdotca/jisho/grades";
 console.log(kanjiOfGrade(GRADES, 1).slice(0, 5));
 ```
 
-### Words, a few kilobytes at a time
+### Words, about 25 kB at a time
 
 `loadWords` fetches the pieces of the dictionary that the texts you give it are in, and `wordsOf` then reads them with no waiting. Fetch them when a page needs them, not when it opens:
 
@@ -470,9 +470,9 @@ JMdict's English dictionary, one row for each reading of each entry that has an 
 | `common` | Whether JMdict marks it common: `news1`, `ichi1`, `spec1`, `spec2` or `gai1` on a form or reading |
 | `priority`, `rank` | The priority tags JMdict gives it (`news1`, `ichi1`, `nf05`…) and one number made from them, lower being commoner: 250 to 24,000, and 100,000 for a word with none |
 
-From JMdict of 2026-11-03. Safe mode's rows are cut into 294 pieces by reading and 71 of an index from each written form to its readings. A piece is at most about 100 kB and a lookup fetches the one or two it needs, about 25 kB gzipped each. The common words are one table, `words-common`, of about 820 kB gzipped.
+From JMdict of 2026-11-03. Safe mode's rows are cut into 294 pieces by reading and 71 of an index from each written form to its readings. A piece of rows is about 74 kB (24 kB gzipped) and a piece of the index of written forms about 120 kB (29 kB gzipped). A guess in kana fetches one piece, about 25 kB gzipped; a written form fetches two, one after the other (the index, then the rows it names), about 57 kB gzipped. The common words are one table, `words-common`, of about 820 kB gzipped.
 
-The indexes that find words by meaning and by kanji are pieces of their own: 173 of English terms (the readings of the commonest twenty words with each term, and of each pair of terms that follow each other in the gloss of a ranked word) and 50 of kanji (the commonest sixty words with each), each about 15 kB gzipped, and 10 and 4 more for what safe mode leaves out. A word JMdict ranks is found by every term of every gloss it keeps; a word it does not rank, which is most of the dictionary, by the terms of its first gloss. A plain lookup by reading never fetches them.
+The indexes that find words by meaning and by kanji are pieces of their own: 172 of English terms (the readings of twenty words with each term: up to ten whose gloss is exactly the term, the commonest first, a word's first gloss before a later one, then the commonest that merely hold it; and the same for each pair of terms that follow each other in the gloss of a ranked word) and 50 of kanji (the commonest sixty words with each), each about 16 kB gzipped, and 9 and 4 more for what safe mode leaves out. What they cost, measured on 2026-11-03: `findByMeaning("water")` fetches 8 files, about 180 kB gzipped, in three steps one after another (the index's manifest, its piece, then the rows); `wordsWithKanji("山")` 9 files, about 210 kB. A server keeps what it fetched in memory, up to 64 pieces. A word JMdict ranks is found by every term of every gloss it keeps; a word it does not rank, which is most of the dictionary, by the terms of its first gloss. A plain lookup by reading never fetches them.
 
 What safe mode leaves out is in pieces of its own: 847 rows of words of which every sense is marked, the marked senses, and the written forms and readings that only such a sense gives. They are 8 pieces of about 19 kB gzipped by reading, one of the index, a manifest for them and, for the common words, `words-common-extra`. `mode: "unfiltered"` fetches the pieces that hold the keys a lookup asks for, besides the others; a safe lookup never does.
 
@@ -570,9 +570,11 @@ The package draws nothing, so there is nothing of its own to theme: it hands bac
 
 - Meanings are English only, from JMdict_e, and short: two senses at most, cut at about 60 characters. They are a gloss to show beside a word, not JMdict's whole entry.
 - Safe mode keeps what it leaves out in pieces of their own, fetched only unfiltered, so it never reaches a browser that did not ask. The pieces are in the package, so anybody who installs it or asks for them can read them. JMdict's marks are its own and are not complete: a sense it has not marked is not left out, and a consumer that needs more brings its own `block` list, which Jisho does not supply.
+- Options are checked: `block` and `allow` must be lists of texts and `mode` must be `"safe"` or `"unfiltered"`; anything else throws a `TypeError` before anything is fetched, rather than turning the filter off.
 - A lookup is exact: no inflected form (食べた finds nothing, 食べる does; [the recipe above](#a-word-as-a-sentence-writes-it) uses Hikidashi for that). The text is made plain first, but a typo finds nothing.
-- The English search finds a word by whole words of its glosses, from an index of the commonest twenty words for each term: a very common term (`go`, `water`) reaches only the commonest, and a word JMdict does not rank is found by its first gloss alone. It has no stemming (`walking` does not find "walk").
-- The dictionary is about 48 MB in all. A server that bundles `words` carries it; see [Look words up](https://johnmorrisdotca.github.io/jisho/docs/guides/words.html).
+- The English search finds a word by whole words of its glosses, from an index of twenty words for each term (up to ten whose gloss is exactly it, then the commonest that hold it): a very common term (`go`, `water`) reaches only those twenty, and a word JMdict does not rank is found by its first gloss alone. It has no stemming (`walking` does not find "walk").
+- A process keeps the pieces it has read, at most 64 at a time; the one asked for longest ago is let go. Looking up every piece once took a process from 49 MB to 266 MB before this limit.
+- The dictionary is about 48 MB in all, and 13.7 MB gzipped as one bundle. A server that bundles `words` carries it, and a bundler that follows every piece carries all of it; see [Look words up](https://johnmorrisdotca.github.io/jisho/docs/guides/words.html).
 - 2,999 kanji: those with a school grade in KANJIDIC2. Rarer kanji have no row.
 - The JLPT levels are one person's lists, not the test's.
 - The look-alike pairs cover the 1,945 jōyō kanji of before 2010: the 196 added in 2010 and nearly all the kanji for names have none.

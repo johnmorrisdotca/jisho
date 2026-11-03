@@ -47,6 +47,8 @@ The default, safe mode, leaves out a sense JMdict marks vulgar (`vulg`), X-rated
 
 The Japanese Language Proficiency Test has published no list of kanji since the present five levels began in 2010, so any list of kanji by level is somebody's reconstruction. These are Jonathan Waller's, from his JLPT Resources (http://www.tanos.co.uk/jlpt/). His page "Use my data!" (http://www.tanos.co.uk/jlpt/sharing/) says: "Everything on this site (that I'm not selling), is licenced under Creative Commons "BY". Basically this means... use anything here however you like (commercial or non-commercial), but credit my site. (A link would be nice.)"
 
+The page names no version of the licence. `package.json`'s `license` field says `CC-BY-4.0` for these lists only because SPDX has no identifier for a Creative Commons "BY" with no version; read it as "CC BY, version not stated by the author". The credit above is the same under every version.
+
 If you show the levels, credit his site and link to it, for example: *JLPT levels from Jonathan Waller's JLPT Resources (http://www.tanos.co.uk/jlpt/), CC BY.*
 
 tanos.co.uk did not answer from where this package was built on 2026-10-31, so the five kanji pages and the page of terms were read from the Internet Archive's copies; [data-sources/sources.json](data-sources/sources.json) gives the address and date of each copy.

@@ -1,5 +1,5 @@
 // The demo page's own script: look a word up by its reading, its English meaning or a kanji in it, or pick a list, read a kanji and follow a look-alike. The kanji tables are the
-// package's entry points, each fetched when the page opens; the words are fetched a few kilobytes at a time, as they are asked for.
+// package's entry points, each fetched when the page opens; the words are fetched about 25 kB at a time, as they are asked for.
 // What is shown is in the address, so a link shares it.
 import { GRADES } from "./dist/data/grades.data.js";
 import { JLPT } from "./dist/data/jlpt.data.js";
@@ -94,7 +94,7 @@ const WORDS = {
       "Words from JMdict, the property of the Electronic Dictionary Research and Development Group, used under the Group's licence (CC BY-SA 4.0).",
     moreTitle: "Using it",
     moreText:
-      "Each table is its own entry point, so a page loads only what it reads. Words are fetched in pieces of a few kilobytes, only the ones a lookup needs.",
+      "Each table is its own entry point, so a page loads only what it reads. Words are fetched in pieces of about 25 kB gzipped, only the ones a lookup needs.",
     foot: "The code is under the MIT licence; the data keeps its sources' licences. Nothing here is stored or sent anywhere.",
   },
   ja: {
