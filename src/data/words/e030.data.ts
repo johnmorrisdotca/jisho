@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 31 of 220, from "0src". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 31 of 220, from "0sraa". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,13 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0sraa\t準備資金\tじゅんびしきん\tn¦¦reserve funds",
+    "0srak\t準備状況\tじゅんびじょうきょう\tn¦¦preliminary conditions¦initial conditions¦state of preparations for (before) an event",
+    "0srau\t準備中\tじゅんびちゅう\tn¦¦in preparation¦(shop) not yet open for business",
+    "0srb4\t準備命令\tじゅんびめいれい\tn¦¦warning order",
+    "0srbe\t準用\tじゅんよう\tvs,vt¦¦to apply (the law) with necessary modifications¦to apply mutatis mutandis¦to apply correspondingly",
+    "0srbo\t潤い\tうるおい\tn¦¦moisture¦damp¦wetness\tn¦¦richness¦warmth¦interest¦taste¦charm\tn¦¦financial leeway¦gains¦profit\tn¦¦blessing¦grace¦favour¦favor",
+    "0srby\t潤う|霑う~rK\tうるおう\tv5u,vi¦¦to become moist¦to be moistened¦to become damp¦to get wet\tv5u,vi¦¦to profit (from)¦to benefit¦to become prosperous¦to flourish¦to be made rich\tv5u,vi¦¦to be refreshed (of one's mind)¦to be enriched (of one's heart)",
     "0src8\t\tふやける\tv1,vi¦¦to swell up (by soaking in or absorbing a liquid)¦to become soft¦to become soggy¦to become sodden¦to macerate\tv1,vi¦¦to become lazy¦to become indolent¦to become slack",
     "0srci\t潤す|霑す~sK\tうるおす\tv5s,vt¦¦to moisten¦to wet\tv5s,vt¦¦to profit¦to enrich¦to benefit",
     "0srcs\t潤む\tうるむ\tv5m,vi¦¦to be wet (with tears)¦to be moist\tv5m,vi¦¦to get dim¦to become blurred¦to get cloudy¦to get muddy¦to be bleared\tv5m,vi¦¦to become tear-choked¦of one's voice",
@@ -357,7 +364,7 @@ export const PIECE: WordsPiece = {
     "0su2k\t女装\tじょそう\tn,vs,vi¦¦female clothing¦wearing female clothing¦cross dressing (for a man)",
     "0su2u\t女尊\tじょそん\tn¦¦respect for women",
     "0su34\t女体\tにょたい|じょたい\tn¦¦woman's body",
-    "0su3e\t女中\tじょちゅう\tn¦arch¦court lady\tn¦hon,arch¦lady",
+    "0su3e\t女中\tじょちゅう\tn¦arch¦court lady¦3\tn¦hon,arch¦lady¦4",
     "0su3o\t女帝\tじょてい|にょてい\tn¦¦empress",
     "0su3y\t女湯\tおんなゆ\tn¦¦women's bath¦women's section in a public bath¦男湯",
     "0su48\t女難\tじょなん\tn¦¦(romantic) trouble with women¦calamities brought upon a man by a woman¦女難の相",
@@ -985,14 +992,5 @@ export const PIECE: WordsPiece = {
     "0sz66\t賞罰\tしょうばつ\tn¦¦reward and punishment",
     "0sz6g\t賞品\tしょうひん\tn¦¦prize¦trophy",
     "0sz6q\t賞味\tしょうみ\tn,vs,vt¦¦relish¦gusto¦appreciation",
-    "0sz70\t賞味期限\tしょうみきげん\tn¦¦best-before date (on food)¦use-by date¦expiry date¦expiration date",
-    "0sz7a\t賞与\tしょうよ\tn¦¦bonus¦ボーナス\tn¦¦reward¦prize",
-    "0sz7k\t鍾馗|鍾き\tしょうき\tn¦¦Shōki the Plague-Queller¦Zhong Kui¦traditional Chinese deity said to prevent plagues and ward off evil and reputedly able to command 80,000 demons\tn¦hist¦Shōki (WWII fighter aircraft)",
-    "0sz7u\t鍾乳石|鐘乳石~iK\tしょうにゅうせき\tn¦geol¦stalactite¦石筍",
-    "0sz84\t鍾乳洞|鐘乳洞~sK\tしょうにゅうどう\tn¦¦limestone cave¦limestone cavern",
-    "0sz8e\t鐘\tかね\tn¦¦bell (often a large hanging bell)¦chime¦鉦",
-    "0sz8o\t鐘楼\tしょうろう|しゅろう\tn¦¦belfry¦bell tower",
-    "0sz8y\t障る\tさわる\tv5r,vi¦¦to be harmful to¦to hinder¦to interfere with¦to irritate",
-    "0sz98\t障害|障がい|障碍~rK|障礙~rK\tしょうがい\tn,vs,vt¦¦obstacle¦impediment¦hindrance¦barrier¦difficulty\tn¦¦disability¦handicap¦impairment¦dysfunction¦disorder¦defect\tn¦abbr,horse¦steeplechase¦障害競走\tn¦abbr¦obstacle race¦steeplechase (athletics)¦障害物競走",
   ],
 };

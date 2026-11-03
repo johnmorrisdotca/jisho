@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 49 of 220, from "0wqfm". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 49 of 220, from "0wq8o". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,26 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0wq8o\t味わい\tあじわい\tn,adj-no¦¦flavour¦flavor¦taste\tn,adj-no¦¦charm¦appeal¦interest¦meaning¦significance",
+    "0wq8y\t味わう\tあじわう\tv5u,vt¦¦to taste¦to savor¦to savour¦to relish\tv5u,vt¦¦to appreciate¦to enjoy¦to relish¦to digest\tv5u,vt¦¦to experience¦to go through¦to taste (e.g. victory)¦to know (e.g. pain)",
+    "0wq98\t味覚\tみかく\tn¦¦(sense of) taste¦palate",
+    "0wq9s\t味噌|未醤~sK\tみそ|ミソ~sk\tn¦food¦miso¦fermented condiment usu. made from soybeans\tn¦¦innards (from crabs, shrimps, etc.) resembling miso\tn¦uk¦key point¦main point¦good part (of something)¦usu. as ミソ\texp¦uk,sl,joc¦try¦見る・5¦imperative; after the -te form of a verb; pun on 見ろ¦5",
+    "0wqa2\t味噌汁|みそ汁\tみそしる\tn¦food¦miso soup",
+    "0wqam\t味方~ateji|身方~ateji,rK|御方~rK\tみかた\tn,adj-no¦¦friend¦ally¦supporter¦敵・1\tn,vs,vi¦¦taking sides (with)¦supporting¦standing by¦backing up",
+    "0wqaw\t味醂|味淋~sK\tみりん\tn¦uk¦mirin¦type of sweet rice wine used in cooking",
+    "0wqb6\t未\tひつじ\tn¦¦the Sheep (eighth sign of the Chinese zodiac)¦the Ram¦the Goat\tn¦obs¦hour of the Sheep (around 2pm, 1-3pm, or 2-4pm)¦未の刻\tn¦obs¦south-southwest\tn¦obs¦sixth month of the lunar calendar",
+    "0wqbq\t未だ\tまだ|いまだ\tadv¦uk¦still¦as yet¦only\tadv¦uk¦(not) yet¦with verb in the negative\tadv¦uk¦more¦(more) still¦まだ\tadv¦uk¦at least¦comparatively¦relatively¦まだ\tadj-na¦uk¦unfinished¦incomplete¦not yet done¦まだ",
+    "0wqca\t未だし\tいまだし\tadj-shiku¦dated¦premature¦too soon¦not yet enough¦insufficient¦early¦incomplete¦still having a long way to go",
+    "0wqck\t未だに|今だに~iK\tいまだに\tadv¦¦still¦even now¦to this day¦indic. surprise or annoyance",
+    "0wqcu\t未だ未だ~rK\tまだまだ\tadv¦uk¦still¦much more¦(not) yet¦まだ・1¦more emphatic than まだ\texp¦uk¦still a long way to go¦still a long way off¦not there yet¦as 〜だ, 〜です, etc.",
+    "0wqd4\t未解決\tみかいけつ\tadj-no,adj-na,n¦¦unsolved¦unresolved¦unsettled¦pending¦outstanding",
+    "0wqde\t未解決問題\tみかいけつもんだい\tn¦¦unresolved problem",
+    "0wqdy\t未開\tみかい\tadj-no,n¦¦uncivilized¦uncivilised¦primitive¦savage\tadj-no,n¦¦undeveloped (land)¦unexplored (territory, field, etc.)\tadj-no,n¦¦unbloomed (flower)",
+    "0wqe8\t未開墾\tみかいこん\tadj-no¦¦uncultivated¦wild¦未墾",
+    "0wqei\t未開墾地\tみかいこんち\tn¦¦virgin soil¦uncultivated land",
+    "0wqes\t未開拓\tみかいたく\tadj-no,adj-na,n¦¦undeveloped (area)¦unexplored (field of study)¦wild (areas)¦untapped area",
+    "0wqf2\t未開拓地\tみかいたくち\tn¦¦undeveloped area",
+    "0wqfc\t未開発\tみかいはつ\tn¦¦undeveloped (countries)¦backward¦unentered",
     "0wqfm\t未確定\tみかくてい\tadj-no,n¦¦unconfirmed¦indeterminate¦undetermined¦uncertain¦undecided¦unsettled¦pending",
     "0wqfw\t未確認飛行物体\tみかくにんひこうぶったい\tn¦¦unidentified flying object¦UFO",
     "0wqg6\t未刊\tみかん\tadj-no,n¦¦unpublished¦既刊",
@@ -991,26 +1011,5 @@ export const PIECE: WordsPiece = {
     "0wyeu\t野蛮\tやばん\tadj-na,n¦¦savage¦barbarous¦barbaric¦uncivilized¦uncivilised",
     "0wyf4\t野蛮人\tやばんじん\tn¦¦barbarian¦savage",
     "0wyfe\t野卑|野鄙~rK\tやひ\tadj-na,n¦¦vulgar¦coarse¦crude¦boorish¦ill-mannered¦mean¦base",
-    "0wyfo\t野暮~ateji\tやぼ|ヤボ~~~!\tadj-na,n¦¦boorish¦unsophisticated¦unrefined¦uncouth¦tasteless¦insensitive¦thoughtless¦dumb¦粋・いき・1",
-    "0wyfy\t野放し\tのばなし\tn,adj-no¦¦pasturing (e.g. cattle)¦letting (an animal) run loose\tn,adj-no¦¦letting (someone) do as they please¦leaving (something) to take its own course¦letting (an issue) go unchecked¦leaving uncontrolled¦leaving at large (e.g. a criminal)",
-    "0wyg8\t野放図~ateji|野方図~ateji|野放途~ateji,rK\tのほうず\tadj-na,n¦¦wild¦unruly¦arrogant\tadj-na,n¦¦endless (e.g. spending)¦uncontrolled¦rampant (e.g. weeds)",
-    "0wygi\t野望\tやぼう\tn¦¦ambition¦aspiration¦野心・1",
-    "0wygs\t野良~ateji\tのら\tn¦¦field¦farm¦良 is ateji\tn-pref,n¦¦stray (dog, cat, etc.)\tn¦net-sl,vidg¦stranger (in an online multiplayer game)¦random player¦playing with strangers",
-    "0wyh2\t野良犬|のら犬~sK|ノラ犬~sK\tのらいぬ\tn¦¦stray dog",
-    "0wyhc\t野良仕事\tのらしごと\tn¦¦farm work¦field labour¦field labor",
-    "0wyhm\t野良猫|ノラ猫~sK|のら猫~sK|野良ネコ~sK\tのらねこ|ノラネコ~sk\tn¦¦stray cat¦alley cat",
-    "0wyhw\t野郎\tやろう\tn¦¦guy¦fellow¦chap¦buddy",
-    "0wyi6\t野ばら|野バラ|野薔薇\tのばら~~野ばら,野薔薇|のバラ~~野バラ|ノバラ~~~!\tn¦uk¦wild rose¦briar\tn¦uk¦multiflora rose (Rosa multiflora)¦baby rose¦Japanese rose¦野茨",
-    "0wyig\t弥久\tびきゅう\tn¦¦extending over a long time",
-    "0wyiq\t弥生\tやよい|いやおい\tn¦obs¦third month of the lunar calendar\tn¦hist¦Yayoi period (ca. 300 BCE-300 CE)¦Yayoi culture¦弥生時代\tn¦arch¦thick growth (of grass, etc.)¦いやおい",
-    "0wyj0\t弥生時代\tやよいじだい\tn¦hist¦Yayoi period (ca. 300 BCE-300 CE)",
-    "0wyja\t弥縫\tびほう\tn,vs,vt¦¦patching up",
-    "0wyjk\t矢|箭~rK\tや|さ~ok\tn¦¦arrow\tn¦¦wedge¦chock",
-    "0wyju\t矢印\tやじるし\tn¦¦arrow (symbol)\tn¦col¦(romantic) interest (for a certain person)¦direction (of one's attention, etc.)",
-    "0wyk4\t矢鱈~ateji,rK\tやたら\tadv,adv-to¦uk¦indiscriminately¦blindly¦at random¦recklessly¦thoughtlessly¦excessively¦profusely\tadj-na¦uk¦indiscriminate¦random¦excessive",
-    "0wyke\t矢面|矢表\tやおもて\tn¦¦firing line¦position where one is subject to questioning, criticism, etc.¦矢面に立つ\tn¦¦in front of a flying arrow (fired by the enemy)¦orig. meaning",
-    "0wyko\t矢面に立つ\tやおもてにたつ\texp,v5t¦id¦to be in the firing line¦to bear the brunt of (an attack, criticism, etc.)¦to face (e.g. questioning)",
-    "0wyky\t厄\tやく\tn¦¦misfortune¦bad luck¦evil¦disaster\tn¦abbr¦unlucky year¦critical year¦year (esp. age 25 and 42 for men, 19 and 33 for women) that is considered unlucky¦厄年・1",
-    "0wyl8\t厄介\tやっかい\tadj-na,n¦¦trouble¦burden¦nuisance¦bother¦worry\tadj-na,n¦¦care¦dependence¦support¦kindness¦obligation¦staying (with a person)",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 19 of 220, from "0q1y". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 19 of 220, from "0q1vm". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,15 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0q1vm\t間取り|間取\tまどり\tn¦¦layout (of a house or apartment)¦arrangement of rooms",
+    "0q1vw\t間食\tかんしょく\tn,vs,vi¦¦eating between meals¦snacking",
+    "0q1w6\t間数\tまかず\tn¦¦number of rooms",
+    "0q1wg\t間接\tかんせつ\tn,adj-no¦¦indirection¦indirectness¦直接・ちょくせつ",
+    "0q1wq\t間接照準射撃\tかんせつしょうじゅんしゃげき\tn¦¦indirect fire",
+    "0q1x0\t間接税\tかんせつぜい\tn¦¦indirect tax",
+    "0q1xa\t間接的\tかんせつてき\tadj-na¦¦indirect",
+    "0q1xk\t間接目的語\tかんせつもくてきご\tn¦gramm¦indirect object",
+    "0q1xu\t間奏曲\tかんそうきょく\tn¦music¦interlude¦intermezzo",
     "0q1y4\t間貸し\tまがし\tn,vs,vt,vi¦¦renting a room",
     "0q1ye\t間断\tかんだん\tn¦¦break in time¦interruption¦pause",
     "0q1yo\t間男\tまおとこ\tn,vs,vi¦¦cheating (on one's husband)¦adultery\tn¦¦male lover (of a married woman)¦paramour",
@@ -778,7 +787,7 @@ export const PIECE: WordsPiece = {
     "0q84w\t貴婦人\tきふじん\tn¦¦lady¦noblewoman",
     "0q856\t貴方\tきほう\tn¦hon¦your home¦your residence\tpn¦hon¦you (referring to one's equal; epistolary style)",
     "0q85b\t貴方|貴女|貴男\tあなた~gikun\tpn¦uk¦you¦trad. polite in ref. to someone of equal or lower status, now oft. regarded as rude or distant\tpn¦fam,uk¦dear¦honey¦貴方|貴男¦used by wives addressing their husbands",
-    "0q85g\t貴様\tきさま\tpn¦arch,pol¦you",
+    "0q85g\t貴様\tきさま\tpn¦arch,pol¦you¦2",
     "0q85q\t貴賤|貴賎\tきせん\tn¦¦high and low (social standing)",
     "0q860\t起きる\tおきる\tv1,vi¦¦to get up¦to rise¦to blaze up (fire)\tv1,vi¦¦to wake up¦to be awake¦to stay awake\tv1,vi¦¦to occur (usu. of unfavourable incidents)¦to happen¦to take place",
     "0q86a\t起き上がる|起きあがる~sK|起き上る~sK|起上がる~sK|起上る~sK\tおきあがる\tv5r,vi¦¦to rise¦to get up¦to stand up¦to sit up",
@@ -1020,13 +1029,5 @@ export const PIECE: WordsPiece = {
     "0qa1s\t議事\tぎじ\tn¦¦proceedings (e.g. parliament, congress)¦business (of the day)",
     "0qa22\t議事堂\tぎじどう\tn¦¦assembly hall¦parliament house¦diet building¦capitol¦houses of parliament¦congress hall",
     "0qa2c\t議事録\tぎじろく\tn¦¦record of proceedings¦minutes",
-    "0qa2m\t議場\tぎじょう\tn¦¦assembly hall¦the House",
-    "0qa2w\t議席\tぎせき\tn¦¦parliamentary seat",
-    "0qa36\t議題\tぎだい\tn¦¦topic of discussion¦agenda",
-    "0qa3g\t議長\tぎちょう\tn¦¦chair¦chairman¦chairperson¦speaker (of an assembly)¦president (of a council, senate, etc.)",
-    "0qa3q\t議定\tぎてい|ぎじょう\tn,vs,vt¦¦agreement",
-    "0qa40\t議論\tぎろん\tn,vs,vt¦¦argument¦discussion¦dispute¦controversy",
-    "0qa4a\tすくい取る|掬い取る\tすくいとる\tv5r,vt¦¦to dip out¦to scoop up¦to ladle out",
-    "0qa4k\tすくい出す|掬い出す|掬いだす~sK\tすくいだす\tv5s,vt¦¦to bail (e.g. water from a boat)¦to ladle",
   ],
 };

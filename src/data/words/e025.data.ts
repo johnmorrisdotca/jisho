@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 26 of 220, from "0rneg". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 26 of 220, from "0rnc". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,14 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0rnc8\t昏睡状態|こん睡状態\tこんすいじょうたい\tn,adj-no¦¦comatose state",
+    "0rnci\t昏倒|こん倒~sK\tこんとう\tn,vs,vi¦¦falling (down) unconscious¦fainting (and collapsing)",
+    "0rncs\t昆虫\tこんちゅう\tn,adj-no¦¦insect¦bug",
+    "0rnd2\t昆虫学\tこんちゅうがく\tn¦¦entomology",
+    "0rndc\t昆虫採集\tこんちゅうさいしゅう\tn¦¦insect collecting",
+    "0rndm\t昆布茶|こぶ茶\tこぶちゃ|こんぶちゃ~~昆布茶\tn¦¦kelp tea¦seaweed tea¦unrelated to the drink known as \"kombucha\" in English",
+    "0rndw\t根\tね\tn¦¦root (of a plant)\tn¦¦root (of a tooth, hair, etc.)¦center (of a pimple, etc.)\tn¦¦root (of all evil, etc.)¦source¦origin¦cause¦basis\tn¦¦one's true nature\tn¦¦(fishing) reef",
+    "0rne6\t根ざす|根差す\tねざす\tv5s,vi¦¦to come from¦to have roots in",
     "0rneg\t根っから\tねっから\tadj-no,adv¦¦by nature¦from the very beginning¦through and through¦at heart\tadj-no,adv¦¦absolutely (not)¦(not) at all¦followed by a verb in negative form",
     "0rneq\t根に持つ\tねにもつ\texp,v5t¦¦to hold a grudge¦to hold something against someone",
     "0rnf0\t根掘り葉掘り|根ほり葉ほり|根堀り葉堀り~iK\tねほりはほり\texp,adv¦¦inquisitively¦pryingly¦nosily¦thoroughly¦persistently¦through-and-through",
@@ -1025,12 +1033,5 @@ export const PIECE: WordsPiece = {
     "0rviy\t三尺\tさんじゃく\tn¦¦3 Japanese feet¦waistband¦belt¦cloth girdle",
     "0rvj8\t三尺の秋水\tさんじゃくのしゅうすい\tn¦¦sharpened sword",
     "0rvji\t三尺の童子\tさんじゃくのどうじ\tn¦¦mere child",
-    "0rvjs\t三尺帯\tさんじゃくおび\tn¦¦waistband¦belt¦cloth girdle¦obi",
-    "0rvk2\t三種の神器\tさんしゅのじんぎ\texp,n¦¦the Three Sacred Treasures (Mirror, Sword and Jewels)¦three sacred emblems of sovereign rule¦the three divine symbols of the Japanese imperial throne\texp,n¦id,col¦(set of) three status symbols¦three necessities",
-    "0rvkc\t三秋\tさんしゅう\tn¦¦three autumn months¦three fall months¦three years",
-    "0rvkm\t三秋の思い\tさんしゅうのおもい\tn¦¦longing for loved ones",
-    "0rvkw\t三十戸\tさんじっこ\tn¦¦thirty houses",
-    "0rvl6\t三十三所\tさんじゅうさんしょ\tn¦¦thirty-three temples sacred to Kannon (Avalokitesvara)¦西国三十三所",
-    "0rvlg\t三十二分音符\tさんじゅうにぶおんぷ\tn¦music¦32nd note¦demisemiquaver",
   ],
 };

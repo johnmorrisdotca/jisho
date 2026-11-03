@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 50 of 220, from "0wyli". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 50 of 220, from "0wyfo". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,27 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0wyfo\t野暮~ateji\tやぼ|ヤボ~~~!\tadj-na,n¦¦boorish¦unsophisticated¦unrefined¦uncouth¦tasteless¦insensitive¦thoughtless¦dumb¦粋・いき・1",
+    "0wyfy\t野放し\tのばなし\tn,adj-no¦¦pasturing (e.g. cattle)¦letting (an animal) run loose\tn,adj-no¦¦letting (someone) do as they please¦leaving (something) to take its own course¦letting (an issue) go unchecked¦leaving uncontrolled¦leaving at large (e.g. a criminal)",
+    "0wyg8\t野放図~ateji|野方図~ateji|野放途~ateji,rK\tのほうず\tadj-na,n¦¦wild¦unruly¦arrogant\tadj-na,n¦¦endless (e.g. spending)¦uncontrolled¦rampant (e.g. weeds)",
+    "0wygi\t野望\tやぼう\tn¦¦ambition¦aspiration¦野心・1",
+    "0wygs\t野良~ateji\tのら\tn¦¦field¦farm¦良 is ateji\tn-pref,n¦¦stray (dog, cat, etc.)\tn¦net-sl,vidg¦stranger (in an online multiplayer game)¦random player¦playing with strangers",
+    "0wyh2\t野良犬|のら犬~sK|ノラ犬~sK\tのらいぬ\tn¦¦stray dog",
+    "0wyhc\t野良仕事\tのらしごと\tn¦¦farm work¦field labour¦field labor",
+    "0wyhm\t野良猫|ノラ猫~sK|のら猫~sK|野良ネコ~sK\tのらねこ|ノラネコ~sk\tn¦¦stray cat¦alley cat",
+    "0wyhw\t野郎\tやろう\tn¦¦guy¦fellow¦chap¦buddy",
+    "0wyi6\t野ばら|野バラ|野薔薇\tのばら~~野ばら,野薔薇|のバラ~~野バラ|ノバラ~~~!\tn¦uk¦wild rose¦briar\tn¦uk¦multiflora rose (Rosa multiflora)¦baby rose¦Japanese rose¦野茨",
+    "0wyig\t弥久\tびきゅう\tn¦¦extending over a long time",
+    "0wyiq\t弥生\tやよい|いやおい\tn¦obs¦third month of the lunar calendar\tn¦hist¦Yayoi period (ca. 300 BCE-300 CE)¦Yayoi culture¦弥生時代\tn¦arch¦thick growth (of grass, etc.)¦いやおい",
+    "0wyj0\t弥生時代\tやよいじだい\tn¦hist¦Yayoi period (ca. 300 BCE-300 CE)",
+    "0wyja\t弥縫\tびほう\tn,vs,vt¦¦patching up",
+    "0wyjk\t矢|箭~rK\tや|さ~ok\tn¦¦arrow\tn¦¦wedge¦chock",
+    "0wyju\t矢印\tやじるし\tn¦¦arrow (symbol)\tn¦col¦(romantic) interest (for a certain person)¦direction (of one's attention, etc.)",
+    "0wyk4\t矢鱈~ateji,rK\tやたら\tadv,adv-to¦uk¦indiscriminately¦blindly¦at random¦recklessly¦thoughtlessly¦excessively¦profusely\tadj-na¦uk¦indiscriminate¦random¦excessive",
+    "0wyke\t矢面|矢表\tやおもて\tn¦¦firing line¦position where one is subject to questioning, criticism, etc.¦矢面に立つ\tn¦¦in front of a flying arrow (fired by the enemy)¦orig. meaning",
+    "0wyko\t矢面に立つ\tやおもてにたつ\texp,v5t¦id¦to be in the firing line¦to bear the brunt of (an attack, criticism, etc.)¦to face (e.g. questioning)",
+    "0wyky\t厄\tやく\tn¦¦misfortune¦bad luck¦evil¦disaster\tn¦abbr¦unlucky year¦critical year¦year (esp. age 25 and 42 for men, 19 and 33 for women) that is considered unlucky¦厄年・1",
+    "0wyl8\t厄介\tやっかい\tadj-na,n¦¦trouble¦burden¦nuisance¦bother¦worry\tadj-na,n¦¦care¦dependence¦support¦kindness¦obligation¦staying (with a person)",
     "0wyli\t厄介事|厄介ごと\tやっかいごと\tn¦¦troublesome matter¦burden¦difficult task¦chore¦hassle",
     "0wyls\t厄介者|厄介もの~sK\tやっかいもの\tn¦¦burden¦nuisance¦bother¦troublemaker\tn¦¦hanger-on¦dependent¦parasite",
     "0wym2\t厄介払い|やっかい払い|厄介ばらい~sK\tやっかいばらい\tn,vs,vt¦¦driving off a troublesome person¦getting rid of a nuisance",
@@ -1040,10 +1061,5 @@ export const PIECE: WordsPiece = {
     "0x6tc\t洛中\tらくちゅう\tn¦¦inside the capital¦洛外",
     "0x6tm\t絡まる\tからまる\tv5r,vi¦¦to be entwined¦to be involved",
     "0x6tw\t絡み合う|絡みあう~sK|からみ合う~sK\tからみあう\tv5u,vi¦¦to intertwine¦to become entangled¦to get tangled (together)\tv5u,vi¦¦to become intertwined (of matters, interests, etc.)¦to become connected¦to become linked",
-    "0x6u6\t絡みつく|絡み付く\tからみつく\tv5k,vi¦¦to twine around¦to twist around¦to coil around\tv5k,vi¦¦to pester¦to hassle",
-    "0x6ug\t絡む|搦む~rK\tからむ\tv5m,vi¦¦to twine¦to get tangled¦to get entangled¦to get caught (in)\tv5m,vi¦¦to be involved (e.g. of money in a matter)¦to get involved (in)¦to be a factor (in)¦to have an influence\tv5m,vi¦¦to pick a quarrel (with)¦to find fault (with)¦to pester¦to hassle",
-    "0x6uq\t落ち|落~io\tおち|オチ~~~!\tn¦¦slip¦omission\tn¦¦upshot¦denouement¦outcome¦final result\tn¦uk¦punch line (of a joke)¦often オチ",
-    "0x6v0\t落ちぶれる|零落れる~rK|落魄れる~rK\tおちぶれる\tv1,vi¦¦to come down in the world¦to fall low¦to be ruined¦to be reduced to poverty¦to fall on hard times",
-    "0x6va\t落ちる|墜ちる|落る~io\tおちる\tv1,vi¦¦to fall¦to drop¦to come down¦to crash¦to collapse¦to cave in¦to give way\tv1,vi¦¦to set (of the sun or moon)¦to sink¦to dip¦to go down\tv1,vi¦¦to decrease (of popularity, quality, speed, sales, etc.)¦to fall¦to drop¦to go down¦to decline¦to deteriorate¦to abate (of wind)\tv1,vi¦¦to be inferior (to)¦to be not as good (as)¦to fall short (of)\tv1,vi¦¦to come off (of dirt, paint, makeup, etc.)¦to come out (of a stain)¦to fade (of colour)¦to be removed (of an illness, possessing spirit, etc.)\tv1,vi¦¦to disappear (of excess fat)¦to become thinner¦to become leaner\tv1,vi¦¦to be left out¦to be omitted¦to be missing\tv1,vi¦¦to fail (an exam)¦to lose (a contest, election, etc.)¦to be unsuccessful\tv1,vi¦¦to decline (of morals, character, etc.)¦to become vulgar (e.g. of a conversation)¦to stoop (to)¦to sink (so low)¦also written as 堕ちる\tv1,vi¦¦to be ruined¦to go under¦to fall (into hell)¦also written as 堕ちる\tv1,vi¦¦to fall (in love, asleep, etc.)¦恋に落ちる|眠りに落ちる\tv1,vi¦¦to fall (into someone's hands)¦to be accepted (of a bid)¦to be won (of a tender)¦to be honoured (of a bill)\tv1,vi¦¦to fall into (a trap)¦to fall for (a trick)\tv1,vi¦¦to give in\tv1,vi¦¦to confess¦to own up\tv1,vi¦¦to come to (a conclusion, topic, etc.)¦to arrive at (in the end)\tv1,vi¦¦to leave (a city, castle, etc.)¦to (be defeated and) flee\tv1,vi¦¦to sink in¦to be accepted (in one's heart)¦腑に落ちない|胸に落ちる\tv1,vi¦¦to fall (to the enemy)¦to be defeated\tv1,vi¦¦to come in (of money)\tv1,vi¦¦to fall (upon; of light, a shadow, one's gaze, etc.)\tv1,vi¦¦to pass out (in judo)¦to fall unconscious\tv1,vi¦comp¦to go down (of a website, server, etc.)¦to crash\tv1,vi¦sl¦to log out (of an online game, chat room, etc.)¦to drop out¦to leave¦to go offline\tv1,vi¦¦to move to deeper water (of a fish in cold weather)\tv1,vi¦¦to die (of an animal)\tv1,vi¦¦to strike (of lightning)¦雷が落ちる・1",
   ],
 };

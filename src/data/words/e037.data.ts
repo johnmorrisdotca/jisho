@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 38 of 220, from "0ua8c". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 38 of 220, from "0ua3w". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,21 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0ua3w\t台無しにする|台なしにする\tだいなしにする\texp,vs-i¦¦to spoil¦to ruin¦to destroy¦to make a mess of",
+    "0ua46\t台名\tたいめい\tn¦¦command of a shogun or a high official",
+    "0ua4g\t台木|砧木\tだいぎ\tn¦¦stock (in grafting)\tn¦¦wood used as a platform (or base, etc.)¦block (i.e. chopping block)¦(gun) stock¦unworked block of wood",
+    "0ua4q\t台覧\tたいらん\tn¦¦inspection by the empress or the crown prince",
+    "0ua50\t台臨\tたいりん\tn¦¦visit by the empress or the crown prince",
+    "0ua5a\t台輪\tだいわ\tn¦¦architrave",
+    "0ua5k\t台湾|台灣~oK|臺灣~oK\tたいわん\tn¦¦Taiwan",
+    "0ua5u\t台湾海峡\tたいわんかいきょう\tn¦¦Straits of Taiwan",
+    "0ua64\t台湾人\tたいわんじん\tn¦¦Taiwanese person¦Taiwanese people",
+    "0ua6e\t大々的|大大的\tだいだいてき\tadj-na¦¦great¦grand¦extensive¦large-scale",
+    "0ua6o\t大いに|多いに~iK\tおおいに\tadv¦¦very¦very much¦greatly¦considerably¦highly¦exceedingly¦a great deal¦a lot¦to one's heart's content",
+    "0ua6y\t大きな\tおおきな\tadj-pn¦¦big¦large¦great¦小さな",
+    "0ua7i\t大きさ\tおおきさ\tn¦¦size¦dimensions¦volume",
+    "0ua7s\t大きなお世話|大きな御世話\tおおきなおせわ\texp,n¦¦none of your business!¦don't bother me!¦keep out of it!¦お世話 is ironic",
+    "0ua82\t大きに\tおおきに\tadv¦uk¦greatly¦very much\tint¦uk,ksb¦thanks a lot¦abbr. of おおきにありがとう",
     "0ua8c\t大げさに言う|大袈裟に言う|おおげさに言う~sK\tおおげさにいう\texp,v5u¦¦to exaggerate¦to overstate",
     "0ua8m\t大雑把|大ざっぱ\tおおざっぱ\tadj-na¦¦rough (estimate, summary, etc.)¦broad¦general¦sweeping¦loose\tadj-na¦¦careless (e.g. work)¦sloppy¦crude",
     "0ua8w\t大した\tたいした\tadj-pn¦¦considerable¦great¦important¦significant¦a big deal",
@@ -853,7 +868,7 @@ export const PIECE: WordsPiece = {
     "0uh08\t痴情\tちじょう\tn¦¦being struck mad by love¦foolish passion¦blind love¦infatuation¦jealousy¦情痴",
     "0uh0i\t痴人\tちじん\tn¦¦dunce¦fool¦idiot",
     "0uh0s\t痴態\tちたい\tn¦¦foolishness¦silliness¦stupid conduct¦idiotic behavior",
-    "0uh12\t痴呆|痴ほう~sK|癡呆~sK\tちほう\tn¦¦stupidity¦foolishness¦fool¦idiot",
+    "0uh12\t痴呆|痴ほう~sK|癡呆~sK\tちほう\tn¦¦stupidity¦foolishness¦fool¦idiot¦2",
     "0uh1c\t稚気|穉気~rK\tちき\tn¦¦childishness¦naivete",
     "0uh1m\t稚魚\tちぎょ\tn¦¦fry¦juvenile fish¦fingerling",
     "0uh1w\t稚児\tちご\tn¦¦infant¦child\tn¦hist¦pageboy¦page\tn¦¦child in a traditional festival procession",
@@ -953,21 +968,5 @@ export const PIECE: WordsPiece = {
     "0uhty\t茶道具\tちゃどうぐ\tn¦¦tea utensils",
     "0uhu8\t茶畑\tちゃばたけ\tn¦¦tea plantation¦tea field",
     "0uhui\t茶髪\tちゃぱつ\tn¦¦hair dyed brown¦brown-dyed hair",
-    "0uhus\t茶飯事\tさはんじ\tn¦¦matter of no importance¦commonly occurring thing¦commonplace event¦bread and butter item¦日常茶飯事",
-    "0uhv2\t茶番\tちゃばん\tn,adj-no¦¦farce¦charade\tn¦¦person who serves tea\tn¦¦short and humorous improvised sketch (originating from Edo-era kabuki)",
-    "0uhvc\t茶番狂言\tちゃばんきょうげん\tn¦¦farce¦burlesque¦low comedy",
-    "0uhvm\t茶番的\tちゃばんてき\tadj-na¦¦farcical¦comical",
-    "0uhvw\t茶舗\tちゃほ\tn¦¦tea store",
-    "0uhw6\t茶目\tちゃめ\tadj-na,n¦¦playful¦mischievous\tn¦¦joker¦prankster¦scamp¦rascal\tn¦¦brown eyes",
-    "0uhwg\t茶目る\tちゃめる\tv5r¦¦to play pranks",
-    "0uhwq\t茶碗蒸し|茶碗蒸|茶わん蒸し~sK\tちゃわんむし\tn¦¦chawanmushi¦savoury steamed egg custard with chicken, mushrooms, etc. (savory)",
-    "0uhx0\t嫡嗣\tちゃくし\tn¦¦legitimate heir",
-    "0uhxa\t嫡子\tちゃくし\tn¦¦heir\tn¦¦legitimate child",
-    "0uhxk\t嫡出子|摘出子~iK\tちゃくしゅつし~~嫡出子|てきしゅつし\tn¦¦legitimate child",
-    "0uhxu\t嫡孫\tちゃくそん\tn¦¦eldest son's descendants",
-    "0uhy4\t嫡男\tちゃくなん\tn¦¦legitimate son (esp. eldest son)¦heir",
-    "0uhye\t嫡披\tちゃくひ\tn¦¦confidential letter",
-    "0uhyo\t嫡流\tちゃくりゅう\tn¦¦direct line of descent¦lineage of eldest son¦main branch of a family¦legitimate lineage",
-    "0uhyy\t着く\tつく\tv5k,vi¦¦to arrive at¦to reach\tv5k,vi¦¦to sit on¦to sit at (e.g. the table)¦席に着く",
   ],
 };

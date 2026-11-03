@@ -16,9 +16,7 @@ import type {
   WordsMode,
 } from "./words.types.ts";
 import { modeOf } from "./words-filter.ts";
-import { indexed, once, pieceOf, type WordsPieceKind } from "./words-pieces.ts";
-
-const KEY_WIDTH = 5;
+import { ENTRY_KEY_WIDTH, entryKey, indexed, once, pieceOf, type WordsPieceKind } from "./words-pieces.ts";
 
 /** The pieces of the whole entries: their manifest is fetched only when `loadEntry` is called. */
 const entryPieces: () => Promise<EntryManifest> = once("manifest", () =>
@@ -31,7 +29,8 @@ const extraEntryPieces: () => Promise<EntryManifest> = once("manifest", () =>
 );
 /** The marks that open an optional field of a sense, and a kind of gloss: private-use characters, which no JMdict text holds. scripts/words-entries.mjs writes them. */
 const mark = (n: number) => String.fromCharCode(0xe000 + n);
-const [ONLY_FORMS, ONLY_READINGS, SEE_ALSO, ANTONYMS, NOTES, SOURCES] = [1, 2, 3, 4, 5, 6].map(mark) as [
+const [ONLY_FORMS, ONLY_READINGS, SEE_ALSO, ANTONYMS, NOTES, SOURCES, NUMBER] = [1, 2, 3, 4, 5, 6, 7].map(mark) as [
+  string,
   string,
   string,
   string,
@@ -50,9 +49,6 @@ const NOTES_BREAK = String.fromCharCode(0x2028);
 const split = (text: string, by: string): readonly string[] => (text === "" ? [] : text.split(by));
 const frozen = <T>(list: T[]): readonly T[] => Object.freeze(list);
 
-/** What an entry is looked up by: its number in base 36, five characters wide. Mirrors scripts/words-entries.mjs. */
-export const entryKey = (id: number): string => id.toString(36).padStart(KEY_WIDTH, "0");
-
 function readSource(text: string): LoanSource {
   const at = text.indexOf("~");
   const flags = text.slice(0, at);
@@ -65,19 +61,20 @@ function readSource(text: string): LoanSource {
   });
 }
 
-function readSense(field: string): EntrySense {
+function readSense(field: string, at: number): EntrySense {
   const [pos = "", marks = "", ...rest] = field.split("¦");
   const optional = new Map<string, string>();
   const glosses: EntryGloss[] = [];
   for (const part of rest) {
     const first = part.charAt(0);
-    if (first >= ONLY_FORMS && first <= SOURCES) optional.set(first, part.slice(1));
+    if (first >= ONLY_FORMS && first <= NUMBER) optional.set(first, part.slice(1));
     else if (KIND_OF_MARK[first] !== undefined)
       glosses.push(Object.freeze({ text: part.slice(1), kind: KIND_OF_MARK[first] ?? null }));
     else glosses.push(Object.freeze({ text: part, kind: null }));
   }
   const list = (mark: string) => frozen([...split(optional.get(mark) ?? "", "|")]);
   return Object.freeze({
+    number: Number(optional.get(NUMBER) ?? at + 1),
     pos: frozen([...split(pos, ",")]),
     marks: frozen([...split(marks, ",")]),
     glosses: frozen(glosses),
@@ -123,7 +120,7 @@ export function readEntry(line: string): Entry {
         });
       }),
     ),
-    senses: frozen(senses.map(readSense)),
+    senses: frozen(senses.map((field, at) => readSense(field, at))),
   });
 }
 
@@ -185,7 +182,7 @@ export async function loadEntry(
   if (typeof id !== "number" || !Number.isInteger(id) || id < 0)
     throw new TypeError("loadEntry takes a word a lookup gave, or the number of an entry.");
   const key = entryKey(id);
-  if (key.length > KEY_WIDTH) return null;
+  if (key.length > ENTRY_KEY_WIDTH) return null;
   const [manifest, extra] = await Promise.all([entryPieces(), mode === "unfiltered" ? extraEntryPieces() : undefined]);
   const [plain, whole] = await Promise.all([
     lineIn("entries", manifest, key),

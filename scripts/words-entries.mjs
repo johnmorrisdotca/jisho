@@ -73,7 +73,7 @@ export function entryOf(entry) {
     }))
     .filter((reading) => reading.text !== "");
   const senses = tags(entry, "sense")
-    .map(senseOf)
+    .map((body, at) => ({ ...senseOf(body), number: at + 1 }))
     .filter((sense) => sense.glosses.length > 0);
   const id = idOf(entry);
   if (readings.length === 0 || senses.length === 0 || Number.isNaN(id)) return null;
@@ -95,6 +95,7 @@ export const MARKS = {
   antonyms: "\uE004",
   notes: "\uE005",
   sources: "\uE006",
+  number: "\uE007",
   lit: "\uE010",
   expl: "\uE011",
   fig: "\uE012",
@@ -104,7 +105,7 @@ const KIND_MARK = { l: MARKS.lit, e: MARKS.expl, f: MARKS.fig, t: MARKS.tm };
 const NO_MARK = /[\uE000-\uF8FF]/;
 
 /** A sense as one field: its parts of speech, then its marks, then its glosses (a kind of gloss opens with its mark), then each optional field it has. */
-const packSense = (sense) => {
+const packSense = (sense, at) => {
   const optional = (mark, items, text = TEXT_OR_LIST) =>
     items.length === 0
       ? []
@@ -128,6 +129,7 @@ const packSense = (sense) => {
       ? []
       : [`${MARKS.notes}${sense.notes.map((one) => refuse("a note", noMark(one), TEXT)).join(NOTE_BREAK)}`]),
     ...(sources.length === 0 ? [] : [`${MARKS.sources}${sources.join(LIST_BREAK)}`]),
+    ...(sense.number === at + 1 ? [] : [`${MARKS.number}${sense.number}`]),
   ].join(SENSE_FIELD);
 };
 const noMark = (text) => {
@@ -156,7 +158,9 @@ export function packEntry(entry) {
       return parts.join(PART_BREAK);
     })
     .join(LIST_BREAK);
-  return [entryKey(entry.id), forms, readings, ...entry.senses.map(packSense)].join(ENTRY_BREAK);
+  return [entryKey(entry.id), forms, readings, ...entry.senses.map((sense, at) => packSense(sense, at))].join(
+    ENTRY_BREAK,
+  );
 }
 
 /**

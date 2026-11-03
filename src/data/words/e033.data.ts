@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 34 of 220, from "0teie". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 34 of 220, from "0teei". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,20 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0teei\t水炊き|水たき|水炊~io\tみずたき|みずだき~~水炊き,水炊\tn¦food¦food (esp. chicken and vegetables) boiled in plain water (or sometimes dashi, etc.) and served with dipping sauce (esp. ponzu)",
+    "0tees\t水かさ|水嵩\tみずかさ\tn¦¦volume of water (in a river, pond, flood, etc.)",
+    "0tef2\t水勢\tすいせい\tn¦¦force of water (current, stream, jet, etc.)",
+    "0tefc\t水性\tすいせい\tadj-no¦¦water-based¦aqueous\tadj-no¦¦water-soluble¦水溶性",
+    "0tefm\t水星\tすいせい\tn¦astron¦Mercury (planet)",
+    "0tefw\t水生|水棲\tすいせい\tadj-no,n¦¦aquatic (life)¦living in the water¦陸生",
+    "0teg6\t水仙\tすいせん|スイセン~~~!\tn¦uk¦daffodil (esp. Narcissus tazetta var. chinensis)¦narcissus",
+    "0tegg\t水洗\tすいせん\tn,vs,vt¦¦washing with water¦rinsing¦flushing",
+    "0tegq\t水洗便所\tすいせんべんじょ\tn¦¦flush toilet",
+    "0teh0\t水素\tすいそ\tn¦¦hydrogen (H)",
+    "0teha\t水素化物\tすいそかぶつ\tn¦¦hydride",
+    "0tehk\t水槽\tすいそう\tn¦¦water tank¦cistern\tn¦¦fish tank¦aquarium",
+    "0tehu\t水増し\tみずまし\tn,vs,vt¦¦dilution¦watering down\tn,vs,vt¦¦inflation (of budget, claim, etc.)¦padding",
+    "0tei4\t水族館\tすいぞくかん|すいぞっかん~ik\tn¦¦aquarium (building)¦oceanarium",
     "0teie\t水着\tみずぎ\tn¦¦bathing suit¦swimsuit¦swimmers",
     "0teio\t水中\tすいちゅう\tn,adj-no¦¦underwater",
     "0teiy\t水中メガネ|水中眼鏡|水中めがね~sK\tすいちゅうめがね\tn¦¦diving goggles¦swimming goggles¦face mask¦hydroscope",
@@ -378,7 +392,7 @@ export const PIECE: WordsPiece = {
     "0thfy\t成る丈~rK|成るたけ~sK\tなるたけ|なるだけ\tadv¦uk¦as (much) as possible¦as (much) as one can¦wherever practicable¦if possible¦なるべく",
     "0thg8\t成育\tせいいく\tn,vs,vi¦¦growth (to maturity)¦being brought up¦growing up¦raising",
     "0thgi\t成果\tせいか\tn¦¦(good) result¦outcome¦fruits (of one's labors)¦product¦accomplishment",
-    "0thgs\t成金|成り金\tなりきん\tn¦shogi¦piece promoted to gold general¦orig. meaning",
+    "0thgs\t成金|成り金\tなりきん\tn¦shogi¦piece promoted to gold general¦orig. meaning¦2",
     "0thh2\t成句\tせいく\tn¦¦idiom¦set phrase¦idiomatic phrase\tn¦¦proverb¦saying¦quote¦aphorism",
     "0thhc\t成形|成型\tせいけい\tn,vs,vt¦¦forming¦shaping¦fashioning¦esp. 成形\tn,vs,vt¦¦casting¦molding¦moulding¦compacting (e.g. in metallurgy)¦esp. 成型\tn¦biol¦adult form¦成形",
     "0thhm\t成功\tせいこう\tn,vs,vi¦¦success¦achievement\tn,vs,vi¦¦succeeding (in life)¦(worldly) success¦prosperity",
@@ -1004,16 +1018,5 @@ export const PIECE: WordsPiece = {
     "0tmi6\t税務署\tぜいむしょ\tn¦¦tax office",
     "0tmig\t税理士\tぜいりし\tn¦¦tax counsellor¦tax counselor¦licensed tax accountant",
     "0tmiq\t税率\tぜいりつ\tn¦¦tariff\tn¦¦tax rate",
-    "0tmj0\t脆い\tもろい\tadj-i¦uk¦brittle¦fragile¦weak¦frail\tadj-i¦uk¦tender-hearted¦sentimental¦easily moved",
-    "0tmja\t隻眼\tせきがん\tn,adj-no¦¦one eye\tn¦¦discerning eye¦excellent judgement¦一隻眼・1",
-    "0tmjk\t隻手\tせきしゅ\tn¦¦one hand¦one arm",
-    "0tmju\t席\tせき\tn¦¦seat\tn¦¦location (of a gathering, etc.)¦place\tn¦¦position¦post",
-    "0tmk4\t席に着く|席につく\tせきにつく\texp,v5k¦¦to sit on a seat",
-    "0tmke\t席上\tせきじょう\tn,adv¦¦at the meeting¦on the occasion",
-    "0tmko\t惜しい\tおしい\tadj-i¦¦regrettable¦disappointing¦unfortunate\tadj-i¦¦precious¦dear¦valuable\tadj-i¦¦too good for¦deserving better\tadj-i¦¦almost (but not quite)¦close (but no cigar)",
-    "0tml8\t惜しむ|愛しむ~sK|吝しむ~sK\tおしむ\tv5m,vt¦¦to spare¦to grudge¦to be sparing (with)¦to be frugal¦to be stingy\tv5m,vt¦¦to regret¦to lament\tv5m,vt¦¦to be reluctant (to do)¦to be unwilling\tv5m,vt¦¦to value¦to prize¦to hold dear\tv5m,vt¦arch¦to love¦to cherish¦oft. written as 愛しむ",
-    "0tmli\t惜敗\tせきはい\tn,vs,vi¦¦regrettable defeat¦defeat by a narrow margin",
-    "0tmm2\t斥候\tせっこう\tn,vs,vt¦¦scout¦patrol¦spy",
-    "0tmmc\t斥候隊\tせっこうたい\tn¦¦reconnoitering party¦scout (army)",
   ],
 };

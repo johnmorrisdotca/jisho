@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 35 of 220, from "0tmmm". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 35 of 220, from "0tmj". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,17 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0tmj0\t脆い\tもろい\tadj-i¦uk¦brittle¦fragile¦weak¦frail\tadj-i¦uk¦tender-hearted¦sentimental¦easily moved",
+    "0tmja\t隻眼\tせきがん\tn,adj-no¦¦one eye\tn¦¦discerning eye¦excellent judgement¦一隻眼・1",
+    "0tmjk\t隻手\tせきしゅ\tn¦¦one hand¦one arm",
+    "0tmju\t席\tせき\tn¦¦seat\tn¦¦location (of a gathering, etc.)¦place\tn¦¦position¦post",
+    "0tmk4\t席に着く|席につく\tせきにつく\texp,v5k¦¦to sit on a seat",
+    "0tmke\t席上\tせきじょう\tn,adv¦¦at the meeting¦on the occasion",
+    "0tmko\t惜しい\tおしい\tadj-i¦¦regrettable¦disappointing¦unfortunate\tadj-i¦¦precious¦dear¦valuable\tadj-i¦¦too good for¦deserving better\tadj-i¦¦almost (but not quite)¦close (but no cigar)",
+    "0tml8\t惜しむ|愛しむ~sK|吝しむ~sK\tおしむ\tv5m,vt¦¦to spare¦to grudge¦to be sparing (with)¦to be frugal¦to be stingy\tv5m,vt¦¦to regret¦to lament\tv5m,vt¦¦to be reluctant (to do)¦to be unwilling\tv5m,vt¦¦to value¦to prize¦to hold dear\tv5m,vt¦arch¦to love¦to cherish¦oft. written as 愛しむ",
+    "0tmli\t惜敗\tせきはい\tn,vs,vi¦¦regrettable defeat¦defeat by a narrow margin",
+    "0tmm2\t斥候\tせっこう\tn,vs,vt¦¦scout¦patrol¦spy",
+    "0tmmc\t斥候隊\tせっこうたい\tn¦¦reconnoitering party¦scout (army)",
     "0tmmm\t斥候兵\tせっこうへい\tn¦¦reconnoitering party¦scout (army)",
     "0tmmw\t斥力\tせきりょく\tn¦physics¦repulsion¦repulsive force",
     "0tmn6\t昔\tむかし|むかーし~sk\tn,adj-no,adv¦¦the old days¦the past¦former times¦a long time ago\tn¦¦the past ten years¦the past decade¦ふた昔¦used as a unit of time",
@@ -906,22 +917,5 @@ export const PIECE: WordsPiece = {
     "0ttw0\t穿刺\tせんし\tn,vs,vt,vi¦med¦paracentesis¦centesis¦puncture¦tap",
     "0ttwa\t穿通\tせんつう\tn,vs¦¦penetration",
     "0ttwk\t線\tせん\tn,n-suf¦¦line¦stripe¦stria\tn,n-suf¦¦line (e.g. telephone line)¦wire\tn,n-suf¦¦ray (e.g. X-ray)¦beam¦Ｘ線\tn,n-suf¦¦line (e.g. of a railroad)¦track¦route¦lane\tn,n-suf¦¦outline¦contours¦form\tn,n-suf¦¦level\tn,n-suf¦¦division\tn,n-suf¦¦line (of action)¦position¦approach¦policy¦principle¦いい線\tn,n-suf¦¦impression one leaves¦air one gives off¦線が太い|線が細い",
-    "0ttwu\t線グラフ\tせんグラフ\tn¦¦line graph¦line chart",
-    "0ttx4\t線画\tせんが\tn¦¦line drawing",
-    "0ttxe\t線形|線型\tせんけい\tadj-no,adj-na,n¦math,physics,comp¦linear",
-    "0ttxo\t線形代数\tせんけいだいすう\tn¦¦linear algebra",
-    "0ttxy\t線形論理\tせんけいろんり\tn¦¦linear logic",
-    "0tty8\t線香\tせんこう\tn¦¦incense stick",
-    "0ttyi\t線速度\tせんそくど\tn¦¦linear velocity",
-    "0ttys\t線分\tせんぶん\tn¦math¦line segment",
-    "0ttz2\t線量\tせんりょう\tn¦¦dose (of radioactivity)",
-    "0ttzc\t線路\tせんろ\tn¦¦railway track¦railway line¦railroad¦railway¦track¦line",
-    "0ttzm\t繊維|線維\tせんい\tn¦¦fibre¦fiber¦線維 only used in medical contexts",
-    "0ttzw\t繊維光学\tせんいこうがく\tn¦¦fiber optics¦fibre optics",
-    "0tu06\t繊維工業\tせんいこうぎょう\tn¦¦textile industry",
-    "0tu0g\t繊維性\tせんいせい\tadj-na¦¦fibrous",
-    "0tu0q\t繊細\tせんさい\tadj-na,n¦¦dainty¦delicate (e.g. fingers)¦fine¦slim\tadj-na,n¦¦sensitive¦delicate (feelings, sense, etc.)¦subtle",
-    "0tu10\t羨ましい|羨しい~sK\tうらやましい\tadj-i¦¦envious¦jealous\tadj-i¦¦enviable (position, etc.)",
-    "0tu1a\t羨む\tうらやむ\tv5m,vt¦¦to envy¦to be envious of¦to be jealous of",
   ],
 };

@@ -89,6 +89,35 @@ describe("the files a default lookup fetches", () => {
     expect(cut.length).toBeGreaterThan(800);
   });
 
+  it("hold no example that safe mode leaves out, and the extra pieces hold the whole list of each entry that differs", () => {
+    const folder = "src/data/examples";
+    const names = readdirSync(folder);
+    const lines = (pattern) =>
+      names
+        .filter((name) => pattern.test(name))
+        .flatMap((name) =>
+          [...readFileSync(`${folder}/${name}`, "utf8").matchAll(/^ {4}"((?:[^"\\]|\\.)*)",$/gm)].map((match) =>
+            JSON.parse(`"${match[1]}"`),
+          ),
+        );
+    const kept = new Map(lines(/^s\d+\.data\.ts$/).map((line) => [line.slice(0, line.indexOf("\t")), line]));
+    const whole = lines(/^xs\d+\.data\.ts$/);
+    expect(kept.size).toBeGreaterThan(28_000);
+    expect(whole.length).toBeGreaterThan(50);
+    let cut = 0;
+    for (const line of whole) {
+      const [key, ...examples] = line.split("\t");
+      const keptLine = kept.get(key) ?? "";
+      for (const example of examples) {
+        if (keptLine.includes(example)) continue;
+        cut++;
+        const sentence = example.split("¦")[1];
+        for (const other of kept.values()) expect(other, sentence).not.toContain(sentence);
+      }
+    }
+    expect(cut).toBeGreaterThan(50);
+  });
+
   it("keep the plain senses of the words that have both: the harmonica, the lunch, the pizza, the outsider", () => {
     for (const kept of [
       "harmonica",

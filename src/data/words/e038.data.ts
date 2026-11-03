@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 39 of 220, from "0uhz". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 39 of 220, from "0uhus". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,22 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0uhus\t茶飯事\tさはんじ\tn¦¦matter of no importance¦commonly occurring thing¦commonplace event¦bread and butter item¦日常茶飯事",
+    "0uhv2\t茶番\tちゃばん\tn,adj-no¦¦farce¦charade\tn¦¦person who serves tea\tn¦¦short and humorous improvised sketch (originating from Edo-era kabuki)",
+    "0uhvc\t茶番狂言\tちゃばんきょうげん\tn¦¦farce¦burlesque¦low comedy",
+    "0uhvm\t茶番的\tちゃばんてき\tadj-na¦¦farcical¦comical",
+    "0uhvw\t茶舗\tちゃほ\tn¦¦tea store",
+    "0uhw6\t茶目\tちゃめ\tadj-na,n¦¦playful¦mischievous\tn¦¦joker¦prankster¦scamp¦rascal\tn¦¦brown eyes",
+    "0uhwg\t茶目る\tちゃめる\tv5r¦¦to play pranks",
+    "0uhwq\t茶碗蒸し|茶碗蒸|茶わん蒸し~sK\tちゃわんむし\tn¦¦chawanmushi¦savoury steamed egg custard with chicken, mushrooms, etc. (savory)",
+    "0uhx0\t嫡嗣\tちゃくし\tn¦¦legitimate heir",
+    "0uhxa\t嫡子\tちゃくし\tn¦¦heir\tn¦¦legitimate child",
+    "0uhxk\t嫡出子|摘出子~iK\tちゃくしゅつし~~嫡出子|てきしゅつし\tn¦¦legitimate child",
+    "0uhxu\t嫡孫\tちゃくそん\tn¦¦eldest son's descendants",
+    "0uhy4\t嫡男\tちゃくなん\tn¦¦legitimate son (esp. eldest son)¦heir",
+    "0uhye\t嫡披\tちゃくひ\tn¦¦confidential letter",
+    "0uhyo\t嫡流\tちゃくりゅう\tn¦¦direct line of descent¦lineage of eldest son¦main branch of a family¦legitimate lineage",
+    "0uhyy\t着く\tつく\tv5k,vi¦¦to arrive at¦to reach\tv5k,vi¦¦to sit on¦to sit at (e.g. the table)¦席に着く",
     "0uhzi\t着せる|被せる\tきせる\tv1,vt¦¦to put clothes on (someone)¦to dress¦to clothe\tv1,vt¦¦to cover¦to coat¦to plate¦to gild¦to veneer\tv1,vt¦¦to pin (e.g. a crime on someone)¦to lay (blame)¦to charge (with an offence)¦to give (a bad name)¦to remind someone of (their indebtedness)",
     "0uhzs\t着る|著る~rK\tきる\tv1,vt¦¦to wear (from the shoulders down)¦to put on\tv1,vt¦¦to take (the blame, responsibility)¦to bear¦as 汚名を〜, 罪を〜, etc.",
     "0ui02\t着衣\tちゃくい|ちゃくえ~ok\tn¦¦clothes (that one is wearing)\tn,vs,vi¦¦wearing clothes¦脱衣",
@@ -957,7 +973,5 @@ export const PIECE: WordsPiece = {
     "0uplo\t通し番号\tとおしばんごう\tn¦¦serial number¦consecutive number",
     "0uply\t通じて\tつうじて\tadv¦¦through¦via¦by (using)¦as を～\tadv¦¦throughout (e.g. the year)¦all through¦all over (e.g. the country)¦as を～\tadv¦¦generally¦on the whole¦in general¦all in all",
     "0upm8\t通じる\tつうじる\tv1,vi¦¦to be open (to traffic)¦to lead (to)¦to connect (to)¦to run (from, between; e.g. bus service)¦to extend (up to)¦to go (to)¦to reach\tv1,vt,vi¦¦to flow (of a liquid, current, etc.)¦to pass (through)¦to get through (e.g. of a signal)¦to connect (e.g. of a call)¦to work (of a phone line)\tv1,vi¦¦to be conveyed (of an intention, meaning, etc.)¦to be understood (by)¦to be comprehended¦to get across (e.g. of an idea)\tv1,vi¦¦to be well versed (in)¦to be proficient (in)¦to know a lot (about)¦to be familiar (with)¦oft. as 通じている\tv1,vi¦¦to be widespread¦to be commonly known¦to be prevalent\tv1,vi¦¦to have an effect¦to work¦to be on par (with)\tv1,vi¦¦to communicate secretly (with the enemy)¦to conspire (with)¦to betray\tv1,vi¦¦to have an affair (with)¦to have an illicit relationship¦to be intimate (with)\tv1,vi¦¦to be relevant (to)¦to concern\tv1,vi¦¦to have bowel movement¦to (be able to) defacate\tv1,vt¦¦to convey (an intention, feeling, etc.)¦to get (something) across¦to communicate¦to make (someone) understand\tv1,vt¦¦to give out (e.g. a business card)¦to hand out (a name card)¦oft. as 刺を～\tv1,vt¦¦to do via (something)¦to go through (someone)¦to do by using¦通じて・1¦as ...を通じて\tv1,vt¦¦to span the entirety (of)¦to concern (all of)¦to extend (all across)¦通じて・2¦as ...を通じて",
-    "0upmi\t通じ合う|通じあう\tつうじあう\tv5u,vi¦¦to be understood by each other (of thoughts, feelings, etc.)¦to be comprehended\tv5u,vt¦¦to exchange with each other (thoughts, feelings, etc.)¦to express to each other (e.g. intentions)¦to communicate with each other",
-    "0upms\t通す|徹す~rK|透す~rK\tとおす\tv5s,vt¦¦to let pass¦to allow through¦to let through¦to make way (for)\tv5s,vt¦¦to transmit (e.g. light, sound, etc.)¦to conduct (electricity)¦to let permeate (e.g. water through a fabric)¦to permit through¦to let through (e.g. air)¦to run through (e.g. a pipe)¦to penetrate¦to let in\tv5s,vt¦¦to stick through (e.g. a hole)¦to force through (e.g. an opening)¦to thread (e.g. a needle)¦to put through\tv5s,vt¦¦to connect (e.g. two places)¦to open (a route, path, etc.)¦to link (e.g. by a road)¦to establish (a connection between)¦to join¦to extend up to (somewhere)\tv5s,vt¦¦to pass (a student, applicant, etc.)¦to admit (e.g. a student)¦to let through¦to let in\tv5s,vt¦¦to lead (someone) into (a house, room, etc.)¦to show in¦to guide in¦to admit (someone)\tv5s,vt¦¦to present logically¦to make (e.g. one's argument) convincing¦to be consistent (in one's reasoning)¦to stick to (e.g. one's principles)¦筋を通す\tv5s,vt¦¦to go through (e.g. a middleman)¦to put as an intermediary¦to mediate via (somebody)¦to do via (something)¦as 通して...する\tv5s,vt¦¦to pass (a law)¦to put through (e.g. a motion)¦to make way (for)\tv5s,vt¦¦to listen through (a door, wall, etc.)¦to look through (e.g. a window)¦also written 透す\tv5s,vt¦food¦to heat thorougly (of food)¦to cook properly¦to warm well¦to heat evenly¦as 火（熱）を～\tv5s,vt¦food¦to dip into (e.g. a sauce)¦to pass through (e.g. a broth)¦to put through (e.g. boiling water)\tv5s,vt¦¦to make (someone) approve (e.g. a plan)¦to force agreement¦to push through (a proposal, idea, will, etc.)¦to have one's way\tv5s,vt¦¦to continue (in a state)¦to persist in (doing)¦to keep doing¦to remain (in a state)¦also as で～\tv5s,vt¦¦to do through the lens of¦to view from the angle of¦to do from the perspective of¦usu. as 通して...する\tv5s,vt¦¦to do to the entirety of¦to cover all of¦to span the whole¦目を通す\tv5s,vt¦¦to do from beginning to end without a break¦to finish in one session¦to do all at once¦to do in one go¦as 通して...する\tv5s,vt¦¦to relay (a message, an order, etc.)¦to convey (an intention, meaning, etc.)¦to send through¦to pass on (e.g. information)¦to make heard (e.g. one's voice)\tsuf,v5s¦¦to do ... to the end¦to do ... continuously¦to carry through ...¦to complete ...¦やり通す¦after the -masu stem of a verb",
   ],
 };

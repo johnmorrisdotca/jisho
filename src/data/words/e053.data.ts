@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 54 of 220, from "0xu8y". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 54 of 220, from "0xu3". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,28 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0xu34\t公式試合\tこうしきしあい|こうしきじあい\tn¦¦championship match",
+    "0xu3e\t口腔\tこうこう|こうくう\tn¦anat¦oral cavity¦mouth¦こうくう in medical fields",
+    "0xu3o\t口三味線\tくちじゃみせん|くちざみせん\tn¦¦humming a samisen tune\tn¦¦smooth talk¦sweet words¦cajolery",
+    "0xu3y\t口数\tくちかず\tn¦¦number of words a person speaks¦口数が多い\tn¦¦number of dependents¦number of mouths to feed\tn¦¦number of shares, items, applications, etc.",
+    "0xu48\t口舌\tこうぜつ\tn,adj-no¦¦manner of speaking¦way of speaking¦intimation¦lip service¦words",
+    "0xu4i\t向日性\tこうじつせい|こうにちせい\tn,adj-no¦¦heliotropism¦actinotropism¦disposition (in flowers) to turn toward the sun¦phototropism¦背日性",
+    "0xu4s\t工場\tこうじょう|こうば\tn¦¦factory¦plant¦mill¦workshop",
+    "0xu52\t庚\tかのえ|こう\tn¦¦7th in rank¦seventh sign of the Chinese calendar",
+    "0xu5c\t溝\tみぞ\tn¦¦ditch¦drain¦gutter¦trench\tn¦¦groove¦tread¦indentation\tn¦¦gap (between people, countries, etc.)¦gulf¦rift",
+    "0xu5m\t甲\tこう\tn¦¦carapace¦shell\tn¦¦1st in rank¦grade A\tn¦¦instep¦back of hand\tn¦law¦the A party (e.g. in a contract)¦the first party¦plaintiff (label in legal documents)¦乙・おつ・1",
+    "0xu5w\t甲虫|兜虫~rK|カブト虫~sK|かぶと虫~sK\tカブトムシ~~~!|かぶとむし\tn¦uk¦rhinoceros beetle (esp. the Japanese rhinoceros beetle, Trypoxylus dichotomus)",
+    "0xu61\t甲虫\tこうちゅう\tn¦¦beetle",
+    "0xu66\t甲板\tかんぱん|こうはん\tn¦¦deck (of a ship)",
+    "0xu6g\t紅\tくれない|べに|こう\tn¦¦deep red¦crimson\tn¦¦rouge¦lipstick¦べに",
+    "0xu6q\t紅色|べに色~sK|くれない色~sK\tべにいろ|こうしょく|くれないいろ\tn¦¦red¦crimson¦vermilion",
+    "0xu70\t紅葉\tこうよう\tn,vs,vi¦¦leaves turning red (in autumn)¦red leaves¦autumn colours¦fall colors¦黄葉",
+    "0xu7a\t行き|往き\tいき|ゆき\tn¦¦the way there¦outbound leg¦outbound trip¦departing leg\tn-suf¦¦bound for ...¦東京行き¦usu. ゆき\tn¦¦outbound ticket",
+    "0xu7k\t行き違い|行違い\tいきちがい|ゆきちがい\tn¦¦crossing without meeting (e.g. letters in the post, people on the road)¦going astray\tn¦¦difference of opinion¦misunderstanding¦estrangement¦disagreement",
+    "0xu7u\t行き詰まり|行き詰り|行詰り|行詰まり\tいきづまり|ゆきづまり\tn¦¦deadlock¦stalemate¦impasse¦dead end",
+    "0xu84\t行き止まり|行止まり~sK|行き止り~sK|行止り~sK\tいきどまり|ゆきどまり\tn¦¦dead end¦blind alley¦no through road (i.e. on signage)¦cul-de-sac\tn¦¦end¦end of the road¦end point¦as far as one can go",
+    "0xu8e\t行き方|行方~io\tいきかた|ゆきかた\tn¦¦way (of going)¦route\tn¦¦way (of doing)¦method",
+    "0xu8o\t行き来|往き来|行来\tゆきき|いきき\tn,vs,vi¦¦coming and going¦keeping in touch¦visiting each other\tn,vs,vi¦¦street traffic¦highway",
     "0xu8y\t行く|往く~rK\tいく|ゆく|イク~sk\tv5k-s,vi¦¦to go¦to move (towards)¦to head (towards)¦to leave (for)¦来る・1\tv5k-s,vi¦¦to move through¦to travel across¦to walk along (e.g. a road)\tv5k-s,vi¦¦to go (well, badly, etc.)¦to proceed¦to turn out¦to get along\tv5k-s,vi¦¦to do (in a particular way)¦to go (with; a choice)¦to try¦oft. as で〜\tv5k-s,vi¦¦to pass (of time, seasons, etc.)¦to go by\tv5k-s,vi¦¦to stream¦to flow\tv5k-s,vi¦¦to die¦to pass away¦usu. written as 逝く\tv5k-s,vi¦¦to reach (a stage, extent, age, etc.)¦to get to¦to go (so far as ...)\tv5k-s,vi¦¦to reach (of information, instructions, wind, etc.)¦to arrive\taux-v,v5k-s¦uk¦to continue ...¦to go on ...¦to (progress) steadily¦to gradually ...¦to progressively ...¦after the -te form of a verb; い sometimes omitted in casual speech\tv5k-s,vi¦uk,col¦to have an orgasm¦to come¦to cum¦oft. written as イク\tv5k-s,vi¦uk,sl¦to trip¦to get high¦to have a drug-induced hallucination",
     "0xu98\t行く末|行末~io\tゆくすえ\tn¦¦one's future¦one's fate¦prospects¦promise\tn¦¦one's way¦one's path",
     "0xu9i\t鋼板|鋼鈑\tこうはん|こうばん\tn¦¦steel sheet¦steel plate",
@@ -31,7 +53,7 @@ export const PIECE: WordsPiece = {
     "0xue8\t黒髪\tくろかみ|こくはつ\tn,adj-no¦¦black hair",
     "0xuei\t黒斑|黒駁|黒ぶち\tこくはん~~黒斑|くろぶち|くろふ~~黒斑|くろまだら~~黒斑\tn,adj-no¦¦black spot¦black speck",
     "0xues\t黒穂\tくろほ|くろぼ\tn¦¦smut",
-    "0xuf2\t此奴~rK\tこいつ|こやつ\tpn¦fam,uk¦this¦this one¦this thing¦そいつ・2",
+    "0xuf2\t此奴~rK\tこいつ|こやつ\tpn¦fam,uk¦this¦this one¦this thing¦そいつ・2¦2",
     "0xufc\t頃|比\tころ|ごろ\tn,adv,n-suf¦uk¦(approximate) time¦around¦about¦toward¦ごろ when used as a suffix\tn,adv,n-suf¦¦suitable time (or condition)¦食べ頃\tn,adv,n-suf¦¦time of year¦season",
     "0xufm\t今昔\tこんじゃく|こんせき\tn¦¦past and present",
     "0xufw\t今朝\tけさ~gikun|こんちょう\tn,adv¦¦this morning",
@@ -472,7 +494,7 @@ export const PIECE: WordsPiece = {
     "0xxtu\t賓客\tひんきゃく|ひんかく\tn¦¦guest of honour¦guest of honor¦privileged guest¦visitor",
     "0xxu4\t不器用者\tぶきようもの\tn¦¦bungler",
     "0xxue\t不器量|無器量\tぶきりょう|ふきりょう~~不器量\tadj-na,n¦¦ugly (of a person)¦plain¦unattractive¦homely\tadj-na,n¦arch¦lacking ability¦incompetent¦orig. meaning",
-    "0xxuo\t不具\tふぐ\tn,adj-no¦¦word written at the end of a letter",
+    "0xxuo\t不具\tふぐ\tn,adj-no¦¦word written at the end of a letter¦2",
     "0xxuy\t不治\tふじ|ふち\tn,adj-no¦¦incurability",
     "0xxv8\t不寝番\tねずばん|ふしんばん\tn¦¦sleepless vigil¦night watch¦vigilance",
     "0xxvi\t不揃い|不ぞろい~sK\tふぞろい|ふそろい\tadj-no,adj-na,n¦¦uneven¦irregular¦non-uniform¦unsorted¦odd¦miscellaneous¦incomplete (set)",
@@ -762,26 +784,5 @@ export const PIECE: WordsPiece = {
     "0y08s\t天下る|天降る\tあまくだる\tv5r,vi¦¦to descend from heaven",
     "0y092\t雨曇|雨曇り\tあまぐもり\tn¦¦overcast weather",
     "0y09c\t雨垂れ|雨だれ\tあまだれ\tn¦¦raindrops (dripping from eaves, branches, etc.)\tn¦col¦exclamation point¦exclamation mark¦感嘆符",
-    "0y09m\t天つ日嗣|天津日嗣\tあまつひつぎ\tn¦¦imperial throne",
-    "0y09w\t編み上げ|編上げ\tあみあげ\tn¦¦high laced shoes or boots",
-    "0y0a6\t編み物|編物|編みもの~sK|編もの~sK\tあみもの\tn,adj-no¦¦knitting¦knitted material¦crochet",
-    "0y0ag\t雨上がり|雨あがり~sK|雨上り~sK\tあめあがり|あまあがり\tn¦¦after the rain",
-    "0y0aq\t雨降り|雨ふり~sK\tあめふり\tn¦¦rainfall¦rainy weather¦rain\tadj-no¦¦rainy¦wet",
-    "0y0b0\t怪しい\tあやしい\tadj-i¦¦suspicious¦dubious¦questionable¦dodgy¦shady¦fishy\tadj-i¦¦doubtful¦unsure¦uncertain¦unlikely¦implausible\tadj-i¦¦untrustworthy¦unreliable¦clumsy¦awkward¦shaky¦poor\tadj-i¦¦strange¦weird¦eerie¦spooky¦uncanny\tadj-i¦¦ominous (e.g. weather)¦threatening¦dangerous (e.g. financial situation)¦uncertain\tadj-i¦¦suspicious (of a potential amorous relation)\tadj-i¦¦mysterious¦bewitching¦alluring¦enticing¦enchanting¦妖しい・あやしい¦also 妖しい",
-    "0y0ba\t綾取り|あや取り|綾取~io\tあやとり\tn¦uk¦cat's cradle",
-    "0y0bk\t鮎|香魚~rK|年魚~rK|細鱗魚~sK|銀口魚~sK\tあゆ|アユ~~~!\tn¦uk¦ayu (Plecoglossus altivelis)¦sweetfish",
-    "0y0bu\t粗|荒~rK\tあら|アラ~~~!\tn¦uk¦remaining bony parts (of a fish after filleting)¦usu. アラ\tn¦uk¦flaw (esp. of a person)¦fault¦defect\tn¦¦rice chaff\tpref¦¦rough\tpref¦¦crude¦raw¦natural¦wild",
-    "0y0c4\t荒々しい|荒荒しい\tあらあらしい\tadj-i¦¦rough¦wild¦rude¦harsh¦gruff¦violent",
-    "0y0ce\t洗い熊~rK|洗熊~rK|浣熊~rK\tあらいぐま|アライグマ~~~!\tn¦uk¦common raccoon (Procyon lotor)",
-    "0y0co\t荒削り|粗削り\tあらけずり\tadj-na,n¦¦rough-hewn¦incomplete¦unrefined¦still in the process of being formed",
-    "0y0cy\t荒野|荒れ野|曠野~iK\tこうや~~荒野,曠野|あれの~~荒野,荒れ野|あらの~~荒野,曠野\tn¦¦wasteland¦wilderness¦deserted land¦prairie¦vast plain¦wilds¦desert¦wild land",
-    "0y0d8\t凡ゆる~rK|有らゆる~rK|汎ゆる~sK\tあらゆる\tadj-pn¦uk¦all¦every",
-    "0y0e2\tあり方|在り方|有り方~sK\tありかた\tn¦¦the way (something) ought to be\tn¦¦(present) state (of)¦how things are",
-    "0y0ec\t有難う|有り難う|有りがとう~sK\tありがとう\tint¦uk¦thank you¦thanks",
-    "0y0em\t有田焼|有田焼き~io\tありたやき\tn¦¦Arita ware (porcelain)",
-    "0y0ew\t或る|或\tある\tadj-pn¦uk¦a certain ...¦some ...",
-    "0y0f6\t或いは|或るいは~sK\tあるいは\tconj¦uk¦or¦either ... or¦は is pronounced as わ\tadv¦uk¦maybe¦perhaps¦possibly\tadv¦uk¦some ... and others ...¦sometimes ... and at other times ...¦as あるいは...あるいは...",
-    "0y0fg\t荒れ果てる|荒れはてる~sK|荒果てる~sK\tあれはてる\tv1,vi¦¦to fall into ruin¦to become dilapidated¦to become run-down¦to become desolate¦to be badly neglected",
-    "0y0fq\t合わさる|合さる|併さる~iK\tあわさる\tv5r,vi¦¦to join¦to be put together¦to combine¦to unite¦to fit¦to close (e.g. of a wound)",
   ],
 };

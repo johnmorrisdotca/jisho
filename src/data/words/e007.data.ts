@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 8 of 220, from "0n7pk". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 8 of 220, from "0n7p". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0n7pa\t\tデジタルスピードメーター|デジタル・スピードメーター\tn¦¦digital speedometer",
     "0n7pk\t\tデジタルテレビ|デジタル・テレビ\tn¦¦digital television",
     "0n7pu\t\tデスエデュケーション|デス・エデュケーション\tn¦¦death education",
     "0n7q4\t\tデスカレーション\tn¦¦de-escalation",
@@ -1060,7 +1061,7 @@ export const PIECE: WordsPiece = {
     "0ngry\t\tハープシコード\tn¦¦harpsichord¦チェンバロ",
     "0ngs8\t\tハーモナイズ\tn¦¦harmonize¦harmonise",
     "0ngsi\t\tハーモニー\tn¦¦harmony",
-    "0ngss\t\tハーモニカ|ハモニカ\tn¦¦harmonica¦mouth organ\tn¦sl¦hypodermic syringe",
+    "0ngss\t\tハーモニカ|ハモニカ\tn¦¦harmonica¦mouth organ\tn¦sl¦hypodermic syringe¦3",
     "0ngt2\t\tハーラーダービー|ハーラー・ダービー\tn¦baseb¦race to be the pitcher with the most wins in the season¦engw~hurler derby",
     "0ngtc\t\tハーレム|ハレム\tn¦¦harem¦ara~ḥarīm",
     "0ngtm\t\tハーレムパンツ|ハーレム・パンツ\tn¦¦harem pants",
@@ -1241,6 +1242,5 @@ export const PIECE: WordsPiece = {
     "0niek\tは行|ハ行|波行~ateji,rK\tはぎょう\tn¦¦the \"ha\" column of the Japanese syllabary table (ha, hi, fu, he, ho)",
     "0nieu\tハ短調\tハたんちょう\tn¦music¦C minor",
     "0nif4\tハ長調\tハちょうちょう\tn¦music¦C major",
-    "0nife\t\tバー\tn¦¦bar¦tavern¦barroom¦pub\tn¦¦bar (establishment, counter, etc. where food and drinks are sold)\tn¦¦bar (in the high jump or pole vault)¦crossbar (in soccer, rugby, etc.)¦(ballet) barre",
   ],
 };

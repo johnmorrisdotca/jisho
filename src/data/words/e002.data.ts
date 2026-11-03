@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 3 of 220, from "0lrgg". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 3 of 220, from "0lrg". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0lrg6\t\tアクチュアリティー\tn¦¦actuality",
     "0lrgg\t\tアクチュアル|アクチャル\tadj-na,n¦¦actual",
     "0lrgq\t\tアクチュアルタイム|アクチュアル・タイム\tn¦¦actual time",
     "0lrh0\t\tアクティビティ|アクティビティー~sk|アクティヴィティ~sk|アクテビティ~sk|アクティヴィティー~sk|アクテビティー~sk\tn¦¦activity",

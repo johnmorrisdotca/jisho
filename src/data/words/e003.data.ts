@@ -272,7 +272,7 @@ export const PIECE: WordsPiece = {
     "0m3vo\t\tエンボス\tn¦¦embossing",
     "0m3vy\t\tエンラージメント\tn¦¦enlargement",
     "0m3w8\t\tエンリッチ\tn¦¦enrichment (of food)",
-    "0m3ws\tＯＬ\tオー・エル|オーエル~sk\tn¦abbr¦overlap¦オーバーラップ\tn¦abbr¦orienteering¦オリエンテーリング",
+    "0m3ws\tＯＬ\tオー・エル|オーエル~sk\tn¦abbr¦overlap¦オーバーラップ¦2\tn¦abbr¦orienteering¦オリエンテーリング¦3",
     "0m3xc\t\tオーガナイザー|オルガナイザー\tn¦¦organizer¦organiser",
     "0m3xm\t\tオーガナイズ|オルガナイズ\tn,vs¦¦organize¦organise",
     "0m3xw\t\tオーガニゼーション|オーガナイゼーション|オーガニゼイション~sk|オルガニゼーション~sk\tn¦¦organization¦organisation",
@@ -1213,6 +1213,5 @@ export const PIECE: WordsPiece = {
     "0mby8\t\tキャラクター|キャラクタ~sk\tn¦¦character¦personality¦disposition\tn¦¦(fictional) character\tn¦comp¦character¦文字・1¦usu. キャラクタ",
     "0mbyi\t\tキャラクタディスプレイ|キャラクターディスプレイ|キャラクターディスプレー|キャラクタ・ディスプレイ|キャラクター・ディスプレイ|キャラクター・ディスプレー\tn¦comp¦character display",
     "0mbys\t\tキャラバン\tn¦¦caravan\tn¦¦group of people touring to sell, investigate, etc.",
-    "0mbz2\t\tキャラバンシューズ|キャラバン・シューズ\tn¦tradem¦light mountain-climbing shoes¦engw~Caravan shoes",
   ],
 };

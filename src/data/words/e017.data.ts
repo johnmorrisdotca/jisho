@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 18 of 220, from "0pu5". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 18 of 220, from "0pu3m". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,11 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0pu3m\t格上げ\tかくあげ\tn,vs,vt¦¦status elevation¦upgrading¦promotion",
+    "0pu3w\t格段\tかくだん\tadj-no,adj-na¦¦dramatic (improvement)¦remarkable (difference)¦marked¦noticeable\tadj-no,adj-na¦¦(far) better¦exceptional",
+    "0pu46\t格調\tかくちょう\tn¦¦tone (of speech, writing, etc.)¦style¦格調高い",
+    "0pu4g\t格闘|挌闘~rK|格鬪~sK\tかくとう\tn,vs,vi¦¦(hand-to-hand) fight¦grapple¦scuffle¦tussle\tn,vs,vi¦¦struggling (with a problem, task, etc.)¦grappling¦wrestling¦getting to grips (with)",
+    "0pu4q\t格闘戦部隊\tかくとうせんぶたい\tn¦¦shock troops",
     "0pu50\t格納\tかくのう\tn,vs,vt¦¦storage¦housing for equipment and machines\tn,vs,vt¦comp¦putting into computer memory¦saving",
     "0pu5a\t格納庫\tかくのうこ\tn¦¦(aircraft) hangar",
     "0pu5k\t格付け|格付|格づけ~sK\tかくづけ|かくずけ~sk\tn,vs,vt¦¦rating¦ranking¦grading¦classification",
@@ -362,7 +367,7 @@ export const PIECE: WordsPiece = {
     "0pwx0\t蒲鉾\tかまぼこ|カマボコ~sk\tn¦uk,food¦kamaboko¦steamed seasoned fish paste, usu. in a semicylindrical shape on a strip of wood and sliced to go in soup, etc.",
     "0pwxa\t蒲柳\tほりゅう\tn¦¦purple willow\tn¦¦infirmity¦delicate constitution",
     "0pwxk\t釜\tかま\tn¦¦iron pot¦kettle",
-    "0pwxu\tかまを掘る|カマを掘る|釜を掘る\tかまをほる\texp,v5r¦col¦to crash a car into the back of another¦to rear-end¦おかまを掘る・2",
+    "0pwxu\tかまを掘る|カマを掘る|釜を掘る\tかまをほる\texp,v5r¦col¦to crash a car into the back of another¦to rear-end¦おかまを掘る・2¦2",
     "0pwy4\t鎌止め\tかまどめ\tn¦¦cutting grass and trees is prohibited",
     "0pwye\t鎌首|かま首~sK\tかまくび\tn¦¦sickle-shaped neck (e.g. snake, praying mantis)¦crooked neck¦gooseneck",
     "0pwyo\t鎌倉時代\tかまくらじだい\tn¦hist¦Kamakura period (1185-1333)",
@@ -948,7 +953,7 @@ export const PIECE: WordsPiece = {
     "0q1oo\t間\tま\tn¦¦time¦pause\tn¦¦space\tn¦¦room",
     "0q1oy\t間にある\tあいだにある\texp,adj-f¦¦intervening",
     "0q1p8\t間に合う|間にあう\tまにあう\tv5u,vi¦¦to be in time (for)\tv5u,vi¦¦to serve (suit, meet) the purpose¦to be good enough¦to be enough¦to manage¦to make do",
-    "0q1pi\t間の子|合いの子|あいの子|合の子\tあいのこ\tn¦biol¦hybrid¦crossbreed",
+    "0q1pi\t間の子|合いの子|あいの子|合の子\tあいのこ\tn¦biol¦hybrid¦crossbreed¦2",
     "0q1q2\t間もなく|間も無く\tまもなく\tadv¦uk¦soon¦shortly¦before long¦in a short time¦in a little while\tadv¦¦having no time to ...¦with no time to ...¦after the dictionary form of a verb",
     "0q1qm\t間を置いて\tまをおいて|あいだをおいて\texp¦¦intermittently¦at intervals (of)¦after a pause",
     "0q1qw\t間違い\tまちがい\tn¦¦mistake¦error¦blunder\tn¦¦accident¦mishap¦trouble\tn¦¦improper conduct (e.g. between man and woman)¦indiscretion",
@@ -967,14 +972,5 @@ export const PIECE: WordsPiece = {
     "0q1ui\t間際|真際~rK\tまぎわ\tn¦¦the point just before ...¦the point of (doing)¦the verge (of)¦the eve (of)\tn¦¦(just before the) edge",
     "0q1v2\t間者\tかんじゃ\tn¦dated¦spy¦secret agent¦間諜|スパイ",
     "0q1vc\t間借り\tまがり\tn,vs,vt,vi¦¦renting a room",
-    "0q1vm\t間取り|間取\tまどり\tn¦¦layout (of a house or apartment)¦arrangement of rooms",
-    "0q1vw\t間食\tかんしょく\tn,vs,vi¦¦eating between meals¦snacking",
-    "0q1w6\t間数\tまかず\tn¦¦number of rooms",
-    "0q1wg\t間接\tかんせつ\tn,adj-no¦¦indirection¦indirectness¦直接・ちょくせつ",
-    "0q1wq\t間接照準射撃\tかんせつしょうじゅんしゃげき\tn¦¦indirect fire",
-    "0q1x0\t間接税\tかんせつぜい\tn¦¦indirect tax",
-    "0q1xa\t間接的\tかんせつてき\tadj-na¦¦indirect",
-    "0q1xk\t間接目的語\tかんせつもくてきご\tn¦gramm¦indirect object",
-    "0q1xu\t間奏曲\tかんそうきょく\tn¦music¦interlude¦intermezzo",
   ],
 };

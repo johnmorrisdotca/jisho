@@ -65,6 +65,11 @@ describe("the whole entry of a word", () => {
     expect(text(whole)).toContain("cunnilingus");
     expect(text(whole)).toContain("harmonica");
     expect(whole?.senses.length).toBeGreaterThan(safe?.senses.length ?? 99);
+    // A sense keeps the number JMdict gives it, so a cross-reference to it still means it when a sense before it is left out.
+    expect(safe?.senses.map((sense) => sense.number)).toEqual(
+      whole?.senses.filter((sense) => !JSON.stringify(sense).includes("cunnilingus")).map((sense) => sense.number),
+    );
+    expect(whole?.senses.map((sense) => sense.number)).toEqual(whole?.senses.map((_, at) => at + 1));
   });
 
   it("gives an entry JMdict has no word for as null, and refuses what is not an entry", async () => {
@@ -100,7 +105,7 @@ describe("an entry read from its line", () => {
       `${notes}usu. in the negative\u2028second note`,
       `${sources}eng~america|ger~Amerika|porp~x|jpnw~y`,
     ].join("¦"),
-    "v5r¦¦stay",
+    `v5r¦¦stay¦${mark(7)}4`,
   ].join("\t");
 
   it("has its forms, readings, senses and everything optional", () => {
@@ -116,6 +121,7 @@ describe("an entry read from its line", () => {
       { text: "ごっこ", marks: [], onlyForms: [], noKanji: true },
     ]);
     const sense = entry.senses[0];
+    expect(sense?.number).toBe(1);
     expect(sense?.pos).toEqual(["n", "adj-no"]);
     expect(sense?.marks).toEqual(["food", "ksb"]);
     expect(sense?.glosses).toEqual([
@@ -137,6 +143,7 @@ describe("an entry read from its line", () => {
       { lang: "jpn", text: "y", partial: false, wasei: true },
     ]);
     expect(entry.senses[1]?.glosses).toEqual([{ text: "stay", kind: null }]);
+    expect(entry.senses[1]?.number).toBe(4);
     expect(entry.senses[1]?.sources).toEqual([]);
   });
 });

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 11 of 220, from "0o38a". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 11 of 220, from "0o37". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0o376\t\tボタンダウン\tn¦¦button down",
+    "0o37g\t\tボタンホール\tn¦¦buttonhole",
+    "0o37q\t\tボタンロック\tn¦¦button lock",
+    "0o380\t\tボックス\tn¦¦box¦container¦bin\tn¦¦box (in a theatre)¦booth (in a restaurant, etc.)¦(orchestra) pit\tn¦¦small rectangular building (e.g. telephone box)\tn¦baseb¦rectangular field area (e.g. batter's box, catcher's box)\tn¦¦box (calfskin)\tn¦¦central 4x4 area (othello)",
     "0o38a\t\tボックスカーフ|ボックス・カーフ\tn¦¦box calf",
     "0o38k\t\tボックスシート|ボックス・シート\tn¦¦box seat",
     "0o38u\t\tボックスストア|ボックス・ストア\tn¦¦box store",
@@ -1231,12 +1235,5 @@ export const PIECE: WordsPiece = {
     "0oe52\t\tライトモチーフ\tn¦¦leitmotif¦leitmotiv¦leading motive¦ger~",
     "0oe5c\t\tライド\tn¦¦ride",
     "0oe5m\t\tライナー\tn,adj-no¦baseb¦liner¦line drive\tn¦¦liner¦ocean liner¦トランパー\tn¦¦liner (of a coat, etc.)¦lining",
-    "0oe5w\t\tライナーノーツ|ライナー・ノーツ\tn¦¦liner notes",
-    "0oe66\t\tライニング\tn¦¦lining",
-    "0oe6g\t\tライノタイプ\tn¦print,tradem¦Linotype",
-    "0oe6q\t\tライバル|ライヴァル~sk\tn¦¦rival¦competitor¦competition",
-    "0oe70\t\tライフ\tn¦¦life",
-    "0oe7a\t\tライフサービス\tn¦¦life-service",
-    "0oe7k\t\tライフサイエンス|ライフ・サイエンス\tn¦¦life science",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 32 of 220, from "0sz9i". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 32 of 220, from "0sz7". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,15 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0sz70\t賞味期限\tしょうみきげん\tn¦¦best-before date (on food)¦use-by date¦expiry date¦expiration date",
+    "0sz7a\t賞与\tしょうよ\tn¦¦bonus¦ボーナス\tn¦¦reward¦prize",
+    "0sz7k\t鍾馗|鍾き\tしょうき\tn¦¦Shōki the Plague-Queller¦Zhong Kui¦traditional Chinese deity said to prevent plagues and ward off evil and reputedly able to command 80,000 demons\tn¦hist¦Shōki (WWII fighter aircraft)",
+    "0sz7u\t鍾乳石|鐘乳石~iK\tしょうにゅうせき\tn¦geol¦stalactite¦石筍",
+    "0sz84\t鍾乳洞|鐘乳洞~sK\tしょうにゅうどう\tn¦¦limestone cave¦limestone cavern",
+    "0sz8e\t鐘\tかね\tn¦¦bell (often a large hanging bell)¦chime¦鉦",
+    "0sz8o\t鐘楼\tしょうろう|しゅろう\tn¦¦belfry¦bell tower",
+    "0sz8y\t障る\tさわる\tv5r,vi¦¦to be harmful to¦to hinder¦to interfere with¦to irritate",
+    "0sz98\t障害|障がい|障碍~rK|障礙~rK\tしょうがい\tn,vs,vt¦¦obstacle¦impediment¦hindrance¦barrier¦difficulty\tn¦¦disability¦handicap¦impairment¦dysfunction¦disorder¦defect\tn¦abbr,horse¦steeplechase¦障害競走\tn¦abbr¦obstacle race¦steeplechase (athletics)¦障害物競走",
     "0sz9i\t障害物|障碍物~rK\tしょうがいぶつ\tn¦¦obstacle¦hurdle",
     "0sz9s\t障害物競走\tしょうがいぶつきょうそう\tn¦¦obstacle race¦steeplechase (athletics)",
     "0sza2\t障子\tしょうじ\tn¦¦shoji (paper sliding door)",
@@ -534,7 +543,7 @@ export const PIECE: WordsPiece = {
     "0t3gc\t職員室\tしょくいんしつ\tn¦¦staff room",
     "0t3gm\t職業\tしょくぎょう\tn¦¦occupation¦profession¦job¦vocation¦career¦trade¦calling¦business",
     "0t3gw\t職権\tしょっけん\tn¦¦one's (official) authority¦ex-officio authority¦power",
-    "0t3h6\t職工\tしょっこう\tn¦¦craftsman¦artisan¦職人",
+    "0t3h6\t職工\tしょっこう\tn¦¦craftsman¦artisan¦職人¦2",
     "0t3hg\t職場\tしょくば\tn¦¦one's post¦place of work¦workplace",
     "0t3hq\t職人\tしょくにん\tn¦¦craftsman¦artisan¦tradesman¦worker¦workman",
     "0t3i0\t職能\tしょくのう\tn¦¦occupational ability\tn¦¦function¦role",
@@ -549,7 +558,7 @@ export const PIECE: WordsPiece = {
     "0t3ki\t色眼鏡\tいろめがね\tn¦¦coloured glasses¦tinted glasses¦sunglasses\tn¦¦biased view¦preconceived view¦色眼鏡で見る",
     "0t3ks\t色眼鏡で見る|色めがねで見る\tいろめがねでみる\texp,v1¦id¦to look at from a biased viewpoint¦to look at with a prejudiced eye",
     "0t3l2\t色気\tいろけ\tn¦¦colouring¦coloring¦shade of colour (color)¦色合い・1\tn¦¦sex appeal (esp. of women)¦sexiness¦sexual allure¦seductiveness\tn¦¦interest in the opposite sex¦sexual feelings¦sexual urge\tn¦¦charm¦elegance¦romance¦graciousness\tn¦¦feminine presence\tn¦¦desire¦interest¦ambition¦inclination",
-    "0t3lc\t色狂い|色気違い|色きちがい~sK|色狂~sK\tいろきちがい|いろぐるい~~色狂い\tn¦¦sexual maniac",
+    "0t3lc\t色狂い|色気違い|色きちがい~sK|色狂~sK\tいろきちがい|いろぐるい~~色狂い\tn¦¦sexual maniac¦2",
     "0t3lm\t色よい|色好い|色良い\tいろよい\tadj-i¦¦favorable¦favourable¦friendly¦encouraging¦usu. used prenominally\tadj-i¦¦vividly colored¦vividly coloured",
     "0t3lw\t色香\tいろか\tn¦¦loveliness¦charm¦allure¦beauty\tn¦¦colour and scent¦color and scent",
     "0t3m6\t色合い|色合\tいろあい|いろあわい~ok\tn¦¦colouring¦coloring¦shade (of colour)¦hue¦tone¦tinge¦tint\tn¦¦flavour¦nuance¦feel¦sense¦look",
@@ -892,13 +901,5 @@ export const PIECE: WordsPiece = {
     "0t69q\t振り仮名|ふり仮名|振仮名|振りがな~sK|フリ仮名~sK\tふりがな|フリガナ~~~!\tn¦uk¦furigana¦kana printed above or next to kanji to indicate pronunciation",
     "0t6a0\t振りほどく|振り解く\tふりほどく\tv5k,vt¦¦to shake and untangle¦to shake free from",
     "0t6aa\t振り回す|振りまわす~sK|振回す~sK\tふりまわす\tv5s,vt¦¦to wield¦to brandish¦to flourish¦to wave (about)¦to swing\tv5s,vt¦¦to display (one's knowledge)¦to show off\tv5s,vt¦¦to abuse (one's power)\tv5s,vt¦¦to manipulate someone",
-    "0t6ak\t振りかける|振り掛ける\tふりかける\tv1,vt¦uk¦to sprinkle over (e.g. salt, pepper, etc. on food)",
-    "0t6au\t振り向く|振向く~sK\tふりむく\tv5k,vt,vi¦¦to turn one's face¦to turn around¦to look over one's shoulder",
-    "0t6b4\t振り向ける|振向ける\tふりむける\tv1,vt¦¦to turn (around)\tv1,vt¦¦to appropriate¦to set aside¦to allocate¦to assign (for another purpose or use)",
-    "0t6be\t振り込む|振込む\tふりこむ\tv5m,vt¦¦to make a payment via bank deposit transfer\tv5m,vt¦mahj¦to discard another player's winning tile",
-    "0t6bo\t振りまく|振り撒く\tふりまく\tv5k,vt¦¦to scatter¦to sprinkle¦to spray¦to strew\tv5k,vt¦¦to lavish (money, charm, etc.)¦愛嬌を振りまく",
-    "0t6by\t振り捨てる|振捨てる\tふりすてる\tv1,vt¦¦to shake off¦to forsake",
-    "0t6c8\t振り出す|振出す\tふりだす\tv5s,vt¦¦to shake out\tv5s,vt¦¦to draw a check (bill, draft, etc.)¦to issue (e.g. money order)\tv5s,vt¦¦to infuse (e.g. in hot water)",
-    "0t6ci\t振り切る|振切る|振りきる~sK|ふり切る~sK\tふりきる\tv5r,vt¦¦to shake off¦to shake free from\tv5r,vt¦¦to swing completely (bat, club, etc.)¦to take a full swing\tv5r,vt¦¦to break off from (pursuer)¦to pull away\tv5r,vt¦¦to reject (request)¦to ignore",
   ],
 };

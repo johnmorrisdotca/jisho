@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 22 of 220, from "0qqmq". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 22 of 220, from "0qqks". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,13 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0qqks\t群がる|叢がる~rK|簇がる~rK\tむらがる\tv5r,vi¦¦to swarm¦to gather",
+    "0qql2\t群れ\tむれ\tn¦¦group¦crowd¦flock¦herd¦bevy¦school¦swarm¦cluster (e.g. of stars)¦clump¦pack (e.g. of dogs)",
+    "0qqlc\t群れる\tむれる\tv1,vi¦¦to crowd¦to flock¦to swarm",
+    "0qqlm\t群れ集まる\tむれあつまる\tv5r¦¦to gather in large groups",
+    "0qqlw\t群居\tぐんきょ\tn,vs,vi¦¦gregariousness",
+    "0qqm6\t群れ居る|群居る\tむれいる\tv1,vi¦¦to crowd in¦to come together",
+    "0qqmg\t群生|群棲~sK\tぐんせい\tn,vs,vi¦¦growing en masse in one location (of plants)\tn,vs,vi¦¦living gregariously (of animals)¦living in flocks, herds, colonies, etc.¦also written as 群棲\tn¦Buddh¦all living creatures¦群生・ぐんじょう",
     "0qqmq\t群像\tぐんぞう\tn¦¦lively group (esp. of young people)¦dynamic bunch¦青春群像\tn¦art¦group",
     "0qqn0\t群体\tぐんたい\tn¦biol¦colony",
     "0qqna\t群島\tぐんとう\tn¦¦island group¦archipelago",
@@ -1020,13 +1027,5 @@ export const PIECE: WordsPiece = {
     "0qynw\t検束\tけんそく\tn,vs,vt¦¦arrest¦custody¦detention",
     "0qyo6\t検定\tけんてい\tn,vs,vt¦¦official certification¦official approval¦inspection¦verification¦examination\tn¦abbr¦certification examination¦licensing examination¦proficiency test¦検定試験\tn¦math¦hypothesis testing¦仮説検定",
     "0qyog\t検討\tけんとう\tn,vs,vt¦¦consideration¦examination¦investigation¦study¦scrutiny¦discussion¦analysis¦review",
-    "0qyoq\t検討委員会\tけんとういいんかい\tn¦¦investigative commission",
-    "0qyp0\t検尿\tけんにょう\tn,vs,vi¦¦urinalysis",
-    "0qypa\t検波\tけんぱ\tn,vs,vt¦¦detection (e.g. of radio waves)¦detecting\tn,vs,vt¦¦demodulation",
-    "0qypk\t検便\tけんべん\tn,vs,vi¦¦stool (feces) examination",
-    "0qypu\t検問\tけんもん\tn,vs,vt¦¦inspection¦examination¦check\tn,vs¦¦checkpoint¦screening¦inspection (esp. by police or security)",
-    "0qyq4\t検問所\tけんもんじょ|けんもんしょ\tn¦¦check station¦checkpoint",
-    "0qyqe\t検量線\tけんりょうせん\tn¦¦calibration curve¦standard curve¦analytical curve",
-    "0qyqo\t権\tけん\tn-suf,n¦¦right (to do something)\tn,n-suf¦¦authority¦power",
   ],
 };

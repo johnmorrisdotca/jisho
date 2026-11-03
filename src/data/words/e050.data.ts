@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 51 of 220, from "0x6vk". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 51 of 220, from "0x6u". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,11 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0x6u6\t絡みつく|絡み付く\tからみつく\tv5k,vi¦¦to twine around¦to twist around¦to coil around\tv5k,vi¦¦to pester¦to hassle",
+    "0x6ug\t絡む|搦む~rK\tからむ\tv5m,vi¦¦to twine¦to get tangled¦to get entangled¦to get caught (in)\tv5m,vi¦¦to be involved (e.g. of money in a matter)¦to get involved (in)¦to be a factor (in)¦to have an influence\tv5m,vi¦¦to pick a quarrel (with)¦to find fault (with)¦to pester¦to hassle",
+    "0x6uq\t落ち|落~io\tおち|オチ~~~!\tn¦¦slip¦omission\tn¦¦upshot¦denouement¦outcome¦final result\tn¦uk¦punch line (of a joke)¦often オチ",
+    "0x6v0\t落ちぶれる|零落れる~rK|落魄れる~rK\tおちぶれる\tv1,vi¦¦to come down in the world¦to fall low¦to be ruined¦to be reduced to poverty¦to fall on hard times",
+    "0x6va\t落ちる|墜ちる|落る~io\tおちる\tv1,vi¦¦to fall¦to drop¦to come down¦to crash¦to collapse¦to cave in¦to give way\tv1,vi¦¦to set (of the sun or moon)¦to sink¦to dip¦to go down\tv1,vi¦¦to decrease (of popularity, quality, speed, sales, etc.)¦to fall¦to drop¦to go down¦to decline¦to deteriorate¦to abate (of wind)\tv1,vi¦¦to be inferior (to)¦to be not as good (as)¦to fall short (of)\tv1,vi¦¦to come off (of dirt, paint, makeup, etc.)¦to come out (of a stain)¦to fade (of colour)¦to be removed (of an illness, possessing spirit, etc.)\tv1,vi¦¦to disappear (of excess fat)¦to become thinner¦to become leaner\tv1,vi¦¦to be left out¦to be omitted¦to be missing\tv1,vi¦¦to fail (an exam)¦to lose (a contest, election, etc.)¦to be unsuccessful\tv1,vi¦¦to decline (of morals, character, etc.)¦to become vulgar (e.g. of a conversation)¦to stoop (to)¦to sink (so low)¦also written as 堕ちる\tv1,vi¦¦to be ruined¦to go under¦to fall (into hell)¦also written as 堕ちる\tv1,vi¦¦to fall (in love, asleep, etc.)¦恋に落ちる|眠りに落ちる\tv1,vi¦¦to fall (into someone's hands)¦to be accepted (of a bid)¦to be won (of a tender)¦to be honoured (of a bill)\tv1,vi¦¦to fall into (a trap)¦to fall for (a trick)\tv1,vi¦¦to give in\tv1,vi¦¦to confess¦to own up\tv1,vi¦¦to come to (a conclusion, topic, etc.)¦to arrive at (in the end)\tv1,vi¦¦to leave (a city, castle, etc.)¦to (be defeated and) flee\tv1,vi¦¦to sink in¦to be accepted (in one's heart)¦腑に落ちない|胸に落ちる\tv1,vi¦¦to fall (to the enemy)¦to be defeated\tv1,vi¦¦to come in (of money)\tv1,vi¦¦to fall (upon; of light, a shadow, one's gaze, etc.)\tv1,vi¦¦to pass out (in judo)¦to fall unconscious\tv1,vi¦comp¦to go down (of a website, server, etc.)¦to crash\tv1,vi¦sl¦to log out (of an online game, chat room, etc.)¦to drop out¦to leave¦to go offline\tv1,vi¦¦to move to deeper water (of a fish in cold weather)\tv1,vi¦¦to die (of an animal)\tv1,vi¦¦to strike (of lightning)¦雷が落ちる・1",
     "0x6vk\t落ち合う|落合う\tおちあう\tv5u,vi¦¦to meet up (as arranged)¦to rendezvous¦to get together\tv5u,vi¦¦to join (of roads, rivers, etc.)¦to flow together",
     "0x6vu\t落ち込む|落込む~sK|落ちこむ~sK\tおちこむ\tv5m,vi¦¦to feel down¦to feel sad¦to be depressed¦to be in low spirits\tv5m,vi¦¦to be in a slump (business, economy, etc.)¦to be in an unfavourable condition\tv5m,vi¦¦to fall into (e.g. a hole)",
     "0x6w4\t落ち着いた|落ちついた\tおちついた\tadj-f¦¦calm¦composed¦cool\tadj-f¦¦settled¦fixed¦established\tadj-f¦¦unobtrusive¦quiet¦subdued¦low-key (color)",
@@ -951,44 +956,5 @@ export const PIECE: WordsPiece = {
     "0xehg\t劣化\tれっか\tn,vs,vi¦¦deterioration (in quality, performance, etc.)¦degradation¦worsening\tn,vs,vi¦col¦(visible) aging¦becoming unattractive (due to aging)",
     "0xehq\t劣才\tれっさい\tn¦¦inferior talents",
     "0xei0\t劣者\tれっしゃ\tn¦¦an inferior",
-    "0xeia\t劣弱\tれつじゃく\tadj-na,n¦¦inferiority",
-    "0xeik\t劣弱意識\tれつじゃくいしき\tn¦¦inferiority complex",
-    "0xeiu\t劣情\tれつじょう\tn¦¦animal passions¦carnal desire¦lust",
-    "0xej4\t劣勢\tれっせい\tn,adj-no,adj-na¦¦inferiority (e.g. numerical)¦inferior position¦disadvantage¦unfavorable situation¦unfavourable situation¦優勢",
-    "0xeje\t劣勢感\tれっせいかん\tn¦¦inferiority complex",
-    "0xejo\t劣性\tれっせい\tn¦¦inferiority¦recessiveness\tadj-no¦¦recessive",
-    "0xejy\t劣等\tれっとう\tadj-na,adj-no,n¦¦inferiority¦low grade¦優等",
-    "0xek8\t劣等感\tれっとうかん\tn¦¦inferiority complex¦sense of inferiority¦優越感",
-    "0xeks\t劣等複合\tれっとうふくごう\tn¦¦inferiority complex",
-    "0xel2\t劣敗\tれっぱい\tn¦¦defeat of the weaker",
-    "0xelc\t烈火\tれっか\tn¦¦raging fire¦conflagration",
-    "0xelm\t烈女\tれつじょ\tn¦¦heroine",
-    "0xelw\t烈震\tれっしん\tn¦¦disastrous earthquake",
-    "0xem6\t烈風\tれっぷう\tn¦¦gale¦violent (strong) wind",
-    "0xemq\t裂ける|割ける\tさける\tv1,vi¦¦to split¦to tear¦to burst¦to be separated¦to be divided",
-    "0xen0\t裂け目|裂目~io\tさけめ\tn¦¦tear¦rip¦rent¦slit¦crack¦chasm¦rift",
-    "0xena\t切れ痔|裂れ痔~rK|切痔~sK|裂痔~sK\tきれじ\tn¦med¦anal fissure¦bleeding piles¦hemorrhoids¦裂肛",
-    "0xenk\t裂傷\tれっしょう\tn¦¦laceration",
-    "0xenu\t廉価\tれんか\tn,adj-na¦¦low price¦moderate price",
-    "0xeo4\t廉売\tれんばい\tn,vs,vt¦¦bargain sale",
-    "0xeoe\t恋|戀~oK|孤悲~sK\tこい\tn¦¦(romantic) love",
-    "0xeoo\t恋い初める\tこいそめる\tv1¦¦to begin to love",
-    "0xeoy\t恋い忍ぶ\tこいしのぶ\tv5b¦¦to live on love",
-    "0xep8\t恋い慕う|恋慕う\tこいしたう\tv5u,vt¦¦to miss¦to yearn for",
-    "0xepi\t恋い暮らす\tこいくらす\tv4s,vt¦arch¦to live deeply in love",
-    "0xeps\t恋い乱る\tこいみだる\tv2r-s,vi¦arch¦to be lovesick",
-    "0xeqc\t恋い籠る\tこいこもる\tv4r,vi¦arch¦to cause heartache because of a (hidden) love¦to be miserable because of love",
-    "0xeqm\t恋う\tこう\tv5u-s,vt¦¦to love",
-    "0xeqw\t恋しい|恋いしい~sK\tこいしい\tadj-i¦¦yearned for¦longed for¦missed",
-    "0xer6\t恋しがる\tこいしがる\tv5r¦¦to yearn for¦to miss",
-    "0xerg\t恋の悩み\tこいのなやみ\tn¦¦pain of love¦love troubles",
-    "0xerq\t恋をする\tこいをする\texp,vs-i¦¦to fall in love",
-    "0xes0\t恋愛\tれんあい\tn,vs,vi,adj-no¦¦love¦romance¦tender passion¦emotion¦affections",
-    "0xesa\t恋愛観\tれんあいかん\tn¦¦one's view on love¦one's philosophy of love",
-    "0xesk\t恋愛関係\tれんあいかんけい\tn¦¦love affair¦love relationship",
-    "0xesu\t恋愛結婚\tれんあいけっこん\tn¦¦love marriage",
-    "0xet4\t恋愛至上主義\tれんあいしじょうしゅぎ\tn¦¦love for love's sake",
-    "0xete\t恋愛遊戯\tれんあいゆうぎ\tn¦¦trifling with love",
-    "0xeto\t恋慰め\tこいなぐさめ\tn¦¦comforting the lovelorn",
   ],
 };

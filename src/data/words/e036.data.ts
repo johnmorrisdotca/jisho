@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 37 of 220, from "0u28u". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 37 of 220, from "0u27". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,12 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0u276\t走り幅跳び|走幅跳|走幅跳び~sK|走り幅跳~sK\tはしりはばとび\tn¦¦long jump",
+    "0u27g\t走る|奔る~rK|疾る~rK|趨る~rK\tはしる\tv5r,vi¦¦to run\tv5r,vi¦¦to run (of a vehicle)¦to drive¦to travel¦to move¦to sail\tv5r,vi¦¦to rush (to)¦to dash¦to race\tv5r,vi¦¦to retreat¦to flee¦to defect (to)\tv5r,vi¦¦to run away¦to abscond¦to elope¦occ. 奔る\tv5r,vi¦¦to flash (of lightning)¦to streak¦to shoot (through; e.g. of pain)¦to run (through)¦to flare¦to flit (e.g. across one's face)¦to spread quickly (of news, shock, etc.)\tv5r,vi¦¦to go (e.g. bad, to extremes)¦to become¦to turn¦to take to (e.g. crime)¦to get carried away by (e.g. one's emotions)¦to get involved in¦to get wrapped up in¦as 〜に走る; occ. 趨る\tv5r,vi¦¦to run (through; of a road, street, etc.)¦to extend (e.g. of a mountain range)¦to stretch¦to lie",
+    "0u27q\t走行\tそうこう\tn,vs,vi¦¦running (of a car, bus, etc.)¦traveling¦travelling\tn,vs,vi¦rare,comp¦running (of a program)¦実行・2",
+    "0u280\t走行可能\tそうこうかのう\tn¦¦executable¦movable",
+    "0u28a\t走行距離\tそうこうきょり\tn¦¦distance travelled¦mileage",
+    "0u28k\t走行時間\tそうこうじかん\tn¦¦journey time¦travelling time¦travel time¦transit time¦run time",
     "0u28u\t走査\tそうさ\tn,vs,vt¦¦scan¦scanning",
     "0u294\t走査線\tそうさせん\tn¦¦scan line (e.g. TV)",
     "0u29e\t走者\tそうしゃ\tn¦¦runner\tn¦baseb¦base runner",
@@ -795,7 +801,7 @@ export const PIECE: WordsPiece = {
     "0u8io\t怠業\tたいぎょう\tn,vs,vi¦¦sabotage¦slow-down tactics",
     "0u8iy\t怠惰|怠情~sK|怠堕~sK\tたいだ\tadj-na,n¦¦lazy¦idle¦indolent¦slothful¦勤勉",
     "0u8j8\t怠慢\tたいまん\tn,adj-na¦¦negligence¦neglect¦carelessness¦procrastination",
-    "0u8ji\t様|態\tざま|ザマ~~~!\tsuf¦¦-ways¦-wards¦indicates direction\tsuf¦¦in the act of ...¦just as one is ...¦after the -masu stem of a verb\tsuf¦¦manner of ...¦way of ...¦様・さま・3¦after the -masu stem of a verb",
+    "0u8ji\t様|態\tざま|ザマ~~~!\tsuf¦¦-ways¦-wards¦indicates direction¦2\tsuf¦¦in the act of ...¦just as one is ...¦after the -masu stem of a verb¦3\tsuf¦¦manner of ...¦way of ...¦様・さま・3¦after the -masu stem of a verb¦4",
     "0u8js\t態と~rK\tわざと\tadv¦uk¦on purpose¦deliberately¦intentionally",
     "0u8k2\t態勢\tたいせい\tn¦¦attitude¦posture¦preparedness¦readiness",
     "0u8kc\t態度\tたいど\tn¦¦attitude¦manner¦behaviour¦demeanour¦bearing\tn¦¦attitude (towards an issue, etc.)¦position¦stance¦stand",
@@ -991,20 +997,5 @@ export const PIECE: WordsPiece = {
     "0ua32\t台風眼\tたいふうがん\tn¦¦eye of a typhoon",
     "0ua3c\t台本\tだいほん\tn¦¦script¦libretto¦scenario",
     "0ua3m\t台無し|台なし\tだいなし\tadj-na,n¦¦spoiled¦spoilt¦ruined¦wasted (chance, etc.)¦messed up¦destroyed¦(coming to) nothing¦oft. as 〜になる or 〜にする",
-    "0ua3w\t台無しにする|台なしにする\tだいなしにする\texp,vs-i¦¦to spoil¦to ruin¦to destroy¦to make a mess of",
-    "0ua46\t台名\tたいめい\tn¦¦command of a shogun or a high official",
-    "0ua4g\t台木|砧木\tだいぎ\tn¦¦stock (in grafting)\tn¦¦wood used as a platform (or base, etc.)¦block (i.e. chopping block)¦(gun) stock¦unworked block of wood",
-    "0ua4q\t台覧\tたいらん\tn¦¦inspection by the empress or the crown prince",
-    "0ua50\t台臨\tたいりん\tn¦¦visit by the empress or the crown prince",
-    "0ua5a\t台輪\tだいわ\tn¦¦architrave",
-    "0ua5k\t台湾|台灣~oK|臺灣~oK\tたいわん\tn¦¦Taiwan",
-    "0ua5u\t台湾海峡\tたいわんかいきょう\tn¦¦Straits of Taiwan",
-    "0ua64\t台湾人\tたいわんじん\tn¦¦Taiwanese person¦Taiwanese people",
-    "0ua6e\t大々的|大大的\tだいだいてき\tadj-na¦¦great¦grand¦extensive¦large-scale",
-    "0ua6o\t大いに|多いに~iK\tおおいに\tadv¦¦very¦very much¦greatly¦considerably¦highly¦exceedingly¦a great deal¦a lot¦to one's heart's content",
-    "0ua6y\t大きな\tおおきな\tadj-pn¦¦big¦large¦great¦小さな",
-    "0ua7i\t大きさ\tおおきさ\tn¦¦size¦dimensions¦volume",
-    "0ua7s\t大きなお世話|大きな御世話\tおおきなおせわ\texp,n¦¦none of your business!¦don't bother me!¦keep out of it!¦お世話 is ironic",
-    "0ua82\t大きに\tおおきに\tadv¦uk¦greatly¦very much\tint¦uk,ksb¦thanks a lot¦abbr. of おおきにありがとう",
   ],
 };

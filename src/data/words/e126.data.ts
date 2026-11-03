@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 127 of 220, from "1fo3w". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 127 of 220, from "1fnwe". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,33 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "1fnwe\t違勅\tいちょく\tn¦¦disobeying the emperor's order",
+    "1fnwo\t祝す\tしゅくす\tv5s,vt¦¦to congratulate¦to celebrate¦祝する",
+    "1fnwy\t食す\tおす\tv4s,vt¦hon,arch¦to eat¦to drink\tv4s,vt¦hon,arch¦to wear (clothing)\tv4s,vt¦hon,arch¦to govern¦to rule",
+    "1fnx8\t呈す\tていす\tv5s,vt¦¦to present¦to offer¦to give¦呈する\tv5s,vt¦¦to show¦to display¦to exhibit\tv5s,vt¦¦to assume (e.g. a shape)",
+    "1fnxi\t排す\tはいす\tv5s,vt¦arch¦to push aside¦to overcome (e.g. difficulties)¦to reject¦排する\tv5s,vt¦¦to align¦to put in order\tv5s,vt¦¦to push open",
+    "1fnxs\t没す\tもっす\tv5s¦arch¦to sink¦to go down¦to set¦没する\tv5s¦¦to pass away¦to die\tv5s¦¦to disappear¦to vanish\tv5s¦¦to confiscate",
+    "1fny2\t目す\tもくす\tv5s,vt¦¦to regard (as)¦to recognize (as)¦to see as¦to consider¦目する・1\tv5s,vt¦¦to pay attention to¦to watch",
+    "1fnyc\t模す|摸す\tもす\tv5s,vt¦¦to imitate¦to copy¦to mock¦to replace¦to model after¦模する\tv5s,vt¦¦to trace¦to forge",
+    "1fnym\t窮す\tきゅうす\tv5s,vi¦¦to be hard pressed¦to be at a loss¦窮する\tv5s,vi¦¦to become poor¦to be reduced to poverty",
+    "1fnyw\t廃す\tはいす\tv5s,vt¦¦to abolish¦to abandon¦to repeal¦to discontinue¦廃する\tv5s,vt¦¦to dethrone¦to depose",
+    "1fnz6\t帰す\tきす\tv5s,vs-c¦¦to come to (in the end)¦to end in¦帰する\tv5s,vs-c¦¦to attribute¦to blame",
+    "1fnzg\t擬す\tぎす\tv5s,vt¦¦to imitate¦to copy¦to mimic¦擬する\tv5s,vt¦¦to enter someone as a candidate\tv5s,vt¦¦to press (e.g. a weapon against someone's back)\tv5s,vt¦¦to compare¦to liken",
+    "1fnzq\t印す|標す|徴す\tしるす\tv5s,vt¦¦to leave (a mark, trace, etc.)¦to print¦to stamp¦印す|標す\tv5s,vt¦arch¦to be a sign of¦to be an omen for",
+    "1fo00\t死す\tしす\tvs-c,vi¦obs¦to die¦死する",
+    "1fo0a\t閲す\tえっす|けみす\tv5s¦¦to inspect¦to examine¦to check¦閲する¦えっす esp. refers to documents\tv5s¦¦to elapse¦to pass (time)",
+    "1fo0k\t議す\tぎす\tv5s,vt¦¦to consult (someone)¦to talk something over¦議する",
+    "1fo0u\t御す\tぎょす\tv5s,vt¦¦to drive (e.g. horse, carriage)¦御する・1\tv5s,vt¦¦to control¦to manage¦御する・2",
+    "1fo14\t御しやすい|御し易い\tぎょしやすい\tadj-i¦¦easy to deal with¦easily manageable¦tractable¦malleable",
+    "1fo1e\t嫁す\tかす\tv5s¦¦to wed¦to be married¦嫁する\tv5s¦¦to shift blame to someone else",
+    "1fo1o\t証す\tしょうす\tv5s,vt¦¦to prove¦to verify¦証する\tv5s,vt¦¦to guarantee¦to promise",
+    "1fo1y\t屯す\tたむろす\tv5s,vi¦uk¦to gather (of people)¦to assemble¦to hang out¦たむろする・1\tv5s,vi¦uk¦to assemble (of troops)¦to be stationed¦to be quartered¦たむろする・2",
+    "1fo28\t冠す\tかんす\tvs-c,vt¦¦to crown¦to cap¦冠する・かんする・1\tvs-c,vt¦¦to prefix with¦to start with¦to begin with¦冠する・かんする・2",
+    "1fo2i\t配す\tはいす\tv5s,vt¦¦to distribute¦to arrange¦to allot (to a position of authority, etc.)¦配する\tv5s,vt¦¦to arrange¦to lay out (as in decorating)\tv5s,vt¦¦to marry off\tv5s,vt¦¦to exile¦to banish",
+    "1fo2s\t激す\tげきす\tv5s¦¦to intensify¦激する\tv5s¦¦to be excited¦to fly into a rage¦to get into a passion\tv5s¦¦to dash against\tv5s¦¦to encourage",
+    "1fo32\t漁す\tぎょす\tv5s,vt¦arch¦to take fish, etc.¦漁する\tv5s,vt¦¦to lust for a woman",
+    "1fo3c\t刑す\tけいす\tv5s,vt¦arch¦to punish (esp. with death)¦刑する",
+    "1fo3m\t産す\tさんす\tv5s,vi,vt¦¦to bear (a child)¦to be born¦産する\tv5s,vi,vt¦¦to produce¦to yield¦to be produced¦to be yielded",
     "1fo3w\t生す|産す\tむす\tv5s,vi¦poet¦to grow (of moss, grass, etc.)¦to sprout¦to appear",
     "1fo46\t浴す\tよくす\tv5s,vi¦¦to bathe¦浴する\tv5s,vi¦¦to receive (an honor, etc.)",
     "1fo4g\t瀉す\tしゃす\tv5s,vi¦arch¦to have diarrhea¦瀉する・1\tv5s,vi¦arch¦to vomit¦瀉する・2",
@@ -788,25 +815,5 @@ export const PIECE: WordsPiece = {
     "1fuja\t長所は短所\tちょうしょはたんしょ\texp¦proverb¦if you rely too much on your greatest strength, it will be your greatest weakness",
     "1fujk\t鳥なき里の蝙蝠|鳥なき里のコウモリ|鳥無き里の蝙蝠|鳥なき里のこうもり~sK|鳥無き里のコウモリ~sK\tとりなきさとのこうもり\texp,n¦proverb¦in the land of the blind, the one-eyed man is king¦a bat in a village without birds",
     "1fuju\t沈香も焚かず屁も放らず|沈香も焚かず屁もひらず\tじんこうもたかずへもひらず\texp¦id¦having few faults as well as few virtues¦not burning agarwood (incense); not passing wind",
-    "1fuk4\t釣り落とした魚は大きい\tつりおとしたさかなはおおきい\texp,adj-i¦proverb¦the biggest fish is always the one that got away",
-    "1fuke\t笛吹けども踊らず\tふえふけどもおどらず\texp¦id¦we have piped unto you and ye have not danced¦people ignoring one's invitation or effort to do something together¦from Matthew 11:17",
-    "1fuko\t鉄は熱いうちに鍛えよ|鉄は熱い内に鍛えよ\tてつはあついうちにきたえよ\texp¦proverb¦strike while the iron is hot",
-    "1ful8\t天は二物を与えず\tてんはにぶつをあたえず\texp¦proverb¦God doesn't give with both hands¦God does not give two gifts¦heaven does not grant people more than one talent",
-    "1fuli\t天高く馬肥ゆる秋\tてんたかくうまこゆるあき\texp¦proverb¦autumn comes with harvest time and clear weather¦autumn with the sky clear and blue, and horses growing stout",
-    "1fuls\t転んでもただは起きぬ|転んでも只は起きぬ\tころんでもただはおきぬ\texp¦proverb¦all's grist that comes to his mill¦turn everything to good account¦turn anything to profit¦転んでもただでは起きない",
-    "1fumc\t刀折れ矢尽きる\tかたなおれやつきる\texp,v1¦id¦to exhaust all one's options",
-    "1fumm\t東は東西は西\tひがしはひがしにしはにし\texp¦proverb¦East is East, and West is West",
-    "1fumw\t桃李もの言わざれども下自ら蹊を成す|桃李物言わざれども下自ら蹊を成す|桃李物言わざれども下自ずから蹊を成す\tとうりものいわざれどもしたおのずからみちをなす\texp,v5s¦proverb¦a man of virtue will naturally attract admirers¦good wine speaks for itself",
-    "1fun6\t盗人にも三分の理\tぬすびとにもさんぶのり\texp¦proverb¦the wrongdoer never lacks a pretext¦even thieves have their reasons¦give the devil his due",
-    "1fung\t盗人を捕らえて見れば我が子なり\tぬすびとをとらえてみればわがこなり\texp¦proverb¦the doting parent's purse is plundered¦the thief caught turns out to be one's own son",
-    "1funq\t逃がした魚は大きい\tにがしたさかなはおおきい\texp,adj-i¦proverb¦the biggest fish is always the one that got away",
-    "1fuo0\t逃げるが勝ち\tにげるがかち\texp¦proverb¦he that fights and runs away may live to fight another day¦discretion is the better part of valor¦fleeing is winning",
-    "1fuoa\t同日の論ではない\tどうじつのろんではない\texp,adj-i¦id¦not to be spoken of in the same breath¦cannot be compared¦defying all comparison¦bearing no comparison¦not a same-day discussion¦同日の談ではない",
-    "1fuok\t得たり\tえたり\tint¦¦hooray!¦often used adverbially as 得たりとばかり",
-    "1fuou\t得手に帆を揚げる\tえてにほをあげる\texp,v1¦id¦to hoist one's sail when the wind is fair¦to get one's time to shine",
-    "1fup4\t毒にも薬にもならない\tどくにもくすりにもならない\texp,adj-i¦id¦harmless but pointless¦neither bad nor good",
-    "1fupe\t毒を食らわば皿まで|毒を喰らわば皿まで|毒をくらわば皿まで~sK\tどくをくらわばさらまで\texp¦proverb¦once you've committed a crime, commit to it¦in for a penny, in for a pound¦if you've eaten poison, (lick) the plate",
-    "1fupo\t二兎を追う者は一兎をも得ず|二兎を追う者は一兎をも獲ず~sK\tにとをおうものはいっとをもえず\texp¦proverb¦if you run after two hares you will catch neither",
-    "1fupy\t二度あることは三度ある|二度ある事は三度ある\tにどあることはさんどある\texp,v5r-i¦proverb¦what happens twice will happen thrice",
   ],
 };

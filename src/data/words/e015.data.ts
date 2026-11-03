@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 16 of 220, from "0pd8o". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 16 of 220, from "0pd6". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,15 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0pd66\t温帯\tおんたい\tn¦¦temperate zone",
+    "0pd6g\t温暖\tおんだん\tadj-na,n¦¦warm¦mild¦temperate",
+    "0pd6q\t温暖化現象\tおんだんかげんしょう\tn¦¦greenhouse effect",
+    "0pd70\t温点\tおんてん\tn¦¦heat spot¦warm spot¦hot spot¦hot point¦冷点",
+    "0pd7a\t温度\tおんど\tn¦¦temperature",
+    "0pd7k\t温度計\tおんどけい\tn¦¦thermometer",
+    "0pd7u\t温湯\tおんとう\tn¦¦comfortably hot bath¦hot spring",
+    "0pd84\t温熱\tおんねつ\tn,adj-no¦¦warmth¦heat",
+    "0pd8e\t温熱性\tおんねつせい\tadj-na¦¦thermal",
     "0pd8o\t温容\tおんよう\tn¦¦kindly face",
     "0pd8y\t温浴\tおんよく\tn,vs,vi¦¦hot bath¦warm bath",
     "0pd98\t温良\tおんりょう\tadj-na,n¦¦gentle¦amiable",
@@ -1086,9 +1095,5 @@ export const PIECE: WordsPiece = {
     "0plvi\t花菖蒲|花しょうぶ\tはなしょうぶ|はなあやめ~~花菖蒲|ハナショウブ~~~!\tn¦¦Japanese iris¦blue flag¦Iris ensata",
     "0plvs\t花信\tかしん\tn¦¦tidings of flowers",
     "0plw2\t花吹雪|花ふぶき~sK\tはなふぶき\tn¦¦falling cherry blossoms¦storm of falling cherry blossoms",
-    "0plwc\t花盛り|花ざかり\tはなざかり\tn,adj-no¦¦flowers in full bloom¦time of year in which flowers are in full bloom\tn,adj-no¦¦the age at which someone (esp. a woman) is at the peak of their beauty\tn,adj-no¦¦booming or peaking (in popularity)",
-    "0plwm\t花束\tはなたば\tn¦¦bunch of flowers¦bouquet",
-    "0plww\t花鳥\tかちょう\tn¦¦flowers and birds",
-    "0plx6\t花鳥風月\tかちょうふうげつ\tn¦yoji¦beauties of nature¦the traditional themes of natural beauty in Japanese aesthetics¦花鳥諷詠\tn¦¦artistic pursuits involving nature themes",
   ],
 };

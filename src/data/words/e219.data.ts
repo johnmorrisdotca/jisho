@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 220 of 220, from "3f6eh". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 220 of 220, from "3f6aq". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,40 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "3f6aq\t\tメディアラボ|メディア・ラボ\tn¦organization¦(MIT) Media Lab",
+    "3f6ar\t\tウンディーネ\tn¦myth¦undine\tn¦work¦Undine (1811 German novella by Friedrich de la Motte Fouqué)",
+    "3f6at\t\tエコノミスト\tn¦work¦The Economist (weekly newspaper)",
+    "3f6au\t\tナショナルトラスト|ナショナル・トラスト\tn¦organization¦National Trust (conservation organization in England, Wales and Northern Ireland)",
+    "3f6ax\t日本ナショナルトラスト\tにほんナショナルトラスト\tn¦organization¦Japan National Trust",
+    "3f6az\t朝鮮労働党\tちょうせんろうどうとう\tn¦organization¦Workers' Party of Korea",
+    "3f6b3\t\tオレオ\tn¦product¦Oreo (sandwich cookie)",
+    "3f6b4\t神々の黄昏\tかみがみのたそがれ\tn¦work¦Twilight of the Gods (music drama by Richard Wagner)¦Götterdämmerung",
+    "3f6b5\t\tカルバリ|カルヴァリ\tn¦place¦Calvary¦Golgotha",
+    "3f6b7\t龍が如く\tりゅうがごとく\tn¦work¦Yakuza (video game series)¦Like a Dragon",
+    "3f6b9\t\tカップヌードル\tn¦product¦Cup Noodles (brand of instant noodles)",
+    "3f6ba\t漢語大字典\tかんごだいじてん\tn¦work¦Hanyu Da Zidian (multi-volume Chinese character dictionary)¦Grand Chinese Dictionary",
+    "3f6bd\t青年トルコ人革命\tせいねんトルコじんかくめい\tn¦ev¦Young Turk Revolution (Ottoman Empire, 1908)",
+    "3f6bh\t\tマイナビ\tn¦company¦Mynavi Corporation",
+    "3f6bk\t魔女宅\tまじょたく\tn¦work¦Kiki's Delivery Service (1989 animated film) (abbr)",
+    "3f6bl\t造幣局\tぞうへいきょく\tn¦organization¦Japan Mint",
+    "3f6bt\tパリ五輪\tパリごりん\tn¦ev¦Paris Olympics",
+    "3f6c6\t\tセスナ\tn¦company,product¦Cessna (aircraft)",
+    "3f6c9\tスイス衛兵\tスイスえいへい\tn¦organization¦Swiss Guard¦Pontifical Swiss Guard",
+    "3f6cx\t\tカクヨム\tn¦product¦Kakuyomu (online self-publishing service provided by Kadokawa)",
+    "3f6cy\t\tアサクリ\tn¦work¦Assassin's Creed (video game series) (abbr)",
+    "3f6d7\t辛ラーメン\tシンラーメン\tn¦product¦Shin Ramyun (Korean brand of instant noodles)",
+    "3f6dc\tＩＥＴＦ\tアイイーティーエフ\tn¦organization¦Internet Engineering Task Force¦IETF",
+    "3f6dd\tＨＰ－ＵＸ|ＨＰ‐ＵＸ\tエイチピーユーエックス\tn¦product¦HP-UX (Hewlett Packard Unix)",
+    "3f6de\tＩｒＤＡ\tアイアールディーエー\tn¦organization¦IrDA¦Infrared Data Association",
+    "3f6dg\t\tシービーム|シー・ビーム\tn¦product¦SeaBeam (sonar device)",
+    "3f6dh\tＩＡＢ\tアイエービー\tn¦organization¦IAB¦Internet Architecture Board (part of the IETF)",
+    "3f6dk\tレッド・オクトーバーを追え\tレッドオクトーバーをおえ\tn¦work¦The Hunt for Red October (1984 novel by Tom Clancy)",
+    "3f6dl\tＪＰＮＩＣ\tジェイピーニック\tn¦organization¦JPNIC¦Japan Network Information Center",
+    "3f6dm\t\tジェマーイスラミア|ジェマー・イスラミア\tn¦organization¦Jemaah Islamiyah (Islamist militant group)¦Jemaah Islamiah¦JI",
+    "3f6dn\tＩＴＵ\tアイ・ティー・ユー|アイティーユー\tn¦organization¦ITU¦International Telecommunication Union",
+    "3f6dp\tツインテールの日\tツインテールのひ\tn¦ev¦Twintail Day (February 2)",
+    "3f6ds\tＩＩＪ\tアイアイジェイ\tn¦company¦Internet Initiative Japan (internet service provider)¦IIJ",
+    "3f6eg\t蠅の王|蝿の王\tはえのおう\tn¦work¦Lord of the Flies (1954 novel by William Golding)",
     "3f6eh\tパンツの日\tパンツのひ\tn¦ev¦Panties Day (August 2)",
     "3f6em\t宝永大噴火\tほうえいだいふんか\tn¦ev¦Hōei eruption (Mount Fuji eruption of 1707-08)",
     "3f6en\t国際クリケット評議会\tこくさいクリケットひょうぎかい\tn¦organization¦International Cricket Council¦ICC",

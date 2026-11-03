@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 47 of 220, from "0w9ko". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 47 of 220, from "0w9bs". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,38 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0w9bs\t文|書\tふみ\tn¦form¦letter¦note¦mail\tn¦form¦book¦writings\tn¦poet¦literary arts¦learning¦scholarship",
+    "0w9c2\t文\tぶん\tn¦¦sentence\tn¦¦composition¦text¦writings\tn¦¦the literary arts (as opposed to the military arts)¦academia¦literature¦武・1\tn¦comp¦statement",
+    "0w9cc\t文案\tぶんあん\tn¦¦draft (of a document)",
+    "0w9cm\t文意\tぶんい\tn¦¦meaning of a sentence",
+    "0w9cw\t文化\tぶんか\tn¦¦culture¦civilization¦civilisation\tn¦¦Bunka era (1804.2.11-1818.4.22)",
+    "0w9d6\t文化の日\tぶんかのひ\texp,n¦¦Culture Day (national holiday; November 3)",
+    "0w9dg\t文化祭\tぶんかさい\tn¦¦school festival¦cultural festival¦annual open day school event showcasing student talent",
+    "0w9dq\t文化財\tぶんかざい\tn¦¦cultural assets¦cultural property",
+    "0w9e0\t文化的\tぶんかてき\tadj-na¦¦cultural",
+    "0w9ea\t文科\tぶんか\tn¦¦humanities and social sciences¦liberal arts¦理科・1\tn¦¦faculty of humanities¦school of liberal arts",
+    "0w9ek\t文科系\tぶんかけい\tn,adj-no¦¦humanities, social sciences, and fine arts¦liberal arts¦理科系",
+    "0w9eu\t文学\tぶんがく\tn¦¦literature",
+    "0w9f4\t文学作品\tぶんがくさくひん\tn¦¦literary work",
+    "0w9fe\t文学史\tぶんがくし\tn¦¦literary history¦history of literature",
+    "0w9fo\t文学者\tぶんがくしゃ\tn¦¦scholar of literature¦literary person¦man of letters\tn¦¦writer",
+    "0w9fy\t文学賞\tぶんがくしょう\tn¦¦literary prize",
+    "0w9g8\t文楽\tぶんらく\tn¦¦bunraku¦Japanese puppet theatre (theater)",
+    "0w9gi\t文官\tぶんかん\tn¦¦civil official",
+    "0w9gs\t文句\tもんく\tn¦¦complaint¦grumbling¦objection\tn¦¦phrase¦words¦expression",
+    "0w9h2\t文型\tぶんけい\tn¦gramm¦sentence pattern",
+    "0w9hc\t文系\tぶんけい\tn,adj-no¦¦humanities, social sciences, and fine arts¦liberal arts¦理系",
+    "0w9hm\t文芸|文藝~oK\tぶんげい\tn¦¦literature\tn¦¦the arts¦art and literature¦liberal arts",
+    "0w9hw\t文芸批評\tぶんげいひひょう\tn¦¦literary criticism¦book review",
+    "0w9i6\t文芸復興\tぶんげいふっこう\tn¦yoji¦Renaissance",
+    "0w9ig\t文月\tふみづき|ふづき\tn¦obs¦seventh month of the lunar calendar",
+    "0w9iq\t文献\tぶんけん\tn¦¦literature¦books (reference)¦document",
+    "0w9j0\t文庫\tぶんこ\tn¦¦library¦book collection\tn¦abbr¦paperback book¦文庫本・ぶんこぼん",
+    "0w9ja\t文庫化\tぶんこか\tn,vs¦¦publish in paperback",
+    "0w9jk\t文庫本\tぶんこぼん\tn¦¦small-format paperback book¦pocket paperback",
+    "0w9ju\t文語\tぶんご\tn¦¦written language¦literary language¦口語・1\tn¦¦classical (or formal) written style based on Heian-period Japanese¦口語・2",
+    "0w9k4\t文豪\tぶんごう\tn¦¦great writer¦literary master¦distinguished author",
+    "0w9ke\t文字\tもじ|もんじ\tn¦¦letter (of an alphabet)¦character\tn¦¦writing",
     "0w9ko\t文字化け\tもじばけ\tn,vs,vi¦comp¦corruption (of text, e.g. in email, due to improper encoding)¦garbling¦illegal character¦corrupted text¦garbled text",
     "0w9ky\t文字情報\tもじじょうほう\tn¦¦character information¦character data¦textual data",
     "0w9l8\t文字通り|文字どおり~sK|文字どうり~sK\tもじどおり\tadv¦¦literally¦to the letter\tadj-no¦¦literal",
@@ -1042,24 +1074,5 @@ export const PIECE: WordsPiece = {
     "0whva\t奉祀\tほうし\tn,vs,vt¦¦enshrine",
     "0whvk\t宝|財|貨|寳|寶\tたから\tn¦¦treasure",
     "0whvu\t宝くじ|宝籤~rK|宝クジ~sK\tたからくじ\tn¦¦lottery\tn¦¦lottery ticket",
-    "0whw4\t宝玉\tほうぎょく\tn¦¦jewel¦precious stone¦gem",
-    "0whwe\t宝庫\tほうこ\tn¦¦treasury¦treasure house¦storehouse¦repository\tn¦¦treasure trove¦rich source (of)",
-    "0whwy\t宝生\tほうしょう\tn¦Buddh¦Ratnasambhava¦The Jewel-born (a dhyani-Buddha)",
-    "0whx8\t宝石\tほうせき\tn¦¦gem¦jewel¦precious stone",
-    "0whxi\t宝島\tたからじま\tn¦¦treasure island",
-    "0whxs\t宝箱|たから箱~sK|宝ばこ~sK\tたからばこ\tn¦¦treasure chest¦strongbox",
-    "0why2\t峰|嶺|峯\tみね\tn¦¦peak¦summit¦ridge¦top\tn¦¦back of a blade",
-    "0whyc\t崩す\tくずす\tv5s,vt¦¦to destroy¦to demolish¦to pull down¦to tear down¦to level\tv5s,vt¦¦to disturb¦to put into disorder¦to throw off balance¦to make shaky\tv5s,vt¦¦to relax (one's pose)¦to make oneself at ease\tv5s,vt¦¦to break (a bill)¦to change¦to make change¦oft. 札を崩す, etc.\tv5s,vt¦¦to write in cursive style¦to write in running style¦oft. as 字を崩す\tv5s,vt¦¦to break into a smile¦to let off a smile¦as 顔を崩す, etc.\tv5s,vt¦¦to lower (a price)",
-    "0whym\t崩れる\tくずれる\tv1,vi¦¦to collapse¦to crumble\tv1,vi¦¦to get out of shape¦to lose one's shape¦to become disorganized¦to become untidy\tv1,vi¦¦to break down¦to be thrown into disarray\tv1,vi¦¦to crash (stock market)¦to slump¦to decline\tv1,vi¦¦to break money into small change\tv1,vi¦¦to turn bad (e.g. weather)¦to change for the worse¦to deteriorate",
-    "0whyw\t崩壊|崩潰~rK\tほうかい\tn,vs,vi¦¦collapse¦crumbling¦breaking down¦caving in\tn,vs,vi¦physics¦(radioactive) decay¦disintegration",
-    "0whz6\t崩御\tほうぎょ\tn,vs,vi¦hon¦death of a sovereign (emperor, empress, king, queen, etc.)¦demise",
-    "0whzg\t抱え\tかかえ\tn¦¦armful\tn¦¦employee",
-    "0whzq\t抱える\tかかえる\tv1,vt¦¦to hold in one's arms¦to carry in one's arms¦to carry under one's arm¦to hold (one's head) in one's hands\tv1,vt¦¦to have (problems, debts, etc.)¦to take on (a responsibility)¦to be burdened with (e.g. care of a family member)¦to have (children, etc.) to provide for\tv1,vt¦¦to employ¦to have (on one's staff)¦to hire",
-    "0wi00\t抱きしめる|抱き締める|抱締める~sK\tだきしめる\tv1,vt¦¦to hug (someone) tight¦to embrace¦to give (someone) a tight hug¦to cuddle",
-    "0wi0k\t抱き起こす|抱き起す\tだきおこす\tv5s,vt¦¦to lift (a person) in one's arms¦to help (a person) sit up",
-    "0wi0u\t抱き合う|抱きあう~sK|だき合う~sK|抱合う~sK\tだきあう\tv5u,vi¦¦to embrace each other",
-    "0wi14\t抱き込む|抱込む\tだきこむ\tv5m,vt¦¦to hold in one's arms\tv5m,vt¦¦to bring over a person to one's side¦to involve",
-    "0wi1o\t抱き上げる\tだきあげる\tv1,vt¦¦to hold up in one's arms",
-    "0wi1y\t抱きかかえる|抱き抱える\tだきかかえる\tv1,vt¦¦to hold¦to carry¦to embrace (in one's arms)",
   ],
 };

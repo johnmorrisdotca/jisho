@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 57 of 220, from "0yb7s". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 57 of 220, from "0yb3". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,22 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0yb32\t剥がす|剥す~io|剝がす~rK\tはがす|へがす\tv5s,vt¦uk¦to tear off¦to peel off¦to rip off¦to strip off¦to skin¦to flay¦to disrobe¦to deprive of¦to detach¦to disconnect",
+    "0yb3c\t履物|履き物|履きもの~sK|はき物~sK\tはきもの\tn¦¦footwear¦footgear¦shoes",
+    "0yb3m\t剥ぎ取る|はぎ取る|剝ぎ取る~rK|剥取る~sK|剝取る~sK|剥ぎとる~sK\tはぎとる\tv5r,vt¦¦to tear off¦to strip off¦to rip off¦to scrape off\tv5r,vt¦¦to rob (someone) of (clothes)¦to divest (someone) of (powers, rank, etc.)",
+    "0yb3w\t育む|育くむ~sK\tはぐくむ\tv5m,vt¦¦to raise¦to bring up¦to rear\tv5m,vt¦¦to cultivate¦to foster¦to nurture",
+    "0yb46\tはげ上がる|禿げ上がる|禿げあがる|禿上がる~io|禿げ上る\tはげあがる\tv5r,vi¦¦to become bald from the forehead¦to recede (of one's hairline)",
+    "0yb4g\t激しい|烈しい~rK|劇しい~rK\tはげしい\tadj-i¦¦violent¦furious¦tempestuous\tadj-i¦¦extreme¦intense¦fierce¦strong\tadj-i¦¦fervent¦vehement\tadj-i¦¦incessant¦relentless\tadj-i¦arch¦precipitous¦steep",
+    "0yb4q\t箱舟|箱船|方舟\tはこぶね\tn¦¦ark (i.e. Noah's)",
+    "0yb50\t挟む|挿む|挾む~oK\tはさむ|ハサむ~~~!\tv5m,vt¦¦to hold between (e.g. one's fingers, chopsticks)¦to grip (from both sides)\tv5m,vt¦¦to put between¦to sandwich between¦to insert¦to interpose\tv5m,vt¦¦to catch (e.g. a finger in a door)¦to trap¦to pinch\tv5m,vt¦¦to insert (e.g. a break into proceedings)¦to interpose (e.g. an objection)¦to interject¦to throw in (e.g. a joke)\tv5m,vt¦¦to be on either side of (a road, table, etc.)¦to have between each other¦to be across (a street, river, etc.)\tv5m,vt¦¦to harbour (feelings)¦to cast (e.g. doubt)\tv5m,vt¦uk,go¦to pincer¦ハサミ・2¦usu. ハサむ",
+    "0yb5a\t爆ぜる|罅ぜる~rK\tはぜる\tv1,vi¦¦to burst open¦to pop¦to split",
+    "0yb5u\t果たし状|果し状\tはたしじょう\tn¦¦letter of challenge (to a duel, etc.)",
+    "0yb64\t果たして|果して\tはたして\tadv¦¦as was expected¦just as one thought¦sure enough\tadv¦¦really¦actually¦ever¦used in interrogative and hypothetical sentences",
+    "0yb6e\t２０歳|２０才|二十歳|二十|廿\tはたち|にじゅっさい~~２０歳,２０才,二十歳|にじっさい~~２０歳,２０才,二十歳\tn¦¦20 years old\tn¦arch¦twenty¦二十|廿",
+    "0yb6o\t肌触り|肌ざわり|膚触り~rK|肌触~sK|はだ触り~sK|肌触わり~sK\tはだざわり\tn¦¦feel¦touch¦texture\tn¦¦manner (with others)",
+    "0yb6y\t鉢巻|鉢巻き\tはちまき|ハチマキ~~~!\tn,vs,vi¦uk¦headband",
+    "0yb78\t八丁|八挺\tはっちょう\tn¦¦skillfulness",
+    "0yb7i\t法被|半被\tはっぴ\tn¦¦happi coat¦happy coat¦workman's livery coat¦traditional Japanese straight-sleeved coat",
     "0yb7s\t発奮|発憤\tはっぷん\tn,vs,vi¦¦being roused¦being stimulated¦being inspired¦being spurred on",
     "0yb82\t２０日|二十日|二〇日|廿日\tはつか|にじゅうにち~ik\tn¦¦20th day of the month\tn¦¦20 days",
     "0yb8c\t初節供|初節句\tはつぜっく\tn¦¦baby's first annual festival",
@@ -678,35 +694,5 @@ export const PIECE: WordsPiece = {
     "0ygi2\t関係調\tかんけいちょう\tn¦music¦relative key",
     "0ygic\t楽才\tがくさい\tn¦¦talent for music",
     "0ygim\t楽人|歌舞人\tがくじん~~楽人|うたまいのひと\tn¦¦musician (esp. Gagaku)",
-    "0ygiw\t楽師\tがくし\tn¦¦master musician",
-    "0ygj6\t楽聖\tがくせい\tn¦¦celebrated musician¦master musician",
-    "0ygjg\t楽匠\tがくしょう\tn¦¦celebrated musician",
-    "0ygjq\t楽壇\tがくだん\tn¦¦musical world",
-    "0ygk0\t楽調\tがくちょう\tn¦¦musical tone",
-    "0ygka\t楽典\tがくてん\tn¦¦compositional rules¦musical grammar",
-    "0ygkk\t楽律\tがくりつ\tn¦¦metre or rhythm in Chinese and Japanese traditional music",
-    "0ygku\t楽界\tがっかい\tn¦¦musical world",
-    "0ygl4\t聞き込む|聞きこむ|聞込む\tききこむ\tv5m,vt¦¦to get information¦to find out¦to get wind of",
-    "0ygle\t宮廷音楽\tきゅうていおんがく\tn¦¦court music",
-    "0yglo\t教会音楽\tきょうかいおんがく\tn¦¦church music",
-    "0ygly\t教会旋法\tきょうかいせんぽう\tn¦music¦church modes",
-    "0ygm8\t地声\tじごえ\tn¦¦one's natural voice¦one's normal speaking voice\tn¦¦chest voice¦modal voice",
-    "0ygmi\t頭声\tとうせい\tn¦¦head voice (singing, phonics)¦head tone¦胸声",
-    "0ygms\t胸声\tきょうせい\tn¦¦chest voice¦頭声",
-    "0ygn2\t清元節\tきよもとぶし\tn¦¦style of jōruri narrative performance¦浄瑠璃",
-    "0ygnc\t近代音楽\tきんだいおんがく\tn¦¦modern music¦contemporary music",
-    "0ygnm\t義太夫節\tぎだゆうぶし\tn¦¦gidayū ballad drama (narrative accompanied by a shamisen used in the bunraku puppet theater)¦義太夫",
-    "0ygnw\t御遊\tぎょゆう\tn¦¦music playing in imperial court",
-    "0ygo6\t百済楽\tくだらがく\tn¦¦music in the Korean court",
-    "0ygog\t工工四|工々四\tくんくんしい\tn¦music¦notation system for the sanshin¦三線・さんしん",
-    "0ygoq\t貸し渋り|貸渋り~sK|貸ししぶり~sK\tかししぶり\tn¦finc¦reluctance to lend¦tight lending¦credit crunch",
-    "0ygp0\t日傭取\tひようとり\tn¦¦day laborer¦day labourer¦journeyman",
-    "0ygpk\t老師\tろうし\tn¦¦old master¦old teacher\tn¦¦old monk¦aged priest",
-    "0ygpu\t思い違い|思いちがい~sK\tおもいちがい\tn,vs,vi¦¦misunderstanding¦misapprehension¦misconception¦false impression¦wrong idea",
-    "0ygqe\t映し出す|写し出す|映しだす~sK|写しだす~sK|うつし出す~sK\tうつしだす\tv5s,vt¦¦to project¦to show (on a screen)¦to reflect (of a mirror, lake, etc.)¦esp. 映し出す\tv5s,vt¦¦to portray¦to depict¦to describe¦esp. 写し出す\tv5s,vt¦¦to reflect (the times, mood, etc.)¦esp. 映し出す",
-    "0ygqo\t縦長\tたてなが\tadj-na,adj-no,n¦¦oblong¦vertical writing style (e.g. on envelopes)¦portrait orientation",
-    "0ygqy\t見放す|見離す\tみはなす\tv5s,vt¦¦to abandon¦to give up on¦to desert",
-    "0ygr8\t自民党\tじみんとう\tn¦abbr¦Liberal Democratic Party¦LDP¦自由民主党・1",
-    "0ygri\t稲荷\tいなり~gikun\tn¦¦Inari (god of harvests, Uka-no-Mitama)¦稲魂\tn¦¦Inari shrine¦Fushimi Inari shrine (in Kyoto)\tn¦¦fox (said to be messengers of Inari)¦狐・1\tn¦¦fried tofu (said to be a favourite food of foxes)¦油揚げ・1\tn¦abbr,uk¦inarizushi¦いなり寿司",
   ],
 };

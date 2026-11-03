@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 56 of 220, from "0y5yw". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 56 of 220, from "0y5ss". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,27 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0y5ss\t錆|錆び|銹~rK|鏽~rK\tさび\tn¦¦rust",
+    "0y5t2\t様々|様様\tさまざま\tadj-na,n¦¦various¦varied¦diverse¦all sorts of",
+    "0y5tc\t寒々|寒寒\tさむざむ\tadv-to,vs,vi¦¦wintry¦very cold-looking (e.g. landscape)\tadv-to,vs,vi¦¦bleak (e.g. room, street)¦desolate¦empty (of furnishings)",
+    "0y5tw\t針魚|細魚|鱵\tさより~gikun|はりお~ok~針魚|サヨリ~~~!\tn¦uk¦Japanese halfbeak (Hemiramphus sajori)¦stickleback",
+    "0y5u1\t浚う|渫う\tさらう\tv5u,vt¦uk¦to sweep away¦to wash away¦to dredge",
+    "0y5u6\t攫う|掠う|拐う~iK\tさらう\tv5u,vt¦uk¦to carry off¦to run away with¦to sweep away¦to snatch¦to kidnap¦to abduct¦also written as 浚う\tv5u,vt¦uk¦to take entirely for oneself¦to monopolize",
+    "0y5ug\t更々|更更\tさらさら\tadv¦uk¦(not) at all¦(not) in the least¦(none) whatsoever¦with neg. verb",
+    "0y5v0\t晒し|曝し|晒|曝\tさらし\tn¦¦bleaching¦soaking\tn¦¦bleached cotton (esp. wrapped around the torso)\tn¦col¦doxxing¦doxing¦making someone's private information public without permission\tn¦hist¦public humiliation (Edo-period punishment)",
+    "0y5va\t晒す|曝す\tさらす\tv5s,vt¦¦to expose (to the sun, public, danger, etc.)\tv5s,vt¦¦to bleach¦to refine\tv5s,vt¦¦to rinse (vegetables)¦to soak\tv5s,vt¦col¦to doxx¦to dox¦to make someone's private information public without permission\tv5s,vt¦hist¦to sentence (someone) to public humiliation¦晒し・4",
+    "0y5vk\t爽々~sK|爽爽~sK\tさわさわ|サワサワ\tadv,adv-to,vs¦on-mim¦rustling",
+    "0y5vu\t三角州|三角洲\tさんかくす\tn¦¦(river) delta",
+    "0y5w4\t三景|三軽\tさんけい\tn¦¦three famous beauty spots",
+    "0y5we\t三弦|三絃\tさんげん\tn¦¦shamisen¦samisen¦三味線\tn¦¦sanxian (Chinese lute)\tn¦¦the three string instruments used in gagaku (biwa, wagon and sou)\tn¦¦three strings¦three-stringed instrument",
+    "0y5wo\t三々九度|三三九度\tさんさんくど\tn¦Shinto¦three-times-three exchange of nuptial cups",
+    "0y5wy\t三三五五|三々五々\tさんさんごご\tadv¦yoji¦in groups of twos and threes¦in small groups¦(in groups of) threes and fives",
+    "0y5x8\t散々|散散\tさんざん\tadj-na,adv¦¦thoroughly¦completely¦utterly\tadj-na,adv¦¦severely¦harshly¦terribly¦miserably¦wretchedly¦badly\tadj-na¦arch¦scattered¦disconnected¦dispersed¦smashed into tiny pieces",
+    "0y5xi\t三嘆|三歎\tさんたん\tn,vs,vi¦form¦deep admiration\tn,vs,vi¦form¦repeatedly lamenting",
+    "0y5xs\t三段跳び|三段跳\tさんだんとび\tn¦¦triple jump¦hop, step and jump",
+    "0y5y2\t三番鶏|三番鳥\tさんばんどり\tn¦¦third cockcrowing",
+    "0y5yc\t雑踏|雑沓~rK|雑鬧~rK\tざっとう\tn,vs,vi,adj-no¦¦hustle and bustle¦throng¦crowd¦congestion¦traffic jam",
+    "0y5ym\t戯れ事|戯事~sK|ざれ事~sK\tざれごと|たわむれごと|ざれこと~sk\tn¦¦prank¦practical joke",
     "0y5yw\t仕上げ|仕上~io|仕あげ~sK\tしあげ\tn¦¦finish¦finishing¦finishing touches",
     "0y5z6\t明々後日|明明後日\tしあさって|みょうみょうごにち~rk\tn,adv¦¦in three days' time¦two days after tomorrow",
     "0y5zg\t幸せ|倖せ~rK|仕合わせ~rK|仕合せ~rK\tしあわせ|しやわせ~ik\tn,adj-na¦¦happiness¦good fortune¦luck¦blessing",
@@ -474,7 +495,7 @@ export const PIECE: WordsPiece = {
     "0y9kw\t刺々しい|刺刺しい~sK|棘々しい~sK|棘棘しい~sK\tとげとげしい|トゲトゲしい~~~!\tadj-i¦uk¦sharp (words)¦harsh (manner, tone, etc.)¦hostile (mood, attitude, etc.)¦cutting (remarks)¦barbed¦stinging\tadj-i¦uk¦spiky¦prickly¦jagged¦biting (e.g. wind)",
     "0y9l6\t所々|所所|処々~rK|処処~rK\tところどころ|しょしょ\tadv,n¦uk¦here and there¦in places",
     "0y9lg\t年老|年老い\tとしおい\tn¦¦old person",
-    "0y9lq\t年寄り|年寄|年より\tとしより\tn¦sumo¦trustee of the Japan Sumo Association¦retired high-ranking wrestler who is licensed to coach and receives retirement pay\tn¦¦senior statesman (of the Tokugawa shogunate)\tn¦¦important local official (under the Tokugawa Shogunate)",
+    "0y9lq\t年寄り|年寄|年より\tとしより\tn¦sumo¦trustee of the Japan Sumo Association¦retired high-ranking wrestler who is licensed to coach and receives retirement pay¦2\tn¦¦senior statesman (of the Tokugawa shogunate)¦3\tn¦¦important local official (under the Tokugawa Shogunate)¦4",
     "0y9m0\t綴じ込む|とじ込む|綴込む~io\tとじこむ\tv5m,vt¦¦to file (away)¦to keep on file\tv5m,vt¦¦to bind up (e.g. between pages)¦to insert",
     "0y9ma\t途絶|杜絶\tとぜつ\tn,vs,vt,vi¦¦stoppage¦interruption¦cessation¦suspension",
     "0y9mk\t取っ手|把手|把っ手|取手~io\tとって|はしゅ~~把手\tn¦¦handle¦grip¦knob",
@@ -664,21 +685,5 @@ export const PIECE: WordsPiece = {
     "0yb28\t捗々しい|果々しい~rK|捗捗しい~sK|果果しい~sK\tはかばかしい\tadj-i¦uk¦quick¦rapid¦swift¦satisfactory¦usu. with neg. sentence",
     "0yb2i\t計る|測る|量る\tはかる\tv5r,vt¦¦to measure¦to weigh¦to survey¦to time (sound, gauge, estimate)\tv5r,vt¦¦to conjecture¦to infer¦to surmise",
     "0yb2s\t図る|謀る\tはかる\tv5r,vt¦¦to plan¦to attempt¦to devise\tv5r,vt¦¦to plot¦to conspire¦to scheme¦esp. 謀る\tv5r,vt¦¦to aim for¦to strive for¦to work towards¦to seek¦図る\tv5r,vt¦¦to deceive¦to trick¦to take in",
-    "0yb32\t剥がす|剥す~io|剝がす~rK\tはがす|へがす\tv5s,vt¦uk¦to tear off¦to peel off¦to rip off¦to strip off¦to skin¦to flay¦to disrobe¦to deprive of¦to detach¦to disconnect",
-    "0yb3c\t履物|履き物|履きもの~sK|はき物~sK\tはきもの\tn¦¦footwear¦footgear¦shoes",
-    "0yb3m\t剥ぎ取る|はぎ取る|剝ぎ取る~rK|剥取る~sK|剝取る~sK|剥ぎとる~sK\tはぎとる\tv5r,vt¦¦to tear off¦to strip off¦to rip off¦to scrape off\tv5r,vt¦¦to rob (someone) of (clothes)¦to divest (someone) of (powers, rank, etc.)",
-    "0yb3w\t育む|育くむ~sK\tはぐくむ\tv5m,vt¦¦to raise¦to bring up¦to rear\tv5m,vt¦¦to cultivate¦to foster¦to nurture",
-    "0yb46\tはげ上がる|禿げ上がる|禿げあがる|禿上がる~io|禿げ上る\tはげあがる\tv5r,vi¦¦to become bald from the forehead¦to recede (of one's hairline)",
-    "0yb4g\t激しい|烈しい~rK|劇しい~rK\tはげしい\tadj-i¦¦violent¦furious¦tempestuous\tadj-i¦¦extreme¦intense¦fierce¦strong\tadj-i¦¦fervent¦vehement\tadj-i¦¦incessant¦relentless\tadj-i¦arch¦precipitous¦steep",
-    "0yb4q\t箱舟|箱船|方舟\tはこぶね\tn¦¦ark (i.e. Noah's)",
-    "0yb50\t挟む|挿む|挾む~oK\tはさむ|ハサむ~~~!\tv5m,vt¦¦to hold between (e.g. one's fingers, chopsticks)¦to grip (from both sides)\tv5m,vt¦¦to put between¦to sandwich between¦to insert¦to interpose\tv5m,vt¦¦to catch (e.g. a finger in a door)¦to trap¦to pinch\tv5m,vt¦¦to insert (e.g. a break into proceedings)¦to interpose (e.g. an objection)¦to interject¦to throw in (e.g. a joke)\tv5m,vt¦¦to be on either side of (a road, table, etc.)¦to have between each other¦to be across (a street, river, etc.)\tv5m,vt¦¦to harbour (feelings)¦to cast (e.g. doubt)\tv5m,vt¦uk,go¦to pincer¦ハサミ・2¦usu. ハサむ",
-    "0yb5a\t爆ぜる|罅ぜる~rK\tはぜる\tv1,vi¦¦to burst open¦to pop¦to split",
-    "0yb5u\t果たし状|果し状\tはたしじょう\tn¦¦letter of challenge (to a duel, etc.)",
-    "0yb64\t果たして|果して\tはたして\tadv¦¦as was expected¦just as one thought¦sure enough\tadv¦¦really¦actually¦ever¦used in interrogative and hypothetical sentences",
-    "0yb6e\t２０歳|２０才|二十歳|二十|廿\tはたち|にじゅっさい~~２０歳,２０才,二十歳|にじっさい~~２０歳,２０才,二十歳\tn¦¦20 years old\tn¦arch¦twenty¦二十|廿",
-    "0yb6o\t肌触り|肌ざわり|膚触り~rK|肌触~sK|はだ触り~sK|肌触わり~sK\tはだざわり\tn¦¦feel¦touch¦texture\tn¦¦manner (with others)",
-    "0yb6y\t鉢巻|鉢巻き\tはちまき|ハチマキ~~~!\tn,vs,vi¦uk¦headband",
-    "0yb78\t八丁|八挺\tはっちょう\tn¦¦skillfulness",
-    "0yb7i\t法被|半被\tはっぴ\tn¦¦happi coat¦happy coat¦workman's livery coat¦traditional Japanese straight-sleeved coat",
   ],
 };

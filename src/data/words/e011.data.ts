@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 12 of 220, from "0oe7u". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 12 of 220, from "0oe5w". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,13 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0oe5w\t\tライナーノーツ|ライナー・ノーツ\tn¦¦liner notes",
+    "0oe66\t\tライニング\tn¦¦lining",
+    "0oe6g\t\tライノタイプ\tn¦print,tradem¦Linotype",
+    "0oe6q\t\tライバル|ライヴァル~sk\tn¦¦rival¦competitor¦competition",
+    "0oe70\t\tライフ\tn¦¦life",
+    "0oe7a\t\tライフサービス\tn¦¦life-service",
+    "0oe7k\t\tライフサイエンス|ライフ・サイエンス\tn¦¦life science",
     "0oe7u\t\tライフサイクル|ライフ・サイクル\tn¦¦life cycle",
     "0oe84\t\tライフサイクルエネルギー|ライフサイクル・エネルギー\tn¦¦life-cycle energy",
     "0oe8e\t\tライフサイズ\tn¦¦life-size",
@@ -1028,7 +1035,7 @@ export const PIECE: WordsPiece = {
     "0onc6\t唖|啞~sK\tおし|あ|おうし~ok\tn¦¦muteness¦speech impairment",
     "0oncq\t娃鬟\tあいかん\tn¦arch¦beautiful woman",
     "0ond0\t阿る|阿ねる~sK\tおもねる\tv5r,vi¦uk¦to flatter¦to play up (to)¦to curry favor (with)¦to fawn (on)¦to cater (to)",
-    "0ondk\tお多福|阿多福~rK|於多福~rK\tおたふく\tn¦abbr¦humorous mask of a homely woman's face¦お多福面",
+    "0ondk\tお多福|阿多福~rK|於多福~rK\tおたふく\tn¦abbr¦humorous mask of a homely woman's face¦お多福面¦2",
     "0ondu\t阿鼻叫喚\tあびきょうかん\tn¦yoji¦agonizing cries¦pandemonium¦two of Buddhism's hells",
     "0one4\t阿片窟|アヘン窟|鴉片窟~sK\tあへんくつ\tn¦¦opium den",
     "0onee\t阿弥陀|阿彌陀~oK\tあみだ\tn¦Buddh¦Amitabha (Buddha)¦Amida\tn¦uk,abbr¦ghostleg lottery¦ladder lottery¦lottery in which participants trace a line across a lattice pattern to determine the winner¦阿弥陀くじ\tn¦uk,abbr¦wearing a hat pushed back on one's head¦阿弥陀被り",
@@ -1215,9 +1222,5 @@ export const PIECE: WordsPiece = {
     "0oowa\t悪神\tあくじん\tn¦¦evil god",
     "0oowk\t悪人\tあくにん\tn,adj-no¦¦bad person¦villain¦scoundrel¦wrongdoer¦wicked person",
     "0oowu\t悪推量\tわるずいりょう\tadj-na,n¦¦distrust¦unjust suspicion",
-    "0oox4\t悪水\tあくすい\tn¦¦undrinkable water",
-    "0ooxe\t悪酔い|悪酔\tわるよい\tn,vs,vi¦¦drunken sickness¦getting sick from drinking\tn,vs,vi¦¦drunken frenzy¦becoming violent or disorderly when drunk",
-    "0ooxo\t悪性\tあくしょう\tn,adj-na¦¦evil nature¦licentiousness¦lewdness",
-    "0ooxy\t悪性\tあくせい\tadj-no,n¦¦malignant (cancer)¦virulent¦pernicious (anemia, anaemia)",
   ],
 };

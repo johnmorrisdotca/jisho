@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 24 of 220, from "0r6ne". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 24 of 220, from "0r6lg". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,13 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0r6lg\t五穀\tごこく\tn¦¦the five grains (wheat, rice, beans, millet (awa and kibi))",
+    "0r6lq\t五彩\tごさい\tn¦¦the five colours: green, yellow, red, white and black¦the five colors¦five-coloured porcelain¦five-colored porcelain",
+    "0r6m0\t五指\tごし\tn¦¦the five fingers\tn¦¦leading five¦top five",
+    "0r6ma\t五種競技\tごしゅきょうぎ\tn¦sports¦pentathlon",
+    "0r6mk\t五十音\tごじゅうおん\tn¦¦the Japanese syllabary",
+    "0r6mu\t五十音順|５０音順\tごじゅうおんじゅん\tn¦¦standard gojūon syllabary order (beginning with aiueo)¦五十音|アイウエオ順",
+    "0r6n4\t五十三次\tごじゅうさんつぎ\tn¦hist,abbr¦fifty-three stations on the Tōkaidō (Edo-Kyoto highway in Edo-period Japan)¦東海道五十三次",
     "0r6ne\t五十年祭\tごじゅうねんさい\tn¦¦jubilee¦semicentennial",
     "0r6no\t五十歩百歩\tごじっぽひゃっぽ|ごじゅっぽひゃっぽ\texp,n¦id¦six of one, half a dozen of the other¦scant difference",
     "0r6ny\t五十路|五十\tいそじ\tn¦¦age fifty¦one's fifties",
@@ -321,7 +328,7 @@ export const PIECE: WordsPiece = {
     "0r95y\t護摩\tごま\tn¦Buddh¦homa¦Buddhist rite of burning wooden sticks to ask a deity for blessings",
     "0r968\t乞い取る\tこいとる\tv5r¦¦to ask for and receive",
     "0r96i\t乞高評\tこうこうひょう\tn¦¦with the author's compliments",
-    "0r96s\t乞食\tこじき|こつじき~ok\tn,vs,vi¦¦begging",
+    "0r96s\t乞食\tこじき|こつじき~ok\tn,vs,vi¦¦begging¦2",
     "0r972\t乞婿\tこいむこ\tn¦¦bridegroom who is loved by his bride",
     "0r97c\t乞丐\tこつがい|かたい|かったい|きっかい\tn¦¦beggar¦bum",
     "0r97m\t鯉\tこい|コイ~~~!\tn¦¦common carp (Cyprinus carpio)¦koi carp",
@@ -1035,15 +1042,5 @@ export const PIECE: WordsPiece = {
     "0rezy\t攻め滅ぼす\tせめほろぼす\tv5s,vt¦¦to attack and overthrow¦to utterly destroy",
     "0rf08\t攻究|講究\tこうきゅう\tn,vs,vt¦¦specialization (in a field of study)¦study",
     "0rf0i\t攻撃\tこうげき\tn,vs,vt¦¦attack¦assault¦raid¦onslaught¦offensive¦守備・1\tn,vs,vt¦¦criticism¦censure¦denunciation¦condemnation\tn¦comp¦cyber attack (e.g. DDoS)",
-    "0rf0s\t攻撃ヘリコプター\tこうげきヘリコプター\tn¦¦attack helicopter",
-    "0rf12\t攻撃開始線\tこうげきかいしせん\tn¦mil¦line of departure",
-    "0rf1c\t攻撃部隊\tこうげきぶたい\tn¦¦attacking forces",
-    "0rf1m\t攻撃方向\tこうげきほうこう\tn¦¦attacking direction",
-    "0rf1w\t攻守\tこうしゅ\tn¦¦offense and defense¦offence and defence¦batting and fielding",
-    "0rf26\t攻城\tこうじょう\tn,vs¦¦castle siege",
-    "0rf2g\t攻勢\tこうせい\tn¦¦offensive (movement)¦aggression",
-    "0rf2q\t攻防\tこうぼう\tn¦¦offense and defense¦offence and defence",
-    "0rf30\t攻防戦\tこうぼうせん\tn¦¦battle",
-    "0rf3a\t攻略\tこうりゃく\tn,vs,vt¦¦capture (of enemy territory)¦taking (by storm)¦conquest¦attack¦assault\tn,vs,vt¦¦defeating (an opponent)\tn,vs,vt¦¦attacking (a problem) strategically\tn¦vidg¦strategy¦tactics¦walkthrough¦guide",
   ],
 };

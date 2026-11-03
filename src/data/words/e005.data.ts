@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 6 of 220, from "0mmaq". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 6 of 220, from "0mma". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0mma6\t\tサーモスタット\tn¦¦thermostat",
+    "0mmag\t\tサーモメーター|サーモメータ\tn¦¦thermometer¦温度計・おんどけい",
     "0mmaq\t\tサーモン\tn¦¦salmon¦鮭・1",
     "0mmb0\t\tサーモンピンク|サーモン・ピンク\tn¦¦salmon pink",
     "0mmbk\t\tサーロイン\tn¦food¦sirloin",
@@ -869,7 +871,7 @@ export const PIECE: WordsPiece = {
     "0mtng\t\tジプシールック|ジプシー・ルック\tn¦rare¦gypsy look (fashion style)",
     "0mto0\t\tジム\tn¦¦gym¦gymnasium",
     "0mtoa\t\tジムカーナ\tn¦¦gymkhana",
-    "0mtok\t\tジムクロー|ジムクロウ\tn¦¦segregation of blacks¦discrimination against blacks",
+    "0mtok\t\tジムクロー|ジムクロウ\tn¦¦segregation of blacks¦discrimination against blacks¦2",
     "0mtp4\t\tジャー\tn¦¦container for keeping food or drink warm¦(wide-mouthed) thermos¦(rice) warmer¦電子ジャー\tn¦¦jar",
     "0mtpe\t\tジャーキー\tn¦¦jerky",
     "0mtpo\t\tジャーク\tn¦¦clean and jerk (weightlifting)¦スナッチ¦eng~jerk",
@@ -1236,7 +1238,5 @@ export const PIECE: WordsPiece = {
     "0mwss\t\tスケルツォ|スケルツオ\tn¦music¦scherzo¦ita~",
     "0mwt2\t\tスケルトン\tn¦¦skeleton (of a vertebrate, ship, building, etc.)\tn¦¦transparency (revealing the inner workings of a device)¦translucency¦see-through body\tn¦¦skeleton (sport)\tn¦comp¦skeleton (code)",
     "0mwtc\tスケ番|助番\tスケばん~~スケ番|すけばん~~助番|スケバン~~~!\tn¦sl,uk¦leader of a female gang¦leader of a group of delinquent girls",
-    "0mwtm\t\tスコーカー\tn¦¦squawker",
-    "0mwtw\t\tスコーピング\tn¦¦scoping",
   ],
 };

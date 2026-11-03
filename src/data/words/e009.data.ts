@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 10 of 220, from "0nsta". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 10 of 220, from "0nss". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0nss6\t\tフォール\tn,vs,vt¦¦fall (esp. in wrestling)",
+    "0nssg\t\tフォールト|フォルト\tn¦¦fault",
+    "0nssq\t\tフォールトトレランス\tn¦¦fault-tolerance",
+    "0nst0\t\tフォア|フォー\tn¦¦four",
     "0nsta\t\tフォアグラ|フォワグラ|フォア・グラ|フォワ・グラ\tn¦food¦foie gras¦fre~",
     "0nstk\t\tフォアグラウンド|フォアグランド\tn¦comp¦foreground",
     "0nstu\t\tフォアハンド\tn¦sports¦forehand¦バックハンド",
@@ -1110,7 +1114,7 @@ export const PIECE: WordsPiece = {
     "0o290\t\tホノルル\tn¦¦Honolulu",
     "0o29a\t\tホビー\tn¦¦hobby",
     "0o29k\t\tホビークラフト|ホビー・クラフト\tn¦¦hobby craft",
-    "0o2a4\t\tホモ\tpref¦¦homo-¦ヘテロ・1\tn¦abbr,genet¦homozygote¦ホモ接合体\tadj-no¦genet¦homozygous\tn¦abbr¦homogenization¦ホモジナイズ",
+    "0o2a4\t\tホモ\tpref¦¦homo-¦ヘテロ・1\tn¦abbr,genet¦homozygote¦ホモ接合体¦3\tadj-no¦genet¦homozygous¦4\tn¦abbr¦homogenization¦ホモジナイズ¦5",
     "0o2ae\t\tホモエコノミクス|ホモ・エコノミクス\tn¦¦Homo economicus¦economic human¦経済人・1¦lat~",
     "0o2ao\t\tホモエレクトス|ホモエレクトゥス|ホモ・エレクトス|ホモ・エレクトゥス\tn¦¦Homo erectus¦lat~",
     "0o2b8\t\tホモサピエンス|ホモ・サピエンス\tn¦¦Homo sapiens¦lat~",
@@ -1216,9 +1220,5 @@ export const PIECE: WordsPiece = {
     "0o36c\t\tボスニア\tn¦¦Bosnia (region)\tn¦¦Bosnia and Herzegovina¦ボスニアヘルツェゴビナ",
     "0o36m\t\tボスニア・ヘルツェゴビナ|ボスニアヘルツェゴビナ|ボスニアヘルツェゴヴィナ~sk\tn¦¦Bosnia and Herzegovina¦Bosnia-Herzegovina",
     "0o36w\t釦~ateji,rK|鈕~ateji,rK\tボタン\tn¦uk¦button (clothing)¦por~botão\tn¦uk¦push-button¦button",
-    "0o376\t\tボタンダウン\tn¦¦button down",
-    "0o37g\t\tボタンホール\tn¦¦buttonhole",
-    "0o37q\t\tボタンロック\tn¦¦button lock",
-    "0o380\t\tボックス\tn¦¦box¦container¦bin\tn¦¦box (in a theatre)¦booth (in a restaurant, etc.)¦(orchestra) pit\tn¦¦small rectangular building (e.g. telephone box)\tn¦baseb¦rectangular field area (e.g. batter's box, catcher's box)\tn¦¦box (calfskin)\tn¦¦central 4x4 area (othello)",
   ],
 };

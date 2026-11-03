@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 43 of 220, from "0vdf". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 43 of 220, from "0vd8d". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,31 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0vd8d\t賑やかさ\tにぎやかさ\tn¦¦business¦liveliness",
+    "0vd8i\t賑わい\tにぎわい\tn¦¦prosperity¦bustle¦activity¦crowd¦turnout",
+    "0vd8s\t賑わう\tにぎわう\tv5u,vi¦¦to be crowded with people¦to be bustling with\tv5u,vi¦¦to prosper¦to flourish¦to do thriving business",
+    "0vd92\t賑わす\tにぎわす\tv5s,vt¦¦to enliven¦to liven up¦to cause a stir in (e.g. the newspapers)¦to hit (the front page, headlines, etc.)\tv5s,vt¦¦to make prosperous",
+    "0vd9c\t肉\tにく\tn¦¦flesh\tn¦¦meat\tn¦¦flesh (of a fruit)¦pulp\tn¦¦the physical body (as opposed to the spirit)¦flesh\tn¦¦thickness\tn¦¦content¦substance¦flesh\tn¦¦ink pad¦印肉",
+    "0vd9m\t肉じゃが|肉ジャガ\tにくじゃが~~肉じゃが|にくジャガ~~肉ジャガ\tn¦food¦nikujaga¦meat and potato stew",
+    "0vd9w\t肉屋\tにくや\tn¦¦butcher's shop¦butcher¦meat shop",
+    "0vda6\t肉塊\tにくかい|にっかい\tn¦¦lump of meat¦piece of flesh\tn¦¦human body",
+    "0vdag\t肉眼\tにくがん|にくげん\tn¦¦naked eye¦にくがん\tn¦Buddh¦the physical eye¦五眼¦usu. にくげん",
+    "0vdaq\t肉牛\tにくぎゅう\tn¦¦beef cattle",
+    "0vdb0\t肉桂\tにっけい|にっき|ニッケイ~~~!\tn,adj-no¦¦cinnamon\tn¦uk¦cinnamon tree (Cinnamomum sieboldii)",
+    "0vdba\t肉刺|荳\tまめ|マメ~~~!\tn¦uk,col¦blister¦corn",
+    "0vdbk\t肉腫\tにくしゅ\tn¦med¦sarcoma",
+    "0vdbu\t肉汁\tにくじゅう|にくじる\tn¦¦meat soup¦bouillon¦juices (from grilled meat)¦gravy",
+    "0vdc4\t肉色\tにくいろ\tn,adj-no¦¦flesh-color¦flesh-colour",
+    "0vdce\t肉食\tにくしょく|にくじき\tn,vs,vi,adj-no¦¦meat eating¦eating of meat¦meat diet¦菜食\tadj-f¦¦carnivorous¦にくしょく¦草食",
+    "0vdco\t肉親\tにくしん\tn¦¦blood relationship¦blood relative",
+    "0vdcy\t肉体\tにくたい\tn¦¦the body¦the flesh¦the outer man¦one's physique",
+    "0vdd8\t肉体労働者\tにくたいろうどうしゃ\tn¦¦manual laborer¦manual labourer",
+    "0vddi\t肉薄|肉迫\tにくはく\tn,vs,vi¦¦closing in on (the enemy, first place, etc.)¦coming close to¦pressing hard\tn,vs,vi¦¦pressing hard (e.g. with a question)¦taking to task¦grilling",
+    "0vdds\t肉筆\tにくひつ\tn,adj-no¦¦one's own handwriting¦autograph\tn,adj-no¦¦as written with a brush",
+    "0vde2\t肉付きの良い|肉付きのいい|肉付きのよい|肉づきのよい~sK|肉づきの良い~sK|肉づきのいい~sK\tにくづきのよい~~肉付きの良い,肉付きのよい|にくづきのいい~~肉付きの良い,肉付きのいい\texp,adj-ix¦¦stout¦well-fleshed¦well-built¦well-padded¦plump",
+    "0vdec\t肉料理\tにくりょうり\tn¦¦meat dish¦meat-based cuisine",
+    "0vdem\t肉類\tにくるい\tn¦¦(kinds of) meat",
+    "0vdew\t肉まん|肉饅~rK\tにくまん\tn¦abbr,food¦manjū with a meat filling¦steamed yeast bun with a meat filling¦肉まんじゅう",
     "0vdf6\t肉饅頭|肉まんじゅう\tにくまんじゅう\tn¦food¦manjū with a meat filling¦steamed yeast bun with a meat filling",
     "0vdfg\t虹|霓~rK\tにじ\tn¦¦rainbow",
     "0vdfq\t虹彩\tこうさい\tn¦anat¦iris",
@@ -784,7 +809,7 @@ export const PIECE: WordsPiece = {
     "0vjo6\t馬頭\tめず\tn¦Buddh¦horse-headed demon (in hell)¦牛頭馬頭",
     "0vjog\t馬肉\tばにく\tn¦¦horse meat¦horsemeat",
     "0vjoq\t馬匹\tばひつ\tn¦¦horses",
-    "0vjp0\t馬面\tうまづら|ばめん|うまがお~sk\tn¦¦black scraper (fish)¦うまづら¦馬面剥",
+    "0vjp0\t馬面\tうまづら\tn¦¦black scraper (fish)¦うまづら¦馬面剥¦2",
     "0vjpa\t馬力\tばりき\tn¦¦horsepower¦hp\tn¦¦energy¦vitality¦vigour¦strength\tn¦obs¦horse-drawn cart¦荷馬車",
     "0vjpu\t俳画\tはいが\tn¦¦briefly drawn picture¦haiku picture",
     "0vjq4\t俳句\tはいく\tn¦¦haiku¦17-mora poem, usu. in 3 lines of 5, 7 and 5 morae",
@@ -976,33 +1001,5 @@ export const PIECE: WordsPiece = {
     "0vl7g\t売り家|売家\tうりや|うりいえ\tn¦¦house for sale",
     "0vl7q\t売り広げる\tうりひろげる\tv1¦¦to find a market for¦to extend the sale of",
     "0vl80\t売り込み|売込み~sK|売りこみ~sK\tうりこみ\tn¦¦sales promotion¦hard selling",
-    "0vl8a\t売り込む\tうりこむ\tv5m,vt¦¦to build a market for¦to promote (a product)¦to sell¦to become well known\tv5m,vt¦¦to promote oneself¦to sell oneself\tv5m,vt¦¦to sell heavily",
-    "0vl8k\t売り出す|売出す\tうりだす\tv5s,vt¦¦to put on the market¦to put out for sale¦to put on sale¦to begin selling¦to market\tv5s,vi¦¦to become popular",
-    "0vl8u\t売り切れ|売切れ|売切\tうりきれ\tadj-no,n¦¦sold-out",
-    "0vl94\t売り切れる|売切れる\tうりきれる\tv1,vi¦¦to be sold out",
-    "0vl9e\t売り渡す|売渡す\tうりわたす\tv5s,vt¦¦to sell over to",
-    "0vl9o\t売り飛ばす|売りとばす~sK\tうりとばす\tv5s,vt¦¦to sell off¦to dispose of",
-    "0vl9y\t売りつける|売り付ける|売付ける\tうりつける\tv1,vt¦¦to palm off¦to force a sale",
-    "0vla8\t売り払う|売払う~sK|売りはらう~sK\tうりはらう\tv5u,vt¦¦to sell off¦to sell completely",
-    "0vlai\t売り物|売物|売りもの~sK\tうりもの\tn¦¦article for sale¦goods for sale¦offering\tn¦¦main attraction¦specialty¦selling point\texp¦¦For Sale¦on a sign",
-    "0vlas\t売り歩く|売歩く\tうりあるく\tv5k,vt¦¦to peddle (goods)¦to hawk",
-    "0vlb2\t売る\tうる\tv5r,vt¦¦to sell\tv5r,vt¦¦to betray¦to sell out (one's friend, country, etc.)¦国を売る\tv5r,vt¦¦to make (oneself) known¦to establish (a reputation) for oneself¦名を売る\tv5r,vt¦¦to pick (a fight, quarrel, etc.)¦to provoke¦to force on someone¦喧嘩を売る|恩を売る",
-    "0vlbc\t売れる\tうれる\tv1,vi¦¦to sell (well)¦売る・1\tv1,vi¦¦to be well known¦to be popular¦to be famous",
-    "0vlbm\t売れ残り|売残~sK|売残り~sK\tうれのこり\tn¦¦unsold items¦leftovers¦remainders¦remnants",
-    "0vlbw\t売却\tばいきゃく\tn,vs,vt¦¦selling off¦disposal by sale¦sale",
-    "0vlc6\t売国\tばいこく\tn¦¦selling out one's country¦betraying one's country¦treason",
-    "0vld0\t売笑婦\tばいしょうふ\tn¦¦prostitute",
-    "0vlda\t売上票\tうりあげぴょう\tn¦¦sales slip¦sales receipt",
-    "0vldk\t売店\tばいてん\tn¦¦stand¦stall¦booth¦kiosk¦store",
-    "0vldu\t売買\tばいばい\tn,vs,vt¦¦trade¦buying and selling¦trafficking (e.g. of humans, arms, drugs)¦dealing",
-    "0vle4\t売買高\tばいばいだか\tn¦¦sales amount¦sales volume",
-    "0vlee\t売卜\tばいぼく\tn¦¦fortunetelling (as an occupation)",
-    "0vleo\t売名\tばいめい\tn¦¦self-advertisement",
-    "0vley\t売約\tばいやく\tn,vs,vi¦¦sales contract",
-    "0vlf8\t売約済み|売約済\tばいやくずみ\texp¦¦(already) sold¦usu. on signs",
-    "0vlfi\t賠償\tばいしょう\tn,vs,vt¦¦compensation¦reparations¦indemnity¦damages",
-    "0vlfs\t賠償金\tばいしょうきん\tn¦¦indemnities¦reparations",
-    "0vlg2\t賠責\tばいせき\tn¦abbr¦liability insurance¦賠償責任保険",
-    "0vlgc\t陪食\tばいしょく\tn,vs,vi¦¦dining with one's superior¦dining with one's superiors",
   ],
 };

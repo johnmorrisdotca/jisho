@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 29 of 220, from "0sbs". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 29 of 220, from "0sbow". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,17 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0sbow\t実利\tじつり\tn¦¦utility¦(actual) profit¦actual benefit¦material gain",
+    "0sbp6\t実力\tじつりょく\tn¦¦(real) ability¦true strength¦merit¦efficiency¦competency\tn¦¦arms¦force¦実力行使",
+    "0sbpg\t実力行使\tじつりょくこうし\tn¦¦use of force",
+    "0sbpq\t実力者\tじつりょくしゃ\tn¦¦influential person¦powerful person¦big wheel¦big gun¦power behind the throne",
+    "0sbq0\t実例\tじつれい\tn¦¦example¦illustration¦precedent",
+    "0sbqa\t実録\tじつろく\tn¦¦authentic account",
+    "0sbqk\t実話\tじつわ\tn,adj-no¦¦true story",
+    "0sbqu\t偲ぶ|慕ぶ~rK\tしのぶ\tv5b,vt¦¦to recollect¦to remember¦to reminisce¦to be nostalgic for\tv5b,vt¦uk¦to imagine¦to guess¦to infer¦usu. in the passive as しのばれる\tv4b,vt¦arch¦to admire (e.g. beauty)¦to praise¦to commend",
+    "0sbre\t芝\tしば\tn¦¦lawn¦sod¦turf",
+    "0sbro\t芝刈り機|芝刈機|芝刈り器\tしばかりき\tn¦¦lawnmower",
+    "0sbry\t芝居\tしばい\tn¦¦play¦drama",
     "0sbs8\t芝居小屋\tしばいごや\tn¦¦playhouse¦theatre¦theater",
     "0sbsi\t芝生\tしばふ\tn¦¦lawn¦grass¦turf",
     "0sbss\t芝草\tしばくさ\tn¦¦lawn¦sod¦turf",
@@ -959,15 +970,5 @@ export const PIECE: WordsPiece = {
     "0sjbc\t宗教\tしゅうきょう\tn¦¦religion¦religious affiliation¦belief¦faith¦creed\tn¦¦religious activity",
     "0sjbm\t宗教団体\tしゅうきょうだんたい\tn¦¦religious group",
     "0sjbw\t宗教的独立性\tしゅうきょうてきどくりつせい\tn¦¦religious independence",
-    "0sjc6\t宗教法人\tしゅうきょうほうじん\tn¦¦religious corporation¦religious juridical person",
-    "0sjcg\t宗旨\tしゅうし\tn¦¦tenets (of a religious sect)¦doctrines\tn¦¦(religious) sect¦denomination¦religion¦faith\tn¦¦one's principles¦one's tastes¦one's preferences",
-    "0sjcq\t宗主国\tそうしゅこく\tn¦¦suzerain state",
-    "0sjd0\t宗匠\tそうしょう\tn¦¦master¦teacher",
-    "0sjda\t宗祖\tしゅうそ\tn¦¦sect founder",
-    "0sjdk\t宗徒\tしゅうと\tn¦¦believer¦follower",
-    "0sjdu\t宗派\tしゅうは\tn¦¦sect¦denomination\tn¦¦school (e.g. of poetry)",
-    "0sje4\t宗門\tしゅうもん\tn¦¦(religious) denomination¦sect",
-    "0sjee\t就いては\tついては\texp,conj¦uk¦in line with this¦therefore¦consequently¦so¦such being the case¦in that regard¦in this connection",
-    "0sjeo\t就きましては~rK\tつきましては\texp,conj¦pol,uk¦in line with this¦therefore¦consequently¦so¦such being the case¦in that regard¦in this connection¦ついては",
   ],
 };

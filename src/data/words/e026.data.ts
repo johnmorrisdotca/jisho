@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 27 of 220, from "0rvlq". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 27 of 220, from "0rvjs". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,13 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0rvjs\t三尺帯\tさんじゃくおび\tn¦¦waistband¦belt¦cloth girdle¦obi",
+    "0rvk2\t三種の神器\tさんしゅのじんぎ\texp,n¦¦the Three Sacred Treasures (Mirror, Sword and Jewels)¦three sacred emblems of sovereign rule¦the three divine symbols of the Japanese imperial throne\texp,n¦id,col¦(set of) three status symbols¦three necessities",
+    "0rvkc\t三秋\tさんしゅう\tn¦¦three autumn months¦three fall months¦three years",
+    "0rvkm\t三秋の思い\tさんしゅうのおもい\tn¦¦longing for loved ones",
+    "0rvkw\t三十戸\tさんじっこ\tn¦¦thirty houses",
+    "0rvl6\t三十三所\tさんじゅうさんしょ\tn¦¦thirty-three temples sacred to Kannon (Avalokitesvara)¦西国三十三所",
+    "0rvlg\t三十二分音符\tさんじゅうにぶおんぷ\tn¦music¦32nd note¦demisemiquaver",
     "0rvlq\t３０日|三十日|三〇日\tさんじゅうにち\tn¦¦30th day of the month\tn¦¦30 days",
     "0rvm0\t三十年戦争|三〇年戦争\tさんじゅうねんせんそう\tn¦hist¦Thirty Years' War (1618-1648)",
     "0rvma\t３８度線|三十八度線\tさんじゅうはちどせん\tn¦¦38th parallel (that demarcates North Korea and South Korea)",
@@ -88,7 +95,7 @@ export const PIECE: WordsPiece = {
     "0rw88\t三筆\tさんぴつ\tn¦hist¦the three famous ancient calligraphers (Emperor Saga, Tachibana (no) Hayanari and Kooboo Daishi)",
     "0rw8i\t３００|三百|３百|三〇〇\tさんびゃく\tnum¦¦300¦three hundred\tn¦¦300 mon¦trifling amount¦two-bit item¦文・もん・1\tn¦abbr¦shyster¦三百代言・1",
     "0rw8s\t三百諸侯\tさんびゃくしょこう\tn¦hist¦all daimyo",
-    "0rw92\t三百代言\tさんびゃくだいげん\tn¦¦casuist¦sophist",
+    "0rw92\t三百代言\tさんびゃくだいげん\tn¦¦casuist¦sophist¦2",
     "0rw9c\t三府\tさんぷ\tn¦hist¦the three urban prefectures (Tokyo, Kyoto and Osaka)¦府・1¦Tokyo became a metropolitan prefecture in 1943",
     "0rw9m\t三部合唱\tさんぶがっしょう\tn¦¦3 part chorus¦vocal trio",
     "0rw9w\t三部合奏\tさんぶがっそう\tn¦music¦instrumental trio",
@@ -618,7 +625,7 @@ export const PIECE: WordsPiece = {
     "0s0hu\t史料編纂\tしりょうへんさん\tn,adj-no¦¦historiography",
     "0s0i4\t史論\tしろん\tn¦¦historical treatise¦historical discussion",
     "0s0ie\t嗣子\tしし\tn¦¦heir",
-    "0s0io\t四つ|４つ\tよっつ|よつ\tnum¦¦four¦4\tn¦¦four years of age\tn¦¦ten o'clock (in the old time system)\tn¦abbr,sumo¦cross grips¦四つ身・1",
+    "0s0io\t四つ|４つ\tよっつ|よつ\tnum¦¦four¦4\tn¦¦four years of age\tn¦¦ten o'clock (in the old time system)\tn¦abbr,sumo¦cross grips¦四つ身・1¦5",
     "0s0iy\t四つん這い|四つんばい\tよつんばい\tn¦¦crawling on all fours¦being on all fours¦being on one's hands and knees",
     "0s0j8\t四つ角\tよつかど\tn¦¦four corners\tn¦¦crossroads¦intersecting street¦street corner",
     "0s0ji\t四つ足|４つ足|四つ脚|よつ足~sK|四脚~sK|四足~sK\tよつあし\tadj-no,n¦¦four-legged¦four-footed\tn¦¦(four-legged) animal¦beast",
@@ -969,9 +976,5 @@ export const PIECE: WordsPiece = {
     "0s39a\t枝葉末節\tしようまっせつ\tn¦yoji¦unimportant details¦inessentials",
     "0s39k\t止す\tよす\tv5s,vt¦uk¦to stop (doing)¦to cease¦to desist¦to drop¦to lay off¦to give up¦to quit",
     "0s3a4\t止まる|留まる|停まる~rK|駐まる~rK|止る~sK|留る~sK\tとまる\tv5r,vi¦¦to stop (moving)¦to come to a stop\tv5r,vi¦¦to stop (doing, working, being supplied)¦to come to a halt¦to cease¦to be stopped¦to be suspended\tv5r,vi¦¦to alight¦to perch on",
-    "0s3ao\t止む|已む~rK|罷む~rK|熄む~rK|歇む~rK\tやむ\tv5m,vi¦¦to cease¦to stop¦to be over",
-    "0s3ay\tやむを得ず|止むを得ず|已むを得ず\tやむをえず\texp,adv¦¦unavoidably¦inevitably¦necessarily¦reluctantly¦against one's will",
-    "0s3b8\t止め\tとどめ\tn¦uk¦finishing blow¦coup de grâce¦とどめを刺す・1",
-    "0s3bi\t止める|留める|停める\tとめる\tv1,vt¦¦to stop¦to turn off¦esp. 止める, 停める\tv1,vt¦¦to park¦esp. 止める, 停める\tv1,vt¦¦to prevent¦to suppress (a cough)¦to hold back (tears)¦to hold (one's breath)¦to relieve (pain)¦esp. 止める, 停める\tv1,vt¦¦to stop (someone from doing something)¦to dissuade¦to forbid¦to prohibit\tv1,vt¦¦to notice¦to be aware of¦to concentrate on¦to pay attention to¦to remember¦to bear in mind¦目を留める|気に留める\tv1,vt¦¦to fix (in place)¦to fasten¦to tack¦to pin¦to nail¦to button¦to staple¦esp. 留める\tv1,vt¦¦to detain¦to keep in custody¦esp. 留める",
   ],
 };

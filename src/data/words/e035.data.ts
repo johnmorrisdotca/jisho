@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 36 of 220, from "0tu1k". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 36 of 220, from "0ttwu". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,23 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0ttwu\t線グラフ\tせんグラフ\tn¦¦line graph¦line chart",
+    "0ttx4\t線画\tせんが\tn¦¦line drawing",
+    "0ttxe\t線形|線型\tせんけい\tadj-no,adj-na,n¦math,physics,comp¦linear",
+    "0ttxo\t線形代数\tせんけいだいすう\tn¦¦linear algebra",
+    "0ttxy\t線形論理\tせんけいろんり\tn¦¦linear logic",
+    "0tty8\t線香\tせんこう\tn¦¦incense stick",
+    "0ttyi\t線速度\tせんそくど\tn¦¦linear velocity",
+    "0ttys\t線分\tせんぶん\tn¦math¦line segment",
+    "0ttz2\t線量\tせんりょう\tn¦¦dose (of radioactivity)",
+    "0ttzc\t線路\tせんろ\tn¦¦railway track¦railway line¦railroad¦railway¦track¦line",
+    "0ttzm\t繊維|線維\tせんい\tn¦¦fibre¦fiber¦線維 only used in medical contexts",
+    "0ttzw\t繊維光学\tせんいこうがく\tn¦¦fiber optics¦fibre optics",
+    "0tu06\t繊維工業\tせんいこうぎょう\tn¦¦textile industry",
+    "0tu0g\t繊維性\tせんいせい\tadj-na¦¦fibrous",
+    "0tu0q\t繊細\tせんさい\tadj-na,n¦¦dainty¦delicate (e.g. fingers)¦fine¦slim\tadj-na,n¦¦sensitive¦delicate (feelings, sense, etc.)¦subtle",
+    "0tu10\t羨ましい|羨しい~sK\tうらやましい\tadj-i¦¦envious¦jealous\tadj-i¦¦enviable (position, etc.)",
+    "0tu1a\t羨む\tうらやむ\tv5m,vt¦¦to envy¦to be envious of¦to be jealous of",
     "0tu1k\t羨望\tせんぼう\tn,vs,vt¦¦envy",
     "0tu1u\t腺\tせん\tn,n-suf¦¦gland",
     "0tu24\t腺様\tせんよう\tn,adj-no¦¦adenoid",
@@ -1032,11 +1049,5 @@ export const PIECE: WordsPiece = {
     "0u26c\t走り続ける\tはしりつづける\tv1¦¦to keep running",
     "0u26m\t走り抜く\tはしりぬく\tv5k¦¦to outrun¦to run through to the end",
     "0u26w\t走り抜ける|走りぬける\tはしりぬける\tv1,vi¦¦to run through¦to run past",
-    "0u276\t走り幅跳び|走幅跳|走幅跳び~sK|走り幅跳~sK\tはしりはばとび\tn¦¦long jump",
-    "0u27g\t走る|奔る~rK|疾る~rK|趨る~rK\tはしる\tv5r,vi¦¦to run\tv5r,vi¦¦to run (of a vehicle)¦to drive¦to travel¦to move¦to sail\tv5r,vi¦¦to rush (to)¦to dash¦to race\tv5r,vi¦¦to retreat¦to flee¦to defect (to)\tv5r,vi¦¦to run away¦to abscond¦to elope¦occ. 奔る\tv5r,vi¦¦to flash (of lightning)¦to streak¦to shoot (through; e.g. of pain)¦to run (through)¦to flare¦to flit (e.g. across one's face)¦to spread quickly (of news, shock, etc.)\tv5r,vi¦¦to go (e.g. bad, to extremes)¦to become¦to turn¦to take to (e.g. crime)¦to get carried away by (e.g. one's emotions)¦to get involved in¦to get wrapped up in¦as 〜に走る; occ. 趨る\tv5r,vi¦¦to run (through; of a road, street, etc.)¦to extend (e.g. of a mountain range)¦to stretch¦to lie",
-    "0u27q\t走行\tそうこう\tn,vs,vi¦¦running (of a car, bus, etc.)¦traveling¦travelling\tn,vs,vi¦rare,comp¦running (of a program)¦実行・2",
-    "0u280\t走行可能\tそうこうかのう\tn¦¦executable¦movable",
-    "0u28a\t走行距離\tそうこうきょり\tn¦¦distance travelled¦mileage",
-    "0u28k\t走行時間\tそうこうじかん\tn¦¦journey time¦travelling time¦travel time¦transit time¦run time",
   ],
 };

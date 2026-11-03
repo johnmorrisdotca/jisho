@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 216 of 220, from "3b0xb". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 216 of 220, from "3b0vh". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,34 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "3b0vh\t東京アメリカンクラブ\tとうきょうアメリカンクラブ\tn¦organization¦Tokyo American Club",
+    "3b0vi\t東京エレクトロン株式会社\tとうきょうエレクトロンかぶしきがいしゃ\tn¦organization¦Tokyo Electron Limited",
+    "3b0vk\t東京ガス|東京瓦斯\tとうきょうガス\tn¦company¦Tokyo Gas",
+    "3b0vw\t東京モーターショー\tとうきょうモーターショー\tn¦ev¦Tokyo Motor Show",
+    "3b0vx\t東京ヤクルトスワローズ\tとうきょうヤクルトスワローズ\tn¦organization¦Tokyo Yakult Swallows (Japanese pro baseball team)",
+    "3b0vz\t東京医科歯科大学\tとうきょういかしかだいがく\tn¦organization¦Tokyo Medical and Dental University",
+    "3b0w1\t東京医科大学\tとうきょういかだいがく\tn¦organization¦Tokyo Medical University",
+    "3b0w3\t東京医歯大学\tとうきょういしだいがく\tn¦organization¦Tōkyōishi University",
+    "3b0w8\t東京家政学院大学\tとうきょうかせいがくいんだいがく\tn¦organization¦Tokyo Women's College of Home Economics",
+    "3b0w9\t東京家政学院筑波女子大学\tとうきょうかせいがくいんつくばじょしだいがく\tn¦organization¦Tokyo Kasei Gakuin Tsukuba Women's University",
+    "3b0wa\t東京家政大学\tとうきょうかせいだいがく\tn¦organization¦Tokyo Kasei University",
+    "3b0wd\t東京海上火災保険\tとうきょうかいじょうかさいほけん\tn¦organization¦Tokio Marine and Fire Insurance Company, Limited",
+    "3b0we\t東京海上日動\tとうきょうかいじょうにちどう\tn¦company¦Tokio Marine & Nichido Fire Insurance",
+    "3b0wf\t東京海洋大学\tとうきょうかいようだいがく\tn¦organization¦Tokyo University of Marine Science and Technology",
+    "3b0wi\t東京外国語大学\tとうきょうがいこくごだいがく\tn¦organization¦Tokyo University of Foreign Studies¦TUFS",
+    "3b0wj\t東京学芸大学\tとうきょうがくげいだいがく\tn¦organization¦Tokyo Gakugei University",
+    "3b0wl\t東京観光専門学校\tとうきょうかんこうせんもんがっこう\tn¦organization¦Tokyo Institute of Tōrism",
+    "3b0wn\t東京基督教大学\tとうきょうきりすときょうだいがく\tn¦organization¦Tokyo Christian University",
+    "3b0wo\t東京急行電鉄\tとうきょうきゅうこうでんてつ\tn¦company¦Tokyu Corporation",
+    "3b0wr\t東京金融取引所\tとうきょうきんゆうとりひきしょ\tn¦organization¦Tokyo Financial Exchange Inc.",
+    "3b0ws\t東京銀行\tとうきょうぎんこう\tn¦company¦Bank of Tokyo Ltd.",
+    "3b0wu\t東京経済大学\tとうきょうけいざいだいがく\tn¦organization¦Tokyo Keizai University",
+    "3b0wy\t東京工科大学\tとうきょうこうかだいがく\tn¦organization¦Tokyo University of Technology",
+    "3b0wz\t東京工学院専門学校\tとうきょうこうがくいんせんもんがっこう\tn¦organization¦Technos International College",
+    "3b0x0\t東京工業高専\tとうきょうこうぎょうこうせん\tn¦organization¦Tokyo Industrial College",
+    "3b0x1\t東京工業大学\tとうきょうこうぎょうだいがく\tn¦organization¦Tokyo Institute of Technology (until 2024)¦TIT",
+    "3b0x2\t東京工芸大学\tとうきょうこうげいだいがく\tn¦organization¦Tokyo Polytechnic University",
+    "3b0x7\t東京高裁\tとうきょうこうさい\tn¦organization¦Tokyo High Court",
     "3b0xb\t東京国際大学\tとうきょうこくさいだいがく\tn¦organization¦Tokyo International University",
     "3b0xc\t東京国税局\tとうきょうこくぜいきょく\tn¦organization¦Tokyo Regional Taxation Bureau",
     "3b0xg\t東京国立文化財研究所\tとうきょうこくりつぶんかざいけんきゅうしょ\tn¦organization¦Tokyo National Research Institute of Cultural Properties",
@@ -757,31 +785,5 @@ export const PIECE: WordsPiece = {
     "3bnu4\t日本不老医学協会\tにっぽんおいずいがくきょうかい\tn¦organization¦Japan Society of Anti-Aging Medicine",
     "3bnu5\t日本付着生物学会\tにっぽんふちゃくせいぶつがっかい\tn¦organization¦Sessile Organisms Society of Japan¦SOSJ",
     "3bnu6\t日本婦人会議\tにっぽんふじんかいぎ\tn¦organization¦Japan Woman's Council",
-    "3bnu7\t日本浮世絵協会\tにっぽんうきよえきょうかい\tn¦organization¦Japan Ukiyo-e Society",
-    "3bnue\t日本福祉介護情報学会\tにっぽんふくしかいごじょうほうがっかい\tn¦organization¦Japan Institute of Social Services and Informatics",
-    "3bnuf\t日本福祉教育専門学校\tにっぽんふくしきょういくせんもんがっこう\tn¦organization¦Japan Welfare Education College",
-    "3bnuh\t日本福祉大学\tにほんふくしだいがく\tn¦organization¦Nihon Fukushi University",
-    "3bnui\t日本福祉文化学会\tにっぽんふくしぶんかがっかい\tn¦organization¦Japanese Society for the Study of Human Welfare and Culture",
-    "3bnuj\t日本複合材料学会\tにっぽんふくごうざいりょうがっかい\tn¦organization¦Japan Society for Composite Materials",
-    "3bnuk\t日本物理教育学会\tにっぽんぶつりきょういくがっかい\tn¦organization¦Physics Education Society of Japan",
-    "3bnul\t日本文化人類学会\tにっぽんぶんかじんるいがっかい\tn¦organization¦Japanese Society of Cultural Anthropology¦JASCA",
-    "3bnun\t日本文化大学\tにほんぶんかだいがく\tn¦organization¦Nihon Bunka University",
-    "3bnuo\t日本文学協会\tにっぽんぶんがくきょうかい\tn¦organization¦Japanese Literature Association",
-    "3bnup\t日本文理大学\tにほんぶんりだいがく\tn¦organization¦Nippon Bunri University",
-    "3bnuq\t日本聞き書き学会\tにっぽんききがきがっかい\tn¦organization¦Japan Folk Narrative Recording Society",
-    "3bnuv\t日本平和学会\tにっぽんへいわがっかい\tn¦organization¦Peace Studies Association of Japan¦PSAJ",
-    "3bnuw\t日本弁護士国民年金基金\tにっぽんべんごしこくみんねんきんききん\tn¦organization¦Japan Attorneys Pension Fund",
-    "3bnux\t日本弁護士連合会\tにほんべんごしれんごうかい\tn¦company¦Japan Federation of Bar Associations",
-    "3bnuy\t日本弁理士会\tにほんべんりしかい\tn¦organization¦Japan Patent Attorneys Association",
-    "3bnuz\t日本保育学会\tにっぽんほいくがっかい\tn¦organization¦Japan Society of Research on Early Childhood Care and Education",
-    "3bnv0\t日本保健医療社会学会\tにっぽんほけんいりょうしゃかいがっかい\tn¦organization¦Japanese Society of Health and Medical Sociology",
-    "3bnv1\t日本保健物理学会\tにっぽんほけんぶつりがっかい\tn¦organization¦Japan Health Physics Society",
-    "3bnv2\t日本保険学会\tにっぽんほけんがっかい\tn¦organization¦Japanese Society of Insurance Science",
-    "3bnv3\t日本捕鯨協会\tにっぽんほげいきょうかい\tn¦organization¦Japan Whaling Association¦JWA",
-    "3bnv4\t日本補完代替医療学会\tにっぽんほかんだいたいいりょうがっかい\tn¦organization¦Japanese Society for Complementary and Alternative Medicine¦JCAM",
-    "3bnv5\t日本補綴歯科学会\tにっぽんほていしかがっかい\tn¦organization¦Japan Prosthodontic Society",
-    "3bnv6\t日本母性衛生学会\tにっぽんぼせいえいせいがっかい\tn¦organization¦Japan Society of Maternal Health",
-    "3bnv7\t日本包装学会\tにっぽんほうそうがっかい\tn¦organization¦Society of Packaging Science & Technology, Japan",
-    "3bnv8\t日本宝石協同組合\tにっぽんほうせききょうどうくみあい\tn¦organization¦Japan Jewelers Association¦JJA",
   ],
 };

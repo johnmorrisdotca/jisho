@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 23 of 220, from "0qyqy". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 23 of 220, from "0qyoq". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,14 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0qyoq\t検討委員会\tけんとういいんかい\tn¦¦investigative commission",
+    "0qyp0\t検尿\tけんにょう\tn,vs,vi¦¦urinalysis",
+    "0qypa\t検波\tけんぱ\tn,vs,vt¦¦detection (e.g. of radio waves)¦detecting\tn,vs,vt¦¦demodulation",
+    "0qypk\t検便\tけんべん\tn,vs,vi¦¦stool (feces) examination",
+    "0qypu\t検問\tけんもん\tn,vs,vt¦¦inspection¦examination¦check\tn,vs¦¦checkpoint¦screening¦inspection (esp. by police or security)",
+    "0qyq4\t検問所\tけんもんじょ|けんもんしょ\tn¦¦check station¦checkpoint",
+    "0qyqe\t検量線\tけんりょうせん\tn¦¦calibration curve¦standard curve¦analytical curve",
+    "0qyqo\t権\tけん\tn-suf,n¦¦right (to do something)\tn,n-suf¦¦authority¦power",
     "0qyqy\t権威\tけんい\tn¦¦authority¦power¦influence¦prestige\tn¦¦(an) authority (on)¦expert",
     "0qyr8\t権益\tけんえき\tn¦¦rights and interests (esp. those a country holds abroad)",
     "0qyri\t権化\tごんげ\tn¦Buddh¦incarnation (of Buddha or bodhisattva)¦avatar¦実化\tn¦¦embodiment (as in \"embodiment of evil\")¦incarnation¦personification",
@@ -33,7 +41,7 @@ export const PIECE: WordsPiece = {
     "0qyws\t牽制球|けん制球|けんせい球~sK\tけんせいきゅう\tn¦baseb¦pickoff throw¦pickoff attempt",
     "0qyx2\t牽束\tけんそく\tn¦¦restraint¦being exclusively absorbed in something",
     "0qyxc\t牽連\tけんれん\tn,vs¦¦related to",
-    "0qyxm\t犬|狗\tいぬ|イヌ~~~!\tn¦¦dog (Canis (lupus) familiaris)¦canine\tn-pref¦¦counterfeit¦inferior¦useless¦wasteful",
+    "0qyxm\t犬|狗\tいぬ|イヌ~~~!\tn¦¦dog (Canis (lupus) familiaris)¦canine\tn-pref¦¦counterfeit¦inferior¦useless¦wasteful¦4",
     "0qyxw\t犬猿の仲\tけんえんのなか\texp,n¦id¦like cats and dogs¦(on) very bad terms¦relationship of dogs and monkeys",
     "0qyy6\t犬歯\tけんし\tn,adj-no¦¦eyetooth¦cuspid¦canine (tooth)¦dogtooth¦糸切り歯",
     "0qyyg\t犬舎\tけんしゃ\tn¦¦kennel¦doghouse",
@@ -856,7 +864,7 @@ export const PIECE: WordsPiece = {
     "0r5ik\t孤立\tこりつ\tn,vs,vi¦¦isolation¦being alone¦being friendless",
     "0r5iu\t孤立化\tこりつか\tn,vs¦¦isolation",
     "0r5j4\t孤立主義\tこりつしゅぎ\tn¦¦isolationism",
-    "0r5je\t己|己れ\tおのれ\tpn¦poet¦oneself (itself, etc.)\tpn¦hum¦I¦me\tadv¦¦by oneself (itself, etc.)\tint¦¦interjection expressing anger or chagrin",
+    "0r5je\t己|己れ\tおのれ\tpn¦poet¦oneself (itself, etc.)\tpn¦hum¦I¦me\tadv¦¦by oneself (itself, etc.)¦4\tint¦¦interjection expressing anger or chagrin¦5",
     "0r5jo\t庫裏|庫裡\tくり\tn¦Buddh¦temple kitchen¦monastery kitchen\tn¦Buddh¦quarters of a head priest (and his family)",
     "0r5jy\t弧を描く\tこをえがく\texp,v5k¦¦to draw an arc (e.g. with a compass)¦to describe an arc (e.g. through the air)¦to form an arc",
     "0r5k8\t弧光\tここう\tn¦¦arc light",
@@ -989,12 +997,5 @@ export const PIECE: WordsPiece = {
     "0r6km\t五弦|五絃\tごげん\tn¦¦five strings¦five-stringed instrument",
     "0r6kw\t五更\tごこう\tn¦arch¦the five night watches¦fifth watch of the night (approx. 3am to 5am)",
     "0r6l6\t五行\tごぎょう\tn¦¦the five elements (in Chinese philosophy: wood, fire, earth, metal and water)¦the five phases¦wu xing¦五大・ごだい・1\tn¦Buddh¦five practices of the Bodhisattvas\tn¦¦the five pillars of Islam¦六信五行",
-    "0r6lg\t五穀\tごこく\tn¦¦the five grains (wheat, rice, beans, millet (awa and kibi))",
-    "0r6lq\t五彩\tごさい\tn¦¦the five colours: green, yellow, red, white and black¦the five colors¦five-coloured porcelain¦five-colored porcelain",
-    "0r6m0\t五指\tごし\tn¦¦the five fingers\tn¦¦leading five¦top five",
-    "0r6ma\t五種競技\tごしゅきょうぎ\tn¦sports¦pentathlon",
-    "0r6mk\t五十音\tごじゅうおん\tn¦¦the Japanese syllabary",
-    "0r6mu\t五十音順|５０音順\tごじゅうおんじゅん\tn¦¦standard gojūon syllabary order (beginning with aiueo)¦五十音|アイウエオ順",
-    "0r6n4\t五十三次\tごじゅうさんつぎ\tn¦hist,abbr¦fifty-three stations on the Tōkaidō (Edo-Kyoto highway in Edo-period Japan)¦東海道五十三次",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 211 of 220, from "1pk0s". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 211 of 220, from "1pk04". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,29 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "1pk04\t押っ圧折る|押っぺしょる|おっ圧折る\tおっぺしょる\tv5r,vt¦uk,col¦to snap (something) forcefully¦to break by force¦へし折る¦emphatic form of へし折る",
+    "1pk05\t忠義顔\tちゅうぎがお\tn¦¦feigned loyalty¦expression of loyalty¦show of loyalty",
+    "1pk06\t画餅に帰する\tがべいにきする\texp,vs-s¦¦to come to nothing¦to end in failure¦to fall through¦画餅に帰す",
+    "1pk07\t土性っ骨~ateji\tどしょっぽね\tn¦¦one's innate character¦spirit¦backbone¦土性骨¦emphatic form of 土性骨",
+    "1pk08\t鉄砲組\tてっぽうぐみ\tn¦hist¦musketeer corps¦arquebusier unit¦unit of foot soldiers armed with firearms",
+    "1pk09\t薪雑把|真木撮棒|薪ざっぽう~sK|薪ざっぽ~sK|薪ざっぱ~sK\tまきざっぽう|まきざっぽ|まきざっぱ~rk\tn¦arch¦split firewood¦firewood chunks¦billet",
+    "1pk0a\t\tたあ|た\texp,prt¦col¦indicates word or phrase being defined¦とは・1\texp,prt¦col¦used for quoting (thoughts, speech, etc.)¦とは・2¦indicates contrast or adds emphasis to a negative statement\texp,prt¦col¦with¦とは・3¦more emphatic than と\texp,prt¦col¦(not) as much as¦(not) so much as¦とは・4¦with neg. verb\texp,prt¦col¦the fact that¦to think that¦such a thing as¦とは・5¦indicates surprise, disbelief, anger, etc.; sometimes at sentence end",
+    "1pk0b\t弓杖\tゆんづえ|ゆみづえ|ゆづえ\tn¦¦bow used as a walking stick\tn¦¦length of a bow",
+    "1pk0c\t放れ駒\tはなれごま\tn¦arch¦loose horse¦riderless horse¦駒・2",
+    "1pk0e\t新関\tしんせき\tn¦arch¦newly built checkpoint¦関所",
+    "1pk0f\t野に伏し山に伏す\tのにふしやまにふす\texp,v5s¦rare,id¦to endure hardship while traveling¦to face troubles on a journey",
+    "1pk0g\t実にや\tげにや\tadv¦uk,arch¦truly!¦indeed!¦how true!",
+    "1pk0h\t男が立つ|男がたつ~sK\tおとこがたつ\texp,v5t¦id¦to maintain one's honor as a man¦to save face (as a man)¦to have one's honor upheld¦usu. in the negative",
+    "1pk0i\t\tからは\texp,prt,conj¦dated¦now that¦since¦so long as¦because¦からには¦は is pronounced as わ; indicates that what follows is natural or expected",
+    "1pk0j\t大事ない|大事無い\tだいじない\tadj-i¦dated¦alright¦of no concern¦unproblematic¦okay¦fine",
+    "1pk0k\t阿毘羅吽欠蘇婆訶|阿毘羅吽欠裟婆呵\tあびらうんけんそわか|アビラウンケンソワカ~~~!\texp¦uk,Buddh¦a-bi-ra-un-ken so-wa-ka (mantra directed to Vairocana)¦大日如来¦san~a vi ra hūṃ khaṃ svāhā",
+    "1pk0l\t大恩教主\tだいおんきょうしゅ\tn¦hon,Buddh¦Gautama Buddha¦Shakyamuni¦the historical Buddha¦釈迦牟尼",
+    "1pk0m\t申すまでもない|申す迄もない~sK|申す迄も無い~sK\tもうすまでもない\texp,adj-i¦hum¦goes without saying¦needless to say¦obvious¦言うまでもない",
+    "1pk0n\t険山|嶮山\tけんざん\tn¦rare¦steep mountain¦precipitous mountain",
+    "1pk0o\t\tひょろつく\tv5k,vi¦¦to totter¦to stagger¦to tumble¦to reel¦to become unsteady (of one's feet)¦ひょろひょろ・1",
+    "1pk0p\t放れ馬\tはなれうま\tn¦¦runaway horse¦riderless horse",
+    "1pk0q\t狂疾\tきょうしつ\tn¦arch¦mental illness¦madness¦insanity",
+    "1pk0r\t狂笑\tきょうしょう\tn¦¦mad laughter¦maniacal laughter",
     "1pk0s\t既知感\tきちかん\tn¦¦déjà connu¦feeling of already knowing¦FOK",
     "1pk0t\tＴＨＣ\tティー・エイチ・シー|ティーエイチシー~sk\tn¦chem¦tetrahydrocannabinol¦THC",
     "1pk0u\t調室|調べ室\tしらべしつ\tn¦rare¦interrogation room¦interview room¦sweatbox¦取調室",
@@ -828,36 +851,5 @@ export const PIECE: WordsPiece = {
     "1pkpd\t\tボアアップ|ボア・アップ\tn,vs,vt¦¦boring out (an engine)¦increasing engine displacement¦engw~bore up",
     "1pkpe\t\tブローパイプ\tn¦rare¦blowpipe¦吹管",
     "1pkpf\t老朽車\tろうきゅうしゃ\tn¦¦worn-out vehicle¦decrepit car",
-    "1pkpg\t吸気系\tきゅうきけい\tn¦¦intake system (of an engine)¦air intake system",
-    "1pkph\t採光窓\tさいこうまど\tn¦¦skylight¦clerestory¦lighting window",
-    "1pkpi\t偏執的\tへんしゅうてき|へんしつてき\tadj-na¦¦paranoid¦obsessive¦fixated¦monomaniacal",
-    "1pkpj\t生理前症候群\tせいりぜんしょうこうぐん|せいりまえしょうこうぐん\tn¦med¦premenstrual syndrome¦PMS¦月経前症候群",
-    "1pkpk\t成り果せる|成りおおせる~sK\tなりおおせる\tv1,vi¦uk¦to turn completely into¦to become completely",
-    "1pkpl\t磁気ワイヤ|磁気ワイヤー\tじきワイヤ~~磁気ワイヤ|じきワイヤー~~磁気ワイヤー\tn¦¦magnetic wire",
-    "1pkpn\t\tプレスアップ\tn¦rare¦press-up¦press up¦push up¦腕立て伏せ",
-    "1pkpo\t\tコンパクトカセット|コンパクト・カセット\tn¦¦compact cassette¦cassette tape",
-    "1pkpp\t記録計\tきろくけい\tn¦¦recorder¦data logger",
-    "1pkpq\t記録計器\tきろくけいき\tn¦¦recorder¦data logger¦記録計",
-    "1pkpr\t\tデータレコーダー|データ・レコーダー|データーレコーダー~sk|データーレコーダ~sk\tn¦¦data recorder",
-    "1pkps\t\tヘッドクリーナー|ヘッド・クリーナー\tn¦¦(tape) head cleaner",
-    "1pkpt\t\tピンチローラー|ピンチ・ローラー\tn¦¦pinch roller (e.g on tape recorder)",
-    "1pkpu\t家凸\tいえとつ\tn¦net-sl¦suddenly appearing uninvited at someone's home",
-    "1pkpv\t厄介がる\tやっかいがる\tv5r,vt¦¦to consider troublesome¦to regard as a nuisance",
-    "1pkpw\t茹だる|茹る\tうだる\tv5r,vi¦uk¦to be oppressed by heat¦to swelter\tv5r,vi¦uk,col¦to boil¦to seethe¦茹だる・ゆだる",
-    "1pkpx\t尾長犬鷲|尾長狗鷲\tオナガイヌワシ~~~!|おながいぬわし\tn¦uk¦wedge-tailed eagle (Aquila audax)",
-    "1pkpy\t尾長チンチラ\tオナガチンチラ~~~!|おながチンチラ\tn¦uk¦long-tailed chinchilla (Chinchilla lanigera)¦Chilean chinchilla",
-    "1pkpz\t尾長蜘蛛\tオナガグモ~~~!|おながぐも\tn¦uk¦Ariamnes cylindrogaster (spider in the Theridiidae family)",
-    "1pkq0\t尾長揚羽|尾長揚羽蝶\tオナガアゲハ~~~!|おながあげは\tn¦uk¦long-tailed spangle (Papilio macilentus)¦long-tailed swallowtail",
-    "1pkq1\t\tディサースリア\tn¦med¦dysarthria",
-    "1pkq2\t昔々あるところに|昔々ある所に|むかしむかしある所に~sK|昔々ある処に~sK|むかしむかしある処に~sK\tむかしむかしあるところに\texp¦¦once upon a time¦昔々",
-    "1pkq3\t組織網\tそしきもう\tn¦¦organizational network¦organizational web",
-    "1pkq4\t球面収差\tきゅうめんしゅうさ\tn¦photo,physics¦spherical aberration",
-    "1pkq5\t軟焦点レンズ\tなんしょうてんレンズ\tn¦photo¦soft-focus lens¦ソフトフォーカスレンズ",
-    "1pkq6\t小紙\tしょうし\tn¦¦small piece of paper¦scrap of paper\tn¦hum¦our newspaper¦this newspaper¦弊紙",
-    "1pkq7\t孫衛星\tまごえいせい\tn¦astron¦subsatellite¦submoon¦moonlet",
-    "1pkq8\tひそひそ声|ヒソヒソ声\tひそひそごえ\tn¦¦whisper¦whispered voice¦low voice¦quiet voice¦ひそひそ・1",
-    "1pkq9\t父\tちゃん\tn¦obs,col,uk¦dad¦father¦父・ちち・1¦also used dialectally",
-    "1pkqa\t父\tかぞ|かそ~ok\tn¦arch¦father¦父・ちち・1",
-    "1pkqb\t傾斜路\tけいしゃろ\tn¦¦ramp¦slope¦incline",
   ],
 };

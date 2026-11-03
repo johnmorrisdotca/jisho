@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 25 of 220, from "0rf3k". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 25 of 220, from "0rf0s". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,16 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0rf0s\t攻撃ヘリコプター\tこうげきヘリコプター\tn¦¦attack helicopter",
+    "0rf12\t攻撃開始線\tこうげきかいしせん\tn¦mil¦line of departure",
+    "0rf1c\t攻撃部隊\tこうげきぶたい\tn¦¦attacking forces",
+    "0rf1m\t攻撃方向\tこうげきほうこう\tn¦¦attacking direction",
+    "0rf1w\t攻守\tこうしゅ\tn¦¦offense and defense¦offence and defence¦batting and fielding",
+    "0rf26\t攻城\tこうじょう\tn,vs¦¦castle siege",
+    "0rf2g\t攻勢\tこうせい\tn¦¦offensive (movement)¦aggression",
+    "0rf2q\t攻防\tこうぼう\tn¦¦offense and defense¦offence and defence",
+    "0rf30\t攻防戦\tこうぼうせん\tn¦¦battle",
+    "0rf3a\t攻略\tこうりゃく\tn,vs,vt¦¦capture (of enemy territory)¦taking (by storm)¦conquest¦attack¦assault\tn,vs,vt¦¦defeating (an opponent)\tn,vs,vt¦¦attacking (a problem) strategically\tn¦vidg¦strategy¦tactics¦walkthrough¦guide",
     "0rf3k\t更かす\tふかす\tv5s,vt¦¦to sit up late",
     "0rf3u\t更ける|深ける~rK\tふける\tv1,vi¦¦to get late¦to advance¦to wear on",
     "0rf44\t更なり\tさらなり\tn¦¦of course",
@@ -793,7 +803,7 @@ export const PIECE: WordsPiece = {
     "0rlfm\t黒める\tくろめる\tv1,vt¦¦to blacken (something)¦to make something black\tv1,vt¦¦to talk wrong into right",
     "0rlfw\t黒らか\tくろらか\tn¦¦blackness¦deep black",
     "0rlg6\t黒奴\tこくど\tn¦obs¦black slave",
-    "0rlgb\t黒んぼ|黒ん坊|黒んぼう~sK\tくろんぼ|くろんぼう~~黒ん坊|クロンボ~~~!|クロンボー~~~!\tn¦uk¦well-tanned person\tn¦uk¦(wheat) smut\tn¦uk,kabuki¦stagehand¦prompter¦黒衣・くろご・1",
+    "0rlgb\t黒んぼ|黒ん坊|黒んぼう~sK\tくろんぼ|くろんぼう~~黒ん坊|クロンボ~~~!|クロンボー~~~!\tn¦uk¦well-tanned person¦2\tn¦uk¦(wheat) smut¦3\tn¦uk,kabuki¦stagehand¦prompter¦黒衣・くろご・1¦4",
     "0rlgg\t黒衣の宰相\tこくいのさいしょう|こくえのさいしょう\texp,n¦¦Buddhist priest who is also an important politician",
     "0rlgq\t黒雲母\tくろうんも\tn¦min¦biotite¦black or green mica",
     "0rlh0\t黒影|黒翳\tこくえい\tn¦¦silhouette¦dark shadow",
@@ -1031,13 +1041,5 @@ export const PIECE: WordsPiece = {
     "0rnbe\t懇望\tこんもう|こんぼう\tn,vs,vt¦¦entreaty¦solicitation¦earnest request",
     "0rnbo\t懇話\tこんわ\tn,vs,vi¦¦friendly talk¦chat",
     "0rnby\t昏睡\tこんすい\tn,vs,vi¦med¦coma\tn,vs,vi¦¦deep sleep¦falling fast asleep",
-    "0rnc8\t昏睡状態|こん睡状態\tこんすいじょうたい\tn,adj-no¦¦comatose state",
-    "0rnci\t昏倒|こん倒~sK\tこんとう\tn,vs,vi¦¦falling (down) unconscious¦fainting (and collapsing)",
-    "0rncs\t昆虫\tこんちゅう\tn,adj-no¦¦insect¦bug",
-    "0rnd2\t昆虫学\tこんちゅうがく\tn¦¦entomology",
-    "0rndc\t昆虫採集\tこんちゅうさいしゅう\tn¦¦insect collecting",
-    "0rndm\t昆布茶|こぶ茶\tこぶちゃ|こんぶちゃ~~昆布茶\tn¦¦kelp tea¦seaweed tea¦unrelated to the drink known as \"kombucha\" in English",
-    "0rndw\t根\tね\tn¦¦root (of a plant)\tn¦¦root (of a tooth, hair, etc.)¦center (of a pimple, etc.)\tn¦¦root (of all evil, etc.)¦source¦origin¦cause¦basis\tn¦¦one's true nature\tn¦¦(fishing) reef",
-    "0rne6\t根ざす|根差す\tねざす\tv5s,vi¦¦to come from¦to have roots in",
   ],
 };

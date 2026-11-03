@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 28 of 220, from "0s3bs". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 28 of 220, from "0s3ao". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0s3ao\t止む|已む~rK|罷む~rK|熄む~rK|歇む~rK\tやむ\tv5m,vi¦¦to cease¦to stop¦to be over",
+    "0s3ay\tやむを得ず|止むを得ず|已むを得ず\tやむをえず\texp,adv¦¦unavoidably¦inevitably¦necessarily¦reluctantly¦against one's will",
+    "0s3b8\t止め\tとどめ\tn¦uk¦finishing blow¦coup de grâce¦とどめを刺す・1",
+    "0s3bi\t止める|留める|停める\tとめる\tv1,vt¦¦to stop¦to turn off¦esp. 止める, 停める\tv1,vt¦¦to park¦esp. 止める, 停める\tv1,vt¦¦to prevent¦to suppress (a cough)¦to hold back (tears)¦to hold (one's breath)¦to relieve (pain)¦esp. 止める, 停める\tv1,vt¦¦to stop (someone from doing something)¦to dissuade¦to forbid¦to prohibit\tv1,vt¦¦to notice¦to be aware of¦to concentrate on¦to pay attention to¦to remember¦to bear in mind¦目を留める|気に留める\tv1,vt¦¦to fix (in place)¦to fasten¦to tack¦to pin¦to nail¦to button¦to staple¦esp. 留める\tv1,vt¦¦to detain¦to keep in custody¦esp. 留める",
     "0s3bs\t止める|已める|廃める\tやめる\tv1,vt¦uk¦to stop (an activity)¦to cease¦to discontinue¦to end¦to quit¦止める|已める\tv1,vt¦uk¦to cancel¦to abandon¦to give up¦to abolish¦to abstain¦to refrain",
     "0s3c2\t止血\tしけつ\tn,vs,vi¦¦stopping of bleeding¦stanching¦hemostasis¦haemostasis",
     "0s3cc\t止血剤\tしけつざい\tn¦pharm¦hemostatic agent¦haemostatic agent¦hemostatic¦styptic",
@@ -890,7 +894,7 @@ export const PIECE: WordsPiece = {
     "0sabg\t執拗|執よう\tしつよう|しつおう~~執拗\tadj-na¦¦persistent¦obstinate¦tenacious¦relentless¦insistent¦importunate¦persevering¦stubborn",
     "0sabq\t失う|喪う~rK|失なう~sK|亡う~sK\tうしなう\tv5u,vt¦¦to lose\tv5u,vt¦¦to miss (a chance, opportunity)\tv5u,vt¦¦to lose (a loved one)¦to be bereaved of\tv5u,vt¦¦to concede (goals, points, etc.)",
     "0sac0\t失する\tしっする\tvs-s,vt¦¦to lose¦to miss¦to forget¦to be excessive",
-    "0saca\t失せる\tうせる\tv1,vi¦¦to disappear¦to vanish¦to fade away\tv1,vi¦euph,dated¦to die",
+    "0saca\t失せる\tうせる\tv1,vi¦¦to disappear¦to vanish¦to fade away\tv1,vi¦euph,dated¦to die¦3",
     "0sack\t失せ去る\tうせさる\tv5r¦¦to disappear¦to be gone",
     "0sacu\t失せ物|うせ物~sK\tうせもの\tn¦¦lost article",
     "0sad4\t失意\tしつい\tn,adj-no¦¦disappointment¦despair¦despondency¦broken heart¦adversity",
@@ -1063,16 +1067,5 @@ export const PIECE: WordsPiece = {
     "0sbo2\t実用化\tじつようか\tn,vs¦¦making practical¦making useful¦implementing",
     "0sboc\t実用新案\tじつようしんあん\tn¦¦practical model¦utility model¦new design for practical use",
     "0sbom\t実用的\tじつようてき\tadj-na¦¦practical¦useful¦utilitarian¦pragmatic",
-    "0sbow\t実利\tじつり\tn¦¦utility¦(actual) profit¦actual benefit¦material gain",
-    "0sbp6\t実力\tじつりょく\tn¦¦(real) ability¦true strength¦merit¦efficiency¦competency\tn¦¦arms¦force¦実力行使",
-    "0sbpg\t実力行使\tじつりょくこうし\tn¦¦use of force",
-    "0sbpq\t実力者\tじつりょくしゃ\tn¦¦influential person¦powerful person¦big wheel¦big gun¦power behind the throne",
-    "0sbq0\t実例\tじつれい\tn¦¦example¦illustration¦precedent",
-    "0sbqa\t実録\tじつろく\tn¦¦authentic account",
-    "0sbqk\t実話\tじつわ\tn,adj-no¦¦true story",
-    "0sbqu\t偲ぶ|慕ぶ~rK\tしのぶ\tv5b,vt¦¦to recollect¦to remember¦to reminisce¦to be nostalgic for\tv5b,vt¦uk¦to imagine¦to guess¦to infer¦usu. in the passive as しのばれる\tv4b,vt¦arch¦to admire (e.g. beauty)¦to praise¦to commend",
-    "0sbre\t芝\tしば\tn¦¦lawn¦sod¦turf",
-    "0sbro\t芝刈り機|芝刈機|芝刈り器\tしばかりき\tn¦¦lawnmower",
-    "0sbry\t芝居\tしばい\tn¦¦play¦drama",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 5 of 220, from "0mbzm". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 5 of 220, from "0mbz". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0mbz2\t\tキャラバンシューズ|キャラバン・シューズ\tn¦tradem¦light mountain-climbing shoes¦engw~Caravan shoes",
     "0mbzm\t\tキャリー\tn¦¦carry¦carrying",
     "0mbzw\t\tキャリア|キャリヤ~sk|キャリアー~sk|キャリヤー~sk\tn¦¦career¦occupation\tn¦¦personal history¦professional experience\tn¦¦government employee who has passed the highest national civil service exam",
     "0mc0g\t\tキャリアウーマン|キャリア・ウーマン\tn¦¦career woman",
@@ -1203,7 +1204,5 @@ export const PIECE: WordsPiece = {
     "0mm9c\t\tサーメン\tn¦col¦sperm¦semen¦cum",
     "0mm9m\t\tサーモエレメント\tn¦¦thermoelement",
     "0mm9w\t\tサーモコンクリート\tn¦¦thermoconcrete",
-    "0mma6\t\tサーモスタット\tn¦¦thermostat",
-    "0mmag\t\tサーモメーター|サーモメータ\tn¦¦thermometer¦温度計・おんどけい",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 40 of 220, from "0upn". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 40 of 220, from "0upmi". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0upmi\t通じ合う|通じあう\tつうじあう\tv5u,vi¦¦to be understood by each other (of thoughts, feelings, etc.)¦to be comprehended\tv5u,vt¦¦to exchange with each other (thoughts, feelings, etc.)¦to express to each other (e.g. intentions)¦to communicate with each other",
+    "0upms\t通す|徹す~rK|透す~rK\tとおす\tv5s,vt¦¦to let pass¦to allow through¦to let through¦to make way (for)\tv5s,vt¦¦to transmit (e.g. light, sound, etc.)¦to conduct (electricity)¦to let permeate (e.g. water through a fabric)¦to permit through¦to let through (e.g. air)¦to run through (e.g. a pipe)¦to penetrate¦to let in\tv5s,vt¦¦to stick through (e.g. a hole)¦to force through (e.g. an opening)¦to thread (e.g. a needle)¦to put through\tv5s,vt¦¦to connect (e.g. two places)¦to open (a route, path, etc.)¦to link (e.g. by a road)¦to establish (a connection between)¦to join¦to extend up to (somewhere)\tv5s,vt¦¦to pass (a student, applicant, etc.)¦to admit (e.g. a student)¦to let through¦to let in\tv5s,vt¦¦to lead (someone) into (a house, room, etc.)¦to show in¦to guide in¦to admit (someone)\tv5s,vt¦¦to present logically¦to make (e.g. one's argument) convincing¦to be consistent (in one's reasoning)¦to stick to (e.g. one's principles)¦筋を通す\tv5s,vt¦¦to go through (e.g. a middleman)¦to put as an intermediary¦to mediate via (somebody)¦to do via (something)¦as 通して...する\tv5s,vt¦¦to pass (a law)¦to put through (e.g. a motion)¦to make way (for)\tv5s,vt¦¦to listen through (a door, wall, etc.)¦to look through (e.g. a window)¦also written 透す\tv5s,vt¦food¦to heat thorougly (of food)¦to cook properly¦to warm well¦to heat evenly¦as 火（熱）を～\tv5s,vt¦food¦to dip into (e.g. a sauce)¦to pass through (e.g. a broth)¦to put through (e.g. boiling water)\tv5s,vt¦¦to make (someone) approve (e.g. a plan)¦to force agreement¦to push through (a proposal, idea, will, etc.)¦to have one's way\tv5s,vt¦¦to continue (in a state)¦to persist in (doing)¦to keep doing¦to remain (in a state)¦also as で～\tv5s,vt¦¦to do through the lens of¦to view from the angle of¦to do from the perspective of¦usu. as 通して...する\tv5s,vt¦¦to do to the entirety of¦to cover all of¦to span the whole¦目を通す\tv5s,vt¦¦to do from beginning to end without a break¦to finish in one session¦to do all at once¦to do in one go¦as 通して...する\tv5s,vt¦¦to relay (a message, an order, etc.)¦to convey (an intention, meaning, etc.)¦to send through¦to pass on (e.g. information)¦to make heard (e.g. one's voice)\tsuf,v5s¦¦to do ... to the end¦to do ... continuously¦to carry through ...¦to complete ...¦やり通す¦after the -masu stem of a verb",
     "0upn2\t通せんぼ|通せん坊|通せんぼう\tとおせんぼ~~通せんぼ,通せん坊|とおせんぼう~~通せん坊,通せんぼう\tn,vs,vt¦¦blocking the way¦standing in the way",
     "0upnc\t通り\tとおり\tn¦¦street¦road¦avenue¦thoroughfare\tn¦¦traffic¦coming and going\tn¦¦flow (of water, air, etc.)¦passage¦running\tn¦¦transmission (of sound)¦reach (of voice)\tn¦¦reputation¦favor¦favour¦popularity\tn¦¦understanding¦comprehension¦comprehensibility¦clarity\tn¦¦the same way (as)¦as (follows, stated, expected, etc.)\tctr¦¦counter for sets of things\tctr¦¦counter for methods, ways, kinds, etc.",
     "0upnm\t通り\tどおり|どうり~ik\tn-suf¦¦in accordance with¦following¦oft. as ～に or ～の\tn-suf¦¦roughly¦about\tn-suf¦¦Street¦Avenue",
@@ -944,37 +946,5 @@ export const PIECE: WordsPiece = {
     "0ux3y\t殿上の間\tてんじょうのま\tn¦¦palace floor",
     "0ux48\t殿上人\tてんじょうびと\tn¦¦courtier¦court official",
     "0ux4i\t殿達\tとのたち\tn¦¦the nobility\tn¦pol¦visitors",
-    "0ux4s\t殿中\tでんちゅう\tn¦¦in the palace",
-    "0ux52\t殿堂\tでんどう\tn¦¦palace¦hall\tn¦¦shrine¦temple¦sanctuary\tn¦¦hall of fame",
-    "0ux5c\t殿方\tとのがた|とのかた\tn¦hon,fem¦gentlemen¦men\tn¦¦the men's (sign on toilet, bathroom, etc. doors)¦often 殿方用",
-    "0ux5m\t殿様\tとのさま\tn¦hon¦nobleman¦dignitary¦lord\tn¦hist,hon¦feudal lord (of the Edo period)¦daimyo¦大名\tn¦¦man brought up away from the world¦arrogant man with little knowledge of the ways of the world",
-    "0ux5w\t殿様育ち\tとのさまそだち\tn¦¦brought up in luxury",
-    "0ux66\t殿様蛙\tとのさまがえる\tn¦uk¦black-spotted pond frog (Rana nigromaculata)",
-    "0ux6g\t殿様芸\tとのさまげい\tn¦¦dilettantism¦amateurism (in art)",
-    "0ux6q\t殿様仕事\tとのさましごと\tn¦¦amateur work (in art)¦work done in carefree mood without regard to time or expenses",
-    "0ux70\t殿様風\tとのさまふう\tn¦¦lordly air",
-    "0ux7a\t澱粉|でん粉|殿粉~rK\tでんぷん|デンプン~~~!\tn¦uk¦starch",
-    "0ux7k\t澱粉質\tでんぷんしつ\tn,adj-no¦¦starchiness¦starchy¦farinaceous",
-    "0ux7u\t田\tた\tn¦¦rice field",
-    "0ux84\t田園|田苑~rK\tでんえん|でんおん~ok\tn¦¦the country¦countryside¦rural districts\tn¦¦cultivated land¦fields",
-    "0ux8e\t田舎|田舍~sK\tいなか~gikun\tn¦¦rural area¦countryside¦the sticks\tn¦¦hometown",
-    "0ux8o\t田舎育ち\tいなかそだち\tadj-no,n¦¦country-bred¦raised in the country",
-    "0ux8y\t田舎者|田舎もん~sK|田舎もの~sK|いなか者~sK\tいなかもの|いなかもん\tn¦¦person from the countryside¦countryman¦countryfolk¦provincial person¦bumpkin¦hick¦hillbilly¦redneck¦occ. derisive",
-    "0ux98\t田舎道\tいなかみち\tn¦¦country road",
-    "0ux9i\t田舎風\tいなかふう\tadj-na,n¦¦rustic¦country-style",
-    "0ux9s\t田舎娘\tいなかむすめ\tn¦¦country girl",
-    "0uxa2\t田植え|田植\tたうえ\tn¦¦rice planting",
-    "0uxac\t田地\tでんち|でんじ\tn¦¦farmland¦rice field or paddy",
-    "0uxam\t田畑|田畠\tたはた|でんぱた|でんばた|たはたけ\tn¦¦fields (of rice and other crops)",
-    "0uxaw\t田んぼ|田圃~ateji|田畝~rK|田ぼ~sK\tたんぼ~~田んぼ,田圃|でんぽ~ok~田圃,田畝|でんぼ~ok~田圃,田畝\tn¦¦rice field¦rice paddy¦paddy field",
-    "0uxb6\t電圧\tでんあつ\tn¦¦voltage",
-    "0uxbg\t電圧計\tでんあつけい\tn¦¦voltmeter",
-    "0uxbq\t電位\tでんい\tn¦¦electric potential",
-    "0uxc0\t電位差計\tでんいさけい\tn¦¦potentiometer¦voltage measuring device",
-    "0uxca\t電化\tでんか\tn,vs,vt,vi¦¦electrification",
-    "0uxck\t電荷\tでんか\tn¦¦electric charge¦charge",
-    "0uxcu\t電荷結合素子\tでんかけつごうそし\tn¦comp¦Charge-Coupled Device¦CCD",
-    "0uxd4\t電解\tでんかい\tn,vs,vt¦abbr,chem¦electrolysis¦電気分解",
-    "0uxde\t電解コンデンサー\tでんかいコンデンサー\tn¦¦electrolytic capacitor",
   ],
 };

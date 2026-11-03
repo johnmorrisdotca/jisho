@@ -9,7 +9,7 @@ import { readingKey } from "./words-text.ts";
 
 /**
  * Which set of pieces a `WordsLoadError` is about: `readings` and `forms` are the dictionary, `extra-readings` and `extra-forms` what
- * safe mode leaves out, `meanings` and `kanji` the indexes (and their `extra-` kin), `common` the table of common words, and
+ * safe mode leaves out, `meanings` and `kanji` the indexes (and their `extra-` kin), `entries` and `examples` the whole entries and the example sentences (and their `extra-` kin), `common` the table of common words, and
  * `manifest` the small file that says where the pieces are.
  *
  * @example
@@ -31,6 +31,8 @@ export type WordsPieceKind =
   | "extra-kanji"
   | "entries"
   | "extra-entries"
+  | "examples"
+  | "extra-examples"
   | "common"
   | "manifest";
 
@@ -138,6 +140,11 @@ function indexLines(lines: readonly string[], keyOfLine: (line: string) => strin
   }
   return index;
 }
+
+/** How wide an entry's number is as a key: base 36, five characters, so that the keys sort as the numbers do. Mirrors scripts/words-entries.mjs. */
+export const ENTRY_KEY_WIDTH = 5;
+/** What an entry is looked up by, in the pieces of the whole entries and of the examples. */
+export const entryKey = (id: number): string => id.toString(36).padStart(ENTRY_KEY_WIDTH, "0");
 
 /** The key of a row of the dictionary: its reading folded to hiragana. */
 export const readingOfRow = (line: string): string => readingKey(line.slice(0, line.indexOf("\t")));

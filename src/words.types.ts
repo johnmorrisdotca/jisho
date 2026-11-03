@@ -335,11 +335,13 @@ export type Words = {
  * ```ts
  * import type { EntrySense } from "@johnmorrisdotca/jisho/entries";
  *
- * const sense: EntrySense = { pos: ["n"], marks: [], glosses: [{ text: "paper", kind: null }], onlyForms: [], onlyReadings: [], seeAlso: [], antonyms: [], notes: [], sources: [] };
+ * const sense: EntrySense = { number: 1, pos: ["n"], marks: [], glosses: [{ text: "paper", kind: null }], onlyForms: [], onlyReadings: [], seeAlso: [], antonyms: [], notes: [], sources: [] };
  * console.log(sense.glosses[0]?.text);
  * ```
  */
 export type EntrySense = {
+  /** Its number in the entry of JMdict, counting from 1: the number a cross-reference means, which stays when safe mode leaves a sense out. */
+  readonly number: number;
   /** The parts of speech, as JMdict's codes (`n`, `v5r`, `adj-i`, `vt`…). */
   readonly pos: readonly string[];
   /** The marks: usage, field and dialect codes, as a `Sense` has them. */
@@ -472,4 +474,52 @@ export type Reference = {
   readonly reading: string | undefined;
   /** The number of the sense, counting from 1, if the reference says one. */
   readonly sense: number | undefined;
+};
+
+/**
+ * Who a Tatoeba sentence is by: its number on tatoeba.org, and the authors of the Japanese sentence and of its English translation, where known.
+ *
+ * @example
+ * ```ts
+ * import type { ExampleCredit } from "@johnmorrisdotca/jisho/examples";
+ *
+ * const credit: ExampleCredit = { id: 162365, japanese: "alice", english: null };
+ * console.log(credit.id);
+ * ```
+ */
+export type ExampleCredit = {
+  /** The number of the Japanese sentence on tatoeba.org (`https://tatoeba.org/sentences/show/<id>`). */
+  readonly id: number;
+  /** The author of the Japanese sentence, or null when the export does not say. */
+  readonly japanese: string | null;
+  /** The author of the English translation, or null when the export does not say. */
+  readonly english: string | null;
+};
+
+/**
+ * An example sentence of a word.
+ *
+ * @example
+ * ```ts
+ * import type { Example } from "@johnmorrisdotca/jisho/examples";
+ *
+ * const one: Example = { sense: 1, japanese: "犬が走る。", furigana: [{ text: "犬", reading: "いぬ" }, { text: "が" }], english: "A dog runs.", level: "N5", headword: "犬", credit: { id: 1, japanese: null, english: null } };
+ * console.log(one.english);
+ * ```
+ */
+export type Example = {
+  /** The number of the sense of the word it shows, as `Entry.senses[].number` has it. */
+  readonly sense: number;
+  /** The sentence as Tatoeba has it. */
+  readonly japanese: string;
+  /** The sentence in pieces with the kana that read each kanji, which put together are `japanese`; the whole sentence in one piece when none is known. */
+  readonly furigana: readonly { readonly text: string; readonly reading?: string }[];
+  /** The English translation. */
+  readonly english: string;
+  /** The hardest JLPT level among its kanji (N5 for a sentence with none), or null when one of them is on no list. */
+  readonly level: "N5" | "N4" | "N3" | "N2" | "N1" | null;
+  /** The word as the sentence has it, which may be conjugated. */
+  readonly headword: string;
+  /** Who it is by. */
+  readonly credit: ExampleCredit;
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 17 of 220, from "0plxg". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 17 of 220, from "0plwc". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0plwc\t花盛り|花ざかり\tはなざかり\tn,adj-no¦¦flowers in full bloom¦time of year in which flowers are in full bloom\tn,adj-no¦¦the age at which someone (esp. a woman) is at the peak of their beauty\tn,adj-no¦¦booming or peaking (in popularity)",
+    "0plwm\t花束\tはなたば\tn¦¦bunch of flowers¦bouquet",
+    "0plww\t花鳥\tかちょう\tn¦¦flowers and birds",
+    "0plx6\t花鳥風月\tかちょうふうげつ\tn¦yoji¦beauties of nature¦the traditional themes of natural beauty in Japanese aesthetics¦花鳥諷詠\tn¦¦artistic pursuits involving nature themes",
     "0plxg\t花電車\tはなでんしゃ\tn¦¦streetcar decorated with flowers (oft. in celebration or commemoration)",
     "0plxq\t花道\tはなみち\tn¦kabuki¦elevated walkway through the audience to the stage\tn¦¦honourable end to a career",
     "0ply0\t花曇り|花曇\tはなぐもり\tn,adj-no¦¦hazy weather in spring",
@@ -185,7 +189,7 @@ export const PIECE: WordsPiece = {
     "0pnbq\tにわか作り|にわか造り|俄作り|俄造り\tにわかづくり\tadj-no,n¦¦makeshift¦improvised¦hurriedly prepared¦hastily got up",
     "0pnc0\t俄か分限|俄分限|にわか分限~sK\tにわかぶげん|にわかぶんげん\tn¦rare¦mushroom millionaire",
     "0pnca\tにわか勉強|俄か勉強|俄勉強\tにわかべんきょう\tn¦¦cramming",
-    "0pnck\t俄盲\tにわかめくら\tn¦¦one suddenly blinded",
+    "0pnck\t俄盲\tにわかめくら\tn¦¦one suddenly blinded¦2",
     "0pncu\t我|吾|吾れ~sK|我れ~sK\tわれ|わ~ok|あれ~ok|あ~ok|わぬ~ok|わろ~ok\tpn¦¦I¦me¦occ. 和 for わ\tpn¦¦oneself¦われ|わ¦occ. 和 for わ\tpn¦arch¦you¦われ|わ¦occ. 和 for わ\tpref¦arch¦prefix indicating familiarity or contempt¦わ¦occ. 和",
     "0pnd4\t我が君|わが君\tわがきみ\texp,n¦poet¦my lord¦my master\texp,pn¦poet,fam,pol¦you¦my dear",
     "0pnde\t我が身|わが身|我身~io\tわがみ\tn¦¦myself¦oneself\tpn¦arch¦I¦me\tpn¦arch,fam¦you (referring to one's inferior)",
@@ -881,7 +885,7 @@ export const PIECE: WordsPiece = {
     "0psvg\t外場\tがいば\tn¦math¦external field",
     "0psvq\t外食\tがいしょく\tn,vs,vi¦¦eating out¦dining out",
     "0psw0\t外信\tがいしん\tn¦¦external communication",
-    "0pswa\t外人\tがいじん|ガイジン~sk\tn¦arch¦outsider¦orig. meaning",
+    "0pswa\t外人\tがいじん|ガイジン~sk\tn¦arch¦outsider¦orig. meaning¦2",
     "0psx4\t外征\tがいせい\tn,vs,vi¦¦foreign campaign",
     "0psxe\t外戚\tがいせき|げしゃく~rk|げさく~rk\tn¦¦maternal relative¦relative on one's mother's side¦内戚",
     "0psxo\t外接|外切~rK\tがいせつ\tn,vs,vi¦geom¦circumscription¦being circumscribed¦内接",
@@ -1030,10 +1034,5 @@ export const PIECE: WordsPiece = {
     "0pu2s\t格子点\tこうしてん\tn¦¦lattice point",
     "0pu32\t格子面\tこうしめん\tn¦¦lattice plane",
     "0pu3c\t格式\tかくしき|きゃくしき\tn¦¦formality¦social rules\tn¦¦social status¦social standing\tn¦arch¦amendments and enforcement regulations (of the ritsuryō)¦律令¦usu. きゃくしき",
-    "0pu3m\t格上げ\tかくあげ\tn,vs,vt¦¦status elevation¦upgrading¦promotion",
-    "0pu3w\t格段\tかくだん\tadj-no,adj-na¦¦dramatic (improvement)¦remarkable (difference)¦marked¦noticeable\tadj-no,adj-na¦¦(far) better¦exceptional",
-    "0pu46\t格調\tかくちょう\tn¦¦tone (of speech, writing, etc.)¦style¦格調高い",
-    "0pu4g\t格闘|挌闘~rK|格鬪~sK\tかくとう\tn,vs,vi¦¦(hand-to-hand) fight¦grapple¦scuffle¦tussle\tn,vs,vi¦¦struggling (with a problem, task, etc.)¦grappling¦wrestling¦getting to grips (with)",
-    "0pu4q\t格闘戦部隊\tかくとうせんぶたい\tn¦¦shock troops",
   ],
 };

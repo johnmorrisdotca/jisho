@@ -104,6 +104,8 @@ describe("safe mode's entry", () => {
     );
     const clean = cleanEntry(whole);
     expect(clean.senses.map((one) => one.glosses[0].text)).toEqual(["plain"]);
+    const second = cleanEntry(entryOf(entry(`${text}${sense("vulg", "rude")}${sense("uk", "plain")}`)));
+    expect(readEntry(packEntry(second)).senses[0].number).toBe(2);
     expect(clean.forms.map((form) => form.text)).toEqual(["紙"]);
     expect(clean.readings.map((one) => one.text)).toEqual(["かみ"]);
     expect(JSON.stringify(clean)).not.toContain("rude");

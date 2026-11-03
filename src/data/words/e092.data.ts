@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 93 of 220, from "17u5w". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 93 of 220, from "17txk". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,35 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "17txk\t行動原理\tこうどうげんり\tn¦¦behavioral principle¦principle (value) governing one's conduct",
+    "17txu\t狡兎三窟\tこうとさんくつ\tn¦yoji¦very shrewd in preparing a means of escape¦being very good at escaping danger",
+    "17ty4\t興奮気味\tこうふんぎみ\tn,adj-no¦¦being somewhat excited (agitated)",
+    "17tye\t興亡盛衰\tこうぼうせいすい\tn¦¦rise and fall¦prosperity and decline¦vicissitudes",
+    "17tyo\t豪放粗野\tごうほうそや\tn,adj-na¦¦bold and boorish",
+    "17tyy\t剛勇無比\tごうゆうむひ\tn,adj-no¦¦unparalleled for valor¦unmatched for bravery",
+    "17tz8\t強欲非道\tごうよくひどう\tn,adj-na¦¦abnormally and inhumanly greedy¦cruel and rapacious",
+    "17tzi\t荒涼落莫\tこうりょうらくばく\tadj-na,adj-t,adv-to¦arch¦scene looking desolate and forlorn",
+    "17tzs\t国威発揚\tこくいはつよう\tn¦yoji¦enhancing national prestige¦expanding national influence",
+    "17u02\t国際感覚\tこくさいかんかく\tn¦¦cosmopolitan (international) way of thinking¦feeling for the wider world",
+    "17u0c\t国際場裡\tこくさいじょうり\tn¦¦the international arena",
+    "17u0m\t国際力学\tこくさいりきがく\tn¦¦dynamics of international (foreign) relations",
+    "17u0w\t国色無双\tこくしょくむそう\tn,adj-no¦¦(a woman of) unparalleled beauty¦(a woman's beauty being) matchless throughout the land",
+    "17u16\t極楽極楽\tごくらくごくらく\tint¦¦absolute heaven¦sheer bliss",
+    "17u1g\tここ一番|此処一番~sK\tここいちばん\texp,n¦¦the crucial moment¦the moment of truth¦do-or-die situation¦crucial juncture¦crucial stage",
+    "17u1q\t五穀豊穣|五穀豊饒\tごこくほうじょう\tn¦yoji¦huge harvest (of the five grains)¦bumper crop¦abundant crop",
+    "17u20\t五言絶句\tごごんぜっく\tn¦¦poem of four lines, each of five (Chinese) characters",
+    "17u2a\t五言律詩\tごごんりっし\tn¦¦poem of eight lines, each of five (Chinese) characters",
+    "17u2k\t故事成語\tこじせいご\tn¦¦idiom derived from historical events or classical literature of China",
+    "17u2u\t五十知命\tごじゅうちめい\texp¦yoji¦at age fifty, one comes to know the will of Heaven¦from Confucius",
+    "17u34\t後生一生\tごしょういっしょう\tn¦¦extremely important or once in a lifetime (request)¦only once in one's lifetime",
+    "17u3e\t孤城落月|弧城落月~sK\tこじょうらくげつ\tn¦¦feeling apprehensive¦feeling (looking) lone and helpless¦being down-and-out (ruined)¦helplessness of those in reduced circumstances",
+    "17u3o\t牛頭馬頭\tごずめず\tn¦yoji,Buddh¦horse-headed and ox-headed demons in the Buddhist hell",
+    "17u3y\t御前試合\tごぜんじあい\tn¦hist¦contest held in the presence of a daimyo, shogun or the Emperor\tn¦¦match attended by the team's owner",
+    "17u48\t五体満足\tごたいまんぞく\tn,adj-na¦¦with no physical defects¦in perfectly good health¦sound in wind and limb",
+    "17u4i\t固着観念\tこちゃくかんねん\tn¦rare¦fixed idea¦idée fixe¦obsession¦fixation¦固定観念",
+    "17u4s\t国家存亡\tこっかそんぼう\tn¦¦the fate of a nation¦life-or-death (situation) for a nation¦national crisis",
+    "17u52\t国家多事\tこっかたじ\tn,adj-no¦¦eventful times for the nation¦the nation being in turmoil¦the storm clouds gathering in the land",
+    "17u5c\t酷寒猛暑\tこっかんもうしょ\tn¦¦bitter cold and fierce heat",
     "17u5w\t克己復礼\tこっきふくれい\tn,vs¦yoji¦exercising self-restraint and conforming to the rules of etiquette and formality",
     "17u66\t刻苦精進\tこっくしょうじん\tn,vs¦yoji¦being arduous¦working diligently enduring hardships¦making a strenuous effort",
     "17u6g\t刻苦精励\tこっくせいれい\tn,vs¦yoji¦being arduous¦working diligently enduring hardships¦making a strenuous effort",
@@ -833,33 +862,5 @@ export const PIECE: WordsPiece = {
     "180vk\t無色透明\tむしょくとうめい\tn,adj-na,adj-no¦yoji¦colorless and transparent",
     "180vu\t無想無念\tむそうむねん\tn,adj-no¦yoji¦being free from all distracting thoughts¦keeping one's mind clear of all worldly thoughts¦being free from all ideas and thoughts",
     "180w4\t無断外泊\tむだんがいはく\tn,vs¦¦staying out overnight without giving notice¦spending night(s) away from home without permission (leave)",
-    "180we\t無知愚昧\tむちぐまい\tn,adj-na¦yoji¦unenlightened¦in the darkest ignorance¦not knowing from A to B",
-    "180wo\t無知文盲|無智文盲\tむちもんもう\tn,adj-no¦yoji¦ignorance and illiteracy",
-    "180wy\t無手勝流\tむてかつりゅう\tn¦yoji¦winning without fighting¦method used to win without fighting\tn¦¦one's own way of doing things (i.e. as different from that of one's instructor)\tn¦col¦Shinto-ryu (school of kenjutsu)¦新当流",
-    "180x8\t胸先三寸\tむなさきさんずん\tn¦¦one's mind¦one's inner feelings¦(a decision hinging on) how someone feels about it",
-    "180xi\t無念千万\tむねんせんばん\tn,adj-na¦yoji¦being really disappointed¦feeling utterly mortified¦being deeply vexed",
-    "180xs\t無能無策\tむのうむさく\tn¦¦ineptitude and inaction¦being incapable of devising any appropriate measures to cope with the situation",
-    "180y2\t無欲無私\tむよくむし\tn¦¦unselfish and impartial (disinterested)",
-    "180yc\t無理非道\tむりひどう\tn,adj-na¦yoji¦unreasonable and unjust¦unconscionable",
-    "180ym\t無量無辺\tむりょうむへん\tn,adj-no¦yoji¦immense and limitless",
-    "180yw\t明暗両面\tめいあんりょうめん\tn¦¦(both) the bright and dark sides",
-    "180z6\t名所古跡\tめいしょこせき\tn¦yoji¦scenic sites and historic places¦places of natural beauty and historic interest",
-    "180zq\t瞑想生活\tめいそうせいかつ\tn¦¦life of meditation¦contemplative life",
-    "18100\t名僧知識\tめいそうちしき\tn¦¦great (learned) priest¦celebrated priest who has attained spiritual enlightenment",
-    "1810a\t酩酊歩行\tめいていほこう\tn¦¦drunken (staggering, tottering) gait¦wide-based gait",
-    "1810k\t明哲保身\tめいてつほしん\tn¦yoji¦wisdom and self-protection¦wise and skilled in the art of self-protection",
-    "1810u\t瞑目合掌\tめいもくがっしょう\tn,vs¦¦closing one's eyes and joining one's hands together in prayer",
-    "18114\t命令口調\tめいれいくちょう\tn¦¦tone of command¦authoritative tone¦commanding tone",
-    "1811e\t明朗快活\tめいろうかいかつ\tn,adj-na¦yoji¦cheerful and openhearted",
-    "1811o\t明朗会計\tめいろうかいけい\tn¦¦clear accounting¦honest accounting (billing)¦transparent billing practices (in restaurant and bar charges, etc.)",
-    "1811y\t迷惑至極\tめいわくしごく\tn,adj-na¦yoji¦great nuisance¦extremely annoying¦quite embarrassing",
-    "18128\t目先相場\tめさきそうば\tn¦¦the market trend in the near future",
-    "1812i\t目元千両|目許千両|眼元千両~iK\tめもとせんりょう\texp,n¦¦beautiful eyes¦bright-eyed¦there being a sublime charm about one's eyes",
-    "1812s\t綿密周到\tめんみつしゅうとう\tn,adj-na¦¦detailed and careful¦scrupulous¦meticulous¦elaborate",
-    "18132\t猛烈社員|モーレツ社員\tもうれつしゃいん~~猛烈社員|モーレツしゃいん~~モーレツ社員\tn¦¦go-getter employee¦hard-driving employee¦workaholic employee",
-    "1813c\t喪中欠礼\tもちゅうけつれい\texp¦¦refraining from offering the (New Year's) greetings during the period of mourning",
-    "1813m\t模様次第\tもようしだい\tn¦¦according to circumstances¦dependent on the state of things",
-    "1813w\t門前成市\tもんぜんせいし\tn¦yoji¦having a constant stream of visitors¦being thronged with callers",
-    "18146\t問題商法\tもんだいしょうほう\tn¦¦unscrupulous business practices¦fraudulent business practices¦crooked business practices¦悪徳商法",
   ],
 };

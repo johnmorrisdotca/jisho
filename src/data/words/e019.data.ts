@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 20 of 220, from "0qa4u". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 20 of 220, from "0qa2m". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,14 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0qa2m\t議場\tぎじょう\tn¦¦assembly hall¦the House",
+    "0qa2w\t議席\tぎせき\tn¦¦parliamentary seat",
+    "0qa36\t議題\tぎだい\tn¦¦topic of discussion¦agenda",
+    "0qa3g\t議長\tぎちょう\tn¦¦chair¦chairman¦chairperson¦speaker (of an assembly)¦president (of a council, senate, etc.)",
+    "0qa3q\t議定\tぎてい|ぎじょう\tn,vs,vt¦¦agreement",
+    "0qa40\t議論\tぎろん\tn,vs,vt¦¦argument¦discussion¦dispute¦controversy",
+    "0qa4a\tすくい取る|掬い取る\tすくいとる\tv5r,vt¦¦to dip out¦to scoop up¦to ladle out",
+    "0qa4k\tすくい出す|掬い出す|掬いだす~sK\tすくいだす\tv5s,vt¦¦to bail (e.g. water from a boat)¦to ladle",
     "0qa4u\tすくい上げる|掬い上げる|掬いあげる~sK\tすくいあげる\tv1,vt¦¦to scoop up¦to dip up",
     "0qa54\t掬う|抄う~rK\tすくう\tv5u,vt¦uk¦to scoop¦to ladle out\tv5u,vt¦uk¦to trip up (e.g. someone's legs)¦足をすくう",
     "0qa5e\t菊\tきく|キク~~~!\tn¦¦chrysanthemum (Chrysanthemum morifolium)",
@@ -1060,11 +1068,5 @@ export const PIECE: WordsPiece = {
     "0qikq\t教師\tきょうし\tn¦¦teacher¦instructor",
     "0qil0\t教示\tきょうじ|きょうし\tn,vs,vt¦¦instruction¦teaching¦guidance¦informing",
     "0qila\t教室\tきょうしつ\tn¦¦classroom¦lecture room\tn¦¦department (in a university)\tn¦¦class¦lessons¦course\tn¦¦school (for a particular discipline)¦teaching establishment¦音楽教室",
-    "0qilk\t教授\tきょうじゅ\tn¦¦professor\tn,vs,vt¦¦teaching¦instruction",
-    "0qilu\t教習\tきょうしゅう\tn,vs,vt¦¦training¦instruction",
-    "0qim4\t教習所\tきょうしゅうじょ|きょうしゅうしょ\tn¦¦training institute¦school\tn¦abbr¦driving school¦自動車教習所",
-    "0qime\t教習生\tきょうしゅうせい\tn¦¦trainee¦student",
-    "0qimo\t教書\tきょうしょ\tn¦¦message (delivered by the US president or a state governor)¦address¦一般教書\tn¦¦(papal) bull¦decree\tn¦obs¦textbook¦教科書",
-    "0qimy\t教条\tきょうじょう\tn¦¦tenet¦dogma",
   ],
 };

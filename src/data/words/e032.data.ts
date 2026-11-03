@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 33 of 220, from "0t6cs". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 33 of 220, from "0t6ak". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,14 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0t6ak\t振りかける|振り掛ける\tふりかける\tv1,vt¦uk¦to sprinkle over (e.g. salt, pepper, etc. on food)",
+    "0t6au\t振り向く|振向く~sK\tふりむく\tv5k,vt,vi¦¦to turn one's face¦to turn around¦to look over one's shoulder",
+    "0t6b4\t振り向ける|振向ける\tふりむける\tv1,vt¦¦to turn (around)\tv1,vt¦¦to appropriate¦to set aside¦to allocate¦to assign (for another purpose or use)",
+    "0t6be\t振り込む|振込む\tふりこむ\tv5m,vt¦¦to make a payment via bank deposit transfer\tv5m,vt¦mahj¦to discard another player's winning tile",
+    "0t6bo\t振りまく|振り撒く\tふりまく\tv5k,vt¦¦to scatter¦to sprinkle¦to spray¦to strew\tv5k,vt¦¦to lavish (money, charm, etc.)¦愛嬌を振りまく",
+    "0t6by\t振り捨てる|振捨てる\tふりすてる\tv1,vt¦¦to shake off¦to forsake",
+    "0t6c8\t振り出す|振出す\tふりだす\tv5s,vt¦¦to shake out\tv5s,vt¦¦to draw a check (bill, draft, etc.)¦to issue (e.g. money order)\tv5s,vt¦¦to infuse (e.g. in hot water)",
+    "0t6ci\t振り切る|振切る|振りきる~sK|ふり切る~sK\tふりきる\tv5r,vt¦¦to shake off¦to shake free from\tv5r,vt¦¦to swing completely (bat, club, etc.)¦to take a full swing\tv5r,vt¦¦to break off from (pursuer)¦to pull away\tv5r,vt¦¦to reject (request)¦to ignore",
     "0t6cs\t振り替える|振りかえる|振替える\tふりかえる\tv1,vt¦¦to change (e.g. a bill)¦to transfer (e.g. money)¦to switch over¦to move over",
     "0t6d2\t振り払う|振払う\tふりはらう\tv5u,vt¦¦to shake off",
     "0t6dc\t振り分ける|振分ける~sK|振りわける~sK|ふり分ける~sK\tふりわける\tv1,vt¦¦to divide in two¦to divide in half\tv1,vt¦¦to divide (among)¦to apportion¦to portion out¦to distribute¦to allot¦to assign",
@@ -915,7 +923,7 @@ export const PIECE: WordsPiece = {
     "0tdqw\t垂らす\tたらす\tv5s,vt¦¦to dribble¦to spill\tv5s,vt¦¦to suspend¦to hang down¦to slouch¦to dangle",
     "0tdr6\t垂り穂\tたりほ\tn¦¦drooping ears (of grain)",
     "0tdrg\t垂れ|垂\tたれ|だれ|タレ~~~!|ダレ~~~!\tn¦uk¦sauce (esp. soy or mirin-based dipping sauce)¦oft. ダレ in compounds\tn¦¦hanging¦something hanging (flap, lappet, etc.)¦たれ\tn¦MA¦(kendo) loin guard¦たれ\tn¦¦kanji radical enclosing the top-left corner of a character¦たれ\tn¦sl,uk¦woman¦たれ|タレ¦comedian jargon",
-    "0tdrq\t垂れる\tたれる\tv1,vi¦¦to hang¦to droop¦to dangle¦to sag¦to lower¦to pull down\tv1,vt¦¦to give (e.g. lesson, instruction, scolding) (to someone of lower status)¦to confer¦to grant¦to bestow\tv1,vi¦¦to drip¦to ooze¦to trickle¦to drop\tv1,vt¦¦to leave behind (at death)\tv1,vt¦¦to excrete (urine, feces, etc.)¦to let out (a fart)",
+    "0tdrq\t垂れる\tたれる\tv1,vi¦¦to hang¦to droop¦to dangle¦to sag¦to lower¦to pull down\tv1,vt¦¦to give (e.g. lesson, instruction, scolding) (to someone of lower status)¦to confer¦to grant¦to bestow\tv1,vi¦¦to drip¦to ooze¦to trickle¦to drop\tv1,vt¦¦to leave behind (at death)\tv1,vt¦¦to excrete (urine, feces, etc.)¦to let out (a fart)¦6",
     "0tds0\t垂れ下がる\tたれさがる\tv5r,vi¦¦to hang¦to dangle",
     "0tdsa\t垂れ下げる\tたれさげる\tv1,vt¦¦to hang (a curtain)¦to droop (a tail)¦to lower (a blind)",
     "0tdsk\t垂れ飾り\tたれかざり\tn¦¦pendant",
@@ -997,19 +1005,5 @@ export const PIECE: WordsPiece = {
     "0tedo\t水蒸気\tすいじょうき\tn¦¦water vapour¦water vapor¦steam",
     "0tedy\t水色\tみずいろ\tn,adj-no¦¦light blue¦pale blue¦aqua",
     "0tee8\t水浸し|水びたし\tみずびたし\tn¦¦submersion¦inundation¦being flooded",
-    "0teei\t水炊き|水たき|水炊~io\tみずたき|みずだき~~水炊き,水炊\tn¦food¦food (esp. chicken and vegetables) boiled in plain water (or sometimes dashi, etc.) and served with dipping sauce (esp. ponzu)",
-    "0tees\t水かさ|水嵩\tみずかさ\tn¦¦volume of water (in a river, pond, flood, etc.)",
-    "0tef2\t水勢\tすいせい\tn¦¦force of water (current, stream, jet, etc.)",
-    "0tefc\t水性\tすいせい\tadj-no¦¦water-based¦aqueous\tadj-no¦¦water-soluble¦水溶性",
-    "0tefm\t水星\tすいせい\tn¦astron¦Mercury (planet)",
-    "0tefw\t水生|水棲\tすいせい\tadj-no,n¦¦aquatic (life)¦living in the water¦陸生",
-    "0teg6\t水仙\tすいせん|スイセン~~~!\tn¦uk¦daffodil (esp. Narcissus tazetta var. chinensis)¦narcissus",
-    "0tegg\t水洗\tすいせん\tn,vs,vt¦¦washing with water¦rinsing¦flushing",
-    "0tegq\t水洗便所\tすいせんべんじょ\tn¦¦flush toilet",
-    "0teh0\t水素\tすいそ\tn¦¦hydrogen (H)",
-    "0teha\t水素化物\tすいそかぶつ\tn¦¦hydride",
-    "0tehk\t水槽\tすいそう\tn¦¦water tank¦cistern\tn¦¦fish tank¦aquarium",
-    "0tehu\t水増し\tみずまし\tn,vs,vt¦¦dilution¦watering down\tn,vs,vt¦¦inflation (of budget, claim, etc.)¦padding",
-    "0tei4\t水族館\tすいぞくかん|すいぞっかん~ik\tn¦¦aquarium (building)¦oceanarium",
   ],
 };

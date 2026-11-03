@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 14 of 220, from "0ox5". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 14 of 220, from "0ox3k". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,12 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0ox3k\t一昨\tいっさく\tn¦¦one previous",
+    "0ox3u\t一昨晩\tいっさくばん\tn,adv¦¦night before last",
+    "0ox44\t一昨夜\tいっさくや\tn,adv¦¦night before last",
+    "0ox4e\t一策\tいっさく\tn¦¦idea¦plan",
+    "0ox4o\t一冊|１冊\tいっさつ\tn¦¦one copy (of a book, magazine, etc.)¦one volume",
+    "0ox4y\t一撮み|一撮|一摘み\tひとつまみ\tn¦¦pinch (of something)¦one piece\tn¦¦easy victory",
     "0ox58\t一札\tいっさつ\tn¦¦document¦bond",
     "0ox5i\t一皿|ひと皿~sK\tひとさら\tn¦¦one plate (of food)¦one dish¦one helping",
     "0ox5s\t一散に|逸散に\tいっさんに\tadv¦¦at top speed",
@@ -510,7 +516,7 @@ export const PIECE: WordsPiece = {
     "0p16i\t稲木\tいなぎ\tn¦¦rice-drying rack",
     "0p16s\t茨|荊|棘\tいばら|イバラ~~~!\tn¦¦thorny shrub\tn¦¦wild rose¦briar¦often written 薔薇\tn¦¦thorn\tn¦archit¦cusp",
     "0p172\t茨城県\tいばらきけん|いばらぎけん\tn¦¦Ibaraki prefecture",
-    "0p17c\t芋|薯~rK|藷~rK\tいも|イモ~~~!\tn¦¦tuber¦taro¦potato¦yam\tn¦¦dud¦worthless thing",
+    "0p17c\t芋|薯~rK|藷~rK\tいも|イモ~~~!\tn¦¦tuber¦taro¦potato¦yam\tn¦¦dud¦worthless thing¦3",
     "0p17m\t芋掘り|芋ほり|いも掘り|芋掘~sK|藷掘り~sK|芋堀り~sK\tいもほり\tn¦¦digging for sweet potatoes (esp. as an outing)",
     "0p17w\t芋茎|芋苗\tずいき\tn¦food¦taro stem¦芋がら・いもがら",
     "0p186\t芋虫|いも虫~sK|イモ虫~sK\tいもむし|イモムシ~~~!\tn¦uk¦hornworm (caterpillar of a hawk moth)¦(hairless) caterpillar¦雀蛾",
@@ -934,9 +940,5 @@ export const PIECE: WordsPiece = {
     "0p4lu\t渦動\tかどう\tn¦¦vortex",
     "0p4m4\t渦紋\tかもん\tn¦¦whirlpool design",
     "0p4me\t渦流|か流\tかりゅう\tn¦¦swirling current¦eddy¦whirlpool¦vortex¦maelstrom\tn¦abbr¦eddy current¦渦電流・うずでんりゅう",
-    "0p4mo\t嘘|噓\tうそ|ウソ~~~!\tn,adj-no¦¦lie¦fib¦falsehood¦untruth\tn,adj-no¦¦mistake¦error\tn¦¦unwise move¦bad decision\tint¦col¦no way!¦unbelievable!¦really?!",
-    "0p4my\t嘘っぱち|嘘っ八~rK\tうそっぱち\tn¦col¦total lie¦downright lie",
-    "0p4n8\t嘘っ八百\tうそっぱっぴゃく\texp¦¦full of lies",
-    "0p4ni\t嘘で固める|嘘でかためる~sK|うそで固める~sK\tうそでかためる\texp,v1¦¦to lie all the time¦to fabricate a web of lies",
   ],
 };

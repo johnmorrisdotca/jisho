@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 30 of 220, from "0sjey". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 30 of 220, from "0sjc". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,16 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0sjc6\t宗教法人\tしゅうきょうほうじん\tn¦¦religious corporation¦religious juridical person",
+    "0sjcg\t宗旨\tしゅうし\tn¦¦tenets (of a religious sect)¦doctrines\tn¦¦(religious) sect¦denomination¦religion¦faith\tn¦¦one's principles¦one's tastes¦one's preferences",
+    "0sjcq\t宗主国\tそうしゅこく\tn¦¦suzerain state",
+    "0sjd0\t宗匠\tそうしょう\tn¦¦master¦teacher",
+    "0sjda\t宗祖\tしゅうそ\tn¦¦sect founder",
+    "0sjdk\t宗徒\tしゅうと\tn¦¦believer¦follower",
+    "0sjdu\t宗派\tしゅうは\tn¦¦sect¦denomination\tn¦¦school (e.g. of poetry)",
+    "0sje4\t宗門\tしゅうもん\tn¦¦(religious) denomination¦sect",
+    "0sjee\t就いては\tついては\texp,conj¦uk¦in line with this¦therefore¦consequently¦so¦such being the case¦in that regard¦in this connection",
+    "0sjeo\t就きましては~rK\tつきましては\texp,conj¦pol,uk¦in line with this¦therefore¦consequently¦so¦such being the case¦in that regard¦in this connection¦ついては",
     "0sjey\t就く|即く\tつく\tv5k,vi¦¦to take (seat, position, course, office, etc.)¦to assume¦to be hired¦to be employed¦就く¦付く・つく・1\tv5k,vi¦¦to ascend (the throne)¦to accede\tv5k,vi¦¦to start (on a journey)¦to commence¦to depart¦就く\tv5k,vi¦¦to study (under teacher)¦to be an apprentice¦就く",
     "0sjf8\t就ける|即ける\tつける\tv1,vt¦¦to install (a king, emperor, etc.)\tv1,vt¦¦to appoint (to a post)¦to promote¦就ける\tv1,vt¦¦to assign (to study under)¦就ける",
     "0sjfi\t就学\tしゅうがく\tn,vs,vi¦¦entering school¦school attendance",
@@ -230,7 +240,7 @@ export const PIECE: WordsPiece = {
     "0sl6a\t醜い|見憎い~rK\tみにくい\tadj-i¦¦ugly¦unattractive¦bad-looking\tadj-i¦¦unsightly¦unseemly¦disgraceful¦shameful¦dishonorable",
     "0sl6k\t醜悪\tしゅうあく\tadj-na,n¦¦ugly¦unsightly¦hideous¦mean¦repulsive¦disgraceful",
     "0sl6u\t醜態|醜体~rK\tしゅうたい\tn¦¦disgraceful behavior¦disgraceful behaviour¦shameful conduct¦shameful sight",
-    "0sl74\tブ男|醜男\tブおとこ~~ブ男|ぶおとこ~~醜男|しこお~ok~醜男\tn¦arch¦strong, brawny man¦しこお",
+    "0sl74\tブ男|醜男\tしこお~ok~醜男\tn¦arch¦strong, brawny man¦しこお¦2",
     "0sl7e\t醜聞\tしゅうぶん\tn¦¦scandal",
     "0sl7y\t什一\tじゅういち\tn¦¦tithe",
     "0sl88\t什器\tじゅうき\tn¦¦utensil¦appliance¦furniture",
@@ -850,7 +860,7 @@ export const PIECE: WordsPiece = {
     "0sq7y\t出奔者\tしゅっぽんしゃ\tn¦¦runaway¦absconder¦eloper",
     "0sq8i\t出目\tでめ\tn¦¦protruding eyes¦person with protruding eyes\tn¦¦result of a dice roll¦number of pips visible after a throw of the dice",
     "0sq8s\t出目金\tでめきん|デメキン~~~!\tn¦¦telescope (variety of goldfish)¦telescope eye¦demekin",
-    "0sq92\t出戻り\tでもどり\tn¦¦leaving and then returning (to a company, etc. one has previously left)\tn¦¦leaving from and returning to the same port (of a ship)",
+    "0sq92\t出戻り\tでもどり\tn¦¦leaving and then returning (to a company, etc. one has previously left)¦2\tn¦¦leaving from and returning to the same port (of a ship)¦3",
     "0sq9c\t出門\tしゅつもん\tn,vs,vi¦¦exiting through a gate¦going out¦leaving (the premises)",
     "0sq9m\t出様\tでよう\tn¦¦attitude¦move¦measures (to take)",
     "0sq9w\t出来\tしゅったい|しゅつらい\tn,vs,vi¦¦occurrence¦happening¦taking place\tn,vs,vi¦¦completion",
@@ -977,12 +987,5 @@ export const PIECE: WordsPiece = {
     "0sr9g\t準備期間\tじゅんびきかん\tn¦¦preparatory phase¦preparatory period",
     "0sr9q\t準備金\tじゅんびきん\tn¦¦reserve fund",
     "0sra0\t準備銀行\tじゅんびぎんこう\tn¦¦reserve bank",
-    "0sraa\t準備資金\tじゅんびしきん\tn¦¦reserve funds",
-    "0srak\t準備状況\tじゅんびじょうきょう\tn¦¦preliminary conditions¦initial conditions¦state of preparations for (before) an event",
-    "0srau\t準備中\tじゅんびちゅう\tn¦¦in preparation¦(shop) not yet open for business",
-    "0srb4\t準備命令\tじゅんびめいれい\tn¦¦warning order",
-    "0srbe\t準用\tじゅんよう\tvs,vt¦¦to apply (the law) with necessary modifications¦to apply mutatis mutandis¦to apply correspondingly",
-    "0srbo\t潤い\tうるおい\tn¦¦moisture¦damp¦wetness\tn¦¦richness¦warmth¦interest¦taste¦charm\tn¦¦financial leeway¦gains¦profit\tn¦¦blessing¦grace¦favour¦favor",
-    "0srby\t潤う|霑う~rK\tうるおう\tv5u,vi¦¦to become moist¦to be moistened¦to become damp¦to get wet\tv5u,vi¦¦to profit (from)¦to benefit¦to become prosperous¦to flourish¦to be made rich\tv5u,vi¦¦to be refreshed (of one's mind)¦to be enriched (of one's heart)",
   ],
 };

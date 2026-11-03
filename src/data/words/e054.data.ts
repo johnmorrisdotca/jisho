@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 55 of 220, from "0y0g". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 55 of 220, from "0y09m". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,27 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0y09m\t天つ日嗣|天津日嗣\tあまつひつぎ\tn¦¦imperial throne",
+    "0y09w\t編み上げ|編上げ\tあみあげ\tn¦¦high laced shoes or boots",
+    "0y0a6\t編み物|編物|編みもの~sK|編もの~sK\tあみもの\tn,adj-no¦¦knitting¦knitted material¦crochet",
+    "0y0ag\t雨上がり|雨あがり~sK|雨上り~sK\tあめあがり|あまあがり\tn¦¦after the rain",
+    "0y0aq\t雨降り|雨ふり~sK\tあめふり\tn¦¦rainfall¦rainy weather¦rain\tadj-no¦¦rainy¦wet",
+    "0y0b0\t怪しい\tあやしい\tadj-i¦¦suspicious¦dubious¦questionable¦dodgy¦shady¦fishy\tadj-i¦¦doubtful¦unsure¦uncertain¦unlikely¦implausible\tadj-i¦¦untrustworthy¦unreliable¦clumsy¦awkward¦shaky¦poor\tadj-i¦¦strange¦weird¦eerie¦spooky¦uncanny\tadj-i¦¦ominous (e.g. weather)¦threatening¦dangerous (e.g. financial situation)¦uncertain\tadj-i¦¦suspicious (of a potential amorous relation)\tadj-i¦¦mysterious¦bewitching¦alluring¦enticing¦enchanting¦妖しい・あやしい¦also 妖しい",
+    "0y0ba\t綾取り|あや取り|綾取~io\tあやとり\tn¦uk¦cat's cradle",
+    "0y0bk\t鮎|香魚~rK|年魚~rK|細鱗魚~sK|銀口魚~sK\tあゆ|アユ~~~!\tn¦uk¦ayu (Plecoglossus altivelis)¦sweetfish",
+    "0y0bu\t粗|荒~rK\tあら|アラ~~~!\tn¦uk¦remaining bony parts (of a fish after filleting)¦usu. アラ\tn¦uk¦flaw (esp. of a person)¦fault¦defect\tn¦¦rice chaff\tpref¦¦rough\tpref¦¦crude¦raw¦natural¦wild",
+    "0y0c4\t荒々しい|荒荒しい\tあらあらしい\tadj-i¦¦rough¦wild¦rude¦harsh¦gruff¦violent",
+    "0y0ce\t洗い熊~rK|洗熊~rK|浣熊~rK\tあらいぐま|アライグマ~~~!\tn¦uk¦common raccoon (Procyon lotor)",
+    "0y0co\t荒削り|粗削り\tあらけずり\tadj-na,n¦¦rough-hewn¦incomplete¦unrefined¦still in the process of being formed",
+    "0y0cy\t荒野|荒れ野|曠野~iK\tこうや~~荒野,曠野|あれの~~荒野,荒れ野|あらの~~荒野,曠野\tn¦¦wasteland¦wilderness¦deserted land¦prairie¦vast plain¦wilds¦desert¦wild land",
+    "0y0d8\t凡ゆる~rK|有らゆる~rK|汎ゆる~sK\tあらゆる\tadj-pn¦uk¦all¦every",
+    "0y0e2\tあり方|在り方|有り方~sK\tありかた\tn¦¦the way (something) ought to be\tn¦¦(present) state (of)¦how things are",
+    "0y0ec\t有難う|有り難う|有りがとう~sK\tありがとう\tint¦uk¦thank you¦thanks",
+    "0y0em\t有田焼|有田焼き~io\tありたやき\tn¦¦Arita ware (porcelain)",
+    "0y0ew\t或る|或\tある\tadj-pn¦uk¦a certain ...¦some ...",
+    "0y0f6\t或いは|或るいは~sK\tあるいは\tconj¦uk¦or¦either ... or¦は is pronounced as わ\tadv¦uk¦maybe¦perhaps¦possibly\tadv¦uk¦some ... and others ...¦sometimes ... and at other times ...¦as あるいは...あるいは...",
+    "0y0fg\t荒れ果てる|荒れはてる~sK|荒果てる~sK\tあれはてる\tv1,vi¦¦to fall into ruin¦to become dilapidated¦to become run-down¦to become desolate¦to be badly neglected",
+    "0y0fq\t合わさる|合さる|併さる~iK\tあわさる\tv5r,vi¦¦to join¦to be put together¦to combine¦to unite¦to fit¦to close (e.g. of a wound)",
     "0y0g0\t鮑|鰒~rK|石決明~rK|蚫~sK\tアワビ~~~!|あわび\tn¦uk¦abalone¦ear shell",
     "0y0gk\t暗影|暗翳\tあんえい\tn¦¦shadow¦gloom",
     "0y0gu\t暗記|諳記~rK\tあんき\tn,vs,vt¦¦memorization¦memorisation¦learning by heart",
@@ -550,7 +571,7 @@ export const PIECE: WordsPiece = {
     "0y4oi\t悔やみ|悔み\tくやみ\tn¦¦condolence¦condolences",
     "0y4os\t蔵|倉|庫\tくら\tn¦¦warehouse¦storehouse¦cellar¦magazine¦granary¦godown¦depository¦treasury¦elevator",
     "0y4p2\t位負け\tくらいまけ\tn,vs,vi¦¦being unable to live up to one's position¦being unworthy of one's rank\tn,vs,vi¦¦being overawed by someone's high rank¦being intimidated¦being outranked¦being outclassed",
-    "0y4pm\t食らう|喰らう\tくらう\tv5u,vt¦¦to receive (e.g. a blow)\tv5u,vt¦¦to be on the receiving end (of something undesirable)¦to undergo (trouble)",
+    "0y4pm\t食らう|喰らう\tくらう\tv5u,vt¦¦to receive (e.g. a blow)¦2\tv5u,vt¦¦to be on the receiving end (of something undesirable)¦to undergo (trouble)¦3",
     "0y4pw\t水母~rK|海月~rK\tクラゲ~~~!|くらげ~gikun\tn¦uk¦jellyfish",
     "0y4q6\t繰り越し|繰越|繰越し|繰り越~sK\tくりこし\tn¦¦carry-over (of a balance, annual leave, etc.)¦carrying over¦bringing forward¦carrying forward¦transfer\tn¦abbr¦balance brought forward¦balance carried forward¦繰越金",
     "0y4qg\t繰り言|繰言\tくりごと\tn¦¦tedious talk¦repetition¦complaint\tn¦rare¦tongue-twister",
@@ -688,26 +709,5 @@ export const PIECE: WordsPiece = {
     "0y5ry\t些事|瑣事\tさじ\tn¦¦something small¦something petty¦trifle",
     "0y5s8\t砂漠|沙漠~rK\tさばく\tn¦¦desert",
     "0y5si\tサバを読む|鯖を読む|さばを読む~sK\tさばをよむ\texp,v5m¦id¦to manipulate figures to one's advantage¦to count wrongly on purpose¦to inflate or deflate one's age",
-    "0y5ss\t錆|錆び|銹~rK|鏽~rK\tさび\tn¦¦rust",
-    "0y5t2\t様々|様様\tさまざま\tadj-na,n¦¦various¦varied¦diverse¦all sorts of",
-    "0y5tc\t寒々|寒寒\tさむざむ\tadv-to,vs,vi¦¦wintry¦very cold-looking (e.g. landscape)\tadv-to,vs,vi¦¦bleak (e.g. room, street)¦desolate¦empty (of furnishings)",
-    "0y5tw\t針魚|細魚|鱵\tさより~gikun|はりお~ok~針魚|サヨリ~~~!\tn¦uk¦Japanese halfbeak (Hemiramphus sajori)¦stickleback",
-    "0y5u1\t浚う|渫う\tさらう\tv5u,vt¦uk¦to sweep away¦to wash away¦to dredge",
-    "0y5u6\t攫う|掠う|拐う~iK\tさらう\tv5u,vt¦uk¦to carry off¦to run away with¦to sweep away¦to snatch¦to kidnap¦to abduct¦also written as 浚う\tv5u,vt¦uk¦to take entirely for oneself¦to monopolize",
-    "0y5ug\t更々|更更\tさらさら\tadv¦uk¦(not) at all¦(not) in the least¦(none) whatsoever¦with neg. verb",
-    "0y5v0\t晒し|曝し|晒|曝\tさらし\tn¦¦bleaching¦soaking\tn¦¦bleached cotton (esp. wrapped around the torso)\tn¦col¦doxxing¦doxing¦making someone's private information public without permission\tn¦hist¦public humiliation (Edo-period punishment)",
-    "0y5va\t晒す|曝す\tさらす\tv5s,vt¦¦to expose (to the sun, public, danger, etc.)\tv5s,vt¦¦to bleach¦to refine\tv5s,vt¦¦to rinse (vegetables)¦to soak\tv5s,vt¦col¦to doxx¦to dox¦to make someone's private information public without permission\tv5s,vt¦hist¦to sentence (someone) to public humiliation¦晒し・4",
-    "0y5vk\t爽々~sK|爽爽~sK\tさわさわ|サワサワ\tadv,adv-to,vs¦on-mim¦rustling",
-    "0y5vu\t三角州|三角洲\tさんかくす\tn¦¦(river) delta",
-    "0y5w4\t三景|三軽\tさんけい\tn¦¦three famous beauty spots",
-    "0y5we\t三弦|三絃\tさんげん\tn¦¦shamisen¦samisen¦三味線\tn¦¦sanxian (Chinese lute)\tn¦¦the three string instruments used in gagaku (biwa, wagon and sou)\tn¦¦three strings¦three-stringed instrument",
-    "0y5wo\t三々九度|三三九度\tさんさんくど\tn¦Shinto¦three-times-three exchange of nuptial cups",
-    "0y5wy\t三三五五|三々五々\tさんさんごご\tadv¦yoji¦in groups of twos and threes¦in small groups¦(in groups of) threes and fives",
-    "0y5x8\t散々|散散\tさんざん\tadj-na,adv¦¦thoroughly¦completely¦utterly\tadj-na,adv¦¦severely¦harshly¦terribly¦miserably¦wretchedly¦badly\tadj-na¦arch¦scattered¦disconnected¦dispersed¦smashed into tiny pieces",
-    "0y5xi\t三嘆|三歎\tさんたん\tn,vs,vi¦form¦deep admiration\tn,vs,vi¦form¦repeatedly lamenting",
-    "0y5xs\t三段跳び|三段跳\tさんだんとび\tn¦¦triple jump¦hop, step and jump",
-    "0y5y2\t三番鶏|三番鳥\tさんばんどり\tn¦¦third cockcrowing",
-    "0y5yc\t雑踏|雑沓~rK|雑鬧~rK\tざっとう\tn,vs,vi,adj-no¦¦hustle and bustle¦throng¦crowd¦congestion¦traffic jam",
-    "0y5ym\t戯れ事|戯事~sK|ざれ事~sK\tざれごと|たわむれごと|ざれこと~sk\tn¦¦prank¦practical joke",
   ],
 };

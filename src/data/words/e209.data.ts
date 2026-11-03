@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 210 of 220, from "1pjbl". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 210 of 220, from "1pjam". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,34 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "1pjam\t昼練\tひるれん\tn¦sports¦lunchtime training¦lunch break practice",
+    "1pjan\t夕練\tゆうれん\tn¦sports¦evening training¦after-school practice",
+    "1pjao\t身を慎む\tみをつつしむ\tv5m,vi¦¦to behave oneself¦to be prudent¦to exercise self-restraint¦to abstain (from frivolity, drinking, etc.)",
+    "1pjap\t\tばたつかせる\tv1,vt¦col¦to flap (hands, feet, wings)¦to thrash around¦to flail¦ばたつく・1",
+    "1pjaq\t肝の据わった|肝のすわった~sK\tきものすわった\texp,adj-f¦¦cool-headed¦unflappable¦having nerves of steel¦dauntless",
+    "1pjas\tおかっぱ頭|お河童頭~rK\tおかっぱあたま\tn¦¦bobbed hairstyle¦short bob¦お河童",
+    "1pjat\t滅\tめつ\tn¦¦destruction¦ruin¦extinction\tn¦Buddh¦nirvana¦cessation (of earthly desires)¦death (esp. of the Buddha or a high monk)\tn¦net-sl¦dying (from overwhelming emotion)¦being overwhelmed (by something)",
+    "1pjau\t支部長\tしぶちょう\tn¦¦branch manager¦branch office head¦director of a local chapter",
+    "1pjav\t七支刀|七枝刀\tしちしとう|ななつさやのたち~rk\tn¦hist¦Shichishitō¦Seven-Branched Sword¦ancient ceremonial iron sword with six branch-like protrusions kept at Isonokami Shrine",
+    "1pjaz\t全面衝突\tぜんめんしょうとつ\tn¦¦all-out conflict¦full-scale confrontation",
+    "1pjb0\t仮定的\tかていてき\tadj-na¦¦hypothetical¦theoretical¦presumptive",
+    "1pjb1\t解放戦線\tかいほうせんせん\tn¦¦liberation front",
+    "1pjb2\t国家指導者\tこっかしどうしゃ\tn¦¦national leader¦leader of a nation¦state leader",
+    "1pjb3\t代議院\tだいぎいん\tn¦rare¦house of representatives¦legislative assembly¦chamber of deputies¦下院",
+    "1pjb4\t自国通貨\tじこくつうか\tn¦¦national currency¦domestic currency¦local currency",
+    "1pjb5\t債務免除\tさいむめんじょ\tn¦law¦debt relief¦debt forgiveness¦debt cancellation¦waiver of obligation",
+    "1pjb6\tマクロ経済\tマクロけいざい\tn¦¦macroeconomy¦macro economy",
+    "1pjb8\t権限昇格\tけんげんしょうかく\tn¦comp¦privilege escalation",
+    "1pjb9\tアコギ女子\tアコギじょし\tn¦col¦female singer-songwriter who typically uses an acoustic guitar¦アコギ",
+    "1pjba\t\tスタフィロコッカス\tn¦rare,biol¦staphylococcus¦ブドウ球菌",
+    "1pjbb\t桑茶|くわ茶~sK\tくわちゃ\tn¦¦mulberry leaf tea\tn¦¦yellow ochre (color)¦mustard brown¦camel",
+    "1pjbc\tお救人~sK|沖独活~sK|浮太~sK\tおきゅうと|おきうと|おきゅうど~sk|おきうど~sk\tn¦food¦okyūto¦dish of boiled egonori formed into gel strips, specialty of Fukuoka Prefecture\tn¦¦Campylaephora hypnaeoides (species of red algae)¦egonori¦エゴノリ",
+    "1pjbe\t第三紀層\tだいさんきそう\tn¦geol¦tertiary layer¦tertiary formation",
+    "1pjbf\tお遊び|御遊び~sK\tおあそび\tn¦chn¦play¦playing¦game¦遊び・1\tn¦¦lack of seriousness¦half-hearted effort¦just playing around",
+    "1pjbg\t大木戸\tおおきど\tn¦hist¦large gate (to a castle)¦front gate\tn¦hist¦checkpoint (Edo period)",
+    "1pjbh\t女芝居\tおんなしばい\tn¦¦play performed exclusively by women",
+    "1pjbj\t幕末維新\tばくまついしん\tn¦hist¦closing years of the Tokugawa shogunate and the Meiji Restoration (1850s-1860s)¦Bakumatsu and Meiji Restoration¦幕末",
+    "1pjbk\t巧まずして\tたくまずして\texp,adv¦¦unintentionally¦inadvertently¦without trying to¦naturally¦artlessly",
     "1pjbl\t滾らせる\tたぎらせる\tv1,vt¦uk¦to bring to a boil¦to make seethe\tv1,vt¦uk¦to stir up (emotions)¦to fire up¦to make surge",
     "1pjbn\t瓜実|瓜核|瓜ざね~sK\tうりざね\tn¦¦melon seed\tn¦abbr¦oval face (e.g. of a beautiful woman)¦face shaped like a melon seed¦瓜実顔",
     "1pjbo\t開発機\tかいはつき\tn¦¦development machine¦experimental machine",
@@ -851,28 +879,5 @@ export const PIECE: WordsPiece = {
     "1pk01\t黄金の山\tこがねのやま\texp,n¦¦mountain that yields gold¦gold mine\texp,n¦¦mountain of gold¦heap of gold coins¦pile of gold",
     "1pk02\t腹が決まる\tはらがきまる\texp,v5r¦¦to be resolved¦to make up one's mind¦to steel oneself¦to come to a decision",
     "1pk03\t大きな面|大きなツラ~sK|おおきな面~sK\tおおきなつら\texp,n¦¦arrogant look¦conceited expression¦smug face¦大きな顔・1\texp,n¦¦brazen demeanor (despite being in the wrong)¦shameless attitude¦unabashed manner¦大きな顔・2",
-    "1pk04\t押っ圧折る|押っぺしょる|おっ圧折る\tおっぺしょる\tv5r,vt¦uk,col¦to snap (something) forcefully¦to break by force¦へし折る¦emphatic form of へし折る",
-    "1pk05\t忠義顔\tちゅうぎがお\tn¦¦feigned loyalty¦expression of loyalty¦show of loyalty",
-    "1pk06\t画餅に帰する\tがべいにきする\texp,vs-s¦¦to come to nothing¦to end in failure¦to fall through¦画餅に帰す",
-    "1pk07\t土性っ骨~ateji\tどしょっぽね\tn¦¦one's innate character¦spirit¦backbone¦土性骨¦emphatic form of 土性骨",
-    "1pk08\t鉄砲組\tてっぽうぐみ\tn¦hist¦musketeer corps¦arquebusier unit¦unit of foot soldiers armed with firearms",
-    "1pk09\t薪雑把|真木撮棒|薪ざっぽう~sK|薪ざっぽ~sK|薪ざっぱ~sK\tまきざっぽう|まきざっぽ|まきざっぱ~rk\tn¦arch¦split firewood¦firewood chunks¦billet",
-    "1pk0a\t\tたあ|た\texp,prt¦col¦indicates word or phrase being defined¦とは・1\texp,prt¦col¦used for quoting (thoughts, speech, etc.)¦とは・2¦indicates contrast or adds emphasis to a negative statement\texp,prt¦col¦with¦とは・3¦more emphatic than と\texp,prt¦col¦(not) as much as¦(not) so much as¦とは・4¦with neg. verb\texp,prt¦col¦the fact that¦to think that¦such a thing as¦とは・5¦indicates surprise, disbelief, anger, etc.; sometimes at sentence end",
-    "1pk0b\t弓杖\tゆんづえ|ゆみづえ|ゆづえ\tn¦¦bow used as a walking stick\tn¦¦length of a bow",
-    "1pk0c\t放れ駒\tはなれごま\tn¦arch¦loose horse¦riderless horse¦駒・2",
-    "1pk0e\t新関\tしんせき\tn¦arch¦newly built checkpoint¦関所",
-    "1pk0f\t野に伏し山に伏す\tのにふしやまにふす\texp,v5s¦rare,id¦to endure hardship while traveling¦to face troubles on a journey",
-    "1pk0g\t実にや\tげにや\tadv¦uk,arch¦truly!¦indeed!¦how true!",
-    "1pk0h\t男が立つ|男がたつ~sK\tおとこがたつ\texp,v5t¦id¦to maintain one's honor as a man¦to save face (as a man)¦to have one's honor upheld¦usu. in the negative",
-    "1pk0i\t\tからは\texp,prt,conj¦dated¦now that¦since¦so long as¦because¦からには¦は is pronounced as わ; indicates that what follows is natural or expected",
-    "1pk0j\t大事ない|大事無い\tだいじない\tadj-i¦dated¦alright¦of no concern¦unproblematic¦okay¦fine",
-    "1pk0k\t阿毘羅吽欠蘇婆訶|阿毘羅吽欠裟婆呵\tあびらうんけんそわか|アビラウンケンソワカ~~~!\texp¦uk,Buddh¦a-bi-ra-un-ken so-wa-ka (mantra directed to Vairocana)¦大日如来¦san~a vi ra hūṃ khaṃ svāhā",
-    "1pk0l\t大恩教主\tだいおんきょうしゅ\tn¦hon,Buddh¦Gautama Buddha¦Shakyamuni¦the historical Buddha¦釈迦牟尼",
-    "1pk0m\t申すまでもない|申す迄もない~sK|申す迄も無い~sK\tもうすまでもない\texp,adj-i¦hum¦goes without saying¦needless to say¦obvious¦言うまでもない",
-    "1pk0n\t険山|嶮山\tけんざん\tn¦rare¦steep mountain¦precipitous mountain",
-    "1pk0o\t\tひょろつく\tv5k,vi¦¦to totter¦to stagger¦to tumble¦to reel¦to become unsteady (of one's feet)¦ひょろひょろ・1",
-    "1pk0p\t放れ馬\tはなれうま\tn¦¦runaway horse¦riderless horse",
-    "1pk0q\t狂疾\tきょうしつ\tn¦arch¦mental illness¦madness¦insanity",
-    "1pk0r\t狂笑\tきょうしょう\tn¦¦mad laughter¦maniacal laughter",
   ],
 };

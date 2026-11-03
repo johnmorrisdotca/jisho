@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 7 of 220, from "0mwu". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 7 of 220, from "0mwtm". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0mwtm\t\tスコーカー\tn¦¦squawker",
+    "0mwtw\t\tスコーピング\tn¦¦scoping",
     "0mwu6\t\tスコープ\tn¦¦scope¦extent¦range\tn¦¦scope (i.e. an optical device)¦usu. in compounds\tn¦comp¦scope (of a name binding)",
     "0mwug\t\tスコール\tn¦¦squall",
     "0mwuq\t\tスコア\tn¦¦score (in a game)\tn¦music¦full score¦総譜",
@@ -789,7 +791,7 @@ export const PIECE: WordsPiece = {
     "0n3ko\t\tチケット|ティケット|テケツ~ok\tn¦¦ticket",
     "0n3ky\t\tチタン\tn¦¦titanium (Ti)¦ger~Titan",
     "0n3l8\t\tチップ\tn¦¦tip¦gratuity\tn¦abbr,baseb¦foul tip¦ファウルチップ\tn¦¦tip (of a ballpoint pen)",
-    "0n3li\t禿び~rK\tちび|チビ~~~!\tn¦uk¦small animal¦runt\tpref¦uk¦worn down (pencil, etc.)",
+    "0n3li\t禿び~rK\tちび|チビ~~~!\tn¦uk¦small animal¦runt¦3\tpref¦uk¦worn down (pencil, etc.)¦4",
     "0n3ls\t窒扶斯~ateji,rK\tチフス|チブス~ok|チプス~ok\tn¦uk,med¦typhoid¦paratyphoid¦腸チフス|パラチフス¦ger~Typhus\tn¦uk,med¦typhus¦発疹チフス",
     "0n3m2\t西蔵~rK\tチベット\tn¦uk¦Tibet",
     "0n3mc\t\tチャージ\tn,vs¦¦charge (electrical)¦recharging\tn¦¦charge (fee)\tn,vs¦¦topping up (a contactless smart card)¦recharging\tn,vs¦¦refuelling\tn,vs¦sports¦charge¦rush¦attack\tn,vs¦sports¦charge down (rugby)",
@@ -816,7 +818,7 @@ export const PIECE: WordsPiece = {
     "0n3ta\t\tチャンク\tn¦¦chunk",
     "0n3tk\t\tチャンス\tn¦¦chance¦opportunity",
     "0n3u4\t\tチャンピオン|チャンピョン|チャンピォン|チャンピヨン\tn¦¦champion",
-    "0n3ue\tチャン語\tチャンご\tn¦¦Qiang (language)",
+    "0n3ue\tチャン語\tチャンご\tn¦¦Qiang (language)¦2",
     "0n3uo\t\tチューター|テューター|チュータ~sk|テュータ~sk\tn¦¦tutor",
     "0n3uy\t\tチュートリアル\tn¦¦tutorial",
     "0n3vi\t\tチューナー|チューナ\tn¦¦tuner (of a radio, TV, etc.)",
@@ -1238,6 +1240,5 @@ export const PIECE: WordsPiece = {
     "0n7o6\t\tデジタル|ディジタル\tadj-no,n¦¦digital",
     "0n7og\t\tデジタルアート|デジタル・アート\tn¦¦digital art",
     "0n7oq\t\tデジタルオーディオテープ|デジタル・オーディオ・テープ\tn¦¦digital audio tape¦DAT",
-    "0n7pa\t\tデジタルスピードメーター|デジタル・スピードメーター\tn¦¦digital speedometer",
   ],
 };

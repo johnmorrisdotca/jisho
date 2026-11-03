@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 15 of 220, from "0p4ns". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 15 of 220, from "0p4mo". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0p4mo\t嘘|噓\tうそ|ウソ~~~!\tn,adj-no¦¦lie¦fib¦falsehood¦untruth\tn,adj-no¦¦mistake¦error\tn¦¦unwise move¦bad decision\tint¦col¦no way!¦unbelievable!¦really?!",
+    "0p4my\t嘘っぱち|嘘っ八~rK\tうそっぱち\tn¦col¦total lie¦downright lie",
+    "0p4n8\t嘘っ八百\tうそっぱっぴゃく\texp¦¦full of lies",
+    "0p4ni\t嘘で固める|嘘でかためる~sK|うそで固める~sK\tうそでかためる\texp,v1¦¦to lie all the time¦to fabricate a web of lies",
     "0p4ns\t嘘をつく|嘘を吐く|嘘を付く~iK|ウソを付く~sK|ウソを吐く~sK|うそを付く~sK|うそを吐く~sK\tうそをつく|ウソをつく~~~!\texp,v5k¦¦to tell a lie¦to fib",
     "0p4o2\t嘘字|うそ字\tうそじ\tn¦¦incorrectly written character¦kanji written with the wrong strokes¦wrongly used kanji",
     "0p4oc\t嘘つき|嘘吐き|嘘付き~sK|ウソ付き~sK|ウソ吐き~sK|うそ付き~sK|噓吐き~sK|うそ吐き~sK\tうそつき|ウソつき~sk\tn¦¦liar¦fibber\tn¦¦lying",
@@ -476,7 +480,7 @@ export const PIECE: WordsPiece = {
     "0p8gg\t燕雀\tえんじゃく\tn¦¦small bird (like a swallow or sparrow)¦鴻鵠・1\tn¦¦small-minded person¦person lacking in character¦鴻鵠・2",
     "0p8gq\t燕青拳\tえんせいけん\tn¦MA¦Yangqingquan¦Yangqing Fist",
     "0p8h0\t燕巣\tえんそう|えんず\tn¦rare¦swift's nest (used to make bird's nest soup)¦edible bird's nest¦ツバメの巣・2",
-    "0p8ha\t猿|猨~sK\tさる|サル~~~!\tn¦uk¦monkey (esp. the Japanese macaque, Macaca fuscata)¦ape¦non-human primate¦ニホンザル\tn¦¦sliding wooden bolt (for holding a door or window shut)\tn¦¦clasp used to control the height of a pot-hook¦自在鉤\tn¦arch¦bathhouse prostitute¦湯女・2",
+    "0p8ha\t猿|猨~sK\tさる|サル~~~!\tn¦uk¦monkey (esp. the Japanese macaque, Macaca fuscata)¦ape¦non-human primate¦ニホンザル\tn¦¦sliding wooden bolt (for holding a door or window shut)¦4\tn¦¦clasp used to control the height of a pot-hook¦自在鉤¦5\tn¦arch¦bathhouse prostitute¦湯女・2¦6",
     "0p8hk\t猿ぐつわをかます|猿轡をかます\tさるぐつわをかます\texp,v5s¦¦to gag someone",
     "0p8hu\t猿も木から落ちる\tさるもきからおちる\texp,v1¦proverb¦even monkeys fall from trees¦anyone can make a mistake¦pride comes before a fall¦even Homer sometimes nods",
     "0p8i4\t猿回し\tさるまわし\tn¦¦showman who trains performing monkeys",
@@ -1045,14 +1049,5 @@ export const PIECE: WordsPiece = {
     "0pd5c\t温水\tおんすい\tn,adj-no¦¦warm water",
     "0pd5m\t温泉\tおんせん\tn¦¦hot spring\tn¦¦onsen¦hot spring resort¦hot spring spa",
     "0pd5w\t温存\tおんぞん\tn,vs,vt¦¦preservation¦retainment¦keeping",
-    "0pd66\t温帯\tおんたい\tn¦¦temperate zone",
-    "0pd6g\t温暖\tおんだん\tadj-na,n¦¦warm¦mild¦temperate",
-    "0pd6q\t温暖化現象\tおんだんかげんしょう\tn¦¦greenhouse effect",
-    "0pd70\t温点\tおんてん\tn¦¦heat spot¦warm spot¦hot spot¦hot point¦冷点",
-    "0pd7a\t温度\tおんど\tn¦¦temperature",
-    "0pd7k\t温度計\tおんどけい\tn¦¦thermometer",
-    "0pd7u\t温湯\tおんとう\tn¦¦comfortably hot bath¦hot spring",
-    "0pd84\t温熱\tおんねつ\tn,adj-no¦¦warmth¦heat",
-    "0pd8e\t温熱性\tおんねつせい\tadj-na¦¦thermal",
   ],
 };

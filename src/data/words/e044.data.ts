@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 45 of 220, from "0vtdw". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 45 of 220, from "0vt9". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,23 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0vt96\t肥\tこえ\tn¦¦manure¦night soil¦dung¦fertiliser¦fertilizer",
+    "0vt9g\t肥える\tこえる\tv1,vi¦¦to grow fat¦to gain weight¦to put on weight\tv1,vi¦¦to grow fertile (of soil)\tv1,vi¦¦to be discerning (of one's palate, eye, ear, etc.)¦to be discriminating¦to be refined¦目が肥える\tv1,vi¦¦to become rich¦to become wealthy",
+    "0vt9q\t肥やし|肥し\tこやし\tn¦¦manure¦night soil¦dung¦fertiliser¦fertilizer\tn¦¦something that will help one develop in the future",
+    "0vta0\t肥汲み\tこえくみ\tn¦¦night-soil man¦night-soil woman\tn,vs¦¦removal of night-soil",
+    "0vtaa\t肥大\tひだい\tn,vs,vi¦¦swelling¦enlargement¦becoming fat\tn,vs,vi¦med¦hypertrophy",
+    "0vtak\t肥満\tひまん\tn,vs,vi,adj-no¦¦corpulence¦fatness¦obesity",
+    "0vtau\t肥料\tひりょう\tn¦¦manure¦fertilizer¦fertiliser¦compost",
+    "0vtb4\t被せる\tかぶせる\tv1,vt¦uk¦to cover (with something)\tv1,vt¦uk¦to put on (e.g. someone's head)\tv1,vt¦uk¦to pour liquid (on something)¦to dash liquid (over something)\tv1,vt¦uk¦to plate (something) with metal¦to cover (with a dental crown)\tv1,vt¦uk¦to add (e.g. music to a video)¦to include (into something)\tv1,vt¦uk¦to speak (over someone else)\tv1,vt¦uk¦to put the blame (on someone)¦to place the responsibility (on someone)",
+    "0vtbe\t被る|冠る\tかぶる|かむる\tv5r,vt¦uk¦to put on (one's head)¦to wear¦to have on¦to pull over (one's head)¦to crown (oneself)\tv5r,vt¦uk¦to be covered with (dust, snow, etc.)¦to pour (water, etc.) on oneself¦to dash on oneself¦to ship water\tv5r,vt¦uk¦to bear (e.g. someone's debts, faults, etc.)¦to take (blame)¦to assume (responsibility)¦to shoulder (burden)\tv5r,vt¦¦to overlap (e.g. sound or color)\tv5r,vt¦¦to be similar¦to be redundant\tv5r,vi¦¦to be fogged (due to overexposure, etc.)¦of film\tv5r,vi¦¦to close¦to come to an end¦of a play, etc.\tv5r,vi¦¦to get a full house¦to sell out¦of a play, etc.\tv5r,vi¦arch¦to blunder¦to bungle¦to fail¦毛氈を被る・1¦of a play, etc.\tv5r,vi¦arch¦to be deceived",
+    "0vtbo\t被る|蒙る\tこうむる\tv5r,vt¦¦to suffer¦to receive (kindness, rebuke, support)¦to sustain (damage)",
+    "0vtby\t被害\tひがい\tn¦¦(suffering) damage¦injury¦harm",
+    "0vtc8\t被害を受ける\tひがいをうける\texp,v1¦¦to be damaged¦to receive damage",
+    "0vtci\t被害者\tひがいしゃ\tn¦¦victim¦injured party¦sufferer¦加害者",
+    "0vtcs\t被害妄想\tひがいもうそう\tn¦psy¦persecution complex¦delusion of persecution¦paranoia",
+    "0vtd2\t被験者|被検者\tひけんしゃ\tn¦¦subject (of a medical experiment, etc.)¦test subject¦trial subject¦testee¦被験者\tn¦¦examinee (of a full-body scan, etc.)",
+    "0vtdc\t被減数\tひげんすう\tn¦math¦minuend",
+    "0vtdm\t被告\tひこく\tn¦law¦defendant¦the accused¦原告",
     "0vtdw\t被告人\tひこくにん\tn¦¦accused¦defendant¦prisoner at the bar",
     "0vte6\t被差別\tひさべつ\tn¦¦being discriminated against¦suffering discrimination¦being a victim of discrimination",
     "0vteg\t被災\tひさい\tn,vs,vi¦¦suffering (from a disaster)¦being hit (by an earthquake, typhoon, etc.)¦falling victim (to)",
@@ -379,7 +396,7 @@ export const PIECE: WordsPiece = {
     "0vwbg\t百色眼鏡\tひゃくいろめがね\tn¦¦kaleidoscope",
     "0vwbq\t百人一首\tひゃくにんいっしゅ\tn¦work¦(Ogura) Hyakunin Isshu¦classical Japanese anthology of one hundred Japanese waka by one hundred poets\tn¦¦hyakunin isshu karuta¦hyakunin isshu poetry cards¦deck of 200 cards, the 100 waka of the Hyakunin Isshu split between them, to be matched together during the game¦かるた",
     "0vwc0\t百世|百代\tひゃくせい~~百世|ひゃくだい~~百代|はくたい~~百代|ももよ\tn¦¦long era¦ages¦eternity",
-    "0vwca\t百姓\tひゃくしょう\tn¦¦farming\tn¦¦the common people¦百姓・ひゃくせい",
+    "0vwca\t百姓\tひゃくしょう\tn¦¦farming¦2\tn¦¦the common people¦百姓・ひゃくせい¦4",
     "0vwck\t百姓\tひゃくせい\tn¦¦the common people",
     "0vwcu\t百姓一揆\tひゃくしょういっき\tn¦hist¦peasant uprising (Edo period)¦peasants' revolt",
     "0vwd4\t百姓家\tひゃくしょうや\tn¦¦farmer's home",
@@ -1044,39 +1061,5 @@ export const PIECE: WordsPiece = {
     "0w1ma\t不明朗\tふめいろう\tadj-na,n¦¦gloominess¦gloom\tadj-na,n¦¦questionable¦unfair¦underhand",
     "0w1mk\t不滅\tふめつ\tadj-na,adj-no,n¦¦immortal¦undying¦indestructible",
     "0w1mu\t不毛\tふもう\tadj-no,adj-na,n¦¦barren¦sterile¦infertile\tadj-na,adj-no,n¦¦unproductive (e.g. discussion)¦fruitless",
-    "0w1n4\t不毛の地\tふもうのち\texp,n¦¦barren land¦sterile soil¦wasteland",
-    "0w1ne\t不問\tふもん\tn,n-suf¦¦not asking (about)¦letting go unquestioned¦disregarding¦ignoring¦overlooking¦不問に付す",
-    "0w1no\t不問に付す|不問に附す~sK|不問にふす~sK\tふもんにふす\texp,v5s¦¦to ignore (a fault, misstep, issue, etc.)¦to disregard¦to overlook¦to pass over¦to let go unquestioned",
-    "0w1ny\t不夜城\tふやじょう\tn¦¦nightless gay quarters¦nightless city",
-    "0w1o8\t不愉快\tふゆかい\tadj-na,n¦¦unpleasant¦disagreeable¦displeasing¦uncomfortable¦unhappy",
-    "0w1oi\t不予\tふよ\tn¦¦indisposition¦emperor's illness¦unhappiness",
-    "0w1os\t不用意\tふようい\tadj-na,n¦¦unprepared\tadj-na,n¦¦careless¦imprudent¦indiscreet¦inadvertent",
-    "0w1p2\t不用品\tふようひん\tn¦¦disused article",
-    "0w1pc\t不養生\tふようじょう\tadj-na,n¦¦neglect of health¦intemperance",
-    "0w1pm\t不欄\tふらん\tn¦¦space without columns",
-    "0w1pw\t不利\tふり\tn,adj-na¦¦disadvantage¦handicap¦unfavorable position¦有利・1",
-    "0w1q6\t不利益\tふりえき\tn,adj-na¦¦disadvantage¦handicap¦drawback¦inadvisability¦inexpediency¦loss",
-    "0w1qg\t不履行\tふりこう\tn¦¦default¦nonperformance",
-    "0w1qq\t不理\tふり\tadj-na,n¦arch¦unreasonable¦irrational¦illogical",
-    "0w1r0\t不離\tふり\tn¦¦inseparability",
-    "0w1ra\t不流通\tふりゅうつう\tn¦¦nonnegotiable",
-    "0w1rk\t不慮\tふりょ\tadj-no,n¦¦unforeseen¦unexpected¦sudden¦accidental",
-    "0w1ru\t不良\tふりょう\tadj-no,adj-na,n¦¦bad¦poor¦inferior¦defective\tn,adj-no,adj-na¦¦delinquent¦hoodlum¦hooligan",
-    "0w1s4\t不良化\tふりょうか\tn,vs¦¦degradation¦downfall",
-    "0w1se\t不良少年\tふりょうしょうねん\tn¦¦juvenile delinquent",
-    "0w1so\t不良診断\tふりょうしんだん\tn,vs¦¦trouble-shooting¦fault analysis",
-    "0w1sy\t不良貸し付け\tふりょうかしつけ\tn¦¦bad debts",
-    "0w1t8\t不良導体\tふりょうどうたい\tn¦¦insulator¦nonconductor¦poor conductor",
-    "0w1ti\t不良品\tふりょうひん\tn¦¦inferior goods¦defective product¦defective goods",
-    "0w1ts\t不了見|不料簡|不了簡|不量見\tふりょうけん\tn,adj-na¦rare¦indiscretion¦bad idea¦thoughtlessness¦indiscreetness",
-    "0w1u2\t不倫\tふりん\tn,vs,vi,adj-na,adj-no¦¦adultery¦impropriety¦(an) affair¦immorality",
-    "0w1uc\t不倫罪\tふりんざい\tn¦¦(crime of) adultery",
-    "0w1um\t不例\tふれい\tn¦¦indisposition¦sickness",
-    "0w1uw\t不連続\tふれんぞく\tadj-na,n¦¦discontinuous\tadj-na,n¦math¦discontinuous",
-    "0w1v6\t不労\tふろう\tn¦¦unearned",
-    "0w1vg\t不労所得\tふろうしょとく\tn¦yoji¦unearned income¦investment income¦passive income",
-    "0w1vq\t不老\tふろう\tn¦¦perennial youth¦eternal youth",
-    "0w1w0\t不老泉\tふろうせん\tn¦¦fountain of youth",
-    "0w1wa\t不老不死\tふろうふし\tn,adj-no¦yoji¦perpetual youth and longevity¦immortality",
   ],
 };

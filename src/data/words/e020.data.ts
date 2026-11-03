@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 21 of 220, from "0qin". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 21 of 220, from "0qilk". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,12 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0qilk\t教授\tきょうじゅ\tn¦¦professor\tn,vs,vt¦¦teaching¦instruction",
+    "0qilu\t教習\tきょうしゅう\tn,vs,vt¦¦training¦instruction",
+    "0qim4\t教習所\tきょうしゅうじょ|きょうしゅうしょ\tn¦¦training institute¦school\tn¦abbr¦driving school¦自動車教習所",
+    "0qime\t教習生\tきょうしゅうせい\tn¦¦trainee¦student",
+    "0qimo\t教書\tきょうしょ\tn¦¦message (delivered by the US president or a state governor)¦address¦一般教書\tn¦¦(papal) bull¦decree\tn¦obs¦textbook¦教科書",
+    "0qimy\t教条\tきょうじょう\tn¦¦tenet¦dogma",
     "0qin8\t教職\tきょうしょく\tn¦¦the teaching profession\tn¦Christn¦education of laity",
     "0qini\t教職員\tきょうしょくいん\tn¦¦teaching staff¦faculty",
     "0qins\t教祖\tきょうそ\tn¦¦founder of a religious sect",
@@ -325,7 +331,7 @@ export const PIECE: WordsPiece = {
     "0ql6c\t極北\tきょくほく\tn¦¦extreme north¦North Pole\tn¦¦utmost limit¦breaking point",
     "0ql6m\t極力\tきょくりょく\tadv¦¦to the utmost¦to the best of one's ability",
     "0ql6w\t極論\tきょくろん\tn,vs,vt¦¦extreme logic¦extreme argument¦unreserved argument",
-    "0ql76\t玉|球|珠|弾|璧~sK\tたま\tn¦¦ball¦sphere¦globe¦orb\tn¦¦bead (of sweat, dew, etc.)¦drop¦droplet\tn¦¦ball (in sports)¦pitch (e.g. in baseball)¦esp. 球\tn¦¦pile (of noodles, etc.)\tn¦¦bullet¦esp. 弾\tn¦¦bulb (i.e. a light bulb)¦esp. 球\tn¦¦lens (of glasses, etc.)\tn¦¦bead (of an abacus)¦esp. 玉, 珠\tn¦sl,abbr¦ball (i.e. a testicle)¦金玉・きんたま¦esp. 玉\tn¦¦gem¦jewel (esp. spherical; sometimes used figuratively)¦pearl¦esp. 玉, 珠; also written as 璧\tn¦¦female entertainer (e.g. a geisha)\tn¦¦item, funds or person used as part of a plot\tn,n-suf¦¦egg¦玉¦玉子・2\tn-suf,ctr¦food¦okonomiyaki¦玉¦お好み焼き\tn-suf¦¦coin¦usu. だま\tn-suf¦¦precious¦beautiful¦excellent",
+    "0ql76\t玉|球|珠|弾|璧~sK\tたま\tn¦¦ball¦sphere¦globe¦orb\tn¦¦bead (of sweat, dew, etc.)¦drop¦droplet\tn¦¦ball (in sports)¦pitch (e.g. in baseball)¦esp. 球\tn¦¦pile (of noodles, etc.)\tn¦¦bullet¦esp. 弾\tn¦¦bulb (i.e. a light bulb)¦esp. 球\tn¦¦lens (of glasses, etc.)\tn¦¦bead (of an abacus)¦esp. 玉, 珠\tn¦sl,abbr¦ball (i.e. a testicle)¦金玉・きんたま¦esp. 玉\tn¦¦gem¦jewel (esp. spherical; sometimes used figuratively)¦pearl¦esp. 玉, 珠; also written as 璧\tn¦¦female entertainer (e.g. a geisha)\tn¦¦item, funds or person used as part of a plot¦13\tn,n-suf¦¦egg¦玉¦玉子・2¦14\tn-suf,ctr¦food¦okonomiyaki¦玉¦お好み焼き¦15\tn-suf¦¦coin¦usu. だま¦16\tn-suf¦¦precious¦beautiful¦excellent¦17",
     "0ql7q\t玉の輿|玉のこし~sK\tたまのこし\texp,n¦¦palanquin set with jewels\texp,n¦id¦money and social status gained by marrying a rich and powerful man¦玉の輿に乗る",
     "0ql80\t玉の輿に乗る|玉の輿にのる~sK\tたまのこしにのる\texp,v5r¦¦to marry into a family of rank¦to marry money",
     "0ql8a\t玉砂利\tたまじゃり\tn¦¦gravel",
@@ -987,12 +993,5 @@ export const PIECE: WordsPiece = {
     "0qqjy\t訓練\tくんれん\tn,vs,vt¦¦training¦drill¦practice¦discipline",
     "0qqk8\t訓話\tくんわ\tn,vs,vt¦¦moral discourse¦admonitory lecture¦instructive talk¦exemplum¦apologue",
     "0qqki\t群\tぐん\tn,n-suf¦¦group¦bunch¦crowd¦throng¦swarm¦band¦herd¦school (of fish)\tn,n-suf¦math¦group",
-    "0qqks\t群がる|叢がる~rK|簇がる~rK\tむらがる\tv5r,vi¦¦to swarm¦to gather",
-    "0qql2\t群れ\tむれ\tn¦¦group¦crowd¦flock¦herd¦bevy¦school¦swarm¦cluster (e.g. of stars)¦clump¦pack (e.g. of dogs)",
-    "0qqlc\t群れる\tむれる\tv1,vi¦¦to crowd¦to flock¦to swarm",
-    "0qqlm\t群れ集まる\tむれあつまる\tv5r¦¦to gather in large groups",
-    "0qqlw\t群居\tぐんきょ\tn,vs,vi¦¦gregariousness",
-    "0qqm6\t群れ居る|群居る\tむれいる\tv1,vi¦¦to crowd in¦to come together",
-    "0qqmg\t群生|群棲~sK\tぐんせい\tn,vs,vi¦¦growing en masse in one location (of plants)\tn,vs,vi¦¦living gregariously (of animals)¦living in flocks, herds, colonies, etc.¦also written as 群棲\tn¦Buddh¦all living creatures¦群生・ぐんじょう",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 13 of 220, from "0ooy". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 13 of 220, from "0oox". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0oox4\t悪水\tあくすい\tn¦¦undrinkable water",
+    "0ooxe\t悪酔い|悪酔\tわるよい\tn,vs,vi¦¦drunken sickness¦getting sick from drinking\tn,vs,vi¦¦drunken frenzy¦becoming violent or disorderly when drunk",
+    "0ooxo\t悪性\tあくしょう\tn,adj-na¦¦evil nature¦licentiousness¦lewdness",
+    "0ooxy\t悪性\tあくせい\tadj-no,n¦¦malignant (cancer)¦virulent¦pernicious (anemia, anaemia)",
     "0ooy8\t悪性リンパ腫|悪性リンパしゅ\tあくせいリンパしゅ\tn¦¦malignant lymphoma",
     "0ooyi\t悪性腫瘍\tあくせいしゅよう\tn¦med¦malignant tumor¦malignant tumour¦malignancy¦cancer¦癌・がん",
     "0ooys\t悪性度\tあくせいど\tn¦¦malignancy",
@@ -224,7 +228,7 @@ export const PIECE: WordsPiece = {
     "0oqnm\t庵室\tあんしつ|あんじつ\tn¦¦hermit's cell¦retreat",
     "0oqnw\t庵主\tあんじゅ|あんしゅ\tn¦¦owner of a hermitage¦abbess¦prioress¦nun in charge of a Buddhist convent",
     "0oqo6\t按手\tあんしゅ|あんじゅ\tn¦¦ordination¦laying on of hands",
-    "0oqog\tあん摩|按摩\tあんま\tn,vs,vt¦¦massage (esp. anma, a traditional form of Japanese massage)\tn¦arch,col¦blind person¦from blind people historically oft. being masseurs",
+    "0oqog\tあん摩|按摩\tあんま\tn,vs,vt¦¦massage (esp. anma, a traditional form of Japanese massage)\tn¦arch,col¦blind person¦from blind people historically oft. being masseurs¦3",
     "0oqoq\t暗い|昏い~rK|冥い~rK|闇い~rK\tくらい\tadj-i¦¦dark¦gloomy¦murky\tadj-i¦¦depressed¦dispirited¦down in the dumps¦dark (mood)\tadj-i¦¦dark (in colour)¦dull\tadj-i¦¦ill-boding¦dark (e.g. past)¦suspicious\tadj-i¦¦unlikely (to succeed)¦hopeless¦unpromising\tadj-i¦¦unfamiliar (with)¦ignorant (of)¦明るい・5¦as 〜に暗い",
     "0oqp0\t位~sK\tくらい|ぐらい\tsuf,prt¦¦approximately¦about¦around¦or so¦also written as 位\tsuf,prt¦¦to (about) the extent that¦(almost) enough that¦so ... that ...¦at least\tsuf,prt¦¦as ... as ...¦like",
     "0oqpa\t暗がり\tくらがり\tn¦¦darkness",
@@ -1015,11 +1019,5 @@ export const PIECE: WordsPiece = {
     "0ox2q\t一再\tいっさい\tn,adv¦¦once or twice¦repeatedly",
     "0ox30\t一妻多夫\tいっさいたふ\tn¦¦polyandry",
     "0ox3a\t一際|一きわ~sK|ひと際~sK\tひときわ\tadv¦uk¦conspicuously¦noticeably¦remarkably¦strikingly¦outstandingly¦especially¦particularly",
-    "0ox3k\t一昨\tいっさく\tn¦¦one previous",
-    "0ox3u\t一昨晩\tいっさくばん\tn,adv¦¦night before last",
-    "0ox44\t一昨夜\tいっさくや\tn,adv¦¦night before last",
-    "0ox4e\t一策\tいっさく\tn¦¦idea¦plan",
-    "0ox4o\t一冊|１冊\tいっさつ\tn¦¦one copy (of a book, magazine, etc.)¦one volume",
-    "0ox4y\t一撮み|一撮|一摘み\tひとつまみ\tn¦¦pinch (of something)¦one piece\tn¦¦easy victory",
   ],
 };

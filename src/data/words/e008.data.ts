@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 9 of 220, from "0nifo". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 9 of 220, from "0nife". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0nife\t\tバー\tn¦¦bar¦tavern¦barroom¦pub\tn¦¦bar (establishment, counter, etc. where food and drinks are sold)\tn¦¦bar (in the high jump or pole vault)¦crossbar (in soccer, rugby, etc.)¦(ballet) barre",
     "0nifo\t\tバーガー\tn¦abbr,food¦burger¦hamburger¦ハンバーガー",
     "0nify\t\tバークリウム\tn¦¦berkelium (Bk)",
     "0nigs\t\tバーゲニングパワー|バーゲニング・パワー\tn¦¦bargaining power",
@@ -1228,9 +1229,5 @@ export const PIECE: WordsPiece = {
     "0nsrc\t\tフォームラバー|フォーム・ラバー\tn¦¦foam rubber",
     "0nsrm\t\tフォーメーション\tn¦sports¦formation",
     "0nsrw\t\tフォーラム\tn¦¦forum",
-    "0nss6\t\tフォール\tn,vs,vt¦¦fall (esp. in wrestling)",
-    "0nssg\t\tフォールト|フォルト\tn¦¦fault",
-    "0nssq\t\tフォールトトレランス\tn¦¦fault-tolerance",
-    "0nst0\t\tフォア|フォー\tn¦¦four",
   ],
 };
