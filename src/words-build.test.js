@@ -7,7 +7,6 @@ import {
   foldKana,
   glossesOf,
   kindLetters,
-  meaningOf,
   packClean,
   packRow,
   rankOf,
@@ -34,7 +33,7 @@ describe("an entry becomes a row for each reading", () => {
     expect(rows[0]).toMatchObject({
       reading: "たばこ",
       forms: ["莨", "煙草"],
-      meaning: "tobacco",
+      senses: [{ marks: ["uk"], glosses: ["tobacco"] }],
       common: true,
       usuallyKana: true,
     });
@@ -105,8 +104,8 @@ describe("an entry becomes a row for each reading", () => {
   });
 });
 
-describe("the English", () => {
-  it("shows the plain glosses first, and the one that opens with a note behind one that does not", () => {
+describe("the senses", () => {
+  it("show the plain glosses first, and the one that opens with a note behind one that does not", () => {
     expect(glossesOf(sense([], [], [["lit", "literally"], "(of a person) tall", "tall"]))).toEqual([
       "tall",
       "(of a person) tall",
@@ -114,51 +113,69 @@ describe("the English", () => {
     expect(glossesOf(sense([], [], [["expl", "an explanation"]]))).toEqual(["an explanation"]);
   });
 
-  it("stops at a whole gloss inside sixty characters, two senses at most, the first gloss always whole", () => {
-    expect(meaningOf([["paper"]])).toBe("paper");
-    expect(meaningOf([["a", "b", "c", "d"], ["e"], ["f"]])).toBe("a, b, c; e");
-    const long = "x".repeat(70);
-    expect(meaningOf([[long, "short"]])).toBe(long);
-    expect(meaningOf([["one", "two"], [`${"y".repeat(58)}`]])).toBe("one, two");
-    expect(meaningOf([])).toBe("");
+  it("keep four senses of three glosses, each with the marks JMdict gives it: usage, field and dialect", () => {
+    const [row] = rowsOfEntry(
+      entry(
+        `<r_ele><reb>あ</reb></r_ele>` +
+          `<sense><pos>&n;</pos><misc>&col;</misc><misc>&sl;</misc><gloss>a</gloss><gloss>b</gloss><gloss>c</gloss><gloss>d</gloss></sense>` +
+          `<sense><field>&food;</field><dial>&ksb;</dial><gloss>e</gloss></sense>` +
+          `${sense(["n"], [], ["f"])}${sense(["n"], [], ["g"])}${sense(["n"], [], ["h"])}`,
+      ),
+    );
+    expect(row?.senses).toEqual([
+      { marks: ["col", "sl"], glosses: ["a", "b", "c"] },
+      { marks: ["food", "ksb"], glosses: ["e"] },
+      { marks: [], glosses: ["f"] },
+      { marks: [], glosses: ["g"] },
+    ]);
   });
 
-  it("reads the five XML entities JMdict uses", () => {
+  it("have no sense with no gloss, and no row for a word that has none with one", () => {
+    expect(rowsOfEntry(entry(`<r_ele><reb>あ</reb></r_ele>${sense(["n"], [], [])}`))).toEqual([]);
     expect(
-      rowsOfEntry(entry(`<r_ele><reb>あ</reb></r_ele>${sense(["n"], [], ["R&amp;D &lt;lab&gt;"])}`))[0]?.meaning,
-    ).toBe("R&D <lab>");
+      rowsOfEntry(entry(`<r_ele><reb>あ</reb></r_ele>${sense(["n"], [], [])}${sense(["n"], [], ["x"])}`))[0]?.senses,
+    ).toHaveLength(1);
+  });
+
+  it("read the five XML entities JMdict uses", () => {
+    expect(
+      rowsOfEntry(entry(`<r_ele><reb>あ</reb></r_ele>${sense(["n"], [], ["R&amp;D &lt;lab&gt;"])}`))[0]?.senses[0]
+        ?.glosses,
+    ).toEqual(["R&D <lab>"]);
   });
 });
 
-describe("what is not for children", () => {
+describe("what safe mode leaves out", () => {
   const rows = (misc) =>
     rowsOfEntry(
       entry(
         `<r_ele><reb>ほも</reb></r_ele>${sense(["n"], [], ["polite word"])}${sense(["n"], misc, ["rude word"])}${sense(["n"], [], ["another"])}`,
       ),
     );
+  const glosses = (list) => list.map((one) => one.glosses[0]);
 
   for (const mark of ["vulg", "X", "sens", "derog"]) {
-    it(`leaves out a sense marked ${mark} from what is for children, and keeps the whole for everything`, () => {
+    it(`leaves out a sense marked ${mark} from the clean row, and keeps the whole row with its marks`, () => {
       const [row] = rows([mark]);
-      expect(row?.meaning).toBe("polite word; rude word");
-      expect(row?.clean?.meaning).toBe("polite word; another");
+      expect(glosses(row?.senses ?? [])).toEqual(["polite word", "rude word", "another"]);
+      expect(row?.senses[1]?.marks).toEqual([mark]);
+      expect(glosses(row?.clean?.senses ?? [])).toEqual(["polite word", "another"]);
     });
   }
 
   it("keeps a sense with any other mark", () => {
     const [row] = rows(["col"]);
-    expect(row?.clean?.meaning).toBe(row?.meaning);
+    expect(row?.clean?.senses).toEqual(row?.senses);
     expect(packClean(row ?? {})).toBe(packRow(row ?? {}));
   });
 
-  it("has no row for children when every sense is marked", () => {
+  it("has no clean row when every sense is marked", () => {
     const [row] = rowsOfEntry(
       entry(`<r_ele><reb>ホモビデオ</reb></r_ele>${sense(["n"], ["sens"], ["gay porn video"])}`),
     );
     expect(row?.clean).toBeNull();
     expect(packClean(row ?? {})).toBeNull();
-    expect(packRow(row ?? {})).toBe("ホモビデオ\t\tgay porn video\t");
+    expect(packRow(row ?? {})).toBe("ホモビデオ\t\t\tsens¦gay porn video");
   });
 
   it("leaves out a written form that only a marked sense applies to, and a reading that only one does", () => {
@@ -170,20 +187,15 @@ describe("what is not for children", () => {
       ),
     );
     expect(first?.forms).toEqual(["抜かす", "吐かす"]);
-    expect(first?.clean).toEqual({ forms: ["抜かす"], meaning: "to omit" });
-    expect(second?.clean).toEqual({ forms: ["抜かす"], meaning: "to omit" });
-    const [only] = rowsOfEntry(
+    expect(first?.clean).toEqual({ forms: ["抜かす"], senses: [{ marks: [], glosses: ["to omit"] }] });
+    expect(second?.clean?.forms).toEqual(["抜かす"]);
+    const [a, b] = rowsOfEntry(
       entry(
         `<r_ele><reb>あ</reb></r_ele><r_ele><reb>い</reb></r_ele><sense><stagr>あ</stagr><gloss>plain</gloss></sense><sense><stagr>い</stagr><misc>&derog;</misc><gloss>rude</gloss></sense>`,
       ),
     );
-    expect(only?.clean?.meaning).toBe("plain");
-    const second2 = rowsOfEntry(
-      entry(
-        `<r_ele><reb>あ</reb></r_ele><r_ele><reb>い</reb></r_ele><sense><stagr>あ</stagr><gloss>plain</gloss></sense><sense><stagr>い</stagr><misc>&derog;</misc><gloss>rude</gloss></sense>`,
-      ),
-    )[1];
-    expect(second2?.clean).toBeNull();
+    expect(glosses(a?.clean?.senses ?? [])).toEqual(["plain"]);
+    expect(b?.clean).toBeNull();
   });
 });
 
@@ -214,7 +226,7 @@ describe("the tables", () => {
 
   it("hold what was left out whole in the extra ones, for the keys whose answer is not the same", () => {
     expect(tables.extraReadings.map(([key]) => key)).toEqual(["がいじん", "ほもびでお", "ほも・びでお"]);
-    expect(tables.extraReadings.map(([, line]) => line).join("\n")).toContain("foreigner; outsider");
+    expect(tables.extraReadings.map(([, line]) => line).join("\n")).toMatch(/sens¦foreigner\t¦outsider/);
     expect(tables.extraForms).toEqual([]);
     expect(tables.extraReadings.some(([key]) => key === "かみ")).toBe(false);
   });
@@ -236,22 +248,28 @@ describe("the tables", () => {
 });
 
 describe("the stored row", () => {
-  it("is tab-apart fields: reading, forms, meaning and flags", () => {
+  it("is tab-apart fields: reading, forms, flags, then a field for each sense, its marks and then its glosses apart by ¦", () => {
     const [row] = rowsOfEntry(
       entry(
-        `<k_ele><keb>紙</keb><ke_pri>ichi1</ke_pri></k_ele><r_ele><reb>かみ</reb></r_ele>${sense(["n"], [], ["paper"])}`,
+        `<k_ele><keb>紙</keb><ke_pri>ichi1</ke_pri></k_ele><r_ele><reb>かみ</reb></r_ele>${sense(["n"], ["col"], ["paper", "sheet"])}${sense(["n"], [], ["one"])}`,
       ),
     );
-    expect(packRow(row ?? {})).toBe("かみ\t紙\tpaper\tC");
+    expect(packRow(row ?? {})).toBe("かみ\t紙\tC\tcol¦paper¦sheet\t¦one");
   });
 
-  it("refuses a field with a tab or a line break in it, which would be two fields", () => {
-    expect(() =>
-      packRow({ reading: "a", forms: [], meaning: "x\ty", kinds: "", common: false, usuallyKana: false }),
-    ).toThrow(/separator/);
-    expect(() =>
-      packRow({ reading: "a", forms: ["b|c"], meaning: "x", kinds: "", common: false, usuallyKana: false }),
-    ).toThrow(/separator/);
+  it("refuses a field with a tab, a line break or the sense break in it, which would be two fields", () => {
+    const row = (gloss, form = "b") => ({
+      reading: "a",
+      forms: [form],
+      senses: [{ marks: [], glosses: [gloss] }],
+      kinds: "",
+      common: false,
+      usuallyKana: false,
+    });
+    expect(() => packRow(row("x\ty"))).toThrow(/separator/);
+    expect(() => packRow(row("x¦y"))).toThrow(/separator/);
+    expect(() => packRow(row("x", "b|c"))).toThrow(/separator/);
+    expect(() => packRow({ ...row("x"), senses: [{ marks: ["a,b"], glosses: ["x"] }] })).toThrow(/separator/);
   });
 
   it("folds katakana to hiragana and leaves ー and the rest", () => {

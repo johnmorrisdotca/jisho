@@ -75,7 +75,7 @@ const page = `<!doctype html>
           <span class="fam-label" id="examples-label" data-say="wordExamples"></span>
           <div class="jisho-examples" id="examples" role="group" aria-labelledby="examples-label" data-testid="examples" lang="ja"></div>
         </div>
-        <div class="fam-row" data-help-en="For children, nothing JMdict marks vulgar, X-rated, sensitive or derogatory is fetched or shown. Everything fetches one more file and shows it." data-help-ja="「子ども向け」では、JMdictが下品、性的、配慮が必要、侮辱的と記しているものを、取得も表示もしません。「すべて」では、ファイルをもう一つ取得して、それも表示します。">
+        <div class="fam-row" data-help-en="Safe, the default, leaves out what JMdict marks vulgar, X-rated, sensitive or derogatory and fetches nothing that holds it. Unfiltered gives everything JMdict has, with its marks." data-help-ja="「セーフ」（初期値）は、JMdictが下品、性的、配慮が必要、侮辱的と記しているものを除き、それを含むファイルは取得しません。「フィルターなし」は、JMdictにあるすべてを、その印とともに返します。">
           <span class="fam-label" id="audience-label" data-say="audienceLabel"></span>
           <div class="fam-seg" id="audience" role="group" aria-labelledby="audience-label" data-testid="audience"></div>
         </div>

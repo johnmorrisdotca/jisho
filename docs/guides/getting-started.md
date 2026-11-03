@@ -46,4 +46,4 @@ console.log(wordsOf(words,"かみ")[0]?.meaning);
 
 ## What to read next
 
-[Look words up](words.md) says how to look a word up by its reading or its written form, how to keep what is not for children out, and how to keep the dictionary out of a server's bundle. [Find kanji](find-kanji.md) has the recipes, [how the look-alike pairs are measured](look-alike.md) says what a score means, and [where the data comes from](data-sources.md) says what you must credit.
+[Look words up](words.md) says how to look a word up by its reading or its written form, how to choose safe or unfiltered words and pass your own lists, and how to keep the dictionary out of a server's bundle. [Find kanji](find-kanji.md) has the recipes, [how the look-alike pairs are measured](look-alike.md) says what a score means, and [where the data comes from](data-sources.md) says what you must credit.

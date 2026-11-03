@@ -4,11 +4,11 @@
 //   node scripts/build-words.mjs                  fetches JMdict_e from the EDRDG
 //   node scripts/build-words.mjs JMdict_e.gz      reads a copy already here
 //
-// It writes the default words, which hold only what is fit for children: the common words (about 26,000 rows, one file), then the
+// It writes the default words, which hold only what safe mode keeps: the common words (about 26,000 rows, one file), then the
 // whole dictionary twice over, in pieces small enough for one lookup to fetch one: the rows by reading, and an index from each
 // written form to its readings. Both are cut where a reading or a form changes, so that no key is split across two pieces, and the
 // first key of each piece is in the manifest. Everything the default words leave out goes in files of their own, which a lookup
-// fetches only when it asks for everything. See docs/guides/words.md.
+// fetches only in unfiltered mode. See docs/guides/words.md.
 import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import process from "node:process";
@@ -20,6 +20,8 @@ const JMDICT_URL = "http://ftp.edrdg.org/pub/Nihongo/JMdict_e.gz";
 const OUT = "src/data/words";
 /** About this many bytes of rows to a piece of the rows by reading: one guess fetches one, gzipped to a third of it. */
 const READING_PIECE_BYTES = 64_000;
+/** About this many to a piece of what safe mode leaves out. */
+const EXTRA_PIECE_BYTES = 48_000;
 /** About this many to a piece of the index of written forms. */
 const FORM_PIECE_BYTES = 96_000;
 /** Readings that are not all kana (a middle dot is kana here, as it is in loanwords): they are looked up like a written form. */
@@ -120,7 +122,7 @@ function main(zipped) {
     `${OUT}/common.data.ts`,
     dataFile({
       imports: `import type { PackedWords } from "../../words.ts";\n`,
-      summary: `The ${common.length.toLocaleString("en-US")} common words of JMdict that are fit for children, which tags a word common when any of its written forms or readings is in news1, ichi1, spec1, spec2 or gai1. Each row: reading, written forms joined by "|", English meaning, flags. Nothing that is not for children is in it.`,
+      summary: `The ${common.length.toLocaleString("en-US")} common words of JMdict that safe mode keeps, which tags a word common when any of its written forms or readings is in news1, ichi1, spec1, spec2 or gai1. Each row: reading, written forms joined by "|", flags, then one field for each sense: its marks, then its glosses. Nothing that safe mode leaves out is in it.`,
       type: "PackedWords",
       name: "COMMON_WORDS",
       entry: "words-common",
@@ -138,7 +140,7 @@ ${rowsLiteral(common)}
     `${OUT}/common-extra.data.ts`,
     dataFile({
       imports: `import type { PackedPatch } from "../../words.ts";\n`,
-      summary: `What to do to the common words to have every common word as JMdict has it: each line is a position, "r" to replace the row there or "i" to insert one before it, and the row. Only for a host that asks for everything.`,
+      summary: `What to do to the common words to have every common word as JMdict has it: each line is a position, "r" to replace the row there or "i" to insert one before it, and the row. Only for unfiltered mode.`,
       type: "PackedPatch",
       name: "COMMON_EXTRA",
       entry: "words-common-extra",
@@ -181,12 +183,12 @@ ${rowsLiteral(piece.lines)}
   writePieces(
     "r",
     readingPieces,
-    'Rows of JMdict that are fit for children, by reading, each: reading, written forms joined by "|", English meaning, flags.',
+    'Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense.',
   );
   writePieces(
     "f",
     formPieces,
-    'Written forms of JMdict that are fit for children, each: form, then the readings it has joined by "|".',
+    'Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|".',
   );
 
   writeFileSync(
@@ -216,23 +218,42 @@ ${loaders("f", formPieces)}
     }),
   );
 
+  // Everything the pieces leave out, in pieces of its own with a manifest of its own, so that nothing a safe lookup fetches names it.
+  const extraReadingPieces = cut(tables.extraReadings, EXTRA_PIECE_BYTES);
+  const extraFormPieces = cut(tables.extraForms, EXTRA_PIECE_BYTES);
+  writePieces(
+    "xr",
+    extraReadingPieces,
+    'The whole answer, as JMdict has it, for each reading whose answer is not the same in safe mode, each row: reading, written forms joined by "|", flags, then one field for each sense. Only for a lookup that asks for everything.',
+  );
+  writePieces(
+    "xf",
+    extraFormPieces,
+    'The whole list of readings, as JMdict has it, for each written form whose readings are not the same in safe mode, each: form, then its readings joined by "|". Only for a lookup that asks for everything.',
+  );
   writeFileSync(
-    `${OUT}/extra.data.ts`,
+    `${OUT}/extra-manifest.data.ts`,
     dataFile({
-      imports: `import type { WordsExtra } from "../../words.ts";\n`,
-      summary: `Everything the other pieces leave out, for a host that asks for everything: each key's whole answer, as JMdict has it, wherever it is not the same as the answer for children. Rows are as in the other pieces, and forms are each: form, then the readings it has joined by "|". ${counts.rows.toLocaleString("en-US")} rows in the dictionary in all.`,
-      type: "WordsExtra",
-      name: "EXTRA",
+      imports: `import type { WordsManifest } from "../../words.ts";\n`,
+      summary: `Where the pieces are that hold what safe mode leaves out: the first key of each, and how to fetch it. ${extraReadingPieces.length} pieces of rows by reading and ${extraFormPieces.length} of written forms. ${counts.rows.toLocaleString("en-US")} rows in the dictionary in all.`,
+      type: "WordsManifest",
+      name: "EXTRA_MANIFEST",
       body: `{
   source: "JMdict",
   release: ${JSON.stringify(release)},
   rowCount: ${counts.rows},
-  rows: [
-${rowsLiteral(tables.extraReadings.map(([, line]) => line))}
-  ],
-  forms: [
-${rowsLiteral(tables.extraForms.map(([, line]) => line))}
-  ],
+  readings: {
+    starts: [${starts(extraReadingPieces)}],
+    load: [
+${loaders("xr", extraReadingPieces)}
+    ],
+  },
+  forms: {
+    starts: [${starts(extraFormPieces)}],
+    load: [
+${loaders("xf", extraFormPieces)}
+    ],
+  },
 }`,
     }),
   );
@@ -243,12 +264,12 @@ ${rowsLiteral(tables.extraForms.map(([, line]) => line))}
   const bytes = (lines) => Buffer.byteLength(lines.join("\n"));
   console.log(`JMdict ${release}, SHA-256 ${sha256}`);
   console.log(
-    `${counts.rows} rows; ${counts.cleanRows} for children, ${counts.rows - counts.cleanRows} left out whole; ${counts.common} common for children of ${counts.commonAll}`,
+    `${counts.rows} rows; ${counts.cleanRows} in safe mode, ${counts.rows - counts.cleanRows} left out whole; ${counts.common} common in safe mode of ${counts.commonAll}`,
   );
   console.log(`${readingPieces.length} pieces by reading, the largest ${kb(Math.max(...size(readingPieces)))}`);
   console.log(`${formPieces.length} pieces of written forms, the largest ${kb(Math.max(...size(formPieces)))}`);
   console.log(
-    `extra: ${tables.extraReadings.length} rows ${kb(bytes(tables.extraReadings.map(([, line]) => line)))}, ${tables.extraForms.length} forms ${kb(bytes(tables.extraForms.map(([, line]) => line)))}, ${commonPatch.length} common edits`,
+    `extra: ${extraReadingPieces.length} pieces of ${tables.extraReadings.length} rows ${kb(bytes(tables.extraReadings.map(([, line]) => line)))}, ${extraFormPieces.length} of ${tables.extraForms.length} forms ${kb(bytes(tables.extraForms.map(([, line]) => line)))}, ${commonPatch.length} common edits`,
   );
 }
 

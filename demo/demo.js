@@ -34,13 +34,13 @@ const WORDS = {
     wordLabel: "Word",
     wordGo: "Look up",
     wordExamples: "Try",
-    audienceLabel: "For",
-    audienceChildren: "Children",
-    audienceEverything: "Everything",
+    audienceLabel: "Mode",
+    audienceSafe: "Safe",
+    audienceUnfiltered: "Unfiltered",
     wordCountOne: "1 word for {text}.",
     wordCountMany: "{n} words for {text}.",
     wordNone: "JMdict has no word for {text}.",
-    wordNoneChildren: "No word to show for {text}.",
+    wordNoneSafe: "No word to show for {text}.",
     wordLoading: "Looking up {text}…",
     wordFailed: "Could not look {text} up. Try again.",
     wordCommon: "common",
@@ -99,13 +99,13 @@ const WORDS = {
     wordLabel: "単語",
     wordGo: "調べる",
     wordExamples: "例",
-    audienceLabel: "対象",
-    audienceChildren: "子ども向け",
-    audienceEverything: "すべて",
+    audienceLabel: "モード",
+    audienceSafe: "セーフ",
+    audienceUnfiltered: "フィルターなし",
     wordCountOne: "「{text}」の単語は1語見つかりました。",
     wordCountMany: "「{text}」の単語は{n}語見つかりました。",
     wordNone: "JMdictに「{text}」の単語はありません。",
-    wordNoneChildren: "「{text}」について表示できる単語はありません。",
+    wordNoneSafe: "「{text}」について表示できる単語はありません。",
     wordLoading: "「{text}」を調べています…",
     wordFailed: "「{text}」を調べられませんでした。もう一度お試しください。",
     wordCommon: "よく使う",
@@ -178,7 +178,7 @@ const state = {
   kanji: query.get("kanji"),
   search: "",
   word: query.get("word") ?? "",
-  children: query.get("children") !== "off",
+  mode: query.get("mode") === "unfiltered" ? "unfiltered" : "safe",
 };
 const EXAMPLES = ["かみ", "紙", "さくら", "ありがとう", "はし"];
 
@@ -195,8 +195,8 @@ function writeAddress() {
   else next.delete("view");
   if (state.word === "") next.delete("word");
   else next.set("word", state.word);
-  if (state.children) next.delete("children");
-  else next.set("children", "off");
+  if (state.mode === "safe") next.delete("mode");
+  else next.set("mode", "unfiltered");
   history.replaceState(history.state, "", `${location.pathname}?${next}${location.hash}`);
 }
 
@@ -298,8 +298,8 @@ function choice(holder, items, current, pick) {
   });
 }
 
-// What has been looked up: the words JMdict holds for the text, for the people they were loaded for. For children nothing that is
-// not for them is fetched; choosing Everything fetches the file that holds the rest, once, and looks the text up again.
+// What has been looked up: the words JMdict holds for the text, in the mode they were loaded in. In safe mode nothing it leaves out
+// is fetched; choosing Unfiltered fetches the files that hold the rest, and looks the text up again.
 let looked = null;
 let pending = null;
 let failed = null;
@@ -317,7 +317,7 @@ async function lookUp(text) {
   writeAddress();
   if (clean === "") return;
   try {
-    const words = await loadWords(clean, { forChildren: state.children });
+    const words = await loadWords(clean, { mode: state.mode });
     if (ask === asking) looked = { text: clean, words };
   } catch {
     if (ask === asking) failed = clean;
@@ -344,6 +344,15 @@ function wordItem(word) {
   meaning.lang = "en";
   meaning.textContent = word.meaning;
   item.append(written, reading, meaning);
+  const marks = [...new Set(word.senses.flatMap((sense) => sense.marks))].filter((mark) => mark !== "uk");
+  if (marks.length > 0) {
+    const tags = document.createElement("p");
+    tags.className = "jisho-marks";
+    tags.lang = "en";
+    tags.dataset.testid = "word-marks";
+    tags.textContent = marks.join(" ");
+    item.append(tags);
+  }
   if (word.common) {
     const tag = document.createElement("p");
     tag.className = "jisho-tag";
@@ -381,12 +390,12 @@ function drawWords() {
   choice(
     $("audience"),
     [
-      { id: true, label: t("audienceChildren") },
-      { id: false, label: t("audienceEverything") },
+      { id: "safe", label: t("audienceSafe") },
+      { id: "unfiltered", label: t("audienceUnfiltered") },
     ],
-    state.children,
+    state.mode,
     (id) => {
-      state.children = id;
+      state.mode = id;
       if (state.word === "") {
         drawWords();
         writeAddress();
@@ -409,7 +418,7 @@ function drawWords() {
     const found = wordsOf(words, text);
     count.textContent =
       found.length === 0
-        ? t(words.forChildren ? "wordNoneChildren" : "wordNone", { text })
+        ? t(words.mode === "safe" ? "wordNoneSafe" : "wordNone", { text })
         : t(found.length === 1 ? "wordCountOne" : "wordCountMany", { n: found.length, text });
     list.replaceChildren(...found.map(wordItem));
     list.dataset.release = words.release;

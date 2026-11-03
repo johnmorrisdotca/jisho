@@ -6,6 +6,20 @@ All notable changes to this project are written here. The format follows
 
 ## [Unreleased]
 
+## [2.0.0] - 2026-11-03
+
+### Changed
+
+- **Breaking:** `forChildren` is replaced by `mode`: `"safe"` (the default, which is what `forChildren: true` was) or `"unfiltered"` (which `forChildren: false` was). `Words` has `mode`, `block` and `allow` where it had `forChildren`; `readCommonWords` and `loadCommonWords` take the same options. The names are not the same, so this is a new major version.
+- Every sense of a `Word` carries the marks JMdict gives it, in `senses`: usage (`col`, `sl`, `arch`, `obs`, `uk`, `vulg`…), field (`food`, `med`…) and dialect (`ksb`…). A row keeps its first four senses, and the `meaning` is made from the senses a word has when it is read. Unfiltered answers, and safe answers, are the same as 1.0.0's wherever a word has no more than four senses to leave out or keep, which a test holds to the dictionary.
+- What safe mode leaves out is in pieces of its own (`xr*`, `xf*`, a manifest, and `words-common-extra`), cut small, so that an unfiltered lookup fetches one extra piece of about 19 kB gzipped for a reading, where 1.0.0 fetched one file of 92 kB. The common table is larger (about 770 kB gzipped) because every sense has its marks.
+
+### Added
+
+- `block` and `allow`, the consumer's own lists, by written form or reading in either kana, on top of either mode. Applied only when passed.
+- `hasMarks`, `withoutMarks`, `withoutWords` and `onlyWords`: small pure tools on what a lookup returned, which apply nothing on their own, and `meaningFrom`, which makes a meaning from senses. `SAFE_MARKS` lists the four marks safe mode leaves out. Jisho keeps no list of words of its own.
+- A guide section on modes, lists and marks in English and Japanese, and a Mode row in the demo (Safe and Unfiltered) that shows each word's marks.
+
 ## [1.0.0] - 2026-11-02
 
 This package was published as `@johnmorrisdotca/moji` 0.1.x until now. Its entries are kept below as history.

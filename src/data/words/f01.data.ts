@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.ts";
 
 /**
- * Written forms of JMdict that are fit for children, each: form, then the readings it has joined by "|". Piece 2 of 71, from "ここら辺り". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 2 of 71, from "ここら辺り". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.

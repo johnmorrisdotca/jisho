@@ -89,11 +89,11 @@ describe("a word with no meaning", () => {
 describe("what is not for children", () => {
   it("is not there unless the host asks for it: ほもびでお has nothing fit to say, and asking for everything gives it back", async () => {
     const words = await loadWords("ほもびでお");
-    expect(words.forChildren).toBe(true);
+    expect(words.mode).toBe("safe");
     expect(wordsOf(words, "ほもびでお")).toEqual([]);
     expect(meaningOf(words, "ほもびでお")).toBeNull();
-    const adults = await loadWords("ほもびでお", { forChildren: false });
-    expect(adults.forChildren).toBe(false);
+    const adults = await loadWords("ほもびでお", { mode: "unfiltered" });
+    expect(adults.mode).toBe("unfiltered");
     expect(wordsOf(adults, "ほもびでお")[0]?.meaning).toBe("gay porn video, gay pornographic video");
     expect(wordsOf(adults, "ホモビデオ")[0]?.reading).toBe("ホモビデオ");
   });
@@ -101,7 +101,7 @@ describe("what is not for children", () => {
   it("is cut out of a word that has other senses, and the others stay", async () => {
     const words = await loadWords("いぬ");
     expect(wordsOf(words, "いぬ")[0]?.meaning).not.toMatch(/rat|squealer/);
-    const adults = await loadWords("いぬ", { forChildren: false });
+    const adults = await loadWords("いぬ", { mode: "unfiltered" });
     expect(wordsOf(adults, "いぬ")[0]?.meaning).toMatch(/squealer/);
   });
 
@@ -114,7 +114,7 @@ describe("what is not for children", () => {
     ] as const;
     const texts = [...asked.map(([text]) => text), "チンピラ", "ジプシー"];
     const words = await loadWords(texts);
-    const adults = await loadWords(texts, { forChildren: false });
+    const adults = await loadWords(texts, { mode: "unfiltered" });
     const said = (from: typeof words, text: string) =>
       wordsOf(from, text)
         .map((one) => one.meaning)
@@ -133,7 +133,7 @@ describe("what is not for children", () => {
 
   it("is cut from a written form's answer as well: 吐かす is a form of ぬかす only for the sense that is not for children", async () => {
     const words = await loadWords(["吐かす", "抜かす", "ぬかす"]);
-    const adults = await loadWords(["吐かす", "ぬかす"], { forChildren: false });
+    const adults = await loadWords(["吐かす", "ぬかす"], { mode: "unfiltered" });
     expect(wordsOf(words, "吐かす")).toEqual([]);
     expect(wordsOf(words, "抜かす")[0]).toMatchObject({ reading: "ぬかす", forms: ["抜かす"] });
     expect(wordsOf(words, "ぬかす")[0]?.forms).toEqual(["抜かす"]);
@@ -143,7 +143,7 @@ describe("what is not for children", () => {
 
   it("is cut from the words with more than one reading, and a reading only such a sense applies to is not one of the word", async () => {
     const words = await loadWords(["そいつ", "そやつ"]);
-    const adults = await loadWords(["そいつ", "そやつ"], { forChildren: false });
+    const adults = await loadWords(["そいつ", "そやつ"], { mode: "unfiltered" });
     expect(wordsOf(words, "そいつ").length).toBeGreaterThan(0);
     expect(wordsOf(words, "そやつ")).toEqual([]);
     expect(wordsOf(adults, "そやつ").length).toBeGreaterThan(0);
@@ -151,26 +151,24 @@ describe("what is not for children", () => {
 
   it("cannot be added to words for the other people, and has no sense of its own to be turned on in a lookup", async () => {
     const children = await loadWords("かみ");
-    await expect(loadWords("いぬ", { forChildren: false, previous: children })).rejects.toThrow(
+    await expect(loadWords("いぬ", { mode: "unfiltered", previous: children })).rejects.toThrow(
       /cannot be added together/,
     );
-    const adults = await loadWords("かみ", { forChildren: false });
-    await expect(loadWords("いぬ", { previous: adults, forChildren: true })).rejects.toThrow(
-      /cannot be added together/,
-    );
+    const adults = await loadWords("かみ", { mode: "unfiltered" });
+    await expect(loadWords("いぬ", { previous: adults, mode: "safe" })).rejects.toThrow(/cannot be added together/);
     expect(wordsOf(await loadWords("いぬ", { previous: adults }), "かみ")[0]?.written).toBe("紙");
   });
 
   it("is the same as it was in everything, for the words that have none of it", async () => {
-    const [children, adults] = await Promise.all([loadWords("かみ"), loadWords("かみ", { forChildren: false })]);
+    const [children, adults] = await Promise.all([loadWords("かみ"), loadWords("かみ", { mode: "unfiltered" })]);
     const asked = (words: typeof children) => wordsOf(words, "かみ").map((one) => [one.written, one.meaning]);
     expect(asked(adults)).toEqual(asked(children));
   });
 
   it("is a patch of the common words that makes every common word again, and asking for it takes the patch", async () => {
     const children = readCommonWords(COMMON_WORDS);
-    expect(() => readCommonWords(COMMON_WORDS, { forChildren: false })).toThrow(/COMMON_EXTRA/);
-    const adults = readCommonWords(COMMON_WORDS, { forChildren: false, extra: COMMON_EXTRA });
+    expect(() => readCommonWords(COMMON_WORDS, { mode: "unfiltered" })).toThrow(/COMMON_EXTRA/);
+    const adults = readCommonWords(COMMON_WORDS, { mode: "unfiltered", extra: COMMON_EXTRA });
     expect(allWords(adults).length).toBeGreaterThan(allWords(children).length);
     expect(allWords(adults).length - allWords(children).length).toBeLessThan(100);
     expect(wordsOf(children, "ハーモニカ").map((one) => one.meaning)).toEqual([
@@ -178,7 +176,7 @@ describe("what is not for children", () => {
     ]);
     expect(wordsOf(adults, "ハーモニカ")[0]?.meaning).toMatch(/cunnilingus/);
     // A word with nothing in it for children is not among the common words for them, and is for everything.
-    const loaded = await loadCommonWords({ forChildren: false });
+    const loaded = await loadCommonWords({ mode: "unfiltered" });
     expect(allWords(loaded)).toEqual(allWords(adults));
     const fewer = allWords(children).map((one) => `${one.reading}${one.meaning}`);
     expect(new Set(fewer).size).toBeGreaterThan(20_000);
@@ -218,7 +216,7 @@ describe("loading in steps", () => {
     expect(first.entries.has("いぬ")).toBe(false);
     expect(wordsOf(second, "いぬ").length).toBeGreaterThan(0);
     expect(wordsOf(second, "かみ")[0]?.written).toBe("紙");
-    expect(second.forChildren).toBe(true);
+    expect(second.mode).toBe("safe");
   });
 });
 

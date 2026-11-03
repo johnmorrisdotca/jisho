@@ -13,6 +13,7 @@ description: "ソースの構成とその理由。"
 src/
 ├── index.ts   型と、漢字の表を読む関数
 ├── words.ts   単語を引く（必要なチャンクを取得）
+├── words-filter.ts  引いた結果を絞る小さな道具
 ├── version.ts パッケージのバージョン
 └── data/      表（それぞれ独立したエントリポイント）
     ├── grades.data.ts      学年
@@ -20,10 +21,12 @@ src/
     ├── kanji.data.ts       読み、意味、画数、順位
     ├── look-alike.data.ts  形の似た漢字の組
     └── words/              単語（スクリプトが書き出す）
-        ├── common.data.ts    子ども向けのよく使う単語を一つの表に
+        ├── common.data.ts    セーフモードで残るよく使う単語を一つの表に
         ├── common-extra.data.ts  よく使う単語をすべてそろえるために加えるもの
-        ├── extra.data.ts     チャンクに入れなかったものすべて（頼まれたときだけ取得）
         ├── manifest.data.ts  各チャンクの始まりと取得の方法
+        ├── extra-manifest.data.ts  セーフモードが除くものを収めたチャンクについての同じもの
         ├── r000.data.ts …    読みで分けた行のチャンク
-        └── f00.data.ts …     表記から読みへの索引のチャンク
+        ├── f00.data.ts …     表記から読みへの索引のチャンク
+        ├── xr0.data.ts …     セーフモードが除くものを読みで分けたチャンク（フィルターなしのときだけ取得）
+        └── xf0.data.ts …     表記の索引についての同じもの
 ```

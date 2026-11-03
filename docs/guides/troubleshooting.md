@@ -23,7 +23,7 @@ You may have a compatibility character, which looks the same and is a different 
 
 ## A word has no meaning
 
-`meaningOf` answers null and `wordsOf` an empty list when JMdict has no word for the text, and also when every sense it has is one JMdict marks vulgar, X-rated, sensitive or derogatory, because words are for children unless you pass `{ forChildren: false }`, and then nothing that is not for children is fetched. Nothing is wrong. Look the text up with that option to tell the two apart.
+`meaningOf` answers null and `wordsOf` an empty list when JMdict has no word for the text, and also when every sense it has is one JMdict marks vulgar, X-rated, sensitive or derogatory, because words are in safe mode unless you pass `mode: "unfiltered"`, and safe mode does not fetch what it leaves out. Nothing is wrong. Look the text up unfiltered to tell the two apart.
 
 ## `wordsOf` says a text was not loaded
 

@@ -1,10 +1,10 @@
-// What the rows of the dictionary are sorted into: the default tables, which hold only what is fit for children, and the extra
+// What the rows of the dictionary are sorted into: the default tables, which hold only what safe mode keeps, and the extra
 // ones, which hold everything those leave out. Pure functions over the rows `words-parse.mjs` makes, so a test can hold them to
 // small dictionaries and `build-words.mjs` only has to cut them into files.
 //
-// The rule that decides everything here: nothing that is not for children is in a default table. A word of which every sense is
+// The rule that decides everything here: nothing that safe mode leaves out is in a default table. A word of which every sense is
 // marked is not in one at all; a sense, a written form or a reading that is marked is not either. What is left out goes in the
-// extra tables, which a host fetches only when it asks for everything.
+// extra tables, which a host fetches only in unfiltered mode.
 import { foldKana, packClean, packRow } from "./words-parse.mjs";
 
 /** Readings that are not all kana (a middle dot is kana here, as it is in loanwords): they are looked up like a written form. */
@@ -38,7 +38,7 @@ const same = (a, b) => a.length === b.length && a.every((one, at) => one === b[a
  * The tables of a list of rows, commonest first.
  *
  * @returns
- *   `common` and `commonPatch`: the common words for children, and what to do to them to have every common word as JMdict has it;
+ *   `common` and `commonPatch`: the common words safe mode keeps, and what to do to them to have every common word as JMdict has it;
  *   `readings`: the default rows as [key, line] sorted by key (the reading folded to hiragana), and `extraReadings` the lines
  *     for each key whose answer is not the same for everything, in full;
  *   `forms`: the default index as [form, line] sorted by form, and `extraForms` the same for each form whose readings differ;

@@ -156,17 +156,20 @@ test("an example is a button that looks the word up", async ({ page }) => {
   await sound(page, errors);
 });
 
-test("for children leaves out the senses that are not, and Everything puts them back", async ({ page }) => {
+test("safe mode, the default, leaves out the senses that are not for it, and Unfiltered puts them back with their marks", async ({
+  page,
+}) => {
   const errors = await open(page, "?lang=en&view=words&word=外人");
   await expect(page.getByTestId("word-count")).toHaveText("2 words for 外人.");
   await expect(first(page)).toContainText("outsider");
   await expect(first(page)).not.toContainText("Westerner");
-  await tap(page.getByTestId("audience").getByRole("button", { name: "Everything" }));
+  await tap(page.getByTestId("audience").getByRole("button", { name: "Unfiltered" }));
   await expect(first(page)).toContainText("Westerner");
-  await expect(page).toHaveURL(/children=off/);
-  await tap(page.getByTestId("audience").getByRole("button", { name: "Children" }));
+  await expect(first(page).getByTestId("word-marks")).toContainText("sens");
+  await expect(page).toHaveURL(/mode=unfiltered/);
+  await tap(page.getByTestId("audience").getByRole("button", { name: "Safe" }));
   await expect(first(page)).not.toContainText("Westerner");
-  await expect(page).not.toHaveURL(/children=off/);
+  await expect(page).not.toHaveURL(/mode=unfiltered/);
   await sound(page, errors);
 });
 
@@ -178,7 +181,7 @@ test("says so, and does not make a word up, when there is nothing to show", asyn
   await lookUp(page, "チンピラ");
   await expect(page.getByTestId("word-count")).toHaveText("No word to show for チンピラ.");
   await expect(page.getByTestId("word-item")).toHaveCount(0);
-  await tap(page.getByTestId("audience").getByRole("button", { name: "Everything" }));
+  await tap(page.getByTestId("audience").getByRole("button", { name: "Unfiltered" }));
   await expect(first(page)).toContainText("hoodlum");
   await expect(page.getByTestId("word-count")).toHaveText("2 words for チンピラ.");
   await lookUp(page, "ぬぬぬぬぬ");
@@ -195,9 +198,10 @@ function watch(page) {
   });
   return asked;
 }
-const isExtra = (name) => /^(?:common-)?extra\.data\./.test(name) || /^common-extra\.data\./.test(name);
+/** The files that hold what safe mode leaves out: their manifest, their pieces, and the common words' patch. */
+const isExtra = (name) => /^(?:extra-manifest|common-extra)\.data\./.test(name) || /^x[rf]\d+\.data\./.test(name);
 
-test("a lookup for children asks for none of the files that hold what is not, and Everything asks for them", async ({
+test("a safe lookup asks for none of the files that hold what safe mode leaves out, and Unfiltered asks for them", async ({
   page,
 }) => {
   const asked = watch(page);
@@ -209,14 +213,18 @@ test("a lookup for children asks for none of the files that hold what is not, an
   }
   await expect(page.getByTestId("word-item")).toHaveCount(0);
   expect(asked.length, "the pieces of the words were asked for").toBeGreaterThan(3);
-  expect(asked.filter(isExtra), "a file of what is not for children was asked for").toEqual([]);
-  await tap(page.getByTestId("audience").getByRole("button", { name: "Everything" }));
+  expect(asked.filter(isExtra), "a file of what safe mode leaves out was asked for").toEqual([]);
+  await tap(page.getByTestId("audience").getByRole("button", { name: "Unfiltered" }));
   await expect(first(page)).toContainText("omit");
-  expect(asked.filter(isExtra), "Everything asks for the extra file").toEqual(["extra.data.js"]);
+  const extra = asked.filter(isExtra);
+  expect(extra, "Unfiltered asks for the manifest of the extra pieces and a piece of them").toContain(
+    "extra-manifest.data.js",
+  );
+  expect(extra.length, "and for no more than a manifest and a piece for each of the two kinds").toBeLessThanOrEqual(3);
   await sound(page, errors);
 });
 
-test("a lookup for children is not given the file when the page opens on a word, either", async ({ page }) => {
+test("a safe lookup is not given the files when the page opens on a word, either", async ({ page }) => {
   const asked = watch(page);
   const errors = await open(page, "?lang=en&view=words&word=外人");
   await expect(first(page)).toContainText("outsider");

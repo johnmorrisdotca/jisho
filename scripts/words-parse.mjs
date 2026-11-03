@@ -1,22 +1,25 @@
 // Reads JMdict into the rows of the words tables. Pure functions over the dictionary's text, so a test can hold them to real entries
 // and `scripts/build-words.mjs` only has to fetch the file and write what these return. Nothing here reads a file or a network.
 //
-// One row is one reading of one entry: the reading, the written forms that go with it, a short English meaning, flags, and, where
-// a sense is not for children, the meaning with those senses left out. See docs/guides/words.md for the format.
+// One row is one reading of one entry: the reading, the written forms that go with it, flags, and its senses, each with the marks
+// JMdict gives it. A row also has the form it takes for children: the same without what carries one of four marks. See
+// docs/guides/words.md for the format.
 
 /** JMdict's own "common word" tags, on any written form or reading of an entry. The same five UmaKuma's common table keeps. */
 export const COMMON_TAGS = ["news1", "ichi1", "spec1", "spec2", "gai1"];
-/** A sense carrying one of these marks is not for children: vulgar, X-rated, sensitive or derogatory. Kotoba's bar, kept in step. */
-export const NOT_FOR_CHILDREN = /^(vulg|X|sens|derog)$/;
+/** A sense carrying one of these marks is left out in safe mode: vulgar, X-rated, sensitive or derogatory. Kotoba's bar, kept in step. */
+export const SAFE_MARKS = ["vulg", "X", "sens", "derog"];
+const OUT_IN_SAFE_MODE = new Set(SAFE_MARKS);
+/** A row keeps this many senses, and a sense this many glosses: the plain ones first. */
+export const SENSES_KEPT = 4;
+export const GLOSSES_KEPT = 3;
+/** Between the fields of a sense (its marks, then its glosses). A character no JMdict text holds; a row refuses a field that has it. */
+export const SENSE_BREAK = "¦";
 /**
  * Written forms JMdict files as search-only, irregular or outdated are left out: not spellings anybody means to look up. The same
  * marks on a reading keep it, behind the regular ones, because a game that takes any kana as a guess is owed what it means.
  */
 export const SKIPPED_FORM_INFO = new Set(["sK", "iK", "oK", "sk", "ik", "ok"]);
-/** A meaning stops at a whole gloss inside this many characters, except that the first gloss is always whole. */
-export const MEANING_MAX = 60;
-const SENSES = 2;
-const GLOSSES = 3;
 const BAND_SIZE = 500;
 /** The rank of a word JMdict puts in no frequency list at all. */
 export const UNRANKED = 100_000;
@@ -72,19 +75,6 @@ export function glossesOf(sense) {
   return first === undefined ? [] : [first, ...kept.filter((text) => text !== first)];
 }
 
-/** Up to two senses of up to three glosses, ", " between glosses and "; " between senses, cut at a whole gloss inside MEANING_MAX. */
-export function meaningOf(senses) {
-  let text = "";
-  outer: for (const glosses of senses.filter((one) => one.length > 0).slice(0, SENSES)) {
-    for (const [at, gloss] of glosses.slice(0, GLOSSES).entries()) {
-      const next = text === "" ? gloss : `${text}${at === 0 ? "; " : ", "}${gloss}`;
-      if (text !== "" && next.length > MEANING_MAX) break outer;
-      text = next;
-    }
-  }
-  return text;
-}
-
 /** Every `<entry>` of a JMdict file, as text. */
 export function entriesOf(xml) {
   return xml.split("<entry>").slice(1);
@@ -92,16 +82,16 @@ export function entriesOf(xml) {
 
 /**
  * The rows of one entry: one for each reading it has, a reading JMdict calls irregular or outdated last. Each is an object with the
- * reading, the written forms that go with it (best first, none for a word with no kanji), the meaning, the kinds of word, whether
- * JMdict calls it common, whether it is usually written in kana (by its first sense), the rank, and `clean`: what is left of the
- * row when what is not for children is taken out, or null when nothing is.
+ * reading, the written forms that go with it (best first, none for a word with no kanji), the first senses, each with its
+ * glosses (the plain one first) and the marks JMdict gives it (`misc`, `field` and `dial`), the kinds of word, whether JMdict calls
+ * it common, whether it is usually written in kana (by its first sense), the rank, and `clean`: the row as safe mode has it,
+ * or null when nothing of it is left.
  *
- * A sense JMdict marks vulgar, X-rated, sensitive or derogatory is not for children. `clean` has the meaning of the senses that are,
- * and the written forms that some such sense applies to (a sense JMdict limits to some forms, with `stagk`, does not carry the
- * others); it is null for a reading that no such sense applies to (limited with `stagr`), and for a word of which every sense is
- * marked. The row itself is everything, as JMdict has it.
+ * A sense JMdict marks vulgar, X-rated, sensitive or derogatory is left out of `clean`, with the written forms that only such a
+ * sense applies to (a sense JMdict limits to some forms, with `stagk`, does not carry the others), and the reading that only such
+ * a sense applies to (limited with `stagr`) has no `clean` at all, as has a word of which every sense is marked.
  *
- * @returns The rows, or none for an entry with no reading or no meaning.
+ * @returns The rows, or none for an entry with no reading or no sense with a gloss.
  */
 export function rowsOfEntry(entry) {
   const forms = tags(entry, "k_ele")
@@ -123,17 +113,22 @@ export function rowsOfEntry(entry) {
     .map((reading) => ({ ...reading, irregular: reading.info.some((one) => SKIPPED_FORM_INFO.has(one)) }));
   if (readings.length === 0) return [];
 
-  const senses = tags(entry, "sense").map((body) => ({
-    glosses: glossesOf(body),
-    unfit: tags(body, "misc").some((one) => NOT_FOR_CHILDREN.test(code(one))),
-    pos: tags(body, "pos").map(code),
-    usuallyKana: tags(body, "misc").some((one) => code(one) === "uk"),
-    onlyForms: tags(body, "stagk").map(decode),
-    onlyReadings: tags(body, "stagr").map(decode),
-  }));
+  const senses = tags(entry, "sense")
+    .map((body) => {
+      const marks = [...new Set(["misc", "field", "dial"].flatMap((name) => tags(body, name).map(code)))];
+      return {
+        glosses: glossesOf(body).slice(0, GLOSSES_KEPT),
+        marks,
+        unfit: marks.some((one) => OUT_IN_SAFE_MODE.has(one)),
+        pos: tags(body, "pos").map(code),
+        usuallyKana: marks.includes("uk"),
+        onlyForms: tags(body, "stagk").map(decode),
+        onlyReadings: tags(body, "stagr").map(decode),
+      };
+    })
+    .filter((sense) => sense.glosses.length > 0);
   if (senses.length === 0) return [];
-  const meaning = meaningOf(senses.map((sense) => sense.glosses));
-  if (meaning === "") return [];
+  const shown = (list) => list.slice(0, SENSES_KEPT).map(({ marks, glosses }) => ({ marks, glosses }));
 
   const priorities = [
     ...forms.flatMap((form) => form.priorities),
@@ -159,20 +154,19 @@ export function rowsOfEntry(entry) {
     const fit = senses.filter(
       (sense) => !sense.unfit && (sense.onlyReadings.length === 0 || sense.onlyReadings.includes(reading.text)),
     );
-    const fitMeaning = meaningOf(fit.map((sense) => sense.glosses));
     const clean =
-      fitMeaning === ""
+      fit.length === 0
         ? null
         : {
             forms: written.filter((form) =>
               fit.some((sense) => sense.onlyForms.length === 0 || sense.onlyForms.includes(form)),
             ),
-            meaning: fitMeaning,
+            senses: shown(fit),
           };
     return {
       reading: reading.text,
       forms: written,
-      meaning,
+      senses: shown(senses),
       clean,
       kinds,
       // An irregular reading is never a common one, and comes after the regular ones that share it.
@@ -197,16 +191,25 @@ export function foldKana(text) {
 const FIELD_BREAK = /[\t\n]/;
 const LIST_BREAK = /[\t\n|]/;
 
-/** A row as one line: reading, forms joined by "|", meaning, flags. */
+/** A sense as one field: its marks joined by commas, then its glosses, apart by SENSE_BREAK. */
+function packSense(sense, reading) {
+  for (const part of [...sense.marks, ...sense.glosses])
+    if (FIELD_BREAK.test(part) || part.includes(SENSE_BREAK) || (/,/.test(part) && sense.marks.includes(part)))
+      throw new Error(`A separator in the row for ${reading}: ${part}`);
+  return [sense.marks.join(","), ...sense.glosses].join(SENSE_BREAK);
+}
+
+/** A row as one line: reading, forms joined by "|", flags, then one field for each sense. */
 export function packRow(row) {
   const flags = `${row.kinds}${row.common ? "C" : ""}${row.usuallyKana ? "U" : ""}`;
   for (const part of [row.reading, ...row.forms])
     if (LIST_BREAK.test(part)) throw new Error(`A separator in the row for ${row.reading}: ${part}`);
-  if (FIELD_BREAK.test(row.meaning)) throw new Error(`A separator in the row for ${row.reading}: ${row.meaning}`);
-  return [row.reading, row.forms.join("|"), row.meaning, flags].join("\t");
+  return [row.reading, row.forms.join("|"), flags, ...row.senses.map((sense) => packSense(sense, row.reading))].join(
+    "\t",
+  );
 }
 
-/** The line of what is left of a row for children, or null when nothing is: the same line as `packRow` where nothing was taken out. */
+/** The line of the row as safe mode has it, or null when nothing of it is left: the same line as `packRow` where nothing was left out. */
 export function packClean(row) {
   return row.clean === null ? null : packRow({ ...row, ...row.clean });
 }
