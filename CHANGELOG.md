@@ -6,6 +6,26 @@ All notable changes to this project are written here. The format follows
 
 ## [Unreleased]
 
+## [2.3.0] - 2026-11-03
+
+A minor version: nothing that 2.2.0 gave is taken away.
+
+### Added
+
+- **Conjugated words.** `findInflected("食べなかった")` finds 食べる and says how the text comes from it, as a path from the dictionary form, innermost first (`["negative", "past"]`). `loadWords(texts, { inflected: true })` also loads the dictionary forms each text could be conjugated from, and `inflectedOf(words, text)` reads them with no waiting (and works on the table of common words with nothing more loaded). A text that is a word as it stands comes first, with an empty path; a word is given once, by the shortest path. Reading a text that was loaded without `inflected: true` throws a `RangeError`, rather than answer as if the dictionary had no word.
+- `deinflect(text)`, also at its own entry point, `@johnmorrisdotca/jisho/deinflect` (7.1 kB minified, 2.1 kB gzipped, no data and no fetch): the rule table that proposes the dictionary forms. It covers godan and ichidan verbs, する (and a noun with する: 勉強した is 勉強), 来る in kanji and kana, い adjectives and な adjectives with だ, です and ではない; the polite, negative, past, te, conditional (ば and たら), volitional, tari, potential, passive, causative and causative-passive forms; want-to, looks-like, too-much, easy-to, hard-to, while and the polite command; the helper verbs a te-form leads (ている, てしまう, ちゃう, ておく, とく, てみる, ていく, てくる, てくれる, てあげる, てもらう, てください); and chains of all of them (食べさせられたくなかった). It proposes from endings alone, so the dictionary decides which proposals are real, by the kind of word each must be.
+- A golden set of 395 conjugated forms (`src/deinflect-golden.test.ts`), written out from the conjugation rules as charts of a verb or adjective to a row, each with its dictionary form, kind and path, and each carrying the note that a native reader should check it: none has been read by one yet. Every form is proposed by the rules and found in the real dictionary with its path.
+- The demo shows the path under a word found from a conjugated text ("from 食べる: negative, past", and in Japanese 「食べるから：否定、過去」), a picture of it in the README, a guide in English and Japanese, a troubleshooting entry and an upgrade note.
+
+### Changed
+
+- A `Word`'s `kinds` can hold `n`, for a な adjective (静か, 好き, 元気), which JMdict marks `adj-na` and which `kinds` left out; the dictionary check needs it. A word that had no letters because it was only a な adjective now has `n`. The words are cut into pieces at a few slightly different places because their rows grew by a letter; they are from the same JMdict of 2026-11-03.
+- The README's Limits no longer send a reader to Hikidashi for a conjugated word, and the Hikidashi recipe is gone from the README and the guide. Hikidashi is no longer a development dependency.
+
+### Not covered
+
+The imperative, honorific (keigo) forms, 〜ず, 〜なければならない as a whole, the stem on its own (食べ), and a noun with だ: JMdict marks the な adjectives and not the nouns, so only な adjectives are read. 愛する and its kin, which conjugate their own way (愛さない), are found as the godan 愛す.
+
 ## [2.2.0] - 2026-11-03
 
 A minor version: the one change of behaviour is that a mistake which used to be quietly accepted now throws, and each of those is a call that had a typo or a wrong type in it.
