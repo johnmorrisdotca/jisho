@@ -171,7 +171,8 @@ describe("the rows a lookup keeps", () => {
     expect(() => glosses.push("X")).toThrow(TypeError);
     expect(() => (word.forms as string[]).push("x")).toThrow(TypeError);
     expect(() => (word.senses as unknown[]).pop()).toThrow(TypeError);
-    expect(() => (word.senses[0]?.marks as string[]).push("vulg")).toThrow(TypeError);
+    const marks = word.senses[0]?.marks as string[];
+    expect(() => marks.push("vulg")).toThrow(TypeError);
     expect(() => ((words.entries.get("かみ") ?? []) as unknown[]).push({})).toThrow(TypeError);
     expect(wordsOf(words, "かみ")[0]?.senses[0]?.glosses).toEqual(before);
   });

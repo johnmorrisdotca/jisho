@@ -6,7 +6,7 @@
 
 import { type Kanji, kanjiIn } from "./index.ts";
 import type { FindOptions, PieceSet, Word, Words } from "./words.types.ts";
-import { modeOf } from "./words-filter.ts";
+import { checkLists, modeOf } from "./words-filter.ts";
 import { loadWords } from "./words-load.ts";
 import { allWords } from "./words-lookup.ts";
 import { extraIndexes, formOfLine, indexed, indexes, pieceOf, type WordsPieceKind } from "./words-pieces.ts";
@@ -117,6 +117,7 @@ export function searchMeanings(words: Words, text: string): Word[] {
  */
 export async function findByMeaning(text: string, options: FindOptions = {}): Promise<Word[]> {
   const mode = modeOf(options.mode);
+  checkLists(options);
   const query = termsInOrder(normalizeText(text));
   const first = query[0];
   if (first === undefined) return [];
@@ -155,6 +156,7 @@ export async function findByMeaning(text: string, options: FindOptions = {}): Pr
  */
 export async function wordsWithKanji(kanji: string, options: FindOptions = {}): Promise<Word[]> {
   const mode = modeOf(options.mode);
+  checkLists(options);
   const character = kanjiIn(formKey(normalizeText(kanji)))[0];
   if (character === undefined) return [];
   const readings = await readingsFor("kanji", mode === "unfiltered", character);

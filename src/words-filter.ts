@@ -24,6 +24,26 @@ export function modeOf(mode: unknown): WordsMode {
 }
 
 /**
+ * A list a caller passed (`block`, `allow`, a list of marks), checked: absent, or an array of texts. A text where a list belongs
+ * (`block: "神"`) is the commonest mistake, and it threw "list.map is not a function" from deep inside a lookup; it is a TypeError
+ * that names the option now, before anything is fetched.
+ */
+export function listOf(name: string, list: unknown): readonly string[] | undefined {
+  if (list === undefined) return undefined;
+  if (!Array.isArray(list) || list.some((one) => typeof one !== "string"))
+    throw new TypeError(
+      `${name} must be a list of texts, such as ["神"]; got ${typeof list === "string" ? JSON.stringify(list) : typeof list}.`,
+    );
+  return list;
+}
+
+/** The options of a lookup that are lists, checked: `block` and `allow`. */
+export function checkLists(options: { readonly block?: unknown; readonly allow?: unknown }): void {
+  listOf("block", options.block);
+  listOf("allow", options.allow);
+}
+
+/**
  * The marks that safe mode leaves out, which are those JMdict gives a sense that is vulgar (`vulg`), X-rated (`X`), sensitive
  * (`sens`) or derogatory (`derog`). They are Kotoba's bar, kept here as a list a consumer may pass to `withoutMarks`, and nothing
  * else here uses them: safe mode leaves them out in files of its own, so that it fetches less.
@@ -79,6 +99,7 @@ export function meaningFrom(senses: readonly Sense[]): string {
  * ```
  */
 export function hasMarks(word: Word, marks: readonly string[]): boolean {
+  listOf("marks", marks);
   return word.senses.some((sense) => sense.marks.some((mark) => marks.includes(mark)));
 }
 
@@ -98,6 +119,7 @@ export function hasMarks(word: Word, marks: readonly string[]): boolean {
  * ```
  */
 export function withoutMarks(words: readonly Word[], marks: readonly string[]): Word[] {
+  listOf("marks", marks);
   return words.flatMap((word) => {
     const senses = word.senses.filter((sense) => !sense.marks.some((mark) => marks.includes(mark)));
     return senses.length === 0 ? [] : [{ ...word, senses, meaning: meaningFrom(senses) }];
@@ -127,6 +149,7 @@ const folded = (list: readonly string[]) => new Set(list.map(foldKana));
  * ```
  */
 export function withoutWords(words: readonly Word[], list: readonly string[]): Word[] {
+  listOf("list", list);
   const set = folded(list);
   return words.filter((word) => !named(word, set));
 }
@@ -147,6 +170,7 @@ export function withoutWords(words: readonly Word[], list: readonly string[]): W
  * ```
  */
 export function onlyWords(words: readonly Word[], list: readonly string[]): Word[] {
+  listOf("list", list);
   const set = folded(list);
   return words.filter((word) => named(word, set));
 }

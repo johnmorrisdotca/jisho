@@ -3,7 +3,7 @@
 import { MANIFEST } from "./data/words/manifest.data.ts";
 import { kanaFromRomaji } from "./romaji.ts";
 import type { LoadWordsOptions, WordRow, Words } from "./words.types.ts";
-import { modeOf } from "./words-filter.ts";
+import { checkLists, modeOf } from "./words-filter.ts";
 import { extras, formOfLine, pieceOf, piecesFor, readingOfRow } from "./words-pieces.ts";
 import { readRow } from "./words-rows.ts";
 import { formKey, isKana, keyOf, normalizeText, readingKey } from "./words-text.ts";
@@ -26,7 +26,7 @@ function keysToLoad(texts: unknown, romaji: boolean | undefined): string[] {
 }
 
 /**
- * Fetches what JMdict holds for some texts, and nothing else: the pieces of the table those texts are in, a few kilobytes each,
+ * Fetches what JMdict holds for some texts, and nothing else: the pieces of the table those texts are in, about 25 kB gzipped each,
  * so that `wordsOf` can then answer for them with no waiting.
  *
  * A text of kana alone (かみ, カミ) is a reading and costs one piece. Any other text (紙) is a written form: its readings are
@@ -56,6 +56,7 @@ function keysToLoad(texts: unknown, romaji: boolean | undefined): string[] {
 export async function loadWords(texts: string | readonly string[], options: LoadWordsOptions = {}): Promise<Words> {
   const { previous } = options;
   const mode = options.mode === undefined ? modeOf(previous?.mode) : modeOf(options.mode);
+  checkLists(options);
   if (previous?.scope === "common")
     throw new TypeError("The common words hold every text already: there is nothing to add.");
   if (previous !== undefined && previous.mode !== mode)
