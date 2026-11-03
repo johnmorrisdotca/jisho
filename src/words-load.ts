@@ -92,7 +92,7 @@ export async function loadWords(texts: string | readonly string[], options: Load
     pieces.get(pieceOf(MANIFEST.readings.starts, key))?.get(key) ??
     [];
 
-  for (const text of kana) entries.set(text, linesOf(text).map(readRow));
+  for (const text of kana) entries.set(text, Object.freeze(linesOf(text).map(readRow)));
   for (const text of written) {
     const found: WordRow[] = (readingsOf.get(text) ?? []).flatMap((reading) =>
       linesOf(readingKey(reading))
@@ -103,7 +103,7 @@ export async function loadWords(texts: string | readonly string[], options: Load
             (row.forms.some((form) => formKey(form) === text) || formKey(row.reading) === text),
         ),
     );
-    entries.set(text, found);
+    entries.set(text, Object.freeze(found));
   }
   return {
     release: MANIFEST.release,

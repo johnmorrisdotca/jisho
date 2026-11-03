@@ -76,14 +76,21 @@ export function rankOfTags(tags: readonly string[]): number {
   return UNRANKED;
 }
 
-/** A sense out of the field it is stored as: its marks, then its glosses. */
+/**
+ * A sense out of the field it is stored as: its marks, then its glosses. Everything in it is frozen: a row is kept and handed to
+ * every later lookup of the word, so a caller that changes one would change what the next caller sees.
+ */
 function readSense(field: string): Sense {
   const [marks = "", ...glosses] = field.split("¦");
-  return { marks: marks === "" ? [] : marks.split(","), glosses };
+  return Object.freeze({
+    marks: Object.freeze(marks === "" ? [] : marks.split(",")),
+    glosses: Object.freeze(glosses),
+  });
 }
 
 /**
- * A row read out of the string it is stored as.
+ * A row read out of the string it is stored as. The row and every list in it are frozen, because the row is kept and shared by
+ * every lookup of the word: to change a word, copy it (`{ ...word, senses }`, as `withoutMarks` does).
  *
  * @param line - One string of a table's `rows`.
  * @returns The row.
@@ -98,15 +105,15 @@ export function readRow(line: string): WordRow {
   const [reading = "", forms = "", stored = "", ...senses] = line.split("\t");
   const at = stored.indexOf("~");
   const flags = at === -1 ? stored : stored.slice(0, at);
-  return {
+  return Object.freeze({
     reading,
-    forms: forms === "" ? [] : forms.split("|"),
-    senses: senses.map(readSense),
+    forms: Object.freeze(forms === "" ? [] : forms.split("|")),
+    senses: Object.freeze(senses.map(readSense)),
     kinds: flags.replace(/[CU]/g, ""),
     common: flags.includes("C"),
     usuallyKana: flags.includes("U"),
     priority: at === -1 ? "" : stored.slice(at + 1),
-  };
+  });
 }
 
 /** The way to show a row's word when it was found by a written form: the form of the row that is that key, else the key. */

@@ -1,6 +1,15 @@
 import { describe, expect, it } from "vitest";
 import { MANIFEST } from "./data/words/manifest.data.ts";
-import { isLoaded, loadCommonWords, loadWords, meaningOf, wordsOf } from "./words.ts";
+import {
+  commonestFirst,
+  findByMeaning,
+  isLoaded,
+  loadCommonWords,
+  loadWords,
+  meaningOf,
+  withoutMarks,
+  wordsOf,
+} from "./words.ts";
 import { keyOf, normalizeText } from "./words-text.ts";
 
 function random(seed: number): () => number {
@@ -149,4 +158,45 @@ describe("every written form is found by itself", () => {
     }
     expect(odd.slice(0, 20)).toEqual([]);
   }, 60_000);
+});
+
+describe("the rows a lookup keeps", () => {
+  it("cannot be changed by a caller: the next lookup of the word sees what the dictionary says", async () => {
+    const words = await loadWords("かみ");
+    const word = wordsOf(words, "かみ")[0];
+    if (word === undefined) throw new Error("かみ has words");
+    const glosses = word.senses[0]?.glosses as string[];
+    const before = [...glosses];
+    expect(Object.isFrozen(glosses)).toBe(true);
+    expect(() => glosses.push("X")).toThrow(TypeError);
+    expect(() => (word.forms as string[]).push("x")).toThrow(TypeError);
+    expect(() => (word.senses as unknown[]).pop()).toThrow(TypeError);
+    expect(() => (word.senses[0]?.marks as string[]).push("vulg")).toThrow(TypeError);
+    expect(() => ((words.entries.get("かみ") ?? []) as unknown[]).push({})).toThrow(TypeError);
+    expect(wordsOf(words, "かみ")[0]?.senses[0]?.glosses).toEqual(before);
+  });
+
+  it("are frozen the same way in the common words, whole, and in a find", async () => {
+    const common = await loadCommonWords();
+    const word = wordsOf(common, "紙")[0];
+    expect(Object.isFrozen(word?.senses)).toBe(true);
+    expect(Object.isFrozen(word?.senses[0]?.glosses)).toBe(true);
+    expect(Object.isFrozen(word?.forms)).toBe(true);
+    expect(Object.isFrozen(word?.priority)).toBe(true);
+    for (const rows of common.entries.values()) {
+      expect(Object.isFrozen(rows)).toBe(true);
+      break;
+    }
+    const found = await findByMeaning("water", { limit: 3 });
+    expect(Object.isFrozen(found[0]?.senses[0]?.glosses)).toBe(true);
+  });
+
+  it("are still copied, never changed, by the tools that make new words", async () => {
+    const words = await loadWords("かみ", { mode: "unfiltered" });
+    const all = wordsOf(words, "かみ");
+    const fewer = withoutMarks(all, ["vulg", "col"]);
+    expect(fewer.length).toBeLessThanOrEqual(all.length);
+    expect(commonestFirst(all)).not.toBe(all);
+    expect(Object.isFrozen(all[0]?.senses)).toBe(true);
+  });
 });

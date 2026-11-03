@@ -65,6 +65,7 @@ export function readCommonWords(
     add(readingKey(row.reading), row);
     for (const form of row.forms) add(formKey(form), row);
   }
+  for (const held of entries.values()) Object.freeze(held);
   return { release: table.release, scope: "common", mode, block: options.block, allow: options.allow, entries };
 }
 
