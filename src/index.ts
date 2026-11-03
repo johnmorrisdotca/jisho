@@ -137,12 +137,20 @@ export function kanjiOfGrade(table: GradeTable, grade: SchoolGrade): string[] {
   return [...(table.grades[String(grade)] ?? "")];
 }
 
+/** Whether a value is exactly one character (one code point), so that looking it up in a list of characters is a membership test and never a substring search. */
+function isOneCharacter(text: unknown): text is string {
+  if (typeof text !== "string") return false;
+  const first = text.codePointAt(0);
+  return first !== undefined && text.length === (first > 0xffff ? 2 : 1);
+}
+
 /**
  * Which grade a kanji is taught in.
  *
  * @param table - `GRADES`, from `@johnmorrisdotca/jisho/grades`.
  * @param kanji - One kanji.
- * @returns The grade, or null when KANJIDIC2 gives the kanji none: that says it is outside the jōyō and jinmeiyō kanji.
+ * @returns The grade, or null when KANJIDIC2 gives the kanji none (it is outside the jōyō and jinmeiyō kanji), or when the text is
+ * not exactly one character: an empty text and a text of two kanji are not any kanji's grade.
  * @example
  * ```ts
  * import { gradeOf } from "@johnmorrisdotca/jisho";
@@ -152,6 +160,7 @@ export function kanjiOfGrade(table: GradeTable, grade: SchoolGrade): string[] {
  * ```
  */
 export function gradeOf(table: GradeTable, kanji: string): SchoolGrade | null {
+  if (!isOneCharacter(kanji)) return null;
   return SCHOOL_GRADES.find((grade) => (table.grades[String(grade)] ?? "").includes(kanji)) ?? null;
 }
 
@@ -178,7 +187,8 @@ export function kanjiOfLevel(table: JlptTable, level: JlptLevel): string[] {
  *
  * @param table - `JLPT`, from `@johnmorrisdotca/jisho/jlpt`.
  * @param kanji - One kanji.
- * @returns The level, or null when no list holds the kanji: that says nothing about how hard it is.
+ * @returns The level, or null when no list holds the kanji (that says nothing about how hard it is), or when the text is not
+ * exactly one character.
  * @example
  * ```ts
  * import { levelOf } from "@johnmorrisdotca/jisho";
@@ -188,6 +198,7 @@ export function kanjiOfLevel(table: JlptTable, level: JlptLevel): string[] {
  * ```
  */
 export function levelOf(table: JlptTable, kanji: string): JlptLevel | null {
+  if (!isOneCharacter(kanji)) return null;
   return JLPT_LEVELS.find((level) => (table.levels[level] ?? "").includes(kanji)) ?? null;
 }
 

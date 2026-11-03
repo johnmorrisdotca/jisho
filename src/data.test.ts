@@ -36,6 +36,12 @@ describe("the school grades", () => {
     expect(gradeOf(GRADES, "語")).toBe(2);
     expect(gradeOf(GRADES, "鬱")).toBe(8);
     expect(gradeOf(GRADES, "龘")).toBeNull();
+    expect(gradeOf(GRADES, "")).toBeNull();
+    expect(gradeOf(GRADES, "一右")).toBeNull();
+    expect(gradeOf(GRADES, "一一")).toBeNull();
+    expect(gradeOf(GRADES, "あ")).toBeNull();
+    expect(gradeOf(GRADES, undefined as unknown as string)).toBeNull();
+    expect(gradeOf(GRADES, 1 as unknown as string)).toBeNull();
   });
 });
 
@@ -53,6 +59,10 @@ describe("the JLPT levels", () => {
     expect(kanjiOfLevel(JLPT, "N2").slice(0, 2)).toEqual(["党", "協"]);
     expect(levelOf(JLPT, "日")).toBe("N5");
     expect(levelOf(JLPT, "鬱")).toBeNull();
+    expect(levelOf(JLPT, "")).toBeNull();
+    expect(levelOf(JLPT, "日本")).toBeNull();
+    expect(levelOf(JLPT, "日日")).toBeNull();
+    expect(levelOf(JLPT, null as unknown as string)).toBeNull();
   });
 
   it("are all in the table, so a level never names a kanji with no row", () => {
