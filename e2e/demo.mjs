@@ -98,9 +98,9 @@ test("search finds by meaning and by reading, and says so when nothing holds it"
 
 test("speaks Japanese when asked, and back", async ({ page }) => {
   const errors = await open(page);
-  await tap(page.locator('[data-lang="ja"]'));
+  await tap(page.locator('kazoku-language-picker [data-v="ja"]'));
   await expect(page.getByTestId("count")).toHaveText("80字です。");
-  await tap(page.locator('[data-lang="en"]'));
+  await tap(page.locator('kazoku-language-picker [data-v="en"]'));
   await expect(page.getByTestId("count")).toHaveText("80 kanji.");
   await sound(page, errors);
 });
@@ -160,10 +160,10 @@ test("a conjugated word finds its dictionary form and the path: 食べなかっ�
   await expect(first(page).getByTestId("word-path")).toHaveText("from 高い: negative, past, polite");
   await lookUp(page, "紙");
   await expect(page.getByTestId("word-path")).toHaveCount(0);
-  await tap(page.locator('[data-lang="ja"]'));
+  await tap(page.locator('kazoku-language-picker [data-v="ja"]'));
   await lookUp(page, "食べなかった");
   await expect(first(page).getByTestId("word-path")).toHaveText("食べるから：否定、過去");
-  await tap(page.locator('[data-lang="en"]'));
+  await tap(page.locator('kazoku-language-picker [data-v="en"]'));
   await sound(page, errors);
 });
 
@@ -260,14 +260,14 @@ test("a safe lookup is not given the files when the page opens on a word, either
 test("the words speak Japanese when asked, and the way back to the kanji works", async ({ page }) => {
   const errors = await open(page, "?lang=en&view=words&word=紙");
   await expect(first(page)).toContainText("paper");
-  await tap(page.locator('[data-lang="ja"]'));
+  await tap(page.locator('kazoku-language-picker [data-v="ja"]'));
   await expect(page.getByTestId("word-count")).toContainText("単語は");
   await expect(page.getByTestId("view").getByRole("button", { name: "単語" })).toHaveAttribute("aria-pressed", "true");
   await tap(page.getByTestId("view").getByRole("button", { name: "漢字" }));
   await expect(page.getByTestId("grid").locator("button")).toHaveCount(80);
   await expect(page.getByTestId("words-view")).toBeHidden();
   await expect(page).not.toHaveURL(/view=words/);
-  await tap(page.locator('[data-lang="en"]'));
+  await tap(page.locator('kazoku-language-picker [data-v="en"]'));
   await expect(page.getByTestId("count")).toHaveText("80 kanji.");
   await sound(page, errors);
 });
@@ -340,13 +340,13 @@ test("Latin letters are read as romaji", async ({ page }) => {
 
 test("the ways to find words speak Japanese when asked", async ({ page }) => {
   const errors = await open(page, "?lang=en&view=words&by=meaning");
-  await tap(page.locator('[data-lang="ja"]'));
+  await tap(page.locator('kazoku-language-picker [data-v="ja"]'));
   await expect(page.getByTestId("by").getByRole("button", { name: "英語の意味" })).toHaveAttribute(
     "aria-pressed",
     "true",
   );
   await expect(page.getByTestId("word-count")).toContainText("英語の単語");
-  await tap(page.locator('[data-lang="en"]'));
+  await tap(page.locator('kazoku-language-picker [data-v="en"]'));
   await sound(page, errors);
 });
 
@@ -421,13 +421,13 @@ test("the Reader speaks Japanese when asked, and a text in the address is read w
   const errors = await open(page, "?lang=en&view=reader&text=%E9%A3%9F%E3%81%B9%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F");
   await expect(page.getByTestId("token")).toHaveCount(1);
   await expect(page.getByTestId("reader-card")).toContainText("from 食べる: negative, past");
-  await tap(page.locator('[data-lang="ja"]'));
+  await tap(page.locator('kazoku-language-picker [data-v="ja"]'));
   await expect(page.getByTestId("reader-card")).toContainText("食べるから：否定、過去");
   await expect(page.getByTestId("reader-count")).toContainText("1語");
   await expect(page.getByTestId("view").getByRole("button", { name: "リーダー" })).toHaveAttribute(
     "aria-pressed",
     "true",
   );
-  await tap(page.locator('[data-lang="en"]'));
+  await tap(page.locator('kazoku-language-picker [data-v="en"]'));
   await sound(page, errors);
 });

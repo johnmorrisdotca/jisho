@@ -2,6 +2,8 @@
 // with the family's stylesheet, Jisho's own, the page's script and the compiled library beside it.
 import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 
+import { build } from "esbuild";
+
 import { API_CSS, apiPage } from "./api.mjs";
 import { FAMILY_SCRIPT, familyFooter, familyHead, familyHeader, familyUnreviewed } from "./family-template.mjs";
 import { publishThumbnails, thumbnailHead } from "./family-thumbnail.mjs";
@@ -28,131 +30,35 @@ const escapeHtml = (text) => text.replace(/&/g, "&amp;").replace(/</g, "&lt;").r
 /** What the family's card shows, for a reader who cannot see it (the README's top picture says the same). */
 const ALT = "Jisho: the word cards for かみ, which is 紙 paper, 神 god and 髪 hair.";
 
-const page = `<!doctype html>
-<html lang="en">
-  <head>
-    ${familyHead({
-      id,
-      title: "Jisho 辞書 — Japanese word and kanji data for JavaScript",
-      description:
-        "Look Japanese words up by reading, written form, English meaning or a kanji in them, and read the school grades, JLPT levels, readings, meanings and look-alike pairs of 2,999 kanji, in a typed package with no dependencies.",
-      ogTitle: "Jisho Japanese word and kanji data",
-      ogDescription:
-        "Type a reading or a word and see what it means, or choose a school grade or a JLPT level and read each kanji.",
-    })}
-    ${thumbnailHead(JSON.parse(readFileSync("package.json", "utf8")), { alt: ALT })}
-    <link rel="icon" href="${ICON}" />
-    <link rel="stylesheet" href="family.css" />
-    <link rel="stylesheet" href="jisho.css" />
-  </head>
-  <body>
-    <main>
-      ${familyHeader({
-        id,
-        links: [
-          { href: "docs/index.html", say: "pageDocs" },
-          { href: "api.html", say: "pageApi" },
-        ],
-      })}
-      <section class="setup" aria-labelledby="choose-title">
-        <h2 id="choose-title" data-say="chooseTitle"></h2>
-        <div class="fam-row" data-help-en="Look words up, or read the kanji lists." data-help-ja="単語を引くか、漢字のリストを見るかを選びます。">
-          <span class="fam-label" id="view-label" data-say="viewLabel"></span>
-          <div class="fam-seg" id="view" role="group" aria-labelledby="view-label" data-testid="view"></div>
-        </div>
-        <div class="fam-row" data-kanji-view data-help-en="Choose a list of kanji: a year of Japanese school, the rest of the everyday kanji, those allowed in names, or a level of the Japanese Language Proficiency Test." data-help-ja="漢字のリストを選びます。学校の学年、そのほかの常用漢字、人名に使える漢字、日本語能力試験のレベルから選べます。">
-          <span class="fam-label" id="grades-label" data-say="schoolGrades"></span>
-          <div class="fam-seg" id="grades" role="group" aria-labelledby="grades-label" data-testid="grades"></div>
-        </div>
-        <div class="fam-row" data-kanji-view>
-          <span class="fam-label" id="levels-label" data-say="jlptLevels"></span>
-          <div class="fam-seg" id="levels" role="group" aria-labelledby="levels-label" data-testid="levels"></div>
-        </div>
-        <div class="fam-row" data-kanji-view data-help-en="Type a kanji, a reading or a meaning, in English or French." data-help-ja="漢字、読み、または英語かフランス語の意味を入力します。">
-          <label class="fam-label" for="search" data-say="searchLabel"></label>
-          <input class="jisho-input" id="search" data-testid="search" type="search" autocomplete="off" spellcheck="false">
-        </div>
-        <p class="fam-muted" id="count" data-testid="count" data-kanji-view aria-live="polite"></p>
-      </section>
-      <section class="jisho-words-view" id="words-view" data-testid="words-view" aria-labelledby="choose-title" hidden>
-        <div class="fam-row" data-help-en="Reading or word: kana, romaji or kanji. English meaning: the commonest words whose meaning holds what you type. Kanji in it: the words written with a kanji." data-help-ja="読みか単語：かな、ローマ字、漢字で引きます。英語の意味：入力した語を意味に含む、よく使う単語を探します。含まれる漢字：その漢字で書かれる単語を探します。">
-          <span class="fam-label" id="by-label" data-say="byLabel"></span>
-          <div class="fam-seg" id="by" role="group" aria-labelledby="by-label" data-testid="by"></div>
-        </div>
-        <form class="jisho-word-form" id="word-form" role="search">
-          <label class="fam-label" for="word" data-say="wordLabel"></label>
-          <input class="jisho-input" id="word" name="word" data-testid="word" type="search" lang="ja" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
-          <button class="fam-button" type="submit" data-testid="word-go" data-say="wordGo"></button>
-        </form>
-        <div class="fam-row" data-help-en="Tap a word to look it up." data-help-ja="単語を押すと、その単語を調べます。">
-          <span class="fam-label" id="examples-label" data-say="wordExamples"></span>
-          <div class="jisho-examples" id="examples" role="group" aria-labelledby="examples-label" data-testid="examples" lang="ja"></div>
-        </div>
-        <div class="fam-row" data-help-en="Safe, the default, leaves out what JMdict marks vulgar, X-rated, sensitive or derogatory and fetches nothing that holds it. Unfiltered gives everything JMdict has, with its marks." data-help-ja="「セーフ」（初期値）は、JMdictが下品、性的、配慮が必要、侮辱的と記しているものを除き、それを含むファイルは取得しません。「フィルターなし」は、JMdictにあるすべてを、その印とともに返します。">
-          <span class="fam-label" id="audience-label" data-say="audienceLabel"></span>
-          <div class="fam-seg" id="audience" role="group" aria-labelledby="audience-label" data-testid="audience"></div>
-        </div>
-        <p class="fam-muted" id="word-count" data-testid="word-count" aria-live="polite"></p>
-        <ul class="jisho-words" id="word-list" data-testid="word-list" aria-labelledby="word-count" tabindex="0"></ul>
-        <p class="fam-muted" id="word-release" data-testid="word-release"></p>
-      </section>
-      <section class="jisho-words-view" id="reader-view" data-testid="reader-view" aria-labelledby="choose-title" hidden>
-        <div class="jisho-reader">
-        <div class="jisho-reader-text">
-        <form class="jisho-reader-form" id="reader-form">
-          <label class="fam-label" for="reader-text" data-say="readerLabel"></label>
-          <textarea class="jisho-input jisho-textarea" id="reader-text" name="text" data-testid="reader-text" rows="3" maxlength="5000" lang="ja" autocomplete="off" autocapitalize="off" spellcheck="false" data-say-placeholder="readerPlaceholder"></textarea>
-          <button class="fam-button" type="submit" data-testid="reader-go" data-say="readerGo"></button>
-        </form>
-        <div class="fam-row" data-help-en="Each word is the longest stretch the dictionary has a word for, or a conjugated form of one. Tap a word for its card. Names and rare words may be cut into small words or not found." data-help-ja="各語は、辞書に語がある最も長い部分か、その活用形です。語を押すとカードが開きます。名前や珍しい語は、小さな語に分かれたり、見つからなかったりします。">
-          <span class="fam-label" id="reader-examples-label" data-say="readerTry"></span>
-          <div class="jisho-examples jisho-reader-examples" id="reader-examples" role="group" aria-labelledby="reader-examples-label" data-testid="reader-examples" lang="ja"></div>
-        </div>
-        <p class="fam-muted" id="reader-count" data-testid="reader-count" aria-live="polite"></p>
-        <div class="jisho-reader-out" id="reader-out" data-testid="reader-out" lang="ja"></div>
-        <p class="fam-muted" id="reader-unknown" data-testid="reader-unknown" lang="ja" hidden></p>
-        </div>
-        <div class="jisho-reader-side">
-        <article class="fam-panel jisho-card jisho-reader-card" id="reader-card" data-testid="reader-card" aria-live="polite" hidden></article>
-        <h2 id="reader-study-title" data-say="readerStudy"></h2>
-        <div class="fam-row">
-          <div class="fam-seg" role="group" data-say-label="readerKanjiOnly"><button type="button" id="reader-kanji-only" data-testid="reader-kanji-only" aria-pressed="false" data-say="readerKanjiOnly"></button></div>
-          <button class="fam-button" type="button" id="reader-copy" data-testid="reader-copy" data-say="readerCopy"></button>
-          <button class="fam-button" type="button" id="reader-csv" data-testid="reader-csv" data-say="readerCsv"></button>
-        </div>
-        <p class="fam-muted" id="reader-copied" data-testid="reader-copied" aria-live="polite"></p>
-        <p class="fam-muted" id="reader-study-count" data-testid="reader-study-count"></p>
-        <ul class="jisho-words" id="reader-study" data-testid="reader-study" aria-labelledby="reader-study-title" tabindex="0"></ul>
-        </div>
-        </div>
-      </section>
-      <section class="jisho-board" id="kanji-view" aria-labelledby="choose-title">
-        <div class="jisho-grid" id="grid" data-testid="grid" lang="ja"></div>
-        <article class="fam-panel jisho-card" id="card" data-testid="card" aria-live="polite"></article>
-      </section>
-      ${familyUnreviewed({ id })}
-      <section class="more" aria-labelledby="sources-title">
-        <h2 id="sources-title" data-say="sourcesTitle"></h2>
-        <p data-say="sourceKanjidic" data-testid="source-kanjidic"></p>
-        <p data-say="sourceWaller" data-testid="source-waller"></p>
-        <p data-say="sourceYencken" data-testid="source-yencken"></p>
-        <p data-say="sourceJmdict" data-testid="source-jmdict"></p>
-      </section>
-      <section class="more" aria-labelledby="more-title">
-        <h2 id="more-title" data-say="moreTitle"></h2>
-        <p data-say="moreText"></p>
-        <ul class="uses">
-          ${uses.map((line) => `<li><code>${escapeHtml(line)}</code></li>`).join("\n          ")}
-        </ul>
-      </section>
-      ${familyFooter({ id })}
-    </main>
-    <script>${FAMILY_SCRIPT}</script>
-    <script type="module" src="demo.js"></script>
-  </body>
-</html>
-`;
-
+// The page is demo/index.html; each <!-- family:key --> in it is replaced by the text below.
+const pageParts = {
+  head: familyHead({
+    id,
+    title: "Jisho 辞書 — Japanese word and kanji data for JavaScript",
+    description:
+      "Look Japanese words up by reading, written form, English meaning or a kanji in them, and read the school grades, JLPT levels, readings, meanings and look-alike pairs of 2,999 kanji, in a typed package with no dependencies.",
+    ogTitle: "Jisho Japanese word and kanji data",
+    ogDescription:
+      "Type a reading or a word and see what it means, or choose a school grade or a JLPT level and read each kanji.",
+  }),
+  thumbnail: thumbnailHead(JSON.parse(readFileSync("package.json", "utf8")), { alt: ALT }),
+  icon: ICON,
+  header: familyHeader({
+    id,
+    links: [
+      { href: "docs/index.html", say: "pageDocs" },
+      { href: "api.html", say: "pageApi" },
+    ],
+  }),
+  unreviewed: familyUnreviewed({ id }),
+  uses: uses.map((line) => `<li><code>${escapeHtml(line)}</code></li>`).join("\n          "),
+  footer: familyFooter({ id }),
+  script: `<script>${FAMILY_SCRIPT}</script>\n    <script type="module" src="kazoku-parts.js"></script>`,
+};
+const page = readFileSync("demo/index.html", "utf8").replace(
+  /<!-- family:([A-Za-z]+) -->/g,
+  (_match, key) => pageParts[key],
+);
 rmSync("site", { recursive: true, force: true });
 mkdirSync("site", { recursive: true });
 cpSync("demo", "site", { recursive: true });
@@ -160,6 +66,19 @@ cpSync("dist", "site/dist", { recursive: true });
 writeFileSync("site/index.html", page);
 // The family's card, dark card and icon, at <site>/thumbnail.png, thumbnail-dark.png and icon.png.
 publishThumbnails(".", "site");
+// The family header's language picker and theme switch, as one small module for every page of the site (the demo, the embed page, the API reference and the docs).
+await build({
+  stdin: {
+    contents:
+      'import "@johnmorrisdotca/kazoku-ui/language-picker/define";\nimport "@johnmorrisdotca/kazoku-ui/theme-switch/define";\n',
+    resolveDir: process.cwd(),
+  },
+  outfile: "site/kazoku-parts.js",
+  bundle: true,
+  format: "esm",
+  minify: true,
+  logLevel: "silent",
+});
 // The API reference, made from the source: every export of every entry point.
 writeFileSync("site/api.css", API_CSS);
 writeFileSync("site/api.html", apiPage({ id, name: "Jisho", icon: ICON }));

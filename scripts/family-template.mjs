@@ -46,7 +46,7 @@
 const OWNER = "johnmorrisdotca";
 
 /** The day this file was last changed, in every repository at once. A test records the file's hash beside it. */
-export const FAMILY_TEMPLATE_VERSION = "2026-11-02";
+export const FAMILY_TEMPLATE_VERSION = "2026-11-03";
 
 /** The packages, in the order the footer lists them. `kana` is the name as it is written in Japanese. */
 export const FAMILY = [
@@ -71,13 +71,16 @@ export const FAMILY = [
   { id: "korokoro", name: "Korokoro", kana: "コロコロ" },
   { id: "tane", name: "Tane", kana: "種" },
   { id: "bushu", name: "Bushu", kana: "部首" },
-  { id: "jisho", name: "Jisho", kana: "辞書" },
   { id: "hikidashi", name: "Hikidashi", kana: "引き出し" },
+  { id: "jisho", name: "Jisho", kana: "辞書" },
   { id: "kotoba", name: "Kotoba", kana: "言葉" },
   { id: "address-plus", name: "address-plus", kana: "アドレスプラス", repo: "https://github.com/johnmorrisdotca/address-plus", site: "https://johnmorrisdotca.github.io/address-plus/" },
+  { id: "chikyu-earth", name: "Chikyu Earth", kana: "地球" },
   { id: "chizu", name: "Chizu", kana: "地図" },
   { id: "hata", name: "Hata", kana: "旗" },
   { id: "kuni", name: "Kuni", kana: "国" },
+  { id: "uchusen-rockets", name: "Uchusen Rockets", kana: "宇宙船" },
+  { id: "wakusei-planets", name: "Wakusei Planets", kana: "惑星" },
   { id: "dougu-sports", name: "Dougu Sports", kana: "道具" },
   { id: "kyogijo-stadiums", name: "Kyogijo Stadiums", kana: "競技場" },
   { id: "senshu-jerseys", name: "Senshu Jerseys", kana: "選手" },
@@ -92,7 +95,7 @@ export const FAMILY_GROUPS = [
   { id: "puzzles", en: "Games — puzzles", ja: "パズルゲーム", members: ["houseki", "jirai", "karakuri", "kazu", "kyuubu", "meikyuu", "suido", "tobiishi", "tsunagi"] },
   { id: "random", en: "Games — dice & random", ja: "ダイスと乱数", members: ["korokoro", "tane"] },
   { id: "language", en: "Language", ja: "ことばと文字", members: ["bushu", "hikidashi", "jisho", "kotoba"] },
-  { id: "geography", en: "Geography & data", ja: "地理とデータ", members: ["address-plus", "chizu", "hata", "kuni"] },
+  { id: "geography", en: "Geography & data", ja: "地理とデータ", members: ["address-plus", "chikyu-earth", "chizu", "hata", "kuni", "uchusen-rockets", "wakusei-planets"] },
   { id: "sports", en: "Sports", ja: "スポーツ", members: ["dougu-sports", "kyogijo-stadiums", "senshu-jerseys", "taisen-brackets"] },
   { id: "developer", en: "Developer tools", ja: "開発ツール", members: ["rest-in-pieces"] },
 ];
@@ -101,7 +104,7 @@ export const FAMILY_GROUPS = [
  * The packages of FAMILY that are not on npm yet. Such a package's header has no npm pill, its footer says so in
  * place of the install line, and the README's line on it ends "Not on npm yet." Take the id out the day it is published.
  */
-export const FAMILY_NOT_ON_NPM = ["jisho"];
+export const FAMILY_NOT_ON_NPM = [];
 
 /**
  * One line on each package, for the README's "The family" block: lower case, no full stop, no number that can
@@ -125,10 +128,11 @@ export const FAMILY_PITCH = {
   sugoroku: "backgammon and its variants, with the doubling cube and match play",
   kazu: "grid number puzzles: Sudoku and its variants, Futoshiki and Skyscrapers",
   meikyuu: "mazes on squares, hexagons, triangles and circles, made from a seed and drawn through with a finger or the mouse",
+  jisho: "Japanese words looked up by reading or written form, and the grades, JLPT levels, readings and look-alike pairs of 2,999 kanji",
   hikidashi: "a drawer of small Japanese text tools: era dates, kanji numerals, readings and sentence difficulty",
+  "chikyu-earth": "a line-drawn globe that turns at the Earth's own rate, with an optional realistic Earth from space and markers for any place",
   chizu: "maps of the world and of countries' regions, in English and Japanese, with a quiz and callouts",
   bushu: "find a kanji by the parts it is made of",
-  jisho: "Japanese words looked up by reading or written form, and the grades, JLPT levels, readings and look-alike pairs of 2,999 kanji",
   tobiishi: "peg solitaire with nine boards and seeded solvable challenges",
   jirai: "minesweeper on shaped grids with verified no-guess boards",
   gunjin: "five hidden-rank strategy games with pass-the-device play",
@@ -137,6 +141,8 @@ export const FAMILY_PITCH = {
   "address-plus": "parse and format addresses in the United States, Canada, Japan, Australia, France, Germany and the United Kingdom",
   "hata": "country and regional flags as SVG, at their true proportions and keyed by ISO code",
   "kuni": "countries and their regions, with ISO codes and names in English and Japanese",
+  "uchusen-rockets": "rockets drawn from sourced sizes, as line drawings and 3D views you can take apart and turn, with a check that a rocket really goes together",
+  "wakusei-planets": "the Sun, the planets and their moons, as line drawings, shaded drawings and painted surface maps, with their real sizes, tilt and rotation",
   "rest-in-pieces": "seeded test data and REST APIs for frontend development, with latency and error drills",
   "kyogijo-stadiums": "sports fields, rinks, courts and ballparks drawn to scale as SVG, with each team and the score on them",
   "taisen-brackets": "a sport-agnostic tournament bracket, drawn as SVG, from a list of ties",
@@ -147,9 +153,11 @@ export const FAMILY_PITCH = {
 /** Japanese pitches for the new geography and developer members; awaiting native review. */
 export const FAMILY_PITCH_JA = {
   "address-plus": "アメリカ、カナダ、日本、オーストラリア、フランス、ドイツ、イギリスの住所を解析・整形",
-  jisho: "日本語の単語を読みや表記から引け、2,999字の漢字の学年、JLPTレベル、読み、形の似た漢字の組も収録",
   "hata": "国と行政区画の旗を、実際の縦横比のSVGで収録。ISOコードで引けます",
+  jisho: "日本語の単語を読みや表記から引け、2,999字の漢字の学年、JLPTレベル、読み、形の似た漢字の組も収録",
   "kuni": "世界の国と行政区画を、ISOコードと英語・日本語の名称つきで収録",
+  "uchusen-rockets": "出典つきの寸法からロケットを描きます。線画と3Dで、分解して回して見られ、ロケットが本当に組み合わさるかも確かめられます",
+  "wakusei-planets": "太陽・惑星・衛星を、線画・陰影つきの絵・表面の地図で描きます。実際の大きさ・傾き・自転つき",
   "rest-in-pieces": "フロントエンド開発向けの、シード値で固定できるテストデータとREST API（遅延・エラーの再現つき）",
 };
 
@@ -202,7 +210,7 @@ export function familyHead({ id, title, description, ogTitle, ogDescription }) {
 /**
  * The header: the name with its kana, the pitch (data-say="pitch"), a line on the name
  * (data-say="name", and a link to the README's "The name", data-say="nameLink"), the
- * "English · 日本語" chooser, the cloth patches, the Help switch, and the GitHub and npm pills. `links` adds pills before those
+ * kazoku-ui language picker, the cloth patches, the Help switch, the kazoku-ui theme switch (the page imports the `define` modules of both from kazoku-ui), and the GitHub and npm pills. `links` adds pills before those
  * two: [{ href, say }] where `say` is a key in the page's words.
  */
 export function familyHeader({ id, links = [] }) {
@@ -215,14 +223,12 @@ export function familyHeader({ id, links = [] }) {
           <p class="name"><span data-say="name"></span> <a href="${repo(id)}#the-name" data-say="nameLink"></a></p>
         </div>
         <nav>
-          <div class="lang" role="group" aria-label="Language / 言語">
-            <button type="button" data-lang="en" lang="en">English</button>
-            <button type="button" data-lang="ja" lang="ja">日本語</button>
-          </div>${links.map((link) => `\n          <a href="${escape(link.href)}" data-say="${escape(link.say)}"></a>`).join("")}
+          <kazoku-language-picker languages="en ja" address storage="${id}.page.lang"></kazoku-language-picker>${links.map((link) => `\n          <a href="${escape(link.href)}" data-say="${escape(link.say)}"></a>`).join("")}
           <div class="cloth" role="radiogroup" data-say-label="cloth" style="display:inline-flex;gap:0;align-items:center">${Object.entries(FAMILY_CLOTHS)
             .map(([name, cloth]) => `<button type="button" role="radio" data-cloth="${name}" data-say-label="cloth_${name}" style="width:44px;height:44px;min-width:44px;padding:8px;border:0;border-radius:12px;cursor:pointer;background:radial-gradient(120% 90% at 30% 20%, ${cloth.felt} 0%, ${cloth.deep} 100%) content-box;box-shadow:inset 0 0 0 8px transparent"></button>`)
             .join("")}</div>
           <button type="button" class="fam-button" data-help-switch aria-pressed="false" data-say="help" data-say-title="helpTip" style="min-width:68px"></button>
+          <kazoku-theme-switch address storage="johnmorrisdotca.theme"></kazoku-theme-switch>
           <a href="${repo(id)}">GitHub</a>
 ${onNpm ? `          <a href="${npm(id)}">npm</a>\n` : ""}        </nav>
       </header>`;
@@ -257,8 +263,9 @@ export function familyFooter({ id }) {
  * The chooser's behaviour, as the source of a classic script that defines `familyLanguage`.
  * The address first (?lang=ja or ?lang=en), then what this device chose, then the browser's
  * language. `familyLanguage({ id, words, onChange })` fills every [data-say], sets <html lang>,
- * presses the right button, shows the not-yet-reviewed line in Japanese only, and returns
- * { lang, asked, say(), set(lang) }. `onChange(lang)` runs after each switch, not on the first fill.
+ * shows the not-yet-reviewed line in Japanese only, and returns { lang, asked, say(), set(lang) }.
+ * The choosing itself is the header's <kazoku-language-picker>: its `kazoku-languagechange` event moves the page.
+ * `onChange(lang)` runs after each switch, not on the first fill.
  * [data-say-label] sets aria-label, [data-say-placeholder] sets placeholder and [data-say-title] sets title, the same way.
  * Each switch of language also re-reads the rows marked for the Help switch (see the top of this file).
  */
@@ -394,18 +401,22 @@ function familyLanguage(options) {
     document.querySelectorAll("[data-say-placeholder]").forEach(function (el) { var text = word(el.dataset.sayPlaceholder); if (text !== undefined) el.setAttribute("placeholder", text); });
     document.querySelectorAll("[data-say-title]").forEach(function (el) { var text = word(el.dataset.sayTitle); if (text !== undefined) el.setAttribute("title", text); });
     familyHelp.refresh();
-    document.querySelectorAll("[data-lang]").forEach(function (button) { button.setAttribute("aria-pressed", String(button.dataset.lang === state.lang)); });
     var note = document.getElementById("unreviewed");
     if (note !== null) note.hidden = state.lang !== "ja";
   };
-  state.set = function (lang) {
+  var follow = function (lang) {
     state.lang = lang === "ja" ? "ja" : "en";
-    try { localStorage.setItem(KEY, state.lang); } catch (error) { /* Not remembered; still switched. */ }
     state.say();
     if (typeof options.onChange === "function") options.onChange(state.lang);
   };
-  document.querySelectorAll("[data-lang]").forEach(function (button) {
-    button.addEventListener("click", function () { state.set(button.dataset.lang); });
+  state.set = function (lang) {
+    var picker = document.querySelector("kazoku-language-picker");
+    try { localStorage.setItem(KEY, lang === "ja" ? "ja" : "en"); } catch (error) { /* Not remembered; still switched. */ }
+    follow(lang);
+    if (picker !== null && picker.value !== state.lang) picker.value = state.lang;
+  };
+  document.addEventListener("kazoku-languagechange", function (event) {
+    if (event.detail.lang !== state.lang && (event.detail.lang === "ja" || event.detail.lang === "en")) follow(event.detail.lang);
   });
   state.say();
   return state;

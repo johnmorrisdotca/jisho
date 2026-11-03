@@ -25,9 +25,9 @@ for (const path of ["/"]) {
     const docs = page.locator('[data-say="pageDocs"]');
     await expect(docs).toHaveText("ドキュメント");
     await expect(docs).toHaveAttribute("href", "docs/ja/index.html");
-    await page.locator('button[data-lang="en"]').click();
+    await page.locator('kazoku-language-picker [data-v="en"]').click();
     await expect(docs).toHaveAttribute("href", "docs/index.html");
-    await page.locator('button[data-lang="ja"]').click();
+    await page.locator('kazoku-language-picker [data-v="ja"]').click();
     await docs.click();
     await expect(page).toHaveURL("http://jisho.test/docs/ja/index.html");
     await expect(page.locator("html")).toHaveAttribute("lang", "ja");
@@ -42,7 +42,7 @@ test("API anchors lead through a reference and back to the native table", async 
   await page.locator("#main-lookAlikes h3 a").click();
   await expect(page.locator("h1")).toContainText("lookAlikes");
   await expect(page.locator("main")).toContainText("closest first");
-  await page.locator('header .lang a[data-lang="ja"]').click();
+  await page.locator('kazoku-language-picker [data-v="ja"]').click();
   await expect(page.locator("html")).toHaveAttribute("lang", "ja");
   await page.getByRole("link", { name: "デモ", exact: true }).click();
   await expect(page.locator('[data-testid="grid"]')).toBeVisible();
