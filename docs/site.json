@@ -22,6 +22,10 @@
       "en": "The whole entry of a word: every sense, and everything JMdict says of it",
       "ja": "単語の完全な項目：すべての語義と、JMdictが記すことのすべて"
     },
+    "./examples": {
+      "en": "Example sentences of a word, with furigana and their credit",
+      "ja": "単語の例文（ふりがなと出典つき）"
+    },
     "./grades": {
       "en": "School grades",
       "ja": "学年"

@@ -26,6 +26,20 @@ describe("the data's sources", () => {
     }
   });
 
+  it("name Tatoeba and its terms, in the notice and at the head of every file of the examples", () => {
+    for (const name of ["Tatoeba", "CC BY 2.0 FR", "JMdict_e_examp", "exampleCredit"])
+      expect(notice, name).toContain(name);
+    const folder = "src/data/examples";
+    const files = readdirSync(folder);
+    expect(files.length).toBeGreaterThan(100);
+    for (const file of files) {
+      const head = readFileSync(`${folder}/${file}`, "utf8").slice(0, 1400);
+      expect(head, file).toContain("Tatoeba");
+      expect(head, file).toContain("CC BY 2.0 FR");
+      expect(head, file).toContain("Attribution-ShareAlike");
+    }
+  });
+
   it("record the JMdict file the words were made from, with its date and SHA-256", () => {
     const { jmdict } = JSON.parse(readFileSync("data-sources/sources.json", "utf8"));
     expect(jmdict.sha256).toMatch(/^[0-9a-f]{64}$/);

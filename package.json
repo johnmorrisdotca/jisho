@@ -1,6 +1,6 @@
 {
   "name": "@johnmorrisdotca/jisho",
-  "version": "2.5.0",
+  "version": "2.6.0",
   "description": "Jisho 辞書 — Japanese word and kanji data for JavaScript: look words up by reading, written form, English meaning, a kanji in them or romaji, fetched about 25 kB at a time, safe by default or unfiltered with every sense's JMdict marks, and bring your own block and allow lists; and the grades, JLPT levels, readings and look-alikes of 2,999 kanji. Typed, no dependencies.",
   "keywords": [
     "child-safe",
@@ -52,7 +52,7 @@
     "url": "https://github.com/johnmorrisdotca/jisho/issues"
   },
   "author": "John Morris",
-  "license": "(MIT AND CC-BY-SA-4.0 AND CC-BY-4.0 AND CC-BY-3.0)",
+  "license": "(MIT AND CC-BY-SA-4.0 AND CC-BY-4.0 AND CC-BY-3.0 AND CC-BY-2.0)",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -72,6 +72,11 @@
       "types": "./dist/entries.d.ts",
       "import": "./dist/entries.js",
       "default": "./dist/entries.js"
+    },
+    "./examples": {
+      "types": "./dist/examples.d.ts",
+      "import": "./dist/examples.js",
+      "default": "./dist/examples.js"
     },
     "./grades": {
       "types": "./dist/data/grades.data.d.ts",
@@ -137,6 +142,7 @@
     "check:standard": "node scripts/check-standard.mjs",
     "data": "node scripts/build-data.mjs",
     "words": "node scripts/build-words.mjs",
+    "examples": "node scripts/build-examples.mjs",
     "docs:site": "pnpm build && node scripts/docs-site.mjs build",
     "docs:check": "pnpm build && node scripts/docs-site.mjs check",
     "size": "node scripts/docs-site.mjs size",

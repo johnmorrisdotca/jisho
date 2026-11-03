@@ -10,8 +10,12 @@
       "gzip": 2105
     },
     "./entries": {
-      "minified": 31488737,
+      "minified": 31489954,
       "gzip": 9079000
+    },
+    "./examples": {
+      "minified": 11913258,
+      "gzip": 2918000
     },
     "./grades": {
       "minified": 18121,
