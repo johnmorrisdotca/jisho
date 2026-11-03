@@ -14,7 +14,7 @@ The words are JMdict's, in small pieces that a lookup fetches as it needs them, 
   <a href="./NOTICE.md"><img alt="Data keeps its own licences" src="https://img.shields.io/badge/data-CC%20BY--SA%20and%20CC%20BY-2f5d4a"></a>
   <img alt="No dependencies" src="https://img.shields.io/badge/dependencies-0-2f5d4a">
   <img alt="TypeScript" src="https://img.shields.io/badge/types-TypeScript-3178c6">
-  <a href="https://johnmorrisdotca.github.io/jisho/docs/api/main/index.html"><img alt="0.8 kB minified and gzipped" src="https://img.shields.io/badge/min%2Bgzip-0.8%20kB-2f5d4a"></a>
+  <a href="https://johnmorrisdotca.github.io/jisho/docs/api/main/index.html"><img alt="0.9 kB minified and gzipped" src="https://img.shields.io/badge/min%2Bgzip-0.9%20kB-2f5d4a"></a>
   <a href="https://www.npmjs.com/package/@johnmorrisdotca/jisho#provenance"><img alt="Published with npm provenance" src="https://img.shields.io/badge/npm-provenance-2f5d4a"></a>
 </p>
 
