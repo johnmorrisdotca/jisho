@@ -64,8 +64,8 @@
     "address": "http://ftp.edrdg.org/pub/Nihongo/JMdict_e.gz",
     "terms": "https://www.edrdg.org/edrdg/licence.html",
     "licence": "CC BY-SA 4.0 and the Group's conditions",
-    "dateOfCreation": "2026-11-02",
-    "sha256": "2dbbfe0b1214911766bbc128a0935618b925be917e7d1c50f3536a89b0e8786d",
-    "retrieved": "2026-11-02"
+    "dateOfCreation": "2026-11-03",
+    "sha256": "048dfec26d22fc04e013978c120a94b9daef9ccffcade17111d5b69ad7852d6f",
+    "retrieved": "2026-11-03"
   }
 }

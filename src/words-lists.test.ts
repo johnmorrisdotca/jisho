@@ -22,6 +22,8 @@ const word = (written: string, reading: string, senses: Word["senses"], forms: s
   senses,
   kinds: "",
   common: false,
+  rank: 100_000,
+  priority: [],
 });
 const plain = { marks: [], glosses: ["paper"] };
 const rude = { marks: ["vulg", "col"], glosses: ["rude"] };

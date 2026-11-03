@@ -1,7 +1,7 @@
 {
   "name": "@johnmorrisdotca/jisho",
   "version": "2.0.0",
-  "description": "Jisho 辞書 — Japanese word and kanji data for JavaScript: look words up by reading or written form, fetched a few kilobytes at a time, safe by default or unfiltered with every sense's JMdict marks, and bring your own block and allow lists; and the grades, JLPT levels, readings and look-alikes of 2,999 kanji. Typed, no dependencies.",
+  "description": "Jisho 辞書 — Japanese word and kanji data for JavaScript: look words up by reading, written form, English meaning, a kanji in them or romaji, fetched a few kilobytes at a time, safe by default or unfiltered with every sense's JMdict marks, and bring your own block and allow lists; and the grades, JLPT levels, readings and look-alikes of 2,999 kanji. Typed, no dependencies.",
   "keywords": [
     "child-safe",
     "cjk",
@@ -34,6 +34,7 @@
     "onyomi",
     "reading",
     "readings",
+    "romaji",
     "school-grades",
     "similar-kanji",
     "stroke-count",
@@ -131,6 +132,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.6.4",
+    "@johnmorrisdotca/hikidashi": "^1.1.1",
     "@playwright/test": "^1.63.0",
     "esbuild": "^0.28.0",
     "marked": "^18.0.0",

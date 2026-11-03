@@ -8,11 +8,19 @@ const FOLDER = "src/data/words";
 const files = readdirSync(FOLDER);
 /** What a default lookup can fetch: the common table, the manifest, and the pieces. */
 const DEFAULT = files.filter(
-  (name) => name === "common.data.ts" || name === "manifest.data.ts" || /^[rf]\d+\.data\.ts$/.test(name),
+  (name) =>
+    name === "common.data.ts" ||
+    name === "manifest.data.ts" ||
+    name === "index-manifest.data.ts" ||
+    /^[rfmk]\d+\.data\.ts$/.test(name),
 );
 /** What only a host that asks for everything fetches. */
 const EXTRA = files.filter(
-  (name) => name === "extra-manifest.data.ts" || name === "common-extra.data.ts" || /^x[rf]\d+\.data\.ts$/.test(name),
+  (name) =>
+    name === "extra-manifest.data.ts" ||
+    name === "index-extra-manifest.data.ts" ||
+    name === "common-extra.data.ts" ||
+    /^x[rfmk]\d+\.data\.ts$/.test(name),
 );
 const text = (names) => names.map((name) => readFileSync(`${FOLDER}/${name}`, "utf8")).join("\n");
 
@@ -23,7 +31,7 @@ describe("the files a default lookup fetches", () => {
   it("are every file but the extra ones, which are named for what they are", () => {
     expect(EXTRA).toContain("common-extra.data.ts");
     expect(EXTRA).toContain("extra-manifest.data.ts");
-    expect(EXTRA.filter((name) => /^x[rf]/.test(name)).length).toBeGreaterThan(5);
+    expect(EXTRA.filter((name) => /^x[rfmk]/.test(name)).length).toBeGreaterThan(5);
     expect(DEFAULT.length + EXTRA.length).toBe(files.length);
     expect(DEFAULT.length).toBeGreaterThan(300);
   });
@@ -71,7 +79,8 @@ describe("the files a default lookup fetches", () => {
 
   it("do not name the files that do, so that nothing reaches for them: the manifest never imports an extra file", () => {
     expect(readFileSync(`${FOLDER}/manifest.data.ts`, "utf8")).not.toMatch(/extra|x[rf]\d/);
-    expect(everyDefaultFile).not.toMatch(/import\("\.\/(?:common-)?extra|import\("\.\/x[rf]\d/);
+    expect(readFileSync(`${FOLDER}/index-manifest.data.ts`, "utf8")).not.toMatch(/extra|x[mk]\d/);
+    expect(everyDefaultFile).not.toMatch(/import\("\.\/(?:common-|index-)?extra|import\("\.\/x[rfmk]\d/);
   });
 
   it("hold the keys of no extra row: every reading left out whole is in none of the pieces", () => {

@@ -4,7 +4,6 @@ import { COMMON_EXTRA } from "./data/words/common-extra.data.ts";
 import { MANIFEST } from "./data/words/manifest.data.ts";
 import {
   allWords,
-  foldKana,
   isLoaded,
   loadCommonWords,
   loadWords,
@@ -13,6 +12,7 @@ import {
   readRow,
   wordsOf,
 } from "./words.ts";
+import { readingKey } from "./words-text.ts";
 
 describe("the words of a reading", () => {
   it("come commonest first, each with its written form: かみ is paper, god, hair", async () => {
@@ -245,7 +245,7 @@ describe("the pieces", () => {
         const high = set.starts[at + 1];
         for (const line of piece.rows) {
           const key =
-            name === "readings" ? foldKana(line.slice(0, line.indexOf("\t"))) : line.slice(0, line.indexOf("\t"));
+            name === "readings" ? readingKey(line.slice(0, line.indexOf("\t"))) : line.slice(0, line.indexOf("\t"));
           expect(key >= low && (high === undefined || key < high), `${name} ${at} ${key}`).toBe(true);
         }
         if (name === "readings") rows += piece.rows.length;

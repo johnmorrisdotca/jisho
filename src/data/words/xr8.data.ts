@@ -1,0 +1,65 @@
+import type { WordsPiece } from "../../words.types.ts";
+
+/**
+ * The whole answer, as JMdict has it, for each reading whose answer is not the same in safe mode, each row: reading, written forms joined by "|", flags, then one field for each sense. Only for a lookup that asks for everything. Piece 9 of 9, from "れいは". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ *
+ * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
+ * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
+ * This table is derived from it and is under the same licence.
+ */
+export const PIECE: WordsPiece = {
+  rows: [
+    "れいはん\t冷飯\t~m43\t¦cold rice\tabbr¦hanger-on¦dependent\t¦disgraced former actor",
+    "レクリェーション\t\tC~ig\t¦recreation\t¦re-creation",
+    "レクリエーション\t\tC~ig\t¦recreation\t¦re-creation",
+    "レクレーション\t\tC~ig\t¦recreation\t¦re-creation",
+    "レズ\t\tC~g\tabbr,derog¦lesbian¦dyke¦lesbo",
+    "レズっけ\tレズっ気\t\tsens,col¦lesbian feelings¦lesbian tendencies",
+    "レタッチ\t\ts\t¦retouch¦retouching¦touch-up\tbaseb¦tagging up",
+    "れっとうしゅ\t劣等種\t\tsens¦inferior species¦inferior breed¦inferior race",
+    "れっとうじんしゅ\t劣等人種\t\tsens¦inferior race (of people)¦untermenschen",
+    "れんちゅう\t連中\tC~ni12\t¦company¦lot¦people\t¦troupe¦company (of musicians)",
+    "ろうえん\t狼煙|狼烟\t\t¦beacon¦skyrocket¦signal fire\t¦starting shot¦starting signal",
+    "ろうえん\t老嚥\t\tmed¦presbyphagia",
+    "ろうこ\t螻蛄\tU\tuk¦mole cricket (esp. the Oriental mole cricket, Gryllotalpa orientalis)\tcol,uk¦being penniless¦being broke",
+    "ろうこ\t牢固|牢乎\t\t¦firm¦solid¦inflexible",
+    "ろうこ\t老狐\t\t¦old fox",
+    "ろうむしゃ\t労務者\t\tsens¦laborer¦labourer¦workman",
+    "ろすけ\t露助\tU\tuk,sl,derog¦Russian person¦Russki¦Russky",
+    "ロスケ\t\tU\tuk,sl,derog¦Russian person¦Russki¦Russky",
+    "わいら\t汝等\t\tarch,derog¦ye¦you\tarch¦me¦I¦us",
+    "わかぞう\t若造|若蔵|若僧\t~m44\tderog¦youngster¦neophyte¦greenhorn",
+    "わかめざけ\tわかめ酒\t\tvulg,sl¦drinking alcohol from a woman's crotch",
+    "わからせ\t\t\t¦making someone understand\tvulg,sl¦putting an impudent, provocative brat in her place\tsl,vidg¦thoroughly wiping the floor with one's opponent (in fighting games)¦destroying one's opponent",
+    "わきコキ\t脇コキ|腋コキ\t\tsl,vulg¦armpit job¦armpit sex",
+    "ワキコキ\t脇コキ|腋コキ\t\tsl,vulg¦armpit job¦armpit sex",
+    "わげ\t和解\tsC~ni03\t¦reconciliation¦amicable settlement¦accommodation\tlaw¦court-mediated settlement\tarch¦translation of a foreign language into Japanese",
+    "わげもの\t曲げ物|曲物|綰物\t\t¦circular box\t¦article for pawning",
+    "わじょう\t和尚|和上\tC~mt30\thon,Buddh¦priestly teacher¦preceptor\tBuddh¦monk (esp. the head monk of a temple)¦priest¦head priest\tBuddh¦second highest priestly rank in Buddhism\t¦master (of one's art, trade, etc.)",
+    "ワズ\t\t\t¦was\tsl¦was just in¦just left¦just did",
+    "わず\t\t\t¦was\tsl¦was just in¦just left¦just did",
+    "わそう\t和装\t~m41\t¦Japanese clothing¦being dressed in a kimono\t¦Japanese-style bookbinding",
+    "わそう\t我僧|和僧\t\tarch,fam,derog¦monk",
+    "わっぱ\t輪っぱ\tU\tuk¦circular bento box\tcol,uk¦something ring-shaped\tcol,uk¦handcuffs",
+    "ワッパ\t\tU\tuk¦circular bento box\tcol,uk¦something ring-shaped\tcol,uk¦handcuffs",
+    "わっぱ\t童\tU\tderog,uk¦child¦kid¦brat",
+    "ワッパ\t\t\tabbr,col,comp¦performance per watt¦PPW",
+    "わにぐち\t鰐口|ワニ口\t\tderog¦wide mouth\t¦alligator\t¦temple gong",
+    "わぬ\t我|吾\t\t¦I¦me\t¦oneself\tarch¦you\tarch¦prefix indicating familiarity or contempt",
+    "われ\t我|吾\tC~n14\t¦I¦me\t¦oneself\tarch¦you\tarch¦prefix indicating familiarity or contempt",
+    "われ\t割れ\t\t¦broken piece\t¦below (a certain level, point, quantity, etc.)¦dropping below\tsl,internet¦illegal downloading and distribution of commercial software¦warez",
+    "われめ\t割れ目|破れ目\tC~mi29\t¦crack¦crevice¦split\tvulg,sl¦opening of the vagina¦slit",
+    "ワレメ\t割れ目|破れ目\t\t¦crack¦crevice¦split\tvulg,sl¦opening of the vagina¦slit",
+    "ワレメちゃん\t\t\tvulg¦vulva¦slit¦cunt",
+    "われめちゃん\t\t\tvulg¦vulva¦slit¦cunt",
+    "わろ\t和露\t\t¦Japan and Russia¦Japanese-Russian",
+    "わろ\t我郎|和郎\t\tarch¦boy¦(male) servant\tarch,derog¦bastard¦bitch\tarch,fam¦you",
+    "わろ\t我|吾\t\t¦I¦me\t¦oneself\tarch¦you\tarch¦prefix indicating familiarity or contempt",
+    "わろう\t我郎|和郎\t\tarch¦boy¦(male) servant\tarch,derog¦bastard¦bitch\tarch,fam¦you",
+    "ワンワンスタイル\t\t\tvulg¦doggy style¦doggie style",
+    "ワンワン・スタイル\t\t\tvulg¦doggy style¦doggie style",
+    "んー\t\t\t¦hm¦um\t¦huh?¦what?\t¦nuh-uh¦no",
+    "ヴァイキング\t\tC~g\t¦Viking\tabbr¦smorgasbord¦buffet\t¦smorgasbord (of things)¦hodge-podge¦wide range of something",
+    "ヴァイナル\t\t\t¦vinyl¦plastic\tabbr¦vinyl record",
+  ],
+};

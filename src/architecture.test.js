@@ -9,7 +9,7 @@ describe("the preserved architecture guide", () => {
     const guide = readFileSync("docs/guides/architecture.md", "utf8");
     const section = guide.slice(guide.indexOf("## Architecture"));
     const tree = section.slice(section.indexOf("```text"), section.indexOf("```", section.indexOf("```text") + 7));
-    const piece = /^x?[rf]\d+\.data\.ts$/;
+    const piece = /^x?[rfmk]\d+\.data\.ts$/;
     const named = [...tree.matchAll(/[├└]── ([\w.-]+\.ts)\b/g)]
       .map((match) => match[1])
       .filter((name) => !piece.test(name))
@@ -19,10 +19,12 @@ describe("the preserved architecture guide", () => {
     expect(guide).toContain("r000.data.ts");
     expect(guide).toContain("f00.data.ts");
     expect(guide).toContain("xr0.data.ts");
+    expect(guide).toContain("m000.data.ts");
+    expect(guide).toContain("k00.data.ts");
     const files = readdirSync("src", { recursive: true })
       .filter(
         (path) =>
-          path.endsWith(".ts") && !/\.(test|fixture)\./.test(path) && !/(^|[\\/])x?[rf]\d+\.data\.ts$/.test(path),
+          path.endsWith(".ts") && !/\.(test|fixture)\./.test(path) && !/(^|[\\/])x?[rfmk]\d+\.data\.ts$/.test(path),
       )
       .map((path) => path.split(/[\\/]/).at(-1))
       .sort();

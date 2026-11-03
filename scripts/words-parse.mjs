@@ -24,6 +24,22 @@ const BAND_SIZE = 500;
 /** The rank of a word JMdict puts in no frequency list at all. */
 export const UNRANKED = 100_000;
 
+/**
+ * JMdict's priority tags, one letter each as a row stores them after "~" in its flags (the nfXX band is its two digits after the
+ * letters). A word's tags are those of all its written forms and readings together, as `common` is. A reading JMdict calls
+ * irregular has none.
+ */
+export const PRIORITY_LETTERS = {
+  news1: "n",
+  news2: "m",
+  ichi1: "i",
+  ichi2: "j",
+  spec1: "s",
+  spec2: "t",
+  gai1: "g",
+  gai2: "h",
+};
+
 /** The five kinds of word a conjugation needs to know, as one letter each. */
 export const KIND_LETTERS = { g: "godan", i: "ichidan", a: "i-adjective", s: "suru", k: "kuru" };
 
@@ -58,6 +74,16 @@ export function rankOf(priorities) {
   if (priorities.some((one) => ["news1", "ichi1", "spec1", "gai1"].includes(one))) return 12_000;
   if (priorities.some((one) => ["news2", "ichi2", "spec2", "gai2"].includes(one))) return 24_000;
   return UNRANKED;
+}
+
+/** The priority tags of an entry as a row stores them: their letters in one fixed order, then the newspaper band's two digits. */
+export function priorityOf(priorities) {
+  const letters = Object.entries(PRIORITY_LETTERS)
+    .filter(([tag]) => priorities.includes(tag))
+    .map(([, letter]) => letter)
+    .join("");
+  const bands = priorities.map((one) => /^nf(\d\d)$/.exec(one)?.[1]).filter(Boolean);
+  return `${letters}${bands.sort()[0] ?? ""}`;
 }
 
 /**
@@ -171,6 +197,7 @@ export function rowsOfEntry(entry) {
       kinds,
       // An irregular reading is never a common one, and comes after the regular ones that share it.
       common: taggedCommon && !reading.irregular,
+      priority: reading.irregular ? "" : priorityOf(priorities),
       usuallyKana,
       rank: reading.irregular ? UNRANKED + 1 : rank,
     };
@@ -188,6 +215,13 @@ export function foldKana(text) {
   return text.replace(/[ァ-ヶ]/g, (one) => String.fromCharCode(one.charCodeAt(0) - 0x60));
 }
 
+/**
+ * What a table is looked up by. A written form is looked up as NFKC makes it, so that １人 and 1人, ＣＤ and CD, ﾀﾋ and タヒ are
+ * one key; a reading is that, folded to hiragana. The lookup (src/words-text.ts) makes the same keys of what it is asked.
+ */
+export const formKey = (text) => text.normalize("NFKC");
+export const readingKey = (text) => foldKana(formKey(text));
+
 const FIELD_BREAK = /[\t\n]/;
 const LIST_BREAK = /[\t\n|]/;
 
@@ -201,7 +235,7 @@ function packSense(sense, reading) {
 
 /** A row as one line: reading, forms joined by "|", flags, then one field for each sense. */
 export function packRow(row) {
-  const flags = `${row.kinds}${row.common ? "C" : ""}${row.usuallyKana ? "U" : ""}`;
+  const flags = `${row.kinds}${row.common ? "C" : ""}${row.usuallyKana ? "U" : ""}${row.priority ? `~${row.priority}` : ""}`;
   for (const part of [row.reading, ...row.forms])
     if (LIST_BREAK.test(part)) throw new Error(`A separator in the row for ${row.reading}: ${part}`);
   return [row.reading, row.forms.join("|"), flags, ...row.senses.map((sense) => packSense(sense, row.reading))].join(

@@ -5,16 +5,36 @@ import { describe, expect, it } from "vitest";
 import { cut } from "../scripts/build-words.mjs";
 import {
   foldKana,
+  formKey,
   glossesOf,
   kindLetters,
   packClean,
   packRow,
+  priorityOf,
   rankOf,
+  readingKey,
   releaseOf,
   rowsOfDictionary,
   rowsOfEntry,
 } from "../scripts/words-parse.mjs";
-import { patched, tablesOf } from "../scripts/words-tables.mjs";
+import {
+  indexesOf,
+  KANJI_CAP,
+  MEANING_CAP,
+  patched,
+  STOP_WORDS,
+  tablesOf,
+  termsInOrder,
+  termsOf,
+} from "../scripts/words-tables.mjs";
+import { priorityTags, rankOfTags, readRow } from "./words-rows.ts";
+import {
+  STOP_WORDS as TS_STOP_WORDS,
+  formKey as tsFormKey,
+  readingKey as tsReadingKey,
+  termsInOrder as tsTermsInOrder,
+  termsOf as tsTermsOf,
+} from "./words-text.ts";
 
 const entry = (body) => `\n<ent_seq>1</ent_seq>\n${body}\n`;
 const sense = (pos, misc, glosses) =>
@@ -254,7 +274,7 @@ describe("the stored row", () => {
         `<k_ele><keb>紙</keb><ke_pri>ichi1</ke_pri></k_ele><r_ele><reb>かみ</reb></r_ele>${sense(["n"], ["col"], ["paper", "sheet"])}${sense(["n"], [], ["one"])}`,
       ),
     );
-    expect(packRow(row ?? {})).toBe("かみ\t紙\tC\tcol¦paper¦sheet\t¦one");
+    expect(packRow(row ?? {})).toBe("かみ\t紙\tC~i\tcol¦paper¦sheet\t¦one");
   });
 
   it("refuses a field with a tab, a line break or the sense break in it, which would be two fields", () => {
@@ -308,6 +328,137 @@ describe("cutting into pieces", () => {
       if (at === 0) continue;
       expect(piece.start > (keys[at - 1] ?? ""), String(at)).toBe(true);
       expect(piece.start <= (keys[at] ?? ""), String(at)).toBe(true);
+    }
+  });
+});
+
+describe("the priority a row keeps", () => {
+  const priorities = (...tags) =>
+    rowsOfEntry(
+      entry(
+        `<k_ele><keb>紙</keb>${tags.map((one) => `<ke_pri>${one}</ke_pri>`).join("")}</k_ele><r_ele><reb>かみ</reb></r_ele>${sense(["n"], [], ["paper"])}`,
+      ),
+    )[0];
+
+  it("is the tags of the entry as letters in one order, then the newspaper band's two digits", () => {
+    expect(priorityOf(["ichi1", "news1", "nf03"])).toBe("ni03");
+    expect(priorityOf(["gai2", "spec1", "ichi2"])).toBe("jsh");
+    expect(priorityOf(["nf12", "nf04"])).toBe("04");
+    expect(priorityOf([])).toBe("");
+    expect(packRow(priorities("ichi1", "news1", "nf03") ?? {})).toBe("かみ\t紙\tC~ni03\t¦paper");
+    expect(packRow(priorities() ?? {})).toBe("かみ\t紙\t\t¦paper");
+  });
+
+  it("is read back as the tags, and makes the rank the build makes", () => {
+    for (const tags of [["ichi1", "news1", "nf03"], ["spec2"], ["gai2", "ichi2"], ["nf48"], ["news2", "gai1"], []]) {
+      const row = priorities(...tags);
+      expect(rankOfTags(priorityTags(row?.priority ?? "")), tags.join()).toBe(rankOf(tags));
+      expect(readRow(packRow(row ?? {})).priority).toBe(row?.priority);
+    }
+    expect(priorityTags("ni03")).toEqual(["news1", "ichi1", "nf03"]);
+  });
+
+  it("is none for a reading JMdict calls irregular", () => {
+    const [regular, irregular] = rowsOfEntry(
+      entry(
+        `<k_ele><keb>紙</keb><ke_pri>ichi1</ke_pri></k_ele><r_ele><reb>かみ</reb></r_ele><r_ele><reb>かみい</reb><re_inf>&ik;</re_inf></r_ele>${sense(["n"], [], ["paper"])}`,
+      ),
+    );
+    expect(regular?.priority).toBe("i");
+    expect(irregular?.priority).toBe("");
+  });
+});
+
+describe("the keys of the tables", () => {
+  it("are made as the lookup makes them: the same NFKC for a form, folded to hiragana for a reading", () => {
+    for (const text of ["１人", "ＣＤ", "ﾀﾋ", "カミ", "紙", "Ｔシャツ", "e\u0301", "コーヒー"]) {
+      expect(formKey(text), text).toBe(tsFormKey(text));
+      expect(readingKey(text), text).toBe(tsReadingKey(text));
+    }
+  });
+
+  it("find a form written in full-width characters by its half-width spelling", () => {
+    const rows = rowsOfDictionary(
+      `<entry>${entry(`<k_ele><keb>１人</keb></k_ele><r_ele><reb>ひとり</reb></r_ele>${sense(["n"], [], ["one person"])}`)}`,
+    );
+    expect(tablesOf(rows).forms.map(([key]) => key)).toEqual(["1人"]);
+  });
+});
+
+describe("the indexes by meaning and by kanji", () => {
+  const dictionary = rowsOfDictionary(
+    [
+      entry(
+        `<k_ele><keb>水</keb><ke_pri>news1</ke_pri><ke_pri>nf02</ke_pri></k_ele><r_ele><reb>みず</reb></r_ele>${sense(["n"], [], ["water", "fluid"])}${sense(["n"], [], ["to go out of the way"])}`,
+      ),
+      entry(
+        `<k_ele><keb>水泳</keb></k_ele><r_ele><reb>すいえい</reb></r_ele>${sense(["n"], [], ["swimming"])}${sense(["n"], [], ["water sport"])}`,
+      ),
+      entry(
+        `<k_ele><keb>淫水</keb></k_ele><r_ele><reb>いんすい</reb></r_ele>${sense(["n"], ["vulg"], ["rude water"])}${sense(["n"], [], ["wet"])}`,
+      ),
+      entry(`<r_ele><reb>ホモビデオ</reb></r_ele>${sense(["n"], ["sens"], ["rude video"])}`),
+    ]
+      .map((one) => `<entry>${one}`)
+      .join(""),
+  );
+  const index = indexesOf(dictionary);
+  const lineOf = (pairs, key) => pairs.find(([one]) => one === key)?.[1];
+
+  it("have a line for each term, with the readings of the words that have it, the commonest first", () => {
+    expect(lineOf(index.meanings, "water")).toBe("water\tみず");
+    expect(lineOf(index.meanings, "rude")).toBeUndefined();
+    expect(lineOf(index.meanings, "fluid")).toBe("fluid\tみず");
+    expect(index.meanings.map(([key]) => key)).toEqual([...index.meanings.map(([key]) => key)].sort());
+  });
+
+  it("find a ranked word by two terms that follow each other, and an unranked one by its first gloss alone", () => {
+    expect(lineOf(index.meanings, "go out")).toBe("go out\tみず");
+    expect(lineOf(index.meanings, "out way")).toBe("out way\tみず");
+    expect(lineOf(index.meanings, "water sport")).toBeUndefined();
+    expect(lineOf(index.meanings, "water fluid")).toBeUndefined();
+    expect(lineOf(index.meanings, "swimming")).toBe("swimming\tすいえい");
+    // 水泳 has no priority, so only its first gloss is found by: "sport" is in its second.
+    expect(lineOf(index.meanings, "sport")).toBeUndefined();
+  });
+
+  it("have no stop word, and no key for a word with nothing left", () => {
+    expect(lineOf(index.meanings, "the")).toBeUndefined();
+    expect(lineOf(index.meanings, "to")).toBeUndefined();
+    expect(lineOf(index.meanings, "video")).toBeUndefined();
+  });
+
+  it("keep what safe mode leaves out in the extra index alone, and there only where the list is not the same", () => {
+    expect(index.meanings.map(([key]) => key)).not.toContain("rude");
+    expect(lineOf(index.extraMeanings, "rude")).toBe("rude\tいんすい|ホモビデオ");
+    expect(lineOf(index.extraMeanings, "water")).toBe("water\tみず|いんすい");
+    expect(lineOf(index.extraMeanings, "fluid")).toBeUndefined();
+    expect(lineOf(index.extraMeanings, "wet")).toBeUndefined();
+  });
+
+  it("find words by the kanji in their written forms", () => {
+    expect(lineOf(index.kanji, "水")).toBe("水\tみず|すいえい|いんすい");
+    expect(lineOf(index.kanji, "泳")).toBe("泳\tすいえい");
+    expect(lineOf(index.kanji, "淫")).toBe("淫\tいんすい");
+  });
+
+  it("hold at most the cap for a term", () => {
+    const many = rowsOfDictionary(
+      Array.from(
+        { length: MEANING_CAP + 5 },
+        (_, at) =>
+          `<entry>${entry(`<k_ele><keb>字${at}</keb></k_ele><r_ele><reb>じ${String.fromCharCode(0x3041 + at)}</reb></r_ele>${sense(["n"], [], ["thing"])}`)}`,
+      ).join(""),
+    );
+    expect(lineOf(indexesOf(many).meanings, "thing")?.split("\t")[1]?.split("|")).toHaveLength(MEANING_CAP);
+    expect(KANJI_CAP).toBeGreaterThan(MEANING_CAP);
+  });
+
+  it("make the terms the lookup makes, with the same words left out", () => {
+    expect(STOP_WORDS).toEqual([...TS_STOP_WORDS]);
+    for (const text of ["water (cold)", "to be at one's wit's end", "Ǆ", "ＷＡＴＥＲ", "x’s", "café", "☃", ""]) {
+      expect(termsOf(text), text).toEqual(tsTermsOf(text));
+      expect(termsInOrder(text), text).toEqual(tsTermsInOrder(text));
     }
   });
 });

@@ -4,7 +4,8 @@
  * to leave out and passes it.
  */
 
-import type { Sense, Word } from "./words.ts";
+import type { Sense, Word } from "./words.types.ts";
+import { foldKana } from "./words-text.ts";
 
 /** A meaning stops at a whole gloss inside this many characters, except that the first gloss is always whole. */
 export const MEANING_MAX = 60;
@@ -24,22 +25,6 @@ const GLOSSES_SHOWN = 3;
  * ```
  */
 export const SAFE_MARKS: readonly string[] = ["vulg", "X", "sens", "derog"];
-
-/**
- * A text folded to hiragana: the katakana move down, ー and everything else stay. The reading of a loanword is found by either.
- *
- * @param text - Any text.
- * @returns The text with each katakana changed to the hiragana of the same sound.
- * @example
- * ```ts
- * import { foldKana } from "@johnmorrisdotca/jisho/words";
- *
- * console.log(foldKana("カミ")); // かみ
- * ```
- */
-export function foldKana(text: string): string {
-  return text.replace(/[ァ-ヶ]/g, (one) => String.fromCharCode(one.charCodeAt(0) - 0x60));
-}
 
 /**
  * The short English meaning of some senses: up to two senses of up to three glosses, ", " between glosses and "; " between senses,
@@ -78,7 +63,7 @@ export function meaningFrom(senses: readonly Sense[]): string {
  * ```ts
  * import { hasMarks } from "@johnmorrisdotca/jisho/words";
  *
- * const word = { written: "紙", reading: "かみ", forms: ["紙"], meaning: "paper", senses: [{ marks: ["col"], glosses: ["paper"] }], kinds: "", common: true };
+ * const word = { written: "紙", reading: "かみ", forms: ["紙"], meaning: "paper", senses: [{ marks: ["col"], glosses: ["paper"] }], kinds: "", common: true, rank: 1250, priority: ["news1"] };
  * console.log(hasMarks(word, ["col", "sl"])); // true
  * ```
  */

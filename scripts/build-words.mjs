@@ -14,7 +14,7 @@ import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node
 import process from "node:process";
 import { gunzipSync } from "node:zlib";
 import { packRow, releaseOf, rowsOfDictionary } from "./words-parse.mjs";
-import { patched, tablesOf } from "./words-tables.mjs";
+import { indexesOf, patched, tablesOf } from "./words-tables.mjs";
 
 const JMDICT_URL = "http://ftp.edrdg.org/pub/Nihongo/JMdict_e.gz";
 const OUT = "src/data/words";
@@ -24,6 +24,8 @@ const READING_PIECE_BYTES = 64_000;
 const EXTRA_PIECE_BYTES = 48_000;
 /** About this many to a piece of the index of written forms. */
 const FORM_PIECE_BYTES = 96_000;
+/** About this many to a piece of the index by meaning, and of the index by kanji. */
+const INDEX_PIECE_BYTES = 48_000;
 /** Readings that are not all kana (a middle dot is kana here, as it is in loanwords): they are looked up like a written form. */
 export const KANA_TEXT = /^[ぁ-ゖゝ-ゟァ-ヺ・-ヿ]+$/;
 
@@ -121,7 +123,7 @@ function main(zipped) {
   writeFileSync(
     `${OUT}/common.data.ts`,
     dataFile({
-      imports: `import type { PackedWords } from "../../words.ts";\n`,
+      imports: `import type { PackedWords } from "../../words.types.ts";\n`,
       summary: `The ${common.length.toLocaleString("en-US")} common words of JMdict that safe mode keeps, which tags a word common when any of its written forms or readings is in news1, ichi1, spec1, spec2 or gai1. Each row: reading, written forms joined by "|", flags, then one field for each sense: its marks, then its glosses. Nothing that safe mode leaves out is in it.`,
       type: "PackedWords",
       name: "COMMON_WORDS",
@@ -139,7 +141,7 @@ ${rowsLiteral(common)}
   writeFileSync(
     `${OUT}/common-extra.data.ts`,
     dataFile({
-      imports: `import type { PackedPatch } from "../../words.ts";\n`,
+      imports: `import type { PackedPatch } from "../../words.types.ts";\n`,
       summary: `What to do to the common words to have every common word as JMdict has it: each line is a position, "r" to replace the row there or "i" to insert one before it, and the row. Only for unfiltered mode.`,
       type: "PackedPatch",
       name: "COMMON_EXTRA",
@@ -167,7 +169,7 @@ ${rowsLiteral(commonPatch)}
       writeFileSync(
         `${OUT}/${pieceName(prefix, at, pieces.length)}.data.ts`,
         dataFile({
-          imports: `import type { WordsPiece } from "../../words.ts";\n`,
+          imports: `import type { WordsPiece } from "../../words.types.ts";\n`,
           summary: `${summary} Piece ${at + 1} of ${pieces.length}, from ${JSON.stringify(piece.start)}.`,
           type: "WordsPiece",
           name: "PIECE",
@@ -194,7 +196,7 @@ ${rowsLiteral(piece.lines)}
   writeFileSync(
     `${OUT}/manifest.data.ts`,
     dataFile({
-      imports: `import type { WordsManifest } from "../../words.ts";\n`,
+      imports: `import type { WordsManifest } from "../../words.types.ts";\n`,
       summary: `Where the pieces of JMdict are: the first key of each, and how to fetch it. ${readingPieces.length} pieces of rows by reading and ${formPieces.length} of written forms.`,
       type: "WordsManifest",
       name: "MANIFEST",
@@ -234,7 +236,7 @@ ${loaders("f", formPieces)}
   writeFileSync(
     `${OUT}/extra-manifest.data.ts`,
     dataFile({
-      imports: `import type { WordsManifest } from "../../words.ts";\n`,
+      imports: `import type { WordsManifest } from "../../words.types.ts";\n`,
       summary: `Where the pieces are that hold what safe mode leaves out: the first key of each, and how to fetch it. ${extraReadingPieces.length} pieces of rows by reading and ${extraFormPieces.length} of written forms. ${counts.rows.toLocaleString("en-US")} rows in the dictionary in all.`,
       type: "WordsManifest",
       name: "EXTRA_MANIFEST",
@@ -258,11 +260,98 @@ ${loaders("xf", extraFormPieces)}
     }),
   );
 
+  // The indexes that find words by meaning and by kanji, in pieces of their own with a manifest of their own, so that a lookup by
+  // reading never fetches or names them. Each line says which readings to fetch, and the lookup then reads those rows as usual.
+  const indexes = indexesOf(rows);
+  const indexSets = [
+    [
+      "meanings",
+      "m",
+      INDEX_PIECE_BYTES,
+      indexes.meanings,
+      "Terms of the English meanings of JMdict that safe mode keeps",
+    ],
+    [
+      "extraMeanings",
+      "xm",
+      INDEX_PIECE_BYTES,
+      indexes.extraMeanings,
+      "Terms of the English meanings, whole as JMdict has them, for each term whose words are not the same in safe mode. Only for a lookup that asks for everything",
+    ],
+    ["kanji", "k", INDEX_PIECE_BYTES, indexes.kanji, "Kanji in the written forms of JMdict that safe mode keeps"],
+    [
+      "extraKanji",
+      "xk",
+      INDEX_PIECE_BYTES,
+      indexes.extraKanji,
+      "Kanji in the written forms, whole as JMdict has them, for each kanji whose words are not the same in safe mode. Only for a lookup that asks for everything",
+    ],
+  ].map(([name, prefix, bytes, pairs, summary]) => ({
+    name,
+    prefix,
+    pieces: cut(pairs, bytes),
+    summary,
+    count: pairs.length,
+  }));
+  for (const { prefix, pieces, summary } of indexSets)
+    writePieces(
+      prefix,
+      pieces,
+      `${summary}, each: the key, then the readings of the words that have it joined by "|", the commonest first.`,
+    );
+  const manifestOf = (file, name, sets, summary) =>
+    writeFileSync(
+      `${OUT}/${file}`,
+      dataFile({
+        imports: `import type { IndexManifest } from "../../words.types.ts";\n`,
+        summary,
+        type: "IndexManifest",
+        name,
+        body: `{
+  source: "JMdict",
+  release: ${JSON.stringify(release)},
+${sets
+  .map(
+    (one) => `  ${one.name}: {
+    starts: [${starts(one.pieces)}],
+    load: [
+${loaders(one.prefix, one.pieces)}
+    ],
+  },`,
+  )
+  .join("\n")}
+}`,
+      }),
+    );
+  const [meanings, extraMeanings, kanji, extraKanji] = indexSets;
+  manifestOf(
+    "index-manifest.data.ts",
+    "INDEX_MANIFEST",
+    [
+      { ...meanings, name: "meanings" },
+      { ...kanji, name: "kanji" },
+    ],
+    `Where the pieces of the indexes by meaning and by kanji are: the first key of each, and how to fetch it. ${meanings.pieces.length} pieces by meaning and ${kanji.pieces.length} by kanji.`,
+  );
+  manifestOf(
+    "index-extra-manifest.data.ts",
+    "EXTRA_INDEX_MANIFEST",
+    [
+      { ...extraMeanings, name: "meanings" },
+      { ...extraKanji, name: "kanji" },
+    ],
+    `Where the pieces are of the indexes by meaning and by kanji that hold what safe mode leaves out: the first key of each, and how to fetch it. ${extraMeanings.pieces.length} pieces by meaning and ${extraKanji.pieces.length} by kanji. Only for a lookup that asks for everything.`,
+  );
+
   recordSource({ release, sha256 });
   const kb = (n) => `${(n / 1e3).toFixed(0)} kB`;
   const size = (pieces) => pieces.map((piece) => Buffer.byteLength(piece.lines.join("\n")));
   const bytes = (lines) => Buffer.byteLength(lines.join("\n"));
   console.log(`JMdict ${release}, SHA-256 ${sha256}`);
+  for (const one of indexSets)
+    console.log(
+      `${one.pieces.length} pieces of ${one.name}: ${one.count} keys, the largest ${kb(Math.max(...size(one.pieces)))}`,
+    );
   console.log(
     `${counts.rows} rows; ${counts.cleanRows} in safe mode, ${counts.rows - counts.cleanRows} left out whole; ${counts.common} common in safe mode of ${counts.commonAll}`,
   );

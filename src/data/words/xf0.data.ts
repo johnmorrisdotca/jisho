@@ -1,4 +1,4 @@
-import type { WordsPiece } from "../../words.ts";
+import type { WordsPiece } from "../../words.types.ts";
 
 /**
  * The whole list of readings, as JMdict has it, for each written form whose readings are not the same in safe mode, each: form, then its readings joined by "|". Only for a lookup that asks for everything. Piece 1 of 1, from "". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
@@ -9,6 +9,14 @@ import type { WordsPiece } from "../../words.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "BBA\tババア|ビー・ビー・エー|ビービーエー",
+    "B層\tビーそう",
+    "C国\tシーこく",
+    "DQN\tドキュン|ドキュソ",
+    "DQNネーム\tドキュンネーム",
+    "K国\tケーこく",
+    "PYK\tパヨク",
+    "ggrks\tググれかす",
     "あいつ等\tあいつら|アイツら",
     "あほの一つ覚え\tあほのひとつおぼえ",
     "いきり勃つ\tいきりたつ",
@@ -141,8 +149,8 @@ export const PIECE: WordsPiece = {
     "マン毛\tマンげ",
     "マン汁\tマンじる",
     "マン肉\tマンにく",
+    "ミミズ1000匹\tミミズせんびき",
     "ミミズ千匹\tミミズせんびき",
-    "ミミズ１０００匹\tミミズせんびき",
     "メス臭\tめすしゅう",
     "ヤリ友\tヤリとも",
     "ヤリ捨て\tやりすて",
@@ -648,13 +656,5 @@ export const PIECE: WordsPiece = {
     "鮪女\tまぐろおんな",
     "鮮人\tせんじん",
     "黠奴\tかつど",
-    "Ｂ層\tビーそう",
-    "ＢＢＡ\tババア|ビー・ビー・エー|ビービーエー",
-    "Ｃ国\tシーこく",
-    "ＤＱＮ\tドキュン|ドキュソ",
-    "ＤＱＮネーム\tドキュンネーム",
-    "Ｋ国\tケーこく",
-    "ＰＹＫ\tパヨク",
-    "ｇｇｒｋｓ\tググれかす",
   ],
 };
