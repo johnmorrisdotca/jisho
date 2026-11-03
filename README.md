@@ -180,14 +180,71 @@ pnpm add @johnmorrisdotca/jisho
 yarn add @johnmorrisdotca/jisho
 ```
 
-For a page with no bundler:
+For a page with no bundler, from jsDelivr (or unpkg; the file is tested both ways):
 
 ```html
-<script type="module">
-  import { gradeOf } from "https://cdn.jsdelivr.net/npm/@johnmorrisdotca/jisho@2/+esm";
-  import { GRADES } from "https://cdn.jsdelivr.net/npm/@johnmorrisdotca/jisho@2/grades/+esm";
-  console.log(gradeOf(GRADES, "語"));
-</script>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jisho from jsDelivr</title>
+  </head>
+  <body>
+    <ul id="words" lang="ja"></ul>
+    <script type="module">
+      import { loadWords, wordsOf } from "https://cdn.jsdelivr.net/npm/@johnmorrisdotca/jisho/dist/words.js";
+
+      const words = await loadWords("かみ");
+      const items = wordsOf(words, "かみ")
+        .slice(0, 5)
+        .map((one) => Object.assign(document.createElement("li"), { textContent: `${one.written} ${one.meaning}` }));
+      document.querySelector("#words").replaceChildren(...items);
+    </script>
+  </body>
+</html>
+```
+
+### Every way to use it
+
+Each way is a file in [`examples/`](examples), built, type-checked or run against the package as npm packs it by `pnpm test:usage` in CI, and the guides hold the same text word for word.
+
+| Where | Guide |
+| --- | --- |
+| A page with a script tag, from jsDelivr or unpkg | [A plain page and a CDN](https://johnmorrisdotca.github.io/jisho/docs/guides/html-and-cdn.html) |
+| Vite or webpack | [Vite and webpack](https://johnmorrisdotca.github.io/jisho/docs/guides/bundlers.html) |
+| React (with server rendering), Vue, Svelte or Angular | [React, Vue, Svelte and Angular](https://johnmorrisdotca.github.io/jisho/docs/guides/frameworks.html) |
+| TypeScript, and Node on a server or in a script | [TypeScript and Node](https://johnmorrisdotca.github.io/jisho/docs/guides/typescript-and-node.html) |
+| Any page, with one iframe and no script | [Embed it with an iframe](https://johnmorrisdotca.github.io/jisho/docs/guides/embed-in-an-iframe.html) |
+
+### In an iframe
+
+The demo site has a page made to be framed. It draws what its address says (`word=`, `meaning=`, `kanji=`, `with=`, `limit=`, `mode=`, `lang=`, `theme=`) and nothing else, and it is in safe mode unless the address says otherwise:
+
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/embed-desk-dark.webp">
+<img src="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/embed-desk-light.webp" alt="The embed page: the card of 山 with its strokes, grade, level, readings and meanings, above three words read かみ: 紙, 神 and 髪, each with its meaning." width="360">
+</picture>
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jisho in an iframe</title>
+  </head>
+  <body>
+    <iframe
+      src="https://johnmorrisdotca.github.io/jisho/embed.html?word=%E3%81%8B%E3%81%BF&limit=3&lang=en"
+      title="The words read かみ"
+      width="360"
+      height="420"
+      loading="lazy"
+      style="border: 0"
+    ></iframe>
+  </body>
+</html>
 ```
 
 ### Install under another name
@@ -668,7 +725,7 @@ Nothing yet. [Tell us](https://github.com/johnmorrisdotca/jisho/issues/new?templ
 ### The family
 
 <!-- family:start (made by scripts/family-readme.mjs from scripts/family-template.mjs; change those, not this) -->
-Jisho is one of thirty-three packages, each made for the same site, each at
+Jisho is one of thirty-six packages, each made for the same site, each at
 [github.com/johnmorrisdotca](https://github.com/johnmorrisdotca) or [github.com/spxis](https://github.com/spxis). The code of every one is MIT.
 
 **Games — board**
@@ -707,15 +764,18 @@ Jisho is one of thirty-three packages, each made for the same site, each at
 
 - [Bushu](https://github.com/johnmorrisdotca/bushu) (部首): find a kanji by the parts it is made of. [Demo](https://johnmorrisdotca.github.io/bushu/).
 - [Hikidashi](https://github.com/johnmorrisdotca/hikidashi) (引き出し): a drawer of small Japanese text tools: era dates, kanji numerals, readings and sentence difficulty. [Demo](https://johnmorrisdotca.github.io/hikidashi/).
-- [Jisho](https://github.com/johnmorrisdotca/jisho) (辞書): Japanese words looked up by reading or written form, and the grades, JLPT levels, readings and look-alike pairs of 2,999 kanji. [Demo](https://johnmorrisdotca.github.io/jisho/). Not on npm yet.
+- [Jisho](https://github.com/johnmorrisdotca/jisho) (辞書): Japanese words looked up by reading or written form, and the grades, JLPT levels, readings and look-alike pairs of 2,999 kanji. [Demo](https://johnmorrisdotca.github.io/jisho/).
 - [Kotoba](https://github.com/johnmorrisdotca/kotoba) (言葉): word lists and word-game rules in English, French, German and Japanese. [Demo](https://johnmorrisdotca.github.io/kotoba/).
 
 **Geography & data**
 
 - [address-plus](https://github.com/johnmorrisdotca/address-plus) (アドレスプラス): parse and format addresses in the United States, Canada, Japan, Australia, France, Germany and the United Kingdom. [Demo](https://johnmorrisdotca.github.io/address-plus/).
+- [Chikyu Earth](https://github.com/johnmorrisdotca/chikyu-earth) (地球): a line-drawn globe that turns at the Earth's own rate, with an optional realistic Earth from space and markers for any place. [Demo](https://johnmorrisdotca.github.io/chikyu-earth/).
 - [Chizu](https://github.com/johnmorrisdotca/chizu) (地図): maps of the world and of countries' regions, in English and Japanese, with a quiz and callouts. [Demo](https://johnmorrisdotca.github.io/chizu/).
 - [Hata](https://github.com/johnmorrisdotca/hata) (旗): country and regional flags as SVG, at their true proportions and keyed by ISO code. [Demo](https://johnmorrisdotca.github.io/hata/).
 - [Kuni](https://github.com/johnmorrisdotca/kuni) (国): countries and their regions, with ISO codes and names in English and Japanese. [Demo](https://johnmorrisdotca.github.io/kuni/).
+- [Uchusen Rockets](https://github.com/johnmorrisdotca/uchusen-rockets) (宇宙船): rockets drawn from sourced sizes, as line drawings and 3D views you can take apart and turn, with a check that a rocket really goes together. [Demo](https://johnmorrisdotca.github.io/uchusen-rockets/).
+- [Wakusei Planets](https://github.com/johnmorrisdotca/wakusei-planets) (惑星): the Sun, the planets and their moons, as line drawings, shaded drawings and painted surface maps, with their real sizes, tilt and rotation. [Demo](https://johnmorrisdotca.github.io/wakusei-planets/).
 
 **Sports**
 
@@ -729,7 +789,7 @@ Jisho is one of thirty-three packages, each made for the same site, each at
 - [REST in Pieces](https://github.com/spxis/rest-in-pieces) (レスト・イン・ピーシーズ): seeded test data and REST APIs for frontend development, with latency and error drills. [Demo](https://spxis.github.io/rest-in-pieces/).
 
 
-**This package is Jisho.** The demos of all thirty-three share one header and footer, so each links the rest.
+**This package is Jisho.** The demos of all thirty-six share one header and footer, so each links the rest.
 <!-- family:end -->
 
 ## Development
