@@ -6,6 +6,8 @@ All notable changes to this project are written here. The format follows
 
 ## [Unreleased]
 
+## [2.1.0] - 2026-11-03
+
 A minor version: nothing that 2.0.0 gave is taken away.
 
 ### Added
