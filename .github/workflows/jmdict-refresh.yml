@@ -26,7 +26,7 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -34,24 +34,26 @@ jobs:
           node-version: 24
       - name: Fetch the newest JMdict and write the words again
         run: node scripts/build-words.mjs
+      - name: Fetch the newest JMdict_e_examp and Tatoeba's authors and write the examples again
+        run: node scripts/build-examples.mjs
       - name: Leave the new words on a branch, with a pull request to land it
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if git diff --quiet -- src/data/words && [ -z "$(git ls-files --others --exclude-standard -- src/data/words)" ]; then
+          if git diff --quiet -- src/data && [ -z "$(git ls-files --others --exclude-standard -- src/data)" ]; then
             echo "The words are what JMdict's newest release makes. Nothing to land."
             exit 0
           fi
           month="$(date -u +%Y-%m)"
           branch="data/jmdict-$month"
           title="The words from JMdict's newest release, $month"
-          body="JMdict changed the words. This branch is what scripts/build-words.mjs writes from its newest release.
+          body="JMdict changed the words. This branch is what scripts/build-words.mjs and scripts/build-examples.mjs write from its newest release.
 
           To land it: check the changes, add a patch version to CHANGELOG.md under Unreleased, merge it to main, and tag the version. Then delete the branch."
           git config user.name "$GITHUB_ACTOR"
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
           git checkout -b "$branch"
-          git add src/data/words data-sources/sources.json
+          git add src/data/words src/data/examples data-sources/sources.json
           git commit -m "The words from JMdict's newest release"
           git push --force origin "$branch"
           open="$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')"
