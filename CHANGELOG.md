@@ -6,6 +6,10 @@ All notable changes to this project are written here. The format follows
 
 ## [Unreleased]
 
+## [2.8.0] - 2026-11-04
+
+A minor version: nothing that 2.7.0 gave is taken away. The package itself is unchanged; the demo gains the family's embed panel.
+
 ### Added
 
 - **The demo's "Put it in your page"**: the family's `<kazoku-embed-panel>` (kazoku-ui ^0.15.1; MODULES-359). Choose what to look up (a reading or a word, an English meaning or a kanji), the text, how many rows (3, 5 or 10) and the audience (safe or unfiltered); the panel writes the code for each way a page is made (plain HTML from jsDelivr, an ES module, React, Vue, Angular, Svelte and an iframe of the embed page) at three widths (280, 360 and 480), shows the embed page itself beside the code, and has Copy code, Open the embed page, Read the docs and the credit line (JMdict, KANJIDIC2). The tab, the width and the choices stay in the address (`embed`, `size`, `lookup`, `for`, `count`, `audience`). It is in English and Japanese. The code is written by `demo/embed-code.js`; `scripts/embed-code.test.mjs` runs the lookup of every way against the package and checks the pieces of each. The embed page itself is unchanged.
