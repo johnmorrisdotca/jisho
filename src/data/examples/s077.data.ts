@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 78 of 144, from "0w8v". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 78 of 144, from "0w8g". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,16 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0w8ge\t1¦｜私達《わたしたち》は、｜家事《かじ》を｜分担《ぶんたん》することで｜合意《ごうい》した。¦We agreed to share the housework.¦¦397l¦¦CK¦分担",
+    "0w8ka\t1¦｜彼《かれ》らは｜利益《りえき》を｜公平《こうへい》に｜分配《ぶんぱい》した。¦They allotted the profits fairly.¦¦2240¦KK_kaku_¦¦分配",
+    "0w8m8\t1¦この｜種《しゅ》の｜昆虫《こんちゅう》は｜日本《にほん》に｜広《ひろ》く｜分布《ぶんぷ》している。¦These insects are widely distributed throughout Japan.¦¦4qqv¦KK_kaku_¦blay_paul¦分布",
+    "0w8n2\t1¦｜彼《あれ》はとびぬけて｜分別《ぶんべつ》のある｜人《ひと》だ。¦He is by far the most sensible.¦¦2e0z¦¦CK¦分別",
+    "0w8o6\t1¦｜私《わたし》の｜娘《むすめ》は｜分娩《ぶんべん》｜中《うち》だ。¦My daughter is in labor.¦¦3hf7¦¦¦分娩",
+    "0w8qy\t1¦｜彼《あれ》はこの｜分《ぶん》｜野《の》では｜草分《くさわ》けだ。¦He is a trailblazer in this field.¦¦2fqr¦¦Lumi¦分野",
+    "0w8r8\t1¦｜彼《あれ》は｜息子《むすこ》｜達《たち》に｜財産《ざいさん》を｜分与《ぶんよ》した。¦He settled his property on his sons.¦¦278r¦¦¦分与",
+    "0w8s2\t1¦マヨネーズの｜油《あぶら》は｜分離《ぶんり》することがある。¦The oil in mayonnaise sometimes separates from the other ingredients.¦¦46ly¦¦mcq¦分離",
+    "0w8tq\t1¦その｜作《つく》り｜方《かた》の｜分量《ぶんりょう》は｜六人《ろくにん》｜分《ふん》です。¦The recipe serves six people.¦¦4ifz¦¦orcrist¦分量",
+    "0w8uk\t1¦｜彼《あれ》は｜書類《しょるい》の｜分類《ぶんるい》を｜終《お》えた。¦He finished sorting the papers.¦¦28fx¦¦CK¦分類",
     "0w8vy\t1¦｜党派《とうは》は｜二《ふた》つに｜分裂《ぶんれつ》した。¦The party was split up into two.¦¦2nzh¦¦¦分裂",
     "0w8xc\t1¦その火山は今年２度噴火した。¦The volcano has erupted twice this year.¦1¦4jjq¦¦CK¦噴火",
     "0w8y6\t1¦｜超高圧《ちょうこうあつ》｜水《みず》の｜噴射《ふんしゃ》により、ほとんどの｜詰《つ》まりが｜排除《はいじょ》される。¦By means of a super high-pressure water spray practically all the sediment is removed.¦1¦1m2h¦fcbond¦fcbond¦噴射",
@@ -197,12 +207,5 @@ export const PIECE: WordsPiece = {
     "0we0y\t1¦｜僕《ぼく》は｜彼女《かのじょ》の｜突然《とつぜん》の｜変心《へんしん》にとても｜驚《おどろ》いた。¦I was very much surprised by her sudden change of mind.¦1¦1r3g¦¦CM¦変心",
     "0we1i\t1¦｜多《おお》くの｜科学者《かがくしゃ》は｜世間《せけん》に｜変人《へんじん》｜呼《よ》ばわりされている。¦Many scientists have the reputation of being eccentric.¦3¦2ytg¦¦CM¦変人",
     "0we1s\t1¦｜式《しき》に｜余分《よぶん》の｜変数《へんすう》を｜加《くわ》えたことによって、この｜実験結果《じっけんけっか》は｜不明瞭《ふめいりょう》なものになっている。¦The result of this experiment is obscured by the extra variables added in the formula.¦¦37gm¦¦¦変数",
-    "0we3g\t1¦｜表面上《ひょうめんじょう》、｜本書《ほんしょ》の｜大部分《だいぶぶん》は｜一連《いちれん》の｜事例《じれい》の｜変遷《へんせん》を｜記録《きろく》したものである。¦On the surface the book consists mostly of a series of case histories.¦¦1tv1¦¦¦変遷",
-    "0we40\t1¦｜変装《へんそう》していた｜彼《あれ》に｜気《き》づかなかった｜人《じん》も｜多《おお》かった。¦There were many who couldn't recognize him in that disguise.¦2¦1sbv¦¦CM¦変装",
-    "0we8q\t1¦｜人口《じんこう》は｜変動《へんどう》しないでいる。¦The population remains stationary.¦3¦339z¦¦¦変動",
-    "0wea4\t1¦｜日本《にほん》は｜工業化《こうぎょうか》の｜結果《けっか》｜急激《きゅうげき》な｜変貌《へんぼう》を｜遂《と》げた。¦Japan has undergone a drastic change as a result of industrialization.¦¦2mi2¦mookeee¦CK¦変貌",
-    "0wecm\t1¦｜火事《かじ》のさなかに｜靴《くつ》を｜片一方《かたいっぽう》なくしてしまいました。¦I lost my shoe in the fire.¦2¦401y¦¦CK¦片一方",
-    "0wed6\t1¦その｜学校《がっこう》は、｜中《うち》・｜高《たか》｜一貫校《いっかんこう》だということを｜頭《とう》の｜片隅《かたすみ》にでも｜入《い》れておいて｜下《くだ》さい。¦Bear in mind that that school is an integrated junior high and high school.¦1¦4jbo¦bunbuku¦CK¦片隅",
-    "0wee0\t1¦そのアメリカ｜人《じん》の｜男《おとこ》の｜子《こ》は｜片言《かたこと》の｜日本語《にほんご》を｜話《はな》した。¦The American boy spoke broken Japanese.¦2¦4knu¦¦CK¦片言",
   ],
 };

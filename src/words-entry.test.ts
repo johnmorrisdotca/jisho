@@ -79,7 +79,7 @@ describe("the whole entry of a word", () => {
     expect(JSON.stringify(safe)).toContain("brat");
     expect(JSON.stringify(safe)).not.toContain("penis");
     expect(JSON.stringify(whole)).toContain("penis");
-    const sex = await first("セックス", "unfiltered");
+    const sex = await first("売春", "unfiltered");
     expect(await loadEntry(sex)).toBeNull();
     expect(await loadEntry(sex, { mode: "unfiltered" })).not.toBeNull();
   });

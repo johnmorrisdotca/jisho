@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 14 of 70, from "仕様作". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 14 of 70, from "仕様が". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,9 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "仕様がない\tしょうがない|しようがない|しょーがない",
+    "仕様のない\tしようのない|しょうのない",
+    "仕様もない\tしょうもない|しようもない|しょーもない",
     "仕様作成\tしようさくせい",
     "仕様書\tしようしょ",
     "仕様書き\tしようがき",
@@ -2040,6 +2043,7 @@ export const PIECE: WordsPiece = {
     "伴奏\tばんそう",
     "伴奏者\tばんそうしゃ",
     "伴奏部\tばんそうぶ",
+    "伴性遺伝\tはんせいいでん",
     "伴星\tばんせい",
     "伴船\tともぶね",
     "伴走\tばんそう",
@@ -3063,12 +3067,5 @@ export const PIECE: WordsPiece = {
     "何れ丈\tどれだけ",
     "何れ何れ\tどれどれ",
     "何れ劣らぬ\tいずれおとらぬ",
-    "何れ又\tいずれまた",
-    "何れ程\tどれほど",
-    "何れ菖蒲か杜若\tいずれあやめかかきつばた",
-    "何を\tなにを",
-    "何をおいても\tなにをおいても",
-    "何をかいわんや\tなにをかいわんや",
-    "何をか言わんや\tなにをかいわんや",
   ],
 };

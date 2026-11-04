@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 76 of 144, from "0vz5". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 76 of 144, from "0vyxm". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,13 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0vyxm\t1¦ネット｜上《じょう》の｜不確実《ふかくじつ》な｜情報《じょうほう》を｜鵜呑《うの》みにしてはならない。¦You mustn't swallow unreliable information that's on the Web.¦¦1qwny¦tommy_san¦JimBreen¦不確実な",
+    "0vz0e\t1¦｜彼《あ》の｜計画《けいかく》はまだ｜不完全《ふかんぜん》な｜点《てん》が｜多《おお》い。¦His plan leaves much to be desired.¦3¦2itv¦¦CM¦不完全な",
+    "0vz1i\t1¦｜私《わたし》は｜人前《ひとまえ》で｜話《はなし》をするのに｜不慣《ふな》れだ。¦I'm not used to speaking in public.¦3¦3c3h¦¦CK¦不慣れ",
+    "0vz3g\t1¦いつも｜彼女《かのじょ》が｜遅《おく》れて｜来《く》るので｜彼《あれ》は｜不機嫌《ふきげん》である。¦He is cross because she always comes late.¦1¦4wgv¦¦¦不機嫌",
+    "0vz3q\t1¦｜急《きゅう》に｜笑《わら》い｜出《だ》さないでよ。｜不気味《ぶきみ》だから。¦Don't burst out laughing like that. It's creepy.¦3¦3wsc¦KK_kaku_¦Duck¦不気味",
+    "0vz40\t1¦｜生理《せいり》が｜不規則《ふきそく》です。¦My menstrual cycle is irregular.¦2¦323c¦¦¦不規則",
+    "0vz4a\t1¦｜英語《えいご》を｜学習《がくしゅう》する｜上《うえ》で｜不可欠《ふかけつ》な、｜不規則動詞《ふきそくどうし》の｜活用《かつよう》。¦Conjugation of irregular verbs - essential for those learning English.¦¦1lzk¦fcbond¦fcbond¦不規則動詞",
     "0vz5y\t1¦１３日の金曜日は不吉な日だと言われている。¦It is said that Friday the 13th is an unlucky day.¦1¦5221¦mookeee¦CK¦不吉な",
     "0vz6i\t1¦この｜数年間《すうねんかん》に｜彼《あれ》は｜不朽《ふきゅう》の｜名詩《めいし》を｜書《か》いた。¦During these years he wrote immortal poems.¦1¦4qhp¦xtofu80¦¦不朽の",
     "0vz72\t1¦｜好況《こうきょう》と｜不況《ふきょう》は｜交互《こうご》に｜来《く》る。¦Good times alternate with bad.¦2¦3q2d¦¦¦不況",
@@ -43,6 +50,7 @@ export const PIECE: WordsPiece = {
     "0vzsq\t1¦｜君《きみ》の｜不首尾《ふしゅび》は｜承知《しょうち》している。¦I'm aware that you failed.¦1¦1mft¦wakatyann630¦CM¦不首尾",
     "0vzt0\t1¦これらの２つの分子が異なったスピードで動いていることを示すだけでは不十分である。¦It is not enough to show that these two particles are moving at different speeds.¦¦4o7k¦¦¦不十分",
     "0vzta\t1¦なぜあなたは｜上司《じょうし》に｜対《たい》して｜不従順《ふじゅうじゅん》なのですか。¦Why are you so insubordinate to your boss?¦1¦49rj¦¦Dejo¦不従順",
+    "0vzue\t1¦｜不純《ふじゅん》な｜飲料水《いんりょうすい》は｜病気《びょうき》の｜媒体《ばいたい》となりうる。¦Impure drinking water can be a carrier of diseases.¦1¦1tn7¦¦CM¦不純な",
     "0vzuy\t1¦｜今年《ことし》は｜天候不順《てんこうふじゅん》だった。¦The weather has been unusual this year.¦2¦3o6g¦¦CK¦不順",
     "0vzww\t1¦｜首《くび》を｜横《よこ》に｜振《ふ》ることで｜不承認《ふしょうにん》を｜与《あた》える。¦They communicate disapproval by shaking their heads.¦1¦36j0¦¦¦不承認",
     "0vzya\t1¦｜相次《あいつ》ぐ｜不祥事《ふしょうじ》にも｜関《かか》わらず、｜警察《けいさつ》はオメオメ｜違反《いはん》｜切符《きっぷ》を｜切《き》っている。¦Despite their own scandals, the police continue to make arrests as though nothing had happened at all.¦1¦30dq¦¦papabear¦不祥事",
@@ -55,6 +63,7 @@ export const PIECE: WordsPiece = {
     "0w0ai\t1¦｜不正《ふせい》には｜抗議《こうぎ》せざるをえない。¦You must speak out against injustice.¦1¦1tn3¦¦CK¦不正",
     "0w0as\t1¦｜我々《われわれ》の｜実験《じっけん》の｜結果《けっか》、｜彼《あ》の｜報告《ほうこく》は｜不正確《ふせいかく》なことがわかった。¦Our experiment has revealed that his report was inaccurate.¦1¦3zq0¦¦Swift¦不正確な",
     "0w0bw\t1¦あきれたことに、｜彼《あれ》は｜試験中《しけんちゅう》に｜不正行為《ふせいこうい》をしていて｜見《み》つけられた。¦To my dismay, he was caught cheating in the examination.¦1¦50y3¦¦Eldad¦不正行為",
+    "0w0cg\t1¦｜彼《あ》の｜収賄《しゅうわい》や｜不正事件《ふせいじけん》や｜愛人《あいじん》などの｜噂《うわさ》は、じきにみな｜消《き》え｜去《さ》った。¦All the rumors of his bribes, scandals and lovers soon blew over.¦¦52v6¦mookeee¦¦不正事件",
     "0w0d0\t1¦｜彼《あれ》は｜私《わたし》を｜不正直《ふしょうじき》だと｜非難《ひなん》した。¦He charged me with dishonesty.¦3¦29f9¦¦¦不正直",
     "0w0ey\t1¦｜彼女《かのじょ》は｜私《わたし》を｜不誠実《ふせいじつ》だと｜非難《ひなん》した。¦She charged me with dishonesty.¦1¦1wv4¦¦nickyeow¦不誠実",
     "0w0fi\t1¦｜彼《あれ》は｜僕《ぼく》に｜不摂生《ふせっせい》にならないようにと｜警告《けいこく》した。¦He cautioned me against being careless of my health.¦1¦254d¦¦¦不摂生",
@@ -195,13 +204,5 @@ export const PIECE: WordsPiece = {
     "0w3pk\t1¦これらのオレンジは｜腐《くさ》っている。¦These oranges have gone bad.¦1¦4o7e¦¦blay_paul¦腐っている",
     "0w3q4\t1¦｜腐《くさ》れ｜縁《えん》と｜思《おも》ってあきらめる。¦Make the best of one's lot with fatal resignation.¦1¦1t1b¦¦¦腐れ縁",
     "0w3qo\t1¦その｜神社《じんじゃ》の｜腐食《ふしょく》の｜原因《げんいん》の｜一《ひと》つは｜酸性雨《さんせいう》である。¦The decay of the shrine is due, in part, to acid rain.¦1¦4h3w¦¦AlanF_US¦腐食\t2¦ほら、｜錆《さび》で｜金属《きんぞく》がどんどん｜腐食《ふしょく》しているよ。¦Hey, rust is eating away the metal.¦¦477f¦¦AlanF_US¦腐食",
-    "0w3ri\t1¦｜食品《しょくひん》｜包装《ほうそう》は｜腐敗《ふはい》を｜減《へ》らす。¦Food packaging reduces spoilage.¦1¦34h9¦¦rul¦腐敗",
-    "0w3sw\t1¦あ、あれ？なんか・・・すっごい負のオーラを感じますよ？¦E-eh? I somehow seem to feel a very threatening aura...¦3¦1nd1¦mookeee¦¦負",
-    "0w3t6\t1¦｜負《お》うた｜子《こ》に｜教《おし》えられて｜浅瀬《あさせ》を｜渡《わた》る。¦A child on your back may guide you across a ford.¦1¦1t1a¦¦¦負うた\t2¦これについては｜私《わたし》がすべて｜責任《せきにん》を｜負《お》います。¦I will accept full responsibility for this.¦3¦4orz¦mookeee¦CK¦負います\t3¦｜彼《あれ》は｜致命《ちめい》｜傷《きず》を｜負《お》った。¦He suffered a fatal wound.¦1¦26v7¦¦¦負った\t4¦わずかながら｜私《わたし》の｜受《う》けた｜指導《しどう》を｜私《わたし》は｜若者《わかもの》に｜負《お》っている。¦What little guidance I had I owe to a young man.¦2¦444g¦¦Dejo¦負っている",
-    "0w3tq\t1¦あんなやつを｜負《ま》かすのはお｜茶《ちゃ》の｜子《こ》さいさいだ。¦I can beat him hands down.¦3¦4x4m¦¦CM¦負かす",
-    "0w3u0\t1¦どっちに｜転《ころ》んでも｜君《きみ》の｜負《ま》けだよ。¦Either way, you lose.¦3¦4auo¦small_snow¦CK¦負け",
-    "0w3uk\t1¦３対０で彼には負けています。¦He's beating me, three to zip.¦3¦51jg¦e4zh1nmcz¦¦負けています",
-    "0w3ve\t1¦｜負《ま》け｜犬《いぬ》になるわけにはいかない。¦I can't stand getting beaten.¦3¦1t13¦¦Zifre¦負け犬",
-    "0w3vo\t1¦｜日本《にほん》の｜市場《いちば》が｜閉鎖的《へいさてき》だという｜非難《ひなん》は、｜負《ま》け｜惜《お》しみにすぎません。¦Criticisms that Japan's market is closed are just sour grapes.¦¦2mlp¦¦¦負け惜しみ",
   ],
 };

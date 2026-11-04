@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 35 of 172, from "consistent". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 35 of 172, from "consideri". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,13 +9,26 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "considering\tわりに|みきりはっしゃ|かんれい|としがとし|じゅくしもくそう|さいのわりに|はなしにならない|タブーし|ぜったいすう|ぜんごのみさかいもなく|こうかく|かひけんとう",
+    "considering objections\tみきりはっしゃ",
+    "considers\tあねぶん",
+    "consign\tほうむりさる",
+    "consign oblivion\tほうむりさる",
+    "consignee\tにうけにん",
+    "consigning\tぼうきゃく",
+    "consigning oblivion\tぼうきゃく",
+    "consignment\tいたく|たくそう|におくり|じゅたくはんばい|こぐちあつかい|こにもつあつかい|いたくはんばい|いたくばいばい|いたくせいさん|うんそうじょう|よたくざいこ",
+    "consignment goods\tいたく",
+    "consignor\tにぬし|におくりにん|いたくしゃ",
+    "consist\tなりたつ|なる",
+    "consistency\tいっかん|あんてい|てってい|つじつま|いっかんせい|コンシステンシ|ちょうど|ちゅうど|むむじゅんせい|こい|かたねりコンクリート|ちこういっち|かたねり|データせいごうせい|じょうぶついっち",
     "consistent\tしゅびいっかんした|しゅびいっかん|つじつまがあう|すじみちのとおった",
     "consistently\tしゅうしいっかん|いっかんして|ていくうひこう",
     "consistently poor\tていくうひこう",
     "consisting\tから|いまよう|いげた|いまよううた|そくはつ|ふきながし|あらに|じぎょうぶせい|イーチャン|じんべい|じんべえ|ぴかいち|ピカいち|ピカイチ|かくじ|うちたけ|おおがたれんきゅう|けつごうはん|ナムル|さいばら",
     "consisting 4\tいまよう",
     "consists\tからなる|よりなる|けつごうはん|しゅうごうはん",
-    "consolation\tいしゃ|こころやすめ|いしゃりょう|きやすめ|じい|なみだきん|ざんねんしょう|ざんねんかい|なみだかね",
+    "consolation\tいしゃ|こころやすめ|いしゃりょう|きやすめ|じい|なみだきん|てぎれきん|ざんねんしょう|ざんねんかい|なみだかね",
     "consolatory\tなぐさめがお|はんがえし",
     "console\tなぐさめる|コンソール|せいぎょたく|そうさたく|みまう|テレビゲーム|テレビ・ゲーム|いもん|コンソールアプリケーション|コンソール・アプリケーション|コンソールプログラム|コンソール・プログラム|コンソールポート|コンソール・ポート|スナップイン|ひょうじそうさたく|ほじょコンソール|ゲームき|ゲームきエミュレータ|おんきょうちょうせいたく",
     "consoles\tチップチューン|フレコ|フレンドコード|フレンド・コード",
@@ -106,7 +119,7 @@ export const PIECE: WordsPiece = {
     "constructed shogi\tつめしょうぎ",
     "constructing\tせこう|しこう|たてうり",
     "constructing selling\tたてうり",
-    "construction\tけんせつ|けんちく|こうちく|せこう|しこう|しんぞう|しんぞ|かせつ|ちくぞう|こうぞう|そしき|こうじ|こうせい|しくみ|こうさく|つち|つし|けんせつしょう|もくぞう|ちゃっこう",
+    "construction\tけんせつ|けんちく|こうちく|くみたて|せこう|しこう|しんぞう|しんぞ|かせつ|ちくぞう|こうぞう|そしき|こうじ|こうせい|しくみ|こうさく|つち|つし|けんせつしょう|もくぞう",
     "construction argument\tろんじん",
     "construction company\tゼネコン",
     "construction contractor\tどけんや",
@@ -503,11 +516,5 @@ export const PIECE: WordsPiece = {
     "converted cruiser\tかそう",
     "converter\tコンバーター|コンバータ|へんかんき|てんろ|アナログデジタルへんかんき|エーディーコンバーター|コンバーターレンズ|コンバーター・レンズ|システムコンバーター|システム・コンバーター|トルクコンバーター|トルク・コンバーター|てんかんろ|しゅうはすうへんかんそうち|ふごうへんかんき|トルコン|かいてんへんりゅうき|アナログディジタルへんかんき|コードコンバータ|コード・コンバータ",
     "convertible\tオープンカー|オープン・カー|かへん|コンバーチブル|コンバーティブル|こうかんえん|だかんけん|てんかんしゃさい|てんかんしゃさいがたしんかぶよやくけんつきしゃさい|カブリオレ|ステンカラー|ステン・カラー",
-    "converting\tいんどう|つうぶん|かんぶつ|リストラクチャリング|リストラクチュアリング|リストラチャリング|しょうど|キリシタンぶぎょう|しゅうもんあらためやく|かみかこう|しょうじゅ|せつじゅ",
-    "converting people\tいんどう",
-    "convex\tなかだか|コンベックス|とつ|とつけい|まるがわら|とつレンズ|とっかく|とっきょう|とつめん|とつめんきょう|カーブミラー|カーブ・ミラー|そりだいかんな|しほうそりかんな|ニュートンかん|とつしゅうごう|とつたかくけい|のきまるがわら|あぶみがわら|がいたい",
-    "convexity\tとつえん|とつがた",
-    "convey\tつたえる|とりつぐ|もうしつたえる|かきつくす|かんがえをつたえる|そんだいご|りん",
-    "conveyance\tじょうと|うんぱん|のりもの|はんそう|とりつぎ|よこもち|くうしゃ|からぐるま|かいじょうたつ|どうすい|らんよ",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 31 of 172, from "closed ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 31 of 172, from "close w". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "close weave\tちみつ",
+    "closed\tふさがる|しまる|クローズド|へいいき|ふたがる|つうこうどめ|まま|まんま|ママ|はいこう|きゅうしん|クローズドシステム|クローズド・システム|クローズドスタンス|クローズド・スタンス|へいかいろ|へいせかい|へいたん|きんりょうき|はんがん",
     "closed clinic\tきゅうしん",
     "closed light\tまま|まんま|ママ",
     "closed school\tはいこう",
@@ -419,6 +421,7 @@ export const PIECE: WordsPiece = {
     "codonopsis\tつるにんじん|ツルニンジン",
     "codswallop\tでたらめ|デタラメ",
     "coeditor\tきょうへんしゃ",
+    "coeducation\tきょうがく",
     "coeducational\tきょうがくせい",
     "coef\tじきもれけいすう",
     "coefficient\tけいすう|たつりつ|すうけいすう|そうかんけいすう|ねつぼうちょうけいすう|びけいすう|にこうけいすう|せいしどあつけいすう|じゅどうどあつけいすう|しゅどうどあつけいすう|はんしゃけいすうせんず|はんしゃけいすう|じきもれけいすう|おんどけいすう|エンゲルけいすう|ジニけいすう|しょとくふびょうどうどけいすう|いどうりょうけいすう|パスけいすう|けいろけいすう",
@@ -664,15 +667,5 @@ export const PIECE: WordsPiece = {
     "collection gathering\tしゅうさん",
     "collection haiku\tくしゅう",
     "collection i\tコレクション",
-    "collection instances\tじれいしゅう",
-    "collection poems\tししゅう|じゅう|とお|と",
-    "collection taxes\tしゅうれん",
-    "collection theses\tろんしゅう",
-    "collection treatises\tろんしゅう",
-    "collection waka\tかしゅう",
-    "collection words\tよせがき",
-    "collection works\tしゅうちゅう",
-    "collections\tまいぐみ|にじゅういちだいしゅう|ちょうこかん",
-    "collective\tきょうどうたい|れんたい|しゅうごうてき|しゅうだんてき|そうじしょく|そうい|だんこう|だんたいこうしょう|はいかい|コルホーズ|きょうどうのうじょう|だんたいこうしょうけん|だんたいきょうやく|しゅうごうめいし|しゅうだんあんぜんほしょう|しゅうだんのうじょう|とういつけんかい|しゅうだんてきじえいけん|りんぎせいど|れんたいせきにん",
   ],
 };

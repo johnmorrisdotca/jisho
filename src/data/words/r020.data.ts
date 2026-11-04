@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 21 of 316, from "いまーじょん・". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 21 of 316, from "いまん". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,12 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "いまんとこ\t今んとこ\t#1pcu9\tcol¦at present¦currently¦so far",
+    "イマーゴ\t\t#1hbkq\t¦imago",
+    "イマーシブ\t\tn#1pb2g\t¦immersive",
+    "イマージェンシー\t\t#m2ni\t¦emergency",
+    "イマージュ\t\t#1fybe\t¦image",
+    "イマージョンプログラム\t\t#1or51\t¦(language) immersion program",
     "イマージョン・プログラム\t\t#1or51\t¦(language) immersion program",
     "イマーム\t\t#1gnza\t¦imam¦Imam",
     "いみ\t意味\tsC~ni01#oslc\t¦meaning¦significance¦sense",
@@ -814,8 +820,5 @@ export const PIECE: WordsPiece = {
     "いろこう\t色校\t#17c2i\tabbr¦checking the colors on a colored proof (colour)",
     "いろこうせい\t色校正\t#17c28\tprint¦color proofing (colour)¦color calibration",
     "いろこがた\t鱗形\t#1oxk0\t¦triangular pattern¦scalelike pattern¦imbricate pattern\t¦triangle emblem",
-    "いろごと\t色事|色ごと\t#t3nu\t¦love affair¦sensual pleasures",
-    "いろごとし\t色事師\t#12yqc\t¦lady-killer¦casanova¦Don Juan\t¦kabuki actor who has mastered the art of romantic acting",
-    "いろごとはしあんのほか\t色事は思案の外\t#1ftsc\tproverb¦love and reason do not go together",
   ],
 };

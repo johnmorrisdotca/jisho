@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 135 of 144, from "1c1". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 135 of 144, from "1bxa". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,25 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "1bxak\t1¦「お｜見事《みごと》、よくやった」と｜小川《おがわ》｜選手《せんしゅ》を｜褒《ほ》め｜称《たた》える｜報道《ほうどう》が｜多《おお》かった。¦There were many journalists who praised Ogawa with, \"bravo, good show!\"¦1¦1l6a¦fcbond¦fcbond¦お見事",
+    "1bxhs\t1¦イースト｜菌《きん》がパン｜生地《きじ》を｜膨《ふく》らます。¦Yeast makes dough rise.¦1¦4x08¦¦CM¦イースト菌",
+    "1bxj6\t1¦その｜中毒者《ちゅうどくしゃ》は｜麻薬《まやく》の｜過剰摂取《かじょうせっしゅ》で｜死《し》んだ。¦The addict died from a drug overdose.¦1¦1m44¦fcbond¦fcbond¦過剰摂取",
+    "1bxkk\t1¦その｜中毒者《ちゅうどくしゃ》は｜麻薬《まやく》の｜過剰摂取《かじょうせっしゅ》で｜死《し》んだ。¦The addict died from a drug overdose.¦1¦1m44¦fcbond¦fcbond¦中毒者",
+    "1bxoq\t1¦｜彼《あれ》は｜自分《じぶん》のやった｜誤《あやま》りを｜気《き》にやんだ。¦He brooded over the mistake he made.¦¦292m¦¦¦気にやんだ",
+    "1bxrs\t1¦｜彼女《かのじょ》はちょっと｜首《くび》をかしげて、｜黙然《もくぜん》と｜立《た》っていた。¦She stood silently, her head tilted slightly to one side.¦1¦1z2k¦KK_kaku_¦TheDQN¦黙然と",
+    "1by5e\t1¦｜個体発生《こたいはっせい》は｜系統発生《けいとうはっせい》を｜繰《く》り｜返《かえ》す。¦Ontogeny recapitulates phylogeny.¦1¦1m3z¦fcbond¦fcbond¦系統発生",
+    "1bz3u\t1¦｜彼《あれ》は｜自分《じぶん》の｜失敗《しっぱい》を｜運《うん》の｜悪《わる》さのせいにしている。¦He ascribes his failure to bad luck.¦¦28yu¦¦¦運の悪",
+    "1bz44\t1¦｜新進作家《しんしんさっか》の｜登場《とうじょう》でその｜老《ろう》｜作家《さっか》は｜影《かげ》の｜薄《うす》い｜存在《そんざい》となった。¦With the appearance of a promising new writer, the aging novelist fell from prominence.¦1¦342y¦¦¦影の薄い",
+    "1bz8a\t1¦あいつは｜我《が》の｜強《つよ》いやつだ。¦He is a self-willed fellow.¦1¦511e¦¦¦我の強い",
+    "1bzbw\t1¦それはずいぶん｜気《き》の｜長《なが》い｜話《はなし》だ。¦It's a very slow business.¦5¦4ekc¦small_snow¦AlanF_US¦気の長い",
+    "1bzeo\t1¦あいつは｜口《くち》のうまいやつだ。¦He has a smooth tongue.¦4¦5118¦small_snow¦CM¦口のうまい",
+    "1bzey\t1¦あいつは｜口《くち》の｜悪《わる》いやつだ。¦He has a sharp tongue.¦4¦5117¦small_snow¦CM¦口の悪い",
+    "1bzia\t1¦｜世界《せかい》が｜一丸《いちがん》となって｜気候変動《きこうへんどう》の｜問題《もんだい》に｜取《と》り｜組《く》む｜必要《ひつよう》がある。¦The whole world needs to tackle the problem of climate change together.¦2¦1lk7¦fcbond¦fcbond¦気候変動",
+    "1bzrg\t1¦｜護教論《ごきょうろん》には｜興味《きょうみ》ないんだ。¦I'm not interested in apologetics.¦1¦1m2o¦fcbond¦fcbond¦護教論",
+    "1bzv2\t1¦アフィ｜狙《ねら》いの｜釣《つ》り｜記事《きじ》ですね。｜英語《えいご》｜関係《かんけい》のコミュのあちこちにマルチポストしています。¦It's a troll trying for click-throughs. It's being multiposted in English-related communities all over the place.¦¦1m14¦fcbond¦fcbond¦マルチポスト",
+    "1bzzs\t1¦うそをついたことで｜気《き》がとがめている。¦I feel guilty about having told a lie.¦5¦4w4u¦¦¦気がとがめている",
+    "1c0s4\t1¦サミットって、主要国首脳会議のことなんですか？¦By summit, do you mean the Group of Seven?¦2¦1m3g¦fcbond¦stephenmk¦主要国首脳会議",
+    "1c0zw\t1¦｜英語話者《えいごわしゃ》に｜通《つう》じなきゃ｜意味《いみ》ないぞ。¦That means nothing if English speakers don't understand it.¦4¦1m3d¦fcbond¦fcbond¦英語話者",
     "1c13s\t1¦「くだらねえ｜都市伝説《としでんせつ》だろう」「でも、｜火《ひ》のないところに｜煙《けむり》は｜立《た》たないというけどね」¦\"Probably just a stupid urban legend.\" \"But they do say 'there's no smoke without fire', don't they?\"¦3¦1lns¦fcbond¦fcbond¦都市伝説",
     "1c1qk\t1¦どっちに｜主眼《しゅがん》をおくかでどちらでもいいでしょ。¦Depending on which you think of as the main point, either is OK.¦1¦1m47¦fcbond¦fcbond¦主眼をおく",
     "1c250\t1¦「背が伸びて入らないわよね」「そう、断じて太ったわけではない！」「成長したという便利な言葉は我々の切り札」¦\"We've got taller so they don't fit.\" \"Right, it's certainly not that we've got fat!\" \"The useful phrase 'grown up' is our trump card.\"¦1¦1m3n¦fcbond¦fcbond¦背が伸びて",
@@ -204,21 +223,5 @@ export const PIECE: WordsPiece = {
     "1ccsw\t2¦ミスタイプです。すみません。¦It's a typo. Sorry.¦5¦1lz8¦fcbond¦fcbond¦ミスタイプ",
     "1ccxm\t1¦「これを見て」「え？」「バンパーの右側に衝突痕があるわ」¦\"Take a look at this.\" \"Eh?\" \"There's an impact mark on the right-hand side of the bumper.\"¦¦1lz4¦fcbond¦fcbond¦衝突痕",
     "1cd0e\t1¦その｜食品《しょくひん》の｜中《うち》からコレラ｜菌《きん》が｜検出《けんしゅつ》された。¦Cholera germs were found in the food.¦1¦4h66¦¦¦コレラ菌",
-    "1cd2m\t1¦これは１日の仕事としては多すぎます。¦This is too much for a day's work.¦4¦4oqm¦¦¦としては",
-    "1cd2w\t1¦｜相《しょう》｜手《て》が｜悪《わる》かったな。¦He chose the wrong man to pick a fight with.¦3¦1lz0¦fcbond¦fcbond¦相手が悪かった",
-    "1cd36\t1¦教育のメルマガを発行したい方はこちら！¦People who want to put out an ezine on education, come this way!¦3¦1lkh¦fcbond¦fcbond¦メルマガ",
-    "1cd6i\t1¦いやあ｜面目《めんぼく》ない。｜穴《あな》があったら｜入《はい》りたい｜心境《しんきょう》だよ。¦I'm so sorry about what I did. I wish I could just crawl into a hole and die.¦1¦4waz¦¦papabear¦穴があったら入りたい",
-    "1cd6s\t1¦こうした熊独特の特徴が、熊が動かずに狩猟すること（アザラシの呼吸孔の脇でじっと動かず、アザラシが海面に上がってくるのを待つ）を好む説明になっている。¦These special characteristics explain its preference for still-hunting (lying motionless beside a seal's breathing hole, waiting for one to surface).¦¦4tmd¦¦AlanF_US¦呼吸孔",
-    "1cd7m\t1¦｜己《おのれ》をもって｜他人《たにん》を｜律《りっ》するな。¦Don't judge others by yourself.¦1¦3qoq¦¦¦律する",
-    "1cd86\t1¦｜以前《いぜん》は｜私《わたし》の｜家《いえ》の｜裏《うら》に、｜大《おお》きな｜桜《さくら》の｜木《き》がありました。¦There used to be a big cherry tree at the back of my house.¦1¦43i8¦small_snow¦Dejo¦家の裏",
-    "1cd9u\t1¦ありがとうございました。またのご来店、お待ちしております！¦Thank you for your business. Please come again!¦4¦1lyt¦fcbond¦fcbond¦ご来店",
-    "1cda4\t1¦｜久《ひさ》しぶりに｜会《あ》ったんだから、｜酒《さけ》でも｜飲《の》みながら、｜昔話《むかしばなし》にでも｜花《はな》を｜咲《さ》かせるとするか。¦It's been so long since we last met up. Let's have a drink or two and talk about the good old days.¦2¦3wzj¦bunbuku¦helloroto¦花を咲かせる",
-    "1cdao\t1¦あなたは朝型？¦Would you say you're a morning person?¦2¦4yss¦bunbuku¦CM¦朝型",
-    "1cdp4\t1¦ご｜家族《かぞく》の｜皆様《みなさま》おかわりありませんか。¦How's your family?¦3¦4nl6¦¦CK¦おかわりありませんか",
-    "1cdue\t1¦今日のお弁当もだけど、五木さんと田中さんの作るメニューは緑黄色野菜が少ないんじゃない？¦About today's packed-lunch, the menus prepared by Itsuki and Tanaka are low in beta-carotene-rich vegetables again aren't they?¦1¦1lyo¦fcbond¦fcbond¦緑黄色野菜",
-    "1cdvs\t1¦「｜服《ふく》｜汚《よご》れるでしょ」「それはノープロブレム。もともとあんまり｜綺麗《きれい》じゃないし」¦\"You'll get your clothes dirty.\" \"No worries. They weren't very clean in the first place.\"¦1¦1lyl¦fcbond¦fcbond¦ノープロブレム",
-    "1cdw2\t1¦ノートパソコンの｜電源《でんげん》を｜入《い》れ、ブラウザを｜立《た》ち｜上《あ》げて、もう｜覚《おぼ》えてしまったアドレスを｜打《う》ち｜込《こ》む。¦I switch on my laptop, start up the browser, and type in the address I've already learnt by heart.¦1¦1lyn¦fcbond¦fcbond¦ノートパソコン",
-    "1cdwm\t1¦なお、｜危険防止《きけんぼうし》の｜為《ため》、サブアド｜利用《りよう》をお｜奨《すす》めします。¦Moreover, for your safety, we advise use of a substitute email address.¦1¦1lym¦fcbond¦fcbond¦サブアド",
-    "1cdze\t1¦｜仕事《しごと》をよりよくする｜方法《ほうほう》について｜考《かんが》えるよりも｜金《かね》もうけする｜方法《ほうほう》を｜考《かんが》える｜方《ほう》が｜先《さっき》なのである。¦Figuring a way to make a dollar comes ahead of thinking about how to do the job better.¦3¦3mg4¦¦¦よくする\t2¦これは｜学生《がくせい》がよくする｜間違《まちが》いだ。¦This is a mistake students are apt to make.¦3¦4okf¦small_snow¦CK¦よくする\t3¦｜母《はは》は｜植木《うえき》の｜世話《せわ》をよくする｜人《じん》だ。¦My mother looks after the plants well.¦2¦1rz7¦¦¦よくする",
   ],
 };

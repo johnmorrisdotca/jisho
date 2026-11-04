@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 93 of 144, from "0y3qw". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 93 of 144, from "0y3lm". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,19 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0y3lm\t1¦｜君《きみ》は｜完璧《かんぺき》な｜仕事《しごと》をしてくれた。¦You've done a perfect job.¦¦3sv8¦¦CK¦完璧な",
+    "0y3mq\t1¦合衆国では２億１６００万丁もの鉄砲類が、民間の手にあるという。¦In the U.S., as many as 216 million firearms are said to be in private hands.¦1¦3plx¦¦¦合衆国",
+    "0y3n0\t1¦あの｜件《けん》に｜関《かん》しては、｜画竜点睛《がりょうてんせい》を｜欠《か》いてしまった。¦That plan still needed some finishing touches.¦¦4yam¦¦CK¦画竜点睛",
+    "0y3na\t1¦チームは｜試合《しあい》に｜向《む》けて｜気合《きあ》いが｜入《はい》っている。¦The team is up for the game.¦3¦4cnl¦KK_kaku_¦CK¦気合い",
+    "0y3nu\t1¦ドアを｜閉《し》めてから、｜鍵《かぎ》を｜置《お》いてきたことに｜気《き》がついた。¦After I shut the door, I remembered I had left my key behind.¦¦4boy¦¦Swift¦気がついた\t2¦｜何時間《なんじかん》もたって｜彼《あれ》は｜気《き》がついた。¦It was many hours before he came to.¦3¦40m4¦¦bmorsello¦気がついた",
+    "0y3oe\t1¦その｜薬《くすり》の｜効《き》きめが｜現《あらわ》れた。¦The medicine took effect.¦2¦4f6z¦¦CM¦効きめ",
+    "0y3oo\t1¦これらの｜国《くに》はしばしば｜飢饉《ききん》に｜襲《おそ》われた。¦These countries were often visited with famine.¦¦4o4y¦¦¦飢饉",
+    "0y3oy\t1¦｜木々《きぎ》は｜芽《め》を｜出《だ》し｜始《はじ》めた。¦The trees are beginning to bud.¦1¦1prs¦small_snow¦CK¦木々",
+    "0y3p8\t1¦この｜丸薬《がんやく》は｜心臓《しんぞう》に｜効《き》く。¦These pills act on the heart.¦2¦4rq2¦¦¦効く\t2¦よくもまあ｜私《わたし》にそんな｜口《くち》がきけるね。¦How dare you speak to me like that?¦4¦44rq¦tommy__san¦rul¦きける\t3¦私は５万円までつけがきく。¦My credit is good for 50,000 yen.¦4¦3gxl¦¦¦きく",
+    "0y3pi\t1¦一番のチャンネルで英語が、７番のチャンネルでは日本語がお聞きになれます。¦You can hear English on Channel 1, and Japanese on Channel 7.¦3¦42pe¦¦CK¦聞き\t2¦｜音楽《おんがく》が｜好《す》きで、｜毎日《まいにち》｜聴《き》いています。¦I like music, and I listen to it every day.¦1¦4408¦KK_kaku_¦CM¦聴いています",
+    "0y3q2\t1¦｜今《いま》いる｜市民《しみん》が｜逃《に》げ｜出《だ》すという｜事態《じたい》が｜危惧《きぐ》されます。¦It is feared that those citizens now present will run away.¦¦1lir¦fcbond¦fcbond¦危惧",
+    "0y3qc\t1¦この｜民族《みんぞく》の｜起源《きげん》は｜神秘《しんぴ》につつまれている。¦The origins of these people is shrouded in mystery.¦1¦4pce¦¦CM¦起源",
+    "0y3qm\t1¦｜妙《みょう》な｜音《おと》が｜聞《き》こえた。¦I heard a strange sound.¦1¦1qj0¦tommy_san¦CK¦聞こえた\t2¦この｜話《はなし》は、｜変《へん》に｜聞《き》こえるかもしれないが、｜全《まった》く｜本当《ほんとう》です。¦This story may sound strange, but it's absolutely true.¦3¦4p36¦¦CK¦聞こえる",
     "0y3qw\t1¦その｜建物《たてもの》は｜老朽化《ろうきゅうか》の｜兆《きざ》しを｜見《み》せている。¦The building exhibits signs of dilapidation.¦1¦4itt¦¦¦兆し",
     "0y3s0\t1¦｜何百《なんびゃく》｜羽《わ》とキジを｜撃《う》った。¦We shot pheasants by the hundred.¦1¦40j4¦¦CM¦キジ",
     "0y3sa\t1¦あいての｜基準《きじゅん》を｜受《う》け｜入《い》れるのは、そのあいての｜力《ちから》に｜服従《ふくじゅう》することだ。¦Accepting the other's norms is submitting to the other's power.¦1¦5107¦¦¦基準",
@@ -62,6 +75,7 @@ export const PIECE: WordsPiece = {
     "0y4lq\t1¦その｜首《くび》と｜頭部《とうぶ》はとてもやわらかかった。¦Its neck and head were very soft.¦3¦4hmj¦¦¦首\t2¦｜鳥《とり》は｜首《くび》をひょいと｜水《みず》に｜浸《ひた》した。¦The bird dipped its head into the water.¦1¦2p26¦¦fekundulo¦首\t3¦あなたの｜首《くび》は｜風前《ふうぜん》のともし｜火《ひ》だ。¦Your job hangs by a thread.¦3¦4zxx¦¦rul¦首",
     "0y4m0\t1¦その｜部屋《へや》をすみずみまできれいにしましょう。¦I'll give the room a good cleaning.¦3¦4fob¦¦CK¦すみずみ",
     "0y4ma\t1¦｜一国《いっこく》にとって｜金融政策《きんゆうせいさく》と｜財政政策《ざいせいせいさく》の｜適切《てきせつ》な｜組《く》み｜合《あ》わせが｜大切《たいせつ》である。¦It is important for a nation to have an adequate mix of monetary and fiscal policies.¦1¦432r¦¦CK¦組み合わせ",
+    "0y4mu\t1¦この｜本棚《ほんだな》は｜組《く》み｜立《た》てが｜簡単《かんたん》です。¦This bookcase is easy to assemble.¦1¦4pcm¦bunbuku¦CK¦組み立て",
     "0y4no\t1¦｜昨日《きのう》、｜東京《とうきょう》は｜曇《くも》りでしたか。¦Was it cloudy in Tokyo yesterday?¦2¦3na2¦¦CN¦曇り",
     "0y4ny\t1¦｜監督《かんとく》はチームをトーナメント｜優勝《ゆうしょう》に｜今一歩《いまいっぽ》という｜所《ところ》までもっていったのに｜悔《くや》しいことだった。¦It was annoying, as the manager took his team to a near-miss in the tournament.¦1¦1mue¦kamojun¦¦悔しい",
     "0y4pm\t2¦｜昔《むかし》は、｜悪《にく》いことをすると、｜学校《がっこう》の｜先生《せんせい》から｜平手《ひらて》をくらったり｜拳固《げんこ》をもらうことが｜当《あ》たり｜前《まえ》だった。¦In the past it was perfectly normal to get the back of a teacher's hand or fist as punishment.¦1¦1mlj¦mookeee¦papabear¦くらったり\t3¦銀行強盗すると懲役１０年食らうぞ。¦Bank robbery will cost you ten years in prison.¦1¦3ujn¦KK_kaku_¦piksea¦食らう",
@@ -195,19 +209,5 @@ export const PIECE: WordsPiece = {
     "0y722\t1¦あなたのことだから｜上々《じょうじょう》でしょう。¦I hope and I know you did great!¦5¦507p¦¦¦上々",
     "0y72w\t1¦｜単語《たんご》は｜徐々《じょじょ》に｜増《ふ》えますので、こまめにチェックしてください。¦The words covered are steadily increasing, so check frequently.¦1¦1mjx¦mookeee¦¦徐々に",
     "0y73g\t1¦それは｜人知《じんち》の｜範囲《はんい》を｜超《こ》えている。¦It is beyond the boundary of human knowledge.¦1¦4e7t¦¦¦人知",
-    "0y73q\t1¦もう・・・タバコの｜吸殻《すいがら》まで｜散《ち》らばってるし。¦Sheesh, you've even got cigarette butts scattered around.¦1¦1m5w¦fcbond¦fcbond¦吸殻",
-    "0y74a\t1¦この｜吸《す》い｜取《と》り｜紙《がみ》はインクをよく｜吸《す》い｜取《と》る。¦This blotting paper absorbs ink well.¦3¦4rlc¦¦CK¦吸い取り紙",
-    "0y74k\t1¦あのフランス｜人《じん》は｜日本《にほん》にきてわずか｜数ヶ月《すうかげつ》です。¦It is only a few months since that Frenchman came to Japan.¦3¦4yft¦¦¦数ヶ月",
-    "0y754\t1¦｜今日《きょう》はすがすがしいお｜天気《てんき》ですね。¦It's a nice day, isn't it?¦5¦3ojm¦¦CK¦すがすがしい",
-    "0y75e\t1¦｜音楽《おんがく》の｜好《この》みは｜人《じん》によって｜好《す》きずきです。¦Music preferences vary from person to person.¦3¦1mvt¦mookeee¦CM¦好きずき",
-    "0y768\t1¦｜私《わたし》は｜少《すく》なからずがっかりした。¦I was not a little disappointed.¦4¦3c9g¦¦Liface¦少なからず",
-    "0y76i\t1¦私は、少なくとも１０冊の本を持っている。¦I have at least ten books.¦2¦3h6k¦¦CK¦少なくとも",
-    "0y77c\t2¦｜国内市場《こくないしじょう》の｜競争《きょうそう》はすさまじいものです。¦Competition in the domestic market is cutthroat.¦2¦3pik¦¦Lumi_alt¦すさまじい",
-    "0y77m\t1¦かなり｜多《おお》くのアメリカ｜人《じん》が｜寿司《すし》を｜好《この》む。¦Quite a few Americans like sushi.¦¦4ul8¦bunbuku¦CK¦寿司",
-    "0y77w\t1¦｜移民《いみん》たちは、そこへ、｜木《き》の｜漁船《ぎょせん》にすし｜詰《づ》め｜状態《じょうたい》で、｜危険《きけん》な｜航海《こうかい》をするのである。¦Packed into wooden fishing boats like sardines, the immigrants undergo the dangerous voyage there.¦1¦1m5r¦fcbond¦fcbond¦すし詰め",
-    "0y78g\t1¦｜私《わたし》は｜貴方《あなた》が｜汽車《きしゃ》で｜行《い》くことを｜勧《すす》めます。¦I recommend you to go by train.¦1¦3dp2¦mookeee¦CK¦勧めます\t2¦トムは｜彼《かれ》らにその｜小説《しょうせつ》を｜薦《すす》めた。¦Tom recommended the novel to them.¦1¦4a6y¦¦CK¦薦めた\t3¦｜彼《あれ》にウイスキーかジンをすすめたが、｜彼《あれ》はどちらもいらないと｜言《い》った。¦I offered him whisky or gin, but he said he didn't need either.¦3¦2jwq¦¦¦すすめた",
-    "0y79a\t1¦｜彼女《かのじょ》はだんだん、｜捨《す》て｜鉢《ばち》になった。¦She was beginning to get desperate.¦1¦1z34¦¦CM¦捨て鉢",
-    "0y79u\t1¦｜彼女《かのじょ》は｜子供《こども》のために｜全《すべ》てを｜犠牲《ぎせい》にした。¦She gave up everything for her children.¦1¦1x8s¦¦CK¦全て\t2¦｜人間《にんげん》は｜全《すべ》て｜平等《びょうどう》である。¦All men are equal.¦3¦33b9¦bunbuku¦CK¦全て\t2¦あなたの｜計画《けいかく》をすべて｜話《はな》してください。¦Tell me all about your plan.¦4¦502g¦¦CK¦すべて",
-    "0y7a4\t1¦アリスは｜長《なが》い｜滑《すべ》り｜台《だい》を｜滑《すべ》り｜降《お》りた。¦Alice slid down the long slide.¦1¦4xg4¦¦CN¦滑り台",
   ],
 };

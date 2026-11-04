@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 62 of 316, from "かーご". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 62 of 316, from "かーぎやー". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,9 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "かーぎやー\t\t#1owi1\t¦kagiya! (word shouted when viewing fireworks)",
+    "カークーラー\t\t#m7j2\t¦car air-conditioner",
+    "カーゲーベー\tＫＧＢ\t#19iq6\thist¦KGB (Soviet Union intelligence agency)",
     "カーゴ\t\t#m7jc\t¦cargo",
     "カーゴカルト\t\t#1a94g\t¦cargo cult (Melanesian belief system)",
     "カーゴスリング\t\t#1iy0w\t¦cargo sling",
@@ -929,9 +932,5 @@ export const PIECE: WordsPiece = {
     "がいろとう\t街路灯\t#1ovu8\t¦street light¦streetlamp",
     "がいろん\t概論\tsC~mi39#ptew\t¦introduction¦outline¦general remarks",
     "がいわくせい\t外惑星\t#16e5y\t¦outer planet",
-    "がいをおよぼす\t害を及ぼす\tg#141gi\t¦to cause harm (to)",
-    "がいをなす\t害をなす|害を成す\tg#1oxut\t¦to cause harm (to)",
-    "がいん\t画因\t#pnp2\t¦art motif",
-    "ガウア\t\t#1m3c2\t¦gaur (Bos gaurus)¦Indian bison",
   ],
 };

@@ -256,6 +256,7 @@ export const PIECE: WordsPiece = {
     "げんせい\t現生\ts#1it16\t¦living in the present",
     "げんせい\t現姓\t#1opyc\t¦one's current family name¦woman's family name after she married",
     "げんせい\t限制\ts#1pca1\trare¦restriction¦restraint¦limitation",
+    "げんせいいでん\t限性遺伝\t#1kf9k\t¦sex-limited inheritance",
     "げんせいかがく\t厳正科学\t#r2b0\t¦exact science",
     "げんせいがん\t原成岩\t#r1r0\t¦primary rocks",
     "げんせいがんせき\t原成岩石\t#r1ra\t¦primary rocks",
@@ -846,6 +847,5 @@ export const PIECE: WordsPiece = {
     "ゲームりろん\tゲーム理論\t#1d7bs\t¦game theory",
     "ゲーム・アプリ\t\t#1oi7k\t¦game app",
     "ゲーム・エミュレータ\t\t#1pcvh\t¦game console emulator",
-    "ゲーム・エミュレーター\t\t#1pcvh\t¦game console emulator",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 10 of 70, from "一卵". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 10 of 70, from "一升瓶". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,9 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "一升瓶\tいっしょうびん",
+    "一升餅\tいっしょうもち",
+    "一半\tいっぱん",
     "一卵性\tいちらんせい",
     "一卵性双生児\tいちらんせいそうせいじ",
     "一双\tいっそう",
@@ -2827,7 +2830,5 @@ export const PIECE: WordsPiece = {
     "上下\tじょうげ|うえした|かみしも|しょうか|じょうか",
     "上下さかさま\tじょうげさかさま",
     "上下になる\tうえしたになる",
-    "上下両院\tじょうげりょういん",
-    "上下列\tじょうげれつ",
   ],
 };

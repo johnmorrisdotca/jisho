@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 6 of 316, from "あしをくむ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 6 of 316, from "あしをう". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "あしをうばわれる\t足を奪われる\ti#19fnw\t¦to be stranded¦to lose means of transportation",
+    "あしをくずす\t足を崩す\tg#1i8o4\t¦to sit cross-legged¦to sit at ease",
     "あしをくむ\t足を組む|脚を組む\tg#u3x4\t¦to cross one's legs",
     "あしをすくう\t足をすくう|足を掬う\tg#1b8ak\tid¦to trip someone up¦to pull the carpet from under",
     "あしをすべらす\t足を滑らす\tg#1c3ng\t¦to lose one's footing¦to slip",
@@ -804,7 +806,5 @@ export const PIECE: WordsPiece = {
     "あたりきょうげん\t当たり狂言\t#128ju\t¦successful kyogen play¦hit",
     "あたりぎ\t当たり木|当り木|当木\t#1p5xu\trare¦pestle",
     "あたりくじ\t当たりくじ|当りくじ|当たり籤|当り籤\t#128q8\t¦winning ticket¦lucky number",
-    "あたりげい\t当たり芸|あたり芸\t#128k4\t¦successful performance",
-    "あたりさわらず\t当たり障らず\t#1flp8\trare¦avoiding committing oneself¦noncommittal",
   ],
 };

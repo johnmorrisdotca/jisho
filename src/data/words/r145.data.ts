@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 146 of 316, from "じょうほうぶろ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 146 of 316, from "じょうほうふ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,9 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "じょうほうフロー\t情報フロー\t#1ephs\tcomp¦information flow",
+    "じょうほうぶ\t情報部\tC~n17#11ipa\t¦information bureau¦intelligence department",
+    "じょうほうぶそく\t情報不足\t#1l7jw\t¦lack of information¦data deficiency",
     "じょうほうブロック\t情報ブロック\t#1epi2\tcomp¦information block",
     "じょうほうぶんかがっかい\t情報文化学会\t#37rvn\torganization¦Japan Information-Culture Society",
     "じょうほうぶんせき\t情報分析\t#1epnw\tcomp¦information analysis",
@@ -338,6 +341,7 @@ export const PIECE: WordsPiece = {
     "じょしゅ\t助手\tC~ni06#stje\t¦assistant¦helper\t¦assistant (to a professor)¦research assistant",
     "じょしゅう\t女囚\t#stye\t¦female prisoner¦female convict",
     "じょしゅせき\t助手席\t#15jle\t¦passenger seat¦assistant driver's seat",
+    "じょしょう\t女将\t~m25#styo\t¦proprietress (of a traditional Japanese inn, restaurant, or shop)¦landlady¦hostess",
     "じょしょう\t序章\t~m42#su70\t¦preface¦foreword¦introduction\t¦beginning¦start",
     "じょしょく\t女色\t#z212\t¦woman's beauty or charms¦love affair with a woman¦lust for women",
     "じょしょくばい\t助触媒\t#1otrp\tchem¦(catalytic) promoter",
@@ -596,6 +600,7 @@ export const PIECE: WordsPiece = {
     "じょりゅうさっか\t女流作家\t#15jnc\t¦woman writer¦lady writer¦authoress",
     "じょりゅうぶんがく\t女流文学\t#1n8j4\t¦women's writing¦literature written by women",
     "じょりゅうぶんがくしゃ\t女流文学者\t#14fgy\t¦female writer¦woman writer",
+    "じょりゅうめいじん\t女流名人\t#1l5rq\t¦female professional¦mistress (in a field)",
     "じょりょく\t助力\tsC~mt33#stn0\t¦assistance¦support",
     "じょりょくによって\t助力によって|助力に依って\t#140nc\t¦with (someone's) help",
     "ジョリーロジャー\t\t#19zgo\t¦Jolly Roger (pirate flag)",
@@ -872,9 +877,5 @@ export const PIECE: WordsPiece = {
     "じんきのう\t腎機能\t#19qqi\t¦kidney function",
     "じんきょう\t任侠|仁侠\t~m33#vg44\t¦chivalry¦chivalrous spirit¦helping the weak and fighting the strong\teuph¦yakuza",
     "じんきょう\t人境\t#tav0\t¦human habitation",
-    "じんぎ\t仁義\tC~mt27#tcue\t¦humanity and justice (esp. in Confucianism)¦virtue\t¦duty\t¦formal greeting (between yakuza, street vendors, gamblers, etc.)\t¦(gang's) moral code",
-    "じんぎ\t神器\t~m35#zdb6\t¦sacred treasure¦the three sacred treasures (sword, jewel, mirror)\t¦implement used in religious ceremonies",
-    "じんぎ\t神祇\t#11u0i\t¦gods of heaven and earth",
-    "じんぎ\t辞儀|辞宜|時儀\ts#115r6\t¦bow¦bowing (and greeting)\tobs¦declining¦refusing",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 126 of 144, from "18nz". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 126 of 144, from "18nk". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,25 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "18nk8\t2¦｜彼《あれ》はとにかくコンピューター｜漬《づ》けだからね。¦He eats, breathes and sleeps computers.¦1¦2e1d¦¦CM¦漬け",
+    "18nlc\t1¦そのズボンは｜大《おお》きすぎます。¦Those pants are too big.¦5¦1dilu¦Blanka_Meduzo¦CK¦大きすぎます",
+    "18nlm\t1¦｜瓜《うり》のつるに｜茄子《なす》はならぬ。¦You don't get eggplants from a gourd vine.¦¦1mwf¦mookeee¦CM¦瓜のつる",
+    "18nmq\t1¦｜諺《ことわざ》にもある｜通《どお》り「｜虎穴《こけつ》に｜入《い》らずんば｜虎子《こじ》を｜得《え》ず」だ。¦As the saying goes, \"Nothing ventured, nothing gained.\"¦¦3qrs¦¦CM¦虎穴に入らずんば虎子を得ず",
+    "18nn0\t1¦フランス｜人《じん》は｜芸術《げいじゅつ》を｜愛好《あいこう》すると｜言《い》われている。¦The French are said to love art.¦2¦47z2¦¦Eldad¦フランス人",
+    "18nna\t2¦｜文《ぶん》は｜武《ぶ》に｜勝《まさ》る。¦The pen is mightier than the sword.¦2¦1sko¦stephenmk¦CK¦武",
+    "18nnk\t1¦｜忍《にん》を｜行《ぎょう》じてのみ、よく｜怨《うら》みを｜解《と》くことを｜得《え》る。¦By love alone is enmity allayed.¦¦2m5r¦¦¦忍",
+    "18nnu\t1¦｜我々《われわれ》はこの｜町《まち》を｜小京都《しょうきょうと》と｜呼《よ》ぶ。¦We refer to this city as Little Kyoto.¦1¦3zll¦¦Swift¦小京都",
+    "18no4\t1¦｜大《おお》か、｜小《しょう》か。¦Large or small?¦5¦2yaq¦¦CM¦小",
+    "18noe\t1¦スキージャンプで２０２メートルを出せる飛び方を発見した！¦I've found a way of jumping so you can get 202m in the ski-jump!¦3¦1llb¦fcbond¦fcbond¦スキージャンプ",
+    "18noo\t1¦｜彼女《かのじょ》はトルコ｜人《じん》の｜彼《あれ》がいる。¦She's got a Turkish boyfriend.¦3¦1ll2¦fcbond¦fcbond¦トルコ人",
+    "18noy\t1¦｜彼《あれ》は｜夏中《げちゅう》ずっと｜長野《ながの》にいた。¦He stayed in Nagano throughout the summer.¦3¦2ccb¦¦CK¦中\t2¦｜最終《さいしゅう》｜提案《ていあん》は｜来週中《らいしゅうちゅう》に｜発表《はっぴょう》されます。¦The final proposal will be announced sometime next week.¦1¦3nkk¦¦CM¦中\t3¦その｜知《し》らせは｜村中《むらじゅう》に｜不安《ふあん》をまき｜起《お》こした。¦The news caused alarm throughout the village.¦2¦4ggi¦¦CM¦中\t3¦うわさの｜正体《しょうたい》をつきとめるために、｜会社《かいしゃ》｜中《うち》を｜調《しら》べ｜回《めぐ》っているんだ。¦I've been nosing around the office trying to find out the news.¦3¦4vzj¦¦¦中\t4¦その｜事《こと》｜件《けん》は｜学校《がっこう》｜中《うち》にショックを｜与《あた》えた。¦The incident gave a shock to the whole school.¦3¦4i0a¦¦¦中",
+    "18nq2\t3¦ＯＫが出たので、思わずグラスランナーのシーフ・バードというベタなキャラを作っちゃいましたよ。¦I got the OK so I unthinkingly created the clichéd 'grass runner thief/bard' character.¦4¦1nd5¦mookeee¦¦ベタな",
+    "18nqm\t1¦ついうっかりしてバスを｜乗《の》り｜間違《まちが》えた。¦I wasn't being mindful and got on a wrong bus by mistake.¦3¦4ceh¦¦¦乗り間違えた",
+    "18nqw\t1¦｜彼《かれ》らは｜宝物《たからもの》を｜探《さが》しに｜行《おこな》った。¦They went in search of treasure.¦2¦227b¦¦CM¦探しに",
+    "18nr6\t1¦｜彼《あれ》は｜気《き》を｜失《しつ》いあお｜向《む》けに｜倒《たお》れた。¦He fainted and fell on his back.¦3¦2brt¦¦CK¦気を失い",
+    "18nt4\t1¦｜彼《あ》の｜子供《こども》っぽい｜笑《わら》い｜方《ほう》が｜素敵《すてき》よね。¦His childlike laugh is charming.¦1¦2ifw¦¦CM¦っぽい",
+    "18nte\t1¦ビールは｜麦芽《ばくが》の｜含有量《がんゆうりょう》によって｜課税《かぜい》されるから、｜発泡酒《はっぽうしゅ》の｜方《ほう》が｜安《やす》いんだよ。¦Beer is taxed according to its malt content, so low-malt beer is cheaper.¦1¦1n09¦mookeee¦CM¦発泡酒",
+    "18nyy\t1¦｜彼自身《かれじしん》がそこへ｜行《おこな》った。¦He himself went there.¦¦21vt¦¦CM¦彼自身",
     "18nzi\t1¦部屋の中には１脚の机といすがあった。¦There were a desk and a chair in the room.¦1¦1sy4¦¦¦脚",
     "18o0m\t1¦｜気《き》になってならない｜俺《おれ》は｜思《おも》わず、｜目《め》の｜前《まえ》の｜学生《がくせい》に｜聞《き》いてしまった。¦It was on my mind so much that I unthinkingly asked the pupil in front of me.¦¦1mu3¦mookeee¦¦ならない\t2¦ここで｜煙草《たばこ》を｜吸《す》ってはなりません。¦You are not to smoke here.¦3¦4tab¦¦¦なりません",
     "18o0w\t1¦｜多《おお》くの｜木《き》は｜冬《ふゆ》になると｜葉《は》がなくなる。¦Many trees are bare in winter.¦3¦2ypj¦mookeee¦sundown¦になると",
@@ -189,26 +208,5 @@ export const PIECE: WordsPiece = {
     "18vci\t1¦その｜土壌《どじょう》は｜腐植《ふしょく》に｜富《と》んでいます。¦That soil is rich in humus.¦1¦1n47¦¦CM¦腐植",
     "18vcs\t1¦｜虎《とら》は｜肉食動物《にくしょくどうぶつ》です。¦A tiger is a beast of prey.¦1¦3qm5¦bunbuku¦¦肉食動物",
     "18vh8\t1¦｜彼《あれ》はわが｜社《しゃ》の｜代表《だいひょう》として｜会議《かいぎ》に｜参加《さんか》しました。¦He attended the meeting as our company representative.¦3¦992y¦aliene¦blay_paul¦わが社",
-    "18w18\t2¦｜盲《めくら》ヘビに｜怖《こわ》じず。¦Fools rush in where angels fear to tread.¦1¦1puo¦¦CK¦盲ヘビ",
-    "18wae\t1¦｜彼女《かのじょ》は｜新聞《しんぶん》に｜家事手伝《かじてつだ》いの｜求人広告《きゅうじんこうこく》を｜出《だ》した。¦She put an advertisement for a domestic help in the paper.¦3¦1wbl¦¦¦家事手伝い",
-    "18wao\t1¦この｜地域《ちいき》では、｜工場労働者《こうじょうろうどうしゃ》がどんどんいなくなっていますね。¦Factory jobs are drying up in the local economy.¦2¦4q8e¦¦¦工場労働者",
-    "18wnq\t1¦｜彼《あ》の｜行為《こうい》はまさしく｜狂気《きょうき》の｜沙汰《さた》だった。¦His conduct was nothing short of madness.¦1¦2il6¦¦Zifre¦狂気の沙汰\t1¦そんなことを｜言《い》うのは｜狂気《きょうき》のさただ。¦It's the height of madness to say so.¦1¦4dob¦¦¦狂気のさた",
-    "18x3a\t1¦｜信用《しんよう》のある｜建設業者《けんせつぎょうしゃ》に｜家《いえ》を｜建《た》ててもらったほうがよいですよ。¦You should have your house built by a trustworthy builder.¦2¦34ex¦¦¦建設業者",
-    "18x9e\t1¦｜副作用《ふくさよう》としては、｜視力障害《しりょくしょうがい》があります。¦This has visual impairment as a side effect.¦1¦1l69¦fcbond¦fcbond¦視力障害",
-    "18xe4\t1¦タロー｜君《きみ》、｜歯《は》を｜磨《みが》いていらっしゃい。¦Taro, go and brush your teeth.¦2¦4cpi¦¦Swift¦歯を磨いて",
-    "18xf8\t1¦｜試合《しあい》にさきだち｜代々《だいだい》｜木《き》｜競技場《きょうぎじょう》で｜開会式《かいかいしき》が｜行《おこな》われた。¦Before the match, an opening ceremony was held in the Yoyogi stadium.¦2¦1mp9¦mookeee¦CN¦さきだち",
-    "18xfi\t1¦｜彼《あ》の｜名前《なまえ》をひょっとして｜知《し》っていませんか。¦Do you happen to know his name?¦3¦2hiq¦¦CK¦ひょっとして",
-    "18xiu\t1¦｜男《おとこ》の｜子《こ》はたらいの｜中《うち》でジャブジャブ｜水《みず》をはねかしていた。¦The boy splashed about in the tub.¦5¦1mju¦mookeee¦CM¦たらい",
-    "18xjy\t1¦｜対岸《たいがん》の｜火事《かじ》で｜良《よ》かった。¦I am glad it was someone else who got it.¦2¦2yg3¦bunbuku¦CK¦対岸の火事",
-    "18xlc\t1¦そんなものは｜未《いま》だかつて｜見《み》たことがない。¦Never have I seen such a thing.¦3¦4dk0¦bunbuku¦Swift¦未だかつて",
-    "18xn0\t1¦｜虫《むし》の｜音《ね》がきこえます。¦I can hear the chirping of insects.¦2¦1mjl¦mookeee¦CK¦虫の音",
-    "18xr6\t1¦ちょっと｜座《ざ》が｜白《しら》けている。¦There is a slight chill on the party.¦3¦4cgl¦¦¦座が白けている",
-    "18xrg\t1¦｜濡《ぬ》れ｜衣《ぎぬ》を｜着《き》せられた。¦I was falsely accused.¦¦2m58¦small_snow¦CK¦濡れ衣を着せられた",
-    "18xsu\t1¦これらの｜気《き》の｜毒《どく》な｜人々《ひとびと》は｜非情《ひじょう》な｜独裁者《どくさいしゃ》のなすがままになっていた。¦These poor people were at the mercy of the cruel dictator.¦1¦4o5o¦¦¦なすがまま",
-    "18xwg\t1¦この｜板状《ばんじょう》の｜固《かた》い｜岩石《がんせき》の｜層《そう》をプレートと｜呼《よ》ぶ。¦We call these slabs of the solid-rock layer 'plates'.¦2¦1lkn¦fcbond¦fcbond¦板状の",
-    "18y2a\t1¦｜私《わたし》は｜今《いま》にも｜出《で》かけようとしているところへあなたが｜入《い》ってきたのだ。¦I was about to leave when you came in.¦4¦3d76¦¦CK¦ところへ",
-    "18y66\t1¦この｜椅子《いす》はとても｜座《すわ》り｜心地《ごこち》が｜良《よ》い。¦This chair is very comfortable.¦¦4su3¦small_snow¦CK¦座り心地",
-    "18y98\t1¦｜困《こま》ったことがおきるのではないかと｜気《き》をもむことがある。¦I sometimes apprehend that there will be some difficulty.¦3¦3nzf¦¦¦気をもむ",
-    "18y9i\t1¦｜浪士《ろうし》は｜本懐《ほんかい》を｜遂《と》げた。¦The rōnin attained their long-cherished ambition.¦1¦4x2ur¦JimBreen¦JimBreen¦浪士",
   ],
 };

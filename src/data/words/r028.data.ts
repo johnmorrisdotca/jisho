@@ -387,7 +387,7 @@ export const PIECE: WordsPiece = {
     "うわてひねり\t上手捻り\t#19uka\tsumo¦twisting overarm throw",
     "うわてをいく\t上手を行く|上手をいく\tg#1pamb\tid¦to have the upper hand¦to surpass (someone)",
     "うわなみ\t上波\t#1ox3d\tarch¦wave (on the water's surface)",
-    "うわなり\t後妻\t#1ox3c\tarch¦jealousy",
+    "うわなり\t後妻\t#1ox3c\tarch¦second wife¦later wife¦concubine\tarch¦jealousy",
     "うわに\t上荷\t#szse\t¦top cargo¦top of the load",
     "うわにぶね\t上荷船\t#1jkzu\t¦small boat used for unloading goods from a large anchored boat (Edo period)¦lighter",
     "うわぬり\t上塗り|上塗\ts#t0r4\t¦final coat (of paint, plaster, varnish, etc.)¦finish¦glazing\t¦adding more of the same (of something negative, e.g. shame)",

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 33 of 172, from "communiq". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 33 of 172, from "communication wit". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,16 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "communication within\tかぜとおし|かざとおし",
+    "communications\tていしん|ゆうせいしょう|でんつうだい|つうしんもう|ミニコミ|コミュニケーションギャップ|コミュニケーション・ギャップ|コミント|テルスター|パソコンつうしん|ミディコミ|しゃがいはっしん|つうけん|つうしんじぎょう|つうしんひ|つうしんきかん|どうきはずれ|せんようせん|つうしんこうがく|つうしんそうち",
+    "communications e\tていしん",
+    "communications network\tつうしんもう",
+    "communications transportation\tていしん",
+    "communications within\tミニコミ",
+    "communicative\tコミュニカティブ",
+    "communicativity\tはっしんりょく",
+    "communicator\tコミュニケーター|コミュニケータ",
+    "communion\tせいさん|せいざん|ぶんさん|せいさんしき|せいはい|カリス",
     "communique\tこうほう|きょうどうぶんしょ",
     "communiqué\tコミュニケ|コミュニケー",
     "communis\tとうごま|トウゴマ|つゆくさ|ツユクサ|ようなし|ヨウナシ|あおばな|せいようなし|セイヨウナシ|いらん|イラン|おきなわこうばし|オキナワコウバシ|せいようねず|セイヨウネズ",
@@ -522,11 +532,5 @@ export const PIECE: WordsPiece = {
     "conceptualism\tがいねんろん|げんごがくてきかんねんろん",
     "conceptualization\tがいねんか",
     "concern\tかんしん|かんする|かんけい|しんぱい|はいりょ|くろう|ねん|ゆうりょ|くったく|かんち|だいじ|かんしんじ|かんしんごと|とうじ|きづかい|かかわる|いもん|ごよう|きがかり|ゆうこく",
-    "concern about\tかえりみる",
-    "concern etc\tいもん",
-    "concern future\tゆうこく",
-    "concerned\tわずらう|あんじる|とうがい|かんけいしゃ|とうきょく|とうじしゃ|かまう|あいたい|とうにん|いちどう|こだわる|ノータッチ|ノー・タッチ|となると|おもいやる|となれば|となったら|うれえる|がいとうしゃ|あたまをいためる",
-    "concerned about\tかまう|おもいやる|うれえる|わずらう|あんじる",
-    "concerning\tため|にかんして|にかけて|にあたっては|につきまして|をめぐって|りょうてき|かぶれ|たいし|ほうれい|おちゅうどでんせつ|じょなんのそう|こしょうすいしつほぜんとくべつそちほう|ダイオキシンほうしこうきそく|だいきぼじしんたいさくとくべつそちほう|たいしんほう|としうら|たいか|ないようてき|そぜいとくべつそちほう",
   ],
 };

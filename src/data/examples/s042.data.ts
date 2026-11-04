@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 43 of 144, from "0s3j". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 43 of 144, from "0s3ay". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,24 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0s3ay\t1¦それはやむを｜得《え》ず｜延期《えんき》されなければならない。¦It must, of necessity, be postponed.¦2¦4egf¦¦¦やむを得ず",
+    "0s3bi\t1¦その｜新聞《しんぶん》は｜政府《せいふ》にインフレを｜止《と》めるように｜求《もと》めた。¦The newspaper called for the government to stop inflation.¦2¦4h4l¦¦orcrist¦止める\t2¦ここに｜車《くるま》を｜停《と》めるのは｜違法《いほう》です。¦It's illegal to park your car here.¦2¦4t5u¦¦CK¦停める\t4¦この｜文書《ぶんしょ》はあなたのお｜目《め》にだけ｜留《と》めていただきたい。¦This document is for your eyes only.¦3¦4poe¦¦CK¦留めて\t6¦木片は１本の留め木で留めてある。¦The wooden pieces are fastened with a peg.¦2¦1ps0¦¦Snark¦留めてある",
+    "0s3bs\t1¦キャシーは｜花《はな》を｜摘《つ》むのをやめました。¦Cathy stopped picking flowers.¦1¦4u9k¦small_snow¦CN¦やめました",
+    "0s3cw\t1¦｜人《じん》は｜生《う》まれるやいなや、｜死《し》に｜向《む》かう。¦As soon as man is born, he begins to die.¦3¦33h2¦¦shekitten¦死",
+    "0s3d6\t1¦その｜少年《しょうねん》は｜死《し》んだものとしてあきらめられた。¦The boy was given up for dead.¦4¦4hc3¦¦CK¦死んだ",
+    "0s3dg\t1¦｜叔父《おじ》の｜死因《しいん》は｜癌《がん》だったそうです。¦I hear my uncle died of cancer.¦¦3655¦bunbuku¦CK¦死因",
+    "0s3ek\t1¦｜彼女《かのじょ》の｜死期《しき》は｜近《ちか》づいている。¦Her time is drawing near.¦3¦20tc¦¦ddnktr¦死期",
+    "0s3f4\t1¦ノーベル賞受賞者湯川博士は１９８１年に死去した。¦Dr. Yukawa, the Nobel prize winner, died in 1981.¦1¦4985¦¦CK¦死去",
+    "0s3fe\t1¦その｜犯罪《はんざい》は｜死刑《しけい》に｜値《あたい》する。¦That crime is punishable by death.¦1¦4fuo¦¦CK¦死刑",
+    "0s3fo\t1¦ここから｜逃《に》げたって｜同《おな》じ、｜死刑囚《しけいしゅう》はどこにも｜居《お》るし｜誰《だれ》もが｜犠牲者《ぎせいしゃ》。¦It's the same wherever you try and escape: everywhere is a death row, and everyone's a victim.¦¦4tel¦¦¦死刑囚",
+    "0s3fy\t1¦｜彼《あれ》は｜妻《つま》の｜死後《しご》、｜何年《なんねん》も｜生《い》きながらえていた。¦After his wife died, he lived for quite a few more years.¦3¦2ah5¦¦CK¦死後",
+    "0s3g8\t1¦しかし、その｜一方《いっぽう》、ラテン｜語《ご》はそのときまでに「｜死語《しご》」となっていた。¦But, then again, Latin was already a \"dead language\" by that time.¦4¦4mxj¦¦¦死語\t2¦それって｜死語《しご》じゃないの。¦People don't say that anymore.¦4¦4ese¦bunbuku¦CK¦死語",
+    "0s3gs\t1¦３年前死産しました。¦I had a stillborn baby three years ago.¦3¦51ix¦e4zh1nmcz¦¦死産",
+    "0s3h2\t1¦その事故の犠牲者数は死者５名、負傷者１００名であった。¦The toll from the accident was 5 persons dead and 100 persons injured.¦1¦4hy3¦¦¦死者",
+    "0s3hc\t1¦その｜事《こと》｜故《ゆえ》では10｜名《な》の｜死傷者《ししょうしゃ》が｜出《で》た。¦Ten people were killed or injured in the accident.¦1¦4hzf¦KK_kaku_¦CM¦死傷者",
+    "0s3hm\t1¦iPhoneはインターネットにとって｜死神《しにがみ》なんだって。¦Apparently \"the iPhone sounds the death knell for the Internet.\"¦3¦1lg4¦fcbond¦fcbond¦死神",
+    "0s3hw\t1¦久｜夫《おっと》は｜死人《しにん》のように｜青《あお》ざめた｜顔色《かおいろ》をしていた。¦Hisao's face was as pale as that of a corpse.¦2¦3lq4¦¦¦死人",
+    "0s3ig\t1¦｜死体解剖《したいかいぼう》の｜結果《けっか》、｜絞殺《こうさつ》と｜判明《はんめい》しました。¦The postmortem showed that she had been strangled.¦1¦3lq0¦KK_kaku_¦CM¦死体",
     "0s3ja\t1¦｜我々《われわれ》は｜彼《あ》の｜死亡《しぼう》のニュースにショックを｜受《う》けた。¦We were shocked at the news of his death.¦1¦3z7s¦bunbuku¦CK¦死亡",
     "0s3k4\t1¦ある研究によれば、ガンによる女性の死亡数の中では肺がんが１７％を占めている。¦A study shows lung cancer accounts for 17% of women's cancer deaths.¦1¦4xdv¦¦¦死亡数",
     "0s3ke\t1¦｜出生率《しゅっしょうりつ》と｜死亡率《しぼうりつ》は、ほぼ｜等《ひと》しかった。¦The birth rate and death rate were nearly equal.¦1¦35zu¦small_snow¦CK¦死亡率",
@@ -199,25 +217,5 @@ export const PIECE: WordsPiece = {
     "0s78w\t1¦この｜歌手《かしゅ》はあまりにももてはやされている。¦This singer is made too much of.¦4¦4rvn¦¦¦もてはやされている",
     "0s79q\t1¦ほとんどの｜観光客《かんこうきゃく》がカメラを｜持参《じさん》している。¦Almost every tourist carries a camera with him.¦3¦47co¦bunbuku¦CK¦持参",
     "0s7a0\t1¦この｜机《つくえ》は｜重《おも》くて｜持《も》ち｜上《あ》がらなかった。¦This desk was too heavy to lift.¦2¦4rp4¦¦CK¦持ち上がらなかった\t2¦｜株価上昇《かぶかじょうしょう》を｜契機《けいき》に｜新《しん》｜工場《こうじょう》｜建設《けんせつ》の｜話《はなし》が｜持《も》ち｜上《あ》がった。¦They took advantage of the stock price increase to raise the idea of building a new factory.¦1¦1mum¦mookeee¦papabear¦持ち上がった",
-    "0s7b4\t1¦１２才の時彼は声変わりした。¦His voice broke when he was twelve.¦3¦522e¦mookeee¦CM¦時\t2¦｜車《くるま》を｜運転《うんてん》する｜時《とき》はいくら｜注意《ちゅうい》してもしすぎることはない。¦You cannot be too careful when you drive a car.¦4¦36xy¦¦Lumi_alt¦時",
-    "0s7bo\t1¦ときには｜試合《しあい》は｜一日中《いちにちじゅう》｜続《つづ》きました。¦Sometimes the game lasted all day.¦3¦4b4q¦¦AlanF_US¦ときには",
-    "0s7dc\t1¦いつだって｜読書《どくしょ》の｜時間《じかん》は｜見《み》つけられる。¦We can always find time for reading.¦5¦4wm1¦¦CK¦時間\t2¦彼は勤勉な生徒だ。毎日３時間彼は勉強している。¦He is a diligent student. He studies three hours every day.¦3¦2bjo¦¦Dejo¦時間",
-    "0s7dw\t1¦｜彼《あれ》は｜時間稼《じかんかせ》ぎをしているだけだよ。¦He is just killing time.¦1¦299e¦mookeee¦¦時間稼ぎ",
-    "0s7eg\t1¦｜私《わたし》たちは｜時間割《じかんわり》に｜従《したが》って｜勉強《べんきょう》する。¦We study according to the schedule.¦1¦3juz¦bunbuku¦¦時間割",
-    "0s7eq\t1¦｜私《わたし》は｜時間給《じかんきゅう》で｜時間《じかん》をもらっている。¦I'm paid by the hour.¦3¦3cov¦¦CK¦時間給",
-    "0s7fk\t1¦「もう｜少《すこ》しで｜時間《じかん》ぎれだからね」と｜先生《せんせい》は｜言《い》った。¦\"You are almost out of time\", said the teacher.¦4¦52fd¦mookeee¦¦時間ぎれ",
-    "0s7fu\t1¦｜毎日《まいにち》｜働《はたら》く｜時間帯《じかんたい》が｜違《ちが》うんです。¦Every day I work different hours.¦2¦1qpn¦bunbuku¦¦時間帯",
-    "0s7ge\t1¦今月５日から時間表が改正される。¦The revised timetable will go into effect on the 5th of this month.¦2¦3p2w¦¦CK¦時間表",
-    "0s7go\t1¦１年のこの時期は天候がよく変わる。¦The weather changes very often at this time of year.¦3¦51ul¦e4zh1nmcz¦sundown¦時期",
-    "0s7hi\t1¦｜今《いま》その｜計画《けいかく》を｜実施《じっし》するのは、｜時期尚早《じきしょうそう》である。¦It is premature to put the plan into practice now.¦1¦3pc3¦¦¦時期尚早",
-    "0s7ic\t1¦あの｜修理工《しゅうりこう》たちは｜時給《じきゅう》｜一万円《いちまんえん》ももらっている。¦Those mechanics are paid as much as ten thousand yen per hour.¦1¦4x76¦KK_kaku_¦CM¦時給",
-    "0s7jg\t1¦あなたの｜時計《とけい》では｜何時《なんじ》ですか。¦What time is it by your watch?¦4¦4zz2¦KK_kaku_¦papabear¦時計",
-    "0s7ku\t1¦１時限は何の授業ですか。¦What do you have the first period?¦1¦51x3¦e4zh1nmcz¦¦時限",
-    "0s7l4\t1¦空港で時限爆弾が爆発し１３名もの命を奪った。¦A time bomb went off in the airport killing thirteen people.¦1¦3ue9¦Blanka_Meduzo¦CK¦時限爆弾",
-    "0s7lo\t1¦そろそろ｜寝《ね》る｜時刻《じこく》だ。¦It's almost time to go to bed.¦3¦4dr5¦bunbuku¦CK¦時刻",
-    "0s7ly\t1¦｜時刻表《じこくひょう》が｜改正《かいせい》された。¦The timetable has been revised.¦2¦383v¦small_snow¦CK¦時刻表",
-    "0s7m8\t1¦｜会社《かいしゃ》は｜時差《じさ》｜通勤《つうきん》を｜導入《どうにゅう》しようとしています。¦The company is attempting to stagger work hours.¦2¦3yxt¦¦CK¦時差",
-    "0s7mi\t1¦｜時差《じさ》ボケで｜辛《から》い。¦I've got a bad case of jet lag.¦2¦383m¦bunbuku¦CK¦時差ボケ",
-    "0s7ms\t1¦｜我々《われわれ》は｜時勢《じせい》に｜遅《おく》れずに｜付《つ》いて｜行《い》かなければならない。¦We must keep up with the times.¦1¦3zd7¦¦CM¦時勢",
   ],
 };

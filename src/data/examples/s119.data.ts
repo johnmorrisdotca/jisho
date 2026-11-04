@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 120 of 144, from "173ls". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 120 of 144, from "1736". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,22 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "1736i\t1¦その｜子《こ》は、カエルが、｜動《うご》いたのを｜見《み》て｜後《あと》ずさりをした。¦The kid drew back from the frog when it moved.¦4¦4i90¦¦CM¦後ずさり",
+    "1736s\t1¦｜彼《あれ》はぱっと｜後《あと》ずさりした。¦He backed abruptly away.¦3¦2duo¦¦¦後ずさり",
+    "173fe\t1¦｜今日《きょう》は｜魚《さかな》の｜食《く》いが｜悪《にく》い。¦The fish aren't biting today.¦4¦3ofw¦¦CK¦魚の食い",
+    "173gi\t1¦｜私《わたし》たちはまず、あなたの｜義理《ぎり》のお｜兄《にい》さんに｜手紙《てがみ》を｜書《か》いて、もてなしていただいたお｜礼《れい》を｜言《い》うべきでしょう。¦The first thing we should do is write and thank your brother-in-law for his hospitality.¦1¦3k8w¦¦CK¦義理のお兄さん",
+    "173h2\t1¦｜義理《ぎり》の｜姉《あね》は｜五《ご》｜年間《ねんかん》で｜四《し》｜人《ひと》の｜子《こ》｜供《とも》を｜生《う》んだ。¦My sister-in-law had four children in five years.¦1¦3x4q¦mookeee¦CK¦義理の姉",
+    "173i6\t1¦この｜儀式《ぎしき》は｜幾世《いくよ》｜代《よ》にもわたって｜伝《つた》わってきた。¦This ceremony has been handed down from generation to generation.¦1¦4rlu¦¦¦幾世",
+    "173ig\t1¦｜急《せ》いては｜事《こと》をし｜損《そん》ずる。¦Hurrying leads to mistakes being made.¦2¦8k8e¦blay_paul¦blay_paul¦急いて",
+    "173j0\t1¦ちょっとした｜景気《けいき》づけですよ。¦It's a shot in the arm.¦3¦4ci8¦bunbuku¦CM¦景気づけ",
+    "173ja\t1¦｜実地《じっち》は｜理論《りろん》と｜同様《どうよう》に｜大切《たいせつ》であるが、われわれは｜理論《りろん》を｜重《おも》んじ、｜実地《じっち》を｜軽《かろ》んずる｜傾向《けいこう》がある。¦Practice is as important as theory, but we are apt to value the latter and despise the former.¦2¦376w¦¦papabear¦軽んずる",
+    "173jk\t1¦その｜男《おとこ》は｜自分《じぶん》の｜脳《のう》を｜撃《う》ち｜抜《ぬ》いた。¦The man blew out his own brains.¦¦4giy¦¦CK¦撃ち抜いた",
+    "173ju\t1¦こんな｜結《むす》び｜方《かた》ではほどけちゃうよ。¦This knot will not hold.¦1¦4npz¦small_snow¦¦結び方",
+    "173k4\t1¦この｜現象《げんしょう》は、いずれの｜汚染物質《おせんぶっしつ》とも｜無関係《むかんけい》であると｜結論《けつろん》づけることができる。¦We can conclude that this phenomenon is not related to either pollutant.¦¦4rcn¦¦AlanF_US¦結論づける",
+    "173ke\t1¦このあたりは｜私《わたし》がここにきて｜以来《いらい》｜建《た》て｜込《こ》んできた。¦The area has been built up since I came here.¦3¦4sut¦¦¦建て込んで",
+    "173ko\t1¦｜彼《あれ》は｜肩越《かたご》しに｜振《ふ》り｜返《かえ》った。¦He looked back over his shoulder.¦1¦2b3b¦¦CK¦肩越し",
+    "173l8\t1¦あの｜女性《じょせい》は｜見栄《みえ》っ｜張《ぱ》りと｜言《い》うよりもむしろ｜自尊心《じそんしん》が｜強《つよ》い。¦That woman is proud rather than vain.¦1¦4y51¦¦¦見栄っ張り",
+    "173li\t1¦｜彼《あれ》は｜帰宅《きたく》するやいなや、｜誇《ほこ》らしげに｜衝撃《しょうげき》の｜発表《はっぴょう》をした。¦No sooner had he come home than he proudly made an earth-shattering announcement.¦1¦2bs6¦¦¦誇らしげ",
     "173ls\t1¦｜日本《にほん》は｜世界《せかい》の｜経済大国《けいざいたいこく》に｜伍《ご》している。¦Japan ranks among the economic powers of the world.¦1¦dha2¦blay_paul¦Scott¦伍している",
     "173mc\t1¦｜大統領《だいとうりょう》はテレビで｜国民《こくみん》に｜語《かた》りかけた。¦The President spoke to the nation on TV.¦1¦2xz3¦¦CK¦語りかけた",
     "173mm\t1¦｜怒《いか》りを｜込《こ》めて｜告発《こくはつ》｜人《じん》の｜方《ほう》に｜向《む》き｜直《なお》った。¦He turned angrily on his accusers.¦3¦2nzz¦¦¦向き直った",
@@ -202,19 +218,5 @@ export const PIECE: WordsPiece = {
     "175v1\t2¦いくら器だけを日本一にしても、中身が三流やったらな〜んの意味もないんちゃうの？¦The container may be the best in Japan, but if the contents are third class, then isn't it completely meaningless?¦¦1nb8¦¦papabear¦ちゃう",
     "175vq\t1¦｜突然《とつぜん》｜彼女《かのじょ》は｜甲高《かんだか》い｜声《こえ》で｜叫《さけ》び｜出《だ》した。¦All at once she began to shout in a shrill voice.¦1¦2n4d¦¦CK¦叫び出した",
     "175w0\t1¦ばかなまねをするのはよしなさい。｜皆《みな》さんに｜笑《わら》われますよ。¦Stop making a fool of yourself. Everyone is laughing at you.¦3¦4908¦¦CK¦ばかなまね",
-    "175wa\t1¦｜彼女《かのじょ》は｜怒《おこ》りっぽい。¦She has a hot temper.¦3¦1zv5¦bunbuku¦CK¦怒りっぽい",
-    "175xe\t1¦｜急《せ》いては｜事《こと》をし｜損《そん》ずる。¦Hurrying leads to mistakes being made.¦2¦8k8e¦blay_paul¦blay_paul¦し損ずる",
-    "175xo\t1¦｜信号機《しんごうき》が｜赤《あか》の｜間《あいだ》は｜道路《どうろ》を｜渡《わた》るな。¦Don't cross the road when the signal is red.¦3¦34fc¦¦CM¦赤\t3¦サダムが｜脅威《きょうい》でないなどと｜言《い》うのは、｜赤《あか》がかった｜反戦運動《はんせんうんどう》の｜人達《ひとたち》くらい。¦It's only the anti-war pinkos who say things like Saddam isn't a threat.¦1¦1l7h¦fcbond¦fcbond¦赤",
-    "175xy\t1¦そして、だからこそ、ほぼ｜百年《ひゃくねん》にわたって、｜従業員《じゅうぎょういん》はだれでも｜雇用者《こようしゃ》のところに｜行《おこな》って、｜現金《げんきん》による｜賃金《ちんぎん》｜支給《しきゅう》を｜要求《ようきゅう》できるようになったのです。¦And that's why for almost a hundred years, any employee has been able to go to his employer and insist on being paid in cash.¦1¦4krx¦¦shekitten¦にわたって",
-    "175y8\t1¦あ、そうだったわね。じゃあ、みみっちいのはあんたの｜買《か》い｜方《かた》ってことね。¦Oh yes, you're right. Well, it's the way you shop that's tight-fisted then.¦4¦1ncz¦¦¦みみっちい",
-    "17610\t1¦｜中高年《ちゅうこうねん》の｜人《ひと》たちの｜大部分《だいぶぶん》が｜将来《しょうらい》に｜対《たい》して｜不安《ふあん》を｜感《かん》じていた。¦The majority of the middle-aged people felt anxiety for their future.¦¦2pm7¦¦¦中高年の",
-    "176b0\t1¦からだ｜全体《ぜんたい》が｜密《みつ》に｜毛《け》でおおわれている。¦The entire body is densely covered with hair.¦1¦4uir¦¦¦密に",
-    "176co\t1¦オリーブオイルを１８ＭＴ注文します。¦We'd like to order 18 tonnes of olive oil.¦4¦4vim¦¦Swift¦オリーブオイル",
-    "176v0\t1¦この｜宇宙《うちゅう》には｜知的生命体《ちてきせいめいたい》が｜存在《そんざい》するのはまず｜間違《まちが》いないと｜思《おも》うが、その｜生命体《せいめいたい》が｜地球《ちきゅう》に｜来《く》る｜可能性《かのうせい》は｜殆《ほとん》ど｜無《な》し。¦I think it is certain that there is intelligent life in this universe, but the likelihood of that life coming to Earth is practically nil.¦¦1ln5¦fcbond¦fcbond¦生命体",
-    "176w4\t1¦｜艱難汝《かんなんなんじ》を｜玉《たま》にす。¦Adversity makes a man wise, not rich.¦¦1nh4¦KK_kaku_¦¦汝",
-    "176wo\t1¦｜彼《あれ》は｜背水《はいすい》の｜陣《じん》で｜闘《たたか》った。¦He fought a last-ditch battle.¦1¦2ls8¦xtofu80¦xtofu80¦背水の陣",
-    "176yw\t1¦｜先生《せんせい》に｜怒《おこ》られたってへっちゃらだい。¦I couldn't care less if the teacher is mad at me.¦3¦31d7¦bunbuku¦CM¦へっちゃら",
-    "1772i\t1¦｜儂《わし》の｜目《め》もガタがきたかの。¦Have my eyes also started to fail?¦¦1mdf¦mookeee¦CM¦儂の",
-    "1773c\t1¦｜消息筋《しょうそくすじ》によると、○○｜社《やしろ》は｜東証一部《とうしょういちぶ》への｜上場《じょうじょう》を｜準備《じゅんび》している。¦According to informed sources, ____ Ltd. is preparing for the move up to the first section of the Tokyo Stock exchange.¦1¦1lgz¦fcbond¦fcbond¦社",
   ],
 };

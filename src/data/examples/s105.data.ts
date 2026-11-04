@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 106 of 144, from "117u". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 106 of 144, from "1173". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,18 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "11738\t1¦｜企業《きぎょう》の｜政治献金《せいじけんきん》は｜厳《きび》しい｜検査《けんさ》の｜対象《たいしょう》になっています。¦Corporate political donations are coming under heavy scrutiny.¦1¦3xoe¦KK_kaku_¦fishda¦政治献金",
+    "1173i\t1¦その｜土地《とち》はローンダリングした｜政治資金《せいじしきん》で｜購入《こうにゅう》されました。¦The property was purchased with laundered political money.¦1¦4g52¦¦¦政治資金",
+    "117ba\t1¦｜来週《らいしゅう》の｜火曜日《かようび》に｜役員会《やくいんかい》がその｜提案《ていあん》を｜検討《けんとう》することになっている。¦The board of directors is going to discuss the proposal next Tuesday.¦1¦1oox¦mookeee¦CK¦役員会",
+    "117ds\t1¦｜私《わたし》の｜物《もの》は｜君《きみ》の｜程《ほど》よくありません。¦Mine is not so good as yours.¦3¦3hjx¦¦mamat¦程よくありません",
+    "117em\t1¦ここからゴールまではほど｜遠《とお》い。¦It is a far cry from here to the goal.¦3¦4tgd¦¦¦ほど遠い",
+    "117fg\t1¦私は１４歳のときに、父をくも膜下出血で亡くした。¦I lost my father to a subarachnoid haemorrhage when I was fourteen.¦1¦1llk¦fcbond¦fcbond¦くも膜下出血",
+    "117j2\t1¦｜船中《せんちゅう》にはどのくらいの｜人《じん》がいるのですか。¦How many people are on board the ship?¦3¦30um¦¦CK¦船中",
+    "117jm\t1¦｜彼《かれ》らは｜来週《らいしゅう》の｜月曜日《げつようび》にボンベイに｜向《む》けて｜船出《ふなで》する。¦They will sail for Bombay next Monday.¦3¦2249¦¦CN¦船出",
+    "117n8\t1¦｜船客《せんきゃく》のブリッジ｜立《た》ち｜入《い》り｜禁止《きんし》。¦No passengers are allowed on the bridge.¦2¦30uv¦¦CM¦船客",
+    "117o2\t1¦あなたの船荷は、２４時間以内に運ばれるでしょう。¦Your shipment should be delivered within twenty-four hours.¦2¦4zvn¦¦CK¦船荷",
+    "117ss\t1¦｜近代的《きんだいてき》な｜港湾《こうわん》｜施設《しせつ》がないために、｜多《おお》くの｜船積《ふなづ》み｜業者《ぎょうしゃ》が｜不便《ふべん》を｜被《おお》った。¦The lack of modern post facilities caused trouble for many shippers.¦¦3uqa¦¦Zifre¦船積み",
+    "117t2\t1¦｜船頭《せんどう》｜多《おお》くして｜船《ふね》、｜山《やま》に｜登《のぼ》る。¦Too many cooks spoil the broth.¦3¦30u7¦mookeee¦Shishir¦船頭",
     "117uq\t1¦｜彼女《かのじょ》が｜彼《あれ》を｜助《たす》ける｜巡《めぐ》り｜合《あ》わせになった。¦The lot fell to her to help him.¦1¦21hn¦¦¦巡り合わせ",
     "117zg\t1¦｜私達《わたしたち》は｜彼《あ》の｜術中《じゅっちゅう》にはまらないように｜注意《ちゅうい》しなければならない。¦We'll have to be careful not to play into his hands.¦3¦38rz¦¦CM¦術中",
     "118be\t1¦｜水泳大会《すいえいたいかい》が｜中止《ちゅうし》になった。¦The swimming event was called off.¦3¦32v4¦bunbuku¦CK¦水泳大会",
@@ -205,17 +217,5 @@ export const PIECE: WordsPiece = {
     "11nve\t1¦この｜機械《きかい》には｜安全装置《あんぜんそうち》が｜付《つ》いていない。¦This machine doesn't have a safety device.¦2¦4rog¦¦Jesse¦安全装置",
     "11nyg\t1¦この｜安楽《あんらく》いすは｜非常《ひじょう》に｜快適《かいてき》だ。¦This easy chair is quite comfortable.¦2¦4s1i¦¦CK¦安楽いす",
     "11nz0\t1¦あなたからのパーティーの｜案内状《あんないじょう》をなくしてしまったなんて、｜自分《じぶん》でも｜信《しん》じられません。¦I can't believe I misplaced the party information and registration you sent to me.¦¦50o0¦¦CK¦案内状",
-    "11o04\t1¦｜鞍馬《あんば》は、｜力《ちから》よりもバランス｜感覚《かんかく》が｜必要《ひつよう》です。¦The pommel horse requires more balance than strength.¦¦43jv¦KK_kaku_¦Dejo¦鞍馬",
-    "11o0o\t1¦｜客《きゃく》のうちの｜何人《なんにん》かが｜宴会場《えんかいじょう》を｜出《で》て｜行《い》くのが｜見《み》えた。¦I saw some of the guests leave the banquet room.¦1¦3x1h¦¦CK¦宴会場",
-    "11o4k\t1¦そう｜言《い》えば、｜肝心要《かんじんかなめ》の｜部分《ぶぶん》を｜何《なに》も｜決《き》めていなかった。¦Now that you mention it, I wasn't involved in the decision-making for the vital part.¦¦1n4z¦mookeee¦¦肝心要",
-    "11o72\t1¦｜小《しょう》｜泉《いずみ》｜首相《しゅしょう》が「｜憲法違反《けんぽういはん》だから｜靖国神社《やすくにじんじゃ》｜参拝《さんぱい》しちゃいかんという｜人《じん》がいます」と｜語《かた》った。¦Prime Minister Koizumi said, \"There are people who say that, because it's unconstitutional, I should not pray at the Yasukuni Shrine\".¦1¦1mnk¦mookeee¦¦憲法違反",
-    "11obs\t1¦｜今年《ことし》の｜夏《なつ》も｜冷夏《れいか》になりそうだ。¦It seems to be cold again this summer.¦3¦3o8o¦small_snow¦¦冷夏",
-    "11ocw\t1¦｜零細企業《れいさいきぎょう》はインフレで｜苦境《くきょう》に｜陥《おちい》っています。¦Small enterprises are feeling the squeeze of inflation.¦1¦1nvq¦mookeee¦CM¦零細企業",
-    "11odq\t1¦｜小作人《こさくにん》｜達《たち》は｜領主《りょうしゅ》に｜反抗《はんこう》して｜蜂起《ほうき》した。¦The peasants rose up in rebellion against the ruler.¦¦35ea¦¦¦領主",
-    "11ok4\t1¦｜彼女《かのじょ》は｜利己心《りこしん》がない。¦She has no thought of self.¦1¦1ulr¦¦¦利己心",
-    "11oke\t1¦｜彼《あれ》は｜徹底《てってい》した｜利己主義者《りこしゅぎしゃ》だ。¦He is a thorough-going egoist.¦1¦26o2¦¦¦利己主義者",
-    "11opy\t1¦｜彼女《かのじょ》は｜美《うつく》しいだけでなく｜利発《りはつ》でもある。¦She is not merely beautiful but bright.¦3¦1v7e¦¦¦利発",
-    "11orm\t1¦ＥＣ諸国はこの会談に非常に大きな利害関係をもっています。¦The EC countries have a huge stake in the talks.¦2¦517o¦¦¦利害関係",
-    "11ovi\t1¦｜彼《あれ》は｜歴史小説《れきししょうせつ》を｜読《よ》んでいるだろう。¦He will be reading a historical novel.¦2¦24bh¦¦¦歴史小説",
   ],
 };

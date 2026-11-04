@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 149 of 316, from "すいんぐあ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 149 of 316, from "すいをき". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,12 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "すいをきかす\t粋を利かす\tg#1p2a4\trare¦to show tact (in relationship matters)¦to be considerate (e.g. of a couple)¦to be thoughtful",
+    "スインガー\t\t#mvj8\t¦swinger",
+    "スインガーパーティー\t\t#mvji\t¦swinger party",
+    "スインガー・パーティー\t\t#mvji\t¦swinger party",
+    "スインギング\t\t#mvjs\t¦swinging",
+    "スイング\t\tsC~g#mvk2\tsports¦swing (of a golf club, tennis racket, etc.)\tboxing¦swing\tmusic¦swing",
     "スイングアウト\t\t#mvkc\t¦swing out",
     "スイングジャズ\t\t#1h1b0\tmusic¦swing music¦swing jazz",
     "スイングステート\t\t#1ooi3\t¦swing state (in US politics)",
@@ -894,9 +900,5 @@ export const PIECE: WordsPiece = {
     "スクブス\t\t#1p0rg\t¦succubus",
     "すくみ\t\t#1ct9o\tcomp¦deadlock",
     "すくみあがる\tすくみ上がる|竦み上がる\tg#1c7aa\t¦to cringe with fear¦to cower with fright¦to be terribly afraid",
-    "スクみず\tスク水\t#1m39u\tabbr¦school swimsuit",
-    "すくみりんごがい\t竦林檎貝\tU#1nh5y\tuk¦channeled apple snail (Pomacea canaliculata)¦golden apple snail",
-    "スクミリンゴガイ\t\tU#1nh5y\tuk¦channeled apple snail (Pomacea canaliculata)¦golden apple snail",
-    "すくむ\t竦む\tgU#xnl8\tuk¦to freeze (from fear, etc.)¦to be unable to move (e.g. from surprise)¦to be paralyzed (with horror, etc.)\tuk¦to cower¦to shrink in on oneself",
   ],
 };

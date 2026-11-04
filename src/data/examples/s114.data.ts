@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 115 of 144, from "15kd". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 115 of 144, from "15ju". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,19 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "15juk\t1¦｜物価《ぶっか》は｜上昇傾向《じょうしょうけいこう》にある。¦Prices are on the upward trend.¦1¦1sn9¦¦¦上昇傾向",
+    "15jza\t1¦ジムは｜職権乱用《しょっけんらんよう》で｜免職《めんしょく》になった。¦Jim got dismissed for his misconduct in office.¦1¦4mmu¦¦CP¦職権乱用",
+    "15k04\t1¦インドは｜地域色《ちいきしょく》｜豊《ゆた》かな｜食文化《しょくぶんか》があります。¦India has a cuisine rich in regional flavour.¦2¦1m7a¦fcbond¦fcbond¦食文化",
+    "15k1i\t1¦それはまさに｜侵略行為《しんりゃくこうい》だ。¦It is nothing less than an invasion.¦1¦4eh8¦small_snow¦orcrist¦侵略行為",
+    "15k2c\t1¦あの｜人《ひと》｜心臓発作《しんぞうほっさ》を｜起《お》こすわよ。¦He's going to have a heart attack.¦2¦4y0c¦¦CK¦心臓発作",
+    "15k4u\t1¦その｜新刊書《しんかんしょ》のことは｜雑誌《ざっし》の｜広告《こうこく》で｜知《し》った。¦I learned about the new book by the advertisement in the magazine.¦2¦4h54¦¦¦新刊書",
+    "15k5o\t1¦｜新進作家《しんしんさっか》の｜登場《とうじょう》でその｜老《ろう》｜作家《さっか》は｜影《かげ》の｜薄《うす》い｜存在《そんざい》となった。¦With the appearance of a promising new writer, the aging novelist fell from prominence.¦1¦342y¦¦¦新進作家",
+    "15k5y\t1¦この｜新人歌手《しんじんかしゅ》は｜本当《ほんとう》にすばらしい。¦This new singer is really great.¦3¦4qjp¦¦Eldad¦新人歌手",
+    "15k72\t1¦「Kanji list」という｜機能《きのう》に｜新聞記事《しんぶんきじ》｜頻度《ひんど》を｜追加《ついか》しました。¦I added newspaper article frequency data to the 'Kanji list' function.¦1¦1md7¦¦AlanF_US¦新聞記事",
+    "15k7c\t1¦｜新聞配達《しんぶんはいたつ》の｜少年《しょうねん》はどんな｜天気《てんき》でも｜新聞《しんぶん》を｜配達《はいたつ》する。¦The newspaper boy delivers papers in any kind of weather.¦3¦33yo¦bunbuku¦¦新聞配達",
+    "15k86\t1¦シップ・アイランドのあたりは、｜相《あい》も｜変《か》わらぬ｜森林地帯《しんりんちたい》で、｜相変《あいか》わらず｜住《す》む｜人《じん》とてなかった。¦The Ship Island region was as woody and tenantless as ever.¦2¦4ms8¦¦¦森林地帯",
+    "15k9k\t1¦｜関税《かんぜい》｜申告書《しんこくしょ》が｜必要《ひつよう》になります。¦A customs declaration is required.¦2¦3xql¦Lurid¦CK¦申告書",
+    "15kao\t1¦｜彼《あ》の｜話《はなし》にはいくらか｜真実味《しんじつみ》がある。¦His story has some color of truth in it.¦3¦2hcx¦¦¦真実味",
     "15kd6\t1¦｜親切心《しんせつしん》は｜礼儀《れいぎ》の｜本質《ほんしつ》である。¦Kindness is the essence of politeness.¦1¦33pq¦mookeee¦¦親切心",
     "15kf4\t1¦この｜国《くに》ではイデオロギーや｜宗教《しゅうきょう》が｜人《じん》としての｜人格形成《じんかくけいせい》に｜役立《やくだ》つ｜例《れい》があまりに｜少《すく》ない。¦In this country there are only few examples that ideology and religion are helpful in character building for people.¦1¦4r9g¦¦¦人格形成",
     "15kfe\t1¦｜私《わたし》は｜昨年《さくねん》あの｜人気作家《にんきさっか》にあったことを｜決《けっ》して｜忘《わす》れないだろう。¦I will never forget meeting that popular writer last year.¦3¦3cxc¦¦Swift¦人気作家",
@@ -30,6 +43,7 @@ export const PIECE: WordsPiece = {
     "15kqs\t1¦クモがクモの｜巣《す》を｜張《は》るところを｜見《み》たことがありますか。¦Have you ever seen a spider spinning its web?¦1¦4u3k¦bunbuku¦Zifre¦クモの巣",
     "15krw\t1¦｜我々《われわれ》は｜背《せ》の｜高《たか》いポプラ｜並木《なみき》を｜歩《ある》いた。¦We walked along an avenue of tall poplars.¦1¦3z8o¦¦CK¦ポプラ",
     "15kt0\t1¦｜実《じつ》は、｜大《おお》きな｜声《こえ》で｜言《い》えませんが、ここ｜最近《さいきん》このビーチで｜若《わか》い｜女性《じょせい》が｜盗撮《とうさつ》されたうわさがあるんです。¦Actually, and I need to keep this quiet, but recently here there's a rumour that young women on this beach are having photos taken in secret of them.¦1¦1lwo¦fcbond¦fcbond¦盗撮",
+    "15ku4\t1¦「｜性差別《せいさべつ》」という｜言葉《ことば》が｜今《いま》、｜流行《はや》っている。¦Terms like \"sexism\" are now in vogue.¦3¦52ad¦mookeee¦¦性差別",
     "15kvi\t1¦フォード｜氏《し》はいわゆる｜自力《じりき》の｜成功者《せいこうしゃ》だ。¦Mr Ford is what is called a self-made man.¦1¦485l¦¦Swift¦成功者",
     "15kwm\t1¦成長期の子供が１時間もじっとしていることは不可能だ。¦It is impossible for a growing child to keep still for an hour.¦¦32ie¦¦Eldad¦成長期",
     "15kz4\t1¦彼女は政府機関に勤めているのでしょう？¦She's with a government bureau, isn't she?¦2¦1w72¦mookeee¦CK¦政府機関",
@@ -190,18 +204,5 @@ export const PIECE: WordsPiece = {
     "15rhk\t1¦｜両替所《りょうがえじょ》はどこですか。¦Where is the money exchange counter?¦2¦1o65¦mookeee¦CM¦両替所",
     "15ri4\t1¦｜車《くるま》を｜買《か》いたいのですが、｜料金表《りょうきんひょう》を｜見《み》せて｜下《くだ》さい。¦I want to rent a car, please show me a price list.¦3¦36x5¦¦¦料金表",
     "15rie\t1¦｜去年《きょねん》の｜春《はる》、｜料理教室《りょうりきょうしつ》に｜通《とお》って、パンの｜焼《や》き｜方《ほう》を｜覚《おぼ》えました。¦I took a cooking class last spring and learned to bake bread.¦2¦3wlp¦¦CK¦料理教室",
-    "15rl6\t1¦｜彼《かれ》らは｜隣町《となりまち》まで｜鉄道《てつどう》を｜延長《えんちょう》することを｜計画《けいかく》している。¦They are planning to extend the railroad to the next town.¦1¦223e¦¦CK¦隣町",
-    "15roi\t1¦｜雨《あめ》が｜降《ふ》ったら、｜練習試合《れんしゅうじあい》は｜延期《えんき》にするつもりだ。¦If it rains, we will put off our practice match.¦2¦42fz¦¦Lumi¦練習試合",
-    "15rpm\t1¦｜英作文《えいさくぶん》の｜練習問題《れんしゅうもんだい》をしなさい。¦Do a composition exercise, please.¦2¦41tc¦¦garynw¦練習問題",
-    "15rqq\t1¦｜連邦政府《れんぽうせいふ》の｜予算削減《よさんさくげん》は｜社会保障《しゃかいほしょう》の｜給付《きゅうふ》に｜影響《えいきょう》が｜及《およ》ぶでしょう。¦Federal budget cuts will take a bite out of Social Security benefits.¦1¦1nqc¦mookeee¦shekitten¦連邦政府",
-    "15rse\t1¦｜警察《けいさつ》はたいてい｜路上駐車《ろじょうちゅうしゃ》の｜車《くるま》に｜目《め》をつむる。¦The police usually close their eyes to cars parked on the street.¦2¦3ryx¦bunbuku¦CM¦路上駐車",
-    "15rti\t1¦｜労使紛争《ろうしふんそう》はいまだに｜困《こま》った｜問題《もんだい》だ。¦Industrial disputes are still a problem.¦1¦1npn¦¦¦労使紛争",
-    "15rts\t1¦平成１６年１月１日から、改正労働基準法が施行されます。¦The reformed Labour Standards Act will be in force from Jan 1st 2004.¦1¦1ld7¦fcbond¦fcbond¦労働基準法",
-    "15rvq\t1¦疫病管理局の報告では、罹患率は１０パーセントだった。¦The office for disease control reported a 10 percent spread.¦¦41sy¦¦CaspieChi¦罹患率",
-    "15rzm\t1¦｜私《わたし》の｜先生《せんせい》の｜指導《しどう》はいつも｜要《よう》を｜得《え》ている。¦My teacher's instructions are always to the point.¦2¦3hxa¦¦¦要を得ている",
-    "15s0g\t1¦｜売《う》れ｜行《ゆ》きは｜目標《もくひょう》に｜達《たっ》しなかった。¦Sales fell short of their goal.¦1¦2lqa¦¦¦達し",
-    "15s2o\t1¦｜安《やす》いホテルに｜泊《と》まって｜旅費《りょひ》を｜浮《う》かした。¦I saved on travelling expenses by staying at a cheap hotel.¦2¦43n0¦small_snow¦AlanF_US¦浮かした",
-    "15s56\t1¦｜今《いま》から｜彼女《かのじょ》があなたのお｜世話《せわ》をします。¦She will care for you from now on.¦3¦3pdx¦mookeee¦CM¦お世話をします",
-    "15s5g\t1¦｜私《わたし》にはうれしくはなかったが、ほかのあらゆるものと｜同《おな》じ｜様《よう》にトニーの｜価格《かかく》も｜上《あ》がるのは｜無理《むり》はないと｜思《おも》い、｜同意《どうい》した。¦I wasn't happy, but it seemed reasonable that his prices should go up like everything else, so I agreed.¦¦3j3p¦¦papabear¦無理はない",
   ],
 };

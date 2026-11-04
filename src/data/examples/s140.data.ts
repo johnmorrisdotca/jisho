@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 141 of 144, from "1mi". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 141 of 144, from "1lw". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,25 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "1lwe2\t1¦｜関《かか》わり｜合《あ》いになったら、ドスどころかチャカが｜出《で》てきそうだ。¦Mess with them, and they won't just pull shivs on you; they're probably packing heat.¦3¦1mub¦kamojun¦JimBreen¦ドス",
+    "1lwqu\t1¦｜今晩《こんばん》そちらにお｜電話《でんわ》いたします。¦I'll call you up this evening.¦3¦3o5g¦Ianagisacos¦CK¦お電話",
+    "1lytk\t1¦｜治療《ちりょう》は｜苦痛《くつう》を｜長引《ながび》かせた。¦The treatment prolonged the agony.¦2¦3uir¦bunbuku¦JimBreen¦長引かせた",
+    "1lzp8\t1¦｜電話《でんわ》で｜良《りょう》の｜声《こえ》を｜聞《き》いたら｜胸《むね》がいっぱいになった。¦I got all choked up when I heard the voice of Ryo over the telephone.¦2¦2o87¦¦CN¦胸がいっぱいになった",
+    "1lzwq\t1¦｜我々《われわれ》は｜殺人者《さつじんしゃ》に｜対《たい》する｜怒《いか》りで｜胸一杯《むねいっぱい》になった。¦We were filled with anger against the murderer.¦1¦3zdu¦¦Shadd¦胸一杯\t2¦｜私《わたし》は｜庭《にわ》の｜花《はな》の｜香《か》りを｜胸一杯《むねいっぱい》に｜吸《す》い｜込《こ》んだ。¦I breathed the smell of the flowers in the garden.¦2¦3bkq¦¦¦胸一杯に",
+    "1m0r0\t1¦私はポップコーンを２袋買った。¦I bought two bags of popcorn.¦2¦3emt¦bunbuku¦CK¦袋",
+    "1m2au\t1¦ハンプダンプティは塀の上；ハンプダンプティは落っこった；王様の馬と王様の家来を連れてくる；ハンプダンプティを元通りにできなかった。¦Humpty Dumpty sat on a wall; Humpty Dumpty had a great fall. All the King's horses and all the King's men couldn't put Humpty Dumpty together again.¦1¦48ko¦¦Objectivesea¦落っこった",
+    "1m3mw\t1¦トムはエントリーシートを｜書《か》いている。¦Tom is filling out a job application form.¦5¦1q8gn¦tommy_san¦CK¦エントリーシート",
+    "1m4oo\t1¦｜彼《あれ》はそのあいだずっとタバコを｜吸《す》っていた。¦He kept on smoking all the time.¦3¦2fcy¦KK_kaku_¦CK¦そのあいだ",
+    "1m8dg\t1¦｜両《りょう》｜天《てん》びんにかけようたってそうはいきませんよ。¦You can't have it both ways.¦3¦1o61¦mookeee¦CK¦そうはいきません",
+    "1m8qs\t1¦ここのところ｜書籍《しょせき》の｜価《あたい》｜格《かく》が｜上《あ》がっている。¦The price of books is getting higher these days.¦1¦4t4n¦bunbuku¦CK¦ここのところ",
+    "1m93a\t1¦｜若《わか》い｜時《とき》は｜二度《にど》ない、どんとやれ、｜男《おとこ》なーら、｜人《じん》のやれないことをやれ。¦You're only young once. Be a man and take on the world.¦3¦36tq¦¦CM¦どんと",
+    "1mafc\t1¦｜僕《ぼく》は｜水泳《すいえい》が｜下手《へた》やねん。¦I'm not very good at swimming.¦1¦1r58¦KK_kaku_¦CK¦ねん",
+    "1mb1k\t3¦あんな｜愚《おろ》か｜者《もの》にはついぞ｜会《あ》ったことがない。¦Never did I see such a fool.¦1¦4x4f¦¦¦つい",
+    "1mctg\t1¦うわっ？これ、勉強に運動神経、全てのパラメータがMAXじゃないか！おまけにお金もカンストするまで貯まってる・・・すげえ。¦Wha? Study, reflexes, all the parameters are MAX! You've even saved money up to the limit ... Amazing.¦2¦1nak¦¦¦すげえ",
+    "1mea8\t1¦ギプスのせいで｜左手《ひだりて》の｜自由《じゆう》がきかない。¦I can't use my left hand because of the plaster cast.¦3¦1cgug¦JimBreen¦JimBreen¦のせいで",
+    "1mh6y\t1¦｜健康《けんこう》はお｜金《かね》よりも｜大切《たいせつ》だよ。¦Health is more important than money.¦1¦3rek¦small_snow¦CK¦よりも\t2¦｜人《じん》の｜幸福《こうふく》は｜財産《ざいさん》よりも｜人間性《にんげんせい》で｜決《き》まる。¦A man's happiness depends on what he is rather than on what he has.¦3¦33kv¦KK_kaku_¦CK¦よりも",
+    "1mhdw\t2¦｜仕事《しごと》をしているというよりかは、ただ｜会社《かいしゃ》にいるだけって｜感《かん》じ。¦Instead of being here to work, you get the sense that he's simply a permanent fixture here.¦3¦3mgj¦¦papabear¦よりか",
+    "1mhku\t1¦｜自分《じぶん》の｜直感《ちょっかん》が、いかに｜確《たしか》かなものか｜自慢《じまん》した｜手前《てまえ》、｜当《あ》てがはずれた｜時《とき》は｜首《くび》をやらなければならなくなった。¦Having boasted how sure his hunches were, he was forced to eat his hat when he guessed wrong.¦¦37ks¦¦¦首をやらなければならなく",
     "1mirc\t1¦この学校の３分の２が男子生徒です。¦Two-thirds of the students of this school are boys.¦¦4rrl¦¦CK¦男子生徒",
     "1mj5s\t1¦それでは、｜習慣《しゅうかん》は｜人間《にんげん》｜生活《せいかつ》の｜偉大《いだい》な｜道《みち》しるべである。¦Custom, then, is the great guide of human life.¦3¦4ers¦¦Dejo¦道しるべ",
     "1mjcg\t2¦お｜母《かあ》さんの｜身《み》になってごらんなさい。¦Try putting yourself in your mother's shoes.¦¦4uuy¦bunbuku¦CM¦身になって",
@@ -194,29 +213,5 @@ export const PIECE: WordsPiece = {
     "1okue\t1¦その｜会社《かいしゃ》には｜誰《だれ》でも｜資本参加《しほんさんか》できる。¦The company is open for equity participation by anybody.¦¦4jgy¦¦¦資本参加",
     "1okvn\t1¦｜彼《あれ》は｜居空《いあ》きとして｜知《ち》られ、｜日中《にっちゅう》でも｜家《いえ》に｜忍《しの》び｜込《こ》んで｜貴重品《きちょうひん》を｜盗《ぬす》むことで｜評判《ひょうばん》となっていた。¦He was known as a burglar of houses where occupants are present and had a reputation for sneaking in and stealing valuables even during the day.¦1¦776zn¦Septum4534¦Septum4534¦知られ",
     "1okyo\t1¦あいつはのらりくらりの｜仕事《しごと》にお｜忙《いそが》しい｜事《こと》だ。¦He is busy loafing on the job.¦3¦511l¦¦¦お",
-    "1ol2d\t1¦｜世界経済《せかいけいざい》の｜回復《かいふく》はまだ｜視野《しや》に｜入《い》ってこない。¦Recovery of the world economy is not yet in sight.¦1¦32nd¦¦¦視野に入って",
-    "1ol3e\t1¦あなたの｜興味《きょうみ》を｜引《ひ》くような｜本《もと》を｜読《よ》みなさい。¦Read such books as interest you.¦1¦502v¦¦¦興味を引く",
-    "1ol4y\t1¦この｜花《はな》は｜美《うつく》しいだけでなく、よい｜香《かお》りがします。¦These flowers are not only beautiful but also fragrant.¦2¦4rup¦bunbuku¦CK¦香りがします",
-    "1ol5a\t1¦｜人生《じんせい》は｜思《おも》うようにはいかないものだ。¦Life doesn't always go the way we want it to.¦4¦333i¦¦CM¦思うように",
-    "1ol5d\t1¦｜幽霊《ゆうれい》でも｜見《み》たかのように、｜彼女《かのじょ》は｜茫然《ぼうぜん》と｜立《た》っていた。¦She stood transfixed as if she had seen a ghost.¦¦1p66¦¦CM¦かのように",
-    "1ol5z\t1¦｜我々《われわれ》は｜互《たが》いにコミュニケーションをとる｜必要《ひつよう》がある。¦We need to communicate with each other.¦1¦3zf3¦¦CK¦コミュニケーションをとる",
-    "1ol7b\t1¦｜彼《あれ》は｜何事《なにごと》もなかったかのように｜話《はな》し｜続《つづ》けた。¦He went on talking as though nothing had happened.¦3¦2cdg¦tommy__san¦CK¦何事もなかったかのように",
-    "1ol8a\t1¦あいつの｜馬鹿《ばか》さ｜加減《かげん》には、もう、あきれちゃうよ。¦It constantly appalls me how stupid he can be.¦1¦5125¦tommy__san¦¦馬鹿さ加減",
-    "1ol8t\t1¦あの｜会社《かいしゃ》は｜先行《さ》き｜不安《ゆきふあん》な｜商売《しょうばい》をしています。¦That outfit is running a fly-by-night operation.¦3¦4yci¦¦CM¦先行き不安な",
-    "1ol8y\t1¦その｜洗濯機《せんたくき》の｜使《つか》い｜心地《ごこち》はどうですか。¦How do you find your washing machine?¦2¦4gun¦¦¦使い心地",
-    "1oleb\t1¦この｜大学《だいがく》の｜学生《がくせい》の｜中《なか》には｜教師《きょうし》に｜対《たい》する｜口《くち》の｜利《き》き｜方《かた》すら｜知《し》らないものがいる。¦Some students in this university don't even know how to talk to teachers.¦3¦4q9l¦bunbuku¦CK¦すら",
-    "1olfg\t1¦｜彼《あれ》は｜肥満体《ひまんたい》だ。¦He is overweight.¦1¦25q5¦bunbuku¦CK¦肥満体",
-    "1olh9\t1¦｜彼《あれ》は｜飛行機《ひこうき》｜事故《じこ》で｜一命《いちめい》を｜取《と》り｜留《と》めた。¦He survived the plane crash.¦1¦25of¦¦CK¦一命を取り留めた",
-    "1olk9\t1¦もちろん｜品《しな》も、そして｜郵送料《ゆうそうりょう》すらも｜返《かえ》ってこなかった。¦Of course, neither goods nor mailing fee returned.¦2¦4570¦¦bmorsello¦すらも",
-    "1oloa\t1¦｜彼女《かのじょ》ってまめだね。¦She doesn't have a lazy bone in her body.¦3¦21eg¦small_snow¦CK¦まめ",
-    "1olob\t1¦あいつはギャンブラーとして｜名《な》が｜通《とお》っている。¦That man is notorious as a gambler.¦4¦511q¦¦¦名が通っている",
-    "1oloe\t1¦いずれにしろ、｜明日《あした》は｜列車《れっしゃ》に｜乗《の》りなさい。¦In any case, catch the train tomorrow.¦3¦4ws5¦¦orcrist¦いずれにしろ",
-    "1olp7\t1¦ごゆっくりどうぞ。¦Take your time.¦5¦6hxzz¦small_snow¦CK¦ごゆっくり",
-    "1olqt\t1¦｜日《ひ》がたつにつれて｜我々《われわれ》の｜運動《うんどう》ははずみがついた。¦As the days passed, our campaign grew in momentum.¦1¦2mvl¦¦¦はずみがついた",
-    "1olr6\t1¦｜彼女《かのじょ》が｜子供《こども》の｜頃《ころ》のことを｜言《い》うのをよく｜耳《みみ》にする。¦I often hear her refer to her childhood.¦¦21m2¦¦CM¦子供の頃",
-    "1olrf\t1¦｜私《わたし》は｜意《い》に｜反《はん》して｜彼《あれ》と｜結婚《けっこん》した。¦I married him against my will.¦1¦3ebf¦¦CK¦意に反して",
-    "1ols4\t1¦｜彼女《かのじょ》が｜書《か》いたことはある｜意味《いみ》｜真実《しんじつ》です。¦What she wrote is true in a sense.¦3¦21kd¦¦sundown¦ある意味",
-    "1oltb\t1¦それは｜誰《だれ》にだって｜同《おな》じ｜事《こと》だ。¦It's the same for everyone.¦¦4e6b¦¦CK¦誰にだって",
-    "1oltc\t1¦｜誰《だれ》だって｜人前《ひとまえ》でからかわれるのは｜嫌《いや》だろ。¦Nobody likes to be made fun of in public.¦¦601hf¦bunbuku¦CK¦誰だって",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 25 of 219, from "0rg5m". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 25 of 219, from "0rg2". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,19 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0rg20\t硬化\tこうか\tn,vs,vi¦¦hardening¦vulcanization¦vulcanisation¦sclerosis¦curing¦軟化・1\tn,vs,vi¦¦hardening (of attitude, stance, etc.)¦stiffening¦toughening¦軟化・2\tn,vs,vi¦finc¦upturn (in the market)¦firming up¦軟化・3",
+    "0rg2a\t硬貨\tこうか\tn¦¦coin\tn¦¦hard currency¦軟貨・2",
+    "0rg2k\t硬球\tこうきゅう\tn¦¦hard ball¦regulation ball¦軟球",
+    "0rg2u\t硬玉\tこうぎょく\tn¦min¦jadeite",
+    "0rg34\t硬骨|鯁骨~rK\tこうこつ\tn¦¦bone¦硬骨\tn,adj-no,adj-na¦¦firmness (of character)¦backbone¦unyielding spirit",
+    "0rg3e\t硬式\tこうしき\tn,adj-no¦¦hard (esp. of hardball, tennis, etc.)¦軟式",
+    "0rg3o\t硬式テニス\tこうしきテニス\tn¦¦(regulation-ball) tennis (as opposed to soft tennis)¦軟式テニス",
+    "0rg3y\t硬質\tこうしつ\tn,adj-no¦¦hardness¦stiffness",
+    "0rg48\t硬水\tこうすい\tn¦¦hard water¦軟水",
+    "0rg4i\t硬直\tこうちょく\tn,vs,vi¦¦stiffening¦rigidity¦rigor¦stiffness¦ossification¦petrification",
+    "0rg4s\t硬度\tこうど\tn¦¦hardness¦solidity",
+    "0rg52\t硬軟\tこうなん\tn¦¦hardness and softness¦hard line and moderate line",
+    "0rg5c\t硬派\tこうは\tn¦¦hard-liners¦diehards¦hawks\tn,adj-na¦¦(young) man with traditionally masculine interests¦tough boy¦man's man\tn¦¦hard news¦reporter who covers political and economic affairs\tn,adj-na¦¦strait-laced type (with respect to relationships)\tn¦¦bullish traders",
     "0rg5m\t硬変\tこうへん\tn,vs¦¦cirrhosis",
     "0rg5w\t稿\tこう\tn,vs¦¦manuscript¦version¦draft",
     "0rg66\t稿本\tこうほん\tn¦¦manuscript",
@@ -931,6 +944,7 @@ export const PIECE: WordsPiece = {
     "0rnle\t根本的\tこんぽんてき\tadj-na¦¦fundamental¦basic",
     "0rnlo\t梱包|こん包~sK\tこんぽう\tn,vs,vt¦¦packing¦crating¦packaging",
     "0rnly\t混ぜる|交ぜる|雑ぜる~iK\tまぜる\tv1,vt¦¦to mix¦to stir¦to blend",
+    "0rnm8\t混ぜ物|混ぜもの~sK|まぜ物~sK\tまぜもの\tn¦¦mixture¦adulteration",
     "0rnn2\t混交|混淆|渾淆~rK\tこんこう\tn,vs,vt,vi¦¦mixture¦intermixture¦mixing up¦jumbling together\tn,vs,vt,vi¦ling¦contamination",
     "0rnnc\t混合\tこんごう\tn,vs,vt,vi¦¦mixing¦mixture¦meld\tn,vs,vt,vi¦¦miscegenation",
     "0rnnm\t混載\tこんさい\tn,vs,adj-no¦¦mixed loading¦consolidation",
@@ -946,6 +960,7 @@ export const PIECE: WordsPiece = {
     "0rnqe\t混濁|溷濁~rK\tこんだく\tn,vs,vi¦¦becoming turbid¦becoming muddy¦becoming cloudy¦becoming opaque\tn,vs,vi¦¦becoming muddled (of thoughts, senses, etc.)¦growing dim (of consciousness)\tn,vs,vi¦¦disorder¦chaos",
     "0rnqo\t混同\tこんどう\tn,vs,vt¦¦confusion¦mixing¦merger",
     "0rnqy\t混沌|渾沌~rK|混とん~sK\tこんとん\tn,adj-no¦¦chaos¦confusion¦disorder\tadj-t,adv-to¦¦chaotic¦confused¦uncertain¦disarrayed",
+    "0rnri\t混入\tこんにゅう\tn,vs,vt,vi¦¦mixing¦blending¦adding¦adulteration¦contamination",
     "0rnrs\t混分数\tこんぶんすう\tn¦math¦mixed fraction\tn¦¦compound number",
     "0rns2\t混紡\tこんぼう\tn,vs,vt¦¦mixed yarn¦mixed spinning",
     "0rnsc\t混迷\tこんめい\tn,vs,vi¦¦turmoil¦chaos¦confusion",
@@ -1009,15 +1024,5 @@ export const PIECE: WordsPiece = {
     "0ro9k\t差し控える|差控える\tさしひかえる\tv1,vt¦¦to be moderate in¦to be temperate in¦to not do too much of\tv1,vt¦¦to refrain (from doing)¦to withhold (an announcement, comment, etc.)\tv1,vi¦¦to be beside¦to be close by",
     "0ro9u\t差し込む|差込む|差しこむ~sK|さし込む~sK\tさしこむ\tv5m,vt¦¦to insert¦to put in¦to thrust in¦to plug in\tv5m,vi¦¦to come in (of light)¦to shine in¦to stream in¦to pour in¦also written as 射し込む\tv5m,vi¦¦to have a griping pain (in the stomach, chest, etc.)",
     "0roa4\t差し支える|差支える\tさしつかえる\tv1,vi¦¦to interfere (with)¦to hinder¦to be hindered (from doing)¦to become impeded¦to have difficulty¦to suffer inconvenience",
-    "0roae\t差し止め|差止め|差止\tさしとめ\tn¦¦prohibition¦ban¦suspension¦injunction",
-    "0roao\t差し止める|差止める~io\tさしとめる\tv1,vt¦¦to stop¦to prohibit¦to forbid someone to do something",
-    "0roay\t差し歯|差歯\tさしば\tn¦¦post crown¦dowel crown¦false tooth\tn¦¦\"tooth\" on a geta clog",
-    "0rob8\t差し出がましい|差出がましい~sK\tさしでがましい\tadj-i¦¦forward¦officious¦impertinent¦intrusive",
-    "0robi\t差し出す|差出す~sK|さし出す~sK|差しだす~sK\tさしだす\tv5s,vt¦¦to hold out¦to extend (e.g. a hand)\tv5s,vt¦¦to present¦to submit¦to tender\tv5s,vt¦¦to sacrifice¦to give (up)\tv5s,vt¦¦to send¦to forward",
-    "0robs\t差し障り|差しさわり|差障り~sK\tさしさわり\tn¦¦hindrance¦obstacle¦impediment¦adverse effect\tn¦¦annoyance (to others)¦offence¦harm",
-    "0roc2\t差し障りのない\tさしさわりのない\texp,adj-i¦¦innocuous¦inoffensive",
-    "0rocc\t差し障る|さし障る\tさしさわる\tv5r,vi¦¦to hinder¦to obstruct¦to adversely affect",
-    "0rocm\t差し上げる|差上げる|さし上げる~sK|差しあげる~sK\tさしあげる\tv1,vt¦¦to lift up¦to hold up¦to raise\tv1,vt¦hum¦to give¦to present¦to offer\taux-v,v1¦hum¦to do (for someone)¦after -te form of verb; more respectful than 〜して上げる",
-    "0rocw\t差し伸べる|差し延べる|差伸べる|差延べる\tさしのべる\tv1,vt¦¦to hold out¦to extend (e.g. one's hands)¦to stretch¦to reach out for\tv1,vt¦¦to thrust (javelin)\tv1,vt¦¦to offer (e.g. aid, help, etc.)¦手を差し伸べる",
   ],
 };

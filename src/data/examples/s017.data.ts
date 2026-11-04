@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 18 of 144, from "0ozds". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 18 of 144, from "0ozc". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0ozcy\t1¦｜彼《あれ》は｜東京《とうきょう》に｜一年間《いちねんかん》ずっといます。¦He has been in Tokyo for a year.¦3¦26j5¦bunbuku¦CK¦一年間",
+    "0ozd8\t1¦わたしは｜去年《きょねん》｜一年《いちねん》｜生《うぶ》でした。¦I was a first year student last year.¦4¦4405¦¦CK¦一年生\t3¦なぜ｜一種《いっしゅ》の｜植物《しょくぶつ》が｜一年生《いちねんせい》の｜草本《そうほん》になったり、｜多年生《たねんせい》の｜木本《もくほん》になったりするのでしょうか。¦I wonder why it is that some plants become annuals and others perennials?¦2¦1n14¦¦rul¦一年生",
     "0ozds\t1¦その｜島《しま》は｜一年中《いちねんじゅう》あたたかい。¦The island is warm all year.¦2¦4g3l¦bunbuku¦CK¦一年中",
     "0ozf6\t1¦｜小説《しょうせつ》の｜新《あたら》しい｜一派《いっぱ》が｜起《お》こった。¦A new school of fiction has grown up.¦1¦35dq¦¦¦一派",
     "0ozfq\t1¦コップ１杯の水をください。¦Give me a glass of water, please.¦3¦4sxl¦mookeee¦CK¦１杯\t2¦仕事の後で、一杯どう？¦How about going out for a drink after work?¦3¦3mi7¦small_snow¦CK¦一杯\t3¦｜列車《れっしゃ》は｜乗客《じょうきゃく》でいっぱいだった。¦The train was full of passengers.¦3¦1nsd¦mookeee¦CK¦いっぱい\t4¦このボトルに｜水《みず》をいっぱい｜入《い》れてください。¦Please fill this bottle with water.¦5¦4s6e¦small_snow¦CK¦いっぱい\t5¦｜彼女《かのじょ》は｜香港《ほんこん》に｜友人《ゆうじん》がいっぱいいる。¦She has many friends in Hong Kong.¦2¦1xis¦¦CK¦いっぱい\t6¦たとえ｜一日《いちにち》いっぱい｜掛《か》かってもそのタイプを｜仕上《しあ》げます。¦Even if it takes me the whole day, I will do the typing.¦3¦1ny8¦¦CC¦いっぱい",
@@ -198,9 +200,5 @@ export const PIECE: WordsPiece = {
     "0p3no\t1¦｜右上《みぎうえ》の｜親知《おやし》らずが｜痛《いた》みます。¦My upper right wisdom tooth hurts.¦3¦42j4¦bunbuku¦CK¦右上",
     "0p3ny\t1¦｜右折《うせつ》しなさい、そうすれば｜私《わたし》の｜事務所《じむしょ》が｜見《み》つかります。¦Turn to the right, and you'll find my office.¦3¦42j3¦¦al_ex_an_der¦右折",
     "0p3oi\t1¦｜本日《ほんじつ》｜乗馬《じょうば》｜後《あと》、｜馬《うま》の｜手入《てい》れをしている｜時《とき》にうっかり｜右足《みぎあし》を｜踏《ふ》まれた。¦Today, after riding, while grooming the horse I carelessly got my right foot trod on.¦1¦1mev¦mookeee¦¦右足\t2¦｜私《わたし》はその｜事《こと》｜故《ゆえ》で｜右足《みぎあし》を｜負傷《ふしょう》した。¦I got my right leg hurt in the accident.¦1¦3fjd¦bunbuku¦CK¦右足",
-    "0p3qq\t1¦２年前に右目を失明しました。¦I lost the eyesight in my right eye two years ago.¦3¦51n4¦e4zh1nmcz¦CM¦右目",
-    "0p3ru\t1¦｜右腕《みぎうで》を｜骨折《こっせつ》したようです。¦I think my right arm is broken.¦2¦42ir¦¦CK¦右腕",
-    "0p3s4\t1¦｜宇宙《うちゅう》には｜限《き》りはない。¦There is no limit to the universe.¦1¦42il¦¦CK¦宇宙",
-    "0p3t8\t1¦｜地球《ちきゅう》は｜宇宙空間《うちゅうくうかん》に｜漂《ただよ》う｜球体《きゅうたい》にすぎない。¦The earth is just a sphere suspended in space.¦1¦2pz0¦¦U2FS¦宇宙空間",
   ],
 };

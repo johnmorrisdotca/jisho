@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 103 of 144, from "0zqnq". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 103 of 144, from "0zq1s". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,16 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0zq1s\t1¦１９９０年代は湾岸戦争で始まった。¦The 1990s began with the Gulf War.¦2¦520c¦mookeee¦CK¦湾岸戦争",
+    "0zq4u\t1¦｜彼女《かのじょ》は｜家政学《かせいがく》の｜一部《いちぶ》として｜衛生学《えいせいがく》を｜学《まな》んでいる。¦She studies hygiene as part of her domestic science course.¦1¦1y3n¦¦shekitten¦衛生学",
+    "0zq6s\t1¦｜東京《とうきょう》はたくさんの｜衛星都市《えいせいとし》に｜囲《かこ》まれている。¦Tokyo is surrounded by many satellite cities.¦1¦2nuk¦¦¦衛星都市",
+    "0zq7m\t1¦この｜重役《じゅうやく》のポストに｜適当《てきとう》な｜人物《じんぶつ》を｜見《み》つけるには、｜人材《じんざい》｜斡旋業者《あっせんぎょうしゃ》に｜依頼《いらい》する｜必要《ひつよう》がある。¦We'll need a head hunting agency to find the right man for this executive position.¦¦4qpi¦¦CK¦斡旋業者",
+    "0zq86\t1¦｜私《わたし》はそうしたことを｜週末《しゅうまつ》に｜考《かんが》え｜始《はじ》めたのだが、それはかん｜木《こ》の｜下《した》に｜残《のこ》っている｜葉《は》を｜残《のこ》らずかき｜集《あつ》めている｜時《とき》のことであった。¦I got thinking about it over the weekend, when I was raking the last of the leaves out from under the bushes.¦3¦3ft8¦¦sundown¦かん木",
+    "0zqf4\t1¦｜軍備競争《ぐんびきょうそう》の｜狂気《きょうき》と｜不道徳《ふどうとく》に｜終止符《しゅうしふ》を｜打《う》つ｜時《とき》が、｜人類《じんるい》にやってきた。¦The time has come for mankind to put an end to the madness and immorality of the arms race.¦1¦3sb0¦¦papabear¦軍備競争",
+    "0zqhm\t1¦その｜風船《ふうせん》は｜風《ふり》でどこかに｜運《はこ》び｜去《さ》られた。¦The balloon was carried away somewhere by the wind.¦3¦4fnv¦¦sundown¦運び去られた",
+    "0zqhw\t1¦｜運《うん》まかせにするな。¦Don't leave it up to chance.¦4¦4276¦mookeee¦CK¦運まかせ",
+    "0zqmw\t1¦｜多《おお》くの｜運動選手《うんどうせんしゅ》は｜青年時代《せいねんじだい》に｜盛《さか》りを｜極《き》める。¦Most athletes are at their best during their early manhood.¦1¦2ytm¦¦¦運動選手",
+    "0zqng\t1¦｜運転手《うんてんしゅ》は｜運転台《うんてんだい》からもんどり｜打《う》って｜投《な》げ｜出《だ》された。¦The driver was thrown from his seat head over heels.¦3¦4268¦¦auxitt¦運転台",
     "0zqnq\t1¦｜運転免許証《うんてんめんきょしょう》を｜持《も》っていますか。¦Do you have a driver's license?¦1¦425p¦bunbuku¦CK¦運転免許証",
     "0zqpy\t1¦｜運試《うんだめ》しだ、やってごらん。¦Take your chance, and do it.¦4¦4272¦¦Yepthatscool¦運試し",
     "0zqqs\t1¦｜囲《かこ》い｜込《こ》みに｜関《かん》する｜要点《ようてん》は、エスニック・グループの｜構成《こうせい》を｜明確《めいかく》に｜記述《きじゅつ》しなければならないということである。¦The point about enclosure is that the configuration of ethnic groups must be clearly described.¦2¦43h1¦¦RudeGuyGames¦囲い込み",
@@ -205,16 +215,5 @@ export const PIECE: WordsPiece = {
     "107bq\t1¦｜彼《あ》の｜突然《とつぜん》の｜死《し》は｜悲劇的《ひげきてき》｜事件《じけん》だった。¦His sudden death was a tragedy.¦¦2ht3¦¦CK¦悲劇的",
     "107c0\t1¦｜記事《きじ》の｜論調《ろんちょう》は｜一種《いっしゅ》の｜悲観論《ひかんろん》だった。¦The article's tone was one of pessimism.¦3¦3x9p¦¦fishda¦悲観論",
     "107ca\t1¦｜楽観主義《らっかんしゅぎ》｜者《もの》は｜鏡《かがみ》をのぞきこんでますます｜楽天的《らくてんてき》に、｜悲観論者《ひかんろんしゃ》はますます｜悲観的《ひかんてき》になる。¦The optimist looks into a mirror and becomes more optimistic, the pessimist more pessimistic.¦¦3y2u¦¦CK¦悲観論者",
-    "107dy\t1¦｜分相応《ぶんそうおう》の｜暮《く》らしをするように｜努《つと》めなさい。¦Try to live within your income.¦¦1sl5¦¦¦分相応",
-    "107rk\t1¦｜配達人《はいたつにん》が｜彼女《かのじょ》｜宛《あて》の｜手紙《てがみ》を｜置《お》いていった。¦The mailman left a letter for her.¦¦2lrn¦¦CK¦配達人",
-    "107wu\t1¦ボーイング｜社《やしろ》は｜海上自衛隊《かいじょうじえいたい》｜用《よう》の｜飛行艇《ひこうてい》を｜開発《かいはつ》しました。¦Boeing developed a flying boat for the Maritime Self-Defense Force.¦1¦1mze¦mookeee¦CM¦飛行艇",
-    "107xe\t1¦｜彼《あれ》はとびぬけて｜分別《ぶんべつ》のある｜人《ひと》だ。¦He is by far the most sensible.¦¦2e0z¦¦CK¦とびぬけて",
-    "1082o\t1¦｜私《わたし》は｜捕虫網《ほちゅうあみ》で｜蝶《ちょう》を｜捕《つか》まえた。¦I captured butterflies with a net.¦1¦39yq¦¦CK¦捕虫網",
-    "10888\t1¦｜債券発行《さいけんはっこう》による｜調達《ちょうたつ》｜資金《しきん》は｜予算《よさん》の｜赤字《あかじ》を｜補填《ほてん》するのに｜使《つか》われる。¦The proceeds from the bond issue will be used to finance the budget deficit.¦¦3nt7¦¦CK¦補填",
-    "108c4\t1¦このナイフはパンを｜薄切《うすぎ》りにするのにちょうどよい。¦This knife is just good for slicing a loaf.¦2¦4seb¦¦¦薄切り",
-    "108j2\t1¦｜群集《ぐんしゅう》は｜勝者《しょうしゃ》に｜拍手《はくしゅ》｜喝采《かっさい》を｜送《おく》った。¦The crowd gave the winner a big hand.¦1¦3sc1¦KK_kaku_¦CK¦拍手喝采",
-    "108jw\t1¦｜彼《あれ》は｜迫害者《はくがいしゃ》を｜懲《こ》らしめて｜人民《じんみん》たちのあだを｜討《う》つだろう。¦He will avenge the people on their oppressor.¦1¦264t¦¦¦迫害者",
-    "108pg\t1¦りんごを｜盗《ぬす》んでいるところを｜捕《つか》まった｜子供《こども》は、おめずおくせず｜罰《ばつ》を｜受《う》けた。¦The child who was caught stealing apples bravely faced the music in accepting his punishment.¦1¦44hq¦¦Dejo¦おめずおくせず",
-    "108ry\t1¦｜彼《あれ》には｜扶養家族《ふようかぞく》が｜多《おお》かった。¦He had a large family to support.¦1¦2jmr¦¦CK¦扶養家族",
   ],
 };

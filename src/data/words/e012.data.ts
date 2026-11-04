@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 13 of 219, from "0opjm". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 13 of 219, from "0opj". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0opj2\t葦笛|蘆笛|芦笛|笳|よし笛~sK|あし笛~sK\tあしぶえ|よしぶえ~~葦笛,蘆笛,芦笛|ろてき~~蘆笛,芦笛\tn¦¦reed pipe¦reed flute",
+    "0opjc\t芦毛|葦毛|あし毛|蘆毛\tあしげ\tn,adj-no¦¦dapple-grey (gray) (horse coat colour)",
     "0opjm\t梓\tあずさ|し|アズサ~~~!\tn¦uk¦Japanese cherry birch (Betula grossa)¦あずさ|アズサ¦夜糞峰榛\tn¦¦yellow catalpa (Catalpa ovata)¦あずさ|アズサ¦キササゲ\tn¦¦Japanese mallotus (Mallotus japonicus)¦あずさ|アズサ¦赤芽柏・1\tn¦¦printing block\tn¦abbr¦catalpa bow¦あずさ¦梓弓\tn¦abbr¦catalpa medium¦あずさ¦梓巫女",
     "0opjw\t梓弓\tあずさゆみ\tn¦Shinto¦catalpa bow¦spirit bow¦bow used to summon spirits, made of Japanese cherry birch, catalpa, or other wood",
     "0opk6\t圧し合う|圧しあう\tへしあう\tv5u,vi¦¦to jostle¦to push",
@@ -303,7 +305,7 @@ export const PIECE: WordsPiece = {
     "0orx6\t偉徳|懿徳\tいとく\tn¦rare¦great virtue¦outstanding virtue",
     "0orxg\t偉烈\tいれつ\tn¦¦great achievement",
     "0orxq\t囲い\tかこい\tn¦¦enclosure¦fence¦wall¦pen¦paling\tn¦¦storage (of fruit, vegetables, etc.)\tn¦¦partitioned area of a room for conducting tea ceremonies\tn¦shogi¦castle¦strong defensive position¦5",
-    "0ory0\t囲う\tかこう\tv5u,vt¦¦to enclose¦to surround¦to encircle¦to fence¦to wall in\tv5u,vt¦¦to shelter (e.g. a criminal)¦to shield¦to hide¦to protect\tv5u,vt¦¦to store (vegetables, fruit, etc.)¦to preserve¦4\tv5u,vt¦arch¦to protect¦5",
+    "0ory0\t囲う\tかこう\tv5u,vt¦¦to enclose¦to surround¦to encircle¦to fence¦to wall in\tv5u,vt¦¦to shelter (e.g. a criminal)¦to shield¦to hide¦to protect\tv5u,vt¦¦to keep (e.g. a mistress)\tv5u,vt¦¦to store (vegetables, fruit, etc.)¦to preserve\tv5u,vt¦arch¦to protect",
     "0orya\t囲み記事\tかこみきじ\tn¦¦(newspaper) column",
     "0oryk\t囲む\tかこむ|かごむ~ok\tv5m,vt¦¦to surround¦to encircle¦to enclose¦to fence¦to wall in\tv5m,vt¦¦to besiege¦to lay siege to\tv5m,vt¦¦to play (go, shogi, etc.)",
     "0oryu\t囲碁\tいご\tn¦¦go (board game)",
@@ -478,7 +480,7 @@ export const PIECE: WordsPiece = {
     "0otdy\t異人\tいじん\tn¦¦foreigner (esp. one of European ancestry)\tn¦¦different person",
     "0ote8\t異数\tいすう\tn,adj-no¦¦unusual¦exceptional¦phenomenal",
     "0otei\t異姓\tいせい\tn¦¦different surname¦different family name¦同姓",
-    "0otes\t異性\tいせい\tn,adj-no¦chem¦isomerism¦2",
+    "0otes\t異性\tいせい\tn,adj-no¦¦the opposite sex¦同性\tn,adj-no¦chem¦isomerism",
     "0otf2\t異性体\tいせいたい\tn¦chem¦isomer",
     "0otfc\t異星人\tいせいじん\tn¦¦alien (from another planet)",
     "0otfm\t異説\tいせつ\tn¦¦different view¦alternative theory¦dissenting view",
@@ -1019,10 +1021,5 @@ export const PIECE: WordsPiece = {
     "0oxpi\t一緒にする\tいっしょにする\texp,vs-i¦¦to do together\texp,vs-i¦¦to put together¦to lump together¦to mix¦to join\texp,vs-i¦¦to regard in the same light¦to put in the same category¦to class ... with ...¦to confuse\texp,vs-i¦¦to arrange for (two people) to marry",
     "0oxps\t一書\tいっしょ\tn¦¦one letter¦one book",
     "0oxq2\t一助\tいちじょ\tn¦¦(some small) help¦an aid¦some assistance",
-    "0oxqc\t一升\tいっしょう\tn¦¦one shō (approx. 1.8 litres)¦升",
-    "0oxqm\t一升瓶|一升びん~sK|一升ビン~sK|一升壜~sK\tいっしょうびん\tn¦¦one-shō bottle (approx. 1.8 litres)¦升",
-    "0oxqw\t一将\tいっしょう\tn¦mil¦general",
-    "0oxr6\t一笑\tいっしょう\tn,vs¦¦laugh¦smile",
-    "0oxrg\t一笑に付す|一笑にふす~sK|一笑に伏す~sK\tいっしょうにふす\texp,v5s¦¦to laugh (something) off¦to dismiss with a laugh¦to pooh-pooh",
   ],
 };

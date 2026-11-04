@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 37 of 144, from "0rdge". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 37 of 144, from "0rd3c". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,21 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0rd3c\t1¦このワイン｜口当《くちあ》たりが｜良《よ》くて｜飲《の》みやすいわ。¦This is a smooth wine which goes down easy.¦3¦4s1s¦small_snow¦sundown¦口当たり",
+    "0rd3w\t1¦お｜母《かあ》さんに｜口答《くちごた》えしてはいけませんよ。¦Don't answer your mother back.¦4¦4uv5¦¦sundown¦口答え",
+    "0rd46\t1¦｜刑事《けいじ》はその｜場《ば》で｜彼《あ》の｜口頭《こうとう》｜証言《しょうげん》を｜書《か》き｜取《と》った。¦The detective took down his oral testimony on the spot.¦1¦3sao¦¦¦口頭",
+    "0rd50\t1¦｜口内炎《こうないえん》ができて｜食事《しょくじ》する｜時《とき》、｜痛《いた》くて｜痛《いた》くて。¦I have ulcers in my mouth, so it's very painful when I eat.¦1¦3q69¦bunbuku¦¦口内炎",
+    "0rd6o\t1¦｜彼《あれ》は｜手八丁口八丁《てはっちょうくちはっちょう》だ。¦He is as ready to talk as to work.¦1¦28lc¦small_snow¦¦口八丁",
+    "0rd82\t1¦｜彼女《かのじょ》を｜胸《むね》に｜抱《だ》き｜寄《よ》せて、｜額《がく》に｜口付《くちづ》けをした。¦I clutched her to my chest, and kissed her on her forehead.¦2¦1lht¦fcbond¦fcbond¦口付け",
+    "0rd96\t1¦私の祖母は、口癖のように１００歳まで生きると言っていましたが、８５歳で亡くなりました。¦My grandmother used to say that she would live to be a hundred, but she died at the age of 85.¦1¦3hw2¦small_snow¦¦口癖",
+    "0rdby\t1¦その｜来《き》たばかりの｜子《こ》はおどおどして｜口《くち》ごもった。¦The new boy had a nervous stammer.¦4¦4f5a¦bunbuku¦CK¦口ごもった",
+    "0rdc8\t1¦｜私《わたし》たちはまた｜昨夜《ゆうべ》また｜口論《こうろん》をした。¦We had words again last night.¦3¦3k8s¦¦CM¦口論",
+    "0rddc\t1¦これは｜若者《わかもの》｜向《む》きの｜車《くるま》です。¦This is a car for young people.¦3¦4of8¦arnab¦CK¦向き",
+    "0rddw\t1¦｜女《おんな》の｜子《こ》はお｜互《たが》いに｜向《む》き｜合《あ》っている。¦The girls are facing each other.¦3¦35oq¦¦CK¦向き合っている",
+    "0rdeg\t1¦｜私《わたし》の｜方《ほう》を｜向《む》いてください。¦Turn toward me, please.¦3¦3hhv¦bunbuku¦CK¦向いて\t4¦この｜生地《きじ》は｜洋服《ようふく》をつくるのには｜向《む》かない。¦This material is not suitable for a dress.¦3¦4qgb¦¦CM¦向かない\t4¦｜彼《あれ》は｜先生《せんせい》に｜向《む》いてない。¦He's not cut out for teaching.¦3¦27ie¦bunbuku¦CK¦向いてない\t5¦｜足《あし》の｜向《む》くままに｜歩《ある》いた。¦We let our legs do the leading.¦3¦2zx5¦KK_kaku_¦¦向く\t5¦ついそちらに｜足《あし》が｜向《む》いてしまう。¦I often feel like just going over there.¦3¦4ce9¦¦AlanF_US¦向いて",
+    "0rdeq\t1¦｜乗《の》り｜物《もの》は｜子供向《こどもむ》けである。¦Rides in the cars are for kids.¦3¦34sb¦¦¦向け",
+    "0rdf0\t1¦｜強盗《ごうとう》は｜店員《てんいん》に｜銃《じゅう》を｜向《む》けた。¦The robber aimed his gun at the clerk.¦1¦3v95¦¦CK¦向けた\t2¦｜今度《こんど》の｜土曜日《どようび》の｜朝《あさ》、シカゴに｜向《む》けて｜出発《しゅっぱつ》します。¦I'm leaving for Chicago next Saturday morning.¦3¦3ott¦bunbuku¦CN¦向けて\t5¦｜過去《かこ》ではなく、｜未来《みらい》に｜向《む》けて｜取《と》り｜組《く》むのが｜当《とう》｜社《しゃ》の｜方針《ほうしん》です。¦Our policy is to build for the future, not the past.¦2¦3zwo¦bunbuku¦CK¦向けて",
+    "0rdg4\t1¦｜彼女《かのじょ》は｜背《せ》が｜低《ひく》すぎて｜塀《へい》の｜向《む》こうがみえなかった。¦She was too short to see over the fence.¦1¦1vk9¦bunbuku¦CK¦向こう\t2¦その｜男《おとこ》の｜子《こ》は｜向《む》こうにいます。¦The boy is over there.¦3¦4glv¦¦CK¦向こう\t4¦｜向《む》こうの｜思《おも》う｜壷《つぼ》だぞ。¦You will play into their hands.¦¦3q4w¦small_snow¦¦向こう",
     "0rdge\t1¦この｜事《こと》があったのは、ヨルダンの｜向《む》こう｜岸《ぎし》のベタニヤであって、ヨハネはそこで、バプテスマを｜授《さず》けていた。¦This all happened at Bethany on the other side of Jordan, where John was baptizing.¦1¦4r22¦¦CP¦向こう岸",
     "0rdgo\t1¦｜向《む》こう｜見《み》ずな｜運転《うんてん》の｜為《ため》｜彼《あれ》は｜免許《めんきょ》を｜取《と》り｜上《あ》げられた。¦He had his license taken away because of reckless driving.¦1¦3q4n¦¦CK¦向こう見ずな",
     "0rdj6\t1¦｜近代的《きんだいてき》｜方法《ほうほう》で｜産業《さんぎょう》は｜向上《こうじょう》した。¦Modern methods improved industry.¦¦3uqb¦¦Zifre¦向上",
@@ -189,19 +204,5 @@ export const PIECE: WordsPiece = {
     "0rgw0\t1¦｜荒唐無稽《こうとうむけい》と｜皆《みな》に｜言《い》われた｜彼《あ》のビジネスプランだけど、｜今《いま》となっては｜我々《われわれ》の｜不明《ふめい》を｜恥《は》じるしかないのかね。¦Every one of us who ridiculed his business plan as a bunch of hokum should be embarrassed we did.¦¦3ptg¦¦¦荒唐無稽",
     "0rgwa\t1¦その｜船《ふね》は｜荒波《あらなみ》にあった。¦The ship encountered rough seas.¦2¦4gtn¦¦sundown¦荒波",
     "0rgwk\t1¦その｜国《くに》は｜戦争《せんそう》で｜荒廃《こうはい》してしまった。¦The country was wasted by war.¦1¦4iho¦¦¦荒廃",
-    "0rgy8\t1¦｜最《もっと》も｜荒涼《こうりょう》たる｜日《ひ》は｜一日中《いちにちじゅう》｜笑《わら》わなかった｜日《ひ》である。¦The most wasted day of all is that on which we have not laughed.¦2¦3ns5¦¦¦荒涼たる",
-    "0rgyi\t1¦彼は１０行に１０個の間違いをした。¦He made ten mistakes in as many lines.¦2¦2gza¦¦sundown¦行",
-    "0rgys\t1¦ふと通りに目をやると、行き交う人の中に、１人立ち止まり俺を見下ろす者がいた。¦As I glanced at the street there was somebody looking down at me in the middle of those walking past each other.¦¦1mzx¦mookeee¦¦行き交う",
-    "0rgzc\t1¦｜彼《あれ》は｜行《い》き｜先《さき》の｜違《ちが》う｜列車《れっしゃ》に｜乗《の》るほど｜不注意《ふちゅうい》ではない。¦He is not so careless as to take the wrong train.¦3¦2atj¦¦¦行き先\t2¦｜行《い》き｜先《さき》の｜住所《じゅうしょ》はおわかりですか。¦Do you have an address?¦3¦3psf¦¦CM¦行き先",
-    "0rgzm\t1¦「｜時間通《じかんどお》りに、｜教室《きょうしつ》にうまく｜行《い》き｜着《つ》くことができる」と｜彼《あれ》は｜思《おも》った。¦\"I can make it to my class on time,\" he thought.¦3¦52bh¦e4zh1nmcz¦CM¦行き着く\t2¦｜労働《ろうどう》｜側《そば》と｜経営《けいえい》｜側《そば》の｜意見《いけん》｜不一致《ふいっち》はストライキに｜行《い》きつくかもしれない。¦The disagreement between the union and management could lead to a strike.¦1¦1noj¦arnab¦CK¦行きつく",
-    "0rh06\t1¦その｜庭《にわ》は｜手入《てい》れが｜行《い》き｜届《とど》いている。¦The garden is tended with great care.¦2¦4g9p¦¦sundown¦行き届いている",
-    "0rh0q\t1¦｜激《はげ》しい｜雨《あめ》が｜彼《かれ》らの｜行《ゆ》く｜手《て》を｜妨《さまた》げた。¦The heavy rain prevented them from going there.¦1¦3rs6¦bunbuku¦CK¦行く手",
-    "0rh10\t1¦マウスとキーボードを行ったりきたりするのが煩雑なので、キーボードのみで操作できるようショートカットキーはないのでしょうか？¦It's a fiddle going to and fro between the keyboard and mouse so are there shortcuts to allow operation using only the keyboard?¦1¦1m32¦fcbond¦fcbond¦行ったりきたり",
-    "0rh2e\t1¦｜彼《あれ》は｜自分《じぶん》の｜行為《こうい》を｜正当化《せいとうか》しようとしている。¦He is trying to justify his act.¦¦28zw¦Ianagisacos¦¦行為",
-    "0rh2o\t1¦｜行員《こういん》は｜私《わたし》に｜過《あやま》ちを｜認《みと》めた。¦The clerk admitted his mistake to me.¦3¦3pra¦¦CK¦行員",
-    "0rh3s\t1¦｜文字《もじ》を｜大《おお》きくし、｜文字間《もじかん》や｜行《ぎょう》｜間《あいだ》に｜余裕《よゆう》をもたせ、｜高齢者《こうれいしゃ》の｜方《ほう》や、｜視力《しりょく》に｜障害《しょうがい》のある｜方《ほう》が｜読《よ》み｜易《やす》いように｜注意《ちゅうい》しました。¦I took care to make the letters large and be generous with character and line spacing in order for it to be easy to read for the elderly and those who have problems with their sight.¦1¦1lw2¦fcbond¦fcbond¦行間",
-    "0rh42\t1¦｜彼女《かのじょ》は｜行《ぎょう》｜儀《ぎ》が｜極《き》めて｜上品《じょうひん》である。¦She is quite decent in conduct.¦1¦1xiw¦¦¦行儀",
-    "0rh4m\t1¦ニクソンはウォーターゲート｜事件《じけん》に｜関《かん》し、｜黙秘権《もくひけん》を｜行使《こうし》して｜無視《むし》しようとしたが、｜結局《けっきょく》｜明《あか》るみにでた。¦Nixon tried to stonewall through Watergate by ignoring it, but it didn't work.¦¦49e1¦¦RoyalBee¦行使",
-    "0rh56\t1¦メグは｜学校《がっこう》のいろいろな｜行《ぎょう》｜事《こと》に｜参加《さんか》する。¦Meg attends many school affairs.¦3¦466k¦¦CP¦行事",
   ],
 };

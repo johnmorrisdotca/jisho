@@ -125,6 +125,7 @@ export const PIECE: WordsPiece = {
     "autoscaling\tオートスケーリング",
     "autoscopy\tじこぞうげんし",
     "autosomal\tじょうせんしょくたいゆうせいいでん",
+    "autosome\tじょうせんしょくたい",
     "autostrada\tアウトストラーダ",
     "autosuggestion\tじこあんじ",
     "autotherapy\tしぜんちりょう",
@@ -634,7 +635,5 @@ export const PIECE: WordsPiece = {
     "backup data\tたいひ",
     "backus\tバッカスきほう",
     "backward\tみかいはつ|うしろむき|そる|あともどり|ぎゃっこう|ぎゃくこう|きりかえし|ぎゃくりゅう|こうしんこく|はんしん|いっぽさがる|いっぽひく|うしろざまにたおれる|うしろにたおれる|からだをそらす|すんしんしゃくたい|うっちゃり|たいえいしゅぎ|バクてん|バックてん",
-    "backward body\tそる",
-    "backward country\tこうしんこく",
   ],
 };

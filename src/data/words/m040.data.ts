@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 41 of 172, from "dealing d". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 41 of 172, from "deal e". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,23 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "deal e\tくわす",
+    "deal etc\tきあい|ひきあい|こわれる|おとく|おトク",
+    "deal exhaustively\tろんじつくす",
+    "deal idea\tうまい",
+    "deal issue\tとりあつかう|のぞむ",
+    "deal out\tわける",
+    "deal person\tあつかう",
+    "deal problem\tあつかう",
+    "deal topic\tろんじる|ろんずる",
+    "dealer\tディーラー|ぎょうしゃ|おや|しょう|どう|はんばいぎょうしゃ|おやチャ|ディラー|ディーラ|デイーラー|とんや|といや|ちゃや|さかや|がしょう|さかなや|じば|こめや|はりこ|ごふくしょう",
+    "dealer cards\tはりこ",
+    "dealer esp\tディーラー",
+    "dealer's\tしきりばいばい|しんぶんはんばいてん|おやけん",
+    "dealers\tナスダック|ジャスダック|じはんれん|ぜんべいしょうけんぎょうしゃきょうかい|にっしょうきょう|にほんしょうけんぎょうきょうかい|ぜんべいしょうけんぎょうきょうかい",
+    "dealership\tディーラー|くるまや|にゅうこしゃ",
+    "dealing\tたいしょ|おうたい|たいおう|しょぶん|しょり|りょうり|あつかい|とりくみ|しょち|しょぐう|なんとか|おうせつ|しまつ|ひょうり|ぜんしょ|うらおもて|ふみこみ|にまいじた|いっとうりょうだん|しゅび",
+    "dealing appropriately\tぜんしょ",
     "dealing decisively\tいっとうりょうだん",
     "dealing fully\tふみこみ",
     "dealing people\tおうたい",
@@ -667,29 +684,5 @@ export const PIECE: WordsPiece = {
     "dehumidifier\tじょしつき",
     "dehumidifying\tじょしつざい",
     "dehydratase\tたんさんだっすいこうそそがいやく",
-    "dehydrated\tかんそうやさい|むすいエタノール",
-    "dehydrating\tくすい",
-    "dehydration\tだっすい|だっすいしょう|だっすいしょうじょう|だっすいはんのう",
-    "dehydration abnormal\tだっすい",
-    "dehydration removal\tだっすい",
-    "dehydroacetic\tデヒドロさくさん",
-    "dehydroascorbic\tデヒドロアスコルビンさん",
-    "dehydrocholic\tデヒドロコールさん",
-    "dehydrogenase\tだっすいそこうそ|デヒドロゲナーゼ",
-    "dei\tオプスデイ|オプス・デイ|アニュスデイ|アニュス・デイ|アグヌスデイ|アグヌス・デイ",
-    "deicer\tゆうひょうえき",
-    "deicide\tかみごろし|かみころし",
-    "deicing\tじょひょう",
-    "deification\tしんか|しんかくか|みょうけんぼさつ",
-    "deified\tごじんか|へびがみ",
-    "deify\tまつる",
-    "deilephila\tべにすずめ|ベニスズメ",
-    "deimos\tダイモス|デイモス",
-    "deindustrialization\tディインダストリアライゼーション",
-    "deinonychus\tデイノニクス",
-    "deinstall\tとりのぞく",
-    "deionized\tイオンこうかんすい",
-    "deism\tりしん|りしんろん|しぜんしんきょう",
-    "deities\tにょらい|やしゃ|しちふくじん|にいなめさい|しんじょうさい|あいどの|あいでん|てんじんしちだい|ちじんごだい|しょてん|さんじゅうばんじん|しょそん|ごほうぜんじん|にいなめ|しんじょう|しんしょう|さんせんじん|さんてん|さんでん|きょうけんひん",
   ],
 };

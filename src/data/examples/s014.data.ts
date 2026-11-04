@@ -119,6 +119,7 @@ export const PIECE: WordsPiece = {
     "0ony4\t1¦いやだったけど｜愛車《あいしゃ》を｜手放《てばな》した。¦I parted with my old car, though I hated to do so.¦3¦4l0r¦ayc¦¦愛車",
     "0onzs\t1¦｜私《わたし》たちは｜彼女《かのじょ》を「アン」という｜愛称《あいしょう》で｜呼《よ》んだ。¦We nicknamed her \"Ann\".¦1¦3jgu¦¦Luornu¦愛称",
     "0oo0c\t1¦とりわけ｜子供《こども》たちは｜愛情《あいじょう》を｜必要《ひつよう》とする。¦Above all, children need love.¦3¦4a2z¦¦CM¦愛情",
+    "0oo0m\t1¦ここだけの｜話《はなし》だが、｜彼《あれ》には｜愛人《あいじん》がいる。¦Between ourselves, he keeps a mistress.¦3¦4tdf¦¦¦愛人",
     "0oo34\t1¦｜私《わたし》の｜両親《りょうしん》は｜愛知県《あいちけん》で｜生《う》まれた。¦My parents were born in Aichi Prefecture.¦2¦3hc1¦tommy__san¦CN¦愛知県",
     "0oo3y\t1¦この｜本《もと》は｜学生《がくせい》に｜愛読《あいどく》されている。¦This book is popular with students.¦3¦4phl¦¦CK¦愛読",
     "0oo48\t1¦｜彼《あれ》はスティーヴン・キングの｜熱心《ねっしん》な｜愛読者《あいどくしゃ》です。¦He is a keen Stephen King fan.¦3¦1lkb¦fcbond¦fcbond¦愛読者",
@@ -208,6 +209,5 @@ export const PIECE: WordsPiece = {
     "0oq50\t1¦ある｜人《ひと》が｜間違《まちが》いをしたからといってそれを｜笑《わら》うのは｜無作法《ぶさほう》である。¦It is not good manners to laugh at someone when he makes mistakes.¦¦4xct¦¦CS¦ある人",
     "0oq5a\t1¦ある｜日《ひ》、｜彼《あれ》は｜弱《よわ》いカメを｜助《たす》けた。¦One day he helped a weak turtle.¦2¦4xbg¦¦¦ある日",
     "0oq5u\t1¦どうしてなのか、｜心《こころ》が｜粟立《あわだ》つのを｜感《かん》じていた。¦I don't know what, but I felt in my heart something that gives me the chills.¦¦1n1u¦¦¦粟立つ",
-    "0oq6e\t1¦これはバーゲン｜商品《しょうひん》なので｜定価《ていか》よりやすくなっているんじゃないですか。¦Aren't you selling this at a discount price?¦1¦4omh¦¦CK¦やすく",
   ],
 };

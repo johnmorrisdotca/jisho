@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 81 of 172, from "islamo". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 81 of 172, from "ishikawa ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,30 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "ishikawa fukui\tちゅうぶ|ほくりく",
+    "ishikawa's\tいしかわがえる|イシカワガエル",
+    "ishikawae\tあまご|アマゴ|さつきます|サツキマス|いしかわがえる|イシカワガエル",
+    "ishikawajima\tいしかわじまはりまじゅうこうぎょうかぶしきがいしゃ",
+    "ishimure\tくかいじょうど",
+    "ishin\tいしん",
+    "ishin no\tいしん",
+    "ishinomaki\tいしのまきせんしゅうだいがく",
+    "ishiru\tいしる|いしり|よしる|よしり",
+    "ishiyama\tいしやまがっせん|いしやませんそう",
+    "ishizaka\tこくさいぶんかきょういくこうりゅうざいだん",
+    "ishū\tいしゅう",
+    "isi\tふごうかんかんしょう",
+    "isidium\tれつが",
+    "isil\tアイシル",
+    "isinglass\tうんも|うんぼ|きらら|アイシングラス|アイジングラス|アイシンググラス",
+    "isis\tアイシス",
+    "isistius\tだるまざめ|ダルマザメ",
+    "islam\tイスラム|イスラーム|イスラムきょう|かいきょう|せいしんきょう|フイフイきょう|シーアは|スンナは|せかいしゅうきょう|ザカート|スンニは|スンニーは|スンニ|スンニー|じゅうにイマームは|ろくしん|ろくしんごぎょう|ごぎょうろくしん|ナビ|ナービー",
+    "islamabad\tイスラマバード",
+    "islamic\tイスラムげんりしゅぎ|イスラームげんりしゅぎ|かいきょうこく|イスラムぶんか|ハマス|ハマース|アルカイダ|アルカーイダ|アルカイーダ|アル・カイダ|アル・カイーダ|アル・カーイダ|タリバン|タリバーン|ターリバーン|イスラムかげきしゅぎ|かいぞく|イスラムれき|ヒジュラれき|イスラムほう",
+    "islamism\tイスラムしゅぎ|イスラームしゅぎ|イスラムかげきは|イスラームかげきは|はんイスラムしゅぎ",
+    "islamist\tヒズボラ|ヒズボッラー|フーシ|ジェマーイスラミア|ジェマー・イスラミア|ヘズボラ",
+    "islamiyah\tジェマーイスラミア|ジェマー・イスラミア",
     "islamophobia\tイスラムきょうふしょう",
     "island\tしま|とうない|ほんとう|アイランド|とう|シマ|ほっかいどう|なかじま|こじま|しょうとう|おじま|しまね|しまぐに|とうごく|りとう|ぐんとう|カナリア|カナリヤ|ビキニ|ことう",
     "island canary\tカナリア|カナリヤ",
@@ -586,7 +610,7 @@ export const PIECE: WordsPiece = {
     "japanese idol\tアイドル",
     "japanese imperial\tこうぐん",
     "japanese industrial\tジス|ジェーアイエス",
-    "japanese inn\tりょかん",
+    "japanese inn\tりょかん|おかみ|じょしょう|にょしょう",
     "japanese iris\tしょうぶ|ショウブ",
     "japanese japanese\tにっけい",
     "japanese judas\tかつら|カツラ",
@@ -762,31 +786,5 @@ export const PIECE: WordsPiece = {
     "jdc\tにほんこくどかいはつ",
     "je\tゴダールのマリア",
     "jealous\tねたむ|うらやましい|ひがむ|うらやま|しっとぶかい|ねたましい|やきもちをやく|ジェラシる|やく|そねむ|やきもちやき|ほうかいりんき|のうなしいぬのたかぼえ|きんせん|つのをはやす|つのをだす|しっとにくるう|やきもちやく|ジェラる|ヤキモチやき",
-    "jealousy\tジェラシー|やきもち|ヤキモチ|しっと|さいぎ|おかやき|しっし|ねたみ|りんき|としん|ほのお|ほむら|はんにゃ|しっとのほのお|しっしはんもく|はんもくしっし|カインコンプレックス|カイン・コンプレックス|みをやく|はんにゃづら",
-    "jealousy anger\tほのお|ほむら",
-    "jean\tジーンズ|ジンス|ジージャン|ジーンズジャンパー|ジーンズ・ジャンパー|ノーマジーンとマリリン|ピエールとジャン|あしながおじさん|よごれたて",
-    "jeans\tジーパン|ジーンズ|ジンス|デニム|ジーンズパンツ|ジーンズ・パンツ|ジーン|ストーンウォッシュ|ストーンウオッシュ|ストーン・ウォッシュ|ストーン・ウオッシュ|ボトム|ヴィンテージ|ビンテージ|スキニー|リーバイス|ブルージーンズ|ブルー・ジーンズ|ダメージジーンズ|ダメージ・ジーンズ",
-    "jeans etc\tストーンウォッシュ|ストーンウオッシュ|ストーン・ウォッシュ|ストーン・ウオッシュ|ヴィンテージ|ビンテージ",
-    "jeans slacks\tボトム",
-    "jedi\tジェダイ",
-    "jeep\tジープ",
-    "jeepney\tジープニー",
-    "jeer\tひやかす|やじる|ヤジる|かいことば",
-    "jeering\tやり",
-    "jeet\tジークンドー",
-    "jeez\tもう",
-    "jeggings\tパギンス|レギパン|レギンスパンツ|レギンス・パンツ",
-    "jehad\tジハード",
-    "jehovah\tエホバ",
-    "jehovah's\tエホバ|エホバのしょうにん|エホしょう",
-    "jehovah's witnesses\tエホバ",
-    "jeju\tチェジュ|さいしゅう|チェジュこうくう",
-    "jejunum\tくうちょう",
-    "jekeli\tエンマムシ|えんまむし",
-    "jekyll\tジーキルはかせとハイドし|ジキルとハイド",
-    "jellied\tみずがし|にこごり",
-    "jellies\tクシクラゲるい|くしくらげるい|ゆうしつどうぶつもん",
-    "jello\tゼリー|ジェリー|ジュレ",
-    "jelly\tゼリー|ジェリー|うらやま|たいはく|ロイヤルゼリー|ローヤルゼリー|ロイヤル・ゼリー|ローヤル・ゼリー|ういろう|ういろ|ところてん|さらしあめ|あんにんどうふ|きょうにんどうふ|くしくらげ|クシクラゲ|フルーツゼリー|フルーツ・ゼリー|じゅんかつゼリー|ぷよぷよ",
   ],
 };

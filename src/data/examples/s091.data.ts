@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 92 of 144, from "0y1". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 92 of 144, from "0y0s". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,18 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0y0s8\t1¦ジョンが｜品物《しなもの》をいちいち｜手《て》に｜取《と》って｜見《み》た。¦John picked up the articles one by one and examined them.¦3¦1trcw¦JimBreen¦JimBreen¦いちいち\t2¦｜彼《あれ》は｜私《わたし》のしたことにいちいち｜文句《もんく》を｜言《い》う。¦He finds faults with everything I do.¦1¦29qo¦¦CM¦いちいち",
+    "0y0tc\t1¦｜私《わたし》たちはとても｜高《たか》く｜上《あが》ったので、｜町《まち》を｜一望《いちぼう》することが｜出来《でき》た。¦We went up so high that we could get the whole view of the city.¦3¦3kao¦¦¦一望",
+    "0y0ug\t1¦｜多《おお》くの｜人《じん》が｜一攫千金《いっかくせんきん》を｜夢見《ゆめみ》て｜宝《たから》くじを｜買《か》う。¦Many people buy lottery tickets with the dream of immediately becoming wealthy.¦¦2yr4¦bunbuku¦CK¦一攫千金",
+    "0y0uq\t1¦｜彼《あれ》は｜一ヶ月《いっかげつ》｜以上《いじょう》ロンドンにいた。¦He stayed in London over a month.¦3¦2cwh¦¦CK¦一ヶ月",
+    "0y0v0\t1¦お｜金《かね》と｜技術《ぎじゅつ》を｜地球《ちきゅう》の｜一《いっ》カ｜所《しょ》から｜別《べつ》の｜場所《ばしょ》に｜移動《いどう》させるだけでは｜十分《じゅうぶん》でありません。¦Moving money and technology from one side of the globe to the other is not enough.¦¦4vcz¦¦¦一カ所",
+    "0y0vk\t1¦｜森《もり》の｜近《ちか》くに｜一軒家《いっけんや》がある。¦There stands a cottage close to the forest.¦2¦33y7¦¦¦一軒家",
+    "0y0vu\t1¦彼は４歳と１歳の２児の父親だ。¦He has two children, aged 4 and 1.¦2¦2gta¦¦¦１歳",
+    "0y0w4\t1¦この｜見積《みつ》もりは｜経費《けいひ》｜一切合切《いっさいがっさい》を｜含《ふく》めたものでしょうね。これ｜以上《いじょう》はびた｜一文《いちもん》お｜金《かね》は｜出《だ》さないからね。¦I hope this expense report contains all the relevant business expenses because I'm not paying a cent more after this.¦2¦4rd0¦¦papabear¦一切合切",
+    "0y0wy\t1¦｜君《きみ》は｜常軌《じょうき》を｜逸《いっ》しているよ。¦You are way off track.¦1¦3soj¦¦AlanF_US¦逸している",
+    "0y0yc\t1¦｜彼《あれ》は｜国境警備兵《こっきょうけいびへい》の｜姿《すがた》を｜見《み》て｜命《いのち》からがら｜逃《に》げた。¦He ran for his life at the sight of the border guard.¦1¦2arb¦¦¦命からがら",
+    "0y0zg\t1¦あいつを｜見《み》ると、いまいましくてしょうがない。¦The sight of him is hateful to me.¦5¦510g¦bunbuku¦¦いまいましくて",
+    "0y0zq\t1¦あなたは｜今《いま》までに｜阿《くま》｜蘇《そ》｜山《やま》に｜登《のぼ》ったことがありますか。¦Have you ever climbed Mt. Aso?¦¦4z26¦¦CN¦今まで",
     "0y10a\t1¦｜彼《あ》の｜話《はな》し｜方《かた》が｜嫌《いや》なの。¦I don't like his way of talking.¦1¦2hdf¦bunbuku¦CK¦嫌\t2¦この｜卵《たまご》は｜嫌《いや》な｜匂《にお》いがする。¦This egg has a bad smell.¦¦4p59¦¦¦嫌な",
     "0y10k\t1¦その｜命令《めいれい》に｜嫌々《いやいや》｜従《したが》う｜兵《へい》もいた。¦Some soldiers were reluctant to obey the commands.¦1¦4fe2¦¦orcrist¦嫌々",
     "0y11o\t1¦｜世界《せかい》からは【｜麻疹《はしか》｜輸出国《ゆしゅつこく》】と｜嫌味《いやみ》とも｜本音《ほんね》ともとれることをいわれている｜始末《しまつ》。¦Ending up with being called a \"measles exporting country\" by the rest of the world, something that you could take as insult or truth.¦¦1mm8¦wakatyann630¦¦嫌味",
@@ -184,18 +196,5 @@ export const PIECE: WordsPiece = {
     "0y3j4\t2¦4つのレジスタは、｜呼《よ》び｜出《だ》された｜関数《かんすう》｜側《そば》が｜保存《ほぞん》する。¦The contents of the four registers are preserved by the called subroutine.¦1¦1l73¦fcbond¦fcbond¦関数",
     "0y3jo\t1¦「ああ」は｜感嘆詞《かんたんし》だ。¦\"Ah\" is an interjection.¦1¦533g¦mookeee¦CK¦感嘆詞",
     "0y3l2\t1¦ご｜健康《けんこう》を｜祝《しゅく》して｜乾杯《かんぱい》。¦Here's to your health!¦1¦4nkf¦¦CM¦乾杯\t2¦｜今夜《こんや》の｜主賓《しゅひん》に｜乾杯《かんぱい》しよう。¦Let's toast the guest of honor!¦1¦3o28¦¦¦乾杯",
-    "0y3lm\t1¦｜君《きみ》は｜完璧《かんぺき》な｜仕事《しごと》をしてくれた。¦You've done a perfect job.¦¦3sv8¦¦CK¦完璧な",
-    "0y3mq\t1¦合衆国では２億１６００万丁もの鉄砲類が、民間の手にあるという。¦In the U.S., as many as 216 million firearms are said to be in private hands.¦1¦3plx¦¦¦合衆国",
-    "0y3n0\t1¦あの｜件《けん》に｜関《かん》しては、｜画竜点睛《がりょうてんせい》を｜欠《か》いてしまった。¦That plan still needed some finishing touches.¦¦4yam¦¦CK¦画竜点睛",
-    "0y3na\t1¦チームは｜試合《しあい》に｜向《む》けて｜気合《きあ》いが｜入《はい》っている。¦The team is up for the game.¦3¦4cnl¦KK_kaku_¦CK¦気合い",
-    "0y3nu\t1¦ドアを｜閉《し》めてから、｜鍵《かぎ》を｜置《お》いてきたことに｜気《き》がついた。¦After I shut the door, I remembered I had left my key behind.¦¦4boy¦¦Swift¦気がついた\t2¦｜何時間《なんじかん》もたって｜彼《あれ》は｜気《き》がついた。¦It was many hours before he came to.¦3¦40m4¦¦bmorsello¦気がついた",
-    "0y3oe\t1¦その｜薬《くすり》の｜効《き》きめが｜現《あらわ》れた。¦The medicine took effect.¦2¦4f6z¦¦CM¦効きめ",
-    "0y3oo\t1¦これらの｜国《くに》はしばしば｜飢饉《ききん》に｜襲《おそ》われた。¦These countries were often visited with famine.¦¦4o4y¦¦¦飢饉",
-    "0y3oy\t1¦｜木々《きぎ》は｜芽《め》を｜出《だ》し｜始《はじ》めた。¦The trees are beginning to bud.¦1¦1prs¦small_snow¦CK¦木々",
-    "0y3p8\t1¦この｜丸薬《がんやく》は｜心臓《しんぞう》に｜効《き》く。¦These pills act on the heart.¦2¦4rq2¦¦¦効く\t2¦よくもまあ｜私《わたし》にそんな｜口《くち》がきけるね。¦How dare you speak to me like that?¦4¦44rq¦tommy__san¦rul¦きける\t3¦私は５万円までつけがきく。¦My credit is good for 50,000 yen.¦4¦3gxl¦¦¦きく",
-    "0y3pi\t1¦一番のチャンネルで英語が、７番のチャンネルでは日本語がお聞きになれます。¦You can hear English on Channel 1, and Japanese on Channel 7.¦3¦42pe¦¦CK¦聞き\t2¦｜音楽《おんがく》が｜好《す》きで、｜毎日《まいにち》｜聴《き》いています。¦I like music, and I listen to it every day.¦1¦4408¦KK_kaku_¦CM¦聴いています",
-    "0y3q2\t1¦｜今《いま》いる｜市民《しみん》が｜逃《に》げ｜出《だ》すという｜事態《じたい》が｜危惧《きぐ》されます。¦It is feared that those citizens now present will run away.¦¦1lir¦fcbond¦fcbond¦危惧",
-    "0y3qc\t1¦この｜民族《みんぞく》の｜起源《きげん》は｜神秘《しんぴ》につつまれている。¦The origins of these people is shrouded in mystery.¦1¦4pce¦¦CM¦起源",
-    "0y3qm\t1¦｜妙《みょう》な｜音《おと》が｜聞《き》こえた。¦I heard a strange sound.¦1¦1qj0¦tommy_san¦CK¦聞こえた\t2¦この｜話《はなし》は、｜変《へん》に｜聞《き》こえるかもしれないが、｜全《まった》く｜本当《ほんとう》です。¦This story may sound strange, but it's absolutely true.¦3¦4p36¦¦CK¦聞こえる",
   ],
 };

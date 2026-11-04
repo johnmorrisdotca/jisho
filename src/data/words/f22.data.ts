@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 23 of 70, from "哀訴歎". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 23 of 70, from "哀哭". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,32 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "哀哭\tあいこく",
+    "哀弔\tあいちょう",
+    "哀思\tあいし",
+    "哀恤\tあいじゅつ",
+    "哀悼\tあいとう",
+    "哀悼の意\tあいとうのい",
+    "哀悼痛惜\tあいとうつうせき",
+    "哀情\tあいじょう",
+    "哀惜\tあいせき",
+    "哀愁\tあいしゅう",
+    "哀愁漂う\tあいしゅうただよう",
+    "哀愍\tあいびん|あいみん",
+    "哀感\tあいかん",
+    "哀慕\tあいぼ",
+    "哀憐\tあいれん",
+    "哀憫\tあいびん|あいみん",
+    "哀楽\tあいらく",
+    "哀歌\tあいか",
+    "哀歓\tあいかん",
+    "哀毀骨立\tあいきこつりつ",
+    "哀求\tあいきゅう",
+    "哀泣\tあいきゅう",
+    "哀痛\tあいつう",
+    "哀絶\tあいぜつ",
+    "哀訴\tあいそ",
+    "哀訴嘆願\tあいそたんがん",
     "哀訴歎願\tあいそたんがん",
     "哀詞\tあいし",
     "哀詩\tあいし",
@@ -3049,18 +3075,5 @@ export const PIECE: WordsPiece = {
     "国民病\tこくみんびょう",
     "国民的\tこくみんてき",
     "国民的基盤\tこくみんてききばん",
-    "国民的英雄\tこくみんてきえいゆう",
-    "国民的行事\tこくみんてきぎょうじ",
-    "国民皆保険\tこくみんかいほけん",
-    "国民皆兵\tこくみんかいへい",
-    "国民社会主義\tこくみんしゃかいしゅぎ",
-    "国民福祉指標\tこくみんふくししひょう",
-    "国民突撃隊\tこくみんとつげきたい",
-    "国民純生産\tこくみんじゅんせいさん",
-    "国民純福祉\tこくみんじゅんふくし",
-    "国民経済\tこくみんけいざい",
-    "国民総幸福量\tこくみんそうこうふくりょう",
-    "国民総所得\tこくみんそうしょとく",
-    "国民総支出\tこくみんそうししゅつ",
   ],
 };

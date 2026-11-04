@@ -439,6 +439,7 @@ export const PIECE: WordsPiece = {
     "act accordance\tそう",
     "act agent\tとりつぐ",
     "act barbarity\tばんこう",
+    "act building\tこんりゅう|けんりつ",
     "act coldly\tつきはなす",
     "act deeds\tとっこう",
     "act drinking\tみずのみ",

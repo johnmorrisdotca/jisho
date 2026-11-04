@@ -529,7 +529,54 @@ describe("a sense is left out in safe mode for a mark or for a gloss that names 
 
   it("reads every gloss of the sense, those a row does not show too", () => {
     expect(unfit([], "one", "two", "three", "four", "sexual intercourse")).toBe(true);
-    expect(unfit(["g_type"], `<gloss g_type="lit">sex</gloss>`)).toBe(true);
+    expect(unfit(["g_type"], `<gloss g_type="lit">to have sex</gloss>`)).toBe(true);
+  });
+
+  it("keeps the ordinary words that only mention sex, a building, a mixture or a mistress who is also a lover", () => {
+    for (const glosses of [
+      ["(distinction of) sex", "gender"],
+      ["the opposite sex"],
+      ["same sex"],
+      ["coeducation", "mixed-sex education"],
+      ["sex education"],
+      ["sexual (i.e. relating to biological sex)"],
+      ["sex ratio", "gender ratio"],
+      ["sexual selection"],
+      ["(act of) building (temple, monument, etc.)", "erection"],
+      ["construction", "framework", "erection", "assembly"],
+      ["mixture", "adulteration"],
+      ["impure", "adulterated", "foul"],
+      ["insertion", "interposition", "(sexual) penetration"],
+      ["rape blossoms", "rapeseed flowers"],
+      ["lover", "mistress"],
+      ["legal wife (of a noble) (as opposed to a concubine)"],
+      ["man", "male"],
+      ["woman", "female"],
+      ["character (of a person)", "personality"],
+      ["chest", "breast"],
+      ["milk"],
+      ["urine"],
+      ["blood"],
+      ["marriage"],
+      ["war"],
+      ["beer"],
+    ])
+      expect(unfit([], ...glosses), glosses.join("; ")).toBe(false);
+  });
+
+  it("leaves out a sense that is the mistress, the concubine or the nipple, and the acts and organs the sex words name", () => {
+    for (const glosses of [
+      ["mistress", "kept woman"],
+      ["concubine (of a noble)"],
+      ["nipple", "teat"],
+      ["sex doll"],
+      ["erection (of the penis)"],
+      ["to have sex"],
+      ["sexual desire"],
+      ["sexual petting"],
+      ["female adulterer"],
+    ])
+      expect(unfit([], ...glosses), glosses.join("; ")).toBe(true);
   });
 
   it("keeps what only looks like it: rapeseed, sperm whales, social intercourse, the mistress of a house", () => {

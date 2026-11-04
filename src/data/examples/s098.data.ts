@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 99 of 144, from "0yquu". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 99 of 144, from "0yqd". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,19 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0yqdc\t1¦かぜの｜治療《ちりょう》には｜蜂蜜入《はちみつい》りのホットレモンがよく｜効《き》く。¦Hot lemon with honey is a good remedy for colds.¦¦4uok¦mookeee¦CK¦蜂蜜入りの",
+    "0yqdm\t1¦｜彼《あれ》は｜生《は》え｜抜《ぬ》きの｜外交官《がいこうかん》として｜一生《いっしょう》の｜大部分《だいぶぶん》を｜送《おく》ってきた。¦He has spent most of his time as a career diplomat.¦¦27og¦¦¦生え抜きの",
+    "0yqf0\t1¦｜偶然《ぐうぜん》、はるかかなたを｜友人《ゆうじん》が｜歩《ある》いているのが｜見《み》えた。¦It happened that I saw my friend walking in the distance.¦3¦3uc3¦¦Dejo¦はるかかなた",
+    "0yqfu\t1¦その色白の女の子は１９歳でとおっている。¦The girl with fair skin passes for nineteen.¦3¦4h6d¦¦¦色白の",
+    "0yqhs\t1¦もっとも｜重要《じゅうよう》な｜点《てん》は、エメットの｜理論《りろん》が｜物理学《ぶつりがく》の｜従前《じゅうぜん》の｜理論《りろん》と｜矛盾《むじゅん》しないということである。¦It is that Emmet's theory is compatible with previous theories in physics that is of most significance.¦1¦456c¦¦AlanF_US¦従前の",
+    "0yqly\t1¦それは｜木製《もくせい》ですか、それとも｜金属製《きんぞくせい》ですか。¦Is it made of wood or metal?¦1¦4e1c¦arnab¦CK¦金属製",
+    "0yqmi\t1¦大型と小型の２台の飛行機が、ハンガー内で停止していました。¦Two airplanes, one large and one small, were at rest in the hangar.¦2¦1mka¦wakatyann630¦shekitten¦小型の",
+    "0yqnm\t1¦｜私《わたし》はこの｜種《しゅ》の｜鳥《とり》は｜見《み》たことがない。¦I've never seen this sort of bird.¦3¦3g4e¦bunbuku¦CK¦この種の",
+    "0yqp0\t1¦｜虹《にじ》は｜空《から》に｜弓《ゆみ》じょうにかかる。¦The rainbow forms an arc in the sky.¦1¦2mvq¦¦shekitten¦弓じょう",
+    "0yqq4\t1¦｜彼《あ》の｜言《い》ったことは｜的《まと》はずれだった。¦What he said was beside the point.¦¦2ipw¦small_snow¦CH¦的はずれ",
+    "0yqqe\t1¦｜君《きみ》と｜一緒《いっしょ》に｜行《い》きたいけれど｜文無《もんな》しなんだ。¦I want to go with you, but I'm broke.¦¦3txg¦Blanka_Meduzo¦CK¦文無し",
+    "0yqsc\t1¦この｜薩摩芋《さつまいも》は｜生焼《なまや》けでがりがりする。¦This sweet potato is only half-baked and is still crunchy.¦¦1n7n¦¦¦生焼け",
+    "0yqu0\t1¦天の川は、遠方の星が巨大な帯状に見えるものであって、その１つ１つは、われわれの知る太陽に似たものである。¦The Milky Way is a vast belt of distant stars, each star a sun like ours.¦2¦2omb¦¦AlanF_US¦帯状",
     "0yquu\t2¦｜彼《あれ》がおまちかねよ。¦He is impatient to see you.¦3¦2lea¦bunbuku¦CK¦おまちかね",
     "0yqve\t1¦｜彼《あれ》は｜男《おとこ》まさりの｜姉《あね》に｜育《そだ》てられた。¦He was bought up by his strong willed sister.¦3¦26wg¦¦¦男まさりの",
     "0yqvy\t1¦｜奥《おく》さんのがみがみ｜小言《こごと》にフレッドさんは｜大弱《おおよわ》りの｜体《からだ》であった。¦Fred was very troubled by his wife's nagging.¦2¦1mw8¦mookeee¦CN¦大弱りの",
@@ -206,16 +219,5 @@ export const PIECE: WordsPiece = {
     "0yz24\t1¦｜催促《さいそく》がましくて｜恐縮《きょうしゅく》ですが、｜先日《せんじつ》お｜貸《か》ししたお｜金《かね》を｜返《かえ》していただけませんか。¦I'm afraid this sounds like a demand, but could you return the money I lent you the other day?¦1¦3nt3¦Jondel¦papabear¦がましくて",
     "0yz2e\t1¦｜私《わたし》が｜早《はや》く｜去《さ》るので｜彼《かれ》らは｜残念《ざんねん》がった。¦My leaving early made them feel sorry.¦3¦3lbn¦¦¦がった",
     "0yz38\t5¦ほらっ、キリキリ歩くっ！¦Come on, get walking!¦4¦1m8f¦fcbond¦fcbond¦キリキリ",
-    "0yz5g\t1¦｜標高《ひょうこう》がぐんと｜高《たか》くなると｜呼吸困難《こきゅうこんなん》を｜感《かん》じる。¦In high altitudes, people find it hard to breathe.¦1¦1twi¦¦CM¦ぐんと",
-    "0yz60\t1¦ちょいとここらで｜河岸《かわぎし》をかえましょうや。¦Let's get out of here.¦2¦4cl9¦KK_kaku_¦CK¦ここら\t2¦ここらで１０分、休憩しようじゃないか。¦Why don't we take a 10-minute break here?¦¦4t14¦KK_kaku_¦JimBreen¦ここら",
-    "0yz74\t1¦｜刺激《しげき》を｜受《う》け｜続《つづ》けると｜肌《はだ》の｜保護《ほご》｜作用《さよう》により｜角質《かくしつ》が｜肥厚《ひこう》して、ゴワゴワしたり｜硬《かた》くなって、｜毛穴《けあな》が｜目立《めだ》ってきます。¦If it continues to be stimulated the skin's protective function causes thickening and it becomes stiff and hard with pores that stand out.¦1¦1mq1¦¦¦ゴワゴワ",
-    "0yz7y\t1¦ざあっと｜雨《あめ》が｜降《ふ》ってきた。¦Down came the rain in torrents.¦3¦4nd1¦¦sundown¦ざあっと",
-    "0yz8i\t1¦その｜知《し》らせを｜聞《き》いて、｜皆《みな》シーンとしてしまった。¦A blanket of silence fell over everyone when they heard the disappointing announcement.¦3¦4gg3¦¦CM¦シーンと\t1¦いくつかのシーンがオリジナルから｜外《はず》された。¦Several scenes have been cut from the original.¦5¦4wus¦El_mas_capo¦Shiawase¦シーン",
-    "0yz92\t1¦｜背筋《せすじ》をしゃんと｜伸《の》ばして｜歩《ある》きなさい。¦Carry your head high.¦1¦2lsf¦¦Zifre¦しゃんと",
-    "0yz9c\t1¦ニクソンはオフィスに｜盗聴器《とうちょうき》をしかけておきながらシラを｜切《き》ったので｜見付《みつ》かった。¦Nixon was caught lying because he bugged his own office.¦1¦49e0¦¦CM¦シラを切った",
-    "0yz9m\t1¦シンと｜静《しず》まった｜部室《ぶしつ》。｜響《ひび》くのは、クロッキー｜帳《ちょう》に｜擦《こす》れる｜鉛筆《えんぴつ》の｜音《おと》だけ。¦The club room returned to quiet. All that could be heard was the sound of pencil on sketchpad.¦1¦1n5q¦¦papabear¦シンと",
-    "0yzaq\t1¦あなたはみんなの｜中《うち》でずば｜抜《ぬ》けて｜上手《じょうず》に｜泳《およ》ぐ。¦You are by far the best swimmer of us all.¦3¦4zb6¦boscowitch¦CM¦ずば抜けて",
-    "0yzbk\t1¦｜望遠鏡《ぼうえんきょう》で｜見《み》ると、それはたいまつであることがわかった。¦It was identified by telescope as a torch.¦1¦1rnb¦bunbuku¦¦たいまつ",
-    "0yzbu\t1¦｜時計《とけい》がたった｜今《いま》｜十時《じゅうじ》を｜打《う》った。¦The clock has just struck ten.¦3¦3851¦nomsequitur¦CN¦たった今",
   ],
 };

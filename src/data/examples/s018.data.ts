@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 19 of 144, from "0p3ts". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 19 of 144, from "0p3q". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0p3qq\t1¦２年前に右目を失明しました。¦I lost the eyesight in my right eye two years ago.¦3¦51n4¦e4zh1nmcz¦CM¦右目",
+    "0p3ru\t1¦｜右腕《みぎうで》を｜骨折《こっせつ》したようです。¦I think my right arm is broken.¦2¦42ir¦¦CK¦右腕",
+    "0p3s4\t1¦｜宇宙《うちゅう》には｜限《き》りはない。¦There is no limit to the universe.¦1¦42il¦¦CK¦宇宙",
+    "0p3t8\t1¦｜地球《ちきゅう》は｜宇宙空間《うちゅうくうかん》に｜漂《ただよ》う｜球体《きゅうたい》にすぎない。¦The earth is just a sphere suspended in space.¦1¦2pz0¦¦U2FS¦宇宙空間",
     "0p3ts\t1¦みんな｜宇宙人《うちゅうじん》になったつもりで。¦Let's pretend we are aliens.¦1¦46f3¦¦Hautis¦宇宙人",
     "0p3uc\t1¦｜宇宙船《うちゅうせん》は｜月《つき》を｜回《めぐ》る｜軌道《きどう》を｜外《はず》れている。¦The spaceship is out of orbit around the moon.¦1¦42i4¦¦frpzzd¦宇宙船",
     "0p3uw\t1¦その｜宇宙飛行士《うちゅうひこうし》は｜月《つき》に｜降《お》り｜立《た》つのを｜見《み》られた。¦The astronaut was seen to land on the moon.¦1¦4jtr¦¦¦宇宙飛行士",
@@ -213,6 +217,5 @@ export const PIECE: WordsPiece = {
     "0p90g\t1¦その｜絵《え》の｜遠景《えんけい》には｜城《しろ》がある。¦There is a castle in the background of the picture.¦2¦4jdp¦mookeee¦CK¦遠景",
     "0p90q\t1¦｜山《やま》は｜遠見《えんけん》の｜方《ほう》がよい。¦Mountains look better viewed from a distance.¦3¦3mpv¦¦CM¦遠見",
     "0p93s\t1¦これは｜遠心力《えんしんりょく》ですがニュートンは｜絶対運動《ぜったいうんどう》と｜見《み》なしています。¦This is centrifugal force, which Newton viewed as absolute motion.¦3¦1l8c¦fcbond¦blay_paul¦遠心力",
-    "0p942\t1¦｜彼《あれ》はエベレスト｜登頂《とうちょう》の｜遠征隊《えんせいたい》の｜一員《いちいん》であった。¦He was a member of the expedition which climbed Mount Everest.¦1¦2g6k¦¦sundown¦遠征\t2¦｜私《わたし》たちは｜遠征試合《えんせいじあい》でほとんど｜負《ま》けてしまった。¦We lost almost all our away games.¦1¦3k4c¦bunbuku¦CK¦遠征",
   ],
 };

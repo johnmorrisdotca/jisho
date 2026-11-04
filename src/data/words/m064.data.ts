@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 65 of 172, from "germany ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 65 of 172, from "gerb". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,26 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "gerbera\tガーベラ",
+    "gerbil\tすなねずみ|スナネズミ|あれちねずみ|アレチネズミ",
+    "gerbillus\tあれちねずみ|アレチネズミ",
+    "gerenuk\tジェレヌク|きりんれいよう|キリンレイヨウ",
+    "geriatric\tろうじんびょう|ろうじんびょういん|ろうじんいりょう",
+    "geriatrics\tろうじんいがく|ろうじんびょうがく|ろうねんいがく|ろうねんびょうがく",
+    "germ\tばいきん|さいきん|きん|びせいぶつ|バクテリア|バクテリヤ|びょうげんきん|ほうが|はいが|ようが|しが|びょうどく|せいしょくさいぼう|はいよう|ぜんだまきん|せいさいぼう|はいがまい|はいきん|こむぎはいが|こむぎはいがゆ",
+    "german\tドイツご|どくご|ジャーマン|シェパード|セパード|バウムクーヘン|バームクーヘン|バッハ|リート|リード|あわ|エスツェット|カモミール|カモマイル|ドイツじん|ドイツみんしゅきょうわこく|はんどく|わどく|どくぶん|どくわ",
+    "german composer\tバッハ",
+    "german language\tドイツご|どくご",
+    "german shepherd\tシェパード|セパード",
+    "german song\tリート|リード",
+    "german spit\tバウムクーヘン|バームクーヘン",
+    "germanic\tゲルマン|インドゲルマンごぞく|ゲルマンごは|ゲルマンじん|ゲルマンご|ゲルマンみんぞく",
+    "germanic people\tゲルマン",
+    "germanica\tちゃばねゴキブリ|チャバネゴキブリ|せいようかりん|セイヨウカリン|ドイツアヤメ|ドイツあやめ",
+    "germanism\tはんゲルマンしゅぎ",
+    "germanium\tゲルマニウム",
+    "germanophobia\tきょうどくびょう",
+    "germany\tドイツ|どく|どくこく|ドイチュラント|ドイチュランド|ジャーマニー|ジャーマニ|しゅしょう|しゅう|せいどく|にしドイツ|ケルン|フランクフルト|マルク|ミュンヘン|アウトバーン|ジー・ファイブ|ドイツマルク|ドイツ・マルク|ドイツれんぽうきょうわこく",
     "germany 1949\tせいどく|にしドイツ",
     "germany austria\tしゅしょう|アウトバーン",
     "germany etc\tしゅう",
@@ -417,7 +437,7 @@ export const PIECE: WordsPiece = {
     "girl usu\tしょうじょ",
     "girl who\tはこいり",
     "girl's\tおとめごころ|ごにんばやし|ぽっくり|ぼっくり|ぼくり|ぽくり|ひなあそび|おんなのせっく|おんななげ|おこぼ|スカートめくり|はかき",
-    "girlfriend\tかのじょ|ガールフレンド|ガール・フレンド|のろけ|カレカノ|もとカノ|もとかの|いまカノ|まえカノ|わるいむし|もとかのじょ|かのじょづら",
+    "girlfriend\tおんな|かのじょ|ガールフレンド|ガール・フレンド|のろけ|カレカノ|もとカノ|もとかの|いまカノ|まえカノ|わるいむし|もとかのじょ|かのじょづら",
     "girlish\tガーリッシュ|むすめごころ|しょうじょしゅみ",
     "girlpop\tガールポップ",
     "girls\tガールズ|じょがっこう|じょしこう|ひなまつり|かれん|さんがつのせっく|じじょ|しょうねんしょうじょ|おんなかぶき|アムラー|しょうじょしょうせつ|じょしぶ|はなよめがっこう|アリバイがいしゃ|おにもじゅうはちばんちゃもでばな|じょがくいん|もぎ|じょしこうこう|ないきょうぼう|じょしかい",
@@ -764,38 +784,5 @@ export const PIECE: WordsPiece = {
     "glower\tにらむ",
     "glowing\tねつじょうてき|あかねさす|おきび|ねつうん",
     "glowlight\tグローライトテトラ|グローライト・テトラ",
-    "glowstick\tひかるぼう|グロースティック",
-    "glowworm\tほたる|ホタル|つちボタル|つちぼたる|ツチボタル|ひかりきのこばえ|ヒカリキノコバエ",
-    "gloxinia\tグロキシニア",
-    "gloydius\tマムシ|まむし|にほんまむし|ニホンマムシ|はみ|くちばみ|たじひ",
-    "glucagon\tグルカゴン",
-    "glucitol\tグルシトール",
-    "gluck\tオルフェオとエウリディーチェ",
-    "glucocorticoid\tグルココルチコイド|とうしつコルチコイド",
-    "gluconate\tグルコンさんカルシウム",
-    "gluconeogenesis\tとうしんせい",
-    "gluconic\tグルコンさん",
-    "glucosamine\tグルコサミン",
-    "glucose\tグルコース|けっとうち|けいこうブドウとうふかしけん|けっとうちそくていき|グルコーススパイク|グルコース・スパイク|けっとうじこそくてい",
-    "glucose level\tけっとうち",
-    "glucoside\tグルコシド",
-    "glucosyl\tグルコシル",
-    "glucosylglycerol\tとうグリセロール",
-    "glucotoxicity\tとうどくせい",
-    "glucuronic\tグルクロンさん",
-    "glue\tグルー|ボンド|のり|セメダイン|にかわ|こうしつ|しゅんかんせっちゃくざい|わらびのり|くすね|アロンアルフア|アロン・アルフア|いためる|こちゃく|スプレーのり|でんぷんのり|スティックのり|もっこうようボンド|ぎょこう|のりのこり|にべ",
-    "glued\tみっちゃく|すりはく",
-    "glueing\tせっちゃく|にかわづけ",
-    "gluey\tねばねば|ネバネバ|ねんせい",
-    "glug\tとくとく|トクトク",
-    "glugging\tこくんこくん|コクンコクン|ドボドボ",
-    "gluing\tせっちゃく|のりばり",
-    "gluino\tグルイーノ",
-    "glum\tむずかしい|むつかしい|しぶい",
-    "gluon\tグルーオン|グルオン",
-    "glut\tにがさみ",
-    "glutaconic\tグルタコンさん",
-    "glutamate\tかがくちょうみりょう|グルタミンさんナトリウム|グルタミンさんソーダ|うまみちょうみりょう",
-    "glutamic\tグルタミンさん|ジー・ピー・ティー|ジーピーティー",
   ],
 };

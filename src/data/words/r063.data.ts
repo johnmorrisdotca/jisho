@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 64 of 316, from "がったいじ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 64 of 316, from "がっそうき". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "がっそうきょうそうきょく\t合奏協奏曲\t#1ogo0\tmusic¦concerto grosso",
+    "がっそうだん\t合奏団\t#15hf2\t¦ensemble",
+    "がっそうちょう\t合奏調\t#rjko\t¦concert pitch",
+    "がったい\t合体\ts~m25#rjky\t¦union¦combination¦coalescence\tbiol¦conjugation (of gametes)",
     "がったいじ\t合体字\t#1oqo4\tprint¦ligature",
     "がったり\t\t#1oqzx\ton-mim¦suddenly (esp. falling)¦dramatically",
     "がったり\t合当理\t#1p1xz\thist¦banner mounting at the back of samurai armor",
@@ -848,9 +852,5 @@ export const PIECE: WordsPiece = {
     "ガンマ・グロブリン\t\t#1bf76\tbiochem¦gamma globulin",
     "ガンマ・フィールド\t\t#1gx1e\t¦gamma field",
     "ガンマー\tΓ|γ\tC~g#mayo\t¦gamma",
-    "がんみ\t含味\ts#q310\t¦taste¦thinking over carefully",
-    "がんみ\t玩味|翫味\ts#zozq\t¦tasting¦relishing¦savouring\t¦appreciation¦enjoyment",
-    "ガンみ\tガン見\ts#19dwa\tcol¦staring at¦gazing at¦eyeballing",
-    "がんみつとう\t含蜜糖\t#1otu3\t¦non-centrifugal sugar",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 139 of 144, from "1fl1w". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 139 of 144, from "1fk0o". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,24 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "1fk0o\t1¦あんな｜人《ひと》たちと｜関《かか》わり｜合《あ》いになるな。¦Don't get involved with those people.¦3¦4x48¦¦CM¦関わり合い",
+    "1fk18\t1¦テレビにいくつかのマイナス｜面《つら》があるのも｜事実《じじつ》である。¦It is true that television also has some disadvantages.¦3¦4bvv¦¦CM¦マイナス面",
+    "1fk2c\t1¦｜国際貿易《こくさいぼうえき》｜禁止令《きんしれい》がその｜国《くに》の｜経済《けいざい》にとって｜最後《さいご》の｜頼《たの》みでしょう。¦An international trade ban could be the last straw for that country's economy.¦2¦3piu¦¦CM¦国際貿易",
+    "1fk36\t1¦この｜新聞《しんぶん》はロハだ。¦This newspaper is free.¦4¦1l4k¦fcbond¦fcbond¦ロハ",
+    "1fkbi\t1¦0.3のシャー芯って何であんなに高いのですか？¦Why are '0.3' pencil leads so expensive?¦¦1l4o¦fcbond¦fcbond¦シャー芯",
+    "1fkdq\t1¦その｜教授《きょうじゅ》は、｜私《わたし》のいわんとすることが｜理解《りかい》できなかった。¦The professor was unable to comprehend what I meant.¦1¦4j4b¦¦CK¦いわんとする",
+    "1fkg8\t1¦｜息《いき》の｜長《なが》い｜仕《し》｜事《こと》になりそうだ。¦This is going to require a long steady effort.¦3¦306t¦¦CK¦息の長い",
+    "1fkju\t1¦その｜扇動家《せんどうか》は｜些細《ささい》なことを｜大袈裟《おおげさ》に｜表現《ひょうげん》する｜傾向《けいこう》がある。¦The agitator is inclined to exaggerate trivial matters.¦¦4guo¦¦AlanF_US¦扇動家",
+    "1fkmc\t1¦｜我々《われわれ》は｜知《し》り｜合《あ》ってからまだ｜日《ひ》が｜浅《あさ》い。¦We haven't known each other long.¦1¦3z9x¦mookeee¦CK¦日が浅い",
+    "1fkng\t1¦この｜空港《くうこう》は｜新《しん》｜千歳《ちとせ》｜空港《くうこう》ほど｜便《びん》｜数《かず》が｜多《おお》くないので、｜送迎《そうげい》デッキから｜見《み》ても｜最初《さいしょ》は｜飛行機《ひこうき》がいませんでした。¦This airport doesn't have as many flights as New Chitose Airport and even looking from the observation deck at first there were no planes.¦3¦1l4b¦fcbond¦fcbond¦送迎デッキ",
+    "1fkpe\t1¦あいつにはまいったよ。どんなに｜厳《きび》しく｜怒《おこ》っても、｜柳《やなぎ》に｜風《かぜ》と｜受《う》け｜流《なが》すだけだよ。¦I don't know what to do with that guy. No matter how mad I get at him he just takes it in stride and pays no attention.¦1¦512k¦¦¦柳に風",
+    "1fkt0\t1¦｜馬鹿《ばか》が｜移《うつ》るまえにそのような｜宗教《しゅうきょう》に｜関《せき》わらんほうがいい。¦You should stay away from cults like that before you turn into a moron.¦1¦1l43¦fcbond¦fcbond¦馬鹿が移る",
+    "1fktu\t1¦それは｜命《いのち》にかかわる｜問題《もんだい》だ。¦It is a matter of life or death.¦3¦4e1h¦arnab¦jakov¦命にかかわる",
+    "1fkue\t1¦そちら｜様《さま》のお｜電話《でんわ》｜番号《ばんごう》をいただけますか。¦May I please have your telephone number?¦3¦1l3x¦fcbond¦fcbond¦そちら様",
+    "1fkuo\t1¦コンピューターがこの｜会社《かいしゃ》に｜導入《どうにゅう》されつつあります。¦Computers are being introduced into this company.¦2¦4nnm¦¦¦されつつあります",
+    "1fkzy\t1¦「｜騙《だま》された」と｜言《い》ってしまえばそれまでですが、「うまい｜話《はなし》」に｜乗《の》った｜当人《とうにん》であることは｜間違《まちが》いありません。¦If you say \"I was tricked,\" well that's certainly so but there's no mistaking that you were the one who signed up on a \"sweet deal\".¦¦1l48¦fcbond¦fcbond¦と言ってしまえばそれまで",
+    "1fl08\t1¦PC｜内部《ないぶ》のタイマー｜用《よう》ボタン｜電池《でんち》が｜切《き》れた。¦The button battery in the PC's internal timer has gone flat.¦2¦1l49¦fcbond¦fcbond¦ボタン電池",
+    "1fl1m\t1¦｜新期《しんき》にスタートしたテレビ｜番組《ばんぐみ》だが、あいも｜変《へん》わらず｜新味《しんみ》がないな。¦The new season's T.V. programs are as much old hat as ever.¦3¦343z¦¦Dejo¦新期",
     "1fl1w\t1¦｜彼氏《かれし》が｜留置所《りゅうちじょ》に｜入《い》って10｜日《ひ》｜経《た》ちました。¦It's been 10 days since my boyfriend went to jail.¦1¦1l3v¦fcbond¦fcbond¦留置所",
     "1flqm\t1¦ここでお｜買《か》い｜上《あ》げの｜品《しな》は｜無料《むりょう》で｜配達《はいたつ》します。¦Articles bought here will be delivered free of charge.¦¦4tcs¦¦¦お買い上げ",
     "1flqw\t1¦｜彼女《かのじょ》はついに｜最《もっと》もカリスマ｜性《せい》のある｜女優《じょゆう》として｜国民《こくみん》から｜認《みと》められました。¦She has finally been regarded by the nation as the most charismatic actress.¦3¦1z2h¦¦¦カリスマ性",
@@ -185,25 +203,5 @@ export const PIECE: WordsPiece = {
     "1ipfg\t1¦｜保険《ほけん》のテレアポでアポイントを｜取《と》るコツです。¦It is the art of getting insurance appointments when telemarketing.¦1¦8neo¦blay_paul¦blay_paul¦テレアポ",
     "1ipva\t1¦アンインストール方法：フォルダごとごみ箱にぽいっ。¦Uninstall method: Chuck the whole folder into the recycle bin.¦3¦8gb9¦blay_paul¦blay_paul¦ごと",
     "1iqgy\t1¦｜私《わたし》は｜冷凍野菜《れいとうやさい》は買わずに、いつも｜生野菜《なまやさい》を｜買《か》います。¦I always buy fresh vegetables instead of frozen ones.¦2¦39ig¦bunbuku¦CK¦冷凍野菜",
-    "1iqr8\t1¦もう｜少《すこ》し｜諸《しょ》｜規則《きそく》の｜弾力的運用《だんりょくてきうんよう》はできないか。¦Can't you apply the rules a little more elastically?¦¦8s8s¦blay_paul¦blay_paul¦弾力的運用",
-    "1ir86\t1¦メモ｜用紙《ようし》か｜何《なに》か｜貸《か》してくれ。¦Lend me a memo pad or something.¦4¦8ulk¦blay_paul¦blay_paul¦メモ用紙",
-    "1irae\t2¦｜彼《あ》の｜提案《ていあん》は｜問題《もんだい》にならない。¦His proposal is out of the question.¦1¦2hv7¦¦CK¦問題にならない\t3¦｜彼《かれ》らの｜意見《いけん》はほとんど｜問題《もんだい》にならない。¦Their opinion matters little.¦3¦241s¦¦¦問題にならない",
-    "1irja\t1¦オバマ｜候補《こうほ》の｜経済政策《けいざいせいさく》チームはどうやら｜錚々《そうそう》たる｜新自由主義者《しんじゆうしゅぎしゃ》たちのようだ。¦Presidential candidate Obama's economics team seems to be made up of distinguished neoliberals.¦¦3wyj¦fcbond¦blay_paul¦新自由主義者",
-    "1irrm\t1¦｜私《わたし》たちがほかの｜事《こと》をするには｜遅《おそ》すぎた。¦It was too late for us to do anything else.¦3¦3l32¦¦CK¦遅すぎた",
-    "1irtk\t1¦一旦風呂＆飯落ち、４０分ぐらいして帰還！¦Break for bath & food, back in about 40 minutes!¦¦7g5w¦zhouj1955¦blay_paul¦飯落ち",
-    "1iruo\t1¦いいか、よく聞いてくれ！¦Alright! Listen up and listen well!¦5¦1mgn¦bunbuku¦¦いいか",
-    "1is08\t1¦どう｜思《おも》うって・・・それじゃあ｜忌憚《きたん》のない｜意見《いけん》を｜言《い》わせてもらうけどね。¦What do I think, you say ... well then, I'll give you my candid opinion.¦¦8yii¦blay_paul¦blay_paul¦忌憚のない",
-    "1is3a\t1¦彼らは抑揚のない声で５０まで数えた。¦They counted on monotonously to fifty.¦1¦224e¦¦¦抑揚のない",
-    "1is4o\t1¦｜非常《ひじょう》に｜残念《ざんねん》なことに｜地球《ちきゅう》は｜一秒《いちびょう》で1900｜平方《へいほう》メートルが｜砂漠化《さばくか》している。¦Very regrettably, 1,900 square meters of land become desert every second.¦1¦3wcg¦sugisaki¦kotobaboke¦砂漠化",
-    "1isqm\t1¦その｜女《おんな》は｜出《で》てきたジンライムを｜一口《ひとくち》で｜飲《の》み｜干《ほ》した。¦The woman downed the gin and lime that was served in one swallow.¦2¦91n3¦blay_paul¦blay_paul¦ジンライム",
-    "1isto\t1¦当期純利益は５０億円の見込みで、前期とほとんど変わりません。¦Net profit for the period is estimated at 5 billion yen, largely unchanged from the previous one.¦1¦92nk¦blay_paul¦blay_paul¦当期純利益",
-    "1it02\t1¦イソップ｜童話《どうわ》に『すっぱい｜葡萄《ぶどう》』という｜話《はなし》があります。¦In Aesop's Fables is a story called \"Sour Grapes\".¦¦8brg¦blay_paul¦blay_paul¦イソップ童話",
-    "1it66\t1¦キューバリブレはラム｜酒《さけ》をベースにしたカクテルです。¦A Cuba Libre is a cocktail with a rum base.¦3¦44kz¦Scott¦Scott¦キューバリブレ",
-    "1it7u\t1¦『何だこりゃ？』って思わず言いたくなるような変な車でした。¦It was the sort of weird car that made me want to blurt out, \"what the heck is that?\"¦3¦949l¦blay_paul¦blay_paul¦何だこりゃ",
-    "1itam\t1¦感情にはしるな。冷静になれ！¦Don't let your emotions rule you. Be calm!¦3¦94hl¦blay_paul¦blay_paul¦感情にはしる",
-    "1itaw\t1¦感情にはしるな。冷静になれ！¦Don't let your emotions rule you. Be calm!¦3¦94hl¦blay_paul¦blay_paul¦冷静になれ",
-    "1ithu\t1¦ふっ、禁断の魔術とやらは、俺には通用しないぜ！¦Hah, your 'forbidden magics' aren't going to work with me!¦¦93xu¦blay_paul¦blay_paul¦とやら",
-    "1iti4\t1¦アラン｜君《きみ》は｜運良《うんよ》く｜税理士試験《ぜいりししけん》に｜合格《ごうかく》しました。¦Allan was lucky and passed the tax accountant examination.¦1¦4274¦Scott¦Scott¦税理士試験",
-    "1itrk\t1¦「｜陸《おか》に｜上《あ》がった｜河童《かっぱ》」とは｜環境《かんきょう》が｜変《か》わったために｜能力《のうりょく》を｜発揮《はっき》できずにいることのたとえです。¦\"A fish out of water\" is a metaphor for being unable to use your talents due to a change of environment.¦1¦9532¦blay_paul¦blay_paul¦陸に上がった河童",
   ],
 };

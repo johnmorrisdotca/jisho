@@ -362,7 +362,7 @@ export const PIECE: WordsPiece = {
     "ジェイアールパス\tＪＲパス\t#1ow05\t¦Japan Rail Pass¦JR Pass",
     "ジェイエス\tＪＳ\t#1p2b9\tsl,abbr¦female elementary school student\tcomp¦JavaScript¦JS",
     "ジェイエムティーアール\tＪＭＴＲ\t#1k3qa\t¦Japan Material Test Reactor¦JMTR",
-    "ジェイエムディクト\tＪＭｄｉｃｔ\t#5yc1r\t¦Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-03",
+    "ジェイエムディクト\tＪＭｄｉｃｔ\t#5yc1r\t¦Japanese-Multilingual Dictionary Project - Creation Date: 2026-11-04",
     "ジェイケイ\tＪＫ|ｊｋ\t#1mpkc\tsl,abbr¦female high school student\tnet-sl,abbr¦isn't it obvious?¦that's common sense",
     "ジェイケイビジネス\tＪＫビジネス\t#1oqv5\t¦various intimate services (e.g. massage) rendered by a female high school student or young woman wearing a high school uniform",
     "ジェイシモハメド\t\t#3f2fc\torganization¦Jaish-e-Mohammed (Pakistani terrorist group)",

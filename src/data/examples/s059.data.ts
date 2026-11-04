@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 60 of 144, from "0u1eu". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 60 of 144, from "0u1bi". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,13 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0u1bi\t1¦｜我々《われわれ》の｜利益《りえき》は｜彼《かれ》らの｜利益《りえき》と｜相容《あいい》れない。¦Our interests clash with theirs.¦1¦3zo4¦¦Swift¦相容れない",
+    "0u1bs\t1¦窓を開けっぱなしにしておいたの？¦Did you leave the window open?¦3¦4yu3¦bunbuku¦CK¦窓",
+    "0u1cc\t1¦トラベラーズチェックを｜現金《げんきん》に｜替《か》えてくれるのはこの｜窓口《まどぐち》ですか。¦Is this the right window for cashing travelers' checks?¦2¦4a3w¦¦CK¦窓口",
+    "0u1cm\t1¦｜窓際《まどぎわ》の｜席《せき》をお｜願《ねが》いします。¦I'd like a table by the window.¦3¦309y¦small_snow¦CK¦窓際",
+    "0u1dg\t1¦｜彼《かれ》らは｜窓枠《まどわく》を｜黄色《きいろ》く｜塗《ぬ》った。¦They painted the window frames yellow.¦1¦22kq¦small_snow¦CK¦窓枠",
+    "0u1dq\t1¦｜総入《そうい》れ｜歯《ば》にする｜必要《ひつよう》があります。¦You have to have a full denture.¦2¦309i¦¦¦総",
+    "0u1ea\t1¦１０月に総会を開催すべきだという提案があった。¦There was a suggestion that the general meeting should take place in October.¦1¦525d¦mookeee¦CM¦総会",
     "0u1eu\t1¦その総額は１０ドルになった。¦The total came to ten dollars.¦2¦4gri¦¦CK¦総額",
     "0u1fo\t1¦飲み代として使った金額は総計７千ドルだった。¦The total bill for drinks came up to 7000 dollars.¦2¦42kq¦¦Scott¦総計",
     "0u1gi\t1¦｜彼《あれ》も｜大人《おとな》になって、｜物事《ものごと》を｜総合的《そうごうてき》な｜視野《しや》で｜見《み》られるようになった。¦As he grew up, he learned to put things in perspective.¦¦2485¦¦CM¦総合的な",
@@ -193,10 +200,5 @@ export const PIECE: WordsPiece = {
     "0u4zg\t1¦いっこうに｜存《ぞん》じません。¦I know nothing about it.¦3¦4woh¦¦CK¦存じません\t2¦ご｜援助《えんじょ》できないのが｜残念《ざんねん》に｜存《ぞん》じます。¦I regret that I can't help you.¦1¦4nlh¦¦CK¦存じます",
     "0u4zq\t1¦｜神《かみ》は｜存在《そんざい》すると｜思《おも》いますか。¦Do you believe that God exists?¦3¦33t4¦mookeee¦CK¦存在",
     "0u50u\t1¦その｜地方《ちほう》ではその｜古《ふる》い｜風俗《ふうぞく》がなお｜存続《そんぞく》している。¦The old custom is still kept up in that district.¦1¦4ge1¦¦¦存続",
-    "0u51e\t1¦｜存分《ぞんぶん》に｜楽《たの》しもう。¦Let's enjoy ourselves to our heart's content.¦¦2zqc¦small_snow¦¦存分に",
-    "0u51y\t1¦その｜後《あと》は、｜多《おお》くの｜者《もの》が｜老人《ろうじん》ホームで｜暮《く》らすが、そこには｜子供《こども》とか｜孫《まご》が｜訪《たず》ねていくことが｜出来《でき》る。¦After that, many live in special homes for the aged where their children and grandchildren can come to visit them.¦2¦4ioi¦¦papabear¦孫",
-    "0u52s\t1¦「ここだわ。ちょうどここがいい」と｜孫娘《まごむすめ》はいいました。¦\"There,\" said the granddaughter, \"that's just the place.\"¦2¦52ku¦mookeee¦¦孫娘",
-    "0u56o\t1¦あなたはだれからも｜尊敬《そんけい》されている。¦You're respected by everybody.¦2¦4zez¦¦CM¦尊敬",
-    "0u56y\t1¦｜目《め》｜上《うえ》の｜人《ひと》のすることについて｜話《はな》す｜時《とき》、｜尊敬語《そんけいご》を｜使《つか》います。¦When speaking about your superiors' actions, you use respectful language.¦2¦1lpy¦fcbond¦fcbond¦尊敬語",
   ],
 };

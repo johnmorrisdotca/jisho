@@ -64,24 +64,24 @@
     "address": "http://ftp.edrdg.org/pub/Nihongo/JMdict_e.gz",
     "terms": "https://www.edrdg.org/edrdg/licence.html",
     "licence": "CC BY-SA 4.0 and the Group's conditions",
-    "dateOfCreation": "2026-11-03",
-    "sha256": "048dfec26d22fc04e013978c120a94b9daef9ccffcade17111d5b69ad7852d6f",
-    "retrieved": "2026-11-03"
+    "dateOfCreation": "2026-11-04",
+    "sha256": "7f6dc7a4a50411e5a99c35969f28740e174714f04708ea84d50d6bdc09a001ed",
+    "retrieved": "2026-11-04"
   },
   "jmdictExamples": {
     "address": "http://ftp.edrdg.org/pub/Nihongo/JMdict_e_examp.gz",
     "terms": "https://www.edrdg.org/edrdg/licence.html",
     "licence": "CC BY-SA 4.0 and the Group's conditions; the sentences are Tatoeba's, CC BY 2.0 FR",
-    "dateOfCreation": "2026-11-03",
-    "sha256": "224d86cdab154222a01675bcdbd9e8def49af5b0f5f24cbcbbd9daac2777c6d2",
-    "retrieved": "2026-11-03"
+    "dateOfCreation": "2026-11-04",
+    "sha256": "178b74238e060340fb6d66b2b324ca706cfe6b9ec43fc24429404faade726ae0",
+    "retrieved": "2026-11-04"
   },
   "tatoeba": {
     "site": "https://tatoeba.org",
     "terms": "https://tatoeba.org/en/terms_of_use",
     "licence": "CC BY 2.0 FR",
     "note": "Read for the authors of the sentences; the sentences themselves are those JMdict_e_examp holds.",
-    "retrieved": "2026-11-03",
+    "retrieved": "2026-11-04",
     "files": {
       "jpn_sentences_detailed.tsv.bz2": {
         "address": "https://downloads.tatoeba.org/exports/per_language/jpn/jpn_sentences_detailed.tsv.bz2",

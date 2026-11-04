@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 9 of 316, from "あふりかの". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 9 of 316, from "あふりかと". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "アフリカとんコレラ\tアフリカ豚コレラ\t#1ospo\t¦African swine fever¦AFS",
     "アフリカのつの\tアフリカの角\t#ltj6\t¦Horn of Africa",
     "アフリカのろば\tアフリカ野驢馬\tU#1mwe6\tuk¦African wild ass (Equus africanus)",
     "アフリカノロバ\t\tU#1mwe6\tuk¦African wild ass (Equus africanus)",
@@ -840,7 +841,5 @@ export const PIECE: WordsPiece = {
     "あみあげる\t編み上げる|編みあげる|編上げる\ti#1bn7s\t¦to finish knitting\t¦to lace from bottom to top\t¦to finish compiling (e.g. a dictionary)¦to finish editing",
     "あみあぶら\t網脂\t#1pg4x\tfood¦caul fat¦lace fat¦crépine",
     "あみあわせる\t編み合わせる\ti#17m78\t¦to knit together¦to intertwine",
-    "あみい\t網胃\t#1m1f6\tzool¦reticulum",
-    "あみいし\t網石\t#1fvi0\trare¦stone(s) used to weigh down a fishing net",
   ],
 };

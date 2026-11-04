@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 77 of 144, from "0w3w". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 77 of 144, from "0w3r". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,14 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0w3ri\t1¦｜食品《しょくひん》｜包装《ほうそう》は｜腐敗《ふはい》を｜減《へ》らす。¦Food packaging reduces spoilage.¦1¦34h9¦¦rul¦腐敗",
+    "0w3sw\t1¦あ、あれ？なんか・・・すっごい負のオーラを感じますよ？¦E-eh? I somehow seem to feel a very threatening aura...¦3¦1nd1¦mookeee¦¦負",
+    "0w3t6\t1¦｜負《お》うた｜子《こ》に｜教《おし》えられて｜浅瀬《あさせ》を｜渡《わた》る。¦A child on your back may guide you across a ford.¦1¦1t1a¦¦¦負うた\t2¦これについては｜私《わたし》がすべて｜責任《せきにん》を｜負《お》います。¦I will accept full responsibility for this.¦3¦4orz¦mookeee¦CK¦負います\t3¦｜彼《あれ》は｜致命《ちめい》｜傷《きず》を｜負《お》った。¦He suffered a fatal wound.¦1¦26v7¦¦¦負った\t4¦わずかながら｜私《わたし》の｜受《う》けた｜指導《しどう》を｜私《わたし》は｜若者《わかもの》に｜負《お》っている。¦What little guidance I had I owe to a young man.¦2¦444g¦¦Dejo¦負っている",
+    "0w3tq\t1¦あんなやつを｜負《ま》かすのはお｜茶《ちゃ》の｜子《こ》さいさいだ。¦I can beat him hands down.¦3¦4x4m¦¦CM¦負かす",
+    "0w3u0\t1¦どっちに｜転《ころ》んでも｜君《きみ》の｜負《ま》けだよ。¦Either way, you lose.¦3¦4auo¦small_snow¦CK¦負け",
+    "0w3uk\t1¦３対０で彼には負けています。¦He's beating me, three to zip.¦3¦51jg¦e4zh1nmcz¦¦負けています",
+    "0w3ve\t1¦｜負《ま》け｜犬《いぬ》になるわけにはいかない。¦I can't stand getting beaten.¦3¦1t13¦¦Zifre¦負け犬",
+    "0w3vo\t1¦｜日本《にほん》の｜市場《いちば》が｜閉鎖的《へいさてき》だという｜非難《ひなん》は、｜負《ま》け｜惜《お》しみにすぎません。¦Criticisms that Japan's market is closed are just sour grapes.¦¦2mlp¦¦¦負け惜しみ",
     "0w3w8\t1¦｜彼女《かのじょ》は｜赤《あか》ん｜坊《ぼう》をおんぶしていた。¦She carried a baby on her back.¦¦1w4f¦Kaede¦CK¦おんぶ",
     "0w3wi\t1¦あの｜若夫婦《わかふうふ》は｜今《いま》でも｜親《おや》におんぶに｜抱《だ》っこだ。¦That young couple are still tied to their parent's apron strings.¦3¦1m3r¦fcbond¦fcbond¦おんぶに抱っこ",
     "0w3ws\t1¦｜部分一致《ぶぶんいっち》｜検索《けんさく》はサーバーに｜負荷《ふか》がかかるから、やめたほうがいいね。¦You shouldn't do partial-word searches, since they put a lot of strain on the server.¦¦1svf¦¦CM¦負荷",
@@ -196,15 +204,5 @@ export const PIECE: WordsPiece = {
     "0w8au\t1¦彼の考えは私たちが２台の車に分乗して行こうというものです。¦His idea is for us to go in two different cars.¦¦2im5¦¦CM¦分乗",
     "0w8ci\t1¦時計には針が２本ある。時針と分針がそれだ。¦The clock has two hands, an hour hand and a minute hand.¦¦384m¦¦¦分針",
     "0w8e6\t1¦｜彼《あれ》は｜金融《きんゆう》アナリストで｜経済《けいざい》｜動向《どうこう》の｜分析《ぶんせき》には｜定評《ていひょう》がある。¦He's a financial analyst with a pretty good reputation for his analysis of economic trends.¦¦2bg1¦¦CM¦分析",
-    "0w8ge\t1¦｜私達《わたしたち》は、｜家事《かじ》を｜分担《ぶんたん》することで｜合意《ごうい》した。¦We agreed to share the housework.¦¦397l¦¦CK¦分担",
-    "0w8ka\t1¦｜彼《かれ》らは｜利益《りえき》を｜公平《こうへい》に｜分配《ぶんぱい》した。¦They allotted the profits fairly.¦¦2240¦KK_kaku_¦¦分配",
-    "0w8m8\t1¦この｜種《しゅ》の｜昆虫《こんちゅう》は｜日本《にほん》に｜広《ひろ》く｜分布《ぶんぷ》している。¦These insects are widely distributed throughout Japan.¦¦4qqv¦KK_kaku_¦blay_paul¦分布",
-    "0w8n2\t1¦｜彼《あれ》はとびぬけて｜分別《ぶんべつ》のある｜人《ひと》だ。¦He is by far the most sensible.¦¦2e0z¦¦CK¦分別",
-    "0w8o6\t1¦｜私《わたし》の｜娘《むすめ》は｜分娩《ぶんべん》｜中《うち》だ。¦My daughter is in labor.¦¦3hf7¦¦¦分娩",
-    "0w8qy\t1¦｜彼《あれ》はこの｜分《ぶん》｜野《の》では｜草分《くさわ》けだ。¦He is a trailblazer in this field.¦¦2fqr¦¦Lumi¦分野",
-    "0w8r8\t1¦｜彼《あれ》は｜息子《むすこ》｜達《たち》に｜財産《ざいさん》を｜分与《ぶんよ》した。¦He settled his property on his sons.¦¦278r¦¦¦分与",
-    "0w8s2\t1¦マヨネーズの｜油《あぶら》は｜分離《ぶんり》することがある。¦The oil in mayonnaise sometimes separates from the other ingredients.¦¦46ly¦¦mcq¦分離",
-    "0w8tq\t1¦その｜作《つく》り｜方《かた》の｜分量《ぶんりょう》は｜六人《ろくにん》｜分《ふん》です。¦The recipe serves six people.¦¦4ifz¦¦orcrist¦分量",
-    "0w8uk\t1¦｜彼《あれ》は｜書類《しょるい》の｜分類《ぶんるい》を｜終《お》えた。¦He finished sorting the papers.¦¦28fx¦¦CK¦分類",
   ],
 };

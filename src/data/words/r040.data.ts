@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 41 of 316, from "おなじあなのむ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 41 of 316, from "おなじあ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "おなじあなのきつね\t同じ穴の狐\t#1p4pl\tid¦birds of a feather¦(villains) of the same stripe",
+    "おなじあなのたぬき\t同じ穴の狸|同じ穴のタヌキ\t#1p4pk\tid¦birds of a feather¦(villains) of the same stripe",
     "おなじあなのむじな\t同じ穴のムジナ|同じ穴の狢|同じ穴のむじな\t#18ir6\tid¦birds of a feather¦(villains) of the same stripe",
     "おなじい\t同じい\ta#1pczb\tdated¦same¦identical¦equal",
     "おなじかまのめしをくう\t同じ釜の飯を食う\tg#192c6\tid¦to live together¦to be close friends",
@@ -835,8 +837,5 @@ export const PIECE: WordsPiece = {
     "オホーツクかい\tオホーツク海\t#1p19t\t¦Sea of Okhotsk",
     "オホーツクかいきだん\tオホーツク海気団\t#1mhiw\t¦Okhotsk air mass",
     "オホーツクかいこうきあつ\tオホーツク海高気圧\t#1mhim\t¦Okhotsk anticyclone¦Okhotsk high",
-    "オホーツクぶんか\tオホーツク文化\t#1p5lv\t¦Okhotsk culture",
-    "オボアルブミン\t\t#1b1gg\t¦ovalbumin",
-    "おぼうさん\tお坊さん\tC~i#ykgu\tfam,hon¦Buddhist priest¦monk\tfam,hon¦son (of others)",
   ],
 };

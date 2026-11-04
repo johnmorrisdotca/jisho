@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 9 of 70, from "マスク美". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 9 of 70, from "マスク着". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "マスク着用\tマスクちゃくよう",
     "マスク美人\tマスクびじん",
     "マスケット銃\tマスケットじゅう",
     "マスト細胞\tマストさいぼう",
@@ -647,8 +648,10 @@ export const PIECE: WordsPiece = {
     "モツ煮\tモツに",
     "モツ鍋\tモツなべ",
     "モテ女\tモテおんな",
+    "モテ度\tモテど",
     "モテ期\tモテき",
     "モテ男\tモテお|モテおとこ",
+    "モテ髪\tモテがみ",
     "モデムの設定\tモデムのせってい",
     "モデム接続\tモデムせつぞく",
     "モデリング変換\tモデリングへんかん",
@@ -2341,8 +2344,5 @@ export const PIECE: WordsPiece = {
     "一千\tいっせん",
     "一千万\tいっせんまん",
     "一升\tいっしょう|ひとます",
-    "一升瓶\tいっしょうびん",
-    "一升餅\tいっしょうもち",
-    "一半\tいっぱん",
   ],
 };

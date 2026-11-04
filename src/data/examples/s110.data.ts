@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 111 of 144, from "13nh". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 111 of 144, from "13mrw". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,19 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "13mrw\t1¦その｜体《からだ》の｜弱《よわ》い｜少年《しょうねん》はその｜厳《きび》しい｜競技《きょうぎ》でふるい｜落《お》とされた。¦The weak boy was eliminated from the bitter contest.¦1¦4gpm¦¦¦ふるい落とされた",
+    "13mu4\t1¦｜私《わたし》は｜彼女《かのじょ》を｜待《ま》ちあぐんだ。¦I became weary of waiting for her.¦3¦3a6t¦¦¦待ちあぐんだ",
+    "13mv8\t1¦あなたは｜一日中《いちにちじゅう》｜働《はたら》いた｜後《あと》で｜疲《つか》れきっているにちがいない。¦You must be worn out after working all day.¦3¦4z8x¦¦CK¦疲れきっている",
+    "13my0\t1¦まさかそのような｜窮地《きゅうち》に｜立《た》たされているとは｜露知《つゆし》らず。¦Good grief! I had no idea you had been placed in such a tight spot.¦1¦1myn¦kamojun¦sundown¦露知らず",
+    "13n0i\t1¦｜今日《きょう》は｜昨日《きのう》の｜寒《さむ》さとはうって｜変《か》わった｜陽気《ようき》だ。¦It isn't anything like as cold as it was yesterday.¦3¦3ofh¦¦CM¦うって変わった",
+    "13n0s\t1¦｜彼《あれ》は｜相手《あいて》を｜打《う》ち｜負《ま》かした。¦He got the better of his opponent.¦3¦27cq¦¦sundown¦打ち負かした",
+    "13n12\t1¦｜百合《ゆり》が｜雨《あめ》のために｜打《う》ち｜倒《たお》されてしまった。¦The lilies have been beaten down by the rain.¦3¦1twr¦¦¦打ち倒されて",
+    "13n2q\t1¦｜波《なみ》が｜海岸《かいがん》に｜激《はげ》しく｜打《う》ち｜寄《よ》せていた。¦Waves were battering the shore.¦1¦2lvq¦¦¦打ち寄せていた",
+    "13n44\t1¦｜私《わたし》は｜虎《とら》を｜狙《ねら》って｜発砲《はっぽう》したが、｜撃《う》ち｜損《そこ》なった。¦I aimed at the tiger and fired, but missed him.¦¦3db4¦¦CK¦撃ち損なった",
+    "13n7q\t1¦それは｜話《はなし》が｜出来過《できす》ぎている。¦That sounds too good to be true.¦3¦4e0l¦bunbuku¦Dejo¦出来過ぎている",
+    "13nbm\t1¦この｜企画《きかく》はもう｜一度《いちど》｜想《そう》を｜練《ね》り｜直《じき》せ。¦You should rethink this program.¦1¦4rpv¦¦Jesse¦練り直せ",
+    "13neo\t1¦｜持《も》ち｜物《もの》を｜置《お》き｜忘《わす》れないように。¦Don't leave your things behind.¦3¦38an¦¦Dejo¦置き忘れない",
+    "13ng2\t1¦｜今《いま》、｜誰《だれ》か｜係《かか》りの｜者《もの》を｜差《さ》し｜向《む》けます。¦I'll send someone up to help you now.¦¦3per¦bunbuku¦CK¦差し向けます",
     "13nhq\t1¦その｜会社《かいしゃ》の｜株《かぶ》の｜仕手戦《してせん》は、｜倒産《とうさん》の｜危機《きき》が｜差《さ》し｜迫《せま》っていることを｜隠《かく》す｜方便《ほうべん》にすぎなかった。¦The big promotion of that company's stock was just a cover-up to hide their impending bankruptcy.¦1¦4jgq¦¦papabear¦差し迫っている",
     "13ni0\t2¦「ええ、そうね」とスーザンが｜言葉《ことば》をさしはさむ。「｜私《わたし》が｜電話《でんわ》したのは・・・」¦\"Ah, that's true,\" Susan puts in, \"I just wanted to call to ...\"¦3¦52zb¦mookeee¦¦さしはさむ\t3¦それで｜疑《うたが》いをさしはさむ｜余地《よち》はなくなる。¦That leaves no room for doubt.¦3¦4er0¦¦CM¦さしはさむ",
     "13njy\t1¦｜彼《あれ》はジョンを｜閑職《かんしょく》に｜祭《まつ》り｜上《あ》げた。¦He kicked John upstairs.¦1¦2fky¦¦¦祭り上げた",
@@ -209,18 +222,5 @@ export const PIECE: WordsPiece = {
     "141tu\t1¦｜水夫《すいふ》たちは｜海《うみ》のもくずと｜消《き》え｜去《さ》った。¦The sailors perished in the sea.¦3¦32tx¦¦¦消え去った",
     "1420i\t1¦｜上司《じょうし》を｜侮辱《ぶじょく》するような｜危険《きけん》をおかすな。¦Don't risk insulting your boss.¦1¦34tr¦¦CK¦危険をおかす",
     "1421m\t1¦｜彼《あれ》は｜帰国《きこく》の｜途《と》についている。¦He is homeward bound.¦3¦2bsf¦¦CM¦帰国の途についている",
-    "1427q\t1¦ぼくたちはいつも｜規則《きそく》を｜守《まも》らなくてはいけない。¦We always have to obey the rules.¦2¦47jk¦¦CK¦規則を守ら",
-    "1428a\t1¦だから｜今《いま》は｜降参《こうさん》ね。｜他《ほか》にもまだ｜調《しら》べてはみるけど・・・｜期待薄《きたいうす》だと｜思《おも》う。¦Therefore I'm giving up for now. I'll still try to check out other possibilities but ... I think hopes are slim.¦2¦1n3c¦¦pip¦期待薄",
-    "142b2\t1¦｜切手集《きってあつ》めには｜興味《きょうみ》を｜失《うしな》った。¦I lost interest in collecting stamps.¦1¦31nf¦¦CK¦切手集め",
-    "142da\t1¦｜彼《あれ》はウイスキーを｜生《き》で｜飲《の》んだ。¦He took a drink of whiskey neat.¦3¦2g8a¦¦¦生で飲んだ",
-    "142eo\t1¦｜事実《じじつ》は｜小説《しょうせつ》よりも｜奇《き》なり。¦Fact is stranger than fiction.¦1¦38cx¦¦CK¦奇なり",
-    "142nu\t1¦｜今朝《けさ》は｜気分《きぶん》が｜良《い》いです。¦I'm feeling good this morning.¦¦3oxc¦small_snow¦CK¦気分が良い",
-    "142oy\t1¦｜彼《あ》の｜忠告《ちゅうこく》を｜肝《きも》に｜銘《めい》じて｜忘《わす》れるな。¦Bear his advice in mind.¦1¦2hwk¦¦CM¦肝に銘じて",
-    "142pi\t1¦｜彼《あれ》はびっくりして｜肝《きも》を｜冷《ひ》やした。¦It scared the daylights out of him.¦1¦2ds2¦¦CH¦肝を冷やした",
-    "142rq\t1¦｜九死《きゅうし》に｜一生《いっしょう》を｜得《え》たことがありますか。¦Have you ever had a narrow escape?¦3¦3ujd¦¦Zifre¦九死に一生を得た",
-    "14302\t1¦アンタ本当に器用ねっ。主夫とか向いてるんじゃない？¦You're really handy, aren't you? Don't you think you'd make a good house-husband?¦1¦1nbh¦mookeee¦CM¦向いてる",
-    "1431g\t1¦｜彼《あれ》が｜新《あたら》しく｜教授陣《きょうじゅじん》に｜加《くわ》わった｜人《じん》です。¦He is a new addition to the teaching staff.¦1¦2kn7¦¦CK¦教授陣",
-    "1438e\t1¦｜何事《なにごと》でも｜極端《きょくたん》に｜走《はし》るのはよくない。¦You must not go to extremes in anything.¦1¦40o5¦¦magnificentgoddess¦極端に走る",
-    "1438o\t1¦｜局地的《きょくちてき》な｜大雨《おおあめ》だったらしいけど、｜行《い》かなくて｜正解《せいかい》だったよ。¦I'm glad we didn't go there because there were some localized heavy rain showers.¦¦3uwa¦¦chanchan¦局地的な",
   ],
 };

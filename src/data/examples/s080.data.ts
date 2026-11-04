@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 81 of 144, from "0wmw". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 81 of 144, from "0wmow". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,15 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0wmow\t1¦｜我《わ》が｜社《しゃ》の｜本拠地《ほんきょち》は｜東京《とうきょう》である。¦Our company's base is in Tokyo.¦1¦3zu0¦huizi99¦CK¦本拠地",
+    "0wmpq\t1¦そろそろ｜話《はなし》の｜本筋《ほんすじ》に｜入《い》るべきです。¦It's time to get down to business.¦1¦4dqy¦ookii_risu¦CK¦本筋",
+    "0wmro\t2¦トムが｜明日《あした》｜本校《ほんこう》へ｜来《き》ます。¦Tom is coming to our school tomorrow.¦4¦4ahs¦bunbuku¦CK¦本校",
+    "0wms8\t1¦｜雨《あめ》は｜本降《ほんぶ》りになってきた。¦The rain came down in earnest.¦3¦428x¦¦sundown¦本降り",
+    "0wmsi\t1¦｜彼《あ》の｜音楽《おんがく》は｜本国《ほんごく》では｜人《じん》｜気《き》がなかった。¦His music was not popular at home.¦3¦2j29¦¦CK¦本国",
+    "0wmt2\t1¦さて、｜本腰《ほんごし》を｜入《い》れてまじめな｜話《はなし》をしよう。¦Now let us get down to a serious talk.¦2¦4n9b¦¦¦本腰",
+    "0wmv0\t1¦それから、｜彼《あれ》は、ケンブリッジで｜研究《けんきゅう》を｜始《はじ》め、｜宇宙《うちゅう》の｜本質《ほんしつ》について｜前《さき》よりいっそう｜多《おお》くの｜考《かんが》えを｜発展《はってん》させ｜始《はじ》めた。¦Then he began his work at Cambridge, developing many new ideas about the nature of the universe.¦1¦4ewg¦¦sundown¦本質",
+    "0wmva\t1¦その｜社《やしろ》は｜大阪《おおさか》に｜本社《ほんしゃ》がある。¦The firm has its head office in Osaka.¦¦4hqa¦¦CN¦本社",
+    "0wmvk\t1¦｜沖縄《おきなわ》は｜本州《ほんしゅう》よりも｜中国《ちゅうごく》に｜近《ちか》いということに｜気付《きづ》いてましたか。¦Are you aware that Okinawa is closer to China than to Honshu?¦1¦41es¦¦CN¦本州",
     "0wmwo\t1¦｜私《わたし》は｜本章《ほんしょう》でその｜問題《もんだい》を｜取《と》り｜扱《あつか》うつもりです。¦I'm going to deal with the problem in this chapter.¦1¦39w6¦¦CM¦本章",
     "0wmwy\t2¦｜日本《にほん》にあるインドカレー｜屋《や》のカレーって、やっぱり｜日本《にほん》｜人《ひと》の｜口《くち》に｜合《あ》わせて｜本場《ほんば》よりマイルドに｜作《つく》られてるよね。¦The curry they serve in Japan is milder than real Indian curry. They adapt it to Japanese tastes.¦3¦2mnx¦KK_kaku_¦papabear¦本場",
     "0wmxs\t2¦ギターでカントリー・ウエスタンを｜弾《はじ》くのは｜本職《ほんしょく》のミュージシャンならごくたやすいことだ。¦Playing country-western music on guitar is real kid stuff to a true professional.¦1¦4ufi¦¦CM¦本職",
@@ -18,6 +27,7 @@ export const PIECE: WordsPiece = {
     "0wmzg\t1¦わずかの｜言葉《ことば》が｜人《じん》の｜本性《ほんしょう》を｜表《あらわ》すことがある。¦A few words may betray a man's true character.¦3¦444a¦¦CM¦本性",
     "0wn3w\t1¦この｜寺《てら》の｜本尊《ほんぞん》は｜何《なん》であるか｜知《し》っていますか。¦Do you know which deity this temple is dedicated to?¦2¦4r0h¦¦CM¦本尊",
     "0wn46\t1¦なんであれ｜物事《ものごと》の｜本体《ほんたい》を｜捕《と》らえる｜事《こと》が｜肝心《かんじん》だ。¦No matter what the problem is, it's essential to get at the heart of the matter.¦1¦49ic¦¦AlanF_US¦本体",
+    "0wn50\t1¦この｜本棚《ほんだな》は｜組《く》み｜立《た》てが｜簡単《かんたん》です。¦This bookcase is easy to assemble.¦1¦4pcm¦bunbuku¦CK¦本棚",
     "0wn5k\t1¦やっと｜本調子《ほんちょうし》を｜取《と》り｜戻《もど》した。¦I have finally regained my regular form.¦3¦44yq¦¦Mar1L¦本調子",
     "0wn5u\t1¦｜彼女《かのじょ》の｜家《いえ》は｜本通《ほんどお》りから｜引《ひ》っ｜込《こ》んだ｜所《ところ》にある。¦Her house stands back from the road.¦3¦20zr¦¦CK¦本通り",
     "0wn64\t1¦｜本店《ほんてん》は｜警察《けいさつ》の｜手入《てい》れを｜受《う》けた。¦The main office was raided by the police.¦3¦1qxw¦¦CM¦本店",
@@ -205,12 +215,5 @@ export const PIECE: WordsPiece = {
     "0ws3m\t1¦あなたの｜夢《ゆめ》がみんな｜実現《じつげん》されますように。¦May all your dreams come true!¦3¦4zse¦¦CK¦夢",
     "0ws3w\t1¦そのようなことは｜決《けっ》して｜夢《ゆめ》にも｜思《おも》わなかった。¦Never did I dream of such a thing.¦3¦4jzz¦¦Zifre¦夢にも",
     "0ws46\t1¦｜私《わたし》は｜昨夜《ゆうべ》｜良《よ》い｜夢《ゆめ》を｜見《み》た。¦I had a good dream last night.¦3¦3cw8¦¦CK¦夢を見た",
-    "0ws4g\t1¦｜彼《あれ》はまるで｜夢見《ゆめみ》ているような｜感《かん》じだった。¦He felt as if he were in a dream.¦3¦2df7¦¦CM¦夢見ている",
-    "0ws5a\t1¦｜誰《だれ》でも｜夢精《むせい》したことがある。¦Everybody has wet dreams.¦¦2xji¦¦Swift¦夢精",
-    "0ws5k\t1¦ピアノ・コンクールで私が第１位になるなんて夢想だにしなかった。¦Never did I dream that I would take first place in the piano contest.¦1¦48kd¦¦Zifre¦夢想",
-    "0ws5u\t1¦｜彼《あれ》は｜夢想家《むそうか》にすぎない。¦He is nothing more than a dreamer.¦3¦24ya¦¦CK¦夢想家",
-    "0ws64\t1¦｜私《わたし》は、うれしくて｜夢中《むちゅう》だった。¦I was beside myself with joy.¦3¦3hah¦¦¦夢中",
-    "0ws6o\t1¦２つの意見に大した差はない。¦There is not much difference between the two opinions.¦3¦51qx¦bunbuku¦CM¦ない\t1¦｜引退《いんたい》するつもりは｜毛頭《もうとう》ない。¦I have no intention whatever of resigning.¦2¦1r9p¦¦CK¦ない\t2¦｜車《くるま》も｜何《なに》もなく、｜生活保護《せいかつほご》で｜生《い》きてます。¦I'm living on welfare, without a car or anything.¦1¦1lnq¦fcbond¦fcbond¦なく\t5¦｜彼《あれ》は｜口《くち》やかましいが｜本心《ほんしん》は｜悪《にく》くない。¦He grumbles a lot, but deep down he's not a bad guy.¦3¦2avw¦¦stephenmk¦ない\t5¦｜彼《あれ》は｜午前中《ごぜんちゅう》はかならずしも｜忙《いそが》しくない。¦He is not always busy in the morning.¦3¦2axp¦mookeee¦CK¦ない\t5¦｜彼《あれ》は｜見《み》かけほど｜若《わか》くない。¦He is not as young as he looks.¦3¦2b33¦¦CK¦ない",
-    "0ws6y\t1¦｜彼女《かのじょ》は｜新《あたら》しい｜時計《とけい》をなくした。¦She lost her new watch.¦3¦1wc2¦bunbuku¦CK¦なくした\t2¦その｜国《くに》の｜財政《ざいせい》の｜赤字《あかじ》をなくすには、もっと、たくさんの｜外国《がいこく》の｜援助《えんじょ》を｜注《そそ》ぎ｜込《こ》まなければならなかった。¦To get the nation's economy out of the red, more foreign aid had to be pumped in.¦1¦4iiv¦¦papabear¦なくす",
   ],
 };

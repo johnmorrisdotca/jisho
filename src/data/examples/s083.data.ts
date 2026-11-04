@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 84 of 144, from "0wzlm". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 84 of 144, from "0wzfs". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,15 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0wzfs\t1¦｜初《はじ》めの｜一歩《いっぽ》が｜唯一《ゆいいつ》の｜難関《なんかん》。¦The first step is the hardest.¦1¦35u3¦¦CK¦唯一の",
+    "0wzg2\t1¦この｜地上《ちじょう》で｜唯一無二《ゆいいつむに》の｜平等《びょうどう》は｜死《し》である。¦The sole equality on earth is death.¦¦4q7g¦¦¦唯一無二の",
+    "0wzgc\t1¦｜本人《ほんにん》は｜唯我独尊《ゆいがどくそん》を｜決《き》め｜込《こ》んでいるようだけども、｜周《まわ》りから｜見《み》れば｜単《たん》なるわがままだよね。¦He's completely convinced of his own greatness but to the people around him he's just a selfish jerk.¦1¦1qy4¦KK_kaku_¦papabear¦唯我独尊",
+    "0wzgw\t1¦ただいま、お｜母《かあ》さん。¦I'm home, Mom!¦5¦4d59¦arnab¦CM¦ただいま\t2¦｜申《もう》し｜訳《わけ》ありませんが、ただ｜今《いま》｜満室《まんしつ》になっています。¦I'm afraid we're quite full at the moment.¦1¦33wt¦KK_kaku_¦Zifre¦ただ今\t3¦メアリーはただいま｜戻《もど》ったところです。¦Mary has just come home.¦3¦46b8¦¦CK¦ただいま\t4¦ただいま｜参《まい》ります。¦I will be with you right away.¦3¦4d55¦arnab¦CK¦ただいま",
+    "0wzj4\t1¦｜彼《あ》の｜優《やさ》しい｜言葉《ことば》で｜彼女《かのじょ》の｜気持《きも》ちが｜和《やわ》らいだ。¦She melted at his kind words.¦3¦2hhb¦¦CK¦優しい",
+    "0wzjo\t1¦ここから郵便局まではゆうに５キロあります。¦The post office is a good five kilometers away from here.¦2¦4te9¦¦CK¦ゆうに",
+    "0wzk8\t1¦｜彼女《かのじょ》は｜現代《げんだい》の｜最《もっと》も｜優《まさ》れた｜画家《がか》の｜一人《ひとり》である。¦She is among the best artists of today.¦3¦1xlv¦¦Dejo¦優れた",
+    "0wzks\t1¦｜広告《こうこく》に｜関《かん》してはコークの｜方《ほう》が｜優位《ゆうい》にたっている。¦When it comes to advertising, Coke is ahead of the game.¦3¦3pyz¦¦¦優位に",
+    "0wzlc\t1¦｜憲法《けんぽう》の｜規定《きてい》に｜従《したが》い｜衆院《しゅういん》の｜議決《ぎけつ》が｜参院《さんいん》に｜優越《ゆうえつ》する。¦Under the Constitution, the lower chamber's resolutions override those of the upper chamber.¦1¦1mso¦mookeee¦bmorsello¦優越",
     "0wzlm\t1¦あんなに｜美人《びじん》なんだから、｜彼女《かのじょ》も｜優越感《ゆうえつかん》を｜感《かん》じているんだろうな、きっと。¦I'll bet it gives her a feeling of superiority to be so beautiful.¦3¦4x4q¦¦CM¦優越感",
     "0wzn0\t1¦エステサロンで優雅な至福のひとときを過ごしてみませんか？¦How about spending an elegant and blissful time at a beauty salon?¦1¦1nae¦mookeee¦¦優雅な",
     "0wzoe\t1¦｜彼女《かのじょ》は｜作文《さくぶん》が｜優秀《ゆうしゅう》だ。¦She is excellent in composition.¦1¦1xdk¦¦¦優秀",
@@ -221,15 +230,5 @@ export const PIECE: WordsPiece = {
     "0x4s0\t1¦コンピューターが｜産業《さんぎょう》の｜様相《ようそう》を｜大《おお》きく｜変《か》えた。¦Computers have changed the industrial picture considerably.¦3¦4nnj¦¦¦様相",
     "0x4sa\t1¦｜彼《あ》の｜様《よう》｜態《たい》は、どちらかといえば、｜昨日《きのう》よりよいほうです。¦His condition is, if anything, better than yesterday.¦1¦2hfy¦¦¦様態",
     "0x4u8\t1¦｜若《わか》い｜男女《だんじょ》が｜人里離《ひとざとはな》れた｜洋館《ようかん》で｜恐怖《きょうふ》の｜一夜《いちや》を｜過《す》ごすという、ホラーの｜定番《ていばん》スタイルだ。¦This is a horror staple - young men and women spend a night of terror in an isolated house.¦¦1lct¦fcbond¦¦洋館",
-    "0x4v2\t1¦｜梨《なし》｜奈《からなし》は｜家政《かせい》｜部《ぶ》で、｜主《おも》に｜洋裁《ようさい》をやっている。¦Rina is in the home economics club. Her main activity is dressmaking.¦1¦1mdw¦mookeee¦¦洋裁",
-    "0x4vc\t1¦｜私《わたし》は｜洋式《ようしき》のホテルに｜泊《と》まりたい。¦I'd like to stay in a Western-style hotel.¦2¦39mc¦¦¦洋式",
-    "0x4w6\t1¦その｜店《みせ》では｜洋書《ようしょ》が｜売《う》られている。¦Foreign books are sold at the shop.¦4¦4g86¦¦orcrist¦洋書",
-    "0x4wg\t1¦｜私《わたし》は｜洋食《ようしょく》はあまり｜好《す》きではない。¦I don't care for foreign food.¦3¦39mb¦¦¦洋食",
-    "0x4x0\t1¦お｜前《まえ》に｜新《あたら》しい｜洋服《ようふく》を｜作《つく》ってあげよう。¦I will make a new suit for you.¦4¦4v4j¦¦CK¦洋服",
-    "0x4xk\t1¦４．中華鍋にごま油を熱してバターを溶かす。¦4. Heat the sesame oil in the wok and melt the butter.¦¦1li1¦fcbond¦fcbond¦溶かす\t2¦｜彼《あれ》はコーヒーに｜砂糖《さとう》を｜溶《と》かした。¦He dissolved some sugar in his coffee.¦1¦2fus¦¦¦溶かした",
-    "0x4ye\t1¦｜氷《こおり》が｜溶《と》けると｜液体《えきたい》になる。¦When ice melts, it becomes liquid.¦2¦1tw6¦¦CK¦溶ける\t2¦｜砂糖《さとう》は｜水《みず》に｜溶《と》ける。¦Sugar dissolves in water.¦1¦3nup¦small_snow¦CK¦溶ける",
-    "0x4yo\t1¦｜海《うみ》と｜空《から》の｜色《いろ》がお｜互《たが》いに｜溶《と》け｜合《あ》っている。¦The colors of the sea and the sky blend into one another.¦2¦3yub¦mookeee¦Ivan24¦溶け合っている",
-    "0x4yy\t1¦｜空《から》が｜海《うみ》と｜一《ひと》つに｜溶《と》け｜込《こ》むように｜見《み》えた。¦The sky seemed to blend with the sea.¦2¦3uho¦mookeee¦Zifre¦溶け込む",
-    "0x4z8\t1¦リトマス紙で溶液の液性（酸性、中性、塩基性）を調べるときは、リトマス紙をすべて溶液に浸すのではなく、紙の先端の部分だけを浸します。¦When investigating the pH (acidic, neutral, alkaline) of a liquid, don't soak the litmus paper completely in the liquid but just put the end of the paper in it.¦¦1laz¦fcbond¦fcbond¦溶液",
   ],
 };

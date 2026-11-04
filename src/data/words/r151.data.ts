@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 152 of 316, from "すなっふふ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 152 of 316, from "すなっくが". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,12 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "スナックがし\tスナック菓子\t#1h0rk\t¦snack food (esp. potato chips, popcorn, etc.)¦munchie",
+    "スナックバー\t\t#myvs\t¦snack bar (usu. an establishment that serves alcohol)",
+    "スナックめん\tスナック麺\t#164ao\t¦snack noodle",
+    "スナック・バー\t\t#myvs\t¦snack bar (usu. an establishment that serves alcohol)",
+    "スナッチ\t\tC~g#myw2\t¦snatch (weightlifting)",
+    "スナッフ\t\t#1hig8\t¦snuff",
     "スナッフフィルム\t\t#1p10o\t¦snuff film¦snuff movie",
     "スナッフボトル\t\t#1hify\t¦snuff bottle",
     "スナッフ・フィルム\t\t#1p10o\t¦snuff film¦snuff movie",
@@ -990,12 +996,5 @@ export const PIECE: WordsPiece = {
     "スポーツ・テスト\t\t#n05w\t¦sports test",
     "スポーツ・トレーナー\t\t#n066\t¦sports trainer",
     "スポーツ・ドクター\t\t#1p4dd\t¦sports physician¦sports medicine physician¦sport and exercise medicine doctor",
-    "スポーツ・ドリンク\t\t#n06g\t¦sports drink",
-    "スポーツ・ニッポン\t\t#304o9\tproduct¦Sports Nippon (newspaper)",
-    "スポーツ・ニュース\t\t#1p4mn\t¦sports news",
-    "スポーツ・バッグ\t\t#1isnk\t¦sports bag",
-    "スポーツ・ファン\t\t#1ca52\t¦sports fan",
-    "スポーツ・フェアー\t\t#n06q\t¦sports fair",
-    "スポーツ・フェスティバル\t\t#1ovx5\t¦sports festival (at a school)¦sports day¦field day",
   ],
 };

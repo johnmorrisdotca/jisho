@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 40 of 144, from "0rqi". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 40 of 144, from "0rqa". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,23 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0rqa2\t1¦この週末には２つの最強のチームが激突する。¦The two strongest teams will clash with each other this weekend.¦1¦4qpr¦¦sundown¦最強",
+    "0rqac\t1¦｜最近《さいきん》、｜彼《あ》のうわさを｜耳《みみ》にしていない。¦We haven't heard of him lately.¦3¦3nqk¦¦¦最近",
+    "0rqaw\t1¦それは｜現存《げんぞん》する｜最古《さいこ》の｜木造建築《もくぞうけんちく》である。¦It is the oldest wooden building in existence.¦2¦4ecq¦bunbuku¦CC¦最古",
+    "0rqb6\t1¦｜大丈夫《だいじょうぶ》、｜誠実《せいじつ》でいれば｜最後《さいご》には｜報《むく》われるよ。¦I can assure you that honesty pays in the long run.¦¦2y3e¦KK_kaku_¦CM¦最後\t2¦｜伝説《でんせつ》の｜最後《さいご》の｜部分《ぶぶん》は｜後世《こうせい》｜付《つ》け｜加《くわ》えられたものだ。¦The last part of the legend was added later.¦¦2oe8¦¦Dejo¦最後",
+    "0rqbq\t1¦｜最後《さいご》までその｜仕事《しごと》をやり｜遂《と》げなければならない。¦You must carry the task through to the end.¦1¦3nli¦¦ddnktr¦最後まで",
+    "0rqca\t1¦｜彼《あれ》は｜現存《げんぞん》する｜最高《さいこう》の｜芸術家《げいじゅつか》である。¦He is the greatest living artist.¦2¦2b16¦bunbuku¦Eldad¦最高\t2¦｜株価指数《かぶかしすう》は｜過去最高《かこさいこう》に｜上昇《じょうしょう》した。¦The stock price index soared to an all-time high.¦1¦3y1e¦¦CK¦最高",
+    "0rqd4\t1¦｜最高裁《さいこうさい》が｜人種《じんしゅ》｜分離《ぶんり》｜教育《きょういく》を｜攻撃《こうげき》。¦The Supreme Court attacks school segregation.¦¦3nl2¦¦¦最高裁",
+    "0rqdy\t1¦｜試合《しあい》は｜最高潮《さいこうちょう》に｜達《たっ》した。¦The game came to a climax.¦1¦38iz¦small_snow¦rul¦最高潮",
+    "0rqe8\t1¦エベレスト｜山《やま》は｜世界《せかい》の｜最高峰《さいこうほう》である。¦Mt. Everest is the highest peak in the world.¦1¦4vvs¦bunbuku¦CM¦最高峰",
+    "0rqes\t1¦｜最終電車《さいしゅうでんしゃ》はいつ｜出《で》ますか。¦When does the last train leave?¦3¦3nkg¦¦CK¦最終",
+    "0rqf2\t1¦わがチームは最終回で５点入った。¦Our team scored five runs in the last inning.¦3¦446r¦¦CK¦最終回",
+    "0rqfc\t1¦｜戦争《せんそう》は｜最終段階《さいしゅうだんかい》にはいっていった。¦The war had entered its final stage.¦2¦30zz¦¦voxbubnya¦最終段階",
+    "0rqfw\t1¦あなたの｜人生《じんせい》の｜最終目的《さいしゅうもくてき》は｜何《なに》ですか。¦What is your ultimate goal in your life?¦¦4zwd¦¦CM¦最終目的",
+    "0rqg6\t1¦その｜考《かんが》えは｜最初《さいしょ》のうちはばかげているように｜思《おも》えた。¦The idea seemed absurd at first.¦3¦4ikn¦¦CK¦最初の",
+    "0rqgg\t1¦｜第二《だいに》が｜周辺環境《しゅうへんかんきょう》との｜親和性《しんわせい》であり、｜最小《さいしょう》の｜廃棄物《はいきぶつ》、｜自然《しぜん》エネルギーの｜利用《りよう》｜等《など》、｜周辺《しゅうへん》の｜生態《せいたい》と｜調和《ちょうわ》した｜住空間《じゅうくうかん》を｜形成《けいせい》することである。¦The second is the affinity with environment. By utilizing natural energy and reducing wastes, we have to make houses which harmonize with ecology.¦1¦2xun¦mookeee¦¦最小",
+    "0rqh0\t1¦｜被害《ひがい》は｜最小限《さいしょうげん》に｜食《く》い｜止《と》められた。¦The damage was held to a minimum.¦2¦1u8b¦tommy__san¦CM¦最小限",
+    "0rqha\t1¦｜最小限度《さいしょうげんど》の｜世話《せわ》で、｜立派《りっぱ》に｜育《そだ》つ｜植物《しょくぶつ》もある。¦Some plants grow well with a minimum of care.¦1¦3nhu¦small_snow¦sundown¦最小限度",
     "0rqiy\t1¦｜私《わたし》は｜最新《さいしん》の｜辞書《じしょ》を｜持《も》っている。¦I have an up-to-date dictionary.¦3¦3d13¦¦CK¦最新の",
     "0rqj8\t1¦その｜工場《こうじょう》では、｜設備《せつび》はすべて｜最新式《さいしんしき》のものだった。¦In the factory, all the equipment was up to date.¦2¦4id6¦mookeee¦¦最新式",
     "0rqji\t1¦その｜歌手《かしゅ》はあの｜曲《きょく》で｜最盛期《さいせいき》にあった。¦The singer was at his best in that song.¦1¦4jkb¦¦¦最盛期\t2¦｜今《いま》はカキの｜最盛期《さいせいき》だ。¦Oysters are in season now.¦1¦3p8o¦bunbuku¦CK¦最盛期",
@@ -195,25 +212,5 @@ export const PIECE: WordsPiece = {
     "0rueo\t1¦その｜殺人者《さつじんしゃ》の｜正体《しょうたい》は｜手掛《てが》かりがまったくなかった。¦There was no clue as to the identity of the murderer.¦3¦4if0¦¦¦殺人者",
     "0ruey\t1¦これは、あの｜殺人的《さつじんてき》な｜公爵《こうしゃく》に｜復讐《ふくしゅう》しようという｜彼《あ》の｜願《ねが》いを｜強《つよ》めただけだ。¦This only increased his desire to be revenged on the murderous duke.¦¦4ord¦¦¦殺人的な",
     "0ruf8\t1¦｜彼《あれ》は｜自分《じぶん》の｜母親《ははおや》にナイフで｜切《き》り｜付《つ》け｜殺人未遂《さつじんみすい》で｜有罪《ゆうざい》になった。¦He was found guilty of attempted murder for attacking his mother with a knife.¦¦8j6f¦blay_paul¦blay_paul¦殺人未遂",
-    "0rugc\t1¦｜彼女《かのじょ》は｜花《はな》に｜殺虫剤《さっちゅうざい》を｜振《ふ》りまいた。¦She sprayed pesticide on the flowers.¦1¦493t8¦JimBreen¦JimBreen¦殺虫剤",
-    "0rugm\t1¦その｜本《ほん》の｜注文《ちゅうもん》が｜殺到《さっとう》した。¦Orders for the book poured in.¦3¦4fhh¦bunbuku¦CM¦殺到",
-    "0ruhg\t1¦この｜薩摩芋《さつまいも》は｜生焼《なまや》けでがりがりする。¦This sweet potato is only half-baked and is still crunchy.¦¦1n7n¦¦¦薩摩芋",
-    "0rui0\t1¦お｜客《きゃく》が｜雑《ざつ》な｜作《つく》りのスタンドに｜座《すわ》って｜靴《くつ》を｜磨《みが》いてもらっている。¦A customer is having his shoes shined on a slapped-together stand.¦2¦4vem¦¦¦雑な",
-    "0ruj4\t1¦ラジオに｜雑音《ざつおん》が｜入《い》る。¦The radio is disturbed by noises.¦3¦44mo¦¦xiaomo¦雑音",
-    "0ruje\t1¦あそこでは｜多《おお》くのタイプの｜食品《しょくひん》や｜雑貨《ざっか》を｜売《う》っている。¦They sell many types of food and grocery products.¦2¦50vx¦¦CK¦雑貨",
-    "0rulc\t1¦この｜川《かわ》には｜雑魚《ざこ》がたくさんいる。¦This river abounds in small fish.¦3¦4qe4¦small_snow¦orcrist¦雑魚",
-    "0rulm\t1¦ぬれたぞうきんで｜窓《まど》をふきなさい。¦Clean the window with a damp cloth.¦3¦49a9¦bunbuku¦Dejo¦ぞうきん",
-    "0rumg\t1¦その｜雑誌《ざっし》はどこで｜買《か》えますか。¦Where can I buy that magazine?¦2¦4iep¦bunbuku¦CK¦雑誌",
-    "0runa\t1¦ヨーロッパは｜強力《きょうりょく》な｜雑種《ざっしゅ》｜民族《みんぞく》｜大陸《たいりく》である。¦Europe is a continent of energetic peoples.¦2¦44sv¦¦AlanF_US¦雑種",
-    "0runu\t1¦｜弟《おとうと》の｜部屋《へや》はいつも｜雑然《ざつぜん》としている。¦My brother's room is always a mess.¦3¦2osx¦bunbuku¦CK¦雑然と",
-    "0ruo4\t1¦｜雑草《ざっそう》が｜急《きゅう》に｜生《は》えた。¦Weeds sprang up in the garden.¦3¦3mt5¦¦CK¦雑草",
-    "0ruoo\t1¦ぜひ｜雑談《ざつだん》でもしにいらしてください。¦You must come and have a chat with us.¦3¦4l4m¦KK_kaku_¦sundown¦雑談",
-    "0rurq\t1¦｜彼《あれ》はすぐに｜雑用《ざつよう》を｜終《お》えた。¦He finished his chores in no time.¦3¦2fjg¦bunbuku¦CK¦雑用",
-    "0rusa\t1¦｜早《はや》く｜帰《かえ》った｜方《ほう》がいい、｜暑《あつ》いから。サバは、｜生《い》き｜腐《ぐさ》れとも｜言《い》われるくらい｜足《あし》が｜早《はや》い。¦It's hot, so you'd better head back quickly. Mackerel goes off so fast that they coined 'fresh-looking rotten fish'.¦1¦1lqd¦fcbond¦fcbond¦サバ",
-    "0rusu\t1¦｜首相《しゅしょう》は｜記者会見《きしゃかいけん》で｜難《むずか》しい｜質問《しつもん》をうまくさばいた。¦The prime minister fielded some tough questions at the press conference.¦3¦36ih¦¦CK¦さばいた\t2¦たくさん｜作《つく》っても｜捌《さば》ききれないから、｜控《ひか》えめにね。¦If you make too many, we won't be able to sell them all, so don't go wild.¦¦1n3a¦mookeee¦papabear¦捌き",
-    "0rut4\t1¦｜雨《あめ》の｜中《うち》に｜放置《ほうち》しておくと｜自転車《じてんしゃ》はさびるでしょう。¦A bicycle will rust if you leave it in the rain.¦3¦429y¦¦CK¦さびる",
-    "0rute\t1¦さびつかせるよりもすり｜切《き》らしたほうがいい。¦Better wear out than rust out.¦4¦4n8u¦¦¦さびつかせる",
-    "0ruty\t1¦サメがその｜男《おとこ》の｜足《あし》を｜噛《か》み｜切《き》った。¦A shark snapped the man's leg off.¦¦4n7t¦¦¦サメ",
-    "0ruu8\t1¦あなたが｜皿《さら》を｜洗《あら》っている｜間《あいだ》に、｜私《わたし》は｜床《とこ》を｜掃除《そうじ》します。¦I'll sweep the floor while you wash the dishes.¦2¦50lp¦¦CK¦皿",
   ],
 };

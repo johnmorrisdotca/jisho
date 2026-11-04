@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 31 of 144, from "0qmse". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 31 of 144, from "0qmkw". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,21 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0qmkw\t1¦｜私《わたし》は｜近視《きんし》なので、あの｜看板《かんばん》に｜何《なに》が｜書《か》いてあるか｜分《わ》からない。¦I am near-sighted, so I cannot make out what is written on that signboard.¦¦3dl2¦bunbuku¦CC¦近視",
+    "0qmlq\t1¦｜彼《あれ》が｜近所《きんじょ》に｜越《こ》してきた。¦He moved into my neighborhood.¦3¦2ky5¦bunbuku¦CK¦近所",
+    "0qmn4\t1¦ＡへはＢから近接ことができる。¦Access to A is available from B.¦2¦518d¦e4zh1nmcz¦¦近接",
+    "0qmno\t1¦トムには｜近代《きんだい》｜絵画《かいが》の｜鑑賞《かんしょう》｜能力《のうりょく》がある。¦Tom appreciates modern art.¦1¦4ag8¦Lurid¦CK¦近代",
+    "0qmny\t1¦ほとんどの｜場合《ばあい》、｜近代化《きんだいか》は｜西欧化《せいおうか》と｜同一《どういつ》のものとみなされる。¦In most cases, modernization is identified with Westernization.¦2¦47ch¦¦AlanF_US¦近代化",
+    "0qmo8\t1¦｜近代科学《きんだいかがく》｜技術《ぎじゅつ》はなぜ｜中国《ちゅうごく》で｜発展《はってん》しなかったのだろうか。¦Why didn't modern technology develop in China?¦1¦3uqg¦¦Zifre¦近代科学",
+    "0qmoi\t1¦｜彼《あれ》はフランス｜近代史《きんだいし》に｜詳《くわ》しい。¦He is acquainted with the modern history of France.¦1¦2dpo¦bunbuku¦CN¦近代史",
+    "0qmos\t1¦｜近代的《きんだいてき》｜方法《ほうほう》で｜産業《さんぎょう》は｜向上《こうじょう》した。¦Modern methods improved industry.¦¦3uqb¦¦Zifre¦近代的",
+    "0qmpc\t1¦フォークは、ヨーロッパや｜近東《きんとう》｜地域《ちいき》で｜長年《ながねん》にわたって｜使《つか》われていたが、それはもっぱら｜調理《ちょうり》｜用《よう》にのみであった。¦Forks were used for many years in Europe and the Near East, but only for cooking.¦2¦485w¦mookeee¦Swift¦近東",
+    "0qmpm\t1¦｜近日中《きんじつちゅう》に｜彼女《かのじょ》にまた｜会《あ》うことになっている。¦I will be seeing her again one of these days.¦3¦3uq6¦¦CK¦近日",
+    "0qmq6\t1¦アジア｜諸国《しょこく》からの｜輸入品《ゆにゅうひん》は｜近年《きんねん》｜増大《ぞうだい》している。¦The imports from Asian countries have expanded recently.¦2¦50xb¦mookeee¦Miktsoanit¦近年",
+    "0qmqg\t1¦いすをもっと｜机《つくえ》に｜近《ちか》づけなさい。¦Move the chair nearer to the desk.¦2¦4wrq¦small_snow¦CK¦近づけ",
+    "0qmqq\t1¦この｜近辺《きんぺん》で、｜美味《おい》しい｜郷土料理《きょうどりょうり》を｜食《た》べさせてくれるお｜店《みせ》はありますか。¦Is there a restaurant around here that serves local delicacies?¦1¦4riv¦¦CM¦近辺",
+    "0qmru\t1¦｜近隣《きんりん》の｜家《いえ》は｜壊《こわ》れたが、｜自宅《じたく》は｜少《すこ》しの｜修繕費《しゅうぜんひ》ですんだ。¦The neighbouring house was destroyed, but mine survived just a bit of cost for repair.¦1¦1lra¦fcbond¦fcbond¦近隣",
+    "0qms4\t1¦あの｜国《くに》は｜近隣諸国《きんりんしょこく》との｜外交関係《がいこうかんけい》を｜絶《た》った。¦That country broke off diplomatic relations with the neighboring countries.¦1¦4y9a¦¦¦近隣諸国",
     "0qmse\t1¦｜金《かね》の｜切《き》れ｜目《め》が｜縁《えん》の｜切《き》れ｜目《め》。¦The end of money is the end of love.¦1¦3uoz¦small_snow¦AlanF_US¦金",
     "0qmso\t1¦｜輝《かがや》くものすべてが｜金《かね》とは｜限《かぎ》らない。¦All that glitters is not gold.¦1¦3x6d¦¦Swift¦金\t2¦｜記念碑《きねんひ》の｜一番上《いちばんうえ》で禎｜子《こ》が｜頭《とう》の｜上《うえ》に｜金《かね》の｜鶴《つる》をかざしている。¦On top of the statue, Sadako is holding a golden crane over her head.¦1¦3x94¦¦AlanF_US¦金\t3¦｜日本《にほん》シンクロ｜界《さかい》の｜悲願《ひがん》である｜金《かね》には、あと｜一歩《いっぽ》で｜届《とど》かなかった。¦The 'gold' yearned for by the Japanese synchronized swimming world was not quite reached.¦2¦1mia¦bunbuku¦CM¦金\t7¦｜私《わたし》は、｜月《つき》・｜水《みず》・｜金《かね》と｜一日《いちにち》おきに｜仕事《しごと》をします。¦I work every other day: Monday, Wednesday, and Friday.¦4¦3h7i¦¦¦金",
     "0qmt8\t1¦お｜金《かね》を｜使《つか》うも｜貯《た》めるも｜自由《じゆう》にしなさい。¦You may spend or save at will.¦2¦4vbt¦¦¦金を使う",
@@ -211,16 +226,5 @@ export const PIECE: WordsPiece = {
     "0qs8s\t1¦その｜泥棒《どろぼう》は｜刑事《けいじ》を｜見《み》ると｜走《はし》って｜逃《に》げた。¦The thief ran away at the sight of a detective.¦1¦4g90¦¦¦刑事",
     "0qsc4\t1¦それは｜罪人《ざいにん》に｜対《たい》する｜最《もっと》も｜人道的《じんどうてき》な｜刑罰《けいばつ》ではないか。¦Isn't that the most humane punishment for criminals?¦¦4ebm¦¦CM¦刑罰",
     "0qsce\t1¦｜証人《しょうにん》が｜事実《じじつ》を｜隠《かく》せば｜刑法《けいほう》の｜罪《つみ》に｜問《と》われる。¦The concealment of facts by a witness is a criminal offense.¦1¦34wq¦¦¦刑法",
-    "0qsd8\t1¦ここには｜刑務所《けいむしょ》があった。¦There used to be a prison here.¦1¦4t6x¦¦CK¦刑務所",
-    "0qsfg\t1¦｜私《わたし》の｜兄《あに》は｜技師《ぎし》になった。¦My brother became an engineer.¦2¦3ie4¦¦CK¦兄",
-    "0qsfq\t1¦｜兄《にい》さんはよくおなりだと｜思《おも》いますが。¦I hope your brother is better.¦4¦3sae¦¦¦兄さん",
-    "0qsga\t1¦「そっか。｜暇《ひま》なら｜掃除《そうじ》しといて」「なんだそれ。｜兄貴《あにき》をアゴで｜使《つか》うなよ」¦\"Oh? If you're free get the cleaning done.\" \"What's up with that? Don't order your brother around!\"¦1¦1nfm¦KK_kaku_¦¦兄貴",
-    "0qsh4\t1¦ライト｜兄弟《きょうだい》はエンジンで｜動《うご》く｜飛行機《ひこうき》を｜飛《と》ばすことに｜成功《せいこう》した。¦The Wright brothers succeeded in flying an airplane driven by an engine.¦1¦44nn¦¦CM¦兄弟\t1¦あなたは｜何人《なにびと》｜兄弟《きょうだい》がいますか。¦How many siblings do you have?¦4¦4z5w¦Profpatsch¦CK¦兄弟",
-    "0qsjc\t1¦というわけで、｜人材《じんざい》を｜啓発《けいはつ》するためのセンターが｜日本《にほん》に｜作《つく》られるべきであろう。¦Therefore, a center for the development of human resources should be built in Japan.¦1¦4boj¦¦Swift¦啓発",
-    "0qskq\t1¦６００―Ｊ型のプリンターが１９９７年の５月４日まで在庫切れとの御知らせありがとうございました。¦Thank you for letting me know that the Model 600-J printer will not be available until May 4, 1997.¦2¦51eb¦e4zh1nmcz¦papabear¦型\t2¦その｜像《ぞう》は｜型《かた》に｜入《い》れられて｜作《つく》られた。¦The statue was cast in a mold.¦2¦4gqz¦¦¦型",
-    "0qsn8\t1¦｜退職《たいしょく》を｜契機《けいき》に｜茶道《さどう》を｜始《はじ》めた。¦I took the opportunity of retirement to begin studying the tea ceremony.¦1¦1mkf¦mookeee¦AlanF_US¦契機",
-    "0qsni\t1¦｜契約《けいやく》はかなりいいかげんなものだった。¦The contract was rather loose.¦1¦3s8a¦KK_kaku_¦¦契約",
-    "0qso2\t1¦｜彼《かれ》らは｜彼《あれ》に｜無理矢理《むりやり》｜契約書《けいやくしょ》にサインさせた。¦They made him sign the contract.¦¦22co¦¦CK¦契約書",
-    "0qsoc\t1¦｜物質《ぶっしつ》は｜温度《おんど》によって｜形《かたち》を｜変《か》える。¦Matter changes its form according to temperature.¦2¦1sm8¦¦¦形\t2¦｜神《かみ》は｜自分《じぶん》の｜形《かたち》に｜人《じん》を｜創造《そうぞう》された。¦God created man in his own image.¦¦33t9¦¦CK¦形\t3¦｜自然《しぜん》は、｜環境《かんきょう》｜面《つら》での｜危険《きけん》に｜対《たい》しては｜他《た》の｜形《かたち》の｜防御《ぼうぎょ》を｜与《あた》えている。¦Nature provides other forms of protection against environmental dangers.¦1¦37td¦¦¦形\t4¦｜地方《ちほう》の｜党員《とういん》たちは｜自党《じとう》に｜有利《ゆうり》な｜形《かたち》の｜選挙区《せんきょく》｜割《わ》りをもくろんでいます。¦Local party members are trying to gerrymander the district.¦1¦2pv9¦¦¦形",
   ],
 };

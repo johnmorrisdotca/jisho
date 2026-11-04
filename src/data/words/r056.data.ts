@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 57 of 316, from "からたけわ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 57 of 316, from "からた". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,9 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "からたけ\t幹竹|乾竹\tU#1b1mk\tuk¦Japanese timber bamboo (Phyllostachys bambusoides)¦giant timber bamboo¦madake\t¦Henon bamboo (Phyllostachys nigra var. henonis)",
+    "カラタケ\t\tU#1b1mk\tuk¦Japanese timber bamboo (Phyllostachys bambusoides)¦giant timber bamboo¦madake\t¦Henon bamboo (Phyllostachys nigra var. henonis)",
+    "からたけ\t唐竹|漢竹\t#1b1n4\tarch¦Chinese bamboo¦bamboo imported from China (often used to make flutes)\t¦descending vertical sword attack (in kendo, etc.)",
     "からたけわり\t唐竹割り|唐竹割|幹竹割り\t#pzb4\t¦cutting straight down¦cleaving (a person) in two",
     "からたち\t枸橘|枳殻|枳\tU#15wwk\tuk¦trifoliate orange (Citrus trifoliata)¦hardy orange",
     "カラタチ\t\tU#15wwk\tuk¦trifoliate orange (Citrus trifoliata)¦hardy orange",
@@ -813,14 +816,5 @@ export const PIECE: WordsPiece = {
     "カルトえいが\tカルト映画\t#1cl8i\t¦cult film¦cult movie",
     "カルトきょうだん\tカルト教団\t#1p7cr\t¦religious cult",
     "カルトしゅうきょう\tカルト宗教\t#1p7ct\t¦cult religion¦cult",
-    "カルトしんじゃ\tカルト信者\t#1pioj\t¦cultist¦cult member",
-    "カルトナージュ\t\t#1p4tf\t¦cartonnage (box decorating)",
-    "カルトン\t\t#17pxy\t¦carton (e.g. of cigarettes)\t¦tray (in which money is placed when paying)¦dish",
-    "カルトン\t\t#1pi6j\t¦pasteboard",
-    "カルドン\t\t#1pg6z\t¦cardoon (Cynara cardunculus)¦artichoke thistle",
-    "カルナバル\t\t#m7q0\t¦carnival",
-    "カルナローリ\t\t#1on2v\t¦carnaroli (Italian variety of rice)",
-    "カルナヴァル\t\t#m7q0\t¦carnival",
-    "カルニチン\t\t#1gd0u\t¦carnitine",
   ],
 };

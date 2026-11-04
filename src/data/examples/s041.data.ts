@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 42 of 144, from "0s02". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 42 of 144, from "0rzp". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,21 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0rzpi\t1¦「あなたの｜辞書《じしょ》を｜使《つか》ってもいいですか」「はい、どうぞ」¦\"Can I use your dictionary?\" \"Yes, here you are.\"¦3¦5339¦mookeee¦CK¦使って\t2¦アジア｜諸国《しょこく》などから｜出稼《でかせ》ぎにきた｜外国人《がいこくじん》をメイドとして｜使《つか》うのが｜常識《じょうしき》のようになっている。¦It has become common practise to employ foreigners working abroad from Asian countries as maids.¦1¦1l7t¦fcbond¦fcbond¦使う\t3¦お｜湯《ゆ》を｜全部《ぜんぶ》｜使《つか》わないで。¦Don't use all the hot water.¦2¦4uzt¦small_snow¦CK¦使わないで",
+    "0rzps\t1¦｜使者《ししゃ》はひそかにロンドンへ｜出発《しゅっぱつ》した。¦The messenger left for London in secret.¦4¦3mec¦¦¦使者",
+    "0rzqm\t1¦｜政府《せいふ》は｜外国《がいこく》へ｜使節《しせつ》を｜派遣《はけん》した。¦The government dispatched missions abroad.¦1¦32fb¦¦¦使節",
+    "0rzqw\t1¦｜使節団《しせつだん》は｜空路《くうろ》を｜利用《りよう》して｜国境《こっきょう》までの｜最短距離《さいたんきょり》を｜行《おこな》った。¦The mission took the direct route by air to the boundary.¦1¦3meb¦¦¦使節団",
+    "0rzrg\t1¦しかし、｜使徒《しと》たちはその｜危険《きけん》に｜気付《きづ》いた。¦However the disciples awoke to that danger.¦3¦1l84¦fcbond¦fcbond¦使徒",
+    "0rzu8\t1¦｜彼《かれ》らは｜使命《しめい》を｜果《は》たした。¦They accomplished their mission.¦3¦22wq¦bunbuku¦CK¦使命",
+    "0rzus\t2¦｜実《じつ》は、「have ｜目的語《もくてきご》 done」は｜使役《しえき》じゃない｜場合《ばあい》が｜多《おお》い。¦Actually, there are many cases where 'have [object] done' is not causative.¦¦1m39¦fcbond¦fcbond¦使役",
+    "0rzvc\t1¦｜使用《しよう》する｜前《さき》に｜瓶《びん》を｜振《ふ》ってください。¦Shake the bottle before using.¦1¦3mea¦bunbuku¦CK¦使用",
+    "0rzw6\t1¦その｜自動車《じどうしゃ》の｜使用許可《しようきょか》が｜私《わたし》に｜与《あた》えられた。¦I was accorded permission to use the car.¦¦4hss¦¦¦使用許可",
+    "0rzxa\t1¦｜特定《とくてい》の｜文脈《ぶんみゃく》でどんな｜語《かたり》を｜使《つか》うべきか｜知《し》っている｜人《じん》は｜語《かたり》の｜有効《ゆうこう》な｜使用者《しようしゃ》である。¦An effective writer is one who knows what sort of words should be employed in any specific context.¦1¦2n9g¦¦hecko¦使用者",
+    "0rzxk\t1¦｜私《わたし》は｜使用人《しようにん》の｜一人《ひとり》をくびにした。¦I discharged one of my servants.¦4¦3cu4¦¦¦使用人",
+    "0rzy4\t1¦セールスマンはその｜機械《きかい》の｜使用方法《しようほうほう》を｜実演《じつえん》してみせた。¦The salesman demonstrated how to use the machine.¦2¦4l64¦¦CM¦使用方法",
+    "0rzye\t1¦アートファイル(.art)の｜使用法《しようほう》がわかりません。¦I don't know how to use an art file (.art).¦3¦1lhl¦fcbond¦fcbond¦使用法",
+    "0rzz8\t1¦｜特《とく》に、｜調和平均《ちょうわへいきん》の｜実際《じっさい》の｜使用例《しようれい》としては、「｜平均速度《へいきんそくど》」が｜主《おも》に｜取《と》り｜上《あ》げられ、｜説明《せつめい》がそこで｜終《お》わってしまうのが｜通例《つうれい》である。¦In particular, it is customary for actual examples of use of the harmonic mean to generally cover \"average speed,\" and explain no further than that.¦2¦1mil¦e4zh1nmcz¦peterius¦使用例",
+    "0s00m\t1¦｜釘《くぎ》が｜車《くるま》のタイヤに｜刺《さ》さった。¦A nail punctured the tire.¦¦4u5r¦KK_kaku_¦CK¦刺さった",
     "0s020\t1¦｜刺《さ》し｜傷《きず》はとても｜深《ふか》く、｜感染《かんせん》の｜恐《おそ》れがないか｜検査《けんさ》する｜必要《ひつよう》がある。¦The puncture wound was very deep and had to be examined for infection.¦1¦3me6¦¦¦刺し傷",
     "0s02u\t1¦｜蚊《か》にたくさん｜刺《さ》されました。¦I got a lot of mosquito bites.¦1¦3zvf¦small_snow¦CK¦刺されました\t1¦アリスは｜頭《とう》に｜花《はな》をさしています。¦Alice has a flower in her hair.¦3¦4xg3¦¦CN¦さしています",
     "0s04s\t1¦｜彼女《かのじょ》からすばらしい｜刺繍《ししゅう》｜品《しな》をもらった。¦She gave me charming embroideries.¦¦1zin¦¦¦刺繍",
@@ -194,23 +209,5 @@ export const PIECE: WordsPiece = {
     "0s39k\t1¦｜爪《つめ》を｜噛《か》むのはよしなさい。¦Don't bite your nails.¦¦2ovt¦small_snow¦CK¦よし",
     "0s3a4\t1¦そして、｜電車《でんしゃ》はキーッという｜音《おと》を｜立《た》てて｜止《と》まった。¦Then, the train screeched to a halt.¦4¦4kri¦¦orcrist¦止まった\t2¦｜十分《じゅうぶん》な｜情報《じょうほう》を｜受《う》け｜取《と》ることができなかったという｜理由《りゆう》も｜一部《いちぶ》にはあって、ハーパーの｜描写《びょうしゃ》は｜不完全《ふかんぜん》なものにとどまっている。¦Partly because he could not receive enough information, Harper's description remains imperfect.¦¦368d¦¦¦とどまっている\t3¦あの｜木《き》の｜枝《えだ》に｜数《かず》｜羽《わ》の｜鳥《とり》がとまっている。¦Some birds are sitting on the branch of that tree.¦2¦4xsx¦¦CK¦とまっている",
     "0s3ao\t1¦｜雨《あめ》がやみさえすればいいのになあ。¦If only it would stop raining!¦5¦52w9¦e4zh1nmcz¦CK¦やみ\t1¦｜敵《てき》の｜攻撃《こうげき》は｜夜明《よあ》けに｜止《や》んだ。¦The enemy attack ceased at dawn.¦1¦2opf¦KK_kaku_¦CK¦止んだ",
-    "0s3ay\t1¦それはやむを｜得《え》ず｜延期《えんき》されなければならない。¦It must, of necessity, be postponed.¦2¦4egf¦¦¦やむを得ず",
-    "0s3bi\t1¦その｜新聞《しんぶん》は｜政府《せいふ》にインフレを｜止《と》めるように｜求《もと》めた。¦The newspaper called for the government to stop inflation.¦2¦4h4l¦¦orcrist¦止める\t2¦ここに｜車《くるま》を｜停《と》めるのは｜違法《いほう》です。¦It's illegal to park your car here.¦2¦4t5u¦¦CK¦停める\t4¦この｜文書《ぶんしょ》はあなたのお｜目《め》にだけ｜留《と》めていただきたい。¦This document is for your eyes only.¦3¦4poe¦¦CK¦留めて\t6¦木片は１本の留め木で留めてある。¦The wooden pieces are fastened with a peg.¦2¦1ps0¦¦Snark¦留めてある",
-    "0s3bs\t1¦キャシーは｜花《はな》を｜摘《つ》むのをやめました。¦Cathy stopped picking flowers.¦1¦4u9k¦small_snow¦CN¦やめました",
-    "0s3cw\t1¦｜人《じん》は｜生《う》まれるやいなや、｜死《し》に｜向《む》かう。¦As soon as man is born, he begins to die.¦3¦33h2¦¦shekitten¦死",
-    "0s3d6\t1¦その｜少年《しょうねん》は｜死《し》んだものとしてあきらめられた。¦The boy was given up for dead.¦4¦4hc3¦¦CK¦死んだ",
-    "0s3dg\t1¦｜叔父《おじ》の｜死因《しいん》は｜癌《がん》だったそうです。¦I hear my uncle died of cancer.¦¦3655¦bunbuku¦CK¦死因",
-    "0s3ek\t1¦｜彼女《かのじょ》の｜死期《しき》は｜近《ちか》づいている。¦Her time is drawing near.¦3¦20tc¦¦ddnktr¦死期",
-    "0s3f4\t1¦ノーベル賞受賞者湯川博士は１９８１年に死去した。¦Dr. Yukawa, the Nobel prize winner, died in 1981.¦1¦4985¦¦CK¦死去",
-    "0s3fe\t1¦その｜犯罪《はんざい》は｜死刑《しけい》に｜値《あたい》する。¦That crime is punishable by death.¦1¦4fuo¦¦CK¦死刑",
-    "0s3fo\t1¦ここから｜逃《に》げたって｜同《おな》じ、｜死刑囚《しけいしゅう》はどこにも｜居《お》るし｜誰《だれ》もが｜犠牲者《ぎせいしゃ》。¦It's the same wherever you try and escape: everywhere is a death row, and everyone's a victim.¦¦4tel¦¦¦死刑囚",
-    "0s3fy\t1¦｜彼《あれ》は｜妻《つま》の｜死後《しご》、｜何年《なんねん》も｜生《い》きながらえていた。¦After his wife died, he lived for quite a few more years.¦3¦2ah5¦¦CK¦死後",
-    "0s3g8\t1¦しかし、その｜一方《いっぽう》、ラテン｜語《ご》はそのときまでに「｜死語《しご》」となっていた。¦But, then again, Latin was already a \"dead language\" by that time.¦4¦4mxj¦¦¦死語\t2¦それって｜死語《しご》じゃないの。¦People don't say that anymore.¦4¦4ese¦bunbuku¦CK¦死語",
-    "0s3gs\t1¦３年前死産しました。¦I had a stillborn baby three years ago.¦3¦51ix¦e4zh1nmcz¦¦死産",
-    "0s3h2\t1¦その事故の犠牲者数は死者５名、負傷者１００名であった。¦The toll from the accident was 5 persons dead and 100 persons injured.¦1¦4hy3¦¦¦死者",
-    "0s3hc\t1¦その｜事《こと》｜故《ゆえ》では10｜名《な》の｜死傷者《ししょうしゃ》が｜出《で》た。¦Ten people were killed or injured in the accident.¦1¦4hzf¦KK_kaku_¦CM¦死傷者",
-    "0s3hm\t1¦iPhoneはインターネットにとって｜死神《しにがみ》なんだって。¦Apparently \"the iPhone sounds the death knell for the Internet.\"¦3¦1lg4¦fcbond¦fcbond¦死神",
-    "0s3hw\t1¦久｜夫《おっと》は｜死人《しにん》のように｜青《あお》ざめた｜顔色《かおいろ》をしていた。¦Hisao's face was as pale as that of a corpse.¦2¦3lq4¦¦¦死人",
-    "0s3ig\t1¦｜死体解剖《したいかいぼう》の｜結果《けっか》、｜絞殺《こうさつ》と｜判明《はんめい》しました。¦The postmortem showed that she had been strangled.¦1¦3lq0¦KK_kaku_¦CM¦死体",
   ],
 };

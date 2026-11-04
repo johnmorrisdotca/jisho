@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 64 of 172, from "garden ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 64 of 172, from "gap v". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,27 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "gap vacancy\tあなうめ",
+    "gape\tおおぐちをあける",
+    "gaper\tみるがい|ミルガイ|みるくい|ミルクイ|みるくいがい|ミルクイガイ",
+    "gaping\tぽかん|ポカン|ぱかん|パカン|パクリ|ぱっくり|ぱくり|パクり|パックリ|ばっくり|パクッ|ぱくっ|パクっ|ばくり",
+    "gaps\tいき|イキ|すきまのかみ|びっちり",
+    "gapsin\tこうしんじへん|こうしんせいへん",
+    "gar\tガー|スポッテッドガー|スポッテッド・ガー|アリゲーターガー|アリゲーター・ガー|ロングノーズガー|ロングノーズ・ガー",
+    "garage\tしゃこ|ガレージ|ギャレージ|ガレージセール|ガレージ・セール|スカイパーキング|スカイ・パーキング|がいこう|しゃこいれ|だいしゃ|ビルトインガレージ|ビルトイン・ガレージ|にゅうしゃ|しゅっしゃ",
+    "garam\tガラムマサラ|ガラム・マサラ",
+    "garb\tそうい|そうふく|うはつぞくたい|こいごろも",
+    "garbage\tうんこ|ウンコ|くず|クズ|ちり|はいきぶつ|はいひん|ゴミ|ごみ|ガベージ|しゅうしゅう|せいそう|ごみばこ|なまごみ|ガーベージ|ゴミしゅうせきじょう|ディスポーザー|せいそうしゃ|くずいれくずだし|ごみため",
+    "garbage can\tごみばこ",
+    "garbage collection\tしゅうしゅう|せいそう",
+    "garbhadhatu\tたいぞうかい|たいぞう|ちゅうだい|たいぞうかいまんだら|ちゅうだいはちよういん|たいぞうまんだら",
+    "garbled\tしたたらず",
+    "garbled speech\tしたたらず",
+    "garbology\tガーボロジー",
+    "garcinia\tマンゴスチン|ふくぎ|フクギ|まんごすちん",
+    "garcía\tひゃくねんのこどく",
+    "garde\tぜんえい|アバンギャルド|アヴァンギャルド|アバン・ギャルド|アヴァン・ギャルド|ぜんえいは|ぜんえいびじゅつ|ぜんえいげいじゅつ|ぜんえいてき|アンギャルド|アンガルド|アン・ギャルド|アン・ガルド",
+    "garden\tにわ|その|ていえん|ガーデン|えん|せんざい|ていぜん|えんせい|そのう|えんてい|はなぞの|かえん|えんちょう|ろじ|しょくぶつえん|にゅうえん|うえき|ぎょえん|にわき|れいえん",
     "garden cemetery\tれいえん",
     "garden city\tでんえんとし",
     "garden close\tにわさき",
@@ -295,7 +316,8 @@ export const PIECE: WordsPiece = {
     "geibi\tげいびけい|げいびせん",
     "geiger\tガイガーカウンター|ガイガー・カウンター|ガイガーけいすうかん|ガイガーミュラーけいすうかん|ガイガーミュラーカウンター|ガイガー・ミュラー・カウンター|ほうしゃせんそくていき",
     "geiko\tかかりげいこ",
-    "geisha\tげいしゃ|げいぎ|ねこ|ネコ|きれいどころ|きれいどこ|げいこ|ぎ|げんぎ|みずあげ|ちゃや|ざしき|しこみ|パトロン|ひかす|まいこ|ぶぎ|しょうばいにん|かりゅうかい|うちげいしゃ",
+    "geisha\tげいしゃ|げいぎ|ねこ|ネコ|きれいどころ|きれいどこ|げいこ|ぎ|げんぎ|みずあげ|ちゃや|ざしき|しこみ|パトロン|ひかす|だんな|まいこ|ぶぎ|しょうばいにん|かりゅうかい",
+    "geisha bar\tだんな",
     "geisha etc\tしょうばいにん",
     "geisha kyoto\tまいこ|ぶぎ",
     "geisha maiko\tざしき",
@@ -356,7 +378,7 @@ export const PIECE: WordsPiece = {
     "gendai\tしゅうかんげんだい|げんだいにっぽじてん|げんだいこくごれいかいじてん|げんこくれい",
     "gendaika\tげんだいか",
     "gendarme\tジャンダルム",
-    "gender\tジェンダー|せい|だんじょべつ|じょせい|だんせい|ちゅうせい|つうせい|ジェンダーギャップ|ジェンダー・ギャップ|しぜんなせい|だんじょびょうどう|ジェンダーフリー|ジェンダー・フリー|せいてきくべつのない|だんじょきょうどうさんかくしゃかいきほんほう|せいどういつせいしょうがい|ジェンダーバランス|ジェンダー・バランス|オスメスへんかん|むせいご",
+    "gender\tせいべつ|ジェンダー|セックス|せい|だんじょべつ|じょせい|だんせい|ちゅうせい|つうせい|ジェンダーギャップ|ジェンダー・ギャップ|しぜんなせい|だんじょびょうどう|ジェンダーフリー|ジェンダー・フリー|せいてきくべつのない|アウティング|カミングアウト|カミング・アウト|だんじょきょうどうさんかくしゃかいきほんほう",
     "genderless\tアセクシャル|アセクシュアル|ジェンダーレス",
     "gene\tいでんし|ジーン|ゲン|いでんいんし|はつげん|ジーンエンジニアリング|ジーン・エンジニアリング|ジーンバンク|ジーン・バンク|いでんいんしくみかえ|いでんしちりょう|こうぞういでんし|れっせいいでんし|いでんしバンク|いでんしくみかえ|いでんしそうさ|いでんしとつぜんへんい|いでんしたけい|いでんしりょうほう|めんえきおうとういでんし",
     "gene expression\tはつげん",
@@ -629,25 +651,5 @@ export const PIECE: WordsPiece = {
     "geotropism\tくっちせい",
     "geotrupidae\tせんちこがね|センチコガネ",
     "geranium\tてんじくあおい|テンジクアオイ|ゼラニウム|ふうろそう|フウロソウ|ゼラニューム|ゲラニウム|ゲラニューム|フゼアちょう|げんのしょうこ|ゲンノショウコ|げんそう|ゲンソウ|ちしまふうろ|チシマフウロ|アイビーゼラニウム|アイビー・ゼラニウム|アメリカフウロ|アメリカふうろ|ヒメフウロ",
-    "gerbera\tガーベラ",
-    "gerbil\tすなねずみ|スナネズミ|あれちねずみ|アレチネズミ",
-    "gerbillus\tあれちねずみ|アレチネズミ",
-    "gerenuk\tジェレヌク|きりんれいよう|キリンレイヨウ",
-    "geriatric\tろうじんびょう|ろうじんびょういん|ろうじんいりょう",
-    "geriatrics\tろうじんいがく|ろうじんびょうがく|ろうねんいがく|ろうねんびょうがく",
-    "germ\tばいきん|さいきん|きん|びせいぶつ|バクテリア|バクテリヤ|びょうげんきん|ほうが|はいが|ようが|しが|びょうどく|せいしょくさいぼう|はいよう|ぜんだまきん|せいさいぼう|はいがまい|はいきん|こむぎはいが|こむぎはいがゆ",
-    "german\tドイツご|どくご|ジャーマン|シェパード|セパード|バウムクーヘン|バームクーヘン|バッハ|リート|リード|あわ|エスツェット|カモミール|カモマイル|ドイツじん|ドイツみんしゅきょうわこく|はんどく|わどく|どくぶん|どくわ",
-    "german composer\tバッハ",
-    "german language\tドイツご|どくご",
-    "german shepherd\tシェパード|セパード",
-    "german song\tリート|リード",
-    "german spit\tバウムクーヘン|バームクーヘン",
-    "germanic\tゲルマン|インドゲルマンごぞく|ゲルマンごは|ゲルマンじん|ゲルマンご|ゲルマンみんぞく",
-    "germanic people\tゲルマン",
-    "germanica\tちゃばねゴキブリ|チャバネゴキブリ|せいようかりん|セイヨウカリン|ドイツアヤメ|ドイツあやめ",
-    "germanism\tはんゲルマンしゅぎ",
-    "germanium\tゲルマニウム",
-    "germanophobia\tきょうどくびょう",
-    "germany\tドイツ|どく|どくこく|ドイチュラント|ドイチュランド|ジャーマニー|ジャーマニ|しゅしょう|しゅう|せいどく|にしドイツ|ケルン|フランクフルト|マルク|ミュンヘン|アウトバーン|ジー・ファイブ|ドイツマルク|ドイツ・マルク|ドイツれんぽうきょうわこく",
   ],
 };

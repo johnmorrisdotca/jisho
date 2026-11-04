@@ -488,6 +488,7 @@ export const PIECE: WordsPiece = {
     "0n14c\t\tセシウム\tn¦¦cesium (Cs)¦caesium",
     "0n14m\t\tセゾン\tn¦¦season¦fre~saison",
     "0n14w\t\tセダン\tn¦¦sedan",
+    "0n156\t\tセックス\tn¦¦(one's) sex¦gender¦2",
     "0n15g\t\tセッション|セション~sk\tn¦¦session\tn¦abbr¦jam session¦jam¦ジャムセッション",
     "0n15q\t\tセッティング\tn,vs¦¦setting¦installing¦mounting¦arranging\tn,vs¦¦setting up (meeting, conference, etc.)\tn¦¦stage setting\tn¦¦setting (of a novel, movie, play, etc.)",
     "0n160\t\tセット\tn¦¦set (of things)¦combo\tn,vs,vt¦¦setting up¦preparing¦arranging¦placing¦positioning¦configuring¦setting (e.g. an alarm)\tn,vs,vt¦¦setting (hair)\tn¦sports¦set (in tennis, volleyball, etc.)\tn¦¦set (in a play, film, etc.)¦movie set\tn¦¦(television or radio) receiver",
@@ -1242,6 +1243,5 @@ export const PIECE: WordsPiece = {
     "0n80y\t\tデノミ\tn¦abbr¦denomination (reducing the face value of currency after inflation)",
     "0n818\t\tデノミネーション\tn¦¦denomination",
     "0n81i\t\tデバイス|ディバイス\tn¦¦device",
-    "0n82m\t\tデバッギング\tn¦¦debugging",
   ],
 };

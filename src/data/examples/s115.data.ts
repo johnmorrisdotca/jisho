@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 116 of 144, from "15s5q". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 116 of 144, from "15rl". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,19 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "15rl6\t1¦｜彼《かれ》らは｜隣町《となりまち》まで｜鉄道《てつどう》を｜延長《えんちょう》することを｜計画《けいかく》している。¦They are planning to extend the railroad to the next town.¦1¦223e¦¦CK¦隣町",
+    "15roi\t1¦｜雨《あめ》が｜降《ふ》ったら、｜練習試合《れんしゅうじあい》は｜延期《えんき》にするつもりだ。¦If it rains, we will put off our practice match.¦2¦42fz¦¦Lumi¦練習試合",
+    "15rpm\t1¦｜英作文《えいさくぶん》の｜練習問題《れんしゅうもんだい》をしなさい。¦Do a composition exercise, please.¦2¦41tc¦¦garynw¦練習問題",
+    "15rqq\t1¦｜連邦政府《れんぽうせいふ》の｜予算削減《よさんさくげん》は｜社会保障《しゃかいほしょう》の｜給付《きゅうふ》に｜影響《えいきょう》が｜及《およ》ぶでしょう。¦Federal budget cuts will take a bite out of Social Security benefits.¦1¦1nqc¦mookeee¦shekitten¦連邦政府",
+    "15rse\t1¦｜警察《けいさつ》はたいてい｜路上駐車《ろじょうちゅうしゃ》の｜車《くるま》に｜目《め》をつむる。¦The police usually close their eyes to cars parked on the street.¦2¦3ryx¦bunbuku¦CM¦路上駐車",
+    "15rti\t1¦｜労使紛争《ろうしふんそう》はいまだに｜困《こま》った｜問題《もんだい》だ。¦Industrial disputes are still a problem.¦1¦1npn¦¦¦労使紛争",
+    "15rts\t1¦平成１６年１月１日から、改正労働基準法が施行されます。¦The reformed Labour Standards Act will be in force from Jan 1st 2004.¦1¦1ld7¦fcbond¦fcbond¦労働基準法",
+    "15rvq\t1¦疫病管理局の報告では、罹患率は１０パーセントだった。¦The office for disease control reported a 10 percent spread.¦¦41sy¦¦CaspieChi¦罹患率",
+    "15rzm\t1¦｜私《わたし》の｜先生《せんせい》の｜指導《しどう》はいつも｜要《よう》を｜得《え》ている。¦My teacher's instructions are always to the point.¦2¦3hxa¦¦¦要を得ている",
+    "15s0g\t1¦｜売《う》れ｜行《ゆ》きは｜目標《もくひょう》に｜達《たっ》しなかった。¦Sales fell short of their goal.¦1¦2lqa¦¦¦達し",
+    "15s2o\t1¦｜安《やす》いホテルに｜泊《と》まって｜旅費《りょひ》を｜浮《う》かした。¦I saved on travelling expenses by staying at a cheap hotel.¦2¦43n0¦small_snow¦AlanF_US¦浮かした",
+    "15s56\t1¦｜今《いま》から｜彼女《かのじょ》があなたのお｜世話《せわ》をします。¦She will care for you from now on.¦3¦3pdx¦mookeee¦CM¦お世話をします",
+    "15s5g\t1¦｜私《わたし》にはうれしくはなかったが、ほかのあらゆるものと｜同《おな》じ｜様《よう》にトニーの｜価格《かかく》も｜上《あ》がるのは｜無理《むり》はないと｜思《おも》い、｜同意《どうい》した。¦I wasn't happy, but it seemed reasonable that his prices should go up like everything else, so I agreed.¦¦3j3p¦¦papabear¦無理はない",
     "15s5q\t1¦あなたにお｜願《ねが》い｜事《ごと》をしてもよいでしょうか。¦Can I ask you a favor?¦3¦50ed¦mookeee¦CK¦お願い事",
     "15sco\t2¦｜警官《けいかん》は｜殺人犯《さつじんはん》から｜拳銃《けんじゅう》をもぎ｜取《と》った。¦The policeman wrested a gun from the murderer.¦1¦3s2g¦¦CK¦もぎ取った",
     "15sd8\t1¦｜新《あたら》しい｜仕事《しごと》がんばってください。¦Every success in your new job.¦4¦3472¦tommy_san¦¦がんばって",
@@ -201,18 +214,5 @@ export const PIECE: WordsPiece = {
     "16fye\t1¦｜社会保険庁《しゃかいほけんちょう》や｜厚生労働省《こうせいろうどうしょう》への｜不信感《ふしんかん》は｜募《つの》る｜一方《いっぽう》である。¦Distrust of the Social Insurance Agency and the Ministry of Health, Labour and Welfare just keeps getting stronger.¦1¦1mof¦bunbuku¦papabear¦厚生労働省",
     "16g66\t2¦｜彼《かれ》らは｜賄賂《わいろ》を｜使《つか》って｜証《しるし》｜人《ひと》の｜口《くち》を｜封《ふう》じた。¦They bribed the witness into silence.¦¦222u¦¦¦封じた",
     "16g8o\t1¦｜残念《ざんねん》なことにカンニングする｜学生《がくせい》が｜多《おお》いらしい。¦To my regret there are many students who cheat.¦3¦3mk7¦¦¦残念なことに",
-    "16g98\t1¦｜式《しき》に｜余分《よぶん》の｜変数《へんすう》を｜加《くわ》えたことによって、この｜実験結果《じっけんけっか》は｜不明瞭《ふめいりょう》なものになっている。¦The result of this experiment is obscured by the extra variables added in the formula.¦¦37gm¦¦¦実験結果",
-    "16gac\t1¦「｜日本《にほん》の｜経営陣《けいえいじん》は｜米国《べいこく》の｜労働者《ろうどうしゃ》の｜扱《あつか》い｜方《かた》を｜身《み》につけなければいけない」と｜彼《あれ》は｜言《い》った。¦Japanese management must learn how to deal with American workers, he said.¦¦529d¦mookeee¦AlanF_US¦身につけ\t2¦ダイヤの｜指輪《ゆびわ》なんて｜身《み》につけていないけど、｜私《わたし》は｜幸《しあわ》せだ。¦I'm not wearing a diamond ring, but I'm happy.¦¦4db8¦¦Swift¦身につけていない",
-    "16gaw\t1¦｜弱《よわ》り｜目《め》に｜祟《たた》り｜目《め》。¦Misfortunes never come singly.¦¦36r1¦huizi99¦shekitten¦祟り目",
-    "16gbg\t1¦｜真昼《まひる》の｜太陽《たいよう》がテニスコートを｜目《め》も｜眩《くら》むほどに照らしあげた。¦The noonday sun beat down with dazzling brightness on the tennis court.¦¦1lg1¦fcbond¦fcbond¦眩む",
-    "16gbq\t1¦トムの｜話《はな》し｜方《かた》は｜私《わたし》の｜癇《かん》にさわる。¦Tom's way of speaking gets on my nerves.¦¦4afj¦¦CK¦癇",
-    "16gck\t1¦｜彼《あれ》はわきの｜下《した》に｜本《もと》を｜抱《かか》えている。¦He is holding his books under his arm.¦3¦2d3c¦¦CK¦わきの下",
-    "16gcu\t1¦気苦労で彼女は１０歳もふけこんだ。¦Worry has made her look ten years older.¦3¦3xda¦mookeee¦shekitten¦ふけこんだ",
-    "16gd4\t2¦あなたは｜彼《あ》の｜気持《きも》ちを｜弄《もてあそ》んではいけない。¦You should not trifle with his feelings.¦¦4yqz¦¦¦弄んで\t3¦｜私《わたし》は｜数奇《すき》な｜運命《うんめい》にもてあそばれてきた。¦I have lived a life of a puppet of fortune.¦1¦3c26¦¦¦もてあそばれて",
-    "16ges\t1¦｜昔《むかし》は｜長電話《ながでんわ》して、よく｜怒《おこ》られたものだ。¦I used to get yelled at for hogging the phone.¦3¦31v6¦¦CN¦長電話",
-    "16gf2\t1¦いとこは｜私《わたし》を｜町中《まちなか》｜案内《あんない》してくれた。¦My cousin took me around the town.¦1¦4wdq¦¦CK¦町中",
-    "16ggg\t1¦｜私《わたし》は｜電話《でんわ》を｜切《き》って、もう｜一度《いちど》｜彼女《かのじょ》にかけなおした。¦I hung up and called her again.¦3¦3bj2¦¦blay_paul¦かけなおした",
-    "16gha\t1¦｜彼《あれ》は｜行《ぎょう》｜儀《ぎ》には｜気《き》を｜配《くば》っている。¦He is careful about his manners.¦1¦2ate¦¦CK¦気を配っている",
-    "16ghk\t1¦ライトビールはありますか。¦Do you have any light beer?¦5¦44no¦bunbuku¦CK¦ライトビール",
   ],
 };

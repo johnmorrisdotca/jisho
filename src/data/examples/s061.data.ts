@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 62 of 144, from "0u95". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 62 of 144, from "0u91u". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,11 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0u91u\t1¦｜先生《せんせい》は｜生徒《せいと》｜達《たち》に｜講義室《こうぎしつ》を｜退出《たいしゅつ》させなかった。¦The teacher did not permit the students to leave the lecture hall.¦1¦317n¦¦CK¦退出",
+    "0u924\t1¦｜私《わたし》は｜退職《たいしょく》するつもりだときのう｜申《もう》し｜出《で》た。¦I gave notice at work yesterday.¦3¦3brz¦¦¦退職",
+    "0u92e\t1¦｜彼《かれ》らは｜社長《しゃちょう》に｜退陣《たいじん》するよう｜求《もと》めた。¦They demanded that the president resign.¦1¦22ri¦¦CK¦退陣",
+    "0u93i\t1¦その｜男性《だんせい》はスパイとして｜逮捕《たいほ》された。¦The man was arrested as a spy.¦1¦4ghr¦bunbuku¦CK¦逮捕",
+    "0u94w\t1¦｜救助隊《きゅうじょたい》｜員《いん》｜達《たち》が｜地震《じしん》の｜被災者《ひさいしゃ》｜達《たち》に｜物資《ぶっし》を｜分配《ぶんぱい》するだろう。¦The rescue workers are going to hand out supplies to the victims of the earthquake.¦¦3wqs¦¦CK¦隊員",
     "0u956\t1¦｜隊長《たいちょう》は｜部下《ぶか》に｜直《ただ》ちに｜集合《しゅうごう》するように｜命令《めいれい》した。¦The captain ordered his men to gather at once.¦1¦2ydd¦mookeee¦CS¦隊長",
     "0u95q\t1¦｜海老《えび》で｜鯛《たい》を｜釣《つ》る。¦Throw a sprat to catch a whale.¦1¦3yra¦KK_kaku_¦Stalwartlover¦鯛",
     "0u96a\t1¦｜何処《どこ》へ｜行《おこな》っても｜代《か》わり｜映《ば》えはしないでしょう。¦Wherever you go, you will find the same thing.¦3¦40lg¦¦CK¦代わり映え",
@@ -218,11 +223,5 @@ export const PIECE: WordsPiece = {
     "0ucrq\t1¦｜水《みず》は｜彼《あ》の｜腰《こし》の｜所《ところ》まで｜達《たっ》した。¦The water came up to his waist.¦2¦32wl¦¦CK¦達した",
     "0ucs0\t1¦｜彼《あれ》はとても｜年《とし》をとっているけれどたっしゃだ。¦Although he is very old, he is strong.¦3¦2e23¦¦Zifre¦たっしゃ\t2¦｜彼女《かのじょ》はフランス｜語《ご》が｜達者《たっしゃ》だ。¦She has a good command of French.¦3¦1yon¦bunbuku¦CK¦達者",
     "0ucsa\t1¦｜彼《あれ》は｜水泳《すいえい》の｜達人《たつじん》だ。¦He is adept in swimming.¦3¦27uo¦bunbuku¦rul¦達人",
-    "0ucsk\t1¦アンは｜望《のぞ》んでいた｜目標《もくひょう》を｜達成《たっせい》した。¦Ann has achieved her desired goal.¦1¦4x2b¦¦Lumi_alt¦達成",
-    "0ucty\t1¦２人の男がナイフを奪い合っているのを見た。¦I saw two men struggling for the knife.¦1¦51o5¦arnab¦CK¦奪い合っている",
-    "0ucu8\t1¦その｜男《おとこ》は｜彼女《かのじょ》のかばんを｜奪《うば》い｜取《と》った。¦The man robbed her of her bag.¦1¦4gi3¦¦CM¦奪い取った",
-    "0ucus\t1¦その｜男《おとこ》が｜私《わたし》の｜財布《さいふ》を｜奪《うば》った。¦The man robbed me of my purse.¦1¦4gmo¦¦sundown¦奪った",
-    "0ucvw\t1¦マリガンは１４ヶ月前に逆転で王座を奪取して以来、まったくの負けしらずです。¦Mulligan has been riding high since he seized the crown in a come-from-behind victory 14 months ago.¦1¦46lg¦¦papabear¦奪取",
-    "0ucw6\t1¦｜少年《しょうねん》は｜衣服《いふく》を｜脱《ぬ》ぎ｜捨《す》てた。¦The boy stripped off his clothes.¦1¦3539¦¦adjusting¦脱ぎ捨てた",
   ],
 };

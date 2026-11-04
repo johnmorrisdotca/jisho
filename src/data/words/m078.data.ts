@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 79 of 172, from "inspection e". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 79 of 172, from "insignis". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,34 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "insignis\tみやまこごめぐさ|ミヤマコゴメグサ",
+    "insincere\tこころにもない|ていさい|たいさい|けいはく|あいそわらい|あいそうわらい|あいきょうわらい",
+    "insincere compliments\tけいはく",
+    "insincere words\tていさい|たいさい",
+    "insincerity\tふしん|むじつ|ふしんじつ|ふせいい|ふせいじつ",
+    "insinuate\tあてこする",
+    "insinuating\tあてつけがましい",
+    "insipid\tあじけない|あじきない|きのぬけた",
+    "insipidity\tかんそう",
+    "insipidus\tにょうほうしょう",
+    "insist\tいいはる|さけぶ|がんばる|ならす|ごうじょうをはる|じゃくす|がをだす|がをはる|がをとおす|がをたてる|どうしてもというのなら",
+    "insistence\tしゅちょう|りきせつ|しゅうちゃく|しゅうじゃく|ぜ|きょうべん",
+    "insistence statement\tぜ",
+    "insistent\tしつこい|しつっこい|つっぱる",
+    "insisting\tきょうべん|といってきかない|はってもくろまめ",
+    "insisting unreasonably\tきょうべん",
+    "insolation\tにっしゃ",
+    "insole\tインソール|なかじき|なかぞこ",
+    "insolence\tごうまんぶれい",
+    "insolent\tごうまん|おうへい|ひとをくう|ぶれいもの|ふらちせんばん",
+    "insolubility\tふようせい",
+    "insoluble\tふよう|ひょうせんせんりょう|アイスせんりょう|レーキ",
+    "insolvency\tとうさん|はさん|さいむちょうか|しはらいふのう|くろじとうさん",
+    "insomnia\tふみん|ふみんしょう|インソムニア|ちしせいかぞくせいふみんしょう",
+    "insourcing\tインソーシング|しゃないちょうたつか|ないせいか",
+    "inspect\tあらためる|はいかん|えっする|けみする|えっす|けみす|けんする|こうさく",
+    "inspection\tけんさ|ささつ|しさつ|けんがく|かんさ|けんもん|かんさつ|えつらん|かんえつ|しらべ|しんさ|ごうかく|つうか|けんてい|てんけん|けんしょう|けんえつ|けんち|じゅんし|しゃけん",
+    "inspection compliance\tささつ",
     "inspection e\tけんさ|けんち",
     "inspection esp\tけんもん",
     "inspection etc\tつうか|パス",
@@ -488,22 +516,5 @@ export const PIECE: WordsPiece = {
     "interphase\tちゅうかんき|かんきし",
     "interplanetary\tわくせいかんこうこう|わくせいかんぶっしつ|てんもん",
     "interplay\tインタープレー",
-    "interpol\tインターポール|インターポル|こくさいてはい",
-    "interpolation\tそうにゅう|ないそう|ほかん|ほかんほう|ちょくせんほかん|にへんりょうほかん|キュービックほかん|スプラインほかん|データほかん|せんけいほかん",
-    "interpole\tコンシューマーインターポール|コンシューマー・インターポール",
-    "interpose\tへだてる|はさむ|ハサむ",
-    "interpose e\tはさむ|ハサむ",
-    "interposition\tかいざい",
-    "interpres\tきょうじょしぎ|キョウジョシギ",
-    "interpret\tうけとる|やくす|かいする|インタプリト|しょうをたちぎをとる",
-    "interpretation\tかいしゃく|つうやく|よみかた|アレンジ|くんこ|つうべん|くんかい|かいしゃくじっこう|とらえかた|インタープリテーション|せいかい|くるしい|どうじつうやく|けんぽうかいしゃく|けんきょうふかい|しんしゃく|じかい|ゆめはんだん|ゆめとき|かくだいかいしゃく",
-    "interpretation e\tよみかた",
-    "interpretation explanation\tくるしい",
-    "interpretation i\tつうやく",
-    "interpretations\tソーランぶし",
-    "interpreted\tとれる|インタプリタがたげんご|インタープリタがたげんご|かいしゃくがたげんご|インタプリタげんご|インタープリタげんご",
-    "interpreter\tつうやく|インタープリター|インタプリタ|インタープリタ|つうやくしゃ|つうやくにん|つうじ|かいしゃくじっこうプログラム|せんこうほんやくき|つうやくし|どうじつうやく|べんし|つうやくかん|コマンドインタープリタ|コマンド・インタープリタ|バイトコードインタープリタ|バイトコード・インタープリタ|メタファイルかいしゃくけい|てんそうせんこうほんやくき|ほんやくかいしゃくじっこうプログラムしじぶん",
-    "interpreters\tつうやくあんないしほう",
-    "interpreting\tどうじつうやく|をことてん|おことてん|によう|にちえいつうやく|えいぶんかいしゃく|しゅわつうやく|だんしょうしゅぎ",
   ],
 };

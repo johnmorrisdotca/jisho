@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 44 of 144, from "0s7n". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 44 of 144, from "0s7b". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,26 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0s7b4\t1¦１２才の時彼は声変わりした。¦His voice broke when he was twelve.¦3¦522e¦mookeee¦CM¦時\t2¦｜車《くるま》を｜運転《うんてん》する｜時《とき》はいくら｜注意《ちゅうい》してもしすぎることはない。¦You cannot be too careful when you drive a car.¦4¦36xy¦¦Lumi_alt¦時",
+    "0s7bo\t1¦ときには｜試合《しあい》は｜一日中《いちにちじゅう》｜続《つづ》きました。¦Sometimes the game lasted all day.¦3¦4b4q¦¦AlanF_US¦ときには",
+    "0s7dc\t1¦いつだって｜読書《どくしょ》の｜時間《じかん》は｜見《み》つけられる。¦We can always find time for reading.¦5¦4wm1¦¦CK¦時間\t2¦彼は勤勉な生徒だ。毎日３時間彼は勉強している。¦He is a diligent student. He studies three hours every day.¦3¦2bjo¦¦Dejo¦時間",
+    "0s7dw\t1¦｜彼《あれ》は｜時間稼《じかんかせ》ぎをしているだけだよ。¦He is just killing time.¦1¦299e¦mookeee¦¦時間稼ぎ",
+    "0s7eg\t1¦｜私《わたし》たちは｜時間割《じかんわり》に｜従《したが》って｜勉強《べんきょう》する。¦We study according to the schedule.¦1¦3juz¦bunbuku¦¦時間割",
+    "0s7eq\t1¦｜私《わたし》は｜時間給《じかんきゅう》で｜時間《じかん》をもらっている。¦I'm paid by the hour.¦3¦3cov¦¦CK¦時間給",
+    "0s7fk\t1¦「もう｜少《すこ》しで｜時間《じかん》ぎれだからね」と｜先生《せんせい》は｜言《い》った。¦\"You are almost out of time\", said the teacher.¦4¦52fd¦mookeee¦¦時間ぎれ",
+    "0s7fu\t1¦｜毎日《まいにち》｜働《はたら》く｜時間帯《じかんたい》が｜違《ちが》うんです。¦Every day I work different hours.¦2¦1qpn¦bunbuku¦¦時間帯",
+    "0s7ge\t1¦今月５日から時間表が改正される。¦The revised timetable will go into effect on the 5th of this month.¦2¦3p2w¦¦CK¦時間表",
+    "0s7go\t1¦１年のこの時期は天候がよく変わる。¦The weather changes very often at this time of year.¦3¦51ul¦e4zh1nmcz¦sundown¦時期",
+    "0s7hi\t1¦｜今《いま》その｜計画《けいかく》を｜実施《じっし》するのは、｜時期尚早《じきしょうそう》である。¦It is premature to put the plan into practice now.¦1¦3pc3¦¦¦時期尚早",
+    "0s7ic\t1¦あの｜修理工《しゅうりこう》たちは｜時給《じきゅう》｜一万円《いちまんえん》ももらっている。¦Those mechanics are paid as much as ten thousand yen per hour.¦1¦4x76¦KK_kaku_¦CM¦時給",
+    "0s7jg\t1¦あなたの｜時計《とけい》では｜何時《なんじ》ですか。¦What time is it by your watch?¦4¦4zz2¦KK_kaku_¦papabear¦時計",
+    "0s7ku\t1¦１時限は何の授業ですか。¦What do you have the first period?¦1¦51x3¦e4zh1nmcz¦¦時限",
+    "0s7l4\t1¦空港で時限爆弾が爆発し１３名もの命を奪った。¦A time bomb went off in the airport killing thirteen people.¦1¦3ue9¦Blanka_Meduzo¦CK¦時限爆弾",
+    "0s7lo\t1¦そろそろ｜寝《ね》る｜時刻《じこく》だ。¦It's almost time to go to bed.¦3¦4dr5¦bunbuku¦CK¦時刻",
+    "0s7ly\t1¦｜時刻表《じこくひょう》が｜改正《かいせい》された。¦The timetable has been revised.¦2¦383v¦small_snow¦CK¦時刻表",
+    "0s7m8\t1¦｜会社《かいしゃ》は｜時差《じさ》｜通勤《つうきん》を｜導入《どうにゅう》しようとしています。¦The company is attempting to stagger work hours.¦2¦3yxt¦¦CK¦時差",
+    "0s7mi\t1¦｜時差《じさ》ボケで｜辛《から》い。¦I've got a bad case of jet lag.¦2¦383m¦bunbuku¦CK¦時差ボケ",
+    "0s7ms\t1¦｜我々《われわれ》は｜時勢《じせい》に｜遅《おく》れずに｜付《つ》いて｜行《い》かなければならない。¦We must keep up with the times.¦1¦3zd7¦¦CM¦時勢",
     "0s7n2\t1¦｜物《もの》には｜時節《じせつ》、｜番茶《ばんちゃ》も｜出花《でばな》。¦There is a time for all things.¦1¦1son¦¦¦時節",
     "0s7nm\t1¦この車は時速６０キロで走っている。¦This car is going 60km an hour.¦3¦4qtt¦bunbuku¦¦時速",
     "0s7nw\t1¦｜今《いま》や｜時代《じだい》との｜競争《きょうそう》になった。¦It was now a race against time.¦2¦3p52¦¦CM¦時代",
@@ -195,20 +215,5 @@ export const PIECE: WordsPiece = {
     "0sb6k\t1¦｜実《じつ》を｜言《い》えば、｜彼女《かのじょ》は｜私《わたし》の｜妹《いもうと》だ。¦To tell the truth, she is my sister.¦3¦3798¦¦CK¦実を言えば",
     "0sb7e\t1¦セールスマンはその｜使《つか》い｜方《かた》を｜実演《じつえん》した。¦The salesman demonstrated how to use it.¦3¦4l63¦¦CK¦実演",
     "0sb7o\t1¦｜私《わたし》の｜両親《りょうしん》は｜二人《ふたり》とも｜今《いま》、｜実家《じっか》にいます。¦Both my parents are at home now.¦3¦3hbt¦¦CK¦実家",
-    "0sb88\t1¦オーストラリアへ｜行《おこな》って｜初《はじ》めて、｜日本《にほん》はなんと｜小《ちい》さい｜国《くに》かと｜実感《じっかん》した。¦I didn't realize till I visited Australia how small Japan really is.¦3¦4vrg¦pierrephi¦CK¦実感",
-    "0sb8s\t1¦それは｜実業《じつぎょう》｜人《じん》にとって｜一《ひと》つの｜赤信号《あかしんごう》になる。¦It raises a red flag for businessmen.¦3¦4e96¦¦¦実業",
-    "0sb92\t1¦トムは｜実業家《じつぎょうか》になるのに｜向《む》いている。¦Tom is fit to become a businessman.¦3¦4a8r¦¦Shiawase¦実業家",
-    "0sb9m\t1¦｜実験《じっけん》は｜成功《せいこう》だった。¦The experiment was successful.¦1¦378v¦tommy_san¦CK¦実験",
-    "0sba6\t1¦その｜実験室《じっけんしつ》には｜最新式《さいしんしき》の｜設備《せつび》がある。¦The laboratory has the most up-to-date equipment.¦2¦4hr3¦¦¦実験室",
-    "0sbag\t1¦ここでは６０年代後半のエメットの実験的な作品で初めて提示されたダイアド・スタイルを扱う。¦We deal here with Emmet's 'dyad' style first presented in his experimental works in the late sixties.¦¦4tbx¦¦¦実験的な",
-    "0sbb0\t1¦あなたの｜夢《ゆめ》がみんな｜実現《じつげん》されますように。¦May all your dreams come true!¦3¦4zse¦¦CK¦実現",
-    "0sbbk\t1¦｜私《わたし》は｜彼《あ》の｜実行《じっこう》｜的《てき》｜能力《のうりょく》を｜信頼《しんらい》している。¦I trust his executive ability.¦¦3aqw¦¦CK¦実行",
-    "0sbc4\t1¦｜新《しん》｜計画《けいかく》は｜実行可能《じっこうかのう》とみなされた。¦The new plan was accounted practicable.¦¦343l¦¦¦実行可能",
-    "0sbdi\t1¦この｜物語《ものがたり》は｜実際《じっさい》の｜出来事《できごと》に｜基《もと》づいている。¦This story is based on actual events.¦1¦4ppd¦tommy__san¦CK¦実際の\t2¦｜理論《りろん》と｜実際《じっさい》とは｜必《かなら》ずしも｜一致《いっち》しない。¦Theory and practice do not necessarily go together.¦1¦1ogn¦mookeee¦U2FS¦実際\t3¦｜人間《にんげん》は｜実際《じっさい》｜自然《しぜん》のなすがままである。¦Man is indeed at the mercy of nature.¦3¦33bm¦¦¦実際",
-    "0sbds\t1¦｜彼《あれ》はキャビアを｜実際《じっさい》に｜食《た》べたことがない。¦He hasn't actually eaten caviar.¦3¦2fy0¦¦CK¦実際に\t2¦｜実際《じっさい》にうまくいかなければ｜理論《りろん》は｜全《まった》く｜役《やく》に｜立《た》たない。¦Theory is quite useless unless it works in practice.¦3¦3787¦¦¦実際に",
-    "0sbe2\t1¦サンタクロースが｜実在《じつざい》しないなんて｜信《しん》じない。¦I don't believe that Santa Claus is imaginary.¦3¦4n5g¦bunbuku¦CK¦実在",
-    "0sbec\t1¦その｜計画《けいかく》は｜実施《じっし》された。¦The plan was put into operation.¦1¦4izv¦¦CM¦実施",
-    "0sbf6\t1¦｜実質《じっしつ》｜成長《せいちょう》と｜名目《めいもく》｜成長率《せいちょうりつ》の｜差《さ》は｜物価上昇《ぶっかじょうしょう》を｜意味《いみ》する。¦Price increases explain the difference between the real and nominal growth rates.¦1¦3771¦¦CM¦実質",
-    "0sbfg\t1¦これは｜実質的《じっしつてき》にはそれよりも｜高《たか》くはない。¦This is in effect less expensive than that.¦¦4ofc¦¦¦実質的に",
   ],
 };

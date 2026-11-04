@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 3 of 316, from "あおはな". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 3 of 316, from "あおはた". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "アオハタ\t\tU#1ph3g\tuk¦yellow grouper (Epinephelus awoara)¦banded grouper",
+    "あおはた\t青羽太\tU#1ph3g\tuk¦yellow grouper (Epinephelus awoara)¦banded grouper",
+    "あおはだ\t青肌|青膚\tU#18azq\tuk¦Ilex macropoda (species of holly)",
+    "アオハダ\t\tU#18azq\tuk¦Ilex macropoda (species of holly)",
     "アオハナホソオオトカゲ\t\t#1isee\t¦canopy goanna (Varanus keithhornei)¦blue-nosed goanna¦Nesbit River monitor",
     "アオハル\t\t#1pc8w\tsl¦youth¦adolescence",
     "あおはる\t\t#1pc8w\tsl¦youth¦adolescence",
@@ -757,8 +761,5 @@ export const PIECE: WordsPiece = {
     "あきた\t秋田\t#1ozb4\t¦Akita (city, prefecture)",
     "あきたいぬ\t秋田犬\t#zndo\t¦Akita (dog breed)",
     "あきたかんごふくしだいがく\t秋田看護福祉大学\t#3f398\torganization¦Akita University of Nursing and Welfare",
-    "あきたかんとうまつり\t秋田竿燈まつり|秋田竿燈祭り|秋田竿灯祭り\t#18zv0\t¦Akita Kantō Festival (3-6 August)",
-    "あきたがい\t秋田貝\tU#1gex6\tuk¦Japanese scallop (Patinopecten yessoensis)",
-    "アキタガイ\t\tU#1gex6\tuk¦Japanese scallop (Patinopecten yessoensis)",
   ],
 };

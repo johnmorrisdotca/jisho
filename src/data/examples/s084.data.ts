@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 85 of 144, from "0x4zi". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 85 of 144, from "0x4v". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,16 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0x4v2\t1¦｜梨《なし》｜奈《からなし》は｜家政《かせい》｜部《ぶ》で、｜主《おも》に｜洋裁《ようさい》をやっている。¦Rina is in the home economics club. Her main activity is dressmaking.¦1¦1mdw¦mookeee¦¦洋裁",
+    "0x4vc\t1¦｜私《わたし》は｜洋式《ようしき》のホテルに｜泊《と》まりたい。¦I'd like to stay in a Western-style hotel.¦2¦39mc¦¦¦洋式",
+    "0x4w6\t1¦その｜店《みせ》では｜洋書《ようしょ》が｜売《う》られている。¦Foreign books are sold at the shop.¦4¦4g86¦¦orcrist¦洋書",
+    "0x4wg\t1¦｜私《わたし》は｜洋食《ようしょく》はあまり｜好《す》きではない。¦I don't care for foreign food.¦3¦39mb¦¦¦洋食",
+    "0x4x0\t1¦お｜前《まえ》に｜新《あたら》しい｜洋服《ようふく》を｜作《つく》ってあげよう。¦I will make a new suit for you.¦4¦4v4j¦¦CK¦洋服",
+    "0x4xk\t1¦４．中華鍋にごま油を熱してバターを溶かす。¦4. Heat the sesame oil in the wok and melt the butter.¦¦1li1¦fcbond¦fcbond¦溶かす\t2¦｜彼《あれ》はコーヒーに｜砂糖《さとう》を｜溶《と》かした。¦He dissolved some sugar in his coffee.¦1¦2fus¦¦¦溶かした",
+    "0x4ye\t1¦｜氷《こおり》が｜溶《と》けると｜液体《えきたい》になる。¦When ice melts, it becomes liquid.¦2¦1tw6¦¦CK¦溶ける\t2¦｜砂糖《さとう》は｜水《みず》に｜溶《と》ける。¦Sugar dissolves in water.¦1¦3nup¦small_snow¦CK¦溶ける",
+    "0x4yo\t1¦｜海《うみ》と｜空《から》の｜色《いろ》がお｜互《たが》いに｜溶《と》け｜合《あ》っている。¦The colors of the sea and the sky blend into one another.¦2¦3yub¦mookeee¦Ivan24¦溶け合っている",
+    "0x4yy\t1¦｜空《から》が｜海《うみ》と｜一《ひと》つに｜溶《と》け｜込《こ》むように｜見《み》えた。¦The sky seemed to blend with the sea.¦2¦3uho¦mookeee¦Zifre¦溶け込む",
+    "0x4z8\t1¦リトマス紙で溶液の液性（酸性、中性、塩基性）を調べるときは、リトマス紙をすべて溶液に浸すのではなく、紙の先端の部分だけを浸します。¦When investigating the pH (acidic, neutral, alkaline) of a liquid, don't soak the litmus paper completely in the liquid but just put the end of the paper in it.¦¦1laz¦fcbond¦fcbond¦溶液",
     "0x4zi\t1¦｜空気《くうき》｜中《うち》の｜酸素《さんそ》は｜水《みず》に｜溶解《ようかい》する。¦Oxygen from the air dissolves in water.¦1¦52po¦mookeee¦CM¦溶解",
     "0x4zs\t1¦その｜火山《かざん》は｜溶岩《ようがん》を｜流《なが》し｜出《だ》した。¦The volcano poured molten rock.¦2¦4jjn¦¦¦溶岩",
     "0x50c\t1¦その｜液《つゆ》から｜溶剤《ようざい》を｜揮発《きはつ》させる。｜残《のこ》るのは、｜香《かお》り｜成分《せいぶん》と｜植物《しょくぶつ》ワックスの｜塊《かたまり》。¦Vaporise the solvent from the liquid. What's left is the perfume component and a lump of vegetable wax.¦¦1lip¦fcbond¦fcbond¦溶剤",
@@ -207,14 +217,5 @@ export const PIECE: WordsPiece = {
     "0x8qi\t1¦２２６便は１０時３０分に離陸します。¦Flight 226 takes off at 10:30.¦¦51rf¦e4zh1nmcz¦CK¦離陸",
     "0x8qs\t1¦｜強風《きょうふう》が｜陸《ろく》の｜方《ほう》へ｜吹《ふ》き｜始《はじ》めた。¦A strong wind began to set in.¦2¦3v8o¦¦shekitten¦陸",
     "0x8rw\t1¦｜戦時中《せんじちゅう》、｜彼《あれ》は｜陸軍《りくぐん》に｜所属《しょぞく》していた。¦During the war, he served in the army.¦1¦311m¦KK_kaku_¦CK¦陸軍",
-    "0x8t0\t1¦｜陸上競技《りくじょうきょうぎ》｜会《かい》は｜大雨《おおあめ》のため｜中止《ちゅうし》になった。¦The track meet was called off on account of the heavy rain.¦2¦4f4x¦KK_kaku_¦CK¦陸上競技",
-    "0x8vi\t1¦｜陸路《りくろ》ではそこへ｜行《い》けない。¦The place is not accessible by land.¦2¦1ofg¦mookeee¦CC¦陸路",
-    "0x8ww\t1¦｜実質《じっしつ》｜成長《せいちょう》と｜名目《めいもく》｜成長率《せいちょうりつ》の｜差《さ》は｜物価上昇《ぶっかじょうしょう》を｜意味《いみ》する。¦Price increases explain the difference between the real and nominal growth rates.¦1¦3771¦¦CM¦率",
-    "0x8x6\t1¦しかし｜城《しろ》にたどりつくなり、｜近衛兵《このえへい》を｜率《ひき》いた｜人《じん》によって、わたしはこの｜牢獄《ろうごく》に｜勾引《かどわ》されてしまった。¦However, when I finally reached the castle I was thrown into this prison by the commander of the imperial guard.¦¦1n66¦¦papabear¦率いた",
-    "0x8zo\t1¦｜夕方《ゆうがた》｜会社《かいしゃ》にお｜立《た》ち｜寄《よ》りください。¦Drop by my office this evening.¦3¦1ozj¦¦CK¦立ち寄り\t1¦｜昨日《きのう》｜彼《あれ》がぶらっと｜立《た》ち｜寄《よ》った。¦He dropped in on me yesterday.¦3¦3n1r¦¦CK¦立ち寄った\t1¦｜明日《あした》の｜朝立《あさだ》ち｜寄《よ》ってあなたを｜車《くるま》に｜乗《の》せていきましょう。¦I'll come by and pick you up tomorrow morning.¦3¦1q4b¦¦CK¦立ち寄って",
-    "0x8zy\t1¦｜私《わたし》は｜彼《あ》の｜墓《はか》を｜立《た》ち去り｜難《にく》かった。¦I hesitated to leave his grave.¦1¦3ao9¦¦¦立ち去り",
-    "0x90i\t1¦｜彼女《かのじょ》は｜自分《じぶん》の｜運命《うんめい》に｜立《た》ち｜向《む》かう｜覚悟《かくご》ができていた。¦She was ready to face her fate.¦¦1wq7¦¦lilygilder¦立ち向かう",
-    "0x912\t1¦｜彼《あれ》は｜立《た》ち｜止《ど》まってポスターをのぞき｜込《こ》んだ。¦He paused to look at the poster.¦3¦24fe¦¦CK¦立ち止まって",
-    "0x91c\t1¦｜彼《あれ》はこれまでこんな｜苦境《くきょう》に｜立《た》ち｜至《いた》ったことはなかった。¦Never in his life had he encountered such a dilemma.¦1¦2fq6¦¦CK¦立ち至った",
   ],
 };

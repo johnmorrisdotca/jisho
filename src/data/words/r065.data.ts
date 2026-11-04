@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 66 of 316, from "ききそび". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 66 of 316, from "ききずてに". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,9 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "ききずてにする\t聞き捨てにする\ts#1b5vm\t¦to overlook¦to ignore¦to pass over",
+    "ききせまる\t鬼気迫る\tg#141xq\t¦to be bloodcurdling¦to be ghastly",
+    "ききそこなう\t聞き損なう|聞損なう\tg#13ody\t¦to mishear¦to fail to catch\t¦to miss (the chance to hear)",
     "ききそびれる\t聞きそびれる\ti#1p1m4\t¦to miss a chance to ask¦to miss an opportunity to ask¦to forget to ask",
     "ききたいおう\t危機対応\t#1ow2u\t¦crisis response¦emergency response",
     "ききたがる\t聞きたがる\tg#19320\t¦to be curious¦to be inquisitive¦to want to hear",
@@ -806,9 +809,5 @@ export const PIECE: WordsPiece = {
     "キジ\t\tU~m36#y3s0\tuk¦green pheasant (Phasianus versicolor)¦Japanese green pheasant",
     "きじ\t雉|雉子\tU~m36#y3s0\tuk¦green pheasant (Phasianus versicolor)¦Japanese green pheasant",
     "きじ\t黄血\tU#1bf3u\tuk¦brandling (when used as fishing bait)",
-    "キジか\tキジ科\t#1huum\t¦Phasianidae (pheasant family of birds)",
-    "きじか\t雉科\t#1huum\t¦Phasianidae (pheasant family of birds)",
-    "きじかくし\t雉隠\tU#1gjww\tuk¦Asparagus schoberioides",
-    "キジカクシ\t\tU#1gjww\tuk¦Asparagus schoberioides",
   ],
 };

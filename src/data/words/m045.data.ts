@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 46 of 172, from "distributi". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 46 of 172, from "distortion ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,20 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "distortion often\tデフォルメ|ディフォルメ",
+    "distract\tまぎらす|ちらす|きをそらす|きをまぎらす|きをちらす|ちゅういをそらす|きをさんじる|きもちをそらす",
+    "distracted\tさんまん|きがそれる|きがまぎれる|きがちる|こうぜん|ながらあるき|ながらうんてん",
+    "distracting\tむそうむねん",
+    "distraction\tさくらん|きうつり",
+    "distress\tきゅうじょう|くるしみ|くなん|くじゅう|うきめ|なんじゅう|くちゅう|こんやく|すくう|こんきゅう|しくはっく|あおいきといき|エス・オー・エス|メーデー|そうなんしんごう|へいなん|かねづまり|みまいひん|おやをくるしめる|たいじせっぱくかし",
+    "distress etc\tすくう",
+    "distressed\tなげうりひん|みまいきゃく|しゃっきんでくるしむ",
+    "distressing\tにがい|くるしい",
+    "distributary\tぶんりゅう|はせん",
+    "distribute\tくばる|わける|わかつ|まく|ちらす|わけあたえる|とりわける|はいする|はいす|ばらまく|たきだす",
+    "distribute flyers\tまく",
+    "distribute widely\tばらまく",
+    "distributed\tぶんさんしょり|ひこうそくめいぼしきひれいだいひょうせい|とうおうらん|エフ・ディー・ディー・アイ|ディー・シー・イー|ひかりファイバぶんさんがたデータインターフェース|ぶんさんシーオーエム|ぶんさんディーオーエスこうげき|ぶんさんコンピューティング|ぶんさんコンピューティングかんきょう|ぶんさんデータベース|ぶんさんデータしょり|ぶんさんきょうちょうしょり|ぶんさんがたデータベース|ぶんさんがたデータベースかんりシステム|ぶんさんがたトランザクション|ぶんさんしけんほう|ぶんさんしょりシステム|ぶんさんはいち|ぶんさんなまえかいせき",
     "distributing\tはいふ|サンプリング|じょし|はいでんばん|えいはい|ぜんいぎんこう",
     "distributing free\tサンプリング",
     "distribution\tはいぶん|はいきゅう|はいふ|ぶんぷ|はいしん|はんぷ|ぶんよ|りゅうつう|わけ|はいごう|きんとう|ぶつりゅう|はいほん|しゅうさん|はいでん|ルート|ほくげん|たきだし|ひれいはいぶん|あんぶん",
@@ -690,32 +704,5 @@ export const PIECE: WordsPiece = {
     "door phone\tよびだす|とりつぐ|とりつぎ",
     "door policy\tもんこかいほうせいさく",
     "door s\tもんぴ",
-    "door salesman\tがいこういん",
-    "door visit\tこべつほうもん",
-    "door window\tかいほう|しめきり|さる|サル|からり|シャッター|シャッタ|シヤッター|シヤッタ|がくぶち",
-    "doorbell\tドアベル|チャイム|ピンポン|ピンポーン",
-    "doordash\tドアダッシュ",
-    "doorkeeper\tげんかんばん",
-    "doorknob\tノブ|ノッブ|ドアノブ|ドア・ノブ",
-    "doorman\tもんばん|ドアボーイ|ドア・ボーイ|ドアマン|ドア・マン|きどばん|げそくばん",
-    "doormat\tドアマット|くつふき",
-    "doorplate\tひょうさつ|もんさつ|かどふだ",
-    "doors\tドアーズ|しめきる|かいじょう|あく|おしいれ|しきい|しきみ|しき|たてぐ|とじまり|がしょう|あけはなす|あけはなつ|かもい|ずし|としょうじ|つまど|からかみ|かんのんびらき|おもてであそぶ",
-    "doors venue\tかいじょう",
-    "doors windows\tたてぐ|とじまり",
-    "doorstep\tのぼりだん",
-    "doorstop\tあおりどめ|ドアストッパー|ドア・ストッパー|とあたり|ぶらさがりしゅざい",
-    "doorway\tとぐち|とびらぐち|ひさし|ちょうだいがまえ|トランサム",
-    "dopa\tドゥーパ|エルドーパ",
-    "dopamine\tドーパミン|ドーパミンじゅようたい",
-    "dopant\tドーパント",
-    "dope\tまやく|やく|ヤク|やくをうつ|ドープチェック|ドープ・チェック",
-    "doping\tドーピング|ドープ|ドーピングテスト|ドーピング・テスト|けつえきドーピング|ドーピングコントロール|ドーピング・コントロール|アンチドーピング|アンチ・ドーピング|ドーピングけんさ",
-    "doping semiconductor\tドーピング",
-    "doping sports\tドーピング",
-    "doppelganger\tにじゅうしん",
-    "doppelgänger\tドッペルゲンガー",
-    "doppio\tエスプレッソドッピオ|エスプレッソ・ドッピオ|エスプレッソドピオ|エスプレッソ・ドピオ",
-    "doppler\tドップラー|ドップラーこうか|ドプラーしゅうはすう|ドップラーシフト|ドップラー・シフト|ドップラーへんい|ドップラシフト|ドプラーシフト",
   ],
 };

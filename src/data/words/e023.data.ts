@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 24 of 219, from "0r7n". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 24 of 219, from "0r7ii". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,23 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0r7ii\t後遺症\tこういしょう\tn¦med¦prognostic symptoms¦after-effect¦sequela",
+    "0r7is\t後胤\tこういん\tn¦¦descendant¦scion",
+    "0r7j2\t後援\tこうえん\tn,vs,vt,vi¦¦support¦backing",
+    "0r7jc\t後押し|あと押し~sK\tあとおし\tn,vs,vt¦¦pushing¦support¦backing¦supporter¦backer\tn,vs,vt¦¦pushing from behind (a cart, etc.)¦pusher",
+    "0r7jm\t後家\tごけ\tn¦¦widow",
+    "0r7jw\t後回し\tあとまわし\tn¦¦putting off¦postponing",
+    "0r7k6\t後悔\tこうかい\tn,vs,vt,vi,adj-no¦¦regret¦repentance¦remorse",
+    "0r7kg\t後学\tこうがく\tn¦¦younger scholar¦先学\tn¦¦future reference",
+    "0r7kq\t後釜|後がま~sK\tあとがま\tn¦¦successor¦replacement\tn¦¦second wife",
+    "0r7l0\t後期\tこうき\tn,adj-no¦¦latter period¦second half¦late stage¦third trimester¦second semester¦前期",
+    "0r7la\t後期印象派\tこうきいんしょうは\tn¦¦post-impressionism¦postimpressionism",
+    "0r7lk\t後記\tこうき\tn¦¦postscript\tadj-no,n,vs¦¦undermentioned¦described below",
+    "0r7lu\t後技\tうしろわざ\tn¦MA¦Aikido rear defence (defense)",
+    "0r7m4\t後金\tあときん\tn¦¦rest of the payment",
+    "0r7me\t後継\tこうけい\tn,adj-no¦¦succession\tn¦¦successor",
+    "0r7mo\t後継者\tこうけいしゃ\tn¦¦successor",
+    "0r7my\t後件\tこうけん\tn¦¦(the) latter¦following matter¦前件・1\tn¦logic¦consequent¦前件・2",
     "0r7n8\t後見\tこうけん\tn,vs,vt¦¦guardianship¦guardian\tn¦¦(theatrical) assistant¦prompter",
     "0r7ni\t後顧\tこうこ\tn¦¦looking back¦worry¦anxiety",
     "0r7ns\t後ろ向き|後向き~io\tうしろむき\tadj-na,adj-no,n¦¦back-facing¦backwards¦前向き・1\tadj-na,adj-no,n¦¦backward-looking¦retrogressive¦reactionary¦retrospective¦negative¦前向き・2",
@@ -83,7 +100,7 @@ export const PIECE: WordsPiece = {
     "0r88m\tご主人|御主人\tごしゅじん\tn¦hon¦your husband¦her husband¦主人・1",
     "0r88w\tお出で|御出で~sK\tおいで\tn¦hon,uk¦coming¦going¦being (somewhere)\texp¦fam,abbr,uk¦(please) come¦go¦stay¦おいでなさい・1",
     "0r896\t御所|ご所\tごしょ\tn¦¦imperial palace (esp. Kyoto Imperial Palace)¦imperial residence¦residence of a shogun, minister, etc.\tn¦hon¦emperor¦ex-emperor¦empress¦imperial prince¦shogun¦minister",
-    "0r89g\t御上|お上\tおかみ\tn¦hon¦the Emperor¦His Majesty\tn¦hon¦the government¦the authorities\tn¦hon,arch¦your wife¦his wife¦also written 御内儀 or 内儀¦4\tn¦hon,arch¦(one's) master¦lord¦5",
+    "0r89g\t御上|お上\tおかみ\tn¦hon¦the Emperor¦His Majesty\tn¦hon¦the government¦the authorities\tn¦¦proprietress¦hostess¦landlady¦mistress¦女将¦also written 女将\tn¦hon,arch¦your wife¦his wife¦also written 御内儀 or 内儀\tn¦hon,arch¦(one's) master¦lord",
     "0r89q\t御神渡り|お神渡り\tおみわたり\tn¦¦ridged cracks that form in the ice on Lake Suwa",
     "0r8a0\t御神籤~rK|御御籤~rK|お神籤~sK|お御籤~sK|おみ籤~sK\tおみくじ\tn¦uk¦fortune slip (usu. bought at a shrine)¦omikuji",
     "0r8aa\tお節介|御節介~sK\tおせっかい\tadj-na,n¦uk¦meddling¦meddlesomeness¦nosiness¦interference¦officiousness¦節介\tn¦uk¦meddler¦buttinsky¦busybody",
@@ -1040,18 +1057,5 @@ export const PIECE: WordsPiece = {
     "0rg0w\t皇太子妃\tこうたいしひ\tn¦¦crown princess",
     "0rg16\t皇帝\tこうてい\tn¦¦emperor",
     "0rg1g\t皇道\tこうどう\tn¦¦the benevolent Imperial rule¦the Imperial Way",
-    "0rg20\t硬化\tこうか\tn,vs,vi¦¦hardening¦vulcanization¦vulcanisation¦sclerosis¦curing¦軟化・1\tn,vs,vi¦¦hardening (of attitude, stance, etc.)¦stiffening¦toughening¦軟化・2\tn,vs,vi¦finc¦upturn (in the market)¦firming up¦軟化・3",
-    "0rg2a\t硬貨\tこうか\tn¦¦coin\tn¦¦hard currency¦軟貨・2",
-    "0rg2k\t硬球\tこうきゅう\tn¦¦hard ball¦regulation ball¦軟球",
-    "0rg2u\t硬玉\tこうぎょく\tn¦min¦jadeite",
-    "0rg34\t硬骨|鯁骨~rK\tこうこつ\tn¦¦bone¦硬骨\tn,adj-no,adj-na¦¦firmness (of character)¦backbone¦unyielding spirit",
-    "0rg3e\t硬式\tこうしき\tn,adj-no¦¦hard (esp. of hardball, tennis, etc.)¦軟式",
-    "0rg3o\t硬式テニス\tこうしきテニス\tn¦¦(regulation-ball) tennis (as opposed to soft tennis)¦軟式テニス",
-    "0rg3y\t硬質\tこうしつ\tn,adj-no¦¦hardness¦stiffness",
-    "0rg48\t硬水\tこうすい\tn¦¦hard water¦軟水",
-    "0rg4i\t硬直\tこうちょく\tn,vs,vi¦¦stiffening¦rigidity¦rigor¦stiffness¦ossification¦petrification",
-    "0rg4s\t硬度\tこうど\tn¦¦hardness¦solidity",
-    "0rg52\t硬軟\tこうなん\tn¦¦hardness and softness¦hard line and moderate line",
-    "0rg5c\t硬派\tこうは\tn¦¦hard-liners¦diehards¦hawks\tn,adj-na¦¦(young) man with traditionally masculine interests¦tough boy¦man's man\tn¦¦hard news¦reporter who covers political and economic affairs\tn,adj-na¦¦strait-laced type (with respect to relationships)\tn¦¦bullish traders",
   ],
 };

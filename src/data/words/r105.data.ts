@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 106 of 316, from "こんぴゅーたきん". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 106 of 316, from "こんぴゅーたき". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "コンピュータきりかえき\tコンピュータ切り替え器\t#1d92a\tcomp¦computer switch",
     "コンピュータきんきゅうたいおうセンター\tコンピュータ緊急対応センター\t#1d91g\tcomp¦JP Computer Emergency Response Term¦JPCERT-CC",
     "コンピュータくみはん\tコンピュータ組版\t#1phhg\t¦computer typesetting",
     "コンピュータグラフィクス\t\t#mkte\tcomp¦computer graphics",
@@ -337,6 +338,7 @@ export const PIECE: WordsPiece = {
     "こんよく\t混浴\ts#rnsm\t¦mixed bathing",
     "こんらん\t混乱\tsC~ni02#rnsw\t¦disorder¦chaos¦confusion",
     "こんらんじょうたい\t混乱状態\t#15hmk\t¦state of confusion",
+    "こんりゅう\t建立\tsC~n23#qyby\t¦erection¦(act of) building (temple, monument, etc.)",
     "こんりゅう\t根粒|根瘤\t#12nwm\t¦root nodule",
     "こんりゅうきん\t根粒菌\t#12nww\t¦root nodule bacteria",
     "こんりょう\t袞竜|袞龍\t#xp8e\t¦imperial robes",

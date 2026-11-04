@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 73 of 144, from "0vkr". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 73 of 144, from "0vkok". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,12 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0vkok\t1¦どれくらいで｜配達《はいたつ》してもらえますか。¦How soon can they be delivered?¦3¦4a2b¦¦CK¦配達",
+    "0vkou\t1¦｜軍隊《ぐんたい》は｜戦闘《せんとう》の｜配置《はいち》で｜整列《せいれつ》していた。¦The troops were in battle array.¦1¦3sb5¦¦sundown¦配置",
+    "0vkpe\t1¦その｜会社《かいしゃ》の｜株《かぶ》は｜高配《こうはい》｜当《とう》だ。¦The company shares give a high yield.¦1¦4jgp¦¦¦配当",
+    "0vkpy\t1¦｜先生《せんせい》はチラシを｜配布《はいふ》した。¦The teacher distributed the leaflets.¦2¦31bl¦¦CM¦配布",
+    "0vkq8\t1¦｜医療品《いりょうひん》は｜被災者《ひさいしゃ》たちに｜配分《はいぶん》された。¦The medical supplies were allocated to the victims of the disaster.¦¦4365¦¦Luornu¦配分",
+    "0vkqi\t1¦｜看護婦《かんごふ》は｜患者《かんじゃ》の｜快適《かいてき》さに｜配慮《はいりょ》しなくてはいけない。¦The nurses must see to the comfort of their patients.¦1¦3xv0¦¦Zifre¦配慮",
     "0vkr2\t1¦｜彼《あれ》は｜私《わたし》の｜倍《ばい》｜食《た》べた。¦He ate twice as much as I did.¦2¦29ki¦bunbuku¦CK¦倍\t2¦あの山はこの山の５倍の高さである。¦That mountain is five times as high as this one.¦2¦4y8m¦¦CM¦倍",
     "0vks6\t1¦｜私《わたし》はその｜古本《ふるほん》に｜倍額《ばいがく》を｜払《はら》った。¦I paid double the price for the secondhand book.¦2¦3flr¦arnab¦ddnktr¦倍額",
     "0vkta\t1¦｜今年《ことし》の｜売《う》り｜上《あ》げは｜倍増《ばいぞう》と｜見込《みこ》んでいます。¦Sales should double this year.¦2¦3o7z¦¦CK¦倍増",
@@ -218,12 +224,5 @@ export const PIECE: WordsPiece = {
     "0vpp4\t1¦｜半端《はんぱ》な｜時間《じかん》に｜自転車《じてんしゃ》に｜乗《の》るだけだ。¦I only ride a bicycle at odd times.¦1¦2lkc¦¦¦半端な",
     "0vppe\t1¦その｜人《ひと》は｜私《わたし》たちの｜半値《はんね》の｜大安売《おおやすう》りの｜申《もう》し｜出《で》にとびついた。¦The man jumped at our offer of a half-price bargain sale.¦3¦4h2s¦¦¦半値",
     "0vpsq\t1¦｜湿《しつ》｜気《き》の｜多《おお》い｜気候《きこう》はその｜半島《はんとう》の｜特色《とくしょく》です。¦A humid climate is characteristic of the peninsula.¦2¦37e0¦mookeee¦sundown¦半島",
-    "0vpw2\t1¦エミーはナプキンを｜半分《はんぶん》に｜折《お》りたたんだ。¦Emmy folded the napkin in half.¦¦4vvq¦¦CN¦半分",
-    "0vq0s\t1¦それは｜反《はん》｜道徳的《どうとくてき》だ。¦It is still immoral.¦¦4e4v¦small_snow¦rul¦反",
-    "0vq1c\t1¦お｜金《かね》を｜借《か》りる｜事《こと》は｜私《わたし》の｜主義《しゅぎ》に｜反《はん》する。¦It is against my principles to borrow money.¦1¦4vbp¦mookeee¦CM¦反する",
-    "0vq1w\t1¦｜仕事《しごと》から｜気《き》をそらせてはいけません。¦Do not take your mind off work.¦4¦3mjr¦¦¦そらせて",
-    "0vq3a\t1¦｜彼《あれ》はペンを｜置《お》いて｜椅子《いす》に｜座《すわ》ってそり｜返《かえ》った。¦He laid down his pen and leaned back in his chair.¦¦2dn6¦¦CK¦そり返った",
-    "0vq44\t1¦｜喜《よろこ》びの｜反意語《はんいご》は｜悲《かな》しみです。¦Delight is the opposite of sorrow.¦3¦3xmw¦¦helloroto¦反意語",
-    "0vq4y\t1¦｜彼《あれ》はそのニュースにどのような｜反応《はんのう》をしましたか。¦How did he respond to the news?¦1¦2fb8¦¦CM¦反応\t2¦ツベルクリン｜反応《はんのう》は｜疑《ぎ》｜陽性《ようせい》でした。¦The tuberculin reaction was pseudopositive.¦1¦4cao¦¦handsomelyian¦反応\t3¦５．反応が終わったら、濡れ雑巾の上に試験管をおく。¦5. When the reaction is over, place the test-tube on a damp cloth.¦¦1lg3¦fcbond¦fcbond¦反応",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 143 of 144, from "1owxl". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 143 of 144, from "1owbu". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,30 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "1owbu\t1¦｜湖《みずうみ》には｜薄《うす》い｜氷《こおり》が｜張《は》っていた。¦There was thin ice on the lake.¦1¦3qnc¦¦¦氷が張っていた",
+    "1owc1\t1¦｜彼女《かのじょ》は｜足音《あしおと》を｜殺《ころ》して｜部屋《へや》に｜入《い》った。¦She got into the room with hushed steps.¦3¦1vz7¦small_snow¦¦足音を殺して",
+    "1owc5\t1¦ジョージ３世は歴史家によって不当に悪し様に言われてきた。¦George III has been unfairly maligned by historians.¦2¦4mf1¦¦CM¦悪し様に",
+    "1owcr\t1¦こう｜見《み》えて、｜子供《こども》の｜頃《ころ》はケーキを｜二《に》ホール｜平《たい》らげた｜伝説《でんせつ》を｜持《も》っている。¦You couldn't tell it by looking, but she has the legendary tale of having eaten two whole cakes when a child.¦¦1m30¦fcbond¦fcbond¦ホール",
+    "1owdg\t1¦｜彼《あれ》が｜勇気《ゆうき》ある｜人《じん》として｜知《し》られている。¦We know him to be a brave man.¦2¦2k55¦¦orge¦勇気ある",
+    "1owfx\t1¦｜私《わたし》はちゃんとした｜庭付《にわつ》きの｜家《いえ》が｜欲《ほ》しい。¦I want to have a proper house and garden.¦3¦3f30¦bunbuku¦CM¦ちゃんとした",
+    "1owfy\t1¦｜僕《ぼく》にはどこにでもいるおっさんとしか｜見《み》えないけどなあ。¦To me he's no different from a million other dull middle aged men.¦1¦2kn6¦¦CM¦どこにでもいる",
+    "1owh2\t1¦そんな｜計画《けいかく》は｜失敗《しっぱい》するに｜決《き》まっている。¦Such a plan is bound to fail.¦3¦4diz¦¦CK¦に決まっている",
+    "1owhe\t1¦このお｜金《かね》は、もしものときの｜備《そな》えです。¦This money is for a rainy day.¦3¦4ssu¦bunbuku¦CM¦もしものとき",
+    "1owji\t1¦｜詩人《しじん》は｜不幸《ふこう》にも｜若死《わかじ》にした。¦Unfortunately the poet died in his youth.¦1¦38mj¦¦shekitten¦不幸にも",
+    "1owkw\t2¦｜覚《おぼ》えてろよ。いつか｜借《か》りを｜返《かえ》してやるからな。¦I will get even with you someday. Remember that.¦3¦3yeb¦small_snow¦Ivan24¦借りを返して",
+    "1owkx\t1¦こっそり｜教《おし》えてくれたら、｜礼《れい》をはずみますよ。¦If you tip me off about it, I'll make it worth your while.¦3¦4w8e2¦JimBreen¦JimBreen¦礼をはずみますよ",
+    "1ownr\t1¦その｜会合《かいごう》は｜早《はや》くても｜来週《らいしゅう》になるでしょう。¦The meeting will be held next week at the earliest.¦3¦4jh7¦¦CM¦早くても",
+    "1owo6\t1¦この｜通《とお》りは｜真北《まきた》に｜伸《の》びている。¦This street runs due north.¦2¦4q4b¦tommy__san¦CM¦真北",
+    "1owq4\t1¦｜人前《ひとまえ》で｜話《はな》すようなことは｜何《なに》によらず｜彼《あれ》はいつも｜敬遠《けいえん》する。¦He tends to shy away from anything that involves public speaking.¦2¦332d¦¦CM¦何によらず",
+    "1owr3\t1¦｜彼《あれ》は｜今《いま》までにないほどに｜勤勉《きんべん》だ。¦He is as diligent a man as ever lived.¦3¦2ap1¦¦¦今までにない",
+    "1owri\t1¦｜足《あし》が｜遅《おそ》い｜彼《あれ》は、もちろんすでに2m｜差《さ》がついた。¦He, being slow-footed, was of course already lagging two meters.¦3¦1lba¦fcbond¦fcbond¦差がついた",
+    "1owti\t1¦｜彼《あれ》が｜本当《ほんとう》の｜理由《りゆう》を｜見《み》つけようとしたって｜無駄《むだ》だ。¦It's no good his trying to find the true reason.¦¦2k6p¦¦¦としたって",
+    "1owua\t1¦お｜時間《じかん》をとらせて｜恐縮《きょうしゅく》です。¦I am sorry to have taken up your valuable time.¦1¦4v89¦¦CC¦時間をとらせて",
+    "1owvb\t1¦さらに詳しくは１６ページ参照。¦For further information, see page 16.¦1¦4n6j¦bunbuku¦CK¦詳しくは",
+    "1owvc\t1¦｜彼《あれ》は｜食《た》べる｜必要《ひつよう》はない｜食《く》い｜意地《いじ》が｜張《は》っているだけだ。¦He does not need to eat, he is just greedy.¦1¦286r¦¦¦食い意地が張っている",
+    "1owvt\t1¦今年、私は２足靴を履きつぶした。¦I've worn out two pairs of shoes this year.¦1¦3o9g¦¦CK¦履きつぶした",
+    "1owws\t1¦このジャケットはこのスカートにどうもしっくり｜来《き》ない。¦This jacket somehow doesn't go with this skirt.¦5¦1n81¦bunbuku¦¦しっくり来ない",
+    "1owxc\t1¦｜彼《あれ》はいろいろと｜時間《じかん》をとられる｜用事《ようじ》が｜多《おお》いので、｜彼《あれ》と｜会《あ》う｜約束《やくそく》をするのは｜難《むずか》しい。¦He has so many calls on his time, it is very difficult to make an appointment to see him.¦3¦2g9s¦¦¦時間をとられる",
     "1owxl\t1¦そのめでたいときに｜当《あ》たり｜彼《あれ》は｜祝辞《しゅくじ》を｜述《の》べた。¦He offered his congratulations on the happy occasion.¦2¦4k0l¦¦¦に当たり",
     "1owyd\t1¦テレビでは｜俳優《はいゆう》が｜台詞《せりふ》を｜思《おも》い｜出《だ》せるようにキューカードが｜主《おも》に｜使《つか》われる。¦Cue cards are used primarily on television to help the actors remember their lines.¦1¦4bw6¦mookeee¦CN¦キューカード",
     "1ox0n\t1¦この｜新人《しんじん》のアナウンサー、さっきからとちってばかりいる。¦This new announcer keeps stumbling.¦4¦4qjq¦bunbuku¦¦さっきから",
@@ -201,27 +225,5 @@ export const PIECE: WordsPiece = {
     "1p7y6\t1¦あの｜医者《いしゃ》は｜彼《あ》のがんを｜治《なお》してくれるかもしれない。¦That doctor may cure him of his cancer.¦3¦4yeo¦¦¦治して",
     "1p7zo\t1¦おばあさんは｜必《かなら》ずおならをする。¦The old lady is bound to fart.¦3¦4vly¦bunbuku¦¦おなら",
     "1p83e\t1¦オーボエ｜奏者《そうしゃ》なんかは｜自分《じぶん》にあうリードを｜探《さが》すより｜作《つく》った｜方《ほう》が｜速《はや》いと、｜自分《じぶん》で｜作《つく》ってしまう｜人《じん》もいる。¦Heck, with oboe players there are those who, rather than search for a reed that suits them, find it faster to make their own.¦¦1na4¦mookeee¦¦リード",
-    "1p86y\t1¦ベストを｜裏返《うらがえ》さなくちゃ。｜表裏《ひょうり》｜逆《ぎゃく》ですよ。¦You need to reverse your vest. It's inside-out!¦2¦47vj¦small_snow¦JimBreen¦ベスト",
-    "1p87r\t1¦｜前年《ぜんねん》の｜総所得《そうしょとく》｜金額《きんがく》はいくらでしょうか。¦What was the gross income in the previous calendar year?¦2¦1mkw¦mookeee¦¦所得金額",
-    "1p89a\t1¦ああ、｜彼女《かのじょ》は｜若《わか》くして逝ってしまった。¦Alas, she died young.¦1¦514i¦arnab¦¦逝って",
-    "1p8b8\t1¦｜主任《しゅにん》｜整備員《せいびいん》はテニスコートの｜敷地《しきち》のちょうど｜中央《ちゅうおう》に｜小《ちい》さな｜家《いえ》を｜持《も》っている。¦The head groundsman has a cottage right in the middle of the grounds.¦1¦36qb¦¦¦整備員",
-    "1p8bw\t1¦じゃが・・・その１０人目の子供の父親はそれまでの子供らとは別の父親なのか。¦But ... did that tenth child have a different father to the ones before him?¦3¦4mky¦¦Swift¦じゃが",
-    "1p8co\t1¦その｜強打者《きょうだしゃ》に｜備《そな》えてセンターは｜守備《しゅび》｜位置《いち》を｜変《か》えた。¦The center fielder shifted his position for the slugger.¦3¦4j4w¦¦¦守備位置",
-    "1p8d1\t1¦｜世界《せかい》で、｜鹿《しか》やムースやキジといった｜野性《やせい》｜獣《けもの》を｜狩《か》ることは｜違法《いほう》とする｜国《くに》が｜多《おお》い。¦In many parts of the world it is illegal to shoot wild game such as deer, moose or pheasant.¦1¦32p3¦¦papabear¦ムース",
-    "1p8g2\t1¦｜上空《じょうくう》をジェット｜機《き》がキーンという｜音《おと》を｜立《た》てて｜飛《と》んでいった。¦The jet made a whining sound as it soared overhead.¦3¦34ur¦¦¦キーン",
-    "1p8h6\t1¦あなたのサロン｜風《ふり》のスカートが｜好《す》きです。¦I like your sarong style skirt.¦3¦506t¦¦¦サロン",
-    "1p8ik\t1¦それよりもこれが｜好《す》きだ。¦I like this better than that.¦3¦4e0c¦¦CK¦それよりも\t2¦それよりも｜中《うち》にいて、テレビを｜見《み》ているほうが｜好《す》きなのです。¦Instead, they prefer to stay in and watch television.¦3¦4e0b¦¦timmartin¦それよりも",
-    "1p8jv\t1¦｜足《あし》に｜任《まか》せて｜町《まち》の｜中《うち》を｜歩《ある》き｜回《まわ》った。¦I walked around town wherever my feet led me.¦3¦2zx8¦¦¦足に任せて",
-    "1p8jx\t1¦その｜人《ひと》は｜村中《むらじゅう》に｜名《な》を｜知《し》られている。¦The man is well-known all over the village.¦2¦4h2n¦¦CM¦名を知られている",
-    "1p8q8\t1¦｜発砲音《はっぽうおん》を｜聞《き》いて、｜警察《けいさつ》がすぐにやって｜来《き》た。¦The police came as soon as they heard the gunfire.¦1¦48go¦KK_kaku_¦CS¦発砲音",
-    "1p8qj\t1¦よかれあしかれ、この｜問題《もんだい》は｜彼《あれ》に｜委《まか》せるほかはない。¦For better or worse, there is nothing for it but to leave the matter in his hands.¦2¦44sl¦¦AlanF_US¦ほかはない",
-    "1p8rn\t1¦「｜疲《つか》れたか」「いいや、ちっとも」¦\"Are you tired?\" \"No, not at all.\"¦3¦5283¦mookeee¦CK¦いいや",
-    "1p8ro\t1¦「今日の新聞にいいニュース何かある？」「いや、特にないね」¦\"Any good news in today's paper?\" \"No, nothing in particular.\"¦4¦52cp¦mookeee¦CK¦いや",
-    "1p8rp\t1¦｜彼《あ》の｜答《こたえ》は「｜否《いや》」であった。¦His answer was in the negative.¦3¦2hts¦tommy__san¦CM¦否",
-    "1p8t8\t1¦｜来週《らいしゅう》ヨーロッパに｜発《た》つ｜予定《よてい》です。¦I'm planning to leave for Europe next week.¦3¦1oo6¦tommy_san¦CK¦発つ",
-    "1p8tc\t1¦｜彼《あれ》は｜系統立《けいとうだ》った｜調査《ちょうさ》を｜行《おこな》うことにした。¦He decided to perform systematic research.¦1¦2bbr¦¦¦系統立った",
-    "1p8tn\t1¦｜私《わたし》は｜彼《あれ》が｜忍《しの》び｜出《で》ようとするのをつかまえた。¦I caught him trying to sneak out.¦1¦3b54¦¦CK¦忍び出よう",
-    "1p8ve\t1¦｜部屋探《へやさが》しは｜苦労《くろう》することがある。¦Finding an apartment can be difficult.¦3¦1svt¦¦CK¦部屋探し",
-    "1p8w8\t1¦この｜箱《はこ》、｜持《も》ち｜上《あ》げるとズシッと｜重《おも》いね。｜中《うち》に｜何《なに》が｜入《い》ってるんだ。¦This box weighs a ton. What's inside?¦3¦4pwr¦¦CK¦ズシッと",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 101 of 144, from "0z64". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 101 of 144, from "0z5u". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,18 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0z5ua\t1¦この会社は石油業界で２位に位している。¦This firm ranks second in the oil trade.¦2¦4rt5¦¦¦位している",
+    "0z5v4\t1¦｜最新《さいしん》のバイオ｜技術《ぎじゅつ》によって、｜芋《いも》の｜臭《くさ》みを｜最小限《さいしょうげん》に｜抑《おさ》え、｜非常《ひじょう》に｜飲《の》みやすい「｜芋焼酎《いもじょうちゅう》」です。¦It's very easy to drink potato shochu now that the potato-like smell has been reduced to a low level through use of the latest biotechnology.¦¦1mbt¦mookeee¦¦臭み",
+    "0z5vy\t1¦｜彼《あれ》はこの｜分《ぶん》｜野《の》では｜草分《くさわ》けだ。¦He is a trailblazer in this field.¦¦2fqr¦¦Lumi¦草分け",
+    "0z5w8\t1¦｜田《た》｜中《うち》さんの｜特徴的《とくちょうてき》な｜癖毛《くせげ》が｜耳《みみ》の｜裏《うら》で｜跳《は》ねていた。¦Mrs Tanaka's characteristic curly hair was sticking up behind her ear.¦¦1miz¦mookeee¦¦癖毛",
+    "0z5x2\t1¦チキンは｜食《た》べられない、というけど、｜単《たん》なる｜食《く》わず｜嫌《ぎら》いじゃないの。¦You can't eat chicken? How do you know if you never try it?¦1¦4cmx¦¦CM¦食わず嫌い",
+    "0z5xc\t1¦｜岩《いわ》｜崩《くず》れに｜気《き》をつけて。¦Look out for rock slides.¦1¦3xpn¦tommy__san¦fcbond¦崩れ",
+    "0z5xm\t1¦その｜建物《たてもの》は｜突然《とつぜん》｜崩《くず》れ｜落《お》ちた。¦The building fell down suddenly.¦1¦4itw¦¦¦崩れ落ちた",
+    "0z5zk\t1¦車の速度を落とす装置（ハンプや狭さく）について、意見があったら書いてください。¦If you have any opinions concerning traffic calming devices (humps, curb extensions, etc.) please write them.¦1¦1lkp¦fcbond¦fcbond¦狭さく",
+    "0z60y\t1¦あのツアー、キャンセル｜待《ま》ちの｜状態《じょうたい》だって。¦That tour already has a waiting list.¦1¦4yh8¦small_snow¦CM¦待ち",
+    "0z622\t1¦ジェット｜機《き》が｜建物《たてもの》の｜上《うえ》を｜飛《と》ぶと｜窓《まど》ガラスがびりびりした。¦When the jet flew over the building the windowpanes rattled.¦3¦1l0rq¦JimBreen¦JimBreen¦窓ガラス",
+    "0z62m\t1¦｜彼《あれ》はそれを｜見《み》るとふと｜魔《ま》がさして｜盗《ぬす》んだ。¦The sight tempted him to steal.¦1¦2ek8¦mookeee¦¦魔がさして",
+    "0z62w\t1¦｜彼女《かのじょ》は｜腹立《はらだ》ちまぎれに｜婚約《こんやく》を｜破棄《はき》した。¦She broke off her engagement in a fit of anger.¦1¦1uzz¦¦Lurid¦まぎれ",
     "0z64u\t1¦マッコウクジラは、1,000メートルの｜深《ふか》さまで｜潜《くぐ》ることができる。¦The sperm whale can dive to a depth of 1,000 meters.¦1¦46qw¦KK_kaku_¦CK¦マッコウクジラ",
     "0z672\t1¦｜我々《われわれ》は｜生《い》きている｜限《き》り｜学《まな》び｜続《つづ》けなければならない。¦We must continue to study as long as we live.¦1¦3zb6¦¦CK¦学び",
     "0z686\t1¦そんなこと｜真《まこと》に｜受《う》けちゃだめだよ。｜彼《あれ》は｜大袈裟《おおげさ》に｜言《い》う｜傾向《けいこう》があるから。¦Don't take it literally. He is inclined to exaggerate.¦1¦4dnq¦¦Swift¦真に受けちゃ",
@@ -208,18 +220,5 @@ export const PIECE: WordsPiece = {
     "0zfak\t1¦そこには｜消《き》えることのない｜薄明《うすあ》かりがあった。¦There was eternal twilight in the place.¦2¦4kvg¦¦¦薄明かり",
     "0zfg4\t1¦｜彼《あれ》は｜駐英《ちゅうえい》｜大使《たいし》に｜選《えら》ばれた。¦He was appointed ambassador to Britain.¦2¦26sw¦¦CK¦駐英",
     "0zfhs\t1¦｜相手《あいて》チームがあまり｜闘志《とうし》をわかしていなかったので、｜我々《われわれ》は｜楽勝《らくしょう》した。¦The opposing team did not put up much of a fight, so we won hands down.¦1¦30dl¦¦CM¦闘志",
-    "0zfj6\t1¦｜彼《あれ》は｜店《みせ》じまいのため｜商品《しょうひん》を｜投《な》げ｜売《う》りした。¦He sold his goods at a loss to wind up his business.¦3¦26n2¦small_snow¦sundown¦投げ売り",
-    "0zfpu\t2¦オーナーたちは｜組合《くみあい》のシンパを｜一人残《ひとりのこ》らず｜解雇《かいこ》するために｜首切《くびき》り｜役《やく》を｜投入《とうにゅう》した。¦The owners brought in a hatchet man to fire all the union sympathizers.¦2¦4vr2¦¦CM¦首切り",
-    "0zft6\t1¦｜彼女《かのじょ》は｜終生《しゅうせい》その｜町《まち》に｜住《す》んだ。¦She lived all her life in that town.¦3¦1wig¦¦CK¦終生",
-    "0zftq\t1¦この｜汽車《きしゃ》は｜世界《せかい》の｜果《は》て｜行《い》きの｜終列車《しゅうれっしゃ》です。¦This train is the last train to the world's end.¦1¦32oc¦¦¦終列車",
-    "0zfua\t1¦フェニックスはアリゾナの｜州都《しゅうと》である。¦Phoenix is the capital of Arizona.¦2¦4865¦bunbuku¦CK¦州都",
-    "0zfv4\t1¦｜兄《あに》は｜手仕事《てしごと》がうまかった。¦My brother was expert in handwork.¦4¦3s93¦¦¦手仕事",
-    "0zg2c\t1¦｜寸鉄人《すんてつひと》を｜殺《ころ》す。¦The tongue stings.¦1¦32pp¦¦¦寸鉄",
-    "0zg2m\t1¦そのうち、｜小《ちい》さな｜村落《そんらく》の｜真上《まうえ》を｜高架線《こうかせん》が｜行《い》ったり｜来《き》たりするようになりました。¦Pretty soon, there was an elevated train going back and forth just above the small village.¦1¦4kna¦Scott¦Scott¦村落",
-    "0zg2w\t1¦｜存外《ぞんがい》、｜口《くち》は｜達者《たっしゃ》なようね。¦It seems like you're unexpectedly eloquent.¦3¦1mkr¦mookeee¦¦存外",
-    "0zg54\t1¦｜彼《あれ》は｜警察署長《けいさつしょちょう》です。¦He is the chief of a police station.¦2¦2ba1¦¦¦署長",
-    "0zg86\t1¦｜私《わたし》は｜報告書《ほうこくしょ》をすっかり｜書《か》き｜上《あ》げた。¦He wrote out a thorough report.¦3¦39xn¦¦¦書き上げた",
-    "0zg9k\t1¦ここに｜彼《あ》の｜書《か》き｜置《お》きがある。これはここに｜来《き》たに｜違《ちが》いない。¦Here is a note he left. He must have been here.¦3¦4t53¦¦¦書き置き",
-    "0zgbi\t1¦｜私《わたし》は｜社会科《しゃかいか》にはたいへん｜興味《きょうみ》をもっています。¦I'm very interested in social studies.¦1¦3chm¦¦CK¦社会科",
   ],
 };

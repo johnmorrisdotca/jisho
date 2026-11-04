@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 33 of 219, from "0t7li". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 33 of 219, from "0t7fe". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,27 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0t7fe\t深さ\tふかさ\tn¦¦depth¦profundity",
+    "0t7fo\t深まる\tふかまる\tv5r,vi¦¦to deepen¦to heighten¦to intensify",
+    "0t7fy\t深み|深味~ateji,rK\tふかみ\tn¦¦deep place¦depths\tn¦¦depth¦profundity",
+    "0t7g8\t深める\tふかめる\tv1,vt¦¦to deepen¦to heighten¦to intensify",
+    "0t7gi\t深遠\tしんえん\tadj-na,n¦¦profound¦deep¦unfathomable¦esoteric",
+    "0t7gs\t深奥\tしんおう\tn¦¦depths (of an art, one's mind, etc.)¦heart¦inner mysteries\tadj-na¦¦profound¦deep¦esoteric¦abstruse",
+    "0t7h2\t深海\tしんかい\tn,adj-no¦¦deep sea¦depths of the sea¦ocean depths",
+    "0t7hc\t深呼吸\tしんこきゅう\tn,vs,vi¦¦deep breath",
+    "0t7hm\t深刻\tしんこく\tadj-na,n¦¦serious¦severe¦grave¦acute",
+    "0t7hw\t深刻化\tしんこくか\tn,vs,vi¦¦becoming more serious or severe¦aggravation¦intensification",
+    "0t7ig\t深在性真菌症\tしんざいせいしんきんしょう\tn¦med¦invasive mycosis¦systemic mycosis¦deep mycosis",
+    "0t7iq\t深層\tしんそう\tn,adj-no¦¦depths¦deep level¦表層",
+    "0t7j0\t深度\tしんど\tn¦¦depth",
+    "0t7ja\t深淵|深えん~sK\tしんえん\tn¦¦abyss¦ravine",
+    "0t7jk\t深謀遠慮\tしんぼうえんりょ\tn¦yoji¦far sight and deep design",
+    "0t7ju\t深夜\tしんや\tn,adv¦¦late at night",
+    "0t7k4\t申\tさる\tn¦¦the Monkey (ninth sign of the Chinese zodiac)\tn¦obs¦hour of the Monkey (around 4pm, 3-5pm, or 4-6pm)¦申の刻\tn¦obs¦west-southwest\tn¦obs¦7th month of the lunar calendar",
+    "0t7ke\t申し越す|申越す\tもうしこす\tv5s,vt¦¦to send word (to)¦to write (to)",
+    "0t7ko\t申し開らく\tもうしひらく\tv5k¦¦to explain¦to justify",
+    "0t7ky\t申しかねる|申し兼ねる|申兼ねる~sK\tもうしかねる\texp,v1¦hum¦to hesitate to say¦to find it difficult to say",
+    "0t7l8\t申し遣わす\tもうしつかわす\tv5s¦¦to write to¦to send word to¦to hand over (official business)",
     "0t7li\t申し合わせる|申し合せる|申しあわせる~sK\tもうしあわせる\tv1,vt¦¦to arrange¦to agree (on)¦to prearrange",
     "0t7ls\t申し込み順|申込み順\tもうしこみじゅん\tn¦¦order of applications¦in order of application",
     "0t7m2\t申し込む|申込む|申しこむ~sK\tもうしこむ\tv5m,vt¦¦to apply for¦to make an application¦to propose (marriage)¦to offer (mediation)¦to make an overture (of peace)¦to challenge¦to lodge (objections)¦to request (an interview)¦to subscribe for¦to book¦to reserve",
@@ -1010,21 +1031,5 @@ export const PIECE: WordsPiece = {
     "0tfp6\t枢密\tすうみつ\tn¦¦state secrets",
     "0tfpg\t枢要\tすうよう\tadj-na,adj-no,n¦¦(most) important¦principal¦pivotal¦key¦cardinal",
     "0tfpq\t趨勢|すう勢~sK\tすうせい\tn¦¦tendency¦trend",
-    "0tfq0\t雛|ひよっ子~sK\tひよこ|ひよっこ|ヒヨコ~~~!\tn¦uk¦young bird¦chick¦fledgling¦雛・ひな・1\tn¦uk¦greenhorn¦fledgeling¦novice¦rookie¦juvenile",
-    "0tfqk\tひな鑑別師|雛鑑別師\tひなかんべつし\tn¦abbr¦chicken sexer¦初生ひな鑑別師・しょせいひなかんべつし",
-    "0tfqu\t雛形|雛型|ひな形|ひな型\tひながた\tn¦¦model¦miniature¦pattern\tn¦¦sample¦specimen\tn¦¦prescribed form",
-    "0tfr4\tひな祭り|雛祭り|ひな祭~sK|雛祭~sK\tひなまつり\tn¦¦Hinamatsuri (March 3)¦Hina Matsuri¦Girls' Festival¦Dolls' Festival",
-    "0tfre\t雛人形|ひな人形\tひなにんぎょう\tn¦¦hina doll¦doll displayed during the Girls' Festival",
-    "0tfry\t雛罌粟|雛芥子~rK\tひなげし|ヒナゲシ~~~!\tn¦uk¦common poppy (Papaver rhoeas)¦corn poppy¦field poppy¦red poppy",
-    "0tfs8\t据える\tすえる\tv1,vt¦¦to place (in position)¦to fix¦to set (e.g. table)¦to lay (foundation)\tv1,vt¦¦to install¦to seat (someone)¦上座に据える\tv1,vt¦¦to settle (upon something)¦to fix (e.g. one's gaze)\tv1,vt¦¦to apply (moxa)",
-    "0tfsi\t据え置く\tすえおく\tv5k,vt¦¦to leave as it is¦to defer",
-    "0tfss\t据え付ける|据付ける|据えつける~sK\tすえつける\tv1,vt¦¦to install¦to equip¦to mount¦to fix (in place)¦to set up",
-    "0tftc\t杉|椙~rK\tすぎ|スギ~~~!\tn¦¦Japanese cedar (Cryptomeria japonica)",
-    "0tftm\t杉材\tすぎざい\tn¦¦cedar wood",
-    "0tftw\t杉並木\tすぎなみき\tn¦¦avenue of cedars (cryptomeria)",
-    "0tfu6\t頗る~rK\tすこぶる\tadv¦uk¦extremely¦very much",
-    "0tfug\t雀\tすずめ|スズメ~~~!\tn¦¦tree sparrow (Passer montanus)\tn¦¦talkative person¦knowledgeable person",
-    "0tfuq\t雀の涙|すずめの涙|スズメの涙\tすずめのなみだ\texp,n¦id¦drop in the bucket¦pittance¦chicken feed¦insignificant amount¦sparrow tears",
-    "0tfv0\t雀斑~rK|蕎麦滓~rK\tそばかす|ソバカス~~~!\tn¦uk¦freckle¦lentigo¦ephelis\tn¦arch¦buckwheat chaff¦蕎麦滓¦蕎麦殻¦orig. meaning",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 30 of 172, from "cirq". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 30 of 172, from "circuse". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "circuses\tパンとみせもの|パンとサーカス",
+    "ciris\tごしきのじこ|ゴシキノジコ",
     "cirque\tけんこく|カール|シルク・ドゥ・ソレイユ|シルクドソレイユ|シルク・ド・ソレイユ|シルクドゥソレイユ",
     "cirratum\tこもりざめ|コモリザメ",
     "cirrhata\tエトピリカ",
@@ -689,7 +691,5 @@ export const PIECE: WordsPiece = {
     "close time\tちかい",
     "close together\tらんりつ|りんりつ|よりそう",
     "close up\tしめきる|クローズアップ|アップ|ふさぐ|しょうさい|つぶす",
-    "close weave\tちみつ",
-    "closed\tふさがる|しまる|クローズド|へいいき|ふたがる|つうこうどめ|まま|まんま|ママ|はいこう|きゅうしん|クローズドシステム|クローズド・システム|クローズドスタンス|クローズド・スタンス|へいかいろ|へいせかい|へいたん|きんりょうき|はんがん",
   ],
 };

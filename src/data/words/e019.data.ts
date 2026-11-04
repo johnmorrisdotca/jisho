@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 20 of 219, from "0qasg". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 20 of 219, from "0qaq". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,13 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0qaq8\t逆\tぎゃく\tadj-no,adj-na,n¦¦reverse¦opposite\tadj-na,n¦¦converse (of a hypothesis, etc.)\tn-pref¦math¦inverse (function)",
+    "0qaqi\t逆さ|倒さ\tさかさ\tadj-no,adj-na,n¦abbr¦inverted¦upside down¦reversed¦back to front¦逆さま",
+    "0qaqs\t逆に\tぎゃくに\tadv¦¦conversely¦on the contrary",
+    "0qar2\t逆らう\tさからう\tv5u,vi¦¦to go against¦to oppose¦to disobey¦to defy",
+    "0qarm\t逆境\tぎゃっきょう\tn¦¦adverse circumstances¦unfortunate situation¦adversity¦順境",
+    "0qarw\t逆効果\tぎゃくこうか|ぎゃっこうか\tn¦¦opposite effect¦adverse effect¦backfiring",
+    "0qas6\t逆行\tぎゃっこう|ぎゃくこう\tn,vs,vi¦¦backward movement¦reverse movement¦going backwards¦retrogression¦going in the wrong direction¦going against (e.g. the times)¦running counter to¦順行・1\tn,vs,vi¦astron¦retrograde motion¦順行・2",
     "0qasg\t逆行列\tぎゃくぎょうれつ\tn¦math¦inverse matrix",
     "0qasq\t逆恨み\tさかうらみ\tn,vs,vt¦¦being resented (by someone one holds resentment towards)\tn,vs,vt¦¦responding to kindness with resentment¦thinking ill of someone who meant to be kind¦resentment caused by a misunderstanding\tn,vs,vt¦col¦unjustified resentment¦unreasonable grudge",
     "0qat0\t逆算\tぎゃくさん\tn,vs,vt¦¦counting backwards¦calculating backwards\tn¦math¦inverse operation",
@@ -712,6 +719,7 @@ export const PIECE: WordsPiece = {
     "0qgeo\t共演\tきょうえん\tn,vs,vt,vi¦¦appearing together (in a film, play, etc.)¦performing together (at a concert, etc.)¦acting together¦co-starring¦playing together (in a sports match)",
     "0qgey\t共演者\tきょうえんしゃ\tn¦¦costar¦coactor",
     "0qgf8\t共稼ぎ|共かせぎ\tともかせぎ\tn,vs,vi,adj-no¦¦(husband and wife) earning a living together¦共働き",
+    "0qgfi\t共学\tきょうがく\tn,vs,vi¦¦coeducation¦mixed-sex education¦別学・べつがく",
     "0qgfs\t共学制\tきょうがくせい\tn¦¦coeducational plan",
     "0qgg2\t共感\tきょうかん\tn,vs,vi¦¦sympathy¦empathy¦response¦identification (with someone)",
     "0qggc\t共観福音書\tきょうかんふくいんしょ\tn¦¦Synoptic Gospels",
@@ -1086,14 +1094,5 @@ export const PIECE: WordsPiece = {
     "0qjfk\t興業\tこうぎょう\tn,vs¦¦promotion of industry¦inauguration of a new industrial enterprise¦oft. in company names",
     "0qjfu\t興業銀行\tこうぎょうぎんこう\tn¦¦industrial bank",
     "0qjg4\t興行\tこうぎょう\tn,vs,vt¦¦show¦performance¦act\tn¦¦entertainment industry¦show business",
-    "0qjge\t興行化\tこうぎょうか\tn,vs,vt¦¦turning (something) into a show¦turning into a performance¦adapting for the stage",
-    "0qjgo\t興行師\tこうぎょうし\tn¦¦showman¦show manager",
-    "0qjgy\t興行主\tこうぎょうぬし\tn¦¦showman¦impresario¦promoter¦producer",
-    "0qjh8\t興国\tこうこく\tn¦¦making a country prosperous¦prosperous country\tn¦hist¦Kōkoku era (of the Southern Court; 1340.4.28-1346.12.8)",
-    "0qjhi\t興趣\tきょうしゅ\tn¦¦interest (in something)",
-    "0qjhs\t興信所\tこうしんじょ\tn¦¦detective agency¦enquiry agency",
-    "0qji2\t興信録\tこうしんろく\tn¦¦credit-worthiness directory",
-    "0qjim\t興ざめ|興醒め|興冷め~iK|興覚め~iK\tきょうざめ\tn,adj-na,vs,vi¦¦spoiled fun¦loss of interest¦damper (e.g. on the party)¦wet blanket¦turn-off",
-    "0qjiw\t興ざめる|興醒める\tきょうざめる\tv1,vi¦¦to lose interest¦to be dampened (of enjoyment, interest, etc.)¦to fall flat¦to turn sour",
   ],
 };

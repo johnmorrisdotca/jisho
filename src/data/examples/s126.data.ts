@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 127 of 144, from "18yh". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 127 of 144, from "18w". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,27 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "18w18\t2¦｜盲《めくら》ヘビに｜怖《こわ》じず。¦Fools rush in where angels fear to tread.¦1¦1puo¦¦CK¦盲ヘビ",
+    "18wae\t1¦｜彼女《かのじょ》は｜新聞《しんぶん》に｜家事手伝《かじてつだ》いの｜求人広告《きゅうじんこうこく》を｜出《だ》した。¦She put an advertisement for a domestic help in the paper.¦3¦1wbl¦¦¦家事手伝い",
+    "18wao\t1¦この｜地域《ちいき》では、｜工場労働者《こうじょうろうどうしゃ》がどんどんいなくなっていますね。¦Factory jobs are drying up in the local economy.¦2¦4q8e¦¦¦工場労働者",
+    "18wnq\t1¦｜彼《あ》の｜行為《こうい》はまさしく｜狂気《きょうき》の｜沙汰《さた》だった。¦His conduct was nothing short of madness.¦1¦2il6¦¦Zifre¦狂気の沙汰\t1¦そんなことを｜言《い》うのは｜狂気《きょうき》のさただ。¦It's the height of madness to say so.¦1¦4dob¦¦¦狂気のさた",
+    "18x3a\t1¦｜信用《しんよう》のある｜建設業者《けんせつぎょうしゃ》に｜家《いえ》を｜建《た》ててもらったほうがよいですよ。¦You should have your house built by a trustworthy builder.¦2¦34ex¦¦¦建設業者",
+    "18x9e\t1¦｜副作用《ふくさよう》としては、｜視力障害《しりょくしょうがい》があります。¦This has visual impairment as a side effect.¦1¦1l69¦fcbond¦fcbond¦視力障害",
+    "18xe4\t1¦タロー｜君《きみ》、｜歯《は》を｜磨《みが》いていらっしゃい。¦Taro, go and brush your teeth.¦2¦4cpi¦¦Swift¦歯を磨いて",
+    "18xf8\t1¦｜試合《しあい》にさきだち｜代々《だいだい》｜木《き》｜競技場《きょうぎじょう》で｜開会式《かいかいしき》が｜行《おこな》われた。¦Before the match, an opening ceremony was held in the Yoyogi stadium.¦2¦1mp9¦mookeee¦CN¦さきだち",
+    "18xfi\t1¦｜彼《あ》の｜名前《なまえ》をひょっとして｜知《し》っていませんか。¦Do you happen to know his name?¦3¦2hiq¦¦CK¦ひょっとして",
+    "18xiu\t1¦｜男《おとこ》の｜子《こ》はたらいの｜中《うち》でジャブジャブ｜水《みず》をはねかしていた。¦The boy splashed about in the tub.¦5¦1mju¦mookeee¦CM¦たらい",
+    "18xjy\t1¦｜対岸《たいがん》の｜火事《かじ》で｜良《よ》かった。¦I am glad it was someone else who got it.¦2¦2yg3¦bunbuku¦CK¦対岸の火事",
+    "18xlc\t1¦そんなものは｜未《いま》だかつて｜見《み》たことがない。¦Never have I seen such a thing.¦3¦4dk0¦bunbuku¦Swift¦未だかつて",
+    "18xn0\t1¦｜虫《むし》の｜音《ね》がきこえます。¦I can hear the chirping of insects.¦2¦1mjl¦mookeee¦CK¦虫の音",
+    "18xr6\t1¦ちょっと｜座《ざ》が｜白《しら》けている。¦There is a slight chill on the party.¦3¦4cgl¦¦¦座が白けている",
+    "18xrg\t1¦｜濡《ぬ》れ｜衣《ぎぬ》を｜着《き》せられた。¦I was falsely accused.¦¦2m58¦small_snow¦CK¦濡れ衣を着せられた",
+    "18xsu\t1¦これらの｜気《き》の｜毒《どく》な｜人々《ひとびと》は｜非情《ひじょう》な｜独裁者《どくさいしゃ》のなすがままになっていた。¦These poor people were at the mercy of the cruel dictator.¦1¦4o5o¦¦¦なすがまま",
+    "18xwg\t1¦この｜板状《ばんじょう》の｜固《かた》い｜岩石《がんせき》の｜層《そう》をプレートと｜呼《よ》ぶ。¦We call these slabs of the solid-rock layer 'plates'.¦2¦1lkn¦fcbond¦fcbond¦板状の",
+    "18y2a\t1¦｜私《わたし》は｜今《いま》にも｜出《で》かけようとしているところへあなたが｜入《い》ってきたのだ。¦I was about to leave when you came in.¦4¦3d76¦¦CK¦ところへ",
+    "18y66\t1¦この｜椅子《いす》はとても｜座《すわ》り｜心地《ごこち》が｜良《よ》い。¦This chair is very comfortable.¦¦4su3¦small_snow¦CK¦座り心地",
+    "18y98\t1¦｜困《こま》ったことがおきるのではないかと｜気《き》をもむことがある。¦I sometimes apprehend that there will be some difficulty.¦3¦3nzf¦¦¦気をもむ",
+    "18y9i\t1¦｜浪士《ろうし》は｜本懐《ほんかい》を｜遂《と》げた。¦The rōnin attained their long-cherished ambition.¦1¦4x2ur¦JimBreen¦JimBreen¦浪士",
     "18yhk\t1¦その｜竹《たけ》はしなったが｜折《お》れなかった。¦The bamboo gave but did not break.¦2¦4gdm¦¦CM¦しなった",
     "18yi4\t1¦｜雨《あめ》がひどく｜降《くだ》ったのでグラウンドはぐしゃぐしゃだ。¦It rained heavily, so the playground is muddy.¦3¦1mwj¦bunbuku¦CK¦ぐしゃぐしゃ\t2¦ダンプカーと｜正面衝突《しょうめんしょうとつ》したタクシーはぐしゃぐしゃになった。¦The taxi collided head-on with a dump truck and was badly crushed.¦1¦1n2x¦mookeee¦¦ぐしゃぐしゃ",
     "18ykm\t1¦ただし、学生の本分は学業ですから、期末テストをおろそかにしたらメッ！ですよ？¦However, the duty of a student is to study. So if you neglect the end of term test, that's a \"no!\".¦¦1n37¦¦¦メッ",
@@ -70,6 +91,7 @@ export const PIECE: WordsPiece = {
     "1911i\t1¦トムと｜飲《の》みに｜行《い》くんだったら、｜突拍子《とっぴょうし》もないホラを｜吹《ふ》くだろうから、｜覚悟《かくご》した｜方《ほう》がいいよ。¦If you go drinking with Tom, be prepared to listen to some pretty outlandish cock and bull stories.¦1¦4age¦¦Delian¦ホラを吹く",
     "1911s\t1¦ケビンが｜言《い》うことはほら｜話《ばなし》ばかりなので、｜誰《だれ》も｜彼《あ》のことを｜信《しん》じなかった。¦Nobody believed Kevin because all he ever told were tall stories.¦¦4tsk¦bunbuku¦¦ほら話",
     "1912c\t1¦すべては｜燃《も》えて｜灰《はい》となった。¦Everything was burnt to ashes.¦2¦4lf1¦small_snow¦AlanF_US¦となった",
+    "1913q\t1¦｜夫《おっと》との｜間《あいだ》に｜波風《なみかぜ》が｜立《た》つのが｜恐《こわ》くて、｜愛人《あいじん》の｜存在《そんざい》は｜知《し》らない｜振《ふ》りをしています。¦I'm afraid of discord arising with my husband so I'm turning a blind eye to his mistress.¦1¦1lbp¦fcbond¦fcbond¦波風が立つ",
     "19140\t1¦おじはいつも｜家族《かぞく》に｜波風《なみかぜ》を｜立《た》てるようなことをする。¦My uncle constantly causes his family trouble.¦2¦4vpn¦¦CK¦波風を立てる",
     "1915e\t1¦ある｜意味《いみ》で、｜人生《じんせい》は｜夢《ゆめ》にすぎない。¦In a sense, life is but a dream.¦3¦4xej¦¦sacredceltic¦ある意味で",
     "1915o\t1¦ある｜意味《いみ》では、きみが｜間違《まちが》っている。¦In a sense, you are wrong.¦3¦4xee¦¦CC¦ある意味では",
@@ -194,22 +216,5 @@ export const PIECE: WordsPiece = {
     "1960o\t1¦｜私《わたし》、そのサイトにブックマークをつけてるよ。¦I have a bookmark on that page.¦4¦59tte¦small_snow¦AlanF_US¦ブックマーク",
     "196d6\t1¦この｜建物《たてもの》は｜彼《あ》の｜名前《なまえ》にちなんで｜名付《なづ》けられました。¦This building was named after him.¦3¦4rdu¦¦CK¦にちなんで",
     "196dq\t1¦｜今週《こんしゅう》は、｜訳《わけ》あって、｜憂鬱《ゆううつ》な｜一週間《いっしゅうかん》になりそうだ。¦For some reason it looks to be turning out to be a depressing week.¦¦1mrb¦mookeee¦¦訳あって",
-    "196ko\t1¦｜家《いえ》では｜赤味《あかみ》がかった｜髪《かみ》とそばかすのせいで、｜母《はは》が｜侮蔑《ぶべつ》を｜込《こ》めて「にんじん」と｜名付《なづ》け、｜皆《みな》にもそう｜呼《よ》ばせています。¦At home, because of his reddish hair and freckles, his mother scornfully named him \"carrot\" and had everybody else call him that.¦¦1mvd¦mookeee¦¦赤味がかった",
-    "196ky\t1¦だが｜定期的《ていきてき》な｜服用《ふくよう》が｜必須《ひっす》であり、｜一日《いちにち》でも｜服用《ふくよう》しなければたちまち｜死《し》に｜至《いた》る。¦However he has to take it at fixed intervals, just one day without taking it is swiftly fatal.¦¦1n3b¦mookeee¦¦死に至る",
-    "196ls\t1¦｜表計算《ひょうけいさん》ソフトは、｜覚《おぼ》えておくと｜何《なに》かと｜便利《べんり》よ。¦Once you get the hang of it, spreadsheet software is really useful.¦2¦1tv7¦bunbuku¦CK¦表計算ソフト",
-    "196m2\t1¦バドミントン｜部《ぶ》はまともな｜部員《ぶいん》が｜極端《きょくたん》に｜少《すく》ないため、ほとんど｜廃部《はいぶ》ないし｜休部《きゅうぶ》｜状態《じょうたい》だった。¦There were so few proper members in the badminton club that it was half-way between dead and 'on break'.¦1¦1n0f¦mookeee¦papabear¦廃部",
-    "196mc\t1¦バドミントン｜部《ぶ》はまともな｜部員《ぶいん》が｜極端《きょくたん》に｜少《すく》ないため、ほとんど｜廃部《はいぶ》ないし｜休部《きゅうぶ》｜状態《じょうたい》だった。¦There were so few proper members in the badminton club that it was half-way between dead and 'on break'.¦1¦1n0f¦mookeee¦papabear¦休部",
-    "196ou\t1¦そんな｜難《むずか》しい｜質問《しつもん》をするなよ。¦Don't ask such hard questions.¦3¦4dg8¦bunbuku¦CK¦質問をする",
-    "196po\t1¦あの｜男《おとこ》はよくつまらぬことで｜誰《だれ》にでも｜因縁《いんねん》をつける。¦He often uses the slightest thing as a pretext for a fight with anybody.¦¦4xxm¦¦¦因縁をつける",
-    "196r2\t1¦そこそこ腕が立つようになるにはどれくらいの時間がかかるものでしょうか？¦How long does it take to get reasonably skilled?¦2¦1lbi¦fcbond¦fcbond¦腕が立つ",
-    "196rc\t1¦｜奥《おく》さんの｜尻《しり》にしかれている。¦His wife leads him by the nose.¦¦41hm¦¦CK¦尻にしかれている",
-    "196tu\t1¦｜政府《せいふ》が｜自衛隊《じえいたい》に｜沖縄《おきなわ》への｜災害派遣《さいがいはけん》を｜要請《ようせい》した。¦The government asked the SDF for a disaster relief deployment to Okinawa.¦1¦1mm0¦bunbuku¦CM¦災害派遣",
-    "196u4\t1¦｜皆《みな》｜留守《るす》だというのに、｜不思議《ふしぎ》なことに｜家中《うちじゅう》の｜電灯《でんとう》がついていた。¦Strange to say, all the lights in the house were on, though no one was at home.¦2¦3ypj¦¦Zifre¦というのに",
-    "196ue\t1¦あの｜男《おとこ》は｜言《い》うなれば｜大《おお》きくなった｜子供《こども》だ。¦That man is, so to speak, a grown-up boy.¦3¦4xxk¦¦¦言うなれば",
-    "196vi\t1¦もっと｜経費《けいひ》を｜抑《そもそも》えろよ。｜入《い》るを｜量《はか》りて｜出《い》ずるを｜為《な》す、ということを｜知《ち》らんのかね。¦We have to cut business expenses here. Haven't you ever heard of looking at how much you're getting before you start spending?¦1¦4553¦¦AlanF_US¦入るを量りて出ずるを為す",
-    "196w2\t1¦｜虎《とら》は｜死《し》して｜皮《かわ》を｜留《と》め、｜人《じん》は｜死《し》して｜名《な》を｜残《のこ》す。¦A great man will be remembered for his achievements.¦1¦3qm7¦¦CK¦死して",
-    "196wm\t1¦｜満開《まんかい》をチョイ｜過《す》ぎた｜感《かん》はありましたが、それでも、｜美《うつく》しい｜桜《さくら》を｜満喫《まんきつ》してきました。¦They seem a little past their peak, but even so we enjoyed the beautiful cherry blossoms.¦1¦1mes¦mookeee¦CM¦チョイ",
-    "196zy\t1¦｜窓《まど》が｜閉《し》まっているか｜確《たし》かめとけ。¦See that the window is closed.¦3¦30c0¦¦¦とけ",
-    "1970i\t1¦ほんのちょいやくで人気があるのはすごい！¦It's impressive that he's popular with just a bit part!¦5¦1lll¦fcbond¦fcbond¦ちょいやく",
   ],
 };

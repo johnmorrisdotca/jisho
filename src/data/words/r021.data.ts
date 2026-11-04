@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 22 of 316, from "いろごの". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 22 of 316, from "いろご". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,9 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "いろごと\t色事|色ごと\t#t3nu\t¦love affair¦sensual pleasures",
+    "いろごとし\t色事師\t#12yqc\t¦lady-killer¦casanova¦Don Juan\t¦kabuki actor who has mastered the art of romantic acting",
+    "いろごとはしあんのほか\t色事は思案の外\t#1ftsc\tproverb¦love and reason do not go together",
     "いろごのみ\t色好み\t#12yp8\t¦sensuality¦lechery",
     "いろさいげん\t色再現\t#1fori\tprint,comp¦color reproduction",
     "いろさいげんせい\t色再現性\t#1phb5\t¦color accuracy¦color reproducibility",

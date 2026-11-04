@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 20 of 316, from "いどた". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 20 of 316, from "いどころ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,11 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "いどころ\t居所|居処\t~m38#qehi\t¦whereabouts¦address",
+    "イドご\tイド語\t#1otvw\t¦Ido (constructed language)",
+    "いどさらえ\t井戸浚え\t#ove6\t¦well cleaning",
+    "いどし\t亥年\t#ovfu\t¦year of the Boar¦year of the Pig",
+    "いどせい\t易怒性\t#1pigo\tpsy¦irritability",
     "イドタケか\tイドタケ科\t#1mu5m\t¦Serpulaceae (family of fungi)",
     "いどづな\t井戸綱\t#ovc8\t¦well rope",
     "いどばた\t井戸端\t#ovdm\t¦side of well",
@@ -835,11 +840,5 @@ export const PIECE: WordsPiece = {
     "いまをさる\t今を去る\t#1pcqa\t¦ago¦before the present",
     "いまをさること\t今を去ること\t#19h8u\t¦dating back from now¦ago",
     "いまをときめく\t今をときめく|今を時めく\t#1920i\t¦at the height of one's power or influence¦at the peak of one's popularity",
-    "いまんとこ\t今んとこ\t#1pcu9\tcol¦at present¦currently¦so far",
-    "イマーゴ\t\t#1hbkq\t¦imago",
-    "イマーシブ\t\tn#1pb2g\t¦immersive",
-    "イマージェンシー\t\t#m2ni\t¦emergency",
-    "イマージュ\t\t#1fybe\t¦image",
-    "イマージョンプログラム\t\t#1or51\t¦(language) immersion program",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 15 of 172, from "backward f". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 15 of 172, from "backward ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "backward body\tそる",
+    "backward country\tこうしんこく",
     "backward flow\tぎゃくりゅう",
     "backward knee\tきりかえし",
     "backward looking\tうしろむき",
@@ -510,7 +512,7 @@ export const PIECE: WordsPiece = {
     "bar etc\tママ|ライブハウス|ライヴハウス|ライブ・ハウス|ライヴ・ハウス|ママさん",
     "bar gymnastics\tてつぼう",
     "bar high\tバー",
-    "bar nightclub\tしょうばいにん",
+    "bar nightclub\tだんな|しょうばいにん",
     "bar room\tさかぐら",
     "bar serving\tカフェ",
     "bar shop\tらいてん",
@@ -694,7 +696,5 @@ export const PIECE: WordsPiece = {
     "barrow\tこふん|ふんきゅうぼ",
     "barré\tセーハ|バレー",
     "bars\tいぎ|こうし|へいこうぼう|だんちがいへいこうぼう|ろくぼく|いしろう|さるわたり|カラーバー|カラー・バー|たてごうし|せんぼんごうし|ガードした|めんがね|いんしょくがい|フラリーマン",
-    "bartailed\tこち|コチ",
-    "bartender\tバーテン|バーテンダー",
   ],
 };

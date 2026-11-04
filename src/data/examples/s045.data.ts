@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 46 of 144, from "0sfum". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 46 of 144, from "0sfru". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,15 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0sfru\t1¦｜取《と》り｜繕《つくろ》うように、｜笑《わら》ってみせる。¦She smiled to smooth things over.¦1¦1mo7¦mookeee¦¦取り繕う",
+    "0sfs4\t2¦そろそろ｜本気《ほんき》で｜仕事《しごと》に｜取《と》り｜組《く》むころだよ。¦It is time you get down to work.¦3¦4dr1¦¦¦取り組む",
+    "0sfse\t1¦これを｜青《あお》いのと｜取《と》り｜替《か》えてください。¦Please change this for a blue one.¦2¦4nx6¦small_snow¦CM¦取り替えて\t2¦｜彼《かれ》らは｜欠陥《けっかん》テレビを｜新《あたら》しいのと｜取《と》りかえた。¦They replaced the defective TV with a new one.¦1¦2324¦¦CK¦取りかえた",
+    "0sfso\t1¦｜事件《じけん》の｜原因《げんいん》を｜取《と》り｜調《しら》べるために｜実情調査委員会《じつじょうちょうさいいんかい》が｜作《つく》られた。¦A fact-finding committee was set up to determine the cause of the incident.¦2¦1mp6¦mookeee¦CK¦取り調べる",
+    "0sft8\t1¦｜市《いち》は｜飲酒運転《いんしゅうんてん》を｜非常《ひじょう》に｜厳《きび》しく｜取《と》り｜締《し》まって、｜罰金《ばっきん》を｜課《か》している。¦The city is cracking down on drunk drivers and giving them fines.¦1¦3lwy¦tigro1973¦CM¦取り締まって",
+    "0sfti\t1¦｜私《わたし》は｜彼女《かのじょ》に｜取《と》り｜入《い》ってうまく｜秘密《ひみつ》を｜聞《き》き｜出《だ》した。¦I charmed a secret out of her.¦1¦3abs¦¦CK¦取り入って",
+    "0sfts\t1¦｜洗濯物《せんたくもの》を｜中《うち》へ｜取《と》り｜入《い》れて｜下《くだ》さい。¦Please bring in the washing.¦2¦30ya¦¦CK¦取り入れて\t2¦｜私達《わたしたち》はいつも｜彼《あ》の｜忠告《ちゅうこく》を｜取《と》り｜入《い》れるというわけではない。¦We do not always take his advice.¦1¦395x¦¦CK¦取り入れる",
+    "0sfu2\t1¦｜彼女《かのじょ》は｜悪霊《あくりょう》に｜取《と》りつかれているように｜見《み》える。¦She seems to be possessed by an evil spirit.¦1¦1ye8¦¦CM¦取りつかれている\t2¦｜妻《つま》は｜家《いえ》を｜買《か》いたい｜欲求《よっきゅう》に｜取《と》りつかれている。¦My wife is possessed with the desire to buy a house.¦3¦3nfw¦¦¦取りつかれている",
+    "0sfuc\t1¦メイドは｜客《きゃく》を｜一人一人《ひとりひとり》｜大声《おおごえ》でとりついた。¦The maid announced each guest.¦3¦4681¦¦CK¦とりついた",
     "0sfum\t1¦｜彼《あれ》は｜壁《かべ》に｜本棚《ほんだな》を｜取《と》り｜付《つ》けた。¦He fixed the bookshelf to the wall.¦1¦259w¦¦CK¦取り付けた\t2¦｜私《わたし》はケネディ｜氏《し》と｜会《あ》う｜約束《やくそく》をとりつけました。¦I have made an appointment with Mr Kennedy.¦1¦3gas¦¦¦とりつけました",
     "0sfuw\t1¦｜天真爛漫《てんしんらんまん》なところが｜彼《あ》の｜唯一《ゆいいつ》の｜取《と》り｜柄《え》だな。¦Naivete is his only merit.¦¦2ogu¦¦¦取り柄",
     "0sfv6\t1¦｜私《わたし》は｜彼《あれ》からお｜金《かね》を｜取《と》り｜返《かえ》した。¦I got the money back from him.¦3¦3b8u¦bunbuku¦CK¦取り返した",
@@ -184,18 +193,5 @@ export const PIECE: WordsPiece = {
     "0sijk\t1¦｜果《か》｜実《み》がなる｜樹木《じゅもく》は、｜成長《せいちょう》するための｜空間《くうかん》がかなり｜必要《ひつよう》だ。¦Fruit trees require a large amount of space in which to grow.¦1¦4056¦¦Luornu¦樹木",
     "0siju\t1¦イギリス人は１６０９年アメリカに植民地を樹立した。¦The English established colonies in America in 1609.¦1¦4wvb¦¦CK¦樹立",
     "0sik4\t1¦この｜木《き》はあの｜木《き》と｜同《おな》じ｜樹齢《じゅれい》だ。¦This tree is the same age as that one.¦1¦4pbu¦¦CM¦樹齢",
-    "0sike\t1¦｜需給関係《じゅきゅうかんけい》が｜緩和《かんわ》している。¦The supply-demand balance is relaxing.¦1¦36fu¦¦¦需給",
-    "0siky\t1¦｜価格《かかく》は｜需要《じゅよう》を｜反映《はんえい》する。¦The price reflects the demand.¦1¦40ib¦KK_kaku_¦CK¦需要",
-    "0sili\t1¦１０人の囚人たちが脱獄した。¦Ten prisoners broke out of jail.¦1¦524k¦mookeee¦CK¦囚人",
-    "0sim2\t1¦｜彼《あれ》は｜外務大臣《がいむだいじん》に｜収《おさ》まった。¦He was established as Foreign Minister.¦2¦2c1w¦¦AlanF_US¦収まった\t3¦｜最後《さいご》にはうまく｜収《おさ》まるだろう。¦It'll come right in the end.¦3¦3nmc¦¦¦収まる\t5¦｜凝《こ》った｜彫刻《ちょうこく》のしてある｜鞘《さや》に｜収《おさ》まった｜長剣《ちょうけん》。¦A longsword sheathed in an intricately engraved scabbard.¦¦1lqu¦fcbond¦fcbond¦収まった",
-    "0simc\t1¦その投資は現在６％の収益を彼にもたらしている。¦The investment now yields him 6%.¦1¦4g34¦¦¦収益",
-    "0simm\t1¦｜私《わたし》たちはみな｜収穫《しゅうかく》の｜手伝《てつだ》いをした。¦We all helped with the harvest.¦1¦3k8a¦¦CK¦収穫",
-    "0sin6\t1¦もうじきリンゴの｜収穫期《しゅうかくき》になる。¦The apple harvest will soon come.¦1¦461e¦¦CK¦収穫期",
-    "0sing\t1¦｜真珠《しんじゅ》の｜収穫高《しゅうかくだか》は｜少《すく》なかった。¦The harvest of pearls was small.¦1¦33v0¦¦¦収穫高",
-    "0siq8\t1¦アメリカでは｜多《おお》くの｜夫婦《ふうふ》が｜収支《しゅうし》をあわせるため｜共稼《ともかせ》ぎをしている。¦Many couples in America both work to make ends meet.¦1¦4xnv¦¦¦収支",
-    "0siqs\t1¦｜事態《じたい》は｜収拾《しゅうしゅう》に｜向《む》かいつつある。¦The situation is gradually moving towards a resolution.¦1¦4918t¦JimBreen¦JimBreen¦収拾",
-    "0sir2\t1¦｜瞳《ひとみ》は｜日《ひ》のあたる｜所《ところ》では｜収縮《しゅうしゅく》する。¦The pupils of the eyes contract in sunlight.¦1¦3kxe¦small_snow¦sundown¦収縮",
-    "0sita\t1¦｜大地震《おおじしん》の｜発生《はっせい》から、｜応急《おうきゅう》｜対策《たいさく》の｜収束《しゅうそく》までの｜避難《ひなん》の｜流《なが》れです。¦We are interested in the flow of evacuation events from the occurrence of a large earthquake to the conclusion of emergency countermeasures.¦1¦1mk7¦KK_kaku_¦¦収束",
-    "0siue\t1¦｜収入《しゅうにゅう》｜以上《いじょう》の｜生活《せいかつ》をするな。¦Do not live above your income.¦3¦36es¦¦¦収入",
   ],
 };

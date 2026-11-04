@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 142 of 144, from "1olu". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 142 of 144, from "1ol". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,30 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "1ol2d\t1¦｜世界経済《せかいけいざい》の｜回復《かいふく》はまだ｜視野《しや》に｜入《い》ってこない。¦Recovery of the world economy is not yet in sight.¦1¦32nd¦¦¦視野に入って",
+    "1ol3e\t1¦あなたの｜興味《きょうみ》を｜引《ひ》くような｜本《もと》を｜読《よ》みなさい。¦Read such books as interest you.¦1¦502v¦¦¦興味を引く",
+    "1ol4y\t1¦この｜花《はな》は｜美《うつく》しいだけでなく、よい｜香《かお》りがします。¦These flowers are not only beautiful but also fragrant.¦2¦4rup¦bunbuku¦CK¦香りがします",
+    "1ol5a\t1¦｜人生《じんせい》は｜思《おも》うようにはいかないものだ。¦Life doesn't always go the way we want it to.¦4¦333i¦¦CM¦思うように",
+    "1ol5d\t1¦｜幽霊《ゆうれい》でも｜見《み》たかのように、｜彼女《かのじょ》は｜茫然《ぼうぜん》と｜立《た》っていた。¦She stood transfixed as if she had seen a ghost.¦¦1p66¦¦CM¦かのように",
+    "1ol5z\t1¦｜我々《われわれ》は｜互《たが》いにコミュニケーションをとる｜必要《ひつよう》がある。¦We need to communicate with each other.¦1¦3zf3¦¦CK¦コミュニケーションをとる",
+    "1ol7b\t1¦｜彼《あれ》は｜何事《なにごと》もなかったかのように｜話《はな》し｜続《つづ》けた。¦He went on talking as though nothing had happened.¦3¦2cdg¦tommy__san¦CK¦何事もなかったかのように",
+    "1ol8a\t1¦あいつの｜馬鹿《ばか》さ｜加減《かげん》には、もう、あきれちゃうよ。¦It constantly appalls me how stupid he can be.¦1¦5125¦tommy__san¦¦馬鹿さ加減",
+    "1ol8t\t1¦あの｜会社《かいしゃ》は｜先行《さ》き｜不安《ゆきふあん》な｜商売《しょうばい》をしています。¦That outfit is running a fly-by-night operation.¦3¦4yci¦¦CM¦先行き不安な",
+    "1ol8y\t1¦その｜洗濯機《せんたくき》の｜使《つか》い｜心地《ごこち》はどうですか。¦How do you find your washing machine?¦2¦4gun¦¦¦使い心地",
+    "1oleb\t1¦この｜大学《だいがく》の｜学生《がくせい》の｜中《なか》には｜教師《きょうし》に｜対《たい》する｜口《くち》の｜利《き》き｜方《かた》すら｜知《し》らないものがいる。¦Some students in this university don't even know how to talk to teachers.¦3¦4q9l¦bunbuku¦CK¦すら",
+    "1olfg\t1¦｜彼《あれ》は｜肥満体《ひまんたい》だ。¦He is overweight.¦1¦25q5¦bunbuku¦CK¦肥満体",
+    "1olh9\t1¦｜彼《あれ》は｜飛行機《ひこうき》｜事故《じこ》で｜一命《いちめい》を｜取《と》り｜留《と》めた。¦He survived the plane crash.¦1¦25of¦¦CK¦一命を取り留めた",
+    "1olk9\t1¦もちろん｜品《しな》も、そして｜郵送料《ゆうそうりょう》すらも｜返《かえ》ってこなかった。¦Of course, neither goods nor mailing fee returned.¦2¦4570¦¦bmorsello¦すらも",
+    "1oloa\t1¦｜彼女《かのじょ》ってまめだね。¦She doesn't have a lazy bone in her body.¦3¦21eg¦small_snow¦CK¦まめ",
+    "1olob\t1¦あいつはギャンブラーとして｜名《な》が｜通《とお》っている。¦That man is notorious as a gambler.¦4¦511q¦¦¦名が通っている",
+    "1oloe\t1¦いずれにしろ、｜明日《あした》は｜列車《れっしゃ》に｜乗《の》りなさい。¦In any case, catch the train tomorrow.¦3¦4ws5¦¦orcrist¦いずれにしろ",
+    "1olp7\t1¦ごゆっくりどうぞ。¦Take your time.¦5¦6hxzz¦small_snow¦CK¦ごゆっくり",
+    "1olqt\t1¦｜日《ひ》がたつにつれて｜我々《われわれ》の｜運動《うんどう》ははずみがついた。¦As the days passed, our campaign grew in momentum.¦1¦2mvl¦¦¦はずみがついた",
+    "1olr6\t1¦｜彼女《かのじょ》が｜子供《こども》の｜頃《ころ》のことを｜言《い》うのをよく｜耳《みみ》にする。¦I often hear her refer to her childhood.¦¦21m2¦¦CM¦子供の頃",
+    "1olrf\t1¦｜私《わたし》は｜意《い》に｜反《はん》して｜彼《あれ》と｜結婚《けっこん》した。¦I married him against my will.¦1¦3ebf¦¦CK¦意に反して",
+    "1ols4\t1¦｜彼女《かのじょ》が｜書《か》いたことはある｜意味《いみ》｜真実《しんじつ》です。¦What she wrote is true in a sense.¦3¦21kd¦¦sundown¦ある意味",
+    "1oltb\t1¦それは｜誰《だれ》にだって｜同《おな》じ｜事《こと》だ。¦It's the same for everyone.¦¦4e6b¦¦CK¦誰にだって",
+    "1oltc\t1¦｜誰《だれ》だって｜人前《ひとまえ》でからかわれるのは｜嫌《いや》だろ。¦Nobody likes to be made fun of in public.¦¦601hf¦bunbuku¦CK¦誰だって",
     "1olue\t1¦そして｜更《さら》に｜困《こま》ったことは、｜彼自身《かれじしん》｜交通《こうつう》｜事故《じこ》に｜遭《あ》ってしまった。¦And to make matters worse, he met with a traffic accident.¦¦4kqq¦¦CM¦更に困ったこと",
     "1olux\t1¦この｜頃《ごろ》、｜気分《きぶん》が｜優《まさ》れないんだ。¦I'm not feeling well lately.¦¦4sn2¦small_snow¦CK¦優れないんだ",
     "1olv0\t1¦たとえどんなことがあってもあきらめません。¦No matter what happens, I won't give up.¦5¦1nyt¦mookeee¦CK¦どんなことがあっても",
@@ -191,29 +215,5 @@ export const PIECE: WordsPiece = {
     "1owbo\t1¦ラップは｜屑《くず》だ。¦Rap is crap.¦¦44l6¦¦zvzuibqx¦ラップ",
     "1owbp\t1¦｜艇長《ていちょう》はボートレースの｜最後《さいご》のラップで、｜乗組員《のりくみいん》をおだてて、レースを｜勝《か》ち｜取《と》るため、スパートをかけた。¦The coxswain egged his crewmen on, and made a winning spurt at the last lap of the regatta.¦1¦2or2¦¦papabear¦ラップ",
     "1owbq\t1¦いくら｜道《みち》に｜迷《まよ》ったからって、こんな｜所《ところ》で｜野宿《のじゅく》は｜絶対《ぜったい》にイヤですからね。¦Because, no matter if we have got lost, I'd hate to sleep outside this sort of place.¦3¦1m5u¦fcbond¦fcbond¦からって",
-    "1owbu\t1¦｜湖《みずうみ》には｜薄《うす》い｜氷《こおり》が｜張《は》っていた。¦There was thin ice on the lake.¦1¦3qnc¦¦¦氷が張っていた",
-    "1owc1\t1¦｜彼女《かのじょ》は｜足音《あしおと》を｜殺《ころ》して｜部屋《へや》に｜入《い》った。¦She got into the room with hushed steps.¦3¦1vz7¦small_snow¦¦足音を殺して",
-    "1owc5\t1¦ジョージ３世は歴史家によって不当に悪し様に言われてきた。¦George III has been unfairly maligned by historians.¦2¦4mf1¦¦CM¦悪し様に",
-    "1owcr\t1¦こう｜見《み》えて、｜子供《こども》の｜頃《ころ》はケーキを｜二《に》ホール｜平《たい》らげた｜伝説《でんせつ》を｜持《も》っている。¦You couldn't tell it by looking, but she has the legendary tale of having eaten two whole cakes when a child.¦¦1m30¦fcbond¦fcbond¦ホール",
-    "1owdg\t1¦｜彼《あれ》が｜勇気《ゆうき》ある｜人《じん》として｜知《し》られている。¦We know him to be a brave man.¦2¦2k55¦¦orge¦勇気ある",
-    "1owfx\t1¦｜私《わたし》はちゃんとした｜庭付《にわつ》きの｜家《いえ》が｜欲《ほ》しい。¦I want to have a proper house and garden.¦3¦3f30¦bunbuku¦CM¦ちゃんとした",
-    "1owfy\t1¦｜僕《ぼく》にはどこにでもいるおっさんとしか｜見《み》えないけどなあ。¦To me he's no different from a million other dull middle aged men.¦1¦2kn6¦¦CM¦どこにでもいる",
-    "1owh2\t1¦そんな｜計画《けいかく》は｜失敗《しっぱい》するに｜決《き》まっている。¦Such a plan is bound to fail.¦3¦4diz¦¦CK¦に決まっている",
-    "1owhe\t1¦このお｜金《かね》は、もしものときの｜備《そな》えです。¦This money is for a rainy day.¦3¦4ssu¦bunbuku¦CM¦もしものとき",
-    "1owji\t1¦｜詩人《しじん》は｜不幸《ふこう》にも｜若死《わかじ》にした。¦Unfortunately the poet died in his youth.¦1¦38mj¦¦shekitten¦不幸にも",
-    "1owkw\t2¦｜覚《おぼ》えてろよ。いつか｜借《か》りを｜返《かえ》してやるからな。¦I will get even with you someday. Remember that.¦3¦3yeb¦small_snow¦Ivan24¦借りを返して",
-    "1owkx\t1¦こっそり｜教《おし》えてくれたら、｜礼《れい》をはずみますよ。¦If you tip me off about it, I'll make it worth your while.¦3¦4w8e2¦JimBreen¦JimBreen¦礼をはずみますよ",
-    "1ownr\t1¦その｜会合《かいごう》は｜早《はや》くても｜来週《らいしゅう》になるでしょう。¦The meeting will be held next week at the earliest.¦3¦4jh7¦¦CM¦早くても",
-    "1owo6\t1¦この｜通《とお》りは｜真北《まきた》に｜伸《の》びている。¦This street runs due north.¦2¦4q4b¦tommy__san¦CM¦真北",
-    "1owq4\t1¦｜人前《ひとまえ》で｜話《はな》すようなことは｜何《なに》によらず｜彼《あれ》はいつも｜敬遠《けいえん》する。¦He tends to shy away from anything that involves public speaking.¦2¦332d¦¦CM¦何によらず",
-    "1owr3\t1¦｜彼《あれ》は｜今《いま》までにないほどに｜勤勉《きんべん》だ。¦He is as diligent a man as ever lived.¦3¦2ap1¦¦¦今までにない",
-    "1owri\t1¦｜足《あし》が｜遅《おそ》い｜彼《あれ》は、もちろんすでに2m｜差《さ》がついた。¦He, being slow-footed, was of course already lagging two meters.¦3¦1lba¦fcbond¦fcbond¦差がついた",
-    "1owti\t1¦｜彼《あれ》が｜本当《ほんとう》の｜理由《りゆう》を｜見《み》つけようとしたって｜無駄《むだ》だ。¦It's no good his trying to find the true reason.¦¦2k6p¦¦¦としたって",
-    "1owua\t1¦お｜時間《じかん》をとらせて｜恐縮《きょうしゅく》です。¦I am sorry to have taken up your valuable time.¦1¦4v89¦¦CC¦時間をとらせて",
-    "1owvb\t1¦さらに詳しくは１６ページ参照。¦For further information, see page 16.¦1¦4n6j¦bunbuku¦CK¦詳しくは",
-    "1owvc\t1¦｜彼《あれ》は｜食《た》べる｜必要《ひつよう》はない｜食《く》い｜意地《いじ》が｜張《は》っているだけだ。¦He does not need to eat, he is just greedy.¦1¦286r¦¦¦食い意地が張っている",
-    "1owvt\t1¦今年、私は２足靴を履きつぶした。¦I've worn out two pairs of shoes this year.¦1¦3o9g¦¦CK¦履きつぶした",
-    "1owws\t1¦このジャケットはこのスカートにどうもしっくり｜来《き》ない。¦This jacket somehow doesn't go with this skirt.¦5¦1n81¦bunbuku¦¦しっくり来ない",
-    "1owxc\t1¦｜彼《あれ》はいろいろと｜時間《じかん》をとられる｜用事《ようじ》が｜多《おお》いので、｜彼《あれ》と｜会《あ》う｜約束《やくそく》をするのは｜難《むずか》しい。¦He has so many calls on his time, it is very difficult to make an appointment to see him.¦3¦2g9s¦¦¦時間をとられる",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 2 of 316, from "あいとうし". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 2 of 316, from "あいと". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "あいとう\t哀悼\tsC~n18#onm6\t¦condolence¦regret¦tribute",
+    "あいとう\t愛刀\t#1p3du\t¦favorite sword¦cherished sword",
     "あいとうしん\t愛党心\t#15ck2\t¦party loyalty",
     "あいとうつうせき\t哀悼痛惜\t#17i7m\t¦condolence¦mourning¦sorrow",
     "あいとうのい\t哀悼の意\t#1oiso\t¦one's condolences¦feelings of sympathy",
@@ -294,6 +296,7 @@ export const PIECE: WordsPiece = {
     "あいよう\t相擁\ts#1j488\t¦embrace¦hug",
     "あいようしゃ\t愛用者\t#15ckc\t¦regular user¦person who favors (favours) (something)",
     "あいよかけよ\t\t#1onw8\tShinto¦coexistence¦mutual fulfilment",
+    "あいよく\t愛欲|愛慾\t~m48#xzvg\tBuddh¦attachment (esp. to one's family or a member of the opposite sex)",
     "アイライナー\t\t#1g3og\t¦eye liner¦eyeliner",
     "アイライナーペンシル\t\t#1oyqb\t¦eyeliner pencil",
     "アイライナー・ペンシル\t\t#1oyqb\t¦eyeliner pencil",
@@ -350,6 +353,7 @@ export const PIECE: WordsPiece = {
     "アイレット\t\t#1gmpq\t¦eyelet",
     "アイレットワーク\t\t#1gwlk\t¦eyelet work",
     "アイレット・ワーク\t\t#1gwlk\t¦eyelet work",
+    "アイレベル\t\t#1pl13\t¦eye-level",
     "アイレム\t\t#2zcr3\tcompany¦Irem",
     "あいれん\t哀憐\ts#onn0\t¦pity¦compassion",
     "あいれん\t愛憐\ts#12eg2\t¦sympathy",
@@ -436,6 +440,7 @@ export const PIECE: WordsPiece = {
     "アイ・メート\t\t#lqt4\t¦seeing-eye dog¦guide dog",
     "アイ・ライン\t\t~h#lqte\t¦eyeliner",
     "アイ・ラブ・ユー\t愛羅武勇\tU#1afhm\tuk¦I love you",
+    "アイ・レベル\t\t#1pl13\t¦eye-level",
     "あう\t合う\tgC~ni08#rj2m\t¦to come together¦to merge¦to unite\t¦to fit¦to match¦to suit\t¦to be profitable¦to be equitable\t¦to do ... to each other¦to do ... together",
     "あう\t会う|逢う|遭う|遇う\tgC~mi26#pois\t¦to meet¦to encounter¦to see\tuk¦to have (e.g. an accident)¦to suffer (e.g. an unpleasant fate)¦to encounter",
     "アウア\t\t#luww\t¦hour",
@@ -483,7 +488,7 @@ export const PIECE: WordsPiece = {
     "アウター・スペース\t\t#lqwq\t¦outer space",
     "アウター・マッスル\t\t#1pbr3\tanat¦outer muscles",
     "アウチ\t\t#1a73o\t¦ouch",
-    "アウティング\t\t#1a73y\t¦outing¦trip¦excursion\t¦outing (in a sporting event)¦appearance",
+    "アウティング\t\t#1a73y\t¦outing (someone's sexual orientation or gender identity)\t¦outing¦trip¦excursion\t¦outing (in a sporting event)¦appearance",
     "アウテリア\t\t#lqxa\trare¦exterior (of a building)",
     "アウディ\t\t#2zctn\tcompany¦Audi (car company)",
     "アウト\tＯＵＴ\tnC~ig#lqxk\tsports¦out (of a ball; in tennis, etc.)¦outside the line\tbaseb¦out¦putout\t¦outer¦external¦outside\t¦exit¦exit here",
@@ -859,9 +864,5 @@ export const PIECE: WordsPiece = {
     "あおはいいろ\t青灰色\t#1phcn\t¦grayish blue¦greyish blue¦ash grey",
     "あおはしこう\t青嘴鸛\t#1oo7o\t¦Abdim's stork (Ciconia abdimii)¦white-bellied stork",
     "アオハシコウ\t\t#1oo7o\t¦Abdim's stork (Ciconia abdimii)¦white-bellied stork",
-    "アオハタ\t\tU#1ph3g\tuk¦yellow grouper (Epinephelus awoara)¦banded grouper",
-    "あおはた\t青羽太\tU#1ph3g\tuk¦yellow grouper (Epinephelus awoara)¦banded grouper",
-    "あおはだ\t青肌|青膚\tU#18azq\tuk¦Ilex macropoda (species of holly)",
-    "アオハダ\t\tU#18azq\tuk¦Ilex macropoda (species of holly)",
   ],
 };

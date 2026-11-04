@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 124 of 144, from "18bc". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 124 of 144, from "1897". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,26 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "1897a\t1¦｜最近《さいきん》、｜私《わたし》、だれてるの。¦I've been sluggish recently.¦3¦3nnt¦small_snow¦CM¦だれてる",
+    "189a2\t1¦かくかくしかじかで、と｜事情《じじょう》を｜説明《せつめい》したのだが、あんまり｜興味《きょうみ》なさそうな｜相槌《あいづち》しか｜返《かえ》ってこなかった。¦I explained the situation, as this, that and such and such, but they just nodded along without showing much interest.¦¦1n9a¦mookeee¦¦かくかくしかじか",
+    "189dy\t1¦｜彼女《かのじょ》は｜向《む》こうでごちそうをぱくついているようだ。¦She seems to be having a good feed over there.¦3¦1xkb¦¦¦ぱくついている",
+    "189es\t1¦これ｜以上《いじょう》ここでもたついてると、｜後《うし》ろの｜第二《だいに》｜関門《かんもん》からも｜増援《ぞうえん》が｜来《き》て、｜挟撃《きょうげき》されるかも｜知《ち》れねーんだぜ。¦If we hang around here any longer, there could be reinforcements coming from the second gate to take us in a pincer movement!¦1¦1n6w¦¦¦もたついてる",
+    "189fw\t1¦｜目《め》から｜鱗《うろこ》が｜落《お》ちた。¦I can see the light.¦¦1pqp¦small_snow¦CK¦目から鱗が落ちた",
+    "189g6\t1¦みんなが｜私《わたし》をのけ｜者《もの》にしたの。¦I was left out in the cold by everyone.¦4¦46fy¦small_snow¦AlanF_US¦のけ者にした",
+    "189k2\t1¦｜彼《あれ》はロック｜音楽《おんがく》に｜夢中《むちゅう》だが、｜彼女《かのじょ》のほうはそれに｜輪《わ》をかけて｜夢中《むちゅう》だ。¦He is keen on rock music, but she is even more so.¦2¦2d49¦¦¦輪をかけて",
+    "189no\t1¦１３人？たったそんだけかよ。¦Just 13 people? That's all?¦5¦1ndv¦mookeee¦CM¦そんだけ",
+    "189os\t1¦けい｜子《こ》と｜一《ひとつ》朗が｜納得《なっとく》ずくで｜別《わか》れた。¦Keiko and Ichiro parted with mutual consent.¦1¦1n8p¦mookeee¦¦納得ずく",
+    "18a2o\t1¦｜警察《けいさつ》は｜彼《あれ》に｜目《め》をつけている。¦The cops are keeping tabs on him.¦3¦1lq9¦fcbond¦fcbond¦目をつけている",
+    "18a8i\t1¦｜彼《あれ》はしきりと｜一財産《ひとざいさん》｜作《つく》りたがっている。¦He is burning to make a fortune.¦3¦2fnn¦¦¦一財産",
+    "18a9c\t1¦ここだけの｜話《はなし》だが、｜彼《あれ》はいささか｜間《ま》が｜抜《ぬ》けている。¦Between you and me, he is rather stupid.¦3¦4tde¦¦Zifre¦間が抜けている",
+    "18ak6\t1¦あっさり｜断《ことわ》られると｜思《おも》いきや、｜彼女《かのじょ》は｜承諾《しょうだく》してくれました。¦I had expected an outright refusal, but to my surprise she agreed.¦1¦1ncc¦mookeee¦CN¦思いきや",
+    "18alk\t1¦これはスミレの｜一種《いっしゅ》です。¦This is a variety of violet.¦3¦4oo8¦¦CM¦スミレ",
+    "18ame\t1¦｜厳《きび》しいトレーニングに、｜彼《あれ》は｜音《ね》を｜上《あ》げた。¦He gave up under the severe training he faced.¦1¦1msi¦mookeee¦¦音を上げた",
+    "18ani\t1¦｜何人《なんにん》かが｜私《わたし》の｜腕《うで》をつかんだ。¦Somebody caught me by the arm.¦2¦40ld¦¦CK¦何人か",
+    "18ans\t1¦｜貧《まず》しいといえども｜彼女《かのじょ》は｜幸《しあわ》せだ。¦Though she is poor, she is happy.¦3¦1tqo¦¦CM¦いえども",
+    "18b8m\t1¦ツタウルシにかぶれました。¦I got a rash from poison ivy.¦5¦4cb7¦bunbuku¦Swift¦ツタウルシ",
+    "18baa\t1¦ぜいぜい｜言《い》いながらも、｜気合《きあい》をいれて｜走《はし》り｜続《つづ》ける。¦Puffing and panting we continued to run with renewed vigor.¦3¦1n5b¦mookeee¦¦ぜいぜい",
+    "18bby\t1¦もっと｜単刀直入《たんとうちょくにゅう》に｜言《い》ってくれないかな。｜隔靴掻痒《かっかそうよう》の｜感《かん》なきにしもあらずだよ。¦You don't have to leave me hanging like this. Why don't you just come out and tell it to me straight?¦¦453g¦¦AlanF_US¦なきにしもあらず",
     "18bc8\t1¦革命政府は、民衆から兵をつのって防戦するとともに、共和政治を確立して、捕らえていたルイ１６世を処刑しました。¦The revolutionary government, while raising troops from the masses and fighting a defensive battle, established a republic and executed Louis XVI.¦1¦1mun¦mookeee¦¦兵\t2¦｜軍《ぐん》はその｜町《まち》から｜兵《へい》を｜引《ひ》いて｜敵《てき》に｜明《あ》け｜渡《わた》した。¦The army abandoned the town to the enemy.¦1¦3sbs¦¦adjusting¦兵",
     "18bcs\t1¦｜休《やす》みの｜前《さき》などは｜少《すこ》し｜羽目《はめ》を｜外《はず》して｜飲《の》むのだが、｜杜仲茶《とちゅうちゃ》｜割《わ》りで｜飲《の》むと｜二日酔《ふつかよ》いが｜全《まった》くない。¦I usually cut loose a bit and drink plenty before a day off work, but if my drinks are cut with tochu tea, then I get absolutely no hangover.¦1¦1mtt¦mookeee¦¦羽目を外して",
     "18bdw\t1¦｜彼《あれ》は｜国境警備兵《こっきょうけいびへい》の｜姿《すがた》を｜見《み》て｜命《いのち》からがら｜逃《に》げた。¦He ran for his life at the sight of the border guard.¦1¦2arb¦¦¦警備兵",
@@ -184,26 +204,5 @@ export const PIECE: WordsPiece = {
     "18k1a\t1¦おじいちゃんが｜階段《かいだん》から｜落《お》ちて｜大《おお》｜怪我《けが》をしたんだ。¦Grandpa fell down the stairs and got a serious injury.¦1¦4vq2¦bunbuku¦¦大怪我",
     "18k1k\t1¦｜野球《やきゅう》が｜大好《だいす》きで｜大試合《おおしあい》はまず｜見逃《みのが》したことはない。¦I love baseball, and have hardly missed seeing any big games.¦3¦1pgq¦¦¦大試合",
     "18k1u\t1¦｜早《はや》めの｜返事《へんじ》をお｜待《ま》ちしております。¦I look forward to hearing from you soon.¦3¦30fo¦¦CK¦早めの",
-    "18k2e\t1¦ローマは｜訪《おとず》れる｜価値《かち》のある｜都市《とし》だ。¦Rome is a city worth visiting.¦1¦44c3¦¦CK¦ローマ",
-    "18k2y\t1¦｜私《わたし》はおもちゃ｜屋《や》の｜隣《となり》に｜住《す》んでいます。¦I live next door to the toy shop.¦1¦3gfn¦KK_kaku_¦CK¦おもちゃ屋",
-    "18k38\t1¦｜土曜日《どようび》のカラオケ｜屋《や》は｜特《とく》に｜混《こ》んでいる。¦The karaoke shop is especially crowded on Saturdays.¦2¦2o1c¦mookeee¦¦カラオケ屋",
-    "18k3i\t1¦これは、どんながんばり｜屋《や》でもやる｜気《き》をなくすほど｜忍耐《にんたい》のいることだ。¦This is so enduring as to make even the most diligent worker give up.¦1¦4or7¦¦¦がんばり屋",
-    "18k42\t1¦だがすでに、｜賽《さい》は｜投《な》げられた。¦However, the die had already been cast.¦¦1lk3¦fcbond¦fcbond¦賽は投げられた",
-    "18k4c\t1¦あいつが｜俺《おれ》に｜向《む》かって｜啖呵《たんか》を｜切《き》った。¦He hurled defiance at me.¦¦512w¦¦¦啖呵を切った",
-    "18k56\t1¦まさかオレがごねずにすっきり｜起《お》きると｜思《おも》っていなかったに｜違《ちが》いない。¦Certainly she wouldn't have dreamt that I would get up promptly without grumbling.¦3¦1myo¦¦¦ごねず",
-    "18k5g\t1¦「わはははは、心配するなっ！」オレはあえて虚勢を張った。¦\"Ha-ha-ha-hah! Don't worry!\" I brazenly bluffed.¦1¦1nez¦¦¦虚勢を張った",
-    "18k5q\t1¦それじゃあ｜元《もと》も｜子《こ》もないじゃないか。¦Then that means I lost everything.¦4¦4et7¦bunbuku¦CM¦元も子もない",
-    "18k60\t1¦みんな｜忙《いそが》しくしているのに、そんなところでノウノウと｜休憩《きゅうけい》してるんじゃないよ。¦You can't just lounge around like that while everybody else is so busy.¦1¦46e6¦¦CK¦ノウノウと",
-    "18k6k\t1¦｜擬声語《ぎせいご》｜的《てき》｜表現《ひょうげん》については、ホピ｜語《ご》に｜興味深《きょうみぶか》い｜例《れい》がある。¦As to onomatopoetic expressions, we find interesting examples in Hopi.¦¦3x5c¦¦fishda¦ホピ語",
-    "18k6u\t1¦ちょっと｜大《おお》きいけど、この｜封筒《ふうとう》でいいや。｜大《だい》は｜小《しょう》を｜兼《か》ねるって｜言《い》うし。¦It might be a bit big but this envelope will do just fine. It's better to be too big than too small.¦1¦4cfg¦bunbuku¦¦大は小を兼ねる",
-    "18k74\t1¦われわれの｜世界《せかい》は｜宇宙《うちゅう》の｜小部分《しょうぶぶん》にすぎない。¦Our world is only a small part of the universe.¦¦43xi¦¦CM¦小部分",
-    "18k7e\t1¦｜小企業《しょうきぎょう》は｜大会社《だいがいしゃ》にしばしば｜吸収《きゅうしゅう》される。¦Small business are often absorbed by a major company.¦1¦35el¦¦¦小企業",
-    "18k7o\t1¦｜私《わたし》はコートを｜広間《ひろま》の｜小部屋《こべや》にかけた。¦I hung my coat in the hall closet.¦3¦3gal¦¦CK¦小部屋",
-    "18k7y\t1¦｜最近《さいきん》は｜小家族化《しょうかぞくか》の｜傾向《けいこう》がある。¦There's a trend these days towards small families.¦2¦3nok¦¦CM¦小家族化",
-    "18k88\t1¦｜母親《ははおや》の｜象《しょう》は｜川《かわ》の｜中《うち》で｜小象《こぞう》の｜体《からだ》をあらってやります。¦The mother elephant bathes her baby in the river.¦2¦1rwf¦¦CM¦小象",
-    "18k9m\t1¦｜彼《あれ》は｜側転《そくてん》をしました。¦He did a cartwheel.¦3¦1mgs¦mookeee¦CK¦側転",
-    "18kc4\t1¦｜彼《あれ》はあの｜堂々《どうどう》たる｜大邸宅《だいていたく》に｜住《す》んでいる。¦He lives in that stately mansion.¦1¦2gnb¦¦¦大邸宅",
-    "18kcy\t1¦｜安全《あんぜん》で｜美味《おい》しいとのことでオーガニック｜野菜《やさい》は｜人気《にんき》がある。¦Organic vegetables are popular because they're safe and tasty.¦2¦43mj¦¦CM¦オーガニック",
-    "18ke2\t1¦｜昨日《きのう》、ひょんなことで｜父親《ちちおや》の｜戸籍抄本《こせきしょうほん》のコピーを｜見《み》てしまいました。¦Yesterday I stumbled across a copy of my father's family register.¦1¦1lko¦fcbond¦fcbond¦ひょんな",
   ],
 };

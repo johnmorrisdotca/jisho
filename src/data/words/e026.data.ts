@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 27 of 219, from "0rwom". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 27 of 219, from "0rwi". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,28 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0rwi8\t三流\tさんりゅう\tadj-no,n¦¦third-rate¦third-class",
+    "0rwii\t三稜鏡\tさんりょうきょう\tn¦¦prism",
+    "0rwis\t三輪\tさんりん\tn¦¦three wheels",
+    "0rwj2\t三輪車\tさんりんしゃ\tn¦¦three wheeled vehicle (tricycle, motorcycle, etc.)¦three wheeler",
+    "0rwjc\t三塁|３塁\tさんるい\tn¦baseb¦third base",
+    "0rwjm\t三塁手\tさんるいしゅ\tn¦baseb¦third baseman",
+    "0rwjw\t三塁線\tさんるいせん\tn¦baseb¦third-base line",
+    "0rwk6\t三塁打\tさんるいだ\tn¦baseb¦three-base hit¦triple",
+    "0rwkg\t三論\tさんろん\tn¦abbr¦Sanron sect (of Buddhism)¦三論宗",
+    "0rwkq\t三椏\tみつまた|ミツマタ~~~!\tn¦uk¦Oriental paper bush (Edgeworthia chrysantha)¦mitsumata",
+    "0rwl0\t傘\tかさ\tn¦¦umbrella¦parasol\tn¦¦something shaped like an umbrella or a conical hat¦shade (of a lamp)¦mushroom cap¦pileus¦笠・2",
+    "0rwla\t傘屋\tかさや\tn¦¦umbrella shop",
+    "0rwlk\t傘下\tさんか\tn¦¦affiliated with¦under jurisdiction of¦under the umbrella",
+    "0rwlu\t傘形碍子\tかさがたがいし\tn¦¦umbrella insulator",
+    "0rwm4\t傘紙\tかさがみ\tn¦¦oiled umbrella paper",
+    "0rwme\t傘歯車\tかさはぐるま\tn¦¦bevel gear",
+    "0rwmo\t傘持ち|傘持\tかさもち\tn¦¦umbrella carrier¦servant who carried a long-handled umbrella for a noble",
+    "0rwmy\t傘寿\tさんじゅ\tn¦¦80th birthday",
+    "0rwn8\t傘地\tかさじ\tn¦¦umbrella cloth",
+    "0rwni\t傘立て\tかさたて\tn¦¦umbrella stand",
+    "0rwo2\t参った\tまいった|マイッタ~sk\tint¦uk¦I'm beaten¦I give up¦touché¦you've got me there¦参る・2",
+    "0rwoc\t参らせる\tまいらせる\tv1¦¦to beat¦to floor (someone)¦to bring (someone) to his knees¦to come",
     "0rwom\t参る|詣る~rK\tまいる\tv5r,vi¦hum,uk¦to go¦to come¦usu. as 参ります\tv5r,vi¦¦to lose¦to be defeated¦to give up¦to be beaten¦to yield¦まいった¦oft. as まいった\tv5r,vi¦¦to be stumped (by)¦to be at a loss¦to be nonplussed (by)¦to be confused¦to be bewildered\tv5r,vi¦¦to visit (a shrine, grave, etc.)¦to go to worship (at a temple)\tv5r,vi¦¦to give in (of one's body)¦to be exhausted (by)¦to weaken¦to collapse (e.g. in the heat)\tv5r,vi¦¦to have one's heart stolen (by)¦to be madly in love (with)¦to be infatuated (with)¦oft. as 参っている\texp¦form,fem¦to¦for the attention of¦with respect¦presented to¦脇付¦after the adressee's name in epistolary writing\tv5r,vi¦dated¦to die¦may indicate scorn or contempt\tv5r,vi¦dated¦to go¦to come¦尊大語¦used towards someone of lower standing; oft. in the imperative; sondaigo\tv5r,vi¦dated¦to go¦to come¦indicates solemnity or dignity; oft. honorifically as 参られる\tv5r,vi¦dated¦to have a sword fight\tv5r,vt¦obs¦to offer up (alcohol)¦to present (a cup of sake)\taux-v,v5r¦hum¦to go¦to come¦after the -te form of a verb; oft. as 参ります",
     "0rwow\t参院\tさんいん\tn¦abbr¦House of Councillors (upper house of the National Diet of Japan)¦参議院",
     "0rwp6\t参加\tさんか\tn,vs,vi¦¦participation¦joining¦entry",
@@ -956,24 +978,5 @@ export const PIECE: WordsPiece = {
     "0s48k\t至らない\tいたらない\tadj-i¦¦imperfect¦incompetent¦inadequate¦careless",
     "0s48u\t至る|到る\tいたる\tv5r,vi¦¦to arrive at (e.g. a decision)¦to reach (a stage)¦to attain\tv5r,vi¦¦to lead to (a place)¦to get to\tv5r,vi¦¦in the extreme case of¦as ～に至っては\tv5r,vi¦arch¦to come¦to arrive¦to result in",
     "0s494\t至る所|到る所~rK|至る処~rK|到る処~rK|至るところ~sK|いたる所~sK|到るところ~sK|いたる処~sK\tいたるところ\texp,n,adv¦uk¦everywhere¦all over¦throughout",
-    "0s49e\t至れり尽くせり|至れり尽せり|至れりつくせり\tいたれりつくせり\texp,adj-no¦¦perfect¦complete¦thorough¦leaving nothing to be desired¦more than satisfactory",
-    "0s49o\t至急\tしきゅう\tadj-no,n¦¦urgent¦pressing¦immediate¦prompt¦express\tn,adv¦¦urgently¦promptly¦at once¦right away¦without delay¦as soon as possible",
-    "0s49y\t至急便\tしきゅうびん\tn¦¦express mail",
-    "0s4a8\t至極\tしごく\tadv,n-suf¦¦very¦extremely¦exceedingly¦quite¦most\tadj-no,adj-na,n¦¦top¦highest¦best",
-    "0s4ai\t至言\tしげん\tn¦¦apt remark¦wise saying",
-    "0s4as\t至高\tしこう\tadj-no,adj-na,n¦form¦supreme¦sublime¦highest",
-    "0s4b2\t至上\tしじょう\tn,adj-no¦¦supremacy",
-    "0s4bc\t至東京\tいたるとうきょう\tn¦¦leading to Tokyo",
-    "0s4bm\t至難\tしなん\tadj-na,adj-no,n¦¦most difficult¦next to impossible",
-    "0s4bw\t至福\tしふく\tn,adj-no¦¦beatitude¦supreme bliss",
-    "0s4c6\t至宝\tしほう\tn¦¦greatest treasure¦most valuable asset¦pride (of)",
-    "0s4cg\t視界\tしかい\tn¦¦field of vision¦visibility¦view¦visual field¦(one's) ken",
-    "0s4cq\t視覚\tしかく\tn¦¦(sense of) sight¦eyesight¦vision",
-    "0s4d0\t視覚化\tしかくか\tn,vs,vt¦¦visualization¦visualisation",
-    "0s4da\t視差\tしさ\tn,adj-no¦¦parallax",
-    "0s4dk\t視察\tしさつ\tn,vs,vt¦¦inspection¦observation",
-    "0s4du\t視神経\tししんけい\tn¦anat¦optic nerve",
-    "0s4e4\t視線\tしせん\tn¦¦one's line of sight¦one's gaze¦one's eyes (looking)¦glance¦gaze¦look",
-    "0s4ee\t視聴\tしちょう|してい~ok\tn,vs,vt¦¦looking and listening¦(television) viewing¦watching\tn¦¦(public) attention¦interest\tn¦physics¦(signal) reception",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 45 of 144, from "0sbfq". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 45 of 144, from "0sb8". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,21 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0sb88\t1¦オーストラリアへ｜行《おこな》って｜初《はじ》めて、｜日本《にほん》はなんと｜小《ちい》さい｜国《くに》かと｜実感《じっかん》した。¦I didn't realize till I visited Australia how small Japan really is.¦3¦4vrg¦pierrephi¦CK¦実感",
+    "0sb8s\t1¦それは｜実業《じつぎょう》｜人《じん》にとって｜一《ひと》つの｜赤信号《あかしんごう》になる。¦It raises a red flag for businessmen.¦3¦4e96¦¦¦実業",
+    "0sb92\t1¦トムは｜実業家《じつぎょうか》になるのに｜向《む》いている。¦Tom is fit to become a businessman.¦3¦4a8r¦¦Shiawase¦実業家",
+    "0sb9m\t1¦｜実験《じっけん》は｜成功《せいこう》だった。¦The experiment was successful.¦1¦378v¦tommy_san¦CK¦実験",
+    "0sba6\t1¦その｜実験室《じっけんしつ》には｜最新式《さいしんしき》の｜設備《せつび》がある。¦The laboratory has the most up-to-date equipment.¦2¦4hr3¦¦¦実験室",
+    "0sbag\t1¦ここでは６０年代後半のエメットの実験的な作品で初めて提示されたダイアド・スタイルを扱う。¦We deal here with Emmet's 'dyad' style first presented in his experimental works in the late sixties.¦¦4tbx¦¦¦実験的な",
+    "0sbb0\t1¦あなたの｜夢《ゆめ》がみんな｜実現《じつげん》されますように。¦May all your dreams come true!¦3¦4zse¦¦CK¦実現",
+    "0sbbk\t1¦｜私《わたし》は｜彼《あ》の｜実行《じっこう》｜的《てき》｜能力《のうりょく》を｜信頼《しんらい》している。¦I trust his executive ability.¦¦3aqw¦¦CK¦実行",
+    "0sbc4\t1¦｜新《しん》｜計画《けいかく》は｜実行可能《じっこうかのう》とみなされた。¦The new plan was accounted practicable.¦¦343l¦¦¦実行可能",
+    "0sbdi\t1¦この｜物語《ものがたり》は｜実際《じっさい》の｜出来事《できごと》に｜基《もと》づいている。¦This story is based on actual events.¦1¦4ppd¦tommy__san¦CK¦実際の\t2¦｜理論《りろん》と｜実際《じっさい》とは｜必《かなら》ずしも｜一致《いっち》しない。¦Theory and practice do not necessarily go together.¦1¦1ogn¦mookeee¦U2FS¦実際\t3¦｜人間《にんげん》は｜実際《じっさい》｜自然《しぜん》のなすがままである。¦Man is indeed at the mercy of nature.¦3¦33bm¦¦¦実際",
+    "0sbds\t1¦｜彼《あれ》はキャビアを｜実際《じっさい》に｜食《た》べたことがない。¦He hasn't actually eaten caviar.¦3¦2fy0¦¦CK¦実際に\t2¦｜実際《じっさい》にうまくいかなければ｜理論《りろん》は｜全《まった》く｜役《やく》に｜立《た》たない。¦Theory is quite useless unless it works in practice.¦3¦3787¦¦¦実際に",
+    "0sbe2\t1¦サンタクロースが｜実在《じつざい》しないなんて｜信《しん》じない。¦I don't believe that Santa Claus is imaginary.¦3¦4n5g¦bunbuku¦CK¦実在",
+    "0sbec\t1¦その｜計画《けいかく》は｜実施《じっし》された。¦The plan was put into operation.¦1¦4izv¦¦CM¦実施",
+    "0sbf6\t1¦｜実質《じっしつ》｜成長《せいちょう》と｜名目《めいもく》｜成長率《せいちょうりつ》の｜差《さ》は｜物価上昇《ぶっかじょうしょう》を｜意味《いみ》する。¦Price increases explain the difference between the real and nominal growth rates.¦1¦3771¦¦CM¦実質",
+    "0sbfg\t1¦これは｜実質的《じっしつてき》にはそれよりも｜高《たか》くはない。¦This is in effect less expensive than that.¦¦4ofc¦¦¦実質的に",
     "0sbfq\t1¦｜道具《どうぐ》としての｜実需《じつじゅ》がないから｜品揃《しなぞろ》えに｜深《ふか》みがでない。¦There's no demand for them as tools, so the product line-up is poor.¦¦1lam¦fcbond¦fcbond¦実需",
     "0sbg0\t1¦マンツーマンで｜指導《しどう》して｜頂《いただ》けたという｜点《てん》でも、｜非常《ひじょう》に｜充実《じゅうじつ》した｜実習《じっしゅう》になった。¦Just getting one-to-one guidance was enough to make it an extremely fulfilling practise session.¦1¦1lh8¦fcbond¦fcbond¦実習",
     "0sbga\t1¦この｜理論《りろん》の｜根拠《こんきょ》をこれから｜実証《じっしょう》しよう。¦I am going to substantiate this theory.¦1¦4p54¦¦¦実証",
@@ -213,14 +228,5 @@ export const PIECE: WordsPiece = {
     "0sfr0\t1¦｜私《わたし》は｜庭《にわ》から｜雑草《ざっそう》を｜取《と》り｜除《のぞ》いた。¦I rid the garden of the weeds.¦3¦3bku¦¦sundown¦取り除いた",
     "0sfra\t1¦ごめん、｜取《と》り｜消《け》すよ。¦I'm sorry. I take back my words.¦3¦4p1d¦¦¦取り消す",
     "0sfrk\t1¦｜彼女《かのじょ》はガラスの｜花瓶《かびん》を｜取《と》り｜上《あ》げた。¦She picked up one of the glass vases.¦2¦1zs0¦¦CK¦取り上げた\t2¦｜明日《あした》の｜会議《かいぎ》では、｜新《あたら》しい｜営業《えいぎょう》｜戦略《せんりゃく》を採り｜上《あ》げる｜予定《よてい》です。¦In tomorrow's meeting, we're planning to adopt a new marketing strategy.¦2¦7btny¦Album9505¦Album9505¦採り上げる\t2¦このブログは｜情報《じょうほう》インフラを｜中心《ちゅうしん》としたトピックを｜取《と》り｜上《あ》げています。¦This blog covers topics that centre on information infrastructure.¦3¦1ldj¦fcbond¦fcbond¦取り上げています\t4¦｜全《ぜん》｜新聞《しんぶん》がその｜事《こと》｜件《けん》を｜大《おお》きく｜取《と》り｜上《あ》げた。¦All the papers featured the case.¦3¦30n4¦¦¦取り上げた\t5¦｜向《む》こう｜見《み》ずな｜運転《うんてん》の｜為《ため》｜彼《あれ》は｜免許《めんきょ》を｜取《と》り｜上《あ》げられた。¦He had his license taken away because of reckless driving.¦1¦3q4n¦¦CK¦取り上げられた",
-    "0sfru\t1¦｜取《と》り｜繕《つくろ》うように、｜笑《わら》ってみせる。¦She smiled to smooth things over.¦1¦1mo7¦mookeee¦¦取り繕う",
-    "0sfs4\t2¦そろそろ｜本気《ほんき》で｜仕事《しごと》に｜取《と》り｜組《く》むころだよ。¦It is time you get down to work.¦3¦4dr1¦¦¦取り組む",
-    "0sfse\t1¦これを｜青《あお》いのと｜取《と》り｜替《か》えてください。¦Please change this for a blue one.¦2¦4nx6¦small_snow¦CM¦取り替えて\t2¦｜彼《かれ》らは｜欠陥《けっかん》テレビを｜新《あたら》しいのと｜取《と》りかえた。¦They replaced the defective TV with a new one.¦1¦2324¦¦CK¦取りかえた",
-    "0sfso\t1¦｜事件《じけん》の｜原因《げんいん》を｜取《と》り｜調《しら》べるために｜実情調査委員会《じつじょうちょうさいいんかい》が｜作《つく》られた。¦A fact-finding committee was set up to determine the cause of the incident.¦2¦1mp6¦mookeee¦CK¦取り調べる",
-    "0sft8\t1¦｜市《いち》は｜飲酒運転《いんしゅうんてん》を｜非常《ひじょう》に｜厳《きび》しく｜取《と》り｜締《し》まって、｜罰金《ばっきん》を｜課《か》している。¦The city is cracking down on drunk drivers and giving them fines.¦1¦3lwy¦tigro1973¦CM¦取り締まって",
-    "0sfti\t1¦｜私《わたし》は｜彼女《かのじょ》に｜取《と》り｜入《い》ってうまく｜秘密《ひみつ》を｜聞《き》き｜出《だ》した。¦I charmed a secret out of her.¦1¦3abs¦¦CK¦取り入って",
-    "0sfts\t1¦｜洗濯物《せんたくもの》を｜中《うち》へ｜取《と》り｜入《い》れて｜下《くだ》さい。¦Please bring in the washing.¦2¦30ya¦¦CK¦取り入れて\t2¦｜私達《わたしたち》はいつも｜彼《あ》の｜忠告《ちゅうこく》を｜取《と》り｜入《い》れるというわけではない。¦We do not always take his advice.¦1¦395x¦¦CK¦取り入れる",
-    "0sfu2\t1¦｜彼女《かのじょ》は｜悪霊《あくりょう》に｜取《と》りつかれているように｜見《み》える。¦She seems to be possessed by an evil spirit.¦1¦1ye8¦¦CM¦取りつかれている\t2¦｜妻《つま》は｜家《いえ》を｜買《か》いたい｜欲求《よっきゅう》に｜取《と》りつかれている。¦My wife is possessed with the desire to buy a house.¦3¦3nfw¦¦¦取りつかれている",
-    "0sfuc\t1¦メイドは｜客《きゃく》を｜一人一人《ひとりひとり》｜大声《おおごえ》でとりついた。¦The maid announced each guest.¦3¦4681¦¦CK¦とりついた",
   ],
 };

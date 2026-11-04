@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 151 of 316, from "すたんぷ・". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 151 of 316, from "すたんぷか". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,13 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "スタンプカード\t\t#1p5xb\t¦stamp card",
+    "スタンプコレクション\t\t#mxnc\t¦stamp collection",
+    "スタンプだい\tスタンプ台\t#1p7r2\t¦stamp pad¦ink pad",
+    "スタンプはんばい\tスタンプ販売\t#1647m\t¦stamp trading",
+    "スタンプハンマー\t\t#1hq6a\t¦stamp hammer",
+    "スタンプミル\t\t#1h0zm\t¦stamp mill",
+    "スタンプラリー\t\t#1m2q4\t¦collecting series of stamps at railway stations, tourist spots, etc.",
     "スタンプ・カード\t\t#1p5xb\t¦stamp card",
     "スタンプ・コレクション\t\t#mxnc\t¦stamp collection",
     "スタンプ・ハンマー\t\t#1hq6a\t¦stamp hammer",
@@ -958,11 +965,5 @@ export const PIECE: WordsPiece = {
     "スナック\t\tC~g#myvi\t¦snack¦light meal\tabbr¦snack bar (usu. an establishment that serves alcohol)\tabbr¦snack food (esp. potato chips, popcorn, etc.)¦munchie",
     "スナックえんどう\tスナック豌豆\tU#1pbac\tuk¦snap pea¦sugar snap pea¦sugar pea",
     "スナックエンドウ\t\tU#1pbac\tuk¦snap pea¦sugar snap pea¦sugar pea",
-    "スナックがし\tスナック菓子\t#1h0rk\t¦snack food (esp. potato chips, popcorn, etc.)¦munchie",
-    "スナックバー\t\t#myvs\t¦snack bar (usu. an establishment that serves alcohol)",
-    "スナックめん\tスナック麺\t#164ao\t¦snack noodle",
-    "スナック・バー\t\t#myvs\t¦snack bar (usu. an establishment that serves alcohol)",
-    "スナッチ\t\tC~g#myw2\t¦snatch (weightlifting)",
-    "スナッフ\t\t#1hig8\t¦snuff",
   ],
 };

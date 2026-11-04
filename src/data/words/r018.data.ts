@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 19 of 316, from "いっていち". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 19 of 316, from "いってい". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,11 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "いってい\t一定\tsC~ni03#oyvq\t¦to fix¦to settle¦to standardize\t¦constant¦definite¦uniform",
+    "いっていおんど\t一定温度\t#oyw0\t¦constant temperature",
+    "いっていきかん\t一定期間\t#oywa\t¦fixed interval¦fixed period",
+    "いっていじ\t一丁字\t#oyra\t¦single letter¦single character",
+    "いっていすう\t一定数\t#1oua9\t¦fixed number¦certain number¦given number",
     "いっていち\t一定値\t#1klwq\t¦fixed value¦constant value",
     "いっていビットレート\t一定ビットレート\t#1e6l8\tcomp¦constant bit rate¦CBR",
     "いっていふへん\t一定不変\t#oywk\t¦invariable¦permanent",
@@ -775,10 +780,5 @@ export const PIECE: WordsPiece = {
     "いどぐるま\t井戸車\t#ovci\t¦well pulley",
     "いどこ\t居所|居処\t~m38#qehi\t¦whereabouts¦address",
     "いどこ\t何処|何所\tU#xsxg\tuk¦where¦what place\tuk¦how much (long, far)¦what extent",
-    "いどころ\t居所|居処\t~m38#qehi\t¦whereabouts¦address",
-    "イドご\tイド語\t#1otvw\t¦Ido (constructed language)",
-    "いどさらえ\t井戸浚え\t#ove6\t¦well cleaning",
-    "いどし\t亥年\t#ovfu\t¦year of the Boar¦year of the Pig",
-    "いどせい\t易怒性\t#1pigo\tpsy¦irritability",
   ],
 };

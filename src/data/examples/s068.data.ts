@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 69 of 144, from "0v2n". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 69 of 144, from "0v2kw". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0v2kw\t2¦｜国務長官《こくむちょうかん》は｜対外関係《たいがいかんけい》を｜統括《とうかつ》する。¦The Secretary of State administers foreign affairs.¦1¦3phv¦¦¦統括",
+    "0v2lq\t1¦中国のＧＤＰ統計はオオカミ少年か。¦Are the Chinese GDP figures a case of the boy crying wolf?¦1¦1mjo¦wakatyann630¦¦統計",
+    "0v2m0\t1¦｜統計学《とうけいがく》は｜事実《じじつ》を｜表《あらわ》す｜数《かず》を｜取《と》り｜扱《あつか》うものである。¦Statistics deals with collected numbers representing facts.¦1¦2nm1¦¦¦統計学",
+    "0v2ma\t1¦この｜種《しゅ》の｜事例《じれい》は｜統計的《とうけいてき》｜処理《しょり》が｜適応《てきおう》できる。¦This kind of case is amenable to statistical treatment.¦¦4qqo¦¦¦統計的",
     "0v2n4\t1¦｜天皇《てんのう》は｜国民《こくみん》の｜統合《とうごう》の｜象徴《しょうちょう》である。¦The Emperor is the symbol of the unity of the people.¦1¦2ohd¦¦¦統合の\t1¦この｜驚《おどろ》くほどの｜増加《ぞうか》は、｜同《おな》じ｜期《き》｜間《あい》の｜間《ま》に｜起《お》こった｜急速《きゅうそく》な｜経済面《けいざいめん》での｜統合《とうごう》によって｜可能《かのう》となった。¦This extraordinary increase is explained by the speedy economic unification which took place during the same period.¦¦4rjj¦¦papabear¦統合",
     "0v2ny\t1¦かつてサルタンが｜今日《きょう》のトルコを｜統治《とうち》していた。¦Once the Sultan ruled over what today is Turkey.¦1¦4una¦arnab¦AlanF_US¦統治",
     "0v2os\t1¦その｜国《くに》では｜政府《せいふ》が｜物価《ぶっか》を｜統制《とうせい》している。¦In that country the government controls prices.¦1¦4ijg¦¦¦統制",
@@ -135,6 +139,7 @@ export const PIECE: WordsPiece = {
     "0v4xc\t1¦｜彼《あ》のことを｜同情《どうじょう》せずにはいられない。¦I cannot but feel sorry for him.¦3¦2jb0¦¦CK¦同情",
     "0v4xw\t1¦その｜男《おとこ》には｜同情心《どうじょうしん》といった｜人間的《にんげんてき》｜感情《かんじょう》はなかった。¦The man was devoid of such human feelings as sympathy.¦¦4gmh¦KK_kaku_¦¦同情心",
     "0v50o\t1¦そのクラスは１５人の男子と同数の女子から構成されていた。¦The class was made up of 15 boys and as many girls.¦3¦4kjm¦¦¦同数",
+    "0v51i\t1¦｜彼女《かのじょ》は｜同性《どうせい》の｜間《あいだ》では｜評判《ひょうばん》がよい。¦She is well spoken of among her own sex.¦1¦1vnv¦¦¦同性",
     "0v522\t1¦｜二人《ふたり》は｜結婚《けっこん》する｜前《さき》に｜二《に》｜年間《ねんかん》｜同棲《どうせい》した。¦They lived together for two years before they got married.¦¦2myn¦¦CK¦同棲",
     "0v52c\t1¦｜彼《あれ》とは｜夕食《ゆうしょく》｜会《かい》で｜同席《どうせき》した。¦I once sat at the same table with him at a dinner party.¦3¦2jzt¦¦CK¦同席",
     "0v53q\t1¦｜彼《あ》の｜助言《じょげん》は｜命令《めいれい》も｜同然《どうぜん》だ。¦His advice amounts to an order.¦2¦2i8p¦¦¦同然\t1¦あいつは｜盗人《ぬすびと》も｜同然《どうぜん》だ。¦He is no better than a thief.¦3¦510w¦¦CM¦同然",
@@ -207,10 +212,5 @@ export const PIECE: WordsPiece = {
     "0v6da\t1¦ハーフタイムでの｜得点《とくてん》はどうでしたか。¦What was the score at halftime?¦3¦493f¦¦CK¦得点",
     "0v6dk\t1¦いまどき｜良《よ》い｜仕事《しごと》はなかなか｜得《え》がたいのを｜忘《わす》れないでね。¦Don't forget that good jobs are very hard to come by these days.¦3¦3p0t¦¦CK¦得がたい",
     "0v6fi\t1¦｜私《わたし》は｜音楽《おんがく》、｜特《とく》にロックが｜大好《だいす》きだ。¦I love music, especially rock.¦3¦3e22¦small_snow¦CK¦特に",
-    "0v6g2\t1¦マイヤーとその｜同僚《どうりょう》の｜研究《けんきゅう》は｜特異《とくい》なものだった。¦The study by Meyer and his colleagues was unusual.¦1¦4707¦¦AlanF_US¦特異な",
-    "0v6hq\t1¦｜時計《とけい》がおくれていたので、｜私《わたし》は｜特急《とっきゅう》にのりそこねた。¦As my watch was slow, I missed the special express.¦4¦3852¦¦¦特急",
-    "0v6ia\t1¦｜彼《かれ》らはりんごを｜大《おお》きさで｜特級《とっきゅう》｜別《べつ》にした。¦They graded apples according to their size.¦1¦23ar¦¦¦特級",
-    "0v6j4\t1¦｜特許権《とっきょけん》は｜重要《じゅうよう》な｜財産権《ざいさんけん》である。¦A patent right is an important property right.¦3¦2n9l¦¦cafe¦特許権",
-    "0v6l2\t1¦｜彼《あれ》は｜特権《とっけん》を｜乱用《らんよう》したに｜違《ちが》いない。¦He must have abused the privilege.¦2¦26ep¦¦CK¦特権",
   ],
 };

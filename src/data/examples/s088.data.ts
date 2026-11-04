@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 89 of 144, from "0xpe". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 89 of 144, from "0xox". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,20 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0xoxu\t1¦｜蜃気楼《しんきろう》は｜幻影《げんえい》だと｜言《い》われている。¦A mirage is said to be an illusion.¦¦1nh1¦arnab¦CM¦蜃気楼",
+    "0xoye\t1¦その｜虫《むし》はさなぎから｜成虫《せいちゅう》になった。¦The insect grew out of a pupa into an imago.¦2¦4gdc¦¦¦さなぎ",
+    "0xozi\t1¦｜彼《あれ》はトンボ｜返《がえ》りをした。¦He turned a somersault.¦3¦2dzq¦xtofu80¦CK¦トンボ返り\t2¦｜仙台《せんだい》へ｜行《おこな》ってとんぼ｜返《がえ》りで｜戻《もど》ってきました。¦I went to Sendai and back without resting.¦1¦1mlb¦mookeee¦¦とんぼ返り",
+    "0xozs\t1¦あの｜小屋《こや》にはトカゲや｜虫《むし》がうようよしている。¦That hut is crawling with lizards and insects.¦2¦4y4q¦bunbuku¦CM¦トカゲ",
+    "0xp0m\t1¦カタツムリがすっと｜角《つの》を｜出《だ》した。¦The snail shot out its horns.¦2¦1n97¦mookeee¦¦カタツムリ",
+    "0xp16\t1¦あれが｜蝙蝠《こうもり》ですか。¦Is that a bat?¦¦4xab¦¦CK¦蝙蝠",
+    "0xp2p\t2¦１匹のキリギリスと多くのアリが野原に住んでいた。¦A grasshopper and many ants lived in a field.¦2¦51u4¦e4zh1nmcz¦CM¦キリギリス",
+    "0xp3o\t1¦カエルとヒキガエルの｜区別《くべつ》が｜出来《でき》ない。¦I can't distinguish a frog from a toad.¦2¦4upy¦¦CK¦ヒキガエル",
+    "0xpa2\t1¦｜日光《にっこう》で｜看板《かんばん》の｜文字《もじ》があせた。¦The sun had faded the lettering on the sign.¦1¦2mtf¦¦sundown¦あせた",
+    "0xpac\t1¦｜色《いろ》はさめないでしょう。¦The color will not go off.¦4¦34md¦¦¦さめない",
+    "0xpck\t2¦その｜男《おとこ》はボロを｜着《き》ていた。¦The man was in rags.¦4¦4gk9¦¦CM¦ボロ\t4¦ぼろ｜服《ふく》が｜正直者《しょうじきもの》を｜包《つつ》んでいるかもしれない。¦A ragged coat may cover an honest man.¦2¦476p¦¦captcrouton¦ぼろ",
+    "0xpcu\t1¦その｜家《いえ》はかなりぼろ｜屋《や》になっている。¦The house is quite run down.¦4¦4jnv¦¦CK¦ぼろ屋",
+    "0xpde\t1¦その｜薬《くすり》はてきめんに｜効《き》く。¦The drug acts like magic.¦2¦4f6r¦¦¦てきめんに",
+    "0xpdy\t1¦｜突然《とつぜん》の｜彼《あ》の｜訃報《ふほう》は｜私《わたし》を｜驚《おどろ》かせた。¦The news of his sudden death astounded me.¦¦2n5o¦¦¦訃報",
     "0xpei\t1¦その｜男《おとこ》はドイツ｜語《ご》なまりの｜英語《えいご》を｜話《はな》す。¦The man speaks English with a German accent.¦4¦4gkf¦¦CK¦なまり\t2¦トムはいつもジョンの｜言葉《ことば》のなまりを｜理由《りゆう》にからかう。¦Tom always makes fun of John because of his dialect.¦3¦4aer¦¦CK¦なまり",
     "0xpfm\t1¦｜神《かみ》よ、｜最初《さいしょ》にキスを｜発明《はつめい》したのは、どんな｜馬鹿者《ばかもの》であったか｜私《わたし》はいぶかる。¦Lord, I wonder what fool it was that first invented kissing.¦1¦33sx¦¦¦いぶかる",
     "0xphk\t1¦｜私《わたし》はデパートでオーバーをあつらえた。¦I ordered my overcoat from a department store.¦4¦3f0b¦¦¦あつらえた",
@@ -188,22 +202,11 @@ export const PIECE: WordsPiece = {
     "0xtrq\t1¦｜彼女《かのじょ》はちょっと｜首《くび》をかしげて、｜黙然《もくぜん》と｜立《た》っていた。¦She stood silently, her head tilted slightly to one side.¦1¦1z2k¦KK_kaku_¦TheDQN¦かしげて",
     "0xts0\t1¦「でも、俺たち兄妹だろ！」「名目上ではね」¦\"But we're brother and sisters, aren't we?!\" \"In name we are.\"¦¦1m6p¦fcbond¦fcbond¦兄妹",
     "0xtsk\t1¦｜彼女《かのじょ》の｜足取《あしど》りは｜妖精《ようせい》のように｜軽《かろ》やかだった。¦Her footsteps were as light as a fairy's.¦¦20ni¦¦pip¦軽やか",
+    "0xtsu\t1¦ニワトリの｜赤《あか》く｜立派《りっぱ》なトサカは｜性別《せいべつ》や｜種類《しゅるい》を｜見分《みわ》けるときに｜役立《やくだ》っていると｜考《かんが》えられている。¦The cockerel's splendid red cockscomb is thought to play a part in determining gender and breed.¦¦1lcx¦fcbond¦fcbond¦トサカ",
     "0xtui\t1¦｜当時《とうじ》、とにかくケンブリッジでは、｜研究所《けんきゅうじょ》｜生活《せいかつ》はかなり｜打《う》ち｜解《と》けたものだった。¦In those days, or at any rate in Cambridge, laboratory life was rather informal.¦3¦2nr1¦¦¦研究所",
     "0xtv2\t1¦｜彼女《かのじょ》は｜好奇心《こうきしん》からというより｜見栄《みえ》からテニスを｜始《はじ》めた。¦She has begun to play tennis not so much out of curiosity as out of vanity.¦1¦1xk7¦¦¦見栄",
     "0xtw6\t1¦｜国債発行《こくさいはっこう》が｜高水準《こうすいじゅん》なので、それらの｜元利《がんり》｜支払《しはらい》コストが｜増加《ぞうか》するだろう。¦Given a high level of bond issues, the cost to service them will increase.¦1¦3pja¦¦¦元利",
     "0xtwq\t1¦｜彼《あれ》は｜現存《げんぞん》する｜最高《さいこう》の｜芸術家《げいじゅつか》である。¦He is the greatest living artist.¦2¦2b16¦bunbuku¦Eldad¦現存",
     "0xtz8\t1¦｜彼女《かのじょ》は｜物置《ものおき》の｜中《うち》で｜偶然《ぐうぜん》いくつかの｜古文書《こもんじょ》を｜見《み》つけた。¦She came across some old documents in the closet.¦3¦1uzw¦¦CK¦古文書",
-    "0xtzi\t1¦｜私《わたし》はその｜古本《ふるほん》に｜倍額《ばいがく》を｜払《はら》った。¦I paid double the price for the secondhand book.¦2¦3flr¦arnab¦ddnktr¦古本\t2¦あの｜古本《ふるほん》はまったくの｜掘《ほ》り｜出《だ》し｜物《もの》だ。¦That old book is a real find.¦2¦4y9s¦¦CK¦古本",
-    "0xtzs\t1¦｜彼《あれ》はまだ｜自分《じぶん》の｜意思《いし》に｜固執《こしつ》している。¦He still sticks to his opinion.¦¦2dil¦¦¦固執",
-    "0xu0c\t1¦｜銀行《ぎんこう》はリスクの｜高《たか》い｜顧客《こきゃく》へのローンには｜高《たか》い｜金利《きんり》をつける。¦Banks charge higher interest on loans to risky customers.¦1¦3uk4¦¦Zifre¦顧客",
-    "0xu4s\t1¦その｜工場《こうじょう》は｜玩具《おもちゃ》を｜製造《せいぞう》している。¦The factory manufactures toys.¦¦4ilp¦mookeee¦Dejo¦工場",
-    "0xu5c\t1¦｜彼《あれ》はその｜浅《あさ》い｜溝《みぞ》を｜飛《と》び｜越《こ》えた。¦He leaped over the shallow ditch.¦1¦2ev5¦¦CK¦溝\t3¦｜両者《りょうしゃ》の｜溝《みぞ》が｜狭《せば》まった。¦The gap between them has narrowed.¦1¦1o92¦mookeee¦CK¦溝",
-    "0xu5m\t4¦｜甲《こう》の｜損《そん》は｜乙《おつ》の｜得《とく》。¦One man's gain is another man's loss.¦1¦3pw3¦¦CK¦甲",
-    "0xu5w\t1¦みんなでカブトムシを｜競争《きょうそう》させた。¦We raced our beetles.¦2¦46g1¦small_snow¦AlanF_US¦カブトムシ",
-    "0xu66\t1¦船には甲板が３つあった。¦The ship had three decks.¦1¦30xa¦¦CK¦甲板",
-    "0xu70\t1¦｜庭《にわ》の｜木《き》がすっかり｜紅葉《こうよう》しました。¦The leaves of the trees in the garden have turned completely red.¦2¦2otx¦¦CK¦紅葉",
-    "0xu7a\t2¦｜私《わたし》は｜歯医者《はいしゃ》｜行《い》きを延ばさねばならない。¦I must postpone going to the dentist.¦2¦3cpn¦¦CK¦行き\t2¦１０時前にはホテルを出発しなければなりません。さもなければマイアミ行きの電車を乗り逃がしてしまいます。¦We must leave the hotel before 10 a.m., otherwise we will miss the train for Miami.¦3¦524o¦mookeee¦papabear¦行き",
-    "0xu84\t1¦その｜道《みち》は｜行《い》き｜止《ど》まりだった。¦The road came to a dead end.¦4¦4g1u¦small_snow¦CK¦行き止まり",
-    "0xu8e\t1¦｜駅《えき》への｜行《い》き｜方《かた》を｜教《おし》えてもらえますか。¦Could you tell me how to get to the station?¦4¦41qu¦bunbuku¦CK¦行き方\t1¦あなたに｜公園《こうえん》の｜行《い》き｜方《かた》を｜教《おし》えましょう。¦I will show you how to go to the park.¦3¦50bi¦¦CK¦行き方",
   ],
 };

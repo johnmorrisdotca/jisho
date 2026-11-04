@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 133 of 144, from "1bbk". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 133 of 144, from "1bb0m". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,21 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "1bb0m\t1¦この｜話《はなし》をすると｜彼《あれ》は｜間違《まちが》った｜印象《いんしょう》を｜与《あた》えるんじゃないかな。¦I'm afraid the story will give him a wrong impression.¦2¦4p2s¦¦¦印象を与える",
+    "1bb0w\t1¦｜私《わたし》は｜彼女《かのじょ》をまるで｜嫌《きら》っているかのようにそっぽを｜向《む》いた。¦I turned away as if I didn't like her.¦1¦3a7l¦¦jakov¦そっぽを向いた",
+    "1bb34\t1¦｜禅坊主《ぜんぼうず》じゃあるまいし、｜毎日毎日《まいにちまいにち》、｜一汁一菜《いちじゅういっさい》のダイエットメニューは｜勘弁《かんべん》してよ。¦What? A little soup and celery is all I get? I'm not a Zen monk. I can't survive on an austerity diet like this.¦¦30l6¦¦voxbubnya¦禅坊主",
+    "1bb3e\t1¦｜天《てん》におわす｜神《かみ》のお｜力添《ちからぞ》えがあった。¦God above helped us.¦1¦2omd¦¦¦おわす",
+    "1bb4s\t1¦｜火《ひ》がぼんぼん｜燃《も》えている。¦The fire is burning furiously.¦2¦403y¦¦CK¦ぼんぼん",
+    "1bb52\t2¦このポンコツ｜車《くるま》はえんこばかりしている。¦This old car breaks down all the time.¦5¦4s6d¦small_snow¦CK¦えんこ",
+    "1bb5c\t1¦｜大統領《だいとうりょう》のボディーガードは｜入《い》り｜口《ぐち》に｜配置《はいち》されている。¦The President's guards are stationed in front of the entrance.¦1¦2xzn¦¦¦ボディーガード",
+    "1bb5w\t1¦｜良《よ》いボールボーイやボールガールは｜精神《せいしん》を｜集中《しゅうちゅう》することができ、また、｜速《はや》く｜走《はし》ることができなければならない。¦A good ballboy or ballgirl must be able to concentrate hard and run fast.¦3¦1o3p¦mookeee¦CM¦ボールガール",
+    "1bba2\t1¦このペーズリー柄のネクタイ、あなたに似合うんじゃない？¦Don't you think this paisley tie would look good on you?¦1¦4s8h¦KK_kaku_¦CK¦ペーズリー",
+    "1bbac\t1¦｜新《あたら》しいシャツにフルーツジュースを｜少《すこ》しこぼしてしまった。¦I spilled some fruit juice on my new shirt.¦4¦349e¦bunbuku¦CK¦フルーツジュース",
+    "1bbde\t1¦｜私《わたし》は｜日本《にほん》でフリーライターをしています。¦I'm a free-lance writer in Japan.¦4¦3bef¦KK_kaku_¦¦フリーライター",
+    "1bbdy\t1¦この｜昇進《しょうしん》は、あなたの｜熱心《ねっしん》で｜質《しつ》の｜高《たか》い｜仕事《しごと》ぶりを｜反映《はんえい》したものでしょう。¦This promotion properly reflects the quality and diligence of your work.¦2¦4qmf¦¦Lumi_alt¦仕事ぶり",
+    "1bbe8\t1¦ローマ｜人《じん》は｜古代《こだい》ブリトン｜人《じん》の｜文明《ぶんめい》｜化《か》を｜試《こころ》みた。¦The Romans tried to civilize the ancient Britons.¦3¦44by¦¦Dejo¦ブリトン人",
+    "1bbji\t1¦｜絶《た》え｜間《ま》ない｜騒音《そうおん》で｜耳《みみ》ががーんとなった。¦The continual noise deafened us.¦1¦31j8¦¦¦がーん",
+    "1bbjs\t1¦※｜誤字《ごじ》｜直《なお》しました。ご｜指摘《してき》サンクスです。¦NOTE: Typo corrected. Thanks for pointing it out.¦1¦1ndw¦¦¦サンクス",
     "1bbkc\t1¦｜私《わたし》はフライトアテンダントの｜職《しょく》につきたいです。¦I long for a job as a flight attendant.¦3¦3eox¦¦CM¦フライトアテンダント",
     "1bbkw\t1¦｜消防士《しょうぼうし》たちはドアをぶち｜破《やぶ》った。¦The firemen battered down the door.¦1¦34yr¦¦CK¦ぶち破った",
     "1bbl6\t1¦｜彼《あれ》は｜善悪《ぜんあく》の｜区別《くべつ》がない。¦He cannot tell right from wrong.¦1¦27g3¦¦CM¦善悪の区別",
@@ -180,19 +195,5 @@ export const PIECE: WordsPiece = {
     "1bjhm\t1¦｜部長《ぶちょう》が、すごいハイスペック・マシン｜買《か》ったそうよ。¦The supervisor bought a really fast machine.¦3¦1svk¦¦CM¦ハイスペック",
     "1bjig\t1¦よかれと｜思《おも》ってしたことがあだとなった。¦It backfired on me despite my good intentions.¦4¦44sk¦bunbuku¦AlanF_US¦あだとなった",
     "1bjue\t1¦｜厳密《げんみつ》に｜言《い》うと、あなたは｜間違《まちが》ってるね。¦Strictly speaking, you are wrong.¦1¦3r0d¦small_snow¦CC¦厳密に言うと",
-    "1bjvi\t1¦｜彼《かれ》らは｜男《おとこ》を｜逮捕《たいほ》すべく｜追《お》いかけた。¦They chased the man to arrest him.¦1¦22is¦¦jakov¦すべく",
-    "1bjwc\t1¦ニクソンはウォーターゲート｜事件《じけん》に｜関《かん》し、｜黙秘権《もくひけん》を｜行使《こうし》して｜無視《むし》しようとしたが、｜結局《けっきょく》｜明《あか》るみにでた。¦Nixon tried to stonewall through Watergate by ignoring it, but it didn't work.¦¦49e1¦¦RoyalBee¦ウォーターゲート事件",
-    "1bjwm\t1¦｜組合《くみあい》の｜指導者《しどうしゃ》たちは｜賃上《ちんあ》げ｜要求《ようきゅう》をあおりたてた。¦The leaders of the Union agitated for higher wages.¦1¦30i0¦¦¦あおりたてた",
-    "1bjx6\t1¦スープがとろっとするまで｜煮《に》つめてください。¦Boil the soup down until it becomes thick.¦1¦4lxg¦KK_kaku_¦CM¦とろっと",
-    "1bjxq\t1¦サムは｜学校《がっこう》のバスケットチームに｜入《い》ることができた。¦Sam made the school basketball team.¦5¦4n81¦¦CN¦バスケットチーム",
-    "1bjy0\t1¦このテレビショーは｜子供向《こどもむ》けだ。¦This TV show is aimed at children.¦3¦4sgc¦¦CK¦テレビショー",
-    "1bk12\t1¦「マナカの｜絵《え》、｜見《み》して」「えーー、｜恥《は》ずかしいですよー」¦\"Lemme see your painting, Manaka.\" \"Must you? It's embarrassing!\"¦3¦1lwv¦mookeee¦¦見して",
-    "1bk1w\t1¦｜私《わたし》は、その｜泥棒《どろぼう》をほんのちらっと｜見《み》ただけです。¦I only got a glimpse of the thief.¦2¦3h9c¦small_snow¦¦ちらっと見た",
-    "1bk26\t1¦ちょっとした｜幸運《こううん》が｜予期《よき》せぬ｜成功《せいこう》につながるときもある。¦A little bit of luck sometimes leads to an unexpected success.¦1¦4ci6¦tommy_san¦CK¦予期せぬ",
-    "1bk5s\t1¦だってお｜隣《となり》さんだし。ちょくちょくお｜邪魔《じゃま》するから。¦Well, we're neighbours. I'll be popping over all the time.¦1¦1mcp¦mookeee¦sundown¦お隣さん",
-    "1bk6c\t2¦ただ｜会釈《えしゃく》をするだけなのに、｜妙《みょう》にしゃちほこ｜張《ば》ってしまった。¦It was just a simple greeting, but somehow I got strangely tense.¦1¦1mcu¦mookeee¦¦しゃちほこ張って",
-    "1bk6w\t1¦｜整《ととの》えられた｜長机《ながづくえ》、いくつかのパイプ｜椅子《いす》、｜壁《かべ》の｜掲示板《けいじばん》にはカレンダーとプリント｜数枚《すうまい》が｜張《は》られている。¦There were long desks lined up, several pipe chairs, and stuck on the bulletin board were a calendar and several printouts.¦¦1m9r¦mookeee¦¦パイプ椅子",
-    "1bk76\t1¦「おい。走ると危ないぞ」「え？・・・わっ、わ、うわわ〜〜〜っ」「あーあー、言わんこっちゃない」¦\"Hey! It's dangerous to run here.\" \"Eh? ... A-a-Aaah!!\" \"Oh dear, what did I tell you?\"¦3¦1m7y¦fcbond¦fcbond¦言わんこっちゃない",
-    "1bk80\t1¦｜私《わたし》はホットコーヒーに｜氷《こおり》を｜入《い》れるのが｜好《す》きです。｜大抵《たいてい》｜熱《あつ》すぎるので。¦I like to put an ice cube into my coffee, because it's usually too hot.¦1¦3bqn¦mookeee¦CM¦ホットコーヒー",
   ],
 };

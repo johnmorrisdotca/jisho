@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 14 of 219, from "0oxrq". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 14 of 219, from "0oxqc". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,11 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0oxqc\t一升\tいっしょう\tn¦¦one shō (approx. 1.8 litres)¦升",
+    "0oxqm\t一升瓶|一升びん~sK|一升ビン~sK|一升壜~sK\tいっしょうびん\tn¦¦one-shō bottle (approx. 1.8 litres)¦升",
+    "0oxqw\t一将\tいっしょう\tn¦mil¦general",
+    "0oxr6\t一笑\tいっしょう\tn,vs¦¦laugh¦smile",
+    "0oxrg\t一笑に付す|一笑にふす~sK|一笑に伏す~sK\tいっしょうにふす\texp,v5s¦¦to laugh (something) off¦to dismiss with a laugh¦to pooh-pooh",
     "0oxrq\t一場\tいちじょう\tn¦¦one time (place)",
     "0oxs0\t一条\tいちじょう\tn¦¦one line¦one streak¦one stripe¦one ray (of light)¦one wisp (of smoke)\tn¦¦one item (in an itemized form)¦one clause¦one passage (in a book)\tn¦¦one matter (affair, event, case, incident)",
     "0oxsa\t一畳\tいちじょう\tn¦¦one mat",
@@ -928,11 +933,5 @@ export const PIECE: WordsPiece = {
     "0p59g\t雲水\tうんすい|くもみず\tn¦¦itinerant priest¦wandering monk¦mendicant\tn¦¦clouds and water",
     "0p59q\t雲泥\tうんでい\tn¦¦great difference",
     "0p5a0\t雲泥の差|雲泥之差~rK\tうんでいのさ\texp,n¦id¦wide difference¦a world of difference",
-    "0p5aa\t雲呑|饂飩\tワンタン\tn¦uk,food¦wonton (Chinese dumpling)¦won ton¦wantan¦wanton¦wuntun¦chi~wantan",
-    "0p5ak\t雲母\tうんも|うんぼ|きらら\tn¦geol¦mica¦isinglass",
-    "0p5au\t雲霧\tうんむ|くもきり\tn¦¦clouds and fog",
-    "0p5b4\t雲量\tうんりょう\tn¦¦degree of cloudiness¦cloud cover",
-    "0p5be\t雲鬢花顔\tうんびんかがん\tn¦¦beautiful woman (metaphorical)",
-    "0p5bo\t荏\tえ\tn¦arch¦egoma (type of perilla)¦Perilla frutescens var. frutescens¦荏胡麻",
   ],
 };

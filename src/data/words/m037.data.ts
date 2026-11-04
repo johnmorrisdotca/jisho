@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 38 of 172, from "credi". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 38 of 172, from "creato". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,14 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "creator\tさくしゃ|クリエイター|クリエーター|うみのおや|そうさくしゃ|そうぞうしゃ|そうぞうしゅ|そうぞうぬし|ぞうぶつしゅ|むすびのかみ|じょうてい|しょうてい|ぼんてんおう|ぼんてんのう|ぼんてん|ぼんでん|ぞうかのさんしん|ぞうかのさんじん|ブラフマー|じしんさく",
+    "creator work\tさくしゃ",
+    "creature\tせいぶつ|そうぞうぶつ|クリーチャー|いきもの|うみうなぎ|ニューネッシー|ニュー・ネッシー|とうてつ|せいりょう|しょうりょう|せいりゅう|げんじゅう|きほうもん|かわたろう|がわたろう|がたろう|かはく|かわろう|クリーチャーデザイン|クリーチャー・デザイン",
+    "creatures\tぐんせい|いっさいしゅじょう|いるいいぎょう|ピクシー|ピグシ|ピスキー|りしょう|ぐんじょう",
+    "crecca\tこがも|コガモ",
+    "creche\tたくじしょ",
+    "credence\tしんにん",
+    "credentials\tしんにんじょう|しょうめいしょ|がくれき|がくれきロンダリング|がくれきしんこう",
     "credibility\tしんらいせい|しんじつみ|しんようせい|クレディビリティー|クレディビリティ|しょうめいりょく|クレディビリティーギャップ|クレディビリティー・ギャップ",
     "credibility gap\tクレディビリティーギャップ|クレディビリティー・ギャップ",
     "credible\tさつがいよこく",
@@ -620,16 +628,5 @@ export const PIECE: WordsPiece = {
     "cubic tsubo\tつぼ",
     "cubicle\tキュービクル|べんじょめし",
     "cubism\tキュービズム|キュビスム|キュビズム|りったいは",
-    "cubist\tキュビスト",
-    "cubit\tキュービット|キュビット|キュビト",
-    "cubital\tちゅうか",
-    "cuboid\tちょくほうたい|りっぽうこつ",
-    "cubozoa\tはこくらげ|ハコクラゲ",
-    "cubs\tみつぐま|こうりんたんぽぽ|コウリンタンポポ",
-    "cuckold\tコキュ|コキュー",
-    "cuckoo\tかんこどり|クックー|がっぽうどり|かっぽうどり|ククー|じひ|かっこう|カッコウ|ホトトギス|ほととぎす|つつどり|ツツドリ|はとどけい|ときのとり|ときつどり|うづきどり|ゆうかげどり|あさはどり|あみどり|あやめどり",
-    "cucullatus\tドードー|ドド|ムナグロムクドリモドキ",
-    "cuculus\tかっこう|カッコウ|ホトトギス|ほととぎす|つつどり|ツツドリ|ときのとり|ときつどり|うづきどり|ゆうかげどり|あさはどり|あみどり|あやめどり|うたいどり|かけたかのとり|かんのうちょう|こいしどり|さなえどり|しずとり|しょくちょう",
-    "cucumber\tきゅうり|きうり|キュウリ|キウリ|かっぱ|カッパ|かっぱまき|なまこ|かいそ|ナマコ|しろうり|このわた|ふじなまこ|フジナマコ|オイキムチ|うながっぱ|うざく|もううり|まうり|もううい",
   ],
 };

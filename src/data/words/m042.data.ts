@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 43 of 172, from "descends". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 43 of 172, from "desalt". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,17 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "desalting\tよびじお",
+    "descaling\tすきびき",
+    "descartes\tにんげんがくてきしょうめい",
+    "descend\tおりる|くだる|しずむ|みをおとす|あまくだる|かわをくだる|せをくだる|しゅらばる",
+    "descend e\tおりる",
+    "descendant\tしそん|まつえい|ばつえい|こうしゃ|のち|こういん|こうえい|びょうえい|まっそん|ばっそん|てんそん|こうそん|うじびと|うじひと|うじうど|ちょっけいひぞく|じょうそん|えい|こはな|らいそん",
+    "descendants\tすえ|まごこ|ばつりゅう|まつりゅう|ししそんそん|ししそんぞん|ちゃくそん|ひぞく|パーシじん|ひさべつぶらくみん|わけ|こうこつぎょこう|しそんはんえい|ざいにちかんこくちょうせんじん",
+    "descended\tちをひく|ながれをくむ|しんべつ|こうべつ|ばんべつ|しょばん|さとざくら|ぼたんざくら",
+    "descender\tディセンダ",
+    "descending\tふり|かこう|げざん|げさん|しょうこう|こうじゅん|やませ|ひこうそくめいぼしきひれいだいひょうせい|こうじゅんキー|かこうけっちょう|かこうろ|やませかぜ|くだりりゅう|くだりりょう|くだりかいだん|こうこうてん|こうべき|かこうだいどうみゃく|かこうこうがいどうみゃく",
+    "descending mountain\tげざん|げさん",
     "descends\tらいじゅう",
     "descent\tかこう|かっこう|こうか|てんらく|らっか|げざん|げさん|くだりざか|しゅつじ|ちすじ|にっけい|あまくだり|ちょっけい|のぼりくだり|のぼりおり|きゅうしゅう|こうりん|ちゃくりゅう|にっけいじん|にっけいべいじん",
     "descent esp\tかっこう",
@@ -524,21 +535,5 @@ export const PIECE: WordsPiece = {
     "diaphoremeter\tはっかんけい",
     "diaphoretic\tはっかんざい|しょうきさん",
     "diaphragm\tおうかくまく|しんどうばん|かく|ダイヤフラム|ダイアフラム|ダイヤフラムあつりょくけい|かくまくほう|こつばんかくまく|にょうせいしょくかくまく",
-    "diaphragmatic\tふくしきこきゅう|おうかくまくヘルニア",
-    "diaphragmatic breathing\tふくしきこきゅう",
-    "diaphus\tはだかいわし|ハダカイワシ",
-    "diaphyseal\tだいたいこつこっかんぶこっせつ",
-    "diapsida\tそうきゅうあこう",
-    "diapsids\tそうきゅうるい",
-    "diarchy\tりょうとうせいじ",
-    "diaries\tおゆどののうえのにっき",
-    "diarrhea\tげり|り|げりピー|ゲリピー|しゃり|はきくだし|としゃ|しゃする|しゃす|りょこうしゃげり|はらをくだす|みずげり|しんとうあつせいげり|ぶんぴつせいげり|しんしゅつせいげり",
-    "diarrheal\tげりしょう",
-    "diarrhoea\tげり|くだりばら|はきくだし|としゃ",
-    "diary\tにっき|にっきちょう|てちょう|ダイアリー|スケジュールちょう|きにゅう|つける|えにっき|にっきぶんがく|ぬすみよみ|ごくちゅうにっき|たびにっき|ごくちゅうき|かんさつにっき|にっきをつける|こうかんにっき|まくらぞうし|まくらそうし|こきろく|ぎょうむにっし",
-    "diary etc\tきにゅう",
-    "diaspora\tディアスポラ",
-    "diaspore\tさんぷたい|ダイアスポア",
-    "diastase\tジアスターゼ|タカジアスターゼ|タカジヤスターゼ",
   ],
 };

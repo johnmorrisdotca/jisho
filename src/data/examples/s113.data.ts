@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 114 of 144, from "15df". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 114 of 144, from "15d". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,18 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "15d24\t1¦｜目《め》の｜細《こま》かい｜織《お》りのカーペットが｜一般的《いっぱんてき》には｜価値《かち》が｜高《たか》い。¦Tightly-knit carpets are generally more valuable.¦¦1pp9¦¦CM¦織り",
+    "15d3i\t1¦タッソーろう｜人形《にんぎょう》｜館《やかた》へ｜行《い》く｜道《みち》を｜教《おし》えて｜頂《いただ》けませんか。¦Could you tell me the way to Madame Tussaud's?¦3¦4d3h¦arnab¦orcrist¦館",
+    "15d5g\t1¦｜日本国民《にほんこくみん》は｜戦争《せんそう》を｜放棄《ほうき》している。¦The Japanese people have renounced war.¦1¦2mdq¦¦¦日本国民",
+    "15d5q\t1¦この｜詩《うた》は｜誰《た》が｜書《か》いたのですか。¦By whom was this poem written?¦¦4r2v¦tommy__san¦megamanenm¦詩",
+    "15d7o\t1¦ご｜注文《ちゅうもん》を｜下記《かき》の｜通《どお》り｜確認《かくにん》します。¦We will confirm your order as follows.¦3¦4nhf¦¦¦ご注文",
+    "15d8i\t1¦｜私《わたし》は｜彼《あ》の｜秘密《ひみつ》をばらすと｜脅《おど》しをかけた。¦I threatened to reveal his secret.¦1¦3aoc¦¦CK¦ばらす",
+    "15d92\t1¦｜彼女《かのじょ》の｜夫《おっと》はひどい｜麻薬《まやく》｜依存症《いぞんしょう》だ。¦Her husband is heavily dependent on drugs.¦1¦20jf¦¦CK¦依存症",
+    "15d9m\t1¦｜当店《とうてん》では｜品物《しなもの》の｜委託販売《いたくはんばい》をしています。¦We sell goods on commission.¦1¦2nnn¦¦CK¦委託販売",
+    "15dba\t1¦｜会社《かいしゃ》の｜慰安旅行《いあんりょこう》で｜箱《はこ》｜根《ね》に｜行《い》きます。¦My company is sending us all to Hakone this year.¦1¦3yyp¦¦CN¦慰安旅行",
+    "15dbu\t1¦ここ｜何年《なんねん》か｜異常気象《いじょうきしょう》がつづいている。¦We've been having strange weather the past few years.¦1¦4t0u¦bunbuku¦CK¦異常気象",
+    "15dem\t1¦｜改良《かいりょう》された｜医療技術《いりょうぎじゅつ》は、｜宇宙開発計画《うちゅうかいはつけいかく》の｜副産物《ふくさんぶつ》として｜派生《はせい》したものの｜一《ひと》つである。¦Improved medical technology has been one of the spin-offs of the space program.¦1¦3yur¦¦CK¦医療技術",
+    "15dew\t1¦｜医療費《いりょうひ》・｜年金《ねんきん》｜給付《きゅうふ》の｜抑制《よくせい》｜策《さく》の｜決《き》め｜手《て》はないといえよう。¦We can say that there's not a clear winner in terms of a policy to curtail medical expenses and benefits.¦1¦4366¦¦papabear¦医療費",
     "15dfg\t1¦｜浴室《よくしつ》｜付《つ》きの｜一人部屋《ひとりべや》ですね。¦Single with bath, right?¦2¦1oro¦¦¦一人部屋",
     "15dfq\t1¦｜私《わたし》たちはだれでも、｜他者《たしゃ》との｜一体感《いったいかん》を｜切望《せつぼう》する｜何《なに》かをうちに｜秘《ひ》めている。¦Each of us has something in us that longs for a sense of oneness with others.¦1¦3kbt¦¦¦一体感",
     "15dh4\t1¦あの｜歌手《かしゅ》は、｜一般大衆《いっぱんたいしゅう》に｜人気《にんき》がある。¦That singer is very popular with people in general.¦1¦4yd1¦¦¦一般大衆",
@@ -192,18 +204,5 @@ export const PIECE: WordsPiece = {
     "15jpu\t1¦｜私《わたし》がこの｜退院《たいいん》｜承諾書《しょうだくしょ》にサインしたら、もう｜帰《かえ》ってもいいですか。¦After I sign these release papers, you'll be on your way.¦1¦3lng¦¦¦承諾書",
     "15jsc\t1¦照会先を３件ください。¦Please give us three references.¦2¦34xz¦¦CM¦照会先",
     "15jt6\t1¦｜自《みずか》ら｜志願《しがん》した｜人《ひと》たちが｜障害者《しょうがいしゃ》の｜為《ため》に｜寄付《きふ》を｜集《あつ》めた。¦Volunteers collected donations for the benefit of the handicapped.¦1¦37ui¦¦CK¦障害者",
-    "15juk\t1¦｜物価《ぶっか》は｜上昇傾向《じょうしょうけいこう》にある。¦Prices are on the upward trend.¦1¦1sn9¦¦¦上昇傾向",
-    "15jza\t1¦ジムは｜職権乱用《しょっけんらんよう》で｜免職《めんしょく》になった。¦Jim got dismissed for his misconduct in office.¦1¦4mmu¦¦CP¦職権乱用",
-    "15k04\t1¦インドは｜地域色《ちいきしょく》｜豊《ゆた》かな｜食文化《しょくぶんか》があります。¦India has a cuisine rich in regional flavour.¦2¦1m7a¦fcbond¦fcbond¦食文化",
-    "15k1i\t1¦それはまさに｜侵略行為《しんりゃくこうい》だ。¦It is nothing less than an invasion.¦1¦4eh8¦small_snow¦orcrist¦侵略行為",
-    "15k2c\t1¦あの｜人《ひと》｜心臓発作《しんぞうほっさ》を｜起《お》こすわよ。¦He's going to have a heart attack.¦2¦4y0c¦¦CK¦心臓発作",
-    "15k4u\t1¦その｜新刊書《しんかんしょ》のことは｜雑誌《ざっし》の｜広告《こうこく》で｜知《し》った。¦I learned about the new book by the advertisement in the magazine.¦2¦4h54¦¦¦新刊書",
-    "15k5o\t1¦｜新進作家《しんしんさっか》の｜登場《とうじょう》でその｜老《ろう》｜作家《さっか》は｜影《かげ》の｜薄《うす》い｜存在《そんざい》となった。¦With the appearance of a promising new writer, the aging novelist fell from prominence.¦1¦342y¦¦¦新進作家",
-    "15k5y\t1¦この｜新人歌手《しんじんかしゅ》は｜本当《ほんとう》にすばらしい。¦This new singer is really great.¦3¦4qjp¦¦Eldad¦新人歌手",
-    "15k72\t1¦「Kanji list」という｜機能《きのう》に｜新聞記事《しんぶんきじ》｜頻度《ひんど》を｜追加《ついか》しました。¦I added newspaper article frequency data to the 'Kanji list' function.¦1¦1md7¦¦AlanF_US¦新聞記事",
-    "15k7c\t1¦｜新聞配達《しんぶんはいたつ》の｜少年《しょうねん》はどんな｜天気《てんき》でも｜新聞《しんぶん》を｜配達《はいたつ》する。¦The newspaper boy delivers papers in any kind of weather.¦3¦33yo¦bunbuku¦¦新聞配達",
-    "15k86\t1¦シップ・アイランドのあたりは、｜相《あい》も｜変《か》わらぬ｜森林地帯《しんりんちたい》で、｜相変《あいか》わらず｜住《す》む｜人《じん》とてなかった。¦The Ship Island region was as woody and tenantless as ever.¦2¦4ms8¦¦¦森林地帯",
-    "15k9k\t1¦｜関税《かんぜい》｜申告書《しんこくしょ》が｜必要《ひつよう》になります。¦A customs declaration is required.¦2¦3xql¦Lurid¦CK¦申告書",
-    "15kao\t1¦｜彼《あ》の｜話《はなし》にはいくらか｜真実味《しんじつみ》がある。¦His story has some color of truth in it.¦3¦2hcx¦¦¦真実味",
   ],
 };

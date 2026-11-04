@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 34 of 172, from "concerning ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 34 of 172, from "concern ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,12 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "concern about\tかえりみる",
+    "concern etc\tいもん",
+    "concern future\tゆうこく",
+    "concerned\tわずらう|あんじる|とうがい|かんけいしゃ|とうきょく|とうじしゃ|かまう|あいたい|とうにん|いちどう|こだわる|ノータッチ|ノー・タッチ|となると|おもいやる|となれば|となったら|うれえる|がいとうしゃ|あたまをいためる",
+    "concerned about\tかまう|おもいやる|うれえる|わずらう|あんじる",
+    "concerning\tため|にかんして|にかけて|にあたっては|につきまして|をめぐって|りょうてき|かぶれ|たいし|ほうれい|おちゅうどでんせつ|じょなんのそう|こしょうすいしつほぜんとくべつそちほう|ダイオキシンほうしこうきそく|だいきぼじしんたいさくとくべつそちほう|たいしんほう|としうら|たいか|ないようてき|そぜいとくべつそちほう",
     "concerning all\tかぶれ",
     "concerning area\tにかけて",
     "concerning quantity\tりょうてき",
@@ -74,6 +80,7 @@ export const PIECE: WordsPiece = {
     "concretion\tけっかく",
     "concretism\tコンクレティズム",
     "concrète\tミュージックコンクレート|ミュージック・コンクレート",
+    "concubine\tせいしつ|ちくしょう|めかけぼうこう|むかいばら",
     "concubines\tひひん",
     "concur\tきをいつにする",
     "concurrence\tへいはつ|がっち|ぐはつ|きょうごうだっせん|かんねんてききょうごう",
@@ -507,18 +514,5 @@ export const PIECE: WordsPiece = {
     "considered\tとされる|とおもわれる|よびすて|まじょがり|ちゃばしら|だいよこづな|おくりあし|おおトロ|おおとろ|ばんりゅうもく|ちゃばしらがたつ|きんめぎんめ|ようすう|いんすう|ひだりうま|たべてすぐねるとうしになる",
     "considered danger\tまじょがり",
     "considered impolite\tよびすて",
-    "considering\tわりに|みきりはっしゃ|かんれい|としがとし|じゅくしもくそう|さいのわりに|はなしにならない|タブーし|ぜったいすう|ぜんごのみさかいもなく|こうかく|かひけんとう",
-    "considering objections\tみきりはっしゃ",
-    "considers\tあねぶん",
-    "consign\tほうむりさる",
-    "consign oblivion\tほうむりさる",
-    "consignee\tにうけにん",
-    "consigning\tぼうきゃく",
-    "consigning oblivion\tぼうきゃく",
-    "consignment\tいたく|たくそう|におくり|じゅたくはんばい|こぐちあつかい|こにもつあつかい|いたくはんばい|いたくばいばい|いたくせいさん|うんそうじょう|よたくざいこ",
-    "consignment goods\tいたく",
-    "consignor\tにぬし|におくりにん|いたくしゃ",
-    "consist\tなりたつ|なる",
-    "consistency\tいっかん|あんてい|てってい|つじつま|いっかんせい|コンシステンシ|ちょうど|ちゅうど|むむじゅんせい|こい|かたねりコンクリート|ちこういっち|かたねり|データせいごうせい|じょうぶついっち",
   ],
 };

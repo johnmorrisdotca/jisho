@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 91 of 144, from "0xxiq". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 91 of 144, from "0xx8g". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,21 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0xx8g\t1¦｜乳牛《にゅうぎゅう》というのは、｜役《やく》に｜立《た》つ｜動物《どうぶつ》です。¦A dairy cow is a useful animal.¦2¦2m83¦¦CM¦乳牛",
+    "0xx9k\t1¦｜乳房《ちぶさ》にしこりがあります。¦I have a lump in my breast.¦1¦2m7x¦¦¦乳房",
+    "0xxb8\t1¦１台の車が入り口に止まった。¦A car stopped at the entrance.¦4¦51vr¦mookeee¦CK¦入り口",
+    "0xxc2\t1¦｜天候《てんこう》のいかんにかかわらず｜駅《えき》へ｜迎《むか》えに｜参《まい》ります。¦Rain or shine, I will come to meet you at the station.¦3¦2ohq¦bunbuku¦CK¦いかん",
+    "0xxcc\t1¦アルコールの｜消費量《しょうひりょう》は｜年々《ねんねん》｜増《ふ》えている。¦Alcohol consumption is increasing every year.¦2¦4xff¦¦CK¦年々",
+    "0xxcm\t1¦あれだけのコインを｜収集《しゅうしゅう》するのにどれだけの｜年月《としつき》がかかりましたか。¦How long did it take you to collect so many coins?¦3¦4xa7¦¦CK¦年月",
+    "0xxdg\t1¦このガラクタは｜火《ひ》に｜燃《も》やしなさい。¦Burn this rubbish on the fire.¦2¦4sqt¦¦sundown¦燃やし\t2¦｜彼女《かのじょ》は｜嫉妬《しっと》の｜炎《ほのお》を｜燃《も》やした。¦She burned with jealousy.¦¦1wm1¦mookeee¦CK¦燃やした",
+    "0xxe0\t1¦このコップをミルクで｜満《み》たした。¦I filled this glass with milk.¦3¦4soi¦¦CK¦この\t2¦この｜数年間《すうねんかん》に｜彼《あれ》は｜不朽《ふきゅう》の｜名詩《めいし》を｜書《か》いた。¦During these years he wrote immortal poems.¦1¦4qhp¦xtofu80¦¦この",
+    "0xxf4\t1¦｜天気予報《てんきよほう》によれば、まもなく｜梅雨《つゆ》に｜入《い》るそうだ。¦According to the weather forecast, the rainy season will set in before long.¦1¦2oin¦¦CM¦梅雨",
+    "0xxfy\t1¦｜少年《しょうねん》は｜木《き》の｜皮《かわ》を｜剥《は》いだ。¦The boy stripped a tree of the bark.¦¦351s¦¦¦剥いだ",
+    "0xxgi\t1¦｜彼《あれ》は｜博士論文《はかせろんぶん》を｜月末《げつまつ》までに｜教授《きょうじゅ》に｜提出《ていしゅつ》しなければならない。¦His doctoral thesis must be submitted to the professor by the end of the month.¦1¦264w¦¦CK¦博士論文",
+    "0xxgs\t1¦｜博打《ばくち》で｜彼《あれ》は｜失敗《しっぱい》した。¦Gambling brought about his failure.¦1¦2lpx¦¦¦博打",
+    "0xxhc\t1¦｜大《おお》きなかしわの｜木《き》が｜風《ふり》の｜力《ちから》を｜弱《よわ》めている。¦The big oak tree breaks the force of the wind.¦2¦2yad¦¦orcrist¦かしわ",
+    "0xxhm\t1¦｜父《ちち》の｜髪《かみ》は｜白髪交《しらがま》じりになった。¦My father's hair has become streaked with gray.¦3¦1tfh¦¦CM¦白髪",
+    "0xxig\t1¦ボールを｜丸《まる》く、そして｜堅《かた》くするために｜麦《むぎ》わらをいっぱいに｜詰《つ》め｜込《こ》んでいました。¦They filled them with straw to make them round and hard.¦1¦47kz¦¦orcrist¦麦わら",
     "0xxiq\t1¦｜会《かい》は｜八時《はちじ》に｜解散《かいさん》した。¦The meeting broke up at eight.¦3¦3z2v¦¦CK¦八",
     "0xxiv\t1¦そこに｜八《やっ》つの｜小石《こいし》があった。¦There were eight pebbles there.¦3¦b50i¦blay_paul¦blay_paul¦八つ",
     "0xxju\t1¦安倍内閣は、第９０代の内閣総理大臣に指名された安倍晋三が２００６年９月２６日に発足させた内閣である。¦The Abe Cabinet is the Cabinet inaugurated on September 26, 2006 by Shinzo Abe, who was appointed as Japan's 90th Prime Minister.¦1¦1mx1¦mookeee¦¦発足",
@@ -196,17 +211,5 @@ export const PIECE: WordsPiece = {
     "0y0re\t1¦アトランタ｜訪問《ほうもん》の｜際《さい》には、お｜時間《じかん》をさいていただき、ありがとうございました。¦Thank you for the time you spent with me during my visit to Atlanta.¦3¦50s6¦¦CK¦いただき\t2¦「もっとコーヒーはいかがですか」「もう｜結構《けっこう》です。｜十分《じゅうぶん》｜頂《いただ》きました」¦\"Will you have some more coffee?\" \"No, thanks. I've had enough.\"¦¦52f8¦mookeee¦CK¦頂きました",
     "0y0ro\t1¦ここにしつこい｜痛《いた》みがあります。¦I have a persistent pain here.¦3¦4t7o¦¦CK¦痛み\t2¦モモの｜皮《かわ》は｜傷《いた》みやすい。¦The skin of peaches bruises easily.¦1¦451p¦small_snow¦orcrist¦傷み",
     "0y0ry\t1¦｜彼《あ》の｜事務所《じむしょ》は｜町《まち》の｜中心部《ちゅうしんぶ》に｜位置《いち》している。¦His office is located in the center of the town.¦3¦2idq¦Blanka_Meduzo¦Eldad¦位置\t1¦｜私《わたし》はパレードが｜見《み》えるいい｜位置《いち》にいた。¦I was in a good position to see the parade.¦3¦3er4¦¦¦位置\t2¦その｜位置《いち》に｜誰《だれ》を｜選《えら》ぶか｜考《かんが》えがありますか。¦Do you have any idea who we should single out for the position?¦¦4jvo¦¦¦位置",
-    "0y0s8\t1¦ジョンが｜品物《しなもの》をいちいち｜手《て》に｜取《と》って｜見《み》た。¦John picked up the articles one by one and examined them.¦3¦1trcw¦JimBreen¦JimBreen¦いちいち\t2¦｜彼《あれ》は｜私《わたし》のしたことにいちいち｜文句《もんく》を｜言《い》う。¦He finds faults with everything I do.¦1¦29qo¦¦CM¦いちいち",
-    "0y0tc\t1¦｜私《わたし》たちはとても｜高《たか》く｜上《あが》ったので、｜町《まち》を｜一望《いちぼう》することが｜出来《でき》た。¦We went up so high that we could get the whole view of the city.¦3¦3kao¦¦¦一望",
-    "0y0ug\t1¦｜多《おお》くの｜人《じん》が｜一攫千金《いっかくせんきん》を｜夢見《ゆめみ》て｜宝《たから》くじを｜買《か》う。¦Many people buy lottery tickets with the dream of immediately becoming wealthy.¦¦2yr4¦bunbuku¦CK¦一攫千金",
-    "0y0uq\t1¦｜彼《あれ》は｜一ヶ月《いっかげつ》｜以上《いじょう》ロンドンにいた。¦He stayed in London over a month.¦3¦2cwh¦¦CK¦一ヶ月",
-    "0y0v0\t1¦お｜金《かね》と｜技術《ぎじゅつ》を｜地球《ちきゅう》の｜一《いっ》カ｜所《しょ》から｜別《べつ》の｜場所《ばしょ》に｜移動《いどう》させるだけでは｜十分《じゅうぶん》でありません。¦Moving money and technology from one side of the globe to the other is not enough.¦¦4vcz¦¦¦一カ所",
-    "0y0vk\t1¦｜森《もり》の｜近《ちか》くに｜一軒家《いっけんや》がある。¦There stands a cottage close to the forest.¦2¦33y7¦¦¦一軒家",
-    "0y0vu\t1¦彼は４歳と１歳の２児の父親だ。¦He has two children, aged 4 and 1.¦2¦2gta¦¦¦１歳",
-    "0y0w4\t1¦この｜見積《みつ》もりは｜経費《けいひ》｜一切合切《いっさいがっさい》を｜含《ふく》めたものでしょうね。これ｜以上《いじょう》はびた｜一文《いちもん》お｜金《かね》は｜出《だ》さないからね。¦I hope this expense report contains all the relevant business expenses because I'm not paying a cent more after this.¦2¦4rd0¦¦papabear¦一切合切",
-    "0y0wy\t1¦｜君《きみ》は｜常軌《じょうき》を｜逸《いっ》しているよ。¦You are way off track.¦1¦3soj¦¦AlanF_US¦逸している",
-    "0y0yc\t1¦｜彼《あれ》は｜国境警備兵《こっきょうけいびへい》の｜姿《すがた》を｜見《み》て｜命《いのち》からがら｜逃《に》げた。¦He ran for his life at the sight of the border guard.¦1¦2arb¦¦¦命からがら",
-    "0y0zg\t1¦あいつを｜見《み》ると、いまいましくてしょうがない。¦The sight of him is hateful to me.¦5¦510g¦bunbuku¦¦いまいましくて",
-    "0y0zq\t1¦あなたは｜今《いま》までに｜阿《くま》｜蘇《そ》｜山《やま》に｜登《のぼ》ったことがありますか。¦Have you ever climbed Mt. Aso?¦¦4z26¦¦CN¦今まで",
   ],
 };

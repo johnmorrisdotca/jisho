@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 137 of 144, from "1cr1". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 137 of 144, from "1cq". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,23 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "1cq06\t1¦｜雲《くも》が｜晴《は》れて｜陽《よう》が｜差《さ》し｜始《はじ》めた。¦The clouds cleared up and let the sun shine.¦2¦424d¦KK_kaku_¦seoetung¦陽が差し",
+    "1cq0g\t1¦｜一生懸命《いっしょうけんめい》｜指《ゆび》でまぶたを｜広《ひろ》げて｜目薬《めぐすり》を｜差《さ》しました。¦With great effort I held his eyelids open with my fingers and dropped in the eye medicine.¦1¦1mwt¦mookeee¦papabear¦目薬を差しました",
+    "1cq60\t2¦｜朱《しゅ》に｜交《まじ》われば｜赤《あか》くなる。¦He who touches pitch shall be defiled therewith.¦1¦36kj¦tommy_san¦¦朱",
+    "1cq6a\t1¦｜時《とき》｜間《ま》をおかないと｜追加《ついか》・｜削除《さくじょ》が｜反映《はんえい》されない。¦Additions and deletions are not shown immediately.¦1¦1lol¦fcbond¦fcbond¦追加・削除\t2¦ＯＥのツールバーにボタンを追加・削除する。¦Add and delete buttons from the OE toolbar.¦1¦1lom¦fcbond¦fcbond¦追加・削除",
+    "1cqbu\t1¦｜少女《しょうじょ》は｜親切《しんせつ》に｜博物館《はくぶつかん》へ｜行《い》く｜行《ゆ》き｜道《みち》を｜教《おし》えてくれた。¦The girl kindly told me the way to the museum.¦1¦356v¦¦CM¦行き道",
+    "1cqcy\t1¦ウィッチヘーゼルは、｜乾燥《かんそう》させずに｜毛穴《けあな》を｜引《ひ》き｜締《し》めます。¦Witch hazel tightens pores without drying skin.¦1¦1lqt¦fcbond¦fcbond¦ウィッチヘーゼル",
+    "1cqgu\t1¦｜小鍋《こなべ》はすぐ｜熱《あつ》くなる。¦A little pot is soon hot.¦¦35cj¦¦¦小鍋",
+    "1cql0\t1¦新車時３００万円した車も今では３０万円位だそうですから、もう少し乗ろうと思います。¦Cars that, when new, cost 3,000,000 yen are apparently now worth 300,000, so I think I'll use mine a little longer.¦3¦1lrb¦fcbond¦fcbond¦時",
+    "1cqm4\t1¦こういう風に合体すれば、１４ポートのＵＳＢハブになります。¦If you combine them in this way, you get a 14 port USB hub.¦3¦1lqx¦fcbond¦fcbond¦ＵＳＢハブ",
+    "1cqme\t1¦ボートの｜操作者《そうさしゃ》は｜禁煙《きんえん》の｜表示《ひょうじ》にも｜関《かか》わらず、｜堂々《どうどう》といつも｜吸《す》っていた。¦Despite \"No Smoking\" signs, the boat operator was brazenly smoking all the time.¦1¦1lqr¦fcbond¦fcbond¦操作者",
+    "1cqmo\t1¦｜田《た》｜中《うち》くんは｜省内《しょうない》きっての｜馬鹿者《ばかもの》だよ。¦Young Tanaka is the stupidest person in the department.¦1¦1lr3¦fcbond¦fcbond¦省内",
+    "1cqtw\t1¦ある｜人《ひと》を｜天才《てんさい》にし、｜別《べつ》の｜人《じん》を｜愚《おろ》か｜者《もの》にするのは｜何《なん》なのか。¦What makes one person a genius and another person a fool?¦1¦4xcm¦tigro1973¦¦何なのか",
+    "1cqug\t1¦ドジャースは｜破竹《はちく》の｜勢《いきお》いで｜勝《か》ち｜進《すす》んだ。¦The Dodgers went on winning with irresistible force.¦2¦4ayh¦¦¦破竹の勢い",
+    "1cquq\t1¦｜彼《あれ》、｜今《いま》のところは｜飛《と》ぶ｜鳥《とり》も｜落《お》とす｜勢《いきお》いだけれど、あの｜威勢《いせい》いつまでもつのか、｜疑問《ぎもん》だね。¦He's unstoppable right now but the question is how long he can remain at the pinnacle of his career.¦1¦2lhb¦¦papabear¦飛ぶ鳥も落とす勢い",
+    "1cqv0\t1¦｜彼《あ》の｜出世《しゅっせ》は｜怒濤《どとう》の｜勢《いきお》いだ。¦His career is progressing in leaps and bounds.¦¦2i9l¦¦¦怒濤の勢い",
+    "1cqva\t1¦｜一世一代《いっせいちだい》の｜晴《は》れの｜舞台《ぶたい》という｜言《い》い｜回《まわ》しがあるが、これはまさにそれである。¦There's a saying, \"once in a life-time event,\" and that's just what this is.¦3¦1le9¦fcbond¦fcbond¦晴れの舞台",
+    "1cr0u\t1¦｜私達《わたしたち》は｜彼《あ》の｜大胆《だいたん》な｜企《くわだ》てに｜舌《した》を｜巻《ま》いた。¦We marveled at his bold attempt.¦1¦38rv¦¦¦舌を巻いた",
     "1cr1y\t2¦｜早《はや》く｜帰《かえ》った｜方《ほう》がいい、｜暑《あつ》いから。サバは、｜生《い》き｜腐《ぐさ》れとも｜言《い》われるくらい｜足《あし》が｜早《はや》い。¦It's hot, so you'd better head back quickly. Mackerel goes off so fast that they coined 'fresh-looking rotten fish'.¦1¦1lqd¦fcbond¦fcbond¦足が早い",
     "1cr32\t1¦英語は３時間目だ。¦We have English third period.¦4¦41yb¦Kaede¦AMIKEMA¦時間目",
     "1cr6y\t1¦こともあろうに、なぜ｜彼《あれ》は｜誕生日《たんじょうび》に｜帽子《ぼうし》なんかくれたんだろう。｜私《わたし》は｜帽子《ぼうし》をかぶらないのに。¦Of all things, why did he give me a hat for my birthday? I don't wear a hat.¦1¦4swp¦¦papabear¦こともあろうに",
@@ -79,6 +96,7 @@ export const PIECE: WordsPiece = {
     "1fbrq\t1¦もう｜行《い》かないと。¦Got to go now.¦5¦45us¦bunbuku¦Zifre¦ないと",
     "1fbs0\t1¦｜近医《きんい》で｜処方《しょほう》を｜希望《きぼう》したら｜露骨《ろこつ》に｜嫌《いや》な｜顔《かお》をされた。¦I was given a nasty look when I asked for my prescription at the local doctor's.¦1¦1lnc¦fcbond¦fcbond¦近医",
     "1fbv2\t1¦いくつになっても｜子供《こども》は｜子供《こども》なのである。¦No matter the age, a child is a child.¦3¦4wu6¦¦¦なのである",
+    "1fbw6\t1¦こいつの｜性根《しょうね》が｜悪《にく》いから｜非《ひ》モテなんだろ。¦I expect it's his lousy personality that drives off the ladies.¦2¦1ln4¦fcbond¦fcbond¦非モテ",
     "1fbwg\t1¦他の惑星に知的生命体はいるか？¦Is there intelligent life on other planets?¦¦1ln3¦fcbond¦fcbond¦知的生命体",
     "1fbwq\t1¦こ、こら！ナニやっとるかぁぁ！！¦H-Hey! What're you up to!!¦5¦1ln1¦fcbond¦fcbond¦とる",
     "1fbye\t1¦できることは｜抵抗《ていこう》か｜逃亡《とうぼう》か｜二《ふた》つに｜一《ひと》つだった。¦The alternative possibilities were resistance and flight.¦1¦4c4t¦¦¦二つに一つ",
@@ -177,24 +195,5 @@ export const PIECE: WordsPiece = {
     "1ff9a\t1¦アメリカの｜修正論《しゅうせいろん》｜主義者《しゅぎしゃ》は｜日本《にほん》との｜関係《かんけい》について｜強硬《きょうこう》な｜態度《たいど》をとっています。¦U.S. revisionists take a hard-line approach to Japanese relations.¦1¦4xmp¦¦¦修正論",
     "1ffae\t1¦｜母《かあ》ちゃんも｜同《おな》じ｜事《こと》いってたな。だからどうしたってんだよ。オレにゃ｜関係《かんけい》ない。¦Mum said the same thing. But, so what? It's got nothing to do with me.¦3¦1l7j¦fcbond¦fcbond¦母ちゃん",
     "1ffbi\t1¦この｜春休《はるやす》みには、｜海外《かいがい》｜費用《ひよう》の｜足《た》しにするため、レストランでアルバイトをした。¦During my last spring vacation I took a job in a restaurant to help pay the costs of my trip abroad.¦3¦4qp7¦¦¦足しにする",
-    "1ffcw\t1¦いつまでも｜意地張《いじば》ってないで、こっちに｜来《らい》なよ。¦Stop being such a hard-ass. Come on over.¦1¦4wj2¦¦orcrist¦意地張ってないで",
-    "1ffdq\t1¦｜美術館《びじゅつかん》の｜東《ひがし》の｜陳列棟《ちんれつとう》は｜清掃《せいそう》のため｜閉鎖《へいさ》されていた。¦The museum's eastern gallery was closed for cleaning.¦1¦1l79¦fcbond¦fcbond¦陳列棟",
-    "1ffe0\t1¦｜水《みず》は｜生命《せいめい》に｜必要不可欠《ひつようふかけつ》です。¦Water is indispensable to life.¦¦32ww¦small_snow¦CK¦必要不可欠",
-    "1ffeu\t1¦ああ｜言《い》えば、こう｜言《い》う。まったく、｜口《くち》が｜減《へ》らない｜奴《やつ》だ。¦Whatever I say, he has a comeback ready. You can't get a word in edgewise.¦1¦513h¦Sim5634¦Dejo¦口が減らない",
-    "1fffe\t1¦｜男《おとこ》はトムを｜見《み》てから、｜楽屋口《がくやぐち》を｜通《とお》って、｜暗《くら》いロンドンの｜街路《がいろ》へと｜消《き》えていった。¦The man looked at Tom, then vanished through the stage door out into the dark London street.¦1¦2q5p¦¦papabear¦楽屋口",
-    "1ffgi\t1¦お｜手《て》を｜煩《わずら》わせて｜申《もう》し｜訳《わけ》ありません。¦I'm sorry to trouble you.¦1¦4v7u¦small_snow¦CK¦手を煩わせて",
-    "1ffhc\t1¦｜手《て》がすべって｜皿《さら》を｜床《とこ》におとしてしまった。¦The plate slipped from my hands and fell to the floor.¦2¦36pl¦¦CK¦手がすべって",
-    "1ffhw\t1¦｜誰《だれ》も｜自分《じぶん》が｜目《め》にしたことを｜信《しん》じられなかった。¦Nobody could believe what he saw.¦¦2x3f¦¦¦目にした",
-    "1ffi6\t1¦たいていの｜鳥《とり》は｜昼間《ひるま》しか｜目《め》が｜見《み》えない。¦Most birds can see only by day.¦4¦4dcq¦tommy__san¦Swift¦目が見えない",
-    "1ffky\t1¦｜黒魔法《くろまほう》の｜話《はなし》を｜聞《き》きたいです。｜学院《がくいん》ではさわりしか｜聞《き》いたことがないんですが｜興味《きょうみ》があります。¦I'd like to hear about black magic. I was only told the highlights in the academy, and it interests me.¦1¦1l74¦fcbond¦fcbond¦黒魔法",
-    "1ffnq\t1¦｜進《すす》んで｜学《まな》ぼうとする｜気《き》の｜無《な》い｜者《もの》には｜教《おし》える｜甲斐《かい》がない。¦One who is not willing to learn is not worth teaching.¦¦33nz¦¦CM¦進んで",
-    "1ffo0\t1¦この｜製品《せいひん》は｜飛《と》ぶように｜売《う》れています。¦These products are selling like hot cakes.¦1¦4qg5¦¦CM¦飛ぶように売れています",
-    "1ffqs\t1¦｜来週《らいしゅう》の｜日曜日《にちようび》に｜遊《あそ》びに｜来《き》てください。¦Come and see me on Sunday next week.¦3¦1ooi¦mookeee¦CK¦遊びに来て",
-    "1ffs6\t1¦ファッションモデルは｜身《み》のこなしがよくなければならない。¦A fashion model must have a good carriage.¦¦486o¦¦Sleekkat¦身のこなし",
-    "1ffsq\t1¦そこの｜売《う》りは、｜手《て》ぶらで｜行《い》けるバーベキュー｜場《じょう》です。¦The best thing about that place is the barbecue area where they supply you with everything you need.¦4¦4ku2¦mookeee¦papabear¦バーベキュー場",
-    "1fft0\t1¦｜怠惰《たいだ》は｜弱気《よわき》｜精神《せいしん》の｜避難場《ひなんば》にすぎない。¦Idleness is only the refuge of weak minds.¦1¦2yeo¦¦¦避難場",
-    "1fftu\t1¦｜地質学者《ちしつがくしゃ》が｜私《わたし》たちの｜農場《のうじょう》で｜石油《せきゆ》の｜実地調査《じっちちょうさ》を｜行《おこな》った。¦The geologists explored for oil on our farm.¦2¦2pxf¦¦¦実地調査",
-    "1ffv8\t1¦スキー｜板《いた》と｜靴《くつ》を｜貸《か》して｜下《くだ》さい。¦I'd like to rent skis and ski boots.¦2¦4lwc¦bunbuku¦CK¦スキー板",
-    "1ffvs\t1¦｜通信《つうしん》｜業界《ぎょうかい》はいとも｜簡単《かんたん》に｜手中《しゅちゅう》におさめることができます。¦The telecommunications market is totally up for grabs.¦2¦2ow7¦¦¦手中におさめる",
   ],
 };

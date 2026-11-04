@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 36 of 172, from "conveyances". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 36 of 172, from "convertin". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,12 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "converting\tいんどう|つうぶん|かんぶつ|リストラクチャリング|リストラクチュアリング|リストラチャリング|しょうど|キリシタンぶぎょう|しゅうもんあらためやく|かみかこう|しょうじゅ|せつじゅ",
+    "converting people\tいんどう",
+    "convex\tなかだか|コンベックス|とつ|とつけい|まるがわら|とつレンズ|とっかく|とっきょう|とつめん|とつめんきょう|カーブミラー|カーブ・ミラー|そりだいかんな|しほうそりかんな|ニュートンかん|とつしゅうごう|とつたかくけい|のきまるがわら|あぶみがわら|がいたい",
+    "convexity\tとつえん|とつがた",
+    "convey\tつたえる|とりつぐ|もうしつたえる|かきつくす|かんがえをつたえる|そんだいご|りん",
+    "conveyance\tじょうと|うんぱん|のりもの|はんそう|とりつぎ|よこもち|くうしゃ|からぐるま|かいじょうたつ|どうすい|らんよ",
     "conveyances\tくるまやどり",
     "conveyed\tつたわる|つうじる|しんでん|めぢから|めじから",
     "conveyed feeling\tつたわる",
@@ -17,7 +23,7 @@ export const PIECE: WordsPiece = {
     "conveying large\tしゅら|すら",
     "conveyor\tコンベア|コンベヤ|コンベヤー|コンベアー|ベルトコンベア|ベルトコンベアー|ベルト・コンベア|ベルト・コンベアー|コンベヤーシステム|コンベヤー・システム|かいてんずし|かいてんすし|ころコンベア|ころコンベヤ|ロラコンベヤ|ロラ・コンベヤ|バケットコンベヤー|バケット・コンベヤー|バイコレーター|はんそうぶつ",
     "conveyor belt\tベルトコンベア|ベルトコンベアー|ベルト・コンベア|ベルト・コンベアー",
-    "convict\tしゅうじん|めしゅうど|めしうど|きけつしゅう|ふくえきしゅう|しけいしゅう|せっぷく|けいよしゃ|ぜんかもの|しらみつぶし|おうそう|だんしゅう|シマハギ|しまはぎ|コンヴィクトサージャンフィッシュ|コンヴィクト・サージャンフィッシュ|しゅつごくしゃ|コンビクトシクリッド|コンビクト・シクリッド|ひかれもの",
+    "convict\tしゅうじん|めしゅうど|めしうど|きけつしゅう|ふくえきしゅう|しけいしゅう|せっぷく|けいよしゃ|ぜんかもの|しらみつぶし|おうそう|ひかげもの|だんしゅう|シマハギ|しまはぎ|コンヴィクトサージャンフィッシュ|コンヴィクト・サージャンフィッシュ|しゅつごくしゃ|コンビクトシクリッド|コンビクト・シクリッド",
     "convict death\tしけいしゅう",
     "convict decapitated\tせっぷく",
     "conviction\tかくしん|しょしん|しんねん|しんじょう|ふたいてん|だんざい|ぜんか|もうねん|しんじょうりんり|ぜんざい|じゆうしんしょうしゅぎ|ゆうざいりつ",
@@ -540,20 +546,5 @@ export const PIECE: WordsPiece = {
     "cost living\tぶっか",
     "cost medicine\tやっか|やくか",
     "cost price\tげんか|じっぴ|しょうみ",
-    "cost responsibility\tふたん",
-    "cost total\tけいじょう",
-    "costa\tコスタリカ|コスタ・リカ|サンホセ|サン・ホセ|コスタリカきょうわこく|コロン",
-    "costa rica\tコスタリカ|コスタ・リカ",
-    "costal\tろくおう|ろくなんこつ",
-    "costar\tきょうえんしゃ",
-    "costarring\tかおあわせ",
-    "costarum\tろっこつきょきん",
-    "costatum\tきさご|きしゃご|キサゴ|しただみ",
-    "costing\tかつどうきじゅんげんかけいさん",
-    "costlier\tこぶくろとこむすめ",
-    "costly\tがったりさんりょう",
-    "costochondritis\tろくなんこつえん",
-    "costs\tかかり|カカリ|そしょうひよう|よさん|じんけんひ|ぜひとも|まかなう|ぜがひでも|くるまだい|しょきひよう|いじひ|しゅっぱんひ|あたまわり|ばんなんをはいして|こうじひ|ぞうえいひ|そうぎょうひ|せいさんひ|けいえいひ|けんせつひ",
-    "costume\tコスチューム|しょうぞく|かそう|いしょう|そうぞく|そうずく|はやがわり|ひきぬき|ナショナルコスチューム|ナショナル・コスチューム|かみしも|かそうぎょうれつ|じょうえ|のうしょうぞく|はなよめいしょう|みんぞくいしょう|きぐるみ|みずかみしも|コスチュームジュエリー|コスチューム・ジュエリー",
   ],
 };

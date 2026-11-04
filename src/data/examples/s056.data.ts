@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 57 of 144, from "0tno". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 57 of 144, from "0tnlm". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,9 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0tnlm\t1¦｜私《わたし》は｜赤帽《あかぼう》にスーツケースを｜運《はこ》んでもらった。¦I had the porter carry my suitcase.¦2¦3bzt¦¦CK¦赤帽",
+    "0tnlw\t1¦その｜時《とき》｜自分《じぶん》がなんとばかであったかを｜考《かんが》えると｜赤面《せきめん》する。¦I blush to think of what a fool I was then.¦¦4hta¦¦CK¦赤面\t2¦｜君《きみ》の｜行《おこな》いには｜赤面《せきめん》する。¦I am ashamed of your conduct.¦3¦3tl4¦¦Zifre¦赤面",
+    "0tnnk\t1¦その｜女性《じょせい》の｜顔《かお》には｜悲《かな》しみの｜跡《あと》があった。¦The woman's face was marked with grief.¦2¦4hj9¦¦¦跡\t2¦ここは｜城《しろ》の｜跡《あと》です。¦This is the site of a castle.¦2¦4t2i¦KK_kaku_¦¦跡\t3¦｜虫《むし》に｜刺《さ》された｜跡《あと》を｜引《ひ》っかかないようにした｜方《ほう》がいいよ。¦You should try not to scratch insect bites.¦2¦2pgu¦¦CM¦跡",
     "0tno4\t1¦｜金持《かねも》ちの｜商人《しょうにん》はその｜子《こ》を｜養子《ようし》にして｜跡取《あとと》りとした。¦The rich merchant adopted the boy and made him his heir.¦1¦3umk¦¦Lars224¦跡取り",
     "0tnps\t1¦｜田《た》｜中《うち》くんは｜省内《しょうない》きっての｜馬鹿者《ばかもの》だよ。¦Young Tanaka is the stupidest person in the department.¦1¦1lr3¦fcbond¦fcbond¦きっての",
     "0tnqc\t1¦｜複写機《ふくしゃき》の｜紙《かみ》を｜切《き》らしたよ。¦We've run out of paper for the photocopier.¦2¦1sp8¦¦CM¦切らした\t2¦しびれを｜切《き》らして｜借金《しゃっきん》の｜催促《さいそく》をした。¦He impatiently asked for repayment.¦1¦4mqc¦¦Dejo¦切らして",
@@ -192,10 +195,5 @@ export const PIECE: WordsPiece = {
     "0tsas\t1¦｜裁判官《さいばんかん》は｜彼《あれ》に｜死刑《しけい》を｜宣告《せんこく》した。¦The judge condemned him to death.¦1¦3ndb¦tommy__san¦CK¦宣告",
     "0tsb2\t1¦｜彼《あれ》は｜市長《しちょう》に｜宣誓《せんせい》｜就任《しゅうにん》した。¦He was sworn in as mayor.¦1¦2a6r¦¦CK¦宣誓",
     "0tsbc\t1¦その｜国《くに》は｜隣国《りんごく》に｜対《たい》し｜宣戦《せんせん》を｜布告《ふこく》した。¦The country declared war against its neighbor.¦1¦4ih5¦¦Zifre¦宣戦",
-    "0tsbm\t1¦その｜商品《しょうひん》はテレビで｜宣伝《せんでん》されている。¦The goods are advertised on TV.¦1¦4hhx¦¦¦宣伝",
-    "0tsd0\t1¦｜私《わたし》はフランス｜語《ご》を｜専攻《せんこう》するつもりです。¦I am going to major in French.¦1¦3eo7¦bunbuku¦CK¦専攻",
-    "0tsdk\t1¦アンはその｜仕事《しごと》に｜専心《せんしん》した。¦Ann bent her mind to the work.¦2¦4x31¦¦¦専心",
-    "0tse4\t1¦｜特典《とくてん》の｜一《ひと》つとして｜専属《せんぞく》｜運転手《うんてんしゅ》がお｜客様《きゃくさま》に｜一人《ひとり》ずつ｜着《つ》きます。¦Special services include a personal driver for each guest.¦1¦2n9f¦¦papabear¦専属",
-    "0tsey\t1¦まずは、｜自分《じぶん》の｜事《こと》に｜専念《せんねん》しなさい。¦Tend to your own affairs first.¦¦46x7¦small_snow¦CM¦専念",
   ],
 };

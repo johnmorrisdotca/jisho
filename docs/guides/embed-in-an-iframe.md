@@ -49,7 +49,7 @@ Give more than one and the page draws each, the kanji card first. Percent-encode
 
 ## Safe by default
 
-The embed is in safe mode unless the address says `mode=unfiltered`, and in safe mode it never fetches the files that hold what JMdict marks vulgar, X-rated, sensitive or derogatory, or a gloss that names sex or the sex trade. A page for children should leave `mode` out and should not let a visitor choose it.
+The embed is in safe mode unless the address says `mode=unfiltered`, and in safe mode it never fetches the files that hold what JMdict marks vulgar, X-rated, sensitive or derogatory, or a gloss that names a sex act, a sex organ or the sex trade. A page for children should leave `mode` out and should not let a visitor choose it.
 
 ## Before you ship
 

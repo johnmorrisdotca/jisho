@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 134 of 144, from "1bk8u". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 134 of 144, from "1bjv". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,20 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "1bjvi\t1¦｜彼《かれ》らは｜男《おとこ》を｜逮捕《たいほ》すべく｜追《お》いかけた。¦They chased the man to arrest him.¦1¦22is¦¦jakov¦すべく",
+    "1bjwc\t1¦ニクソンはウォーターゲート｜事件《じけん》に｜関《かん》し、｜黙秘権《もくひけん》を｜行使《こうし》して｜無視《むし》しようとしたが、｜結局《けっきょく》｜明《あか》るみにでた。¦Nixon tried to stonewall through Watergate by ignoring it, but it didn't work.¦¦49e1¦¦RoyalBee¦ウォーターゲート事件",
+    "1bjwm\t1¦｜組合《くみあい》の｜指導者《しどうしゃ》たちは｜賃上《ちんあ》げ｜要求《ようきゅう》をあおりたてた。¦The leaders of the Union agitated for higher wages.¦1¦30i0¦¦¦あおりたてた",
+    "1bjx6\t1¦スープがとろっとするまで｜煮《に》つめてください。¦Boil the soup down until it becomes thick.¦1¦4lxg¦KK_kaku_¦CM¦とろっと",
+    "1bjxq\t1¦サムは｜学校《がっこう》のバスケットチームに｜入《い》ることができた。¦Sam made the school basketball team.¦5¦4n81¦¦CN¦バスケットチーム",
+    "1bjy0\t1¦このテレビショーは｜子供向《こどもむ》けだ。¦This TV show is aimed at children.¦3¦4sgc¦¦CK¦テレビショー",
+    "1bk12\t1¦「マナカの｜絵《え》、｜見《み》して」「えーー、｜恥《は》ずかしいですよー」¦\"Lemme see your painting, Manaka.\" \"Must you? It's embarrassing!\"¦3¦1lwv¦mookeee¦¦見して",
+    "1bk1w\t1¦｜私《わたし》は、その｜泥棒《どろぼう》をほんのちらっと｜見《み》ただけです。¦I only got a glimpse of the thief.¦2¦3h9c¦small_snow¦¦ちらっと見た",
+    "1bk26\t1¦ちょっとした｜幸運《こううん》が｜予期《よき》せぬ｜成功《せいこう》につながるときもある。¦A little bit of luck sometimes leads to an unexpected success.¦1¦4ci6¦tommy_san¦CK¦予期せぬ",
+    "1bk5s\t1¦だってお｜隣《となり》さんだし。ちょくちょくお｜邪魔《じゃま》するから。¦Well, we're neighbours. I'll be popping over all the time.¦1¦1mcp¦mookeee¦sundown¦お隣さん",
+    "1bk6c\t2¦ただ｜会釈《えしゃく》をするだけなのに、｜妙《みょう》にしゃちほこ｜張《ば》ってしまった。¦It was just a simple greeting, but somehow I got strangely tense.¦1¦1mcu¦mookeee¦¦しゃちほこ張って",
+    "1bk6w\t1¦｜整《ととの》えられた｜長机《ながづくえ》、いくつかのパイプ｜椅子《いす》、｜壁《かべ》の｜掲示板《けいじばん》にはカレンダーとプリント｜数枚《すうまい》が｜張《は》られている。¦There were long desks lined up, several pipe chairs, and stuck on the bulletin board were a calendar and several printouts.¦¦1m9r¦mookeee¦¦パイプ椅子",
+    "1bk76\t1¦「おい。走ると危ないぞ」「え？・・・わっ、わ、うわわ〜〜〜っ」「あーあー、言わんこっちゃない」¦\"Hey! It's dangerous to run here.\" \"Eh? ... A-a-Aaah!!\" \"Oh dear, what did I tell you?\"¦3¦1m7y¦fcbond¦fcbond¦言わんこっちゃない",
+    "1bk80\t1¦｜私《わたし》はホットコーヒーに｜氷《こおり》を｜入《い》れるのが｜好《す》きです。｜大抵《たいてい》｜熱《あつ》すぎるので。¦I like to put an ice cube into my coffee, because it's usually too hot.¦1¦3bqn¦mookeee¦CM¦ホットコーヒー",
     "1bk8u\t1¦｜彼《あれ》は｜迫害者《はくがいしゃ》を｜懲《こ》らしめて｜人民《じんみん》たちのあだを｜討《う》つだろう。¦He will avenge the people on their oppressor.¦1¦264t¦¦¦あだを討つ\t1¦｜彼《あれ》は｜死《し》んだ｜父《ちち》のかたきを｜討《う》った。¦He avenged his dead father.¦1¦2a54¦¦Eldad¦かたきを討った",
     "1bk94\t1¦｜笑《わら》いで｜誤魔化《ごまか》すと、｜亜《あ》｜美《び》さんはさも｜不機嫌《ふきげん》そうに｜眉《まゆ》を｜寄《よ》せた。¦Ami frowned in a very un-amused way as I brushed her off with a laugh.¦1¦1mn8¦mookeee¦¦眉を寄せた",
     "1bk9e\t1¦｜特《とく》に、｜調和平均《ちょうわへいきん》の｜実際《じっさい》の｜使用例《しようれい》としては、「｜平均速度《へいきんそくど》」が｜主《おも》に｜取《と》り｜上《あ》げられ、｜説明《せつめい》がそこで｜終《お》わってしまうのが｜通例《つうれい》である。¦In particular, it is customary for actual examples of use of the harmonic mean to generally cover \"average speed,\" and explain no further than that.¦2¦1mil¦e4zh1nmcz¦peterius¦平均速度",
@@ -25,6 +39,7 @@ export const PIECE: WordsPiece = {
     "1bkxk\t1¦では、CGを｜作《つく》る｜場合《ばあい》はどのように｜光源《こうげん》を｜使用《しよう》すればよいのであろうか。¦Then, when you're making CG, how should you use light sources?¦1¦1lc5¦fcbond¦fcbond¦CG",
     "1bky4\t1¦ジョーンズ｜先生《せんせい》はコンピューターサイエンスを｜教《おし》えています。¦Mrs. Jones is teaching computer science.¦4¦4mcd¦bunbuku¦CN¦コンピューターサイエンス",
     "1bl2k\t1¦自慢じゃないが僕は通知表の家庭科で３以上を取ったことがない。１０段階評価で。¦I don't want to boast, but I've never gotten better than a 3 on my report card for home economics. Out of 10 that is.¦1¦1mb1¦mookeee¦pip¦段階評価",
+    "1bl4i\t1¦そうじゃない。｜性差別《せいさべつ》やら｜女性蔑視《じょせいべっし》やら、そういうものとは｜関係《かんけい》なく、｜男《おとこ》と｜女《おんな》は｜違《ちが》うんだ。¦That's not what I mean. Sex discrimination, female discrimination, whatever, men and women are just different.¦¦1mas¦mookeee¦blay_paul¦女性蔑視",
     "1bl6g\t1¦だが｜実際《じっさい》は、すべての｜大発見《だいはっけん》｜家《いえ》は｜夢想家《むそうか》とみなされてきた。¦As a matter of fact, all great discoverers have been regarded as dreamers.¦3¦4d9f¦¦mcq¦家",
     "1bl7a\t1¦この｜頃《ごろ》｜私《わたし》は｜退屈《たいくつ》しのぎに｜庭造《にわづく》りをしています。¦I am gardening these days just to kill time.¦¦4r7y¦¦CK¦庭造り",
     "1bl7k\t1¦彼女は３カ国語も話すことができる。¦She can speak three languages.¦3¦206g¦¦CK¦カ",
@@ -170,6 +185,7 @@ export const PIECE: WordsPiece = {
     "1bws8\t1¦あなたは｜別《べつ》として、｜我々《われわれ》は｜皆《みな》｜貧《まず》しい。¦Apart from you, we are all poor.¦1¦4yp0¦¦Lumi_alt¦別として",
     "1bwsi\t1¦｜後《うし》ろ｜指《ゆび》を｜指《さ》されるようなことなど、｜決《けっ》してしていないよ。¦I've never done the kind of thing people would talk about behind my back.¦3¦3qhp¦¦¦後ろ指を指される",
     "1bwss\t1¦｜国家《こっか》を｜挙《あ》げて｜貧困《ひんこん》との｜闘《たたか》いに｜取《と》り｜組《く》んでいる。¦The whole nation is waging a war against poverty.¦1¦3pk7¦¦¦国家を挙げて",
+    "1bwvu\t1¦｜夫《おっと》との｜間《あいだ》に｜波風《なみかぜ》が｜立《た》つのが｜恐《こわ》くて、｜愛人《あいじん》の｜存在《そんざい》は｜知《し》らない｜振《ふ》りをしています。¦I'm afraid of discord arising with my husband so I'm turning a blind eye to his mistress.¦1¦1lbp¦fcbond¦fcbond¦知らない振り",
     "1bww4\t1¦｜彼女《かのじょ》は｜彼《あれ》がほかの｜女《おんな》の｜子《こ》と｜歩《ある》いているのを｜見《み》て｜焼《や》きもちをやいた。¦It made her jealous to see him walking with another girl.¦2¦1vir¦bunbuku¦CK¦焼きもちをやいた",
     "1bwx8\t1¦「なに、アンタ｜疑《うたが》ってんの」「だ、だってそんな、いきなり｜魔界《まかい》とか｜魔族《まぞく》とか、｜信《しん》じろという｜方《ほう》がおかしいよ」¦\"What? Are you doubting us?\" \"B-but, that is, suddenly 'spirit world', 'magical beings' - it's strange to ask me to believe.\"¦1¦1m4e¦fcbond¦fcbond¦魔族",
     "1bx28\t1¦｜私《わたし》のガーメントバッグはみつからないのです。¦I can't find my garment bag.¦4¦3ipy¦¦CK¦ガーメント",
@@ -184,24 +200,5 @@ export const PIECE: WordsPiece = {
     "1bx6y\t1¦｜車《くるま》は｜草地《くさち》に｜飛《と》び｜込《こ》み、しばらくガクンガクンと｜走《はし》って｜止《と》まったのです。¦The car dove into the field and, after bumping along for a time, came to a halt.¦3¦1lms¦fcbond¦fcbond¦ガクンガクンと",
     "1bx8w\t1¦｜君《きみ》はできる｜限《かぎ》り｜早《はや》く｜家《いえ》に｜帰《かえ》った｜方《ほう》がいい。¦You'd better go home as soon as possible.¦3¦3t2t¦¦CK¦できる限り早く",
     "1bx9q\t1¦「じゃ留年しなかったら付き合ってくれんの？」「タラレバ話って好きじゃないの」¦\"So, you'll go out with me if I don't have to repeat a year?\" \"I don't care for 'what if' stories.\"¦3¦1l5o¦fcbond¦fcbond¦タラレバ",
-    "1bxak\t1¦「お｜見事《みごと》、よくやった」と｜小川《おがわ》｜選手《せんしゅ》を｜褒《ほ》め｜称《たた》える｜報道《ほうどう》が｜多《おお》かった。¦There were many journalists who praised Ogawa with, \"bravo, good show!\"¦1¦1l6a¦fcbond¦fcbond¦お見事",
-    "1bxhs\t1¦イースト｜菌《きん》がパン｜生地《きじ》を｜膨《ふく》らます。¦Yeast makes dough rise.¦1¦4x08¦¦CM¦イースト菌",
-    "1bxj6\t1¦その｜中毒者《ちゅうどくしゃ》は｜麻薬《まやく》の｜過剰摂取《かじょうせっしゅ》で｜死《し》んだ。¦The addict died from a drug overdose.¦1¦1m44¦fcbond¦fcbond¦過剰摂取",
-    "1bxkk\t1¦その｜中毒者《ちゅうどくしゃ》は｜麻薬《まやく》の｜過剰摂取《かじょうせっしゅ》で｜死《し》んだ。¦The addict died from a drug overdose.¦1¦1m44¦fcbond¦fcbond¦中毒者",
-    "1bxoq\t1¦｜彼《あれ》は｜自分《じぶん》のやった｜誤《あやま》りを｜気《き》にやんだ。¦He brooded over the mistake he made.¦¦292m¦¦¦気にやんだ",
-    "1bxrs\t1¦｜彼女《かのじょ》はちょっと｜首《くび》をかしげて、｜黙然《もくぜん》と｜立《た》っていた。¦She stood silently, her head tilted slightly to one side.¦1¦1z2k¦KK_kaku_¦TheDQN¦黙然と",
-    "1by5e\t1¦｜個体発生《こたいはっせい》は｜系統発生《けいとうはっせい》を｜繰《く》り｜返《かえ》す。¦Ontogeny recapitulates phylogeny.¦1¦1m3z¦fcbond¦fcbond¦系統発生",
-    "1bz3u\t1¦｜彼《あれ》は｜自分《じぶん》の｜失敗《しっぱい》を｜運《うん》の｜悪《わる》さのせいにしている。¦He ascribes his failure to bad luck.¦¦28yu¦¦¦運の悪",
-    "1bz44\t1¦｜新進作家《しんしんさっか》の｜登場《とうじょう》でその｜老《ろう》｜作家《さっか》は｜影《かげ》の｜薄《うす》い｜存在《そんざい》となった。¦With the appearance of a promising new writer, the aging novelist fell from prominence.¦1¦342y¦¦¦影の薄い",
-    "1bz8a\t1¦あいつは｜我《が》の｜強《つよ》いやつだ。¦He is a self-willed fellow.¦1¦511e¦¦¦我の強い",
-    "1bzbw\t1¦それはずいぶん｜気《き》の｜長《なが》い｜話《はなし》だ。¦It's a very slow business.¦5¦4ekc¦small_snow¦AlanF_US¦気の長い",
-    "1bzeo\t1¦あいつは｜口《くち》のうまいやつだ。¦He has a smooth tongue.¦4¦5118¦small_snow¦CM¦口のうまい",
-    "1bzey\t1¦あいつは｜口《くち》の｜悪《わる》いやつだ。¦He has a sharp tongue.¦4¦5117¦small_snow¦CM¦口の悪い",
-    "1bzia\t1¦｜世界《せかい》が｜一丸《いちがん》となって｜気候変動《きこうへんどう》の｜問題《もんだい》に｜取《と》り｜組《く》む｜必要《ひつよう》がある。¦The whole world needs to tackle the problem of climate change together.¦2¦1lk7¦fcbond¦fcbond¦気候変動",
-    "1bzrg\t1¦｜護教論《ごきょうろん》には｜興味《きょうみ》ないんだ。¦I'm not interested in apologetics.¦1¦1m2o¦fcbond¦fcbond¦護教論",
-    "1bzv2\t1¦アフィ｜狙《ねら》いの｜釣《つ》り｜記事《きじ》ですね。｜英語《えいご》｜関係《かんけい》のコミュのあちこちにマルチポストしています。¦It's a troll trying for click-throughs. It's being multiposted in English-related communities all over the place.¦¦1m14¦fcbond¦fcbond¦マルチポスト",
-    "1bzzs\t1¦うそをついたことで｜気《き》がとがめている。¦I feel guilty about having told a lie.¦5¦4w4u¦¦¦気がとがめている",
-    "1c0s4\t1¦サミットって、主要国首脳会議のことなんですか？¦By summit, do you mean the Group of Seven?¦2¦1m3g¦fcbond¦stephenmk¦主要国首脳会議",
-    "1c0zw\t1¦｜英語話者《えいごわしゃ》に｜通《つう》じなきゃ｜意味《いみ》ないぞ。¦That means nothing if English speakers don't understand it.¦4¦1m3d¦fcbond¦fcbond¦英語話者",
   ],
 };

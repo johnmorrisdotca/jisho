@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 68 of 316, from "きっちんぺ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 68 of 316, from "きっちんど". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "キッチンドリンカー\t\t#mbdo\t¦alcoholic housewife",
+    "キッチンナイフ\t\t#1ox4f\t¦kitchen knife",
+    "キッチンバサミ\t\tU#1pi3o\tuk¦kitchen scissors¦cooking shears",
+    "キッチンばさみ\tキッチン鋏\tU#1pi3o\tuk¦kitchen scissors¦cooking shears",
     "キッチンペーパー\t\t#1fxq0\t¦paper towel¦kitchen paper¦kitchen roll",
     "キッチンようひん\tキッチン用品\t#1p46r\t¦kitchenware¦kitchen utensils",
     "キッチン・カー\t\t#1ot6c\t¦food truck",
@@ -833,9 +837,5 @@ export const PIECE: WordsPiece = {
     "きふく\t忌服\t#142n0\t¦mourning",
     "きふくがた\t起伏型\t#1phsl\tling¦accented word in Japanese pitch accent",
     "きふくしき\t起伏式\t#1phsm\tling¦accented word in Japanese pitch accent",
-    "きふこうい\t寄付行為|寄附行為\t~m31#1242q\t¦deed of endowment or donation",
-    "きふじん\t貴婦人\t~m37#q84w\t¦lady¦noblewoman",
-    "きふじん\t貴腐人\t#194gu\tsl¦adult woman who likes comics about male homosexual love",
-    "きふだ\t木札\t#1ivic\t¦wooden tag",
   ],
 };

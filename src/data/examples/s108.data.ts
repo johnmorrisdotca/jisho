@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 109 of 144, from "12p2k". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 109 of 144, from "12o3". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,18 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "12o3k\t1¦｜眼鏡《めがね》の｜形《かたち》をしていることから、その｜橋《はし》を｜眼鏡橋《めがねばし》とよぶ。¦Since the bridge looks like a pair of glasses, they call it Meganebashi.¦1¦3xq1¦¦CK¦眼鏡橋",
+    "12o4e\t1¦あすの｜朝《あさ》までには｜一面《いちめん》の｜銀世界《ぎんせかい》になっているだろう。¦By tomorrow morning all the world will have been covered with snow.¦3¦50wm¦¦¦銀世界",
+    "12o4o\t1¦ニッケルは｜硬《かた》い｜銀白色《ぎんはくしょく》の｜金属《きんぞく》です。¦Nickel is a hard, silver-white metal.¦1¦49di¦KK_kaku_¦CM¦銀白色",
+    "12o5s\t1¦その｜女優《じょゆう》は｜銀行家《ぎんこうか》と｜婚約《こんやく》したといった。¦The actress said that she was engaged to a banker.¦3¦4hih¦¦CK¦銀行家",
+    "12o62\t1¦「動くな、全員！」と銀行強盗は叫んだ。¦The bank robber shouted, \"Stay where you are, all of you!\"¦2¦529g¦e4zh1nmcz¦CK¦銀行強盗",
+    "12o7q\t1¦｜銀河系《ぎんがけい》には｜無数《むすう》の｜星《ほし》がある。¦There are innumerable stars in the galaxy.¦¦3uky¦¦Zifre¦銀河系",
+    "12ofi\t1¦ジャイアンツは２０点差で試合に負けた。¦The Giants lost the game by 20 points.¦3¦4ml2¦KK_kaku_¦Swift¦点差",
+    "12oq2\t1¦それは犯罪行為です。本当に罰せられますよ！¦That is a criminal offense, and you will surely be punished!¦1¦4e4u¦¦orcrist¦犯罪行為",
+    "12oxu\t1¦｜法学《ほうがく》を｜学《まな》んでいる｜学生《がくせい》が｜皆《みな》｜法律家《ほうりつか》になれるというわけではない。¦Not every student studying law can be a lawyer.¦2¦1rss¦¦CK¦法律家",
+    "12oy4\t1¦そしてこの｜法律案《ほうりつあん》が｜通《とお》らなかった｜場合《ばあい》において、おまえはどういう｜責任《せきにん》をとるのだ。¦And how will you take responsibility in the case that this bill doesn't pass?¦1¦1l9f¦fcbond¦fcbond¦法律案",
+    "12ozi\t1¦｜彼《あれ》は｜法科《ほうか》の｜学生《がくせい》だ。¦He is an undergraduate in the law department.¦3¦256y¦small_snow¦CM¦法科",
+    "12p20\t1¦この｜法律《ほうりつ》が｜定《さだ》めたのは、｜法貨《ほうか》｜以外《いがい》での｜賃金《ちんぎん》｜支給《しきゅう》は｜違法《いほう》だということです。¦What these acts said was that it was illegal to pay someone in anything other than coin of the realm.¦1¦4pm8¦¦¦法貨",
     "12p2k\t1¦｜教区《きょうく》｜牧師《ぼくし》は｜法話《ほうわ》の｜時《とき》しばしば｜聖書《せいしょ》に｜言及《げんきゅう》する。¦The vicar often refers to the Bible in his sermon.¦1¦3v1y¦¦mcq¦法話",
     "12p3o\t1¦｜嘘《うそ》ではないにしろ、ホラに｜近《ちか》い。¦If not a lie, close to a boast.¦¦1mwh¦mookeee¦¦ホラ",
     "12p3y\t1¦｜彼《あれ》はほら｜吹《ふ》きで、｜言《い》ったことの｜半分《はんぶん》もやったことがない。¦He talks big but he's never done half the things that he said he has.¦¦2dko¦¦¦ほら吹き",
@@ -210,17 +222,5 @@ export const PIECE: WordsPiece = {
     "13768\t1¦ほ｜乳《ちち》｜瓶《びん》を｜煮沸消毒《しゃふつしょうどく》しなさい。¦Boil the milk bottles.¦1¦474a¦¦CM¦煮沸消毒",
     "1379a\t1¦｜彼女《かのじょ》は｜赤《あか》の｜他人《たにん》です。¦She is a total stranger to me.¦3¦204c¦bunbuku¦CK¦赤の他人",
     "137bs\t1¦コレステロールをためたくなかったら、｜脂肪《しぼう》のない｜赤身《あかみ》の｜肉《にく》を｜食《た》べるのがよい。¦If you want to avoid cholesterol, eat lean meat with no fat.¦¦4otm¦¦CK¦赤身",
-    "137fy\t1¦｜彼《あれ》は｜赤葡萄酒《あかぶどうしゅ》を｜一杯《いっぱい》｜飲《の》んだ。¦He drank a glass of red wine.¦¦27ju¦¦CK¦赤葡萄酒",
-    "137nq\t1¦｜陰徳《いんとく》あれば｜陽報《ようほう》あり。¦Secret gifts are openly rewarded.¦1¦42jx¦¦gin¦陽報",
-    "137oa\t1¦｜空手《からて》は｜武器《ぶき》を｜用《もち》いない｜護身術《ごしんじゅつ》である。¦Karate is an art of unarmed defense.¦¦3ud7¦¦Zifre¦護身術",
-    "137sg\t1¦｜仕事《しごと》を｜生半可《なまはんか》に｜知《し》っている｜人《じん》が｜書《か》くことは、できれば｜避《さ》けたい。¦I'd rather not have those written by people who only know their work imperfectly.¦¦1lb7¦fcbond¦fcbond¦生半可に",
-    "137ue\t1¦これは｜実物《じつぶつ》そっくりだ、｜生《い》き｜写《うつ》しだ。¦This is the spitting image of the real thing, perfectly true to life.¦3¦4ofb¦¦¦生き写し",
-    "137w2\t1¦｜生《い》き｜地獄《じごく》は、｜言《い》い｜過《す》ぎだと｜私《わたし》も｜思《おも》う。¦I also think 'living hell' is putting it too strongly.¦1¦1lbd¦fcbond¦fcbond¦生き地獄",
-    "137zo\t1¦その｜詩人《しじん》が｜言《い》っているように｜生兵法《なまびょうほう》は｜大《おお》けがのもとだ。¦As the poet says, a little learning is a dangerous thing.¦1¦4i31¦¦papabear¦生兵法",
-    "1383u\t1¦｜生活水準《せいかつすいじゅん》は｜上《あ》がるべきである。¦Living standards should be higher.¦2¦326p¦¦CK¦生活水準",
-    "1384e\t1¦｜車《くるま》も｜何《なに》もなく、｜生活保護《せいかつほご》で｜生《い》きてます。¦I'm living on welfare, without a car or anything.¦1¦1lnq¦fcbond¦fcbond¦生活保護",
-    "13858\t1¦これがアメリカ｜風《ふり》の｜生活様式《せいかつようしき》だ。¦This is the American way of life.¦3¦4ozp¦¦CK¦生活様式",
-    "1386w\t1¦｜彼女《かのじょ》は｜生《う》まれ｜故郷《こきょう》に｜埋葬《まいそう》された。¦She was buried in her hometown.¦1¦1w67¦bunbuku¦CK¦生まれ故郷",
-    "1387q\t1¦｜生計費《せいけいひ》は｜昨年《さくねん》うなぎ｜上《のぼ》りでした。¦The cost of living has shot through the ceiling in the last year.¦3¦326b¦¦CK¦生計費",
   ],
 };

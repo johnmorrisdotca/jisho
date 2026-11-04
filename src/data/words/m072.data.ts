@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 73 of 172, from "hoge". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 73 of 172, from "hobby ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,35 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "hobby horse\tたけうま|ちくば",
+    "hobbyist\tしゅみじん",
+    "hobbyists\tどうじんゲーム|どうじんソフト",
+    "hobo\tホーボー|めいけんロンドンものがたり",
+    "hoc\tばあたり|りんきおうへん|アドホック|アド・ホック|アドホックモード|アドホック・モード|トクリュウ|とくりゅう",
+    "hoc approach\tりんきおうへん",
+    "hochstetteri\tタカヘ",
+    "hock\tホック|ひせつ",
+    "hock white\tホック",
+    "hockey\tホッケー|アイスホッケー|アイス・ホッケー|ゴール|アイシングザパック|アイシング・ザ・パック|フィールドホッケー|フィールド・ホッケー|フッキング|ローラーホッケー|ローラー・ホッケー|ゴールテンダー|ひょうきゅう|アイホ|ホッケーリンク|ホッケー・リンク|アイススレッジホッケー|アイス・スレッジ・ホッケー|パラアイスホッケー|パラ・アイス・ホッケー",
+    "hockey etc\tゴール",
+    "hodge\tバイキング|よりあいじょたい",
+    "hodge podge\tバイキング|よりあいじょたい",
+    "hodgepodge\tにこみ",
+    "hodgkin's\tホジキンびょう|ひホジキンリンパしゅ|ホジキンリンパしゅ",
+    "hodgson\tしょうこうし",
+    "hodgson's\tくまたか|クマタカ|くろあかこうもり|クロアカコウモリ",
+    "hodgsoni\tびんずい|ビンズイ",
+    "hodgsonii\tチルー|チベットかもしか|チベットカモシカ",
+    "hodo\tふくじょし|ほうどうステーション|ほうステ",
+    "hodophilax\tやまいぬ|ヤマイヌ|にほんオオカミ|にほんおおかみ|ニホンオオカミ",
+    "hoe\tくわ|フェ|フェー|いっちょう|ふろ|がんづめ|くわがた|クワガタ|こくわ|くわはじめ|びっちゅうぐわ",
+    "hoe inkstick\tいっちょう",
+    "hoe spade\tふろ",
+    "hoefleri\tフォーバンディッドバタフライフィッシュ|フォーバンディッド・バタフライフィッシュ",
+    "hoes\tちょう",
+    "hoes oars\tちょう",
+    "hoffmann\tホフマンほうしき",
+    "hog\tホッグ|い|とんコレラ|ぶたコレラ|もりいのしし|モリイノシシ|こびといのしし|コビトイノシシ|あかかわいのしし|アカカワイノシシ|キティぶたばなこうもり|キティブタバナコウモリ|ぶたばなこうもり|ブタバナコウモリ|ぶたねつ",
     "hoge\tほげ",
     "hogehoge\tほげほげ",
     "hogera\tほげら",
@@ -327,7 +356,7 @@ export const PIECE: WordsPiece = {
     "homosexual love\tどうせいあい",
     "homosexual relationship\tせめ|あにき|アニキ|シスター",
     "homosexual's\tにやけ|にゃけ",
-    "homosexuality\tどうせいあい|にゃくどう|じゃくどう|ホモセクシュアリティ|ホモセクシュアリティー|だんしょく|なんしょく|しゅうどう|しゅどう|わかしゅどう|びどう|ボーイズラブ|ボーイズ・ラブ|ビーエルコミック|ガールズラブ|ガールズ・ラブ|ビー・エル|ビーエル|ジー・エル|ジーエル",
+    "homosexuality\tどうせいあい|そのけ|そのケ|にゃくどう|じゃくどう|ホモセクシュアリティ|ホモセクシュアリティー|だんしょく|なんしょく|しゅうどう|しゅどう|わかしゅどう|びどう|ボーイズラブ|ボーイズ・ラブ|ビーエルコミック|ガールズラブ|ガールズ・ラブ|ビー・エル|ビーエル",
     "homosexuals\tゲイボーイ|ゲイ・ボーイ",
     "homosocial\tホモソーシャル",
     "homothetic\tそうじひ",
@@ -637,29 +666,5 @@ export const PIECE: WordsPiece = {
     "hosoda\tほそだは",
     "hosoi\tじょこうあいし",
     "hosonoi\tあずみとがりねずみ|アズミトガリネズミ|しろうまとがりねずみ|シロウマトガリネズミ|しなのほおひげこうもり|シナノホオヒゲコウモリ",
-    "hospice\tホスピス",
-    "hospitable\tあつい|ていちょう",
-    "hospital\tびょういん|ホスピタル|びょうしゃ|にゅういんちゅう|いんちょう|みまう|いんない|びょうとう|いきょく|か|たいいん|びょうしつ|びょうしょう|やっきょく|つういん|はんそう|かんごし|さんいん|せいしんびょういん|おおべや",
-    "hospital bed\tびょうしょう",
-    "hospital etc\tしょしん",
-    "hospital institution\tいんちょう",
-    "hospital night\tがいはく",
-    "hospital nurse\tかんごし",
-    "hospital outpatient\tつういん",
-    "hospital pharmacy\tやっきょく",
-    "hospital regularly\tつういん",
-    "hospital room\tびょうしつ|おおべや",
-    "hospital ward\tおおべや|びょうとう",
-    "hospitalisation\tにゅういん",
-    "hospitalism\tホスピタリズム",
-    "hospitality\tもてなし|おもてなし|ゆうぐう|あいそ|あいそう|ゆうたい|かんたい|ホスピタリティー|ホスピタリティ|きゃくあつかい|きょうしゅく|おおばんぶるまい|せっきゃくぎょう|しゅうきゃくこうりゅう|きゃくずき|ひょうきほうのきょようせい|ひょうきほうのてんかいせい|きゃくあしらい|せいぶぶんりだいがく",
-    "hospitality etc\tきょうしゅく",
-    "hospitalization\tにゅういん|はんそう|エンディングノート|エンディング・ノート|ちょうきにゅういん|けんさにゅういん",
-    "hospitalized\tやくがいヤコブびょうそしょう",
-    "hospitallers\tヨハネきしだん",
-    "hospitals\tびょうしんれんけい|テレビカード|テレビ・カード|とくていきのうびょういん|せきじゅうじびょういん|とうきょうせいしんびょういんきょうかい|びょういんれんめい|にほんせいしんかびょういんきょうかい",
-    "hosso\tほっそうしゅう|ほうそうしゅう|ゆいしきしゅう",
-    "hossu\tほっす",
-    "host\tホスト|しゅくしゅ|やどぬし|しゅじん|しかい|ていしゅ|ナビゲーター|ナビゲータ|しゅじんやく|おやプログラム|じょうい|りっこうほ|しょうち|アフター|トーク|ホステス|さんぐん|しゅかく|しゅきゃく|ゲイボーイ",
   ],
 };

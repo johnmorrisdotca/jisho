@@ -321,7 +321,7 @@ export const PIECE: WordsPiece = {
     "0nlem\t\tパートタイム|パート・タイム\tadj-no,n¦¦part-time (work)¦フルタイム・1",
     "0nlew\tパートタイム従業員\tパートタイムじゅうぎょういん\tn¦¦part time employee",
     "0nlf6\t\tパートナー|パートナ~sk\tn¦¦(dance) partner\tn¦¦(work) partner\tn¦¦partner¦spouse",
-    "0nlfg\t\tパートナーシップ\tn¦¦partnership",
+    "0nlfg\t\tパートナーシップ\tn¦¦partnership\tn¦¦(same-sex) partnership",
     "0nlfq\t\tパードレ|パーデレ\tn¦Christn¦padre¦por~",
     "0nlg0\t\tパーフェクト\tadj-na,n¦¦perfect\tn¦abbr,baseb¦perfect game¦パーフェクトゲーム",
     "0nlga\t\tパーフェクトゲーム|パーフェクト・ゲーム\tn¦baseb¦perfect game¦完全試合",
@@ -1240,6 +1240,5 @@ export const PIECE: WordsPiece = {
     "0nt8k\t\tフットライト\tn¦¦footlights¦limelight",
     "0nt8u\t\tフットワーク\tn¦sports¦footwork\tn¦¦mobility¦flexibility¦adaptability",
     "0nt94\tフッ素|弗素~rK|ふっ素~sK\tふっそ|フッソ~sk\tn¦¦fluorine (F)",
-    "0nt9e\t\tふふふ|フフフ|ふふ|フフ|ふふっ~sk|フフッ~sk|フフフッ~sk\tint¦¦ha ha ha¦hee hee hee",
   ],
 };

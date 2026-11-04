@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 29 of 144, from "0qcm". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 29 of 144, from "0qcdo". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,17 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0qcdo\t1¦｜時《とき》を｜移《うつ》さず｜救急車《きゅうきゅうしゃ》がやってきた。¦An ambulance arrived immediately.¦1¦388n¦¦CK¦救急車",
+    "0qcf2\t1¦その｜老人《ろうじん》は｜貧民《ひんみん》｜救済《きゅうさい》に｜多額《たがく》の｜金《かね》を｜寄付《きふ》した。¦The old man contributed a large sum of money to the poor.¦1¦4f0w¦¦CK¦救済",
+    "0qcfw\t1¦｜彼《かれ》らはヘリコプターで｜救出《きゅうしゅつ》された。¦They were rescued by helicopter.¦1¦23dk¦¦CK¦救出",
+    "0qcgg\t1¦｜彼《あれ》はおぼれている｜少年《しょうねん》を｜救助《きゅうじょ》した。¦He rescued a boy from drowning.¦1¦2g58¦xtofu80¦CK¦救助",
+    "0qcha\t1¦｜彼《あれ》は｜自分《じぶん》が｜救世主《きゅうせいしゅ》だとかんがえた。¦He saw himself as the savior of the world.¦¦2953¦¦Zifre¦救世主",
+    "0qcie\t1¦その｜暑《あつ》さで｜気絶《きぜつ》して、｜気《き》がついたら｜救命《きゅうめい》いかだの｜中《うち》にいた。¦I fainted from the heat, and when I came to, I was in a life raft.¦1¦4hky¦¦CM¦救命",
+    "0qcji\t1¦｜朽《く》ちない｜物《もの》は｜何《なに》もない。¦There is nothing that does not decay.¦1¦3wqq¦¦shekitten¦朽ちない",
+    "0qcjs\t1¦いつか｜私《わたし》は｜一人《ひとり》｜寂《さび》しく｜朽《く》ち｜果《は》てているだろう。¦Some day they will find me lying in neglect and decay.¦1¦4woq¦¦AlanF_US¦朽ち果てている",
+    "0qck2\t1¦｜求人広告《きゅうじんこうこく》には「｜女性《じょせい》を｜求《もと》む」とはっきり｜書《か》かれていた。¦The job advertisement specifically requested females.¦3¦3wqo¦¦fishda¦求む",
+    "0qckc\t1¦｜彼《あれ》は｜我々《われわれ》の｜求《もと》めに｜応《おう》じて｜歌《うた》った。¦He sang at our request.¦1¦2c77¦¦¦求め",
+    "0qckm\t1¦｜私《わたし》たちは｜平和《へいわ》を｜求《もと》めている。¦We are longing for peace.¦3¦3jfs¦¦CK¦求めている\t1¦｜救助《きゅうじょ》された｜難民《なんみん》は｜自由《じゆう》を｜求《もと》めていた。¦The rescued refugees were longing for freedom.¦1¦3wqv¦¦mccarras¦求めていた\t2¦｜彼《あれ》は｜私《わたし》に｜助《たす》けを｜求《もと》めてきた。¦He asked me for help.¦3¦29tl¦¦CK¦求めて\t2¦いつでも｜彼《あ》の｜援助《えんじょ》を｜求《もと》められます。¦You can always ask for his help.¦1¦4wk3¦¦CK¦求められます\t3¦｜彼《あれ》は｜職《しょく》を｜求《もと》めて｜東京《とうきょう》へやって｜来《き》た。¦He came to Tokyo in search of employment.¦3¦287f¦¦CK¦求めて\t3¦｜彼《あれ》はより｜良《よ》い｜生《なま》｜活《かつ》を｜求《もと》めてブラジルに｜移住《いじゅう》した。¦He immigrated to Brazil in search of a better life.¦2¦2d5o¦¦CK¦求めて\t3¦｜以下《いか》の｜方程式《ほうていしき》の｜解《かい》を｜求《もと》めよ。¦Find the solution to the following equation.¦3¦6xo21¦bunbuku¦JimBreen¦求め",
     "0qcm0\t1¦アンはヘンリーの｜求婚《きゅうこん》を｜受《う》け｜入《い》れた。¦Anne accepted Henry's proposal.¦3¦4x2t¦¦CN¦求婚",
     "0qcmk\t1¦｜彼女《かのじょ》の｜求婚者《きゅうこんしゃ》は｜皆《みな》｜彼女《かのじょ》の｜金《かね》が｜目当《めあ》てだった。¦Her suitors were all after her money.¦3¦20xm¦¦CM¦求婚者",
     "0qcne\t1¦これらの｜図式《ずしき》は｜求職《きゅうしょく》に｜関《かん》する｜様々《さまざま》なアプローチを｜示《しめ》している。¦These diagrams demonstrate different possible approaches to job seeking.¦3¦4o3a¦¦¦求職",
@@ -191,20 +202,5 @@ export const PIECE: WordsPiece = {
     "0qhz2\t1¦｜何《なに》も｜私《わたし》にそれをあきらめるように｜強制《きょうせい》することができない。¦Nothing can force me to give it up.¦3¦40t1¦¦CK¦強制",
     "0qi06\t1¦｜彼女《かのじょ》は｜強制的《きょうせいてき》に｜私《わたし》を｜一緒《いっしょ》に｜連《つ》れ｜出《だ》した。¦She forced me to go out with her.¦¦1xte¦¦CK¦強制的に",
     "0qi0q\t1¦｜彼《あれ》は｜父《ちち》にねだってとうとう｜新車《しんしゃ》を｜買《か》ってもらった。¦He finally talked his father into buying a new car.¦3¦25h1¦¦CK¦ねだって",
-    "0qi1k\t1¦｜強打者《きょうだしゃ》が｜簡単《かんたん》に｜凡退《ぼんたい》した。¦The slugger was easily put out.¦1¦3v9x¦¦mccarras¦強打者",
-    "0qi1u\t1¦｜強大《きょうだい》な｜権力《けんりょく》を｜有《ゆう》する｜大国《たいこく》が｜存在《そんざい》する｜限《き》り、｜戦争《せんそう》は｜避《よ》け｜難《にく》い。¦As long as there are sovereign nations possessing great power, war is inevitable.¦1¦3v9y¦¦shekitten¦強大な",
-    "0qi24\t1¦その｜男《おとこ》がスーザンからすべてのお｜金《かね》を｜強奪《ごうだつ》したのです。¦The man robbed Susan of all her money.¦1¦4gmt¦bunbuku¦CN¦強奪",
-    "0qi2e\t1¦｜先生《せんせい》は｜毎日《まいにち》の｜練習《れんしゅう》の｜大切《たいせつ》さを｜強調《きょうちょう》した。¦The teacher stressed the importance of daily practice.¦2¦316k¦bunbuku¦CK¦強調",
-    "0qi2y\t1¦この｜金属《きんぞく》は｜強度《きょうど》では｜鉄《てつ》に｜匹敵《ひってき》する。¦This metal is comparable to iron in strength.¦1¦4ril¦¦¦強度",
-    "0qi38\t1¦｜父《ちち》は｜強盗《ごうとう》と｜取《と》っ｜組《く》み｜合《あ》いをした。¦My father struggled with the robber.¦3¦1ta5¦bunbuku¦CK¦強盗\t2¦｜暴力団《ぼうりょくだん》は｜強盗《ごうとう》を｜計画《けいかく》していた。¦The gang was planning a robbery.¦2¦1rnh¦¦CK¦強盗",
-    "0qi42\t1¦｜強風《きょうふう》が｜陸《ろく》の｜方《ほう》へ｜吹《ふ》き｜始《はじ》めた。¦A strong wind began to set in.¦2¦3v8o¦¦shekitten¦強風",
-    "0qi5g\t1¦｜彼《あれ》はもっとはやくくるように｜我々《われわれ》に｜強要《きょうよう》した。¦He compelled us to come earlier.¦1¦2db0¦¦Dejo¦強要",
-    "0qi5q\t1¦たくさんのおもちゃを｜持《も》っていたが、｜強欲《ごうよく》から｜彼《あれ》はもっと｜欲《ほ》しがった。¦Although he had many toys, his greed made him want more.¦3¦4d9d¦¦CM¦強欲",
-    "0qi60\t1¦｜日本《にほん》の｜軍隊《ぐんたい》は｜非常《ひじょう》に｜強力《きょうりょく》だった。¦Japan's army was very powerful.¦1¦2mmd¦¦CK¦強力",
-    "0qi6k\t1¦｜彼《あ》の｜返報《へんぽう》は｜鼻《はな》への｜強烈《きょうれつ》なパンチだった。¦His answer was a hard punch on the nose.¦1¦2hn3¦¦¦強烈な",
-    "0qi6u\t1¦その｜音《おと》に｜赤《あか》ん｜坊《ぼう》はおびえた。¦The noise frightened the baby.¦¦4jpe¦bunbuku¦CK¦おびえた",
-    "0qi74\t1¦｜危険《きけん》などにひるまず、｜彼《あれ》は｜平気《へいき》でいる。¦He remains calm in the face of danger.¦3¦3xnf¦¦CK¦ひるまず",
-    "0qi7e\t1¦｜首相《しゅしょう》はおそらく｜辞任《じにん》するであろう。¦The premier is likely to resign.¦3¦36im¦¦CK¦おそらく",
-    "0qi7o\t1¦｜環境汚染《かんきょうおせん》についての｜恐《おそ》れは、｜人々《ひとびと》に｜発電所《はつでんしょ》の｜近《ちか》くに｜家《いえ》を｜建《た》てることを｜思《おも》いとどまらせた。¦Fear of pollution discouraged people from building homes near power plants.¦1¦3xw4¦¦BraveSentry¦恐れ",
   ],
 };

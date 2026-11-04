@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 30 of 219, from "0skhk". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 30 of 219, from "0skd". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,22 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0skd4\t終える|了える~sK|卒える~sK\tおえる\tv1,vt¦¦to finish¦to get through with¦to complete¦to bring (something) to an end\tv1,vt¦¦to graduate¦occ. written 卒える\tv1,vi¦rare¦to come to an end¦to end\taux-v,v1¦¦to finish doing ...¦to be done doing ...¦after the -masu stem of a verb",
+    "0skde\t終演\tしゅうえん\tn,vs,vi¦¦end of a performance",
+    "0skdo\t終刊\tしゅうかん\tn,vs,vi¦¦cessation of publication",
+    "0skdy\t終業\tしゅうぎょう\tn,vs,vi¦¦end of the work day¦close of business\tn,vs,vi¦¦end of the school term¦end of the school year",
+    "0ske8\t終局\tしゅうきょく\tn,adj-no¦¦end¦close¦conclusion\tn¦¦end of a game of go, shogi, etc.",
+    "0skei\t終結\tしゅうけつ\tn,vs,vi,adj-no¦¦end¦close",
+    "0skes\t終始\tしゅうし\tn¦¦beginning and end\tn,vs¦¦doing something from beginning to end¦being unchanged from beginning to end\tadv¦¦from beginning to end¦the whole time¦throughout¦consistently",
+    "0skf2\t終止\tしゅうし\tn,vs,vi¦¦termination¦cessation¦stop",
+    "0skfc\t終止形\tしゅうしけい\tn¦gramm¦plain form (of a Japanese verb or adjective)¦dictionary form¦predicative form",
+    "0skfm\t終止符\tしゅうしふ\tn¦¦full stop¦period\tn¦¦end¦終止符を打つ",
+    "0skfw\t終審\tしゅうしん\tn¦¦final trial",
+    "0skg6\t終身\tしゅうしん\tadj-f,n¦¦lifelong¦lifetime¦for life¦life",
+    "0skgg\t終身刑\tしゅうしんけい\tn¦¦life imprisonment¦life sentence",
+    "0skgq\t終身雇用制\tしゅうしんこようせい\tn¦¦(Japanese) system of lifetime employment",
+    "0skh0\t終戦\tしゅうせん\tn¦¦end of war¦cessation of hostilities",
+    "0skha\t終息|終熄~rK\tしゅうそく\tn,vs,vi¦¦cessation¦(coming to an) end",
     "0skhk\t終端\tしゅうたん\tn¦¦terminus¦terminal¦end edge",
     "0skhu\t終値|終わり値|終り値\tおわりね\tn¦finc¦closing price¦始値",
     "0ski4\t終着駅\tしゅうちゃくえき\tn¦¦terminal station",
@@ -967,19 +983,5 @@ export const PIECE: WordsPiece = {
     "0ss7w\t初冬\tしょとう|はつふゆ\tadv,n¦¦early winter\tadv,n¦obs¦tenth month of the lunar calendar",
     "0ss86\t初投稿\tはつとうこう\tn¦¦first (written) contribution¦first post (on a blog, social media, etc.)",
     "0ss8g\t初等\tしょとう\tadj-f¦¦elementary¦primary",
-    "0ss8q\t初頭\tしょとう\tn,adv¦¦beginning (of a century, etc.)",
-    "0ss90\t初日\tしょにち|しょじつ\tn,adv¦¦first day¦opening day",
-    "0ss9a\t初日\tはつひ\tn¦¦New Year's Day sunrise",
-    "0ss9k\t初日の出\tはつひので\texp,n¦¦first sunrise of the year¦sunrise on New Year's Day",
-    "0ss9u\t初乳\tしょにゅう\tn,adj-no¦¦colostrum¦foremilk¦first milk",
-    "0ssa4\t初任給\tしょにんきゅう\tn¦¦initial salary¦starting salary¦entry-level salary",
-    "0ssae\t初版\tしょはん\tn¦¦first edition",
-    "0ssao\t初犯\tしょはん\tn¦¦first offence¦first offense¦再犯\tn¦¦first offender¦first-time offender¦初犯者",
-    "0ssay\t初歩\tしょほ\tn,adj-no¦¦basics¦rudiments¦elements¦ABCs of ...",
-    "0ssb8\t初夢\tはつゆめ\tn¦¦first dream of the New year (believed to foretell one's luck)\tn¦arch¦dream on the night of setsubun¦節分・1",
-    "0ssbi\t初夜\tしょや|そや\tn¦¦bridal night¦first night\tn¦¦first watch of the night",
-    "0ssbs\t初恋|はつ恋\tはつこい\tn¦¦first love¦puppy love",
-    "0ssc2\t初老\tしょろう\tadj-no,n¦¦past middle age¦nearing old age¦near-elderly\tn¦¦age 40¦orig. meaning",
-    "0sscc\t所|処|處~sK\tところ|とこ~~所\tn,adv,suf¦¦place¦spot¦scene¦site¦also pronounced どころ when a suffix\tn,suf¦uk¦address\tn,suf¦uk¦district¦area¦locality\tn,suf¦uk¦one's house\tn,suf¦uk¦point¦aspect¦side¦facet¦いいとこ・1\tn,suf¦uk¦passage (in text)¦part\tn,suf¦uk¦space¦room\tn,suf¦uk¦thing¦matter\tn¦uk¦whereupon¦as a result¦after the plain past form of a verb\tn¦uk¦about to¦on the verge of¦after present form of a verb\tn¦uk¦was just doing¦was in the process of doing¦have just done¦just finished doing¦after past form of a verb\tn¦uk¦approximately¦around¦about¦after a quantity + が",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 16 of 70, from "傍らに寄". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 16 of 70, from "傍ら". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,11 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "傍ら\tかたわら",
+    "傍らに\tかたわらに",
+    "傍らに人なきがごとし\tかたわらにひとなきがごとし",
+    "傍らに人無きがごとし\tかたわらにひとなきがごとし",
+    "傍らに人無きが如し\tかたわらにひとなきがごとし",
     "傍らに寄る\tかたわらによる",
     "傍人\tぼうじん",
     "傍受\tぼうじゅ",
@@ -3014,9 +3019,5 @@ export const PIECE: WordsPiece = {
     "公刊\tこうかん",
     "公判\tこうはん",
     "公判前整理手続\tこうはんぜんせいりてつづき|こうはんまえせいりてつづき",
-    "公判前整理手続き\tこうはんぜんせいりてつづき|こうはんまえせいりてつづき",
-    "公判廷\tこうはんてい",
-    "公判日\tこうはんび",
-    "公判日程\tこうはんにってい",
   ],
 };

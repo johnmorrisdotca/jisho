@@ -6,6 +6,14 @@ All notable changes to this project are written here. The format follows
 
 ## [Unreleased]
 
+### Changed
+
+- **Safe mode no longer leaves out ordinary words** (MODULES-392; John, 2026-11-04: "we can't filter out regular good words"). 2.10.0 copied Kotoba's blunt gloss rule, which also took out a sense whose gloss only mentions sex, an erection of a building or an adulteration. Now it is Kotoba's narrowed rule (`adultGloss` and `ADULT_FIRST_GLOSS` in `scripts/children-bar.mjs` in Kotoba, kept in step here in `scripts/words-parse.mjs`): a sense is left out in safe mode only for JMdict's mark (vulgar, X-rated, sensitive, derogatory) or for a gloss that names a sex act, a sex organ or the sex trade (`sexual intercourse`, `to have sex`, `prostitute`, `penis`, `porn`, `rape`, `adultery`...), or whose first gloss is the mistress, the concubine or the nipple itself. Back in safe mode: 性別 "gender, (distinction of) sex", 異性 "the opposite sex", 同性 "same sex", 共学 "coeducation", 性教育 "sex education", 建立 "erection (of a building)", 組み立て, 造営, 混ぜ物 "adulteration", 混入, 不純 "adulterated", 挿入 "insertion", 菜の花 "rape blossoms", 愛人 "lover; mistress", 女将, 正室. Still out: セックス "sexual intercourse" (the sense; its "gender" sense stays), 売春, ポルノ, レイプ, 精液, 射精, 勃起, 乳首, 妾, 不倫, 性交, 娼婦 and the rest. Unfiltered mode is as it was. The data is made again from JMdict of 2026-11-04 (it was 2026-11-03) and the same Tatoeba files, so it holds that day's changes too:
+  - Senses left out by the gloss rule: 1,413 in 1,387 entries to 1,276 in 1,256 (137 senses back); 109 entries that had nothing else to say are found again.
+  - Rows of safe mode 263,857 to 263,987 (of 265,958; 1,971 rows left out whole, from 2,097); the common words 25,999 to 26,014.
+  - The package is smaller, not bigger: 86.77 to 86.71 MB unpacked (the build as `npm pack` sees it) and 27.71 to 27.69 MB to download.
+- Tests hold the narrowed rule to small entries (`src/words-build.test.js`: more than twenty ordinary glosses that stay, and the acts and organs that go) and to the real data (`src/words.test.ts`).
+
 ## [2.10.0] - 2026-11-04
 
 A minor version: nothing that 2.9.0 gave is taken away except, in safe mode, what children should not have been handed. Unfiltered mode is as it was.

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 42 of 172, from "deities ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 42 of 172, from "dehydrate". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,30 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "dehydrated\tかんそうやさい|むすいエタノール",
+    "dehydrating\tくすい",
+    "dehydration\tだっすい|だっすいしょう|だっすいしょうじょう|だっすいはんのう",
+    "dehydration abnormal\tだっすい",
+    "dehydration removal\tだっすい",
+    "dehydroacetic\tデヒドロさくさん",
+    "dehydroascorbic\tデヒドロアスコルビンさん",
+    "dehydrocholic\tデヒドロコールさん",
+    "dehydrogenase\tだっすいそこうそ|デヒドロゲナーゼ",
+    "dei\tオプスデイ|オプス・デイ|アニュスデイ|アニュス・デイ|アグヌスデイ|アグヌス・デイ",
+    "deicer\tゆうひょうえき",
+    "deicide\tかみごろし|かみころし",
+    "deicing\tじょひょう",
+    "deification\tしんか|しんかくか|みょうけんぼさつ",
+    "deified\tごじんか|へびがみ",
+    "deify\tまつる",
+    "deilephila\tべにすずめ|ベニスズメ",
+    "deimos\tダイモス|デイモス",
+    "deindustrialization\tディインダストリアライゼーション",
+    "deinonychus\tデイノニクス",
+    "deinstall\tとりのぞく",
+    "deionized\tイオンこうかんすい",
+    "deism\tりしん|りしんろん|しぜんしんきょう",
+    "deities\tにょらい|やしゃ|しちふくじん|にいなめさい|しんじょうさい|あいどの|あいでん|てんじんしちだい|ちじんごだい|しょてん|さんじゅうばんじん|しょそん|ごほうぜんじん|にいなめ|しんじょう|しんしょう|さんせんじん|さんてん|さんでん|きょうけんひん",
     "deities good\tしちふくじん",
     "deities sometimes\tやしゃ",
     "deity\tしんめい|かみ|かみさま|ぎせい|しゅごじん|しゅごしん|せんぐう|わかみや|ちんじゅ|さいじん|さいしん|かみだのみ|まもりがみ|うじがみ|ちんざ|いんし|かりどの|ごんでん|かるら|ぐんだり",
@@ -606,16 +630,5 @@ export const PIECE: WordsPiece = {
     "des\tアンデパンダン|さんいっち|デモイン|デ・モイン|ガレット・デ・ロワ|ガレットデロワ|フェーヴ|フェーブ|きぎょうけいえいけんきゅうじょ|こくさいけいざいしょうがくがくせいきょうかい|こくさいてつどうれんごう|こくさいどりょうこういいんかい|にしアフリカしょこくちゅうおうぎんこう|アイセック|こくさいむせんつうしんしもんいいんかい|どくりつとけいしアカデミー|ひゃっかぜんしょ|コムデギャルソン|コム・デ・ギャルソン|ガレッド・デ・ロワ",
     "desalinating\tしおだし|しおぬき",
     "desalination\tだつえん|ぞうすい|たんすいか|かいすいたんすいか|たんすいかプラント",
-    "desalting\tよびじお",
-    "descaling\tすきびき",
-    "descartes\tにんげんがくてきしょうめい",
-    "descend\tおりる|くだる|しずむ|みをおとす|あまくだる|かわをくだる|せをくだる|しゅらばる",
-    "descend e\tおりる",
-    "descendant\tしそん|まつえい|ばつえい|こうしゃ|のち|こういん|こうえい|びょうえい|まっそん|ばっそん|てんそん|こうそん|うじびと|うじひと|うじうど|ちょっけいひぞく|じょうそん|えい|こはな|らいそん",
-    "descendants\tすえ|まごこ|ばつりゅう|まつりゅう|ししそんそん|ししそんぞん|ちゃくそん|ひぞく|パーシじん|ひさべつぶらくみん|わけ|こうこつぎょこう|しそんはんえい|ざいにちかんこくちょうせんじん",
-    "descended\tちをひく|ながれをくむ|しんべつ|こうべつ|ばんべつ|しょばん|さとざくら|ぼたんざくら",
-    "descender\tディセンダ",
-    "descending\tふり|かこう|げざん|げさん|しょうこう|こうじゅん|やませ|ひこうそくめいぼしきひれいだいひょうせい|こうじゅんキー|かこうけっちょう|かこうろ|やませかぜ|くだりりゅう|くだりりょう|くだりかいだん|こうこうてん|こうべき|かこうだいどうみゃく|かこうこうがいどうみゃく",
-    "descending mountain\tげざん|げさん",
   ],
 };

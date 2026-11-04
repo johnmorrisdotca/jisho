@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 66 of 144, from "0uple". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 66 of 144, from "0upi". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,11 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0upiw\t1¦あの｜事故《じこ》を｜見《み》て｜自然《しぜん》の｜力《ちから》を｜痛感《つうかん》した。¦That accident brought home to me the power of nature.¦1¦4y73¦¦¦痛感",
+    "0upjg\t2¦｜彼《あ》の｜死《し》は｜我《わ》が｜社《しゃ》にとって｜大《おお》きな｜痛手《いたで》であった。¦His death was a great loss to our firm.¦1¦2if5¦KK_kaku_¦CM¦痛手",
+    "0upjq\t1¦｜彼女《かのじょ》は｜悲《かな》しさがあまりにも｜痛切《つうせつ》で｜涙《なみだ》も｜出《で》なかった。¦Her grief was too acute for tears.¦2¦1v9e¦¦¦痛切",
+    "0upk0\t1¦｜彼女《かのじょ》は｜痛風《つうふう》を｜病《や》んでいる。¦She is affected with the gout.¦3¦1vrn¦bunbuku¦¦痛風",
+    "0upl4\t1¦コーヒー｜通《つう》の｜人達《ひとたち》に｜結構《けっこう》｜評判《ひょうばん》がいいそうです。¦I hear that it has quite the reputation with coffee connoisseurs.¦1¦1n8i¦small_snow¦¦通\t2¦ここにあなたあての｜手紙《てがみ》が｜何《なに》｜通《つう》かあります。¦Here are some letters for you.¦4¦4t8g¦¦CK¦通",
     "0uple\t2¦６歳以上の子供は学校に通わなければならない。¦Children of six and above should attend school.¦3¦51dm¦e4zh1nmcz¦Eldad¦通わ",
     "0uply\t1¦カタログを｜通《つう》じて｜郵便《ゆうびん》で｜買《か》い｜物《もの》をすることによって、｜人々《ひとびと》は｜幅広《はばひろ》い｜商品《しょうひん》を｜選《えら》ぶことが｜出来《でき》る。¦Shopping by mail through catalogs gives people a wide choice of merchandise.¦2¦4uns¦arnab¦¦通じて\t2¦この｜国《くに》では｜年間《ねんかん》を｜通《つう》じて｜気温《きおん》の｜変動《へんどう》がほとんどない。¦This country has an even temperature throughout the year.¦2¦4r99¦¦Lumi_alt¦通じて",
     "0upm8\t1¦その｜道《みち》は｜駅《えき》に｜通《つう》じている。¦This road leads to the station.¦4¦4g1x¦¦CK¦通じている\t1¦このドアは｜書斎《しょさい》に｜通《つう》じている。¦This door leads to the study.¦1¦4sfs¦bunbuku¦CM¦通じている\t2¦この｜辺《へん》にはガスが｜通《つう》じてますか。¦Is gas available in this neighborhood?¦2¦4pnr¦¦CK¦通じてます\t2¦｜電話《でんわ》が｜通《つう》じません。¦The telephone doesn't work.¦4¦2o91¦¦CK¦通じません\t3¦｜彼《あれ》にはロシア｜語《ご》が｜通《つう》じる。¦He is learned in Russian.¦3¦2jrk¦¦¦通じる\t3¦｜私《わたし》は｜英語《えいご》で｜話《はなし》が｜通《つう》じた。¦I could make myself understood in English.¦4¦3e5x¦¦CN¦通じた\t3¦｜彼女《かのじょ》は｜電話《でんわ》が｜通《つう》じるとすぐ｜話《はな》し｜始《はじ》めた。¦She started talking as soon as she got through.¦3¦1vpz¦¦¦通じる\t4¦｜彼《あれ》は｜外国《がいこく》｜事情《じじょう》に｜通《つう》じている。¦He is well versed in foreign affairs.¦3¦2c2d¦¦sundown¦通じている\t4¦｜彼《あれ》は｜歴史《れきし》｜全体《ぜんたい》に｜通《つう》じている。¦He is well acquainted with history as a whole.¦2¦24bf¦¦¦通じている\t6¦｜彼《あれ》にはその｜冗談《じょうだん》が｜通《つう》じなかった。¦He could not see the joke.¦1¦2ewr¦small_snow¦sundown¦通じなかった\t9¦シェイクスピアは｜一時代《いちじだい》だけの｜人《じん》ではなくて、あらゆる｜時代《じだい》に｜通《つう》じる｜人《じん》であった。¦Shakespeare was not of an age but for all time.¦4¦2lhi¦¦corbinjurgens¦通じる\t13¦｜貨幣《かへい》は｜銀行《ぎんこう》｜制度《せいど》を｜通《つう》じて｜流通《りゅうつう》する。¦Money circulates through the banking system.¦1¦3zx4¦¦letsgolanguages¦通じて",
@@ -177,8 +182,5 @@ export const PIECE: WordsPiece = {
     "0usx4\t1¦｜皆《みな》が｜不法《ふほう》｜外国人《がいこくじん》に｜対《たい》して｜敵対的《てきたいてき》な｜態度《たいど》を｜取《と》った。¦Everybody took a hostile attitude toward illegal aliens.¦¦3yqv¦¦CK¦敵対",
     "0usyi\t1¦｜濡《ぬ》れたタオルから｜滴《しずく》が｜垂《た》れている。¦Water is dripping from the wet towel.¦¦49a8¦KK_kaku_¦CK¦滴",
     "0uszc\t1¦インキ｜補充《ほじゅう》｜瓶《びん》のキャップを｜外《そと》し、スポイトでインキを｜吸《す》い｜上《あ》げ、マーカーの｜吸収体《きゅうしゅうたい》へ｜適量《てきりょう》、｜滴下《てきか》してください。¦Remove the cap from the ink refill bottle, fill the dropper with ink, and drip an appropriate amount onto the marker's core.¦1¦1nav¦¦¦滴下",
-    "0uszw\t1¦その｜女性《じょせい》は｜非常《ひじょう》に｜協力的《きょうりょくてき》である。¦The women are very supportive.¦¦4hiv¦¦CK¦的",
-    "0ut06\t1¦｜私《わたし》は｜矢《や》を｜的《てき》に｜当《あ》てた。¦I hit the mark with the arrow.¦¦52mv¦mookeee¦CM¦的",
-    "0ut0g\t1¦｜禁酒法《きんしゅほう》のしかれていた｜時代《じだい》に、｜酒類《しゅるい》｜密輸入《みつゆにゅう》の｜悪《あく》どい｜商売《しょうばい》を｜腕《うで》ずくで｜自分《じぶん》の｜支配下《しはいか》におくために、てき｜屋《や》たちは、おたがいに｜殺《ころ》しあっていた。¦During prohibition days, racketeers used to rub each other out to get control of the rum-running racket.¦¦3uum¦¦papabear¦てき屋",
   ],
 };

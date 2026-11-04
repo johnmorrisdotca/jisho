@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 49 of 144, from "0sse". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 49 of 144, from "0ss9". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,15 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0ss90\t1¦｜初日《しょにち》から｜番狂《ばんくる》わせが｜多《おお》かった。¦There were many upsets right from the first day.¦1¦35t7¦¦¦初日",
+    "0ssae\t1¦初版は１０年前に出版された。¦The first edition was published ten years ago.¦2¦35t6¦¦CK¦初版",
+    "0ssao\t1¦｜裁判官《さいばんかん》は、それが｜初犯《しょはん》であることを｜考慮《こうりょ》に｜入《い》れた。¦The judge took into consideration the fact that it was his first offense.¦1¦3ndj¦¦CM¦初犯",
+    "0ssbs\t1¦かいつまんで｜話《はな》せば、｜彼《あれ》は｜初恋《はつこい》の｜人《じん》と｜結婚《けっこん》したのだ。¦To make a long story short, he married his first love.¦1¦4uqd¦bunbuku¦CM¦初恋",
+    "0ssc2\t1¦「夫は２年前に亡くなりました」と初老の女性は言った。¦\"My husband passed on two years ago,\" an elderly lady said.¦3¦527y¦mookeee¦Lepotdeterre¦初老",
+    "0sscc\t1¦さあ、｜今《いま》｜汲《く》みなさい。そして｜宴会《えんかい》の｜世話役《せわやく》の｜所《ところ》に｜持《も》っていきなさい。¦Now draw some out and take it to the master of the banquet.¦¦4ne0¦¦¦所\t4¦「そのうちに、あなたのところにお｜邪魔《じゃま》してもいいですか」「どうぞ、どうぞ」¦\"Do you mind if I call on you sometime?\" \"No, not at all.\"¦1¦52im¦mookeee¦CM¦ところ\t5¦｜驚《おどろ》かない｜所《ところ》をみると｜知《し》ってたのね。¦Seeing that you're not surprised, I think you must have known.¦1¦3uk¦bunbuku¦AlanF_US¦所\t8¦おじを｜見送《みおく》りに｜駅《えき》に｜行《おこな》ってきたところだ。¦I have been to the station to see my uncle off.¦4¦4voq¦bunbuku¦CK¦ところ\t9¦あっ、いけない！忘れるところだった！¦Oh, no! I almost forgot!¦3¦50to¦Sim5634¦Lumi_alt¦ところ",
+    "0sscm\t1¦「ところでよ、そのおめーのお父さんはどこにいんのさ？」「横転したトラックの下なんよ」¦\"By the way, where's your old man?\" \"Under that over-turned truck.\"¦3¦52h5¦mookeee¦¦ところで\t2¦ぶつくさ｜言《い》ったところでしょうがない。¦Complaining won't change anything.¦4¦1dmwl¦tommy_san¦CK¦ところで",
+    "0sscw\t1¦その｜祭《まつり》りはつまらないどころではありませんでした。¦The festival was far from dull.¦2¦4igd¦¦orcrist¦どころではありませんでした",
+    "0ssdq\t1¦これがいわゆる「｜天《てん》ぷら」というものです。¦This is what we call \"tempura\".¦5¦4ozn¦small_snow¦AlanF_US¦いわゆる",
     "0ssea\t1¦いったんポストに｜入《い》れたものは、｜郵便局《ゆうびんきょく》の｜所轄《しょかつ》になる。¦Once a thing is posted, it is in the care of the Post Office.¦1¦4wlx¦¦sundown¦所轄",
     "0ssek\t1¦｜彼女《かのじょ》は｜戦争《せんそう》について｜所感《しょかん》を｜述《の》べた。¦She expressed her sentiments on the war.¦2¦1w2u¦¦AlanF_US¦所感",
     "0sseu\t1¦いったんポストに｜入《い》れたものは、｜郵便局《ゆうびんきょく》の｜所管《しょかん》となる。¦Once a thing is posted, it is in the care of the Post Office.¦2¦4wlw¦¦sundown¦所管",
@@ -214,17 +223,5 @@ export const PIECE: WordsPiece = {
     "0swjq\t1¦｜我々《われわれ》の｜船《ふね》はその｜小島《こじま》に｜近《ちか》づいた。¦Our boat approached the small island.¦1¦3zp5¦¦CK¦小島",
     "0swkk\t1¦これらの｜小道具《こどうぐ》は｜役《やく》に｜立《た》ちそうにない。¦These gadgets seem to be of no use.¦3¦4o3m¦¦CM¦小道具",
     "0swku\t1¦｜俺《おれ》はおまえだろうと｜誰《だれ》だろうと、こづき｜回《まわ》されるような｜事《こと》はさせないぞ。¦I'm not going to be pushed around by you or anyone else.¦¦41cp¦¦CK¦こづき",
-    "0swl4\t1¦｜小脳《しょうのう》は｜血液《けつえき》の｜不断《ふだん》の｜供給《きょうきゅう》を｜必要《ひつよう》とする。¦The brain needs a continuous supply of blood.¦2¦35cg¦mookeee¦¦小脳",
-    "0swly\t1¦この｜小麦《こむぎ》は｜粉《こな》にされる。¦This wheat is made into flour.¦2¦4qmt¦¦¦小麦",
-    "0swm8\t1¦｜私《わたし》はこんがりと｜小麦色《こむぎいろ》に｜日焼《ひや》けした。¦I was browned to a nice tan.¦2¦3fzv¦¦¦小麦色",
-    "0swmi\t1¦｜麺《めん》はふつう｜小麦粉《こむぎこ》から｜作《つく》られる。¦Noodles are usually made from wheat.¦¦1pve¦¦CK¦小麦粉",
-    "0swn2\t1¦それじゃ｜猫《ねこ》に｜小判《こばん》だ。¦It is like casting pearls before swine.¦3¦4et3¦small_snow¦CM¦小判",
-    "0swnm\t1¦｜面疔《めんちょう》ができた。｜小鼻《こばな》の｜奥《おく》に1｜個《こ》、｜痛《いた》い｜塊《かたまり》がある。¦I have a facial boil. There's a painful lump at the back of one nostril.¦¦1l9j¦fcbond¦fcbond¦小鼻",
-    "0swoq\t1¦ライザは｜大変《たいへん》｜器用《きよう》なので、｜自分《じぶん》でネジや｜同《どう》じような｜小物《こもの》を｜作《つく》ることさえできる。¦Lisa is so skillful that she can even make screws and similar small objects for herself.¦¦44nx¦¦qdii¦小物",
-    "0swpu\t1¦｜彼《かれ》らはその｜少女《しょうじょ》は｜小柄《こがら》だと｜言《い》った。¦They described the girl as being small.¦1¦23jp¦¦CK¦小柄",
-    "0swrs\t1¦｜少年《しょうねん》はバットを｜小脇《こわき》に｜抱《かか》えている。¦The boy has a bat under his arm.¦¦353g¦¦CK¦小脇",
-    "0swsm\t1¦｜子供《こども》に｜少《すこ》し｜愛情《あいじょう》を｜注《そそ》いで｜見《み》｜給《たま》え、すると｜君《きみ》におびただしい｜愛情《あいじょう》が｜戻《もど》ってくる。¦Give a little love to a child, and you get a great deal back.¦3¦3m53¦¦Objectivesea¦少し\t2¦｜少《すこ》しテレビを｜見《み》てもいいですか。¦Do you mind if I watch TV for a while?¦4¦35bc¦¦CK¦少し",
-    "0swsw\t1¦｜彼《あれ》は｜少《すこ》しずつよくなっています。¦He is getting better bit by bit.¦3¦28c9¦bunbuku¦CK¦少しずつ",
-    "0swtg\t1¦コックさんは｜少《すこ》しもかけていない。¦The cook hasn't put any on it.¦4¦4sy2¦¦¦少しも",
   ],
 };

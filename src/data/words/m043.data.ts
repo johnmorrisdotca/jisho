@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 44 of 172, from "diasto". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 44 of 172, from "diaphragma". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,22 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "diaphragmatic\tふくしきこきゅう|おうかくまくヘルニア",
+    "diaphragmatic breathing\tふくしきこきゅう",
+    "diaphus\tはだかいわし|ハダカイワシ",
+    "diaphyseal\tだいたいこつこっかんぶこっせつ",
+    "diapsida\tそうきゅうあこう",
+    "diapsids\tそうきゅうるい",
+    "diarchy\tりょうとうせいじ",
+    "diaries\tおゆどののうえのにっき",
+    "diarrhea\tげり|り|げりピー|ゲリピー|しゃり|はきくだし|としゃ|しゃする|しゃす|りょこうしゃげり|はらをくだす|みずげり|しんとうあつせいげり|ぶんぴつせいげり|しんしゅつせいげり",
+    "diarrheal\tげりしょう",
+    "diarrhoea\tげり|くだりばら|はきくだし|としゃ",
+    "diary\tにっき|にっきちょう|てちょう|ダイアリー|スケジュールちょう|きにゅう|つける|えにっき|にっきぶんがく|ぬすみよみ|ごくちゅうにっき|たびにっき|ごくちゅうき|かんさつにっき|にっきをつける|こうかんにっき|まくらぞうし|まくらそうし|こきろく|ぎょうむにっし",
+    "diary etc\tきにゅう",
+    "diaspora\tディアスポラ",
+    "diaspore\tさんぷたい|ダイアスポア",
+    "diastase\tジアスターゼ|タカジアスターゼ|タカジヤスターゼ",
     "diastole\tかくちょうき",
     "diastolic\tさいていけつあつ|かくちょうきけつあつ",
     "diastrophism\tちかくへんどう",
@@ -394,7 +410,7 @@ export const PIECE: WordsPiece = {
     "dimmer\tちょうこうき|ちょうこう",
     "dimness\tかすみ|こくらがり",
     "dimness sight\tかすみ",
-    "dimorphism\tりょうけい",
+    "dimorphism\tりょうけい|せいてきにけい",
     "dimorpholamine\tジモルホラミン",
     "dimple\tえくぼ|エクボ|ディンプル|かたえくぼ",
     "dimwit\tのろま|ノロマ|うすばか|うすバカ|ウスバカ",
@@ -648,20 +664,5 @@ export const PIECE: WordsPiece = {
     "disabuse\tさます",
     "disaccharide\tにとう",
     "disaccharides\tにとうるい",
-    "disadvantage\tふり|ふりえき|デメリット|そん|れっせい|マイナス|ぶがわるい|そんき|ディスアドバンテージ|そんえき|くれる|そんとく|わりをくう|ゆうりふり",
-    "disadvantageous\tふため|ぶのわるい|ひ|けいせいふり",
-    "disadvantages\tちょうたん|りがい|とくしつ|よしあし|よしわるし|いっちょういったん|いちりいちがい|りがいとくしつ",
-    "disaffection\tりはん",
-    "disaggregating\tぶんかい",
-    "disagree\tもめる|モメる|ことなる",
-    "disagreeable\tいや|や|イヤ|ふゆかい|いやらしい|やらしい|うとましい|きざわり|いやみたらしい|いやみったらしい",
-    "disagreeableness\tいやみ",
-    "disagreeing\tだんこはんたい",
-    "disagreement\tふどうい|くいちがい|ふきょうわおん|いな|ひ|ていご|いやおう|くびをよこにふる|ばつじるし",
-    "disallowed\tあとだし",
-    "disallows\tきせんけっこん",
-    "disambiguation\tあいまいせいかいしょう|あいまいさかいひ",
-    "disanthus\tまるばのき|マルバノキ",
-    "disappear\tきえさる|まぎれる|きえる|まぎれこむ|なえる|かくれる|とれる|なくなる|ちる|ふっきれる|はらす|ふきとぶ|ふっとぶ|すがたをけす|うせる|うせさる|きえうせる|かききえる|かげをひそめる|いなくなる",
   ],
 };

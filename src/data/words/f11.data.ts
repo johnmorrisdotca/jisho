@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 12 of 70, from "中小企業経". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 12 of 70, from "中小企業信". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "中小企業信用保険公庫\tちゅうしょうきぎょうしんようほけんこうこ",
+    "中小企業庁\tちゅうしょうきぎょうちょう",
     "中小企業経営問題議員連盟\tちゅうしょうきぎょうけいえいもんだいぎいんれんめい",
     "中小企業診断士\tちゅうしょうきぎょうしんだんし",
     "中小企業退職金共済\tちゅうしょうきぎょうたいしょくきんきょうさい",
@@ -1668,6 +1670,7 @@ export const PIECE: WordsPiece = {
     "乳び\tにゅうび",
     "乳び胸\tにゅうびきょう",
     "乳び血症\tにゅうびけっしょう",
+    "乳りん\tにゅうりん",
     "乳ガン\tにゅうがん",
     "乳テント\tちちテント",
     "乳価\tにゅうか",
@@ -1700,6 +1703,7 @@ export const PIECE: WordsPiece = {
     "乳押さえ\tちちおさえ",
     "乳搾り\tちちしぼり",
     "乳搾り器\tちちしぼりき",
+    "乳暈\tにゅううん",
     "乳果オリゴ糖\tにゅうかオリゴとう",
     "乳棒\tにゅうぼう",
     "乳業\tにゅうぎょう",
@@ -1759,6 +1763,7 @@ export const PIECE: WordsPiece = {
     "乳袋\tちぶくろ",
     "乳製品\tにゅうせいひん",
     "乳質\tにゅうしつ",
+    "乳輪\tにゅうりん",
     "乳酪\tにゅうらく",
     "乳酸\tにゅうさん",
     "乳酸アシドーシス\tにゅうさんアシドーシス",
@@ -3043,13 +3048,5 @@ export const PIECE: WordsPiece = {
     "二等辺三角形\tにとうへんさんかっけい|にとうへんさんかくけい",
     "二等陸佐\tにとうりくさ",
     "二等陸士\tにとうりくし",
-    "二等陸尉\tにとうりくい",
-    "二等陸曹\tにとうりくそう",
-    "二筋道\tふたすじみち",
-    "二筑\tにちく",
-    "二箇国語\tにかこくご",
-    "二箇年\tにかねん",
-    "二箇所\tにかしょ",
-    "二粒\tふたつぶ",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 61 of 144, from "0u57". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 61 of 144, from "0u51". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,11 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0u51e\t1¦｜存分《ぞんぶん》に｜楽《たの》しもう。¦Let's enjoy ourselves to our heart's content.¦¦2zqc¦small_snow¦¦存分に",
+    "0u51y\t1¦その｜後《あと》は、｜多《おお》くの｜者《もの》が｜老人《ろうじん》ホームで｜暮《く》らすが、そこには｜子供《こども》とか｜孫《まご》が｜訪《たず》ねていくことが｜出来《でき》る。¦After that, many live in special homes for the aged where their children and grandchildren can come to visit them.¦2¦4ioi¦¦papabear¦孫",
+    "0u52s\t1¦「ここだわ。ちょうどここがいい」と｜孫娘《まごむすめ》はいいました。¦\"There,\" said the granddaughter, \"that's just the place.\"¦2¦52ku¦mookeee¦¦孫娘",
+    "0u56o\t1¦あなたはだれからも｜尊敬《そんけい》されている。¦You're respected by everybody.¦2¦4zez¦¦CM¦尊敬",
+    "0u56y\t1¦｜目《め》｜上《うえ》の｜人《ひと》のすることについて｜話《はな》す｜時《とき》、｜尊敬語《そんけいご》を｜使《つか》います。¦When speaking about your superiors' actions, you use respectful language.¦2¦1lpy¦fcbond¦fcbond¦尊敬語",
     "0u578\t1¦すべての｜人々《ひとびと》の｜権利《けんり》を｜尊厳《そんげん》すべきだ。¦You should regard the rights of all.¦1¦4lg0¦¦¦尊厳",
     "0u58c\t1¦｜私《わたし》は｜君《きみ》の｜判断《はんだん》を｜尊重《そんちょう》する。¦I defer to your judgement.¦2¦3dgl¦¦¦尊重",
     "0u5au\t1¦その｜政治家《せいじか》は｜尊大《そんだい》な｜態度《たいど》で｜話《はな》した。¦The politician spoke with an important air.¦1¦4h0o¦¦¦尊大な",
@@ -207,10 +212,5 @@ export const PIECE: WordsPiece = {
     "0u910\t1¦｜彼女《かのじょ》は｜大声《おおごえ》で｜叫《さけ》んで｜襲《おそ》ってきた｜奴《やつ》を｜退散《たいさん》させた。¦She managed to scare off her attacker by screaming loudly.¦1¦1vwn¦¦CK¦退散",
     "0u91a\t1¦｜彼《あれ》はありを｜退治《たいじ》しようと｜思《おも》った。¦He tried to get rid of the ants.¦3¦2gkb¦¦CK¦退治",
     "0u91k\t1¦｜彼《あれ》は｜怠惰《たいだ》で｜無責任《むせきにん》だった。｜結局《けっきょく》、｜彼《あれ》は｜退社《たいしゃ》を｜命《めい》じられた。¦He was lazy and irresponsible. Thus, he was told to leave the company.¦¦273k¦¦¦退社\t2¦あなたは｜何時《なんじ》に｜退社《たいしゃ》しますか。¦What time do you leave your work?¦3¦4z64¦¦CM¦退社",
-    "0u91u\t1¦｜先生《せんせい》は｜生徒《せいと》｜達《たち》に｜講義室《こうぎしつ》を｜退出《たいしゅつ》させなかった。¦The teacher did not permit the students to leave the lecture hall.¦1¦317n¦¦CK¦退出",
-    "0u924\t1¦｜私《わたし》は｜退職《たいしょく》するつもりだときのう｜申《もう》し｜出《で》た。¦I gave notice at work yesterday.¦3¦3brz¦¦¦退職",
-    "0u92e\t1¦｜彼《かれ》らは｜社長《しゃちょう》に｜退陣《たいじん》するよう｜求《もと》めた。¦They demanded that the president resign.¦1¦22ri¦¦CK¦退陣",
-    "0u93i\t1¦その｜男性《だんせい》はスパイとして｜逮捕《たいほ》された。¦The man was arrested as a spy.¦1¦4ghr¦bunbuku¦CK¦逮捕",
-    "0u94w\t1¦｜救助隊《きゅうじょたい》｜員《いん》｜達《たち》が｜地震《じしん》の｜被災者《ひさいしゃ》｜達《たち》に｜物資《ぶっし》を｜分配《ぶんぱい》するだろう。¦The rescue workers are going to hand out supplies to the victims of the earthquake.¦¦3wqs¦¦CK¦隊員",
   ],
 };

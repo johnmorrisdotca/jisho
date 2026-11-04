@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 97 of 144, from "0yft". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 97 of 144, from "0yfoc". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,18 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0yfoc\t1¦｜我《わ》が｜軍《ぐん》はその｜王国《おうこく》を｜襲《おそ》った。¦Our army attacked the kingdom.¦1¦446w¦¦Yepthatscool¦我が",
+    "0yfom\t1¦こういう｜人《ひと》たちが｜我《わ》が｜国《くに》を｜動《うご》かしている。¦These persons run this country.¦1¦4tn3¦¦¦我が国",
+    "0yfow\t1¦そんなことを｜考《かんが》えながら『｜我輩《わがはい》はカモである』を｜再見《さいけん》しました。¦Thinking about those sorts of things, I watched \"Duck Soup\" again.¦1¦1l9k¦fcbond¦fcbond¦我輩",
+    "0yfp6\t1¦わが｜家《や》の｜近《ちか》くに｜教会《きょうかい》がある。¦There is a church near my house.¦4¦4468¦¦CK¦わが家",
+    "0yfpg\t1¦｜宇宙飛行士《うちゅうひこうし》｜達《たち》は｜自然《しぜん》と｜湧《わ》き｜起《お》こった｜拍手《はくしゅ》で｜迎《むか》えられた。¦The astronauts were greeted with spontaneous applause.¦1¦42hz¦¦CK¦湧き起こった",
+    "0yfpq\t1¦｜地面《じめん》から｜水《みず》が｜沸《わ》き｜出《で》ている。¦The water is welling up from the ground.¦2¦2pv3¦small_snow¦sundown¦沸き出ている\t2¦その｜女《おんな》の｜子《こ》の｜目《め》から｜涙《なみだ》がわきでた。¦Tears welled up in the girl's eyes.¦2¦4hkh¦¦CM¦わきでた\t3¦｜人間《にんげん》の｜胸《むね》に｜希望《きぼう》は｜永遠《えいえん》にわき｜出《で》る。¦Hope springs eternal in the human breast.¦2¦33ds¦¦¦わき出る",
+    "0yfq0\t1¦｜薬缶《やかん》のお｜湯《ゆ》が｜沸《わ》いている。¦The kettle is boiling.¦2¦1pbj¦bunbuku¦CK¦沸いている\t2¦｜市《いち》の｜産業《さんぎょう》はみんな｜好景気《こうけいき》に｜沸《わ》いている。¦All the industries in the city are booming.¦2¦3lxa¦¦¦沸いている",
+    "0yfq5\t2¦｜彼女《かのじょ》の｜目《め》には｜涙《なみだ》が｜湧《わ》きあふれていた。¦Her eyes gushed with tears.¦1¦20g4¦¦¦湧き\t3¦いざとなれば｜勇気《ゆうき》が｜湧《わ》いてくる。¦Your courage will come out in a crisis.¦1¦4wsw¦¦¦湧いて\t4¦｜肉《にく》にはウジがわいていた。¦The meat was crawling with maggots.¦4¦2mwk¦¦CM¦わいていた",
+    "0yfqa\t2¦ここでの｜問題《もんだい》は、｜社会《しゃかい》のトレンドを｜概観《がいかん》できるような｜枠組《わくぐ》みを｜創出《そうしゅつ》することである。¦The question here is one of creating the framework with which we can outline the social trend.¦1¦4tc1¦¦shekitten¦枠組み",
+    "0yfqk\t1¦お｜互《たが》いに｜利益《りえき》の｜分《わ》け｜前《まえ》にあずかることにしよう。¦Let's agree to share in the profits.¦¦4vaa¦¦CK¦分け前",
+    "0yfqu\t1¦わざわざおいでにならなくて｜結構《けっこう》です。¦Don't bother to come to my house.¦1¦4457¦¦CK¦わざわざ\t2¦｜彼《あれ》はわざわざ｜髪《かみ》にくしをかけたりしない。¦He doesn't bother to comb his hair.¦3¦2d2t¦¦CK¦わざわざ",
+    "0yfsi\t1¦あなたがいなくなったら、この｜世《よ》は｜本当《ほんとう》に｜侘《わ》びしくなるわ。¦What a lonely world it would be with you away!¦¦50r4¦¦Lumi_alt¦侘びしく",
     "0yft2\t1¦その｜男《おとこ》は｜私《わたし》の｜足《あし》を｜踏《ふ》んだのにわびることさえしなかった。¦The man did not so much as apologize for stepping on my foot.¦1¦4gj5¦bunbuku¦CM¦わびる",
     "0yftc\t2¦トムは勤務終了時間を超えて働くと、５割アップの時給をもらっていた。¦Tom got time and a half when he worked beyond his usual quitting time.¦2¦4aag¦bunbuku¦CM¦割\t3¦｜私《わたし》は｜割《わり》のいい｜仕事《しごと》の｜申《もう》し｜入《い》れを｜受《う》けた。¦I received a good job offer.¦3¦3ds1¦¦CK¦割\t6¦｜休《やす》みの｜前《さき》などは｜少《すこ》し｜羽目《はめ》を｜外《はず》して｜飲《の》むのだが、｜杜仲茶《とちゅうちゃ》｜割《わ》りで｜飲《の》むと｜二日酔《ふつかよ》いが｜全《まった》くない。¦I usually cut loose a bit and drink plenty before a day off work, but if my drinks are cut with tochu tea, then I get absolutely no hangover.¦1¦1mtt¦mookeee¦¦割り",
     "0yftm\t1¦クラスの女生徒の男生徒に対する割合は３対２だ。¦The proportion of girls to boys in our class is three to two.¦3¦4u27¦¦Dejo¦割合",
@@ -215,20 +227,5 @@ export const PIECE: WordsPiece = {
     "0yjhk\t1¦その｜費用《ひよう》はみな｜発起人《ほっきにん》にかかります。¦All the expenses will fall on the sponsor.¦3¦4fta¦¦¦発起人",
     "0yji4\t1¦あなた｜達《たち》は｜本当《ほんとう》に｜素敵《すてき》なお｜客《きゃく》だ。¦You're such a lovely audience.¦1¦4yjv¦¦CK¦本当に",
     "0yjio\t1¦｜彼女《かのじょ》は｜会社《かいしゃ》の｜床掃除《ゆかそうじ》よりましな｜仕事《しごと》を｜望《のぞ》んだ。¦She wanted a better job than cleaning office floors.¦2¦1y1j¦¦sundown¦ましな\t2¦｜非会員《ひかいいん》は50ドル｜増《ま》しとなります。¦Non-members pay an additional 50 dollars.¦3¦1l5f¦fcbond¦fcbond¦増し",
-    "0yjiy\t1¦｜彼女《かのじょ》の｜名前《なまえ》のつづりが｜間違《まちが》っていた。¦Her name was spelled wrong.¦3¦20go¦¦CK¦間違っていた\t2¦｜番号《ばんごう》を｜間違《まちが》っていると｜思《おも》います。¦I think you have the wrong number.¦3¦2lht¦¦CK¦間違っている\t3¦｜彼《あれ》はとても｜若《わか》く｜見《み》えるのでよく｜学生《がくせい》と｜間違《まちが》われる。¦He is often taken for a student because he looks so young.¦3¦2e3a¦¦sundown¦間違われる",
-    "0yjj8\t1¦｜町中《まちなか》で、｜珍《めずら》しい｜物《もの》を｜見《み》つけました。¦I found something interesting in the town.¦2¦1mjf¦mookeee¦CK¦町中",
-    "0yjjs\t1¦３時間議論したが、我々は話がまとまらなかった。¦After three hours of discussion we got nowhere.¦1¦51kf¦e4zh1nmcz¦¦まとまらなかった",
-    "0yjk2\t1¦この｜機種《きしゅ》は｜気《き》に｜入《い》らないが、これで｜間《ま》に｜合《あ》わせなければならない。¦I don't like this model but I'll have to make do with it.¦3¦4rn9¦¦¦間に合わせ\t2¦｜締《し》め｜切《き》りに｜間《ま》に｜合《あ》わせるために、｜私《わたし》は｜夜通《よどお》し｜働《はたら》いた。¦I worked all night so as to meet the deadline.¦1¦2or8¦KK_kaku_¦pip¦間に合わせる",
-    "0yjkc\t1¦あの｜娘《こ》だってまんざらじゃないさ。¦She isn't so against the idea.¦3¦4xt6¦¦¦まんざら",
-    "0yjkm\t2¦｜満面《まんめん》｜朱《しゅ》をそそいで｜怒《おこ》った。¦He went red in the face with rage.¦1¦1lqy¦fcbond¦fcbond¦満面",
-    "0yjkw\t1¦ジョーンは｜夫《おっと》をさっさと｜見限《みかぎ》って｜別《わか》れてしまった。¦Joan dropped her husband like a hot potato.¦3¦4mc2¦¦CP¦見限って",
-    "0yjl6\t1¦｜捕《と》らえることのできないもの、｜身軽《みがる》で｜素早《すばや》いもののたとえ、だそうです。¦It's apparently a metaphor for something uncatchable, light of body and fleet of foot.¦¦8mic¦blay_paul¦blay_paul¦身軽",
-    "0yjlg\t1¦その｜船《ふね》は｜岬《さき》を｜回《めぐ》った。¦The ship sailed around the cape.¦1¦4gt3¦¦CK¦岬",
-    "0yjlq\t1¦たまには｜夫婦《ふうふ》｜水入《みずい》らずで｜温泉《おんせん》に｜行《おこな》ってのんびりするのもいいもんだ。¦Sometimes it's good for a married couple to go to a hot spring together―just the two of them.¦2¦4cup¦small_snow¦¦水入らず",
-    "0yjm0\t1¦そう｜水《みず》くさくするな。¦Don't be so reserved.¦5¦4ky0¦¦CK¦水くさく",
-    "0yjma\t1¦どうして見ず知らずの男が自分の名前を知っているんだろう？¦How did a total stranger know his name?¦¦4bgb¦¦Delian¦見ず知らずの",
-    "0yjmu\t1¦｜彼女《かのじょ》はみためにかわいい｜少女《しょうじょ》だ。¦She is a pretty girl to look at.¦3¦1yjp¦¦Zifre¦みため",
-    "0yjn4\t1¦｜帰《かえ》り｜道《みち》で｜道草《みちくさ》するんじゃないのよ。¦Don't play around too much after school.¦3¦3xg4¦small_snow¦CK¦道草",
-    "0yjne\t1¦｜地下鉄《ちかてつ》の｜駅《えき》までの｜道順《みちじゅん》を｜教《おし》えていただけませんか。¦Can you give me directions to the subway station?¦2¦2q04¦¦CK¦道順",
   ],
 };

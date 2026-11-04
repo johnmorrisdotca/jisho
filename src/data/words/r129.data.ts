@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 130 of 316, from "しょうぎょうちい". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 130 of 316, from "しょうぎょうせ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "しょうぎょうせいさん\t商業生産\t#16ri8\t¦commercial production",
+    "しょうぎょうち\t商業地\t#sv8s\t¦business district",
     "しょうぎょうちいき\t商業地域\t#1p1z3\tlaw¦commercial area¦business district",
     "しょうぎょうちく\t商業地区\t#sv92\t¦commercial district",
     "しょうぎょうちゅうしんち\t商業中心地\t#1pfwf\t¦commercial center¦downtown",
@@ -334,6 +336,7 @@ export const PIECE: WordsPiece = {
     "しょうしゅかん\t小主観\t#14clw\t¦small ego",
     "しょうしゅじゅつ\t小手術\t#1k08g\t¦minor surgery¦minor operation",
     "しょうしゅつ\t抄出\ts#ypf6\t¦taking excerpts¦extraction",
+    "しょうしゅつ\t妾出\t#12wka\t¦illegitimate (e.g. born to a mistress)",
     "しょうしゅつ\t晶出\ts#1phr8\tchem,physics¦crystallization",
     "しょうしゅん\t頌春\t#14cm6\t¦Happy New Year",
     "しょうしょ\t証書\tC~ni08#syxu\t¦document (of proof)¦certificate¦paper",
@@ -675,6 +678,7 @@ export const PIECE: WordsPiece = {
     "しょうたいふめい\t正体不明\t#17vh4\t¦unidentifiable¦unidentified",
     "ショウタイム\t\t#1p5y3\t¦showtime",
     "しょうたく\t沼沢\tC~mt45#sxok\t¦marsh¦swamp¦bog",
+    "しょうたく\t妾宅\t#12wkk\t¦house in which a mistress is kept",
     "しょうたく\t小宅\t#1l1hk\thum¦house¦home",
     "しょうたくしょくぶつ\t沼沢植物\t#1ggts\t¦helophyte¦marsh plant",
     "しょうたくち\t沼沢地\t#1a03q\t¦wetland¦marshland",
@@ -814,9 +818,5 @@ export const PIECE: WordsPiece = {
     "しょうとう\t檣灯\t#1pl0f\t¦masthead light",
     "しょうとうかんりゅう\t松涛館流\t#18vj6\tMA¦Shotokan (style of karate)",
     "しょうとうきょう\t小東京\t#14cte\t¦epitome of Tokyo¦miniature Tokyo",
-    "しょうとうしょう\t小頭症\t#1fkja\t¦microcephaly",
-    "しょうとうしょかいはつとじょうこく\t小島嶼開発途上国\t#1p19h\t¦Small Island Developing States¦SIDS",
-    "しょうとうじかん\t消灯時間\t#1otsh\t¦lights-out time",
-    "しょうとうだい\t床頭台\t#1pchv\t¦bedside cabinet (in a hospital, nursing home, etc.)¦bedside table",
   ],
 };

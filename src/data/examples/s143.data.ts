@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 144 of 144, from "1p8wp". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 144 of 144, from "1p86". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,28 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "1p86y\t1¦ベストを｜裏返《うらがえ》さなくちゃ。｜表裏《ひょうり》｜逆《ぎゃく》ですよ。¦You need to reverse your vest. It's inside-out!¦2¦47vj¦small_snow¦JimBreen¦ベスト",
+    "1p87r\t1¦｜前年《ぜんねん》の｜総所得《そうしょとく》｜金額《きんがく》はいくらでしょうか。¦What was the gross income in the previous calendar year?¦2¦1mkw¦mookeee¦¦所得金額",
+    "1p89a\t1¦ああ、｜彼女《かのじょ》は｜若《わか》くして逝ってしまった。¦Alas, she died young.¦1¦514i¦arnab¦¦逝って",
+    "1p8b8\t1¦｜主任《しゅにん》｜整備員《せいびいん》はテニスコートの｜敷地《しきち》のちょうど｜中央《ちゅうおう》に｜小《ちい》さな｜家《いえ》を｜持《も》っている。¦The head groundsman has a cottage right in the middle of the grounds.¦1¦36qb¦¦¦整備員",
+    "1p8bw\t1¦じゃが・・・その１０人目の子供の父親はそれまでの子供らとは別の父親なのか。¦But ... did that tenth child have a different father to the ones before him?¦3¦4mky¦¦Swift¦じゃが",
+    "1p8co\t1¦その｜強打者《きょうだしゃ》に｜備《そな》えてセンターは｜守備《しゅび》｜位置《いち》を｜変《か》えた。¦The center fielder shifted his position for the slugger.¦3¦4j4w¦¦¦守備位置",
+    "1p8d1\t1¦｜世界《せかい》で、｜鹿《しか》やムースやキジといった｜野性《やせい》｜獣《けもの》を｜狩《か》ることは｜違法《いほう》とする｜国《くに》が｜多《おお》い。¦In many parts of the world it is illegal to shoot wild game such as deer, moose or pheasant.¦1¦32p3¦¦papabear¦ムース",
+    "1p8g2\t1¦｜上空《じょうくう》をジェット｜機《き》がキーンという｜音《おと》を｜立《た》てて｜飛《と》んでいった。¦The jet made a whining sound as it soared overhead.¦3¦34ur¦¦¦キーン",
+    "1p8h6\t1¦あなたのサロン｜風《ふり》のスカートが｜好《す》きです。¦I like your sarong style skirt.¦3¦506t¦¦¦サロン",
+    "1p8ik\t1¦それよりもこれが｜好《す》きだ。¦I like this better than that.¦3¦4e0c¦¦CK¦それよりも\t2¦それよりも｜中《うち》にいて、テレビを｜見《み》ているほうが｜好《す》きなのです。¦Instead, they prefer to stay in and watch television.¦3¦4e0b¦¦timmartin¦それよりも",
+    "1p8jv\t1¦｜足《あし》に｜任《まか》せて｜町《まち》の｜中《うち》を｜歩《ある》き｜回《まわ》った。¦I walked around town wherever my feet led me.¦3¦2zx8¦¦¦足に任せて",
+    "1p8jx\t1¦その｜人《ひと》は｜村中《むらじゅう》に｜名《な》を｜知《し》られている。¦The man is well-known all over the village.¦2¦4h2n¦¦CM¦名を知られている",
+    "1p8q8\t1¦｜発砲音《はっぽうおん》を｜聞《き》いて、｜警察《けいさつ》がすぐにやって｜来《き》た。¦The police came as soon as they heard the gunfire.¦1¦48go¦KK_kaku_¦CS¦発砲音",
+    "1p8qj\t1¦よかれあしかれ、この｜問題《もんだい》は｜彼《あれ》に｜委《まか》せるほかはない。¦For better or worse, there is nothing for it but to leave the matter in his hands.¦2¦44sl¦¦AlanF_US¦ほかはない",
+    "1p8rn\t1¦「｜疲《つか》れたか」「いいや、ちっとも」¦\"Are you tired?\" \"No, not at all.\"¦3¦5283¦mookeee¦CK¦いいや",
+    "1p8ro\t1¦「今日の新聞にいいニュース何かある？」「いや、特にないね」¦\"Any good news in today's paper?\" \"No, nothing in particular.\"¦4¦52cp¦mookeee¦CK¦いや",
+    "1p8rp\t1¦｜彼《あ》の｜答《こたえ》は「｜否《いや》」であった。¦His answer was in the negative.¦3¦2hts¦tommy__san¦CM¦否",
+    "1p8t8\t1¦｜来週《らいしゅう》ヨーロッパに｜発《た》つ｜予定《よてい》です。¦I'm planning to leave for Europe next week.¦3¦1oo6¦tommy_san¦CK¦発つ",
+    "1p8tc\t1¦｜彼《あれ》は｜系統立《けいとうだ》った｜調査《ちょうさ》を｜行《おこな》うことにした。¦He decided to perform systematic research.¦1¦2bbr¦¦¦系統立った",
+    "1p8tn\t1¦｜私《わたし》は｜彼《あれ》が｜忍《しの》び｜出《で》ようとするのをつかまえた。¦I caught him trying to sneak out.¦1¦3b54¦¦CK¦忍び出よう",
+    "1p8ve\t1¦｜部屋探《へやさが》しは｜苦労《くろう》することがある。¦Finding an apartment can be difficult.¦3¦1svt¦¦CK¦部屋探し",
+    "1p8w8\t1¦この｜箱《はこ》、｜持《も》ち｜上《あ》げるとズシッと｜重《おも》いね。｜中《うち》に｜何《なに》が｜入《い》ってるんだ。¦This box weighs a ton. What's inside?¦3¦4pwr¦¦CK¦ズシッと",
     "1p8wp\t1¦この｜手《て》｜作《つく》りのイタリア｜製《せい》チタン｜自転車《じてんしゃ》は、｜恐《おそ》ろしく｜軽《かる》い。¦This handmade Italian-made titanium bicycle is terribly light.¦1¦4qsp¦bunbuku¦CM¦チタン",
     "1p91v\t1¦その｜靴《くつ》は｜高《たか》すぎる。¦These shoes are too expensive.¦3¦4j2f¦¦¦高すぎる\t1¦あそこは｜少《すこ》し｜高《たか》すぎると｜思《おも》います。¦I'm afraid that place is a little too expensive.¦4¦50uo¦bunbuku¦CK¦高すぎる",
     "1p94i\t1¦｜紳士《しんし》の｜人《じん》からお｜先《さき》にどうぞ。¦Gentlemen first.¦1¦33rq¦¦Luornu¦お先にどうぞ",

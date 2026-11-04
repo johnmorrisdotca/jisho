@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 12 of 316, from "あろは". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 12 of 316, from "あろた". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "アロタイプ\t\t#1g96s\t¦allotype",
     "アロハ\t\tC~g#luwc\t¦aloha\tabbr¦aloha shirt",
     "アロハオエ\t\t#3f2b5\twork¦Aloha O'e (folk song by Lili'uokalani)",
     "アロハシャツ\t\t#luwm\t¦aloha shirt¦Hawaiian shirt",

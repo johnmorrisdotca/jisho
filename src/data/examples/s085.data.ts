@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 86 of 144, from "0x91m". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 86 of 144, from "0x8t". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,15 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0x8t0\t1¦｜陸上競技《りくじょうきょうぎ》｜会《かい》は｜大雨《おおあめ》のため｜中止《ちゅうし》になった。¦The track meet was called off on account of the heavy rain.¦2¦4f4x¦KK_kaku_¦CK¦陸上競技",
+    "0x8vi\t1¦｜陸路《りくろ》ではそこへ｜行《い》けない。¦The place is not accessible by land.¦2¦1ofg¦mookeee¦CC¦陸路",
+    "0x8ww\t1¦｜実質《じっしつ》｜成長《せいちょう》と｜名目《めいもく》｜成長率《せいちょうりつ》の｜差《さ》は｜物価上昇《ぶっかじょうしょう》を｜意味《いみ》する。¦Price increases explain the difference between the real and nominal growth rates.¦1¦3771¦¦CM¦率",
+    "0x8x6\t1¦しかし｜城《しろ》にたどりつくなり、｜近衛兵《このえへい》を｜率《ひき》いた｜人《じん》によって、わたしはこの｜牢獄《ろうごく》に｜勾引《かどわ》されてしまった。¦However, when I finally reached the castle I was thrown into this prison by the commander of the imperial guard.¦¦1n66¦¦papabear¦率いた",
+    "0x8zo\t1¦｜夕方《ゆうがた》｜会社《かいしゃ》にお｜立《た》ち｜寄《よ》りください。¦Drop by my office this evening.¦3¦1ozj¦¦CK¦立ち寄り\t1¦｜昨日《きのう》｜彼《あれ》がぶらっと｜立《た》ち｜寄《よ》った。¦He dropped in on me yesterday.¦3¦3n1r¦¦CK¦立ち寄った\t1¦｜明日《あした》の｜朝立《あさだ》ち｜寄《よ》ってあなたを｜車《くるま》に｜乗《の》せていきましょう。¦I'll come by and pick you up tomorrow morning.¦3¦1q4b¦¦CK¦立ち寄って",
+    "0x8zy\t1¦｜私《わたし》は｜彼《あ》の｜墓《はか》を｜立《た》ち去り｜難《にく》かった。¦I hesitated to leave his grave.¦1¦3ao9¦¦¦立ち去り",
+    "0x90i\t1¦｜彼女《かのじょ》は｜自分《じぶん》の｜運命《うんめい》に｜立《た》ち｜向《む》かう｜覚悟《かくご》ができていた。¦She was ready to face her fate.¦¦1wq7¦¦lilygilder¦立ち向かう",
+    "0x912\t1¦｜彼《あれ》は｜立《た》ち｜止《ど》まってポスターをのぞき｜込《こ》んだ。¦He paused to look at the poster.¦3¦24fe¦¦CK¦立ち止まって",
+    "0x91c\t1¦｜彼《あれ》はこれまでこんな｜苦境《くきょう》に｜立《た》ち｜至《いた》ったことはなかった。¦Never in his life had he encountered such a dilemma.¦1¦2fq6¦¦CK¦立ち至った",
     "0x91m\t1¦｜突然《とつぜん》｜若《わか》い｜女性《じょせい》が｜立《た》ち｜上《あ》がった。¦Suddenly, a young woman stood up.¦3¦2n4s¦¦CK¦立ち上がった\t3¦｜多《おお》くの｜消費者《しょうひしゃ》は｜消費税《しょうひぜい》｜反対《はんたい》に｜立《た》ち｜上《あ》がった。¦Many consumers rose up against the consumption tax.¦2¦2yre¦¦¦立ち上がった\t5¦どうしよう、コンピューターが｜立《た》ち｜上《あ》がらない。¦I can't start up my computer. What am I supposed to do?¦4¦4bej¦¦Zifre¦立ち上がらない",
     "0x91w\t1¦あの｜会社《かいしゃ》もついにホームページを｜立《た》ち｜上《あ》げたらしい。¦That company just put up a web page.¦4¦4yce¦¦CK¦立ち上げた\t2¦ノートパソコンの｜電源《でんげん》を｜入《い》れ、ブラウザを｜立《た》ち｜上《あ》げて、もう｜覚《おぼ》えてしまったアドレスを｜打《う》ち｜込《こ》む。¦I switch on my laptop, start up the browser, and type in the address I've already learnt by heart.¦1¦1lyn¦fcbond¦fcbond¦立ち上げて",
     "0x926\t1¦すぐそこでそばを｜立《た》ち｜食《ぐ》いしてきた。¦I had a bowl of noodles at a street nearby.¦4¦4lvp¦¦Swift¦立ち食い",
@@ -51,7 +60,7 @@ export const PIECE: WordsPiece = {
     "0x9q2\t1¦｜流感《りゅうかん》の｜予防《よぼう》ワクチンの｜注射《ちゅうしゃ》をした。¦I was vaccinated against the flu.¦1¦1ods¦mookeee¦CK¦流感",
     "0x9r6\t1¦｜警察《けいさつ》は｜流血《りゅうけつ》を｜避《さ》けたかった。¦The police wanted to avoid bloodshed.¦1¦3rvf¦¦CK¦流血",
     "0x9rg\t1¦流言飛語に惑わされるべからず、とはいうものの、言うは易く行うは難し、と思わない？¦They say you shouldn't take rumors seriously, but that's easier said than done.¦1¦1odr¦mookeee¦CM¦流言飛語",
-    "0x9rq\t2¦その｜年《とし》はペストがはやった。¦The plague occurred that year.¦5¦4fxz¦¦Dejo¦はやった",
+    "0x9rq\t1¦「｜性差別《せいさべつ》」という｜言葉《ことば》が｜今《いま》、｜流行《はや》っている。¦Terms like \"sexism\" are now in vogue.¦3¦52ad¦mookeee¦¦流行っている\t2¦その｜年《とし》はペストがはやった。¦The plague occurred that year.¦5¦4fxz¦¦Dejo¦はやった",
     "0x9s0\t1¦｜彼《あれ》は｜流行歌《りゅうこうか》を｜歌《うた》うのが｜好《す》きです。¦He likes to sing popular songs.¦3¦24ei¦¦CK¦流行歌",
     "0x9sk\t1¦｜流産《りゅうざん》はとても｜辛《から》い｜経験《けいけん》です。¦Miscarriage is a heart-breaking experience.¦2¦1lab¦fcbond¦fcbond¦流産",
     "0x9t4\t1¦やけどした｜指《ゆび》を、｜流水《りゅうすい》｜中《うち》で｜冷《ひ》やしなさい。¦Cool the burned finger in running water.¦3¦4509¦¦orcrist¦流水",
@@ -176,17 +185,5 @@ export const PIECE: WordsPiece = {
     "0xcf0\t1¦｜彼《あれ》はその｜機械《きかい》の｜輪郭《りんかく》をスケッチします。¦He sketches the outline of the machine.¦1¦2f73¦¦¦輪郭",
     "0xcgy\t1¦警備員たちは１時間ごとに輪番で見回った。¦The guards rotated in making their rounds every hour.¦2¦3ruk¦¦Miktsoanit¦輪番",
     "0xchi\t1¦ジョーダンさんは｜彼《あ》の｜隣《となり》に｜座《すわ》った。¦Mr Jordan sat down beside him.¦1¦4mdj¦¦Swift¦隣",
-    "0xchs\t1¦｜火《ひ》がめらめらと｜隣家《りんか》に｜燃《も》え｜移《うつ》っていった。¦The fire spread and licked the neighboring house.¦1¦403x¦¦Stalwartlover¦隣家",
-    "0xci2\t1¦よい｜垣根《かきね》はよい｜隣人《りんじん》をつくる。¦Good fences make good neighbors.¦1¦44ur¦¦CK¦隣人",
-    "0xcim\t1¦その｜二《ふた》つの｜村《むら》は｜隣接《りんせつ》している。¦The two villages adjoin each other.¦1¦4g0p¦¦¦隣接",
-    "0xcka\t1¦２粒の涙が彼女のほおを流れ落ちた。¦Two tears fell down her cheeks.¦2¦51mk¦e4zh1nmcz¦CK¦涙",
-    "0xckk\t1¦うちの｜子供達《こどもたち》は｜早《はや》く｜起《お》きるようにと｜涙《なみだ》ぐましい｜努力《どりょく》をしている。¦My children make pathetically sincere efforts to get up early.¦2¦4w2s¦small_snow¦¦涙ぐましい",
-    "0xcle\t1¦回収対象のソニー製充電池は累計で７６５万９０００個となった。¦The amount of Sony rechargeable batteries supposed to be collected totalled 7,659,000 units.¦1¦1mux¦mookeee¦¦累計",
-    "0xcn2\t1¦アメリカ｜人《じん》が｜貿易赤字《ぼうえきあかじ》を｜累積《るいせき》したのは、｜限度《げんど》を｜超《こ》えたぜいたくをしたからですよ。¦Americans accumulated their trade deficits by living far beyond their means.¦1¦4xkd¦¦¦累積",
-    "0xcnc\t1¦あの｜店《みせ》には｜織物《おりもの》｜類《るい》が｜置《お》いてありますか。¦Does that store keep textile goods?¦1¦4xvx¦nwt¦nwt¦類",
-    "0xcp0\t1¦この｜構成《こうせい》において、｜三角形《さんかくけい》の｜代《か》わりに｜長方形《ちょうほうけい》を｜用《もち》いても｜類似《るいじ》の｜困難《こんなん》が｜生《しょう》ずる。¦We encounter similar difficulties when we substitute rectangles for triangles in this configuration.¦2¦4ra4¦¦¦類似",
-    "0xcpa\t1¦なぜ｜類人猿《るいじんえん》は｜他《た》の｜動物《どうぶつ》よりも｜進化《しんか》したのか。¦Why have the apes evolved more than other animals?¦1¦49n8¦mookeee¦CM¦類人猿",
-    "0xcqe\t1¦｜国際貿易《こくさいぼうえき》｜禁止令《きんしれい》がその｜国《くに》の｜経済《けいざい》にとって｜最後《さいご》の｜頼《たの》みでしょう。¦An international trade ban could be the last straw for that country's economy.¦2¦3piu¦¦CM¦令",
-    "0xcwi\t1¦たとえば、｜標本《ひょうほん》はいくつですか。¦How many samples, for example?¦1¦4d1s¦¦rul¦たとえば",
   ],
 };

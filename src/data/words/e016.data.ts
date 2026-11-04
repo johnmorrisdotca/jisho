@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 17 of 219, from "0pmte". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 17 of 219, from "0pmqw". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,15 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0pmqw\t貨殖\tかしょく\tn¦¦money-making",
+    "0pmr6\t貨物\tかもつ|かぶつ\tn¦¦cargo¦freight\tn¦¦money or assets",
+    "0pmrg\t貨物駅\tかもつえき\tn¦¦freight depot",
+    "0pmrq\t貨物自動車\tかもつじどうしゃ\tn¦¦truck",
+    "0pms0\t貨物船\tかもつせん\tn¦¦freighter (vessel)¦cargo ship¦貨物機・かもつき",
+    "0pmsa\t貨幣|貨弊~sK\tかへい\tn¦¦money¦currency¦coin",
+    "0pmsk\t貨幣価値\tかへいかち\tn¦¦currency value",
+    "0pmsu\t迦楼羅\tかるら\tn¦¦Garuda (man-bird deity and 'vahana' of Hindu-Buddhist myth)¦Garua",
+    "0pmt4\t過ぎ\tすぎ\tn,n-suf¦¦past¦after\tn,n-suf¦uk¦too (much)¦over- (e.g. eating)",
     "0pmte\t過ぎる\tすぎる\tv1,vi¦¦to pass through¦to pass by¦to go beyond\tv1,vi¦¦to pass (of time)¦to elapse\tv1,vi¦¦to have expired¦to have ended¦to be over\tv1,vi¦¦to exceed¦to surpass¦to be above\tv1,vi¦¦to be no more than ...¦as 〜に過ぎない, etc.\tv1,vi,suf¦uk¦to be excessive¦to be too much¦to be too ...¦often used after adj. stems or the -masu stems of verbs",
     "0pmty\t過ぎ去る|過去る\tすぎさる\tv5r,vi¦¦to pass¦to pass by",
     "0pmu8\t過ごす|過す\tすごす\tv5s,vt¦¦to spend (time)¦to pass¦to lead (a life)¦to live\tv5s,vt¦¦to overdo (esp. alcohol consumption)¦to drink (alcohol)¦to carry too far¦to carry to excess\tv5s,vt¦dated¦to take care of¦to support\tsuf,v5s¦¦to overdo¦to do too much¦寝過ごす¦after the -masu stem of a verb\tsuf,v5s¦¦to ... without acting on it¦to ... without getting involved¦見過ごす¦after the -masu stem of a verb",
@@ -1013,11 +1022,5 @@ export const PIECE: WordsPiece = {
     "0putg\t隔たる|距たる\tへだたる\tv5r,vi¦¦to be distant",
     "0putq\t隔て\tへだて\tn¦¦partition¦division¦barrier¦separation\tn¦¦discrimination¦partiality¦distinction (in treatment)\tn¦¦reserve¦distance (in a relationship)¦estrangement",
     "0puu0\t隔てる|距てる~rK\tへだてる\tv1,vt¦¦to separate (by distance, time, etc.)¦to isolate¦to partition¦to divide\tv1,vt¦¦to interpose¦to have between\tv1,vt¦¦to alienate¦to estrange",
-    "0puua\t隔靴掻痒|隔靴搔痒~sK\tかっかそうよう|かくかそうよう\tn¦yoji¦being frustrated because something is not quite as hoped (just as one cannot scratch an itch from outside a shoe)¦having an itch that one cannot scratch",
-    "0puuk\t隔月\tかくげつ\tn,adj-no¦¦every second month¦every other month",
-    "0puuu\t隔絶\tかくぜつ\tn,vs,vt,vi¦¦isolation¦separation¦remoteness¦seclusion¦reclusion¦inaccessibility¦sequestration",
-    "0puv4\t隔日\tかくじつ|かくにち\tn¦¦every other day¦every second day",
-    "0puve\t隔年\tかくねん\tn,adv¦¦biennially¦every second year¦every other year",
-    "0puvo\t隔壁\tかくへき\tn,adj-no¦¦barrier wall¦bulkhead¦partition¦septum¦diaphragm",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 15 of 219, from "0p5by". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 15 of 219, from "0p5aa". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,12 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0p5aa\t雲呑|饂飩\tワンタン\tn¦uk,food¦wonton (Chinese dumpling)¦won ton¦wantan¦wanton¦wuntun¦chi~wantan",
+    "0p5ak\t雲母\tうんも|うんぼ|きらら\tn¦geol¦mica¦isinglass",
+    "0p5au\t雲霧\tうんむ|くもきり\tn¦¦clouds and fog",
+    "0p5b4\t雲量\tうんりょう\tn¦¦degree of cloudiness¦cloud cover",
+    "0p5be\t雲鬢花顔\tうんびんかがん\tn¦¦beautiful woman (metaphorical)",
+    "0p5bo\t荏\tえ\tn¦arch¦egoma (type of perilla)¦Perilla frutescens var. frutescens¦荏胡麻",
     "0p5by\t荏胡麻\tえごま|エゴマ~~~!\tn¦uk¦wild sesame (Perilla frutescens var. frutescens)¦oilseed perilla¦egoma¦紫蘇",
     "0p5c8\tえごま油|エゴマ油|荏胡麻油~rK\tえごまあぶら|えごまゆ\tn¦¦perilla oil",
     "0p5ci\t荏苒\tじんぜん\tadv-to,adj-t,adv¦form¦procrastinatingly¦dillydallying",
@@ -1043,9 +1049,5 @@ export const PIECE: WordsPiece = {
     "0pdti\t下し薬\tくだしぐすり\tn¦¦laxative¦purgative¦evacuant¦下剤",
     "0pdts\t下す|降す\tくだす\tv5s,vt¦¦to make a decision¦to draw a conclusion\tv5s,vt¦¦to give a judgement¦to hand down a verdict¦to pass a sentence¦to give an order\tv5s,vt¦¦to let go down¦to lower\tv5s,vt¦¦to do oneself¦to do by oneself¦手を下す・1\tv5s,vt¦¦to beat¦to defeat\tv5s,vt¦¦to have loose bowels¦to have diarrhea\tv5s,vt¦¦to pass (in stool)¦to discharge from the body\tsuf,v5s¦¦to do in one go¦to do to the end without stopping¦after -masu stem of verb",
     "0pdu2\t下っ端|下っぱ\tしたっぱ\tn¦¦underling¦person of low standing¦grunt\tadj-no¦¦petty (work, official, etc.)¦minor¦lowly¦humble",
-    "0pduc\t下っ腹\tしたっぱら\tn¦¦abdomen¦stomach¦under parts",
-    "0pdum\t下の句\tしものく\texp,n¦¦last part of a poem or Bible verse",
-    "0pduw\t下らない\tくだらない|くっだらない~sk|くっだらねー~sk|くっだらねえ~sk\tadj-i¦uk¦trivial¦trifling¦insignificant¦not worth bothering with¦worthless¦useless¦good-for-nothing\tadj-i¦uk¦stupid¦nonsensical¦absurd¦foolish¦silly",
-    "0pdv6\t下り|降り\tくだり\tn¦¦down-train¦train heading toward the ending point of its route\tn,adj-no¦¦down-slope¦downward going\tadj-no,n¦¦downbound (esp. away from Tokyo)\tn,n-pref¦¦downstream¦downhill¦上り・4",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 71 of 316, from "きゅうせきほ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 71 of 316, from "きゅうせいぼ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,12 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "きゅうせいぼうこうえん\t急性膀胱炎\t#1oqyn\tmed¦acute cystitis",
+    "きゅうせかい\t旧世界\t#qdro\t¦Old World (i.e. Asia, Africa, Europe)",
+    "きゅうせかいざる\t旧世界猿\t#1b5q2\trare¦Old World monkey (any monkey of family Cercopithecidae)",
+    "きゅうせき\t旧跡|旧蹟\t~m31#ycw2\t¦historic spot¦historic site¦place of historical interest",
+    "きゅうせき\t休戚\t#qbfs\t¦weal and woe¦joys and sorrows¦welfare",
+    "きゅうせき\t求積\t#qcq6\tmath¦finding area or volume¦mensuration",
     "きゅうせきほう\t求積法\t#19668\tmath¦quadrature",
     "きゅうせだい\t旧世代\t#1p6ky\t¦older generation¦past generation",
     "きゅうせっき\t旧石器\t#1966i\t¦paleolith",
@@ -750,16 +756,19 @@ export const PIECE: WordsPiece = {
     "きょうがい\t凶害|兇害\t#1opwu\trare¦great harm (esp. to a person)¦murder",
     "きょうがい\t境外\t#1pajz\t¦outside the grounds (of a temple or shrine)",
     "きょうがい\t境界\t#1phvo\tBuddh¦situation in life¦(one's) circumstances in life (determined by the karma of a previous life)\t¦situation¦(one's) lot in life¦circumstance",
+    "きょうがく\t共学\tsC~n22#qgfi\t¦coeducation¦mixed-sex education",
     "きょうがく\t驚愕\tsC~s#qjtg\t¦astonishment¦amazement¦surprise",
     "きょうがく\t教学\ts~m37#11r5g\t¦education and learning",
     "きょうがく\t郷学\t#1nvx2\t¦village school (esp. in Edo-era Japan, and ancient Korea and China)",
     "きょうがく\t狭額\t#1osr4\t¦narrow bezel (display)",
+    "きょうがくこう\t共学校\t#1lb20\t¦mixed-sex school",
     "きょうがくせい\t共学制\t#qgfs\t¦coeducational plan",
     "きょうがさめる\t興が醒める|興がさめる\ti#1os79\t¦to have one's fun spoiled¦to have one's enthusiasm dampened",
     "きょうがし\t京菓子\t#1omk9\t¦traditional Kyoto-style confectionery (often used in tea ceremony)",
     "きょうがしんねん\t恭賀新年\t#qibk\t¦Happy New Year",
     "きょうがた\t京形\t#qfo0\tarch¦style that is fashionable in the capital",
     "きょうがた\t京方\t#qfsq\t¦the direction of Kyoto¦Kansai area¦citizens of Kyoto",
+    "きょうがっこう\t共学校\t#1lb20\t¦mixed-sex school",
     "きょうがのる\t興が乗る\tg#1ogqs\t¦to warm up to¦to get interested in¦to get excited by",
     "きょうがらす\t京烏\t#1p2mb\tarch¦Kyoto merchant\tarch¦well-informed and loose-lipped Kyotoite",
     "きょうがる\t興がる\tg#qjdm\trare¦to be amused or interested in¦to show amusement (for)",
@@ -865,8 +874,5 @@ export const PIECE: WordsPiece = {
     "きょうけん\t恭倹\tn#z5yg\t¦respectfulness and modesty¦deference",
     "きょうけん\t教権\t#11rem\t¦ecclesiastical authority¦(church) educational authority\t¦teacher's rights¦teacher's authority",
     "きょうけん\t凶歉\t#1nxlc\t¦poor crops¦famine",
-    "きょうけんき\t挟瞼器\t#142y4\t¦entropion forceps",
-    "きょうけんてき\t強権的\tn#1os2k\t¦heavy-handed¦iron-fisted¦authoritarian",
-    "きょうけんはつどう\t強権発動\t#1ohda\tyoji¦invoking the coercive power of the state¦calling upon the power of the state",
   ],
 };

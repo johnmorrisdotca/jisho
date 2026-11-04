@@ -10,12 +10,12 @@
       "gzip": 2132
     },
     "./entries": {
-      "minified": 31560593,
-      "gzip": 9059849
+      "minified": 31556113,
+      "gzip": 9058330
     },
     "./examples": {
-      "minified": 11924010,
-      "gzip": 2907583
+      "minified": 11922855,
+      "gzip": 2907467
     },
     "./grades": {
       "minified": 18121,
@@ -38,16 +38,16 @@
       "gzip": 1083779
     },
     "./words": {
-      "minified": 67853236,
-      "gzip": 14915589
+      "minified": 67758529,
+      "gzip": 14897929
     },
     "./words-common": {
-      "minified": 2874110,
-      "gzip": 908470
+      "minified": 2875795,
+      "gzip": 908984
     },
     "./words-common-extra": {
-      "minified": 92781,
-      "gzip": 30370
+      "minified": 90195,
+      "gzip": 29499
     }
   }
 }

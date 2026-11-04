@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 108 of 144, from "1284". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 108 of 144, from "127f". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,19 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "127fu\t1¦｜京都《きょうと》は｜観光産業《かんこうさんぎょう》に｜依存《いぞん》している。¦Kyoto depends on the tourist industry.¦2¦3w5j¦arnab¦ludoviko¦観光産業",
+    "127gy\t1¦｜観光案内所《かんこうあんないじょ》はどこですか。¦Where is the tourist information office?¦1¦3xtl¦bunbuku¦CK¦観光案内所",
+    "127hi\t2¦｜彼《あ》の｜福祉《ふくし》の｜概念《がいねん》はかなり｜観念的《かんねんてき》だ。¦His notion of welfare is pretty abstract.¦¦2hnn¦¦shekitten¦観念的",
+    "127ly\t1¦｜彼《あれ》は｜観察力《かんさつりょく》が｜鋭《するど》い。¦He has an acute sense of observation.¦2¦2bwm¦¦sacredceltic¦観察力",
+    "127m8\t1¦すべてが｜多数《たすう》の｜観察者《かんさつしゃ》の｜目《め》に｜見《み》える。¦All this is visible to numerous observers.¦3¦4li9¦¦¦観察者",
+    "127pk\t1¦ジョージはとても｜話好《はなしず》きだ。¦George is quite talkative.¦3¦4meg¦tommy__san¦CN¦話好き",
+    "127q4\t1¦ボブは｜誰《だれ》か｜話《はな》し｜相手《あいて》を｜探《さが》していた。¦Bob was looking for someone to talk with.¦¦478b¦bunbuku¦CN¦話し相手",
+    "127qy\t1¦｜彼《あれ》は｜喧嘩早《けんかばや》い｜人《じん》だ。¦He is an aggressive person.¦¦2b4k¦¦orcrist¦喧嘩早い",
+    "127ri\t1¦｜僕《ぼく》は｜友達《ともだち》と｜喧嘩別《けんかわか》れした。¦I parted from my friend in anger.¦¦1r2i¦¦¦喧嘩別れ",
+    "127u0\t1¦｜母系《ぼけい》の｜祖母《そぼ》はその｜旧式《きゅうしき》のドレスを｜着《き》ることに｜固執《こしつ》する。¦My maternal grandmother persists in wearing that old-fashioned dress.¦1¦1rwx¦¦¦母系",
+    "127w8\t1¦｜毎夕《まいゆう》、｜放課後《ほうかご》に｜僕《ぼく》たちは｜彼《あ》の｜家《いえ》の｜裏《うら》｜庭《にわ》で｜会《あ》って、インディアン｜戦争《せんそう》ごっこをした。¦Every evening after school we met in his back garden and arranged Indian battles.¦1¦1lew¦fcbond¦fcbond¦毎夕",
+    "127xc\t1¦｜明日《あした》から｜梅雨前線《ばいうぜんせん》が｜活発《かっぱつ》になります。¦The seasonal rain front is moving in tomorrow.¦1¦1q7a¦tommy__san¦¦梅雨前線",
+    "1280o\t1¦｜牧羊犬《ぼくようけん》が、｜羊《ひつじ》の｜群《ぐん》を｜牧場《ぼくじょう》へ｜連《つ》れていく。¦A sheep dog drives the flock to the pasture.¦1¦1r0p¦¦¦牧羊犬",
     "1284u\t1¦｜救助隊《きゅうじょたい》がくるまで｜頑張《がんば》りなさい。¦Try to hold on until a rescue team arrives.¦1¦3wqt¦¦CK¦救助隊",
     "1286s\t1¦｜被災地《ひさいち》に｜救援物資《きゅうえんぶっし》が｜急送《きゅうそう》された。¦Relief supplies were raced to the disaster area.¦1¦1u7o¦¦sundown¦救援物資",
     "128hc\t1¦｜彼《あれ》が｜当代随一《とうだいずいいち》の｜作家《さっか》のひとりであるのは｜言《い》うまでもない。¦Needless to say he is one of the best writers of the present generation.¦1¦2kae¦¦¦当代",
@@ -195,17 +208,5 @@ export const PIECE: WordsPiece = {
     "12ny0\t1¦｜警察《けいさつ》は｜飲酒運転《いんしゅうんてん》を｜根絶《ねだ》やしにしようとしている。¦The police are trying to get entirely rid of drunken driving.¦2¦3ryp¦¦¦根絶やし",
     "12o08\t1¦これは｜僕《ぼく》の｜眼前《がんぜん》で｜起《お》こったことです。¦This happened under my nose.¦1¦4oa1¦¦¦眼前",
     "12o1w\t1¦｜眼窩《がんか》とは、｜目《め》をいれている｜骨《ほね》のいれもののことです。¦The eye socket is the bone receptacle in which the eye fits.¦¦1liu¦fcbond¦fcbond¦眼窩",
-    "12o3k\t1¦｜眼鏡《めがね》の｜形《かたち》をしていることから、その｜橋《はし》を｜眼鏡橋《めがねばし》とよぶ。¦Since the bridge looks like a pair of glasses, they call it Meganebashi.¦1¦3xq1¦¦CK¦眼鏡橋",
-    "12o4e\t1¦あすの｜朝《あさ》までには｜一面《いちめん》の｜銀世界《ぎんせかい》になっているだろう。¦By tomorrow morning all the world will have been covered with snow.¦3¦50wm¦¦¦銀世界",
-    "12o4o\t1¦ニッケルは｜硬《かた》い｜銀白色《ぎんはくしょく》の｜金属《きんぞく》です。¦Nickel is a hard, silver-white metal.¦1¦49di¦KK_kaku_¦CM¦銀白色",
-    "12o5s\t1¦その｜女優《じょゆう》は｜銀行家《ぎんこうか》と｜婚約《こんやく》したといった。¦The actress said that she was engaged to a banker.¦3¦4hih¦¦CK¦銀行家",
-    "12o62\t1¦「動くな、全員！」と銀行強盗は叫んだ。¦The bank robber shouted, \"Stay where you are, all of you!\"¦2¦529g¦e4zh1nmcz¦CK¦銀行強盗",
-    "12o7q\t1¦｜銀河系《ぎんがけい》には｜無数《むすう》の｜星《ほし》がある。¦There are innumerable stars in the galaxy.¦¦3uky¦¦Zifre¦銀河系",
-    "12ofi\t1¦ジャイアンツは２０点差で試合に負けた。¦The Giants lost the game by 20 points.¦3¦4ml2¦KK_kaku_¦Swift¦点差",
-    "12oq2\t1¦それは犯罪行為です。本当に罰せられますよ！¦That is a criminal offense, and you will surely be punished!¦1¦4e4u¦¦orcrist¦犯罪行為",
-    "12oxu\t1¦｜法学《ほうがく》を｜学《まな》んでいる｜学生《がくせい》が｜皆《みな》｜法律家《ほうりつか》になれるというわけではない。¦Not every student studying law can be a lawyer.¦2¦1rss¦¦CK¦法律家",
-    "12oy4\t1¦そしてこの｜法律案《ほうりつあん》が｜通《とお》らなかった｜場合《ばあい》において、おまえはどういう｜責任《せきにん》をとるのだ。¦And how will you take responsibility in the case that this bill doesn't pass?¦1¦1l9f¦fcbond¦fcbond¦法律案",
-    "12ozi\t1¦｜彼《あれ》は｜法科《ほうか》の｜学生《がくせい》だ。¦He is an undergraduate in the law department.¦3¦256y¦small_snow¦CM¦法科",
-    "12p20\t1¦この｜法律《ほうりつ》が｜定《さだ》めたのは、｜法貨《ほうか》｜以外《いがい》での｜賃金《ちんぎん》｜支給《しきゅう》は｜違法《いほう》だということです。¦What these acts said was that it was illegal to pay someone in anything other than coin of the realm.¦1¦4pm8¦¦¦法貨",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 63 of 144, from "0ucwg". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 63 of 144, from "0ucsk". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,12 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0ucsk\t1¦アンは｜望《のぞ》んでいた｜目標《もくひょう》を｜達成《たっせい》した。¦Ann has achieved her desired goal.¦1¦4x2b¦¦Lumi_alt¦達成",
+    "0ucty\t1¦２人の男がナイフを奪い合っているのを見た。¦I saw two men struggling for the knife.¦1¦51o5¦arnab¦CK¦奪い合っている",
+    "0ucu8\t1¦その｜男《おとこ》は｜彼女《かのじょ》のかばんを｜奪《うば》い｜取《と》った。¦The man robbed her of her bag.¦1¦4gi3¦¦CM¦奪い取った",
+    "0ucus\t1¦その｜男《おとこ》が｜私《わたし》の｜財布《さいふ》を｜奪《うば》った。¦The man robbed me of my purse.¦1¦4gmo¦¦sundown¦奪った",
+    "0ucvw\t1¦マリガンは１４ヶ月前に逆転で王座を奪取して以来、まったくの負けしらずです。¦Mulligan has been riding high since he seized the crown in a come-from-behind victory 14 months ago.¦1¦46lg¦¦papabear¦奪取",
+    "0ucw6\t1¦｜少年《しょうねん》は｜衣服《いふく》を｜脱《ぬ》ぎ｜捨《す》てた。¦The boy stripped off his clothes.¦1¦3539¦¦adjusting¦脱ぎ捨てた",
     "0ucwg\t1¦ここで｜靴《くつ》を｜脱《ぬ》がなければなりませんか。¦Do I have to take off my shoes here?¦1¦4ta1¦¦kebukebu¦脱が",
     "0ucwq\t1¦いたずらっ｜子《こ》を｜追《お》いかけているうちに｜彼女《かのじょ》の｜靴《くつ》が｜片方《かたほう》｜脱《ぬ》げた。¦While she was running after the naughty boy, one of her shoes came off.¦1¦4wri¦¦CM¦脱げた",
     "0ucx0\t1¦あの｜会社《かいしゃ》は｜赤字《あかじ》を｜脱《だっ》した。¦The company stopped losing money.¦1¦4ycj¦¦CK¦脱した",
@@ -202,9 +208,5 @@ export const PIECE: WordsPiece = {
     "0ughw\t1¦これらの｜商品《しょうひん》の｜中《なか》には、｜地元《じもと》では｜手《て》に｜入《はい》らないものもあるかもしれない。¦These goods may not be available locally.¦3¦4o3s¦¦CM¦地元",
     "0ugig\t1¦｜彼《あれ》は｜地元紙《じもとし》の｜本《ほん》の｜批評家《ひひょうか》です。¦He is the book critic for the local newspaper.¦1¦26vn¦¦CM¦地元紙",
     "0ugiq\t2¦｜魔王《まおう》は｜言《い》った。「｜俺《おれ》が｜負《ま》けるわっきゃねーべ。｜審判《しんぱん》は｜皆《みな》｜地獄《じごく》にいるのだ」。¦\"How can I lose?\" answered Satan. \"All the umpires are down here in Hell.\"¦¦1quc¦¦shekitten¦地獄\t3¦そこはこの｜世《よ》の｜地獄《じごく》となった。¦The place became a hell on earth.¦1¦4ku1¦¦¦地獄",
-    "0ugjk\t1¦｜地球《ちきゅう》は｜地軸《ちじく》を｜中心《ちゅうしん》として｜回転《かいてん》している。¦The Earth rotates on its axis.¦1¦2pyd¦¦¦地軸",
-    "0ugju\t1¦そうした｜決定《けってい》は、｜今度《こんど》は、｜丘《おか》そのものの｜地質《ちしつ》｜的《てき》｜構造《こうぞう》に｜影響《えいきょう》される。¦That decision, in turn, was affected by the geological structure of the hill itself.¦¦4l1f¦¦¦地質",
-    "0ugke\t1¦その｜地主《じぬし》は｜以前《いぜん》かなり｜裕福《ゆうふく》な｜暮《く》らしをしていた。¦The landlord used to be quite well off.¦1¦4geh¦¦CM¦地主",
-    "0ugko\t1¦｜旅《たび》に｜出《で》たら｜地酒《じざけ》を｜飲《いん》まなきゃ。¦When you travel, you've got to try the local brew.¦3¦1och¦mookeee¦¦地酒",
   ],
 };

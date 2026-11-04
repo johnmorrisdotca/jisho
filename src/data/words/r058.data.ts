@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 59 of 316, from "かんがいい". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 59 of 316, from "かんかんぼ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,17 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "かんかんぼう\tカンカン帽|かんかん帽\t#18qg4\t¦boater¦(flat) straw hat",
+    "かんが\t閑雅\tn#11o86\t¦refined¦elegant",
+    "かんが\t官衙\t#1jnvg\t¦government office¦government agency",
+    "かんが\t閑暇|間暇\t#q20w\t¦leisure",
+    "かんがい\t感慨\tC~n15#pzfa\t¦deep emotion¦strong feelings",
+    "かんがい\t灌漑|潅漑\tsC~mi42#q05y\t¦irrigation",
+    "かんがい\t寒害\t#pxy8\t¦damage from cold weather¦frost damage",
+    "かんがい\t干害|旱害\t#pz78\t¦drought disaster¦drought damage",
+    "かんがい\t函蓋\t#vn5g\t¦box and cover",
+    "かんがい\t館外\t#zpf0\t¦outside a library, museum, etc.¦off the premises",
+    "かんがい\t管外\t#18qge\t¦outside the jurisdiction (of)",
     "かんがいい\t勘がいい|勘が良い\ta#1p39c\t¦quick on the uptake¦quick to catch on¦perceptive",
     "かんがいのうぎょう\t灌漑農業|潅漑農業\t#1onnl\t¦irrigation farming",
     "かんがいひとしお\t感慨一入\tn#17ili\t¦one's heart is filled with even deeper emotion¦feeling the emotion all the more deeply",
@@ -813,14 +824,5 @@ export const PIECE: WordsPiece = {
     "かんしょうそうち\t緩衝装置\t#1napq\t¦buffer¦shock absorber¦damper unit",
     "かんしょうたいしょく\t勧奨退職\t#1mbhe\t¦retirement at the suggestion of one's employer",
     "かんしょうちたい\t緩衝地帯\tC~mt31#q14e\tyoji¦buffer zone",
-    "かんしょうてき\t感傷的\tn~m41#102ru\t¦sentimental¦emotional¦maudlin",
-    "かんしょうてき\t干渉的\tn#1mfa2\tphysics¦coherent\t¦interfering¦meddlesome¦intrusive",
-    "かんしょうてき\t観照的\tn#1mglu\t¦contemplative¦meditative¦meditational",
-    "かんしょうでんりょく\t干渉電力\t#1eb7m\tcomp¦interference power",
-    "かんしょうべん\t緩衝弁\t#140zk\t¦cushion valve",
-    "かんしょうほう\t干渉法\t#1kud6\t¦interferometry",
-    "かんしょうりょう\t鑑賞料\t#1pa4n\t¦entrance fee (for a movie, performance, etc.)¦ticket price",
-    "かんしょうりょういき\t緩衝領域\t#1pcht\t¦buffer zone¦buffer area",
-    "かんしょうりょくち\t緩衝緑地\t#1p4z0\t¦green buffer zone¦green belt",
   ],
 };

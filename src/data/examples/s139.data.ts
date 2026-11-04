@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 140 of 144, from "1its". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 140 of 144, from "1iqr". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,26 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "1iqr8\t1¦もう｜少《すこ》し｜諸《しょ》｜規則《きそく》の｜弾力的運用《だんりょくてきうんよう》はできないか。¦Can't you apply the rules a little more elastically?¦¦8s8s¦blay_paul¦blay_paul¦弾力的運用",
+    "1ir86\t1¦メモ｜用紙《ようし》か｜何《なに》か｜貸《か》してくれ。¦Lend me a memo pad or something.¦4¦8ulk¦blay_paul¦blay_paul¦メモ用紙",
+    "1irae\t2¦｜彼《あ》の｜提案《ていあん》は｜問題《もんだい》にならない。¦His proposal is out of the question.¦1¦2hv7¦¦CK¦問題にならない\t3¦｜彼《かれ》らの｜意見《いけん》はほとんど｜問題《もんだい》にならない。¦Their opinion matters little.¦3¦241s¦¦¦問題にならない",
+    "1irja\t1¦オバマ｜候補《こうほ》の｜経済政策《けいざいせいさく》チームはどうやら｜錚々《そうそう》たる｜新自由主義者《しんじゆうしゅぎしゃ》たちのようだ。¦Presidential candidate Obama's economics team seems to be made up of distinguished neoliberals.¦¦3wyj¦fcbond¦blay_paul¦新自由主義者",
+    "1irrm\t1¦｜私《わたし》たちがほかの｜事《こと》をするには｜遅《おそ》すぎた。¦It was too late for us to do anything else.¦3¦3l32¦¦CK¦遅すぎた",
+    "1irtk\t1¦一旦風呂＆飯落ち、４０分ぐらいして帰還！¦Break for bath & food, back in about 40 minutes!¦¦7g5w¦zhouj1955¦blay_paul¦飯落ち",
+    "1iruo\t1¦いいか、よく聞いてくれ！¦Alright! Listen up and listen well!¦5¦1mgn¦bunbuku¦¦いいか",
+    "1is08\t1¦どう｜思《おも》うって・・・それじゃあ｜忌憚《きたん》のない｜意見《いけん》を｜言《い》わせてもらうけどね。¦What do I think, you say ... well then, I'll give you my candid opinion.¦¦8yii¦blay_paul¦blay_paul¦忌憚のない",
+    "1is3a\t1¦彼らは抑揚のない声で５０まで数えた。¦They counted on monotonously to fifty.¦1¦224e¦¦¦抑揚のない",
+    "1is4o\t1¦｜非常《ひじょう》に｜残念《ざんねん》なことに｜地球《ちきゅう》は｜一秒《いちびょう》で1900｜平方《へいほう》メートルが｜砂漠化《さばくか》している。¦Very regrettably, 1,900 square meters of land become desert every second.¦1¦3wcg¦sugisaki¦kotobaboke¦砂漠化",
+    "1isqm\t1¦その｜女《おんな》は｜出《で》てきたジンライムを｜一口《ひとくち》で｜飲《の》み｜干《ほ》した。¦The woman downed the gin and lime that was served in one swallow.¦2¦91n3¦blay_paul¦blay_paul¦ジンライム",
+    "1isto\t1¦当期純利益は５０億円の見込みで、前期とほとんど変わりません。¦Net profit for the period is estimated at 5 billion yen, largely unchanged from the previous one.¦1¦92nk¦blay_paul¦blay_paul¦当期純利益",
+    "1it02\t1¦イソップ｜童話《どうわ》に『すっぱい｜葡萄《ぶどう》』という｜話《はなし》があります。¦In Aesop's Fables is a story called \"Sour Grapes\".¦¦8brg¦blay_paul¦blay_paul¦イソップ童話",
+    "1it66\t1¦キューバリブレはラム｜酒《さけ》をベースにしたカクテルです。¦A Cuba Libre is a cocktail with a rum base.¦3¦44kz¦Scott¦Scott¦キューバリブレ",
+    "1it7u\t1¦『何だこりゃ？』って思わず言いたくなるような変な車でした。¦It was the sort of weird car that made me want to blurt out, \"what the heck is that?\"¦3¦949l¦blay_paul¦blay_paul¦何だこりゃ",
+    "1itam\t1¦感情にはしるな。冷静になれ！¦Don't let your emotions rule you. Be calm!¦3¦94hl¦blay_paul¦blay_paul¦感情にはしる",
+    "1itaw\t1¦感情にはしるな。冷静になれ！¦Don't let your emotions rule you. Be calm!¦3¦94hl¦blay_paul¦blay_paul¦冷静になれ",
+    "1ithu\t1¦ふっ、禁断の魔術とやらは、俺には通用しないぜ！¦Hah, your 'forbidden magics' aren't going to work with me!¦¦93xu¦blay_paul¦blay_paul¦とやら",
+    "1iti4\t1¦アラン｜君《きみ》は｜運良《うんよ》く｜税理士試験《ぜいりししけん》に｜合格《ごうかく》しました。¦Allan was lucky and passed the tax accountant examination.¦1¦4274¦Scott¦Scott¦税理士試験",
+    "1itrk\t1¦「｜陸《おか》に｜上《あ》がった｜河童《かっぱ》」とは｜環境《かんきょう》が｜変《か》わったために｜能力《のうりょく》を｜発揮《はっき》できずにいることのたとえです。¦\"A fish out of water\" is a metaphor for being unable to use your talents due to a change of environment.¦1¦9532¦blay_paul¦blay_paul¦陸に上がった河童",
     "1its4\t1¦ふっ、禁断の魔術とやらは、俺には通用しないぜ！¦Hah, your 'forbidden magics' aren't going to work with me!¦¦93xu¦blay_paul¦blay_paul¦ふっ",
     "1ituw\t1¦ウォータースライダーで｜水《みず》しぶきを｜上《あ》げて｜遊《あそ》ぶ｜子供《こども》たち。¦Children enjoying making a splash in water as they come off a waterslide.¦3¦96k0¦blay_paul¦blay_paul¦ウォータースライダー",
     "1iu4w\t1¦第３四半期のＧＮＰ成長は前期比１％だった。¦The third quarter GNP growth was 1% over the preceding quarter.¦1¦2xvk¦¦CK¦前期比",
@@ -178,24 +198,5 @@ export const PIECE: WordsPiece = {
     "1liy6\t1¦この｜悪《にく》い｜天気《てんき》はもうたくさんだ。¦We've had enough of this bad weather.¦4¦4s1n¦¦CK¦もうたくさん",
     "1lr42\t1¦｜彼《あれ》は｜最悪《さいあく》の｜事態《じたい》を｜覚悟《かくご》した。¦He prepared for the worst.¦1¦2ajh¦¦CM¦最悪の事態",
     "1lt9u\t1¦本来は、貧困層の女性や子供に医療保護を提供するために創設された制度である、アメリカ低所得者医療扶助制度が、今日では、その予算の約３分の１を老人に費やしている。¦Medicaid, a program originally created to provide medical care for poverty-level women and children, today spends almost a third of its budget on elderly people.¦¦1qun¦¦bmorsello¦貧困層",
-    "1lwe2\t1¦｜関《かか》わり｜合《あ》いになったら、ドスどころかチャカが｜出《で》てきそうだ。¦Mess with them, and they won't just pull shivs on you; they're probably packing heat.¦3¦1mub¦kamojun¦JimBreen¦ドス",
-    "1lwqu\t1¦｜今晩《こんばん》そちらにお｜電話《でんわ》いたします。¦I'll call you up this evening.¦3¦3o5g¦Ianagisacos¦CK¦お電話",
-    "1lytk\t1¦｜治療《ちりょう》は｜苦痛《くつう》を｜長引《ながび》かせた。¦The treatment prolonged the agony.¦2¦3uir¦bunbuku¦JimBreen¦長引かせた",
-    "1lzp8\t1¦｜電話《でんわ》で｜良《りょう》の｜声《こえ》を｜聞《き》いたら｜胸《むね》がいっぱいになった。¦I got all choked up when I heard the voice of Ryo over the telephone.¦2¦2o87¦¦CN¦胸がいっぱいになった",
-    "1lzwq\t1¦｜我々《われわれ》は｜殺人者《さつじんしゃ》に｜対《たい》する｜怒《いか》りで｜胸一杯《むねいっぱい》になった。¦We were filled with anger against the murderer.¦1¦3zdu¦¦Shadd¦胸一杯\t2¦｜私《わたし》は｜庭《にわ》の｜花《はな》の｜香《か》りを｜胸一杯《むねいっぱい》に｜吸《す》い｜込《こ》んだ。¦I breathed the smell of the flowers in the garden.¦2¦3bkq¦¦¦胸一杯に",
-    "1m0r0\t1¦私はポップコーンを２袋買った。¦I bought two bags of popcorn.¦2¦3emt¦bunbuku¦CK¦袋",
-    "1m2au\t1¦ハンプダンプティは塀の上；ハンプダンプティは落っこった；王様の馬と王様の家来を連れてくる；ハンプダンプティを元通りにできなかった。¦Humpty Dumpty sat on a wall; Humpty Dumpty had a great fall. All the King's horses and all the King's men couldn't put Humpty Dumpty together again.¦1¦48ko¦¦Objectivesea¦落っこった",
-    "1m3mw\t1¦トムはエントリーシートを｜書《か》いている。¦Tom is filling out a job application form.¦5¦1q8gn¦tommy_san¦CK¦エントリーシート",
-    "1m4oo\t1¦｜彼《あれ》はそのあいだずっとタバコを｜吸《す》っていた。¦He kept on smoking all the time.¦3¦2fcy¦KK_kaku_¦CK¦そのあいだ",
-    "1m8dg\t1¦｜両《りょう》｜天《てん》びんにかけようたってそうはいきませんよ。¦You can't have it both ways.¦3¦1o61¦mookeee¦CK¦そうはいきません",
-    "1m8qs\t1¦ここのところ｜書籍《しょせき》の｜価《あたい》｜格《かく》が｜上《あ》がっている。¦The price of books is getting higher these days.¦1¦4t4n¦bunbuku¦CK¦ここのところ",
-    "1m93a\t1¦｜若《わか》い｜時《とき》は｜二度《にど》ない、どんとやれ、｜男《おとこ》なーら、｜人《じん》のやれないことをやれ。¦You're only young once. Be a man and take on the world.¦3¦36tq¦¦CM¦どんと",
-    "1mafc\t1¦｜僕《ぼく》は｜水泳《すいえい》が｜下手《へた》やねん。¦I'm not very good at swimming.¦1¦1r58¦KK_kaku_¦CK¦ねん",
-    "1mb1k\t3¦あんな｜愚《おろ》か｜者《もの》にはついぞ｜会《あ》ったことがない。¦Never did I see such a fool.¦1¦4x4f¦¦¦つい",
-    "1mctg\t1¦うわっ？これ、勉強に運動神経、全てのパラメータがMAXじゃないか！おまけにお金もカンストするまで貯まってる・・・すげえ。¦Wha? Study, reflexes, all the parameters are MAX! You've even saved money up to the limit ... Amazing.¦2¦1nak¦¦¦すげえ",
-    "1mea8\t1¦ギプスのせいで｜左手《ひだりて》の｜自由《じゆう》がきかない。¦I can't use my left hand because of the plaster cast.¦3¦1cgug¦JimBreen¦JimBreen¦のせいで",
-    "1mh6y\t1¦｜健康《けんこう》はお｜金《かね》よりも｜大切《たいせつ》だよ。¦Health is more important than money.¦1¦3rek¦small_snow¦CK¦よりも\t2¦｜人《じん》の｜幸福《こうふく》は｜財産《ざいさん》よりも｜人間性《にんげんせい》で｜決《き》まる。¦A man's happiness depends on what he is rather than on what he has.¦3¦33kv¦KK_kaku_¦CK¦よりも",
-    "1mhdw\t2¦｜仕事《しごと》をしているというよりかは、ただ｜会社《かいしゃ》にいるだけって｜感《かん》じ。¦Instead of being here to work, you get the sense that he's simply a permanent fixture here.¦3¦3mgj¦¦papabear¦よりか",
-    "1mhku\t1¦｜自分《じぶん》の｜直感《ちょっかん》が、いかに｜確《たしか》かなものか｜自慢《じまん》した｜手前《てまえ》、｜当《あ》てがはずれた｜時《とき》は｜首《くび》をやらなければならなくなった。¦Having boasted how sure his hunches were, he was forced to eat his hat when he guessed wrong.¦¦37ks¦¦¦首をやらなければならなく",
   ],
 };

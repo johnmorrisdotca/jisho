@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 131 of 144, from "1a4y". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 131 of 144, from "1a4i". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,21 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "1a4ic\t1¦「警察だ。ちょっと署まで来てもらおうか」「な、なんで？」「こんな街中でドンパチやって罪にならないわけないだろうが！！」¦\"This is the police. Would you mind coming down to the station?\" \"W-why?\" \"You can't think it's not a crime to go shooting guns off in the middle of town?!\"¦1¦1neu¦mookeee¦¦署",
+    "1a4ka\t1¦｜彼女《かのじょ》の｜髪《かみ》は｜美《うつく》しい｜巻《ま》き｜髪《がみ》になっていた。¦Her hair hung in neat coils.¦2¦20kw¦¦¦巻き髪",
+    "1a4ku\t1¦どんな｜理由《りゆう》があろうと、せっかく｜軌道《きどう》に｜乗《の》せた｜貿易《ぼうえき》を｜失墜《しっつい》させたのは｜大《おお》｜失態《しったい》だ。¦Whatever the reason, forfeiting the trade that we finally got on track is a fiasco.¦1¦1n18¦¦¦軌道に乗せた",
+    "1a4l4\t1¦｜君《きみ》の｜仕事《しごと》が｜軌道《きどう》に｜乗《の》ったら、｜値上《ねあ》げの｜話《はなし》をしましょう。¦When your business gets rolling we'll talk about an increase.¦1¦3tk5¦¦Zifre¦軌道に乗ったら",
+    "1a4lo\t1¦｜僕《ぼく》、カルパスが｜大好《だいす》きなんだ。¦I really like calpas sausage.¦1¦6fbrf¦small_snow¦JimBreen¦カルパス",
+    "1a4mi\t1¦｜合計額《ごうけいがく》を｜調《しら》べてはどうですか。¦Why don't you go over your sums?¦2¦3pm3¦¦sundown¦合計額",
+    "1a4n2\t1¦ドルは｜現地通貨《げんちつうか》に｜交換《こうかん》しなければなりません。¦You must convert dollars into the local currency.¦2¦4a2q¦¦CK¦現地通貨",
+    "1a4nc\t1¦緊急時の飲料水の確保は、大丈夫ですか？¦Are you OK for drinking water in an emergency?¦¦1mcg¦bunbuku¦¦緊急時の",
+    "1a4nm\t1¦｜格安航空券《かくやすこうくうけん》を｜利用《りよう》しよう。¦Let's get discount tickets.¦2¦3yfy¦¦CK¦格安航空券",
+    "1a4r8\t1¦｜彼《あれ》は｜総理《そうり》のたっての｜要請《ようせい》を｜固辞《こじ》した。¦He firmly refused the Premier's earnest request.¦1¦27bw¦¦¦たって",
+    "1a4sc\t1¦アブミ｜骨《こつ》は｜内耳《ないじ》の｜前庭窓《ぜんていそう》に｜接《せっ》している。¦The stirrup rests on the oval window of the inner ear.¦2¦1hq9e¦JimBreen¦JimBreen¦アブミ骨",
+    "1a4vo\t1¦｜意《い》を｜決《けっ》して｜海《うみ》の｜中《うち》に｜飛《と》び｜込《こ》んだ。¦I boldly jumped into the sea.¦3¦3ebe¦KK_kaku_¦¦意を決して",
+    "1a4ws\t1¦２００２年：国土安全保障省設立法にブッシュ大統領がサインし正式な省となる。¦2002: President Bush signs the Homeland Security Act and it becomes an official Cabinet agency.¦1¦1lhq¦fcbond¦fcbond¦国土安全保障省",
+    "1a4xc\t1¦｜顧客《こきゃく》に｜対《たい》する｜勧誘《かんゆう》の｜電話《でんわ》が、テレマーケティング｜部《ぶ》の｜主要業務《しゅようぎょうむ》である。¦Cold calls are the primary function of the telemarketing department.¦1¦3qlp¦KK_kaku_¦¦主要業務",
+    "1a4xw\t1¦｜君《きみ》が｜背《せ》の｜高《たか》い｜男《おとこ》の｜子《こ》といるのを｜見《み》たよ。¦I saw you with a tall boy.¦3¦3u1s¦bunbuku¦CK¦背の高い",
     "1a4y6\t1¦｜彼《あれ》はその｜二人《ふたり》の｜少年《しょうねん》のうちの｜背《せ》の｜低《ひく》い｜方《ほう》だ。¦He is the shorter of the two boys.¦2¦2es7¦¦CM¦背の低い",
     "1a4za\t1¦｜取締役会《とりしまりやくかい》は｜業務執行《ぎょうむしっこう》に｜関《かん》する｜意思決定《いしけってい》を｜目的《もくてき》としたものだ。¦The Board of Directors aim is to make decisions regarding business affairs of the company.¦¦36pq¦¦¦業務執行",
     "1a504\t1¦｜彼女《かのじょ》は｜禁煙区域《きんえんくいき》を｜広《ひろ》げたいと｜思《おも》っている。¦She wants to extend the no-smoking area.¦2¦1xrw¦¦Swift¦禁煙区域",
@@ -184,20 +199,5 @@ export const PIECE: WordsPiece = {
     "1au6s\t1¦｜俺《おれ》は｜家族《かぞく》｜全員《ぜんいん》に｜見送《みおく》られながら、｜旅支度《たびじたく》を｜整《ととの》えたザックを｜担《かつ》ぐ。¦Being seen off by my whole family I shouldered a rucksack, stocked with my trip supplies.¦¦1mw0¦mookeee¦¦ザック",
     "1au72\t1¦その｜専門家《せんもんか》は｜国際緊張《こくさいきんちょう》が｜高《たか》まっていくと｜予測《よそく》している。¦The specialist predicts international tension will build up.¦1¦4gwa¦¦¦国際緊張",
     "1au7c\t1¦あなたが｜言《い》うのは「｜右《みぎ》に｜同《おな》じ」だけ、それは「｜愛《あい》してる」とは｜違《ちが》う。¦You say \"ditto\", and that's not the same as \"I love you\".¦3¦50mk¦¦¦右に同じ",
-    "1aubs\t1¦カーペットには｜埃《ほこり》を｜吸収《きゅうしゅう》するダストポケット｜効果《こうか》があり、｜埃《ほこり》の｜飛散《ひさん》を｜防《ふせ》ぐ｜特長《とくちょう》があるのだが、それが｜仇《あだ》になった｜結果《けっか》といえる。¦Carpets have the effect of a dust pocket, with merit of sucking up dust and stopping it flying around, but you can say that effect backfires.¦¦1n9d¦mookeee¦¦ダスト",
-    "1audg\t1¦あの｜学生《がくせい》たちのことを｜考《かんが》えると｜本当《ほんとう》に｜頭痛《ずつう》の｜種《たね》だ。¦Those college students give me a bad headache.¦3¦4ybw¦¦¦頭痛の種",
-    "1aue0\t1¦｜彼《かれ》らはその｜車《くるま》が｜残《のこ》していった｜跡《あと》を｜追《お》った。¦They followed the tracks the car had left.¦2¦23ju¦¦CK¦跡を追った",
-    "1auea\t1¦｜彼《あれ》は｜誰《だれ》に｜対《たい》しても｜腰《こし》が｜低《ひく》い。¦He is humble towards everyone.¦¦26xa¦tommy__san¦¦腰が低い",
-    "1auoa\t1¦スペイン料理ってパエリアの他に何があるの？¦What Spanish food is there apart from paella?¦3¦246j4¦tommy_san¦tsp_2¦パエリア",
-    "1av5i\t1¦「腰は痛む？」「いや、別に」「そう、それは不幸中の幸いね」¦\"Does your back hurt?\" \"No, not really.\" \"Oh, that's something then, isn't it?\"¦2¦1nep¦mookeee¦Zifre¦不幸中の幸い",
-    "1av9e\t1¦｜現場《げんば》には｜彼《あれ》に｜不利《ふり》な｜証拠品《しょうこひん》は｜何《なに》もなかった。¦There was no evidence against him found at the scene.¦1¦3qx5¦¦CM¦証拠品",
-    "1av9o\t1¦｜先週《せんしゅう》｜米国《べいこく》からのみやげ｜品《ひん》を｜彼《あれ》に｜郵送《ゆうそう》した。¦Last week, I mailed him some souvenirs from the U.S.¦2¦31f3¦¦CK¦みやげ品",
-    "1avdk\t1¦｜明後日《あさって》ティーパーティーを｜開《ひら》きましょう。¦Let's have a tea party the day after tomorrow.¦4¦1q9j¦¦CK¦ティーパーティー",
-    "1ave4\t1¦｜私《わたし》は｜古《ふる》い｜真鍮《しんちゅう》のティーポットが｜好《す》きです。¦I like my old brass tea pot.¦¦3dbj¦¦CK¦ティーポット",
-    "1avi0\t1¦もー、｜弥生《やよい》のナビが｜判《わか》りにくいから、｜同《おな》じトコぐるぐる｜回《めぐ》ったじゃない。¦Hmph, Yayoi's navigation was difficult to follow so we ended up going round and round the same places.¦1¦1mxw¦mookeee¦¦ナビ",
-    "1avoo\t1¦｜順《じゅん》を｜追《お》って｜基本的《きほんてき》なタグを｜覚《おぼ》えていこう。¦Let's learn the basic tags in order.¦¦1mnu¦mookeee¦¦順を追って",
-    "1avqm\t1¦その｜古《ふる》い｜置《お》き｜時計《どけい》はまだ｜使《つか》われている。¦The old clock is still in use.¦3¦4ipx¦¦CK¦置き時計",
-    "1avxu\t1¦｜投函《とうかん》｜完了《かんりょう》、と。｜後《あと》は｜頼《たの》んだぞ、ポストマンよ。¦Mailing complete. I leave the rest to you, postman!¦¦1miw¦mookeee¦¦ポストマン",
-    "1aw66\t1¦ファーストキスは、もっとロマンチックなの｜想像《そうぞう》してたのに。¦I imagined my first kiss would be more romantic.¦2¦1n02¦bunbuku¦CK¦ファーストキス",
   ],
 };

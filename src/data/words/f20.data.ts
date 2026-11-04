@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 21 of 70, from "厳密にいえ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 21 of 70, from "厳にす". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,18 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "厳にする\tげんにする",
+    "厳めしい\tいかめしい",
+    "厳冬\tげんとう",
+    "厳冬期\tげんとうき",
+    "厳刑\tげんけい",
+    "厳君\tげんくん",
+    "厳命\tげんめい",
+    "厳存\tげんそん",
+    "厳守\tげんしゅ",
+    "厳容\tげんよう",
+    "厳密\tげんみつ",
+    "厳密にいうと\tげんみつにいうと",
     "厳密にいえば\tげんみつにいえば",
     "厳密に言うと\tげんみつにいうと",
     "厳密に言えば\tげんみつにいえば",
@@ -3102,17 +3114,5 @@ export const PIECE: WordsPiece = {
     "右傾化\tうけいか",
     "右党\tうとう",
     "右利き\tみぎきき",
-    "右前\tみぎまえ",
-    "右半身\tみぎはんしん",
-    "右卍\tみぎまんじ",
-    "右卐\tみぎまんじ",
-    "右向き\tみぎむき",
-    "右四つ\tみぎよつ",
-    "右回り\tみぎまわり",
-    "右図\tうず",
-    "右大括弧\tみぎだいかっこ",
-    "右大臣\tうだいじん",
-    "右奥\tみぎおく",
-    "右室\tうしつ",
   ],
 };

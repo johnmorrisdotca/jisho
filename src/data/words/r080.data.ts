@@ -282,6 +282,7 @@ export const PIECE: WordsPiece = {
     "くみする\t与する|組する\ts#x3xq\t¦to take part in¦to be a party to¦to side with",
     "くみそ\t苦味素\t#144uq\tchem¦bitter principle¦bitter-tasting substance",
     "くみたいそう\t組体操|組み体操\t#1k180\t¦coordinated group gymnastics (in which teams form pyramids or other shapes)",
+    "くみたて\t組み立て|組立\tC~n12#y4mu\t¦construction¦framework¦erection",
     "くみたて\t汲みたて|汲み立て\t#yqog\t¦freshly drawn (water)¦fresh from the well",
     "くみたてこう\t組立て工\t#10dga\t¦assembler (e.g. in a factory)¦assemblyman¦fitter",
     "くみたてこうじょう\t組立て工場\t#10dgk\t¦assembly plant",
@@ -807,7 +808,5 @@ export const PIECE: WordsPiece = {
     "クラリオン\t\t#1h6o2\t¦clarion",
     "クラリオンエンゼル\t\t#1iizs\t¦clarion angelfish (Holacanthus clarionensis)",
     "クラリオン・エンゼル\t\t#1iizs\t¦clarion angelfish (Holacanthus clarionensis)",
-    "クラリス\t\t#2zrga\tcompany¦Claris",
-    "クラリティ\t\t#1fciy\t¦clarity",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 20 of 70, from "北陸電". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 20 of 70, from "北陸先端科". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,11 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "北陸先端科学技術大学院大学\tほくりくせんたんかがくぎじゅつだいがくいんだいがく",
+    "北陸地方\tほくりくちほう",
+    "北陸大学\tほくりくだいがく",
+    "北陸学院大学\tほくりくがくいんだいがく",
+    "北陸道\tほくりくどう",
     "北陸電力\tほくりくでんりょく",
     "北面\tほくめん",
     "北韓\tほっかん",
@@ -3012,17 +3017,5 @@ export const PIECE: WordsPiece = {
     "厳つい\tいかつい",
     "厳として\tげんとして",
     "厳に\tげんに",
-    "厳にする\tげんにする",
-    "厳めしい\tいかめしい",
-    "厳冬\tげんとう",
-    "厳冬期\tげんとうき",
-    "厳刑\tげんけい",
-    "厳君\tげんくん",
-    "厳命\tげんめい",
-    "厳存\tげんそん",
-    "厳守\tげんしゅ",
-    "厳容\tげんよう",
-    "厳密\tげんみつ",
-    "厳密にいうと\tげんみつにいうと",
   ],
 };

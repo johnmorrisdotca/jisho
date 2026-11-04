@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 34 of 219, from "0tfva". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 34 of 219, from "0tfq". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,22 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0tfq0\t雛|ひよっ子~sK\tひよこ|ひよっこ|ヒヨコ~~~!\tn¦uk¦young bird¦chick¦fledgling¦雛・ひな・1\tn¦uk¦greenhorn¦fledgeling¦novice¦rookie¦juvenile",
+    "0tfqk\tひな鑑別師|雛鑑別師\tひなかんべつし\tn¦abbr¦chicken sexer¦初生ひな鑑別師・しょせいひなかんべつし",
+    "0tfqu\t雛形|雛型|ひな形|ひな型\tひながた\tn¦¦model¦miniature¦pattern\tn¦¦sample¦specimen\tn¦¦prescribed form",
+    "0tfr4\tひな祭り|雛祭り|ひな祭~sK|雛祭~sK\tひなまつり\tn¦¦Hinamatsuri (March 3)¦Hina Matsuri¦Girls' Festival¦Dolls' Festival",
+    "0tfre\t雛人形|ひな人形\tひなにんぎょう\tn¦¦hina doll¦doll displayed during the Girls' Festival",
+    "0tfry\t雛罌粟|雛芥子~rK\tひなげし|ヒナゲシ~~~!\tn¦uk¦common poppy (Papaver rhoeas)¦corn poppy¦field poppy¦red poppy",
+    "0tfs8\t据える\tすえる\tv1,vt¦¦to place (in position)¦to fix¦to set (e.g. table)¦to lay (foundation)\tv1,vt¦¦to install¦to seat (someone)¦上座に据える\tv1,vt¦¦to settle (upon something)¦to fix (e.g. one's gaze)\tv1,vt¦¦to apply (moxa)",
+    "0tfsi\t据え置く\tすえおく\tv5k,vt¦¦to leave as it is¦to defer",
+    "0tfss\t据え付ける|据付ける|据えつける~sK\tすえつける\tv1,vt¦¦to install¦to equip¦to mount¦to fix (in place)¦to set up",
+    "0tftc\t杉|椙~rK\tすぎ|スギ~~~!\tn¦¦Japanese cedar (Cryptomeria japonica)",
+    "0tftm\t杉材\tすぎざい\tn¦¦cedar wood",
+    "0tftw\t杉並木\tすぎなみき\tn¦¦avenue of cedars (cryptomeria)",
+    "0tfu6\t頗る~rK\tすこぶる\tadv¦uk¦extremely¦very much",
+    "0tfug\t雀\tすずめ|スズメ~~~!\tn¦¦tree sparrow (Passer montanus)\tn¦¦talkative person¦knowledgeable person",
+    "0tfuq\t雀の涙|すずめの涙|スズメの涙\tすずめのなみだ\texp,n¦id¦drop in the bucket¦pittance¦chicken feed¦insignificant amount¦sparrow tears",
+    "0tfv0\t雀斑~rK|蕎麦滓~rK\tそばかす|ソバカス~~~!\tn¦uk¦freckle¦lentigo¦ephelis\tn¦arch¦buckwheat chaff¦蕎麦滓¦蕎麦殻¦orig. meaning",
     "0tfva\t雀蜂~rK|胡蜂~rK|スズメ蜂~sK\tスズメバチ~~~!|すずめばち\tn¦uk¦hornet¦yellow jacket¦wasp (of subfamily Vespinae)\tn¦uk¦Asian giant hornet (Vespa mandarinia)¦yak-killer hornet¦オオスズメバチ",
     "0tfvk\t雀躍\tじゃくやく\tn,vs,vi¦¦leaping for joy¦exultation",
     "0tfvu\t裾\tすそ\tn¦¦hem¦(trouser) cuff¦shirttail¦bottom (of a kimono)¦train (of a dress)\tn¦¦bottom part¦bottom edge\tn¦¦foot (of a mountain)\tn¦¦tips (of hair)\tn¦arch¦downstream",
@@ -172,18 +188,24 @@ export const PIECE: WordsPiece = {
     "0th4u\t征服\tせいふく\tn,vs,vt¦¦conquest¦subjugation\tn,vs,vt¦¦overcoming (a difficulty)¦conquering (e.g. a mountain)¦mastery (of a skill)",
     "0th54\t征服者\tせいふくしゃ\tn¦¦conqueror",
     "0th5e\t性|相\tさが\tn¦¦one's nature¦one's destiny\tn¦¦custom¦tradition¦habit¦convention",
-    "0th5o\t性\tせい\tn¦¦nature (of a person)\tn¦gramm¦gender¦4\tn-suf¦¦-ty¦-ity¦-ness¦-cy¦indicating quality or condition¦5",
+    "0th5o\t性\tせい\tn¦¦nature (of a person)\tn¦¦sex¦gender\tn¦gramm¦gender¦4\tn-suf¦¦-ty¦-ity¦-ness¦-cy¦indicating quality or condition¦5",
     "0th68\t性悪説\tせいあくせつ\tn¦¦cynicism (of mankind)¦belief that human nature is fundamentally evil¦性善説",
     "0th6i\t性格\tせいかく\tn¦¦character (of a person)¦personality¦disposition¦nature\tn¦¦characteristics¦nature (of a thing, event, etc.)",
     "0th72\t性急\tせいきゅう\tadj-na,n¦¦hasty¦rash¦rushed¦hurried¦impatient¦impetuous¦quick-tempered",
+    "0th7c\t性教育\tせいきょういく\tn¦¦sex education",
     "0th7w\t性向\tせいこう\tn¦¦inclination¦tendency¦nature¦character",
     "0th86\t性行\tせいこう\tn¦¦character and conduct",
     "0th8q\t性根\tしょうね\tn¦¦nature¦character¦disposition¦根性・2",
+    "0th90\t性差\tせいさ\tn¦¦difference between the sexes¦sexual difference",
     "0th9a\t性質\tせいしつ\tn¦¦nature (of a person)¦disposition¦temperament¦character\tn¦¦quality¦inherent characteristic¦property¦nature¦(chemical) behavior",
+    "0th9k\t性成熟\tせいせいじゅく\tn¦¦sexual maturation",
     "0tha4\t性腺摘除\tせいせんてきじょ\tn¦¦castration",
+    "0thae\t性的\tせいてき\tadj-na¦¦sexual (i.e. relating to biological sex)",
+    "0thb8\t性転換\tせいてんかん\tn,vs,vi¦¦sex change¦gender reassignment\tn,vs,vi¦biol,zool¦sex change¦sequential hermaphroditism",
     "0thbi\t性能\tせいのう\tn¦¦ability¦performance¦efficiency",
     "0thcc\t性分\tしょうぶん\tn¦¦nature¦disposition",
     "0thcm\t性癖|性壁~sK\tせいへき\tn¦¦disposition¦inclination¦characteristic¦idiosyncrasy¦propensity",
+    "0thcw\t性別\tせいべつ\tn¦¦(distinction of) sex¦gender",
     "0thdq\t成し遂げる|為し遂げる~rK|なし遂げる~sK|成しとげる~sK|成遂げる~sK\tなしとげる\tv1,vt¦¦to accomplish¦to achieve¦to complete¦to carry out¦to carry through",
     "0thea\t成り下がる|なり下がる~sK|成り下る~sK|なり下る~sK|成りさがる~sK|成下がる~sK|成下る~sK\tなりさがる\tv5r,vi¦¦to be degraded¦to come down in the world¦to lose status¦to be ruined¦to fall low",
     "0thek\t成り果てる|なり果てる|成果てる~sK\tなりはてる\tv1,vi¦¦to be reduced to (e.g. poverty)¦to end up as",
@@ -354,7 +376,7 @@ export const PIECE: WordsPiece = {
     "0tiq2\t正式\tせいしき\tadj-na,adj-no,n¦¦formal¦official¦regular¦proper¦legal¦due (formalities)",
     "0tiqc\t正式メンバー\tせいしきメンバー\tn¦¦official member",
     "0tiqm\t正式発表\tせいしきはっぴょう\tn¦¦official announcement",
-    "0tiqw\t正室\tせいしつ\tn¦¦room for receiving guests¦表座敷・おもてざしき¦2\tn¦rare¦heir¦successor¦3",
+    "0tiqw\t正室\tせいしつ\tn¦¦legal wife (of a noble) (as opposed to a concubine)¦側室|本妻\tn¦¦room for receiving guests¦表座敷・おもてざしき\tn¦rare¦heir¦successor",
     "0tir6\t正社員\tせいしゃいん\tn¦¦regular employee¦permanent employee¦full-time employee¦派遣社員・はけんしゃいん",
     "0tirg\t正邪\tせいじゃ\tn¦¦right and wrong¦right or wrong",
     "0tirq\t正宗\tまさむね\tn¦¦famous sword¦sword blade by Masamune\tn¦col¦sake¦Japanese rice wine¦brand of sake from Nada region during Tenpō era (1830-1844)",
@@ -961,21 +983,5 @@ export const PIECE: WordsPiece = {
     "0tnqc\t切らす\tきらす\tv5s,vt¦¦to run out of¦to be short of¦to be out of stock\tv5s,vt¦¦to be out of (e.g. breath)¦to lose (one's patience, concentration, etc.)",
     "0tnqm\t切ら無い|切らない\tきらない\tadj-i¦¦not through¦not finished¦not done",
     "0tnqw\t切り|限り|切~io|限~io\tきり|キリ~sk\tn¦uk¦end¦finish¦place to stop\tn¦uk¦bound¦limit¦end¦切りがない・1\tn¦finc¦delivery date (of a futures contract)¦限り|限\tn¦¦finale (of a noh song)¦end of an act (in jōruri or kabuki)¦final performance of the day (in vaudeville)\tn¦¦trump card\tn¦cards¦king (court card; in mekuri karuta and unsun karuta)\tn¦uk,go¦cut¦separation of two groups¦usu. キリ\tctr¦¦counter for slices (esp. thick slices)¦counter for cuts (of fish, meat, etc.)\tprt¦uk¦only¦just¦っきり・1¦sometimes pronounced ぎり\tprt¦uk¦(ever) since¦after¦usu. in a negative sentence; sometimes pronounced ぎり\tprt¦uk¦continuously¦remaining (in a particular state)¦sometimes pronounced ぎり",
-    "0tnr6\t切りがない|切りが無い\tきりがない|キリがない~~~!\texp,adj-i¦uk¦endless¦boundless¦innumerable¦切りのない\texp,adj-i¦uk¦endless¦never-ending¦going on forever",
-    "0tnrg\t切りがいい|切りが良い|切りがよい\tきりがいい~~切りがいい,切りが良い|きりがよい~~切りが良い,切りがよい|キリがいい~~~!|キリがよい~~~!\texp,adj-ix¦uk¦good (place to leave off)¦convenient",
-    "0tnrq\t切りっ端|切りっぱし\tきりっぱし\tn¦¦scraps¦cut end¦cut-off piece",
-    "0tns0\t切りのない|切りの無い\tきりのない|キリのない~~~!\texp,adj-i¦uk¦endless¦boundless¦切りがない・1",
-    "0tnsa\t切り下げる|斬り下げる~rK|きり下げる~sK|切りさげる~sK\tきりさげる\tv1,vt¦¦to cut down¦to prune¦to reduce¦to cut and hang down¦to cut shorter\tv1,vt¦¦to round down (e.g. fraction)",
-    "0tnsk\t切り下ろす|斬り下ろす|切りおろす|切下ろす\tきりおろす\tv5s,vt¦¦to cut downward¦to slash downward",
-    "0tnsu\t切火|鑽火|切り火|鑽り火|鑚火|鑚り火\tきりび\tn¦¦striking sparks with flint and steel or by rubbing sticks together (usu. to start a fire)¦fire lit by sparks from flint and steel, etc.¦鑽る\tn¦¦purification ceremony in which sparks are struck in the direction of someone (oft. for good luck)",
-    "0tnt4\t切り花|切花\tきりばな\tn¦¦cut flowers",
-    "0tnte\t切り解く|斬り解く|切解く|斬解く\tきりほどく\tv5k,vt¦¦to cut open (a tied bundle)¦to release (prisoners)",
-    "0tnto\t切り回す|切りまわす|切回す\tきりまわす\tv5s,vt¦¦to manage¦to control¦to run¦to handle\tv5s,vt¦¦to cut carelessly (of a cook, surgeon, etc.)¦to slash about¦also written as 斬り回す\tv5s,vt¦arch¦to cut around",
-    "0tnty\t切り開き\tきりひらき\tn¦¦clearing (land)¦excavating",
-    "0tnu8\t切り開く|切り拓く|切りひらく|きり拓く~sK|切開く~sK|切り墾く~sK\tきりひらく\tv5k,vt¦¦to cut open\tv5k,vt¦¦to clear (land)¦to cut (a path, road, etc.)¦to open¦to cut one's way through (e.g. a jungle)\tv5k,vt¦¦to carve out (a new career, future, etc.)¦to open up (a new field)",
-    "0tnui\t切り外す|切りはずす\tきりはずす\tv5s,vt¦¦to miss in attempting to kill",
-    "0tnus\t切り広げる|切り拡げる|切広げる~sK|切拡げる~sK\tきりひろげる\tv1,vt¦¦to cut and enlarge¦to enlarge by cutting",
-    "0tnv2\t切り割る|切割る\tきりわる\tv5r,vt¦¦to cut (into two or more pieces)",
-    "0tnvc\t切り干し|切干|切干し|切り乾し\tきりぼし\tn¦¦dried daikon strips",
   ],
 };

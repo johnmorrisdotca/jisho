@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 7 of 70, from "ソフトウェア開". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 7 of 70, from "ソフトウェア製". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "ソフトウェア製品\tソフトウェアせいひん",
     "ソフトウェア開発\tソフトウェアかいはつ",
     "ソフトウェア開発キット\tソフトウェアかいはつキット",
     "ソフト化\tソフトか",
@@ -2286,6 +2287,5 @@ export const PIECE: WordsPiece = {
     "バルト三国\tバルトさんごく",
     "バルト語派\tバルトごは",
     "バルバロッサ作戦\tバルバロッサさくせん",
-    "バルビツル酸\tバルビツルさん",
   ],
 };

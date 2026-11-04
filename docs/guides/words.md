@@ -44,7 +44,7 @@ console.log(wordsOf(second,"かみ").length>0,wordsOf(second,"いぬ").length>0)
 
 ## Safe, or unfiltered
 
-A lookup is in **safe** mode unless it says `mode: "unfiltered"`. Safe leaves out every sense JMdict marks vulgar (`vulg`), X-rated (`X`), sensitive (`sens`) or derogatory (`derog`), every sense with a gloss that names sex or the sex trade (JMdict does not always mark these), every written form or reading that only such a sense gives, and every word of which each sense is left out. It fetches only files that hold none of that, so it fetches less. A word with nothing left to say is not found: `wordsOf` gives an empty list and `meaningOf` gives `null`, as for a word JMdict does not have. Unfiltered is everything JMdict has.
+A lookup is in **safe** mode unless it says `mode: "unfiltered"`. Safe leaves out every sense JMdict marks vulgar (`vulg`), X-rated (`X`), sensitive (`sens`) or derogatory (`derog`), every sense with a gloss that names a sex act, a sex organ or the sex trade (JMdict does not always mark these), every written form or reading that only such a sense gives, and every word of which each sense is left out. It fetches only files that hold none of that, so it fetches less. A word with nothing left to say is not found: `wordsOf` gives an empty list and `meaningOf` gives `null`, as for a word JMdict does not have. Unfiltered is everything JMdict has.
 
 ```ts
 import {loadWords,wordsOf} from "@johnmorrisdotca/jisho/words";
@@ -112,7 +112,7 @@ Each of these has a guide of its own:
 
 The dictionary is 316 pieces of rows, cut by reading, and 70 pieces of an index from each written form to its readings, cut by form. `words` holds where each piece starts, and a lookup finds its piece by comparing the text with those starts. No piece is more than about 100 kB, and none is fetched until a lookup needs it.
 
-The common table holds the 25,999 words JMdict marks common that safe mode keeps (a form or reading in `news1`, `ichi1`, `spec1`, `spec2` or `gai1`). It answers for any text, and answers only with common words: a reading shared with a rare word finds the common ones alone. `scope` on the words says which kind you have. Unfiltered, `loadCommonWords({ mode: "unfiltered" })` fetches `common-extra.data` too, about 27 kB gzipped, which says what to add and change; with `readCommonWords` you pass it yourself as `extra`.
+The common table holds the 26,014 words JMdict marks common that safe mode keeps (a form or reading in `news1`, `ichi1`, `spec1`, `spec2` or `gai1`). It answers for any text, and answers only with common words: a reading shared with a rare word finds the common ones alone. `scope` on the words says which kind you have. Unfiltered, `loadCommonWords({ mode: "unfiltered" })` fetches `common-extra.data` too, about 27 kB gzipped, which says what to add and change; with `readCommonWords` you pass it yourself as `extra`.
 
 ## In a browser
 
@@ -143,7 +143,7 @@ Measured on 2026-11-03 against 2.0.0, in Node 24 on one Mac. The kana guess is t
 | A written form (`loadWords("紙")`) | 2 pieces, 56 kB | 2 pieces, 56 kB |
 | `wordsOf` for かみ (nine words), after loading | 1.0 µs | 1.4 µs |
 | `wordsOf` for 紙 (two words), after loading | 0.19 µs | 0.33 µs |
-| `readCommonWords(COMMON_WORDS)`, 25,999 rows | 64 to 72 ms | 73 to 80 ms |
+| `readCommonWords(COMMON_WORDS)`, 26,014 rows | 64 to 72 ms | 73 to 80 ms |
 | `normalizeText("ｶﾐ ")` | not there | 2 µs; 0.3 µs for a text already plain |
 | The words entry with every piece bundled, minified and gzipped | 9.97 MB | 13.74 MB |
 | The JavaScript of the pieces in the package, unpacked | 34.9 MB | 48.0 MB |

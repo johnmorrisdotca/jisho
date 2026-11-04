@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 40 of 316, from "おだり". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 40 of 316, from "おだや". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "おだやか\t穏やか\tnC~ni10#pd9i\t¦calm¦quiet¦gentle\t¦moderate¦reasonable¦amicable",
     "オダリスク\t\t#1he1w\t¦odalisque¦odalisk",
     "おだわらぢょうちん\t小田原提灯\t#11dc8\t¦(collapsible) cylindrical paper lantern",
     "おだわらひょうじょう\t小田原評定\t#11dci\t¦fruitless discussion¦inconclusive discussion",
@@ -270,7 +271,7 @@ export const PIECE: WordsPiece = {
     "おてすうですが\tお手数ですが\tC~s#1onzl\t¦sorry to bother you, but ...",
     "おてすうをおかけいたします\tお手数をおかけいたします|お手数をおかけ致します\tg#1b4ig\thum¦to be a burden¦to make trouble for someone",
     "おてだま\tお手玉\t#lh7a\t¦beanbag¦beanbag juggling game\tbaseb¦bobbling the ball",
-    "おてつき\tお手つき|お手付き\t#10ayu\t¦touching a wrong card (in karuta)¦buzzing too early (in a quiz)\tcards¦foul (comp. karuta)",
+    "おてつき\tお手つき|お手付き\t#10ayu\t¦touching a wrong card (in karuta)¦buzzing too early (in a quiz)\tdated¦making a mistress of a servant¦mistress (who is one's servant)\tcards¦foul (comp. karuta)",
     "おてつだい\tお手伝い\tsC~ni17#ykga\t¦maid¦helper\tpol,hon¦help¦assistance",
     "おてつだいさん\tお手伝いさん\tC~i#lh8e\t¦maid",
     "おてて\tお手手|お手々\tU#18l4g\tuk,chn¦hand¦hands",
@@ -725,7 +726,5 @@ export const PIECE: WordsPiece = {
     "おなじ\t同じ\tnC~mi33#v46e\t¦same¦identical¦equal\t¦anyway¦in any case¦if one must ...",
     "おなじ\t〃\t#lfmw\t¦ditto mark",
     "おなじ\t〻\t#1oz4d\t¦(vertical) iteration mark used to represent repetition of the previous kanji (to be read using its kun'yomi)",
-    "おなじあなのきつね\t同じ穴の狐\t#1p4pl\tid¦birds of a feather¦(villains) of the same stripe",
-    "おなじあなのたぬき\t同じ穴の狸|同じ穴のタヌキ\t#1p4pk\tid¦birds of a feather¦(villains) of the same stripe",
   ],
 };

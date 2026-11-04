@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 107 of 144, from "11p". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 107 of 144, from "11o". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,18 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "11o04\t1¦｜鞍馬《あんば》は、｜力《ちから》よりもバランス｜感覚《かんかく》が｜必要《ひつよう》です。¦The pommel horse requires more balance than strength.¦¦43jv¦KK_kaku_¦Dejo¦鞍馬",
+    "11o0o\t1¦｜客《きゃく》のうちの｜何人《なんにん》かが｜宴会場《えんかいじょう》を｜出《で》て｜行《い》くのが｜見《み》えた。¦I saw some of the guests leave the banquet room.¦1¦3x1h¦¦CK¦宴会場",
+    "11o4k\t1¦そう｜言《い》えば、｜肝心要《かんじんかなめ》の｜部分《ぶぶん》を｜何《なに》も｜決《き》めていなかった。¦Now that you mention it, I wasn't involved in the decision-making for the vital part.¦¦1n4z¦mookeee¦¦肝心要",
+    "11o72\t1¦｜小《しょう》｜泉《いずみ》｜首相《しゅしょう》が「｜憲法違反《けんぽういはん》だから｜靖国神社《やすくにじんじゃ》｜参拝《さんぱい》しちゃいかんという｜人《じん》がいます」と｜語《かた》った。¦Prime Minister Koizumi said, \"There are people who say that, because it's unconstitutional, I should not pray at the Yasukuni Shrine\".¦1¦1mnk¦mookeee¦¦憲法違反",
+    "11obs\t1¦｜今年《ことし》の｜夏《なつ》も｜冷夏《れいか》になりそうだ。¦It seems to be cold again this summer.¦3¦3o8o¦small_snow¦¦冷夏",
+    "11ocw\t1¦｜零細企業《れいさいきぎょう》はインフレで｜苦境《くきょう》に｜陥《おちい》っています。¦Small enterprises are feeling the squeeze of inflation.¦1¦1nvq¦mookeee¦CM¦零細企業",
+    "11odq\t1¦｜小作人《こさくにん》｜達《たち》は｜領主《りょうしゅ》に｜反抗《はんこう》して｜蜂起《ほうき》した。¦The peasants rose up in rebellion against the ruler.¦¦35ea¦¦¦領主",
+    "11ok4\t1¦｜彼女《かのじょ》は｜利己心《りこしん》がない。¦She has no thought of self.¦1¦1ulr¦¦¦利己心",
+    "11oke\t1¦｜彼《あれ》は｜徹底《てってい》した｜利己主義者《りこしゅぎしゃ》だ。¦He is a thorough-going egoist.¦1¦26o2¦¦¦利己主義者",
+    "11opy\t1¦｜彼女《かのじょ》は｜美《うつく》しいだけでなく｜利発《りはつ》でもある。¦She is not merely beautiful but bright.¦3¦1v7e¦¦¦利発",
+    "11orm\t1¦ＥＣ諸国はこの会談に非常に大きな利害関係をもっています。¦The EC countries have a huge stake in the talks.¦2¦517o¦¦¦利害関係",
+    "11ovi\t1¦｜彼《あれ》は｜歴史小説《れきししょうせつ》を｜読《よ》んでいるだろう。¦He will be reading a historical novel.¦2¦24bh¦¦¦歴史小説",
     "11p94\t1¦｜今日《きょう》は｜底冷《そこび》えのする｜日《ひ》だ。¦I feel chilled to the bone today.¦2¦3od0¦¦¦底冷え",
     "11pbm\t1¦これらの｜植物《しょくぶつ》は｜除草剤《じょそうざい》に｜抵抗力《ていこうりょく》がある。¦These plants are resistant to weed killers.¦1¦4o3i¦¦CM¦抵抗力",
     "11pda\t1¦｜中《うち》｜村《むら》さんは｜東京《とうきょう》ではしご｜酒《ざけ》をした。¦Mr Nakamura went bar hopping in Tokyo.¦2¦2pko¦¦¦はしご酒",
@@ -209,18 +221,5 @@ export const PIECE: WordsPiece = {
     "126si\t1¦わが｜連合艦隊《れんごうかんたい》は｜敵《てき》の｜防衛《ぼうえい》｜海域《かいいき》を｜突破《とっぱ》した。¦Our combined fleet broke through the enemy's defense zone.¦1¦445b¦¦Dejo¦連合艦隊",
     "127dm\t1¦｜分析《ぶんせき》においては、クルツによって｜最初《さいしょ》に｜分析《ぶんせき》された｜権威的《けんいてき》｜行動《こうどう》の｜類型《るいけい》に｜負《お》っている｜部分《ぶぶん》が｜大《おお》きい。¦In my analysis I rely considerably on the types of authoritarian behaviour first analyzed by Kurz.¦¦1sl8¦¦¦権威的",
     "127dw\t1¦リツコはその｜問題《もんだい》については｜相当《そうとう》の｜権威者《けんいしゃ》です。¦Ritsuko is something of an authority on the subject.¦1¦44jk¦¦CN¦権威者",
-    "127fu\t1¦｜京都《きょうと》は｜観光産業《かんこうさんぎょう》に｜依存《いぞん》している。¦Kyoto depends on the tourist industry.¦2¦3w5j¦arnab¦ludoviko¦観光産業",
-    "127gy\t1¦｜観光案内所《かんこうあんないじょ》はどこですか。¦Where is the tourist information office?¦1¦3xtl¦bunbuku¦CK¦観光案内所",
-    "127hi\t2¦｜彼《あ》の｜福祉《ふくし》の｜概念《がいねん》はかなり｜観念的《かんねんてき》だ。¦His notion of welfare is pretty abstract.¦¦2hnn¦¦shekitten¦観念的",
-    "127ly\t1¦｜彼《あれ》は｜観察力《かんさつりょく》が｜鋭《するど》い。¦He has an acute sense of observation.¦2¦2bwm¦¦sacredceltic¦観察力",
-    "127m8\t1¦すべてが｜多数《たすう》の｜観察者《かんさつしゃ》の｜目《め》に｜見《み》える。¦All this is visible to numerous observers.¦3¦4li9¦¦¦観察者",
-    "127pk\t1¦ジョージはとても｜話好《はなしず》きだ。¦George is quite talkative.¦3¦4meg¦tommy__san¦CN¦話好き",
-    "127q4\t1¦ボブは｜誰《だれ》か｜話《はな》し｜相手《あいて》を｜探《さが》していた。¦Bob was looking for someone to talk with.¦¦478b¦bunbuku¦CN¦話し相手",
-    "127qy\t1¦｜彼《あれ》は｜喧嘩早《けんかばや》い｜人《じん》だ。¦He is an aggressive person.¦¦2b4k¦¦orcrist¦喧嘩早い",
-    "127ri\t1¦｜僕《ぼく》は｜友達《ともだち》と｜喧嘩別《けんかわか》れした。¦I parted from my friend in anger.¦¦1r2i¦¦¦喧嘩別れ",
-    "127u0\t1¦｜母系《ぼけい》の｜祖母《そぼ》はその｜旧式《きゅうしき》のドレスを｜着《き》ることに｜固執《こしつ》する。¦My maternal grandmother persists in wearing that old-fashioned dress.¦1¦1rwx¦¦¦母系",
-    "127w8\t1¦｜毎夕《まいゆう》、｜放課後《ほうかご》に｜僕《ぼく》たちは｜彼《あ》の｜家《いえ》の｜裏《うら》｜庭《にわ》で｜会《あ》って、インディアン｜戦争《せんそう》ごっこをした。¦Every evening after school we met in his back garden and arranged Indian battles.¦1¦1lew¦fcbond¦fcbond¦毎夕",
-    "127xc\t1¦｜明日《あした》から｜梅雨前線《ばいうぜんせん》が｜活発《かっぱつ》になります。¦The seasonal rain front is moving in tomorrow.¦1¦1q7a¦tommy__san¦¦梅雨前線",
-    "1280o\t1¦｜牧羊犬《ぼくようけん》が、｜羊《ひつじ》の｜群《ぐん》を｜牧場《ぼくじょう》へ｜連《つ》れていく。¦A sheep dog drives the flock to the pasture.¦1¦1r0p¦¦¦牧羊犬",
   ],
 };

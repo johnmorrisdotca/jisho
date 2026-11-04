@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 10 of 219, from "0nt9o". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 10 of 219, from "0nt9e". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0nt9e\t\tふふふ|フフフ|ふふ|フフ|ふふっ~sk|フフッ~sk|フフフッ~sk\tint¦¦ha ha ha¦hee hee hee",
     "0nt9o\t\tフュージョン|ヒュージョン~sk\tn¦¦fusion",
     "0nt9y\t\tフューチャー\tn¦¦future",
     "0ntai\t\tフライ\tn¦food¦deep-fried food",
@@ -1216,7 +1217,5 @@ export const PIECE: WordsPiece = {
     "0o3oy\t\tボンベ\tn¦¦compressed gas cylinder¦aerosol spray can¦ger~Bombe",
     "0o3p8\t\tボンベイブラッド|ボンベイ・ブラッド\tn¦¦Bombay blood type¦Hh blood group",
     "0o3pi\t\tボンレスハム|ボンレス・ハム\tn¦¦boneless ham",
-    "0o3ps\t\tポーカー\tn¦cards¦poker",
-    "0o3q2\t\tポーカーフェイス|ポーカーフェース|ポーカー・フェイス|ポーカー・フェース\tn¦¦poker face",
   ],
 };

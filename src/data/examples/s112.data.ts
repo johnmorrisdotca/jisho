@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 113 of 144, from "14qv". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 113 of 144, from "14pu". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,17 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "14pua\t1¦せきがひどかったので、｜苦《にが》い｜薬《くすり》を｜飲《の》んだ。¦I had a bad cough, so I took the bitter medicine.¦3¦4l5w¦bunbuku¦CK¦苦い薬",
+    "14puk\t1¦｜若者《わかもの》は｜自分《じぶん》の｜苦《にが》い｜経験《けいけん》から｜学《がく》ばねばならない。¦Young people must profit from their bitter experiences.¦¦36rp¦¦¦苦い経験",
+    "14q72\t1¦｜我々《われわれ》は｜流感《りゅうかん》の｜広《ひろ》がる｜速度《そくど》を｜鈍《にぶ》らすことができるだろうか。¦Can we check the rapid spread of the 'flu?¦1¦3z4u¦mookeee¦speedwell¦鈍らす",
+    "14qd6\t1¦｜私《わたし》の｜参謀《さんぼう》としてついたからには、｜危機感《ききかん》を｜持《も》って｜任《にん》にあたって貰わねば｜困《こま》ります。¦If you're with me as a staff officer, then I need you to bring a sense of danger with you to your work.¦¦1man¦mookeee¦¦任にあたって",
+    "14qgi\t1¦実も結ぶが、挿し木でも根付くらしい？¦It bears fruit, but it seems it may even set root from cuttings?¦1¦1l70¦fcbond¦fcbond¦根付く\t2¦｜西洋《せいよう》の｜多《おお》くの｜習慣《しゅうかん》が｜日本《にほん》に｜根付《ねづ》いてきた。¦Many western customs have taken root in Japan.¦2¦321j¦¦¦根付いて",
+    "14qiq\t1¦｜夫《おっと》がカナダ｜人《じん》に｜熱《ねつ》を｜上《あ》げて、｜離婚《りこん》を｜迫《せま》られています。¦My husband got the hots for a Canadian and is threatening me with divorce.¦1¦33lz¦Scott¦Scott¦熱を上げて",
+    "14qls\t1¦そろそろ｜寝《ね》る｜時間《じかん》だぞ。¦It's time you went to bed.¦3¦4dr6¦bunbuku¦furagwa¦寝る時間",
+    "14qoa\t1¦イタリアでは、すべての｜村《むら》が｜年《ねん》に｜一度《いちど》のお｜祭《まつ》りをする。¦In Italy, each village holds a festival once a year.¦2¦4wrd¦¦shekitten¦年に一度",
+    "14qpo\t1¦｜彼《かれ》らは｜年齢順《ねんれいじゅん》に｜座《すわ》った。¦They sat according to age.¦2¦22dv¦¦rul¦年齢順",
+    "14qqi\t1¦彼は妻に自分を午前７時に起こしてくれるように念を押した。¦He reminded his wife to wake him up at 7:00 a.m.¦¦2ahh¦¦CK¦念を押した",
+    "14que\t1¦この｜野《の》の｜花《はな》はいい｜匂《にお》いがする。¦These wild flowers give off a nice smell.¦¦4p88¦¦CM¦野の花",
     "14qvi\t1¦｜党首《とうしゅ》は｜今《いま》｜後《あと》の｜方《ほう》｜針《はり》を｜一瀉千里《いっしゃせんり》に｜述《の》べ｜立《た》てた。¦The party leader rattled on at great length about future policies.¦¦1mix¦mookeee¦¦述べ立てた",
     "14qwm\t1¦ジョンは｜近頃《ちかごろ》のみ｜過《す》ぎだ。¦These days John drinks too much.¦¦4m57¦¦CP¦のみ過ぎ",
     "14rai\t1¦｜彼女《かのじょ》にははげましの｜言葉《ことば》をかけてあげたらどうですか。¦Why don't you see if you can't give her a pep talk?¦3¦21aq¦¦CM¦はげましの",
@@ -124,6 +135,7 @@ export const PIECE: WordsPiece = {
     "1530q\t1¦｜私《わたし》は｜彼《あれ》と｜連絡《れんらく》を｜取《と》る｜事《こと》ができない。¦I cannot get in touch with him.¦2¦3b25¦¦CK¦連絡を取る",
     "1539m\t1¦「｜広辞苑《こうじえん》にこう｜書《か》いてあります」と｜言《い》って、｜広辞苑《こうじえん》を｜唯一《ゆいいつ》の｜拠《よ》り｜所《どころ》に｜論陣《ろんじん》を｜張《は》る｜人《じん》がよくいる。¦There are a lot of people who say, \"it says this in Koujien,\" and use that dictionary as the only grounds for their argument.¦1¦1neq¦mookeee¦¦論陣を張る",
     "153bk\t1¦その｜若夫婦《わかふうふ》はいっしょに｜仲良《なかよ》くやっている。¦The young couple is getting along together.¦2¦4ho6¦¦CK¦若夫婦",
+    "153em\t1¦その｜混《ま》ぜ｜物《もの》をかき｜混《ま》ぜて、｜泡立《あわだ》ったら｜脇《わき》に｜置《お》いておきましょう。¦Stir the mixture until it foams, then set it aside.¦¦4igp¦¦AlanF_US¦脇に置いて",
     "153ew\t1¦｜私《わたし》はわきによって｜彼《かれ》らを｜通《とお》した。¦I stood aside to let them pass.¦3¦3ect¦¦CK¦わきによって",
     "153h4\t1¦どんなスポーツでも｜彼《あれ》にはわけなく｜出来《でき》る。¦Sports always come naturally to him.¦3¦49zp¦¦mailohilohi¦わけなく",
     "153is\t1¦｜子《こ》どもを｜甘《あま》やかして｜育《そだ》てたことで、ステラは｜後《のち》に｜自《みずか》ら｜災《わざわ》いを｜招《まね》くことになってしまった。¦In spoiling her child, Stella made a rod for her own back in the years that were to follow.¦1¦1mpw¦kamojun¦¦災いを招く",
@@ -203,17 +215,5 @@ export const PIECE: WordsPiece = {
     "15cio\t1¦｜彼《かれ》らは｜愛校心《あいこうしん》が｜足《た》りない。¦They don't love their school enough.¦3¦239z¦¦¦愛校心",
     "15ckc\t1¦ホームズさんはパイプの｜大《だい》の｜愛用者《あいようしゃ》で、｜名探偵《めいたんてい》です。¦Holmes is a great pipe man as well as a great detective.¦1¦4913¦¦JeanM¦愛用者",
     "15crk\t1¦｜闇夜《やみよ》に｜鉄砲《てっぽう》じゃあるまいし、そんな｜場当《ばあ》たり｜的《てき》なやり｜方《かた》でうまくいくとは｜思《おも》えないよ。¦That's just a shot in the dark. How do you think you'll succeed by just acting on the spur of the moment like that?¦¦43jw¦¦Dejo¦闇夜に鉄砲",
-    "15d24\t1¦｜目《め》の｜細《こま》かい｜織《お》りのカーペットが｜一般的《いっぱんてき》には｜価値《かち》が｜高《たか》い。¦Tightly-knit carpets are generally more valuable.¦¦1pp9¦¦CM¦織り",
-    "15d3i\t1¦タッソーろう｜人形《にんぎょう》｜館《やかた》へ｜行《い》く｜道《みち》を｜教《おし》えて｜頂《いただ》けませんか。¦Could you tell me the way to Madame Tussaud's?¦3¦4d3h¦arnab¦orcrist¦館",
-    "15d5g\t1¦｜日本国民《にほんこくみん》は｜戦争《せんそう》を｜放棄《ほうき》している。¦The Japanese people have renounced war.¦1¦2mdq¦¦¦日本国民",
-    "15d5q\t1¦この｜詩《うた》は｜誰《た》が｜書《か》いたのですか。¦By whom was this poem written?¦¦4r2v¦tommy__san¦megamanenm¦詩",
-    "15d7o\t1¦ご｜注文《ちゅうもん》を｜下記《かき》の｜通《どお》り｜確認《かくにん》します。¦We will confirm your order as follows.¦3¦4nhf¦¦¦ご注文",
-    "15d8i\t1¦｜私《わたし》は｜彼《あ》の｜秘密《ひみつ》をばらすと｜脅《おど》しをかけた。¦I threatened to reveal his secret.¦1¦3aoc¦¦CK¦ばらす",
-    "15d92\t1¦｜彼女《かのじょ》の｜夫《おっと》はひどい｜麻薬《まやく》｜依存症《いぞんしょう》だ。¦Her husband is heavily dependent on drugs.¦1¦20jf¦¦CK¦依存症",
-    "15d9m\t1¦｜当店《とうてん》では｜品物《しなもの》の｜委託販売《いたくはんばい》をしています。¦We sell goods on commission.¦1¦2nnn¦¦CK¦委託販売",
-    "15dba\t1¦｜会社《かいしゃ》の｜慰安旅行《いあんりょこう》で｜箱《はこ》｜根《ね》に｜行《い》きます。¦My company is sending us all to Hakone this year.¦1¦3yyp¦¦CN¦慰安旅行",
-    "15dbu\t1¦ここ｜何年《なんねん》か｜異常気象《いじょうきしょう》がつづいている。¦We've been having strange weather the past few years.¦1¦4t0u¦bunbuku¦CK¦異常気象",
-    "15dem\t1¦｜改良《かいりょう》された｜医療技術《いりょうぎじゅつ》は、｜宇宙開発計画《うちゅうかいはつけいかく》の｜副産物《ふくさんぶつ》として｜派生《はせい》したものの｜一《ひと》つである。¦Improved medical technology has been one of the spin-offs of the space program.¦1¦3yur¦¦CK¦医療技術",
-    "15dew\t1¦｜医療費《いりょうひ》・｜年金《ねんきん》｜給付《きゅうふ》の｜抑制《よくせい》｜策《さく》の｜決《き》め｜手《て》はないといえよう。¦We can say that there's not a clear winner in terms of a policy to curtail medical expenses and benefits.¦1¦4366¦¦papabear¦医療費",
   ],
 };

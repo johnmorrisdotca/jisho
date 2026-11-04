@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 122 of 144, from "17gpq". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 122 of 144, from "17g". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,21 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "17g0q\t1¦｜浅学非才《せんがくひさい》の｜私《わたし》ではありますが、｜何《なに》とぞ｜皆様《みなさま》のお｜力《ちから》を｜賜《たまわ》りたく、ここにお｜願《ねが》い｜申《もう》し｜上《あ》げる｜次第《しだい》です。¦I may not have much to offer in the way of learning or ability, but I want to do whatever I can for us all and humbly ask for your favor.¦1¦30yz¦¦¦お願い申し上げる",
+    "17g2e\t1¦それは｜今《いま》でも｜男女《だんじょ》を｜問《と》わず｜愛読《あいどく》されている｜本《もと》です。¦It is, even now, a book loved by men and women alike.¦3¦dher¦blay_paul¦blay_paul¦問わず",
+    "17g2y\t1¦いやでもその｜仕事《しごと》をしなければならない。¦You must do the work even if you don't like it.¦4¦4wam¦¦CK¦いやでも",
+    "17g3s\t1¦｜我々《われわれ》は｜決定《けってい》にあたって｜偏見《へんけん》に｜左右《さゆう》されるべきではない。¦We should not be influenced in our decisions by our prejudices.¦1¦3zfk¦¦auxitt¦べきではない",
+    "17g4c\t1¦｜仕事《しごと》はあとどれだけ｜残《のこ》っていますか。¦How much more work do you have?¦3¦3mhu¦¦CK¦どれだけ",
+    "17g8i\t1¦｜俺《おれ》が｜日本《にほん》の｜総理大臣《そうりだいじん》ならクリントンにガツンと｜言《い》ってやるのになあ。¦If I were prime minister, I'd give Clinton a good talking to.¦¦41di¦bunbuku¦CN¦ガツンと言って",
+    "17g9w\t1¦｜旅行会社《りょこうがいしゃ》は｜旅行《りょこう》の｜詳細《しょうさい》を｜全《すべ》て｜私《わたし》たちに｜教《おし》えてくれた。¦The travel company furnished us with all the details of the tour.¦1¦1oap¦mookeee¦CM¦旅行会社",
+    "17gco\t1¦｜雨天中止《うてんちゅうし》になりそうな｜計画《けいかく》だな。¦That's a plan that sounds likely to be cancelled by rain.¦4¦1m24¦fcbond¦fcbond¦雨天中止",
+    "17gdi\t1¦オランダ｜語《ご》はドイツ｜語《ご》と｜密接《みっせつ》なつながりがある。¦Dutch is closely related to German.¦1¦4vio¦bunbuku¦CK¦オランダ語",
+    "17ge2\t1¦「ウィキペディアを｜引用《いんよう》するな」という｜主張《しゅちょう》が｜昨日《きのう》だか｜一昨日《おととい》だかの｜朝日《あさひ》｜新聞《しんぶん》に｜載《の》っていた。¦The exhortation \"Don't quote Wikipedia\" was included in the Asahi newspaper of yesterday or the day before.¦1¦1m4r¦fcbond¦fcbond¦ウィキペディア",
+    "17ggu\t1¦｜粘液便《ねんえきべん》がでます。¦I have mucous in my stool.¦1¦2ly7¦¦shekitten¦粘液便",
+    "17ghe\t1¦｜杳《よう》として｜行方《ゆくえ》が｜知《し》れない。¦Nothing whatever is known of him.¦¦1mdc¦mookeee¦¦杳として",
+    "17gii\t1¦いずれにせよ、その｜隔《へだ》たりは｜現実《げんじつ》のものであり、｜実際《じっさい》に｜役《やく》に｜立《た》つものではあるのだが、｜同時《どうじ》にそれは｜誤解《ごかい》を｜招《まね》くおそれのあるものでもある。¦In either case, the division is real and useful; but it can also be misleading.¦1¦4ws4¦¦¦おそれのある",
+    "17gme\t1¦お｜言葉《ことば》に｜甘《あま》えてお｜借《か》りいたします。¦I will borrow it then, if you insist.¦2¦4vam¦¦¦言葉に甘えて",
+    "17gp6\t1¦｜顧問《こもん》は｜学長《がくちょう》を｜推戴《すいたい》し、｜本会《ほんかい》の｜重要事項《じゅうようじこう》に｜関《かん》し｜諮問《しもん》に｜応《おう》じる。¦The consultant, who is under the authority of the Chancellor, gives the committee advice on important questions.¦¦1ms5¦¦papabear¦本会",
     "17gpq\t1¦ご｜希望《きぼう》に｜沿《そ》うように｜努力《どりょく》します。¦I'll try to meet your wishes.¦1¦4nl0¦bunbuku¦CK¦希望に沿う",
     "17gqk\t1¦｜日《ひ》が｜経《た》つにつれて、｜天気《てんき》は｜次第《しだい》に｜悪化《あっか》しつつあった。¦The weather was getting worse and worse as the day went on.¦1¦2mvg¦¦CK¦しつつあった",
     "17gqu\t1¦その｜風習《ふうしゅう》はすたれつつある。¦That custom is on the decrease.¦4¦4fny¦¦¦つつある",
@@ -128,19 +143,5 @@ export const PIECE: WordsPiece = {
     "17nyu\t1¦｜予《あらかじ》め｜断《ことわ》りますが、｜今日《きょう》のブログは｜面白《おもしろ》くないよ〜。¦Just to warn you in advance, today's blog is no fun.¦3¦1me5¦mookeee¦CM¦ブログ",
     "17o08\t1¦「あ、は、はい・・・ごめん、玲姉」「コラ。幾ら親戚とはいえ、私は先輩医師よ？院内ではちゃんとケジメをつけなさい」¦\"Ah, y-yes ... Sorry, Coz.\" \"Hey! You might be my relative but here I'm your senior and a doctor. Keep things straight while you're in the hospital!\"¦¦1lt7¦fcbond¦fcbond¦とはいえ",
     "17o2g\t1¦｜我々《われわれ》はノルマを｜果《は》たそうと｜一生懸命《いっしょうけんめい》にがんばって｜四苦八苦《しくはっく》した。¦We almost broke our necks trying to meet the quota.¦1¦3zit¦¦hecko¦ノルマ",
-    "17oas\t1¦｜私《わたし》たちはその｜機《き》を｜最大限《さいだいげん》に｜利用《りよう》した。¦We made the most of the opportunity.¦3¦3key¦¦CK¦機\t2¦セールスマンはひき｜肉《にく》｜機《き》の｜使《つか》い｜方《かた》を｜操作《そうさ》して｜説明《せつめい》した。¦The salesman demonstrated how to use the mincer.¦1¦4l61¦¦CM¦機\t3¦｜機《き》は｜急角度《きゅうかくど》で｜上昇《じょうしょう》し、それから｜海岸《かいがん》を｜離《はな》れるにつれて｜水平飛行《すいへいひこう》に｜移《うつ》った。¦The plane rose sharply before leveling off as it left the coast.¦1¦3xhs¦¦CK¦機\t4¦そのうち３機はまだ帰還の報告はない。¦Three of the planes have not yet reported home.¦1¦4knc¦¦¦機",
-    "17ob2\t1¦なんの｜苦《く》もなくその｜場《ば》｜所《ところ》を｜見《み》つけた。¦He had no difficulty in finding the place.¦3¦49e8¦¦CK¦苦",
-    "17oey\t1¦この｜問題《もんだい》は｜多《おお》くの｜経済学者《けいざいがくしゃ》によって｜論《ろん》じられてきた。¦This problem has been debated by many economists.¦3¦4p9j¦mookeee¦¦経済学者",
-    "17of8\t1¦｜彼女《かのじょ》を｜悪《わる》く｜言《い》う｜奴《やつ》がいたらただじゃおかないぞ。¦I'd take anybody apart who dared to say a word against her.¦1¦1ugo¦bunbuku¦CM¦ただじゃおかない",
-    "17ofi\t1¦｜聖霊《しょうりょう》がある｜方《ほう》の｜上《うえ》に｜下《くだ》って、その｜上《うえ》にとどまられるのが｜見《み》えたなら、その｜方《かた》こそ｜聖霊《しょうりょう》によってバプテスマを｜授《さず》ける｜方《ほう》である。¦The man on whom you see the Spirit come down and remain is he who will baptize with the Holy Spirit.¦1¦322b¦¦¦バプテスマ",
-    "17ofs\t1¦｜私《わたし》たち、うまくやっていけると｜思《おも》うの。¦I think we can get along well.¦4¦3l4g¦¦CK¦うまくやっていける",
-    "17og2\t1¦お｜前《まえ》ならもっとうまくやれるよ。¦I know you can make it better.¦5¦4v4r¦¦CK¦うまくやれる",
-    "17ohg\t1¦｜世界的《せかいてき》に｜過大《かだい》に｜評価《ひょうか》された｜中国《ちゅうごく》｜書《ふみ》といえば、『｜孫子《まごこ》』ですかね。¦When it comes to Chinese books that are overvalued worldwide I suppose it's Sun Tzu, isn't it?¦¦1mm6¦mookeee¦¦書",
-    "17oi0\t1¦きのうここで結婚式が２組あった。¦There were two marriages here yesterday.¦1¦4ud5¦¦Jesse¦２組",
-    "17oia\t1¦ほとんどの｜日本《にほん》の｜大会社《だいがいしゃ》は、｜輸出《ゆしゅつ》に｜頼《たよ》っている。¦Most big Japanese companies depend on exports.¦2¦47c6¦¦CK¦大会社",
-    "17olc\t1¦｜建築家《けんちくか》は｜芸術家《げいじゅつか》ぶってはならない。¦An architect should not pretend to be an artist.¦2¦3rc3¦¦CM¦ぶって",
-    "17om6\t1¦｜私達《わたしたち》が｜生《い》きていくためには｜衣食住《いしょくじゅう》が｜必要《ひつよう》です。¦We need food, clothes and a home in order to live.¦2¦3jqs¦small_snow¦¦生きていく\t1¦｜自分《じぶん》ができそこないであると｜気《き》が｜付《つ》いたまま｜生《い》きていくのは｜辛《から》いことだ。¦It's hard to live with the knowledge that you are a failure.¦¦1mow¦mookeee¦CC¦生きていく",
-    "17on0\t1¦｜音楽《おんがく》は｜野蛮人《やばんじん》の｜胸《むね》をなだめすかす｜魅力《みりょく》がある。¦Music has a charm that soothes even the savage's breast.¦1¦419m¦¦carlosalberto¦なだめすかす",
-    "17ona\t1¦｜彼《あれ》はどの｜学生《がくせい》にも｜劣《おと》らずよく｜勉強《べんきょう》する。¦He works as hard as any student.¦1¦2e15¦¦CK¦劣らず",
   ],
 };

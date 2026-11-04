@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 128 of 144, from "1972". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 128 of 144, from "196k". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,23 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "196ko\t1¦｜家《いえ》では｜赤味《あかみ》がかった｜髪《かみ》とそばかすのせいで、｜母《はは》が｜侮蔑《ぶべつ》を｜込《こ》めて「にんじん」と｜名付《なづ》け、｜皆《みな》にもそう｜呼《よ》ばせています。¦At home, because of his reddish hair and freckles, his mother scornfully named him \"carrot\" and had everybody else call him that.¦¦1mvd¦mookeee¦¦赤味がかった",
+    "196ky\t1¦だが｜定期的《ていきてき》な｜服用《ふくよう》が｜必須《ひっす》であり、｜一日《いちにち》でも｜服用《ふくよう》しなければたちまち｜死《し》に｜至《いた》る。¦However he has to take it at fixed intervals, just one day without taking it is swiftly fatal.¦¦1n3b¦mookeee¦¦死に至る",
+    "196ls\t1¦｜表計算《ひょうけいさん》ソフトは、｜覚《おぼ》えておくと｜何《なに》かと｜便利《べんり》よ。¦Once you get the hang of it, spreadsheet software is really useful.¦2¦1tv7¦bunbuku¦CK¦表計算ソフト",
+    "196m2\t1¦バドミントン｜部《ぶ》はまともな｜部員《ぶいん》が｜極端《きょくたん》に｜少《すく》ないため、ほとんど｜廃部《はいぶ》ないし｜休部《きゅうぶ》｜状態《じょうたい》だった。¦There were so few proper members in the badminton club that it was half-way between dead and 'on break'.¦1¦1n0f¦mookeee¦papabear¦廃部",
+    "196mc\t1¦バドミントン｜部《ぶ》はまともな｜部員《ぶいん》が｜極端《きょくたん》に｜少《すく》ないため、ほとんど｜廃部《はいぶ》ないし｜休部《きゅうぶ》｜状態《じょうたい》だった。¦There were so few proper members in the badminton club that it was half-way between dead and 'on break'.¦1¦1n0f¦mookeee¦papabear¦休部",
+    "196ou\t1¦そんな｜難《むずか》しい｜質問《しつもん》をするなよ。¦Don't ask such hard questions.¦3¦4dg8¦bunbuku¦CK¦質問をする",
+    "196po\t1¦あの｜男《おとこ》はよくつまらぬことで｜誰《だれ》にでも｜因縁《いんねん》をつける。¦He often uses the slightest thing as a pretext for a fight with anybody.¦¦4xxm¦¦¦因縁をつける",
+    "196r2\t1¦そこそこ腕が立つようになるにはどれくらいの時間がかかるものでしょうか？¦How long does it take to get reasonably skilled?¦2¦1lbi¦fcbond¦fcbond¦腕が立つ",
+    "196rc\t1¦｜奥《おく》さんの｜尻《しり》にしかれている。¦His wife leads him by the nose.¦¦41hm¦¦CK¦尻にしかれている",
+    "196tu\t1¦｜政府《せいふ》が｜自衛隊《じえいたい》に｜沖縄《おきなわ》への｜災害派遣《さいがいはけん》を｜要請《ようせい》した。¦The government asked the SDF for a disaster relief deployment to Okinawa.¦1¦1mm0¦bunbuku¦CM¦災害派遣",
+    "196u4\t1¦｜皆《みな》｜留守《るす》だというのに、｜不思議《ふしぎ》なことに｜家中《うちじゅう》の｜電灯《でんとう》がついていた。¦Strange to say, all the lights in the house were on, though no one was at home.¦2¦3ypj¦¦Zifre¦というのに",
+    "196ue\t1¦あの｜男《おとこ》は｜言《い》うなれば｜大《おお》きくなった｜子供《こども》だ。¦That man is, so to speak, a grown-up boy.¦3¦4xxk¦¦¦言うなれば",
+    "196vi\t1¦もっと｜経費《けいひ》を｜抑《そもそも》えろよ。｜入《い》るを｜量《はか》りて｜出《い》ずるを｜為《な》す、ということを｜知《ち》らんのかね。¦We have to cut business expenses here. Haven't you ever heard of looking at how much you're getting before you start spending?¦1¦4553¦¦AlanF_US¦入るを量りて出ずるを為す",
+    "196w2\t1¦｜虎《とら》は｜死《し》して｜皮《かわ》を｜留《と》め、｜人《じん》は｜死《し》して｜名《な》を｜残《のこ》す。¦A great man will be remembered for his achievements.¦1¦3qm7¦¦CK¦死して",
+    "196wm\t1¦｜満開《まんかい》をチョイ｜過《す》ぎた｜感《かん》はありましたが、それでも、｜美《うつく》しい｜桜《さくら》を｜満喫《まんきつ》してきました。¦They seem a little past their peak, but even so we enjoyed the beautiful cherry blossoms.¦1¦1mes¦mookeee¦CM¦チョイ",
+    "196zy\t1¦｜窓《まど》が｜閉《し》まっているか｜確《たし》かめとけ。¦See that the window is closed.¦3¦30c0¦¦¦とけ",
+    "1970i\t1¦ほんのちょいやくで人気があるのはすごい！¦It's impressive that he's popular with just a bit part!¦5¦1lll¦fcbond¦fcbond¦ちょいやく",
     "19726\t1¦｜信《しん》じていたかどうかはともかく、｜超常的《ちょうじょうてき》な｜話題《わだい》に｜拒絶反応《きょぜつはんのう》があるということはないようだ。¦I don't know whether she believed me or not but in any case it seems she doesn't automatically dismiss talk of the supernatural.¦¦1mn0¦mookeee¦¦超常的な",
     "1972g\t1¦その｜実《じつ》｜現《うつつ》もユーザーニーズを｜考《かんが》えたアプリケーションの｜開発《かいはつ》と｜行政《ぎょうせい》による｜規制緩和《きせいかんわ》が｜大《おお》きなポイントとなると｜考《かんが》えられる。¦The success of newly-developed applications and government-forced deregulation may hold the key to achieving this economic implementation.¦1¦4hr2¦¦¦ユーザーニーズ",
     "1972q\t1¦パトロールカーはその｜地区《ちく》の｜全体《ぜんたい》を｜警備《けいび》する。¦The patrol cars cover the whole of the area.¦2¦48q7¦¦AlanF_US¦パトロールカー",
@@ -123,6 +140,7 @@ export const PIECE: WordsPiece = {
     "19frs\t1¦現在はＴＥＴＲＡの操作的な意味を 「すべての消費可能なリソースを消費する」と与えている。¦At present \"consume all consumable resources\" is assigned as the operational meaning of TETRA.¦¦1mse¦¦¦操作的な",
     "19fua\t1¦｜因果《いんが》を｜含《ふく》めてあきらめさせた。¦I persuaded him to give up the idea.¦2¦42lr¦¦Eldad¦因果を含めて",
     "19fwi\t1¦松葉杖ってけっこうムズいな・・・。「すみません、ストレッチャー通ります！」¦Crutches are pretty tricky ... \"Excuse me, stretcher coming through!\"¦¦1m7r¦fcbond¦fcbond¦ムズい",
+    "19fyq\t1¦「・・・つまり、セックス！？」「うわあ、健二ったら・・・みもふたもない」¦\"... in other words, sex!?\" \"Geez, you don't beat around the bush!\"¦1¦1ngh¦mookeee¦¦みもふたもない",
     "19g1i\t1¦この問題はｋについての恒等式なので、まず与式を、ｋについて、解きます。¦This problem is an equality of k so we first solve the assigned equation for k.¦1¦1n76¦¦¦与式",
     "19g5o\t1¦あのさ〜｜俺《おれ》らいま｜遊《あそ》ぶお｜金《かね》ないんだけどね。まあ、ぶっちゃけ｜恵《めぐ》んでよな。¦Y'know we're short of money to have fun and ... Well to be blunt, gimme!¦¦1nc8¦¦¦ぶっちゃけ",
     "19gfe\t1¦実はこれで４度目の質問になります。¦Actually this will be my fourth question.¦3¦1moi¦tatoebane¦¦度目",
@@ -184,25 +202,5 @@ export const PIECE: WordsPiece = {
     "19i8o\t1¦どうせ、｜時間《じかん》に｜関《かか》わらず、｜俺《おれ》が｜先《さき》に｜来《き》てなかったら、さっさとネカフェへ｜行《い》く｜腹積《はらづ》もりだったんだろう。¦No doubt, regardless of the time, she was planning to go to the net café without me if I hadn't arrived first.¦¦1n1t¦mookeee¦¦ネカフェ",
     "19ia2\t1¦けど、｜一晩《ひとばん》｜加湿器《かしつき》つけっぱなしで｜朝《あさ》になると｜窓《まど》が｜結露《けつろ》してドボドボ・・・。¦But because the humidifier is on all night, in the morning the condensation pours off the windows.¦1¦1n8n¦mookeee¦sundown¦ドボドボ",
     "19iam\t1¦外国為替レートってどのように表すの？外国為替市場では、米ドルを中心に表示されます。¦How should foreign exchange rates be shown? In the foreign exchange market they are displayed centered on the American dollar.¦1¦1mus¦¦¦外国為替レート",
-    "19iaw\t1¦｜僕《ぼく》ってあがり｜性《せい》だから、｜人《じん》の｜前《さき》で｜話《はな》すの｜苦手《にがて》なんだよ。¦I'm the type who gets nervous in front of people, so I'm bad at speech making.¦1¦1rii¦small_snow¦CK¦あがり性",
-    "19ib6\t1¦ハムレットをもう１回読めば、私は３回読んだことになります。¦I will have read Hamlet three times if I read it again.¦3¦48pd¦¦CM¦もう１回",
-    "19icu\t1¦｜仕事《しごと》をそつなくこなすことを｜会社《かいしゃ》は｜求《もと》めていることはわかります。¦I know companies are looking for work carried out flawlessly.¦3¦1lbu¦fcbond¦fcbond¦そつなく",
-    "19iei\t1¦｜私《わたし》の｜家《いえ》の｜前《さき》にサクラの｜木《き》がある。¦There is a cherry tree in front of my house.¦4¦3ijo¦¦CK¦サクラの木",
-    "19if2\t1¦｜歩《ある》こうとするとここがズキンとします。¦When I try to walk, I get an awful pain here.¦4¦1s74¦¦CK¦ズキンと",
-    "19ifc\t1¦｜白《しろ》タクには｜乗《の》らないように。¦Keep away from the unlicensed taxis.¦3¦2lon¦¦¦白タク",
-    "19ifm\t1¦｜私《わたし》はうかつにもあなたのアドレスを｜消《け》してしまって、ニュージーランドのラッセルに｜教《おし》えてもらうハメになった。¦I carelessly deleted your e-mail address and had to ask Russell in New Zealand for it.¦3¦3gh4¦¦CN¦ハメになった",
-    "19ifw\t1¦あいつは｜口《くち》ばかりで、｜誠意《せいい》がないね。｜巧言令色少《こうげんれいしょくすく》なし｜仁《じん》とはよくいったもんだ。¦They say fine words are no virtue if they're insincere and that's him in a nutshell. He's all talk but doesn't mean a word of it.¦1¦5116¦¦¦巧言令色少なし仁",
-    "19ilq\t1¦こうやって｜私《わたし》はその｜機械《きかい》を｜作《つく》った。¦This is how I made the machine.¦2¦4tlr¦¦CM¦こうやって",
-    "19ima\t1¦「あっそ」と｜流《なが》すのもよし、｜本気《ほんき》にするのもよし。¦You can let it slide with a \"oh?\" or you can take it seriously.¦3¦1lmg¦fcbond¦fcbond¦あっそ",
-    "19imu\t1¦｜建築《けんちく》のシンメトリーで、エメットは｜美的《びてき》｜統一性《とういつせい》をもった｜幾何学的《きかがくてき》な｜対称性《たいしょうせい》を｜意味《いみ》している。¦By architectural symmetry, Emmet means geometric symmetry combined with aesthetic uniformity.¦¦3rc5¦¦¦幾何学的な",
-    "19ino\t1¦ある｜種《しゅ》の｜行動《こうどう》はその｜少年《しょうねん》に｜特徴的《とくちょうてき》だ。¦That kind of behavior is characteristic of the boy.¦¦4xdf¦¦Luornu¦特徴的",
-    "19iny\t1¦｜彼《あれ》ほどの｜確立《かくりつ》した｜科学者《かがくしゃ》がそのような｜初歩的《しょほてき》な｜誤《あやま》りを｜犯《おか》すとは｜実際《じっさい》｜上《うえ》｜考《かんが》えられないことである。¦It is practically unthinkable that a scientist of his stature would have made such an elementary mistake.¦¦248p¦¦papabear¦初歩的な",
-    "19io8\t1¦その｜火山《かざん》は｜周期的《しゅうきてき》に｜噴火《ふんか》を｜繰《く》り｜返《かえ》す。¦The volcano erupts at regular intervals.¦¦4jjp¦¦CK¦周期的に",
-    "19ioi\t1¦｜彼《あれ》は｜財政的《ざいせいてき》に｜困《こま》っている。¦He is badly situated financially.¦¦2afp¦¦¦財政的に",
-    "19ivg\t1¦そのため、｜要介護認定《ようかいごにんてい》の｜結果《けっか》は｜介護《かいご》サービスの｜量《りょう》と｜関係《かんけい》している｜必要《ひつよう》があります。¦For that reason the outcome of the primary nursing care requirement authorization has to relate to the amount of nursing care required.¦1¦1ldt¦fcbond¦fcbond¦要介護認定",
-    "19j7o\t1¦｜下痢止《げりど》めです。¦Here's some medicine for diarrhea.¦1¦4183¦bunbuku¦darinmex¦止め",
-    "19j7y\t1¦｜彼《あれ》はちょうど｜今《いま》、｜帰《かえ》ってきたところだ。¦He came home just now.¦3¦2edt¦¦¦ちょうど今",
-    "19ji8\t1¦｜彼《あ》の｜音楽《おんがく》が｜全国《ぜんこく》で｜大流行《だいりゅうこう》している。¦His music is sweeping the whole country.¦3¦2j2g¦¦CK¦大流行",
-    "19jme\t1¦｜階層《かいそう》｜問題《もんだい》に｜対《たい》する、｜消費社会《しょうひしゃかい》｜論《ろん》の｜著《ちょ》である。¦It is a literary work confronting the class problem of a consumer society.¦2¦1mut¦¦Bing05¦消費社会",
   ],
 };

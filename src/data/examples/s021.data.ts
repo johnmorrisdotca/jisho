@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 22 of 144, from "0pkku". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 22 of 144, from "0pkic". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0pkic\t1¦その｜農夫《のうふ》は｜男《おとこ》の｜子《こ》｜達《たち》が｜自分《じぶん》の｜果樹園《かじゅえん》でリンゴを｜盗《ぬす》んでいるのをみつけた。¦The farmer caught the boy stealing the apples in his orchard.¦¦4fxo¦¦¦果樹園",
+    "0pkkk\t1¦｜彼《あれ》は｜果物《くだもの》の｜他《た》｜何《なに》も｜食《た》べない。¦He eats nothing else but fruit.¦3¦2c9j¦¦¦果物",
     "0pkku\t1¦｜彼《あれ》は｜最初《さいしょ》くだもの｜屋《や》に｜行《おこな》った。¦He went to a fruit store first.¦3¦2aib¦¦CK¦くだもの屋",
     "0pkl4\t1¦｜彼《あれ》は｜果報《かほう》な｜男《おとこ》だ。¦He's a lucky guy.¦3¦4douv¦JimBreen¦Hybrid¦果報な",
     "0pkle\t1¦できることはすべてやったよ。｜後《あと》は、｜果報《かほう》は｜寝《ね》て｜待《ま》て、の｜心境《しんきょう》だね。¦I feel like I've done all I can. Now all there is to do is wait and see what comes of it.¦2¦4c4u¦¦pip¦果報は寝て待て",
@@ -204,7 +206,5 @@ export const PIECE: WordsPiece = {
     "0pp5u\t1¦それは２通りに解釈できる。¦That reads two different ways.¦1¦4emn¦¦¦解釈",
     "0pp6e\t2¦｜貿易障壁《ぼうえきしょうへき》は｜戦争《せんそう》｜終結《しゅうけつ》｜後《あと》｜解除《かいじょ》されました。¦Trade barriers were lifted after the war ended.¦1¦1rmy¦¦CM¦解除",
     "0pp6o\t1¦｜私《わたし》は｜婚約《こんやく》を｜解消《かいしょう》しました。¦I have broken off our engagement.¦3¦1lsb¦fcbond¦fcbond¦解消",
-    "0pp78\t1¦ヒートアイランド｜現象《げんしょう》の｜実体《じったい》｜解析《かいせき》と｜対策《たいさく》のあり｜方《かた》について。¦An analysis of the nature of the heat island phenomenon and countermeasures.¦1¦1ldm¦fcbond¦fcbond¦解析",
-    "0pp7s\t1¦｜彼《あ》の｜解説《かいせつ》がわかった｜人《じん》はほとんどいなかった。¦Few people understood his comment.¦3¦2iz3¦bunbuku¦CK¦解説",
   ],
 };

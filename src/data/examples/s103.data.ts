@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 104 of 144, from "108v". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 104 of 144, from "107d". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,17 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "107dy\t1¦｜分相応《ぶんそうおう》の｜暮《く》らしをするように｜努《つと》めなさい。¦Try to live within your income.¦¦1sl5¦¦¦分相応",
+    "107rk\t1¦｜配達人《はいたつにん》が｜彼女《かのじょ》｜宛《あて》の｜手紙《てがみ》を｜置《お》いていった。¦The mailman left a letter for her.¦¦2lrn¦¦CK¦配達人",
+    "107wu\t1¦ボーイング｜社《やしろ》は｜海上自衛隊《かいじょうじえいたい》｜用《よう》の｜飛行艇《ひこうてい》を｜開発《かいはつ》しました。¦Boeing developed a flying boat for the Maritime Self-Defense Force.¦1¦1mze¦mookeee¦CM¦飛行艇",
+    "107xe\t1¦｜彼《あれ》はとびぬけて｜分別《ぶんべつ》のある｜人《ひと》だ。¦He is by far the most sensible.¦¦2e0z¦¦CK¦とびぬけて",
+    "1082o\t1¦｜私《わたし》は｜捕虫網《ほちゅうあみ》で｜蝶《ちょう》を｜捕《つか》まえた。¦I captured butterflies with a net.¦1¦39yq¦¦CK¦捕虫網",
+    "10888\t1¦｜債券発行《さいけんはっこう》による｜調達《ちょうたつ》｜資金《しきん》は｜予算《よさん》の｜赤字《あかじ》を｜補填《ほてん》するのに｜使《つか》われる。¦The proceeds from the bond issue will be used to finance the budget deficit.¦¦3nt7¦¦CK¦補填",
+    "108c4\t1¦このナイフはパンを｜薄切《うすぎ》りにするのにちょうどよい。¦This knife is just good for slicing a loaf.¦2¦4seb¦¦¦薄切り",
+    "108j2\t1¦｜群集《ぐんしゅう》は｜勝者《しょうしゃ》に｜拍手《はくしゅ》｜喝采《かっさい》を｜送《おく》った。¦The crowd gave the winner a big hand.¦1¦3sc1¦KK_kaku_¦CK¦拍手喝采",
+    "108jw\t1¦｜彼《あれ》は｜迫害者《はくがいしゃ》を｜懲《こ》らしめて｜人民《じんみん》たちのあだを｜討《う》つだろう。¦He will avenge the people on their oppressor.¦1¦264t¦¦¦迫害者",
+    "108pg\t1¦りんごを｜盗《ぬす》んでいるところを｜捕《つか》まった｜子供《こども》は、おめずおくせず｜罰《ばつ》を｜受《う》けた。¦The child who was caught stealing apples bravely faced the music in accepting his punishment.¦1¦44hq¦¦Dejo¦おめずおくせず",
+    "108ry\t1¦｜彼《あれ》には｜扶養家族《ふようかぞく》が｜多《おお》かった。¦He had a large family to support.¦1¦2jmr¦¦CK¦扶養家族",
     "108vk\t1¦｜歩哨《ほしょう》はみんなに｜合《あ》い｜言葉《ことば》を｜言《い》わせた。¦The sentry demanded the password from everyone.¦¦1s71¦¦¦歩哨",
     "1093w\t1¦｜彼《あ》のおじいさんはいわゆる｜独立独行《どくりつどっこう》の｜人《じん》だ。¦His grandfather is what is called a self-made man.¦1¦2jcl¦¦CK¦独行",
     "1098c\t1¦｜彼女《かのじょ》は｜独眼《どくがん》の｜猫《ねこ》を｜見《み》て｜震《ふる》え｜上《あ》がった。¦She shuddered at the sight of the one-eyed cat.¦1¦1o8qg¦JimBreen¦JimBreen¦独眼",
@@ -208,18 +219,5 @@ export const PIECE: WordsPiece = {
     "10o00\t1¦｜彼《あれ》はその｜訪問者《ほうもんしゃ》を｜居間《いま》に｜通《とお》した。¦He let the visitor into the living room.¦3¦23i2¦¦blay_paul¦訪問者",
     "10o0a\t1¦くれぐれも｜浄水器《じょうすいき》の｜悪質《あくしつ》｜訪問販売《ほうもんはんばい》｜業者《ぎょうしゃ》や｜無料《むりょう》｜点検商法《てんけんしょうほう》にはご｜注意《ちゅうい》ください。¦Please exercise every caution against cowboy salesmen of water purifiers and fraudulent-test sales.¦¦1lbz¦fcbond¦fcbond¦訪問販売",
     "10o28\t1¦喫煙者の病欠日数は非喫煙者の２倍です。¦Smokers take twice as many days off sick as non-smokers.¦2¦3x1y¦¦Objectivesea¦病欠",
-    "10o7i\t1¦｜私《わたし》たちは｜並木道《なみきみち》を｜歩《ある》いた。¦We walked along an avenue lined with trees.¦2¦3jfp¦¦CM¦並木道",
-    "10oeg\t1¦｜部屋《へや》の｜除湿《じょしつ》のため｜窓《まど》を｜開《あ》けた。¦I opened the windows to remove the damp from the room.¦2¦1syi¦¦¦除湿",
-    "10oo6\t1¦｜茶飲《ちゃの》み｜友達《ともだち》がほしい。¦I want someone to talk to.¦3¦2ppa¦bunbuku¦CK¦茶飲み友達",
-    "10ors\t1¦あのダークホースは｜予備選挙《よびせんきょ》の｜前《さき》は、｜劣勢《れっせい》でした。¦The dark horse candidate was losing in the polls before the primary.¦1¦4yhb¦¦CK¦予備選挙",
-    "10ov4\t1¦｜野手《やしゅ》はボールを｜取《と》り｜損《そこ》ねた。¦The fielder failed to catch the ball.¦2¦1pf0¦¦¦野手",
-    "10oxm\t1¦｜喧嘩《けんか》を｜見《み》ようと、｜野次馬《やじうま》が｜集《あつ》まった。¦A crowd collected to watch the fight.¦¦3rcm¦bunbuku¦CM¦野次馬",
-    "10p7m\t1¦クラスのほとんど｜全員《ぜんいん》が｜謝恩会《しゃおんかい》を｜開《ひら》くことに｜賛成《さんせい》した。¦Almost everyone in the class voted in favor of having a thank-you party for the teachers.¦1¦4u2h¦¦CK¦謝恩会",
-    "10p86\t1¦｜部屋《へや》は｜兎小屋《うさぎごや》みたいだけど。¦But my place is like a rabbit hutch.¦¦1sx5¦Sim5634¦¦兎小屋",
-    "10pao\t1¦｜彼《あれ》からは｜殴《なぐ》り｜書《が》きの｜手紙《てがみ》が｜一通《いっつう》｜届《とど》いただけで、その｜後《あと》｜音沙汰《おとさた》が｜無《な》い。¦I got a scribbled note from him, but haven't heard from him since.¦¦2l47¦¦CM¦殴り書き",
-    "10pay\t1¦｜駆《か》け｜出《だ》しの｜新聞記者《しんぶんきしゃ》にしては｜腕《うで》がいい。¦You are doing well for a cub reporter.¦1¦3uif¦¦piksea¦駆け出し",
-    "10pb8\t1¦さあ、｜駆《か》けつけ｜三杯《さんばい》、｜威勢《いせい》よくぱっといきましょう。¦Anybody who shows up late has to chug!¦1¦4ne6¦¦Zifre¦駆けつけ三杯",
-    "10pfy\t1¦｜局部麻酔《きょくぶますい》をしますね。¦I'll give you a local anaesthetic.¦1¦3uw8¦bunbuku¦Zifre¦局部麻酔",
-    "10pko\t1¦きみの｜説明《せつめい》は｜具体性《ぐたいせい》に｜欠《か》ける。¦Your explanation lacks concreteness.¦3¦4ube¦¦¦具体性",
   ],
 };

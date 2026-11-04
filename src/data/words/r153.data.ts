@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 154 of 316, from "すろーふ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 154 of 316, from "すろーだん". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,13 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "スローダンス\t\t#1bmba\t¦slow dance",
+    "スローテンポ\t\t#1ocsk\tmusic¦slow tempo¦slowly",
+    "スロート\t\t#1p0av\t¦throat\t¦neck (narrow part of a utensil)\t¦throat (part of a racket connecting the head and handle)",
+    "スローバラード\t\t#1omp7\tmusic¦slow ballad",
+    "スローパンク\t\t#1pgei\tabbr¦slow puncture¦slow leak",
+    "スローパンクチャー\t\t#1pgej\t¦slow puncture¦slow leak",
+    "スロービデオ\t\t#15aok\tabbr¦slow-motion video",
     "スローフォワード\t\t#1h1jw\tsports¦throw forward (rugby)¦forward pass",
     "スローフード\t\t#1byfe\t¦slow food (as opposed to fast food)",
     "スロープ\t\tC~g#n0r0\t¦slope",
@@ -802,7 +809,7 @@ export const PIECE: WordsPiece = {
     "せい\t政\tC~n06#thn6\tform¦rule¦government¦administration",
     "せい\t姓\tC~ni07#th3q\t¦surname¦family name\t¦hereditary title (used in ancient Japan to denote rank and political standing)",
     "せい\t背|脊\tC~ni09#vkay\t¦height¦stature",
-    "せい\t性\tC~i#th5o\t¦nature (of a person)\tgramm¦gender\t¦-ty¦-ity¦-ness",
+    "せい\t性\tC~i#th5o\t¦nature (of a person)\t¦sex¦gender\tgramm¦gender\t¦-ty¦-ity¦-ness",
     "せい\t製\tC~i#tl9g\t¦make¦manufacture¦-made",
     "せい\t所為\tCU~i#yibc\tuk¦consequence¦outcome¦result",
     "せい\t勢\t#tgz0\t¦strength¦power¦energy\t¦military strength¦army¦(number of) troops",
@@ -882,13 +889,5 @@ export const PIECE: WordsPiece = {
     "せいえきろう\t精液漏\t#1p3ll\tmed¦spermatorrhea¦spermatorrhoea",
     "せいえつ\t請謁\ts#yp4c\t¦beseeching¦requesting (an audience)",
     "せいエルモのひ\t聖エルモの火\t#tl14\t¦St Elmo's fire",
-    "せいえん\t声援\tsC~n12#tl64\t¦cheering¦(shout of) encouragement¦rooting",
-    "せいえん\t凄艶\tn#tgmi\t¦weirdly beautiful",
-    "せいえん\t盛宴\t#11ti6\t¦grand banquet",
-    "せいえん\t製塩\ts#129cg\t¦salt making",
-    "せいえん\t正塩\t#13pyc\t¦normal salt",
-    "せいえん\t西縁\t#1a9c8\t¦western edge¦west margin",
-    "せいえん\t正円\t#1ollh\t¦perfect circle",
-    "せいえんぎょう\t製塩業\t#129cq\t¦the salt industry",
   ],
 };

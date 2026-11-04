@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 60 of 172, from "flying ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 60 of 172, from "fluttering ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,35 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "fluttering down\tハラハラ|はらはら",
+    "fluttering e\tまいこむ",
+    "fluvial\tかしょく|ワンド|わんど",
+    "fluviatilis\tヨーロッパカワヤツメ|ヨーロピアンリバーランプリ|こびといるか|コビトイルカ",
+    "flux\tようざい|フラックス|ゆうざい|りゅうそく|じそく|ようせつざい|こうそく|ちゅうせいしそく|せいせいるてん|しょうじょうるてん|しょうじるてん|しょうじりんね|ばんぶつるてん|るてんしょうじ|るてんりんね|りんねてんしょう|りんねてんせい|てんしょうりんね|ルーメン|でんりょくそくみつど",
+    "fluxmeter\tじそくけい",
+    "fly\tひきゅう|とぶ|はえ|ハエ|かかげる|かける|ひるがえす|なびかせる|とびかける|すっとぶ|ぎひ|とびだす|ぎだ|とびかう|とばす|ひ|とびあがる|ちゅうひ|ぼんだ|とびまわる",
+    "fly about\tとびかう|とびまわる",
+    "fly across\tとびこえる",
+    "fly any\tはえ|ハエ",
+    "fly around\tとびちる",
+    "fly away\tとびさる",
+    "fly ball\tひ|ひきゅう",
+    "fly e\tかかげる",
+    "fly flag\tひるがえす",
+    "fly high\tまいあがる",
+    "fly out\tとびだす",
+    "fly over\tとびこえる",
+    "fly up\tとびあがる",
+    "fly wildly\tみだれとぶ",
+    "flyball\tフライボール",
+    "flycatcher\tるり|きびたき|キビタキ|おおるり|オオルリ|るりびたき|ルリビタキ|ひたき|ヒタキ|さんこうちょう|サンコウチョウ|コサメビタキ|こさめびたき",
+    "flycatcher siberian\tるり",
+    "flycatchers\tひたき|ヒタキ",
+    "flyer\tプリント|ちらし|チラシ|マイレージサービス|マイレージ・サービス|せんでんチラシ|せんでんちらし|おかマイラー",
+    "flyers\tまく|びらくばり|ポスティング|ビラまき",
+    "flyers etc\tまく",
+    "flyfishing\tテンカラつり",
+    "flying\tフライング|こうくう|ひこう|そうじゅう|けいよう|ひしょう|ひよう|とび|ひにゅう|フライイング|やさき|とびひ|えんばん|カッと|かっと|やおもて|とばす|ひらい|ひさん|さお",
     "flying ace\tちょうじん",
     "flying arrow\tやさき|やおもて",
     "flying boat\tひこうてい",
@@ -703,33 +732,5 @@ export const PIECE: WordsPiece = {
     "forming ordinal\tだい",
     "forming organisation\tけつだん",
     "forming organization\tけつだん",
-    "formless\tむけい|しょほう",
-    "formosa\tともえがも|トモエガモ|コリスフォルモーサ|つやこばち|ツヤコバチ",
-    "formosan\tたいわんじか|タイワンジカ|るりちょう|いえしろあり|イエシロアリ|ふう|フウ|たかさごゆり|タカサゴユリ|たいわんざる|タイワンザル",
-    "formosana\tふう|フウ",
-    "formosanum\tたかさごゆり|タカサゴユリ",
-    "formosanus\tいえしろあり|イエシロアリ",
-    "formosum\tおおすぎごけ|オオスギゴケ",
-    "formosus\tくろあかこうもり|クロアカコウモリ",
-    "formoterol\tシンビコート",
-    "forms\tしんちょう|せいちょう|せんじょうばんたい|あめざいく|げんぶんいっち|こうとうせいぶつ|プレいんさつようし|ちょうひょう|せんたいばんじょう|ふとわく|かさぐも|しんか|ろくかんのん|ろっかんのん|しちかんのん|りくぎ|ろくぎ|れんぞくし|ひっすにゅうりょく|ろうもん",
-    "forms characters\tしんちょう|せいちょう",
-    "formula\tこうしき|ていしき|じょうしき|せいほう|こなミルク|ミルク|しき|ほうていしき|しょほう|フォーミュラ|フォーミュラカー|フォーミュラ・カー|すうしき|しんしき|いくもうざい|フォーミュラプラン|フォーミュラ・プラン|かがくしき|ぶんししき|じっけんしき",
-    "formula car\tフォーミュラカー|フォーミュラ・カー",
-    "formula e\tこうしき",
-    "formulae\tはんしゃこうしき",
-    "formulaic\tもんきりがた|こうしきてき|パターンか",
-    "formularize\tしきをたてる",
-    "formulary\tフォーミュラリー|ごせいばいしきもく",
-    "formulas\tかほうていり",
-    "formulate\tうちたてる",
-    "formulated\tつちみかどしんとう",
-    "formulating\tりっしき",
-    "formulation\tさくてい|ていしきか|せいざい|せいじしゅどう",
-    "formulation plan\tさくてい",
-    "formwork\tかたわく|こうわく|だせつ|パネコート",
-    "fornax\tろざ",
-    "fornix\tのうきゅう",
-    "forsake\tつきはなす|みかえる",
   ],
 };

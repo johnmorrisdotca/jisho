@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 8 of 70, from "バルビツー". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 8 of 70, from "バルビ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "バルビツル酸\tバルビツルさん",
     "バルビツール酸\tバルビツールさん",
     "バルプロ酸ナトリウム\tバルプロさんナトリウム",
     "バレエ音楽\tバレエおんがく",
@@ -2186,6 +2187,5 @@ export const PIECE: WordsPiece = {
     "マスクROM\tマスクロム",
     "マスク不可能割り込み\tマスクふかのうわりこみ",
     "マスク会食\tマスクかいしょく",
-    "マスク着用\tマスクちゃくよう",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 82 of 144, from "0ws7". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 82 of 144, from "0ws4g". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,13 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0ws4g\t1¦｜彼《あれ》はまるで｜夢見《ゆめみ》ているような｜感《かん》じだった。¦He felt as if he were in a dream.¦3¦2df7¦¦CM¦夢見ている",
+    "0ws5a\t1¦｜誰《だれ》でも｜夢精《むせい》したことがある。¦Everybody has wet dreams.¦¦2xji¦¦Swift¦夢精",
+    "0ws5k\t1¦ピアノ・コンクールで私が第１位になるなんて夢想だにしなかった。¦Never did I dream that I would take first place in the piano contest.¦1¦48kd¦¦Zifre¦夢想",
+    "0ws5u\t1¦｜彼《あれ》は｜夢想家《むそうか》にすぎない。¦He is nothing more than a dreamer.¦3¦24ya¦¦CK¦夢想家",
+    "0ws64\t1¦｜私《わたし》は、うれしくて｜夢中《むちゅう》だった。¦I was beside myself with joy.¦3¦3hah¦¦¦夢中",
+    "0ws6o\t1¦２つの意見に大した差はない。¦There is not much difference between the two opinions.¦3¦51qx¦bunbuku¦CM¦ない\t1¦｜引退《いんたい》するつもりは｜毛頭《もうとう》ない。¦I have no intention whatever of resigning.¦2¦1r9p¦¦CK¦ない\t2¦｜車《くるま》も｜何《なに》もなく、｜生活保護《せいかつほご》で｜生《い》きてます。¦I'm living on welfare, without a car or anything.¦1¦1lnq¦fcbond¦fcbond¦なく\t5¦｜彼《あれ》は｜口《くち》やかましいが｜本心《ほんしん》は｜悪《にく》くない。¦He grumbles a lot, but deep down he's not a bad guy.¦3¦2avw¦¦stephenmk¦ない\t5¦｜彼《あれ》は｜午前中《ごぜんちゅう》はかならずしも｜忙《いそが》しくない。¦He is not always busy in the morning.¦3¦2axp¦mookeee¦CK¦ない\t5¦｜彼《あれ》は｜見《み》かけほど｜若《わか》くない。¦He is not as young as he looks.¦3¦2b33¦¦CK¦ない",
+    "0ws6y\t1¦｜彼女《かのじょ》は｜新《あたら》しい｜時計《とけい》をなくした。¦She lost her new watch.¦3¦1wc2¦bunbuku¦CK¦なくした\t2¦その｜国《くに》の｜財政《ざいせい》の｜赤字《あかじ》をなくすには、もっと、たくさんの｜外国《がいこく》の｜援助《えんじょ》を｜注《そそ》ぎ｜込《こ》まなければならなかった。¦To get the nation's economy out of the red, more foreign aid had to be pumped in.¦1¦4iiv¦¦papabear¦なくす",
     "0ws7i\t1¦それで｜疑《うたが》いをさしはさむ｜余地《よち》はなくなる。¦That leaves no room for doubt.¦3¦4er0¦¦CM¦なくなる\t1¦あなたの｜青《あお》いペンがなくなってしまいました。¦I misplaced your blue pen.¦4¦4zvs¦¦CK¦なくなって\t2¦｜残《のこ》り｜時間《じかん》があまりなくなってきた。¦The sands are running out.¦3¦3mm9¦¦¦なくなって\t3¦やがてこの｜世《よ》から｜戦争《せんそう》がなくなる｜日《ひ》がくるだろう。¦The day will soon come when there will be no more wars in the world.¦3¦450v¦¦AlanF_US¦なくなる",
     "0ws82\t1¦あなたはオーバーなしですますつもりですか。¦Do you mean to do without an overcoat?¦5¦4zmg¦¦¦なしですます",
     "0ws8c\t1¦｜彼女《かのじょ》は｜私《わたし》にひどく｜不愛想《ぶあいそう》だった。¦She was very short with me.¦3¦1x32¦¦sundown¦不愛想",
@@ -204,15 +211,5 @@ export const PIECE: WordsPiece = {
     "0wvdy\t1¦｜彼《あれ》はゴッホの｜模写《もしゃ》をした。¦He imitated the works of Van Gogh.¦1¦2ftn¦bunbuku¦CK¦模写",
     "0wvei\t1¦あなたの｜答案《とうあん》を｜模範《もはん》｜答案《とうあん》と｜比較《ひかく》しなさい。¦Compare your paper with the model one.¦1¦4ztz¦¦¦模範",
     "0wves\t1¦｜全《すべ》ての｜子供《こども》には、｜尊敬《そんけい》し｜模倣《もほう》する｜人《じん》が｜必要《ひつよう》だ。¦Every child needs someone to look up to and copy.¦1¦30p0¦¦CarpeLanam¦模倣",
-    "0wvfc\t1¦｜彼女《かのじょ》はその｜皿《さら》の｜模様《もよう》が｜気《き》に｜入《い》っている。¦She likes the design on the plate.¦1¦1zd1¦small_snow¦CK¦模様",
-    "0wvfm\t1¦｜猫《ねこ》は｜茂《しげ》みに｜隠《かく》れていた。¦The cat lay hidden in the bushes.¦1¦2m2y¦Sim5634¦CK¦茂み",
-    "0wvfw\t1¦｜丘《おか》には｜低《ひく》い｜木《き》がたくさん｜茂《しげ》っている。¦Lots of low trees grow on the hill.¦1¦3x0r¦¦RJH¦茂っている",
-    "0wvi4\t1¦｜飼《か》い｜猫《ねこ》の｜毛《け》のつやが｜悪《わる》くなった。¦Our cat's fur has lost its luster.¦1¦38hw¦¦CK¦毛",
-    "0wvio\t1¦｜刺激《しげき》を｜受《う》け｜続《つづ》けると｜肌《はだ》の｜保護《ほご》｜作用《さよう》により｜角質《かくしつ》が｜肥厚《ひこう》して、ゴワゴワしたり｜硬《かた》くなって、｜毛穴《けあな》が｜目立《めだ》ってきます。¦If it continues to be stimulated the skin's protective function causes thickening and it becomes stiff and hard with pores that stand out.¦1¦1mq1¦¦¦毛穴",
-    "0wviy\t1¦｜彼《あれ》はユダヤ｜人《じん》を｜毛嫌《けぎら》いする。¦He has a prejudice against Jews.¦1¦2d93¦¦shekitten¦毛嫌い",
-    "0wvj8\t1¦｜赤《あか》ん｜坊《ぼう》が｜毛糸《けいと》の｜玉《たま》をもつれさせた。¦The baby tangled the ball of yarn.¦¦31q6¦¦Luornu¦毛糸",
-    "0wvji\t1¦スコットランドは｜毛織物《けおりもの》で｜有名《ゆうめい》だ。¦Scotland is famous for its woollen textiles.¦1¦4lns¦bunbuku¦BE¦毛織物",
-    "0wvjs\t1¦｜蝶《ちょう》は｜成長《せいちょう》した｜毛虫《けむし》である。¦A butterfly is a mature caterpillar.¦1¦2p93¦KK_kaku_¦CM¦毛虫",
-    "0wvkc\t1¦｜私《わたし》は｜誰《だれ》にもこの｜時計《とけい》を｜貸《か》すつもりはありません。ましてや｜手放《てばな》すつもりなど｜毛頭《もうとう》ありません。¦I have no intention of lending this watch to anyone, much less parting with it.¦¦3bq0¦wat¦CM¦毛頭\t1¦｜引退《いんたい》するつもりは｜毛頭《もうとう》ない。¦I have no intention whatever of resigning.¦2¦1r9p¦¦CK¦毛頭",
   ],
 };

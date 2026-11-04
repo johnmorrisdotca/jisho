@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 153 of 316, from "すぽーつ・ぶ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 153 of 316, from "すぽーつ・どり". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,13 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "スポーツ・ドリンク\t\t#n06g\t¦sports drink",
+    "スポーツ・ニッポン\t\t#304o9\tproduct¦Sports Nippon (newspaper)",
+    "スポーツ・ニュース\t\t#1p4mn\t¦sports news",
+    "スポーツ・バッグ\t\t#1isnk\t¦sports bag",
+    "スポーツ・ファン\t\t#1ca52\t¦sports fan",
+    "スポーツ・フェアー\t\t#n06q\t¦sports fair",
+    "スポーツ・フェスティバル\t\t#1ovx5\t¦sports festival (at a school)¦sports day¦field day",
     "スポーツ・ブラ\t\t#1ouc8\t¦sports bra",
     "スポーツ・プログラマー\t\t#n070\t¦sports programmer",
     "スポーツ・マーケティング\t\t#16l52\t¦sports marketing",
@@ -852,12 +859,5 @@ export const PIECE: WordsPiece = {
     "スロースリップ\t\t#1oqga\t¦slow earthquake",
     "スローターハウスファイブ\tスローターハウス５\t#304zv\twork¦Slaughterhouse-Five (film, book)",
     "スローダウン\t\ts#1def2\t¦slowdown",
-    "スローダンス\t\t#1bmba\t¦slow dance",
-    "スローテンポ\t\t#1ocsk\tmusic¦slow tempo¦slowly",
-    "スロート\t\t#1p0av\t¦throat\t¦neck (narrow part of a utensil)\t¦throat (part of a racket connecting the head and handle)",
-    "スローバラード\t\t#1omp7\tmusic¦slow ballad",
-    "スローパンク\t\t#1pgei\tabbr¦slow puncture¦slow leak",
-    "スローパンクチャー\t\t#1pgej\t¦slow puncture¦slow leak",
-    "スロービデオ\t\t#15aok\tabbr¦slow-motion video",
   ],
 };

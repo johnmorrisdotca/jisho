@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 50 of 144, from "0swtq". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 50 of 144, from "0swl". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,18 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0swl4\t1¦｜小脳《しょうのう》は｜血液《けつえき》の｜不断《ふだん》の｜供給《きょうきゅう》を｜必要《ひつよう》とする。¦The brain needs a continuous supply of blood.¦2¦35cg¦mookeee¦¦小脳",
+    "0swly\t1¦この｜小麦《こむぎ》は｜粉《こな》にされる。¦This wheat is made into flour.¦2¦4qmt¦¦¦小麦",
+    "0swm8\t1¦｜私《わたし》はこんがりと｜小麦色《こむぎいろ》に｜日焼《ひや》けした。¦I was browned to a nice tan.¦2¦3fzv¦¦¦小麦色",
+    "0swmi\t1¦｜麺《めん》はふつう｜小麦粉《こむぎこ》から｜作《つく》られる。¦Noodles are usually made from wheat.¦¦1pve¦¦CK¦小麦粉",
+    "0swn2\t1¦それじゃ｜猫《ねこ》に｜小判《こばん》だ。¦It is like casting pearls before swine.¦3¦4et3¦small_snow¦CM¦小判",
+    "0swnm\t1¦｜面疔《めんちょう》ができた。｜小鼻《こばな》の｜奥《おく》に1｜個《こ》、｜痛《いた》い｜塊《かたまり》がある。¦I have a facial boil. There's a painful lump at the back of one nostril.¦¦1l9j¦fcbond¦fcbond¦小鼻",
+    "0swoq\t1¦ライザは｜大変《たいへん》｜器用《きよう》なので、｜自分《じぶん》でネジや｜同《どう》じような｜小物《こもの》を｜作《つく》ることさえできる。¦Lisa is so skillful that she can even make screws and similar small objects for herself.¦¦44nx¦¦qdii¦小物",
+    "0swpu\t1¦｜彼《かれ》らはその｜少女《しょうじょ》は｜小柄《こがら》だと｜言《い》った。¦They described the girl as being small.¦1¦23jp¦¦CK¦小柄",
+    "0swrs\t1¦｜少年《しょうねん》はバットを｜小脇《こわき》に｜抱《かか》えている。¦The boy has a bat under his arm.¦¦353g¦¦CK¦小脇",
+    "0swsm\t1¦｜子供《こども》に｜少《すこ》し｜愛情《あいじょう》を｜注《そそ》いで｜見《み》｜給《たま》え、すると｜君《きみ》におびただしい｜愛情《あいじょう》が｜戻《もど》ってくる。¦Give a little love to a child, and you get a great deal back.¦3¦3m53¦¦Objectivesea¦少し\t2¦｜少《すこ》しテレビを｜見《み》てもいいですか。¦Do you mind if I watch TV for a while?¦4¦35bc¦¦CK¦少し",
+    "0swsw\t1¦｜彼《あれ》は｜少《すこ》しずつよくなっています。¦He is getting better bit by bit.¦3¦28c9¦bunbuku¦CK¦少しずつ",
+    "0swtg\t1¦コックさんは｜少《すこ》しもかけていない。¦The cook hasn't put any on it.¦4¦4sy2¦¦¦少しも",
     "0swtq\t1¦この｜病気《びょうき》に｜勝《か》てる｜人《じん》は｜少《すく》ない。¦Not many survive this disease.¦3¦4pu4¦¦CK¦少ない",
     "0swv4\t2¦｜小額《しょうがく》の｜札《ふだ》にいたしますか、それとも｜高額《こうがく》の｜札《ふだ》にいたしましょうか。¦Do you want small bills or large?¦2¦3587¦stephenmk¦CK¦小額",
     "0sww8\t1¦｜少佐《しょうさ》は｜大尉《たいい》の｜上官《じょうかん》である。¦A major is above a captain.¦1¦3586¦¦CK¦少佐",

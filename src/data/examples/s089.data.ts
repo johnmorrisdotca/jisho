@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 90 of 144, from "0xu8o". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 90 of 144, from "0xtzi". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,18 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0xtzi\t1¦｜私《わたし》はその｜古本《ふるほん》に｜倍額《ばいがく》を｜払《はら》った。¦I paid double the price for the secondhand book.¦2¦3flr¦arnab¦ddnktr¦古本\t2¦あの｜古本《ふるほん》はまったくの｜掘《ほ》り｜出《だ》し｜物《もの》だ。¦That old book is a real find.¦2¦4y9s¦¦CK¦古本",
+    "0xtzs\t1¦｜彼《あれ》はまだ｜自分《じぶん》の｜意思《いし》に｜固執《こしつ》している。¦He still sticks to his opinion.¦¦2dil¦¦¦固執",
+    "0xu0c\t1¦｜銀行《ぎんこう》はリスクの｜高《たか》い｜顧客《こきゃく》へのローンには｜高《たか》い｜金利《きんり》をつける。¦Banks charge higher interest on loans to risky customers.¦1¦3uk4¦¦Zifre¦顧客",
+    "0xu4s\t1¦その｜工場《こうじょう》は｜玩具《おもちゃ》を｜製造《せいぞう》している。¦The factory manufactures toys.¦¦4ilp¦mookeee¦Dejo¦工場",
+    "0xu5c\t1¦｜彼《あれ》はその｜浅《あさ》い｜溝《みぞ》を｜飛《と》び｜越《こ》えた。¦He leaped over the shallow ditch.¦1¦2ev5¦¦CK¦溝\t3¦｜両者《りょうしゃ》の｜溝《みぞ》が｜狭《せば》まった。¦The gap between them has narrowed.¦1¦1o92¦mookeee¦CK¦溝",
+    "0xu5m\t4¦｜甲《こう》の｜損《そん》は｜乙《おつ》の｜得《とく》。¦One man's gain is another man's loss.¦1¦3pw3¦¦CK¦甲",
+    "0xu5w\t1¦みんなでカブトムシを｜競争《きょうそう》させた。¦We raced our beetles.¦2¦46g1¦small_snow¦AlanF_US¦カブトムシ",
+    "0xu66\t1¦船には甲板が３つあった。¦The ship had three decks.¦1¦30xa¦¦CK¦甲板",
+    "0xu70\t1¦｜庭《にわ》の｜木《き》がすっかり｜紅葉《こうよう》しました。¦The leaves of the trees in the garden have turned completely red.¦2¦2otx¦¦CK¦紅葉",
+    "0xu7a\t2¦｜私《わたし》は｜歯医者《はいしゃ》｜行《い》きを延ばさねばならない。¦I must postpone going to the dentist.¦2¦3cpn¦¦CK¦行き\t2¦１０時前にはホテルを出発しなければなりません。さもなければマイアミ行きの電車を乗り逃がしてしまいます。¦We must leave the hotel before 10 a.m., otherwise we will miss the train for Miami.¦3¦524o¦mookeee¦papabear¦行き",
+    "0xu84\t1¦その｜道《みち》は｜行《い》き｜止《ど》まりだった。¦The road came to a dead end.¦4¦4g1u¦small_snow¦CK¦行き止まり",
+    "0xu8e\t1¦｜駅《えき》への｜行《い》き｜方《かた》を｜教《おし》えてもらえますか。¦Could you tell me how to get to the station?¦4¦41qu¦bunbuku¦CK¦行き方\t1¦あなたに｜公園《こうえん》の｜行《い》き｜方《かた》を｜教《おし》えましょう。¦I will show you how to go to the park.¦3¦50bi¦¦CK¦行き方",
     "0xu8o\t1¦｜好《す》きなように｜行《ゆ》き｜来《き》していいですよ。¦You may come and go at will.¦3¦3q3h¦¦sundown¦行き来",
     "0xu8y\t1¦お母さん、泳ぎに行ってもいい？¦Can I go swimming, Mother?¦3¦4uvs¦small_snow¦¦行って\t2¦｜探検家《たんけんか》が｜山中《さんちゅう》の｜道《みち》なき｜道《みち》を｜行《おこな》った。¦The explorer pushed his way through the trackless mountain region.¦1¦8ee0¦blay_paul¦blay_paul¦行った\t3¦あなたのおかげで｜仕事《しごと》がうまく｜行《い》きました。¦Thanks to you, the job went well.¦4¦3ts2¦small_snow¦Zifre¦行きました\t10¦その｜音《おと》はだんだん｜小《ちい》さくなっていった。¦The sound grew fainter and fainter.¦4¦4jpb¦¦CK¦いった",
     "0xu98\t1¦｜会社《かいしゃ》の｜行《ゆ》く｜末《すえ》は｜彼《あ》の｜肩《かた》に｜掛《か》かっていた。¦He bore the future of the company on his shoulders.¦2¦3yyl¦¦auxitt¦行く末",
@@ -132,6 +144,7 @@ export const PIECE: WordsPiece = {
     "0xw8w\t1¦｜板《いた》にくぎを｜打《う》ち｜込《こ》んだ。¦He hammered nails into the plank.¦2¦2lji¦¦sundown¦打ち込んだ\t4¦ノートパソコンの｜電源《でんげん》を｜入《い》れ、ブラウザを｜立《た》ち｜上《あ》げて、もう｜覚《おぼ》えてしまったアドレスを｜打《う》ち｜込《こ》む。¦I switch on my laptop, start up the browser, and type in the address I've already learnt by heart.¦1¦1lyn¦fcbond¦fcbond¦打ち込む\t5¦｜彼《あれ》はその｜仕事《しごと》に｜打《う》ち｜込《こ》んだ。¦He applied himself to the task.¦3¦2f2m¦¦CM¦打ち込んだ",
     "0xw9q\t2¦｜切符《きっぷ》を｜申《もう》し｜込《こ》まれる｜際《さい》は｜代替《だいたい》｜日《ひ》もご｜指定《してい》ください。¦When applying for tickets, please give alternative dates.¦2¦31mt¦¦Luornu¦代替",
     "0xwau\t1¦あいつは｜小山《こやま》の｜大将《たいしょう》だった。¦He was the cock of the walk.¦2¦5110¦¦¦大将",
+    "0xwb4\t1¦この｜壮大《そうだい》な｜大聖堂《だいせいどう》の｜建立《こんりゅう》は｜中世《ちゅうせい》にまでさかのぼる。¦This magnificent cathedral dates back to the Middle Ages.¦1¦4qb1¦¦sundown¦大聖堂",
     "0xwby\t1¦｜口《くち》をゆすいでください。¦Please rinse out your mouth.¦4¦3q6z¦bunbuku¦CK¦ゆすいで\t2¦｜彼《あれ》は｜汚名《おめい》をそそいだ。¦He vindicated his honor.¦2¦2cj3¦¦¦そそいだ",
     "0xwc8\t1¦｜凧《たこ》を｜飛《と》ばすのは｜危険《きけん》になることがある。¦Flying kites can be dangerous.¦¦2xu3¦¦CK¦凧",
     "0xwd2\t1¦｜谷《たに》は｜彼《あ》の｜呼《よ》び｜声《ごえ》でこだました。¦The valley echoed with his call.¦2¦2xti¦¦¦谷",
@@ -188,20 +201,5 @@ export const PIECE: WordsPiece = {
     "0xx72\t1¦｜二人《ふたり》の｜男《おとこ》は｜刑務所《けいむしょ》から｜釈放《しゃくほう》された。¦The two men were released from jail.¦1¦2mz3¦small_snow¦CK¦二人",
     "0xx7w\t1¦｜長《なが》い｜日数《にっすう》ではなかったが、そこに｜滞在《たいざい》された。¦There they stayed for a few days.¦1¦2p66¦¦¦日数",
     "0xx86\t1¦｜日本《にほん》は｜中国《ちゅうごく》の｜東方《とうほう》にある。¦Japan is to the east of China.¦4¦2mgj¦¦Zifre¦日本",
-    "0xx8g\t1¦｜乳牛《にゅうぎゅう》というのは、｜役《やく》に｜立《た》つ｜動物《どうぶつ》です。¦A dairy cow is a useful animal.¦2¦2m83¦¦CM¦乳牛",
-    "0xx9k\t1¦｜乳房《ちぶさ》にしこりがあります。¦I have a lump in my breast.¦1¦2m7x¦¦¦乳房",
-    "0xxb8\t1¦１台の車が入り口に止まった。¦A car stopped at the entrance.¦4¦51vr¦mookeee¦CK¦入り口",
-    "0xxc2\t1¦｜天候《てんこう》のいかんにかかわらず｜駅《えき》へ｜迎《むか》えに｜参《まい》ります。¦Rain or shine, I will come to meet you at the station.¦3¦2ohq¦bunbuku¦CK¦いかん",
-    "0xxcc\t1¦アルコールの｜消費量《しょうひりょう》は｜年々《ねんねん》｜増《ふ》えている。¦Alcohol consumption is increasing every year.¦2¦4xff¦¦CK¦年々",
-    "0xxcm\t1¦あれだけのコインを｜収集《しゅうしゅう》するのにどれだけの｜年月《としつき》がかかりましたか。¦How long did it take you to collect so many coins?¦3¦4xa7¦¦CK¦年月",
-    "0xxdg\t1¦このガラクタは｜火《ひ》に｜燃《も》やしなさい。¦Burn this rubbish on the fire.¦2¦4sqt¦¦sundown¦燃やし\t2¦｜彼女《かのじょ》は｜嫉妬《しっと》の｜炎《ほのお》を｜燃《も》やした。¦She burned with jealousy.¦¦1wm1¦mookeee¦CK¦燃やした",
-    "0xxe0\t1¦このコップをミルクで｜満《み》たした。¦I filled this glass with milk.¦3¦4soi¦¦CK¦この\t2¦この｜数年間《すうねんかん》に｜彼《あれ》は｜不朽《ふきゅう》の｜名詩《めいし》を｜書《か》いた。¦During these years he wrote immortal poems.¦1¦4qhp¦xtofu80¦¦この",
-    "0xxf4\t1¦｜天気予報《てんきよほう》によれば、まもなく｜梅雨《つゆ》に｜入《い》るそうだ。¦According to the weather forecast, the rainy season will set in before long.¦1¦2oin¦¦CM¦梅雨",
-    "0xxfy\t1¦｜少年《しょうねん》は｜木《き》の｜皮《かわ》を｜剥《は》いだ。¦The boy stripped a tree of the bark.¦¦351s¦¦¦剥いだ",
-    "0xxgi\t1¦｜彼《あれ》は｜博士論文《はかせろんぶん》を｜月末《げつまつ》までに｜教授《きょうじゅ》に｜提出《ていしゅつ》しなければならない。¦His doctoral thesis must be submitted to the professor by the end of the month.¦1¦264w¦¦CK¦博士論文",
-    "0xxgs\t1¦｜博打《ばくち》で｜彼《あれ》は｜失敗《しっぱい》した。¦Gambling brought about his failure.¦1¦2lpx¦¦¦博打",
-    "0xxhc\t1¦｜大《おお》きなかしわの｜木《き》が｜風《ふり》の｜力《ちから》を｜弱《よわ》めている。¦The big oak tree breaks the force of the wind.¦2¦2yad¦¦orcrist¦かしわ",
-    "0xxhm\t1¦｜父《ちち》の｜髪《かみ》は｜白髪交《しらがま》じりになった。¦My father's hair has become streaked with gray.¦3¦1tfh¦¦CM¦白髪",
-    "0xxig\t1¦ボールを｜丸《まる》く、そして｜堅《かた》くするために｜麦《むぎ》わらをいっぱいに｜詰《つ》め｜込《こ》んでいました。¦They filled them with straw to make them round and hard.¦1¦47kz¦¦orcrist¦麦わら",
   ],
 };

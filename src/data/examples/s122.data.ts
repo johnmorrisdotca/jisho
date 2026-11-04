@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 123 of 144, from "17onk". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 123 of 144, from "17oa". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,20 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "17oas\t1¦｜私《わたし》たちはその｜機《き》を｜最大限《さいだいげん》に｜利用《りよう》した。¦We made the most of the opportunity.¦3¦3key¦¦CK¦機\t2¦セールスマンはひき｜肉《にく》｜機《き》の｜使《つか》い｜方《かた》を｜操作《そうさ》して｜説明《せつめい》した。¦The salesman demonstrated how to use the mincer.¦1¦4l61¦¦CM¦機\t3¦｜機《き》は｜急角度《きゅうかくど》で｜上昇《じょうしょう》し、それから｜海岸《かいがん》を｜離《はな》れるにつれて｜水平飛行《すいへいひこう》に｜移《うつ》った。¦The plane rose sharply before leveling off as it left the coast.¦1¦3xhs¦¦CK¦機\t4¦そのうち３機はまだ帰還の報告はない。¦Three of the planes have not yet reported home.¦1¦4knc¦¦¦機",
+    "17ob2\t1¦なんの｜苦《く》もなくその｜場《ば》｜所《ところ》を｜見《み》つけた。¦He had no difficulty in finding the place.¦3¦49e8¦¦CK¦苦",
+    "17oey\t1¦この｜問題《もんだい》は｜多《おお》くの｜経済学者《けいざいがくしゃ》によって｜論《ろん》じられてきた。¦This problem has been debated by many economists.¦3¦4p9j¦mookeee¦¦経済学者",
+    "17of8\t1¦｜彼女《かのじょ》を｜悪《わる》く｜言《い》う｜奴《やつ》がいたらただじゃおかないぞ。¦I'd take anybody apart who dared to say a word against her.¦1¦1ugo¦bunbuku¦CM¦ただじゃおかない",
+    "17ofi\t1¦｜聖霊《しょうりょう》がある｜方《ほう》の｜上《うえ》に｜下《くだ》って、その｜上《うえ》にとどまられるのが｜見《み》えたなら、その｜方《かた》こそ｜聖霊《しょうりょう》によってバプテスマを｜授《さず》ける｜方《ほう》である。¦The man on whom you see the Spirit come down and remain is he who will baptize with the Holy Spirit.¦1¦322b¦¦¦バプテスマ",
+    "17ofs\t1¦｜私《わたし》たち、うまくやっていけると｜思《おも》うの。¦I think we can get along well.¦4¦3l4g¦¦CK¦うまくやっていける",
+    "17og2\t1¦お｜前《まえ》ならもっとうまくやれるよ。¦I know you can make it better.¦5¦4v4r¦¦CK¦うまくやれる",
+    "17ohg\t1¦｜世界的《せかいてき》に｜過大《かだい》に｜評価《ひょうか》された｜中国《ちゅうごく》｜書《ふみ》といえば、『｜孫子《まごこ》』ですかね。¦When it comes to Chinese books that are overvalued worldwide I suppose it's Sun Tzu, isn't it?¦¦1mm6¦mookeee¦¦書",
+    "17oi0\t1¦きのうここで結婚式が２組あった。¦There were two marriages here yesterday.¦1¦4ud5¦¦Jesse¦２組",
+    "17oia\t1¦ほとんどの｜日本《にほん》の｜大会社《だいがいしゃ》は、｜輸出《ゆしゅつ》に｜頼《たよ》っている。¦Most big Japanese companies depend on exports.¦2¦47c6¦¦CK¦大会社",
+    "17olc\t1¦｜建築家《けんちくか》は｜芸術家《げいじゅつか》ぶってはならない。¦An architect should not pretend to be an artist.¦2¦3rc3¦¦CM¦ぶって",
+    "17om6\t1¦｜私達《わたしたち》が｜生《い》きていくためには｜衣食住《いしょくじゅう》が｜必要《ひつよう》です。¦We need food, clothes and a home in order to live.¦2¦3jqs¦small_snow¦¦生きていく\t1¦｜自分《じぶん》ができそこないであると｜気《き》が｜付《つ》いたまま｜生《い》きていくのは｜辛《から》いことだ。¦It's hard to live with the knowledge that you are a failure.¦¦1mow¦mookeee¦CC¦生きていく",
+    "17on0\t1¦｜音楽《おんがく》は｜野蛮人《やばんじん》の｜胸《むね》をなだめすかす｜魅力《みりょく》がある。¦Music has a charm that soothes even the savage's breast.¦1¦419m¦¦carlosalberto¦なだめすかす",
+    "17ona\t1¦｜彼《あれ》はどの｜学生《がくせい》にも｜劣《おと》らずよく｜勉強《べんきょう》する。¦He works as hard as any student.¦1¦2e15¦¦CK¦劣らず",
     "17onk\t1¦それは｜秘密《ひみつ》です。｜誰《だれ》にももらすことがあってはいけません。¦It's a secret; don't give it away to anyone.¦¦4e3s¦¦¦誰にも\t3¦｜誰《だれ》にも｜知的《ちてき》な｜願《ねが》いがある。¦Everyone has his intellectual desire.¦¦2xim¦¦¦誰にも",
     "17opi\t1¦タケオは｜彼《かれ》なりに｜良《よ》いやつだ。¦Takeo is quite a good fellow in his way.¦3¦4d61¦arnab¦¦なりに",
     "17oq2\t1¦あの｜大名《だいみょう》は｜十万《じゅうまん》｜石《こく》を｜領《りょう》している。¦That daimyo holds a fief yielding 100,000 koku of rice.¦2¦1nc1¦TheDQN¦¦領している",
@@ -191,25 +205,5 @@ export const PIECE: WordsPiece = {
     "1894s\t2¦｜明日《あした》は｜英語《えいご》のテストだろう、だったら｜今晩《こんばん》は｜数学《すうがく》の｜宿題《しゅくだい》にかかずらわっちゃだめだ。¦You have an English test tomorrow, so don't get bogged down in your math homework tonight.¦3¦1q2m¦¦CM¦かかずらわっちゃ",
     "1895w\t1¦「ちゃちなおもちゃみたいな」と｜言《い》うのは、ちゃちなおもちゃに｜対《たい》して｜失礼《しつれい》です。¦To say that it gives the impression of a cheap toy is unfair to cheap toys.¦3¦1nfe¦mookeee¦¦ちゃちな",
     "18966\t1¦｜肌《はだ》がヒリつくどころか、｜使《つか》う｜前《さき》より｜肌《はだ》が｜安定《あんてい》してるんです。¦Far from irritating my skin it was better than before I used it.¦2¦1mhp¦wakatyann630¦¦ヒリつく",
-    "1897a\t1¦｜最近《さいきん》、｜私《わたし》、だれてるの。¦I've been sluggish recently.¦3¦3nnt¦small_snow¦CM¦だれてる",
-    "189a2\t1¦かくかくしかじかで、と｜事情《じじょう》を｜説明《せつめい》したのだが、あんまり｜興味《きょうみ》なさそうな｜相槌《あいづち》しか｜返《かえ》ってこなかった。¦I explained the situation, as this, that and such and such, but they just nodded along without showing much interest.¦¦1n9a¦mookeee¦¦かくかくしかじか",
-    "189dy\t1¦｜彼女《かのじょ》は｜向《む》こうでごちそうをぱくついているようだ。¦She seems to be having a good feed over there.¦3¦1xkb¦¦¦ぱくついている",
-    "189es\t1¦これ｜以上《いじょう》ここでもたついてると、｜後《うし》ろの｜第二《だいに》｜関門《かんもん》からも｜増援《ぞうえん》が｜来《き》て、｜挟撃《きょうげき》されるかも｜知《ち》れねーんだぜ。¦If we hang around here any longer, there could be reinforcements coming from the second gate to take us in a pincer movement!¦1¦1n6w¦¦¦もたついてる",
-    "189fw\t1¦｜目《め》から｜鱗《うろこ》が｜落《お》ちた。¦I can see the light.¦¦1pqp¦small_snow¦CK¦目から鱗が落ちた",
-    "189g6\t1¦みんなが｜私《わたし》をのけ｜者《もの》にしたの。¦I was left out in the cold by everyone.¦4¦46fy¦small_snow¦AlanF_US¦のけ者にした",
-    "189k2\t1¦｜彼《あれ》はロック｜音楽《おんがく》に｜夢中《むちゅう》だが、｜彼女《かのじょ》のほうはそれに｜輪《わ》をかけて｜夢中《むちゅう》だ。¦He is keen on rock music, but she is even more so.¦2¦2d49¦¦¦輪をかけて",
-    "189no\t1¦１３人？たったそんだけかよ。¦Just 13 people? That's all?¦5¦1ndv¦mookeee¦CM¦そんだけ",
-    "189os\t1¦けい｜子《こ》と｜一《ひとつ》朗が｜納得《なっとく》ずくで｜別《わか》れた。¦Keiko and Ichiro parted with mutual consent.¦1¦1n8p¦mookeee¦¦納得ずく",
-    "18a2o\t1¦｜警察《けいさつ》は｜彼《あれ》に｜目《め》をつけている。¦The cops are keeping tabs on him.¦3¦1lq9¦fcbond¦fcbond¦目をつけている",
-    "18a8i\t1¦｜彼《あれ》はしきりと｜一財産《ひとざいさん》｜作《つく》りたがっている。¦He is burning to make a fortune.¦3¦2fnn¦¦¦一財産",
-    "18a9c\t1¦ここだけの｜話《はなし》だが、｜彼《あれ》はいささか｜間《ま》が｜抜《ぬ》けている。¦Between you and me, he is rather stupid.¦3¦4tde¦¦Zifre¦間が抜けている",
-    "18ak6\t1¦あっさり｜断《ことわ》られると｜思《おも》いきや、｜彼女《かのじょ》は｜承諾《しょうだく》してくれました。¦I had expected an outright refusal, but to my surprise she agreed.¦1¦1ncc¦mookeee¦CN¦思いきや",
-    "18alk\t1¦これはスミレの｜一種《いっしゅ》です。¦This is a variety of violet.¦3¦4oo8¦¦CM¦スミレ",
-    "18ame\t1¦｜厳《きび》しいトレーニングに、｜彼《あれ》は｜音《ね》を｜上《あ》げた。¦He gave up under the severe training he faced.¦1¦1msi¦mookeee¦¦音を上げた",
-    "18ani\t1¦｜何人《なんにん》かが｜私《わたし》の｜腕《うで》をつかんだ。¦Somebody caught me by the arm.¦2¦40ld¦¦CK¦何人か",
-    "18ans\t1¦｜貧《まず》しいといえども｜彼女《かのじょ》は｜幸《しあわ》せだ。¦Though she is poor, she is happy.¦3¦1tqo¦¦CM¦いえども",
-    "18b8m\t1¦ツタウルシにかぶれました。¦I got a rash from poison ivy.¦5¦4cb7¦bunbuku¦Swift¦ツタウルシ",
-    "18baa\t1¦ぜいぜい｜言《い》いながらも、｜気合《きあい》をいれて｜走《はし》り｜続《つづ》ける。¦Puffing and panting we continued to run with renewed vigor.¦3¦1n5b¦mookeee¦¦ぜいぜい",
-    "18bby\t1¦もっと｜単刀直入《たんとうちょくにゅう》に｜言《い》ってくれないかな。｜隔靴掻痒《かっかそうよう》の｜感《かん》なきにしもあらずだよ。¦You don't have to leave me hanging like this. Why don't you just come out and tell it to me straight?¦¦453g¦¦AlanF_US¦なきにしもあらず",
   ],
 };

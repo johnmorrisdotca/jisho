@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 35 of 219, from "0tnvm". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 35 of 219, from "0tnr". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,22 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0tnr6\t切りがない|切りが無い\tきりがない|キリがない~~~!\texp,adj-i¦uk¦endless¦boundless¦innumerable¦切りのない\texp,adj-i¦uk¦endless¦never-ending¦going on forever",
+    "0tnrg\t切りがいい|切りが良い|切りがよい\tきりがいい~~切りがいい,切りが良い|きりがよい~~切りが良い,切りがよい|キリがいい~~~!|キリがよい~~~!\texp,adj-ix¦uk¦good (place to leave off)¦convenient",
+    "0tnrq\t切りっ端|切りっぱし\tきりっぱし\tn¦¦scraps¦cut end¦cut-off piece",
+    "0tns0\t切りのない|切りの無い\tきりのない|キリのない~~~!\texp,adj-i¦uk¦endless¦boundless¦切りがない・1",
+    "0tnsa\t切り下げる|斬り下げる~rK|きり下げる~sK|切りさげる~sK\tきりさげる\tv1,vt¦¦to cut down¦to prune¦to reduce¦to cut and hang down¦to cut shorter\tv1,vt¦¦to round down (e.g. fraction)",
+    "0tnsk\t切り下ろす|斬り下ろす|切りおろす|切下ろす\tきりおろす\tv5s,vt¦¦to cut downward¦to slash downward",
+    "0tnsu\t切火|鑽火|切り火|鑽り火|鑚火|鑚り火\tきりび\tn¦¦striking sparks with flint and steel or by rubbing sticks together (usu. to start a fire)¦fire lit by sparks from flint and steel, etc.¦鑽る\tn¦¦purification ceremony in which sparks are struck in the direction of someone (oft. for good luck)",
+    "0tnt4\t切り花|切花\tきりばな\tn¦¦cut flowers",
+    "0tnte\t切り解く|斬り解く|切解く|斬解く\tきりほどく\tv5k,vt¦¦to cut open (a tied bundle)¦to release (prisoners)",
+    "0tnto\t切り回す|切りまわす|切回す\tきりまわす\tv5s,vt¦¦to manage¦to control¦to run¦to handle\tv5s,vt¦¦to cut carelessly (of a cook, surgeon, etc.)¦to slash about¦also written as 斬り回す\tv5s,vt¦arch¦to cut around",
+    "0tnty\t切り開き\tきりひらき\tn¦¦clearing (land)¦excavating",
+    "0tnu8\t切り開く|切り拓く|切りひらく|きり拓く~sK|切開く~sK|切り墾く~sK\tきりひらく\tv5k,vt¦¦to cut open\tv5k,vt¦¦to clear (land)¦to cut (a path, road, etc.)¦to open¦to cut one's way through (e.g. a jungle)\tv5k,vt¦¦to carve out (a new career, future, etc.)¦to open up (a new field)",
+    "0tnui\t切り外す|切りはずす\tきりはずす\tv5s,vt¦¦to miss in attempting to kill",
+    "0tnus\t切り広げる|切り拡げる|切広げる~sK|切拡げる~sK\tきりひろげる\tv1,vt¦¦to cut and enlarge¦to enlarge by cutting",
+    "0tnv2\t切り割る|切割る\tきりわる\tv5r,vt¦¦to cut (into two or more pieces)",
+    "0tnvc\t切り干し|切干|切干し|切り乾し\tきりぼし\tn¦¦dried daikon strips",
     "0tnvm\t切り岸\tきりぎし\tn¦¦steep bank¦cliff",
     "0tnvw\t切り起こす\tきりおこす\tv5s¦¦to open up waste land for cultivation",
     "0tnw6\t切り詰め\tきりつめ\tn¦¦retrenchment¦curtailment",
@@ -935,37 +951,5 @@ export const PIECE: WordsPiece = {
     "0tvc8\t前置詞\tぜんちし\tn¦gramm¦preposition¦後置詞",
     "0tvci\t前著\tぜんちょ\tn¦¦ibid.¦the above-mentioned publication",
     "0tvcs\t前陳\tぜんちん\tn¦rare¦previous mention¦mentioning previously¦前述",
-    "0tvd2\t前庭\tぜんてい|まえにわ\tn¦¦front garden¦front yard\tn¦anat¦vestibule (of the ear)¦ぜんてい",
-    "0tvdc\t前提\tぜんてい\tn¦¦condition¦assumption¦prerequisite¦hypothesis\tn¦¦intention¦intent¦aim¦goal\tn¦logic¦premise",
-    "0tvdm\t前提条件\tぜんていじょうけん\tn¦¦precondition¦prerequisite",
-    "0tvdw\t前哲\tぜんてつ\tn¦¦former men of wisdom and virtue",
-    "0tve6\t前電\tぜんでん\tn¦¦the last telegram",
-    "0tveg\t前渡し\tまえわたし\tn,vs,vt¦¦advance payment¦advance delivery",
-    "0tveq\t前渡金|前渡し金\tまえわたしきん|ぜんときん~~前渡金\tn¦¦advance payments¦prepayment",
-    "0tvf0\t前登録\tぜんとうろく\tn,vs¦¦preregistration",
-    "0tvfa\t前途\tぜんと\tn¦¦future¦prospects¦outlook\tn¦¦journey ahead¦distance yet to cover",
-    "0tvfk\t前途有望\tぜんとゆうぼう\tn,adj-na¦yoji¦promising future",
-    "0tvfu\t前頭\tまえがしら\tn,adj-no¦sumo¦rank-and-file wrestlers in the highest division",
-    "0tvg4\t前頭部\tぜんとうぶ\tn¦¦front¦forehead",
-    "0tvge\t前日\tぜんじつ|まえび\tn,adv¦¦previous day¦day before¦eve¦prior day¦preceding day¦esp. 〜の前日",
-    "0tvgy\t前任\tぜんにん\tn,adj-no¦¦former (incumbent)¦predecessor",
-    "0tvh8\t前任者\tぜんにんしゃ\tn¦¦predecessor",
-    "0tvhi\t前任地\tぜんにんち\tn¦¦former post",
-    "0tvhs\t前年\tぜんねん\tn,adv¦¦the preceding year¦the previous year¦last year",
-    "0tvi2\t前年度\tぜんねんど\tadv,n¦¦preceding fiscal year",
-    "0tvic\t前納\tぜんのう\tn,vs,vt,adj-no¦¦prepayment¦advance payment",
-    "0tvim\t前脳\tぜんのう\tn,adj-no¦¦forebrain¦prosencephalon",
-    "0tviw\t前髪\tまえがみ\tn¦¦forelock¦bangs",
-    "0tvj6\t前半期\tぜんはんき\tn¦¦the first half-year¦first half of the year",
-    "0tvjg\t前半戦\tぜんはんせん|ぜんぱんせん\tn¦¦first half of a game¦first half of a match",
-    "0tvjq\t前板\tまえいた\tn¦¦dashboard¦frontlet",
-    "0tvk0\t前非\tぜんぴ\tn¦¦past misdeed¦past error¦past folly¦past sin",
-    "0tvka\t前鼻緒\tまえはなお\tn¦¦sandal or clog strap",
-    "0tvkk\t前表\tぜんぴょう\tn¦¦omen¦portent¦sign¦premonition¦harbinger",
-    "0tvku\t前夫|先夫\tぜんぷ~~前夫|せんぷ~~先夫\tn¦¦former husband¦late husband",
-    "0tvl4\t前婦|先婦\tぜんぷ~~前婦|せんぷ~~先婦\tn¦¦previous wife¦late wife",
-    "0tvle\t前舞台\tまえぶたい\tn¦¦apron stage",
-    "0tvlo\t前部\tぜんぶ\tn,adj-no¦¦front part¦fore¦front",
-    "0tvly\t前文\tぜんぶん\tn¦¦the above sentence¦the foregoing remark\tn¦¦preamble (to a statute, constitution, etc.)\tn¦¦opening part of a letter (used for season's greetings, asking after someone's health, etc.)",
   ],
 };

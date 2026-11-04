@@ -116,6 +116,7 @@ export const PIECE: WordsPiece = {
     "さいしょう\t最少\tC~n17#rqie\t¦fewest¦least¦smallest (number)\t¦youngest",
     "さいしょう\t宰相\tC~n19#rqr0\t¦prime minister¦premier¦chancellor",
     "さいしょう\t再勝\t#rplm\t¦another victory",
+    "さいしょう\t妻妾\t#10zls\t¦one's wife and mistress(es)",
     "さいしょう\t細小\tn#1cmoq\t¦minute¦minuscule",
     "さいしょうエスジーエムエルぶんしょ\t最小ＳＧＭＬ文書\t#1eja6\tcomp¦minimal SGML document",
     "さいしょうか\t最小化\ts#rqgq\t¦minimization¦minimisation",
@@ -903,6 +904,5 @@ export const PIECE: WordsPiece = {
     "さいぼうせいめんえき\t細胞性免疫\t#1bf80\t¦cell-mediated immunity¦cellular immunity",
     "さいぼうせっちゃく\t細胞接着\t#1mszo\tbiol¦cell adhesion¦cellular adhesion¦dyshesion",
     "さいぼうせつ\t細胞説\t#1o6d6\tbiol¦cell theory",
-    "さいぼうそしき\t細胞組織\t#1pg9j\tbiol¦cellular tissue",
   ],
 };

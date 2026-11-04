@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 17 of 316, from "いたずらず". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 17 of 316, from "いたずらぎ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,11 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "いたずらぎ\t悪戯着\t#oolq\t¦rompers¦play suit",
+    "いたずらこぞう\tいたずら小僧|イタズラ小僧|悪戯小僧\t#ool6\t¦mischievous boy",
+    "いたずらごころ\tいたずら心|悪戯心\t#1osur\t¦desire to tease¦desire to cause mischief",
+    "いたずらごと\t徒言\t#1m1me\t¦nonsense¦gibberish¦meaningless word",
+    "いたずらざかり\t悪戯盛り|いたずら盛り\t#oolg\t¦mischievous age",
     "いたずらずき\tいたずら好き|悪戯好き\tn#1a06s\t¦mischievous",
     "いたずらっこ\tいたずらっ子|悪戯っ子|悪戯子\t#ookm\t¦mischievous child¦scamp¦rascal\t¦elf¦imp",
     "いたずらっぽい\t悪戯っぽい\taU#170uc\tuk¦roguish¦impish",
@@ -730,9 +735,5 @@ export const PIECE: WordsPiece = {
     "いちまつ\t一抹\tC~mt30#p0au\t¦a touch (of sadness, unease, etc.)¦a tinge (of)¦a hint (of)\t¦a smear (of paint, ink, etc.)¦one stroke (of a brush)",
     "いちまつ\t市松\t#s1h4\tabbr¦check (pattern)\tabbr¦ichimatsu doll",
     "いちまつにんぎょう\t市松人形\t#18jrk\t¦ichimatsu doll",
-    "いちまつもよう\t市松模様\t#15u5o\t¦checked pattern¦chequered pattern¦checks",
-    "いちまるいちキーボード\t１０１キーボード\t#1cx4u\t¦101-key keyboard (standard keyboard layout developed by IBM)",
-    "いちまん\t１万|一万|１００００|一〇〇〇〇\tC~s#19h6w\t¦10,000¦ten thousand¦10^4",
-    "いちまんえん\t一万円|壱万円|１万円\t#19u5a\t¦10,000 yen",
   ],
 };

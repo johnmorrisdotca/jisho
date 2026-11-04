@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The whole answer, as JMdict has it, for each reading whose answer is not the same in safe mode, each row: reading, written forms joined by "|", flags, then one field for each sense. Only for a lookup that asks for everything. Piece 2 of 13, from "うせ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The whole answer, as JMdict has it, for each reading whose answer is not the same in safe mode, each row: reading, written forms joined by "|", flags, then one field for each sense. Only for a lookup that asks for everything. Piece 2 of 13, from "うちじ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,12 +9,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "うせる\t失せる\ti#saca\t¦to disappear¦to vanish¦to fade away\tderog¦to go¦to leave\teuph,dated¦to die",
-    "うぞうぞ\t\t#lgda\ton-mim¦irrepressibly aroused (esp. sexually)¦stimulated",
-    "うたえただすつかさ\t刑部省\t#1cd4u\t¦Ministry of Justice (1869-1871)\t¦Ministry of Justice (under the ritsuryō system)",
-    "うたえのつかさ\t刑部省\t#1cd4u\t¦Ministry of Justice (1869-1871)\t¦Ministry of Justice (under the ritsuryō system)",
-    "うちぐら\t内倉\t#v9im\trare¦godown within a compound¦warehouse within a building complex",
-    "うちぐら\t内蔵\t#1p06f\t¦storeroom (attached to a house)\thist¦Imperial warehouse",
     "うちじゅう\t家中\t~m30#pjy2\t¦whole family¦entire family¦all (members of) the family\t¦all over the house¦throughout the house\thist¦retainer of a daimyo¦feudal domain¦clan",
     "うちそと\t内外\tC~n03#xx1i\t¦inside and outside¦interior and exterior\t¦inside and outside the country¦home and abroad¦domestic and foreign\t¦around¦about¦approximately",
     "うちなあタイム\t沖縄タイム\t#1ovo1\tsens¦Okinawan time (i.e. a relaxed attitude to punctuality sometimes ascribed to Okinawans)¦island time",
@@ -72,7 +66,6 @@ export const PIECE: WordsPiece = {
     "うわくちびる\t上唇|上くちびる\tC~i#xvga\tanat¦upper lip\tzool¦labrum",
     "うわだい\t上代\t#t0mo\t¦ancient times (e.g. Heian and Nara periods in Japan)¦remote ages¦early history\t¦(nominal) retail price",
     "うわて\t上手\tn#xvg0\t¦upper part\t¦upper stream¦upper course of a river\t¦right side of the stage (audience's or camera's POV)¦stage left (actor's POV)\t¦skillful (in comparisons)¦dexterity",
-    "うわなり\t後妻\t#1ox3c\tarch¦second wife¦later wife¦concubine\tarch¦jealousy",
     "うわん\t右腕\tC~n11#p3ru\t¦right arm\t¦right-hand man¦right hand¦right-hand person\tbaseb¦right-handed pitcher",
     "うわん\t\t#1p18n\t¦boohoo¦boo hoo¦waa waa\t¦wow¦huh\t¦mythical monster that suddenly shouts \"uwan\", surprising passersby in the night",
     "うん\t運\tC~ni09#p4si\t¦fortune¦luck¦chance",
@@ -321,7 +314,6 @@ export const PIECE: WordsPiece = {
     "おつねん\t越年\tsC~n16#p6wm\t¦seeing the old year out¦greeting the New Year¦passing the winter\thanaf¦playing more than the usual 12 rounds in one game",
     "おつぼね\t御局\t#18d0i\tarch¦court lady with her own private chamber or office\t¦low-class prostitute (Edo period)",
     "おつぼね\tお局\t#1ow7y\tcol,abbr¦senior female worker who supervises junior employees in a domineering fashion",
-    "おてつき\tお手つき|お手付き\t#10ayu\t¦touching a wrong card (in karuta)¦buzzing too early (in a quiz)\tdated¦making a mistress of a servant¦mistress (who is one's servant)\tcards¦foul (comp. karuta)",
     "おとうと\t弟\tC~ni04#xwmi\t¦younger brother¦little brother¦kid brother\t¦brother-in-law (spouse's younger brother or younger sister's husband)\tarch¦pupil¦apprentice",
     "おとうと\t義弟\tC~mt25#q9ve\t¦brother-in-law (spouse's younger brother or younger sister's husband)\trare¦younger stepbrother",
     "おとこをしる\t男を知る\tg#1p6si\t¦to lose one's virginity (of a woman)¦to become sexually active",
@@ -391,9 +383,7 @@ export const PIECE: WordsPiece = {
     "おんしゅう\t温習\ts#xsqi\t¦review¦rehearsal",
     "おんしゅう\t怨讐|怨讎\t#1oyg9\t¦resentment¦hatred¦enmity\t¦hated enemy¦resented foe",
     "おんどれ\t己\tU#18ono\tuk,derog,osb¦you",
-    "おんな\t女\tC~ni02#str6\t¦woman¦female\t¦female lover¦girlfriend¦mistress",
     "おんながく\t女楽\t#1jkbe\t¦music performed by women\t¦women who performed court Bugaku music and dance",
-    "おんなじまん\t女自慢\t#1m980\t¦female bragging¦female conceit\t¦a man bragging about his wife or mistress",
     "おんなずき\t女好き\t#stw6\t¦fondness for women¦woman admirer¦lustful man\t¦being attractive to women¦being a lady-killer",
     "おんなども\t女ども|女共\t#1pa9h\tderog¦women",
     "おんなになる\t女になる\tg#1p6sh\t¦to become an adult woman¦to come of age\t¦to lose one's virginity (of a woman)¦to become sexually active",
@@ -490,7 +480,6 @@ export const PIECE: WordsPiece = {
     "かいろうどうけつ\t偕老同穴\t#ximc\tyoji¦happy life partnership¦living faithfully together till death\tuk¦Venus's flower basket (Euplectella aspergillum)",
     "カイロウドウケツ\t\t#ximc\tyoji¦happy life partnership¦living faithfully together till death\tuk¦Venus's flower basket (Euplectella aspergillum)",
     "かいろうび\t海老尾\t#1fydm\t¦goldfish with a shrimp-like tail\t¦head of a shamisen or lute (bent back like a shrimp's tail)",
-    "かいわりな\t貝割り菜|貝割菜\t#1j9ug\t¦rape seedlings\t¦(white) radish sprouts",
     "カウパー\t\t#1pdcd\tabbr,col¦pre-ejaculate¦pre-cum¦Cowper's fluid",
     "カウパーえき\tカウパー液\t#1omgj\t¦Cowper's fluid¦pre-ejaculate¦pre-cum",
     "カウパーせんえき\tカウパー腺液\t#1omj0\t¦Cowper's fluid¦pre-ejaculate¦pre-cum",
@@ -544,5 +533,9 @@ export const PIECE: WordsPiece = {
     "かけい\t火計\t#1ovhi\t¦fire attack¦attacking and burning enemy troops, warships, provisions, etc.",
     "かけい\t科刑\ts#1owov\t¦imposing a punishment",
     "かけい\t化勁\t#1pj64\tMA¦Hua Jin",
+    "かげうらのまめもはじけどき\t陰裏の豆もはじけ時|陰うらの豆もはじけ時\t#1oz07\tproverb¦all girls eventually awaken to sex",
+    "かげま\t陰間|蔭間\t#18aba\tarch¦homosexual prostitute who sold his favors at banquets (Edo period)\tarch¦(kabuki) actor-in-training",
+    "かこい\t囲い\tC~ni22#orxq\t¦enclosure¦fence¦wall\t¦storage (of fruit, vegetables, etc.)\t¦partitioned area of a room for conducting tea ceremonies\tabbr¦mistress",
+    "かこいおんな\t囲い女\t#1hxuy\t¦mistress",
   ],
 };

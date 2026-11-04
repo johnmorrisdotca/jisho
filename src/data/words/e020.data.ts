@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 21 of 219, from "0qjj". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 21 of 219, from "0qjge". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,15 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0qjge\t興行化\tこうぎょうか\tn,vs,vt¦¦turning (something) into a show¦turning into a performance¦adapting for the stage",
+    "0qjgo\t興行師\tこうぎょうし\tn¦¦showman¦show manager",
+    "0qjgy\t興行主\tこうぎょうぬし\tn¦¦showman¦impresario¦promoter¦producer",
+    "0qjh8\t興国\tこうこく\tn¦¦making a country prosperous¦prosperous country\tn¦hist¦Kōkoku era (of the Southern Court; 1340.4.28-1346.12.8)",
+    "0qjhi\t興趣\tきょうしゅ\tn¦¦interest (in something)",
+    "0qjhs\t興信所\tこうしんじょ\tn¦¦detective agency¦enquiry agency",
+    "0qji2\t興信録\tこうしんろく\tn¦¦credit-worthiness directory",
+    "0qjim\t興ざめ|興醒め|興冷め~iK|興覚め~iK\tきょうざめ\tn,adj-na,vs,vi¦¦spoiled fun¦loss of interest¦damper (e.g. on the party)¦wet blanket¦turn-off",
+    "0qjiw\t興ざめる|興醒める\tきょうざめる\tv1,vi¦¦to lose interest¦to be dampened (of enjoyment, interest, etc.)¦to fall flat¦to turn sour",
     "0qjj6\t興替\tこうたい\tn¦¦rise and fall (of nations)",
     "0qjjg\t興奮|昂奮~rK|亢奮~rK\tこうふん|コーフン~sk\tn,vs,vi¦¦excitement¦stimulation¦agitation¦arousal",
     "0qjjq\t興奮剤\tこうふんざい\tn¦¦stimulant",
@@ -1018,21 +1027,5 @@ export const PIECE: WordsPiece = {
     "0qroi\t軍票\tぐんぴょう\tn¦¦military scrip",
     "0qros\t軍夫\tぐんぷ\tn¦¦military porter",
     "0qrp2\t軍部\tぐんぶ\tn¦¦military authorities¦army circles",
-    "0qrpc\t軍部独裁\tぐんぶどくさい\tn¦¦military dictatorship",
-    "0qrpm\t軍服\tぐんぷく\tn¦¦military uniform",
-    "0qrpw\t軍放送\tぐんほうそう\tn¦¦military broadcast",
-    "0qrq6\t軍法\tぐんぽう\tn¦¦military law¦martial law¦tactics¦strategy",
-    "0qrqg\t軍法会議\tぐんぽうかいぎ\tn¦¦court-martial",
-    "0qrqq\t軍帽\tぐんぼう\tn¦¦military cap",
-    "0qrr0\t軍民\tぐんみん\tn¦¦the military and civilians",
-    "0qrra\t軍務\tぐんむ\tn¦¦military affairs¦military service",
-    "0qrrk\t軍門\tぐんもん\tn¦pol¦camp gate¦general",
-    "0qrru\t軍容\tぐんよう\tn¦¦military accouterments¦military accoutrements¦troop formation",
-    "0qrs4\t軍用\tぐんよう\tn,adj-no¦¦for military use",
-    "0qrse\t軍用艦\tぐんようかん\tn¦¦military ship",
-    "0qrso\t軍用機\tぐんようき\tn¦¦military aircraft",
-    "0qrsy\t軍用金\tぐんようきん\tn¦¦war funds¦war chest¦campaign fund",
-    "0qrt8\t軍用犬\tぐんようけん\tn¦¦war dog",
-    "0qrti\t軍用地図\tぐんようちず\tn¦¦army (topographic) map",
   ],
 };

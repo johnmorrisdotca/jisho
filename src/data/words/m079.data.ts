@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 80 of 172, from "interpretiv". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 80 of 172, from "interpo". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,23 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "interpol\tインターポール|インターポル|こくさいてはい",
+    "interpolation\tそうにゅう|ないそう|ほかん|ほかんほう|ちょくせんほかん|にへんりょうほかん|キュービックほかん|スプラインほかん|データほかん|せんけいほかん",
+    "interpole\tコンシューマーインターポール|コンシューマー・インターポール",
+    "interpose\tへだてる|はさむ|ハサむ",
+    "interpose e\tはさむ|ハサむ",
+    "interposition\tかいざい|そうにゅう",
+    "interpres\tきょうじょしぎ|キョウジョシギ",
+    "interpret\tうけとる|やくす|かいする|インタプリト|しょうをたちぎをとる",
+    "interpretation\tかいしゃく|つうやく|よみかた|アレンジ|くんこ|つうべん|くんかい|かいしゃくじっこう|とらえかた|インタープリテーション|せいかい|くるしい|どうじつうやく|けんぽうかいしゃく|けんきょうふかい|しんしゃく|じかい|ゆめはんだん|ゆめとき|かくだいかいしゃく",
+    "interpretation e\tよみかた",
+    "interpretation explanation\tくるしい",
+    "interpretation i\tつうやく",
+    "interpretations\tソーランぶし",
+    "interpreted\tとれる|インタプリタがたげんご|インタープリタがたげんご|かいしゃくがたげんご|インタプリタげんご|インタープリタげんご",
+    "interpreter\tつうやく|インタープリター|インタプリタ|インタープリタ|つうやくしゃ|つうやくにん|つうじ|かいしゃくじっこうプログラム|せんこうほんやくき|つうやくし|どうじつうやく|べんし|つうやくかん|コマンドインタープリタ|コマンド・インタープリタ|バイトコードインタープリタ|バイトコード・インタープリタ|メタファイルかいしゃくけい|てんそうせんこうほんやくき|ほんやくかいしゃくじっこうプログラムしじぶん",
+    "interpreters\tつうやくあんないしほう",
+    "interpreting\tどうじつうやく|をことてん|おことてん|によう|にちえいつうやく|えいぶんかいしゃく|しゅわつうやく|だんしょうしゅぎ",
     "interpretive\tインタプリティブ",
     "interprocess\tプロセスかんつうしん",
     "interpunctella\tのしめまだらめいが|ノシメマダラメイガ|のしめこくが|ノシメコクガ",
@@ -255,7 +272,7 @@ export const PIECE: WordsPiece = {
     "invertase\tインベルターゼ",
     "invertebrate\tむせきついどうぶつ|がいとうまく|ふでいし|フデイシ|たいけいどうぶつ|ふくろがたどうぶつ|しほうどうぶつ|ゆうしつどうぶつ",
     "invertebrates\tきょくひどうぶつもん|へいばんどうぶつもん|へいばんどうぶつこう|どうふんどうぶつ",
-    "inverted\tさかさ|さかさま|あとさきになる|とうご|とうぞう|ぎゃくさんかくけい|ぎゃくさんかっけい|ぎゃくになる|はいめんひこう|きん|とうちぶん|ふせこし|てんちインデックス|とうりつしき|とうりつふりこ|とうりつぞう|ぎゃくいち",
+    "inverted\tさかさ|さかさま|あとさきになる|とうご|とうぞう|ぎゃくさんかくけい|ぎゃくさんかっけい|ぎゃくになる|はいめんひこう|きん|とうちぶん|ふせこし|てんちインデックス|とうりつしき|とうりつふりこ|とうりつぞう|ぎゃくいち|かんぼつにゅうとう|かんぼつちくび",
     "inverter\tインバーター|インバータ",
     "invertible\tせいそく|かぎゃく",
     "invertible matrix\tせいそく",
@@ -575,29 +592,5 @@ export const PIECE: WordsPiece = {
     "ishii\tいしいこうさくけんきゅうじょ",
     "ishikari\tいしかりなべ|いしかりがたごえいかん",
     "ishikawa\tいしかわ|ちゅうぶ|ほくりく|いしかわけん|ほくりくちほう|のとはんとう|ちゅうぶちほう|じぶに|かが|のと|かなざわ|こしのくに|しばふね|いしかわけんりつびじゅつかん|いしかわけんりつかんごだいがく|いしかわけんりつだいがく|いしかわごえもん|いしかわけんけい",
-    "ishikawa fukui\tちゅうぶ|ほくりく",
-    "ishikawa's\tいしかわがえる|イシカワガエル",
-    "ishikawae\tあまご|アマゴ|さつきます|サツキマス|いしかわがえる|イシカワガエル",
-    "ishikawajima\tいしかわじまはりまじゅうこうぎょうかぶしきがいしゃ",
-    "ishimure\tくかいじょうど",
-    "ishin\tいしん",
-    "ishin no\tいしん",
-    "ishinomaki\tいしのまきせんしゅうだいがく",
-    "ishiru\tいしる|いしり|よしる|よしり",
-    "ishiyama\tいしやまがっせん|いしやませんそう",
-    "ishizaka\tこくさいぶんかきょういくこうりゅうざいだん",
-    "ishū\tいしゅう",
-    "isi\tふごうかんかんしょう",
-    "isidium\tれつが",
-    "isil\tアイシル",
-    "isinglass\tうんも|うんぼ|きらら|アイシングラス|アイジングラス|アイシンググラス",
-    "isis\tアイシス",
-    "isistius\tだるまざめ|ダルマザメ",
-    "islam\tイスラム|イスラーム|イスラムきょう|かいきょう|せいしんきょう|フイフイきょう|シーアは|スンナは|せかいしゅうきょう|ザカート|スンニは|スンニーは|スンニ|スンニー|じゅうにイマームは|ろくしん|ろくしんごぎょう|ごぎょうろくしん|ナビ|ナービー",
-    "islamabad\tイスラマバード",
-    "islamic\tイスラムげんりしゅぎ|イスラームげんりしゅぎ|かいきょうこく|イスラムぶんか|ハマス|ハマース|アルカイダ|アルカーイダ|アルカイーダ|アル・カイダ|アル・カイーダ|アル・カーイダ|タリバン|タリバーン|ターリバーン|イスラムかげきしゅぎ|かいぞく|イスラムれき|ヒジュラれき|イスラムほう",
-    "islamism\tイスラムしゅぎ|イスラームしゅぎ|イスラムかげきは|イスラームかげきは|はんイスラムしゅぎ",
-    "islamist\tヒズボラ|ヒズボッラー|フーシ|ジェマーイスラミア|ジェマー・イスラミア|ヘズボラ",
-    "islamiyah\tジェマーイスラミア|ジェマー・イスラミア",
   ],
 };

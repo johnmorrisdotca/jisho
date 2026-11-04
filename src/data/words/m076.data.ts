@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 77 of 172, from "incessantly ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 77 of 172, from "incantations". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,32 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "incantations\tじゅほう",
+    "incapable\tふのう|もうしん|もうじん",
+    "incapable doing\tふのう",
+    "incapacity\tしっかく|ろうどうふのう",
+    "incarcerating\tてらあずけ",
+    "incarceration\tにゅうしょ|かんきん|きんこ|とうごく|ゆうへい|かんとん",
+    "incarnation\tぐげん|けしん|ごんげ|じゅにく|たいげんしゃ|だいこくてん|よくのかたまり|アバター|アバタール|アヴァター|アヴァタール",
+    "incarnation buddha\tごんげ",
+    "incarnation god\tけしん",
+    "incarnations\tぶんしん|しちぶつ|かこしちぶつ",
+    "incarnations buddha\tぶんしん",
+    "incel\tインセル",
+    "incendiarism\tつけび",
+    "incendiary\tちょうはつてき|しょういだん|はっかそうち",
+    "incendive\tひはっかせい",
+    "incense\tこうりょう|インセンス|くんこう|まっこう|こう|たきもの|おこう|こり|しょく|せんこう|こうろ|ぶつぜん|しょうこう|こうどう|めいこう|こうばこ|こうごう|こうげ|こうばな|こうあわせ",
+    "incense before\tしょうこう",
+    "incense burner\tこうろ|しょく",
+    "incense money\tぶつぜん",
+    "incense stick\tせんこう",
+    "incentive\tインセンティブ|インセンティヴ|どうき|はげみ|ゆういん|どういん|しょうよきん|そしな|そひん|インセンティブセール|インセンティブ・セール",
+    "incentives\tとちりゅうどうか",
+    "incertulas\tいってんおおめいが|イッテンオオメイガ|さんかめいが|サンカメイガ",
+    "incessant\tひんぱん|はげしい|たえまない|ひきもきらない|せめたてる|はたらきづめ|ひひ|マシンガントーク|マシン・ガン・トーク",
+    "incessant onslaught\tせめたてる",
+    "incessantly\tたえまなく|たらたら|タラタラ|びしょびしょ|びちょびちょ|ビショビショ|ビチョビチョ|ペラペラ|ぺらぺら|ワイワイ|わいわい|パチパチ|ぱちぱち|ふりそそぐ|いれかわりたちかわり|せめたてる|あおぎたてる|しきる|ひきもきらず|しくしく",
     "incessantly blinking\tパチパチ|ぱちぱち",
     "incessantly complaining\tワイワイ|わいわい",
     "incessantly esp\tたらたら|タラタラ",
@@ -472,7 +498,8 @@ export const PIECE: WordsPiece = {
     "indulge\tふける|おぼれる|むさぼる|ぜいたく",
     "indulged\tもの|もん",
     "indulgence\tめんざい|めんざいふ|わくでき|たんでき|しょくゆうじょう|しょくゆう|ほうじゅう|ほうしょう|ほういつ",
-    "indulgent\tあまい|わがまま|じだらく|ゆうとう|こどもにあまい|ほうとうざんまい|ゆうとうざんまい|ししん",
+    "indulgent\tあまい|のろい|わがまま|じだらく|ゆうとう|こどもにあまい|ほうとうざんまい|ゆうとうざんまい|ししん",
+    "indulgent esp\tのろい",
     "indulgently\tあまやかしてそだてる",
     "indulges\tフェミニスト",
     "indulges women\tフェミニスト",
@@ -549,26 +576,5 @@ export const PIECE: WordsPiece = {
     "inexpediency\tふべん",
     "inexpedient\tふつごう",
     "inexpensive\tかくやす|あんか|あんちょく|ていれん|やすい|こくみんしゅくしゃ|ファミリーレストラン|ファミリー・レストラン|いちぜんめしや|ファミレス|わりやすかん|こどもしょくどう|まちちゅうか",
-    "inexpensive hotel\tこくみんしゅくしゃ",
-    "inexpensively\tやすく",
-    "inexperience\tしょしん",
-    "inexperienced\tふなれ|みけいけん|みじゅく|なま|あおい|ふしょう|せじにうとい|あおくさい|ふつつか|ウブ|たけのこ|タケノコ|こうふん|じゃくはいもの|ふつつかもの|みけいけんしゃ|みじゅくもの|たけのこいしゃ|うぶ|けいけんのあさい",
-    "inexperienced doctor\tたけのこ|タケノコ",
-    "inexpert\tしろうとめ",
-    "inexplicable\tふかしぎ|ふかかい",
-    "inexplicably\tおれつえええ",
-    "inexpressible\tなんともいえない",
-    "inextricably\tぬきさしならない",
-    "infallibility\tふかご|むびゅう|ふびゅうせい",
-    "infamous\tあくめいたかい|あくみょうたかい|あくめいだかい|あくみょうだかい|はれんちざい|あくみょうはむめいにまさる",
-    "infamy\tあくひょう",
-    "infancy\tようしょう|ようち|たまご|ようじ|ようねん|ようらんき|にゅうじき|よう|おさななじみ|こがい|かんれきいわい",
-    "infant\tにゅうじ|おさなご|あかちゃん|しょうに|あかんぼう|あかんぼ|あかご|えいじ|ちご|インファント|こなミルク|ミルク|しんどう|よこだき|にゅうじしぼうりつ|もくよく|よなき|ちえねつ|ちえぼとり|かじゅくじ",
-    "infant below\tにゅうじ",
-    "infant formula\tこなミルク|ミルク",
-    "infant genius\tしんどう",
-    "infanticide\tまびき|こごろし|ようじごろし|えいじごろし|ようじぎゃくさつ",
-    "infantile\tようち|にゅうじかっけ|しょうにぜんそく|かせいしょうにコレラ|かん|あかちゃんがえり|にゅうじしっしん|ようじたいこう|たいこうげんしょう",
-    "infantry\tほへい|ふつうか|かちいくさ|ほへいせんとうしゃりょう|ほへいしだん|まきびし|ふつうかぶたい|どうまる|イェニチェリ|イエニチェリ|じゅうそうほへい|けいほへい|きかいかほへい",
   ],
 };

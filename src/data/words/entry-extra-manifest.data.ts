@@ -9,9 +9,9 @@ import type { EntryManifest } from "../../words.types.ts";
  */
 export const EXTRA_ENTRY_MANIFEST: EntryManifest = {
   source: "JMdict",
-  release: "2026-11-03",
+  release: "2026-11-04",
   entries: {
-    starts: ["", "0t3", "101", "1a6", "1mc5", "1ozq"],
+    starts: ["", "0t4fm", "11dp", "1br", "1nlu", "1p88x"],
     load: [
       () => import("./xe0.data.ts").then((one) => one.PIECE),
       () => import("./xe1.data.ts").then((one) => one.PIECE),

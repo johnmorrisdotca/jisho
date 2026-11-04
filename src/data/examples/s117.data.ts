@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 118 of 144, from "16ty". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 118 of 144, from "16t". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,17 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "16t8g\t1¦｜世界的《せかいてき》な｜全面核戦争《ぜんめんかくせんそう》が｜起《お》これば、｜地球規模《ちきゅうきぼ》でこの「｜核《かく》の｜冬《ふゆ》」が｜数《かず》カ｜月《げつ》｜間《あいだ》も｜続《つづ》くと｜言《い》われています。¦If there's a world-wide all-out nuclear war it's said that there will be a \"nuclear winter\" all over the planet for several months.¦¦1mm7¦mookeee¦¦全面核戦争",
+    "16t90\t1¦｜新《あたら》しい｜法律《ほうりつ》は｜組織犯罪《そしきはんざい》を｜減少《げんしょう》させるでしょう。¦The new law should take a bite out of organized crime.¦1¦344v¦¦CK¦組織犯罪",
+    "16tcm\t1¦｜騒音公害《そうおんこうがい》は、｜人々《ひとびと》が｜環境《かんきょう》にもっと｜敏感《びんかん》でありさえすれば｜避《さ》けることができるのに。¦Noise pollution could be avoided if only people were more sensitive to the environment.¦1¦307i¦¦¦騒音公害",
+    "16tfy\t1¦｜太陽《たいよう》エネルギーについて｜話《はな》そう。¦Let's talk about solar energy.¦3¦2yn2¦¦CK¦太陽エネルギー\t1¦｜問題《もんだい》は、｜太陽《たいよう》エネルギーにはコストがかかりすぎるということだ。¦The problem is that solar energy costs too much.¦3¦1pm4¦mookeee¦CK¦太陽エネルギー",
+    "16ti6\t1¦その｜争《あらそ》いの｜根源《こんげん》は｜二国間《にこくかん》の｜対立関係《たいりつかんけい》にある。¦The quarrel originated in rivalry between the two countries.¦1¦4gro¦¦¦対立関係",
+    "16tky\t1¦アメリカ｜大恐慌《だいきょうこう》の｜際《さい》には｜多《おお》くの｜人《じん》が｜失業《しつぎょう》してた。¦A lot of people were out of work during the Great Depression in America.¦¦4xjg¦¦CM¦大恐慌",
+    "16tmm\t1¦｜社会党《しゃかいとう》が｜大統領候補《だいとうりょうこうほ》として｜立《た》つ｜準備《じゅんび》を｜彼《あれ》にさせた。¦The Socialist Party groomed him as a presidential candidate.¦1¦2xy8¦¦JimBreen¦大統領候補",
+    "16tn6\t1¦｜私《わたし》の｜夢《ゆめ》は｜大統領夫人《だいとうりょうふじん》になることです。¦My dream is to be the First Lady.¦1¦3hfz¦¦sacredceltic¦大統領夫人",
+    "16tp4\t1¦｜脱水症状《だっすいしょうじょう》には、｜塩《しお》をひと｜舐《な》め。¦For dehydration, take a lick of salt.¦¦1lpl¦fcbond¦fcbond¦脱水症状",
+    "16trm\t1¦｜今日《きょう》は｜暖房器具《だんぼうきぐ》を｜使《つか》っていません。¦I'm not using my home heater today.¦1¦1mqx¦mookeee¦Zifre¦暖房器具",
+    "16tta\t1¦そして｜第三《だいさん》が｜地球環境《ちきゅうかんきょう》の｜保全《ほぜん》であり、｜省《しょう》エネルギー、｜省資源《しょうしげん》｜型《かた》の｜生活《せいかつ》を｜送《おく》る｜仕組《しく》みが｜必要《ひつよう》となる。¦The third is the preservation of environment. In this case, the conservation of energy and resources is needed.¦1¦4kqb¦¦papabear¦地球環境",
     "16tya\t1¦｜超音波検査《ちょうおんぱけんさ》をしましょう。¦I'd like you to have an ultrasound.¦1¦2p8d¦tommy__san¦CM¦超音波検査",
     "16u0s\t1¦中国への海外からの直接投資は昨年３０億ドルに達した。¦Foreign direct investments in China amounted to $3 billion last year.¦2¦2plk¦¦CN¦直接投資",
     "16u1c\t1¦｜組合《くみあい》は｜経営者《けいえいしゃ》｜側《そば》と｜賃金交渉《ちんぎんこうしょう》をした。¦The union bargained with the management.¦1¦30hw¦¦CK¦賃金交渉",
@@ -197,21 +208,5 @@ export const PIECE: WordsPiece = {
     "170dy\t1¦｜高金利《こうきんり》で｜金《かね》を｜借《か》りた。¦We borrowed money at high interest.¦3¦3pnk¦¦¦高金利",
     "170ei\t1¦｜国際連盟《こくさいれんめい》は｜平和《へいわ》に｜寄与《きよ》しなかった。¦The League of Nations did not make for peace.¦1¦3pit¦¦¦国際連盟",
     "170es\t1¦｜国民党《こくみんとう》は、｜簡潔《かんけつ》に｜言《い》うと、｜政治《せいじ》が｜崩壊《ほうかい》する｜前《さき》に｜政府《せいふ》を｜離脱《りだつ》する｜必要《ひつよう》があった。¦The People's party, to put it briefly, needed to leave the government before the government fell.¦1¦3phw¦¦¦国民党",
-    "170f2\t1¦｜左肩《ひだりかた》の｜関節《かんせつ》が｜痛《いた》みます。¦The joint of my left shoulder aches.¦1¦3nvu¦¦¦左肩",
-    "170fm\t1¦｜最上階《さいじょうかい》にレストランがある。¦There is a restaurant on the top floor.¦2¦3nhr¦huizi99¦CK¦最上階",
-    "170fw\t1¦｜世界《せかい》｜最速《さいそく》の｜走者《そうしゃ》でさえ、｜空腹《くうふく》だったら｜走《はし》れない。¦Even the fastest runner in the world cannot run if he is hungry.¦3¦32na¦¦CM¦最速の",
-    "170g6\t1¦３人のうちで最年少の少年が一番魅力的だ。¦Of the three boys, the youngest is the most attractive.¦¦51k8¦e4zh1nmcz¦CM¦最年少の",
-    "170gg\t1¦｜私《わたし》はクラスの｜中《うち》で｜最年長《さいねんちょう》である。¦I am older than any other student in my class is.¦3¦3gbc¦¦CM¦最年長",
-    "170gq\t1¦｜彼女《かのじょ》は｜昨週《さくしゅう》、｜旅《たび》にでた。¦She set out on a trip last week.¦3¦1xdj¦¦CM¦昨週",
-    "170ha\t1¦｜彼《あ》の｜最新《さいしん》の｜作品《さくひん》が｜市庁舎《しちょうしゃ》で｜展示《てんじ》されているの。｜言葉《ことば》に｜出来《でき》ないほど｜素敵《すてき》よ。¦His latest works are on display at the city hall. They are fabulous beyond description.¦1¦2iit¦¦CK¦市庁舎",
-    "170ie\t1¦｜彼《あれ》は｜彼女《かのじょ》と｜遠《とお》い｜親戚関係《しんせきかんけい》にある。¦He is distantly related to her.¦¦25zv¦¦CK¦親戚関係",
-    "170j8\t1¦ネパールを｜旅行《りょこう》｜中《うち》、ちょっとした｜事故《じこ》にあった。¦I had a slight accident while trekking in Nepal.¦1¦498e¦¦CN¦ネパール",
-    "170kw\t1¦マリはハンガリーにいたことがある。¦Mari has been in Hungary.¦5¦46lb¦mookeee¦CN¦マリ",
-    "170ne\t1¦パプアニューギニアに｜住《す》むメラネシア｜人《じん》の｜多《おお》くは、かなり｜強《つよ》い｜天然《てんねん》パーマですね。¦Most of the Melanesians living in Papua New Guinea have very curly hair, don't they?¦3¦1lat¦fcbond¦fcbond¦パプアニューギニア",
-    "170q6\t1¦｜彼《あれ》は｜誰《だれ》に｜対《たい》してもあけっぴろげだ。¦He is free and open with everybody.¦¦26xb¦¦¦あけっぴろげ",
-    "170qg\t1¦｜禍福《かふく》は｜糾《あざな》える｜縄《なわ》の｜如《ごと》し。¦When an ill wind blows it does good to no one.¦1¦400e¦¦russell359¦糾える",
-    "170qq\t1¦こんなあしらいをされたら｜誰《だれ》だって｜承知《しょうち》しないでしょう。¦Such treatment would make anybody rebel.¦¦4nti¦¦¦あしらい",
-    "170r0\t1¦｜彼《あれ》があのように｜年若《としわか》くして｜死《し》んだのは、｜本当《ほんとう》に｜惜《お》しいと｜思《おも》う。¦I think it's a great pity that he died so young.¦1¦2lgf¦¦sundown¦あのように",
-    "170rk\t1¦｜子供《こども》の｜顔《かお》に｜喜《よろこ》びの｜色《いろ》がありありと｜現《あらわ》れていた。¦Joy was manifest on the child's face.¦3¦3m43¦¦¦ありありと",
   ],
 };

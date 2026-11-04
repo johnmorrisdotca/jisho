@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 74 of 316, from "きよき". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 74 of 316, from "きようび". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "きようびんぼう\t器用貧乏\t#q4ka\tyoji¦jack of all trades, master of none",
     "きよきいっぴょう\t清き一票\t#1p630\t¦conscientious vote¦unsullied vote",
     "きよさときたざわびじゅつかん\t清里北澤美術館\t#38l4k\torganization¦Kiyosato Kitazawa Museum of Art",
     "きよしこのよる\tきよしこの夜|聖しこの夜|清しこの夜\t#3f3pl\twork¦Silent Night (Japanese version of the song)",

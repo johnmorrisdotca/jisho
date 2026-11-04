@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 88 of 144, from "0xhj". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 88 of 144, from "0xhfu". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,15 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0xhfu\t1¦ついに、インディアンの｜二人《ふたり》の｜酋長《しゅうちょう》は｜和睦《わぼく》することに｜決《き》めた。¦At long last, the two chiefs of the Indian tribes have decided to make peace.¦¦4ce4¦¦CK¦和睦",
+    "0xhge\t1¦｜私《わたし》の｜知《し》る｜限《かぎ》りではその｜小説《しょうせつ》は｜和訳《わやく》されていない。¦As far as I know, the novel is not translated into Japanese.¦1¦3hsz¦¦CK¦和訳",
+    "0xhgy\t1¦｜彼《あれ》は｜和洋折衷《わようせっちゅう》の｜家《いえ》に｜住《す》んでいる。¦He lives in a house built in a semi foreign style.¦1¦24a2¦¦¦和洋折衷",
+    "0xhh8\t1¦｜私《わたし》はそんな｜失礼《しつれい》な｜話《はな》しかけられ｜方《ほう》に｜慣《な》れていない。¦I'm not used to being talked to in such a rude manner.¦3¦3f6l¦¦CK¦話しかけられ\t2¦｜男《おとこ》が｜近《ちか》づいて｜私《わたし》に｜話《はな》しかけた。¦A man came up and spoke to me.¦4¦2q7i¦¦CK¦話しかけた",
+    "0xhhi\t1¦ここでその｜問題《もんだい》について｜話《はな》し｜合《あ》いましょう。¦Let's discuss the matter here.¦3¦4tcm¦¦CK¦話し合い",
+    "0xhi2\t1¦｜彼《あれ》はまあなんて｜雄弁《ゆうべん》な｜話《はな》し｜手《て》なんでしょう。¦What an eloquent speaker he is!¦1¦2dke¦¦sundown¦話し手な",
+    "0xhic\t1¦｜私《わたし》は｜彼女《かのじょ》の｜話《はな》し｜方《かた》は｜好《す》きではない。¦I don't like the way she speaks.¦3¦3a8a¦¦CK¦話し方",
+    "0xhim\t1¦ジョンはお｜客《きゃく》さんと｜電話《でんわ》で｜話《はな》した。¦John talked with his customer on the phone.¦3¦4m7t¦arnab¦Swift¦話した\t2¦あなたの｜趣味《しゅみ》について｜話《はな》してください。¦Please tell me about your hobbies.¦1¦4zxz¦bunbuku¦CK¦話して\t3¦｜英語《えいご》はカナダで｜話《はな》されている。¦English is spoken in Canada.¦4¦41y5¦¦CK¦話されている",
+    "0xhiw\t1¦もう６ヶ月たてば流暢にドイツ語が話せるようになるでしょう。¦In another six months you will be able to speak German fluently.¦1¦4636¦¦CK¦話せる\t2¦｜彼女《かのじょ》は｜話《はな》せる｜人《じん》だ。¦She has good sense.¦3¦1a9q1¦JimBreen¦JimBreen¦話せる",
     "0xhjq\t1¦｜彼《あれ》は、｜話術《わじゅつ》が｜巧《たく》みだ。¦He has a good art of talking.¦1¦2h0g¦¦¦話術",
     "0xhk0\t1¦その｜話題《わだい》は｜話《はな》し｜合《あ》う｜価値《かち》がある。¦The topic is worth discussing.¦1¦4eyf¦¦CK¦話題",
     "0xhkk\t1¦いびつな野菜はお嫌いですか？¦Do you hate misshapen vegetables?¦1¦1ld4¦fcbond¦fcbond¦いびつな",
@@ -218,19 +227,5 @@ export const PIECE: WordsPiece = {
     "0xosk\t1¦ピンクとばら｜色《いろ》は｜似《に》た｜色《いろ》だ。¦Pink and rose are similar colors.¦3¦487h¦¦Swift¦ばら色",
     "0xot4\t1¦バラのつぼみは｜摘《つ》めるうちに摘め。¦Gather ye rosebuds while ye may.¦1¦48p6¦¦AlanF_US¦つぼみ",
     "0xov2\t1¦｜救援隊《きゅうえんたい》は｜子供《こども》をしらみつぶしに｜捜《さが》した。¦The rescue worker searched the area, looking for the child.¦1¦3wr5¦¦thatrobotdev¦しらみつぶし",
-    "0xoxu\t1¦｜蜃気楼《しんきろう》は｜幻影《げんえい》だと｜言《い》われている。¦A mirage is said to be an illusion.¦¦1nh1¦arnab¦CM¦蜃気楼",
-    "0xoye\t1¦その｜虫《むし》はさなぎから｜成虫《せいちゅう》になった。¦The insect grew out of a pupa into an imago.¦2¦4gdc¦¦¦さなぎ",
-    "0xozi\t1¦｜彼《あれ》はトンボ｜返《がえ》りをした。¦He turned a somersault.¦3¦2dzq¦xtofu80¦CK¦トンボ返り\t2¦｜仙台《せんだい》へ｜行《おこな》ってとんぼ｜返《がえ》りで｜戻《もど》ってきました。¦I went to Sendai and back without resting.¦1¦1mlb¦mookeee¦¦とんぼ返り",
-    "0xozs\t1¦あの｜小屋《こや》にはトカゲや｜虫《むし》がうようよしている。¦That hut is crawling with lizards and insects.¦2¦4y4q¦bunbuku¦CM¦トカゲ",
-    "0xp0m\t1¦カタツムリがすっと｜角《つの》を｜出《だ》した。¦The snail shot out its horns.¦2¦1n97¦mookeee¦¦カタツムリ",
-    "0xp16\t1¦あれが｜蝙蝠《こうもり》ですか。¦Is that a bat?¦¦4xab¦¦CK¦蝙蝠",
-    "0xp2p\t2¦１匹のキリギリスと多くのアリが野原に住んでいた。¦A grasshopper and many ants lived in a field.¦2¦51u4¦e4zh1nmcz¦CM¦キリギリス",
-    "0xp3o\t1¦カエルとヒキガエルの｜区別《くべつ》が｜出来《でき》ない。¦I can't distinguish a frog from a toad.¦2¦4upy¦¦CK¦ヒキガエル",
-    "0xpa2\t1¦｜日光《にっこう》で｜看板《かんばん》の｜文字《もじ》があせた。¦The sun had faded the lettering on the sign.¦1¦2mtf¦¦sundown¦あせた",
-    "0xpac\t1¦｜色《いろ》はさめないでしょう。¦The color will not go off.¦4¦34md¦¦¦さめない",
-    "0xpck\t2¦その｜男《おとこ》はボロを｜着《き》ていた。¦The man was in rags.¦4¦4gk9¦¦CM¦ボロ\t4¦ぼろ｜服《ふく》が｜正直者《しょうじきもの》を｜包《つつ》んでいるかもしれない。¦A ragged coat may cover an honest man.¦2¦476p¦¦captcrouton¦ぼろ",
-    "0xpcu\t1¦その｜家《いえ》はかなりぼろ｜屋《や》になっている。¦The house is quite run down.¦4¦4jnv¦¦CK¦ぼろ屋",
-    "0xpde\t1¦その｜薬《くすり》はてきめんに｜効《き》く。¦The drug acts like magic.¦2¦4f6r¦¦¦てきめんに",
-    "0xpdy\t1¦｜突然《とつぜん》の｜彼《あ》の｜訃報《ふほう》は｜私《わたし》を｜驚《おどろ》かせた。¦The news of his sudden death astounded me.¦¦2n5o¦¦¦訃報",
   ],
 };

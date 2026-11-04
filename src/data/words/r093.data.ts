@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 94 of 316, from "こうがくしき". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 94 of 316, from "こうがくし". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "こうがくし\t工学士\t#zwbw\t¦Bachelor of Engineering",
     "こうがくしき\t光学式\t#1p3mw\t¦optical",
     "こうがくしきスキャナ\t光学式スキャナ\t#1eh6w\tcomp¦optical scanner",
     "こうがくしきそうさき\t光学式走査器\t#1eh7q\tcomp¦optical scanner",

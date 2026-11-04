@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 47 of 144, from "0siuy". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 47 of 144, from "0sike". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,19 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0sike\t1¦｜需給関係《じゅきゅうかんけい》が｜緩和《かんわ》している。¦The supply-demand balance is relaxing.¦1¦36fu¦¦¦需給",
+    "0siky\t1¦｜価格《かかく》は｜需要《じゅよう》を｜反映《はんえい》する。¦The price reflects the demand.¦1¦40ib¦KK_kaku_¦CK¦需要",
+    "0sili\t1¦１０人の囚人たちが脱獄した。¦Ten prisoners broke out of jail.¦1¦524k¦mookeee¦CK¦囚人",
+    "0sim2\t1¦｜彼《あれ》は｜外務大臣《がいむだいじん》に｜収《おさ》まった。¦He was established as Foreign Minister.¦2¦2c1w¦¦AlanF_US¦収まった\t3¦｜最後《さいご》にはうまく｜収《おさ》まるだろう。¦It'll come right in the end.¦3¦3nmc¦¦¦収まる\t5¦｜凝《こ》った｜彫刻《ちょうこく》のしてある｜鞘《さや》に｜収《おさ》まった｜長剣《ちょうけん》。¦A longsword sheathed in an intricately engraved scabbard.¦¦1lqu¦fcbond¦fcbond¦収まった",
+    "0simc\t1¦その投資は現在６％の収益を彼にもたらしている。¦The investment now yields him 6%.¦1¦4g34¦¦¦収益",
+    "0simm\t1¦｜私《わたし》たちはみな｜収穫《しゅうかく》の｜手伝《てつだ》いをした。¦We all helped with the harvest.¦1¦3k8a¦¦CK¦収穫",
+    "0sin6\t1¦もうじきリンゴの｜収穫期《しゅうかくき》になる。¦The apple harvest will soon come.¦1¦461e¦¦CK¦収穫期",
+    "0sing\t1¦｜真珠《しんじゅ》の｜収穫高《しゅうかくだか》は｜少《すく》なかった。¦The harvest of pearls was small.¦1¦33v0¦¦¦収穫高",
+    "0siq8\t1¦アメリカでは｜多《おお》くの｜夫婦《ふうふ》が｜収支《しゅうし》をあわせるため｜共稼《ともかせ》ぎをしている。¦Many couples in America both work to make ends meet.¦1¦4xnv¦¦¦収支",
+    "0siqs\t1¦｜事態《じたい》は｜収拾《しゅうしゅう》に｜向《む》かいつつある。¦The situation is gradually moving towards a resolution.¦1¦4918t¦JimBreen¦JimBreen¦収拾",
+    "0sir2\t1¦｜瞳《ひとみ》は｜日《ひ》のあたる｜所《ところ》では｜収縮《しゅうしゅく》する。¦The pupils of the eyes contract in sunlight.¦1¦3kxe¦small_snow¦sundown¦収縮",
+    "0sita\t1¦｜大地震《おおじしん》の｜発生《はっせい》から、｜応急《おうきゅう》｜対策《たいさく》の｜収束《しゅうそく》までの｜避難《ひなん》の｜流《なが》れです。¦We are interested in the flow of evacuation events from the occurrence of a large earthquake to the conclusion of emergency countermeasures.¦1¦1mk7¦KK_kaku_¦¦収束",
+    "0siue\t1¦｜収入《しゅうにゅう》｜以上《いじょう》の｜生活《せいかつ》をするな。¦Do not live above your income.¦3¦36es¦¦¦収入",
     "0siuy\t1¦この｜仕事《しごと》が｜私《わたし》の｜収入源《しゅうにゅうげん》です。¦This job is my bread and butter.¦1¦4r6a¦¦CM¦収入源",
     "0sivi\t1¦アンディーは｜自分《じぶん》のシャツを｜収納室《しゅうのうしつ》に｜掛《か》けた。¦Andy hung his shirt up in the closet.¦¦4x5o¦¦CN¦収納",
     "0siww\t1¦このホテルは５００人の客を収容できる。¦This hotel can accommodate 500 guests.¦3¦4s6r¦mookeee¦CK¦収容\t1¦あの｜教会《きょうかい》｜施設《しせつ》は｜避難民《ひなんみん》を｜収容《しゅうよう》している。¦That church organization takes in refugees.¦1¦4yb6¦¦¦収容",
@@ -191,19 +204,5 @@ export const PIECE: WordsPiece = {
     "0sn6i\t1¦ウイスキーには｜重税《じゅうぜい》が｜課《か》せられていた。¦A heavy tax was imposed on whiskey.¦2¦4w6t¦KK_kaku_¦CK¦重税",
     "0sn7c\t1¦｜彼《あれ》は｜重責《じゅうせき》を｜解《と》かれた。¦He was relieved of his heavy responsibility.¦3¦28ib¦¦CK¦重責",
     "0sn90\t1¦｜彼《あれ》は｜重大《じゅうだい》な｜発見《はっけん》をした。¦He made an important discovery.¦3¦28i6¦bunbuku¦CK¦重大な",
-    "0sn9k\t1¦｜彼《かれ》らはその｜光景《こうけい》を｜重大視《じゅうだいし》した。¦They made much of what they saw.¦1¦23ki¦¦¦重大視",
-    "0snay\t1¦このショーではロボットに｜重点《じゅうてん》がおかれている。¦In this show, the accent is on robots.¦3¦4slc¦¦¦重点",
-    "0sndq\t1¦そのような｜行《おこな》いをすれば｜違反者《いはんしゃ》は｜重《おも》｜罰《ばつ》を｜受《う》けるだろう。¦Such conduct would subject the offender to a heavy penalty.¦1¦4jzc¦¦¦重罰",
-    "0sne0\t1¦｜新聞《しんぶん》に「｜重版《じゅうはん》｜出来《しゅったい》」と｜広告《こうこく》した。¦It was advertised as a second edition in the newspapers.¦2¦1mmw¦kamojun¦¦重版",
-    "0snea\t1¦｜彼《あれ》は｜重病《じゅうびょう》だと｜言《い》われている。¦They say that he is seriously ill.¦3¦28i3¦¦CK¦重病",
-    "0sngi\t1¦この｜重役《じゅうやく》のポストに｜適当《てきとう》な｜人物《じんぶつ》を｜見《み》つけるには、｜人材《じんざい》｜斡旋業者《あっせんぎょうしゃ》に｜依頼《いらい》する｜必要《ひつよう》がある。¦We'll need a head hunting agency to find the right man for this executive position.¦¦4qpi¦¦CK¦重役",
-    "0sngs\t1¦｜昨日《きのう》の｜重役会《じゅうやっかい》は｜大成功《だいせいこう》だった。¦Yesterday's board meeting was a ten-strike!¦1¦3n79¦¦¦重役会",
-    "0snhw\t1¦その｜結《むす》び｜目《め》を｜守《まも》るのは｜重要《じゅうよう》なことだ。¦Maintaining that tie is important.¦1¦4iwx¦¦CK¦重要な",
-    "0snig\t1¦その｜議論《ぎろん》を｜彼《あれ》は｜重要視《じゅうようし》した。¦The argument weighed with him.¦1¦4j63¦¦¦重要視",
-    "0sniq\t1¦｜私《わたし》たちはその｜重要性《じゅうようせい》を｜主張《しゅちょう》した。¦We insisted on its importance.¦1¦3kdr¦¦¦重要性",
-    "0snj0\t1¦｜奈良《なら》は、｜国宝《こくほう》や｜重要文化財《じゅうようぶんかざい》が｜豊富《ほうふ》である。¦Nara is rich in National Treasures and Important Cultural Assets.¦1¦2n3o¦¦¦重要文化財",
-    "0snk4\t1¦｜体積《たいせき》が｜大《おお》きいからといって｜常《つね》に｜重量《じゅうりょう》も｜重《おも》いとは｜限《かぎ》らない。¦Great bulk does not always mean great weight.¦2¦2ygi¦¦¦重量",
-    "0snmc\t1¦月の重力は地球の６分の１である。¦The gravity of the moon is one-sixth of that of the earth.¦¦3rj6¦arnab¦CM¦重力",
-    "0snmm\t1¦｜赤《あか》ちゃんを｜育《そだ》てるのは｜重労働《じゅうろうどう》です。¦Bringing up a baby is hard work.¦3¦31qt¦¦CK¦重労働",
   ],
 };

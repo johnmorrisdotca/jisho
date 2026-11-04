@@ -411,6 +411,7 @@ export const PIECE: WordsPiece = {
     "あいじょうをかたむける\t愛情を傾ける\ti#13s26\t¦to fix one's affection on",
     "あいじるし\t合印|合い印|合い標|合標\t#xzts\t¦identifying mark (esp. a mark of comradeship)\t¦mark placed where two pieces of cloth are to be sewn together (or two pieces of wood joined, etc.)\t¦verification seal¦tally",
     "あいじろ\t藍白\t#1p0k6\t¦pale cyan¦pale azure",
+    "あいじん\t愛人\tC~n13#oo0m\t¦lover¦mistress",
     "あいじんかんけい\t愛人関係\t#17qs8\t¦being lovers",
     "アイジングラス\t\t#1a6qm\t¦isinglass",
     "アイス\t\tC~ig#lqdu\t¦ice\tabbr¦ice cream\tabbr¦ice pop¦ice lolly¦popsicle\t¦cold¦iced (e.g. iced tea, iced coffee)",
@@ -822,7 +823,5 @@ export const PIECE: WordsPiece = {
     "アイデンテティ\t\t#lqm6\t¦identity",
     "アイデンテファイ\t\ts#lqn0\t¦identify",
     "アイデンテフィケイション\t\t#lqna\t¦identification",
-    "あいとう\t哀悼\tsC~n18#onm6\t¦condolence¦regret¦tribute",
-    "あいとう\t愛刀\t#1p3du\t¦favorite sword¦cherished sword",
   ],
 };

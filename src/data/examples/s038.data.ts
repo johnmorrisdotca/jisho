@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 39 of 144, from "0rm8s". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 39 of 144, from "0rln". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,29 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0rlno\t1¦「なんだか｜焦《こ》げ｜臭《くさ》いね」「うっかりパンを｜黒《くろ》こげにしちゃったの」¦\"Can you smell something burning?\" \"Oh, I went and burnt the toast.\"¦1¦49if¦¦magnificentgoddess¦黒こげ",
+    "0rlny\t1¦｜三原色《さんげんしょく》を｜混合《こんごう》すると｜黒色《くろいろ》ができる。¦Mixture of the three primary colors creates black.¦2¦3msi¦¦¦黒色",
+    "0rlp2\t1¦マーテイン・ルーサー・キング・ジュニアは、｜黒人《こくじん》｜牧師《ぼくし》を｜父《ちち》として｜生《う》まれた。¦Martin Luther King, Jr., was the son of a black minister.¦1¦4737¦¦AlanF_US¦黒人",
+    "0rlti\t2¦｜太陽《たいよう》の｜黒点《こくてん》を｜観察《かんさつ》しよう。¦Let's observe sunspots.¦3¦1lqw¦fcbond¦fcbond¦黒点",
+    "0rlts\t1¦｜黒塗《くろぬ》りのリムジンがキーというタイヤの｜音《おと》と｜共《とも》に｜角《かど》を｜曲《ま》がった。¦A black limo rounded the corner with a squeal of tires.¦2¦1mrj¦mookeee¦Dejo¦黒塗り",
+    "0rlvg\t1¦テーブルの｜下《もと》には｜黒猫《くろねこ》がいた。¦Under the table was a black cat.¦3¦4c6n¦mookeee¦orcrist¦黒猫",
+    "0rlw0\t1¦｜黒板《こくばん》に｜書《か》きますね。¦I'll write it on the blackboard.¦2¦3f8g¦small_snow¦CK¦黒板",
+    "0rlxo\t1¦｜赤《あか》いドレスの｜女《おんな》は、｜黒服《くろふく》の｜男《おとこ》を｜無視《むし》して、ケイタイで｜友達《ともだち》にかけた。¦The woman in a red dress ignored the black-clothed man and called a friend on her mobile.¦¦1ln0¦fcbond¦fcbond¦黒服",
+    "0rly8\t2¦｜私《わたし》は｜誰《た》が｜黒幕《くろまく》か｜知《し》っている。¦I know who is pulling the strings.¦¦3bq5¦bunbuku¦CC¦黒幕",
+    "0rm24\t1¦その｜囚人《しゅうじん》は｜獄舎《ごくしゃ》につながれている。¦The prisoner is in chains.¦1¦4hmc¦¦CK¦獄舎",
+    "0rm2y\t1¦その｜液体《えきたい》はうまくこせない。¦The liquid does not strain well.¦2¦4jqm¦¦Dejo¦こせない",
+    "0rm38\t1¦｜腰《こし》に｜持病《じびょう》があります。¦I have back problems.¦2¦1dd02¦bunbuku¦CK¦腰",
+    "0rm3i\t1¦｜彼女《かのじょ》は｜腰掛《こしか》けて｜足《あし》を｜組《く》んだ。¦She sat down and crossed her legs.¦2¦1xhv¦¦CK¦腰掛けて",
+    "0rm3s\t1¦｜腰《こし》を｜下《お》ろし、｜手帳《てちょう》を｜開《ひら》きました。¦I sat down and opened my notebook.¦1¦3pgp¦¦CK¦腰を下ろし",
+    "0rm42\t1¦｜君《きみ》が｜座《すわ》っている｜腰掛《こしか》けのペンキはまだ｜塗《ぬ》り｜立《た》てだよ。¦The paint on the seat on which you are sitting is still wet.¦2¦3u45¦¦Zifre¦腰掛け",
+    "0rm5q\t1¦｜腰痛《ようつう》がひどいんです。¦I have a bad pain in my lower back.¦2¦3pgl¦bunbuku¦CK¦腰痛",
+    "0rm6a\t1¦なによ！出来ないの？この度胸なし！腰抜けッ！¦What? You can't do it? You coward! Chicken!¦2¦1m8g¦fcbond¦fcbond¦腰抜けッ",
+    "0rm74\t1¦｜切符《きっぷ》はたちまち｜売《う》り｜切《き》れた。¦The tickets were sold out in a moment.¦2¦31n4¦¦CM¦たちまち",
+    "0rm7e\t1¦最近、物忘れが激しくて。少しボケてきたのかな？¦Could I be going soft in the head? I forget things so easily these days.¦1¦3nqg¦small_snow¦¦ボケて",
+    "0rm7o\t1¦ビルはどうもメアリーに｜惚《ほ》れているらしい。¦Bill seems to be stuck on Mary.¦¦48a2¦¦CP¦惚れている",
+    "0rm7y\t1¦｜彼女《かのじょ》は｜男性《だんせい》がほれぼれとするような｜着物《きもの》をきていた。¦She was dressed fit to kill.¦3¦1vuw¦¦¦ほれぼれ",
+    "0rm88\t1¦｜彼女《かのじょ》は｜一目《ひとめ》で｜彼《あれ》に｜惚《ほ》れ｜込《こ》んだ。¦She fell in love with him at first sight.¦¦1yan¦¦CK¦惚れ込んだ",
+    "0rm8i\t1¦「うちの愛妻がケチでさー」「のろけてる？愚痴ってる？」¦\"My wonderful wife is so stingy that ...\" \"You boasting? Or complaining?\"¦1¦1ng9¦mookeee¦¦のろけてる",
     "0rm8s\t1¦｜彼女《かのじょ》は｜金《かね》もうけのこつを｜知《し》っている。¦She knows the art of making money.¦3¦1xrd¦¦CK¦こつ",
     "0rm92\t1¦骨が完全にくっつくには１ヶ月くらいはかかるだろう。¦It'll take the bone a month or so to set completely.¦2¦3pgh¦¦CM¦骨",
     "0rm9c\t1¦｜彼女《かのじょ》はまだ｜料理《りょうり》のコツを｜覚《おぼ》えていない。¦She hasn't got the knack of cooking yet.¦3¦1ykm¦¦CM¦コツを覚えていない",
@@ -92,6 +115,7 @@ export const PIECE: WordsPiece = {
     "0rnku\t1¦ホントしつこいなぁ、しのぶさん。なんか｜根負《こんま》けしそう。¦Shinobu is really persistent. It seems that I am beaten.¦2¦1myw¦mookeee¦Christophe¦根負け",
     "0rnle\t1¦それでは｜根本的《こんぽんてき》な｜問題《もんだい》を｜見《み》てみることにしましょう。¦Let us turn now to the fundamental issue.¦¦4erf¦tommy__san¦CM¦根本的な",
     "0rnly\t1¦｜水《みず》を｜加《か》え、｜練《ね》り｜粉《こ》がどろどろしない｜程度《ていど》に｜混《ま》ぜなさい。¦Add water and mix to a firm dough.¦2¦32vy¦¦sundown¦混ぜ",
+    "0rnm8\t1¦その｜混《ま》ぜ｜物《もの》をかき｜混《ま》ぜて、｜泡立《あわだ》ったら｜脇《わき》に｜置《お》いておきましょう。¦Stir the mixture until it foams, then set it aside.¦¦4igp¦¦AlanF_US¦混ぜ物",
     "0rnnc\t1¦｜三原色《さんげんしょく》を｜混合《こんごう》すると｜黒色《くろいろ》ができる。¦Mixture of the three primary colors creates black.¦2¦3msi¦¦¦混合",
     "0rno6\t1¦その｜道《みち》は｜車《くるま》で｜混雑《こんざつ》している。¦The roads are jammed with cars.¦2¦4g1t¦¦CM¦混雑",
     "0rnq4\t1¦そこに｜赤《あか》｜井《い》｜選手《せんしゅ》も｜加《か》わり、ゴール｜前《さき》は｜混戦《こんせん》｜模様《もよう》となった。¦There Akai joins them and it becomes a free-for-all in front of the finish line.¦1¦1lc2¦fcbond¦fcbond¦混戦",
@@ -196,22 +220,5 @@ export const PIECE: WordsPiece = {
     "0rq8o\t1¦｜私《わたし》たちは｜最悪《さいあく》の｜場合《ばあい》の｜覚悟《かくご》はできている。¦We are prepared for the worst.¦1¦3jwv¦¦CC¦最悪",
     "0rq9i\t1¦｜最寄《もよ》りの｜電話《でんわ》はどこですか。¦Where is the nearest telephone?¦3¦3nr7¦bunbuku¦CK¦最寄りの",
     "0rq9s\t1¦｜将来《しょうらい》、いつかコンピューターが｜文学作品《ぶんがくさくひん》の｜翻訳《ほんやく》に｜着手《ちゃくしゅ》するようになれば、われわれが｜知《し》るような｜文学《ぶんがく》は｜最期《さいご》を｜迎《むか》えることになるだろう。¦When, one day, computers undertake to translate literary works, it will be the end of literature as we know it.¦1¦35hq¦¦papabear¦最期",
-    "0rqa2\t1¦この週末には２つの最強のチームが激突する。¦The two strongest teams will clash with each other this weekend.¦1¦4qpr¦¦sundown¦最強",
-    "0rqac\t1¦｜最近《さいきん》、｜彼《あ》のうわさを｜耳《みみ》にしていない。¦We haven't heard of him lately.¦3¦3nqk¦¦¦最近",
-    "0rqaw\t1¦それは｜現存《げんぞん》する｜最古《さいこ》の｜木造建築《もくぞうけんちく》である。¦It is the oldest wooden building in existence.¦2¦4ecq¦bunbuku¦CC¦最古",
-    "0rqb6\t1¦｜大丈夫《だいじょうぶ》、｜誠実《せいじつ》でいれば｜最後《さいご》には｜報《むく》われるよ。¦I can assure you that honesty pays in the long run.¦¦2y3e¦KK_kaku_¦CM¦最後\t2¦｜伝説《でんせつ》の｜最後《さいご》の｜部分《ぶぶん》は｜後世《こうせい》｜付《つ》け｜加《くわ》えられたものだ。¦The last part of the legend was added later.¦¦2oe8¦¦Dejo¦最後",
-    "0rqbq\t1¦｜最後《さいご》までその｜仕事《しごと》をやり｜遂《と》げなければならない。¦You must carry the task through to the end.¦1¦3nli¦¦ddnktr¦最後まで",
-    "0rqca\t1¦｜彼《あれ》は｜現存《げんぞん》する｜最高《さいこう》の｜芸術家《げいじゅつか》である。¦He is the greatest living artist.¦2¦2b16¦bunbuku¦Eldad¦最高\t2¦｜株価指数《かぶかしすう》は｜過去最高《かこさいこう》に｜上昇《じょうしょう》した。¦The stock price index soared to an all-time high.¦1¦3y1e¦¦CK¦最高",
-    "0rqd4\t1¦｜最高裁《さいこうさい》が｜人種《じんしゅ》｜分離《ぶんり》｜教育《きょういく》を｜攻撃《こうげき》。¦The Supreme Court attacks school segregation.¦¦3nl2¦¦¦最高裁",
-    "0rqdy\t1¦｜試合《しあい》は｜最高潮《さいこうちょう》に｜達《たっ》した。¦The game came to a climax.¦1¦38iz¦small_snow¦rul¦最高潮",
-    "0rqe8\t1¦エベレスト｜山《やま》は｜世界《せかい》の｜最高峰《さいこうほう》である。¦Mt. Everest is the highest peak in the world.¦1¦4vvs¦bunbuku¦CM¦最高峰",
-    "0rqes\t1¦｜最終電車《さいしゅうでんしゃ》はいつ｜出《で》ますか。¦When does the last train leave?¦3¦3nkg¦¦CK¦最終",
-    "0rqf2\t1¦わがチームは最終回で５点入った。¦Our team scored five runs in the last inning.¦3¦446r¦¦CK¦最終回",
-    "0rqfc\t1¦｜戦争《せんそう》は｜最終段階《さいしゅうだんかい》にはいっていった。¦The war had entered its final stage.¦2¦30zz¦¦voxbubnya¦最終段階",
-    "0rqfw\t1¦あなたの｜人生《じんせい》の｜最終目的《さいしゅうもくてき》は｜何《なに》ですか。¦What is your ultimate goal in your life?¦¦4zwd¦¦CM¦最終目的",
-    "0rqg6\t1¦その｜考《かんが》えは｜最初《さいしょ》のうちはばかげているように｜思《おも》えた。¦The idea seemed absurd at first.¦3¦4ikn¦¦CK¦最初の",
-    "0rqgg\t1¦｜第二《だいに》が｜周辺環境《しゅうへんかんきょう》との｜親和性《しんわせい》であり、｜最小《さいしょう》の｜廃棄物《はいきぶつ》、｜自然《しぜん》エネルギーの｜利用《りよう》｜等《など》、｜周辺《しゅうへん》の｜生態《せいたい》と｜調和《ちょうわ》した｜住空間《じゅうくうかん》を｜形成《けいせい》することである。¦The second is the affinity with environment. By utilizing natural energy and reducing wastes, we have to make houses which harmonize with ecology.¦1¦2xun¦mookeee¦¦最小",
-    "0rqh0\t1¦｜被害《ひがい》は｜最小限《さいしょうげん》に｜食《く》い｜止《と》められた。¦The damage was held to a minimum.¦2¦1u8b¦tommy__san¦CM¦最小限",
-    "0rqha\t1¦｜最小限度《さいしょうげんど》の｜世話《せわ》で、｜立派《りっぱ》に｜育《そだ》つ｜植物《しょくぶつ》もある。¦Some plants grow well with a minimum of care.¦1¦3nhu¦small_snow¦sundown¦最小限度",
   ],
 };

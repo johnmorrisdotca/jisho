@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 100 of 144, from "0yzc". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 100 of 144, from "0yz5". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,17 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0yz5g\t1¦｜標高《ひょうこう》がぐんと｜高《たか》くなると｜呼吸困難《こきゅうこんなん》を｜感《かん》じる。¦In high altitudes, people find it hard to breathe.¦1¦1twi¦¦CM¦ぐんと",
+    "0yz60\t1¦ちょいとここらで｜河岸《かわぎし》をかえましょうや。¦Let's get out of here.¦2¦4cl9¦KK_kaku_¦CK¦ここら\t2¦ここらで１０分、休憩しようじゃないか。¦Why don't we take a 10-minute break here?¦¦4t14¦KK_kaku_¦JimBreen¦ここら",
+    "0yz74\t1¦｜刺激《しげき》を｜受《う》け｜続《つづ》けると｜肌《はだ》の｜保護《ほご》｜作用《さよう》により｜角質《かくしつ》が｜肥厚《ひこう》して、ゴワゴワしたり｜硬《かた》くなって、｜毛穴《けあな》が｜目立《めだ》ってきます。¦If it continues to be stimulated the skin's protective function causes thickening and it becomes stiff and hard with pores that stand out.¦1¦1mq1¦¦¦ゴワゴワ",
+    "0yz7y\t1¦ざあっと｜雨《あめ》が｜降《ふ》ってきた。¦Down came the rain in torrents.¦3¦4nd1¦¦sundown¦ざあっと",
+    "0yz8i\t1¦その｜知《し》らせを｜聞《き》いて、｜皆《みな》シーンとしてしまった。¦A blanket of silence fell over everyone when they heard the disappointing announcement.¦3¦4gg3¦¦CM¦シーンと\t1¦いくつかのシーンがオリジナルから｜外《はず》された。¦Several scenes have been cut from the original.¦5¦4wus¦El_mas_capo¦Shiawase¦シーン",
+    "0yz92\t1¦｜背筋《せすじ》をしゃんと｜伸《の》ばして｜歩《ある》きなさい。¦Carry your head high.¦1¦2lsf¦¦Zifre¦しゃんと",
+    "0yz9c\t1¦ニクソンはオフィスに｜盗聴器《とうちょうき》をしかけておきながらシラを｜切《き》ったので｜見付《みつ》かった。¦Nixon was caught lying because he bugged his own office.¦1¦49e0¦¦CM¦シラを切った",
+    "0yz9m\t1¦シンと｜静《しず》まった｜部室《ぶしつ》。｜響《ひび》くのは、クロッキー｜帳《ちょう》に｜擦《こす》れる｜鉛筆《えんぴつ》の｜音《おと》だけ。¦The club room returned to quiet. All that could be heard was the sound of pencil on sketchpad.¦1¦1n5q¦¦papabear¦シンと",
+    "0yzaq\t1¦あなたはみんなの｜中《うち》でずば｜抜《ぬ》けて｜上手《じょうず》に｜泳《およ》ぐ。¦You are by far the best swimmer of us all.¦3¦4zb6¦boscowitch¦CM¦ずば抜けて",
+    "0yzbk\t1¦｜望遠鏡《ぼうえんきょう》で｜見《み》ると、それはたいまつであることがわかった。¦It was identified by telescope as a torch.¦1¦1rnb¦bunbuku¦¦たいまつ",
+    "0yzbu\t1¦｜時計《とけい》がたった｜今《いま》｜十時《じゅうじ》を｜打《う》った。¦The clock has just struck ten.¦3¦3851¦nomsequitur¦CN¦たった今",
     "0yzce\t1¦みんなクリスマスに｜小雪《こゆき》がちらつくのを｜望《のぞ》んでいた。¦Everyone hoped for a snow flurry for Christmas.¦3¦46g9¦¦AlanF_US¦ちらつく",
     "0yzco\t1¦試験結果発表もつつがなく終わって、当面の視点が自然と夏休みに集まってくるでしょ？¦The publication of the exam results over without incident, for the time being attention is naturally going to focus on the summer break, right?¦1¦1mpa¦mookeee¦¦つつがなく",
     "0yzdi\t1¦｜僕《ぼく》はスーザンに｜謝《あやま》ろうと｜電話《でんわ》したのに、｜彼女《かのじょ》ときたら｜一方的《いっぽうてき》に｜電話《でんわ》を｜切《き》っちゃったんだ。¦I called Susan to apologize to her, but she hung up on me.¦¦1rc1¦¦CN¦ときたら",
@@ -201,17 +212,5 @@ export const PIECE: WordsPiece = {
     "0z5qo\t1¦トムはメアリーを｜口説《くど》きおとすことができなかった。メアリーはトムのデートの｜要求《ようきゅう》を｜突《つ》っぱねたから。¦Tom couldn't make the grade with Mary; she refused him when he asked her for a date.¦3¦4abq¦¦papabear¦口説きおとす",
     "0z5ri\t1¦｜彼《あれ》は｜私《わたし》の｜信頼《しんらい》を｜食《く》いものにした。¦He abused my confidence.¦3¦29mc¦mookeee¦CM¦食いもの",
     "0z5sw\t1¦｜私《わたし》はその｜計画《けいかく》をなんの｜苦《く》もなく｜実行《じっこう》した。¦It was quite easy for me to carry the plan out.¦3¦3fmm¦¦CM¦苦もなく",
-    "0z5ua\t1¦この会社は石油業界で２位に位している。¦This firm ranks second in the oil trade.¦2¦4rt5¦¦¦位している",
-    "0z5v4\t1¦｜最新《さいしん》のバイオ｜技術《ぎじゅつ》によって、｜芋《いも》の｜臭《くさ》みを｜最小限《さいしょうげん》に｜抑《おさ》え、｜非常《ひじょう》に｜飲《の》みやすい「｜芋焼酎《いもじょうちゅう》」です。¦It's very easy to drink potato shochu now that the potato-like smell has been reduced to a low level through use of the latest biotechnology.¦¦1mbt¦mookeee¦¦臭み",
-    "0z5vy\t1¦｜彼《あれ》はこの｜分《ぶん》｜野《の》では｜草分《くさわ》けだ。¦He is a trailblazer in this field.¦¦2fqr¦¦Lumi¦草分け",
-    "0z5w8\t1¦｜田《た》｜中《うち》さんの｜特徴的《とくちょうてき》な｜癖毛《くせげ》が｜耳《みみ》の｜裏《うら》で｜跳《は》ねていた。¦Mrs Tanaka's characteristic curly hair was sticking up behind her ear.¦¦1miz¦mookeee¦¦癖毛",
-    "0z5x2\t1¦チキンは｜食《た》べられない、というけど、｜単《たん》なる｜食《く》わず｜嫌《ぎら》いじゃないの。¦You can't eat chicken? How do you know if you never try it?¦1¦4cmx¦¦CM¦食わず嫌い",
-    "0z5xc\t1¦｜岩《いわ》｜崩《くず》れに｜気《き》をつけて。¦Look out for rock slides.¦1¦3xpn¦tommy__san¦fcbond¦崩れ",
-    "0z5xm\t1¦その｜建物《たてもの》は｜突然《とつぜん》｜崩《くず》れ｜落《お》ちた。¦The building fell down suddenly.¦1¦4itw¦¦¦崩れ落ちた",
-    "0z5zk\t1¦車の速度を落とす装置（ハンプや狭さく）について、意見があったら書いてください。¦If you have any opinions concerning traffic calming devices (humps, curb extensions, etc.) please write them.¦1¦1lkp¦fcbond¦fcbond¦狭さく",
-    "0z60y\t1¦あのツアー、キャンセル｜待《ま》ちの｜状態《じょうたい》だって。¦That tour already has a waiting list.¦1¦4yh8¦small_snow¦CM¦待ち",
-    "0z622\t1¦ジェット｜機《き》が｜建物《たてもの》の｜上《うえ》を｜飛《と》ぶと｜窓《まど》ガラスがびりびりした。¦When the jet flew over the building the windowpanes rattled.¦3¦1l0rq¦JimBreen¦JimBreen¦窓ガラス",
-    "0z62m\t1¦｜彼《あれ》はそれを｜見《み》るとふと｜魔《ま》がさして｜盗《ぬす》んだ。¦The sight tempted him to steal.¦1¦2ek8¦mookeee¦¦魔がさして",
-    "0z62w\t1¦｜彼女《かのじょ》は｜腹立《はらだ》ちまぎれに｜婚約《こんやく》を｜破棄《はき》した。¦She broke off her engagement in a fit of anger.¦1¦1uzz¦¦Lurid¦まぎれ",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 44 of 316, from "おんすけじ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 44 of 316, from "おんすく". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,9 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "オンスクリーン\t\t#1or1e\tcomp¦on-screen",
+    "オンスクリーンディスプレイ\t\t#1d2t0\tcomp¦on-screen display",
+    "オンスケ\t\t#1pber\tabbr¦(proceeding) on-schedule¦(going) according to schedule¦(going) according to plan",
     "オンスケジュール\t\t#1pbes\t¦(proceeding) on-schedule¦(going) according to schedule¦(going) according to plan",
     "オンステージ\t\t#m7e2\t¦on stage",
     "おんず\t音図\t#1a1nk\t¦phonetic table (esp. that of Japanese)",
@@ -164,7 +167,7 @@ export const PIECE: WordsPiece = {
     "オンドル\t温突\tU#126a6\tuk¦ondol (traditional Korean underfloor heating)",
     "おんどをとる\t音頭をとる|音頭を取る\tg#192fi\t¦to take the lead (of a group of people)¦to lead (a toast, cheer, etc.)\t¦to sing the leading notes of a song after which others join in",
     "オンド・マルトノ\t\t#1cdfy\t¦ondes Martenot (electronic musical instrument)",
-    "おんな\t女\tC~ni02#str6\t¦woman¦female",
+    "おんな\t女\tC~ni02#str6\t¦woman¦female\t¦female lover¦girlfriend¦mistress",
     "おんなあそび\t女遊び\t#1a9im\t¦chasing after women¦womanizing",
     "おんなあるじ\t女主\t#11rjm\t¦female owner¦proprietress¦landlady",
     "おんない\t恩愛\t#pcwg\t¦kindness and affection¦love",
@@ -220,7 +223,7 @@ export const PIECE: WordsPiece = {
     "おんなしょうがつ\t女正月\t#1om7u\thist¦15th day of the New Year (when women would belatedly do their New Year's greetings or go back to their parents' homes; in Kyoto and Osaka)",
     "おんなじ\t同じ\tnC~mi33#v46e\t¦same¦identical¦equal\t¦anyway¦in any case¦if one must ...",
     "おんなじぬし\t女地主\t#1js66\t¦landlady",
-    "おんなじまん\t女自慢\t#1m980\t¦female bragging¦female conceit",
+    "おんなじまん\t女自慢\t#1m980\t¦female bragging¦female conceit\t¦a man bragging about his wife or mistress",
     "おんなじょたい\t女所帯|女世帯\t#11rjc\t¦female household¦household consisting wholly of women",
     "おんなすがた\t女姿\t#1nkhy\t¦woman's appearance¦woman's behaviour¦someone dressed as a woman",
     "おんなずき\t女好き\t#stw6\t¦being attractive to women¦being a lady-killer",
@@ -815,11 +818,5 @@ export const PIECE: WordsPiece = {
     "オーディーエム\tＯＤＭ\t#1pelo\t¦original design manufacturing¦original design manufacturer¦ODM",
     "オーディーエー\tＯＤＡ\t#1osy2\t¦Official Development Assistance¦ODA",
     "オーディーピー\tＯＤＰ\t#1d1q4\tcomp¦overdrive processor¦ODP\t¦ozone depletion potential¦ODP",
-    "オーディーン\t\t#1d1qo\t¦Odin (god in Norse mythology)",
-    "オーデコロン\t\t#m47w\t¦eau de Cologne",
-    "オート\t\tC~g#m486\t¦auto¦automatic\t¦auto¦automobile¦car\tabbr¦three-wheeler truck",
-    "オート\t\t#1p6zv\t¦oat¦oats",
-    "オートインクリメント\t\t#1d1qy\tcomp¦auto-increment",
-    "オートインデント\t\t#1d1r8\tcomp¦auto indent",
   ],
 };

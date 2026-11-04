@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 55 of 316, from "かのこ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 55 of 316, from "かのくつ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "かのくつ\t靴の沓\t#1lk2q\t¦black-lacquered cowhide boots with curved toes, metal buckles, and brocade tops (worn with ceremonial dress)",
+    "かのくに\tかの国|彼の国\t#1l5f8\t¦that country\tarch¦nirvana",
     "かのこ\t鹿の子\t#1405a\tabbr¦cloth dyed in a dappled pattern\tabbr¦pattern of white spots¦dapples\tabbr¦mochi containing red bean paste\tarch¦fawn",
     "かのこあみ\t鹿の子編み\t#1okjq\t¦moss stitch¦pique",
     "かのこしぼり\t鹿の子絞り|鹿の子絞|鹿子絞り\t#1j6s6\t¦cloth dyed in a dapple pattern",
@@ -836,6 +838,5 @@ export const PIECE: WordsPiece = {
     "かみがた\t髪型|髪形\tC~ns21#15w0m\t¦hair style¦coiffure¦hairdo",
     "かみがた\t紙型\t#s408\t¦stereotype¦(paper) stencil¦papier-mâché mold (mould)",
     "かみがた\t上方\t#xvho\t¦Kyoto and vicinity (esp. during Edo period)¦Kyoto-Osaka region¦Kansai region",
-    "かみがたえ\t上方絵\t#1oz3r\thist,art¦kamigata-e",
   ],
 };

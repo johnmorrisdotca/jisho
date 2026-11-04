@@ -23,7 +23,7 @@ You may have a compatibility character, which looks the same and is a different 
 
 ## A word has no meaning
 
-`meaningOf` answers null and `wordsOf` an empty list when JMdict has no word for the text, and also when every sense it has is one JMdict marks vulgar, X-rated, sensitive or derogatory or whose gloss names sex or the sex trade, because words are in safe mode unless you pass `mode: "unfiltered"`, and safe mode does not fetch what it leaves out. Nothing is wrong. Look the text up unfiltered to tell the two apart.
+`meaningOf` answers null and `wordsOf` an empty list when JMdict has no word for the text, and also when every sense it has is one JMdict marks vulgar, X-rated, sensitive or derogatory or whose gloss names a sex act, a sex organ or the sex trade, because words are in safe mode unless you pass `mode: "unfiltered"`, and safe mode does not fetch what it leaves out. Nothing is wrong. Look the text up unfiltered to tell the two apart.
 
 ## A conjugated word finds nothing
 

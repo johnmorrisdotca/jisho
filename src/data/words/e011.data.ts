@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 12 of 219, from "0oeyi". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 12 of 219, from "0oex". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0oex4\t\tラストラップ|ラスト・ラップ\tn¦¦last lap",
+    "0oexo\t\tラズベリー|ラズベリ~sk\tn¦¦raspberry",
+    "0oexy\t\tラダー\tn¦¦rudder",
+    "0oey8\t\tラチチュード|ラティチュード|ラティテュード~sk\tn¦¦latitude",
     "0oeyi\t\tラッカー\tn¦¦lacquer",
     "0oeys\t\tラッキー|ラッキィ~sk\tadj-na,n¦¦lucky\tint¦¦nice!¦score!¦bingo!",
     "0oez2\t\tラッキーゾーン|ラッキー・ゾーン\tn¦baseb¦area between the regular outfield wall and a lower home-run fence set up at a shorter distance from home plate¦engw~lucky zone",
@@ -1021,6 +1025,7 @@ export const PIECE: WordsPiece = {
     "0onz8\t愛唱曲\tあいしょうきょく\tn¦¦favourite song¦favorite song",
     "0onzs\t愛称\tあいしょう\tn¦¦pet name¦nickname¦affectionate name¦term of endearment",
     "0oo0c\t愛情\tあいじょう\tn,adj-no¦¦love¦affection",
+    "0oo0m\t愛人\tあいじん\tn¦¦lover¦mistress",
     "0oo0w\t愛惜\tあいせき|あいじゃく\tn,vs,vt¦¦missing someone¦loathing to part",
     "0oo1g\t愛想のいい|愛想の良い|愛想のよい\tあいそのいい~~愛想のいい,愛想の良い|あいそのよい~~愛想の良い,愛想のよい\texp,adj-ix¦¦affable¦amiable¦sociable¦agreeable",
     "0oo1q\t愛憎併存\tあいぞうへいそん\tn¦¦ambivalence",
@@ -1201,7 +1206,5 @@ export const PIECE: WordsPiece = {
     "0opi8\t旭日昇天\tきょくじつしょうてん\tadj-no,n¦yoji¦full of vigor and vitality (like the rising sun)¦in the ascendant",
     "0opii\t旭暉\tきょっき\tn¦¦rays of the rising sun",
     "0opis\t葦|蘆|葭|芦\tあし|よし|アシ~~~!|ヨシ~~~!\tn,adj-no¦uk¦common reed (Phragmites australis)",
-    "0opj2\t葦笛|蘆笛|芦笛|笳|よし笛~sK|あし笛~sK\tあしぶえ|よしぶえ~~葦笛,蘆笛,芦笛|ろてき~~蘆笛,芦笛\tn¦¦reed pipe¦reed flute",
-    "0opjc\t芦毛|葦毛|あし毛|蘆毛\tあしげ\tn,adj-no¦¦dapple-grey (gray) (horse coat colour)",
   ],
 };

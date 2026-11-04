@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 56 of 316, from "かみがたか". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 56 of 316, from "かみがたえ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "かみがたえ\t上方絵\t#1oz3r\thist,art¦kamigata-e",
     "かみがたかぶき\t上方歌舞伎\t#1l5zs\t¦kabuki in the Kyoto-Osaka style",
     "かみがたきょうげん\t上方狂言\t#1l5z8\t¦kabuki in the Kyoto-Osaka style",
     "かみがたご\t上方語\t#1fwcu\thist¦Edo-period Kansai dialect",
@@ -262,9 +263,9 @@ export const PIECE: WordsPiece = {
     "かみん\t夏眠\ts#pjh4\t¦estivation¦aestivation¦summer sleep",
     "かみん\t下民\t#xstu\t¦the lower classes¦the masses¦the common people",
     "カミン\t\t#1frwk\t¦chimney (narrow cleft used to climb a rock face)",
-    "カミングアウト\t\ts#1byea\t¦revealing (e.g. something embarrassing)¦disclosure¦announcement",
+    "カミングアウト\t\ts#1byea\t¦coming out (disclosing one's sexual orientation or gender identity)\t¦revealing (e.g. something embarrassing)¦disclosure¦announcement",
     "カミングスーン\t\t#1ggha\t¦coming soon",
-    "カミング・アウト\t\ts#1byea\t¦revealing (e.g. something embarrassing)¦disclosure¦announcement",
+    "カミング・アウト\t\ts#1byea\t¦coming out (disclosing one's sexual orientation or gender identity)\t¦revealing (e.g. something embarrassing)¦disclosure¦announcement",
     "カミング・スーン\t\t#1ggha\t¦coming soon",
     "かみんしつ\t仮眠室\t#19p1o\t¦nap room (in an office, fire station, etc.)",
     "かみんしょう\t過眠症\t#1kjku\t¦hypersomnia",
@@ -275,7 +276,7 @@ export const PIECE: WordsPiece = {
     "かむ\t擤む\tgCU~s#yzry\tuk¦to blow (one's nose)",
     "かむ\t家務\t#1jznm\t¦family affairs¦family business\t¦steward in charge of the affairs of a samurai family (middle ages)",
     "かむ\t神\t#1ot1j\t¦divine¦godly",
-    "カムアウト\t\ts#1p2zh\t¦revealing (e.g. something embarrassing)¦disclosure¦announcement",
+    "カムアウト\t\ts#1p2zh\t¦coming out (disclosing one's sexual orientation or gender identity)\t¦revealing (e.g. something embarrassing)¦disclosure¦announcement",
     "カムイ\t\t#1g850\t¦god¦deity¦divinity",
     "かむかぜ\t神風\tC~mt34#t95c\t¦divine wind (esp. a typhoon thought to have protected Japan from a Mongolian invasion in the 13th century)",
     "かむき\t神木\t#11tta\t¦sacred tree",
@@ -310,7 +311,7 @@ export const PIECE: WordsPiece = {
     "かむろみ\t神漏美\t#1pkiw\tarch,hon,Shinto¦female ancestral god¦female deity",
     "かむわざ\t神業|神事|神わざ\t#t8v2\t¦divine work¦miracle¦superhuman feat\tarch¦Shinto ritual",
     "カムワルツ\t\t#1ledg\t¦neck pinion",
-    "カム・アウト\t\ts#1p2zh\t¦revealing (e.g. something embarrassing)¦disclosure¦announcement",
+    "カム・アウト\t\ts#1p2zh\t¦coming out (disclosing one's sexual orientation or gender identity)\t¦revealing (e.g. something embarrassing)¦disclosure¦announcement",
     "カム・ギア\t\t#1pjn6\t¦cam gear",
     "カム・ギヤ\t\t#1pjn6\t¦cam gear",
     "かめ\t亀\tC~nis11#q8n8\t¦tortoise¦turtle\t¦heavy drinker\t¦turtle crest¦turtle mon",
@@ -805,8 +806,5 @@ export const PIECE: WordsPiece = {
     "からせじ\t空世辞\t#zwsk\trare¦flattery¦insincere praise¦empty compliments",
     "からぜき\t空咳|乾咳\t#xt8u\t¦dry cough¦hacking cough\t¦intentional cough (e.g. to get someone's attention)",
     "からそうば\t空相場\t#qp86\tfinc¦fictitious transaction",
-    "からたけ\t幹竹|乾竹\tU#1b1mk\tuk¦Japanese timber bamboo (Phyllostachys bambusoides)¦giant timber bamboo¦madake\t¦Henon bamboo (Phyllostachys nigra var. henonis)",
-    "カラタケ\t\tU#1b1mk\tuk¦Japanese timber bamboo (Phyllostachys bambusoides)¦giant timber bamboo¦madake\t¦Henon bamboo (Phyllostachys nigra var. henonis)",
-    "からたけ\t唐竹|漢竹\t#1b1n4\tarch¦Chinese bamboo¦bamboo imported from China (often used to make flutes)\t¦descending vertical sword attack (in kendo, etc.)",
   ],
 };

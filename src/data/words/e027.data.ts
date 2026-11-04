@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 28 of 219, from "0s4eo". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 28 of 219, from "0s49e". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,25 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0s49e\t至れり尽くせり|至れり尽せり|至れりつくせり\tいたれりつくせり\texp,adj-no¦¦perfect¦complete¦thorough¦leaving nothing to be desired¦more than satisfactory",
+    "0s49o\t至急\tしきゅう\tadj-no,n¦¦urgent¦pressing¦immediate¦prompt¦express\tn,adv¦¦urgently¦promptly¦at once¦right away¦without delay¦as soon as possible",
+    "0s49y\t至急便\tしきゅうびん\tn¦¦express mail",
+    "0s4a8\t至極\tしごく\tadv,n-suf¦¦very¦extremely¦exceedingly¦quite¦most\tadj-no,adj-na,n¦¦top¦highest¦best",
+    "0s4ai\t至言\tしげん\tn¦¦apt remark¦wise saying",
+    "0s4as\t至高\tしこう\tadj-no,adj-na,n¦form¦supreme¦sublime¦highest",
+    "0s4b2\t至上\tしじょう\tn,adj-no¦¦supremacy",
+    "0s4bc\t至東京\tいたるとうきょう\tn¦¦leading to Tokyo",
+    "0s4bm\t至難\tしなん\tadj-na,adj-no,n¦¦most difficult¦next to impossible",
+    "0s4bw\t至福\tしふく\tn,adj-no¦¦beatitude¦supreme bliss",
+    "0s4c6\t至宝\tしほう\tn¦¦greatest treasure¦most valuable asset¦pride (of)",
+    "0s4cg\t視界\tしかい\tn¦¦field of vision¦visibility¦view¦visual field¦(one's) ken",
+    "0s4cq\t視覚\tしかく\tn¦¦(sense of) sight¦eyesight¦vision",
+    "0s4d0\t視覚化\tしかくか\tn,vs,vt¦¦visualization¦visualisation",
+    "0s4da\t視差\tしさ\tn,adj-no¦¦parallax",
+    "0s4dk\t視察\tしさつ\tn,vs,vt¦¦inspection¦observation",
+    "0s4du\t視神経\tししんけい\tn¦anat¦optic nerve",
+    "0s4e4\t視線\tしせん\tn¦¦one's line of sight¦one's gaze¦one's eyes (looking)¦glance¦gaze¦look",
+    "0s4ee\t視聴\tしちょう|してい~ok\tn,vs,vt¦¦looking and listening¦(television) viewing¦watching\tn¦¦(public) attention¦interest\tn¦physics¦(signal) reception",
     "0s4eo\t視聴覚\tしちょうかく\tn¦¦senses of seeing and hearing¦audiovisual",
     "0s4ey\t視聴覚機器\tしちょうかくきき\tn¦¦audiovisual aids",
     "0s4f8\t視聴覚教材\tしちょうかくきょうざい\tn¦¦audiovisual educational materials",
@@ -1065,24 +1084,5 @@ export const PIECE: WordsPiece = {
     "0scri\t社団法人\tしゃだんほうじん\tn¦law¦corporate juridical person¦incorporated body¦corporation¦財団法人",
     "0scrs\t社長\tしゃちょう\tn¦¦company president¦manager¦director",
     "0scs2\t社内\tしゃない\tadj-no,n¦¦within a company¦in-house\tadj-no,n¦¦within a shrine¦shrine precincts",
-    "0scsc\t社内情報\tしゃないじょうほう\tn¦¦company-internal information",
-    "0scsm\t社名\tしゃめい\tn¦¦company name¦name of a company",
-    "0scsw\t社用\tしゃよう\tn¦¦company business",
-    "0sct6\t社用車\tしゃようしゃ\tn¦¦company car",
-    "0sctg\t社用族\tしゃようぞく\tn¦¦expense-account spenders",
-    "0sctq\t者\tもの|もん\tn¦¦person¦rarely used without a qualifier",
-    "0scu0\t謝する\tしゃする\tvs-s¦¦to thank\tvs-s¦¦to apologize¦to apologise\tvs-s¦¦to say farewell¦to retreat¦to retire\tvs-s¦¦to refuse\tvs-s¦¦to pay back¦to settle old scores",
-    "0scua\t謝る\tあやまる\tv5r,vt,vi¦¦to apologize (apologise)\tv5r,vt,vi¦dated¦to refuse¦to decline\tv5r,vi¦dated¦to be unable to bear¦to be defeated (by)¦to be at a loss¦to be stumped (by)",
-    "0scuk\t謝意\tしゃい\tn¦¦gratitude¦thanks\tn¦¦apology",
-    "0scuu\t謝罪\tしゃざい\tn,vs,vt¦¦apology",
-    "0scv4\t謝辞\tしゃじ\tn¦¦words of thanks¦words of gratitude¦acknowledgements\tn¦¦apology",
-    "0scve\t謝絶\tしゃぜつ\tn,vs,vt¦¦refusal¦declining",
-    "0scvo\t謝肉祭\tしゃにくさい\tn¦¦carnival (festival held before Lent)",
-    "0scvy\t謝礼\tしゃれい\tn,vs,vi¦¦reward¦honorarium¦remuneration",
-    "0scw8\t車\tくるま|クルマ~~~!\tn¦¦car¦automobile¦vehicle\tn¦¦wheel¦castor¦caster",
-    "0scwi\t車椅子|車いす|車イス~sK\tくるまいす\tn¦¦wheelchair",
-    "0scws\t車海老|車えび|車エビ|車蝦\tくるまえび~~車海老,車えび,車蝦|くるまエビ~~車エビ|クルマエビ~~~!\tn¦¦kuruma prawn (Marsupenaeus japonicus)¦kuruma shrimp¦Japanese tiger prawn",
-    "0scx2\t車検\tしゃけん\tn¦¦vehicle inspection",
-    "0scxc\t車庫\tしゃこ\tn¦¦garage¦carport¦depot (for trains, buses, etc.)¦shed¦carbarn",
   ],
 };

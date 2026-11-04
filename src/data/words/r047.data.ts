@@ -54,7 +54,7 @@ export const PIECE: WordsPiece = {
     "かいわひょうげん\t会話表現\t#1pfwo\t¦conversational expression",
     "かいわぶん\t会話文\t#1pk7y\t¦direct speech (in a text)¦spoken lines¦written dialogue",
     "かいわり\t貝割|貝割り|卵割り|卵割|穎割り|穎割\t#y2nq\t¦radish sprout",
-    "かいわりな\t貝割り菜|貝割菜\t#1j9ug\t¦(white) radish sprouts",
+    "かいわりな\t貝割り菜|貝割菜\t#1j9ug\t¦rape seedlings\t¦(white) radish sprouts",
     "かいわりょく\t会話力\t#1lprq\t¦conversational ability¦speaking ability",
     "かいわれだいこん\tかいわれ大根|貝割れ大根|カイワレ大根|穎割れ大根\t#18i9e\t¦daikon sprouts¦(white) radish sprouts",
     "かいわれな\t貝割れ菜|貝割菜|かいわれ菜|穎割菜\t#1j9tw\t¦white radish sprouts¦daikon sprouts",

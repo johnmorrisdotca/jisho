@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 4 of 316, from "あきたけ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 4 of 316, from "あきたかんと". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,9 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "あきたかんとうまつり\t秋田竿燈まつり|秋田竿燈祭り|秋田竿灯祭り\t#18zv0\t¦Akita Kantō Festival (3-6 August)",
+    "あきたがい\t秋田貝\tU#1gex6\tuk¦Japanese scallop (Patinopecten yessoensis)",
+    "アキタガイ\t\tU#1gex6\tuk¦Japanese scallop (Patinopecten yessoensis)",
     "あきたけいざいほうかだいがく\t秋田経済法科大学\t#36sa3\torganization¦Akita University of Economics and Law",
     "あきたけん\t秋田県\t#skbg\t¦Akita Prefecture (Tōhoku area)",
     "あきたけん\t秋田犬\t#zndo\t¦Akita (dog breed)",
@@ -908,8 +911,5 @@ export const PIECE: WordsPiece = {
     "アケオメ\t明けおめ\tU#16i14\tabbr,col,uk¦Happy New Year",
     "あけおめことよろ\t\t#19dti\tcol,abbr¦Happy New Year",
     "アケオメコトヨロ\t\t#19dti\tcol,abbr¦Happy New Year",
-    "あけがた\t明け方|明方\tC~ni24#wubw\t¦dawn¦daybreak",
-    "あけがらす\t明烏|あけ烏|明け烏\t#17eda\t¦daybreak sound of a crow\t¦(name of) poetry anthology",
-    "あけくち\t開け口\t#1pjdi\t¦opening\t¦pull tab",
   ],
 };

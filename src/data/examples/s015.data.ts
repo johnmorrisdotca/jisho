@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 16 of 144, from "0oq6o". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 16 of 144, from "0oq6". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0oq6e\t1¦これはバーゲン｜商品《しょうひん》なので｜定価《ていか》よりやすくなっているんじゃないですか。¦Aren't you selling this at a discount price?¦1¦4omh¦¦CK¦やすく",
     "0oq6o\t1¦｜彼女《かのじょ》の｜服《ふく》はとても｜安《やす》っぽい｜生地《きじ》でできていた。¦Her dress was made of very cheap material.¦3¦20in¦¦CM¦安っぽい",
     "0oq6y\t1¦｜心安《こころやす》ければ｜眠《ねむ》りも｜安《やす》らか。¦A good conscience is a soft pillow.¦3¦34bq¦¦CM¦安らか",
     "0oq78\t1¦｜私《わたし》の｜望《のぞ》むのは｜安《やす》らぎと｜静《しず》けさだけです。¦All I want is peace and quiet.¦3¦3hhm¦¦CK¦安らぎ",
@@ -153,6 +154,7 @@ export const PIECE: WordsPiece = {
     "0otc0\t1¦そんなにたくさん｜食《た》べるのは｜異常《いじょう》だ。¦It is abnormal to eat so much.¦1¦4dmx¦¦Swift¦異常",
     "0otd4\t1¦ｘ線写真で異状が認められます。¦We have detected an abnormality on your x-ray.¦1¦515i¦¦CK¦異状",
     "0otde\t1¦われわれの｜仲間《なかま》ではあなたは｜異色《いしょく》の｜存在《そんざい》だった。¦You stood out in our circle.¦1¦43xc¦bunbuku¦Nina¦異色",
+    "0otes\t1¦｜彼女《かのじょ》は｜異性《いせい》の｜前《さき》では｜非常《ひじょう》に｜恥《は》ずかしがる。¦She feels very shy in the presence of the opposite sex.¦1¦1yd7¦¦¦異性",
     "0otfw\t1¦｜私《わたし》としては｜異存《いぞん》はありません。¦There is no objection on my part.¦1¦3j9b¦¦CK¦異存",
     "0oth0\t1¦｜異端《いたん》という｜非難《ひなん》に｜関《かん》しては、ここでの｜証拠《しょうこ》ははるかに｜弱《よわ》いものである。¦As for the accusations of heresy, here the evidence is much weaker.¦1¦43dz¦¦Dejo¦異端",
     "0otk2\t1¦｜僕《ぼく》が｜恋《こい》するたびに、｜相手《あいて》の｜女《おんな》の｜子《こ》は｜僕《ぼく》の｜異母妹《いぼまい》だっておとうさんは｜言《い》うんだ。¦Every time I fall in love, Dad tells me the girl is my half sister.¦1¦1rjs¦¦¦異母",
@@ -204,7 +206,5 @@ export const PIECE: WordsPiece = {
     "0oum4\t1¦｜音楽家《おんがくか》が｜死《し》んで｜遺族《いぞく》は｜貧困《ひんこん》にさらされた。¦The musician left his family poor.¦1¦419b¦¦CaspieChi¦遺族",
     "0oume\t1¦その｜遺体《いたい》の｜身元《みもと》は｜頬《つら》のほくろで｜確認《かくにん》された。¦The dead body was identified by a mole on the cheek.¦¦4jux¦¦CM¦遺体",
     "0oun8\t1¦この｜犯罪者《はんざいしゃ》は｜遺伝《いでん》の｜犠牲者《ぎせいしゃ》だ。¦This criminal is a victim of his heredity.¦1¦4pvi¦¦¦遺伝",
-    "0ouoc\t1¦デオキシリボ｜核酸《かくさん》は、｜遺伝子《いでんし》を｜作《つく》っている｜複雑《ふくざつ》な｜化学物質《かがくぶっしつ》である。¦DNA is a complex chemical that makes up a gene.¦1¦4c5d¦¦¦遺伝子",
-    "0oupq\t1¦｜子供《こども》は｜遺伝病《いでんびょう》を｜持《も》っています。¦My baby has a hereditary disease.¦1¦3m20¦¦CK¦遺伝病",
   ],
 };

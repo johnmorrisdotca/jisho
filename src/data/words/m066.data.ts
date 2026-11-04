@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 67 of 172, from "gracilist". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 67 of 172, from "gown ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,32 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "gown worn\tはくい",
+    "gowns\tガウンテクニック|ガウン・テクニック",
+    "goy\tいほうじん",
+    "gozan\tきょうとござん|きょうとごさん|じっせつ|じっさつ",
+    "gozengamine\tはくさんさんみね",
+    "gozenshu\tごぜんしゅ",
+    "gozu\tごずてんのう",
+    "gps\tつうかてん|いちじょうほう|ロケーションハラスメント|ロケーション・ハラスメント|ロケハラ",
+    "graafian\tグラーフろほう|グラーフらんぽう",
+    "grab\tとる|つかまえる|うばいとる|つかみかかる|むしゃぶりつく|くいさがる|ぶんどる|グラブ|いっかく|ひとめをひく|ぜんごし|さしてあらそい|グラブバケット|グラブ・バケット|むなぐらをつかむ|おびとりがえし|カルタとり|わきわき|つかみあげる|ふんづかまえる",
+    "grab away\tぶんどる",
+    "grab front\tくいさがる",
+    "grabbed\tパンくいきょうそう",
+    "grabber\tグラバーハンド|グラバー・ハンド",
+    "grabbing\tからまわり|つかみどり|あしとり|わしづかみ|もろざし|ワシづかみ",
+    "grabbing wheels\tからまわり",
+    "grace\tおんけい|ゆうび|りやく|きゅうさい|かざる|すくい|おもむき|めぐみ|ひんかく|うるおい|ひんい|モラトリアム|ひん|きひん|おんてん|きとう|ごりやく|いのる|おかげ|おんちょう",
+    "grace e\tかざる",
+    "grace god\tりやく",
+    "grace meals\tきとう",
+    "graceful\tしとやか|ゆうが|しなやか|いさぎよい|おんが|しゅうれい|てんれい|とが|そそ|たおやか|やさすがた|えんぜん|タイワンザメ|オグロ|たおやめ|たわやめ|おしとやか|せんけん|ようちょう|せいが",
+    "gracefully\tしゃなりしゃなり",
+    "graces\tさんびしん",
+    "gracile\tほんみみひみず|ホンミミヒミズ",
+    "gracilipes\tひめしゃが|ヒメシャガ|うぐいすかぐら|ウグイスカグラ",
+    "gracilis\tキビナゴ|きびなご|こまい|コマイ|ナンキンななかまど|ナンキンナナカマド|ほんみみひみず|ホンミミヒミズ|ひめうつぎ|ヒメウツギ|マホガニーフクロモモンガ|マホガニー・フクロモモンガ",
     "gracilistyla\tかわやなぎ|カワヤナギ|ねこやなぎ|ネコヤナギ",
     "gracillimus\tひめとがりねずみ|ヒメトガリネズミ",
     "gracious\tいさぎよい|じんじょう|ゆうあく|めぐみふかい|めぐみぶかい|だいごみ|おんめい|ゆうじょう|いやはや|すわ|じうのか",
@@ -581,33 +607,5 @@ export const PIECE: WordsPiece = {
     "grieved over\tいためる",
     "grieving\tたんそく|あいつう|ゆうし|ゆうしん",
     "grievous\tじゅうあく",
-    "grievously\tうれいなやむ",
-    "griffin\tグリッフィン|グリフィン",
-    "griffis\tグリフィスエンジェルフィッシュ|グリフィス・エンジェルフィッシュ",
-    "griffisi\tグリフィスエンジェルフィッシュ|グリフィス・エンジェルフィッシュ",
-    "griffithii\tシマトネリコ|しまとねりこ",
-    "griffiths\tカスリモヨウベニハゼ",
-    "griffithsi\tカスリモヨウベニハゼ",
-    "griffon\tグリフォン|じゅじし|しろえりはげわし|シロエリハゲワシ",
-    "grifola\tまいたけ|マイタケ",
-    "grigio\tピノグリージョ|ピノ・グリージョ",
-    "grigorjewi\tむしがれい|ムシガレイ",
-    "grill\tグリル|やきにく|やく|やきあげる|グリエ|したび|ジンギスカン|ろばたやき|もちあみ|やきなおす|てつごうし|ジンギスカンなべ|グリルカバー|グリル・カバー|グリルコネクタ|グリル・コネクタ|さかなやきき|さかなやきグリル|グリルパン|グリル・パン",
-    "grill esp\tグリル",
-    "grill room\tグリル",
-    "grill used\tジンギスカン",
-    "grille\tグリル|アパーチャグリル|アパーチャ・グリル|キドニーグリル|キドニー・グリル",
-    "grilled\tグリル|やきもの|やきとり|やきざかな|すみやき|ハツ|やきどうふ|しらやき|ホルモンやき|ほおばみそ|プルコギ|グリルドチーズサンドイッチ|グリルドチーズサンド|グリルド・チーズ・サンドイッチ|グリルド・チーズ・サンド|ひれざけ|ヒレざけ|ゆうがやき|シロコロ|やきみそ",
-    "grilled dish\tやきもの",
-    "grilled fish\tやきざかな",
-    "grilled food\tグリル",
-    "grilled skewered\tやきとり",
-    "grilling\tにくはく|あみやき|しおやき|すやき|くしやき|すみびやき|かたまりにく|じかびやき|くしうち",
-    "grilling fish\tしおやき",
-    "grilling without\tすやき",
-    "grillo\tグリッロ",
-    "grim\tれいげん|ひそう|けわしい|しぶい|けわしいかおつき|けわしいかお|こわいかお|けわしいめ",
-    "grimace\tじゅうめん|しぶづら|しぶつら|かおをしかめる|かおをゆがめる",
-    "grime\tあか|グライム|あかすり|アカスリ|あかびかり",
   ],
 };

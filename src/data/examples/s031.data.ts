@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 32 of 144, from "0qsp". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 32 of 144, from "0qsd". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,17 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0qsd8\t1¦ここには｜刑務所《けいむしょ》があった。¦There used to be a prison here.¦1¦4t6x¦¦CK¦刑務所",
+    "0qsfg\t1¦｜私《わたし》の｜兄《あに》は｜技師《ぎし》になった。¦My brother became an engineer.¦2¦3ie4¦¦CK¦兄",
+    "0qsfq\t1¦｜兄《にい》さんはよくおなりだと｜思《おも》いますが。¦I hope your brother is better.¦4¦3sae¦¦¦兄さん",
+    "0qsga\t1¦「そっか。｜暇《ひま》なら｜掃除《そうじ》しといて」「なんだそれ。｜兄貴《あにき》をアゴで｜使《つか》うなよ」¦\"Oh? If you're free get the cleaning done.\" \"What's up with that? Don't order your brother around!\"¦1¦1nfm¦KK_kaku_¦¦兄貴",
+    "0qsh4\t1¦ライト｜兄弟《きょうだい》はエンジンで｜動《うご》く｜飛行機《ひこうき》を｜飛《と》ばすことに｜成功《せいこう》した。¦The Wright brothers succeeded in flying an airplane driven by an engine.¦1¦44nn¦¦CM¦兄弟\t1¦あなたは｜何人《なにびと》｜兄弟《きょうだい》がいますか。¦How many siblings do you have?¦4¦4z5w¦Profpatsch¦CK¦兄弟",
+    "0qsjc\t1¦というわけで、｜人材《じんざい》を｜啓発《けいはつ》するためのセンターが｜日本《にほん》に｜作《つく》られるべきであろう。¦Therefore, a center for the development of human resources should be built in Japan.¦1¦4boj¦¦Swift¦啓発",
+    "0qskq\t1¦６００―Ｊ型のプリンターが１９９７年の５月４日まで在庫切れとの御知らせありがとうございました。¦Thank you for letting me know that the Model 600-J printer will not be available until May 4, 1997.¦2¦51eb¦e4zh1nmcz¦papabear¦型\t2¦その｜像《ぞう》は｜型《かた》に｜入《い》れられて｜作《つく》られた。¦The statue was cast in a mold.¦2¦4gqz¦¦¦型",
+    "0qsn8\t1¦｜退職《たいしょく》を｜契機《けいき》に｜茶道《さどう》を｜始《はじ》めた。¦I took the opportunity of retirement to begin studying the tea ceremony.¦1¦1mkf¦mookeee¦AlanF_US¦契機",
+    "0qsni\t1¦｜契約《けいやく》はかなりいいかげんなものだった。¦The contract was rather loose.¦1¦3s8a¦KK_kaku_¦¦契約",
+    "0qso2\t1¦｜彼《かれ》らは｜彼《あれ》に｜無理矢理《むりやり》｜契約書《けいやくしょ》にサインさせた。¦They made him sign the contract.¦¦22co¦¦CK¦契約書",
+    "0qsoc\t1¦｜物質《ぶっしつ》は｜温度《おんど》によって｜形《かたち》を｜変《か》える。¦Matter changes its form according to temperature.¦2¦1sm8¦¦¦形\t2¦｜神《かみ》は｜自分《じぶん》の｜形《かたち》に｜人《じん》を｜創造《そうぞう》された。¦God created man in his own image.¦¦33t9¦¦CK¦形\t3¦｜自然《しぜん》は、｜環境《かんきょう》｜面《つら》での｜危険《きけん》に｜対《たい》しては｜他《た》の｜形《かたち》の｜防御《ぼうぎょ》を｜与《あた》えている。¦Nature provides other forms of protection against environmental dangers.¦1¦37td¦¦¦形\t4¦｜地方《ちほう》の｜党員《とういん》たちは｜自党《じとう》に｜有利《ゆうり》な｜形《かたち》の｜選挙区《せんきょく》｜割《わ》りをもくろんでいます。¦Local party members are trying to gerrymander the district.¦1¦2pv9¦¦¦形",
     "0qspg\t1¦これは｜亡《な》くなった｜夫《おっと》の｜形見《かたみ》としてお｜受《う》け｜取《と》りください。¦Please accept this as a keep-sake of my husband.¦3¦4oa4¦¦¦形見",
     "0qspq\t1¦｜彼《あれ》は｜粘土《ねんど》で｜像《ぞう》を｜形作《かたちづく》った。¦He shaped the statue from clay.¦1¦266t¦¦rul¦形作った",
     "0qsqu\t1¦｜彼《あれ》はそれを｜小説《しょうせつ》の｜形式《けいしき》で｜表《ひょう》した。¦He expressed it in the form of fiction.¦3¦2ejy¦¦¦形式\t2¦｜朝食《ちょうしょく》はバイキング｜形式《けいしき》だって。¦Breakfast is a smorgasbord.¦3¦2pdi¦small_snow¦CM¦形式\t3¦｜一般《いっぱん》に｜若者《わかもの》は｜形式《けいしき》を｜嫌《きら》う。¦In general, young people dislike formality.¦1¦42rd¦¦CK¦形式",
@@ -193,13 +204,5 @@ export const PIECE: WordsPiece = {
     "0qvyy\t1¦｜時々《ときどき》、｜自分《じぶん》のけつを｜思《おも》いきり｜蹴《け》りあげてやりたくなる。¦Sometimes I feel like kicking my own rump.¦¦383i¦¦¦けつ",
     "0qw0m\t1¦アナグマは｜深《ふか》い｜穴《あな》を｜掘《ほ》る。¦Badgers dig deep holes.¦1¦9mfo¦blay_paul¦blay_paul¦アナグマ",
     "0qw16\t1¦この｜温泉《おんせん》は｜穴場《あなば》だね。¦This hot spring is a great find.¦1¦4rzb¦tommy__san¦orcrist¦穴場",
-    "0qw1q\t3¦その｜国《くに》は｜貿易《ぼうえき》｜上《うえ》の｜赤字《あかじ》の｜穴埋《あなう》めに｜懸命《けんめい》である。¦The country is trying hard to make up for her trade deficit.¦1¦4ih7¦¦¦穴埋め",
-    "0qw20\t1¦｜彼女《かのじょ》は｜髪《かみ》を｜結《ゆ》ってもらうために｜美容院《びよういん》に｜行《おこな》った。¦She went to the hairdresser's to have her hair done.¦1¦1vj8¦¦CK¦結って",
-    "0qw34\t1¦｜彼《あ》の｜努力《どりょく》が｜好成績《こうせいせき》に｜結《むす》びついた。¦His efforts led to good results.¦1¦2huv¦¦¦結びついた",
-    "0qw3e\t1¦ロープを｜木《き》に｜結《むす》び｜付《つ》けなさい。¦Fasten the rope to the tree.¦1¦44cr¦¦CM¦結び付け\t2¦｜我々《われわれ》はしばしば｜黒色《くろいろ》を｜死《し》と｜結《むす》び｜付《つ》けて｜考《かんが》える。¦We often associate black with death.¦1¦3zlb¦¦CK¦結び付けて",
-    "0qw3o\t1¦その｜結《むす》び｜目《め》を｜守《まも》るのは｜重要《じゅうよう》なことだ。¦Maintaining that tie is important.¦1¦4iwx¦¦CK¦結び目",
-    "0qw3y\t1¦｜彼《かれ》らは｜都市《とし》を｜鉄道《てつどう》で｜結《むす》ぶことを｜計画《けいかく》｜中《うち》だ。¦They are planning to connect the cities with a railroad.¦1¦22g2¦¦CK¦結ぶ\t2¦実も結ぶが、挿し木でも根付くらしい？¦It bears fruit, but it seems it may even set root from cuttings?¦1¦1l70¦fcbond¦fcbond¦結ぶ",
-    "0qw48\t1¦母は１本の紐で３本の鉛筆を結わえた。¦Mother tied up three pencils with a piece of string.¦¦1s49¦¦¦結わえた",
-    "0qw4i\t1¦｜私達《わたしたち》は｜息《いき》を｜殺《ころ》して｜実験《じっけん》の｜結果《けっか》を｜待《ま》った。¦We held our breath and waited for the result of the experiment.¦1¦38ue¦¦¦結果\t1¦｜結果《けっか》は｜気《き》にするな。¦Don't worry about the results.¦1¦3rp0¦small_snow¦CK¦結果\t2¦｜結果《けっか》、｜計算《けいさん》ミスが｜多《おお》い。¦There are a lot of results and a calculation mistakes.¦1¦3rpo¦¦¦結果\t2¦｜結果《けっか》、｜雨《あめ》の｜日《ひ》は｜部屋《へや》の｜中《うち》でボール｜遊《あそ》びをしています。¦As a result, we play ball inside on rainy days.¦1¦1l4u¦fcbond¦fcbond¦結果\t3¦｜大雪《おおゆき》の｜結果《けっか》、｜彼女《かのじょ》は｜遅《おく》れた。¦She was late as a result of the heavy snow.¦1¦2y14¦¦CK¦結果\t3¦｜私《わたし》は｜十分《じゅうぶん》｜考慮《こうりょ》した｜結果《けっか》、｜申《もう》し｜出《で》に｜応《おう》じることにした。¦I accepted the offer after due consideration.¦¦3cdq¦bunbuku¦CK¦結果\t3¦｜汚染《おせん》の｜結果《けっか》、その｜湖《みずうみ》には｜生物《せいぶつ》が｜何一《なにひと》ついない。¦As a result of pollution, the lake is without any form of life.¦1¦41hx¦¦carlosalberto¦結果\t3¦｜連邦議会《れんぽうぎかい》がその｜法案《ほうあん》を｜可決《かけつ》した｜結果《けっか》、それまで｜以上《いじょう》に｜多《おお》くの｜国旗《こっき》が｜焼《や》き｜捨《す》てられたに｜違《ちが》いありません。¦I am sure that more flags were burned as a result of Congress passing that law than had ever been burned before.¦¦1nqf¦mookeee¦¦結果",
   ],
 };

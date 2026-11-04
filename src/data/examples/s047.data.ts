@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 48 of 144, from "0snmw". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 48 of 144, from "0sn9k". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,20 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0sn9k\t1¦｜彼《かれ》らはその｜光景《こうけい》を｜重大視《じゅうだいし》した。¦They made much of what they saw.¦1¦23ki¦¦¦重大視",
+    "0snay\t1¦このショーではロボットに｜重点《じゅうてん》がおかれている。¦In this show, the accent is on robots.¦3¦4slc¦¦¦重点",
+    "0sndq\t1¦そのような｜行《おこな》いをすれば｜違反者《いはんしゃ》は｜重《おも》｜罰《ばつ》を｜受《う》けるだろう。¦Such conduct would subject the offender to a heavy penalty.¦1¦4jzc¦¦¦重罰",
+    "0sne0\t1¦｜新聞《しんぶん》に「｜重版《じゅうはん》｜出来《しゅったい》」と｜広告《こうこく》した。¦It was advertised as a second edition in the newspapers.¦2¦1mmw¦kamojun¦¦重版",
+    "0snea\t1¦｜彼《あれ》は｜重病《じゅうびょう》だと｜言《い》われている。¦They say that he is seriously ill.¦3¦28i3¦¦CK¦重病",
+    "0sngi\t1¦この｜重役《じゅうやく》のポストに｜適当《てきとう》な｜人物《じんぶつ》を｜見《み》つけるには、｜人材《じんざい》｜斡旋業者《あっせんぎょうしゃ》に｜依頼《いらい》する｜必要《ひつよう》がある。¦We'll need a head hunting agency to find the right man for this executive position.¦¦4qpi¦¦CK¦重役",
+    "0sngs\t1¦｜昨日《きのう》の｜重役会《じゅうやっかい》は｜大成功《だいせいこう》だった。¦Yesterday's board meeting was a ten-strike!¦1¦3n79¦¦¦重役会",
+    "0snhw\t1¦その｜結《むす》び｜目《め》を｜守《まも》るのは｜重要《じゅうよう》なことだ。¦Maintaining that tie is important.¦1¦4iwx¦¦CK¦重要な",
+    "0snig\t1¦その｜議論《ぎろん》を｜彼《あれ》は｜重要視《じゅうようし》した。¦The argument weighed with him.¦1¦4j63¦¦¦重要視",
+    "0sniq\t1¦｜私《わたし》たちはその｜重要性《じゅうようせい》を｜主張《しゅちょう》した。¦We insisted on its importance.¦1¦3kdr¦¦¦重要性",
+    "0snj0\t1¦｜奈良《なら》は、｜国宝《こくほう》や｜重要文化財《じゅうようぶんかざい》が｜豊富《ほうふ》である。¦Nara is rich in National Treasures and Important Cultural Assets.¦1¦2n3o¦¦¦重要文化財",
+    "0snk4\t1¦｜体積《たいせき》が｜大《おお》きいからといって｜常《つね》に｜重量《じゅうりょう》も｜重《おも》いとは｜限《かぎ》らない。¦Great bulk does not always mean great weight.¦2¦2ygi¦¦¦重量",
+    "0snmc\t1¦月の重力は地球の６分の１である。¦The gravity of the moon is one-sixth of that of the earth.¦¦3rj6¦arnab¦CM¦重力",
+    "0snmm\t1¦｜赤《あか》ちゃんを｜育《そだ》てるのは｜重労働《じゅうろうどう》です。¦Bringing up a baby is hard work.¦3¦31qt¦¦CK¦重労働",
     "0snmw\t1¦｜警察《けいさつ》は｜簡単《かんたん》に｜銃《じゅう》を｜使《つか》ってはいけない。¦Police can't be trigger happy.¦1¦3ryi¦¦¦銃",
     "0snn6\t1¦｜指揮官《しきかん》は｜部下《ぶか》を｜銃火《じゅうか》にさらした。¦The commander exposed his men to gunfire.¦1¦3ltc¦¦¦銃火",
     "0snng\t1¦｜銃器《じゅうき》メーカーは｜小火器《しょうかき》による｜暴力《ぼうりょく》｜事件《じけん》に｜対《たい》する｜責任《せきにん》を｜逃《のが》れてきた。¦Gun makers have been able to escape responsibility for firearm violence.¦1¦365l¦¦¦銃器",
@@ -201,14 +215,5 @@ export const PIECE: WordsPiece = {
     "0ss6s\t1¦それはアメリカの｜初代《しょだい》｜大統領《だいとうりょう》にちなんで｜名《な》づけられた。¦It was named after the first American president.¦1¦4elw¦¦CM¦初代",
     "0ss7m\t1¦｜初潮《しょちょう》は13｜歳《とし》の｜時《とき》でした。¦I had my first period when I was 13 years old.¦1¦35t8¦tommy__san¦¦初潮",
     "0ss8q\t1¦｜事実《じじつ》、｜海《うみ》は｜今世紀《こんせいき》の｜初頭《しょとう》よりすでに10cmも｜上昇《じょうしょう》しているのである。¦In fact, the sea has already risen 10 centimeters since the beginning of this century.¦1¦38d3¦¦CK¦初頭",
-    "0ss90\t1¦｜初日《しょにち》から｜番狂《ばんくる》わせが｜多《おお》かった。¦There were many upsets right from the first day.¦1¦35t7¦¦¦初日",
-    "0ssae\t1¦初版は１０年前に出版された。¦The first edition was published ten years ago.¦2¦35t6¦¦CK¦初版",
-    "0ssao\t1¦｜裁判官《さいばんかん》は、それが｜初犯《しょはん》であることを｜考慮《こうりょ》に｜入《い》れた。¦The judge took into consideration the fact that it was his first offense.¦1¦3ndj¦¦CM¦初犯",
-    "0ssbs\t1¦かいつまんで｜話《はな》せば、｜彼《あれ》は｜初恋《はつこい》の｜人《じん》と｜結婚《けっこん》したのだ。¦To make a long story short, he married his first love.¦1¦4uqd¦bunbuku¦CM¦初恋",
-    "0ssc2\t1¦「夫は２年前に亡くなりました」と初老の女性は言った。¦\"My husband passed on two years ago,\" an elderly lady said.¦3¦527y¦mookeee¦Lepotdeterre¦初老",
-    "0sscc\t1¦さあ、｜今《いま》｜汲《く》みなさい。そして｜宴会《えんかい》の｜世話役《せわやく》の｜所《ところ》に｜持《も》っていきなさい。¦Now draw some out and take it to the master of the banquet.¦¦4ne0¦¦¦所\t4¦「そのうちに、あなたのところにお｜邪魔《じゃま》してもいいですか」「どうぞ、どうぞ」¦\"Do you mind if I call on you sometime?\" \"No, not at all.\"¦1¦52im¦mookeee¦CM¦ところ\t5¦｜驚《おどろ》かない｜所《ところ》をみると｜知《し》ってたのね。¦Seeing that you're not surprised, I think you must have known.¦1¦3uk¦bunbuku¦AlanF_US¦所\t8¦おじを｜見送《みおく》りに｜駅《えき》に｜行《おこな》ってきたところだ。¦I have been to the station to see my uncle off.¦4¦4voq¦bunbuku¦CK¦ところ\t9¦あっ、いけない！忘れるところだった！¦Oh, no! I almost forgot!¦3¦50to¦Sim5634¦Lumi_alt¦ところ",
-    "0sscm\t1¦「ところでよ、そのおめーのお父さんはどこにいんのさ？」「横転したトラックの下なんよ」¦\"By the way, where's your old man?\" \"Under that over-turned truck.\"¦3¦52h5¦mookeee¦¦ところで\t2¦ぶつくさ｜言《い》ったところでしょうがない。¦Complaining won't change anything.¦4¦1dmwl¦tommy_san¦CK¦ところで",
-    "0sscw\t1¦その｜祭《まつり》りはつまらないどころではありませんでした。¦The festival was far from dull.¦2¦4igd¦¦orcrist¦どころではありませんでした",
-    "0ssdq\t1¦これがいわゆる「｜天《てん》ぷら」というものです。¦This is what we call \"tempura\".¦5¦4ozn¦small_snow¦AlanF_US¦いわゆる",
   ],
 };

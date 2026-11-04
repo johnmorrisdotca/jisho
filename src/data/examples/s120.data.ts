@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 121 of 144, from "1775". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 121 of 144, from "175wa". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,20 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "175wa\t1¦｜彼女《かのじょ》は｜怒《おこ》りっぽい。¦She has a hot temper.¦3¦1zv5¦bunbuku¦CK¦怒りっぽい",
+    "175xe\t1¦｜急《せ》いては｜事《こと》をし｜損《そん》ずる。¦Hurrying leads to mistakes being made.¦2¦8k8e¦blay_paul¦blay_paul¦し損ずる",
+    "175xo\t1¦｜信号機《しんごうき》が｜赤《あか》の｜間《あいだ》は｜道路《どうろ》を｜渡《わた》るな。¦Don't cross the road when the signal is red.¦3¦34fc¦¦CM¦赤\t3¦サダムが｜脅威《きょうい》でないなどと｜言《い》うのは、｜赤《あか》がかった｜反戦運動《はんせんうんどう》の｜人達《ひとたち》くらい。¦It's only the anti-war pinkos who say things like Saddam isn't a threat.¦1¦1l7h¦fcbond¦fcbond¦赤",
+    "175xy\t1¦そして、だからこそ、ほぼ｜百年《ひゃくねん》にわたって、｜従業員《じゅうぎょういん》はだれでも｜雇用者《こようしゃ》のところに｜行《おこな》って、｜現金《げんきん》による｜賃金《ちんぎん》｜支給《しきゅう》を｜要求《ようきゅう》できるようになったのです。¦And that's why for almost a hundred years, any employee has been able to go to his employer and insist on being paid in cash.¦1¦4krx¦¦shekitten¦にわたって",
+    "175y8\t1¦あ、そうだったわね。じゃあ、みみっちいのはあんたの｜買《か》い｜方《かた》ってことね。¦Oh yes, you're right. Well, it's the way you shop that's tight-fisted then.¦4¦1ncz¦¦¦みみっちい",
+    "17610\t1¦｜中高年《ちゅうこうねん》の｜人《ひと》たちの｜大部分《だいぶぶん》が｜将来《しょうらい》に｜対《たい》して｜不安《ふあん》を｜感《かん》じていた。¦The majority of the middle-aged people felt anxiety for their future.¦¦2pm7¦¦¦中高年の",
+    "176b0\t1¦からだ｜全体《ぜんたい》が｜密《みつ》に｜毛《け》でおおわれている。¦The entire body is densely covered with hair.¦1¦4uir¦¦¦密に",
+    "176co\t1¦オリーブオイルを１８ＭＴ注文します。¦We'd like to order 18 tonnes of olive oil.¦4¦4vim¦¦Swift¦オリーブオイル",
+    "176v0\t1¦この｜宇宙《うちゅう》には｜知的生命体《ちてきせいめいたい》が｜存在《そんざい》するのはまず｜間違《まちが》いないと｜思《おも》うが、その｜生命体《せいめいたい》が｜地球《ちきゅう》に｜来《く》る｜可能性《かのうせい》は｜殆《ほとん》ど｜無《な》し。¦I think it is certain that there is intelligent life in this universe, but the likelihood of that life coming to Earth is practically nil.¦¦1ln5¦fcbond¦fcbond¦生命体",
+    "176w4\t1¦｜艱難汝《かんなんなんじ》を｜玉《たま》にす。¦Adversity makes a man wise, not rich.¦¦1nh4¦KK_kaku_¦¦汝",
+    "176wo\t1¦｜彼《あれ》は｜背水《はいすい》の｜陣《じん》で｜闘《たたか》った。¦He fought a last-ditch battle.¦1¦2ls8¦xtofu80¦xtofu80¦背水の陣",
+    "176yw\t1¦｜先生《せんせい》に｜怒《おこ》られたってへっちゃらだい。¦I couldn't care less if the teacher is mad at me.¦3¦31d7¦bunbuku¦CM¦へっちゃら",
+    "1772i\t1¦｜儂《わし》の｜目《め》もガタがきたかの。¦Have my eyes also started to fail?¦¦1mdf¦mookeee¦CM¦儂の",
+    "1773c\t1¦｜消息筋《しょうそくすじ》によると、○○｜社《やしろ》は｜東証一部《とうしょういちぶ》への｜上場《じょうじょう》を｜準備《じゅんび》している。¦According to informed sources, ____ Ltd. is preparing for the move up to the first section of the Tokyo Stock exchange.¦1¦1lgz¦fcbond¦fcbond¦社",
     "17750\t1¦鳥類の発声において真に驚異的な点は、鳴管の２つの側面が独立して動くことができるということである。¦The truly remarkable feature of sound production by birds is that the two sides of the syrinx can act independently.¦¦2p1i¦¦papabear¦鳴管",
     "1775a\t1¦その｜小《ちい》さな｜地方《ちほう》は｜州《しゅう》と｜呼《よ》ばれており、それぞれの｜州《しゅう》に｜州議会《しゅうぎかい》があります。ウェストハンプトン｜州議会《しゅうぎかい》もそのひとつです。¦These smaller parts are called counties, and each county has a county council, like Westhamptonshire County Council.¦2¦4hhg¦KK_kaku_¦papabear¦州議会",
     "1776y\t1¦｜彼《あれ》は｜偽小切手《ぎこぎって》をつかまされた。¦He was cheated into accepting the forged check.¦1¦2br1¦¦¦偽小切手",
@@ -194,20 +208,5 @@ export const PIECE: WordsPiece = {
     "17fy8\t1¦｜数歩《すうほ》｜先《さっき》で｜小《ちい》さな｜子《こ》がつまずいて｜転《ころ》ぶのを｜見《み》た。¦I saw a little boy fall over a few steps ahead.¦3¦32pw¦¦¦数歩",
     "17fyi\t1¦インターネットのテクノロジーは｜日進月歩《にっしんげっぽ》、いや、｜秒進分歩《びょうしんふんぽ》で｜進歩《しんぽ》している。¦Day by day and month by month, Internet technology is growing. Actually, make that second by second and minute by minute.¦¦4w86¦¦¦秒進分歩",
     "17fzw\t1¦その｜映画《えいが》はお｜涙頂戴《なみだちょうだい》ものだ。¦The movie is a stereotyped sob story.¦¦4jsk¦¦¦お涙頂戴",
-    "17g0q\t1¦｜浅学非才《せんがくひさい》の｜私《わたし》ではありますが、｜何《なに》とぞ｜皆様《みなさま》のお｜力《ちから》を｜賜《たまわ》りたく、ここにお｜願《ねが》い｜申《もう》し｜上《あ》げる｜次第《しだい》です。¦I may not have much to offer in the way of learning or ability, but I want to do whatever I can for us all and humbly ask for your favor.¦1¦30yz¦¦¦お願い申し上げる",
-    "17g2e\t1¦それは｜今《いま》でも｜男女《だんじょ》を｜問《と》わず｜愛読《あいどく》されている｜本《もと》です。¦It is, even now, a book loved by men and women alike.¦3¦dher¦blay_paul¦blay_paul¦問わず",
-    "17g2y\t1¦いやでもその｜仕事《しごと》をしなければならない。¦You must do the work even if you don't like it.¦4¦4wam¦¦CK¦いやでも",
-    "17g3s\t1¦｜我々《われわれ》は｜決定《けってい》にあたって｜偏見《へんけん》に｜左右《さゆう》されるべきではない。¦We should not be influenced in our decisions by our prejudices.¦1¦3zfk¦¦auxitt¦べきではない",
-    "17g4c\t1¦｜仕事《しごと》はあとどれだけ｜残《のこ》っていますか。¦How much more work do you have?¦3¦3mhu¦¦CK¦どれだけ",
-    "17g8i\t1¦｜俺《おれ》が｜日本《にほん》の｜総理大臣《そうりだいじん》ならクリントンにガツンと｜言《い》ってやるのになあ。¦If I were prime minister, I'd give Clinton a good talking to.¦¦41di¦bunbuku¦CN¦ガツンと言って",
-    "17g9w\t1¦｜旅行会社《りょこうがいしゃ》は｜旅行《りょこう》の｜詳細《しょうさい》を｜全《すべ》て｜私《わたし》たちに｜教《おし》えてくれた。¦The travel company furnished us with all the details of the tour.¦1¦1oap¦mookeee¦CM¦旅行会社",
-    "17gco\t1¦｜雨天中止《うてんちゅうし》になりそうな｜計画《けいかく》だな。¦That's a plan that sounds likely to be cancelled by rain.¦4¦1m24¦fcbond¦fcbond¦雨天中止",
-    "17gdi\t1¦オランダ｜語《ご》はドイツ｜語《ご》と｜密接《みっせつ》なつながりがある。¦Dutch is closely related to German.¦1¦4vio¦bunbuku¦CK¦オランダ語",
-    "17ge2\t1¦「ウィキペディアを｜引用《いんよう》するな」という｜主張《しゅちょう》が｜昨日《きのう》だか｜一昨日《おととい》だかの｜朝日《あさひ》｜新聞《しんぶん》に｜載《の》っていた。¦The exhortation \"Don't quote Wikipedia\" was included in the Asahi newspaper of yesterday or the day before.¦1¦1m4r¦fcbond¦fcbond¦ウィキペディア",
-    "17ggu\t1¦｜粘液便《ねんえきべん》がでます。¦I have mucous in my stool.¦1¦2ly7¦¦shekitten¦粘液便",
-    "17ghe\t1¦｜杳《よう》として｜行方《ゆくえ》が｜知《し》れない。¦Nothing whatever is known of him.¦¦1mdc¦mookeee¦¦杳として",
-    "17gii\t1¦いずれにせよ、その｜隔《へだ》たりは｜現実《げんじつ》のものであり、｜実際《じっさい》に｜役《やく》に｜立《た》つものではあるのだが、｜同時《どうじ》にそれは｜誤解《ごかい》を｜招《まね》くおそれのあるものでもある。¦In either case, the division is real and useful; but it can also be misleading.¦1¦4ws4¦¦¦おそれのある",
-    "17gme\t1¦お｜言葉《ことば》に｜甘《あま》えてお｜借《か》りいたします。¦I will borrow it then, if you insist.¦2¦4vam¦¦¦言葉に甘えて",
-    "17gp6\t1¦｜顧問《こもん》は｜学長《がくちょう》を｜推戴《すいたい》し、｜本会《ほんかい》の｜重要事項《じゅうようじこう》に｜関《かん》し｜諮問《しもん》に｜応《おう》じる。¦The consultant, who is under the authority of the Chancellor, gives the committee advice on important questions.¦¦1ms5¦¦papabear¦本会",
   ],
 };

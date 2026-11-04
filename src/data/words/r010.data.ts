@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 11 of 316, from "あらだつ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 11 of 316, from "あらだ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "あらだき\t粗炊き\t#1fay0\tfood¦simmered fish",
     "あらだつ\t荒立つ\tg#ztii\t¦to become rough (waves, temper, etc.)¦to become excited\t¦to become aggravated",
     "あらだてる\t荒立てる\ti#rgxy\t¦to aggravate (a situation)¦to complicate matters¦to stir things up\t¦to roughen (waves, voice, feelings, etc.)¦to agitate",
     "あらちゃ\t荒茶\t#1omtf\t¦aracha¦unprocessed tea¦unrefined tea",
@@ -869,6 +870,5 @@ export const PIECE: WordsPiece = {
     "アロステリック\t\t#1g96i\t¦allosteric",
     "アロステリックこうか\tアロステリック効果\t#1fwxe\t¦allosteric effect",
     "アロゼ\t\t#1pipq\tfood¦basting",
-    "アロタイプ\t\t#1g96s\t¦allotype",
   ],
 };

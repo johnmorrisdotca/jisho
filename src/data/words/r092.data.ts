@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 93 of 316, from "げーむ・えん". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 93 of 316, from "げーむ・えみゅれーたー". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "ゲーム・エミュレーター\t\t#1pcvh\t¦game console emulator",
     "ゲーム・エンジン\t\t#1or5k\tvidg¦game engine",
     "ゲーム・オブ・スローンズ\t\t#3f28u\twork¦Game of Thrones (TV series)",
     "ゲーム・オーバー\t\t#mgyi\tvidg¦game over",
@@ -888,6 +889,5 @@ export const PIECE: WordsPiece = {
     "こうがくきかい\t光学機械|光学器械\t#10v3u\t¦optical instrument",
     "こうがくけい\t光学系\t#1ozjq\t¦optical system",
     "こうがくけんびきょう\t光学顕微鏡\t#10v44\t¦optical microscope",
-    "こうがくし\t工学士\t#zwbw\t¦Bachelor of Engineering",
   ],
 };

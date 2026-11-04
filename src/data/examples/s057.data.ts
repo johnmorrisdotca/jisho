@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 58 of 144, from "0tsf". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 58 of 144, from "0tsbm". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,11 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0tsbm\t1¦その｜商品《しょうひん》はテレビで｜宣伝《せんでん》されている。¦The goods are advertised on TV.¦1¦4hhx¦¦¦宣伝",
+    "0tsd0\t1¦｜私《わたし》はフランス｜語《ご》を｜専攻《せんこう》するつもりです。¦I am going to major in French.¦1¦3eo7¦bunbuku¦CK¦専攻",
+    "0tsdk\t1¦アンはその｜仕事《しごと》に｜専心《せんしん》した。¦Ann bent her mind to the work.¦2¦4x31¦¦¦専心",
+    "0tse4\t1¦｜特典《とくてん》の｜一《ひと》つとして｜専属《せんぞく》｜運転手《うんてんしゅ》がお｜客様《きゃくさま》に｜一人《ひとり》ずつ｜着《つ》きます。¦Special services include a personal driver for each guest.¦1¦2n9f¦¦papabear¦専属",
+    "0tsey\t1¦まずは、｜自分《じぶん》の｜事《こと》に｜専念《せんねん》しなさい。¦Tend to your own affairs first.¦¦46x7¦small_snow¦CM¦専念",
     "0tsf8\t1¦これは｜当店《とうてん》の｜専売《せんばい》です。¦Our store has a monopoly on this item.¦2¦1jvsg¦JimBreen¦JimBreen¦専売",
     "0tsfi\t2¦あの｜専務《せんむ》はまったくの｜面食《めんく》いです。¦The executive director is a real pushover for looks.¦2¦4xz0¦¦¦専務",
     "0tsg2\t1¦それは｜専門家《せんもんか》に｜任《まか》せたほうがいいよ。¦Leave that job to the experts!¦2¦4e7d¦bunbuku¦CK¦専門家",
@@ -208,9 +213,5 @@ export const PIECE: WordsPiece = {
     "0twn6\t1¦コピー｜紙《し》の｜節約《せつやく》｜運動《うんどう》が｜全社《ぜんしゃ》｜的《てき》に｜展開《てんかい》されている。¦A campaign is underway throughout the company to achieve economy in the use of copying paper.¦¦4p2b¦¦¦全社",
     "0twng\t1¦この全集の５巻目が見当たらない。¦The fifth volume of this set is missing.¦2¦4qbd¦¦CK¦全集",
     "0twou\t1¦｜家《いえ》は｜全焼《ぜんしょう》した。¦The house was burned to the ground.¦2¦40am¦tommy__san¦Zifre¦全焼",
-    "0twpe\t1¦｜彼女《かのじょ》は｜全身《ぜんしん》ずぶぬれだった。¦She was soaked from head to foot.¦¦1w2c¦¦CK¦全身",
-    "0twrw\t1¦ある｜人《ひと》｜物《もの》が｜不変《ふへん》の｜性質《せいしつ》で｜全人生《ぜんじんせい》を｜貫《つらぬ》くということは｜小説《しょうせつ》の｜中《うち》だけの｜話《はなし》だ。¦Only in novels do you find individuals who live out their whole life with unvarying character.¦1¦1lfv¦fcbond¦fcbond¦全人生",
-    "0twsq\t1¦｜全世界《ぜんせかい》の｜人々《ひとびと》が｜平和《へいわ》を｜切望《せつぼう》している。¦The whole world hungers for peace.¦3¦30mw¦¦CM¦全世界",
-    "0twta\t1¦｜教育《きょういく》は｜若《わか》い｜時代《じだい》に｜限《かぎ》られてはならず、われわれの｜全生涯《ぜんしょうがい》を｜通《つう》じて｜継続《けいぞく》して｜行《おこな》われるものでなければならない。¦Education must not be limited to our youth, but it must be a continuing process through our entire lives.¦1¦3v5k¦¦jakov¦全生涯",
   ],
 };

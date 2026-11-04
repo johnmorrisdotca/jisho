@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 42 of 316, from "おぼえ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 42 of 316, from "おほーつくぶ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,9 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "オホーツクぶんか\tオホーツク文化\t#1p5lv\t¦Okhotsk culture",
+    "オボアルブミン\t\t#1b1gg\t¦ovalbumin",
+    "おぼうさん\tお坊さん\tC~i#ykgu\tfam,hon¦Buddhist priest¦monk\tfam,hon¦son (of others)",
     "おぼえ\t覚え\tC~ni16#pul4\t¦memory¦sense¦experience",
     "おぼえがき\t覚書|覚え書き\tC~n11#y2b8\t¦memo¦memorandum¦note\t¦(diplomatic) memorandum",
     "おぼえがめでたい\t覚えがめでたい\t#19gzo\t¦to stand high in one's superior's favor and trust",
@@ -696,7 +699,5 @@ export const PIECE: WordsPiece = {
     "おやみたけりゃこをみろ\t親見たけりゃ子を見ろ\t#1ftvy\tproverb¦like father, like son",
     "おやみだし\t親見出し\t#1fbr6\t¦main entry (in dictionary)",
     "おやむし\t親虫\t#1p991\t¦imago¦adult (insect)",
-    "おやむすめ\t親娘\t#1ia2e\t¦parent and daughter",
-    "おやもじ\t親文字\t#10vo4\t¦entry kanji in a kanji dictionary\t¦capital letter\t¦matrix (printing)\t¦kanji corresponding to furigana",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 125 of 144, from "18kf". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 125 of 144, from "18k2". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,27 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "18k2e\t1¦ローマは｜訪《おとず》れる｜価値《かち》のある｜都市《とし》だ。¦Rome is a city worth visiting.¦1¦44c3¦¦CK¦ローマ",
+    "18k2y\t1¦｜私《わたし》はおもちゃ｜屋《や》の｜隣《となり》に｜住《す》んでいます。¦I live next door to the toy shop.¦1¦3gfn¦KK_kaku_¦CK¦おもちゃ屋",
+    "18k38\t1¦｜土曜日《どようび》のカラオケ｜屋《や》は｜特《とく》に｜混《こ》んでいる。¦The karaoke shop is especially crowded on Saturdays.¦2¦2o1c¦mookeee¦¦カラオケ屋",
+    "18k3i\t1¦これは、どんながんばり｜屋《や》でもやる｜気《き》をなくすほど｜忍耐《にんたい》のいることだ。¦This is so enduring as to make even the most diligent worker give up.¦1¦4or7¦¦¦がんばり屋",
+    "18k42\t1¦だがすでに、｜賽《さい》は｜投《な》げられた。¦However, the die had already been cast.¦¦1lk3¦fcbond¦fcbond¦賽は投げられた",
+    "18k4c\t1¦あいつが｜俺《おれ》に｜向《む》かって｜啖呵《たんか》を｜切《き》った。¦He hurled defiance at me.¦¦512w¦¦¦啖呵を切った",
+    "18k56\t1¦まさかオレがごねずにすっきり｜起《お》きると｜思《おも》っていなかったに｜違《ちが》いない。¦Certainly she wouldn't have dreamt that I would get up promptly without grumbling.¦3¦1myo¦¦¦ごねず",
+    "18k5g\t1¦「わはははは、心配するなっ！」オレはあえて虚勢を張った。¦\"Ha-ha-ha-hah! Don't worry!\" I brazenly bluffed.¦1¦1nez¦¦¦虚勢を張った",
+    "18k5q\t1¦それじゃあ｜元《もと》も｜子《こ》もないじゃないか。¦Then that means I lost everything.¦4¦4et7¦bunbuku¦CM¦元も子もない",
+    "18k60\t1¦みんな｜忙《いそが》しくしているのに、そんなところでノウノウと｜休憩《きゅうけい》してるんじゃないよ。¦You can't just lounge around like that while everybody else is so busy.¦1¦46e6¦¦CK¦ノウノウと",
+    "18k6k\t1¦｜擬声語《ぎせいご》｜的《てき》｜表現《ひょうげん》については、ホピ｜語《ご》に｜興味深《きょうみぶか》い｜例《れい》がある。¦As to onomatopoetic expressions, we find interesting examples in Hopi.¦¦3x5c¦¦fishda¦ホピ語",
+    "18k6u\t1¦ちょっと｜大《おお》きいけど、この｜封筒《ふうとう》でいいや。｜大《だい》は｜小《しょう》を｜兼《か》ねるって｜言《い》うし。¦It might be a bit big but this envelope will do just fine. It's better to be too big than too small.¦1¦4cfg¦bunbuku¦¦大は小を兼ねる",
+    "18k74\t1¦われわれの｜世界《せかい》は｜宇宙《うちゅう》の｜小部分《しょうぶぶん》にすぎない。¦Our world is only a small part of the universe.¦¦43xi¦¦CM¦小部分",
+    "18k7e\t1¦｜小企業《しょうきぎょう》は｜大会社《だいがいしゃ》にしばしば｜吸収《きゅうしゅう》される。¦Small business are often absorbed by a major company.¦1¦35el¦¦¦小企業",
+    "18k7o\t1¦｜私《わたし》はコートを｜広間《ひろま》の｜小部屋《こべや》にかけた。¦I hung my coat in the hall closet.¦3¦3gal¦¦CK¦小部屋",
+    "18k7y\t1¦｜最近《さいきん》は｜小家族化《しょうかぞくか》の｜傾向《けいこう》がある。¦There's a trend these days towards small families.¦2¦3nok¦¦CM¦小家族化",
+    "18k88\t1¦｜母親《ははおや》の｜象《しょう》は｜川《かわ》の｜中《うち》で｜小象《こぞう》の｜体《からだ》をあらってやります。¦The mother elephant bathes her baby in the river.¦2¦1rwf¦¦CM¦小象",
+    "18k9m\t1¦｜彼《あれ》は｜側転《そくてん》をしました。¦He did a cartwheel.¦3¦1mgs¦mookeee¦CK¦側転",
+    "18kc4\t1¦｜彼《あれ》はあの｜堂々《どうどう》たる｜大邸宅《だいていたく》に｜住《す》んでいる。¦He lives in that stately mansion.¦1¦2gnb¦¦¦大邸宅",
+    "18kcy\t1¦｜安全《あんぜん》で｜美味《おい》しいとのことでオーガニック｜野菜《やさい》は｜人気《にんき》がある。¦Organic vegetables are popular because they're safe and tasty.¦2¦43mj¦¦CM¦オーガニック",
+    "18ke2\t1¦｜昨日《きのう》、ひょんなことで｜父親《ちちおや》の｜戸籍抄本《こせきしょうほん》のコピーを｜見《み》てしまいました。¦Yesterday I stumbled across a copy of my father's family register.¦1¦1lko¦fcbond¦fcbond¦ひょんな",
     "18kf6\t1¦研究の初年度に、彼は自分がＡＬＳにかかっていることを知った。¦During the first year of his research, he learned he had ALS.¦¦3r73¦¦CK¦ＡＬＳ",
     "18kfg\t1¦そのチーズケーキは｜甘《あま》すぎた。¦The cheesecake tasted too sweet.¦2¦4kc5¦xtofu80¦CK¦チーズケーキ",
     "18kfq\t1¦ニューススタンドで｜聞《き》いて｜下《くだ》さい。¦You'll have to ask at the newsstand.¦5¦1n0u¦bunbuku¦CK¦ニューススタンド",
@@ -195,24 +216,5 @@ export const PIECE: WordsPiece = {
     "18nje\t1¦この｜本《もと》は｜我々《われわれ》｜英学《えいがく》｜生《なま》にとっては｜正《まさ》に｜座右《ざゆう》の｜書《しょ》である。¦This book is a must for every student studying English.¦1¦4phn¦¦¦英",
     "18njo\t1¦｜責任逃《せきにんのが》れをするな。¦Don't try to pass the buck.¦3¦31si¦small_snow¦CM¦責任逃れ",
     "18njy\t1¦そういえば。やばい、｜秀《しゅう》｜樹《き》に｜毒《どく》されてるわ。¦Now that you mention it. Yeek, Hideki's habits are rubbing off on me!¦1¦1n53¦¦shekitten¦毒されてる",
-    "18nk8\t2¦｜彼《あれ》はとにかくコンピューター｜漬《づ》けだからね。¦He eats, breathes and sleeps computers.¦1¦2e1d¦¦CM¦漬け",
-    "18nlc\t1¦そのズボンは｜大《おお》きすぎます。¦Those pants are too big.¦5¦1dilu¦Blanka_Meduzo¦CK¦大きすぎます",
-    "18nlm\t1¦｜瓜《うり》のつるに｜茄子《なす》はならぬ。¦You don't get eggplants from a gourd vine.¦¦1mwf¦mookeee¦CM¦瓜のつる",
-    "18nmq\t1¦｜諺《ことわざ》にもある｜通《どお》り「｜虎穴《こけつ》に｜入《い》らずんば｜虎子《こじ》を｜得《え》ず」だ。¦As the saying goes, \"Nothing ventured, nothing gained.\"¦¦3qrs¦¦CM¦虎穴に入らずんば虎子を得ず",
-    "18nn0\t1¦フランス｜人《じん》は｜芸術《げいじゅつ》を｜愛好《あいこう》すると｜言《い》われている。¦The French are said to love art.¦2¦47z2¦¦Eldad¦フランス人",
-    "18nna\t2¦｜文《ぶん》は｜武《ぶ》に｜勝《まさ》る。¦The pen is mightier than the sword.¦2¦1sko¦stephenmk¦CK¦武",
-    "18nnk\t1¦｜忍《にん》を｜行《ぎょう》じてのみ、よく｜怨《うら》みを｜解《と》くことを｜得《え》る。¦By love alone is enmity allayed.¦¦2m5r¦¦¦忍",
-    "18nnu\t1¦｜我々《われわれ》はこの｜町《まち》を｜小京都《しょうきょうと》と｜呼《よ》ぶ。¦We refer to this city as Little Kyoto.¦1¦3zll¦¦Swift¦小京都",
-    "18no4\t1¦｜大《おお》か、｜小《しょう》か。¦Large or small?¦5¦2yaq¦¦CM¦小",
-    "18noe\t1¦スキージャンプで２０２メートルを出せる飛び方を発見した！¦I've found a way of jumping so you can get 202m in the ski-jump!¦3¦1llb¦fcbond¦fcbond¦スキージャンプ",
-    "18noo\t1¦｜彼女《かのじょ》はトルコ｜人《じん》の｜彼《あれ》がいる。¦She's got a Turkish boyfriend.¦3¦1ll2¦fcbond¦fcbond¦トルコ人",
-    "18noy\t1¦｜彼《あれ》は｜夏中《げちゅう》ずっと｜長野《ながの》にいた。¦He stayed in Nagano throughout the summer.¦3¦2ccb¦¦CK¦中\t2¦｜最終《さいしゅう》｜提案《ていあん》は｜来週中《らいしゅうちゅう》に｜発表《はっぴょう》されます。¦The final proposal will be announced sometime next week.¦1¦3nkk¦¦CM¦中\t3¦その｜知《し》らせは｜村中《むらじゅう》に｜不安《ふあん》をまき｜起《お》こした。¦The news caused alarm throughout the village.¦2¦4ggi¦¦CM¦中\t3¦うわさの｜正体《しょうたい》をつきとめるために、｜会社《かいしゃ》｜中《うち》を｜調《しら》べ｜回《めぐ》っているんだ。¦I've been nosing around the office trying to find out the news.¦3¦4vzj¦¦¦中\t4¦その｜事《こと》｜件《けん》は｜学校《がっこう》｜中《うち》にショックを｜与《あた》えた。¦The incident gave a shock to the whole school.¦3¦4i0a¦¦¦中",
-    "18nq2\t3¦ＯＫが出たので、思わずグラスランナーのシーフ・バードというベタなキャラを作っちゃいましたよ。¦I got the OK so I unthinkingly created the clichéd 'grass runner thief/bard' character.¦4¦1nd5¦mookeee¦¦ベタな",
-    "18nqm\t1¦ついうっかりしてバスを｜乗《の》り｜間違《まちが》えた。¦I wasn't being mindful and got on a wrong bus by mistake.¦3¦4ceh¦¦¦乗り間違えた",
-    "18nqw\t1¦｜彼《かれ》らは｜宝物《たからもの》を｜探《さが》しに｜行《おこな》った。¦They went in search of treasure.¦2¦227b¦¦CM¦探しに",
-    "18nr6\t1¦｜彼《あれ》は｜気《き》を｜失《しつ》いあお｜向《む》けに｜倒《たお》れた。¦He fainted and fell on his back.¦3¦2brt¦¦CK¦気を失い",
-    "18nt4\t1¦｜彼《あ》の｜子供《こども》っぽい｜笑《わら》い｜方《ほう》が｜素敵《すてき》よね。¦His childlike laugh is charming.¦1¦2ifw¦¦CM¦っぽい",
-    "18nte\t1¦ビールは｜麦芽《ばくが》の｜含有量《がんゆうりょう》によって｜課税《かぜい》されるから、｜発泡酒《はっぽうしゅ》の｜方《ほう》が｜安《やす》いんだよ。¦Beer is taxed according to its malt content, so low-malt beer is cheaper.¦1¦1n09¦mookeee¦CM¦発泡酒",
-    "18nyy\t1¦｜彼自身《かれじしん》がそこへ｜行《おこな》った。¦He himself went there.¦¦21vt¦¦CM¦彼自身",
   ],
 };

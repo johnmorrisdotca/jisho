@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 130 of 144, from "19tk". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 130 of 144, from "19sum". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,23 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "19sum\t1¦ローマは、｜一日《いちにち》にして｜建設《けんせつ》されたものではない。¦Rome was not built in a day.¦2¦44cf¦¦CK¦にして",
+    "19svg\t1¦つきが｜回《まわ》ってきた。¦Fortune has turned in my favor.¦3¦4cbe¦mookeee¦Swift¦つきが回って",
+    "19sy8\t1¦｜彼女《かのじょ》にとって｜息子《むすこ》の｜成長《せいちょう》は｜何《なに》にも｜勝《まさ》る｜喜《よろこ》びだった。¦Nothing gave her greater pleasure than to watch her son growing up.¦3¦21bn¦¦CK¦何にも勝る",
+    "19t0g\t1¦｜彼《かれ》らはどこからともなく｜突然《とつぜん》｜現《あらわ》れた。¦They suddenly appeared from nowhere.¦3¦23fr¦bunbuku¦CM¦ともなく",
+    "19t74\t1¦｜暗闇《くらやみ》から｜強盗《ごうとう》が｜突如《とつじょ》として｜現《あらわ》れた。¦The robber emerged from the darkness.¦¦43kv¦¦CK¦突如として",
+    "19t7e\t1¦｜火《ひ》ばさみで｜人差《ひとさ》し｜指《ゆび》をやけどした。¦I burned my forefinger on fire tongs.¦3¦4039¦¦Dejo¦火ばさみ",
+    "19t8s\t1¦２つの組は合併されて大人数のクラスになった。¦The two classes were brought together into a larger class.¦1¦51qp¦e4zh1nmcz¦¦大人数",
+    "19t92\t1¦チキンスープがかぜを｜治《なお》すというのは｜本当《ほんとう》ですか。¦Is it true that chicken soup will cure a cold?¦3¦4cmy¦¦CK¦チキンスープ",
+    "19tfq\t1¦ダブルルームをおねがいします。¦I'd like a double room.¦5¦4cwy¦bunbuku¦CK¦ダブルルーム",
+    "19tg0\t1¦｜日記《にっき》をつけるのはよい｜習慣《しゅうかん》です。¦Keeping a diary is a good habit.¦3¦2mto¦bunbuku¦CK¦日記をつける",
+    "19tga\t1¦ここに｜絶《た》え｜間《ま》ない｜痛《いた》みがあります。¦I have a continuous pain here.¦3¦4t5d¦¦¦絶え間ない",
+    "19tgk\t1¦セーフティーボックスに｜預《あず》かってくれないか。¦Would you put this in the safety deposit box?¦2¦4l66¦¦CK¦セーフティーボックス",
+    "19tgu\t1¦｜石《いし》にかじりついても｜成功《せいこう》してみせる。¦I will succeed at any cost.¦1¦31u9¦¦¦石にかじりついても",
+    "19th4\t1¦もう｜私《わたし》は｜大人《おとな》だから、そうは｜考《かんが》えない。¦Now that I'm a grownup, I think otherwise.¦4¦45tz¦¦koosy¦そう\t1¦おまえも｜馬鹿《ばか》なら｜彼《あれ》もそうだ。¦You are stupid, and so is he.¦1¦4vjv¦¦shanghainese¦そう\t2¦「腰は痛む？」「いや、別に」「そう、それは不幸中の幸いね」¦\"Does your back hurt?\" \"No, not really.\" \"Oh, that's something then, isn't it?\"¦2¦1nep¦mookeee¦Zifre¦そう",
+    "19the\t1¦スーパーヒーローたちは、｜私《わたし》たちが｜持《も》っていない｜才能《さいのう》を｜持《も》っていると｜思《おも》いますか。¦Do you think that those superheroes are endowed with talents we don't possess?¦3¦4lxs¦¦Swift¦スーパーヒーロー",
+    "19tjc\t1¦シベリアトラは｜絶滅《ぜつめつ》の｜危機《きき》に｜瀕《ひん》している。¦The Siberian tiger is on the verge of extinction.¦¦4mqb¦KK_kaku_¦AlanF_US¦シベリアトラ",
+    "19tjm\t1¦「実を言うと、俺、高所恐怖症なんだ」「臆病者っ！」¦\"To tell you the truth, I am scared of heights.\" \"You are a coward!\"¦¦3sq¦e4zh1nmcz¦Tesseract42¦実を言うと",
     "19tkq\t1¦サマーキャンプでは、｜彼女《かのじょ》が｜私《わたし》の｜班《はん》の｜責任者《せきにんしゃ》になった。¦At the summer camp, she was in charge of the group I belonged to.¦1¦4n8r¦¦orcrist¦サマーキャンプ",
     "19tla\t1¦サポートセンターに電話するまえにＦＡＱを読んで下さい。¦Take a look at the FAQ before you call tech support.¦5¦4n8s¦¦Zifre¦サポートセンター",
     "19tm4\t1¦サイバースペースへようこそ。¦Welcome to Cyberspace!¦5¦4nbq¦¦rul¦サイバースペース",
@@ -192,20 +209,5 @@ export const PIECE: WordsPiece = {
     "1a4be\t1¦開発者は集合体として以下の権限を持つ。３：１の賛成多数をもって、この憲章を修正できる。¦Together, the developers may amend this constitution, provided a 3:1 majority is in agreement.¦1¦1muu¦¦¦開発者",
     "1a4c8\t1¦｜女房《にょうぼう》の｜手《て》は｜店員《てんいん》さんより｜一回《ひとまわ》り｜小《ちい》さい。¦My wife's hands are slightly smaller than the shop assistant's.¦1¦35lm¦¦CM¦一回り小さい",
     "1a4gy\t1¦｜私《わたくし》どもは、｜私《わたくし》どもの｜製品《せいひん》の｜市場開拓《しじょうかいたく》のため、｜貴社《きしゃ》に｜最大《さいだい》の｜努力《どりょく》を｜払《はら》っていただいていることを｜理解《りかい》しております。¦We understand that you always do your best to develop a market for our products.¦1¦3j8m¦¦CM¦市場開拓",
-    "1a4ic\t1¦「警察だ。ちょっと署まで来てもらおうか」「な、なんで？」「こんな街中でドンパチやって罪にならないわけないだろうが！！」¦\"This is the police. Would you mind coming down to the station?\" \"W-why?\" \"You can't think it's not a crime to go shooting guns off in the middle of town?!\"¦1¦1neu¦mookeee¦¦署",
-    "1a4ka\t1¦｜彼女《かのじょ》の｜髪《かみ》は｜美《うつく》しい｜巻《ま》き｜髪《がみ》になっていた。¦Her hair hung in neat coils.¦2¦20kw¦¦¦巻き髪",
-    "1a4ku\t1¦どんな｜理由《りゆう》があろうと、せっかく｜軌道《きどう》に｜乗《の》せた｜貿易《ぼうえき》を｜失墜《しっつい》させたのは｜大《おお》｜失態《しったい》だ。¦Whatever the reason, forfeiting the trade that we finally got on track is a fiasco.¦1¦1n18¦¦¦軌道に乗せた",
-    "1a4l4\t1¦｜君《きみ》の｜仕事《しごと》が｜軌道《きどう》に｜乗《の》ったら、｜値上《ねあ》げの｜話《はなし》をしましょう。¦When your business gets rolling we'll talk about an increase.¦1¦3tk5¦¦Zifre¦軌道に乗ったら",
-    "1a4lo\t1¦｜僕《ぼく》、カルパスが｜大好《だいす》きなんだ。¦I really like calpas sausage.¦1¦6fbrf¦small_snow¦JimBreen¦カルパス",
-    "1a4mi\t1¦｜合計額《ごうけいがく》を｜調《しら》べてはどうですか。¦Why don't you go over your sums?¦2¦3pm3¦¦sundown¦合計額",
-    "1a4n2\t1¦ドルは｜現地通貨《げんちつうか》に｜交換《こうかん》しなければなりません。¦You must convert dollars into the local currency.¦2¦4a2q¦¦CK¦現地通貨",
-    "1a4nc\t1¦緊急時の飲料水の確保は、大丈夫ですか？¦Are you OK for drinking water in an emergency?¦¦1mcg¦bunbuku¦¦緊急時の",
-    "1a4nm\t1¦｜格安航空券《かくやすこうくうけん》を｜利用《りよう》しよう。¦Let's get discount tickets.¦2¦3yfy¦¦CK¦格安航空券",
-    "1a4r8\t1¦｜彼《あれ》は｜総理《そうり》のたっての｜要請《ようせい》を｜固辞《こじ》した。¦He firmly refused the Premier's earnest request.¦1¦27bw¦¦¦たって",
-    "1a4sc\t1¦アブミ｜骨《こつ》は｜内耳《ないじ》の｜前庭窓《ぜんていそう》に｜接《せっ》している。¦The stirrup rests on the oval window of the inner ear.¦2¦1hq9e¦JimBreen¦JimBreen¦アブミ骨",
-    "1a4vo\t1¦｜意《い》を｜決《けっ》して｜海《うみ》の｜中《うち》に｜飛《と》び｜込《こ》んだ。¦I boldly jumped into the sea.¦3¦3ebe¦KK_kaku_¦¦意を決して",
-    "1a4ws\t1¦２００２年：国土安全保障省設立法にブッシュ大統領がサインし正式な省となる。¦2002: President Bush signs the Homeland Security Act and it becomes an official Cabinet agency.¦1¦1lhq¦fcbond¦fcbond¦国土安全保障省",
-    "1a4xc\t1¦｜顧客《こきゃく》に｜対《たい》する｜勧誘《かんゆう》の｜電話《でんわ》が、テレマーケティング｜部《ぶ》の｜主要業務《しゅようぎょうむ》である。¦Cold calls are the primary function of the telemarketing department.¦1¦3qlp¦KK_kaku_¦¦主要業務",
-    "1a4xw\t1¦｜君《きみ》が｜背《せ》の｜高《たか》い｜男《おとこ》の｜子《こ》といるのを｜見《み》たよ。¦I saw you with a tall boy.¦3¦3u1s¦bunbuku¦CK¦背の高い",
   ],
 };

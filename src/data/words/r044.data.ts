@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 45 of 316, from "おーとう". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 45 of 316, from "おーでぃーん". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,12 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "オーディーン\t\t#1d1qo\t¦Odin (god in Norse mythology)",
+    "オーデコロン\t\t#m47w\t¦eau de Cologne",
+    "オート\t\tC~g#m486\t¦auto¦automatic\t¦auto¦automobile¦car\tabbr¦three-wheeler truck",
+    "オート\t\t#1p6zv\t¦oat¦oats",
+    "オートインクリメント\t\t#1d1qy\tcomp¦auto-increment",
+    "オートインデント\t\t#1d1r8\tcomp¦auto indent",
     "オートウォーク\t\t#1hz1g\t¦moving walkway",
     "オートエアコン\t\t#1p861\t¦automatic climate control (in a vehicle)",
     "オートエンコーダ\t\t#1ph3m\tcomp¦autoencoder (neural network)",

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 70 of 316, from "きゃめるけ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 70 of 316, from "きゃむ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,13 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "キャム\tＣＡＭ\t#1bkxa\tcomp¦computer-aided manufacturing¦CAM",
+    "キャムコーダ\t\t#1d420\t¦camcorder",
+    "キャムコーダー\t\t#1d420\t¦camcorder",
+    "キャメラ\t\t#m972\t¦camera",
+    "キャメル\t\tC~g#mbxe\t¦camel",
+    "キャメル\t\t#3f6q1\tproduct¦Camel (cigarette)",
+    "キャメルクラッチ\t\t#1ntf2\tMA,sports¦camel clutch",
     "キャメルケース\t\t#1p8gw\tcomp¦camel case¦medial capitals",
     "キャメル・クラッチ\t\t#1ntf2\tMA,sports¦camel clutch",
     "キャメル・ケース\t\t#1p8gw\tcomp¦camel case¦medial capitals",
@@ -68,6 +75,7 @@ export const PIECE: WordsPiece = {
     "キャラゲー\t\t#1loky\tabbr,sl,vidg¦video game featuring characters from a manga, anime, movie, etc.\tabbr,sl,vidg¦video game in which the characters are the main focus",
     "キャラコ\t\t#17pzw\t¦calico (cloth)",
     "キャラソン\t\t#1n9zc\tabbr¦character leitmotif¦character theme song",
+    "キャラだち\tキャラ立ち\ts#1pl11\tcol¦having a distinctive personality¦making one's personality stand out",
     "キャラづけ\tキャラ付け\t#1p5p8\t¦characterizing (someone as having a specific personality)¦stereotyping¦typecasting",
     "キャラデザ\t\t#1mddq\tabbr,sl¦character design",
     "キャラバン\t\tC~g#mbys\t¦caravan\t¦group of people touring to sell, investigate, etc.",
@@ -845,11 +853,5 @@ export const PIECE: WordsPiece = {
     "きゅうせいほうしゃせんしょう\t急性放射線症\t#1mg4m\tmed¦acute radiation syndrome¦ARS¦acute radiation sickness",
     "きゅうせいほうしゃせんしょうがい\t急性放射線障害\t#1mg56\tmed¦acute radiation syndrome¦ARS¦acute radiation damage",
     "きゅうせいほうしゃせんしょうこうぐん\t急性放射線症候群\t#1mg4w\tmed¦acute radiation syndrome¦ARS¦acute radiation sickness",
-    "きゅうせいぼうこうえん\t急性膀胱炎\t#1oqyn\tmed¦acute cystitis",
-    "きゅうせかい\t旧世界\t#qdro\t¦Old World (i.e. Asia, Africa, Europe)",
-    "きゅうせかいざる\t旧世界猿\t#1b5q2\trare¦Old World monkey (any monkey of family Cercopithecidae)",
-    "きゅうせき\t旧跡|旧蹟\t~m31#ycw2\t¦historic spot¦historic site¦place of historical interest",
-    "きゅうせき\t休戚\t#qbfs\t¦weal and woe¦joys and sorrows¦welfare",
-    "きゅうせき\t求積\t#qcq6\tmath¦finding area or volume¦mensuration",
   ],
 };

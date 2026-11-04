@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 57 of 172, from "federat". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 57 of 172, from "february ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,30 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "february 19\tうすい",
+    "february 23\tてんのうたんじょうび",
+    "february 4\tりっしゅん",
+    "fec\tフェックりょうほう",
+    "fecal\tべんしっきん|べんせんけつ|べんせんけつけんさ",
+    "fecaloma\tふんかい",
+    "feces\tだいべん|ふん|フン|くそ|クソ|ふじょう|ふんべん|だいよう|あっぽ|だいのほう|おぶつ|けんべん|たれながす|ふんにょう|しゅくべん|だいしょうべん|ねんえきべん|ふんせき|べんそう|トンスル",
+    "feces esp\tふん|フン",
+    "feces examination\tけんべん",
+    "feces urine\tおぶつ",
+    "fechner\tウェーバーフェヒナーのほうそく",
+    "fechner's\tフェヒナーのほうそく",
+    "fecunditatis\tゆたかのうみ",
+    "fecundity\tたさん|かさん",
+    "fed\tうんざり|ウンザリ|くたびれる|へいこう|じんこうえいようじ|へきえき|ヘキエキ|だんいほうしょく|ほうしょくだんい|いしょくたりてれいせつをしる|シートフィードスキャナ|シート・フィード・スキャナ|ヘキヘキ|へきへき|みみたこ|いやになる|ワインビーフ|ワイン・ビーフ|グラスフェッド|グレインフェッド",
+    "fed up\tへいこう|うんざり|ウンザリ|くたびれる",
+    "fedelini\tフェデリーニ",
+    "federacio\tコップ|ナップ",
+    "federal\tフェデラル|にしドイツ|とくべつく|がっしゅうこく|エフ・ビー・アイ|ドイツれんぽうきょうわこく|れんぽうぎかい|れんぽうとりひきいいんかい|れんぽうしゅしょう|れんぽうとうきょく|れんぽうよさん|れんぽうせい|れんぽうこっか|れんぽうじゅんびせいど|れんぽうせいふ|フェデラルファンド|フェデラル・ファンド|べいれんぽう|れんぽうせいふさいばんしょ|ようじょうとうひょう",
+    "federal republic\tにしドイツ",
+    "federal state\tがっしゅうこく",
+    "federal structure\tとくべつく",
+    "federalism\tれんぽうせいど|れんぽうしゅぎ|フェデラリズム",
+    "federalist\tフェデラリスト",
     "federated\tミクロネシアれんぽう|よこぐしけんさく|おうだんけんさく|くしざしけんさく",
     "federation\tれんぽう|フェデレーション|がっしゅうこく|れんめい|れんごうかい|れんごうたい|ろうどうどうめい|こっかれんごう|ロシアれんぽう|けいだんれん|アラブきょうわこくれんぽう|せかいへいわれんごう|とうきょうろくだいがく|マラヤれんぽう|フェデレーションカップ|フェデレーション・カップ|ナップ|ワールドロペット|おうしゅうぎんこうれんめい|かんさいけいざいれんごうかい",
     "federation states\tれんぽう",
@@ -251,6 +275,7 @@ export const PIECE: WordsPiece = {
     "female host\tホステス",
     "female labor\tおんなで",
     "female labour\tおんなで",
+    "female lover\tおんな",
     "female monarch\tじょおう|にょおう",
     "female nude\tらふ",
     "female nurse\tかんごふ",
@@ -693,33 +718,5 @@ export const PIECE: WordsPiece = {
     "fighting various\tてんせん",
     "fighting windmills\tひとりずもう",
     "fights\tちゃんばらえいが|にげるがかち|まけるがかち",
-    "figurative\tフィギュラティフ|ひゆてき|あゆむ|ひゆひょうげん|ひょういていすう",
-    "figurative path\tあゆむ",
-    "figuratively\tたとえる|たとえていうと",
-    "figure\tすがた|ずけい|フィギュア|たいけい|かたち|じんぶつ|すうじ|もよう|かげ|かっこう|しんじん|きてい|かっこ|カッコ|けいたい|すうち|だいじょうぶ|がいさん|おおもの|がら",
-    "figure buddha\tほとけ",
-    "figure build\tほそみ",
-    "figure friendly\tにいさん|あにさん",
-    "figure fun\tさんまいめ",
-    "figure man\tだいじょうぶ",
-    "figure out\tよみきる",
-    "figure person\tひとかげ|じんえい",
-    "figure skating\tフィギュア|きてい|リフト",
-    "figure speech\tしゅうじ",
-    "figured\tえば|かと|りんず|えばばおり|えばはおり|もんおり|あやおりもの|はなもうせん|えばおり",
-    "figurehead\tロボット|おきもの|かざりもの|フィギュアヘッド|せんしゅぞう|ばんしょくだいじん",
-    "figures\tすう|すうり|ひとかげ|じんえい|したまわる|よみあげざん|うわまわる|そうじけい|みつどもえ|うわえ|ちよがみ|ちょくせんけい|ゆうこうすうじ|さばをよむ|しもふたけた|みずましよさん|けつじょうもじ|オタしゃ|ヲタしゃ|しゅちん",
-    "figures geometry\tそうじけい",
-    "figures people\tひとかげ|じんえい",
-    "figures profits\tしたまわる|うわまわる",
-    "figures read\tよみあげざん",
-    "figurine\tフィギュア|とうのにんぎょう|でいそ|タナグラにんぎょう|フェーヴ|フェーブ",
-    "figurines\tへいばよう|ガレキ|ガレージキット|ガレージ・キット|キャラクターすくい|まかいぞう",
-    "fiji\tフィジー|フィジーきょうわこく|スバ|スヴァ",
-    "fijian\tフィジーご",
-    "filament\tフィラメント|かし|せんじょう|しじょうたい|きんし|うずいと",
-    "filamentous\tさやみどろ|サヤミドロ|しじょうきん",
-    "filaria\tフィラリア|しじょうちゅう|バンクロフトしじょうちゅう",
-    "filarial\tフィラリアびょう",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 36 of 144, from "0r8i". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 36 of 144, from "0r85". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,26 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0r85k\t1¦｜私《わたし》たちの｜先生《せんせい》はごきげんです。¦Our teacher is in a good temper.¦4¦3ks5¦¦¦ごきげん",
+    "0r864\t1¦｜私《わたし》たちがおかけしたご｜苦労《くろう》に｜対《たい》してどうしたら｜償《つぐな》いができるでしょう。¦How can we make it up to you for all that you have suffered because of us?¦1¦3l41¦¦papabear¦ご苦労",
+    "0r86o\t1¦お｜互《たが》いさまだろ。¦It seems we are in the same boat.¦3¦4vag¦bunbuku¦CK¦お互いさま",
+    "0r88c\t1¦｜御社《おんしゃ》のお｜考《かんが》えを｜先《さき》におっしゃってください。¦Please let us know your company's thoughts on this matter first.¦3¦1ms2¦mookeee¦¦御社",
+    "0r88m\t1¦あなたのご主人は食事にうるさいのかな？¦Is your husband a picky eater?¦4¦507c¦¦CK¦ご主人",
+    "0r88w\t1¦あなたはどのくらい｜日本《にほん》においでですか。¦How long have you been in Japan?¦5¦4zde¦¦CK¦おいで\t2¦「おいでおいで」｜彼女《かのじょ》は｜叫《さけ》びました。「こっちであそぼ」¦\"Come, boy,\" she called, \"come and play.\"¦2¦52z7¦mookeee¦¦おいで",
+    "0r896\t1¦｜私《わたし》は｜彼《あれ》を｜京都《きょうと》｜御所《ごしょ》に｜連《つ》れて｜行《い》きました。¦I took him to the Kyoto Imperial Palace.¦3¦3aji¦¦CK¦御所",
+    "0r8aa\t1¦よけいなお｜節介《せっかい》だ。¦Mind your own business.¦1¦44pz¦bunbuku¦CK¦お節介",
+    "0r8ak\t1¦ジェーンは｜奥《おく》さんが｜彼女《かのじょ》の｜為《ため》に｜作《つく》ったおせち｜料理《りょうり》を｜食《た》べました。¦Jean ate the osechi cooking his wife cooked for herself.¦1¦4n11¦¦fekundulo¦おせち料理",
+    "0r8cs\t1¦｜御中《おんちゅう》｜元《もと》や｜御《ご》｜歳暮《せいぼ》の｜習慣《しゅうかん》はなかなかすたれない。¦The gift-giving custom dies hard.¦3¦3qg9¦¦¦御中元",
+    "0r8d2\t1¦１ドルでおつりがありますか。¦Have you got change for a dollar?¦5¦51z1¦mookeee¦sundown¦おつり",
+    "0r8dm\t1¦お｜日様《ひさま》が｜明《あか》るく｜輝《かがや》いています。¦The sun is shining brightly.¦1¦4uzm¦¦CK¦お日様",
+    "0r8dw\t1¦それはいわゆる「お｜年玉《としだま》」でした。¦That's what we call an \"otoshidama\".¦2¦4ela¦small_snow¦¦お年玉",
+    "0r8e6\t1¦ご｜飯《はん》とパンどちらがいいですか。¦Which do you prefer, rice or bread?¦4¦4ngq¦KK_kaku_¦CK¦ご飯\t2¦｜友達《ともだち》にご｜飯《はん》をおごってもらった。¦My friends treated me to a meal.¦3¦1p73¦bunbuku¦CK¦ご飯",
+    "0r8fu\t1¦２年間のご無沙汰でした。¦Two years have passed since I last met you.¦¦51n6¦e4zh1nmcz¦CK¦ご無沙汰",
+    "0r8g4\t1¦｜皆様《みなさま》にご｜迷惑《めいわく》をおかけしております。¦Excuse us for the inconvenience.¦1¦3ypn¦¦CK¦ご迷惑\t1¦ご｜迷惑《めいわく》をおかけしまして｜申《もう》し｜訳《わけ》ありません。¦I am sorry to have troubled you.¦1¦4ng1¦small_snow¦CC¦ご迷惑",
+    "0r8ge\t1¦｜待《ま》たせてごめん。¦Sorry to have kept you waiting.¦4¦2yft¦tommy_san¦CK¦ごめん\t5¦｜自分《じぶん》の｜手《て》を｜汚《よご》すようなことだけはごめんだ。¦I don't want to get my hands dirty.¦¦37lc¦bunbuku¦CK¦ごめん",
+    "0r8go\t1¦お｜話《はな》し｜中《ちゅう》、ごめんなさい。¦Excuse me for interrupting you.¦5¦4ury¦¦CK¦ごめんなさい",
+    "0r8h8\t1¦｜誕生日《たんじょうび》おめでとうございます。¦Many happy returns of the day!¦1¦2q9i¦bunbuku¦Swift¦おめでとう",
+    "0r8hs\t1¦ご｜用《よう》のときはお｜電話《でんわ》ください。¦Please call me up if you want me.¦4¦4nfr¦KK_kaku_¦CM¦ご用",
     "0r8iw\t1¦あの｜木《き》のてっぺんを｜見《み》てごらん。¦Look at the top of that tree.¦5¦4xt0¦bunbuku¦CK¦ごらん\t2¦あの｜黒《くろ》い｜雲《くも》をごらん。じきに｜雨《あめ》が｜来《き》そうだ。¦Look at those black clouds. It is going to rain.¦2¦4y94¦¦Dejo¦ごらん",
     "0r8j6\t1¦こちらへやってくる｜少年《しょうねん》とその｜犬《いぬ》をごらんなさい。¦Look at the boy and his dog that are coming this way.¦4¦4sy8¦¦CK¦ごらんなさい\t2¦ほらごらんなさい。｜長《なが》くなかったでしょ。¦There! That wasn't long, was it?¦5¦4776¦KK_kaku_¦AlanF_US¦ごらんなさい\t3¦｜受付《うけつけ》で｜聞《き》いてご｜覧《らん》なさい。¦Please ask at the information desk.¦1¦36h8¦¦CK¦ご覧なさい",
     "0r8ka\t1¦｜息子《むすこ》に｜成《な》り｜代《か》わってお｜礼《れい》を｜申《もう》し｜上《あ》げます。¦I thank you on behalf of my son.¦3¦3036¦¦CK¦お礼",
@@ -27,6 +47,7 @@ export const PIECE: WordsPiece = {
     "0r8pu\t1¦これは｜私《わたし》の｜語学《ごがく》の｜能力《のうりょく》を｜有利《ゆうり》に｜使《つか》える｜好機《こうき》である。¦This will be a good opportunity for me to use my language skills to my advantage.¦3¦4og5¦¦CM¦語学",
     "0r8qo\t1¦｜彼女《かのじょ》は｜話《はな》しているうちに｜語《かたり》｜気《き》が｜強《つよ》くなった。¦Her voice began to rise as she spoke.¦3¦1ui8¦¦CM¦語気",
     "0r8qy\t1¦君の辞書で‘ｇｕｙ’の語義を調べなさい。¦Look up the definition of 'guy' in your dictionary.¦1¦3tja¦¦Eldad¦語義",
+    "0r8r8\t1¦その｜作家《さっか》の｜文体《ぶんたい》は｜挿入《そうにゅう》｜語句《ごく》が｜多《おお》い。¦The writer has a parenthetic style.¦1¦4ifu¦¦¦語句",
     "0r8ri\t1¦それらの｜方言《ほうげん》におけるこの｜語形《ごけい》の｜分布《ぶんぷ》に｜注意《ちゅうい》が｜向《む》けられなければならない。¦We must draw attention to the distribution of this form in those dialects.¦¦4dz2¦¦¦語形",
     "0r8rs\t1¦このように、｜名詞《めいし》の｜変化《へんか》のパターンがある｜他《ほか》に、｜動詞《どうし》の｜語形変化《ごけいへんか》も｜現代英語《げんだいえいご》よりもいろいろな｜種類《しゅるい》がありました。¦Accordingly, besides noun declension patterns, there also existed a greater variety of verb conjugation patterns than in Modern English.¦2¦1n7z¦¦papabear¦語形変化",
     "0r8s2\t1¦これらの｜語《かたり》は｜同《おな》じ｜語源《ごげん》から｜出《で》ている。¦These words are derived from the same root.¦1¦4o55¦¦Dejo¦語源",
@@ -185,20 +206,5 @@ export const PIECE: WordsPiece = {
     "0rd1o\t1¦お｜口直《くちなお》しにミカンをどうぞ。¦Have a satsuma for dessert.¦3¦4v9x¦¦¦口直し",
     "0rd1y\t1¦｜彼《あれ》はメロディーを｜口笛《くちぶえ》で｜吹《ふ》き｜始《はじ》めた。¦He began to whistle a tune.¦1¦2ddg¦¦CK¦口笛",
     "0rd32\t1¦その｜物《もの》｜語《かたり》は｜世代《せだい》から｜世代《せだい》へと｜口伝《くちづた》えで｜伝《つた》えられてきた。¦The story has been passed down from generation to generation by word of mouth.¦3¦4fn3¦¦CK¦口伝え",
-    "0rd3c\t1¦このワイン｜口当《くちあ》たりが｜良《よ》くて｜飲《の》みやすいわ。¦This is a smooth wine which goes down easy.¦3¦4s1s¦small_snow¦sundown¦口当たり",
-    "0rd3w\t1¦お｜母《かあ》さんに｜口答《くちごた》えしてはいけませんよ。¦Don't answer your mother back.¦4¦4uv5¦¦sundown¦口答え",
-    "0rd46\t1¦｜刑事《けいじ》はその｜場《ば》で｜彼《あ》の｜口頭《こうとう》｜証言《しょうげん》を｜書《か》き｜取《と》った。¦The detective took down his oral testimony on the spot.¦1¦3sao¦¦¦口頭",
-    "0rd50\t1¦｜口内炎《こうないえん》ができて｜食事《しょくじ》する｜時《とき》、｜痛《いた》くて｜痛《いた》くて。¦I have ulcers in my mouth, so it's very painful when I eat.¦1¦3q69¦bunbuku¦¦口内炎",
-    "0rd6o\t1¦｜彼《あれ》は｜手八丁口八丁《てはっちょうくちはっちょう》だ。¦He is as ready to talk as to work.¦1¦28lc¦small_snow¦¦口八丁",
-    "0rd82\t1¦｜彼女《かのじょ》を｜胸《むね》に｜抱《だ》き｜寄《よ》せて、｜額《がく》に｜口付《くちづ》けをした。¦I clutched her to my chest, and kissed her on her forehead.¦2¦1lht¦fcbond¦fcbond¦口付け",
-    "0rd96\t1¦私の祖母は、口癖のように１００歳まで生きると言っていましたが、８５歳で亡くなりました。¦My grandmother used to say that she would live to be a hundred, but she died at the age of 85.¦1¦3hw2¦small_snow¦¦口癖",
-    "0rdby\t1¦その｜来《き》たばかりの｜子《こ》はおどおどして｜口《くち》ごもった。¦The new boy had a nervous stammer.¦4¦4f5a¦bunbuku¦CK¦口ごもった",
-    "0rdc8\t1¦｜私《わたし》たちはまた｜昨夜《ゆうべ》また｜口論《こうろん》をした。¦We had words again last night.¦3¦3k8s¦¦CM¦口論",
-    "0rddc\t1¦これは｜若者《わかもの》｜向《む》きの｜車《くるま》です。¦This is a car for young people.¦3¦4of8¦arnab¦CK¦向き",
-    "0rddw\t1¦｜女《おんな》の｜子《こ》はお｜互《たが》いに｜向《む》き｜合《あ》っている。¦The girls are facing each other.¦3¦35oq¦¦CK¦向き合っている",
-    "0rdeg\t1¦｜私《わたし》の｜方《ほう》を｜向《む》いてください。¦Turn toward me, please.¦3¦3hhv¦bunbuku¦CK¦向いて\t4¦この｜生地《きじ》は｜洋服《ようふく》をつくるのには｜向《む》かない。¦This material is not suitable for a dress.¦3¦4qgb¦¦CM¦向かない\t4¦｜彼《あれ》は｜先生《せんせい》に｜向《む》いてない。¦He's not cut out for teaching.¦3¦27ie¦bunbuku¦CK¦向いてない\t5¦｜足《あし》の｜向《む》くままに｜歩《ある》いた。¦We let our legs do the leading.¦3¦2zx5¦KK_kaku_¦¦向く\t5¦ついそちらに｜足《あし》が｜向《む》いてしまう。¦I often feel like just going over there.¦3¦4ce9¦¦AlanF_US¦向いて",
-    "0rdeq\t1¦｜乗《の》り｜物《もの》は｜子供向《こどもむ》けである。¦Rides in the cars are for kids.¦3¦34sb¦¦¦向け",
-    "0rdf0\t1¦｜強盗《ごうとう》は｜店員《てんいん》に｜銃《じゅう》を｜向《む》けた。¦The robber aimed his gun at the clerk.¦1¦3v95¦¦CK¦向けた\t2¦｜今度《こんど》の｜土曜日《どようび》の｜朝《あさ》、シカゴに｜向《む》けて｜出発《しゅっぱつ》します。¦I'm leaving for Chicago next Saturday morning.¦3¦3ott¦bunbuku¦CN¦向けて\t5¦｜過去《かこ》ではなく、｜未来《みらい》に｜向《む》けて｜取《と》り｜組《く》むのが｜当《とう》｜社《しゃ》の｜方針《ほうしん》です。¦Our policy is to build for the future, not the past.¦2¦3zwo¦bunbuku¦CK¦向けて",
-    "0rdg4\t1¦｜彼女《かのじょ》は｜背《せ》が｜低《ひく》すぎて｜塀《へい》の｜向《む》こうがみえなかった。¦She was too short to see over the fence.¦1¦1vk9¦bunbuku¦CK¦向こう\t2¦その｜男《おとこ》の｜子《こ》は｜向《む》こうにいます。¦The boy is over there.¦3¦4glv¦¦CK¦向こう\t4¦｜向《む》こうの｜思《おも》う｜壷《つぼ》だぞ。¦You will play into their hands.¦¦3q4w¦small_snow¦¦向こう",
   ],
 };

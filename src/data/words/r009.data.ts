@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 10 of 316, from "あみいり". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 10 of 316, from "あみい". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "あみい\t網胃\t#1m1f6\tzool¦reticulum",
+    "あみいし\t網石\t#1fvi0\trare¦stone(s) used to weigh down a fishing net",
     "あみいりガラス\t網入りガラス|網入ガラス|網入硝子\t#1nb8c\t¦wired glass¦wire-reinforced glass",
     "あみうち\t網打ち\t#ztqk\t¦net fishing\tsumo¦fisherman's throw (resembling the casting of a fishing net)",
     "あみかいちょう\t網階調\t#1p5ws\tprint¦halftone gradation",
@@ -796,6 +798,5 @@ export const PIECE: WordsPiece = {
     "あらため\t改め\t#17ma0\t¦now known as¦renamed as\tdated¦examination¦inspection¦investigation",
     "あらためて\t改めて\tC~mi25#pqhw\t¦another time¦again¦over again\t¦formally¦especially¦intentionally",
     "あらためる\t改める\tiC~ni11#pqi6\t¦to change¦to alter¦to revise\t¦to reform¦to correct¦to mend\t¦to examine¦to check¦to inspect\t¦to do properly¦to do formally",
-    "あらだき\t粗炊き\t#1fay0\tfood¦simmered fish",
   ],
 };

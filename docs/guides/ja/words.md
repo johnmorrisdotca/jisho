@@ -112,7 +112,7 @@ console.log(withoutMarks(wordsOf(words,"かみ"),["arch","obs"]).map((one)=>one.
 
 辞書は、読みで分けた行のチャンク316個と、表記から読みへの索引を表記で分けたチャンク70個からなります。`words`には各チャンクの始まりが入っていて、検索は文字列とその始まりを比べてチャンクを見つけます。どのチャンクも約100 kB以下で、検索に必要になるまで取得されません。
 
-よく使う語の表には、JMdictがよく使う語としているもののうち、セーフモードで残る25,999語が入っています（表記か読みに`news1`、`ichi1`、`spec1`、`spec2`、`gai1`のどれかが付いているもの）。この表はどんな文字列にも答えますが、答えるのはよく使う語だけです。まれな語と読みが同じでも、よく使う語しか見つかりません。どちらを持っているかは、`Words`の`scope`で分かります。フィルターなしでは、`loadCommonWords({ mode: "unfiltered" })`が`common-extra.data`（gzipで約27 kB）も取得します。これは、何を加えて何を変えるかを示すもので、`readCommonWords`を使う場合は、自分で`extra`として渡します。
+よく使う語の表には、JMdictがよく使う語としているもののうち、セーフモードで残る26,014語が入っています（表記か読みに`news1`、`ichi1`、`spec1`、`spec2`、`gai1`のどれかが付いているもの）。この表はどんな文字列にも答えますが、答えるのはよく使う語だけです。まれな語と読みが同じでも、よく使う語しか見つかりません。どちらを持っているかは、`Words`の`scope`で分かります。フィルターなしでは、`loadCommonWords({ mode: "unfiltered" })`が`common-extra.data`（gzipで約27 kB）も取得します。これは、何を加えて何を変えるかを示すもので、`readCommonWords`を使う場合は、自分で`extra`として渡します。
 
 ## ブラウザーで
 
@@ -143,7 +143,7 @@ const { loadWords, wordsOf } = await import("@johnmorrisdotca/jisho/words");
 | 表記での検索（`loadWords("紙")`） | 2個、56 kB | 2個、56 kB |
 | 読み込み後の`wordsOf`、かみ（9語） | 1.0 µs | 1.4 µs |
 | 読み込み後の`wordsOf`、紙（2語） | 0.19 µs | 0.33 µs |
-| `readCommonWords(COMMON_WORDS)`（25,999行） | 64〜72 ms | 73〜80 ms |
+| `readCommonWords(COMMON_WORDS)`（26,014行） | 64〜72 ms | 73〜80 ms |
 | `normalizeText("ｶﾐ ")` | なし | 2 µs。すでに整った文字列なら0.3 µs |
 | すべてのチャンクを含めたwordsエントリ（最小化してgzip） | 9.97 MB | 13.74 MB |
 | パッケージ内のチャンクのJavaScript（展開後） | 34.9 MB | 48.0 MB |

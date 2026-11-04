@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 68 of 172, from "grimm". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 68 of 172, from "grievousl". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,34 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "grievously\tうれいなやむ",
+    "griffin\tグリッフィン|グリフィン",
+    "griffis\tグリフィスエンジェルフィッシュ|グリフィス・エンジェルフィッシュ",
+    "griffisi\tグリフィスエンジェルフィッシュ|グリフィス・エンジェルフィッシュ",
+    "griffithii\tシマトネリコ|しまとねりこ",
+    "griffiths\tカスリモヨウベニハゼ",
+    "griffithsi\tカスリモヨウベニハゼ",
+    "griffon\tグリフォン|じゅじし|しろえりはげわし|シロエリハゲワシ",
+    "grifola\tまいたけ|マイタケ",
+    "grigio\tピノグリージョ|ピノ・グリージョ",
+    "grigorjewi\tむしがれい|ムシガレイ",
+    "grill\tグリル|やきにく|やく|やきあげる|グリエ|したび|ジンギスカン|ろばたやき|もちあみ|やきなおす|てつごうし|ジンギスカンなべ|グリルカバー|グリル・カバー|グリルコネクタ|グリル・コネクタ|さかなやきき|さかなやきグリル|グリルパン|グリル・パン",
+    "grill esp\tグリル",
+    "grill room\tグリル",
+    "grill used\tジンギスカン",
+    "grille\tグリル|アパーチャグリル|アパーチャ・グリル|キドニーグリル|キドニー・グリル",
+    "grilled\tグリル|やきもの|やきとり|やきざかな|すみやき|ハツ|やきどうふ|しらやき|ホルモンやき|ほおばみそ|プルコギ|グリルドチーズサンドイッチ|グリルドチーズサンド|グリルド・チーズ・サンドイッチ|グリルド・チーズ・サンド|ひれざけ|ヒレざけ|ゆうがやき|シロコロ|やきみそ",
+    "grilled dish\tやきもの",
+    "grilled fish\tやきざかな",
+    "grilled food\tグリル",
+    "grilled skewered\tやきとり",
+    "grilling\tにくはく|あみやき|しおやき|すやき|くしやき|すみびやき|かたまりにく|じかびやき|くしうち",
+    "grilling fish\tしおやき",
+    "grilling without\tすやき",
+    "grillo\tグリッロ",
+    "grim\tれいげん|ひそう|けわしい|しぶい|けわしいかおつき|けわしいかお|こわいかお|けわしいめ",
+    "grimace\tじゅうめん|しぶづら|しぶつら|かおをしかめる|かおをゆがめる",
+    "grime\tあか|グライム|あかすり|アカスリ|あかびかり",
     "grimm's\tグリムのほうそく|グリムどうわ",
     "grimoire\tグリモワール|グリモア|まどうしょ|ましょ",
     "grin\tニッと|にっと|ニタァ|ニタァー|ほおがゆるむ|ほほがゆるむ|にいっと|ニイッと|ニコニコ|にこにこ|にたにた|ニタニタ|にたつく|ニヤッとわらう|にやっとわらう|にたっと|ニタッと|くちがイーってなる|にへら|ニヘッ",
@@ -686,33 +714,5 @@ export const PIECE: WordsPiece = {
     "gyroscope\tジャイロスコープ|かいてんぎ|ちきゅうごま",
     "gyroscopic\tパワーボール|パワー・ボール",
     "gyrosensor\tジャイロセンサー|ジャイロセンサ",
-    "gyrostabilizer\tジャイロスタビライザー",
-    "gyrus\tのうかい|かいばかい|ぜんたいじょうかい|かくかい|じょうぜんとうかい|ちゅうぜんとうかい|かぜんとうかい|かいばぼうかい|たいじょうかい",
-    "gyudon\tぎゅうどん|ねぎだく|ネギだく|すきや|よしのや|よしぎゅう",
-    "gyōsho\tおのこで|おいえりゅう",
-    "gyōza\tまい|ぎょうざのかわ",
-    "gyōza soba\tまい",
-    "gyūhi\tぎゅうひ|ぎゅうひあめ",
-    "gödel\tゲーデルすう",
-    "güiro\tギロ|グィロ|グイロ",
-    "gō\tごう|いちごう",
-    "gōda\tごうだいっか",
-    "gōdō\tごうどうがいしゃ",
-    "h\tエッチ|エイチ|えっち|すいそ|げんそきごう|ヘッダーファイル|ヘッダファイル|ヘッダー・ファイル|ヘッダ・ファイル|ビタミンエイチ|パウアかい|エイチツーりょういき|エッチツーりょういき|エイチアルファせん|ごダブリューいちエイチ|エイチがたこう|エッチがたこう|エイチしすう|ほうていそくど|ゾーンさんじゅう",
-    "h1\tブラックライン|ブラック・ライン",
-    "h2o2\tかさんかすいそ",
-    "h3po3\tあリンさん|ありんさん",
-    "h5n1\tこうびょうげんせいとりインフルエンザ",
-    "h7\tびょうげんせいだいちょうきん",
-    "h8\tホワイトライン",
-    "ha\tはっはっ|はぎょう|ふふふ|フフフ|ふふ|フフ|かかりじょし|けいじょし|あはは|アハハ|あははは|アハハハ|あはははは|アハハハハ|あっはっは|アッハッハ|あはあは|アハアハ|しんとうしゅうせいは|しんとうじゅうさんぱ",
-    "ha ha\tはっはっ",
-    "haast's\tハルパゴルニスわし|ハルパゴルニスワシ|ハーストイーグル",
-    "habakkuk\tハバククしょ",
-    "habanera\tハバネラ",
-    "habanero\tハバネロ",
-    "habataki\tハバタキ",
-    "habeas\tじんしんほご|じんしんほごれいじょう|ヘビアスコーパス|ヘイビアスコーパス|ヘビアス・コーパス|ヘイビアス・コーパス",
-    "habenaria\tいよとんぼ|イヨトンボ|りゅうきゅうさぎそう|リュウキュウサギソウ|なめらさぎそう|ナメラサギソウ|みずとんぼ|ミズトンボ|だいさぎそう|ダイサギソウ",
   ],
 };

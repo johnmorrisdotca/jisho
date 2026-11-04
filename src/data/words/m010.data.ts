@@ -309,6 +309,7 @@ export const PIECE: WordsPiece = {
     "arenga\tさとうやし|サトウヤシ",
     "arenicola\tたましきごかい|タマシキゴカイ",
     "arenr\tザラストスタント",
+    "areola\tにゅうりん|にゅううん",
     "areole\tアレオーレ|しざ",
     "ares\tアレス|アレース|アーレース|デカール|デカアール",
     "arfvedsonite\tアルベゾンせんせき",

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 73 of 316, from "きょうのひ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 73 of 316, from "きょうの". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "きょうのきだおれ\t京の着倒れ\t#1b6io\t¦financially ruining oneself by buying too many clothes (as a fabled tendency of the people of Kyoto)",
+    "きょうのところは\t今日のところは|今日の所は\t#1oua6\t¦for today¦for the time being",
     "きょうのひとはり、あすのとはり\t今日の一針、明日の十針\t#1p4la\tproverb¦a stitch in time saves nine",
     "きょうのみず\t京の水\t#1jj2o\tarch¦water from the capital (Kyoto), rumored to have a whitening effect\tarch¦type of washing lotion from the end of the Edo period",
     "きょうのみやこ\t京の都\t#1ownp\t¦Kyoto",
@@ -857,6 +859,5 @@ export const PIECE: WordsPiece = {
     "きよう\t器用\tnC~mi44#q4k0\t¦skillful¦skilful¦adroit\t¦clever¦shrewd¦ingenious",
     "きよう\t紀要\t#q7n4\t¦bulletin¦memoirs",
     "きよう\t貴陽\t#1p504\t¦Guiyang (China)",
-    "きようびんぼう\t器用貧乏\t#q4ka\tyoji¦jack of all trades, master of none",
   ],
 };

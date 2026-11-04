@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 17 of 144, from "0ous". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 17 of 144, from "0ouo". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0ouoc\t1¦デオキシリボ｜核酸《かくさん》は、｜遺伝子《いでんし》を｜作《つく》っている｜複雑《ふくざつ》な｜化学物質《かがくぶっしつ》である。¦DNA is a complex chemical that makes up a gene.¦1¦4c5d¦¦¦遺伝子",
+    "0oupq\t1¦｜子供《こども》は｜遺伝病《いでんびょう》を｜持《も》っています。¦My baby has a hereditary disease.¦1¦3m20¦¦CK¦遺伝病",
     "0ouss\t1¦｜強盗《ごうとう》は｜遺留品《いりゅうひん》の｜一《ひと》つから｜足《あし》がついた。¦The burglar was traced by one of the things he had left on the scene.¦1¦3v9b¦bunbuku¦CK¦遺留品",
     "0ouu6\t1¦｜金髪《きんぱつ》｜女性《じょせい》が｜精神科医《せいしんかい》と｜会《かい》｜話《はなし》をしている。¦A blonde is speaking to her psychiatrist.¦3¦3ulw¦¦orcrist¦医",
     "0ouuq\t1¦｜手術《しゅじゅつ》は｜医院《いいん》｜内《うち》で｜三十分《さんじゅっぷん》｜以内《いない》に｜完了《かんりょう》します。¦The surgery, performed at our clinic, is over in half an hour.¦¦1lk9¦fcbond¦fcbond¦医院",
@@ -205,7 +207,5 @@ export const PIECE: WordsPiece = {
     "0oz9w\t2¦｜一日一日《いちにちいちにち》と｜寒《さむ》くなってきた。¦It is getting colder and colder day by day.¦3¦42t1¦¦CK¦一日一日と",
     "0ozb0\t1¦１日中テニスをしていたのだから。¦He was playing tennis all day.¦5¦51uy¦e4zh1nmcz¦CH¦１日中",
     "0ozbu\t1¦その｜知《し》らせで｜私達《わたしたち》の｜喜《よろこ》びもひとしおでした。¦The news added to our happiness.¦3¦4gh9¦¦Zifre¦ひとしお",
-    "0ozcy\t1¦｜彼《あれ》は｜東京《とうきょう》に｜一年間《いちねんかん》ずっといます。¦He has been in Tokyo for a year.¦3¦26j5¦bunbuku¦CK¦一年間",
-    "0ozd8\t1¦わたしは｜去年《きょねん》｜一年《いちねん》｜生《うぶ》でした。¦I was a first year student last year.¦4¦4405¦¦CK¦一年生\t3¦なぜ｜一種《いっしゅ》の｜植物《しょくぶつ》が｜一年生《いちねんせい》の｜草本《そうほん》になったり、｜多年生《たねんせい》の｜木本《もくほん》になったりするのでしょうか。¦I wonder why it is that some plants become annuals and others perennials?¦2¦1n14¦¦rul¦一年生",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 53 of 316, from "かたみちり". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 53 of 316, from "かたみがひ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "かたみがひろい\t肩身が広い\t#qzhw\t¦(feeling) proud",
+    "かたみち\t片道\tC~ni19#wehc\t¦one-way (trip)\tabbr¦one-way ticket",
+    "かたみちきっぷ\t片道切符\t#10176\t¦one-way ticket",
+    "かたみちこうくうけん\t片道航空券\t#1bh2o\t¦one-way airline ticket¦one-way plane ticket",
     "かたみちりょうきん\t片道料金\t#1017g\t¦one-way fare",
     "かたみに\t互に\t#r70q\t¦mutually¦reciprocally¦together",
     "かたみのせまい\t肩身の狭い\ta#1bzdu\t¦ashamed",
@@ -802,9 +806,5 @@ export const PIECE: WordsPiece = {
     "かつどうし\t活動誌\t#pwe4\t¦specialty magazine¦information digest",
     "かつどうし\t活動詞\t#1os48\tling¦modal verb",
     "かつどうしゃ\t活動者\t#pwee\t¦activist",
-    "かつどうしゃしん\t活動写真\t#11g70\tdated¦moving picture",
-    "かつどうせいか\t活動成果\t#pweo\t¦results (of an activity)",
-    "かつどうてき\t活動的\tn#11g7a\t¦active¦dynamic¦energetic",
-    "かつどうはんい\t活動範囲\t#1ifuq\t¦sphere of action¦scope of activity¦range of work",
   ],
 };

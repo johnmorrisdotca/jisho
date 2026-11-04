@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 16 of 219, from "0pdvg". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 16 of 219, from "0pduc". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0pduc\t下っ腹\tしたっぱら\tn¦¦abdomen¦stomach¦under parts",
+    "0pdum\t下の句\tしものく\texp,n¦¦last part of a poem or Bible verse",
+    "0pduw\t下らない\tくだらない|くっだらない~sk|くっだらねー~sk|くっだらねえ~sk\tadj-i¦uk¦trivial¦trifling¦insignificant¦not worth bothering with¦worthless¦useless¦good-for-nothing\tadj-i¦uk¦stupid¦nonsensical¦absurd¦foolish¦silly",
+    "0pdv6\t下り|降り\tくだり\tn¦¦down-train¦train heading toward the ending point of its route\tn,adj-no¦¦down-slope¦downward going\tadj-no,n¦¦downbound (esp. away from Tokyo)\tn,n-pref¦¦downstream¦downhill¦上り・4",
     "0pdvg\t下り坂\tくだりざか\tn¦¦downhill¦downward slope¦descent¦上り坂・1\tn¦¦decline¦waning¦ebb¦(going) downhill",
     "0pdvq\t下り上り\tおりのぼり\tn¦¦going up and down",
     "0pdwa\t下り物|下りもの~sK\tおりもの|オリモノ~~~!\tn¦uk¦vaginal discharge\tn¦uk¦menstruation\tn¦uk¦afterbirth",
@@ -1109,14 +1113,5 @@ export const PIECE: WordsPiece = {
     "0pmq2\t課程\tかてい\tn¦¦course¦curriculum",
     "0pmqc\t貨財\tかざい\tn¦¦wealth¦worldly goods",
     "0pmqm\t貨車\tかしゃ\tn¦rail¦freight car¦van¦客車",
-    "0pmqw\t貨殖\tかしょく\tn¦¦money-making",
-    "0pmr6\t貨物\tかもつ|かぶつ\tn¦¦cargo¦freight\tn¦¦money or assets",
-    "0pmrg\t貨物駅\tかもつえき\tn¦¦freight depot",
-    "0pmrq\t貨物自動車\tかもつじどうしゃ\tn¦¦truck",
-    "0pms0\t貨物船\tかもつせん\tn¦¦freighter (vessel)¦cargo ship¦貨物機・かもつき",
-    "0pmsa\t貨幣|貨弊~sK\tかへい\tn¦¦money¦currency¦coin",
-    "0pmsk\t貨幣価値\tかへいかち\tn¦¦currency value",
-    "0pmsu\t迦楼羅\tかるら\tn¦¦Garuda (man-bird deity and 'vahana' of Hindu-Buddhist myth)¦Garua",
-    "0pmt4\t過ぎ\tすぎ\tn,n-suf¦¦past¦after\tn,n-suf¦uk¦too (much)¦over- (e.g. eating)",
   ],
 };

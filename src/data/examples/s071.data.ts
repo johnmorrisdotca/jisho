@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 72 of 144, from "0vgq". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 72 of 144, from "0vgna". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,12 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0vgna\t1¦この｜本《もと》は｜彼《あ》の｜熱心《ねっしん》な｜研究《けんきゅう》の｜成果《せいか》である。¦This book is a result of his enthusiastic research.¦3¦4peg¦¦¦熱心な",
+    "0vgnu\t1¦あの｜島《しま》は｜熱帯《ねったい》｜性《せい》｜気候《きこう》です。¦That island has a tropical climate.¦2¦4xvg¦¦CK¦熱帯",
+    "0vgo4\t1¦｜彼《かれ》らは｜熱帯魚《ねったいぎょ》に｜興味《きょうみ》があるらしかった。¦It seemed that they were interested in tropical fish.¦1¦22e1¦¦CM¦熱帯魚",
+    "0vgoe\t1¦この｜頃《ごろ》は｜彼女《かのじょ》はテニスに｜熱中《ねっちゅう》している。¦Nowadays she is lost in tennis.¦¦4r7z¦¦¦熱中",
+    "0vgoo\t1¦ポットに｜熱湯《ねっとう》をいっぱい｜入《い》れてください。¦Please fill the teapot with boiling water.¦2¦47er¦¦CK¦熱湯",
+    "0vgpi\t1¦｜我々《われわれ》は｜世界平和《せかいへいわ》を｜熱望《ねつぼう》している。¦We are anxious for world peace.¦1¦3zbd¦¦CK¦熱望",
     "0vgqc\t1¦熱力学の背後には、第１巻で学んだ力学の法則にしたがう原子や分子の運動があります。¦Behind thermodynamics lie the movements of atoms and molecules following the laws of motion learned in the first volume.¦¦1mhx¦mookeee¦¦熱力学",
     "0vgqw\t1¦｜彼《あれ》は｜彼女《かのじょ》の｜熱烈《ねつれつ》な｜願《ねが》いに｜負《ま》けた。¦He yielded to her ardent wishes.¦1¦25u0¦¦¦熱烈な",
     "0vgrg\t1¦｜一月《いちがつ》は｜年《とし》の｜一番目《いちばんめ》の｜月《つき》です。¦January is the first month of the year.¦3¦4347¦¦CK¦年\t2¦お｜年《とし》をお｜聞《き》きしてよろしいでしょうか。¦Might I ask your age?¦5¦4uzl¦¦¦年",
@@ -208,11 +214,5 @@ export const PIECE: WordsPiece = {
     "0vknq\t1¦｜配線《はいせん》を｜間違《まちが》えないように｜注意《ちゅうい》してキットを｜組《く》み｜立《た》てた。¦I built the kit taking care not to make mistakes in the wiring.¦2¦2lrv¦¦¦配線",
     "0vko0\t1¦１０個ではなく５個だけが配送されました。¦Only five instead of ten units were delivered.¦2¦525a¦mookeee¦¦配送",
     "0vkoa\t1¦｜営業《えいぎょう》マンだって、リストラ｜予備軍《よびぐん》に｜配属《はいぞく》されないように｜必死《ひっし》な｜訳《わけ》です。¦After all, even salesmen are desperate to avoid being targeted for downsizing.¦1¦1ljl¦fcbond¦fcbond¦配属",
-    "0vkok\t1¦どれくらいで｜配達《はいたつ》してもらえますか。¦How soon can they be delivered?¦3¦4a2b¦¦CK¦配達",
-    "0vkou\t1¦｜軍隊《ぐんたい》は｜戦闘《せんとう》の｜配置《はいち》で｜整列《せいれつ》していた。¦The troops were in battle array.¦1¦3sb5¦¦sundown¦配置",
-    "0vkpe\t1¦その｜会社《かいしゃ》の｜株《かぶ》は｜高配《こうはい》｜当《とう》だ。¦The company shares give a high yield.¦1¦4jgp¦¦¦配当",
-    "0vkpy\t1¦｜先生《せんせい》はチラシを｜配布《はいふ》した。¦The teacher distributed the leaflets.¦2¦31bl¦¦CM¦配布",
-    "0vkq8\t1¦｜医療品《いりょうひん》は｜被災者《ひさいしゃ》たちに｜配分《はいぶん》された。¦The medical supplies were allocated to the victims of the disaster.¦¦4365¦¦Luornu¦配分",
-    "0vkqi\t1¦｜看護婦《かんごふ》は｜患者《かんじゃ》の｜快適《かいてき》さに｜配慮《はいりょ》しなくてはいけない。¦The nurses must see to the comfort of their patients.¦1¦3xv0¦¦Zifre¦配慮",
   ],
 };

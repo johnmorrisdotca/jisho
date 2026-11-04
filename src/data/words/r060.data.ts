@@ -462,6 +462,8 @@ export const PIECE: WordsPiece = {
     "かんぼつこ\t陥没湖\t#13azg\tgeol¦lake formed by ground depression (esp. by tectonic fault or in a caldera)",
     "かんぼつこきゅう\t陥没呼吸\t#1pe06\tmed¦retractive breathing",
     "かんぼつこっせつ\t陥没骨折\t#1kf90\t¦depressed fracture",
+    "かんぼつちくび\t陥没乳首\t#1ozoc\tanat¦inverted nipple¦retracted nipple",
+    "かんぼつにゅうとう\t陥没乳頭\t#1ozob\tanat¦inverted nipple¦retracted nipple",
     "カンボディア\t柬埔寨\tU#ma62\tuk¦Cambodia",
     "かんぽ\t簡保\t#1jolu\tabbr¦postal life insurance",
     "かんぽ\t緩歩\ts#1ovk1\t¦slow walk",
@@ -812,8 +814,5 @@ export const PIECE: WordsPiece = {
     "カーキャリア\t\t#1ouqp\t¦car carrier",
     "カーキー\t\t#m7is\t¦khaki",
     "かーぎや\t\t#1owi1\t¦kagiya! (word shouted when viewing fireworks)",
-    "かーぎやー\t\t#1owi1\t¦kagiya! (word shouted when viewing fireworks)",
-    "カークーラー\t\t#m7j2\t¦car air-conditioner",
-    "カーゲーベー\tＫＧＢ\t#19iq6\thist¦KGB (Soviet Union intelligence agency)",
   ],
 };

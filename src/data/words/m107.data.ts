@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 108 of 172, from "origi". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 108 of 172, from "orientalist". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,24 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "orientalist\tとうようつう|オリエンタリスト",
+    "orientated\tしこう",
+    "orientated towards\tしこう",
+    "orientation\tオリエンテーション|ほうこう|むき|オリエンテーションきょういく|はいこうせい|はいこう|けんとうしき|よこむき|もうけしゅぎ|オリフラ|マーケットイン|マーケット・イン|じしょかんねん|だんせいほんい|アウティング|こきゃくしこう|こかくしこう|しょうひしゃしこう|カミングアウト|カミング・アウト",
+    "oriented\tしこう|オリエンテッド|じゅうしがた|むけ|インスタンス|オブジェクトオリエンテッド|オブジェクトしこう|オブジェクトしこうげんご|いほうどうでんフィルム|いほうどうでんまく|みらいしこう|かていてき|せいかしゅぎ|じゅんかんがたしゃかい|インスタンスか|エージェントしこう|オブジェクトしこうインタフェース|オブジェクトしこうグラフィックス|オブジェクトしこうデータベース|オブジェクトしこうプログラミング",
+    "oriented towards\tむけ",
+    "orienteering\tオリエンテーリング",
+    "orientis\tえぞりす|エゾリス",
+    "orifice\tあな|オリフィス",
+    "orifices\tしちけつ",
+    "orig\tり|まう|さとがえり|おどる|しじゅく|あかでんわ|ししおどし|ちちぶさんじゅうよんしょ|むらじ|こも|てんしどう|こっくん|はんぶ|ねはんえ|ぶつねはんき|かしつかさ|かしし|けいらんそうめん|ビリケン|はちはちばな",
+    "orig 50\tり",
+    "orig hopping\tおどる",
+    "orig married\tさとがえり",
+    "orig run\tしじゅく",
+    "orig whirling\tまう",
+    "origami\tおりがみ|おる|おりかた|おりがた|おりせん|やまおり|たにおり",
+    "origanum\tマージョラム|マジョラム|はなはっか|ハナハッカ|オレガノ",
     "origin\tしゅっしん|もと|はじまり|ほったん|きげん|ゆらい|はっしょう|げんし|ほんもと|げんしょ|げんいん|みなもと|げんてん|ね|たまご|こんぽん|さんち|ほんごく|みぶん|こんげん",
     "origin continuous\tげんりゅう",
     "origin coordinate\tげんてん",
@@ -288,6 +306,7 @@ export const PIECE: WordsPiece = {
     "ostracion\tはこふぐ|ハコフグ|クロハコフグ",
     "ostracism\tむらはちぶ|オストラシズム|かいがらついほう|きょうどうぜっこう|とうへんついほう",
     "ostracism household\tむらはちぶ",
+    "ostracized\tひかげもの",
     "ostralegus\tみやこどり|ミヤコドリ",
     "ostreatus\tひらたけ|ヒラタケ",
     "ostrich\tオストリッチ|オーストリッチ|だちょう|ダチョウ|オストリッチポリシー|オストリッチ・ポリシー|がんそく|くさそてつ|クサソテツ|オーストリッチレザー|オーストリッチ・レザー|いぬがんそく|イヌガンソク|こごみ|コゴミ",
@@ -822,27 +841,5 @@ export const PIECE: WordsPiece = {
     "ovale\tらんえんこう|らんえんこうかいぞん",
     "ovalifolia\tやえくちなし|ヤエクチナシ|ねじき|ネジキ|かしおしみ|カシオシミ",
     "ovalifolium\tくろうすご|クロウスゴ",
-    "ovalipes\tヒラツメガニ|ひらつめがに",
-    "ovalis\tオバールクロミス|オバール・クロミス",
-    "ovarian\tらんぽう|らんほう|ろほう|らんそうがん|らんそうとうけつ|らんそうかじょうしげきしょうこうぐん|らんそうせいし|らんそうどうみゃく|らんそうのうしゅ",
-    "ovarian follicle\tらんぽう|らんほう",
-    "ovaries\tくちこ|このこ",
-    "ovaritis\tらんそうえん",
-    "ovary\tらんそう|しぼう|たのうほうせいらんそうしょうこうぐん|しんか|たこまんま",
-    "ovata\tあずさ|アズサ|きささげ|キササゲ|ひさぎ|ヒサギ|ふちべにべんけい|フチベニベンケイ",
-    "ovate\tマルスズメダイ",
-    "ovatiformis\tマルスズメダイ",
-    "ovation\tかっさい|オベーション|オベイション|オーベーション|オヴェーション|オヴェイション|スタンディングオベーション|スタンディング・オベーション|まんじょうそうだち",
-    "ovatus\tやまとまだに|ヤマトマダニ",
-    "oven\tオーブン|てんぴ|やきがま|オーヴン|したび|レンジ|ほやほや|オーブントースター|オーブン・トースター|ドリア|ドーリア|でんしレンジ|よねつ|オーブンレンジ|オーブン・レンジ|たいりゅうしきオーブン|やきドーナツ|オーブンやき|いしがま|いしがまピザ",
-    "oven grill\tしたび",
-    "over\tすぎ|いじょう|ごし|くよくよ|クヨクヨ|より|やむ|うえ|ちょう|にかけて|のこったぶん|しょうがく|てんとう|こうふ|とっぱ|つうわ|ようじ|しかい|ながす|くりかえす",
-    "over 1\tようじ",
-    "over across\tせっけん",
-    "over again\tあらためて|くりかえす|たびたび|まくる|やりなおし|やりなおす|しかえし|よみなおす",
-    "over all\tそうしき",
-    "over another\tかさねぎ",
-    "over another's\tかたがわり",
-    "over arm\tひだりよつ",
   ],
 };

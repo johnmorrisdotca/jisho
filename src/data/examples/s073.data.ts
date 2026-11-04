@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 74 of 144, from "0vq5". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 74 of 144, from "0vpw". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,13 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0vpw2\t1¦エミーはナプキンを｜半分《はんぶん》に｜折《お》りたたんだ。¦Emmy folded the napkin in half.¦¦4vvq¦¦CN¦半分",
+    "0vq0s\t1¦それは｜反《はん》｜道徳的《どうとくてき》だ。¦It is still immoral.¦¦4e4v¦small_snow¦rul¦反",
+    "0vq1c\t1¦お｜金《かね》を｜借《か》りる｜事《こと》は｜私《わたし》の｜主義《しゅぎ》に｜反《はん》する。¦It is against my principles to borrow money.¦1¦4vbp¦mookeee¦CM¦反する",
+    "0vq1w\t1¦｜仕事《しごと》から｜気《き》をそらせてはいけません。¦Do not take your mind off work.¦4¦3mjr¦¦¦そらせて",
+    "0vq3a\t1¦｜彼《あれ》はペンを｜置《お》いて｜椅子《いす》に｜座《すわ》ってそり｜返《かえ》った。¦He laid down his pen and leaned back in his chair.¦¦2dn6¦¦CK¦そり返った",
+    "0vq44\t1¦｜喜《よろこ》びの｜反意語《はんいご》は｜悲《かな》しみです。¦Delight is the opposite of sorrow.¦3¦3xmw¦¦helloroto¦反意語",
+    "0vq4y\t1¦｜彼《あれ》はそのニュースにどのような｜反応《はんのう》をしましたか。¦How did he respond to the news?¦1¦2fb8¦¦CM¦反応\t2¦ツベルクリン｜反応《はんのう》は｜疑《ぎ》｜陽性《ようせい》でした。¦The tuberculin reaction was pseudopositive.¦1¦4cao¦¦handsomelyian¦反応\t3¦５．反応が終わったら、濡れ雑巾の上に試験管をおく。¦5. When the reaction is over, place the test-tube on a damp cloth.¦¦1lg3¦fcbond¦fcbond¦反応",
     "0vq5s\t1¦｜反核《はんかく》エネルギー｜運動《うんどう》は｜多《おお》くの｜組織《そしき》によって｜行《おこな》われている。¦The anti-nuclear energy movement is being led by a number of organizations.¦1¦2lk4¦¦¦反核",
     "0vq6c\t1¦｜私《わたし》は｜話《はな》し｜手《て》に｜対《たい》して｜反感《はんかん》を｜持《も》った。¦I experienced a feeling of antipathy towards the speaker.¦3¦39gx¦¦sundown¦反感",
     "0vq6w\t1¦その｜男《おとこ》は｜反逆者《はんぎゃくしゃ》の｜汚名《おめい》をきせられた。¦The man was branded as a traitor.¦2¦4gi7¦¦CM¦反逆者",
@@ -200,11 +207,5 @@ export const PIECE: WordsPiece = {
     "0vtzu\t1¦｜私《わたし》は｜自分《じぶん》の｜非礼《ひれい》さに｜恥《はじ》ずかしさでいっぱいだった。¦I was full of shame at my rudeness.¦¦3cjh¦vastalto¦¦非礼さ",
     "0vu0e\t1¦｜私《わたし》たちはその｜鳥《とり》を｜飛《と》ばした。¦We let the bird fly.¦3¦3kd7¦¦shekitten¦飛ばした\t2¦その俳優はせりふを１行とばした。¦The actor missed a line.¦1¦4fx8¦¦¦とばした\t2¦｜私《わたし》たちは｜彼《あ》の｜順番《じゅんばん》をわざと｜飛《と》ばした。¦We skipped his turn on purpose.¦2¦52qi¦mookeee¦CK¦飛ばした\t3¦｜試合《しあい》が｜始《はじ》まれば、｜彼《あれ》は｜初《はじ》めからとばしていくだろうし、ルチアーノは｜簡単《かんたん》に｜叩《たた》きのめされてしまうだろう。¦When the bell rings, he'll start strong and Luciano will lose quickly.¦¦38jt¦¦¦とばして",
     "0vu0y\t1¦｜犬《いぬ》は｜囲《かこ》いを｜跳《と》び｜越《こ》えて｜庭《にわ》に｜入《い》ってきた。¦The dog jumped over the fence into the garden.¦1¦3r92¦KK_kaku_¦CK¦跳び越えて\t2¦ボールははずんで｜塀《へい》を｜飛《と》び｜越《こ》えた。¦The ball bounced over the wall.¦1¦47lv¦¦CK¦飛び越えた",
-    "0vu18\t1¦そのとき｜私《わたし》だけが｜小川《おがわ》を｜跳《と》び｜越《こ》すことができた。¦Only I was able to jump across the stream then.¦1¦4k9z¦¦¦跳び越す",
-    "0vu1i\t1¦｜鳥《とり》がとびまわっています。¦The birds are flying around.¦4¦2p3e¦¦CK¦とびまわっています\t3¦｜社長《しゃちょう》はいつも｜忙《いそが》しく｜飛《と》び｜回《まわ》っている。¦The boss of our company is always on the go.¦3¦3742¦¦¦飛び回っている",
-    "0vu1s\t1¦どう｜猛《もう》な｜犬《いぬ》が｜女《おんな》の｜子《こ》に｜飛《と》びかかった。¦A fierce dog attacked the girl.¦1¦4b61¦¦CM¦飛びかかった",
-    "0vu22\t1¦ベルが｜鳴《な》るとジョンはすぐさま｜飛《と》び｜起《お》きた。¦John jumped to his feet the moment the bell rang.¦3¦47rz¦¦CN¦飛び起きた",
-    "0vu2c\t1¦｜赤貧《せきひん》｜戸口《とぐち》に｜至《し》らば、｜恋《こい》は｜窓《まど》より｜飛《と》び｜去《さ》る。¦When poverty comes in at the door, love flies out the window.¦1¦31nq¦¦Hybrid¦飛び去る",
-    "0vu2m\t1¦｜侃侃諤諤《かんかんがくがく》の｜議論《ぎろん》が｜飛《と》び｜交《か》うような｜会議《かいぎ》、といったことは｜最近《さいきん》はやらないのかね。¦I wonder if they don't have meetings anymore where strong words fly and everyone goes at each other tooth and nail.¦¦3y0j¦¦shekitten¦飛び交う",
   ],
 };

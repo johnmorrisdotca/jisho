@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 42 of 219, from "0v6yy". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 42 of 219, from "0v6pi". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,38 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0v6pi\t特殊法人\tとくしゅほうじん\tn¦¦semigovernmental corporation",
+    "0v6ps\t特ダネ|特種\tとくダネ~~特ダネ|とくだね~~特種\tn¦¦exclusive news¦scoop",
+    "0v6q2\t特需\tとくじゅ\tn¦¦emergency demands¦special procurement (particularly in time of war)",
+    "0v6qc\t特集|特輯\tとくしゅう\tn,vs,vt¦¦feature (e.g. newspaper)¦special edition¦report",
+    "0v6qm\t特賞\tとくしょう\tn¦¦special prize",
+    "0v6qw\t特色\tとくしょく\tn¦¦characteristic¦(distinctive) feature¦peculiarity¦distinguishing quality¦special character\tn¦print¦spot color¦spot colour",
+    "0v6r6\t特性\tとくせい\tn¦¦special characteristic¦special quality¦trait¦idiosyncrasy¦peculiarity",
+    "0v6rg\t特製\tとくせい\tn,vs,vt,adj-no¦¦special make¦deluxe",
+    "0v6sa\t特待\tとくたい\tn¦¦special treatment¦priority",
+    "0v6sk\t特待生\tとくたいせい\tn¦¦scholarship student",
+    "0v6su\t特大\tとくだい\tadj-no,adj-na,n¦¦extra-large¦king-size\tadj-no,adj-na,n¦¦highest (priority, urgency, etc)",
+    "0v6t4\t特段\tとくだん\tadj-no¦¦exceptional¦unusual¦special\tadv¦¦especially¦exceptionally¦unusually",
+    "0v6te\t特徴\tとくちょう\tn¦¦feature¦trait¦characteristic¦peculiarity¦distinction",
+    "0v6to\t特徴抽出\tとくちょうちゅうしゅつ\tn¦¦feature extraction",
+    "0v6ty\t特徴量\tとくちょうりょう\tn¦comp¦feature value¦numerical representation of a feature (image, audio, etc.)",
+    "0v6u8\t特長\tとくちょう\tn¦¦strong point¦forte¦merit¦strength",
+    "0v6ui\t特定\tとくてい\tadj-no¦¦specific¦particular¦designated¦special\tn,vs,vt¦¦specifying¦designating¦identifying¦pinpointing",
+    "0v6us\t特典\tとくてん\tn¦¦privilege¦special favor¦special favour¦benefit¦prerogative¦perk¦amenity¦特権|恩典",
+    "0v6v2\t特派\tとくは\tn,vs,vt¦¦send specially¦special envoy",
+    "0v6vc\t特派員\tとくはいん\tn¦¦(special) correspondent (e.g. for a newspaper)\tn¦¦representative¦delegate",
+    "0v6vm\t特売\tとくばい\tn,vs,vt¦¦special sale¦bargain sale",
+    "0v6vw\t特筆\tとくひつ\tn,vs,vt¦¦special mention",
+    "0v6w6\t特筆すべき\tとくひつすべき\texp¦¦worthy of special mention",
+    "0v6wg\t特別\tとくべつ\tadj-na,adj-no,adv,n¦¦special¦particular¦extraordinary¦exceptional¦especial",
+    "0v6wq\t特別エディション\tとくべつエディション\tn¦¦special edition",
+    "0v6x0\t特別委\tとくべつい\tn¦¦special committee",
+    "0v6xa\t特別行政区\tとくべつぎょうせいく\tn¦¦special administrative region (of China; e.g. Hong Kong)¦SAR",
+    "0v6xk\t特別総会\tとくべつそうかい\tn¦¦special meeting",
+    "0v6xu\t特別幕僚\tとくべつばくりょう\tn¦¦special staff",
+    "0v6y4\t特報\tとくほう\tn,vs,vt¦¦news flash",
+    "0v6ye\t特命\tとくめい\tn¦¦special directive¦special order\tn¦¦special mission¦special appointment",
+    "0v6yo\t特約\tとくやく\tn,vs,vt¦¦special contract¦special agreement¦rider (insurance)",
     "0v6yy\t特有\tとくゆう\tadj-no,adj-na¦¦characteristic (of)¦peculiar (to)",
     "0v6z8\t特例\tとくれい\tn¦¦special case¦exception",
     "0v6zi\t督促\tとくそく\tn,vs,vt¦¦urge¦demand¦importunity",
@@ -432,7 +464,7 @@ export const PIECE: WordsPiece = {
     "0vabs\t鍋\tなべ\tn¦¦pan¦pot¦saucepan\tn,n-suf¦abbr,food¦stew¦hot pot¦鍋料理",
     "0vac2\t鍋物|なべ物\tなべもの\tn¦¦stew¦food cooked in a pot",
     "0vacm\t馴れ合い|なれ合い\tなれあい\tn¦¦collusion¦conspiracy\tn¦¦common-law marriage¦illicit intercourse¦liaison",
-    "0vacw\t馴れ合う|なれ合う\tなれあう\tv5u,vi¦¦to collude (with)¦to conspire (with)\tv5u,vi¦¦to make friends with¦to get along well with",
+    "0vacw\t馴れ合う|なれ合う\tなれあう\tv5u,vi¦¦to collude (with)¦to conspire (with)\tv5u,vi¦¦to make friends with¦to get along well with\tv5u,vi¦¦to become intimate (with opposite sex)¦to establish a secret liaison (with)",
     "0vad6\t馴れ初め|なれ初め~sK\tなれそめ\tn¦¦start of a romance¦beginning of love",
     "0vadg\t馴れ馴れしい|狎れ狎れしい~rK|馴々しい~sK|慣々しい~sK|慣慣しい~sK\tなれなれしい\tadj-i¦¦overly familiar¦overfamiliar¦too friendly¦too free¦cheeky",
     "0vadq\t馴鹿~rK\tとなかい|トナカイ~~~!\tn¦uk¦reindeer (Rangifer tarandus)¦ain~tunahkay",
@@ -970,14 +1002,5 @@ export const PIECE: WordsPiece = {
     "0vetg\t入り目|入目\tいりめ\tn¦¦expenses",
     "0vetq\t入り揚げる\tいりあげる\tv1,vt¦¦to lavish money on",
     "0veu0\t入り用|入りよう|入用|要り用~iK|要りよう~iK\tいりよう\tn,adj-na,adj-no¦¦need¦want¦necessity\tn¦¦costs¦expenses",
-    "0veua\t入り乱れる\tいりみだれる\tv1,vi¦¦to be jumbled together",
-    "0veuk\t入る\tいる\tv5r,vi¦¦to enter¦to go in¦to get in¦to come in¦入る・はいる・1¦mainly used in fixed expressions and literary language\tv5r,vi¦¦to set (of the sun or moon)¦to sink¦to go down\tv5r,vi¦¦to attain (nirvana, enlightenment, etc.)¦to achieve¦to reach (e.g. a climax)\tsuf,v5r¦¦to do fully¦to do intently¦to do sincerely¦to do deeply¦to feel keenly¦感じ入る|聞き入る¦after -masu stem of verb\tsuf,v5r¦¦to (reach a state) completely¦寝入る・1|絶え入る¦after -masu stem of verb",
-    "0veuu\t入る|這入る~rK\tはいる\tv5r,vi¦¦to enter¦to come in¦to go in¦to get in¦to arrive¦出る・1\tv5r,vi¦¦to join (a club, company, etc.)¦to enter (a university, the army, etc.)¦to enroll (in)¦to go into (e.g. politics)¦to get into\tv5r,vi¦¦to be contained (in)¦to be included (in)¦to be inside (e.g. a box)¦to come under (a heading)¦to belong (in a category)\tv5r,vi¦¦to (be able to) fit (in a container, building, etc.)¦to be (able to be) held¦to be (able to be) accommodated\tv5r,vi¦¦to be introduced¦to be brought in¦to be installed\tv5r,vi¦¦to be received¦to be obtained\tv5r,vi¦¦to be scored (of points)¦to be won (of votes)\tv5r,vi¦¦to turn on¦to start functioning¦to start working\tv5r,vi¦¦to enter (a month, season, etc.)¦to reach (e.g. a climax)¦to get to (e.g. the main topic)¦to enter into (e.g. negotiations)¦to start (doing)¦to begin\tv5r,vi¦¦to form (of a crack, fissure, etc.)¦to develop\tv5r,vi¦¦to be put in (of effort, spirit, feeling, etc.)¦to be applied (e.g. of strength)\tv5r,vi¦¦to be ready (of tea, coffee, etc.)¦to be made\tv5r,vi¦¦to enter the body (of alcohol)¦to become drunk",
-    "0vev4\t入れ\tいれ\tn-suf¦¦container¦receptacle¦case¦bag¦pouch¦box¦holder¦名刺入れ\tn-suf¦¦inserting¦putting in¦車庫入れ|質入れ・1",
-    "0veve\t入れる|容れる~rK|函れる~sK\tいれる\tv1,vt¦¦to put in¦to let in¦to take in¦to bring in¦to insert¦to install (e.g. software)¦to set (a jewel, etc.)¦to ink in (e.g. tattoo)\tv1,vt¦¦to admit¦to accept¦to employ¦to hire\tv1,vt¦¦to accept¦to comply¦to grant¦to adopt (a policy, etc.)¦to take (advice, etc.)¦to listen to¦to pay attention to¦esp. 容れる\tv1,vt¦¦to include\tv1,vt¦¦to pay (one's rent, etc.)\tv1,vt¦¦to cast (a vote)\tv1,vt¦¦to make (tea, coffee, etc.)¦淹れる\tv1,vt¦¦to turn on (a switch, etc.)\tv1,vt¦¦to send (a fax)¦to call",
-    "0vevo\t入れ違い\tいれちがい\tn¦¦passing each other (without meeting)¦entering somewhere just after someone had left¦coming in just as someone had gone out\tn¦¦inserting in the wrong order",
-    "0vevy\t入れ違える\tいれちがえる\tv1,vt¦¦to misplace",
-    "0vew8\t入れ合わせる\tいれあわせる\tv1¦¦to make up for",
-    "0vewi\t入れ込む|入れこむ~sK|いれ込む~sK\tいれこむ\tv5m,vt¦¦to push into¦to stuff into¦to pack into\tv5m,vi¦¦to be enthusiastic (about)¦to be crazy (about)¦to be obsessed (with)\tv5m,vi¦¦to get excited¦to be stirred up",
   ],
 };

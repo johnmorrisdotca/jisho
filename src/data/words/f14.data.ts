@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 15 of 70, from "何をす". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 15 of 70, from "何れ又". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,13 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "何れ又\tいずれまた",
+    "何れ程\tどれほど",
+    "何れ菖蒲か杜若\tいずれあやめかかきつばた",
+    "何を\tなにを",
+    "何をおいても\tなにをおいても",
+    "何をかいわんや\tなにをかいわんや",
+    "何をか言わんや\tなにをかいわんや",
     "何をするにも\tなにをするにも",
     "何を措いても\tなにをおいても",
     "何を言うてんねん\tなにをいうてんねん|なにをゆうてんねん",
@@ -3241,10 +3248,5 @@ export const PIECE: WordsPiece = {
     "傍から見る\tはたからみる",
     "傍に置く\tわきにおく",
     "傍の者達\tはたのものたち",
-    "傍ら\tかたわら",
-    "傍らに\tかたわらに",
-    "傍らに人なきがごとし\tかたわらにひとなきがごとし",
-    "傍らに人無きがごとし\tかたわらにひとなきがごとし",
-    "傍らに人無きが如し\tかたわらにひとなきがごとし",
   ],
 };

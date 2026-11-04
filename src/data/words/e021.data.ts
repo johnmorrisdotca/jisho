@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 22 of 219, from "0qrts". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 22 of 219, from "0qrpc". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,22 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0qrpc\t軍部独裁\tぐんぶどくさい\tn¦¦military dictatorship",
+    "0qrpm\t軍服\tぐんぷく\tn¦¦military uniform",
+    "0qrpw\t軍放送\tぐんほうそう\tn¦¦military broadcast",
+    "0qrq6\t軍法\tぐんぽう\tn¦¦military law¦martial law¦tactics¦strategy",
+    "0qrqg\t軍法会議\tぐんぽうかいぎ\tn¦¦court-martial",
+    "0qrqq\t軍帽\tぐんぼう\tn¦¦military cap",
+    "0qrr0\t軍民\tぐんみん\tn¦¦the military and civilians",
+    "0qrra\t軍務\tぐんむ\tn¦¦military affairs¦military service",
+    "0qrrk\t軍門\tぐんもん\tn¦pol¦camp gate¦general",
+    "0qrru\t軍容\tぐんよう\tn¦¦military accouterments¦military accoutrements¦troop formation",
+    "0qrs4\t軍用\tぐんよう\tn,adj-no¦¦for military use",
+    "0qrse\t軍用艦\tぐんようかん\tn¦¦military ship",
+    "0qrso\t軍用機\tぐんようき\tn¦¦military aircraft",
+    "0qrsy\t軍用金\tぐんようきん\tn¦¦war funds¦war chest¦campaign fund",
+    "0qrt8\t軍用犬\tぐんようけん\tn¦¦war dog",
+    "0qrti\t軍用地図\tぐんようちず\tn¦¦army (topographic) map",
     "0qrts\t軍用鳩\tぐんようばと\tn¦¦carrier pigeon",
     "0qru2\t軍用品\tぐんようひん\tn¦¦military stores¦munitions of war",
     "0qruc\t軍用輸送機\tぐんようゆそうき\tn¦¦military transport aircraft¦military cargo aircraft",
@@ -822,7 +838,9 @@ export const PIECE: WordsPiece = {
     "0qyak\t建築\tけんちく\tn,vs,vt¦¦construction¦architecture (of buildings)",
     "0qyau\t建築家\tけんちくか\tn¦¦architect",
     "0qyb4\t建白\tけんぱく\tn,vs,vt¦¦petition¦memorial",
+    "0qybe\t建碑\tけんぴ\tn,vs,vi¦¦erection of a monument",
     "0qybo\t建物|建もの~sK|建て物~sK|建てもの~sK\tたてもの\tn¦¦building",
+    "0qyby\t建立\tこんりゅう|けんりつ\tn,vs,vt¦¦(act of) building (temple, monument, etc.)¦erection",
     "0qyc8\t憲章\tけんしょう\tn¦¦charter",
     "0qyci\t憲政\tけんせい\tn¦¦constitutional government\tn¦arch¦exemplary government¦excellent government",
     "0qycs\t憲兵\tけんぺい\tn¦¦military police",
@@ -981,12 +999,5 @@ export const PIECE: WordsPiece = {
     "0qzli\t見せしめ\tみせしめ\tn¦¦(making a) lesson (of)¦(setting an) example¦warning",
     "0qzls\t見せびらかす\tみせびらかす\tv5s,vt¦¦to show off¦to flaunt",
     "0qzm2\t見せる|観せる~sK\tみせる\tv1,vt¦¦to show¦to display\tv1,vt¦¦to make (something or someone) look ...¦to present an appearance of ...\tv1,vt¦¦to make (something) worth watching¦to be entertaining\tv1,vt¦¦to have (something) looked at (by a specialist)¦to have (an antique, etc.) appraised\tv1,vt¦¦to have (an injury, person, etc.) looked at (by a doctor)¦to take (someone) to a doctor¦also written as 診せる\taux-v,v1¦¦to make a show of (doing)¦to do in a conspicuous manner¦to do in view of others¦after the -te form of a verb\taux-v,v1¦¦to resolve to do¦to do at any cost¦to show others that one will ...¦after the -te form of a verb",
-    "0qzmc\t見せ掛け|見せかけ\tみせかけ\tn,adj-no¦¦seeming¦pose¦show¦pretense¦sham¦mock",
-    "0qzmm\t見せつける|見せ付ける\tみせつける\tv1,vt¦¦to make a display of¦to show off¦to flaunt",
-    "0qzmw\t見世物~ateji|見せ物\tみせもの\tn¦hist¦misemono¦type of Edo- and Meiji-period side show often held outdoors or in small temporarily erected shacks on temple and shrine grounds\tn¦¦show¦exhibition¦spectacle¦freakshow¦side show",
-    "0qzn6\t見っともない~rK|見っとも無い~sK\tみっともない\tadj-i¦uk¦shameful¦disgraceful¦unsightly¦indecent¦unseemly¦unbecoming¦improper",
-    "0qzng\t見て取る|見てとる\tみてとる\tv5r,vt¦¦to perceive¦to grasp (the situation)",
-    "0qzo0\t見やる|見遣る\tみやる\tv5r,vt¦¦to look at¦to gaze¦to stare at",
-    "0qzoa\t見る|観る|視る|覧る~sK\tみる\tv1,vt¦¦to see¦to look¦to watch¦to view¦to observe\tv1,vt¦¦to examine¦to look over¦to assess¦to check¦to judge\tv1,vt¦¦to look after¦to attend to¦to take care of¦to keep an eye on¦看る\tv1,vt¦¦to experience¦to meet with (misfortune, success, etc.)\taux-v,v1¦uk¦to try ...¦to have a go at ...¦to give ... a try¦after the -te form of a verb\taux-v,v1¦uk¦to see (that) ...¦to find (that) ...¦as 〜てみると, 〜てみたら, 〜てみれば, etc.",
   ],
 };

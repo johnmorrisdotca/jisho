@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 20 of 144, from "0p94w". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 20 of 144, from "0p94". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0p942\t1¦｜彼《あれ》はエベレスト｜登頂《とうちょう》の｜遠征隊《えんせいたい》の｜一員《いちいん》であった。¦He was a member of the expedition which climbed Mount Everest.¦1¦2g6k¦¦sundown¦遠征\t2¦｜私《わたし》たちは｜遠征試合《えんせいじあい》でほとんど｜負《ま》けてしまった。¦We lost almost all our away games.¦1¦3k4c¦bunbuku¦CK¦遠征",
     "0p94w\t1¦「まだ｜浅《あさ》いね。｜足《あし》とどく」「｜結構《けっこう》｜遠浅《とおあさ》だな。よつばもまだ｜足《あし》つくだろ」¦\"It's still shallow, eh. My feet still touch the bottom.\" \"It's quite a shallow beach. Yotsuba, you can still touch the bottom can't you?\"¦1¦1luu¦fcbond¦fcbond¦遠浅",
     "0p95g\t1¦｜学校《がっこう》の｜遠足《えんそく》で｜奈良《なら》に｜行《おこな》った。¦We went on a school trip to Nara.¦1¦3ybg¦small_snow¦Zifre¦遠足",
     "0p95q\t1¦｜太鼓《たいこ》の｜音《おと》は｜遠《とお》のいていった。¦The drum faded away.¦1¦2ynb¦small_snow¦AlanF_US¦遠のいて",
@@ -215,7 +216,5 @@ export const PIECE: WordsPiece = {
     "0pemy\t1¦｜私《わたし》はスピーチの｜下書《したが》きを｜書《か》いています。¦I am writing a draft of the speech.¦4¦3fuf¦¦CM¦下書き",
     "0pep6\t1¦｜彼《あれ》はあの｜女性《じょせい》に｜下心《したごころ》を｜抱《いだ》いている。¦He has designs on that girl.¦3¦2gnh¦¦¦下心",
     "0pequ\t1¦｜下水《げすい》が｜完全《かんぜん》に｜詰《つ》まっている。¦The drains are blocked up.¦2¦418e¦¦CK¦下水",
-    "0pero\t1¦そして｜汚水《おすい》を｜流《なが》すために｜地下《ちか》に｜下水道《げすいどう》を｜持《も》っていた。¦The house has pipes under the ground to carry dirty water away.¦2¦4kqy¦¦¦下水道",
-    "0peu6\t2¦｜彼《あ》の｜一生《いっしょう》は｜社会《しゃかい》の｜下積《したづ》みで｜終《お》わった。¦He lived and died in obscurity.¦3¦2jda¦Kaede¦CM¦下積み",
   ],
 };

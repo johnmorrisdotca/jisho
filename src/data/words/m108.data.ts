@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 109 of 172, from "over b". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 109 of 172, from "ovalip". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,28 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "ovalipes\tヒラツメガニ|ひらつめがに",
+    "ovalis\tオバールクロミス|オバール・クロミス",
+    "ovarian\tらんぽう|らんほう|ろほう|らんそうがん|らんそうとうけつ|らんそうかじょうしげきしょうこうぐん|らんそうせいし|らんそうどうみゃく|らんそうのうしゅ",
+    "ovarian follicle\tらんぽう|らんほう",
+    "ovaries\tくちこ|このこ",
+    "ovaritis\tらんそうえん",
+    "ovary\tらんそう|しぼう|たのうほうせいらんそうしょうこうぐん|しんか|たこまんま",
+    "ovata\tあずさ|アズサ|きささげ|キササゲ|ひさぎ|ヒサギ|ふちべにべんけい|フチベニベンケイ",
+    "ovate\tマルスズメダイ",
+    "ovatiformis\tマルスズメダイ",
+    "ovation\tかっさい|オベーション|オベイション|オーベーション|オヴェーション|オヴェイション|スタンディングオベーション|スタンディング・オベーション|まんじょうそうだち",
+    "ovatus\tやまとまだに|ヤマトマダニ",
+    "oven\tオーブン|てんぴ|やきがま|オーヴン|したび|レンジ|ほやほや|オーブントースター|オーブン・トースター|ドリア|ドーリア|でんしレンジ|よねつ|オーブンレンジ|オーブン・レンジ|たいりゅうしきオーブン|やきドーナツ|オーブンやき|いしがま|いしがまピザ",
+    "oven grill\tしたび",
+    "over\tすぎ|いじょう|ごし|くよくよ|クヨクヨ|より|やむ|うえ|ちょう|にかけて|のこったぶん|しょうがく|てんとう|こうふ|とっぱ|つうわ|ようじ|しかい|ながす|くりかえす",
+    "over 1\tようじ",
+    "over across\tせっけん",
+    "over again\tあらためて|くりかえす|たびたび|まくる|やりなおし|やりなおす|しかえし|よみなおす",
+    "over all\tそうしき",
+    "over another\tかさねぎ",
+    "over another's\tかたがわり",
+    "over arm\tひだりよつ",
     "over balance\tくりこし",
     "over bar\tふかす",
     "over bed\tねがえる|ねがえり",
@@ -732,33 +754,5 @@ export const PIECE: WordsPiece = {
     "pain sickness\tびょうく",
     "pain stomach\tさしこむ",
     "pain swelling\tとれる",
-    "pain symptoms\tおさまる",
-    "pain tone\tするどい",
-    "pained\tあおいき",
-    "painful\tいたい|くるしい|つらい|せつない|こころぐるしい|にがい|からい|いたいたしい|なみだぐましい|ゆうつうせい|かねる|ふるきず|しぶりばら|むけんじごく|むげんじごく|いたいめ|ちょうもんのいっしん|むげんならく|むけんならく|あびじごく",
-    "painful do\tかねる",
-    "painful look\tいたいたしい",
-    "painful loose\tしぶりばら",
-    "painful memory\tふるきず",
-    "painfully\tみみのいたい|みみがいたい|いたがゆい",
-    "painkiller\tちんつうざい|いたみどめ",
-    "painless\tむつう",
-    "painlessly\tピンピンコロリ|ぴんぴんころり",
-    "pains\tくしん|ひとくろう|ほねおり|ふしん|じんつう|せっかく|しくはっく|しぶりばら|はっく|あとばら|あとはら|くしんさんたん|しちなんはっく|さんけ|さんつう|こころをくだく|てまをかける|ほねおりぞんのくたびれもうけ|たんせいこめる|せいちょうつう",
-    "pains do\tふしん",
-    "pains five\tしくはっく",
-    "painstaking\tたんねん|ちのにじむよう|ちのでるよう|りきさく|りょくさく|ろうさく|るこつ|りきへん",
-    "painstaking piece\tりきさく|りょくさく|ろうさく",
-    "paint\tえのぐ|とりょう|ペイント|ペンキ|ぬる|ぬりかえる|いろどる|かく|えがく|がんりょう|のび|ノビ|おとす|むら|ムラ|エナメル|シンナー|とく|えをかく|えをえがく",
-    "paint again\tぬりかえる",
-    "paint cream\tのび|ノビ|のびる",
-    "paint different\tぬりかえる",
-    "paint etc\tおとす|むら|ムラ|とく|ふきつける",
-    "paint ink\tいちまつ",
-    "paint picture\tえをかく|えをえがく",
-    "paint thinner\tシンナー",
-    "paintball\tペイントボール",
-    "paintbrush\tえふで|ふで|ひつ|ぬりばけ",
-    "painted\tてがき|ベタベタ|べたべた|くろぬり|ひきまゆ|つくりまゆ|ぬりたて|じが|たましぎ|タマシギ|どうろひょうじ|ガラスえ|いたやかえで|イタヤカエデ|ふすまえ|ごしきのじこ|ゴシキノジコ|きんらんで|にくひつが|えんそう",
   ],
 };

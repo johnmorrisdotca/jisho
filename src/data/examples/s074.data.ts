@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 75 of 144, from "0vu2w". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 75 of 144, from "0vu1". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,12 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0vu18\t1¦そのとき｜私《わたし》だけが｜小川《おがわ》を｜跳《と》び｜越《こ》すことができた。¦Only I was able to jump across the stream then.¦1¦4k9z¦¦¦跳び越す",
+    "0vu1i\t1¦｜鳥《とり》がとびまわっています。¦The birds are flying around.¦4¦2p3e¦¦CK¦とびまわっています\t3¦｜社長《しゃちょう》はいつも｜忙《いそが》しく｜飛《と》び｜回《まわ》っている。¦The boss of our company is always on the go.¦3¦3742¦¦¦飛び回っている",
+    "0vu1s\t1¦どう｜猛《もう》な｜犬《いぬ》が｜女《おんな》の｜子《こ》に｜飛《と》びかかった。¦A fierce dog attacked the girl.¦1¦4b61¦¦CM¦飛びかかった",
+    "0vu22\t1¦ベルが｜鳴《な》るとジョンはすぐさま｜飛《と》び｜起《お》きた。¦John jumped to his feet the moment the bell rang.¦3¦47rz¦¦CN¦飛び起きた",
+    "0vu2c\t1¦｜赤貧《せきひん》｜戸口《とぐち》に｜至《し》らば、｜恋《こい》は｜窓《まど》より｜飛《と》び｜去《さ》る。¦When poverty comes in at the door, love flies out the window.¦1¦31nq¦¦Hybrid¦飛び去る",
+    "0vu2m\t1¦｜侃侃諤諤《かんかんがくがく》の｜議論《ぎろん》が｜飛《と》び｜交《か》うような｜会議《かいぎ》、といったことは｜最近《さいきん》はやらないのかね。¦I wonder if they don't have meetings anymore where strong words fly and everyone goes at each other tooth and nail.¦¦3y0j¦¦shekitten¦飛び交う",
     "0vu2w\t1¦ケンが｜飛《と》び｜込《こ》み｜台《だい》に｜立《た》っている。¦Ken stands on the diving board.¦3¦4trl¦KK_kaku_¦Zifre¦飛び込み台",
     "0vu3q\t1¦｜猫《ねこ》が｜部屋《へや》から｜飛《と》び｜出《だ》した。¦A cat dashed out of the room.¦3¦2m4k¦Sim5634¦CM¦飛び出した\t4¦｜彼《あれ》が｜家《いえ》を｜飛《と》び｜出《だ》したのは｜父親《ちちおや》が｜厳《きび》しかったせいだ。¦His running away from home is due to his father's severity.¦1¦2l0v¦¦CM¦飛び出した\t4¦どんな｜質問《しつもん》が｜飛《と》び｜出《だ》すか｜分《わ》からないから、｜僕《ぼく》としては｜当意即妙《とういそくみょう》で｜発表《はっぴょう》するしかないな。¦Since I don't know what questions I'll be asked, I'll have to wing it at my presentation.¦¦49vh¦¦papabear¦飛び出す",
     "0vu4a\t1¦｜動《うご》いている｜電車《でんしゃ》に｜飛《と》び｜乗《の》るのは｜危険《きけん》である。¦It is dangerous to jump into a moving train.¦3¦2nis¦¦CM¦飛び乗る",
@@ -214,12 +220,5 @@ export const PIECE: WordsPiece = {
     "0vywi\t1¦その｜腐《くさ》った｜肉《にく》はひどく｜不快《ふかい》な｜匂《にお》いがした。¦The spoiled meat had a nasty smell.¦¦4fq4¦¦Lumi_alt¦不快な",
     "0vyx2\t1¦あの｜飛行機《ひこうき》は｜大変《たいへん》｜不格好《ぶかっこう》だ。¦That plane is so ugly.¦3¦4xua¦¦Lumi¦不格好",
     "0vyxc\t1¦｜結果《けっか》はまだ｜不確《ふたし》かである。¦The result is still in doubt.¦1¦3rp8¦¦sundown¦不確か",
-    "0vyxm\t1¦ネット｜上《じょう》の｜不確実《ふかくじつ》な｜情報《じょうほう》を｜鵜呑《うの》みにしてはならない。¦You mustn't swallow unreliable information that's on the Web.¦¦1qwny¦tommy_san¦JimBreen¦不確実な",
-    "0vz0e\t1¦｜彼《あ》の｜計画《けいかく》はまだ｜不完全《ふかんぜん》な｜点《てん》が｜多《おお》い。¦His plan leaves much to be desired.¦3¦2itv¦¦CM¦不完全な",
-    "0vz1i\t1¦｜私《わたし》は｜人前《ひとまえ》で｜話《はなし》をするのに｜不慣《ふな》れだ。¦I'm not used to speaking in public.¦3¦3c3h¦¦CK¦不慣れ",
-    "0vz3g\t1¦いつも｜彼女《かのじょ》が｜遅《おく》れて｜来《く》るので｜彼《あれ》は｜不機嫌《ふきげん》である。¦He is cross because she always comes late.¦1¦4wgv¦¦¦不機嫌",
-    "0vz3q\t1¦｜急《きゅう》に｜笑《わら》い｜出《だ》さないでよ。｜不気味《ぶきみ》だから。¦Don't burst out laughing like that. It's creepy.¦3¦3wsc¦KK_kaku_¦Duck¦不気味",
-    "0vz40\t1¦｜生理《せいり》が｜不規則《ふきそく》です。¦My menstrual cycle is irregular.¦2¦323c¦¦¦不規則",
-    "0vz4a\t1¦｜英語《えいご》を｜学習《がくしゅう》する｜上《うえ》で｜不可欠《ふかけつ》な、｜不規則動詞《ふきそくどうし》の｜活用《かつよう》。¦Conjugation of irregular verbs - essential for those learning English.¦¦1lzk¦fcbond¦fcbond¦不規則動詞",
   ],
 };

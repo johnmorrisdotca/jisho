@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 94 of 144, from "0y7ae". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 94 of 144, from "0y73q". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,20 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0y73q\t1¦もう・・・タバコの｜吸殻《すいがら》まで｜散《ち》らばってるし。¦Sheesh, you've even got cigarette butts scattered around.¦1¦1m5w¦fcbond¦fcbond¦吸殻",
+    "0y74a\t1¦この｜吸《す》い｜取《と》り｜紙《がみ》はインクをよく｜吸《す》い｜取《と》る。¦This blotting paper absorbs ink well.¦3¦4rlc¦¦CK¦吸い取り紙",
+    "0y74k\t1¦あのフランス｜人《じん》は｜日本《にほん》にきてわずか｜数ヶ月《すうかげつ》です。¦It is only a few months since that Frenchman came to Japan.¦3¦4yft¦¦¦数ヶ月",
+    "0y754\t1¦｜今日《きょう》はすがすがしいお｜天気《てんき》ですね。¦It's a nice day, isn't it?¦5¦3ojm¦¦CK¦すがすがしい",
+    "0y75e\t1¦｜音楽《おんがく》の｜好《この》みは｜人《じん》によって｜好《す》きずきです。¦Music preferences vary from person to person.¦3¦1mvt¦mookeee¦CM¦好きずき",
+    "0y768\t1¦｜私《わたし》は｜少《すく》なからずがっかりした。¦I was not a little disappointed.¦4¦3c9g¦¦Liface¦少なからず",
+    "0y76i\t1¦私は、少なくとも１０冊の本を持っている。¦I have at least ten books.¦2¦3h6k¦¦CK¦少なくとも",
+    "0y77c\t2¦｜国内市場《こくないしじょう》の｜競争《きょうそう》はすさまじいものです。¦Competition in the domestic market is cutthroat.¦2¦3pik¦¦Lumi_alt¦すさまじい",
+    "0y77m\t1¦かなり｜多《おお》くのアメリカ｜人《じん》が｜寿司《すし》を｜好《この》む。¦Quite a few Americans like sushi.¦¦4ul8¦bunbuku¦CK¦寿司",
+    "0y77w\t1¦｜移民《いみん》たちは、そこへ、｜木《き》の｜漁船《ぎょせん》にすし｜詰《づ》め｜状態《じょうたい》で、｜危険《きけん》な｜航海《こうかい》をするのである。¦Packed into wooden fishing boats like sardines, the immigrants undergo the dangerous voyage there.¦1¦1m5r¦fcbond¦fcbond¦すし詰め",
+    "0y78g\t1¦｜私《わたし》は｜貴方《あなた》が｜汽車《きしゃ》で｜行《い》くことを｜勧《すす》めます。¦I recommend you to go by train.¦1¦3dp2¦mookeee¦CK¦勧めます\t2¦トムは｜彼《かれ》らにその｜小説《しょうせつ》を｜薦《すす》めた。¦Tom recommended the novel to them.¦1¦4a6y¦¦CK¦薦めた\t3¦｜彼《あれ》にウイスキーかジンをすすめたが、｜彼《あれ》はどちらもいらないと｜言《い》った。¦I offered him whisky or gin, but he said he didn't need either.¦3¦2jwq¦¦¦すすめた",
+    "0y79a\t1¦｜彼女《かのじょ》はだんだん、｜捨《す》て｜鉢《ばち》になった。¦She was beginning to get desperate.¦1¦1z34¦¦CM¦捨て鉢",
+    "0y79u\t1¦｜彼女《かのじょ》は｜子供《こども》のために｜全《すべ》てを｜犠牲《ぎせい》にした。¦She gave up everything for her children.¦1¦1x8s¦¦CK¦全て\t2¦｜人間《にんげん》は｜全《すべ》て｜平等《びょうどう》である。¦All men are equal.¦3¦33b9¦bunbuku¦CK¦全て\t2¦あなたの｜計画《けいかく》をすべて｜話《はな》してください。¦Tell me all about your plan.¦4¦502g¦¦CK¦すべて",
+    "0y7a4\t1¦アリスは｜長《なが》い｜滑《すべ》り｜台《だい》を｜滑《すべ》り｜降《お》りた。¦Alice slid down the long slide.¦1¦4xg4¦¦CN¦滑り台",
     "0y7ae\t1¦ところで、お｜住《す》まいはどちらですか。¦By the way, where do you live?¦4¦4azm¦bunbuku¦CK¦住まい",
     "0y7cc\t1¦彼の周りのものは全て粉々に吹き飛ばされたが、彼はすり傷１つ負わずに逃げた。¦Everything around him was blown to pieces, yet he escaped without a scratch.¦1¦2ia2¦¦CK¦すり傷",
     "0y7cw\t1¦この｜擦《す》り｜切《き》れたカーペットを｜取《と》り｜除《じょ》かねばならないでしょう。¦I will have to get rid of this worn-out carpet.¦1¦4r7e¦¦CK¦擦り切れた",
@@ -186,18 +200,5 @@ export const PIECE: WordsPiece = {
     "0y9y8\t1¦ナチズムはドイツ｜独特《どくとく》のものでしたか。¦Was Nazism peculiar to Germany?¦1¦49n6¦¦Catriona¦ドイツ",
     "0y9yi\t1¦｜動悸《どうき》が｜激《はげ》しくなることがよくあります。¦I often experience palpitations of the heart.¦¦2ngu¦¦jakov¦動悸",
     "0y9zm\t1¦｜警察《けいさつ》はそのグループの｜動静《どうせい》を｜常《つね》に｜監視《かんし》する。¦The police is always watching the movements of the group.¦1¦3rzw¦¦¦動静",
-    "0y9zw\t1¦その｜老人《ろうじん》は｜堂々《どうどう》とした｜顔《かお》つきをしていた。¦The old man had a noble countenance.¦3¦4f14¦mookeee¦eirik174¦堂々と\t3¦｜彼《あれ》はその｜式典《しきてん》で｜堂々《どうどう》と｜振《ふ》る｜舞《ま》った。¦He bore himself well at the ceremony.¦1¦2ez8¦mookeee¦sundown¦堂々と",
-    "0ya0q\t1¦｜戦争《せんそう》の｜直前《ちょくぜん》、｜日本《にほん》がフランスと｜同《どう》｜盟《めい》を｜結《むす》びました。¦Japan entered into an alliance with France just before the war.¦1¦480e¦Scott¦Scott¦同盟",
-    "0ya10\t1¦｜彼女《かのじょ》は｜毒々《どくどく》しい｜化粧《けしょう》をしている。¦She wears heavy makeup.¦¦1vni¦¦CK¦毒々しい",
-    "0ya24\t1¦そこの｜乞食《こじき》が｜泥棒《どろぼう》である｜事《こと》がわかった。¦The beggar turned out to be a thief.¦¦4ku8¦¦CK¦泥棒",
-    "0ya2e\t1¦｜彼《あ》の｜名誉《めいよ》は｜貪欲《どんよく》によってむしばまれた。¦His honor was corroded by greed.¦¦2hic¦¦¦貪欲",
-    "0ya38\t1¦｜内紛《ないふん》が｜党《とう》の｜分裂《ぶんれつ》したもとです。¦Strife is the rock on which the party split.¦¦2n2q¦¦¦内紛",
-    "0ya3i\t1¦いまそれを｜直《なお》そうったって｜無駄《むだ》だ。¦It's no use trying to fix it now.¦¦4wcj¦¦CK¦直そう\t1¦あなたの｜時計《とけい》は｜明日《あした》までには｜直《なお》しておきますよ。¦I will have repaired your watch by tomorrow.¦3¦4zz0¦¦Lumi_alt¦直して\t3¦その｜本《もと》をなおしなさい。¦Put the book back where you found it.¦5¦4fga¦¦CK¦なおし\t5¦｜次《つぎ》の｜文章《ぶんしょう》を｜日本語《にほんご》に｜直《なお》しなさい。¦Put the following sentences into Japanese.¦2¦37wz¦¦CN¦直し",
-    "0ya3s\t1¦２週間もすれば自然に治ります。¦It will go away by itself in two weeks.¦3¦51p2¦arnab¦CC¦治ります",
-    "0ya4c\t1¦あいつは、なかなかいい奴だぜ！¦He is a good joker.¦1¦511y¦small_snow¦¦なかなか\t2¦いまどき｜良《よ》い｜仕事《しごと》はなかなか｜得《え》がたいのを｜忘《わす》れないでね。¦Don't forget that good jobs are very hard to come by these days.¦3¦3p0t¦¦CK¦なかなか",
-    "0ya4m\t1¦｜財布《さいふ》の｜中身《なかみ》をこの｜袋《ふくろ》に｜空《あ》けなさい。¦Empty the purse into this bag.¦¦3nby¦¦sundown¦中身",
-    "0ya4w\t1¦｜先生《せんせい》は｜時間《じかん》を｜守《まも》ることの｜大切《たいせつ》さについて｜長々《ながなが》と｜述《の》べた。¦Our teacher dwelt on the importance of punctuality.¦2¦318h¦¦CM¦長々と\t2¦ジョンは｜長《なが》いすに｜長々《ながなが》と｜寝《ね》そべっていた。¦John stretched out on the couch.¦3¦4m2w¦¦CN¦長々と",
-    "0ya56\t1¦｜長《なが》らくお待たせして｜申《もう》し｜訳《わけ》ありません。¦I'm sorry to have kept you waiting so long.¦1¦6tj9n¦small_snow¦Eldad¦長らく",
-    "0ya60\t1¦ってゆーか、こうやってぐじぐじ考えるのが情けないんじゃないのか？¦Or rather, is it not just pathetic that I think such whiny thoughts like this?¦3¦1n2e¦mookeee¦¦情けない",
   ],
 };

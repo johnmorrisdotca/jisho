@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 3 of 70, from "けれ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 3 of 70, from "けり返". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "けり返す\tけりかえす",
     "けれん味\tけれんみ",
     "けんかが強い\tけんかがつよい",
     "けんか両成敗\tけんかりょうせいばい",
@@ -1264,7 +1265,7 @@ export const PIECE: WordsPiece = {
     "その晩\tそのばん",
     "その様\tそのよう",
     "その様な中\tそのようななか",
-    "その気\tそのき",
+    "その気\tそのけ|そのき",
     "その気になる\tそのきになる",
     "その点で\tそのてんで",
     "その為\tそのため",
@@ -1813,6 +1814,7 @@ export const PIECE: WordsPiece = {
     "つまみ出す\tつまみだす",
     "つまみ取る\tつまみとる",
     "つまみ洗い\tつまみあらい",
+    "つまみ菜\tつまみな",
     "つまみ食い\tつまみぐい",
     "つまらない物ですが\tつまらないものですが",
     "つま先\tつまさき",
@@ -2804,7 +2806,5 @@ export const PIECE: WordsPiece = {
     "はじき出す\tはじきだす",
     "はじき音\tはじきおん",
     "はじき飛ばす\tはじきとばす",
-    "はじけ飛ぶ\tはじけとぶ",
-    "はす交い\tはすかい",
   ],
 };

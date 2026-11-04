@@ -10,9 +10,43 @@ export const COMMON_TAGS = ["news1", "ichi1", "spec1", "spec2", "gai1"];
 /** A sense carrying one of these marks is left out in safe mode: vulgar, X-rated, sensitive or derogatory. Kotoba's bar, kept in step. */
 export const SAFE_MARKS = ["vulg", "X", "sens", "derog"];
 const OUT_IN_SAFE_MODE = new Set(SAFE_MARKS);
-/** A gloss that names sex or the sex trade, which JMdict does not always mark: a sense with one is left out in safe mode too. Kotoba's bar (scripts/children-bar.mjs), kept in step. */
+/** Kotoba's bar on a gloss (scripts/children-bar.mjs there), kept in step: a gloss that names sex or the sex trade, before the neutral uses below are taken out of it (`adultGloss` does both). */
 export const ADULT_GLOSS =
-  /\b(sex|sexual|sexually|erection|genital\w*|penis|vagina|vulva|clitoris|testicle\w*|pubic|semen|sperm(?!\s+whales?)|orgasm\w*|ejaculat\w*|masturbat\w*|fellatio|cunnilingus|copulat\w*|fornicat\w*|promiscuous|incest\w*|rape[sd]?|raping|rapist|pornograph\w*|erotic\w*|lewd|prostitut\w*|whore|brothel|bordello|pimp|mistress(?!\s*\(?of\b)|concubine|courtesan|adulter\w*|lustful|nipple)\b/i;
+  /\b(sex|sexual|sexually|erection|genital\w*|penis|vagina|vulva|clitoris|testicle\w*|pubic|semen|sperm(?!\s+whales?)|orgasm\w*|ejaculat\w*|masturbat\w*|fellatio|cunnilingus|copulat\w*|fornicat\w*|promiscuous|incest\w*|rape[sd]?(?!\s+(?:blossoms?|seeds?|seedlings?|oil|flowers?))|raping|rapist|pornograph\w*|erotic\w*|lewd|prostitut\w*|whore|brothel|bordello|pimp|adulter(?:y|er|ers|ess|ous)|lustful)\b/i;
+
+/**
+ * Words that bar only as the FIRST gloss of a sense, where they are what the word means: 妾 is "mistress; kept woman", but
+ * 愛人 is "lover; mistress" and 女将 a "proprietress" who is also a "mistress (of a house)". A leading "(mammary)" does not hide a nipple.
+ */
+export const ADULT_FIRST_GLOSS =
+  /^(?:\([^)]*\)\s*)?(?:(?:beloved|favou?rite|secret|kept|foreigner's|a|the)\s+)*(mistress(?!\s*\(?of\b)|kept woman|concubine|courtesan|nipple)\b/i;
+
+/** What a gloss says about sex without naming an act, an organ or the trade: gender, the other or the same sex, biology, school. */
+const NEUTRAL_SEX = new RegExp(
+  [
+    "\\b(?:opposite|same|both|mixed|single|other|either)[- ]sex(?:es)?\\b",
+    "\\(distinction of\\) sex\\b",
+    "\\bsex(?=\\s*;\\s*gender)",
+    "\\bsex[- ](?:ratio|education|difference|chromosomes?|hormones?|pheromones?|discrimination|role|determination|linked|limited|reassignment|characteristics?|glands?|cells?|change|check|testing|selection|preselection)\\b",
+    "\\bsexual[- ](?:selection|reproduction|dimorphism|maturation|orientation|minorit\\w+|discrimination|characteristics?|difference|generation|identity|function|gland)\\b",
+    "\\bsexual\\s*\\(i\\.e\\. relating to biological sex\\)",
+    "\\(sexual\\)(?= penetration)",
+  ].join("|"),
+  "gi",
+);
+/** An "erection" that is a building going up, not the body's. */
+const BUILDING_WORDS =
+  /\b(?:build\w*|construct\w*|assembl\w*|pillars?|monuments?|temples?|palaces?|rebuil\w*|framework)\b/i;
+
+/**
+ * Whether the glosses of a sense name a sex act, a sex organ or the sex trade. The neutral uses of the words are taken out
+ * first: sex as gender or as the other sex, "sexual selection", an "erection" of a monument, "rape" the plant, an
+ * "adulteration", a "(sexual)" in brackets after "insertion".
+ */
+export function adultGloss(text) {
+  const plain = text.replace(NEUTRAL_SEX, " ");
+  return ADULT_GLOSS.test(BUILDING_WORDS.test(plain) ? plain.replace(/\berection\b/gi, " ") : plain);
+}
 /** A row keeps this many senses, and a sense this many glosses: the plain ones first. */
 export const SENSES_KEPT = 4;
 export const GLOSSES_KEPT = 3;
@@ -105,11 +139,11 @@ export function glossesOf(sense) {
   return first === undefined ? [] : [first, ...kept.filter((text) => text !== first)];
 }
 
-/** Whether a sense is left out in safe mode: it carries one of the marks, or a gloss (any of them, kept or not) names sex or the sex trade. */
+/** Whether a sense is left out in safe mode: it carries one of the marks, or a gloss (any of them, kept or not) names a sex act, a sex organ or the sex trade. */
 export function unfitSense(marks, body) {
   if (marks.some((one) => OUT_IN_SAFE_MODE.has(one))) return true;
   const glosses = tags(body, "gloss").map((gloss) => decode(gloss.trim()));
-  return ADULT_GLOSS.test(glosses.join(" ; "));
+  return adultGloss(glosses.join(" ; ")) || ADULT_FIRST_GLOSS.test(glosses[0] ?? "");
 }
 
 /** Every `<entry>` of a JMdict file, as text. */

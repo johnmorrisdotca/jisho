@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 65 of 144, from "0ulhm". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 65 of 144, from "0ulc". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,12 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0ulcc\t1¦｜私達《わたしたち》はちょうど｜食事《しょくじ》を｜終《お》えた｜所《ところ》です。¦We've just finished breakfast.¦3¦3935¦¦CK¦ちょうど",
+    "0ulcw\t2¦｜漢字《かんじ》を｜書《か》くときは｜点《てん》やはらいに｜気《き》をつけて、なるべく｜早《はや》くていねいに｜書《か》きましょう。¦When drawing kanji be careful of dots and sweeps, write as carefully and quickly as possible.¦3¦1muf¦kamojun¦¦ていねいに",
+    "0uld6\t1¦ある｜意味《いみ》では、｜丁寧語《ていねいご》は｜気《き》さくな｜雰囲気《ふんいき》を｜壊《こわ》す。¦Polite language, in a sense, spoils a casual atmosphere.¦1¦4xeb¦¦al_ex_an_der¦丁寧語",
+    "0ulek\t1¦４０丁目で車を降りた。¦I got out of the car at 40th Street.¦1¦51ig¦e4zh1nmcz¦CM¦丁目",
+    "0ulfo\t1¦｜花《はな》は｜切《き》られるとすぐにしぼむ。¦Flowers soon fade when they have been cut.¦4¦3zzm¦¦Objectivesea¦しぼむ",
+    "0ulh2\t1¦つい｜彼《あれ》が｜病気《びょうき》だということをしゃべってしまった。¦I've just let slip that he is sick.¦3¦4cbn¦¦Swift¦しゃべって",
     "0ulhm\t1¦｜負債《ふさい》は｜帳消《ちょうけ》しにするしかなかった。¦We had to write off the debt.¦1¦1t12¦¦CK¦帳消し\t2¦｜地上《ちじょう》で｜空費《くうひ》される｜時間《じかん》が｜飛行機《ひこうき》の｜速《はや》さという｜有利《ゆうり》な｜店《みせ》を｜帳消《ちょうけ》しにしてしまう。¦Hours lost on the ground cancel out the advantage of speed in the air.¦1¦2pxe¦¦¦帳消し",
     "0ulig\t1¦この｜帳簿《ちょうぼ》には｜不明朗《ふめいろう》な｜点《てん》がたくさんある。¦There are many questionable points in this ledger.¦1¦4q6e¦¦¦帳簿",
     "0ulj0\t1¦この｜帳面《ちょうめん》にあなたの｜名前《なまえ》を｜書《か》いてください。¦Please put down your name in this book.¦1¦4q6d¦¦¦帳面",
@@ -209,10 +215,5 @@ export const PIECE: WordsPiece = {
     "0uph8\t1¦あなたのご｜親切《しんせつ》｜痛《いた》み｜入《い》ります。¦Your kindness really touches me.¦3¦5073¦¦¦痛み入ります",
     "0uphi\t1¦｜彼《あれ》はいま｜歯《は》が｜痛《いた》むのでよくかむことができない。¦He can't chew well, because he has a toothache now.¦3¦2ga0¦¦CM¦痛む\t2¦｜傷《いた》むのを｜防《ふせ》ぐために、｜遠海《えんかい》で｜捕獲《ほかく》した｜魚《さかな》は｜直《ただ》ちに｜冷却《れいきゃく》される。¦To avoid spoiling, fish caught far out at sea are immediately cooled or even frozen.¦1¦35l2¦¦¦傷む",
     "0uphs\t1¦｜彼《あれ》は｜氷《こおり》の｜上《うえ》で｜転《ころ》んで｜脚《あし》を｜傷《いた》めた。¦He fell down on the ice and hurt his leg.¦1¦25mx¦¦CK¦傷めた\t1¦｜転《ころ》んで｜手首《てくび》を｜痛《いた》めました。¦I fell down and hurt my wrist.¦3¦2of2¦small_snow¦CK¦痛めました",
-    "0upiw\t1¦あの｜事故《じこ》を｜見《み》て｜自然《しぜん》の｜力《ちから》を｜痛感《つうかん》した。¦That accident brought home to me the power of nature.¦1¦4y73¦¦¦痛感",
-    "0upjg\t2¦｜彼《あ》の｜死《し》は｜我《わ》が｜社《しゃ》にとって｜大《おお》きな｜痛手《いたで》であった。¦His death was a great loss to our firm.¦1¦2if5¦KK_kaku_¦CM¦痛手",
-    "0upjq\t1¦｜彼女《かのじょ》は｜悲《かな》しさがあまりにも｜痛切《つうせつ》で｜涙《なみだ》も｜出《で》なかった。¦Her grief was too acute for tears.¦2¦1v9e¦¦¦痛切",
-    "0upk0\t1¦｜彼女《かのじょ》は｜痛風《つうふう》を｜病《や》んでいる。¦She is affected with the gout.¦3¦1vrn¦bunbuku¦¦痛風",
-    "0upl4\t1¦コーヒー｜通《つう》の｜人達《ひとたち》に｜結構《けっこう》｜評判《ひょうばん》がいいそうです。¦I hear that it has quite the reputation with coffee connoisseurs.¦1¦1n8i¦small_snow¦¦通\t2¦ここにあなたあての｜手紙《てがみ》が｜何《なに》｜通《つう》かあります。¦Here are some letters for you.¦4¦4t8g¦¦CK¦通",
   ],
 };

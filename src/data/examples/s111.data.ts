@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 112 of 144, from "143r". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 112 of 144, from "1427". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,19 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "1427q\t1¦ぼくたちはいつも｜規則《きそく》を｜守《まも》らなくてはいけない。¦We always have to obey the rules.¦2¦47jk¦¦CK¦規則を守ら",
+    "1428a\t1¦だから｜今《いま》は｜降参《こうさん》ね。｜他《ほか》にもまだ｜調《しら》べてはみるけど・・・｜期待薄《きたいうす》だと｜思《おも》う。¦Therefore I'm giving up for now. I'll still try to check out other possibilities but ... I think hopes are slim.¦2¦1n3c¦¦pip¦期待薄",
+    "142b2\t1¦｜切手集《きってあつ》めには｜興味《きょうみ》を｜失《うしな》った。¦I lost interest in collecting stamps.¦1¦31nf¦¦CK¦切手集め",
+    "142da\t1¦｜彼《あれ》はウイスキーを｜生《き》で｜飲《の》んだ。¦He took a drink of whiskey neat.¦3¦2g8a¦¦¦生で飲んだ",
+    "142eo\t1¦｜事実《じじつ》は｜小説《しょうせつ》よりも｜奇《き》なり。¦Fact is stranger than fiction.¦1¦38cx¦¦CK¦奇なり",
+    "142nu\t1¦｜今朝《けさ》は｜気分《きぶん》が｜良《い》いです。¦I'm feeling good this morning.¦¦3oxc¦small_snow¦CK¦気分が良い",
+    "142oy\t1¦｜彼《あ》の｜忠告《ちゅうこく》を｜肝《きも》に｜銘《めい》じて｜忘《わす》れるな。¦Bear his advice in mind.¦1¦2hwk¦¦CM¦肝に銘じて",
+    "142pi\t1¦｜彼《あれ》はびっくりして｜肝《きも》を｜冷《ひ》やした。¦It scared the daylights out of him.¦1¦2ds2¦¦CH¦肝を冷やした",
+    "142rq\t1¦｜九死《きゅうし》に｜一生《いっしょう》を｜得《え》たことがありますか。¦Have you ever had a narrow escape?¦3¦3ujd¦¦Zifre¦九死に一生を得た",
+    "14302\t1¦アンタ本当に器用ねっ。主夫とか向いてるんじゃない？¦You're really handy, aren't you? Don't you think you'd make a good house-husband?¦1¦1nbh¦mookeee¦CM¦向いてる",
+    "1431g\t1¦｜彼《あれ》が｜新《あたら》しく｜教授陣《きょうじゅじん》に｜加《くわ》わった｜人《じん》です。¦He is a new addition to the teaching staff.¦1¦2kn7¦¦CK¦教授陣",
+    "1438e\t1¦｜何事《なにごと》でも｜極端《きょくたん》に｜走《はし》るのはよくない。¦You must not go to extremes in anything.¦1¦40o5¦¦magnificentgoddess¦極端に走る",
+    "1438o\t1¦｜局地的《きょくちてき》な｜大雨《おおあめ》だったらしいけど、｜行《い》かなくて｜正解《せいかい》だったよ。¦I'm glad we didn't go there because there were some localized heavy rain showers.¦¦3uwa¦¦chanchan¦局地的な",
     "143ru\t1¦｜他《た》の｜文化《ぶんか》では、ボールには｜土《つち》、｜穀物《こくもつ》、｜細々《こまごま》とした｜植物《しょくぶつ》が、またときには｜金属片《きんぞくへん》さえもがいっぱいに｜詰《つ》め｜込《こ》まれていたのです。¦In other cultures, the balls were filled with earth, grain, bits and pieces of plants, and sometimes even pieces of metal.¦1¦2yxf¦¦¦金属片",
     "1445g\t1¦｜彼《かれ》らは｜議論《ぎろん》を｜戦《たたか》わしていた。¦They were engaged in a heated argument.¦3¦234f¦¦qdii¦議論を戦わしていた",
     "144ba\t1¦｜実際《じっさい》はそんなことあるわけないが、｜釘《くぎ》を｜刺《さ》すにはちょうどよさそうだ。¦There's no way something like that would really happen, but it seemed just right to drive the point home.¦¦1ln7¦fcbond¦fcbond¦釘を刺す",
@@ -204,16 +217,5 @@ export const PIECE: WordsPiece = {
     "14pnm\t1¦｜今《いま》まで｜慣《な》れ｜親《した》しんできた｜生活習慣《せいかつしゅうかん》を｜捨《す》てると｜言《い》うのは、｜本当《ほんとう》に｜大変《たいへん》なことだ。¦It's really hard to turn your back on your way of life.¦2¦3p5m¦¦¦慣れ親しんで",
     "14ppa\t1¦｜彼《あれ》はコンテストで｜名《な》を｜挙《あ》げた。¦He distinguished himself in the contest.¦1¦2fpm¦¦¦名を挙げた",
     "14pqe\t1¦この｜組織《そしき》は｜幹部《かんぶ》ばかりが｜名《な》を｜連《れん》ね、｜果《は》たして｜決《けつ》｜断《だん》を｜下《くだ》せるのか｜怪《あや》しいものだ。¦Since in this organization they're all managers, it's a wonder any decisions get made.¦1¦4qb7¦small_snow¦JimBreen¦名を連ね",
-    "14pua\t1¦せきがひどかったので、｜苦《にが》い｜薬《くすり》を｜飲《の》んだ。¦I had a bad cough, so I took the bitter medicine.¦3¦4l5w¦bunbuku¦CK¦苦い薬",
-    "14puk\t1¦｜若者《わかもの》は｜自分《じぶん》の｜苦《にが》い｜経験《けいけん》から｜学《がく》ばねばならない。¦Young people must profit from their bitter experiences.¦¦36rp¦¦¦苦い経験",
-    "14q72\t1¦｜我々《われわれ》は｜流感《りゅうかん》の｜広《ひろ》がる｜速度《そくど》を｜鈍《にぶ》らすことができるだろうか。¦Can we check the rapid spread of the 'flu?¦1¦3z4u¦mookeee¦speedwell¦鈍らす",
-    "14qd6\t1¦｜私《わたし》の｜参謀《さんぼう》としてついたからには、｜危機感《ききかん》を｜持《も》って｜任《にん》にあたって貰わねば｜困《こま》ります。¦If you're with me as a staff officer, then I need you to bring a sense of danger with you to your work.¦¦1man¦mookeee¦¦任にあたって",
-    "14qgi\t1¦実も結ぶが、挿し木でも根付くらしい？¦It bears fruit, but it seems it may even set root from cuttings?¦1¦1l70¦fcbond¦fcbond¦根付く\t2¦｜西洋《せいよう》の｜多《おお》くの｜習慣《しゅうかん》が｜日本《にほん》に｜根付《ねづ》いてきた。¦Many western customs have taken root in Japan.¦2¦321j¦¦¦根付いて",
-    "14qiq\t1¦｜夫《おっと》がカナダ｜人《じん》に｜熱《ねつ》を｜上《あ》げて、｜離婚《りこん》を｜迫《せま》られています。¦My husband got the hots for a Canadian and is threatening me with divorce.¦1¦33lz¦Scott¦Scott¦熱を上げて",
-    "14qls\t1¦そろそろ｜寝《ね》る｜時間《じかん》だぞ。¦It's time you went to bed.¦3¦4dr6¦bunbuku¦furagwa¦寝る時間",
-    "14qoa\t1¦イタリアでは、すべての｜村《むら》が｜年《ねん》に｜一度《いちど》のお｜祭《まつ》りをする。¦In Italy, each village holds a festival once a year.¦2¦4wrd¦¦shekitten¦年に一度",
-    "14qpo\t1¦｜彼《かれ》らは｜年齢順《ねんれいじゅん》に｜座《すわ》った。¦They sat according to age.¦2¦22dv¦¦rul¦年齢順",
-    "14qqi\t1¦彼は妻に自分を午前７時に起こしてくれるように念を押した。¦He reminded his wife to wake him up at 7:00 a.m.¦¦2ahh¦¦CK¦念を押した",
-    "14que\t1¦この｜野《の》の｜花《はな》はいい｜匂《にお》いがする。¦These wild flowers give off a nice smell.¦¦4p88¦¦CM¦野の花",
   ],
 };

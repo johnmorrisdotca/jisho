@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 41 of 144, from "0ruud". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 41 of 144, from "0rug". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,26 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0rugc\t1¦｜彼女《かのじょ》は｜花《はな》に｜殺虫剤《さっちゅうざい》を｜振《ふ》りまいた。¦She sprayed pesticide on the flowers.¦1¦493t8¦JimBreen¦JimBreen¦殺虫剤",
+    "0rugm\t1¦その｜本《ほん》の｜注文《ちゅうもん》が｜殺到《さっとう》した。¦Orders for the book poured in.¦3¦4fhh¦bunbuku¦CM¦殺到",
+    "0ruhg\t1¦この｜薩摩芋《さつまいも》は｜生焼《なまや》けでがりがりする。¦This sweet potato is only half-baked and is still crunchy.¦¦1n7n¦¦¦薩摩芋",
+    "0rui0\t1¦お｜客《きゃく》が｜雑《ざつ》な｜作《つく》りのスタンドに｜座《すわ》って｜靴《くつ》を｜磨《みが》いてもらっている。¦A customer is having his shoes shined on a slapped-together stand.¦2¦4vem¦¦¦雑な",
+    "0ruj4\t1¦ラジオに｜雑音《ざつおん》が｜入《い》る。¦The radio is disturbed by noises.¦3¦44mo¦¦xiaomo¦雑音",
+    "0ruje\t1¦あそこでは｜多《おお》くのタイプの｜食品《しょくひん》や｜雑貨《ざっか》を｜売《う》っている。¦They sell many types of food and grocery products.¦2¦50vx¦¦CK¦雑貨",
+    "0rulc\t1¦この｜川《かわ》には｜雑魚《ざこ》がたくさんいる。¦This river abounds in small fish.¦3¦4qe4¦small_snow¦orcrist¦雑魚",
+    "0rulm\t1¦ぬれたぞうきんで｜窓《まど》をふきなさい。¦Clean the window with a damp cloth.¦3¦49a9¦bunbuku¦Dejo¦ぞうきん",
+    "0rumg\t1¦その｜雑誌《ざっし》はどこで｜買《か》えますか。¦Where can I buy that magazine?¦2¦4iep¦bunbuku¦CK¦雑誌",
+    "0runa\t1¦ヨーロッパは｜強力《きょうりょく》な｜雑種《ざっしゅ》｜民族《みんぞく》｜大陸《たいりく》である。¦Europe is a continent of energetic peoples.¦2¦44sv¦¦AlanF_US¦雑種",
+    "0runu\t1¦｜弟《おとうと》の｜部屋《へや》はいつも｜雑然《ざつぜん》としている。¦My brother's room is always a mess.¦3¦2osx¦bunbuku¦CK¦雑然と",
+    "0ruo4\t1¦｜雑草《ざっそう》が｜急《きゅう》に｜生《は》えた。¦Weeds sprang up in the garden.¦3¦3mt5¦¦CK¦雑草",
+    "0ruoo\t1¦ぜひ｜雑談《ざつだん》でもしにいらしてください。¦You must come and have a chat with us.¦3¦4l4m¦KK_kaku_¦sundown¦雑談",
+    "0rurq\t1¦｜彼《あれ》はすぐに｜雑用《ざつよう》を｜終《お》えた。¦He finished his chores in no time.¦3¦2fjg¦bunbuku¦CK¦雑用",
+    "0rusa\t1¦｜早《はや》く｜帰《かえ》った｜方《ほう》がいい、｜暑《あつ》いから。サバは、｜生《い》き｜腐《ぐさ》れとも｜言《い》われるくらい｜足《あし》が｜早《はや》い。¦It's hot, so you'd better head back quickly. Mackerel goes off so fast that they coined 'fresh-looking rotten fish'.¦1¦1lqd¦fcbond¦fcbond¦サバ",
+    "0rusu\t1¦｜首相《しゅしょう》は｜記者会見《きしゃかいけん》で｜難《むずか》しい｜質問《しつもん》をうまくさばいた。¦The prime minister fielded some tough questions at the press conference.¦3¦36ih¦¦CK¦さばいた\t2¦たくさん｜作《つく》っても｜捌《さば》ききれないから、｜控《ひか》えめにね。¦If you make too many, we won't be able to sell them all, so don't go wild.¦¦1n3a¦mookeee¦papabear¦捌き",
+    "0rut4\t1¦｜雨《あめ》の｜中《うち》に｜放置《ほうち》しておくと｜自転車《じてんしゃ》はさびるでしょう。¦A bicycle will rust if you leave it in the rain.¦3¦429y¦¦CK¦さびる",
+    "0rute\t1¦さびつかせるよりもすり｜切《き》らしたほうがいい。¦Better wear out than rust out.¦4¦4n8u¦¦¦さびつかせる",
+    "0ruty\t1¦サメがその｜男《おとこ》の｜足《あし》を｜噛《か》み｜切《き》った。¦A shark snapped the man's leg off.¦¦4n7t¦¦¦サメ",
+    "0ruu8\t1¦あなたが｜皿《さら》を｜洗《あら》っている｜間《あいだ》に、｜私《わたし》は｜床《とこ》を｜掃除《そうじ》します。¦I'll sweep the floor while you wash the dishes.¦2¦50lp¦¦CK¦皿",
     "0ruud\t1¦｜給仕《きゅうじ》は｜新《あたら》しいお｜皿《さら》を｜持《も》ってきた。¦The waiter brought a new plate.¦2¦3wpn¦¦CK¦お皿",
     "0ruui\t1¦｜皿洗《さらあら》いを｜手伝《てつだ》わせて｜下《くだ》さい。¦Let me help you with the dishes.¦2¦3mso¦bunbuku¦CK¦皿洗い",
     "0ruvw\t1¦ボーイさん、コーヒー３つください。¦Waiter, three coffees, please.¦5¦47on¦¦AlanF_US¦３つ",
@@ -191,20 +211,5 @@ export const PIECE: WordsPiece = {
     "0rzna\t1¦この｜古《ふる》いスーツはもうほとんど｜使《つか》いものにならない。｜新《あたら》しいのを買わなきゃならないだろう。¦This old suit has just about had it; I shall have to get a new one.¦4¦4rcc¦¦sundown¦使いもの",
     "0rznk\t1¦｜引用《いんよう》した｜問題《もんだい》ではありませんが、｜関係代名詞《かんけいだいめいし》と｜関係副詞《かんけいふくし》の｜使《つか》い｜分《わ》けを｜問《と》う｜問題《もんだい》がリーディングセクションにはあります。¦The problem quoted isn't one, but there are problems in the reading section that ask you to distinguish relative pronouns from relative adverbs.¦¦1lw9¦fcbond¦fcbond¦使い分け",
     "0rzoe\t1¦｜人類《じんるい》だけが｜火《ひ》の｜使《つか》い｜方《かた》を｜知《し》っている。¦Only man knows how to use fire.¦3¦331v¦¦¦使い方",
-    "0rzpi\t1¦「あなたの｜辞書《じしょ》を｜使《つか》ってもいいですか」「はい、どうぞ」¦\"Can I use your dictionary?\" \"Yes, here you are.\"¦3¦5339¦mookeee¦CK¦使って\t2¦アジア｜諸国《しょこく》などから｜出稼《でかせ》ぎにきた｜外国人《がいこくじん》をメイドとして｜使《つか》うのが｜常識《じょうしき》のようになっている。¦It has become common practise to employ foreigners working abroad from Asian countries as maids.¦1¦1l7t¦fcbond¦fcbond¦使う\t3¦お｜湯《ゆ》を｜全部《ぜんぶ》｜使《つか》わないで。¦Don't use all the hot water.¦2¦4uzt¦small_snow¦CK¦使わないで",
-    "0rzps\t1¦｜使者《ししゃ》はひそかにロンドンへ｜出発《しゅっぱつ》した。¦The messenger left for London in secret.¦4¦3mec¦¦¦使者",
-    "0rzqm\t1¦｜政府《せいふ》は｜外国《がいこく》へ｜使節《しせつ》を｜派遣《はけん》した。¦The government dispatched missions abroad.¦1¦32fb¦¦¦使節",
-    "0rzqw\t1¦｜使節団《しせつだん》は｜空路《くうろ》を｜利用《りよう》して｜国境《こっきょう》までの｜最短距離《さいたんきょり》を｜行《おこな》った。¦The mission took the direct route by air to the boundary.¦1¦3meb¦¦¦使節団",
-    "0rzrg\t1¦しかし、｜使徒《しと》たちはその｜危険《きけん》に｜気付《きづ》いた。¦However the disciples awoke to that danger.¦3¦1l84¦fcbond¦fcbond¦使徒",
-    "0rzu8\t1¦｜彼《かれ》らは｜使命《しめい》を｜果《は》たした。¦They accomplished their mission.¦3¦22wq¦bunbuku¦CK¦使命",
-    "0rzus\t2¦｜実《じつ》は、「have ｜目的語《もくてきご》 done」は｜使役《しえき》じゃない｜場合《ばあい》が｜多《おお》い。¦Actually, there are many cases where 'have [object] done' is not causative.¦¦1m39¦fcbond¦fcbond¦使役",
-    "0rzvc\t1¦｜使用《しよう》する｜前《さき》に｜瓶《びん》を｜振《ふ》ってください。¦Shake the bottle before using.¦1¦3mea¦bunbuku¦CK¦使用",
-    "0rzw6\t1¦その｜自動車《じどうしゃ》の｜使用許可《しようきょか》が｜私《わたし》に｜与《あた》えられた。¦I was accorded permission to use the car.¦¦4hss¦¦¦使用許可",
-    "0rzxa\t1¦｜特定《とくてい》の｜文脈《ぶんみゃく》でどんな｜語《かたり》を｜使《つか》うべきか｜知《し》っている｜人《じん》は｜語《かたり》の｜有効《ゆうこう》な｜使用者《しようしゃ》である。¦An effective writer is one who knows what sort of words should be employed in any specific context.¦1¦2n9g¦¦hecko¦使用者",
-    "0rzxk\t1¦｜私《わたし》は｜使用人《しようにん》の｜一人《ひとり》をくびにした。¦I discharged one of my servants.¦4¦3cu4¦¦¦使用人",
-    "0rzy4\t1¦セールスマンはその｜機械《きかい》の｜使用方法《しようほうほう》を｜実演《じつえん》してみせた。¦The salesman demonstrated how to use the machine.¦2¦4l64¦¦CM¦使用方法",
-    "0rzye\t1¦アートファイル(.art)の｜使用法《しようほう》がわかりません。¦I don't know how to use an art file (.art).¦3¦1lhl¦fcbond¦fcbond¦使用法",
-    "0rzz8\t1¦｜特《とく》に、｜調和平均《ちょうわへいきん》の｜実際《じっさい》の｜使用例《しようれい》としては、「｜平均速度《へいきんそくど》」が｜主《おも》に｜取《と》り｜上《あ》げられ、｜説明《せつめい》がそこで｜終《お》わってしまうのが｜通例《つうれい》である。¦In particular, it is customary for actual examples of use of the harmonic mean to generally cover \"average speed,\" and explain no further than that.¦2¦1mil¦e4zh1nmcz¦peterius¦使用例",
-    "0s00m\t1¦｜釘《くぎ》が｜車《くるま》のタイヤに｜刺《さ》さった。¦A nail punctured the tire.¦¦4u5r¦KK_kaku_¦CK¦刺さった",
   ],
 };

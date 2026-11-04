@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 150 of 316, from "すくめ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 150 of 316, from "すくみず". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "スクみず\tスク水\t#1m39u\tabbr¦school swimsuit",
+    "すくみりんごがい\t竦林檎貝\tU#1nh5y\tuk¦channeled apple snail (Pomacea canaliculata)¦golden apple snail",
+    "スクミリンゴガイ\t\tU#1nh5y\tuk¦channeled apple snail (Pomacea canaliculata)¦golden apple snail",
+    "すくむ\t竦む\tgU#xnl8\tuk¦to freeze (from fear, etc.)¦to be unable to move (e.g. from surprise)¦to be paralyzed (with horror, etc.)\tuk¦to cower¦to shrink in on oneself",
     "すくめる\t竦める\tiU#xnli\tuk¦to shrug (shoulders)¦to duck (head)¦to draw back (body)",
     "すくも\t泥炭\tC~mt43#usse\t¦peat",
     "すくも\t蒅\t#1li5k\t¦dye made of fermented indigo leaves",
@@ -867,12 +871,5 @@ export const PIECE: WordsPiece = {
     "スタンフォード\t\tC~g#mxms\t¦Stanford",
     "スタンプ\t\tC~g#mxn2\t¦stamp\t¦sticker (in messaging apps)¦(large) emoji",
     "スタンプ\t\t#1oz9e\tsports¦stump (cricket)",
-    "スタンプカード\t\t#1p5xb\t¦stamp card",
-    "スタンプコレクション\t\t#mxnc\t¦stamp collection",
-    "スタンプだい\tスタンプ台\t#1p7r2\t¦stamp pad¦ink pad",
-    "スタンプはんばい\tスタンプ販売\t#1647m\t¦stamp trading",
-    "スタンプハンマー\t\t#1hq6a\t¦stamp hammer",
-    "スタンプミル\t\t#1h0zm\t¦stamp mill",
-    "スタンプラリー\t\t#1m2q4\t¦collecting series of stamps at railway stations, tourist spots, etc.",
   ],
 };

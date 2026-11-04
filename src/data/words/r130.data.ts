@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 131 of 316, from "しょうとうら". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 131 of 316, from "しょうとうし". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "しょうとうしょう\t小頭症\t#1fkja\t¦microcephaly",
+    "しょうとうしょかいはつとじょうこく\t小島嶼開発途上国\t#1p19h\t¦Small Island Developing States¦SIDS",
+    "しょうとうじかん\t消灯時間\t#1otsh\t¦lights-out time",
+    "しょうとうだい\t床頭台\t#1pchv\t¦bedside cabinet (in a hospital, nursing home, etc.)¦bedside table",
     "しょうとうラッパ\t消灯ラッパ\t#1g4po\t¦lights-out trumpet¦lights-out bugle call¦taps",
     "しょうとうらっぱ\t消灯喇叭\t#1g4po\t¦lights-out trumpet¦lights-out bugle call¦taps",
     "しょうとうるい\t少糖類\t#1a676\tchem¦oligosaccharides",
@@ -337,6 +341,7 @@ export const PIECE: WordsPiece = {
     "しょうふう\t蕉風\t#syto\t¦correct style in a haiku (like Basho's)",
     "しょうふう\t正風\t#tj52\t¦right style",
     "しょうふく\t承服|承伏\tsC~mt28#y6pu\t¦accepting¦consenting¦agreeing",
+    "しょうふく\t妾腹\t#zdny\t¦illegitimate (e.g. born to a mistress)",
     "しょうふく\t招福\t#194jc\t¦good luck charm¦something that encourages or invites good luck",
     "しょうふく\t懾伏|懾服|慴伏\ts#1oidy\t¦prostrating oneself in fear¦kneeling in fear¦crouching in fear",
     "しょうふだ\t正札\t#tin0\t¦price tag¦price label",

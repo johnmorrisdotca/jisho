@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 28 of 70, from "安定液". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 28 of 70, from "安土桃". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,34 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "安土桃山\tあづちももやま",
+    "安土桃山時代\tあづちももやまじだい",
+    "安地\tあんち",
+    "安坐\tあんざ",
+    "安堵\tあんど",
+    "安堵感\tあんどかん",
+    "安壜\tやすびん",
+    "安売り\tやすうり",
+    "安宅船\tあたけぶね",
+    "安安\tやすやす",
+    "安定\tあんてい",
+    "安定した\tあんていした",
+    "安定供給\tあんていきょうきゅう",
+    "安定剤\tあんていざい",
+    "安定化\tあんていか",
+    "安定同位体\tあんていどういたい",
+    "安定器\tあんていき",
+    "安定多数\tあんていたすう",
+    "安定大陸\tあんていたいりく",
+    "安定志向\tあんていしこう",
+    "安定性\tあんていせい",
+    "安定恐慌\tあんていきょうこう",
+    "安定感\tあんていかん",
+    "安定成長\tあんていせいちょう",
+    "安定操作\tあんていそうさ",
+    "安定期\tあんていき",
+    "安定板\tあんていばん",
+    "安定株主\tあんていかぶぬし",
     "安定液\tあんていえき",
     "安定状態\tあんていじょうたい",
     "安定発現\tあんていはつげん",
@@ -2762,6 +2790,7 @@ export const PIECE: WordsPiece = {
     "寳\tたから",
     "寵\tちょう",
     "寵児\tちょうじ",
+    "寵姫\tちょうき",
     "寵幸\tちょうこう",
     "寵愛\tちょうあい",
     "寵愛こうじて尼にする\tちょうあいこうじてあまにする",
@@ -3114,25 +3143,5 @@ export const PIECE: WordsPiece = {
     "対象体\tたいしょうたい",
     "対象体クラス\tたいしょうたいクラス",
     "対象体クラス記述部\tたいしょうたいクラスきじゅつぶ",
-    "対象体容量\tたいしょうたいようりょう",
-    "対象体種別\tたいしょうたいしゅべつ",
-    "対象体記述部\tたいしょうたいきじゅつぶ",
-    "対象化\tたいしょうか",
-    "対象受信者\tたいしょうじゅしんしゃ",
-    "対象外\tたいしょうがい",
-    "対象年齢\tたいしょうねんれい",
-    "対象機種\tたいしょうきしゅ",
-    "対象範囲\tたいしょうはんい",
-    "対象者\tたいしょうしゃ",
-    "対象関係論\tたいしょうかんけいろん",
-    "対象顧客層\tたいしょうこきゃくそう|たいしょうこかくそう",
-    "対費用効果\tたいひようこうか",
-    "対質\tたいしつ",
-    "対蹠\tたいしょ|たいせき",
-    "対蹠地\tたいせきち|たいしょち",
-    "対蹠点\tたいせきてん|たいしょてん",
-    "対蹠的\tたいしょてき|たいせきてき",
-    "対辺\tたいへん",
-    "対酌\tたいしゃく",
   ],
 };

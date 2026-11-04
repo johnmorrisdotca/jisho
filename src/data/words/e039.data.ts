@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 40 of 219, from "0uqju". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 40 of 219, from "0uqek". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,24 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0uqek\t爪痕|爪あと|爪跡|つめ跡~sK|ツメ跡~sK\tつめあと\tn¦¦fingernail mark¦scratch\tn¦¦scars (e.g. of war)¦traces (of damage)¦ravages¦after-effects",
+    "0uqeu\tつま先|爪先\tつまさき\tn¦¦toes¦tips of the toes¦toe of a shoe, sock, etc.",
+    "0uqf4\tつま先で歩く|爪先で歩く\tつまさきであるく\texp,v5k¦¦to tiptoe",
+    "0uqfe\t爪弾き|つま弾き~sK|爪弾~sK|爪はじき~sK\tつまはじき\tn,vs,vt¦uk¦shunning¦ostracism¦exclusion¦rejection¦snub¦leaving (someone) out¦giving (someone) the cold shoulder\tn,vs,vt¦uk¦flick (of one's finger; to express disgust, scorn, disapproval, etc.)",
+    "0uqfo\t爪楊枝|妻楊枝~rK|つま楊枝~sK|爪ようじ~sK\tつまようじ\tn¦¦toothpick",
+    "0uqfy\t爪立ち\tつまだち\tn,vs¦¦standing on tiptoes",
+    "0uqg8\t吊し\tつるし\tn¦¦ready-made clothing¦off-the-rack clothing¦second-hand clothes¦hand-me-down\tn¦¦hanging¦吊るす¦orig. meaning",
+    "0uqgi\t吊るし上げる|つるし上げる|吊し上げる\tつるしあげる\tv1,vt¦¦to hoist¦to lift up\tv1,vt¦¦to (crowd around and) rebuke¦to (gang up and) criticize¦to reproach severely¦to subject to a kangaroo court¦to torment with hostile questions",
+    "0uqgs\t吊るす|吊す\tつるす\tv5s,vt¦¦to hang¦to hang up",
+    "0uqhc\t吊り出す|つり出す\tつりだす\tv5s,vt¦¦to hold (the opponent) in the arms and carry him out of the ring",
+    "0uqhm\t吊り上げる|つり上げる|吊上げる~sK|釣り上げる~sK\tつりあげる\tv1,vt¦¦to lift (with a crane, ropes, etc.)¦to raise¦to hoist\tv1,vt¦¦to manipulate (a price) upward¦to (artificially) raise¦to push up¦to inflate¦to jack up",
+    "0uqhw\t吊る\tつる\tv5r,vt¦¦to hang¦to suspend¦to sling¦to wear (e.g. a sword)¦to put up (e.g. a shelf)\tv5r,vt¦¦to hang oneself¦首を吊る¦in the form 首を吊る\tv5r,vt¦sumo¦to hoist an opponent off of his feet by his loincloth\tv5r,vi¦uk¦to turn upwards (as if being pulled)¦to be slanted (of eyes)\tv5r,vi¦uk¦to pucker (e.g. of a seam)¦to be pulled tight",
+    "0uqi6\t吊るし上げ|つるし上げ|吊上げ|吊し上げ\tつるしあげ\tn¦¦hung up¦hoist\tn¦¦denounced¦severely criticised¦kangaroo court",
+    "0uqig\t釣り|釣\tつり\tn¦¦fishing¦angling\tn¦uk,abbr¦change (for a purchase)¦釣り銭\tn¦internet¦clickbaiting\tn¦net-sl¦trolling¦bait¦making deliberately inflammatory posts online",
+    "0uqiq\t釣り合う|つり合う|釣合う\tつりあう\tv5u,vi¦¦to balance¦to be in harmony¦to be in equilibrium\tv5u,vi¦¦to suit¦to go well together¦to be a good match",
+    "0uqj0\t釣り込む|釣込む\tつりこむ\tv5m,vt¦¦to take in¦to attract",
+    "0uqja\t釣り出す|つり出す|釣出す~sK\tつりだす\tv5s,vt¦¦to lure out¦to entice out",
+    "0uqjk\t釣り書き|釣書き|釣り書|釣書|吊り書き|吊書き|吊書\tつりがき|つりしょ~~釣り書,釣書,吊書\tn¦¦family chart and personal history¦esp. for お見合い",
     "0uqju\t釣鐘|釣り鐘|吊り鐘~sK|吊鐘~sK\tつりがね\tn¦¦temple bell¦hanging bell¦funeral bell",
     "0uqk4\tつり上がる|吊り上がる|吊り上る|吊りあがる~sK|吊上がる~sK\tつりあがる\tv5r,vi¦¦to be lifted up (with a crane, ropes, etc.)¦to be raised¦to be hoisted\tv5r,vi¦¦to turn upward (esp. of eyes)¦to slant upward",
     "0uqko\t釣る\tつる\tv5r,vt¦¦to fish¦to angle¦to catch\tv5r,vt¦¦to lure in¦to tempt¦to attract¦to entice¦to allure¦釣られる",
@@ -1015,31 +1033,5 @@ export const PIECE: WordsPiece = {
     "0uyme\t杜撰\tずさん|ずざん~ok\tadj-na,n¦uk¦careless¦sloppy¦faulty\tn¦¦using unreliable sources (in a piece of writing)¦piece of writing with unreliable sources or many errors",
     "0uymo\t杜漏\tずろう\tadj-na,n¦¦careless¦negligent",
     "0uymy\t時鳥|子規|不如帰|杜鵑|郭公|霍公鳥~sK|蜀魂~sK|蜀魄~sK|沓手鳥~sK|沓直鳥~sK|杜宇~sK|田鵑~sK\tホトトギス~~~!|ほととぎす~gikun\tn¦uk¦lesser cuckoo (Cuculus poliocephalus)",
-    "0uyn8\t渡し守|渡し守り|渡守~io\tわたしもり\tn¦¦ferryman",
-    "0uyns\t渡し船|渡し舟\tわたしぶね\tn¦¦ferry¦ferryboat",
-    "0uyo2\t渡す\tわたす\tv5s,vt¦¦to ferry across (e.g. a river)¦to carry across¦to traverse\tv5s,vt¦¦to lay across¦to build across\tv5s,vt¦¦to hand over¦to hand in¦to pass¦to give¦to transfer",
-    "0uyoc\t渡り\tわたり|ワタリ~~~!\tn¦¦crossing¦passage¦transit\tn¦¦importing¦import\tn¦¦wandering¦wanderer\tn¦¦migration¦渡り鳥\tn¦¦contact¦relations¦negotiations¦渡りを付ける\tn¦go¦watari¦connection underneath the opponent's stones at or near the edge of the board¦usu. as ワタリ\tn¦ling¦glide",
-    "0uyom\t渡り合う\tわたりあう\tv5u,vi¦¦to fight (with)¦to cross swords¦to compete (with)\tv5u,vi¦¦to argue (with)¦to have an argument¦to have a dispute¦to debate",
-    "0uyow\t渡り者\tわたりもの\tn¦¦wanderer",
-    "0uyp6\t渡り鳥\tわたりどり\tn¦¦migratory bird¦bird of passage",
-    "0uypg\t渡り歩く\tわたりあるく\tv5k,vi¦¦to wander from place to place¦to change jobs",
-    "0uypq\t渡り廊下\tわたりろうか\tn¦¦roofed corridor connecting two buildings¦connecting passageway\tn¦¦skyway¦skybridge¦skywalk",
-    "0uyq0\t渡る|亘る~sK|渉る~sK|亙る~sK|弥る~sK\tわたる\tv5r,vi¦¦to cross over¦to go across¦occ. written as 渉る\tv5r,vi¦uk¦to extend¦to cover¦to range¦to span¦にわたって¦occ. written as 亘る or 亙る",
-    "0uyqa\t渡河\tとか\tn,vs,vi¦¦crossing a river",
-    "0uyqk\t渡航\tとこう\tn,vs,vi¦¦voyage¦passage¦travelling",
-    "0uyqu\t渡世\tとせい\tn¦¦making one's way in the world¦(making a) living¦(earning a) livelihood\tn¦¦business¦trade¦occupation",
-    "0uyr4\t渡米\tとべい\tn,vs,vi¦¦going to the United States",
-    "0uyre\t渡来\tとらい\tn,vs,vi¦¦visit (from abroad)\tn,vs,vi¦¦introduction (from abroad)¦importation",
-    "0uyry\t登記\tとうき\tn,vs,vt¦¦registry¦registration",
-    "0uys8\t登校\tとうこう\tn,vs,vi¦¦attendance (at school)¦going to school",
-    "0uysi\t登校拒否\tとうこうきょひ\tn,adj-no¦¦truancy",
-    "0uyss\t登山\tとざん\tn,vs,vi¦¦mountain climbing¦mountaineering¦ascent of a mountain¦下山",
-    "0uyt2\t登山客\tとざんきゃく\tn¦¦mountain climber",
-    "0uytc\t登場\tとうじょう\tn,vs,vi¦¦entrance (on the stage)¦appearance (in a book, film, etc.)¦退場・2\tn,vs,vi¦¦appearance (on the scene)¦arrival (on the market)¦emergence¦introduction¦advent",
-    "0uytm\t登録|登錄~sK\tとうろく\tn,vs,vt¦¦registration¦accession¦register¦entry¦record¦subscription",
-    "0uytw\t登録商標\tとうろくしょうひょう\tn¦¦registered trademark",
-    "0uyu6\t登録簿\tとうろくぼ\tn¦¦directory¦inventory",
-    "0uyug\t賭ける\tかける\tv1,vt¦¦to wager¦to bet¦to risk¦to stake¦to gamble",
-    "0uyuq\t賭け事|賭事|賭けごと~sK\tかけごと\tn,vs,vi¦¦betting¦gambling",
   ],
 };

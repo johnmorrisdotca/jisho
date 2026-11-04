@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 29 of 70, from "対陣". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 29 of 70, from "対象体容". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,26 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "対象体容量\tたいしょうたいようりょう",
+    "対象体種別\tたいしょうたいしゅべつ",
+    "対象体記述部\tたいしょうたいきじゅつぶ",
+    "対象化\tたいしょうか",
+    "対象受信者\tたいしょうじゅしんしゃ",
+    "対象外\tたいしょうがい",
+    "対象年齢\tたいしょうねんれい",
+    "対象機種\tたいしょうきしゅ",
+    "対象範囲\tたいしょうはんい",
+    "対象者\tたいしょうしゃ",
+    "対象関係論\tたいしょうかんけいろん",
+    "対象顧客層\tたいしょうこきゃくそう|たいしょうこかくそう",
+    "対費用効果\tたいひようこうか",
+    "対質\tたいしつ",
+    "対蹠\tたいしょ|たいせき",
+    "対蹠地\tたいせきち|たいしょち",
+    "対蹠点\tたいせきてん|たいしょてん",
+    "対蹠的\tたいしょてき|たいせきてき",
+    "対辺\tたいへん",
+    "対酌\tたいしゃく",
     "対陣\tたいじん",
     "対露\tたいろ",
     "対面\tたいめん|トイメン|たいめ",
@@ -3199,41 +3219,5 @@ export const PIECE: WordsPiece = {
     "岩跳びペンギン\tいわとびペンギン",
     "岩鏡\tいわかがみ",
     "岩間\tいわま",
-    "岩陰\tいわかげ",
-    "岩隠る\tいわがくる",
-    "岩隠子\tがんがぜ",
-    "岩雲雀\tいわひばり",
-    "岩面\tがんめん",
-    "岩面画\tがんめんが",
-    "岩面高\tいわおもだか",
-    "岩頭\tがんとう",
-    "岩風呂\tいわぶろ",
-    "岩飛びペンギン\tいわとびペンギン",
-    "岩高蘭\tがんこうらん",
-    "岩魚\tいわな",
-    "岩鷓鴣\tいわしゃこ",
-    "岫\tくき|しゅう",
-    "岬\tさき|みさき",
-    "岬湾\tこうわん",
-    "岬角\tこうかく",
-    "岱山\tたいざん",
-    "岳\tたけ|だけ",
-    "岳人\tがくじん",
-    "岳友会\tがくゆうかい",
-    "岳樺\tだけかんば",
-    "岳母\tがくぼ",
-    "岳烏\tだけがらす|たけがらす",
-    "岳父\tがくふ",
-    "岳神\tがくじん",
-    "岳鴉\tだけがらす|たけがらす",
-    "岳麓\tがくろく",
-    "岸\tきし",
-    "岸べ\tきしべ",
-    "岸壁\tがんぺき",
-    "岸田派\tきしだは",
-    "岸辺\tきしべ",
-    "岸釣り\tきしづり|きしつり",
-    "岸頭\tがんとう",
-    "峙つ\tそばだつ",
   ],
 };

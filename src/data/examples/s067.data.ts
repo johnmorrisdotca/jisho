@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 68 of 144, from "0uyb". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 68 of 144, from "0uy8". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,9 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0uy88\t1¦｜私《わたし》｜個人《こじん》の｜生活《せいかつ》についてとやかくうるさくいうのはやめてください。¦Get off my back about my personal life!¦2¦39cm¦bunbuku¦¦とやかく",
+    "0uy8i\t1¦あの｜人《ひと》にはとかくのうわさがあった。¦There were some unsavory rumors about him.¦5¦4y2e¦¦CH¦とかくの\t2¦｜運動《うんどう》が｜健康《けんこう》の｜鍵《かぎ》であるのを｜私《わたし》たちはとかく｜忘《わす》れがちだ。¦We tend to forget that exercise is a key to good health.¦¦425k¦¦CK¦とかく",
+    "0uyag\t1¦なんだかめまいと｜吐《は》き｜気《け》がします。¦I feel sort of dizzy and I feel like throwing up.¦1¦49ii¦bunbuku¦CK¦吐き気",
     "0uyb0\t1¦つばを｜吐《は》き｜出《だ》してください。¦Please spit.¦1¦4cas¦KK_kaku_¦Zifre¦吐き出して\t2¦アイスランドには｜大量《たいりょう》の｜煙《けむり》を｜吐《は》き｜出《だ》している｜火山《かざん》があります。¦There's a volcano emitting masses of smoke in Iceland.¦1¦2xw5¦Scott¦Scott¦吐き出している\t4¦｜彼女《かのじょ》は｜怒《おこ》って｜吐《は》き｜出《だ》すように｜答《こた》えた。¦She spit out an angry reply.¦1¦1vp9¦¦¦吐き出す",
     "0uyba\t1¦｜息《むすこ》を｜深《ふか》く｜吸《す》ったり｜吐《つ》いたりしてください。¦Take a deep breath in and out, please.¦1¦306o¦bunbuku¦CM¦吐いたり\t2¦そんな｜言葉《ことば》を｜吐《は》いたことを｜君《きみ》は｜後悔《こうかい》するだろう。¦You'll regret having said those words.¦1¦4dq0¦¦CK¦吐いた\t3¦３回吐きました。¦I threw up three times.¦1¦51l8¦e4zh1nmcz¦CK¦吐きました",
     "0uybu\t1¦ひんぱんに｜吐血《とけつ》する｜場合《ばあい》は、｜救急車《きゅうきゅうしゃ》を｜呼《よ》ぶか、｜近《ちか》くの｜内科医《ないかい》に｜往診《おうしん》してもらう。¦If you frequently spit-up blood you should call an ambulance or have a nearby physician make a house call.¦1¦1ld8¦fcbond¦fcbond¦吐血",
@@ -210,9 +213,5 @@ export const PIECE: WordsPiece = {
     "0v2js\t1¦｜彼《あれ》は｜糖尿病《とうにょうびょう》のどんな｜兆《きざ》しにも｜注意《ちゅうい》していた。¦He was watchful for any sign of diabetes.¦1¦26hj¦¦sundown¦糖尿病",
     "0v2k2\t1¦｜私《わたし》は、｜糖分《とうぶん》のあるものは｜食《た》べてはいけないのです。¦I shouldn't eat food that has sugar in it.¦¦3h5r¦¦CK¦糖分",
     "0v2km\t1¦スコットランドとイングランドの統一は１７０６年に行われた。¦The union of Scotland and England took place in 1706.¦1¦4lnv¦¦¦統一",
-    "0v2kw\t2¦｜国務長官《こくむちょうかん》は｜対外関係《たいがいかんけい》を｜統括《とうかつ》する。¦The Secretary of State administers foreign affairs.¦1¦3phv¦¦¦統括",
-    "0v2lq\t1¦中国のＧＤＰ統計はオオカミ少年か。¦Are the Chinese GDP figures a case of the boy crying wolf?¦1¦1mjo¦wakatyann630¦¦統計",
-    "0v2m0\t1¦｜統計学《とうけいがく》は｜事実《じじつ》を｜表《あらわ》す｜数《かず》を｜取《と》り｜扱《あつか》うものである。¦Statistics deals with collected numbers representing facts.¦1¦2nm1¦¦¦統計学",
-    "0v2ma\t1¦この｜種《しゅ》の｜事例《じれい》は｜統計的《とうけいてき》｜処理《しょり》が｜適応《てきおう》できる。¦This kind of case is amenable to statistical treatment.¦¦4qqo¦¦¦統計的",
   ],
 };

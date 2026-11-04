@@ -85,7 +85,7 @@ console.log(lookAlikes(LOOK_ALIKE, "土")[0]?.kanji); // the closest look-alike 
 - **[A table of the kanji](#the-table)**: strokes, grade, level, newspaper rank, on and kun readings, and meanings in English and French.
 - **[Look-alike pairs](#the-look-alike-pairs)**: 10,093 pairs, scored by strokes, by parts and by shape.
 - **Plain functions**: which grade, which level, the kanji in a text, a search by reading or meaning.
-- **Each table an entry point**: importing the grades loads 8 KB gzipped, not the table of 146 KB. The 25,999 common words that safe mode keeps are one table of their own.
+- **Each table an entry point**: importing the grades loads 8 KB gzipped, not the table of 146 KB. The 26,014 common words that safe mode keeps are one table of their own.
 
 ### What's in it
 
@@ -638,7 +638,7 @@ console.log([...alike, ...fillers].slice(0, 3));
 
 ### The words
 
-JMdict's English dictionary, one row for each reading of each entry that has an English meaning: 265,954 rows. Safe mode keeps 263,857 rows, with only the senses it keeps and only the written forms that go with them, and 25,999 of those are common. A row has the reading, the written forms that go with it (the commonest first), its first four senses with their marks and glosses, and the kinds of word it is.
+JMdict's English dictionary, one row for each reading of each entry that has an English meaning: 265,958 rows. Safe mode keeps 263,987 rows, with only the senses it keeps and only the written forms that go with them, and 26,014 of those are common. A row has the reading, the written forms that go with it (the commonest first), its first four senses with their marks and glosses, and the kinds of word it is.
 
 | Field of a `Word` | What it is |
 | --- | --- |
@@ -651,11 +651,11 @@ JMdict's English dictionary, one row for each reading of each entry that has an 
 | `common` | Whether JMdict marks it common: `news1`, `ichi1`, `spec1`, `spec2` or `gai1` on a form or reading |
 | `priority`, `rank` | The priority tags JMdict gives it (`news1`, `ichi1`, `nf05`…) and one number made from them, lower being commoner: 250 to 24,000, and 100,000 for a word with none |
 
-From JMdict of 2026-11-03. Safe mode's rows are cut into 316 pieces by reading and 70 of an index from each written form to its readings. A piece of rows is about 74 kB (24 kB gzipped) and a piece of the index of written forms about 120 kB (29 kB gzipped). A guess in kana fetches one piece, about 25 kB gzipped; a written form fetches two, one after the other (the index, then the rows it names), about 57 kB gzipped. The common words are one table, `words-common`, of about 820 kB gzipped.
+From JMdict of 2026-11-04. Safe mode's rows are cut into 316 pieces by reading and 70 of an index from each written form to its readings. A piece of rows is about 74 kB (24 kB gzipped) and a piece of the index of written forms about 120 kB (29 kB gzipped). A guess in kana fetches one piece, about 25 kB gzipped; a written form fetches two, one after the other (the index, then the rows it names), about 57 kB gzipped. The common words are one table, `words-common`, of about 820 kB gzipped.
 
 The indexes that find words by meaning and by kanji are pieces of their own: 172 of English terms (twenty words with each term, as [Find by meaning](./docs/guides/find-by-meaning.md) says) and 50 of kanji (the commonest sixty words with each), each about 16 kB gzipped, and 12 and 8 more for what safe mode leaves out. What they cost, measured on 2026-11-03: `findByMeaning("water")` fetches 8 files, about 180 kB gzipped, in three steps one after another (the index's manifest, its piece, then the rows); `wordsWithKanji("山")` 9 files, about 210 kB. A server keeps what it fetched in memory, up to 64 pieces. A word JMdict ranks is found by every term of every gloss it keeps; a word it does not rank, which is most of the dictionary, by the terms of its first gloss. A plain lookup by reading never fetches them.
 
-What safe mode leaves out is in pieces of its own: 2,097 rows of words with no sense left, the senses it leaves out, and the written forms and readings that only such a sense gives. They are 13 pieces of about 21 kB gzipped by reading, two of the index, a manifest for them and, for the common words, `words-common-extra`. `mode: "unfiltered"` fetches the pieces that hold the keys a lookup asks for, besides the others; a safe lookup never does.
+What safe mode leaves out is in pieces of its own: 1,971 rows of words with no sense left, the senses it leaves out, and the written forms and readings that only such a sense gives. They are 13 pieces of about 21 kB gzipped by reading, two of the index, a manifest for them and, for the common words, `words-common-extra`. `mode: "unfiltered"` fetches the pieces that hold the keys a lookup asks for, besides the others; a safe lookup never does.
 
 A guess in kana finds a word whichever kana it is typed in, and the table reaches every kana reading of 3, 4 and 5 kana that Kotoba's Gomoji lists take as a guess, so a player can be shown what each one means. A reading JMdict marks irregular or outdated is kept so that this holds, behind the regular ones, and is never called common.
 
@@ -720,7 +720,7 @@ The [API reference](https://johnmorrisdotca.github.io/jisho/api.html) lists ever
 | `@johnmorrisdotca/jisho/kanji` | `KANJI`: the table, read with `readKanji` |
 | `@johnmorrisdotca/jisho/look-alike` | `LOOK_ALIKE`: the pairs, read with `lookAlikes` |
 | `@johnmorrisdotca/jisho/words` | `loadWords`, `loadCommonWords`, `wordsOf`, `findByMeaning`, `wordsWithKanji`, `findInflected`, `readText` and `romajiToKana`: the words, in pieces fetched as needed |
-| `@johnmorrisdotca/jisho/words-common` | `COMMON_WORDS`: the 25,999 common words that safe mode keeps, read with `readCommonWords` |
+| `@johnmorrisdotca/jisho/words-common` | `COMMON_WORDS`: the 26,014 common words that safe mode keeps, read with `readCommonWords` |
 | `@johnmorrisdotca/jisho/words-common-extra` | `COMMON_EXTRA`: what to add to them to have every common word, for unfiltered mode |
 
 ### The calls to learn first
@@ -767,7 +767,7 @@ The package draws nothing, so there is nothing of its own to theme: it hands bac
 - Each kanji keeps its ten nearest look-alikes: 9 of the 196 added in 2010 have none.
 - No meanings in Japanese: KANJIDIC2 has none. English for almost all, French for two in three.
 - Stroke order is KanjiVG's, for 2,967 of the 2,999 kanji (32 old forms have none), and the search by drawing needs the right strokes in the right order. No radicals: [Bushu](https://github.com/johnmorrisdotca/bushu) has the parts. No pitch accent.
-- `suggestWords` covers the 25,999 common words, by reading, one slip away; it is not a spell checker for text, and not for kanji.
+- `suggestWords` covers the 26,014 common words, by reading, one slip away; it is not a spell checker for text, and not for kanji.
 - `readText` takes the longest word, not the best reading of a sentence: it has no grammar, so a rare word that happens to be longer can win, a name is not found or is cut into small words (ジョンモリス), and a word with several readings gets the commonest one JMdict ranks, which for one kanji can be the wrong one (本 is もと before ほん; the card lists the others). In safe mode a word the mode leaves out is not found, so its text is listed as not found. It reads up to 5,000 characters and is not a tool for books; a page of text fetches tens of pieces. The levels are those of the kanji, not of the word.
 
 ## Accessibility

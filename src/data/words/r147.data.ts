@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 148 of 316, from "じー・えす". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 148 of 316, from "じーんば". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,13 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "ジーンバンク\t\t#mt3g\t¦gene bank",
+    "ジーンプール\t\t#1mgyw\tbiol¦gene pool",
+    "ジーン・エンジニアリング\t\t#mt2m\t¦gene engineering¦genetic engineering",
+    "ジーン・バンク\t\t#mt3g\t¦gene bank",
+    "ジーン・プール\t\t#1mgyw\tbiol¦gene pool",
+    "ジー・アイ\tＧＩ\t#mszu\tcol¦GI (soldier in the US Army)¦G.I.",
+    "ジー・エイチ・キュー\tＧＨＱ\t#1jxrk\thist¦General Headquarters (office of the Supreme Commander of the Allied Powers; 1945-1952)¦GHQ",
     "ジー・エス\tＧＳ\t#1pegq\t¦gas station¦petrol station¦filling station\t¦rock band\taviat¦ground staff\tski¦giant slalom¦GS",
     "ジー・エス・アール\tＧＳＲ\t#1ax5q\t¦galvanic skin response¦GSR",
     "ジー・エックス\tＧＸ\t#1pgp4\t¦green transformation",
@@ -863,11 +870,5 @@ export const PIECE: WordsPiece = {
     "すいわたどの\t透渡殿\t#1jfnc\t¦roofed path (lacking walls) connecting the main residence and the side houses (in traditional palatial architecture)",
     "すいわぶつ\t水和物\t#199a6\t¦hydrate",
     "すいをあつめる\t粋を集める\ti#1ot0e\t¦to collect the best¦to put together the cream of the crop",
-    "すいをきかす\t粋を利かす\tg#1p2a4\trare¦to show tact (in relationship matters)¦to be considerate (e.g. of a couple)¦to be thoughtful",
-    "スインガー\t\t#mvj8\t¦swinger",
-    "スインガーパーティー\t\t#mvji\t¦swinger party",
-    "スインガー・パーティー\t\t#mvji\t¦swinger party",
-    "スインギング\t\t#mvjs\t¦swinging",
-    "スイング\t\tsC~g#mvk2\tsports¦swing (of a golf club, tennis racket, etc.)\tboxing¦swing\tmusic¦swing",
   ],
 };

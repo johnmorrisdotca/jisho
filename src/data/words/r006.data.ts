@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 7 of 316, from "あたりさわり". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 7 of 316, from "あたりげ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "あたりげい\t当たり芸|あたり芸\t#128k4\t¦successful performance",
+    "あたりさわらず\t当たり障らず\t#1flp8\trare¦avoiding committing oneself¦noncommittal",
     "あたりさわり\t当たり障り|当り障り\t#128ok\t¦obstacle",
     "あたりさわりのない\t当たり障りのない|当たり障りの無い\t#13sks\t¦harmless (remark, topic, etc.)¦inoffensive¦safe",
     "アタリショック\t\t#1pczf\thist¦video game crash of 1983",
@@ -801,7 +803,5 @@ export const PIECE: WordsPiece = {
     "アトマイザー\t\t#1mkac\t¦atomizer¦atomiser",
     "アトマイズ\t\ts#1mlfg\t¦atomizing\t¦to atomize",
     "あとまわし\t後回し\tC~ni22#r7jw\t¦putting off¦postponing",
-    "あとみがくえんじょしだいがく\t跡見学園女子大学\t#38yv9\torganization¦Atomi University",
-    "あとみじょしだいがく\t跡見女子大学\t#38yvd\torganization¦Atomi Women's University",
   ],
 };

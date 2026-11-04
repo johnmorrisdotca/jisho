@@ -713,6 +713,7 @@ export const PIECE: WordsPiece = {
     "オイラト\t\t#1ozr5\t¦Oirat (people)¦Oirats",
     "オイラトご\tオイラト語\t#1ozr4\t¦Oirat language",
     "オイラル\t\t#1oqgl\t¦eyrir (Icelandic monetary unit; 1/100 of a króna)",
+    "おいらん\t花魁\t#12nju\thist¦oiran",
     "おいらんどうちゅう\t花魁道中|おいらん道中\t#12nk4\thist¦procession of oiran through a red-light district (e.g. to meet a regular client; during the Edo period)",
     "オイラーすう\tオイラー数\t#1pj6n\tmath¦Euler's number¦e (constant: 2.71828...)",
     "オイラート\t\t#1ozr5\t¦Oirat (people)¦Oirats",
@@ -836,6 +837,5 @@ export const PIECE: WordsPiece = {
     "おううだいがく\t奥羽大学\t#32b1p\torganization¦Ohu University",
     "おううつ\t蓊鬱|蓊蔚\t#185uq\tarch¦overgrown¦exuberant¦lush",
     "おうえ\t黄衣\t#1fodm\t¦yellow clothes\t¦Lama's clothes (e.g. Dalai Lama)",
-    "おうえい\t応永\t#18tvg\t¦Ōei era (1394.7.5-1428.4.27)",
   ],
 };

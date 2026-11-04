@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 110 of 144, from "1388". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 110 of 144, from "137f". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,18 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "137fy\t1¦｜彼《あれ》は｜赤葡萄酒《あかぶどうしゅ》を｜一杯《いっぱい》｜飲《の》んだ。¦He drank a glass of red wine.¦¦27ju¦¦CK¦赤葡萄酒",
+    "137nq\t1¦｜陰徳《いんとく》あれば｜陽報《ようほう》あり。¦Secret gifts are openly rewarded.¦1¦42jx¦¦gin¦陽報",
+    "137oa\t1¦｜空手《からて》は｜武器《ぶき》を｜用《もち》いない｜護身術《ごしんじゅつ》である。¦Karate is an art of unarmed defense.¦¦3ud7¦¦Zifre¦護身術",
+    "137sg\t1¦｜仕事《しごと》を｜生半可《なまはんか》に｜知《し》っている｜人《じん》が｜書《か》くことは、できれば｜避《さ》けたい。¦I'd rather not have those written by people who only know their work imperfectly.¦¦1lb7¦fcbond¦fcbond¦生半可に",
+    "137ue\t1¦これは｜実物《じつぶつ》そっくりだ、｜生《い》き｜写《うつ》しだ。¦This is the spitting image of the real thing, perfectly true to life.¦3¦4ofb¦¦¦生き写し",
+    "137w2\t1¦｜生《い》き｜地獄《じごく》は、｜言《い》い｜過《す》ぎだと｜私《わたし》も｜思《おも》う。¦I also think 'living hell' is putting it too strongly.¦1¦1lbd¦fcbond¦fcbond¦生き地獄",
+    "137zo\t1¦その｜詩人《しじん》が｜言《い》っているように｜生兵法《なまびょうほう》は｜大《おお》けがのもとだ。¦As the poet says, a little learning is a dangerous thing.¦1¦4i31¦¦papabear¦生兵法",
+    "1383u\t1¦｜生活水準《せいかつすいじゅん》は｜上《あ》がるべきである。¦Living standards should be higher.¦2¦326p¦¦CK¦生活水準",
+    "1384e\t1¦｜車《くるま》も｜何《なに》もなく、｜生活保護《せいかつほご》で｜生《い》きてます。¦I'm living on welfare, without a car or anything.¦1¦1lnq¦fcbond¦fcbond¦生活保護",
+    "13858\t1¦これがアメリカ｜風《ふり》の｜生活様式《せいかつようしき》だ。¦This is the American way of life.¦3¦4ozp¦¦CK¦生活様式",
+    "1386w\t1¦｜彼女《かのじょ》は｜生《う》まれ｜故郷《こきょう》に｜埋葬《まいそう》された。¦She was buried in her hometown.¦1¦1w67¦bunbuku¦CK¦生まれ故郷",
+    "1387q\t1¦｜生計費《せいけいひ》は｜昨年《さくねん》うなぎ｜上《のぼ》りでした。¦The cost of living has shot through the ceiling in the last year.¦3¦326b¦¦CK¦生計費",
     "1388a\t1¦｜会社《かいしゃ》は｜生《い》き｜残《のこ》りを｜賭《か》けて｜奮闘《ふんとう》している。¦The company is struggling for survival.¦¦3yxn¦bunbuku¦CK¦生き残り",
     "138a8\t1¦｜最近《さいきん》のぼくは、「｜生《い》き｜恥《はじ》」「｜赤恥《あかはじ》」をかくことを｜恐《おそ》れなくなりました。¦Recently I've stopped being afraid of \"living in shame\" and being exposed to \"public ridicule\".¦3¦1m0c¦fcbond¦fcbond¦生き恥",
     "138c6\t1¦｜生産力《せいさんりょく》が｜落《お》ちた。｜従《したが》って｜労働者《ろうどうしゃ》のボーナスも｜少《すく》なくなるだろう。¦Productivity has fallen. Accordingly, workers' bonuses will be reduced.¦1¦3264¦¦¦生産力",
@@ -128,6 +140,7 @@ export const PIECE: WordsPiece = {
     "13i94\t1¦２か月前にむち打ち症をやりました。¦I had a whiplash injury two months ago.¦1¦51r8¦e4zh1nmcz¦¦むち打ち症",
     "13iai\t1¦｜孤軍奮闘《こぐんふんとう》したけれど、｜衆寡《しゅうか》｜敵《てき》せず、｜彼《あ》のビジネスプランは｜受《う》け｜入《い》れられなかったよ。¦He put up a brave and lone struggle, but up against such heavy odds he couldn't get his business plan accepted.¦1¦3qp5¦¦mcq¦孤軍奮闘",
     "13ias\t1¦ニューヨークはただ｜規模《きぼ》の｜点《てん》で｜長《なが》いこと｜孤高《ここう》を｜保《たも》ってきた。¦New York City has long been unusual because of its sheer size.¦1¦1n0t¦¦¦孤高",
+    "13icq\t1¦システィナ礼拝堂は、１４７３年にバティカン宮殿内に建立された壮大な礼拝堂です。¦The Sistine Chapel is a vast chapel built inside the Vatican Palace in 1473.¦1¦1lmy¦fcbond¦fcbond¦礼拝堂",
     "13ik8\t1¦｜先生《せんせい》は｜答案《とうあん》｜一枚《いちまい》｜一枚《いちまい》に｜短《みじか》い｜短評《たんぴょう》を｜書《か》いてやった。¦The teacher put a short comment on each paper.¦1¦317a¦¦Eldad¦短評",
     "13imq\t1¦｜羊毛《ようもう》は｜染《そ》め｜上《あ》がりがきれいです。¦Wool dyes nicely.¦1¦1ou2¦mookeee¦CM¦染め上がり",
     "13ips\t1¦｜染物屋《そめものや》が｜黒《くろ》くできないほど｜白《しろ》い｜羊毛《ようもう》はない。¦There is no wool so white that a dyer can't make it black.¦1¦30y1¦¦WestofEden¦染物屋",
@@ -156,6 +169,7 @@ export const PIECE: WordsPiece = {
     "13kba\t1¦ジェット｜機《き》は｜離陸《りりく》する｜時《とき》に｜轟《とどろ》｜音《おと》を｜立《た》てた。¦The jet roared during takeoff.¦¦4myw¦¦¦轟音",
     "13klk\t2¦｜窮地《きゅうち》から｜足掻《あが》き｜出《で》る。¦He will wriggle out of the fix.¦¦3wpt¦¦anushka¦足掻き",
     "13kqa\t1¦ネットワークの｜発達《はったつ》で、かつてないほど｜大量《たいりょう》の｜文《ふみ》が｜世界中《せかいじゅう》を｜駆《か》け｜巡《めぐ》っています。¦With the development of networks a huge and unprecedented volume of messages flies around the world.¦1¦1m5m¦fcbond¦fcbond¦駆け巡っています",
+    "13kt2\t1¦｜日本《にほん》は｜経済《けいざい》の｜建《た》て｜直《なお》しをはからなければならない。¦Japan has to reconstruct its economy.¦3¦2mi9¦¦CM¦建て直し",
     "13kvu\t1¦｜私《わたし》はあの｜人《ひと》が｜将来《しょうらい》｜偉《えら》くなると｜見取《みと》った。¦I discerned the potential of great things in him.¦2¦3go3¦¦¦見取った",
     "13kym\t1¦その｜作品《さくひん》でついに｜彼女《かのじょ》の｜才能《さいのう》が｜現《あら》われ｜出《で》た。¦Her true talent was finally revealed in that painting.¦3¦4ifb¦Kori¦espamatics¦現われ出た",
     "13kyw\t1¦｜肩肘張《かたひじは》って｜生《い》きることはないよ。¦It's no use playing tough.¦¦3r6k¦KK_kaku_¦¦肩肘張って",
@@ -208,18 +222,5 @@ export const PIECE: WordsPiece = {
     "13ml8\t1¦その｜料理《りょうり》はいつもこのように｜芸術的《げいじゅつてき》に｜盛《も》りつけられる。¦The food is always arranged so artistically.¦¦4f4b¦¦orcrist¦盛りつけられる",
     "13mng\t1¦この｜古《ふる》い｜建物《たてもの》は｜修理《しゅうり》する｜値打《ねう》ちがない。｜引《ひ》き｜倒《たお》す｜方《ほう》がよろしい。¦This old building isn't worth fixing up. It would be better to tear it down.¦1¦4rc5¦¦CK¦引き倒す",
     "13mrc\t1¦｜鯨《くじら》が｜今世紀《こんせいき》の｜終《お》わりに｜死《し》に｜絶《た》える｜可能性《かのうせい》は｜五分五分《ごぶごぶ》である。¦As likely as not, whales will be extinct by the end of this century.¦¦3rtd¦¦¦死に絶える",
-    "13mrw\t1¦その｜体《からだ》の｜弱《よわ》い｜少年《しょうねん》はその｜厳《きび》しい｜競技《きょうぎ》でふるい｜落《お》とされた。¦The weak boy was eliminated from the bitter contest.¦1¦4gpm¦¦¦ふるい落とされた",
-    "13mu4\t1¦｜私《わたし》は｜彼女《かのじょ》を｜待《ま》ちあぐんだ。¦I became weary of waiting for her.¦3¦3a6t¦¦¦待ちあぐんだ",
-    "13mv8\t1¦あなたは｜一日中《いちにちじゅう》｜働《はたら》いた｜後《あと》で｜疲《つか》れきっているにちがいない。¦You must be worn out after working all day.¦3¦4z8x¦¦CK¦疲れきっている",
-    "13my0\t1¦まさかそのような｜窮地《きゅうち》に｜立《た》たされているとは｜露知《つゆし》らず。¦Good grief! I had no idea you had been placed in such a tight spot.¦1¦1myn¦kamojun¦sundown¦露知らず",
-    "13n0i\t1¦｜今日《きょう》は｜昨日《きのう》の｜寒《さむ》さとはうって｜変《か》わった｜陽気《ようき》だ。¦It isn't anything like as cold as it was yesterday.¦3¦3ofh¦¦CM¦うって変わった",
-    "13n0s\t1¦｜彼《あれ》は｜相手《あいて》を｜打《う》ち｜負《ま》かした。¦He got the better of his opponent.¦3¦27cq¦¦sundown¦打ち負かした",
-    "13n12\t1¦｜百合《ゆり》が｜雨《あめ》のために｜打《う》ち｜倒《たお》されてしまった。¦The lilies have been beaten down by the rain.¦3¦1twr¦¦¦打ち倒されて",
-    "13n2q\t1¦｜波《なみ》が｜海岸《かいがん》に｜激《はげ》しく｜打《う》ち｜寄《よ》せていた。¦Waves were battering the shore.¦1¦2lvq¦¦¦打ち寄せていた",
-    "13n44\t1¦｜私《わたし》は｜虎《とら》を｜狙《ねら》って｜発砲《はっぽう》したが、｜撃《う》ち｜損《そこ》なった。¦I aimed at the tiger and fired, but missed him.¦¦3db4¦¦CK¦撃ち損なった",
-    "13n7q\t1¦それは｜話《はなし》が｜出来過《できす》ぎている。¦That sounds too good to be true.¦3¦4e0l¦bunbuku¦Dejo¦出来過ぎている",
-    "13nbm\t1¦この｜企画《きかく》はもう｜一度《いちど》｜想《そう》を｜練《ね》り｜直《じき》せ。¦You should rethink this program.¦1¦4rpv¦¦Jesse¦練り直せ",
-    "13neo\t1¦｜持《も》ち｜物《もの》を｜置《お》き｜忘《わす》れないように。¦Don't leave your things behind.¦3¦38an¦¦Dejo¦置き忘れない",
-    "13ng2\t1¦｜今《いま》、｜誰《だれ》か｜係《かか》りの｜者《もの》を｜差《さ》し｜向《む》けます。¦I'll send someone up to help you now.¦¦3per¦bunbuku¦CK¦差し向けます",
   ],
 };

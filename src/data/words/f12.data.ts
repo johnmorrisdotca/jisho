@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 13 of 70, from "二糖". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 13 of 70, from "二等陸尉". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,14 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "二等陸尉\tにとうりくい",
+    "二等陸曹\tにとうりくそう",
+    "二筋道\tふたすじみち",
+    "二筑\tにちく",
+    "二箇国語\tにかこくご",
+    "二箇年\tにかねん",
+    "二箇所\tにかしょ",
+    "二粒\tふたつぶ",
     "二糖\tにとう",
     "二糖類\tにとうるい",
     "二級\tにきゅう",
@@ -2911,8 +2919,5 @@ export const PIECE: WordsPiece = {
     "仕来り\tしきたり",
     "仕業\tしわざ",
     "仕様\tしよう",
-    "仕様がない\tしょうがない|しようがない|しょーがない",
-    "仕様のない\tしようのない|しょうのない",
-    "仕様もない\tしょうもない|しようもない|しょーもない",
   ],
 };

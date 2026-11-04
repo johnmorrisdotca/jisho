@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 95 of 144, from "0ya6k". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 95 of 144, from "0y9zw". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,19 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0y9zw\t1¦その｜老人《ろうじん》は｜堂々《どうどう》とした｜顔《かお》つきをしていた。¦The old man had a noble countenance.¦3¦4f14¦mookeee¦eirik174¦堂々と\t3¦｜彼《あれ》はその｜式典《しきてん》で｜堂々《どうどう》と｜振《ふ》る｜舞《ま》った。¦He bore himself well at the ceremony.¦1¦2ez8¦mookeee¦sundown¦堂々と",
+    "0ya0q\t1¦｜戦争《せんそう》の｜直前《ちょくぜん》、｜日本《にほん》がフランスと｜同《どう》｜盟《めい》を｜結《むす》びました。¦Japan entered into an alliance with France just before the war.¦1¦480e¦Scott¦Scott¦同盟",
+    "0ya10\t1¦｜彼女《かのじょ》は｜毒々《どくどく》しい｜化粧《けしょう》をしている。¦She wears heavy makeup.¦¦1vni¦¦CK¦毒々しい",
+    "0ya24\t1¦そこの｜乞食《こじき》が｜泥棒《どろぼう》である｜事《こと》がわかった。¦The beggar turned out to be a thief.¦¦4ku8¦¦CK¦泥棒",
+    "0ya2e\t1¦｜彼《あ》の｜名誉《めいよ》は｜貪欲《どんよく》によってむしばまれた。¦His honor was corroded by greed.¦¦2hic¦¦¦貪欲",
+    "0ya38\t1¦｜内紛《ないふん》が｜党《とう》の｜分裂《ぶんれつ》したもとです。¦Strife is the rock on which the party split.¦¦2n2q¦¦¦内紛",
+    "0ya3i\t1¦いまそれを｜直《なお》そうったって｜無駄《むだ》だ。¦It's no use trying to fix it now.¦¦4wcj¦¦CK¦直そう\t1¦あなたの｜時計《とけい》は｜明日《あした》までには｜直《なお》しておきますよ。¦I will have repaired your watch by tomorrow.¦3¦4zz0¦¦Lumi_alt¦直して\t3¦その｜本《もと》をなおしなさい。¦Put the book back where you found it.¦5¦4fga¦¦CK¦なおし\t5¦｜次《つぎ》の｜文章《ぶんしょう》を｜日本語《にほんご》に｜直《なお》しなさい。¦Put the following sentences into Japanese.¦2¦37wz¦¦CN¦直し",
+    "0ya3s\t1¦２週間もすれば自然に治ります。¦It will go away by itself in two weeks.¦3¦51p2¦arnab¦CC¦治ります",
+    "0ya4c\t1¦あいつは、なかなかいい奴だぜ！¦He is a good joker.¦1¦511y¦small_snow¦¦なかなか\t2¦いまどき｜良《よ》い｜仕事《しごと》はなかなか｜得《え》がたいのを｜忘《わす》れないでね。¦Don't forget that good jobs are very hard to come by these days.¦3¦3p0t¦¦CK¦なかなか",
+    "0ya4m\t1¦｜財布《さいふ》の｜中身《なかみ》をこの｜袋《ふくろ》に｜空《あ》けなさい。¦Empty the purse into this bag.¦¦3nby¦¦sundown¦中身",
+    "0ya4w\t1¦｜先生《せんせい》は｜時間《じかん》を｜守《まも》ることの｜大切《たいせつ》さについて｜長々《ながなが》と｜述《の》べた。¦Our teacher dwelt on the importance of punctuality.¦2¦318h¦¦CM¦長々と\t2¦ジョンは｜長《なが》いすに｜長々《ながなが》と｜寝《ね》そべっていた。¦John stretched out on the couch.¦3¦4m2w¦¦CN¦長々と",
+    "0ya56\t1¦｜長《なが》らくお待たせして｜申《もう》し｜訳《わけ》ありません。¦I'm sorry to have kept you waiting so long.¦1¦6tj9n¦small_snow¦Eldad¦長らく",
+    "0ya60\t1¦ってゆーか、こうやってぐじぐじ考えるのが情けないんじゃないのか？¦Or rather, is it not just pathetic that I think such whiny thoughts like this?¦3¦1n2e¦mookeee¦¦情けない",
     "0ya6k\t1¦「もしおまえが｜私《わたし》のなぞなぞ｜答《こた》えられたら、｜私《わたし》はおまえを｜無事《ぶじ》に｜通《とお》してやる」とスフィンクスは｜言《い》った。¦\"I will let you pass safely,\" the Sphinx said, \"if you can answer my riddle.\"¦¦52fc¦mookeee¦¦なぞなぞ",
     "0ya6u\t1¦｜興奮《こうふん》した｜観客《かんきゃく》はコンサートホールになだれこんだ。¦The excited audience ran into the concert hall.¦1¦3uy8¦bunbuku¦CK¦なだれこんだ",
     "0ya74\t1¦トムは｜夏祭《なつまつ》りに｜参加《さんか》した。¦Tom took part in the summer festival.¦2¦4aax¦bunbuku¦CK¦夏祭り",
@@ -188,21 +201,5 @@ export const PIECE: WordsPiece = {
     "0ycnq\t1¦あなたを｜私《わたし》の｜両親《りょうしん》に｜紹介《しょうかい》したい。¦I want you to meet my parents.¦2¦4ykk¦¦CK¦両親",
     "0ycok\t1¦｜普段着《ふだんぎ》でおいでください。¦Please come in an ordinary dress.¦2¦1tif¦small_snow¦AlanF_US¦普段着",
     "0ycp4\t1¦｜休《やす》みの｜前《さき》などは｜少《すこ》し｜羽目《はめ》を｜外《はず》して｜飲《の》むのだが、｜杜仲茶《とちゅうちゃ》｜割《わ》りで｜飲《の》むと｜二日酔《ふつかよ》いが｜全《まった》くない。¦I usually cut loose a bit and drink plenty before a day off work, but if my drinks are cut with tochu tea, then I get absolutely no hangover.¦1¦1mtt¦mookeee¦¦二日酔い",
-    "0ycpe\t1¦この｜大《おお》きな｜門《もん》は｜小《ちい》さな｜庭《にわ》に｜不釣《ふつ》り｜合《あ》いだ。¦This big gate is disproportionate to the small garden.¦1¦4q9o¦KK_kaku_¦Lumi_alt¦不釣り合い",
-    "0ycpo\t1¦｜秀《しゅう》｜樹《き》ったら、｜当時《とうじ》は｜全《ぜん》っ｜然《ぜん》こっちに｜慣《な》れなくてね、しょっちゅうふてくされてたのよ。¦Hideki, he really hadn't settled in here at all and sulked all the time.¦1¦1mo1¦mookeee¦¦ふてくされてた",
-    "0ycq8\t1¦｜彼《かれ》らは｜船《ふね》を｜岸《きし》に｜引《ひ》き｜上《あ》げた。¦They drew their boat on the beach.¦2¦22lf¦mookeee¦¦船",
-    "0ycrc\t1¦｜警報機《けいほうき》が｜鳴《な》っているときは｜絶対《ぜったい》に｜踏切《ふみきり》を｜渡《わた》らないでください。¦Don't cross the tracks when the alarm is ringing.¦1¦3rug¦bunbuku¦JimBreen¦踏切",
-    "0ycrw\t1¦｜芝生《しばふ》を｜踏《ふ》みつけるな。¦Don't trample on the grass.¦1¦3768¦¦CM¦踏みつける",
-    "0ycsg\t1¦｜体力《たいりょく》を｜増《ふ》やすように｜努《つと》めなさい。¦Try to build up your strength.¦3¦2yg6¦¦CK¦増やす",
-    "0yct0\t1¦｜彼《かれ》らは｜不用《ふよう》の｜物《もの》は｜捨《す》てた。¦They discarded unnecessary things.¦2¦228s¦¦CM¦不用の",
-    "0yctk\t1¦ですから｜私《わたし》たちは、｜社員《しゃいん》が｜現金《げんきん》ではなく、エレクトロニクスによる｜振替《ふりかえ》でお｜金《かね》を｜受《う》け｜取《と》るよう、｜説得《せっとく》に｜努《つと》めているのです。¦Therefore, we try to persuade people not to have cash, to have money electronically transferred.¦1¦4c23¦¦¦振替",
-    "0yctu\t2¦｜途中《とちゅう》で｜何《なに》かが｜彼《あ》の｜身《み》に｜降《ふ》りかかったに｜違《ちが》いない。¦Something must have happened to him on the way.¦¦2o4l¦¦CK¦降りかかった",
-    "0ycuo\t1¦｜銀行振込《ぎんこうふりこみ》でお｜支払《しはら》いします。¦We will make the payment by bank transfer.¦1¦3ujl¦¦CK¦振込",
-    "0ycv8\t1¦｜振《ふ》り｜袖《そで》で｜仕事《しごと》はできぬ。¦The cat in gloves catches no mice.¦¦349y¦¦shekitten¦振り袖",
-    "0ycvi\t2¦｜振《ふ》り｜出《だ》しに｜戻《もど》ってしまった。¦We were back to square one.¦1¦34a0¦bunbuku¦CM¦振り出し",
-    "0ycw2\t1¦｜大勢《おおぜい》の｜人《じん》がその｜旧跡《きゅうせき》を｜訪《おとず》れる。¦A large number of people visit the historic site.¦2¦2y2i¦¦zipangu¦旧跡",
-    "0ycwc\t1¦｜私《わたし》は｜勇気《ゆうき》を奮い｜起《お》こし｜中《うち》に｜入《い》っていった。¦I summoned up my courage, and walked inside.¦1¦39ol¦¦CM¦奮い起こし",
-    "0ycx6\t1¦トムは｜故郷《ふるさと》へと｜戻《もど》って｜行《い》った。¦Tom went back to his hometown.¦1¦4aa7¦bunbuku¦CK¦故郷",
-    "0ycxq\t1¦その｜部屋《へや》には｜古《ふる》ぼけた｜椅子《いす》が｜一《ひと》つあるだけだった。¦There was nothing but an old chair in the room.¦¦4fps¦bunbuku¦CM¦古ぼけた",
   ],
 };

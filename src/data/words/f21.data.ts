@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 22 of 70, from "右寄". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 22 of 70, from "右前". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,18 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "右前\tみぎまえ",
+    "右半身\tみぎはんしん",
+    "右卍\tみぎまんじ",
+    "右卐\tみぎまんじ",
+    "右向き\tみぎむき",
+    "右四つ\tみぎよつ",
+    "右回り\tみぎまわり",
+    "右図\tうず",
+    "右大括弧\tみぎだいかっこ",
+    "右大臣\tうだいじん",
+    "右奥\tみぎおく",
+    "右室\tうしつ",
     "右寄せ\tみぎよせ",
     "右寄り\tみぎより",
     "右小括弧\tみぎしょうかっこ",
@@ -888,10 +900,17 @@ export const PIECE: WordsPiece = {
     "同志的\tどうしてき",
     "同志社大学\tどうししゃだいがく",
     "同志社女子大学\tどうししゃじょしだいがく",
+    "同性\tどうせい",
+    "同性カップル\tどうせいカップル",
+    "同性パートナー\tどうせいパートナー",
+    "同性パートナーシップ\tどうせいパートナーシップ",
+    "同性婚\tどうせいこん",
     "同性愛\tどうせいあい",
     "同性愛嫌悪\tどうせいあいけんお",
     "同性愛者\tどうせいあいしゃ",
     "同性愛者解放運動\tどうせいあいしゃかいほううんどう",
+    "同性結婚\tどうせいけっこん",
+    "同性間結婚\tどうせいかんけっこん",
     "同情\tどうじょう",
     "同情心\tどうじょうしん",
     "同情票\tどうじょうひょう",
@@ -1597,6 +1616,7 @@ export const PIECE: WordsPiece = {
     "向かい合わせる\tむかいあわせる",
     "向かい波\tむかいなみ",
     "向かい火\tむかいび",
+    "向かい腹\tむかいばら",
     "向かい風\tむかいかぜ",
     "向かう\tむかう",
     "向かうところ敵なし\tむかうところてきなし",
@@ -3193,31 +3213,5 @@ export const PIECE: WordsPiece = {
     "哀号\tあいごう",
     "哀咽\tあいえつ",
     "哀哀\tあいあい",
-    "哀哭\tあいこく",
-    "哀弔\tあいちょう",
-    "哀思\tあいし",
-    "哀恤\tあいじゅつ",
-    "哀悼\tあいとう",
-    "哀悼の意\tあいとうのい",
-    "哀悼痛惜\tあいとうつうせき",
-    "哀情\tあいじょう",
-    "哀惜\tあいせき",
-    "哀愁\tあいしゅう",
-    "哀愁漂う\tあいしゅうただよう",
-    "哀愍\tあいびん|あいみん",
-    "哀感\tあいかん",
-    "哀慕\tあいぼ",
-    "哀憐\tあいれん",
-    "哀憫\tあいびん|あいみん",
-    "哀楽\tあいらく",
-    "哀歌\tあいか",
-    "哀歓\tあいかん",
-    "哀毀骨立\tあいきこつりつ",
-    "哀求\tあいきゅう",
-    "哀泣\tあいきゅう",
-    "哀痛\tあいつう",
-    "哀絶\tあいぜつ",
-    "哀訴\tあいそ",
-    "哀訴嘆願\tあいそたんがん",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 59 of 144, from "0twtk". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 59 of 144, from "0twp". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0twpe\t1¦｜彼女《かのじょ》は｜全身《ぜんしん》ずぶぬれだった。¦She was soaked from head to foot.¦¦1w2c¦¦CK¦全身",
+    "0twrw\t1¦ある｜人《ひと》｜物《もの》が｜不変《ふへん》の｜性質《せいしつ》で｜全人生《ぜんじんせい》を｜貫《つらぬ》くということは｜小説《しょうせつ》の｜中《うち》だけの｜話《はなし》だ。¦Only in novels do you find individuals who live out their whole life with unvarying character.¦1¦1lfv¦fcbond¦fcbond¦全人生",
+    "0twsq\t1¦｜全世界《ぜんせかい》の｜人々《ひとびと》が｜平和《へいわ》を｜切望《せつぼう》している。¦The whole world hungers for peace.¦3¦30mw¦¦CM¦全世界",
+    "0twta\t1¦｜教育《きょういく》は｜若《わか》い｜時代《じだい》に｜限《かぎ》られてはならず、われわれの｜全生涯《ぜんしょうがい》を｜通《つう》じて｜継続《けいぞく》して｜行《おこな》われるものでなければならない。¦Education must not be limited to our youth, but it must be a continuing process through our entire lives.¦1¦3v5k¦¦jakov¦全生涯",
     "0twtk\t1¦その｜歌手《かしゅ》はその｜歌《うた》のときが｜全盛《ぜんせい》でした。¦The singer was at his best in that song.¦1¦4jka¦¦¦全盛",
     "0twtu\t1¦どんな｜犬《いぬ》にも｜全盛期《ぜんせいき》がある。¦Every dog has his day.¦1¦49wh¦¦CK¦全盛期",
     "0twu4\t1¦｜彼女《かのじょ》にも｜全盛時代《ぜんせいじだい》があった。¦She has seen better days.¦1¦217n¦¦CK¦全盛時代",
@@ -139,6 +143,7 @@ export const PIECE: WordsPiece = {
     "0u03m\t1¦よし！掃討完了！¦Alright! They're all mopped up!¦1¦1lt2¦fcbond¦fcbond¦掃討",
     "0u03w\t1¦実も結ぶが、挿し木でも根付くらしい？¦It bears fruit, but it seems it may even set root from cuttings?¦1¦1l70¦fcbond¦fcbond¦挿し木",
     "0u046\t1¦｜彼《あれ》はボタンの｜穴《あな》に｜花《はな》を｜挿《さ》した。¦He stuck a flower in his buttonhole.¦1¦2dlu¦¦CK¦挿した",
+    "0u04g\t1¦その｜作家《さっか》の｜文体《ぶんたい》は｜挿入《そうにゅう》｜語句《ごく》が｜多《おお》い。¦The writer has a parenthetic style.¦1¦4ifu¦¦¦挿入",
     "0u05k\t1¦｜水《みず》を｜加《くわ》えてペースト｜状《じょう》になるまでかき｜回《まわ》しなさい。¦Add water and stir to a paste.¦3¦32vx¦¦¦かき回し",
     "0u06e\t1¦その｜子供《こども》はおもちゃをかき｜集《あつ》めた。¦He gathered his toys together.¦3¦4i5d¦¦CK¦かき集めた",
     "0u07i\t2¦その｜教師《きょうし》は｜我々《われわれ》の｜興味《きょうみ》をかき｜立《た》てた。¦The teacher aroused our interest.¦1¦4j4i¦¦CK¦かき立てた",
@@ -198,12 +203,5 @@ export const PIECE: WordsPiece = {
     "0u19k\t1¦この２つの子音は相補分布をなしていそうである。¦It is likely that these two consonants are in complementary distribution.¦¦4sw4¦¦qdii¦相補",
     "0u1ao\t1¦ここでは｜私《わたし》は｜議論《ぎろん》を、なぜ｜相撲《すもう》の｜好《す》きな｜外国人《がいこくじん》が｜多《おお》いか、に｜限定《げんてい》したい。¦Here, I'll confine this discussion to why many foreigners enjoy sumo.¦1¦4taw¦¦¦相撲",
     "0u1b8\t1¦２５０キロというのは相撲取りとしても並外れた体重だ。¦Two hundred fifty kilograms is an extraordinary weight even for a sumo wrestler.¦1¦51rc¦e4zh1nmcz¦CM¦相撲取り",
-    "0u1bi\t1¦｜我々《われわれ》の｜利益《りえき》は｜彼《かれ》らの｜利益《りえき》と｜相容《あいい》れない。¦Our interests clash with theirs.¦1¦3zo4¦¦Swift¦相容れない",
-    "0u1bs\t1¦窓を開けっぱなしにしておいたの？¦Did you leave the window open?¦3¦4yu3¦bunbuku¦CK¦窓",
-    "0u1cc\t1¦トラベラーズチェックを｜現金《げんきん》に｜替《か》えてくれるのはこの｜窓口《まどぐち》ですか。¦Is this the right window for cashing travelers' checks?¦2¦4a3w¦¦CK¦窓口",
-    "0u1cm\t1¦｜窓際《まどぎわ》の｜席《せき》をお｜願《ねが》いします。¦I'd like a table by the window.¦3¦309y¦small_snow¦CK¦窓際",
-    "0u1dg\t1¦｜彼《かれ》らは｜窓枠《まどわく》を｜黄色《きいろ》く｜塗《ぬ》った。¦They painted the window frames yellow.¦1¦22kq¦small_snow¦CK¦窓枠",
-    "0u1dq\t1¦｜総入《そうい》れ｜歯《ば》にする｜必要《ひつよう》があります。¦You have to have a full denture.¦2¦309i¦¦¦総",
-    "0u1ea\t1¦１０月に総会を開催すべきだという提案があった。¦There was a suggestion that the general meeting should take place in October.¦1¦525d¦mookeee¦CM¦総会",
   ],
 };

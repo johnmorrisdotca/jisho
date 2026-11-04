@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 119 of 144, from "170s". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 119 of 144, from "170f". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,22 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "170f2\t1¦｜左肩《ひだりかた》の｜関節《かんせつ》が｜痛《いた》みます。¦The joint of my left shoulder aches.¦1¦3nvu¦¦¦左肩",
+    "170fm\t1¦｜最上階《さいじょうかい》にレストランがある。¦There is a restaurant on the top floor.¦2¦3nhr¦huizi99¦CK¦最上階",
+    "170fw\t1¦｜世界《せかい》｜最速《さいそく》の｜走者《そうしゃ》でさえ、｜空腹《くうふく》だったら｜走《はし》れない。¦Even the fastest runner in the world cannot run if he is hungry.¦3¦32na¦¦CM¦最速の",
+    "170g6\t1¦３人のうちで最年少の少年が一番魅力的だ。¦Of the three boys, the youngest is the most attractive.¦¦51k8¦e4zh1nmcz¦CM¦最年少の",
+    "170gg\t1¦｜私《わたし》はクラスの｜中《うち》で｜最年長《さいねんちょう》である。¦I am older than any other student in my class is.¦3¦3gbc¦¦CM¦最年長",
+    "170gq\t1¦｜彼女《かのじょ》は｜昨週《さくしゅう》、｜旅《たび》にでた。¦She set out on a trip last week.¦3¦1xdj¦¦CM¦昨週",
+    "170ha\t1¦｜彼《あ》の｜最新《さいしん》の｜作品《さくひん》が｜市庁舎《しちょうしゃ》で｜展示《てんじ》されているの。｜言葉《ことば》に｜出来《でき》ないほど｜素敵《すてき》よ。¦His latest works are on display at the city hall. They are fabulous beyond description.¦1¦2iit¦¦CK¦市庁舎",
+    "170ie\t1¦｜彼《あれ》は｜彼女《かのじょ》と｜遠《とお》い｜親戚関係《しんせきかんけい》にある。¦He is distantly related to her.¦¦25zv¦¦CK¦親戚関係",
+    "170j8\t1¦ネパールを｜旅行《りょこう》｜中《うち》、ちょっとした｜事故《じこ》にあった。¦I had a slight accident while trekking in Nepal.¦1¦498e¦¦CN¦ネパール",
+    "170kw\t1¦マリはハンガリーにいたことがある。¦Mari has been in Hungary.¦5¦46lb¦mookeee¦CN¦マリ",
+    "170ne\t1¦パプアニューギニアに｜住《す》むメラネシア｜人《じん》の｜多《おお》くは、かなり｜強《つよ》い｜天然《てんねん》パーマですね。¦Most of the Melanesians living in Papua New Guinea have very curly hair, don't they?¦3¦1lat¦fcbond¦fcbond¦パプアニューギニア",
+    "170q6\t1¦｜彼《あれ》は｜誰《だれ》に｜対《たい》してもあけっぴろげだ。¦He is free and open with everybody.¦¦26xb¦¦¦あけっぴろげ",
+    "170qg\t1¦｜禍福《かふく》は｜糾《あざな》える｜縄《なわ》の｜如《ごと》し。¦When an ill wind blows it does good to no one.¦1¦400e¦¦russell359¦糾える",
+    "170qq\t1¦こんなあしらいをされたら｜誰《だれ》だって｜承知《しょうち》しないでしょう。¦Such treatment would make anybody rebel.¦¦4nti¦¦¦あしらい",
+    "170r0\t1¦｜彼《あれ》があのように｜年若《としわか》くして｜死《し》んだのは、｜本当《ほんとう》に｜惜《お》しいと｜思《おも》う。¦I think it's a great pity that he died so young.¦1¦2lgf¦¦sundown¦あのように",
+    "170rk\t1¦｜子供《こども》の｜顔《かお》に｜喜《よろこ》びの｜色《いろ》がありありと｜現《あらわ》れていた。¦Joy was manifest on the child's face.¦3¦3m43¦¦¦ありありと",
     "170so\t1¦あんなふうに｜話《はな》すとは｜彼《あれ》はばかに｜違《ちが》いない。¦He must be a fool to talk like that.¦3¦4x4o¦¦CK¦あんなふうに",
     "170sy\t1¦｜車《くるま》がいかれるかと｜思《おも》ったころ｜終点《しゅうてん》に｜着《つ》きました。¦We reached our destination just as I thought the car was going to give up the ghost.¦3¦1moa¦mookeee¦papabear¦いかれる\t2¦なあ、この｜運転士《うんてんし》、いかれてるよ。¦Oh, the driver is a maniac.¦1¦49ts¦¦Dejo¦いかれてる",
     "170t8\t1¦｜彼女《かのじょ》は｜英語《えいご》のスピーチコンテストでいかんなくその｜才能《さいのう》を｜発揮《はっき》した。¦She really showed her stuff in the English speech contest.¦1¦1y92¦¦¦いかんなく",
@@ -213,26 +229,11 @@ export const PIECE: WordsPiece = {
     "172v4\t1¦もごもご｜言《い》うのはやめてください。¦Please don't mumble.¦4¦45nj¦¦CK¦もごもご",
     "172ve\t1¦｜運転手《うんてんしゅ》は｜運転台《うんてんだい》からもんどり｜打《う》って｜投《な》げ｜出《だ》された。¦The driver was thrown from his seat head over heels.¦3¦4268¦¦auxitt¦もんどり打って",
     "172ws\t1¦ダンというのは｜全《まった》くハズれた｜奴《やつ》だ。｜次《つぎ》に｜何《なに》をやらかすか｜見当《けんとう》もつかない。¦Dan's completely off the wall; you can't predict what he's going to do next.¦1¦4coi¦¦AlanF_US¦やらかす",
-    "172xc\t2¦｜男性用《だんせいよう》の｜衣類《いるい》はゆったりしている。¦Men's clothing is loose fitting.¦2¦2q3s¦¦¦ゆったり",
+    "172xc\t1¦この｜世《よ》の｜心配事《しんぱいごと》は｜忘《わす》れて｜気《き》をゆったり｜持《も》て。¦Forget the anxieties of life and learn to relax.¦3¦4qh4¦¦Lumi_alt¦ゆったり\t2¦｜男性用《だんせいよう》の｜衣類《いるい》はゆったりしている。¦Men's clothing is loose fitting.¦2¦2q3s¦¦¦ゆったり",
     "172xw\t1¦｜彼《かれ》らは｜腹《はら》の｜皮《かわ》がよじれるほど｜笑《わら》った。¦They split their sides laughing.¦2¦2288¦¦¦よじれる",
     "172y6\t1¦その｜老人《ろうじん》は｜足《あし》がもつれてよろけた。¦The old man tripped over his own feet.¦3¦4f1a¦¦jakov¦よろけた",
     "172yg\t1¦｜新聞《しんぶん》に｜書《か》かれていることはれっきとした｜事実《じじつ》である。¦What is reported in the paper is an obvious fact.¦3¦3400¦¦¦れっきとした",
     "172yq\t1¦｜彼《あ》のわざとらしい｜話《はな》し｜方《かた》が｜嫌《きら》いだ。¦I don't like his affected manner of speaking.¦1¦2j78¦bunbuku¦CM¦わざとらしい",
-    "1736i\t1¦その｜子《こ》は、カエルが、｜動《うご》いたのを｜見《み》て｜後《あと》ずさりをした。¦The kid drew back from the frog when it moved.¦4¦4i90¦¦CM¦後ずさり",
-    "1736s\t1¦｜彼《あれ》はぱっと｜後《あと》ずさりした。¦He backed abruptly away.¦3¦2duo¦¦¦後ずさり",
-    "173fe\t1¦｜今日《きょう》は｜魚《さかな》の｜食《く》いが｜悪《にく》い。¦The fish aren't biting today.¦4¦3ofw¦¦CK¦魚の食い",
-    "173gi\t1¦｜私《わたし》たちはまず、あなたの｜義理《ぎり》のお｜兄《にい》さんに｜手紙《てがみ》を｜書《か》いて、もてなしていただいたお｜礼《れい》を｜言《い》うべきでしょう。¦The first thing we should do is write and thank your brother-in-law for his hospitality.¦1¦3k8w¦¦CK¦義理のお兄さん",
-    "173h2\t1¦｜義理《ぎり》の｜姉《あね》は｜五《ご》｜年間《ねんかん》で｜四《し》｜人《ひと》の｜子《こ》｜供《とも》を｜生《う》んだ。¦My sister-in-law had four children in five years.¦1¦3x4q¦mookeee¦CK¦義理の姉",
-    "173i6\t1¦この｜儀式《ぎしき》は｜幾世《いくよ》｜代《よ》にもわたって｜伝《つた》わってきた。¦This ceremony has been handed down from generation to generation.¦1¦4rlu¦¦¦幾世",
-    "173ig\t1¦｜急《せ》いては｜事《こと》をし｜損《そん》ずる。¦Hurrying leads to mistakes being made.¦2¦8k8e¦blay_paul¦blay_paul¦急いて",
-    "173j0\t1¦ちょっとした｜景気《けいき》づけですよ。¦It's a shot in the arm.¦3¦4ci8¦bunbuku¦CM¦景気づけ",
-    "173ja\t1¦｜実地《じっち》は｜理論《りろん》と｜同様《どうよう》に｜大切《たいせつ》であるが、われわれは｜理論《りろん》を｜重《おも》んじ、｜実地《じっち》を｜軽《かろ》んずる｜傾向《けいこう》がある。¦Practice is as important as theory, but we are apt to value the latter and despise the former.¦2¦376w¦¦papabear¦軽んずる",
-    "173jk\t1¦その｜男《おとこ》は｜自分《じぶん》の｜脳《のう》を｜撃《う》ち｜抜《ぬ》いた。¦The man blew out his own brains.¦¦4giy¦¦CK¦撃ち抜いた",
-    "173ju\t1¦こんな｜結《むす》び｜方《かた》ではほどけちゃうよ。¦This knot will not hold.¦1¦4npz¦small_snow¦¦結び方",
-    "173k4\t1¦この｜現象《げんしょう》は、いずれの｜汚染物質《おせんぶっしつ》とも｜無関係《むかんけい》であると｜結論《けつろん》づけることができる。¦We can conclude that this phenomenon is not related to either pollutant.¦¦4rcn¦¦AlanF_US¦結論づける",
-    "173ke\t1¦このあたりは｜私《わたし》がここにきて｜以来《いらい》｜建《た》て｜込《こ》んできた。¦The area has been built up since I came here.¦3¦4sut¦¦¦建て込んで",
-    "173ko\t1¦｜彼《あれ》は｜肩越《かたご》しに｜振《ふ》り｜返《かえ》った。¦He looked back over his shoulder.¦1¦2b3b¦¦CK¦肩越し",
-    "173l8\t1¦あの｜女性《じょせい》は｜見栄《みえ》っ｜張《ぱ》りと｜言《い》うよりもむしろ｜自尊心《じそんしん》が｜強《つよ》い。¦That woman is proud rather than vain.¦1¦4y51¦¦¦見栄っ張り",
-    "173li\t1¦｜彼《あれ》は｜帰宅《きたく》するやいなや、｜誇《ほこ》らしげに｜衝撃《しょうげき》の｜発表《はっぴょう》をした。¦No sooner had he come home than he proudly made an earth-shattering announcement.¦1¦2bs6¦¦¦誇らしげ",
+    "1732m\t1¦｜簡易《かんい》ベッドの｜組《く》み｜立《た》て｜方《ほう》を｜教《おし》えてもらえますか。¦Will you show me how to set up a cot?¦2¦3xuq¦¦CK¦簡易ベッド",
   ],
 };

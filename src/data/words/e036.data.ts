@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 37 of 219, from "0u3rk". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 37 of 219, from "0u3k". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,32 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0u3k2\t即日出荷\tそくじつしゅっか\tn¦¦same day shipping",
+    "0u3kc\t即売\tそくばい\tn,vs,vt¦¦selling on the spot",
+    "0u3km\t即物的\tそくぶつてき\tadj-na¦¦practical¦matter-of-fact¦realistic¦utilitarian¦pragmatic",
+    "0u3kw\t息\tいき\tn¦¦breath¦breathing\tn¦¦concord¦harmony¦rapport¦息が合う\tn¦¦steam (coming off hot food, tea, etc.)¦(water) vapor¦vapour",
+    "0u3l6\t息をする\tいきをする\texp,vs-i¦¦to breathe",
+    "0u3lg\t息をつく|息を吐く|息を付く\tいきをつく\texp,v5k¦¦to take a breath¦to take a short rest",
+    "0u3lq\t息を殺す\tいきをころす\texp,v5s¦¦to hold one's breath¦to catch one's breath",
+    "0u3m0\t息を吹き返す\tいきをふきかえす\texp,v5s¦¦to resume breathing¦to come around¦to come back to life",
+    "0u3ma\t息を弾ませる\tいきをはずませる\texp,v1¦¦to pant¦to gasp¦to be short of breath¦to be excited",
+    "0u3mk\t息継ぎ|息つぎ\tいきつぎ\tn,vs¦¦taking a breath (while singing, swimming, etc.)\tn,vs¦¦short break¦breather",
+    "0u3mu\t息子|息\tむすこ|ムスコ~sk\tn¦¦son",
+    "0u3n4\t息子さん\tむすこさん\tn¦hon¦son",
+    "0u3ne\t息吹|息吹き~io|気吹~rK\tいぶき\tn¦¦breath\tn¦poet¦sign (of something new and fresh)¦breath (of spring, fresh air, etc.)¦vitality",
+    "0u3no\t息切れ\tいきぎれ\tn,vs,vi¦¦shortness of breath¦panting¦puffing\tn,vs,vi¦¦running out of steam (of the economy, a project, etc.)¦losing momentum¦loss of efficiency",
+    "0u3ny\t息抜き|息ぬき~sK\tいきぬき\tn,vs,vi¦¦taking a breather¦relaxation¦rest\tn¦¦vent¦ventilation opening",
+    "0u3oi\t束|把\tたば\tn,n-suf,ctr¦¦bundle¦bunch¦sheaf",
+    "0u3os\t束\tつか\tn¦¦strut¦short vertical post\tn¦¦thickness (of a book minus the cover, a sheaf of paper, etc.)\tn¦arch¦handbreadth¦bundle¦束・そく・1|束・そく・2|束・そく・3",
+    "0u3p2\t束ね\tたばね\tn¦¦bundle¦control¦management",
+    "0u3pc\t束ね積む\tたばねつむ\tv5m¦¦to shock (grain)",
+    "0u3pm\tつかの間|束の間\tつかのま\texp,n,adj-no¦¦moment¦brief space of time",
+    "0u3pw\t束帯\tそくたい\tn¦¦old ceremonial court dress",
+    "0u3q6\t束縛\tそくばく\tn,vs,vt¦¦restraint¦restriction¦fetters¦yoke¦shackles\tn,vs,vt¦¦binding¦confinement with rope¦orig. meaning",
+    "0u3qg\t束髪\tそくはつ\tn¦¦hairstyle introduced in the Meiji era consisting in a bun or chignon tied at the back of the head",
+    "0u3qq\t束脩|束修~iK\tそくしゅう\tn¦¦entrance fee¦initiation fee¦registration fee¦present to a teacher\tn¦arch¦gift of dried meat from a new vassal or pupil",
+    "0u3r0\t測候所\tそっこうじょ\tn¦¦weather measurement station",
+    "0u3ra\t測地\tそくち\tn,vs,vt,vi,adj-no¦¦geodetic survey",
     "0u3rk\t測長機\tそくちょうき\tn¦¦length measuring machine",
     "0u3ru\t測定\tそくてい\tn,vs,vt¦¦measurement",
     "0u3s4\t測度\tそくど\tn¦math¦measure",
@@ -962,33 +988,5 @@ export const PIECE: WordsPiece = {
     "0ubfo\t大胆\tだいたん\tadj-na,n¦¦bold¦daring¦audacious",
     "0ubfy\t大男\tおおおとこ\tn¦¦big man¦large man¦tall man¦giant",
     "0ubg8\t大地\tだいち\tn¦¦earth¦ground¦the solid earth¦the (vast) land",
-    "0ubgi\t大地アース\tだいちアース\tn¦rare,elec¦earth ground¦アース・1",
-    "0ubgs\t大地震\tおおじしん|だいじしん\tn¦¦major earthquake¦large earthquake",
-    "0ubh2\t大中小\tだいちゅうしょう\tadj-no,n¦¦large, medium and small (businesses, rooms, etc.)",
-    "0ubhc\t大腸\tだいちょう|おおわた~ok\tn¦anat¦large intestine¦large bowel¦colon",
-    "0ubhm\t大通り|大通\tおおどおり\tn¦¦main street¦avenue¦boulevard",
-    "0ubhw\t大抵|大てい\tたいてい\tadj-na,adv,n¦uk¦mostly¦ordinarily¦usually¦generally\tadj-na,adv,n¦¦probably\tadj-no,n¦¦most¦almost all\tadj-no,n¦¦ordinary¦before a neg. form\tadj-na¦¦proper¦appropriate¦moderate¦usu. as 〜にする",
-    "0ubi6\t大敵\tたいてき\tn¦¦great rival¦powerful enemy¦archenemy",
-    "0ubig\t大都会\tだいとかい\tn¦¦metropolis¦big city",
-    "0ubiq\t大都市\tだいとし\tn¦¦metropolis¦large city",
-    "0ubja\t大東亜共栄圏\tだいとうあきょうえいけん\tn¦¦Greater East Asia Co-Prosperity Sphere",
-    "0ubjk\t大統一理論\tだいとういつりろん\tn¦physics¦grand unified theory",
-    "0ubju\t大統領\tだいとうりょう\tn¦¦president (of a country)\tn¦fam¦big man¦boss¦buddy¦mate¦used vocatively; esp. of an actor",
-    "0ubk4\t大統領選\tだいとうりょうせん\tn¦¦presidential election",
-    "0ubke\t大統領選挙\tだいとうりょうせんきょ\tn¦¦presidential election",
-    "0ubko\t大豆\tだいず|ダイズ~~~!\tn¦¦soya bean (Glycine max)¦soybean¦soy",
-    "0ubky\t大同小異\tだいどうしょうい\tadj-na,adj-no,n¦yoji¦essentially the same with only minor differences",
-    "0ubl8\t大わらわ|大童\tおおわらわ\tn,adj-no,adj-na¦¦working feverishly¦strenuous efforts¦furious dedication (to a task)\tn,adj-no,adj-na¦arch¦having dishevelled hair¦fighting with dishevelled hair¦orig. meaning",
-    "0ubls\t大徳\tだいとく|たいとく\tn¦¦great virtue\tn¦¦virtuous priest¦priest\tn¦¦rich person",
-    "0ubm2\t大日\tだいにち\tn¦¦Mahavairocana (Tathagata)¦Great Sun¦Supreme Buddha of Sino-Japanese esoteric Buddhism",
-    "0ubmc\t大入り\tおおいり\tn¦¦large attendance¦full house¦capacity audience¦不入り",
-    "0ubmm\t大脳\tだいのう\tn¦anat¦cerebrum",
-    "0ubmw\t大波\tおおなみ\tn¦¦billow¦surge¦large wave",
-    "0ubn6\t大陪審\tだいばいしん\tn¦¦grand jury¦小陪審",
-    "0ubng\t大麦\tおおむぎ|オオムギ~~~!\tn¦¦barley (Hordeum vulgare)",
-    "0ubnq\t大半\tたいはん\tn,adj-no¦¦majority¦more than half¦most (of)\tn,adv¦¦mostly¦largely¦mainly¦predominately¦nearly",
-    "0ubo0\t大反対\tだいはんたい\tn¦¦strong opposition",
-    "0ubok\t大瓶\tおおびん\tn¦¦large bottle",
-    "0ubou\t大部\tたいぶ|だいぶ\tadj-no¦¦lengthy (of a book, etc.)¦voluminous¦小部\tn,adv¦¦most (e.g. most part)¦greater¦fairly¦a good deal¦much",
   ],
 };

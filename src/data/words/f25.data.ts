@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 26 of 70, from "大人っ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 26 of 70, from "大事の". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,24 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "大事の前の小事\tだいじのまえのしょうじ",
+    "大事をとる\tだいじをとる",
+    "大事を取る\tだいじをとる",
+    "大事件\tだいじけん",
+    "大事故\tだいじこ",
+    "大事業\tだいじぎょう",
+    "大事無い\tだいじない",
+    "大二\tだいに",
+    "大人\tおとな|たいじん|だいにん|うし|おおびと",
+    "大人かわいい\tおとなかわいい",
+    "大人げ\tおとなげ",
+    "大人げない\tおとなげない",
+    "大人しい\tおとなしい",
+    "大人しく\tおとなしく",
+    "大人しやか\tおとなしやか",
+    "大人し目\tおとなしめ",
+    "大人じみた\tおとなじみた",
+    "大人じみる\tおとなじみる",
     "大人っぽい\tおとなっぽい",
     "大人にきび\tおとなにきび",
     "大人になる\tおとなになる",
@@ -2832,28 +2850,5 @@ export const PIECE: WordsPiece = {
     "奇襲\tきしゅう",
     "奇襲をかける\tきしゅうをかける",
     "奇襲を掛ける\tきしゅうをかける",
-    "奇襲作戦\tきしゅうさくせん",
-    "奇襲攻撃\tきしゅうこうげき",
-    "奇観\tきかん",
-    "奇計\tきけい",
-    "奇説\tきせつ",
-    "奇談\tきだん",
-    "奇譚\tきたん",
-    "奇警\tきけい",
-    "奇貨\tきか",
-    "奇貨可居\tきかおくべし|きかかきょ",
-    "奇貨居くべし\tきかおくべし",
-    "奇跡\tきせき",
-    "奇跡の一枚\tきせきのいちまい",
-    "奇跡的\tきせきてき",
-    "奇蹄目\tきていもく",
-    "奇蹄類\tきているい",
-    "奇蹟\tきせき",
-    "奇遇\tきぐう",
-    "奇門遁甲\tきもんとんこう",
-    "奇関数\tきかんすう",
-    "奇静脈\tきじょうみゃく",
-    "奇骨\tきこつ",
-    "奇麗\tきれい|きれーい",
   ],
 };

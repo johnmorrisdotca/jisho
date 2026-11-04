@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 24 of 144, from "0pt2". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 24 of 144, from "0psx". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,9 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0psxy\t1¦この｜電話《でんわ》で｜外線《がいせん》がかけられますか。¦Can I make an outside call on this phone?¦2¦4q1o¦small_snow¦sundown¦外線",
+    "0psys\t1¦｜外相《がいしょう》は、｜戦争《せんそう》は｜避《さ》けられないと｜言《い》った。¦The Foreign Minister said that war was inevitable.¦1¦3yj4¦KK_kaku_¦shekitten¦外相",
+    "0pt1a\t1¦｜父《ちち》は｜外泊《がいはく》するときはたいてい｜帽子《ぼうし》をかぶる。¦My father usually wears a hat when he goes out for the night.¦2¦1tad¦¦¦外泊",
     "0pt24\t1¦｜外付《そとづ》けのハードディスクに｜保存《ほぞん》しといて。¦Save it on the external hard drive.¦1¦3yj2¦small_snow¦CK¦外付け",
     "0pt2e\t1¦｜秘密《ひみつ》が｜外部《がいぶ》に｜漏《も》れた。¦The secret leaked out.¦1¦1u8x¦bunbuku¦CK¦外部\t2¦｜田舎《いなか》の｜人々《ひとびと》は｜外部《がいぶ》の｜人《じん》に｜対《たい》して｜昔《むかし》から｜疑《うたが》い｜深《ぶか》い。¦Country people are traditionally suspicious of strangers.¦1¦2odg¦¦CK¦外部の",
     "0pt2y\t1¦｜外米《がいまい》はぼそぼそしていて、｜日本《にほん》｜人《ひと》の｜口《くち》には｜合《あ》わない。¦Foreign rice is hard and tasteless, and doesn't appeal to the Japanese palate.¦3¦1muq¦mookeee¦¦外米",
@@ -195,8 +198,5 @@ export const PIECE: WordsPiece = {
     "0pw4y\t1¦その｜事《こと》｜件《けん》の｜説明《せつめい》は、｜紙面《しめん》が｜足《た》りないため｜割愛《かつあい》された。¦The explanation of the event was omitted for lack of space.¦3¦4i0g¦¦¦割愛",
     "0pw8a\t1¦｜彼《あ》の｜行為《こうい》は｜世間《せけん》のかっさいを｜浴《あ》びた。¦His behavior won general applause.¦1¦2iky¦¦¦かっさい",
     "0pw8u\t1¦｜彼《あれ》はあたかも｜病気《びょうき》であったかのような｜顔《かお》つきをしていた。¦He looked as if he had been ill.¦3¦2gpa¦¦CK¦あたかも",
-    "0pw9e\t1¦｜将軍《しょうぐん》の｜堂々《どうどう》とした｜恰幅《かっぷく》は｜誰《だれ》でも｜威圧《いあつ》される。¦The general's massive presence awes everyone.¦¦35i5¦¦¦恰幅",
-    "0pw9y\t1¦｜書類《しょるい》は｜全部《ぜんぶ》テープでくくられて｜金庫《きんこ》におさめられた。¦All the papers were taped up and kept in the safe.¦2¦35qf¦¦¦くくられて",
-    "0pwa8\t1¦カッコ｜内《ない》の｜言葉《ことば》を｜短縮形《たんしゅくけい》にしなさい。¦Put the words in parentheses into abbreviated form.¦1¦4unj¦arnab¦orcrist¦カッコ",
   ],
 };

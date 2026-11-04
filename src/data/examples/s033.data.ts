@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 34 of 144, from "0qzze". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 34 of 144, from "0qztk". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,22 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0qztk\t1¦｜何《なに》か｜新《あたら》しい｜考《かんが》えを｜思《おも》いつくたびに、｜彼《あれ》は｜前後《ぜんご》の｜見境《みさかい》もなくそれを｜実行《じっこう》する｜傾向《けいこう》がある。¦He's given to going overboard every time he gets a new idea.¦2¦4108¦¦AMIKEMA¦見境",
+    "0qztu\t3¦｜眼《め》は｜手《て》を｜見極《みきわ》め｜得《え》るが、｜心《こころ》までは｜見極《みきわ》め｜得《え》ない。¦The eye may see for the hand, but not for the mind.¦1¦3xq3¦zurajama¦Whiskkebarr¦見極め",
+    "0qzu4\t1¦ここだけの｜話《はなし》だけれど、あの｜太《ふと》った｜見苦《みぐる》しい｜魔女《まじょ》は｜減量《げんりょう》｜中《うち》なのだ。¦Between ourselves, the fat ugly witch is on a diet.¦1¦4td3¦mookeee¦¦見苦しい",
+    "0qzue\t1¦これらの｜品物《しなもの》は｜見《み》｜計《はか》らい｜品《しな》です。¦Those goods are on approval.¦4¦4o1z¦¦¦見計らい",
+    "0qzv8\t1¦｜彼女《かのじょ》は｜弁護士《べんごし》になった｜途端《とたん》に｜古《ふる》い｜友達《ともだち》を｜見向《みむ》きもしようとしなかった。¦Soon after she became a lawyer, she wouldn't even give her old friends the time of day.¦1¦1uyz¦¦papabear¦見向き",
+    "0qzvi\t1¦｜私《わたし》は｜彼《あれ》がおじさんの｜世話《せわ》で｜今日《きょう》｜見合《みあ》いをすることを｜知《し》っています。¦I know that he will be introduced to a lady by his uncle today.¦3¦3ba6¦¦CM¦見合い",
+    "0qzvs\t1¦｜三人《さんにん》の｜少年《しょうねん》たちは｜互《たが》いに｜顔《かお》を｜見合《みあ》った。¦The three boys looked at one another.¦3¦3ms9¦¦CK¦見合った\t2¦このお｜金《かね》であなたの｜要求《ようきゅう》に｜見合《みあ》いますか。¦Will this amount of money meet your need?¦3¦4ssx¦¦CM¦見合います",
+    "0qzw2\t1¦ガラクタを｜見《み》て、｜彼《かれ》らは｜互《たが》いに｜顔《かお》を｜見合《みあ》わせました。¦They looked at the rubbish, then they looked at each other.¦3¦4uj8¦¦voxbubnya¦見合わせました",
+    "0qzwc\t1¦｜今年《ことし》の｜売《う》り｜上《あ》げは｜倍増《ばいぞう》と｜見込《みこ》んでいます。¦Sales should double this year.¦2¦3o7z¦¦CK¦見込んでいます\t2¦｜君《きみ》を｜見込《みこ》んで｜頼《たの》んでいるんだ。¦I'm asking you to do this because I trust you.¦3¦3sed¦bunbuku¦CK¦見込んで",
+    "0qzwm\t1¦｜桜《さくら》が｜見《み》ごろだ。¦The cherry blossoms are at their best.¦1¦3mux¦bunbuku¦CK¦見ごろ",
+    "0qzww\t1¦｜彼《あれ》は｜私《わたし》を｜見殺《みごろ》しにした。¦He sold me down the river.¦3¦29gb¦¦¦見殺し",
+    "0qzxg\t1¦｜彼《あ》のスイングは｜実《じつ》に｜見事《みごと》だ。¦He has a perfect swing.¦3¦1mhh¦mookeee¦CM¦見事",
+    "0qzxq\t1¦｜我々《われわれ》は｜時代《じだい》に｜一歩《いっぽ》｜先《さき》んじた｜見識《けんしき》を｜持《じ》たねばならない。¦We must be a step ahead of the times in our outlook.¦1¦1mv3¦mookeee¦¦見識",
+    "0qzy0\t1¦｜我々《われわれ》は｜群衆《ぐんしゅう》の｜中《うち》で｜彼女《かのじょ》を｜見失《みうしな》った。¦We lost sight of her in the crowd.¦1¦3zfx¦¦CK¦見失った",
+    "0qzyk\t1¦｜彼《あれ》は｜友人《ゆうじん》から｜見捨《みす》てられてしまった。¦He was deserted by his friends.¦2¦52w2¦mookeee¦CK¦見捨てられて",
+    "0qzz4\t1¦あなたの｜両親《りょうしん》が｜私《わたし》たちを｜見守《みまも》ってくれました。¦Your parents kept an eye on us.¦3¦4zr0¦¦CK¦見守って",
     "0qzze\t1¦｜彼《あれ》には｜容易《ようい》に｜政治家《せいじか》としての｜態度《たいど》が｜見《み》うけられる。¦You can easily see the politician in him.¦1¦2jm4¦¦papabear¦見うけられる",
     "0qzzo\t1¦シュヴァイツァーは｜見習《みなら》うべき｜人間《にんげん》です。¦Schweitzer is a man to imitate.¦4¦4mgi¦ITA¦¦見習う",
     "0r008\t1¦この辞書は見出し語が約４万はいっている。¦This dictionary contains about 40,000 headwords.¦3¦4qx2¦¦CK¦見出し語",
@@ -177,23 +193,5 @@ export const PIECE: WordsPiece = {
     "0r3ge\t1¦いきなり｜解雇《かいこ》を｜言《い》い｜渡《わた》された。¦I was discharged without notice.¦2¦4wwj¦bunbuku¦CM¦言い渡された",
     "0r3go\t1¦ある｜人《ひと》｜物《もの》がどこの｜出身《しゅっしん》であるかを｜言《い》い｜当《あ》てるのは｜非常《ひじょう》に｜難《むずか》しい。¦It is very hard to tell what country a person comes from.¦¦4xcj¦¦CK¦言い当てる",
     "0r3gy\t1¦｜新入社員《しんにゅうしゃいん》は｜初《はじ》めての｜失敗《しっぱい》をうまくいいぬけた。¦The new employee glossed over his first mistake.¦3¦341r¦¦rul¦いいぬけた",
-    "0r3h8\t1¦その｜物《もの》｜体《からだ》がどんな｜物《もの》か｜言《い》い｜表《あらわ》す｜事《こと》が｜出来《でき》ますか。¦Can you describe the object?¦3¦4fms¦¦CK¦言い表す",
-    "0r3hi\t1¦｜彼《あれ》はちゃんと｜私《わたし》が｜言《い》いつけておいたとおりにやった。¦He did exactly as I had told him.¦3¦2edz¦¦CK¦言いつけて\t2¦あなたが｜彼《あれ》に｜言《い》いつけたって｜私《わたし》はちっともかまわない。¦You can tell him for all I care.¦3¦50im¦¦CH¦言いつけた",
-    "0r3i2\t1¦｜彼《あれ》には｜彼女《かのじょ》に｜反論《はんろん》する｜立派《りっぱ》な｜言《い》い｜分《ぶん》がある。¦He has a good case against her.¦¦2jn2¦¦CM¦言い分",
-    "0r3iw\t1¦｜私《わたし》はいつも｜寛大《かんだい》であれと｜自分《じぶん》に｜言《い》い｜聞《き》かせている。¦I always say to myself to be generous.¦¦3gix¦¦¦言い聞かせている",
-    "0r3j6\t1¦ベスは｜言《い》い｜返《かえ》しましたが、お｜母《かあ》さんは｜彼女《かのじょ》にものすごく｜太《ふと》りすぎていると｜注意《ちゅうい》しました。¦Beth protested, but her mother reminded her that she was incredibly fat.¦3¦47v8¦¦CN¦言い返しました",
-    "0r3ka\t1¦｜私《わたし》はそのような｜言《い》い｜方《かた》をしたことが｜恥《は》ずかしく｜思《おも》っている。¦I was ashamed of having said so.¦3¦3fp9¦¦¦言い方",
-    "0r3kk\t3¦マスコミが｜何《なに》もかも｜大《おお》げさに｜言《げん》いたてたのです。¦The media blew the whole thing out of proportion.¦4¦46yc¦¦CM¦言いたてた",
-    "0r3ku\t1¦言うまでもないことだがローマは１日にしては成らず。¦It goes without saying that Rome was not built in a day.¦3¦3qux¦¦¦言うまでもない",
-    "0r3le\t1¦｜愛《あい》するがゆえに｜言葉《ことば》にできないこともあるし、｜言《い》わぬが｜花《はな》ということもあります。¦My love for you won't let me tell you everything. Some things are better left unsaid.¦3¦43t9¦¦CK¦言わぬが花",
-    "0r3lo\t1¦その｜画家《がか》は、いわば｜永遠《えいえん》の｜少年《しょうねん》だ。¦The artist is eternally a boy.¦2¦4jil¦¦AlanF_US¦いわば",
-    "0r3m8\t1¦｜言外《げんがい》の｜意味《いみ》をとってください。¦Please read between the lines.¦4¦3qtz¦¦CK¦言外",
-    "0r3mi\t1¦｜数回《すうかい》バイブルに｜言及《げんきゅう》する。¦I make several allusions to the Bible.¦1¦32sf¦¦¦言及",
-    "0r3ms\t1¦ドイツ｜語《ご》はやさしい｜言語《げんご》ではありません。¦German is not an easy language.¦4¦4bo0¦tommy__san¦CN¦言語",
-    "0r3n2\t1¦この｜本《もと》は｜言語学《げんごがく》の｜新《あたら》しい｜理論《りろん》を｜扱《あつか》っている。¦This book deals with the new theory of linguistics.¦1¦4ph5¦¦CM¦言語学",
-    "0r3nc\t1¦その｜言語学者《げんごがくしゃ》はいくつかの｜中国語《ちゅうごくご》の｜方言《ほうげん》を｜流暢《りゅうちょう》に｜話《はな》す。¦The linguist is fluent in several Chinese dialects.¦1¦4iqq¦¦U2FS¦言語学者",
-    "0r3nm\t1¦きみの｜言語道断《ごんごどうだん》な｜行《おこな》いを｜恥《は》ずかしいと｜思《おも》う。¦I am ashamed of your despicable deed.¦3¦4ubh¦¦¦言語道断な",
-    "0r3o6\t1¦｜彼《あれ》は｜言行《げんこう》が｜一致《いっち》しない。¦His words don't line up with his actions.¦1¦2b09¦mookeee¦shekitten¦言行",
-    "0r3og\t1¦｜言行一致《げんこういっち》なんて、とても｜俺《おれ》にはできそうにない。¦I could never be a true man of my word.¦¦3qt9¦¦¦言行一致",
   ],
 };

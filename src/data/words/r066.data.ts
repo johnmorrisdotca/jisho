@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 67 of 316, from "きじく". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 67 of 316, from "きじか". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "キジか\tキジ科\t#1huum\t¦Phasianidae (pheasant family of birds)",
+    "きじか\t雉科\t#1huum\t¦Phasianidae (pheasant family of birds)",
+    "きじかくし\t雉隠\tU#1gjww\tuk¦Asparagus schoberioides",
+    "キジカクシ\t\tU#1gjww\tuk¦Asparagus schoberioides",
     "きじく\t基軸\tC~n16#yloq\t¦basis¦foundation¦core",
     "きじく\t機軸\t~m37#q63u\t¦axis¦axle¦plan",
     "きじくつうか\t基軸通貨\t~m40#q4ly\t¦key currency",
@@ -823,9 +827,5 @@ export const PIECE: WordsPiece = {
     "キッチンキャビネット\t\t#mbde\t¦kitchen cabinet",
     "キッチンシンク\t\t#1p805\t¦kitchen sink",
     "キッチントング\t\t#1pf8a\t¦kitchen tongs",
-    "キッチンドリンカー\t\t#mbdo\t¦alcoholic housewife",
-    "キッチンナイフ\t\t#1ox4f\t¦kitchen knife",
-    "キッチンバサミ\t\tU#1pi3o\tuk¦kitchen scissors¦cooking shears",
-    "キッチンばさみ\tキッチン鋏\tU#1pi3o\tuk¦kitchen scissors¦cooking shears",
   ],
 };

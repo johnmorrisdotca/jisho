@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 71 of 172, from "hear". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 71 of 172, from "health ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,32 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "health care\tほけんじょ|ほけんしょ",
+    "health checkup\tけんしん|けんこうしんだん",
+    "health club\tヘルスクラブ|ヘルス・クラブ",
+    "health condition\tかげん",
+    "health education\tほけん",
+    "health etc\tぜんぶん",
+    "health foods\tけんこうしょくひん",
+    "health hot\tしょちゅうみまい",
+    "health insurance\tけんこうほけん|けんぽ|こくみんけんこうほけん",
+    "health issues\tやむ",
+    "health labour\tろうどうしょう|こうせいろうどうしょう|こうろうしょう",
+    "health nurse\tほけんふ",
+    "health preservation\tほよう",
+    "health problem\tたいちょうふりょう",
+    "health screening\tけんしん",
+    "health teacher\tようごきょうゆ",
+    "health welfare\tこうせいしょう|こうせい",
+    "healthcare\tざいたくいりょう|こうきこうれいしゃいりょうせいど|けんこうかんりてあて|ほうもんナース|いりょうしゃ|にっぽんいりょうさんぎょうどうゆうかい|とうきょういりょうほけんだいがく|おかやまいりょうせんもんしょくだいがく",
+    "healthful\tけんこうてき",
+    "healthily\tびかつ",
+    "healthy\tけんぜん|じょうぶ|ヘルシー|けんこう|げんき|たっしゃ|けんこうてき|まめ|マメ|すこやか|けんこうじ|けんこうしゃ|けんこうたい|けんこうち|けんこうび|そうけん|ぶじそくさい|せいしょく|いしょくどうげん|けんこうじん",
+    "heap\tやまもり|やま|つか|やまづみ|かさね|たいせき|おりかさなる|ひとやま|ヒープ|もりあわせる|かさねる|もる|もりあげる|つみあげ|かいづか|つみあげる|はきだめ|せめつける|ひなんをあびせる|ヒープりょういき",
+    "heap up\tかさねる|もる|もりあげる",
+    "heaped\tあびる|もりがし",
+    "heaped upon\tあびる",
+    "heaps\tるいるい|どっさり|ドッサリ|ししるいるい|しざんけつが",
     "hear\tヒア|きく|うけたまわる|せっする|うかがう|ききおよぶ|ききつたえる|ききつける|はいぶん|きこしめす|きかす|よし|なんでも|そうだ|とか|そうです|きこえ|おきのどく|こみみにはさむ|きかせる",
     "hear about\tきく",
     "hear clearly\tきこえ",
@@ -290,7 +316,7 @@ export const PIECE: WordsPiece = {
     "heimlich\tハイムリックほう|ハイムリッヒほう|ふくぶつきあげほう|じょうふくぶあっぱくほう",
     "heine\tハイネメディンびょう",
     "heineken\tハイネケン",
-    "heinlein\tうちゅうのせんし|なつへのとびら",
+    "heinlein\tうちゅうのせんし|つきはむじひなよるのじょおう|なつへのとびら",
     "heinous\tごくあく|きょうあく|あくぎゃくひどう|たいぎゃくひどう|たいぎゃくむどう|きょうあくはんにん|きょうあくはん",
     "heinousness\tきょうかん",
     "heinrich\tくじはんのたまつき",
@@ -653,29 +679,5 @@ export const PIECE: WordsPiece = {
     "herod\tようじぎゃくさつ",
     "heroes\tえいゆうでんせつ",
     "heroic\tそうぜつ|ゆうそう|そうれつ|ひそう|ヒロイック|えいゆうてき|ゆうまい|えいゆう|ヒロイン|ロマン|ローマン|ろうまん|そうきょ|ゆうしん|おごころ|えいゆうでんせつ|ゆうきどうどう|そうげんたいご",
-    "heroic polonaise\tえいゆう",
-    "heroic tale\tロマン|ローマン|ろうまん",
-    "heroic undertaking\tそうきょ",
-    "heroic woman\tヒロイン",
-    "heroin\tヘロイン|こな|ペイ|ペイちゅう",
-    "heroine\tヒロイン|えいゆう|ゆうふ|れつじょ|じょけつ|じょじょうふ|じょじょうぶ|おんなしゅじんこう",
-    "heroism\tぎゆう|ヒロイズム|ゆう|ぎれつ|えいゆうしゅぎ|ヘロイズム|ぶゆうだん|ひそうかん|がいせい|かいせい",
-    "heroldrebe\tヘロルドレーベ|ヘロルトレーベ",
-    "heron\tさぎ|サギ|しらさぎ|はくろ|あおさぎ|アオサギ|クロサギ|くろさぎ|ごいさぎ|ゴイサギ|みぞごい|ミゾゴイ|ササゴイ|ささごい",
-    "heron all\tしらさぎ|はくろ",
-    "heron's\tヘロンのこうしき",
-    "herons\tうろ",
-    "herpangina\tヘルパンギーナ",
-    "herpes\tほうしん|ヘルペス|たいじょうほうしん|たんじゅんほうしん|こうしんヘルペス|たんじゅんヘルペスウイルス|こいヘルペスウイルス|コイヘルペスウイルス|ヘルペスウイルス|ヘルペス・ウイルス",
-    "herpes zoster\tたいじょうほうしん",
-    "herpestes\tエジプトマングースぞく|チビオマングース|はいいろマングース|ハイイロマングース|インドトビイロマングース|エジプトマングース|エジプト・マングース|ジャワマングース|ジャワ・マングース|ハナナガマングース|クビワマングース|あかマングース|アカマングース|カニクイマングース|クロスジマングース",
-    "herpestidae\tマングースか",
-    "herpetic\tかくまくヘルペス",
-    "herpetologist\tはちゅうるいがくしゃ",
-    "herpetology\tはちゅうりょうせいるいがく|はちゅうるいがく",
-    "herre's\tマメイソハゼ",
-    "herrei\tマメイソハゼ",
-    "herrenmoral\tくんしゅどうとく",
-    "herring\tかずのこ|にしん|かど|ニシン|うるめ|ウルメ|うるめいわし|ウルメイワシ|うるめぶし|こもちこんぶ|キビナゴ|きびなご|みがきにしん|みかきにしん|こぶまき|こんぶまき|せぐろかもめ|セグロカモメ|たいせいようにしん|タイセイヨウニシン",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 19 of 219, from "0q2n". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 19 of 219, from "0q2kc". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,16 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0q2kc\t丸鋼\tまるこう\tn¦¦round steel bar",
+    "0q2km\t丸腰\tまるごし\tadj-no¦¦unarmed¦without weapons",
+    "0q2kw\t丸剤\tがんざい\tn,adj-no¦¦pill",
+    "0q2l6\t丸ごと|丸事~iK|丸毎~iK\tまるごと\tadv¦uk¦in its entirety¦whole¦wholly",
+    "0q2lg\t丸持ち\tまるもち\tn¦¦moneyed man",
+    "0q2lq\t丸写し\tまるうつし\tn,vs¦¦copying in entirety (verbatim)",
+    "0q2m0\t丸取り\tまるどり\tn,vs,vt¦¦monopolizing¦monopolising¦monopolization¦monopolisation",
+    "0q2ma\t丸首\tまるくび\tn¦¦round-necked (T-shirt)",
+    "0q2mk\t丸十\tまるじゅう\tn¦¦cross in a circle",
+    "0q2mu\t丸出し|丸だし~sK|まる出し~sK\tまるだし\tadj-no,n¦¦(fully) exposed¦bare¦uncovered¦in full view¦undisguised¦broad (accent)",
     "0q2n4\t弾傷|丸傷~iK\tたまきず\tn¦¦bullet wound¦gunshot wound",
     "0q2ne\t丸勝ち\tまるがち\tn¦¦complete victory¦clean record",
     "0q2no\t丸焼き\tまるやき\tn¦¦whole roast (e.g. pig, turkey, etc.)",
@@ -1012,12 +1022,5 @@ export const PIECE: WordsPiece = {
     "0qape\t虐殺\tぎゃくさつ\tn,vs,vt¦¦slaughter¦massacre",
     "0qapo\t虐政\tぎゃくせい\tn¦¦tyranny¦despotism",
     "0qapy\t虐待\tぎゃくたい\tn,vs,vt,adj-no¦¦abuse¦ill-treatment¦maltreatment¦mistreatment¦cruelty",
-    "0qaq8\t逆\tぎゃく\tadj-no,adj-na,n¦¦reverse¦opposite\tadj-na,n¦¦converse (of a hypothesis, etc.)\tn-pref¦math¦inverse (function)",
-    "0qaqi\t逆さ|倒さ\tさかさ\tadj-no,adj-na,n¦abbr¦inverted¦upside down¦reversed¦back to front¦逆さま",
-    "0qaqs\t逆に\tぎゃくに\tadv¦¦conversely¦on the contrary",
-    "0qar2\t逆らう\tさからう\tv5u,vi¦¦to go against¦to oppose¦to disobey¦to defy",
-    "0qarm\t逆境\tぎゃっきょう\tn¦¦adverse circumstances¦unfortunate situation¦adversity¦順境",
-    "0qarw\t逆効果\tぎゃくこうか|ぎゃっこうか\tn¦¦opposite effect¦adverse effect¦backfiring",
-    "0qas6\t逆行\tぎゃっこう|ぎゃくこう\tn,vs,vi¦¦backward movement¦reverse movement¦going backwards¦retrogression¦going in the wrong direction¦going against (e.g. the times)¦running counter to¦順行・1\tn,vs,vi¦astron¦retrograde motion¦順行・2",
   ],
 };

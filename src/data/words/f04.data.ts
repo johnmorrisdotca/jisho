@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 5 of 70, from "アンドロメダ座". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 5 of 70, from "アンドロメ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "アンドロメダのA\tアンドロメダのエー",
     "アンドロメダ座\tアンドロメダざ",
     "アンドロメダ銀河\tアンドロメダぎんが",
     "アンド回路\tアンドかいろ",
@@ -1853,6 +1854,7 @@ export const PIECE: WordsPiece = {
     "キャラ付け\tキャラづけ",
     "キャラ変\tキャラへん",
     "キャラ弁\tキャラべん|キャラベン",
+    "キャラ立ち\tキャラだち",
     "キャリアを積む\tキャリアをつむ",
     "キャリア検出\tキャリアけんしゅつ",
     "キャリア検知\tキャリアけんち",
@@ -2202,6 +2204,5 @@ export const PIECE: WordsPiece = {
     "クル病\tくるびょう",
     "クレアチン尿症\tクレアチンにょうしょう",
     "クレアチン燐酸\tクレアチンりんさん",
-    "クレオソート丸\tクレオソートまる",
   ],
 };

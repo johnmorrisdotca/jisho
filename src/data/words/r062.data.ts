@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 63 of 316, from "がうし". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 63 of 316, from "がいを". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "がいをおよぼす\t害を及ぼす\tg#141gi\t¦to cause harm (to)",
+    "がいをなす\t害をなす|害を成す\tg#1oxut\t¦to cause harm (to)",
+    "がいん\t画因\t#pnp2\t¦art motif",
+    "ガウア\t\t#1m3c2\t¦gaur (Bos gaurus)¦Indian bison",
     "ガウシアン\t\tC~g#mafs\t¦Gaussian",
     "ガウス\t\t#mag2\t¦gauss",
     "ガウスきょくせん\tガウス曲線\t#1gq70\t¦Gaussian curve",
@@ -899,9 +903,5 @@ export const PIECE: WordsPiece = {
     "がっする\t合する\ts#rj2w\t¦to join together¦to sum up¦to combine",
     "がっそう\t合奏\tsC~n24#rjke\t¦ensemble (e.g. orchestra, chamber group, etc.)¦concert",
     "がっそう\t合葬\ts#1oy93\t¦joint burial¦group burial¦burying together",
-    "がっそうきょうそうきょく\t合奏協奏曲\t#1ogo0\tmusic¦concerto grosso",
-    "がっそうだん\t合奏団\t#15hf2\t¦ensemble",
-    "がっそうちょう\t合奏調\t#rjko\t¦concert pitch",
-    "がったい\t合体\ts~m25#rjky\t¦union¦combination¦coalescence\tbiol¦conjugation (of gametes)",
   ],
 };

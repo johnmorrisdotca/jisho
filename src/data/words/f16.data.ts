@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 17 of 70, from "公判期". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 17 of 70, from "公判前整理手続き". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "公判前整理手続き\tこうはんぜんせいりてつづき|こうはんまえせいりてつづき",
+    "公判廷\tこうはんてい",
+    "公判日\tこうはんび",
+    "公判日程\tこうはんにってい",
     "公判期日\tこうはんきじつ",
     "公判準備\tこうはんじゅんび",
     "公判記録\tこうはんきろく",
@@ -707,7 +711,9 @@ export const PIECE: WordsPiece = {
     "共存セグメント\tきょうぞんセグメント",
     "共存主義\tきょうぞんしゅぎ",
     "共存共栄\tきょうそんきょうえい|きょうぞんきょうえい",
+    "共学\tきょうがく",
     "共学制\tきょうがくせい",
+    "共学校\tきょうがくこう|きょうがっこう",
     "共家事\tともかじ",
     "共寝\tともね",
     "共布\tともぎれ|ともぬの",
@@ -3021,14 +3027,5 @@ export const PIECE: WordsPiece = {
     "凝乳\tぎょうにゅう",
     "凝固\tぎょうこ",
     "凝固まり\tこりかたまり",
-    "凝固剤\tぎょうこざい",
-    "凝固因子\tぎょうこいんし",
-    "凝固点\tぎょうこてん",
-    "凝固障害\tぎょうこしょうがい",
-    "凝塊\tぎょうかい",
-    "凝念\tぎょうねん",
-    "凝望\tぎょうぼう",
-    "凝析\tぎょうせき",
-    "凝滞\tぎょうたい",
   ],
 };

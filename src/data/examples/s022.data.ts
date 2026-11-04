@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 23 of 144, from "0pp8". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 23 of 144, from "0pp7". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0pp78\t1¦ヒートアイランド｜現象《げんしょう》の｜実体《じったい》｜解析《かいせき》と｜対策《たいさく》のあり｜方《かた》について。¦An analysis of the nature of the heat island phenomenon and countermeasures.¦1¦1ldm¦fcbond¦fcbond¦解析",
+    "0pp7s\t1¦｜彼《あ》の｜解説《かいせつ》がわかった｜人《じん》はほとんどいなかった。¦Few people understood his comment.¦3¦2iz3¦bunbuku¦CK¦解説",
     "0pp82\t1¦その｜解説者《かいせつしゃ》は｜食糧危機《しょくりょうきき》を｜強調《きょうちょう》しすぎる。¦The newscaster puts too much emphasis on the food crisis.¦1¦4je4¦¦CM¦解説者",
     "0pp8c\t1¦この｜画像《がぞう》、｜解像度《かいぞうど》が｜低《ひく》すぎてすごく｜汚《きたな》い。¦The image quality is really bad - the resolution is so low.¦2¦4rtx¦KK_kaku_¦¦解像度",
     "0ppa0\t1¦あなたの｜解答《かいとう》には｜私《わたし》たちとしてはまったく｜不満《ふまん》だ。¦Your answer is anything but satisfactory to us.¦3¦503o¦mookeee¦CM¦解答",
@@ -207,8 +209,5 @@ export const PIECE: WordsPiece = {
     "0psuw\t1¦ヒーターをつけたまま｜外出《がいしゅつ》した。¦I went out with the heater on.¦5¦48j7¦¦AlanF_US¦外出",
     "0psv6\t1¦｜彼《あ》の｜負《お》った｜傷《きず》はすべて｜外傷《がいしょう》だ。¦All his injuries are external.¦1¦2hoj¦¦¦外傷",
     "0psvq\t1¦｜食事《しょくじ》は｜家庭《かてい》で｜食《た》べますか、｜外食《がいしょく》ですか。¦Do you eat at home or eat out?¦3¦34iy¦¦¦外食",
-    "0psxy\t1¦この｜電話《でんわ》で｜外線《がいせん》がかけられますか。¦Can I make an outside call on this phone?¦2¦4q1o¦small_snow¦sundown¦外線",
-    "0psys\t1¦｜外相《がいしょう》は、｜戦争《せんそう》は｜避《さ》けられないと｜言《い》った。¦The Foreign Minister said that war was inevitable.¦1¦3yj4¦KK_kaku_¦shekitten¦外相",
-    "0pt1a\t1¦｜父《ちち》は｜外泊《がいはく》するときはたいてい｜帽子《ぼうし》をかぶる。¦My father usually wears a hat when he goes out for the night.¦2¦1tad¦¦¦外泊",
   ],
 };

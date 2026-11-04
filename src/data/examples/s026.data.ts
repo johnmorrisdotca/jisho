@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 27 of 144, from "0q51i". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 27 of 144, from "0q5". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0q50o\t1¦｜道《みち》の｜脇《かたわら》に｜寄《よ》せてください。¦Pull over to the side, please.¦¦2nd7¦¦pip¦寄せて\t2¦いすをもっと｜火《ひ》の｜近《ちか》くに｜寄《よ》せなさい。¦Draw your chair closer to the fire.¦3¦4wrr¦¦¦寄せ\t3¦｜誤字《ごじ》・｜誤訳《ごやく》のご｜指摘《してき》｜等《など》は｜下記《かき》メールアドレスよりお｜寄《よ》せください。¦Please send reports of mistypings and mistranslations to the email address below.¦1¦1lg7¦fcbond¦fcbond¦お寄せ",
+    "0q518\t1¦｜二人《ふたり》は｜仲間《なかま》、｜三人《さんにん》は｜寄《よ》せ｜集《あつ》めの｜群《む》れ。¦Two's company, three's a crowd.¦2¦2myg¦¦CK¦寄せ集め",
     "0q51i\t1¦｜彼《かれ》らは｜母《はは》への｜贈《おく》り｜物《もの》を｜買《か》うだけの｜金《かね》を｜寄《よ》せ｜集《あつ》めた。¦They scraped up enough money to buy a gift for their mother.¦2¦227h¦¦CK¦寄せ集めた",
     "0q52w\t1¦｜彼女《かのじょ》は｜夫《おっと》のそばにぴったり｜寄《よ》り｜添《そ》っていた。¦She stood close to her husband.¦1¦1v3b¦bunbuku¦CK¦寄り添っていた",
     "0q536\t1¦ぶらぶら｜寄《よ》り｜道《みち》していこうよ。¦Let's just wander and see where it takes us.¦3¦480u¦KK_kaku_¦orcrist¦寄り道",
@@ -204,7 +206,5 @@ export const PIECE: WordsPiece = {
     "0q85b\t1¦｜毎晩《まいばん》｜十分《じゅうぶん》な｜睡眠《すいみん》をとれば、あなたはずっと｜気分《きぶん》がよくなるだろう。¦If you get enough rest every night, you'll feel much better.¦¦1qob¦¦CK¦あなた\t2¦ねえあなたたち｜行《い》かないで。¦Don't go, dears.¦5¦499s¦¦Eldad¦あなた",
     "0q85q\t1¦｜職業《しょくぎょう》に｜貴賎《きせん》をつけちゃいけないよ〜。¦You can't go putting your values on people's work!¦¦1mn3¦mookeee¦¦貴賎",
     "0q860\t1¦６時ごろ起きた。¦I got up at about six.¦4¦51dh¦bunbuku¦CK¦起きた\t2¦お｜子《こ》さんはまだ｜起《お》きているのですか。¦Is the kid still up?¦4¦4v8o¦¦¦起きている\t3¦「｜事故《じこ》が｜起《お》きれば、すぐにわかるよ」と｜彼《あれ》は｜言《い》う。¦\"If there is an accident,\" he says, \"they will know right away.\"¦1¦52bi¦mookeee¦¦起きれば",
-    "0q86a\t1¦これを｜見《み》ると、｜彼《あれ》は｜起《お》き｜上《あ》がってでていった。¦At this, he got up and went out.¦3¦4ny1¦¦sundown¦起き上がって",
-    "0q86k\t1¦わたしたちはその｜木《き》を｜起《お》こした。¦We got the tree up.¦4¦443f¦¦Dejo¦起こした\t1¦｜六時《ろくじ》｜半《はん》に｜起《お》こしてください。¦Please wake me up at 6:30.¦4¦1nle¦mookeee¦CK¦起こして\t1¦｜病気《びょうき》の｜子供《こども》はベッドの｜上《うえ》で｜体《からだ》を｜起《お》こした。¦The sick child sat up in bed.¦3¦1tsc¦¦CK¦起こした\t2¦メアリーを｜起《お》こして｜来《き》て。¦Go and wake up Mary.¦4¦4683¦bunbuku¦Eldad¦起こして\t2¦ジョンは｜眠《ねむ》っている｜赤《あか》ん｜坊《ぼう》を｜起《お》こさないようにした。¦John tried not to wake the sleeping baby.¦¦4m2d¦¦Swift¦起こさない\t3¦｜彼《あれ》は｜不注意《ふちゅうい》な｜運転《うんてん》で｜事故《じこ》を｜起《お》こした。¦He drove carelessly and had an accident.¦1¦25iq¦¦CK¦起こした\t3¦かんしゃくを｜起《お》こしても｜何《ど》の｜得《とく》もない。¦There is no advantage in losing your temper.¦3¦4ug7¦small_snow¦¦起こして\t3¦｜小《ちい》さな｜火花《ひばな》はしばしば｜大《おお》きな｜炎《ほのお》を｜起《お》こす。¦A small spark often kindles a large flame.¦1¦8cor¦Scott¦¦起こす\t4¦｜私《わたし》はその｜医者《いしゃ》を｜相手取《あいてど》って｜訴訟《そしょう》を｜起《お》こした。¦I brought a suit against the doctor.¦1¦3for¦mookeee¦CM¦起こした\t4¦どう｜考《かんが》えても｜今《いま》は｜新《しん》｜事業《じぎょう》を｜起《お》こすべきではない。¦This is hardly the time to start a new enterprise.¦4¦4b6a¦¦handsomelyian¦起こす\t4¦ある｜団体《だんたい》が｜雨林《うりん》を｜保護《ほご》する｜運動《うんどう》を｜起《お》こした。¦A group started a campaign to preserve rain forests.¦1¦4xcf¦¦CM¦起こした\t6¦｜教師《きょうし》｜達《たち》は｜生徒《せいと》にやる｜気《き》を｜起《お》こさせるように｜努力《どりょく》している。¦The teachers are trying to motivate their students.¦3¦3v17¦¦CK¦起こさせる\t6¦これが｜彼《あれ》にかんしゃくを｜起《お》こさせた。¦This flung him into a passion.¦3¦4ouy¦¦¦起こさせた\t7¦｜昨日《きのう》｜父《ちち》が｜心臓発作《しんぞうほっさ》を｜起《お》こしたが、｜診療所《しんりょうじょ》が｜近《ちか》くにあるのは｜好運《こううん》だった。¦My father had a heart attack yesterday, but he was lucky to have a clinic close at hand.¦1¦3n12¦¦papabear¦起こした\t7¦ジムはスキーをしていて｜脚《あし》に｜肉離《にくばな》れを｜起《お》こした。¦Jim pulled a muscle in his leg while skiing.¦1¦4mog¦¦CN¦起こした",
   ],
 };

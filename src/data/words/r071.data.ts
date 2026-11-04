@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 72 of 316, from "きょうけんひ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 72 of 316, from "きょうけんき". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,9 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "きょうけんき\t挟瞼器\t#142y4\t¦entropion forceps",
+    "きょうけんてき\t強権的\tn#1os2k\t¦heavy-handed¦iron-fisted¦authoritarian",
+    "きょうけんはつどう\t強権発動\t#1ohda\tyoji¦invoking the coercive power of the state¦calling upon the power of the state",
     "きょうけんひん\t供献品\t#1p843\tarcheol¦items offered to deities (Jōmon period)",
     "きょうけんびょう\t狂犬病\t#qiwo\tmed¦rabies",
     "きょうげ\t教化\ts#1joqu\tBuddh¦guidance¦teaching people and leading them to Buddhism",
@@ -787,7 +790,5 @@ export const PIECE: WordsPiece = {
     "きょうねつげんりょう\t強熱減量\t#1pau4\tchem¦loss on ignition¦ignition loss¦LOI",
     "きょうねん\t享年\t~m42#qfmc\t¦age at death",
     "きょうねん\t凶年\t#qhbg\t¦bad year¦bad harvest",
-    "きょうのきだおれ\t京の着倒れ\t#1b6io\t¦financially ruining oneself by buying too many clothes (as a fabled tendency of the people of Kyoto)",
-    "きょうのところは\t今日のところは|今日の所は\t#1oua6\t¦for today¦for the time being",
   ],
 };

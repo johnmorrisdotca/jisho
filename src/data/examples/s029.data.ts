@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 30 of 144, from "0qi7y". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 30 of 144, from "0qi1". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,21 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0qi1k\t1¦｜強打者《きょうだしゃ》が｜簡単《かんたん》に｜凡退《ぼんたい》した。¦The slugger was easily put out.¦1¦3v9x¦¦mccarras¦強打者",
+    "0qi1u\t1¦｜強大《きょうだい》な｜権力《けんりょく》を｜有《ゆう》する｜大国《たいこく》が｜存在《そんざい》する｜限《き》り、｜戦争《せんそう》は｜避《よ》け｜難《にく》い。¦As long as there are sovereign nations possessing great power, war is inevitable.¦1¦3v9y¦¦shekitten¦強大な",
+    "0qi24\t1¦その｜男《おとこ》がスーザンからすべてのお｜金《かね》を｜強奪《ごうだつ》したのです。¦The man robbed Susan of all her money.¦1¦4gmt¦bunbuku¦CN¦強奪",
+    "0qi2e\t1¦｜先生《せんせい》は｜毎日《まいにち》の｜練習《れんしゅう》の｜大切《たいせつ》さを｜強調《きょうちょう》した。¦The teacher stressed the importance of daily practice.¦2¦316k¦bunbuku¦CK¦強調",
+    "0qi2y\t1¦この｜金属《きんぞく》は｜強度《きょうど》では｜鉄《てつ》に｜匹敵《ひってき》する。¦This metal is comparable to iron in strength.¦1¦4ril¦¦¦強度",
+    "0qi38\t1¦｜父《ちち》は｜強盗《ごうとう》と｜取《と》っ｜組《く》み｜合《あ》いをした。¦My father struggled with the robber.¦3¦1ta5¦bunbuku¦CK¦強盗\t2¦｜暴力団《ぼうりょくだん》は｜強盗《ごうとう》を｜計画《けいかく》していた。¦The gang was planning a robbery.¦2¦1rnh¦¦CK¦強盗",
+    "0qi42\t1¦｜強風《きょうふう》が｜陸《ろく》の｜方《ほう》へ｜吹《ふ》き｜始《はじ》めた。¦A strong wind began to set in.¦2¦3v8o¦¦shekitten¦強風",
+    "0qi5g\t1¦｜彼《あれ》はもっとはやくくるように｜我々《われわれ》に｜強要《きょうよう》した。¦He compelled us to come earlier.¦1¦2db0¦¦Dejo¦強要",
+    "0qi5q\t1¦たくさんのおもちゃを｜持《も》っていたが、｜強欲《ごうよく》から｜彼《あれ》はもっと｜欲《ほ》しがった。¦Although he had many toys, his greed made him want more.¦3¦4d9d¦¦CM¦強欲",
+    "0qi60\t1¦｜日本《にほん》の｜軍隊《ぐんたい》は｜非常《ひじょう》に｜強力《きょうりょく》だった。¦Japan's army was very powerful.¦1¦2mmd¦¦CK¦強力",
+    "0qi6k\t1¦｜彼《あ》の｜返報《へんぽう》は｜鼻《はな》への｜強烈《きょうれつ》なパンチだった。¦His answer was a hard punch on the nose.¦1¦2hn3¦¦¦強烈な",
+    "0qi6u\t1¦その｜音《おと》に｜赤《あか》ん｜坊《ぼう》はおびえた。¦The noise frightened the baby.¦¦4jpe¦bunbuku¦CK¦おびえた",
+    "0qi74\t1¦｜危険《きけん》などにひるまず、｜彼《あれ》は｜平気《へいき》でいる。¦He remains calm in the face of danger.¦3¦3xnf¦¦CK¦ひるまず",
+    "0qi7e\t1¦｜首相《しゅしょう》はおそらく｜辞任《じにん》するであろう。¦The premier is likely to resign.¦3¦36im¦¦CK¦おそらく",
+    "0qi7o\t1¦｜環境汚染《かんきょうおせん》についての｜恐《おそ》れは、｜人々《ひとびと》に｜発電所《はつでんしょ》の｜近《ちか》くに｜家《いえ》を｜建《た》てることを｜思《おも》いとどまらせた。¦Fear of pollution discouraged people from building homes near power plants.¦1¦3xw4¦¦BraveSentry¦恐れ",
     "0qi7y\t1¦｜嵐《あらし》の｜激《げき》しさに｜子供《こども》たちは｜恐《おそ》れおののいた。¦The fury of the storm frightened the children.¦1¦1oim¦mookeee¦¦恐れおののいた",
     "0qi88\t3¦｜間髪《かんぱつ》を｜入《い》れず、｜迅速《じんそく》かつ｜的確《てきかく》な｜応対《おうたい》、｜畏《おそ》れ｜入《い》ります。¦Such an accurate, lightning-quick reply. What can I say?¦¦3xqs¦¦Zifre¦畏れ入ります",
     "0qi8i\t1¦その｜嵐《あらし》の｜天候《てんこう》は｜恐《おそ》ろしかった。¦The stormy weather was dreadful.¦1¦4f59¦¦orcrist¦恐ろしかった",
@@ -193,20 +208,5 @@ export const PIECE: WordsPiece = {
     "0qmio\t1¦｜高校《こうこう》になってからは、クロスカントリースキー、ノルディック｜複合《ふくごう》｜競技《きょうぎ》の｜大阪《おおさか》｜大会《たいかい》および｜近畿《きんき》｜大会《たいかい》で｜幾度《いくど》となく｜優勝《ゆうしょう》。¦In high school, I won the Osaka and Kinki championships in cross-country skiing and Nordic combined skiing on countless occasions.¦¦1mrs¦mookeee¦papabear¦近畿",
     "0qmk2\t1¦｜彼《あれ》は｜東京《とうきょう》｜近郊《きんこう》に｜住《す》んでいる。¦He lives in the suburbs of Tokyo.¦2¦26it¦small_snow¦CK¦近郊",
     "0qmkc\t1¦｜近頃《ちかごろ》は｜旅行《りょこう》は｜楽《らく》だ。¦Travelling is easy these days.¦¦3ur9¦KK_kaku_¦Zifre¦近頃\t1¦｜近《ちか》ごろ｜彼女《かのじょ》から｜便《たよ》りがない。¦I have not heard from her recently.¦3¦3us0¦bunbuku¦CH¦近ごろ",
-    "0qmkw\t1¦｜私《わたし》は｜近視《きんし》なので、あの｜看板《かんばん》に｜何《なに》が｜書《か》いてあるか｜分《わ》からない。¦I am near-sighted, so I cannot make out what is written on that signboard.¦¦3dl2¦bunbuku¦CC¦近視",
-    "0qmlq\t1¦｜彼《あれ》が｜近所《きんじょ》に｜越《こ》してきた。¦He moved into my neighborhood.¦3¦2ky5¦bunbuku¦CK¦近所",
-    "0qmn4\t1¦ＡへはＢから近接ことができる。¦Access to A is available from B.¦2¦518d¦e4zh1nmcz¦¦近接",
-    "0qmno\t1¦トムには｜近代《きんだい》｜絵画《かいが》の｜鑑賞《かんしょう》｜能力《のうりょく》がある。¦Tom appreciates modern art.¦1¦4ag8¦Lurid¦CK¦近代",
-    "0qmny\t1¦ほとんどの｜場合《ばあい》、｜近代化《きんだいか》は｜西欧化《せいおうか》と｜同一《どういつ》のものとみなされる。¦In most cases, modernization is identified with Westernization.¦2¦47ch¦¦AlanF_US¦近代化",
-    "0qmo8\t1¦｜近代科学《きんだいかがく》｜技術《ぎじゅつ》はなぜ｜中国《ちゅうごく》で｜発展《はってん》しなかったのだろうか。¦Why didn't modern technology develop in China?¦1¦3uqg¦¦Zifre¦近代科学",
-    "0qmoi\t1¦｜彼《あれ》はフランス｜近代史《きんだいし》に｜詳《くわ》しい。¦He is acquainted with the modern history of France.¦1¦2dpo¦bunbuku¦CN¦近代史",
-    "0qmos\t1¦｜近代的《きんだいてき》｜方法《ほうほう》で｜産業《さんぎょう》は｜向上《こうじょう》した。¦Modern methods improved industry.¦¦3uqb¦¦Zifre¦近代的",
-    "0qmpc\t1¦フォークは、ヨーロッパや｜近東《きんとう》｜地域《ちいき》で｜長年《ながねん》にわたって｜使《つか》われていたが、それはもっぱら｜調理《ちょうり》｜用《よう》にのみであった。¦Forks were used for many years in Europe and the Near East, but only for cooking.¦2¦485w¦mookeee¦Swift¦近東",
-    "0qmpm\t1¦｜近日中《きんじつちゅう》に｜彼女《かのじょ》にまた｜会《あ》うことになっている。¦I will be seeing her again one of these days.¦3¦3uq6¦¦CK¦近日",
-    "0qmq6\t1¦アジア｜諸国《しょこく》からの｜輸入品《ゆにゅうひん》は｜近年《きんねん》｜増大《ぞうだい》している。¦The imports from Asian countries have expanded recently.¦2¦50xb¦mookeee¦Miktsoanit¦近年",
-    "0qmqg\t1¦いすをもっと｜机《つくえ》に｜近《ちか》づけなさい。¦Move the chair nearer to the desk.¦2¦4wrq¦small_snow¦CK¦近づけ",
-    "0qmqq\t1¦この｜近辺《きんぺん》で、｜美味《おい》しい｜郷土料理《きょうどりょうり》を｜食《た》べさせてくれるお｜店《みせ》はありますか。¦Is there a restaurant around here that serves local delicacies?¦1¦4riv¦¦CM¦近辺",
-    "0qmru\t1¦｜近隣《きんりん》の｜家《いえ》は｜壊《こわ》れたが、｜自宅《じたく》は｜少《すこ》しの｜修繕費《しゅうぜんひ》ですんだ。¦The neighbouring house was destroyed, but mine survived just a bit of cost for repair.¦1¦1lra¦fcbond¦fcbond¦近隣",
-    "0qms4\t1¦あの｜国《くに》は｜近隣諸国《きんりんしょこく》との｜外交関係《がいこうかんけい》を｜絶《た》った。¦That country broke off diplomatic relations with the neighboring countries.¦1¦4y9a¦¦¦近隣諸国",
   ],
 };

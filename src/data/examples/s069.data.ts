@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 70 of 144, from "0v6n". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 70 of 144, from "0v6g". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,11 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0v6g2\t1¦マイヤーとその｜同僚《どうりょう》の｜研究《けんきゅう》は｜特異《とくい》なものだった。¦The study by Meyer and his colleagues was unusual.¦1¦4707¦¦AlanF_US¦特異な",
+    "0v6hq\t1¦｜時計《とけい》がおくれていたので、｜私《わたし》は｜特急《とっきゅう》にのりそこねた。¦As my watch was slow, I missed the special express.¦4¦3852¦¦¦特急",
+    "0v6ia\t1¦｜彼《かれ》らはりんごを｜大《おお》きさで｜特級《とっきゅう》｜別《べつ》にした。¦They graded apples according to their size.¦1¦23ar¦¦¦特級",
+    "0v6j4\t1¦｜特許権《とっきょけん》は｜重要《じゅうよう》な｜財産権《ざいさんけん》である。¦A patent right is an important property right.¦3¦2n9l¦¦cafe¦特許権",
+    "0v6l2\t1¦｜彼《あれ》は｜特権《とっけん》を｜乱用《らんよう》したに｜違《ちが》いない。¦He must have abused the privilege.¦2¦26ep¦¦CK¦特権",
     "0v6na\t1¦｜笑《わら》いは｜人間《にんげん》だけの｜特質《とくしつ》なのか。¦Is laughter a quality of man only?¦3¦34xo¦¦¦特質",
     "0v6qc\t1¦｜次号《じごう》では｜離婚《りこん》について｜特集《とくしゅう》します。¦The next issue will feature articles on divorce.¦1¦37w4¦¦CM¦特集",
     "0v6qw\t1¦｜日本《にほん》には｜多《おお》くのはっきりとした｜特色《とくしょく》がある。¦Japan has many distinctive traits.¦4¦2mgy¦¦¦特色",
@@ -201,9 +206,5 @@ export const PIECE: WordsPiece = {
     "0vbwq\t1¦２国間の貿易上のアンバランスを改善しなければならない。¦The trade imbalance between two nations should be improved.¦1¦51pr¦e4zh1nmcz¦¦２国間の",
     "0vbxa\t1¦｜二三日《にじゅうさんにち》｜事実《じじつ》を｜隠《かく》しておこうよ。¦Let's hold fire for a few days.¦1¦2n0o¦¦¦二三",
     "0vby4\t1¦｜樹木《じゅもく》は｜酸素《さんそ》を｜排出《はいしゅつ》し、｜二酸化炭素《にさんかたんそ》を｜吸収《きゅうしゅう》する。¦Trees give off oxygen and absorb carbon dioxide.¦1¦36fv¦¦CK¦二酸化炭素",
-    "0vbzi\t1¦この｜本《もと》は｜主《おも》に｜二次《にじ》｜喫煙《きつえん》の｜影響《えいきょう》について｜書《か》いてある。¦This book is chiefly concerned with the effects of secondhand smoking.¦1¦4pg2¦¦CM¦二次",
-    "0vc0m\t1¦｜社会的《しゃかいてき》な｜関《かか》わり｜合《あ》いは、この｜仕事《しごと》には｜二次的《にじてき》なのです。¦Social relationships are secondary to this business.¦¦374l¦mookeee¦shekitten¦二次的",
-    "0vc20\t1¦｜彼《あれ》は｜二者択一《にしゃたくいつ》を｜選《えら》ぶことでしょう。｜武術《ぶじゅつ》か｜死《し》か。¦Which will he choose, I wonder, martial arts or death?¦1¦1m7h¦fcbond¦fcbond¦二者択一",
-    "0vc2a\t1¦決めること決めちゃって、その後は二手に分かれるよ？¦Let's decide what needs to be decided, then let's split into two teams, OK?¦¦1msr¦mookeee¦CK¦二手",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 64 of 144, from "0ugky". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 64 of 144, from "0ugj". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0ugjk\t1¦｜地球《ちきゅう》は｜地軸《ちじく》を｜中心《ちゅうしん》として｜回転《かいてん》している。¦The Earth rotates on its axis.¦1¦2pyd¦¦¦地軸",
+    "0ugju\t1¦そうした｜決定《けってい》は、｜今度《こんど》は、｜丘《おか》そのものの｜地質《ちしつ》｜的《てき》｜構造《こうぞう》に｜影響《えいきょう》される。¦That decision, in turn, was affected by the geological structure of the hill itself.¦¦4l1f¦¦¦地質",
+    "0ugke\t1¦その｜地主《じぬし》は｜以前《いぜん》かなり｜裕福《ゆうふく》な｜暮《く》らしをしていた。¦The landlord used to be quite well off.¦1¦4geh¦¦CM¦地主",
+    "0ugko\t1¦｜旅《たび》に｜出《で》たら｜地酒《じざけ》を｜飲《いん》まなきゃ。¦When you travel, you've got to try the local brew.¦3¦1och¦mookeee¦¦地酒",
     "0ugky\t1¦｜彼《あれ》は｜田舎《いなか》に｜地所《じしょ》を｜持《も》っている。¦He has an estate in the country.¦1¦26mk¦mookeee¦CK¦地所",
     "0ugl8\t1¦B2｜出口《でぐち》から｜地上《ちじょう》に｜出《で》てください。¦Go up to ground level at exit B2.¦4¦5183¦tommy_san¦¦地上",
     "0ugm2\t1¦｜地震《じしん》がその｜地域《ちいき》を｜襲《おそ》った。¦The earthquake shook the area.¦1¦2px7¦¦¦地震",
@@ -116,6 +120,7 @@ export const PIECE: WordsPiece = {
     "0uj6u\t1¦その｜町《まち》の｜中心《ちゅうしん》にすてきな｜公園《こうえん》がある。¦There is a nice park in the center of the town.¦3¦4gch¦bunbuku¦CK¦中心",
     "0uj7y\t1¦この｜道《みち》を｜行《い》けば｜駅《えき》と｜市《いち》の｜中心地《ちゅうしんち》にでます。¦This road will lead you to the station and the city center.¦3¦4pyw¦mookeee¦¦中心地",
     "0uj9w\t1¦｜東京《とうきょう》は｜今《いま》や｜世界経済《せかいけいざい》の｜中枢《ちゅうすう》だ。¦Tokyo is now a center of the world economy.¦1¦2nub¦small_snow¦¦中枢",
+    "0ujaq\t1¦この｜壮大《そうだい》な｜大聖堂《だいせいどう》の｜建立《こんりゅう》は｜中世《ちゅうせい》にまでさかのぼる。¦This magnificent cathedral dates back to the Middle Ages.¦1¦4qb1¦¦sundown¦中世",
     "0ujb0\t1¦｜私《わたし》は｜中世史《ちゅうせいし》を｜専攻《せんこう》している。¦I specialize in medieval history.¦1¦3bo5¦¦CM¦中世史",
     "0ujba\t1¦リトマス紙で溶液の液性（酸性、中性、塩基性）を調べるときは、リトマス紙をすべて溶液に浸すのではなく、紙の先端の部分だけを浸します。¦When investigating the pH (acidic, neutral, alkaline) of a liquid, don't soak the litmus paper completely in the liquid but just put the end of the paper in it.¦¦1laz¦fcbond¦fcbond¦中性",
     "0ujco\t1¦シカゴは、｜米国《べいこく》｜中西部《ちゅうせいぶ》の｜主要《しゅよう》な｜都市《とし》である。¦Chicago is the principal city of the Midwest.¦3¦4my4¦¦shekitten¦中西部",
@@ -205,11 +210,5 @@ export const PIECE: WordsPiece = {
     "0ul86\t1¦｜貯金箱《ちょきんばこ》にはお｜金《かね》は｜全《まった》く｜残《のこ》っていなかった。¦None of the money was left in the money box.¦2¦2pfq¦tommy__san¦CM¦貯金箱",
     "0ul8q\t1¦その｜町《まち》は｜山《やま》の｜貯水池《ちょすいち》から｜水《みず》を｜供給《きょうきゅう》されている。¦The town is supplied with water from a reservoir in the hills.¦2¦4gbz¦¦CK¦貯水池",
     "0ulay\t1¦がまんするのが｜難《むずか》しいのは｜彼《あ》の｜度《ど》を｜超《こ》した｜丁重《ていちょう》さである。¦What is hard to put up with is his over-politeness.¦1¦4uk9¦arnab¦Luornu¦丁重さ",
-    "0ulcc\t1¦｜私達《わたしたち》はちょうど｜食事《しょくじ》を｜終《お》えた｜所《ところ》です。¦We've just finished breakfast.¦3¦3935¦¦CK¦ちょうど",
-    "0ulcw\t2¦｜漢字《かんじ》を｜書《か》くときは｜点《てん》やはらいに｜気《き》をつけて、なるべく｜早《はや》くていねいに｜書《か》きましょう。¦When drawing kanji be careful of dots and sweeps, write as carefully and quickly as possible.¦3¦1muf¦kamojun¦¦ていねいに",
-    "0uld6\t1¦ある｜意味《いみ》では、｜丁寧語《ていねいご》は｜気《き》さくな｜雰囲気《ふんいき》を｜壊《こわ》す。¦Polite language, in a sense, spoils a casual atmosphere.¦1¦4xeb¦¦al_ex_an_der¦丁寧語",
-    "0ulek\t1¦４０丁目で車を降りた。¦I got out of the car at 40th Street.¦1¦51ig¦e4zh1nmcz¦CM¦丁目",
-    "0ulfo\t1¦｜花《はな》は｜切《き》られるとすぐにしぼむ。¦Flowers soon fade when they have been cut.¦4¦3zzm¦¦Objectivesea¦しぼむ",
-    "0ulh2\t1¦つい｜彼《あれ》が｜病気《びょうき》だということをしゃべってしまった。¦I've just let slip that he is sick.¦3¦4cbn¦¦Swift¦しゃべって",
   ],
 };

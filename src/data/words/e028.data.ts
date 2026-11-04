@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 29 of 219, from "0scxm". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 29 of 219, from "0scsc". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,25 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0scsc\t社内情報\tしゃないじょうほう\tn¦¦company-internal information",
+    "0scsm\t社名\tしゃめい\tn¦¦company name¦name of a company",
+    "0scsw\t社用\tしゃよう\tn¦¦company business",
+    "0sct6\t社用車\tしゃようしゃ\tn¦¦company car",
+    "0sctg\t社用族\tしゃようぞく\tn¦¦expense-account spenders",
+    "0sctq\t者\tもの|もん\tn¦¦person¦rarely used without a qualifier",
+    "0scu0\t謝する\tしゃする\tvs-s¦¦to thank\tvs-s¦¦to apologize¦to apologise\tvs-s¦¦to say farewell¦to retreat¦to retire\tvs-s¦¦to refuse\tvs-s¦¦to pay back¦to settle old scores",
+    "0scua\t謝る\tあやまる\tv5r,vt,vi¦¦to apologize (apologise)\tv5r,vt,vi¦dated¦to refuse¦to decline\tv5r,vi¦dated¦to be unable to bear¦to be defeated (by)¦to be at a loss¦to be stumped (by)",
+    "0scuk\t謝意\tしゃい\tn¦¦gratitude¦thanks\tn¦¦apology",
+    "0scuu\t謝罪\tしゃざい\tn,vs,vt¦¦apology",
+    "0scv4\t謝辞\tしゃじ\tn¦¦words of thanks¦words of gratitude¦acknowledgements\tn¦¦apology",
+    "0scve\t謝絶\tしゃぜつ\tn,vs,vt¦¦refusal¦declining",
+    "0scvo\t謝肉祭\tしゃにくさい\tn¦¦carnival (festival held before Lent)",
+    "0scvy\t謝礼\tしゃれい\tn,vs,vi¦¦reward¦honorarium¦remuneration",
+    "0scw8\t車\tくるま|クルマ~~~!\tn¦¦car¦automobile¦vehicle\tn¦¦wheel¦castor¦caster",
+    "0scwi\t車椅子|車いす|車イス~sK\tくるまいす\tn¦¦wheelchair",
+    "0scws\t車海老|車えび|車エビ|車蝦\tくるまえび~~車海老,車えび,車蝦|くるまエビ~~車エビ|クルマエビ~~~!\tn¦¦kuruma prawn (Marsupenaeus japonicus)¦kuruma shrimp¦Japanese tiger prawn",
+    "0scx2\t車検\tしゃけん\tn¦¦vehicle inspection",
+    "0scxc\t車庫\tしゃこ\tn¦¦garage¦carport¦depot (for trains, buses, etc.)¦shed¦carbarn",
     "0scxm\t車高短\tしゃこうたん\tn¦¦lowered car¦car with lowered suspension¦シャコタン",
     "0scxw\t車座\tくるまざ\tn¦¦sitting in a circle¦usu. as 〜になる",
     "0scy6\t車軸\tしゃじく\tn¦¦axle",
@@ -937,21 +956,5 @@ export const PIECE: WordsPiece = {
     "0skca\t秋分\tしゅうぶん\tn¦¦autumnal equinox¦autumn equinox¦fall equinox¦二十四節気",
     "0skck\t秋分の日\tしゅうぶんのひ\tn¦¦Autumnal Equinox Day (national holiday celebrated by honoring ancestors and remembering the deceased; September 22, 23 or 24)",
     "0skcu\t秋霖|秋りん\tしゅうりん\tn¦¦long autumn rains¦stationary autumn front",
-    "0skd4\t終える|了える~sK|卒える~sK\tおえる\tv1,vt¦¦to finish¦to get through with¦to complete¦to bring (something) to an end\tv1,vt¦¦to graduate¦occ. written 卒える\tv1,vi¦rare¦to come to an end¦to end\taux-v,v1¦¦to finish doing ...¦to be done doing ...¦after the -masu stem of a verb",
-    "0skde\t終演\tしゅうえん\tn,vs,vi¦¦end of a performance",
-    "0skdo\t終刊\tしゅうかん\tn,vs,vi¦¦cessation of publication",
-    "0skdy\t終業\tしゅうぎょう\tn,vs,vi¦¦end of the work day¦close of business\tn,vs,vi¦¦end of the school term¦end of the school year",
-    "0ske8\t終局\tしゅうきょく\tn,adj-no¦¦end¦close¦conclusion\tn¦¦end of a game of go, shogi, etc.",
-    "0skei\t終結\tしゅうけつ\tn,vs,vi,adj-no¦¦end¦close",
-    "0skes\t終始\tしゅうし\tn¦¦beginning and end\tn,vs¦¦doing something from beginning to end¦being unchanged from beginning to end\tadv¦¦from beginning to end¦the whole time¦throughout¦consistently",
-    "0skf2\t終止\tしゅうし\tn,vs,vi¦¦termination¦cessation¦stop",
-    "0skfc\t終止形\tしゅうしけい\tn¦gramm¦plain form (of a Japanese verb or adjective)¦dictionary form¦predicative form",
-    "0skfm\t終止符\tしゅうしふ\tn¦¦full stop¦period\tn¦¦end¦終止符を打つ",
-    "0skfw\t終審\tしゅうしん\tn¦¦final trial",
-    "0skg6\t終身\tしゅうしん\tadj-f,n¦¦lifelong¦lifetime¦for life¦life",
-    "0skgg\t終身刑\tしゅうしんけい\tn¦¦life imprisonment¦life sentence",
-    "0skgq\t終身雇用制\tしゅうしんこようせい\tn¦¦(Japanese) system of lifetime employment",
-    "0skh0\t終戦\tしゅうせん\tn¦¦end of war¦cessation of hostilities",
-    "0skha\t終息|終熄~rK\tしゅうそく\tn,vs,vi¦¦cessation¦(coming to an) end",
   ],
 };

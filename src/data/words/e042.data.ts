@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 43 of 219, from "0vews". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 43 of 219, from "0veua". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,15 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0veua\t入り乱れる\tいりみだれる\tv1,vi¦¦to be jumbled together",
+    "0veuk\t入る\tいる\tv5r,vi¦¦to enter¦to go in¦to get in¦to come in¦入る・はいる・1¦mainly used in fixed expressions and literary language\tv5r,vi¦¦to set (of the sun or moon)¦to sink¦to go down\tv5r,vi¦¦to attain (nirvana, enlightenment, etc.)¦to achieve¦to reach (e.g. a climax)\tsuf,v5r¦¦to do fully¦to do intently¦to do sincerely¦to do deeply¦to feel keenly¦感じ入る|聞き入る¦after -masu stem of verb\tsuf,v5r¦¦to (reach a state) completely¦寝入る・1|絶え入る¦after -masu stem of verb",
+    "0veuu\t入る|這入る~rK\tはいる\tv5r,vi¦¦to enter¦to come in¦to go in¦to get in¦to arrive¦出る・1\tv5r,vi¦¦to join (a club, company, etc.)¦to enter (a university, the army, etc.)¦to enroll (in)¦to go into (e.g. politics)¦to get into\tv5r,vi¦¦to be contained (in)¦to be included (in)¦to be inside (e.g. a box)¦to come under (a heading)¦to belong (in a category)\tv5r,vi¦¦to (be able to) fit (in a container, building, etc.)¦to be (able to be) held¦to be (able to be) accommodated\tv5r,vi¦¦to be introduced¦to be brought in¦to be installed\tv5r,vi¦¦to be received¦to be obtained\tv5r,vi¦¦to be scored (of points)¦to be won (of votes)\tv5r,vi¦¦to turn on¦to start functioning¦to start working\tv5r,vi¦¦to enter (a month, season, etc.)¦to reach (e.g. a climax)¦to get to (e.g. the main topic)¦to enter into (e.g. negotiations)¦to start (doing)¦to begin\tv5r,vi¦¦to form (of a crack, fissure, etc.)¦to develop\tv5r,vi¦¦to be put in (of effort, spirit, feeling, etc.)¦to be applied (e.g. of strength)\tv5r,vi¦¦to be ready (of tea, coffee, etc.)¦to be made\tv5r,vi¦¦to enter the body (of alcohol)¦to become drunk",
+    "0vev4\t入れ\tいれ\tn-suf¦¦container¦receptacle¦case¦bag¦pouch¦box¦holder¦名刺入れ\tn-suf¦¦inserting¦putting in¦車庫入れ|質入れ・1",
+    "0veve\t入れる|容れる~rK|函れる~sK\tいれる\tv1,vt¦¦to put in¦to let in¦to take in¦to bring in¦to insert¦to install (e.g. software)¦to set (a jewel, etc.)¦to ink in (e.g. tattoo)\tv1,vt¦¦to admit¦to accept¦to employ¦to hire\tv1,vt¦¦to accept¦to comply¦to grant¦to adopt (a policy, etc.)¦to take (advice, etc.)¦to listen to¦to pay attention to¦esp. 容れる\tv1,vt¦¦to include\tv1,vt¦¦to pay (one's rent, etc.)\tv1,vt¦¦to cast (a vote)\tv1,vt¦¦to make (tea, coffee, etc.)¦淹れる\tv1,vt¦¦to turn on (a switch, etc.)\tv1,vt¦¦to send (a fax)¦to call",
+    "0vevo\t入れ違い\tいれちがい\tn¦¦passing each other (without meeting)¦entering somewhere just after someone had left¦coming in just as someone had gone out\tn¦¦inserting in the wrong order",
+    "0vevy\t入れ違える\tいれちがえる\tv1,vt¦¦to misplace",
+    "0vew8\t入れ合わせる\tいれあわせる\tv1¦¦to make up for",
+    "0vewi\t入れ込む|入れこむ~sK|いれ込む~sK\tいれこむ\tv5m,vt¦¦to push into¦to stuff into¦to pack into\tv5m,vi¦¦to be enthusiastic (about)¦to be crazy (about)¦to be obsessed (with)\tv5m,vi¦¦to get excited¦to be stirred up",
     "0vews\t入れ子|入れ籠\tいれこ\tn¦¦nest (of boxes)¦nesting\tn¦¦concealed information\tn¦comp¦nested structure¦入れ子¦ネスティング・2\tn¦dated¦adopting a child after one's own has died¦child adopted by a parent of a deceased child¦入れ子\tn¦¦cavity in an oar (fitted onto a peg as part of a traditional oarlock)¦櫓杭",
     "0vex2\t入れ知恵|入れ智慧~rK|入知恵~sK|入智慧~sK\tいれぢえ\tn,vs,vi¦¦putting an idea into someone's head¦suggestion¦hint¦usu. with a negative nuance",
     "0vexc\t入れ毛\tいれげ\tn¦¦false hair¦switch",
@@ -965,40 +974,5 @@ export const PIECE: WordsPiece = {
     "0vmkm\t薄弱\tはくじゃく\tn,adj-na¦¦feebleness¦weakness",
     "0vmkw\t薄情\tはくじょう\tadj-na,n¦¦unfeeling¦heartless¦cold-hearted¦cruel",
     "0vml6\t薄刃\tうすば\tn¦¦thin (blade)\tn¦abbr¦rectangular-shaped thin-bladed knife (esp. used for vegetables)¦薄刃包丁",
-    "0vmlg\t薄着\tうすぎ\tn,vs,adj-no¦¦being lightly dressed¦厚着",
-    "0vmlq\t薄馬鹿|うす馬鹿~sK|薄バカ~sK\tうすばか|うすバカ~~~!|ウスバカ~sk\tn,adj-na¦uk¦dimwit",
-    "0vmm0\t薄板\tうすいた\tn¦¦thin board¦veneer\tn¦¦thin sheet of steel (3 mm or less)\tn¦¦thin cloth\tn¦¦square wooden vase stand",
-    "0vmma\t薄皮\tうすかわ\tn,adj-no¦¦thin skin",
-    "0vmmk\t薄片\tはくへん\tn¦¦flake¦thin slice¦thin layer¦lamina¦lamella¦leaf¦foil",
-    "0vmmu\t薄膜\tうすまく|はくまく\tn,adj-no¦¦thin film",
-    "0vmne\t薄明\tはくめい\tn¦¦twilight¦dusk¦faint light",
-    "0vmno\t薄揚げ\tうすあげ\tn¦¦deep-fried tofu",
-    "0vmny\t薄利多売\tはくりたばい\tn¦yoji¦small profits and quick returns",
-    "0vmo8\t迫る|逼る~rK\tせまる|せる~ok~迫る\tv5r,vi¦¦to approach¦to draw near¦to be imminent\tv5r,vt¦¦to press (someone for something)¦to urge¦to compel",
-    "0vmoi\t迫害\tはくがい\tn,vs,vt¦¦persecution¦oppression",
-    "0vmos\t迫撃砲\tはくげきほう\tn¦¦mortar",
-    "0vmp2\t迫持\tせりもち\tn¦rare,archit¦arch¦アーチ・1",
-    "0vmpc\t迫真\tはくしん\tadj-no,n¦¦realistic¦true to life",
-    "0vmpm\t迫力\tはくりょく\tn¦¦impressiveness¦impact¦force¦intensity¦presence¦appeal¦strength¦punch¦edge¦vigor",
-    "0vmpw\t曝書\tばくしょ\tn,vs,vt,vi¦¦airing of books",
-    "0vmq6\t漠然|ばく然\tばくぜん\tadj-t,adv-to¦¦vague¦obscure¦indistinct¦hazy¦ambiguous",
-    "0vmqq\t爆撃\tばくげき\tn,vs,vt¦¦bombing (raid)",
-    "0vmr0\t爆撃機\tばくげきき\tn¦¦bomber (aircraft)",
-    "0vmra\t爆砕\tばくさい\tn,vs,vt¦¦blasting",
-    "0vmrk\t爆死\tばくし\tn,vs,vi¦¦death from explosion¦death from bombing\tn,vs,vi¦sl¦bombing (in sales)¦flopping",
-    "0vmru\t爆笑\tばくしょう\tn,vs,vi¦¦roar of laughter (from multiple people)¦burst of laughter¦uproarious laughter\tn,vs,vi¦col¦laughing hard (of a single person)",
-    "0vms4\t爆心地\tばくしんち\tn¦¦centre of explosion¦center of explosion¦hypocentre¦hypocenter¦ground zero",
-    "0vmse\t爆弾\tばくだん|バクダン~~~!\tn¦¦bomb\tn¦uk¦alcohol with liquor added (esp. wine-based shōchū highball, also beer with whiskey)",
-    "0vmso\t爆竹\tばくちく\tn¦¦firecracker",
-    "0vmsy\t爆沈\tばくちん\tn,vs,vt,vi¦¦blowing up and sinking",
-    "0vmt8\t爆破\tばくは\tn,vs,vt¦¦destructive blast¦blowing up¦explosion",
-    "0vmti\t爆発\tばくはつ\tn,vs,vi¦¦explosion¦detonation¦blast¦blowing up¦eruption\tn,vs,vi¦¦outburst (of emotion)¦explosion (e.g. of anger)¦eruption (e.g. of discontent)",
-    "0vmts\t爆発管\tばくはつかん\tn¦¦detonator",
-    "0vmu2\t爆発性\tばくはつせい\tn¦¦explosiveness¦explosivity¦explosibility",
-    "0vmuc\t爆発的\tばくはつてき\tadj-na¦¦explosive\tadj-na¦¦sudden and dramatic (of an increase in sales, popularity, etc.)¦explosive¦rapid¦abrupt¦tremendous",
-    "0vmum\t爆発物\tばくはつぶつ\tn¦¦explosive (material)",
-    "0vmuw\t爆発力\tばくはつりょく\tn¦¦explosive power",
-    "0vmv6\t爆風\tばくふう\tn¦¦bomb blast¦blast (from an explosion)¦shock wave",
-    "0vmvg\t爆薬\tばくやく\tn¦¦explosive¦blasting powder",
   ],
 };

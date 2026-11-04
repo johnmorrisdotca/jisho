@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 11 of 70, from "上下動". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 11 of 70, from "上下両". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "上下両院\tじょうげりょういん",
+    "上下列\tじょうげれつ",
     "上下動\tじょうげどう",
     "上下左右\tじょうげさゆう",
     "上下巻\tじょうげかん",
@@ -1100,6 +1102,7 @@ export const PIECE: WordsPiece = {
     "不信者\tふしんじゃ",
     "不倒\tふとう",
     "不倒翁\tふとうおう",
+    "不倫相手\tふりんあいて",
     "不倶戴天\tふぐたいてん",
     "不倶戴天の敵\tふぐたいてんのてき",
     "不偏\tふへん",
@@ -1777,6 +1780,7 @@ export const PIECE: WordsPiece = {
     "不精者\tぶしょうもの",
     "不精髭\tぶしょうひげ",
     "不納\tふのう",
+    "不純\tふじゅん",
     "不純分子\tふじゅんぶんし",
     "不純物\tふじゅんぶつ",
     "不純物準位\tふじゅんぶつじゅんい",
@@ -3009,7 +3013,5 @@ export const PIECE: WordsPiece = {
     "中小\tちゅうしょう",
     "中小企業\tちゅうしょうきぎょう",
     "中小企業事業団\tちゅうしょうきぎょうじぎょうだん",
-    "中小企業信用保険公庫\tちゅうしょうきぎょうしんようほけんこうこ",
-    "中小企業庁\tちゅうしょうきぎょうちょう",
   ],
 };

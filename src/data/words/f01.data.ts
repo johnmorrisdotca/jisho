@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 2 of 70, from "dd". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 2 of 70, from "d". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "d\tディー|ディ",
     "ddI\tディー・ディー・アイ|ディーディーアイ",
     "de\tデ",
     "dis\tディス",
@@ -2880,6 +2881,5 @@ export const PIECE: WordsPiece = {
     "けりが付く\tけりがつく",
     "けりを付ける\tけりをつける",
     "けり殺す\tけりころす",
-    "けり返す\tけりかえす",
   ],
 };

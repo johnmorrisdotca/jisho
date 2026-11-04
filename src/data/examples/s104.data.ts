@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 105 of 144, from "10pr". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 105 of 144, from "10o7". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,19 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "10o7i\t1¦｜私《わたし》たちは｜並木道《なみきみち》を｜歩《ある》いた。¦We walked along an avenue lined with trees.¦2¦3jfp¦¦CM¦並木道",
+    "10oeg\t1¦｜部屋《へや》の｜除湿《じょしつ》のため｜窓《まど》を｜開《あ》けた。¦I opened the windows to remove the damp from the room.¦2¦1syi¦¦¦除湿",
+    "10oo6\t1¦｜茶飲《ちゃの》み｜友達《ともだち》がほしい。¦I want someone to talk to.¦3¦2ppa¦bunbuku¦CK¦茶飲み友達",
+    "10ors\t1¦あのダークホースは｜予備選挙《よびせんきょ》の｜前《さき》は、｜劣勢《れっせい》でした。¦The dark horse candidate was losing in the polls before the primary.¦1¦4yhb¦¦CK¦予備選挙",
+    "10ov4\t1¦｜野手《やしゅ》はボールを｜取《と》り｜損《そこ》ねた。¦The fielder failed to catch the ball.¦2¦1pf0¦¦¦野手",
+    "10oxm\t1¦｜喧嘩《けんか》を｜見《み》ようと、｜野次馬《やじうま》が｜集《あつ》まった。¦A crowd collected to watch the fight.¦¦3rcm¦bunbuku¦CM¦野次馬",
+    "10p7m\t1¦クラスのほとんど｜全員《ぜんいん》が｜謝恩会《しゃおんかい》を｜開《ひら》くことに｜賛成《さんせい》した。¦Almost everyone in the class voted in favor of having a thank-you party for the teachers.¦1¦4u2h¦¦CK¦謝恩会",
+    "10p86\t1¦｜部屋《へや》は｜兎小屋《うさぎごや》みたいだけど。¦But my place is like a rabbit hutch.¦¦1sx5¦Sim5634¦¦兎小屋",
+    "10pao\t1¦｜彼《あれ》からは｜殴《なぐ》り｜書《が》きの｜手紙《てがみ》が｜一通《いっつう》｜届《とど》いただけで、その｜後《あと》｜音沙汰《おとさた》が｜無《な》い。¦I got a scribbled note from him, but haven't heard from him since.¦¦2l47¦¦CM¦殴り書き",
+    "10pay\t1¦｜駆《か》け｜出《だ》しの｜新聞記者《しんぶんきしゃ》にしては｜腕《うで》がいい。¦You are doing well for a cub reporter.¦1¦3uif¦¦piksea¦駆け出し",
+    "10pb8\t1¦さあ、｜駆《か》けつけ｜三杯《さんばい》、｜威勢《いせい》よくぱっといきましょう。¦Anybody who shows up late has to chug!¦1¦4ne6¦¦Zifre¦駆けつけ三杯",
+    "10pfy\t1¦｜局部麻酔《きょくぶますい》をしますね。¦I'll give you a local anaesthetic.¦1¦3uw8¦bunbuku¦Zifre¦局部麻酔",
+    "10pko\t1¦きみの｜説明《せつめい》は｜具体性《ぐたいせい》に｜欠《か》ける。¦Your explanation lacks concreteness.¦3¦4ube¦¦¦具体性",
     "10prc\t1¦この｜推理小説《すいりしょうせつ》はまだ｜半分《はんぶん》ぐらいしか｜読《よ》んでいない。¦I am halfway through this detective story.¦¦4qib¦¦CC¦推理小説",
     "10pta\t1¦｜椎間板《ついかんばん》ヘルニアは｜背骨《せぼね》の｜間《あいだ》にある｜椎間板《ついかんばん》という｜軟骨《なんこつ》が｜飛《と》び｜出《だ》すものです。¦Disk herniation is when cartilage, called 'intervertebral disk' and found between each vertebra, slips out.¦1¦1l9x¦fcbond¦fcbond¦椎間板",
     "10puo\t1¦｜彼女《かのじょ》は｜結婚式《けっこんしき》のために｜純白《じゅんぱく》のドレスを｜着《き》ていた。¦She was dressed all in white for the wedding.¦1¦1xnr¦¦¦純白",
@@ -211,17 +224,5 @@ export const PIECE: WordsPiece = {
     "116wu\t1¦｜町《まち》は｜敵機《てっき》の｜爆撃《ばくげき》を｜受《う》けた。¦The city was bombed by enemy planes.¦1¦2pb0¦¦CK¦敵機",
     "1171u\t1¦｜大使館《たいしかん》は｜外国人《がいこくじん》｜難民《なんみん》の｜政治亡命《せいじぼうめい》を｜拒否《きょひ》しました。¦The embassy denied political asylum to foreign refugees.¦1¦2y4a¦¦CM¦政治亡命",
     "11724\t1¦｜政治犯《せいじはん》たちは｜待遇改善《たいぐうかいぜん》を｜求《もと》めてハンストをしています。¦Political prisoners are on a hunger strike for better conditions.¦1¦32gt¦¦¦政治犯",
-    "11738\t1¦｜企業《きぎょう》の｜政治献金《せいじけんきん》は｜厳《きび》しい｜検査《けんさ》の｜対象《たいしょう》になっています。¦Corporate political donations are coming under heavy scrutiny.¦1¦3xoe¦KK_kaku_¦fishda¦政治献金",
-    "1173i\t1¦その｜土地《とち》はローンダリングした｜政治資金《せいじしきん》で｜購入《こうにゅう》されました。¦The property was purchased with laundered political money.¦1¦4g52¦¦¦政治資金",
-    "117ba\t1¦｜来週《らいしゅう》の｜火曜日《かようび》に｜役員会《やくいんかい》がその｜提案《ていあん》を｜検討《けんとう》することになっている。¦The board of directors is going to discuss the proposal next Tuesday.¦1¦1oox¦mookeee¦CK¦役員会",
-    "117ds\t1¦｜私《わたし》の｜物《もの》は｜君《きみ》の｜程《ほど》よくありません。¦Mine is not so good as yours.¦3¦3hjx¦¦mamat¦程よくありません",
-    "117em\t1¦ここからゴールまではほど｜遠《とお》い。¦It is a far cry from here to the goal.¦3¦4tgd¦¦¦ほど遠い",
-    "117fg\t1¦私は１４歳のときに、父をくも膜下出血で亡くした。¦I lost my father to a subarachnoid haemorrhage when I was fourteen.¦1¦1llk¦fcbond¦fcbond¦くも膜下出血",
-    "117j2\t1¦｜船中《せんちゅう》にはどのくらいの｜人《じん》がいるのですか。¦How many people are on board the ship?¦3¦30um¦¦CK¦船中",
-    "117jm\t1¦｜彼《かれ》らは｜来週《らいしゅう》の｜月曜日《げつようび》にボンベイに｜向《む》けて｜船出《ふなで》する。¦They will sail for Bombay next Monday.¦3¦2249¦¦CN¦船出",
-    "117n8\t1¦｜船客《せんきゃく》のブリッジ｜立《た》ち｜入《い》り｜禁止《きんし》。¦No passengers are allowed on the bridge.¦2¦30uv¦¦CM¦船客",
-    "117o2\t1¦あなたの船荷は、２４時間以内に運ばれるでしょう。¦Your shipment should be delivered within twenty-four hours.¦2¦4zvn¦¦CK¦船荷",
-    "117ss\t1¦｜近代的《きんだいてき》な｜港湾《こうわん》｜施設《しせつ》がないために、｜多《おお》くの｜船積《ふなづ》み｜業者《ぎょうしゃ》が｜不便《ふべん》を｜被《おお》った。¦The lack of modern post facilities caused trouble for many shippers.¦¦3uqa¦¦Zifre¦船積み",
-    "117t2\t1¦｜船頭《せんどう》｜多《おお》くして｜船《ふね》、｜山《やま》に｜登《のぼ》る。¦Too many cooks spoil the broth.¦3¦30u7¦mookeee¦Shishir¦船頭",
   ],
 };

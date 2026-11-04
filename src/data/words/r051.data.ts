@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 52 of 316, from "かすみ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 52 of 316, from "かすふ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,9 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "かすふだ\tカス札\t#1okxl\thanaf¦1-point card¦junk card¦plain card",
+    "カスマグサ\t\tU#1pfys\tuk¦smooth tare (Vicia tetrasperma)¦smooth vetch¦lentil vetch",
+    "かすまぐさ\tかす間草\tU#1pfys\tuk¦smooth tare (Vicia tetrasperma)¦smooth vetch¦lentil vetch",
     "かすみ\t霞|翳み|翳\tCU~ni06#pn8e\tuk¦haze (esp. in spring)¦mist\tuk¦dimness (of sight)",
     "カスミアジ\t\t#1igx2\t¦bluefin trevally (Caranx melampygus)",
     "かすみあみ\tかすみ網|霞網\t#10tuk\t¦mist net (fine mesh for capturing small birds)",
@@ -812,9 +815,5 @@ export const PIECE: WordsPiece = {
     "かたみ\t片身\t#1013a\t¦one side of a body",
     "かたみ\t筐|筺\t#1bm0q\tarch¦fine-meshed bamboo basket",
     "かたみがせまい\t肩身が狭い\ta#qzhm\t¦feeling ashamed¦feeling of one's inferiority",
-    "かたみがひろい\t肩身が広い\t#qzhw\t¦(feeling) proud",
-    "かたみち\t片道\tC~ni19#wehc\t¦one-way (trip)\tabbr¦one-way ticket",
-    "かたみちきっぷ\t片道切符\t#10176\t¦one-way ticket",
-    "かたみちこうくうけん\t片道航空券\t#1bh2o\t¦one-way airline ticket¦one-way plane ticket",
   ],
 };

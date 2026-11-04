@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 26 of 144, from "0q14". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 26 of 144, from "0q12". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,9 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0q12g\t1¦その｜規則《きそく》は｜最近《さいきん》｜緩《ゆる》められた。¦The rules were recently relaxed.¦1¦4j78¦¦CK¦緩められた",
+    "0q12q\t2¦Ｖの角度が広ければ広いほど、スピードは緩やかになる。¦The wider the V angle, the slower the speed.¦1¦515o¦Chus¦Chus¦緩やか\t3¦この｜学校《がっこう》は｜規律《きりつ》がやや｜緩《ゆる》やかだ。¦Discipline is rather mild at this school.¦1¦4rrb¦¦¦緩やか",
+    "0q13a\t3¦いつもお｜世話《せわ》になっていますから、｜一旦緩急《いったんかんきゅう》あれば、すぐさま｜馳《は》せ｜参《さん》じます。¦You're always there for me, so if you're ever in dire straits, just let me know and I'll come running.¦¦4win¦KK_kaku_¦Vortarulo¦緩急",
     "0q14o\t1¦コンピューターは、たとえ｜緩慢《かんまん》にせよ｜大《おお》きな｜変化《へんか》を｜引《ひ》き｜起《お》こした。¦Computers caused a great, if gradual, change.¦1¦4nmy¦¦¦緩慢",
     "0q14y\t1¦｜公定歩合《こうていぶあい》の｜引《ひ》き｜下《さ》げは｜産業界《さんぎょうかい》を｜苦《くる》しめてきた｜厳《きび》しい｜金融逼迫《きんゆうひっぱく》を｜緩和《かんわ》するだろうと｜期待《きたい》されている。¦The bank rate cut is expected to relieve the severe financial squeeze that has hit industry.¦¦3q91¦¦CM¦緩和",
     "0q158\t1¦この缶にはおよそ４ガロン入る。¦This can holds about 4 gallons.¦2¦4rqm¦¦blay_paul¦缶",
@@ -191,7 +194,5 @@ export const PIECE: WordsPiece = {
     "0q4yq\t1¦これはとても｜奇妙《きみょう》な｜手紙《てがみ》です。¦This is a very strange letter.¦1¦4ona¦¦CK¦奇妙な",
     "0q4za\t1¦あなたに｜再会《さいかい》できてうれしい。¦I am pleased to see you again.¦2¦50be¦¦CK¦うれしい",
     "0q4zk\t1¦その｜結果《けっか》の｜報道《ほうどう》に｜満足《まんぞく》して｜彼《あれ》は｜手《て》をもんでうれしがっていた。¦He was rubbing his hands over the report of the result.¦1¦4iwm¦¦fekundulo¦うれしがっていた",
-    "0q50o\t1¦｜道《みち》の｜脇《かたわら》に｜寄《よ》せてください。¦Pull over to the side, please.¦¦2nd7¦¦pip¦寄せて\t2¦いすをもっと｜火《ひ》の｜近《ちか》くに｜寄《よ》せなさい。¦Draw your chair closer to the fire.¦3¦4wrr¦¦¦寄せ\t3¦｜誤字《ごじ》・｜誤訳《ごやく》のご｜指摘《してき》｜等《など》は｜下記《かき》メールアドレスよりお｜寄《よ》せください。¦Please send reports of mistypings and mistranslations to the email address below.¦1¦1lg7¦fcbond¦fcbond¦お寄せ",
-    "0q518\t1¦｜二人《ふたり》は｜仲間《なかま》、｜三人《さんにん》は｜寄《よ》せ｜集《あつ》めの｜群《む》れ。¦Two's company, three's a crowd.¦2¦2myg¦¦CK¦寄せ集め",
   ],
 };

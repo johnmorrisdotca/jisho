@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 45 of 172, from "disappear ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 45 of 172, from "disad". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,21 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "disadvantage\tふり|ふりえき|デメリット|そん|れっせい|マイナス|ぶがわるい|そんき|ディスアドバンテージ|そんえき|くれる|そんとく|わりをくう|ゆうりふり",
+    "disadvantageous\tふため|ぶのわるい|ひ|けいせいふり",
+    "disadvantages\tちょうたん|りがい|とくしつ|よしあし|よしわるし|いっちょういったん|いちりいちがい|りがいとくしつ",
+    "disaffection\tりはん",
+    "disaggregating\tぶんかい",
+    "disagree\tもめる|モメる|ことなる",
+    "disagreeable\tいや|や|イヤ|ふゆかい|いやらしい|やらしい|うとましい|きざわり|いやみたらしい|いやみったらしい",
+    "disagreeableness\tいやみ",
+    "disagreeing\tだんこはんたい",
+    "disagreement\tふどうい|くいちがい|ふきょうわおん|いな|ひ|ていご|いやおう|くびをよこにふる|ばつじるし",
+    "disallowed\tあとだし",
+    "disallows\tきせんけっこん",
+    "disambiguation\tあいまいせいかいしょう|あいまいさかいひ",
+    "disanthus\tまるばのき|マルバノキ",
+    "disappear\tきえさる|まぎれる|きえる|まぎれこむ|なえる|かくれる|とれる|なくなる|ちる|ふっきれる|はらす|ふきとぶ|ふっとぶ|すがたをけす|うせる|うせさる|きえうせる|かききえる|かげをひそめる|いなくなる",
     "disappear behind\tかくれる",
     "disappear e\tなくなる",
     "disappear energy\tなえる",
@@ -90,6 +105,7 @@ export const PIECE: WordsPiece = {
     "disclaimer\tめんせきじょうこう|めんせきじこう",
     "disclose\tばらす|バラす|うちあける|あかす|あばく|ひみつをあかす",
     "disclosed\tもれる",
+    "disclosing\tカミングアウト|カミング・アウト|カムアウト|カム・アウト",
     "disclosure\tばくろ|ディスクロージャー|かいじ|ろうえい|ろうせつ|ろてい|インフォメーションディスクロージャー|インフォメーション・ディスクロージャー|ひかいじごうい|じょうほうこうかいじょうれい|ぐんきろうえい|ひみつほじけいやく|しさんこうかいほう|きみつほじけいやく|ふかいじ|じこかいじ|こくちぎむ",
     "discman\tディスクマン",
     "disco\tディスコ|パラパラ|ぱらぱら|ディスコサウンド|ディスコ・サウンド|ディスコダンス|ディスコ・ダンス|ディスコミュージック|ディスコ・ミュージック|ディスコバー|ディスコ・バー",
@@ -168,7 +184,7 @@ export const PIECE: WordsPiece = {
     "discriminate\tわける|わきまえる|あいてをえらぶ|しきべつりょく|みさかいなし",
     "discriminated\tひさべつ|ひさべつみん",
     "discriminating\tこえる|こうかんど",
-    "discrimination\tかんべつ|さべつ|きらい|くべつ|メガネ|めがね|わかち|ぶんべつ|しきべつ|へだて|どういつ|むさべつ|べつ|はんべつ|がんしき|じょせいさべつ|じんしゅさべつ|うしん|さべつひょうげん|かかくさべつ",
+    "discrimination\tかんべつ|さべつ|きらい|くべつ|メガネ|めがね|わかち|ぶんべつ|しきべつ|へだて|どういつ|むさべつ|べつ|はんべつ|がんしき|じょせいさべつ|じんしゅさべつ|うしん|さべつひょうげん|せいさべつ",
     "discrimination against\tさべつ",
     "discriminator\tなんはんていしきべつき",
     "discriminatory\tさべつてき|さべつたいぐう|さべつようご|さべつはつげん|さべつご|さべつてきとりあつかい",
@@ -579,11 +595,12 @@ export const PIECE: WordsPiece = {
     "distinct\tせんめい|れきぜん|ちがう|すずしい|めいりょう|めいせき|えびす|べっしゅ|うきぼりになる|じしゅ|しゅごだいみょう|めいせきはんめい",
     "distinct language\tえびす",
     "distinct species\tべっしゅ",
-    "distinction\tさべつ|くべつ|わかち|しきべつ|けじめ|ケジメ|べつ|みわけ|はんべつ|ちがい|かわり|いっせん|きらい|へだて|しゅんべつ|こうおつ|かくぜん|みさかい|わけへだて|こうをあらそう",
+    "distinction\tさべつ|くべつ|わかち|しきべつ|けじめ|ケジメ|べつ|みわけ|はんべつ|ちがい|かわり|いっせん|きらい|せいべつ|へだて|しゅんべつ|こうおつ|かくぜん|みさかい|わけへだて",
     "distinction quality\tこうおつ",
+    "distinction sex\tせいべつ",
     "distinction treatment\tへだて",
     "distinctions\tときわける",
-    "distinctive\tどくじ|いしょく|こせいてき|ならでは|とくちょうてき|べんべつてき|とくしょく|もちあじ|ひびき|べんべつそせい|なりわけ|ノネナール|つうじ|モブがお|べんべつてきそせい|しさてきとくちょう|べんべつてきとくちょう|モードけい",
+    "distinctive\tどくじ|いしょく|こせいてき|ならでは|とくちょうてき|べんべつてき|とくしょく|もちあじ|ひびき|べんべつそせい|なりわけ|ノネナール|つうじ|モブがお|べんべつてきそせい|しさてきとくちょう|べんべつてきとくちょう|モードけい|キャラだち",
     "distinctive characteristic\tもちあじ",
     "distinctive feature\tとくしょく",
     "distinctive sound\tひびき",
@@ -605,19 +622,5 @@ export const PIECE: WordsPiece = {
     "distorted feeling\tななめ",
     "distorted view\tへんけん",
     "distortion\tディストーション|デフォルメ|ディフォルメ|くっせつ|きょっかい|わいきょく|こじつけ|けんきょう|ふごうひずみ|てんどう|いそうひずみ|げんすいひずみ|ちえんひずみ|めよれ|ひずみりつ|わいりつ|ぜんこうちょうはひずみ|れきしわいきょく",
-    "distortion often\tデフォルメ|ディフォルメ",
-    "distract\tまぎらす|ちらす|きをそらす|きをまぎらす|きをちらす|ちゅういをそらす|きをさんじる|きもちをそらす",
-    "distracted\tさんまん|きがそれる|きがまぎれる|きがちる|こうぜん|ながらあるき|ながらうんてん",
-    "distracting\tむそうむねん",
-    "distraction\tさくらん|きうつり",
-    "distress\tきゅうじょう|くるしみ|くなん|くじゅう|うきめ|なんじゅう|くちゅう|こんやく|すくう|こんきゅう|しくはっく|あおいきといき|エス・オー・エス|メーデー|そうなんしんごう|へいなん|かねづまり|みまいひん|おやをくるしめる|たいじせっぱくかし",
-    "distress etc\tすくう",
-    "distressed\tなげうりひん|みまいきゃく|しゃっきんでくるしむ",
-    "distressing\tにがい|くるしい",
-    "distributary\tぶんりゅう|はせん",
-    "distribute\tくばる|わける|わかつ|まく|ちらす|わけあたえる|とりわける|はいする|はいす|ばらまく|たきだす",
-    "distribute flyers\tまく",
-    "distribute widely\tばらまく",
-    "distributed\tぶんさんしょり|ひこうそくめいぼしきひれいだいひょうせい|とうおうらん|エフ・ディー・ディー・アイ|ディー・シー・イー|ひかりファイバぶんさんがたデータインターフェース|ぶんさんシーオーエム|ぶんさんディーオーエスこうげき|ぶんさんコンピューティング|ぶんさんコンピューティングかんきょう|ぶんさんデータベース|ぶんさんデータしょり|ぶんさんきょうちょうしょり|ぶんさんがたデータベース|ぶんさんがたデータベースかんりシステム|ぶんさんがたトランザクション|ぶんさんしけんほう|ぶんさんしょりシステム|ぶんさんはいち|ぶんさんなまえかいせき",
   ],
 };

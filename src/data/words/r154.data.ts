@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 155 of 316, from "せいえんこ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 155 of 316, from "せいえん". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,14 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "せいえん\t声援\tsC~n12#tl64\t¦cheering¦(shout of) encouragement¦rooting",
+    "せいえん\t凄艶\tn#tgmi\t¦weirdly beautiful",
+    "せいえん\t盛宴\t#11ti6\t¦grand banquet",
+    "せいえん\t製塩\ts#129cg\t¦salt making",
+    "せいえん\t正塩\t#13pyc\t¦normal salt",
+    "せいえん\t西縁\t#1a9c8\t¦western edge¦west margin",
+    "せいえん\t正円\t#1ollh\t¦perfect circle",
+    "せいえんぎょう\t製塩業\t#129cq\t¦the salt industry",
     "せいえんこう\t青鉛鉱\t#1pgi7\tmin¦linarite",
     "せいえんそう\t正円窓\t#1a4sw\tanat¦round window¦fenestra rotunda",
     "せいえんをおくる\t声援を送る\tg#1ow1v\t¦to cheer (for)",
@@ -303,6 +311,7 @@ export const PIECE: WordsPiece = {
     "せいきちょっこうきてい\t正規直交基底\t#1na2y\tmath¦orthonormal basis",
     "せいきちょっこうけい\t正規直交系\t#16j6s\t¦normalized orthogonal system¦normalised orthogonal system",
     "せいきでんあつ\t正規電圧\t#1erje\tcomp¦normal mode voltage",
+    "せいきのう\t性機能\t#19mmg\tmed¦sexual function",
     "せいきはつらつ\t生気溌剌\t#17jks\t¦being full of vitality¦being vivacious",
     "せいきひょうげん\t正規表現\t#tieo\tcomp¦regular expression¦regex",
     "せいきひん\t正規品\t#1p09g\t¦genuine product¦officially licensed product¦non-counterfeit article",
@@ -335,6 +344,7 @@ export const PIECE: WordsPiece = {
     "せいきょう\t西教\t#1oo0u\t¦Western religion¦Christianity",
     "せいきょう\t政況\t#1p0hp\trare¦political situation¦politicians' movements",
     "せいきょう\t聖経\t#1p10i\t¦sutra¦holy writings¦holy\t¦writings of a sage\tdated,Christn¦Bible",
+    "せいきょういく\t性教育\tC~n17#th7c\t¦sex education",
     "せいきょういっち\t政教一致\t#1175g\tyoji¦unity of church and state",
     "せいきょういん\t正教員\t#tigc\t¦regular teacher¦licensed teacher",
     "せいきょうかい\t正教会\t#tigm\t¦Eastern Orthodox Church¦Orthodox Church",
@@ -458,6 +468,7 @@ export const PIECE: WordsPiece = {
     "せいけいき\t成形機|成型機\t#1p6rj\t¦molding machine",
     "せいけいげか\t整形外科\tC~n22#thuo\t¦orthopedic surgery¦orthopaedic surgery¦orthopedics\tcol¦plastic surgery¦cosmetic surgery",
     "せいけいげかい\t整形外科医\t#1oz03\t¦orthopaedic surgeon\t¦plastic surgeon",
+    "せいけいしつ\t性形質\t#1fwfc\t¦sexual characteristic",
     "せいけいしゃ\t生計者\t#1p4dv\t¦earner (of a household)¦breadwinner",
     "せいけいしゅじゅつ\t整形手術|成形手術\t#11tnq\t¦orthopedic surgery¦plastic surgery",
     "せいけいたん\t成型炭|成形炭\t#1pi2q\t¦briquette (esp. charcoal)¦molded charcoal",
@@ -611,6 +622,7 @@ export const PIECE: WordsPiece = {
     "せいごひょう\t正誤表\t#tiks\t¦errata¦erratum¦corrigenda",
     "せいごん\t誓言\ts#tlrs\t¦oath¦vow¦attestation",
     "せいさ\t精査\ts~m27#tkqu\t¦close investigation¦careful examination¦scrutiny",
+    "せいさ\t性差\t#th90\t¦difference between the sexes¦sexual difference",
     "せいさい\t制裁\tsC~ni02#tgsw\t¦sanctions¦punishment",
     "せいさい\t精彩|生彩\tC~n17#11jao\t¦brilliance¦luster¦lustre\t¦vividness¦life",
     "せいさい\t精細\tn~m32#tkr4\t¦fine¦minute¦detailed",
@@ -667,6 +679,7 @@ export const PIECE: WordsPiece = {
     "せいさつ\t精察\ts#1pib3\t¦careful examination¦close observation",
     "せいさつよだつ\t生殺与奪\t~m45#tk10\tyoji¦(having) life-and-death power (over)",
     "せいさどうとだいがく\t星槎道都大学\t#3f357\torganization¦Seisa Dohto University",
+    "せいさべつ\t性差別\t#15ku4\t¦sexual discrimination¦sex discrimination¦sexism",
     "せいさん\t生産\tsC~ni01#tk1a\t¦production¦manufacture",
     "せいさん\t清算\tsC~ni08#tjfm\t¦squaring accounts¦(financial) settlement¦clearing debts\t¦liquidation\t¦ending (a relationship)¦breaking up (with)¦burying (the past)",
     "せいさん\t精算\tsC~mi25#tkre\t¦exact calculation¦squaring of accounts¦adjustment",
@@ -827,7 +840,7 @@ export const PIECE: WordsPiece = {
     "せいしじょうたい\t静止状態\t#15lfs\t¦(in) a state of rest",
     "せいしせいけい\t星姿勢計\t#1fzae\trare¦star tracker",
     "せいしつ\t性質\tC~ni10#th9a\t¦nature (of a person)¦disposition¦temperament\t¦quality¦inherent characteristic¦property",
-    "せいしつ\t正室\t~m43#tiqw\t¦room for receiving guests\trare¦heir¦successor",
+    "せいしつ\t正室\t~m43#tiqw\t¦legal wife (of a noble) (as opposed to a concubine)\t¦room for receiving guests\trare¦heir¦successor",
     "せいしつ\t声質\t#1fohs\t¦voice quality¦type of voice",
     "せいしつちょう\t星室庁\t#1pd7y\thist¦Court of the Star Chamber (England)",
     "せいしでんい\t静止電位\t#1kecs\tphysiol¦resting potential",
@@ -852,14 +865,5 @@ export const PIECE: WordsPiece = {
     "せいしゅう\t清秀\tn#1mru0\t¦having refined and distinguished features¦having a bright face",
     "せいしゅく\t静粛\tnC~mi44#tmao\t¦silent",
     "せいしゅく\t星宿\t#11jm2\tastron¦constellation\tarch,astron¦mansion (any of the Chinese constellations used to divide the ecliptic into 28 positions)\tastron¦Chinese \"star\" constellation (one of the 28 mansions)",
-    "せいしゅくに\t静粛に\t#1pjhd\t¦quietly¦silently¦calmly\t¦quiet!¦silence!¦order!",
-    "せいしゅつ\t正出\t#tis0\t¦legitimate child",
-    "せいしゅん\t青春\tC~ni07#tm0e\t¦youth¦adolescence¦springtime of life",
-    "せいしゅんえいが\t青春映画\t#1b7w4\t¦youth film¦teen movie",
-    "せいしゅんき\t青春期\t#tm0o\t¦adolescence¦youth",
-    "せいしゅんぐんぞう\t青春群像\t#17wbe\t¦youthful crowd¦crowd of young people coming into their own",
-    "せいしゅんしょうせつ\t青春小説\t#1l90y\t¦youth novel",
-    "せいしゅんじだい\t青春時代\t#17wbo\t¦one's youth¦one's youthful days (years)¦the flower of one's youth",
-    "せいしゅんじゅうはちきっぷ\t青春１８きっぷ|青春十八きっぷ|青春１８切符|青春十八切符\t#1ow01\t¦Seishun 18 ticket",
   ],
 };

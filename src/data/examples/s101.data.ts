@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 102 of 144, from "0zge". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 102 of 144, from "0zfj". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,19 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0zfj6\t1¦｜彼《あれ》は｜店《みせ》じまいのため｜商品《しょうひん》を｜投《な》げ｜売《う》りした。¦He sold his goods at a loss to wind up his business.¦3¦26n2¦small_snow¦sundown¦投げ売り",
+    "0zfpu\t2¦オーナーたちは｜組合《くみあい》のシンパを｜一人残《ひとりのこ》らず｜解雇《かいこ》するために｜首切《くびき》り｜役《やく》を｜投入《とうにゅう》した。¦The owners brought in a hatchet man to fire all the union sympathizers.¦2¦4vr2¦¦CM¦首切り",
+    "0zft6\t1¦｜彼女《かのじょ》は｜終生《しゅうせい》その｜町《まち》に｜住《す》んだ。¦She lived all her life in that town.¦3¦1wig¦¦CK¦終生",
+    "0zftq\t1¦この｜汽車《きしゃ》は｜世界《せかい》の｜果《は》て｜行《い》きの｜終列車《しゅうれっしゃ》です。¦This train is the last train to the world's end.¦1¦32oc¦¦¦終列車",
+    "0zfua\t1¦フェニックスはアリゾナの｜州都《しゅうと》である。¦Phoenix is the capital of Arizona.¦2¦4865¦bunbuku¦CK¦州都",
+    "0zfv4\t1¦｜兄《あに》は｜手仕事《てしごと》がうまかった。¦My brother was expert in handwork.¦4¦3s93¦¦¦手仕事",
+    "0zg2c\t1¦｜寸鉄人《すんてつひと》を｜殺《ころ》す。¦The tongue stings.¦1¦32pp¦¦¦寸鉄",
+    "0zg2m\t1¦そのうち、｜小《ちい》さな｜村落《そんらく》の｜真上《まうえ》を｜高架線《こうかせん》が｜行《い》ったり｜来《き》たりするようになりました。¦Pretty soon, there was an elevated train going back and forth just above the small village.¦1¦4kna¦Scott¦Scott¦村落",
+    "0zg2w\t1¦｜存外《ぞんがい》、｜口《くち》は｜達者《たっしゃ》なようね。¦It seems like you're unexpectedly eloquent.¦3¦1mkr¦mookeee¦¦存外",
+    "0zg54\t1¦｜彼《あれ》は｜警察署長《けいさつしょちょう》です。¦He is the chief of a police station.¦2¦2ba1¦¦¦署長",
+    "0zg86\t1¦｜私《わたし》は｜報告書《ほうこくしょ》をすっかり｜書《か》き｜上《あ》げた。¦He wrote out a thorough report.¦3¦39xn¦¦¦書き上げた",
+    "0zg9k\t1¦ここに｜彼《あ》の｜書《か》き｜置《お》きがある。これはここに｜来《き》たに｜違《ちが》いない。¦Here is a note he left. He must have been here.¦3¦4t53¦¦¦書き置き",
+    "0zgbi\t1¦｜私《わたし》は｜社会科《しゃかいか》にはたいへん｜興味《きょうみ》をもっています。¦I'm very interested in social studies.¦1¦3chm¦¦CK¦社会科",
     "0zgeu\t1¦別の理由があるね？どう？図星でしょう？¦There's another reason, isn't there? Well, how did I do? I bet I hit the mark.¦2¦1lg0¦fcbond¦fcbond¦図星",
     "0zgf4\t1¦｜党大会《とうたいかい》は｜延期《えんき》された。¦The party convention was put off.¦2¦2nzi¦¦¦党大会",
     "0zgiq\t1¦｜睡魔《すいま》と｜空《から》｜戦《たたか》わなくちゃ。¦You'd better fight off sleep.¦1¦32td¦¦¦睡魔",
@@ -202,15 +215,5 @@ export const PIECE: WordsPiece = {
     "0zpyg\t1¦｜和平会議《わへいかいぎ》が｜来週《らいしゅう》｜始《はじ》まる。¦Peace talks will begin next week.¦3¦1nko¦mookeee¦CK¦和平会議",
     "0zpza\t1¦｜彼《あれ》は｜和書《わしょ》は｜言《い》うまでもなく｜洋書《ようしょ》も｜読《よ》んでいる。¦He reads foreign books, not to mention Japanese ones.¦3¦24a3¦¦¦和書",
     "0zq18\t1¦インベーダーと｜和議《わぎ》の｜交渉《こうしょう》をしないことに｜決《き》めた。¦We decided not to have peace negotiations with the invaders.¦1¦1luh¦fcbond¦fcbond¦和議",
-    "0zq1s\t1¦１９９０年代は湾岸戦争で始まった。¦The 1990s began with the Gulf War.¦2¦520c¦mookeee¦CK¦湾岸戦争",
-    "0zq4u\t1¦｜彼女《かのじょ》は｜家政学《かせいがく》の｜一部《いちぶ》として｜衛生学《えいせいがく》を｜学《まな》んでいる。¦She studies hygiene as part of her domestic science course.¦1¦1y3n¦¦shekitten¦衛生学",
-    "0zq6s\t1¦｜東京《とうきょう》はたくさんの｜衛星都市《えいせいとし》に｜囲《かこ》まれている。¦Tokyo is surrounded by many satellite cities.¦1¦2nuk¦¦¦衛星都市",
-    "0zq7m\t1¦この｜重役《じゅうやく》のポストに｜適当《てきとう》な｜人物《じんぶつ》を｜見《み》つけるには、｜人材《じんざい》｜斡旋業者《あっせんぎょうしゃ》に｜依頼《いらい》する｜必要《ひつよう》がある。¦We'll need a head hunting agency to find the right man for this executive position.¦¦4qpi¦¦CK¦斡旋業者",
-    "0zq86\t1¦｜私《わたし》はそうしたことを｜週末《しゅうまつ》に｜考《かんが》え｜始《はじ》めたのだが、それはかん｜木《こ》の｜下《した》に｜残《のこ》っている｜葉《は》を｜残《のこ》らずかき｜集《あつ》めている｜時《とき》のことであった。¦I got thinking about it over the weekend, when I was raking the last of the leaves out from under the bushes.¦3¦3ft8¦¦sundown¦かん木",
-    "0zqf4\t1¦｜軍備競争《ぐんびきょうそう》の｜狂気《きょうき》と｜不道徳《ふどうとく》に｜終止符《しゅうしふ》を｜打《う》つ｜時《とき》が、｜人類《じんるい》にやってきた。¦The time has come for mankind to put an end to the madness and immorality of the arms race.¦1¦3sb0¦¦papabear¦軍備競争",
-    "0zqhm\t1¦その｜風船《ふうせん》は｜風《ふり》でどこかに｜運《はこ》び｜去《さ》られた。¦The balloon was carried away somewhere by the wind.¦3¦4fnv¦¦sundown¦運び去られた",
-    "0zqhw\t1¦｜運《うん》まかせにするな。¦Don't leave it up to chance.¦4¦4276¦mookeee¦CK¦運まかせ",
-    "0zqmw\t1¦｜多《おお》くの｜運動選手《うんどうせんしゅ》は｜青年時代《せいねんじだい》に｜盛《さか》りを｜極《き》める。¦Most athletes are at their best during their early manhood.¦1¦2ytm¦¦¦運動選手",
-    "0zqng\t1¦｜運転手《うんてんしゅ》は｜運転台《うんてんだい》からもんどり｜打《う》って｜投《な》げ｜出《だ》された。¦The driver was thrown from his seat head over heels.¦3¦4268¦¦auxitt¦運転台",
   ],
 };

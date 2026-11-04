@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 91 of 316, from "げこの". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 91 of 316, from "げこと". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "げことばけものはない\t下戸と化け物はない\ta#1p18w\tproverb,rare¦everyone drinks at least a little bit",
     "げこのたてたくらはない\t下戸の建てた蔵はない\ta#1ozes\tproverb¦don't act all high and mighty just because you don't drink",
     "げごく\t下獄\ts#pebu\t¦being sent to prison",
     "げさく\t下策\t#pedi\t¦poor plan",

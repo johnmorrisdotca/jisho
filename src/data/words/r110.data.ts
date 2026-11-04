@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 111 of 316, from "さいぼうど". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 111 of 316, from "さいぼうそ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "さいぼうそしき\t細胞組織\t#1pg9j\tbiol¦cellular tissue",
     "さいぼうどく\t細胞毒\t#1o6dq\t¦cytotoxin¦cellular poison",
     "さいぼうない\t細胞内\tC~s#19ml2\t¦inside the cell¦intracellular",
     "さいぼうないえき\t細胞内液\t#1o6f4\tbiol¦intracellular fluid",

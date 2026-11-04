@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 65 of 316, from "がんみゃ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 65 of 316, from "がんみ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "がんみ\t含味\ts#q310\t¦taste¦thinking over carefully",
+    "がんみ\t玩味|翫味\ts#zozq\t¦tasting¦relishing¦savouring\t¦appreciation¦enjoyment",
+    "ガンみ\tガン見\ts#19dwa\tcol¦staring at¦gazing at¦eyeballing",
+    "がんみつとう\t含蜜糖\t#1otu3\t¦non-centrifugal sugar",
     "がんみゃく\t岩脈\t#13f1a\t¦dike",
     "がんむ\t銃夢\t#3f2l6\twork¦Battle Angel Alita (manga and anime)",
     "ガンむし\tガン無視\ts#1ox9o\tcol¦completely disregarding",
@@ -820,8 +824,5 @@ export const PIECE: WordsPiece = {
     "ききすてる\t聞き捨てる\ti#w9v8\t¦to ignore¦to overlook",
     "ききすます\t聞き澄ます\tg#13ofc\t¦to listen attentively",
     "ききずてならない\t聞き捨てならない\t#132yu\t¦inexcusable¦unpardonable¦can't be allowed to pass (without comment)",
-    "ききずてにする\t聞き捨てにする\ts#1b5vm\t¦to overlook¦to ignore¦to pass over",
-    "ききせまる\t鬼気迫る\tg#141xq\t¦to be bloodcurdling¦to be ghastly",
-    "ききそこなう\t聞き損なう|聞損なう\tg#13ody\t¦to mishear¦to fail to catch\t¦to miss (the chance to hear)",
   ],
 };

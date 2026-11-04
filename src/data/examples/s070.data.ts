@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 71 of 144, from "0vc2u". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 71 of 144, from "0vbz". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0vbzi\t1¦この｜本《もと》は｜主《おも》に｜二次《にじ》｜喫煙《きつえん》の｜影響《えいきょう》について｜書《か》いてある。¦This book is chiefly concerned with the effects of secondhand smoking.¦1¦4pg2¦¦CM¦二次",
+    "0vc0m\t1¦｜社会的《しゃかいてき》な｜関《かか》わり｜合《あ》いは、この｜仕事《しごと》には｜二次的《にじてき》なのです。¦Social relationships are secondary to this business.¦¦374l¦mookeee¦shekitten¦二次的",
+    "0vc20\t1¦｜彼《あれ》は｜二者択一《にしゃたくいつ》を｜選《えら》ぶことでしょう。｜武術《ぶじゅつ》か｜死《し》か。¦Which will he choose, I wonder, martial arts or death?¦1¦1m7h¦fcbond¦fcbond¦二者択一",
+    "0vc2a\t1¦決めること決めちゃって、その後は二手に分かれるよ？¦Let's decide what needs to be decided, then let's split into two teams, OK?¦¦1msr¦mookeee¦CK¦二手",
     "0vc2u\t1¦あと１、２週間も休めば、すっかりよくなりますよ。¦Just stay off your feet for the next couple of weeks, and you'll be just fine.¦4¦52q1¦mookeee¦¦２週間",
     "0vc34\t1¦｜二十《にじゅう》｜人《じん》｜以上《いじょう》の｜少年《しょうねん》がそこに｜行《おこな》った。¦More than twenty boys went there.¦4¦2n0d¦arnab¦CK¦二十",
     "0vc48\t1¦２０世紀の間に、こうしたことすべてが変わった。¦In the course of the twentieth century all this changed.¦1¦51rv¦e4zh1nmcz¦¦２０世紀",
@@ -205,11 +209,5 @@ export const PIECE: WordsPiece = {
     "0vgki\t1¦その｜部屋《へや》は｜参加者《さんかしゃ》の｜熱気《ねっき》でムンムンしていた。¦The air in that room was thick with the enthusiasm of the participants.¦3¦4fop¦¦¦熱気",
     "0vgks\t1¦｜宇宙飛行士《うちゅうひこうし》｜達《たち》は｜熱狂《ねっきょう》した｜人々《ひとびと》の｜励《はげ》ましと｜喝采《かっさい》に｜迎《むか》えられた。¦The astronauts were greeted with cheers and applause of an enthusiastic crowd.¦1¦42hy¦¦CK¦熱狂",
     "0vgn0\t1¦｜熱情《ねつじょう》が｜彼女《かのじょ》の｜特徴《とくちょう》の｜一《ひと》つだ。¦Passion is one of her characteristics.¦1¦2m1j¦¦¦熱情",
-    "0vgna\t1¦この｜本《もと》は｜彼《あ》の｜熱心《ねっしん》な｜研究《けんきゅう》の｜成果《せいか》である。¦This book is a result of his enthusiastic research.¦3¦4peg¦¦¦熱心な",
-    "0vgnu\t1¦あの｜島《しま》は｜熱帯《ねったい》｜性《せい》｜気候《きこう》です。¦That island has a tropical climate.¦2¦4xvg¦¦CK¦熱帯",
-    "0vgo4\t1¦｜彼《かれ》らは｜熱帯魚《ねったいぎょ》に｜興味《きょうみ》があるらしかった。¦It seemed that they were interested in tropical fish.¦1¦22e1¦¦CM¦熱帯魚",
-    "0vgoe\t1¦この｜頃《ごろ》は｜彼女《かのじょ》はテニスに｜熱中《ねっちゅう》している。¦Nowadays she is lost in tennis.¦¦4r7z¦¦¦熱中",
-    "0vgoo\t1¦ポットに｜熱湯《ねっとう》をいっぱい｜入《い》れてください。¦Please fill the teapot with boiling water.¦2¦47er¦¦CK¦熱湯",
-    "0vgpi\t1¦｜我々《われわれ》は｜世界平和《せかいへいわ》を｜熱望《ねつぼう》している。¦We are anxious for world peace.¦1¦3zbd¦¦CK¦熱望",
   ],
 };

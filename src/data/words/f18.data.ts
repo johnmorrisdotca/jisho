@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 19 of 70, from "前出". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 19 of 70, from "前借り". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,15 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "前借り\tまえがり",
+    "前借金\tぜんしゃくきん|ぜんしゃっきん",
+    "前側\tまえがわ",
+    "前備え\tまえぞなえ",
+    "前傾\tぜんけい",
+    "前傾姿勢\tぜんけいしせい",
+    "前兆\tぜんちょう",
+    "前兆現象\tぜんちょうげんしょう",
+    "前処理\tまえしょり",
     "前出\tぜんしゅつ",
     "前列\tぜんれつ",
     "前前\tまえまえ|ぜんぜん",
@@ -575,6 +584,7 @@ export const PIECE: WordsPiece = {
     "副リーダー\tふくリーダー",
     "副レコードキー\tふくレコードキー",
     "副主席\tふくしゅせき",
+    "副乳\tふくにゅう",
     "副交感神経\tふくこうかんしんけい",
     "副交感神経系\tふくこうかんしんけいけい",
     "副代表\tふくだいひょう",
@@ -3099,10 +3109,5 @@ export const PIECE: WordsPiece = {
     "北限\tほくげん",
     "北陸\tほくりく",
     "北陸先端技術大学院大学\tほくりくせんたんぎじゅつだいがくいんだいがく",
-    "北陸先端科学技術大学院大学\tほくりくせんたんかがくぎじゅつだいがくいんだいがく",
-    "北陸地方\tほくりくちほう",
-    "北陸大学\tほくりくだいがく",
-    "北陸学院大学\tほくりくがくいんだいがく",
-    "北陸道\tほくりくどう",
   ],
 };

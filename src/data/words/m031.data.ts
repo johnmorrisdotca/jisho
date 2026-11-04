@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 32 of 172, from "collective ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 32 of 172, from "collection in". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,16 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "collection instances\tじれいしゅう",
+    "collection poems\tししゅう|じゅう|とお|と",
+    "collection taxes\tしゅうれん",
+    "collection theses\tろんしゅう",
+    "collection treatises\tろんしゅう",
+    "collection waka\tかしゅう",
+    "collection words\tよせがき",
+    "collection works\tしゅうちゅう",
+    "collections\tまいぐみ|にじゅういちだいしゅう|ちょうこかん",
+    "collective\tきょうどうたい|れんたい|しゅうごうてき|しゅうだんてき|そうじしょく|そうい|だんこう|だんたいこうしょう|はいかい|コルホーズ|きょうどうのうじょう|だんたいこうしょうけん|だんたいきょうやく|しゅうごうめいし|しゅうだんあんぜんほしょう|しゅうだんのうじょう|とういつけんかい|しゅうだんてきじえいけん|りんぎせいど|れんたいせきにん",
     "collective bargaining\tだんこう|だんたいこうしょう",
     "collective name\tはいかい",
     "collective opinion\tそうい",
@@ -660,15 +670,5 @@ export const PIECE: WordsPiece = {
     "communication satellite\tつうしんえいせい",
     "communication theory\tつうほう",
     "communication wire\tゆうせん",
-    "communication within\tかぜとおし|かざとおし",
-    "communications\tていしん|ゆうせいしょう|でんつうだい|つうしんもう|ミニコミ|コミュニケーションギャップ|コミュニケーション・ギャップ|コミント|テルスター|パソコンつうしん|ミディコミ|しゃがいはっしん|つうけん|つうしんじぎょう|つうしんひ|つうしんきかん|どうきはずれ|せんようせん|つうしんこうがく|つうしんそうち",
-    "communications e\tていしん",
-    "communications network\tつうしんもう",
-    "communications transportation\tていしん",
-    "communications within\tミニコミ",
-    "communicative\tコミュニカティブ",
-    "communicativity\tはっしんりょく",
-    "communicator\tコミュニケーター|コミュニケータ",
-    "communion\tせいさん|せいざん|ぶんさん|せいさんしき|せいはい|カリス",
   ],
 };

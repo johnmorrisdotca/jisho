@@ -2204,6 +2204,8 @@ export const PIECE: WordsPiece = {
     "SNOBOL\tスノボル",
     "SNP\tスニップ|エス・エヌ・ピー|エスエヌピー",
     "SNS\tエス・エヌ・エス|エスエヌエス",
+    "SOGI\tソジ",
+    "SOGIハラ\tソジハラ",
     "SOHO\tソーホー",
     "SOS\tエス・オー・エス|エスオーエス",
     "SOTEC\tソーテック",
@@ -2534,6 +2536,5 @@ export const PIECE: WordsPiece = {
     "ch\tシー・エイチ|シーエイチ|シーエッチ",
     "cm\tシー・エム|シーエム",
     "config.sys\tコンフィグシス",
-    "d\tディー|ディ",
   ],
 };

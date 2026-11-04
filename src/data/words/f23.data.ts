@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 24 of 70, from "国民総生". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 24 of 70, from "国民的英". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,19 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "国民的英雄\tこくみんてきえいゆう",
+    "国民的行事\tこくみんてきぎょうじ",
+    "国民皆保険\tこくみんかいほけん",
+    "国民皆兵\tこくみんかいへい",
+    "国民社会主義\tこくみんしゃかいしゅぎ",
+    "国民福祉指標\tこくみんふくししひょう",
+    "国民突撃隊\tこくみんとつげきたい",
+    "国民純生産\tこくみんじゅんせいさん",
+    "国民純福祉\tこくみんじゅんふくし",
+    "国民経済\tこくみんけいざい",
+    "国民総幸福量\tこくみんそうこうふくりょう",
+    "国民総所得\tこくみんそうしょとく",
+    "国民総支出\tこくみんそうししゅつ",
     "国民総生産\tこくみんそうせいさん",
     "国民総背番号制\tこくみんそうせばんごうせい",
     "国民議会\tこくみんぎかい",
@@ -2635,32 +2648,5 @@ export const PIECE: WordsPiece = {
     "堅パン\tかたパン",
     "堅人\tかたじん",
     "堅信\tけんしん",
-    "堅信礼\tけんしんれい",
-    "堅剛\tけんごう",
-    "堅固\tけんご",
-    "堅城\tけんじょう",
-    "堅塁\tけんるい",
-    "堅塞固塁\tけんさいこるい",
-    "堅太り\tかたぶとり",
-    "堅守\tけんしゅ",
-    "堅実\tけんじつ",
-    "堅州国\tかたすくに",
-    "堅強\tけんきょう",
-    "堅忍\tけんにん",
-    "堅忍不抜\tけんにんふばつ",
-    "堅忍持久\tけんにんじきゅう",
-    "堅志\tけんし",
-    "堅持\tけんじ",
-    "堅振\tけんしん",
-    "堅木\tかたぎ",
-    "堅材\tけんざい",
-    "堅果\tけんか",
-    "堅気\tかたぎ",
-    "堅洲国\tかたすくに",
-    "堅炭\tかたずみ",
-    "堅焼\tかたやき",
-    "堅焼き\tかたやき",
-    "堅牢\tけんろう",
-    "堅牢堅固\tけんろうけんご",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 69 of 316, from "きふほ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 69 of 316, from "きふこ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "きふこうい\t寄付行為|寄附行為\t~m31#1242q\t¦deed of endowment or donation",
+    "きふじん\t貴婦人\t~m37#q84w\t¦lady¦noblewoman",
+    "きふじん\t貴腐人\t#194gu\tsl¦adult woman who likes comics about male homosexual love",
+    "きふだ\t木札\t#1ivic\t¦wooden tag",
     "きふほう\t記譜法\t#q7zm\t¦musical notation",
     "きふるし\t着古し\t#174nu\t¦old clothes¦worn-out clothes¦cast-off clothes",
     "きふるす\t着古す\tg#10gjo\t¦to wear out (clothing)",
@@ -841,12 +845,5 @@ export const PIECE: WordsPiece = {
     "キャミスリップ\t\t#1oym1\t¦cami slip¦cami-slip",
     "キャミソール\t\t#mbx4\t¦camisole",
     "キャミ・スリップ\t\t#1oym1\t¦cami slip¦cami-slip",
-    "キャム\tＣＡＭ\t#1bkxa\tcomp¦computer-aided manufacturing¦CAM",
-    "キャムコーダ\t\t#1d420\t¦camcorder",
-    "キャムコーダー\t\t#1d420\t¦camcorder",
-    "キャメラ\t\t#m972\t¦camera",
-    "キャメル\t\tC~g#mbxe\t¦camel",
-    "キャメル\t\t#3f6q1\tproduct¦Camel (cigarette)",
-    "キャメルクラッチ\t\t#1ntf2\tMA,sports¦camel clutch",
   ],
 };

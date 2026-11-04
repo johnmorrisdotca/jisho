@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 18 of 70, from "凝灰". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 18 of 70, from "凝固剤". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,15 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "凝固剤\tぎょうこざい",
+    "凝固因子\tぎょうこいんし",
+    "凝固点\tぎょうこてん",
+    "凝固障害\tぎょうこしょうがい",
+    "凝塊\tぎょうかい",
+    "凝念\tぎょうねん",
+    "凝望\tぎょうぼう",
+    "凝析\tぎょうせき",
+    "凝滞\tぎょうたい",
     "凝灰岩\tぎょうかいがん",
     "凝然\tぎょうぜん",
     "凝然として\tぎょうぜんとして",
@@ -2500,6 +2509,7 @@ export const PIECE: WordsPiece = {
     "別姓婚\tべっせいこん",
     "別嬪\tべっぴん",
     "別字\tべつじ",
+    "別学\tべつがく",
     "別宅\tべったく",
     "別室\tべっしつ",
     "別宮\tべつぐう",
@@ -3275,14 +3285,5 @@ export const PIECE: WordsPiece = {
     "前便\tぜんびん",
     "前倒し\tまえだおし",
     "前借\tぜんしゃく",
-    "前借り\tまえがり",
-    "前借金\tぜんしゃくきん|ぜんしゃっきん",
-    "前側\tまえがわ",
-    "前備え\tまえぞなえ",
-    "前傾\tぜんけい",
-    "前傾姿勢\tぜんけいしせい",
-    "前兆\tぜんちょう",
-    "前兆現象\tぜんちょうげんしょう",
-    "前処理\tまえしょり",
   ],
 };

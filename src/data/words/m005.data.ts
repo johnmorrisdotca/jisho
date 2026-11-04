@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 6 of 172, from "aeso". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 6 of 172, from "aesh". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "aeshnidae\tやんま|ヤンマ",
     "aesop\tきんのおの",
     "aesop's\tイソップものがたり|イソップどうわ|イソップぐうわ|いそほものがたり",
     "aesthetic\tびてき|たんびてき|びがくてき|しんびてき|びいしき|がかい|しんび|しんびがん|びてきけんお|びてきせいかつ|たんびは|かんじゃくこたん|じょうそうきょういく|びてきかんかく|びかんちく|にっぽんびようげかがっかい",

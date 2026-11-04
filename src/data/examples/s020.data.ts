@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 21 of 144, from "0peug". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 21 of 144, from "0per". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0pero\t1¦そして｜汚水《おすい》を｜流《なが》すために｜地下《ちか》に｜下水道《げすいどう》を｜持《も》っていた。¦The house has pipes under the ground to carry dirty water away.¦2¦4kqy¦¦¦下水道",
+    "0peu6\t2¦｜彼《あ》の｜一生《いっしょう》は｜社会《しゃかい》の｜下積《したづ》みで｜終《お》わった。¦He lived and died in obscurity.¦3¦2jda¦Kaede¦CM¦下積み",
     "0peug\t1¦｜下線《かせん》のある｜文《ふみ》を｜訳《やく》しなさい。¦Translate the underlined sentences.¦1¦418c¦¦CK¦下線",
     "0peuq\t1¦｜下線部《かせんぶ》を｜訳《わけ》せ。¦Translate the underlined part.¦1¦418a¦bunbuku¦CK¦下線部",
     "0pevk\t1¦｜彼女《かのじょ》の｜収入《しゅうにゅう》では｜下層《かそう》｜中流階級《ちゅうりゅうかいきゅう》の｜生活《せいかつ》を｜続《つづ》けるのがやっとだった。¦Her income barely maintained her in the lower middle class.¦1¦20rs¦¦¦下層",
@@ -211,7 +213,5 @@ export const PIECE: WordsPiece = {
     "0pkgo\t1¦｜初《はじ》めから｜果敢《かかん》に｜前《さき》へ｜出《で》て｜圧倒《あっとう》し、｜体勢《たいせい》を｜崩《くず》した｜相手《あいて》を｜押《お》し｜出《だ》した。¦He resolutely pushed forward from the start, overwhelming and pushing out his off-balance opponent.¦1¦1lgm¦fcbond¦fcbond¦果敢に",
     "0pkh8\t1¦｜果実《かじつ》になる｜花《はな》は｜少《すく》ない。¦Few flowers develop into fruit.¦3¦4055¦¦auxitt¦果実",
     "0pki2\t1¦｜陽気《ようき》が｜暖《あたた》かでやがて｜果樹《かじゅ》の｜花《はな》が｜咲《さ》くだろう。¦The warm weather will bring the fruit trees into blossom soon.¦1¦1osh¦¦¦果樹",
-    "0pkic\t1¦その｜農夫《のうふ》は｜男《おとこ》の｜子《こ》｜達《たち》が｜自分《じぶん》の｜果樹園《かじゅえん》でリンゴを｜盗《ぬす》んでいるのをみつけた。¦The farmer caught the boy stealing the apples in his orchard.¦¦4fxo¦¦¦果樹園",
-    "0pkkk\t1¦｜彼《あれ》は｜果物《くだもの》の｜他《た》｜何《なに》も｜食《た》べない。¦He eats nothing else but fruit.¦3¦2c9j¦¦¦果物",
   ],
 };

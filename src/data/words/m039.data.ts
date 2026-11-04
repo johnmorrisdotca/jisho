@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 40 of 172, from "cytod". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 40 of 172, from "cyprinif". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,35 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "cypriniformes\tコイもく",
+    "cyprinoides\tはいれん|ハイレン",
+    "cyprinus\tこい|コイ",
+    "cyprinus carpio\tこい|コイ",
+    "cypripedium\tアツモリソウ|あつもりそう",
+    "cyproheptadine\tシプロヘプタジン",
+    "cyprus\tキプロス|ニコシア|きたキプロス|キプロスきょうわこく",
+    "cyrenaic\tキュレネがくは|キレネがくは",
+    "cyrestis\tイシガケチョウ|いしがけちょう",
+    "cyrillic\tキリル|キリルもじ",
+    "cyrtobotrya\tまるばはぎ|マルバハギ",
+    "cyrtomium\tヤブソテツ|やぶそてつ",
+    "cyrtosia\tつちあけび|ツチアケビ",
+    "cyst\tのうほう|のうしゅ|ないまくしょうせいのうほう|チョコレートのうほう|みこしだこ|らんそうのうしゅ",
+    "cysteic\tシステインさん",
+    "cysteine\tシステイン",
+    "cystic\tのうほうせい|のうほうせいせんいしょう",
+    "cysticercosis\tのうちゅうしょう",
+    "cystine\tシスチン",
+    "cystitis\tぼうこうえん|きゅうせいぼうこうえん",
+    "cystocarp\tのうか",
+    "cystography\tぼうこうぞうえい",
+    "cystoid\tほうじょう",
+    "cystolith\tしょうにゅうたい",
+    "cystophora\tずきんあざらし|ズキンアザラシ",
+    "cystoscope\tぼうこうきょう",
+    "cytidylic\tシチジルさん",
+    "cytisus\tえにしだ|エニシダ",
+    "cytochrome\tシトクロム|チトクロム",
     "cytodiagnosis\tさいぼうしん|さいぼうけんさ",
     "cytogenesis\tさいぼうはっせい",
     "cytogenetics\tさいぼういでんがく",
@@ -81,7 +110,7 @@ export const PIECE: WordsPiece = {
     "dadaiko\tだだいこ|かえんだいこ",
     "dadaism\tダダイスム|ダダイズム",
     "dadaist\tダダイスト",
-    "daddy\tパパ|ダディー|ダディ|おとう|パトロン|ふとパパ|あしながおじさん",
+    "daddy\tパパ|ダディー|ダディ|おとう|パトロン|だんな|ふとパパ|あしながおじさん",
     "daddy's\tおとうさんこ|パパっこ|おとうさんっこ",
     "dado\tだいどう",
     "daedalma\tユウゼン",
@@ -308,7 +337,7 @@ export const PIECE: WordsPiece = {
     "dance tune\tおどる",
     "danceable\tダンサブル",
     "danced\tふえふけどもおどらず|うたがき",
-    "dancer\tおどりこ|ダンサー|ダンサ|たちかた|おどりて|まいびと|まいうど|まいにん|まいて|ぶとうか|まいひめ|ぶき|ぶがくめん|アクロバットダンサー|アクロバット・ダンサー|タップダンサー|タップ・ダンサー|しちへんげ|シチヘンゲ|プロバレエダンサー",
+    "dancer\tおどりこ|ダンサー|ダンサ|たちかた|おどりて|ぶようか|まいびと|まいうど|まいにん|まいて|まいひめ|ぶき|ぶがくめん|アクロバットダンサー|アクロバット・ダンサー|タップダンサー|タップ・ダンサー|しちへんげ|シチヘンゲ|プロバレエダンサー",
     "dancer japanese\tたちかた",
     "dancer usu\tおどりこ",
     "dancer's\tまいおうぎ",
@@ -724,22 +753,5 @@ export const PIECE: WordsPiece = {
     "deal attention\tだいちゅうもく",
     "deal business\tよい|いい",
     "deal devastating\tうちのめす",
-    "deal e\tくわす",
-    "deal etc\tきあい|ひきあい|こわれる|おとく|おトク",
-    "deal exhaustively\tろんじつくす",
-    "deal idea\tうまい",
-    "deal issue\tとりあつかう|のぞむ",
-    "deal out\tわける",
-    "deal person\tあつかう",
-    "deal problem\tあつかう",
-    "deal topic\tろんじる|ろんずる",
-    "dealer\tディーラー|ぎょうしゃ|おや|しょう|どう|はんばいぎょうしゃ|おやチャ|ディラー|ディーラ|デイーラー|とんや|といや|ちゃや|さかや|がしょう|さかなや|じば|こめや|はりこ|ごふくしょう",
-    "dealer cards\tはりこ",
-    "dealer esp\tディーラー",
-    "dealer's\tしきりばいばい|しんぶんはんばいてん|おやけん",
-    "dealers\tナスダック|ジャスダック|じはんれん|ぜんべいしょうけんぎょうしゃきょうかい|にっしょうきょう|にほんしょうけんぎょうきょうかい|ぜんべいしょうけんぎょうきょうかい",
-    "dealership\tディーラー|くるまや|にゅうこしゃ",
-    "dealing\tたいしょ|おうたい|たいおう|しょぶん|しょり|りょうり|あつかい|とりくみ|しょち|しょぐう|なんとか|おうせつ|しまつ|ひょうり|ぜんしょ|うらおもて|ふみこみ|にまいじた|いっとうりょうだん|しゅび",
-    "dealing appropriately\tぜんしょ",
   ],
 };

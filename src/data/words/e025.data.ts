@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 26 of 219, from "0rod". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 26 of 219, from "0roae". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,16 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0roae\t差し止め|差止め|差止\tさしとめ\tn¦¦prohibition¦ban¦suspension¦injunction",
+    "0roao\t差し止める|差止める~io\tさしとめる\tv1,vt¦¦to stop¦to prohibit¦to forbid someone to do something",
+    "0roay\t差し歯|差歯\tさしば\tn¦¦post crown¦dowel crown¦false tooth\tn¦¦\"tooth\" on a geta clog",
+    "0rob8\t差し出がましい|差出がましい~sK\tさしでがましい\tadj-i¦¦forward¦officious¦impertinent¦intrusive",
+    "0robi\t差し出す|差出す~sK|さし出す~sK|差しだす~sK\tさしだす\tv5s,vt¦¦to hold out¦to extend (e.g. a hand)\tv5s,vt¦¦to present¦to submit¦to tender\tv5s,vt¦¦to sacrifice¦to give (up)\tv5s,vt¦¦to send¦to forward",
+    "0robs\t差し障り|差しさわり|差障り~sK\tさしさわり\tn¦¦hindrance¦obstacle¦impediment¦adverse effect\tn¦¦annoyance (to others)¦offence¦harm",
+    "0roc2\t差し障りのない\tさしさわりのない\texp,adj-i¦¦innocuous¦inoffensive",
+    "0rocc\t差し障る|さし障る\tさしさわる\tv5r,vi¦¦to hinder¦to obstruct¦to adversely affect",
+    "0rocm\t差し上げる|差上げる|さし上げる~sK|差しあげる~sK\tさしあげる\tv1,vt¦¦to lift up¦to hold up¦to raise\tv1,vt¦hum¦to give¦to present¦to offer\taux-v,v1¦hum¦to do (for someone)¦after -te form of verb; more respectful than 〜して上げる",
+    "0rocw\t差し伸べる|差し延べる|差伸べる|差延べる\tさしのべる\tv1,vt¦¦to hold out¦to extend (e.g. one's hands)¦to stretch¦to reach out for\tv1,vt¦¦to thrust (javelin)\tv1,vt¦¦to offer (e.g. aid, help, etc.)¦手を差し伸べる",
     "0rod6\t差し当たり|差当り|さし当たり~sK|差しあたり~sK|差当たり~sK\tさしあたり\tadv¦uk¦for the time being¦at present¦さしあたって\tn¦arch¦hindrance",
     "0rodg\t差し入れる|挿し入れる~rK|差入れる~sK|さし入れる~sK|挿しいれる~sK|差しいれる~sK\tさしいれる\tv1,vt¦¦to insert¦to put in\tv1,vt¦¦to send in (to a prisoner; e.g. clothes, books)\tv1,vt¦¦to deliver (food, refreshments, etc. to workers)¦to supply",
     "0rodq\t差し付ける|差しつける|差付ける~io\tさしつける\tv1,vt¦¦to point (gun at)¦to hold under one's nose",
@@ -1024,27 +1034,5 @@ export const PIECE: WordsPiece = {
     "0rwh4\t三門\tさんもん\tn¦Buddh¦large triple gate to temple",
     "0rwhe\t三役\tさんやく\tn¦¦three highest ranks (wrestling, unions, etc.)\tn¦¦three parts¦three divisions",
     "0rwhy\t三葉虫\tさんようちゅう\tn¦¦trilobite",
-    "0rwi8\t三流\tさんりゅう\tadj-no,n¦¦third-rate¦third-class",
-    "0rwii\t三稜鏡\tさんりょうきょう\tn¦¦prism",
-    "0rwis\t三輪\tさんりん\tn¦¦three wheels",
-    "0rwj2\t三輪車\tさんりんしゃ\tn¦¦three wheeled vehicle (tricycle, motorcycle, etc.)¦three wheeler",
-    "0rwjc\t三塁|３塁\tさんるい\tn¦baseb¦third base",
-    "0rwjm\t三塁手\tさんるいしゅ\tn¦baseb¦third baseman",
-    "0rwjw\t三塁線\tさんるいせん\tn¦baseb¦third-base line",
-    "0rwk6\t三塁打\tさんるいだ\tn¦baseb¦three-base hit¦triple",
-    "0rwkg\t三論\tさんろん\tn¦abbr¦Sanron sect (of Buddhism)¦三論宗",
-    "0rwkq\t三椏\tみつまた|ミツマタ~~~!\tn¦uk¦Oriental paper bush (Edgeworthia chrysantha)¦mitsumata",
-    "0rwl0\t傘\tかさ\tn¦¦umbrella¦parasol\tn¦¦something shaped like an umbrella or a conical hat¦shade (of a lamp)¦mushroom cap¦pileus¦笠・2",
-    "0rwla\t傘屋\tかさや\tn¦¦umbrella shop",
-    "0rwlk\t傘下\tさんか\tn¦¦affiliated with¦under jurisdiction of¦under the umbrella",
-    "0rwlu\t傘形碍子\tかさがたがいし\tn¦¦umbrella insulator",
-    "0rwm4\t傘紙\tかさがみ\tn¦¦oiled umbrella paper",
-    "0rwme\t傘歯車\tかさはぐるま\tn¦¦bevel gear",
-    "0rwmo\t傘持ち|傘持\tかさもち\tn¦¦umbrella carrier¦servant who carried a long-handled umbrella for a noble",
-    "0rwmy\t傘寿\tさんじゅ\tn¦¦80th birthday",
-    "0rwn8\t傘地\tかさじ\tn¦¦umbrella cloth",
-    "0rwni\t傘立て\tかさたて\tn¦¦umbrella stand",
-    "0rwo2\t参った\tまいった|マイッタ~sk\tint¦uk¦I'm beaten¦I give up¦touché¦you've got me there¦参る・2",
-    "0rwoc\t参らせる\tまいらせる\tv1¦¦to beat¦to floor (someone)¦to bring (someone) to his knees¦to come",
   ],
 };

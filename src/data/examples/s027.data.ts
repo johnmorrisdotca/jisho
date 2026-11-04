@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 28 of 144, from "0q86u". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 28 of 144, from "0q86a". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0q86a\t1¦これを｜見《み》ると、｜彼《あれ》は｜起《お》き｜上《あ》がってでていった。¦At this, he got up and went out.¦3¦4ny1¦¦sundown¦起き上がって",
+    "0q86k\t1¦わたしたちはその｜木《き》を｜起《お》こした。¦We got the tree up.¦4¦443f¦¦Dejo¦起こした\t1¦｜六時《ろくじ》｜半《はん》に｜起《お》こしてください。¦Please wake me up at 6:30.¦4¦1nle¦mookeee¦CK¦起こして\t1¦｜病気《びょうき》の｜子供《こども》はベッドの｜上《うえ》で｜体《からだ》を｜起《お》こした。¦The sick child sat up in bed.¦3¦1tsc¦¦CK¦起こした\t2¦メアリーを｜起《お》こして｜来《き》て。¦Go and wake up Mary.¦4¦4683¦bunbuku¦Eldad¦起こして\t2¦ジョンは｜眠《ねむ》っている｜赤《あか》ん｜坊《ぼう》を｜起《お》こさないようにした。¦John tried not to wake the sleeping baby.¦¦4m2d¦¦Swift¦起こさない\t3¦｜彼《あれ》は｜不注意《ふちゅうい》な｜運転《うんてん》で｜事故《じこ》を｜起《お》こした。¦He drove carelessly and had an accident.¦1¦25iq¦¦CK¦起こした\t3¦かんしゃくを｜起《お》こしても｜何《ど》の｜得《とく》もない。¦There is no advantage in losing your temper.¦3¦4ug7¦small_snow¦¦起こして\t3¦｜小《ちい》さな｜火花《ひばな》はしばしば｜大《おお》きな｜炎《ほのお》を｜起《お》こす。¦A small spark often kindles a large flame.¦1¦8cor¦Scott¦¦起こす\t4¦｜私《わたし》はその｜医者《いしゃ》を｜相手取《あいてど》って｜訴訟《そしょう》を｜起《お》こした。¦I brought a suit against the doctor.¦1¦3for¦mookeee¦CM¦起こした\t4¦どう｜考《かんが》えても｜今《いま》は｜新《しん》｜事業《じぎょう》を｜起《お》こすべきではない。¦This is hardly the time to start a new enterprise.¦4¦4b6a¦¦handsomelyian¦起こす\t4¦ある｜団体《だんたい》が｜雨林《うりん》を｜保護《ほご》する｜運動《うんどう》を｜起《お》こした。¦A group started a campaign to preserve rain forests.¦1¦4xcf¦¦CM¦起こした\t6¦｜教師《きょうし》｜達《たち》は｜生徒《せいと》にやる｜気《き》を｜起《お》こさせるように｜努力《どりょく》している。¦The teachers are trying to motivate their students.¦3¦3v17¦¦CK¦起こさせる\t6¦これが｜彼《あれ》にかんしゃくを｜起《お》こさせた。¦This flung him into a passion.¦3¦4ouy¦¦¦起こさせた\t7¦｜昨日《きのう》｜父《ちち》が｜心臓発作《しんぞうほっさ》を｜起《お》こしたが、｜診療所《しんりょうじょ》が｜近《ちか》くにあるのは｜好運《こううん》だった。¦My father had a heart attack yesterday, but he was lucky to have a clinic close at hand.¦1¦3n12¦¦papabear¦起こした\t7¦ジムはスキーをしていて｜脚《あし》に｜肉離《にくばな》れを｜起《お》こした。¦Jim pulled a muscle in his leg while skiing.¦1¦4mog¦¦CN¦起こした",
     "0q86u\t1¦そのようなことが｜再《ふたた》び｜起《お》こりうるだろうか。¦Can such a thing happen again?¦2¦4k02¦bunbuku¦CK¦起こりうる",
     "0q874\t1¦あとで｜起《お》こったことはなお｜悪《にく》かった。¦What followed was still worse.¦4¦50sl¦¦¦起こった",
     "0q888\t1¦この｜失敗《しっぱい》は｜私《わたし》の｜間違《まちが》った｜判断《はんだん》に｜起因《きいん》する。¦This fault results from my wrong decision.¦3¦4qwd¦¦¦起因",
@@ -207,16 +209,5 @@ export const PIECE: WordsPiece = {
     "0qcck\t1¦その｜犬《いぬ》は｜少女《しょうじょ》の｜命《いのち》を｜救《すく》った。¦The dog saved the girl's life.¦1¦4is9¦¦CK¦救った\t2¦｜神《かみ》だけがあなたを｜救《すく》える。¦Nothing but God can save you.¦1¦33u0¦¦¦救える",
     "0qccu\t1¦｜彼《かれ》らは｜直《ただ》ちに｜我々《われわれ》の｜救援《きゅうえん》にやってきた。¦They came presently to our rescue.¦1¦22he¦¦sundown¦救援",
     "0qcd4\t1¦｜救急《きゅうきゅう》｜診察《しんさつ》を｜受《う》けるにはどこへ｜行《い》けばいいですか。¦Where should I go to be admitted into the emergency room?¦1¦3wqy¦¦Dejo¦救急",
-    "0qcdo\t1¦｜時《とき》を｜移《うつ》さず｜救急車《きゅうきゅうしゃ》がやってきた。¦An ambulance arrived immediately.¦1¦388n¦¦CK¦救急車",
-    "0qcf2\t1¦その｜老人《ろうじん》は｜貧民《ひんみん》｜救済《きゅうさい》に｜多額《たがく》の｜金《かね》を｜寄付《きふ》した。¦The old man contributed a large sum of money to the poor.¦1¦4f0w¦¦CK¦救済",
-    "0qcfw\t1¦｜彼《かれ》らはヘリコプターで｜救出《きゅうしゅつ》された。¦They were rescued by helicopter.¦1¦23dk¦¦CK¦救出",
-    "0qcgg\t1¦｜彼《あれ》はおぼれている｜少年《しょうねん》を｜救助《きゅうじょ》した。¦He rescued a boy from drowning.¦1¦2g58¦xtofu80¦CK¦救助",
-    "0qcha\t1¦｜彼《あれ》は｜自分《じぶん》が｜救世主《きゅうせいしゅ》だとかんがえた。¦He saw himself as the savior of the world.¦¦2953¦¦Zifre¦救世主",
-    "0qcie\t1¦その｜暑《あつ》さで｜気絶《きぜつ》して、｜気《き》がついたら｜救命《きゅうめい》いかだの｜中《うち》にいた。¦I fainted from the heat, and when I came to, I was in a life raft.¦1¦4hky¦¦CM¦救命",
-    "0qcji\t1¦｜朽《く》ちない｜物《もの》は｜何《なに》もない。¦There is nothing that does not decay.¦1¦3wqq¦¦shekitten¦朽ちない",
-    "0qcjs\t1¦いつか｜私《わたし》は｜一人《ひとり》｜寂《さび》しく｜朽《く》ち｜果《は》てているだろう。¦Some day they will find me lying in neglect and decay.¦1¦4woq¦¦AlanF_US¦朽ち果てている",
-    "0qck2\t1¦｜求人広告《きゅうじんこうこく》には「｜女性《じょせい》を｜求《もと》む」とはっきり｜書《か》かれていた。¦The job advertisement specifically requested females.¦3¦3wqo¦¦fishda¦求む",
-    "0qckc\t1¦｜彼《あれ》は｜我々《われわれ》の｜求《もと》めに｜応《おう》じて｜歌《うた》った。¦He sang at our request.¦1¦2c77¦¦¦求め",
-    "0qckm\t1¦｜私《わたし》たちは｜平和《へいわ》を｜求《もと》めている。¦We are longing for peace.¦3¦3jfs¦¦CK¦求めている\t1¦｜救助《きゅうじょ》された｜難民《なんみん》は｜自由《じゆう》を｜求《もと》めていた。¦The rescued refugees were longing for freedom.¦1¦3wqv¦¦mccarras¦求めていた\t2¦｜彼《あれ》は｜私《わたし》に｜助《たす》けを｜求《もと》めてきた。¦He asked me for help.¦3¦29tl¦¦CK¦求めて\t2¦いつでも｜彼《あ》の｜援助《えんじょ》を｜求《もと》められます。¦You can always ask for his help.¦1¦4wk3¦¦CK¦求められます\t3¦｜彼《あれ》は｜職《しょく》を｜求《もと》めて｜東京《とうきょう》へやって｜来《き》た。¦He came to Tokyo in search of employment.¦3¦287f¦¦CK¦求めて\t3¦｜彼《あれ》はより｜良《よ》い｜生《なま》｜活《かつ》を｜求《もと》めてブラジルに｜移住《いじゅう》した。¦He immigrated to Brazil in search of a better life.¦2¦2d5o¦¦CK¦求めて\t3¦｜以下《いか》の｜方程式《ほうていしき》の｜解《かい》を｜求《もと》めよ。¦Find the solution to the following equation.¦3¦6xo21¦bunbuku¦JimBreen¦求め",
   ],
 };

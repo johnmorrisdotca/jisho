@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 87 of 144, from "0xcws". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 87 of 144, from "0xchs". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,18 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0xchs\t1¦｜火《ひ》がめらめらと｜隣家《りんか》に｜燃《も》え｜移《うつ》っていった。¦The fire spread and licked the neighboring house.¦1¦403x¦¦Stalwartlover¦隣家",
+    "0xci2\t1¦よい｜垣根《かきね》はよい｜隣人《りんじん》をつくる。¦Good fences make good neighbors.¦1¦44ur¦¦CK¦隣人",
+    "0xcim\t1¦その｜二《ふた》つの｜村《むら》は｜隣接《りんせつ》している。¦The two villages adjoin each other.¦1¦4g0p¦¦¦隣接",
+    "0xcka\t1¦２粒の涙が彼女のほおを流れ落ちた。¦Two tears fell down her cheeks.¦2¦51mk¦e4zh1nmcz¦CK¦涙",
+    "0xckk\t1¦うちの｜子供達《こどもたち》は｜早《はや》く｜起《お》きるようにと｜涙《なみだ》ぐましい｜努力《どりょく》をしている。¦My children make pathetically sincere efforts to get up early.¦2¦4w2s¦small_snow¦¦涙ぐましい",
+    "0xcle\t1¦回収対象のソニー製充電池は累計で７６５万９０００個となった。¦The amount of Sony rechargeable batteries supposed to be collected totalled 7,659,000 units.¦1¦1mux¦mookeee¦¦累計",
+    "0xcn2\t1¦アメリカ｜人《じん》が｜貿易赤字《ぼうえきあかじ》を｜累積《るいせき》したのは、｜限度《げんど》を｜超《こ》えたぜいたくをしたからですよ。¦Americans accumulated their trade deficits by living far beyond their means.¦1¦4xkd¦¦¦累積",
+    "0xcnc\t1¦あの｜店《みせ》には｜織物《おりもの》｜類《るい》が｜置《お》いてありますか。¦Does that store keep textile goods?¦1¦4xvx¦nwt¦nwt¦類",
+    "0xcp0\t1¦この｜構成《こうせい》において、｜三角形《さんかくけい》の｜代《か》わりに｜長方形《ちょうほうけい》を｜用《もち》いても｜類似《るいじ》の｜困難《こんなん》が｜生《しょう》ずる。¦We encounter similar difficulties when we substitute rectangles for triangles in this configuration.¦2¦4ra4¦¦¦類似",
+    "0xcpa\t1¦なぜ｜類人猿《るいじんえん》は｜他《た》の｜動物《どうぶつ》よりも｜進化《しんか》したのか。¦Why have the apes evolved more than other animals?¦1¦49n8¦mookeee¦CM¦類人猿",
+    "0xcqe\t1¦｜国際貿易《こくさいぼうえき》｜禁止令《きんしれい》がその｜国《くに》の｜経済《けいざい》にとって｜最後《さいご》の｜頼《たの》みでしょう。¦An international trade ban could be the last straw for that country's economy.¦2¦3piu¦¦CM¦令",
+    "0xcwi\t1¦たとえば、｜標本《ひょうほん》はいくつですか。¦How many samples, for example?¦1¦4d1s¦¦rul¦たとえば",
     "0xcws\t1¦｜例《れい》によって｜彼《あれ》は｜新聞《しんぶん》を｜読《よ》みながら｜食事《しょくじ》をしている。¦As is his way, he eats reading a newspaper.¦3¦1ny0¦mookeee¦¦例によって",
     "0xcxm\t1¦この｜規則《きそく》には｜例外《れいがい》は｜認《みと》められない。¦This rule allows no exception.¦2¦4rmw¦¦rene1596¦例外",
     "0xcy6\t1¦これは｜例外的《れいがいてき》な｜場合《ばあい》だ。¦This is an exceptional case.¦¦4o9c¦¦CK¦例外的な",
@@ -211,14 +223,5 @@ export const PIECE: WordsPiece = {
     "0xhci\t1¦｜和食《わしょく》を｜食《た》べたことはありますか。¦Have you ever eaten Japanese food?¦3¦1nkr¦mookeee¦CK¦和食",
     "0xhe6\t1¦｜確《たし》かに｜彼女《かのじょ》は｜和《わ》｜服《ふく》を｜着《き》ると｜美《うつく》しく｜見《み》える。¦She certainly looks beautiful in a Japanese kimono.¦3¦3yej¦bunbuku¦CS¦和服",
     "0xhfk\t1¦イスラエル｜側《そば》の｜心変《こころが》わりのために、｜中東《ちゅうとう》｜和平交渉《わへいこうしょう》の｜構成国《こうせいこく》に｜変更《へんこう》があるかもしれません。¦The makeup of Mideast peace talks may change due to a change of heart on the part of Israel.¦1¦4wsi¦¦papabear¦和平交渉",
-    "0xhfu\t1¦ついに、インディアンの｜二人《ふたり》の｜酋長《しゅうちょう》は｜和睦《わぼく》することに｜決《き》めた。¦At long last, the two chiefs of the Indian tribes have decided to make peace.¦¦4ce4¦¦CK¦和睦",
-    "0xhge\t1¦｜私《わたし》の｜知《し》る｜限《かぎ》りではその｜小説《しょうせつ》は｜和訳《わやく》されていない。¦As far as I know, the novel is not translated into Japanese.¦1¦3hsz¦¦CK¦和訳",
-    "0xhgy\t1¦｜彼《あれ》は｜和洋折衷《わようせっちゅう》の｜家《いえ》に｜住《す》んでいる。¦He lives in a house built in a semi foreign style.¦1¦24a2¦¦¦和洋折衷",
-    "0xhh8\t1¦｜私《わたし》はそんな｜失礼《しつれい》な｜話《はな》しかけられ｜方《ほう》に｜慣《な》れていない。¦I'm not used to being talked to in such a rude manner.¦3¦3f6l¦¦CK¦話しかけられ\t2¦｜男《おとこ》が｜近《ちか》づいて｜私《わたし》に｜話《はな》しかけた。¦A man came up and spoke to me.¦4¦2q7i¦¦CK¦話しかけた",
-    "0xhhi\t1¦ここでその｜問題《もんだい》について｜話《はな》し｜合《あ》いましょう。¦Let's discuss the matter here.¦3¦4tcm¦¦CK¦話し合い",
-    "0xhi2\t1¦｜彼《あれ》はまあなんて｜雄弁《ゆうべん》な｜話《はな》し｜手《て》なんでしょう。¦What an eloquent speaker he is!¦1¦2dke¦¦sundown¦話し手な",
-    "0xhic\t1¦｜私《わたし》は｜彼女《かのじょ》の｜話《はな》し｜方《かた》は｜好《す》きではない。¦I don't like the way she speaks.¦3¦3a8a¦¦CK¦話し方",
-    "0xhim\t1¦ジョンはお｜客《きゃく》さんと｜電話《でんわ》で｜話《はな》した。¦John talked with his customer on the phone.¦3¦4m7t¦arnab¦Swift¦話した\t2¦あなたの｜趣味《しゅみ》について｜話《はな》してください。¦Please tell me about your hobbies.¦1¦4zxz¦bunbuku¦CK¦話して\t3¦｜英語《えいご》はカナダで｜話《はな》されている。¦English is spoken in Canada.¦4¦41y5¦¦CK¦話されている",
-    "0xhiw\t1¦もう６ヶ月たてば流暢にドイツ語が話せるようになるでしょう。¦In another six months you will be able to speak German fluently.¦1¦4636¦¦CK¦話せる\t2¦｜彼女《かのじょ》は｜話《はな》せる｜人《じん》だ。¦She has good sense.¦3¦1a9q1¦JimBreen¦JimBreen¦話せる",
   ],
 };

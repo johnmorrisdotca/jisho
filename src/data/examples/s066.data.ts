@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 67 of 144, from "0ut0q". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 67 of 144, from "0uszw". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,9 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0uszw\t1¦その｜女性《じょせい》は｜非常《ひじょう》に｜協力的《きょうりょくてき》である。¦The women are very supportive.¦¦4hiv¦¦CK¦的",
+    "0ut06\t1¦｜私《わたし》は｜矢《や》を｜的《てき》に｜当《あ》てた。¦I hit the mark with the arrow.¦¦52mv¦mookeee¦CM¦的",
+    "0ut0g\t1¦｜禁酒法《きんしゅほう》のしかれていた｜時代《じだい》に、｜酒類《しゅるい》｜密輸入《みつゆにゅう》の｜悪《あく》どい｜商売《しょうばい》を｜腕《うで》ずくで｜自分《じぶん》の｜支配下《しはいか》におくために、てき｜屋《や》たちは、おたがいに｜殺《ころ》しあっていた。¦During prohibition days, racketeers used to rub each other out to get control of the rum-running racket.¦¦3uum¦¦papabear¦てき屋",
     "0ut0q\t1¦｜間髪《かんぱつ》を｜入《い》れず、｜迅速《じんそく》かつ｜的確《てきかく》な｜応対《おうたい》、｜畏《おそ》れ｜入《い》ります。¦Such an accurate, lightning-quick reply. What can I say?¦¦3xqs¦¦Zifre¦的確な",
     "0ut10\t2¦｜彼《あ》の｜予言《よげん》は、ひょっとしたら｜的中《てきちゅう》するかもしれない。¦His prediction might come true.¦¦2hg8¦¦CK¦的中",
     "0ut1a\t1¦ゲームの｜開始《かいし》には｜笛《ふえ》が｜吹《ふ》かれる。¦A whistle is blown at the start of a game.¦1¦4ttv¦¦¦笛",
@@ -207,8 +210,5 @@ export const PIECE: WordsPiece = {
     "0uy6u\t1¦とにかく、｜試験《しけん》が｜終《お》わってほっとしたよ。¦Anyhow, I'm relieved the test is over.¦4¦4aoo¦bunbuku¦CM¦とにかく",
     "0uy7e\t1¦ともかく｜合格《ごうかく》してうれしい。¦I'm glad to have passed at all.¦3¦4a5a¦¦CM¦ともかく\t2¦｜顔《かお》はともかく、｜気立《きだ》てはとてもいい｜子《こ》だよ。¦Looks aside, she is very good-natured.¦3¦3xp1¦small_snow¦ChurroC¦ともかく",
     "0uy7y\t1¦ともあれ｜彼《あれ》は｜試験《しけん》に｜受《う》かった。¦After all, he succeeded in passing the exam.¦3¦4a5g¦¦Dejo¦ともあれ",
-    "0uy88\t1¦｜私《わたし》｜個人《こじん》の｜生活《せいかつ》についてとやかくうるさくいうのはやめてください。¦Get off my back about my personal life!¦2¦39cm¦bunbuku¦¦とやかく",
-    "0uy8i\t1¦あの｜人《ひと》にはとかくのうわさがあった。¦There were some unsavory rumors about him.¦5¦4y2e¦¦CH¦とかくの\t2¦｜運動《うんどう》が｜健康《けんこう》の｜鍵《かぎ》であるのを｜私《わたし》たちはとかく｜忘《わす》れがちだ。¦We tend to forget that exercise is a key to good health.¦¦425k¦¦CK¦とかく",
-    "0uyag\t1¦なんだかめまいと｜吐《は》き｜気《け》がします。¦I feel sort of dizzy and I feel like throwing up.¦1¦49ii¦bunbuku¦CK¦吐き気",
   ],
 };

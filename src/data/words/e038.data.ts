@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 39 of 219, from "0ujh". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 39 of 219, from "0uj8". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,36 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0uj88\t中心的\tちゅうしんてき\tadj-na¦¦central¦mainline",
+    "0uj8i\t中心的役割\tちゅうしんてきやくわり\tn¦¦central role",
+    "0uj8s\t中心点\tちゅうしんてん\tn¦¦center¦centre",
+    "0uj92\t中震\tちゅうしん\tn¦¦moderate earthquake",
+    "0uj9c\t中水道\tちゅうすいどう\tn¦¦gray-water system¦grey-water system¦recycled waste-water",
+    "0uj9m\t中数\tちゅうすう\tn¦math¦mean¦average\tn¦abbr¦middle-school arithmetic¦from 中学, 算数",
+    "0uj9w\t中枢\tちゅうすう\tn¦¦centre¦center¦pivot¦mainstay¦nucleus¦hub¦backbone¦central figure¦pillar¦key person\tn¦¦central nervous system¦中枢神経系",
+    "0uja6\t中枢神経系統\tちゅうすうしんけいけいとう\tn¦anat¦central nervous system¦中枢神経系",
+    "0ujag\t中枢性\tちゅうすうせい\tn¦¦central (nervous system)",
+    "0ujaq\t中世\tちゅうせい\tn¦hist¦Middle Ages (in Japan esp. the Kamakura and Muromachi periods)¦medieval times¦mediaeval times",
+    "0ujb0\t中世史\tちゅうせいし\tn¦¦medieval history¦中世",
+    "0ujba\t中性\tちゅうせい\tn,adj-no¦¦neutrality (incl. chemical, electrical, etc.)¦indifference\tn,adj-no¦¦sexlessness¦androgyny¦androgyne¦neuter\tn,adj-no¦gramm¦neuter gender",
+    "0ujbk\t中性子\tちゅうせいし\tn¦physics¦neutron",
+    "0ujbu\t中性洗剤\tちゅうせいせんざい\tn¦¦neutral detergent",
+    "0ujc4\t中正\tちゅうせい\tadj-na,n¦¦impartiality¦fairness",
+    "0ujco\t中西部\tちゅうせいぶ\tn¦¦middle west\tn¦¦Midwest (United States)",
+    "0ujcy\t中積み\tなかづみ\tn¦¦loading in the middle",
+    "0ujd8\t中折り\tなかおり\tn¦¦folded in the middle",
+    "0ujdi\t中折れ\tなかおれ\tn¦abbr¦felt hat¦fedora¦trilby¦中折れ帽子\tn,vs¦¦stopping in the middle¦being interrupted in the middle¦being broken in the middle\tn,vs¦sl¦prematurely going soft during intercourse",
+    "0ujds\t中折れ帽|中折帽\tなかおれぼう\tn¦¦felt hat¦fedora¦trilby",
+    "0uje2\t中折れ帽子|中折帽子\tなかおれぼうし\tn¦¦felt hat¦fedora¦trilby",
+    "0ujec\t中絶\tちゅうぜつ\tn,vs,vt¦¦abortion¦妊娠中絶\tn,vs,vt,vi¦¦discontinuance¦stoppage¦suspension¦interruption",
+    "0ujem\t中前\tちゅうぜん\tn¦¦front of center field¦front of centre field",
+    "0ujf6\t中ソ|中蘇\tちゅうソ\tn¦hist¦China and the Soviet Union¦Soviet-Chinese¦Sino-Soviet",
+    "0ujfg\t中速\tちゅうそく\tn¦¦intermediate gear",
+    "0ujfq\t中尊\tちゅうぞん|ちゅうそん\tn¦Buddh¦central image (e.g. in a Buddha triad)¦三尊・さんぞん・1|脇侍・きょうじ",
+    "0ujg0\t中退\tちゅうたい\tn,vs,vi¦abbr¦leaving school during a term¦中途退学",
+    "0ujga\t中隊\tちゅうたい\tn¦¦company¦battery¦troop",
+    "0ujgk\t中断\tちゅうだん\tn,vs,vt,vi¦¦interruption¦suspension¦break",
+    "0ujgu\t中段\tちゅうだん\tn¦¦half-way up a slope or stairway¦landing\tn¦print¦center of three (horizontal) columns\tn¦MA¦middle guard position (of a sword in kendo, etc.)",
     "0ujh4\t中だるみ|中弛み\tなかだるみ|なかだゆみ~~中弛み\tn,vs,vi¦¦slump¦lull\tn,vs,vi¦¦becoming slack (of a rope, etc.)",
     "0ujhe\t中柱\tなかばしら\tn¦¦middle pillar",
     "0ujho\t中長期\tちゅうちょうき\tn,adj-no¦¦mid-to-long term¦medium and long term",
@@ -871,23 +901,5 @@ export const PIECE: WordsPiece = {
     "0uqdq\t壺|壷|壼~sK\tつぼ|ツボ~sk\tn¦¦pot¦jar¦vase\tn¦¦dice cup\tn¦¦depression¦basin (e.g. of a waterfall)¦滝壺\tn¦uk¦aim¦what one wants¦the mark¦思うつぼ・1\tn¦uk¦key point (of a conversation, etc.)¦essence\tn¦uk¦acupuncture point¦moxibustion point¦pressure point\tn¦uk,col¦point that appeals to one's sense of humor¦something one finds amusing¦ツボに入る・2\tn¦uk¦position on the fingerboard (of a shamisen, koto, etc.)¦oft. written as ツボ\tn¦arch¦target (when aiming an arrow)",
     "0uqe0\t爪\tつめ\tn¦¦nail (e.g. fingernail, toenail)¦claw¦talon¦hoof\tn¦¦plectrum¦pick\tn¦¦hook¦clasp",
     "0uqea\t爪で拾って箕で零す\tつめでひろってみでこぼす\texp¦id¦to squander what has been saved up laboriously¦to blow one's hard-earned fortune¦to spill through a winnowing basket what one has collected with their fingernails",
-    "0uqek\t爪痕|爪あと|爪跡|つめ跡~sK|ツメ跡~sK\tつめあと\tn¦¦fingernail mark¦scratch\tn¦¦scars (e.g. of war)¦traces (of damage)¦ravages¦after-effects",
-    "0uqeu\tつま先|爪先\tつまさき\tn¦¦toes¦tips of the toes¦toe of a shoe, sock, etc.",
-    "0uqf4\tつま先で歩く|爪先で歩く\tつまさきであるく\texp,v5k¦¦to tiptoe",
-    "0uqfe\t爪弾き|つま弾き~sK|爪弾~sK|爪はじき~sK\tつまはじき\tn,vs,vt¦uk¦shunning¦ostracism¦exclusion¦rejection¦snub¦leaving (someone) out¦giving (someone) the cold shoulder\tn,vs,vt¦uk¦flick (of one's finger; to express disgust, scorn, disapproval, etc.)",
-    "0uqfo\t爪楊枝|妻楊枝~rK|つま楊枝~sK|爪ようじ~sK\tつまようじ\tn¦¦toothpick",
-    "0uqfy\t爪立ち\tつまだち\tn,vs¦¦standing on tiptoes",
-    "0uqg8\t吊し\tつるし\tn¦¦ready-made clothing¦off-the-rack clothing¦second-hand clothes¦hand-me-down\tn¦¦hanging¦吊るす¦orig. meaning",
-    "0uqgi\t吊るし上げる|つるし上げる|吊し上げる\tつるしあげる\tv1,vt¦¦to hoist¦to lift up\tv1,vt¦¦to (crowd around and) rebuke¦to (gang up and) criticize¦to reproach severely¦to subject to a kangaroo court¦to torment with hostile questions",
-    "0uqgs\t吊るす|吊す\tつるす\tv5s,vt¦¦to hang¦to hang up",
-    "0uqhc\t吊り出す|つり出す\tつりだす\tv5s,vt¦¦to hold (the opponent) in the arms and carry him out of the ring",
-    "0uqhm\t吊り上げる|つり上げる|吊上げる~sK|釣り上げる~sK\tつりあげる\tv1,vt¦¦to lift (with a crane, ropes, etc.)¦to raise¦to hoist\tv1,vt¦¦to manipulate (a price) upward¦to (artificially) raise¦to push up¦to inflate¦to jack up",
-    "0uqhw\t吊る\tつる\tv5r,vt¦¦to hang¦to suspend¦to sling¦to wear (e.g. a sword)¦to put up (e.g. a shelf)\tv5r,vt¦¦to hang oneself¦首を吊る¦in the form 首を吊る\tv5r,vt¦sumo¦to hoist an opponent off of his feet by his loincloth\tv5r,vi¦uk¦to turn upwards (as if being pulled)¦to be slanted (of eyes)\tv5r,vi¦uk¦to pucker (e.g. of a seam)¦to be pulled tight",
-    "0uqi6\t吊るし上げ|つるし上げ|吊上げ|吊し上げ\tつるしあげ\tn¦¦hung up¦hoist\tn¦¦denounced¦severely criticised¦kangaroo court",
-    "0uqig\t釣り|釣\tつり\tn¦¦fishing¦angling\tn¦uk,abbr¦change (for a purchase)¦釣り銭\tn¦internet¦clickbaiting\tn¦net-sl¦trolling¦bait¦making deliberately inflammatory posts online",
-    "0uqiq\t釣り合う|つり合う|釣合う\tつりあう\tv5u,vi¦¦to balance¦to be in harmony¦to be in equilibrium\tv5u,vi¦¦to suit¦to go well together¦to be a good match",
-    "0uqj0\t釣り込む|釣込む\tつりこむ\tv5m,vt¦¦to take in¦to attract",
-    "0uqja\t釣り出す|つり出す|釣出す~sK\tつりだす\tv5s,vt¦¦to lure out¦to entice out",
-    "0uqjk\t釣り書き|釣書き|釣り書|釣書|吊り書き|吊書き|吊書\tつりがき|つりしょ~~釣り書,釣書,吊書\tn¦¦family chart and personal history¦esp. for お見合い",
   ],
 };

@@ -764,6 +764,7 @@ export const PIECE: WordsPiece = {
     "こんにゃくばん\tこんにゃく版|蒟蒻版\t#1orb3\tprint¦hectograph¦gelatin duplicator (gelatine)¦jellygraph",
     "こんにゃくぼん\t蒟蒻本\t#1oo7a\t¦Japanese book size (approx. 12.5cm by 17.5cm)\t¦late Edo-period novelette depicting life in the red-light district",
     "こんにゃくもんどう\tこんにゃく問答|蒟蒻問答\t#17kwu\tid,yoji¦irrelevant and incoherent dialogue¦meaningless parlor debate¦dialogue at cross purposes",
+    "こんにゅう\t混入\tsC~n22#rnri\t¦mixing¦blending¦adding",
     "こんにゅうぶつ\t混入物\t#zs3y\t¦object which is mixed in",
     "こんねん\t今年\tC~ni01#xugq\t¦this year",
     "こんねんど\t今年度\tC~n03#zj0g\t¦this year¦this fiscal year¦this school year",
@@ -940,6 +941,5 @@ export const PIECE: WordsPiece = {
     "コンピュータか\tコンピュータ化\ts#mkxk\t¦computerization¦computerisation",
     "コンピュータかがく\tコンピュータ科学\t#1ouzg\t¦computer science",
     "コンピュータかがくしゃ\tコンピュータ科学者\t#1pe3d\t¦computer scientist",
-    "コンピュータきりかえき\tコンピュータ切り替え器\t#1d92a\tcomp¦computer switch",
   ],
 };

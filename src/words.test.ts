@@ -132,14 +132,14 @@ describe("what is not for children", () => {
   });
 
   it("is cut by the gloss where JMdict marks nothing: a sense that names sex or the sex trade goes, the others stay", async () => {
-    const texts = ["セックス", "売春", "ポルノ", "レイプ", "せがれ", "菜種", "社交", "抹香鯨", "主婦"];
+    const texts = ["売春", "ポルノ", "レイプ", "せがれ", "菜種", "社交", "抹香鯨", "主婦"];
     const words = await loadWords(texts);
     const adults = await loadWords(texts, { mode: "unfiltered" });
     const said = (from: typeof words, text: string) =>
       wordsOf(from, text)
         .map((one) => one.meaning)
         .join(" | ");
-    for (const text of ["セックス", "売春", "ポルノ", "レイプ"]) {
+    for (const text of ["売春", "ポルノ", "レイプ"]) {
       expect(wordsOf(words, text), text).toEqual([]);
       expect(wordsOf(adults, text).length, text).toBeGreaterThan(0);
     }
@@ -156,6 +156,28 @@ describe("what is not for children", () => {
       ["主婦", "housewife"],
     ] as const)
       expect(said(words, text), text).toContain(kept);
+  });
+
+  it("keeps the ordinary words that only mention sex, a building or a mixture, and cuts the sense that is the act", async () => {
+    const texts = ["性別", "異性", "同性", "共学", "建立", "混ぜ物", "挿入", "愛人", "性教育", "セックス"];
+    const words = await loadWords(texts);
+    const said = (text: string) =>
+      wordsOf(words, text)
+        .map((one) => one.meaning)
+        .join(" | ");
+    for (const [text, kept] of [
+      ["性別", "gender"],
+      ["異性", "opposite sex"],
+      ["同性", "same sex"],
+      ["共学", "coeducation"],
+      ["建立", "erection"],
+      ["混ぜ物", "adulteration"],
+      ["挿入", "insertion"],
+      ["愛人", "lover"],
+      ["性教育", "sex education"],
+    ] as const)
+      expect(said(text), text).toContain(kept);
+    expect(said("セックス")).not.toMatch(/intercourse/);
   });
 
   it("is cut from a written form's answer as well: 吐かす is a form of ぬかす only for the sense that is not for children", async () => {

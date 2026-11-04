@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 147 of 316, from "じんぎい". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 147 of 316, from "じんぎ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "じんぎ\t仁義\tC~mt27#tcue\t¦humanity and justice (esp. in Confucianism)¦virtue\t¦duty\t¦formal greeting (between yakuza, street vendors, gamblers, etc.)\t¦(gang's) moral code",
+    "じんぎ\t神器\t~m35#zdb6\t¦sacred treasure¦the three sacred treasures (sword, jewel, mirror)\t¦implement used in religious ceremonies",
+    "じんぎ\t神祇\t#11u0i\t¦gods of heaven and earth",
+    "じんぎ\t辞儀|辞宜|時儀\ts#115r6\t¦bow¦bowing (and greeting)\tobs¦declining¦refusing",
     "じんぎいん\t神祇院\t#1c4nk\thist¦Institute of Divinities (1940-1946)",
     "じんぎかん\t神祇官\t#11u0s\tobs¦Department of Divinities (1868-1871)\thist¦Department of Worship (under the ritsuryō system)",
     "じんぎしょう\t神祇省\t#1c4nu\tobs¦Ministry of Divinities (1871-1872)",
@@ -806,12 +810,5 @@ export const PIECE: WordsPiece = {
     "ジーンと\t\t#16j6i\ton-mim¦(being moved) deeply¦(feeling) profoundly¦(going) straight to one's heart\ton-mim¦going numb¦stinging (pain)",
     "じーんと\t\t#16j6i\ton-mim¦(being moved) deeply¦(feeling) profoundly¦(going) straight to one's heart\ton-mim¦going numb¦stinging (pain)",
     "ジーンとくる\tジーンと来る\tkU#16j5o\tuk¦to be deeply moved¦to touch one's heart¦to be deeply moving\tuk¦to go numb",
-    "ジーンバンク\t\t#mt3g\t¦gene bank",
-    "ジーンプール\t\t#1mgyw\tbiol¦gene pool",
-    "ジーン・エンジニアリング\t\t#mt2m\t¦gene engineering¦genetic engineering",
-    "ジーン・バンク\t\t#mt3g\t¦gene bank",
-    "ジーン・プール\t\t#1mgyw\tbiol¦gene pool",
-    "ジー・アイ\tＧＩ\t#mszu\tcol¦GI (soldier in the US Army)¦G.I.",
-    "ジー・エイチ・キュー\tＧＨＱ\t#1jxrk\thist¦General Headquarters (office of the Supreme Commander of the Allied Powers; 1945-1952)¦GHQ",
   ],
 };

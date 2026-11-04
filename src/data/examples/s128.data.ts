@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 129 of 144, from "19jn". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 129 of 144, from "19iaw". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,26 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "19iaw\t1¦｜僕《ぼく》ってあがり｜性《せい》だから、｜人《じん》の｜前《さき》で｜話《はな》すの｜苦手《にがて》なんだよ。¦I'm the type who gets nervous in front of people, so I'm bad at speech making.¦1¦1rii¦small_snow¦CK¦あがり性",
+    "19ib6\t1¦ハムレットをもう１回読めば、私は３回読んだことになります。¦I will have read Hamlet three times if I read it again.¦3¦48pd¦¦CM¦もう１回",
+    "19icu\t1¦｜仕事《しごと》をそつなくこなすことを｜会社《かいしゃ》は｜求《もと》めていることはわかります。¦I know companies are looking for work carried out flawlessly.¦3¦1lbu¦fcbond¦fcbond¦そつなく",
+    "19iei\t1¦｜私《わたし》の｜家《いえ》の｜前《さき》にサクラの｜木《き》がある。¦There is a cherry tree in front of my house.¦4¦3ijo¦¦CK¦サクラの木",
+    "19if2\t1¦｜歩《ある》こうとするとここがズキンとします。¦When I try to walk, I get an awful pain here.¦4¦1s74¦¦CK¦ズキンと",
+    "19ifc\t1¦｜白《しろ》タクには｜乗《の》らないように。¦Keep away from the unlicensed taxis.¦3¦2lon¦¦¦白タク",
+    "19ifm\t1¦｜私《わたし》はうかつにもあなたのアドレスを｜消《け》してしまって、ニュージーランドのラッセルに｜教《おし》えてもらうハメになった。¦I carelessly deleted your e-mail address and had to ask Russell in New Zealand for it.¦3¦3gh4¦¦CN¦ハメになった",
+    "19ifw\t1¦あいつは｜口《くち》ばかりで、｜誠意《せいい》がないね。｜巧言令色少《こうげんれいしょくすく》なし｜仁《じん》とはよくいったもんだ。¦They say fine words are no virtue if they're insincere and that's him in a nutshell. He's all talk but doesn't mean a word of it.¦1¦5116¦¦¦巧言令色少なし仁",
+    "19ilq\t1¦こうやって｜私《わたし》はその｜機械《きかい》を｜作《つく》った。¦This is how I made the machine.¦2¦4tlr¦¦CM¦こうやって",
+    "19ima\t1¦「あっそ」と｜流《なが》すのもよし、｜本気《ほんき》にするのもよし。¦You can let it slide with a \"oh?\" or you can take it seriously.¦3¦1lmg¦fcbond¦fcbond¦あっそ",
+    "19imu\t1¦｜建築《けんちく》のシンメトリーで、エメットは｜美的《びてき》｜統一性《とういつせい》をもった｜幾何学的《きかがくてき》な｜対称性《たいしょうせい》を｜意味《いみ》している。¦By architectural symmetry, Emmet means geometric symmetry combined with aesthetic uniformity.¦¦3rc5¦¦¦幾何学的な",
+    "19ino\t1¦ある｜種《しゅ》の｜行動《こうどう》はその｜少年《しょうねん》に｜特徴的《とくちょうてき》だ。¦That kind of behavior is characteristic of the boy.¦¦4xdf¦¦Luornu¦特徴的",
+    "19iny\t1¦｜彼《あれ》ほどの｜確立《かくりつ》した｜科学者《かがくしゃ》がそのような｜初歩的《しょほてき》な｜誤《あやま》りを｜犯《おか》すとは｜実際《じっさい》｜上《うえ》｜考《かんが》えられないことである。¦It is practically unthinkable that a scientist of his stature would have made such an elementary mistake.¦¦248p¦¦papabear¦初歩的な",
+    "19io8\t1¦その｜火山《かざん》は｜周期的《しゅうきてき》に｜噴火《ふんか》を｜繰《く》り｜返《かえ》す。¦The volcano erupts at regular intervals.¦¦4jjp¦¦CK¦周期的に",
+    "19ioi\t1¦｜彼《あれ》は｜財政的《ざいせいてき》に｜困《こま》っている。¦He is badly situated financially.¦¦2afp¦¦¦財政的に",
+    "19ivg\t1¦そのため、｜要介護認定《ようかいごにんてい》の｜結果《けっか》は｜介護《かいご》サービスの｜量《りょう》と｜関係《かんけい》している｜必要《ひつよう》があります。¦For that reason the outcome of the primary nursing care requirement authorization has to relate to the amount of nursing care required.¦1¦1ldt¦fcbond¦fcbond¦要介護認定",
+    "19j7o\t1¦｜下痢止《げりど》めです。¦Here's some medicine for diarrhea.¦1¦4183¦bunbuku¦darinmex¦止め",
+    "19j7y\t1¦｜彼《あれ》はちょうど｜今《いま》、｜帰《かえ》ってきたところだ。¦He came home just now.¦3¦2edt¦¦¦ちょうど今",
+    "19ji8\t1¦｜彼《あ》の｜音楽《おんがく》が｜全国《ぜんこく》で｜大流行《だいりゅうこう》している。¦His music is sweeping the whole country.¦3¦2j2g¦¦CK¦大流行",
+    "19jme\t1¦｜階層《かいそう》｜問題《もんだい》に｜対《たい》する、｜消費社会《しょうひしゃかい》｜論《ろん》の｜著《ちょ》である。¦It is a literary work confronting the class problem of a consumer society.¦2¦1mut¦¦Bing05¦消費社会",
     "19jni\t1¦｜彼《あれ》は｜何《ど》の｜造作《ぞうさ》もなくその｜問題《もんだい》を｜解《と》くことができた。¦He found no difficulty in solving the problem.¦2¦2cev¦¦CK¦造作もなく",
     "19jo2\t1¦こうして｜武《ぶ》｜田《た》の｜悲鳴《ひめい》で｜通《とお》りすがりの｜船《ふね》に｜気付《きづ》いてもらえ、｜事《こと》なきをえました。¦In this way a passing boat noticed them, thanks to Takeda's scream, and they survived without incident.¦2¦1n8k¦mookeee¦¦事なきをえました",
     "19jqa\t1¦｜気色悪《きしょくわる》い｜奴《やつ》だ。¦He gives me the creeps.¦1¦3xcj¦mookeee¦CK¦気色悪い",
@@ -199,22 +219,5 @@ export const PIECE: WordsPiece = {
     "19ssy\t1¦これらのティーカップは｜対《つい》になっている。¦These teacups make a pair.¦3¦4o6w¦¦CM¦ティーカップ",
     "19st8\t1¦貴社の小型コピー機を東京オフィス・エキスポ９７でしりました。¦I learned about your portable copier at the Tokyo-Office '97 Expo.¦1¦3x8i¦¦fishda¦コピー機",
     "19su2\t1¦ディックは｜私《わたし》たちを｜喜《よろこ》んで｜助《たす》けようとする｜様子《ようす》を｜見《み》せた。¦Dick showed a willingness to help us.¦3¦4c8m¦¦CN¦とする\t2¦｜世界《せかい》で、｜鹿《しか》やムースやキジといった｜野性《やせい》｜獣《けもの》を｜狩《か》ることは｜違法《いほう》とする｜国《くに》が｜多《おお》い。¦In many parts of the world it is illegal to shoot wild game such as deer, moose or pheasant.¦1¦32p3¦¦papabear¦とする\t3¦このヒーターはガスを｜燃料《ねんりょう》とする。¦This heater burns gas.¦2¦4sak¦¦CK¦とする\t4¦もしも｜私《わたし》が｜一言《ひとこと》にして｜生命《せいめい》の｜定義《ていぎ》を｜下《おろ》さなければならないとするならば、｜生命《せいめい》とは｜創造《そうぞう》であるということである。¦If I had to define life in a word, it would be: Life is creation.¦1¦45j0¦¦anjin¦とする\t5¦その｜人《ひと》たちは｜明瞭《めいりょう》さをよしとする。¦Those people appreciate clarity.¦1¦4h3g¦¦¦とする\t6¦｜彼女《かのじょ》は｜男性《だんせい》がほれぼれとするような｜着物《きもの》をきていた。¦She was dressed fit to kill.¦3¦1vuw¦¦¦とする\t7¦このチーズはピリッとした｜味《あじ》がする。¦This cheese has a sharp taste.¦4¦4si4¦bunbuku¦CM¦とした",
-    "19sum\t1¦ローマは、｜一日《いちにち》にして｜建設《けんせつ》されたものではない。¦Rome was not built in a day.¦2¦44cf¦¦CK¦にして",
-    "19svg\t1¦つきが｜回《まわ》ってきた。¦Fortune has turned in my favor.¦3¦4cbe¦mookeee¦Swift¦つきが回って",
-    "19sy8\t1¦｜彼女《かのじょ》にとって｜息子《むすこ》の｜成長《せいちょう》は｜何《なに》にも｜勝《まさ》る｜喜《よろこ》びだった。¦Nothing gave her greater pleasure than to watch her son growing up.¦3¦21bn¦¦CK¦何にも勝る",
-    "19t0g\t1¦｜彼《かれ》らはどこからともなく｜突然《とつぜん》｜現《あらわ》れた。¦They suddenly appeared from nowhere.¦3¦23fr¦bunbuku¦CM¦ともなく",
-    "19t74\t1¦｜暗闇《くらやみ》から｜強盗《ごうとう》が｜突如《とつじょ》として｜現《あらわ》れた。¦The robber emerged from the darkness.¦¦43kv¦¦CK¦突如として",
-    "19t7e\t1¦｜火《ひ》ばさみで｜人差《ひとさ》し｜指《ゆび》をやけどした。¦I burned my forefinger on fire tongs.¦3¦4039¦¦Dejo¦火ばさみ",
-    "19t8s\t1¦２つの組は合併されて大人数のクラスになった。¦The two classes were brought together into a larger class.¦1¦51qp¦e4zh1nmcz¦¦大人数",
-    "19t92\t1¦チキンスープがかぜを｜治《なお》すというのは｜本当《ほんとう》ですか。¦Is it true that chicken soup will cure a cold?¦3¦4cmy¦¦CK¦チキンスープ",
-    "19tfq\t1¦ダブルルームをおねがいします。¦I'd like a double room.¦5¦4cwy¦bunbuku¦CK¦ダブルルーム",
-    "19tg0\t1¦｜日記《にっき》をつけるのはよい｜習慣《しゅうかん》です。¦Keeping a diary is a good habit.¦3¦2mto¦bunbuku¦CK¦日記をつける",
-    "19tga\t1¦ここに｜絶《た》え｜間《ま》ない｜痛《いた》みがあります。¦I have a continuous pain here.¦3¦4t5d¦¦¦絶え間ない",
-    "19tgk\t1¦セーフティーボックスに｜預《あず》かってくれないか。¦Would you put this in the safety deposit box?¦2¦4l66¦¦CK¦セーフティーボックス",
-    "19tgu\t1¦｜石《いし》にかじりついても｜成功《せいこう》してみせる。¦I will succeed at any cost.¦1¦31u9¦¦¦石にかじりついても",
-    "19th4\t1¦もう｜私《わたし》は｜大人《おとな》だから、そうは｜考《かんが》えない。¦Now that I'm a grownup, I think otherwise.¦4¦45tz¦¦koosy¦そう\t1¦おまえも｜馬鹿《ばか》なら｜彼《あれ》もそうだ。¦You are stupid, and so is he.¦1¦4vjv¦¦shanghainese¦そう\t2¦「腰は痛む？」「いや、別に」「そう、それは不幸中の幸いね」¦\"Does your back hurt?\" \"No, not really.\" \"Oh, that's something then, isn't it?\"¦2¦1nep¦mookeee¦Zifre¦そう",
-    "19the\t1¦スーパーヒーローたちは、｜私《わたし》たちが｜持《も》っていない｜才能《さいのう》を｜持《も》っていると｜思《おも》いますか。¦Do you think that those superheroes are endowed with talents we don't possess?¦3¦4lxs¦¦Swift¦スーパーヒーロー",
-    "19tjc\t1¦シベリアトラは｜絶滅《ぜつめつ》の｜危機《きき》に｜瀕《ひん》している。¦The Siberian tiger is on the verge of extinction.¦¦4mqb¦KK_kaku_¦AlanF_US¦シベリアトラ",
-    "19tjm\t1¦「実を言うと、俺、高所恐怖症なんだ」「臆病者っ！」¦\"To tell you the truth, I am scared of heights.\" \"You are a coward!\"¦¦3sq¦e4zh1nmcz¦Tesseract42¦実を言うと",
   ],
 };

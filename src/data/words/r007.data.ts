@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 8 of 316, from "あとみず". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 8 of 316, from "あとみ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "あとみがくえんじょしだいがく\t跡見学園女子大学\t#38yv9\torganization¦Atomi University",
+    "あとみじょしだいがく\t跡見女子大学\t#38yvd\torganization¦Atomi Women's University",
     "アトミズム\t\t#1b9mm\t¦atomism",
     "アトミック\t\t#lslu\t¦atomic",
     "アトム\t\tC~g#lsm4\t¦atom",
@@ -941,6 +943,5 @@ export const PIECE: WordsPiece = {
     "アフリカたんいつきげんせつ\tアフリカ単一起源説\t#1lob8\t¦Out-of-Africa theory (positing a recent African origin for modern humans)",
     "アフリカつめがえる\tアフリカ爪蛙\tU#1l1k2\tuk¦African clawed frog (Xenopus laevis)",
     "アフリカツメガエル\t\tU#1l1k2\tuk¦African clawed frog (Xenopus laevis)",
-    "アフリカとんコレラ\tアフリカ豚コレラ\t#1ospo\t¦African swine fever¦AFS",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 36 of 316, from "おうえき". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 36 of 316, from "おうえい". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "おうえい\t応永\t#18tvg\t¦Ōei era (1394.7.5-1428.4.27)",
     "おうえきげんそく\t応益原則\t#1acc0\t¦benefit principle (of taxation)",
     "おうえん\t応援\tsC~ni03#padc\t¦aid¦assistance¦help\t¦cheering¦rooting (for)¦support",
     "おうえん\t黄鉛\t#pbvi\t¦chrome yellow",

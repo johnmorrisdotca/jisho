@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 11 of 219, from "0o3qc". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 11 of 219, from "0o3ps". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0o3ps\t\tポーカー\tn¦cards¦poker",
+    "0o3q2\t\tポーカーフェイス|ポーカーフェース|ポーカー・フェイス|ポーカー・フェース\tn¦¦poker face",
     "0o3qc\t\tポーク\tn¦¦pork",
     "0o3qm\t\tポークカツ|ポーク・カツ\tn¦abbr,food¦pork cutlet¦ポークカツレツ",
     "0o3qw\t\tポークカツレツ|ポーク・カツレツ\tn¦food¦pork cutlet",
@@ -1254,9 +1256,5 @@ export const PIECE: WordsPiece = {
     "0oewa\t\tラスト\tadj-f¦¦last¦final\tn¦¦end¦conclusion¦last one",
     "0oewk\t\tラストスパート|ラスト・スパート\tn¦¦last spurt¦final spurt¦home stretch",
     "0oewu\t\tラストヘビー|ラスト・ヘビー\tn¦¦final effort before the end¦engw~last heavy",
-    "0oex4\t\tラストラップ|ラスト・ラップ\tn¦¦last lap",
-    "0oexo\t\tラズベリー|ラズベリ~sk\tn¦¦raspberry",
-    "0oexy\t\tラダー\tn¦¦rudder",
-    "0oey8\t\tラチチュード|ラティチュード|ラティテュード~sk\tn¦¦latitude",
   ],
 };

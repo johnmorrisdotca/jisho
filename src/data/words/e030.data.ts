@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 31 of 219, from "0sscm". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 31 of 219, from "0ss8q". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,20 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0ss8q\t初頭\tしょとう\tn,adv¦¦beginning (of a century, etc.)",
+    "0ss90\t初日\tしょにち|しょじつ\tn,adv¦¦first day¦opening day",
+    "0ss9a\t初日\tはつひ\tn¦¦New Year's Day sunrise",
+    "0ss9k\t初日の出\tはつひので\texp,n¦¦first sunrise of the year¦sunrise on New Year's Day",
+    "0ss9u\t初乳\tしょにゅう\tn,adj-no¦¦colostrum¦foremilk¦first milk",
+    "0ssa4\t初任給\tしょにんきゅう\tn¦¦initial salary¦starting salary¦entry-level salary",
+    "0ssae\t初版\tしょはん\tn¦¦first edition",
+    "0ssao\t初犯\tしょはん\tn¦¦first offence¦first offense¦再犯\tn¦¦first offender¦first-time offender¦初犯者",
+    "0ssay\t初歩\tしょほ\tn,adj-no¦¦basics¦rudiments¦elements¦ABCs of ...",
+    "0ssb8\t初夢\tはつゆめ\tn¦¦first dream of the New year (believed to foretell one's luck)\tn¦arch¦dream on the night of setsubun¦節分・1",
+    "0ssbi\t初夜\tしょや|そや\tn¦¦bridal night¦first night\tn¦¦first watch of the night",
+    "0ssbs\t初恋|はつ恋\tはつこい\tn¦¦first love¦puppy love",
+    "0ssc2\t初老\tしょろう\tadj-no,n¦¦past middle age¦nearing old age¦near-elderly\tn¦¦age 40¦orig. meaning",
+    "0sscc\t所|処|處~sK\tところ|とこ~~所\tn,adv,suf¦¦place¦spot¦scene¦site¦also pronounced どころ when a suffix\tn,suf¦uk¦address\tn,suf¦uk¦district¦area¦locality\tn,suf¦uk¦one's house\tn,suf¦uk¦point¦aspect¦side¦facet¦いいとこ・1\tn,suf¦uk¦passage (in text)¦part\tn,suf¦uk¦space¦room\tn,suf¦uk¦thing¦matter\tn¦uk¦whereupon¦as a result¦after the plain past form of a verb\tn¦uk¦about to¦on the verge of¦after present form of a verb\tn¦uk¦was just doing¦was in the process of doing¦have just done¦just finished doing¦after past form of a verb\tn¦uk¦approximately¦around¦about¦after a quantity + が",
     "0sscm\t所で\tところで\tconj¦uk¦by the way¦incidentally¦well¦now\tprt,conj¦uk¦even if¦no matter (what, where, how, etc.)¦after the plain past form of a verb",
     "0sscw\t所ではない|処ではない~rK\tどころではない\texp,adj-i¦uk¦not the time for¦not the place for¦far from¦anything but¦... is out of the question¦どころじゃない・1¦indicates no room, ability or appropriateness for doing something\texp,adj-i¦uk¦far more than¦nowhere near just¦well beyond¦easily more than¦... isn't the word for it¦indicates the actual degree far surpasses what is stated",
     "0ssd6\t所以\tゆえん~gikun\tn¦¦reason¦grounds¦circumstances¦ゆえ・1",
@@ -184,7 +198,7 @@ export const PIECE: WordsPiece = {
     "0stq2\t叙情詩|抒情詩\tじょじょうし\tn¦¦lyric (poem)¦lyric poetry",
     "0stqc\t叙説\tじょせつ\tn,vs,vt¦¦explanation¦interpretation",
     "0stqm\t叙任\tじょにん\tn,vs,vt¦¦investiture",
-    "0str6\t女\tおんな\tn,n-pref¦¦woman¦female¦男・1¦less polite than 女性 or 女の人",
+    "0str6\t女\tおんな\tn,n-pref¦¦woman¦female¦男・1¦less polite than 女性 or 女の人\tn¦¦female lover¦girlfriend¦mistress¦(someone's) woman",
     "0strg\t女\tじょ\tn,n-suf¦¦woman¦girl¦daughter\tn,n-suf¦astron¦Chinese \"Girl\" constellation (one of the 28 mansions)¦二十八宿|玄武・げんぶ・2\tn¦abbr,gramm¦feminine noun¦女性名詞",
     "0strq\t女だてらに\tおんなだてらに\tadv¦¦despite being a woman¦woman as she is¦(in a way that is) unbecoming to a woman¦(in a way that is) uncharacteristic of a woman¦in an unladylike way",
     "0stsa\t女の子|女のコ~sK|オンナの子~sK|女のこ~sK\tおんなのこ\texp,n¦¦girl¦daughter¦baby girl¦男の子・1\texp,n¦¦young woman¦男の子・2",
@@ -210,6 +224,7 @@ export const PIECE: WordsPiece = {
     "0stxu\t女子大\tじょしだい\tn¦abbr¦women's college¦women's university¦女子大学",
     "0sty4\t女児\tじょじ\tn¦¦girl¦baby girl¦男児・1\tn¦¦schoolgirl¦girl pupil",
     "0stye\t女囚\tじょしゅう\tn¦¦female prisoner¦female convict",
+    "0styo\t女将\tおかみ~gikun|じょしょう|にょしょう\tn¦¦proprietress (of a traditional Japanese inn, restaurant, or shop)¦landlady¦hostess¦mistress¦female innkeeper",
     "0styy\t女神|陰神~rK|妻神~rK\tめがみ\tn¦¦goddess¦男神",
     "0stz8\t女親\tおんなおや\tn¦¦mother¦female parent",
     "0stzi\t女人\tにょにん|じょじん\tn¦¦woman",
@@ -912,24 +927,5 @@ export const PIECE: WordsPiece = {
     "0szny\t上位\tじょうい\tn,adj-no¦¦superior (in rank)¦top¦ranking\tn¦comp¦higher order (e.g. byte)\tn¦comp¦host computer (of connected device)",
     "0szo8\t上位互換性\tじょういごかんせい\tn¦¦downward compatibility¦backward compatibility¦compatibility with input or components intended for lower tier or older systems, versions, etc.¦下位互換性・1|後方互換性\tn¦¦upward compatibility¦forward compatibility¦compatibility with input or components intended for higher tier or later systems, versions, etc.¦下位互換性・1¦incorrect usage",
     "0szoi\t上位構造\tじょういこうぞう\tn¦¦higher structure",
-    "0szos\t上意\tじょうい\tn¦¦will (esp. of shogun)¦decree¦emperor's wishes",
-    "0szp2\t上院議員\tじょういんぎいん\tn¦¦member of the upper house¦senator",
-    "0szpc\t上臼\tうわうす\tn¦¦upper millstone",
-    "0szpm\t上映\tじょうえい\tn,vs,vt¦¦screening (a movie)¦showing",
-    "0szpw\t上越\tじょうえつ\tn¦¦area on Japan Sea side of Japan, including Niigata",
-    "0szq6\t上演\tじょうえん\tn,vs,vt¦¦performance (of a play, opera, etc.)¦staging¦presentation",
-    "0szqg\t上屋|上家\tうわや\tn¦¦shed¦shelter¦terminal (e.g. cargo, airport, etc.)¦temporary covering of a building being built",
-    "0szqq\t上屋敷\tかみやしき\tn¦hist¦daimyo's main Edo mansion",
-    "0szr0\t上下\tうえした\tn¦¦top and bottom¦up and down¦high and low¦above and below¦upper and lower ends\tadj-no,n¦¦upside-down¦上下になる",
-    "0szra\t上下\tじょうげ\tn¦¦top and bottom¦high and low¦above and below¦upper and lower ends¦up and down\tn,vs,vi¦¦going up and down¦rising and falling¦fluctuating\tn,vs,vi¦¦going and coming back\tn¦¦upper and lower classes¦ruler and ruled¦the government and the people\tn¦¦first and second volumes\tn¦cloth¦top and bottom¦two-piece (outfit)",
-    "0szrk\t上下水道\tじょうげすいどう\tn¦¦water and sewer services",
-    "0szru\t上下線\tじょうげせん\tn¦¦both (railway) tracks¦(both) up and down tracks (lines)",
-    "0szs4\t上下動\tじょうげどう\tn,vs,vi¦¦up-and-down motion¦vertical movement (e.g. in an earthquake)",
-    "0szse\t上荷\tうわに\tn¦¦top cargo¦top of the load",
-    "0szso\t上菓子\tじょうがし\tn¦¦quality cakes",
-    "0szsy\t上回る|上廻る~rK|上まわる~sK\tうわまわる|うわまる~sk\tv5r,vt¦¦to exceed (esp. figures: profits, unemployment rate, etc.)¦to surpass¦to be more than¦to be better than¦下回る",
-    "0szt8\t上海\tシャンハイ\tn¦¦Shanghai (China)",
-    "0szti\t上界\tじょうかい\tn¦¦upper world¦heaven¦superkingdom\tn¦math¦upper bound",
-    "0szts\t上絵\tうわえ\tn¦¦printed figures (on cloth or pottery)",
   ],
 };

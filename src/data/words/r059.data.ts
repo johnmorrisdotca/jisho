@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 60 of 316, from "かんしょく". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 60 of 316, from "かんしょうて". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,15 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "かんしょうてき\t感傷的\tn~m41#102ru\t¦sentimental¦emotional¦maudlin",
+    "かんしょうてき\t干渉的\tn#1mfa2\tphysics¦coherent\t¦interfering¦meddlesome¦intrusive",
+    "かんしょうてき\t観照的\tn#1mglu\t¦contemplative¦meditative¦meditational",
+    "かんしょうでんりょく\t干渉電力\t#1eb7m\tcomp¦interference power",
+    "かんしょうべん\t緩衝弁\t#140zk\t¦cushion valve",
+    "かんしょうほう\t干渉法\t#1kud6\t¦interferometry",
+    "かんしょうりょう\t鑑賞料\t#1pa4n\t¦entrance fee (for a movie, performance, etc.)¦ticket price",
+    "かんしょうりょういき\t緩衝領域\t#1pcht\t¦buffer zone¦buffer area",
+    "かんしょうりょくち\t緩衝緑地\t#1p4z0\t¦green buffer zone¦green belt",
     "かんしょく\t感触\tC~ni12#pziw\t¦feel (of something)¦touch¦texture\t¦feeling¦impression",
     "かんしょく\t間食\tsC~mi34#q1vw\t¦eating between meals¦snacking",
     "かんしょく\t官職\t~m44#pyym\t¦government service¦official position¦civil service",

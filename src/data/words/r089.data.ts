@@ -211,6 +211,7 @@ export const PIECE: WordsPiece = {
     "けんびきょうしゃしん\t顕微鏡写真\t#1jq68\t¦photomicrograph¦microphotograph",
     "けんびょういん\t県病院\t#1atve\t¦prefectural hospital",
     "けんぴ\t健否\t#qxg0\t¦condition of health",
+    "けんぴ\t建碑\ts#qybe\t¦erection of a monument",
     "けんぴ\t県費\t#1l4gs\t¦prefectural expense¦prefectural funding",
     "けんぴ\t犬皮\t#1m098\t¦dog skin¦dog hide¦dog fur",
     "けんぴつ\t健筆\t~m44#qxga\t¦powerful pen¦facile pen",
@@ -360,6 +361,7 @@ export const PIECE: WordsPiece = {
     "けんりじょうと\t権利譲渡\t#1cshc\t¦transfer of rights¦demise¦quitclaim deed",
     "けんりじょうとしょうしょ\t権利譲渡証書\t#192vm\t¦transfer certificate title (lot ownership certificates)¦deed of release",
     "けんりつ\t県立\tC~ni04#qzek\t¦prefectural¦managed by a prefectural government",
+    "けんりつ\t建立\tsC~n23#qyby\t¦erection¦(act of) building (temple, monument, etc.)",
     "けんりついかだいがく\t県立医科大学\t#1atvo\t¦prefectural medical school",
     "けんりついだい\t県立医大\t#1atvy\tabbr¦prefectural medical school",
     "けんりついりょうだいがく\t県立医療大学\t#1atw8\t¦prefectural health sciences university",
@@ -864,6 +866,5 @@ export const PIECE: WordsPiece = {
     "げこくじょう\t下克上|下剋上\t~m44#y506\t¦juniors dominating seniors¦inferiors overthrowing their superiors¦retainer supplanting his lord",
     "ゲコゲコ\t\t#1ph1r\ton-mim¦croaking (of a frog)¦ribbit ribbit",
     "げこげこ\t\t#1ph1r\ton-mim¦croaking (of a frog)¦ribbit ribbit",
-    "げことばけものはない\t下戸と化け物はない\ta#1p18w\tproverb,rare¦everyone drinks at least a little bit",
   ],
 };

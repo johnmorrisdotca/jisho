@@ -10,9 +10,9 @@ import type { EntryManifest } from "../../words.types.ts";
  */
 export const EXTRA_EXAMPLE_MANIFEST: EntryManifest = {
   source: "JMdict_e_examp and Tatoeba",
-  release: "2026-11-03",
+  release: "2026-11-04",
   entries: {
-    starts: ["", "0x9r"],
+    starts: ["", "0xn"],
     load: [
       () => import("./xs0.data.ts").then((one) => one.PIECE),
       () => import("./xs1.data.ts").then((one) => one.PIECE),

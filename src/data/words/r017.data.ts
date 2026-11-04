@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 18 of 316, from "いちまんえんけ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 18 of 316, from "いちまつも". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "いちまつもよう\t市松模様\t#15u5o\t¦checked pattern¦chequered pattern¦checks",
+    "いちまるいちキーボード\t１０１キーボード\t#1cx4u\t¦101-key keyboard (standard keyboard layout developed by IBM)",
+    "いちまん\t１万|一万|１００００|一〇〇〇〇\tC~s#19h6w\t¦10,000¦ten thousand¦10^4",
+    "いちまんえん\t一万円|壱万円|１万円\t#19u5a\t¦10,000 yen",
     "いちまんえんけん\t１万円券|一万円券\t#1ovbx\t¦10,000 yen bill",
     "いちまんえんさつ\t一万円札|１万円札\t#1ovbv\t¦10,000 yen bill",
     "いちみ\t一味\ts~m30#p0b4\t¦clan¦partisans¦conspirators\t¦participation (e.g. in a plot)\t¦one flavour¦one charm\t¦one ingredient (in traditional Chinese medicine)",
@@ -720,10 +724,5 @@ export const PIECE: WordsPiece = {
     "いっつい\t一対\t~m34#oykm\t¦pair¦couple",
     "いっつう\t一通\tC~n19#oyuc\t¦one copy (of a document)¦one letter\tabbr¦one-way traffic\tabbr,mahj¦pure straight",
     "いって\t一手\tC~n14#oxh6\t¦one move (in go, shogi, etc.)\t¦only way¦only means\t¦doing alone¦doing single-handed¦monopoly",
-    "いってい\t一定\tsC~ni03#oyvq\t¦to fix¦to settle¦to standardize\t¦constant¦definite¦uniform",
-    "いっていおんど\t一定温度\t#oyw0\t¦constant temperature",
-    "いっていきかん\t一定期間\t#oywa\t¦fixed interval¦fixed period",
-    "いっていじ\t一丁字\t#oyra\t¦single letter¦single character",
-    "いっていすう\t一定数\t#1oua9\t¦fixed number¦certain number¦given number",
   ],
 };

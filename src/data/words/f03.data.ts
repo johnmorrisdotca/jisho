@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 4 of 70, from "はす向". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Written forms of JMdict that safe mode keeps, each: form, then the readings it has joined by "|". Piece 4 of 70, from "はじけ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "はじけ飛ぶ\tはじけとぶ",
+    "はす交い\tはすかい",
     "はす向い\tはすむかい",
     "はす向かい\tはすむかい",
     "はす葉氷\tはすはごおり|はすばごおり",
@@ -1062,6 +1064,7 @@ export const PIECE: WordsPiece = {
     "むら消え\tむらぎえ",
     "むれ立つ\tむれだつ|むれたつ",
     "むれ肉\tむれにく",
+    "めかけ奉公\tめかけぼうこう",
     "めかし屋\tめかしや",
     "めかし込む\tめかしこむ",
     "めがねを掛ける\tめがねをかける",
@@ -2530,6 +2533,5 @@ export const PIECE: WordsPiece = {
     "アンドを取る\tアンドをとる",
     "アンドラ公国\tアンドラこうこく",
     "アンドロイドは電気羊の夢を見るか?\tアンドロイドはでんきひつじのゆめをみるか",
-    "アンドロメダのA\tアンドロメダのエー",
   ],
 };

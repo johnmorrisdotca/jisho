@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 80 of 144, from "0wi7s". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 80 of 144, from "0wi5". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,14 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0wi50\t1¦｜口《くち》いっぱいに｜物《もの》を｜放《ほう》り｜込《こ》んで｜話《はなし》をするのは｜無作法《ぶさほう》だ。¦It is rude to talk when your mouth is full.¦¦3q83¦¦CM¦放り込んで",
+    "0wi5a\t1¦｜彼《あれ》は｜家《いえ》から｜放《ほう》り｜出《だ》された。¦He got thrown out of the house.¦3¦2cc6¦helmfer¦CK¦放り出された",
+    "0wi5k\t1¦｜農夫《のうふ》は｜荷馬車《にばしゃ》の｜上《うえ》へ｜干《ほ》し｜草《くさ》を｜放《ほう》り｜上《あ》げた。¦The farmer pitched the hay onto the wagon.¦2¦2lw9¦mookeee¦CM¦放り上げた",
+    "0wi5u\t1¦いい｜球《きゅう》を｜放《ほう》るようになったな、｜恵《え》｜一《ひとつ》｜君《きみ》。¦You throw a good ball nowadays, Keiichi.¦1¦1ldy¦fcbond¦fcbond¦放る\t2¦その｜車《くるま》は｜何《なに》｜週間《しゅうかん》も｜放《ほう》ってある。¦The car has been kicking around the roadside for weeks.¦3¦4hpj¦¦AlanF_US¦放って",
+    "0wi6e\t1¦｜何《なん》らかの｜技術的問題《ぎじゅつてきもんだい》により、｜予告《よこく》された｜番組《ばんぐみ》の｜代《か》わりに｜映画《えいが》が｜放映《ほうえい》された。¦Because of some technical problem, a movie was shown in place of the announced program.¦¦40s4¦¦CM¦放映",
+    "0wi6o\t1¦｜誰《だれ》かがその｜家《いえ》に｜放火《ほうか》した。¦Someone set fire to the house.¦¦2xst¦¦CK¦放火",
+    "0wi6y\t1¦｜私《わたし》は｜放課後《ほうかご》にギターを｜弾《はじ》きます。¦I play the guitar after school.¦1¦39xj¦¦CK¦放課後",
+    "0wi78\t1¦｜日本国民《にほんこくみん》は｜戦争《せんそう》を｜放棄《ほうき》している。¦The Japanese people have renounced war.¦1¦2mdq¦¦¦放棄",
     "0wi7s\t1¦ドップラー｜効果《こうか》はまた、｜一般《いっぱん》に｜光《ひかり》と｜放射《ほうしゃ》エネルギーにおいても｜見《み》られる。¦The Doppler effect is also observed with light and with radiant energy in general.¦1¦4auc¦¦CM¦放射",
     "0wi8m\t1¦その｜幼児《ようじ》は｜放射線《ほうしゃせん》にさらされていた。¦The infant has been exposed to radioactive rays.¦1¦4f5p¦¦¦放射線",
     "0wiaa\t1¦もう｜一《ひと》つの｜面白《おもしろ》いエネルギー｜源《げん》は、｜放射能《ほうしゃのう》の｜廃棄物《はいきぶつ》｜質《しつ》から｜取《と》り｜出《だ》せる｜熱《ねつ》である。¦Another interesting source of energy is the heat that can be recovered from radioactive waste material.¦1¦45ym¦mookeee¦CK¦放射能",
@@ -214,14 +222,5 @@ export const PIECE: WordsPiece = {
     "0wmni\t1¦｜別館《べっかん》は｜本館《ほんかん》の｜北側《きたがわ》にある。¦The annex is on the north of the original building.¦3¦1scm¦¦Lumi¦本館",
     "0wmo2\t1¦ケンさん、｜君《きみ》は｜本気《ほんき》かい。¦Are you on the level, Ken?¦3¦4trj¦¦CP¦本気",
     "0wmom\t1¦コールセルフライはパリに｜本拠《ほんきょ》を｜置《お》く｜航空会社《こうくうがいしゃ》です。¦Corsairfly is an airline based in Paris.¦1¦48nq¦Scott¦Scott¦本拠",
-    "0wmow\t1¦｜我《わ》が｜社《しゃ》の｜本拠地《ほんきょち》は｜東京《とうきょう》である。¦Our company's base is in Tokyo.¦1¦3zu0¦huizi99¦CK¦本拠地",
-    "0wmpq\t1¦そろそろ｜話《はなし》の｜本筋《ほんすじ》に｜入《い》るべきです。¦It's time to get down to business.¦1¦4dqy¦ookii_risu¦CK¦本筋",
-    "0wmro\t2¦トムが｜明日《あした》｜本校《ほんこう》へ｜来《き》ます。¦Tom is coming to our school tomorrow.¦4¦4ahs¦bunbuku¦CK¦本校",
-    "0wms8\t1¦｜雨《あめ》は｜本降《ほんぶ》りになってきた。¦The rain came down in earnest.¦3¦428x¦¦sundown¦本降り",
-    "0wmsi\t1¦｜彼《あ》の｜音楽《おんがく》は｜本国《ほんごく》では｜人《じん》｜気《き》がなかった。¦His music was not popular at home.¦3¦2j29¦¦CK¦本国",
-    "0wmt2\t1¦さて、｜本腰《ほんごし》を｜入《い》れてまじめな｜話《はなし》をしよう。¦Now let us get down to a serious talk.¦2¦4n9b¦¦¦本腰",
-    "0wmv0\t1¦それから、｜彼《あれ》は、ケンブリッジで｜研究《けんきゅう》を｜始《はじ》め、｜宇宙《うちゅう》の｜本質《ほんしつ》について｜前《さき》よりいっそう｜多《おお》くの｜考《かんが》えを｜発展《はってん》させ｜始《はじ》めた。¦Then he began his work at Cambridge, developing many new ideas about the nature of the universe.¦1¦4ewg¦¦sundown¦本質",
-    "0wmva\t1¦その｜社《やしろ》は｜大阪《おおさか》に｜本社《ほんしゃ》がある。¦The firm has its head office in Osaka.¦¦4hqa¦¦CN¦本社",
-    "0wmvk\t1¦｜沖縄《おきなわ》は｜本州《ほんしゅう》よりも｜中国《ちゅうごく》に｜近《ちか》いということに｜気付《きづ》いてましたか。¦Are you aware that Okinawa is closer to China than to Honshu?¦1¦41es¦¦CN¦本州",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 32 of 219, from "0szu". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 32 of 219, from "0szos". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,25 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0szos\t上意\tじょうい\tn¦¦will (esp. of shogun)¦decree¦emperor's wishes",
+    "0szp2\t上院議員\tじょういんぎいん\tn¦¦member of the upper house¦senator",
+    "0szpc\t上臼\tうわうす\tn¦¦upper millstone",
+    "0szpm\t上映\tじょうえい\tn,vs,vt¦¦screening (a movie)¦showing",
+    "0szpw\t上越\tじょうえつ\tn¦¦area on Japan Sea side of Japan, including Niigata",
+    "0szq6\t上演\tじょうえん\tn,vs,vt¦¦performance (of a play, opera, etc.)¦staging¦presentation",
+    "0szqg\t上屋|上家\tうわや\tn¦¦shed¦shelter¦terminal (e.g. cargo, airport, etc.)¦temporary covering of a building being built",
+    "0szqq\t上屋敷\tかみやしき\tn¦hist¦daimyo's main Edo mansion",
+    "0szr0\t上下\tうえした\tn¦¦top and bottom¦up and down¦high and low¦above and below¦upper and lower ends\tadj-no,n¦¦upside-down¦上下になる",
+    "0szra\t上下\tじょうげ\tn¦¦top and bottom¦high and low¦above and below¦upper and lower ends¦up and down\tn,vs,vi¦¦going up and down¦rising and falling¦fluctuating\tn,vs,vi¦¦going and coming back\tn¦¦upper and lower classes¦ruler and ruled¦the government and the people\tn¦¦first and second volumes\tn¦cloth¦top and bottom¦two-piece (outfit)",
+    "0szrk\t上下水道\tじょうげすいどう\tn¦¦water and sewer services",
+    "0szru\t上下線\tじょうげせん\tn¦¦both (railway) tracks¦(both) up and down tracks (lines)",
+    "0szs4\t上下動\tじょうげどう\tn,vs,vi¦¦up-and-down motion¦vertical movement (e.g. in an earthquake)",
+    "0szse\t上荷\tうわに\tn¦¦top cargo¦top of the load",
+    "0szso\t上菓子\tじょうがし\tn¦¦quality cakes",
+    "0szsy\t上回る|上廻る~rK|上まわる~sK\tうわまわる|うわまる~sk\tv5r,vt¦¦to exceed (esp. figures: profits, unemployment rate, etc.)¦to surpass¦to be more than¦to be better than¦下回る",
+    "0szt8\t上海\tシャンハイ\tn¦¦Shanghai (China)",
+    "0szti\t上界\tじょうかい\tn¦¦upper world¦heaven¦superkingdom\tn¦math¦upper bound",
+    "0szts\t上絵\tうわえ\tn¦¦printed figures (on cloth or pottery)",
     "0szu2\t上掛け水車\tうわがけすいしゃ\tn¦¦overshot water wheel",
     "0szuc\t上滑り|上すべり\tうわすべり\tadj-no,adj-na,vs,vi,n¦¦superficial¦shallow\tadj-no,adj-na,n¦¦frivolous¦careless¦thoughtless\tn,vs,vi¦¦sliding along a surface¦being slippery",
     "0szum\t上噛合わせ\tうわかみあわせ\tn¦¦overbite",
@@ -352,6 +371,7 @@ export const PIECE: WordsPiece = {
     "0t2ju\t情熱\tじょうねつ\tn¦¦passion¦enthusiasm¦zeal",
     "0t2k4\t情念\tじょうねん\tn¦¦sentiments¦passions",
     "0t2ke\t情夫\tじょうふ\tn¦¦(male) lover¦情婦",
+    "0t2ko\t情婦\tじょうふ\tn¦dated¦lover¦mistress¦kept woman¦情夫・じょうふ",
     "0t2ky\t情報\tじょうほう\tn¦¦information¦news¦report¦intelligence\tn¦¦information (data contained in characters, signals, code, etc.)\tn¦¦informatics (as a subject)",
     "0t2li\t情報化\tじょうほうか\tn,vs¦comp¦computerization¦computerisation",
     "0t2ls\t情報科学\tじょうほうかがく\tn¦¦information science¦computer science",
@@ -952,26 +972,5 @@ export const PIECE: WordsPiece = {
     "0t7ek\t浸漬\tしんし|しんせき\tn,vs¦¦dipping¦soaking¦immersing",
     "0t7eu\t浸透|滲透~rK\tしんとう\tn,vs,vi¦¦permeation (of thought, ideology, culture, etc.)¦infiltration (e.g. of ideas)¦spread¦penetration (e.g. into a market)¦pervasion\tn,vs,vi¦¦permeation (of a liquid, etc.)¦soaking¦percolation\tn,vs,vi¦chem,biol¦osmosis",
     "0t7f4\t深い\tふかい\tadj-i¦¦deep (hole, forest, snow, etc.)¦浅い・1\tadj-i¦¦dense (e.g. fog)¦thick (e.g. weeds, woods)¦heavy\tadj-i¦¦close (e.g. relationship)¦deep (involvement)¦intimate¦thick\tadj-i¦¦intense (e.g. longing, flavor)¦severe¦strong (feelings)¦serious (e.g. blow)¦deep-seated (e.g. hatred)\tadj-i¦¦profound (e.g. meaning)¦deep (e.g. thought)¦heavy (e.g. silence)\tadj-i¦¦sound (sleep)¦deep (slumber)\tadj-i¦¦late (e.g. hour, season)\tadj-i¦¦deep (color)¦dark\tadj-i¦baseb¦far from home plate¦deep",
-    "0t7fe\t深さ\tふかさ\tn¦¦depth¦profundity",
-    "0t7fo\t深まる\tふかまる\tv5r,vi¦¦to deepen¦to heighten¦to intensify",
-    "0t7fy\t深み|深味~ateji,rK\tふかみ\tn¦¦deep place¦depths\tn¦¦depth¦profundity",
-    "0t7g8\t深める\tふかめる\tv1,vt¦¦to deepen¦to heighten¦to intensify",
-    "0t7gi\t深遠\tしんえん\tadj-na,n¦¦profound¦deep¦unfathomable¦esoteric",
-    "0t7gs\t深奥\tしんおう\tn¦¦depths (of an art, one's mind, etc.)¦heart¦inner mysteries\tadj-na¦¦profound¦deep¦esoteric¦abstruse",
-    "0t7h2\t深海\tしんかい\tn,adj-no¦¦deep sea¦depths of the sea¦ocean depths",
-    "0t7hc\t深呼吸\tしんこきゅう\tn,vs,vi¦¦deep breath",
-    "0t7hm\t深刻\tしんこく\tadj-na,n¦¦serious¦severe¦grave¦acute",
-    "0t7hw\t深刻化\tしんこくか\tn,vs,vi¦¦becoming more serious or severe¦aggravation¦intensification",
-    "0t7ig\t深在性真菌症\tしんざいせいしんきんしょう\tn¦med¦invasive mycosis¦systemic mycosis¦deep mycosis",
-    "0t7iq\t深層\tしんそう\tn,adj-no¦¦depths¦deep level¦表層",
-    "0t7j0\t深度\tしんど\tn¦¦depth",
-    "0t7ja\t深淵|深えん~sK\tしんえん\tn¦¦abyss¦ravine",
-    "0t7jk\t深謀遠慮\tしんぼうえんりょ\tn¦yoji¦far sight and deep design",
-    "0t7ju\t深夜\tしんや\tn,adv¦¦late at night",
-    "0t7k4\t申\tさる\tn¦¦the Monkey (ninth sign of the Chinese zodiac)\tn¦obs¦hour of the Monkey (around 4pm, 3-5pm, or 4-6pm)¦申の刻\tn¦obs¦west-southwest\tn¦obs¦7th month of the lunar calendar",
-    "0t7ke\t申し越す|申越す\tもうしこす\tv5s,vt¦¦to send word (to)¦to write (to)",
-    "0t7ko\t申し開らく\tもうしひらく\tv5k¦¦to explain¦to justify",
-    "0t7ky\t申しかねる|申し兼ねる|申兼ねる~sK\tもうしかねる\texp,v1¦hum¦to hesitate to say¦to find it difficult to say",
-    "0t7l8\t申し遣わす\tもうしつかわす\tv5s¦¦to write to¦to send word to¦to hand over (official business)",
   ],
 };

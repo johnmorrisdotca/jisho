@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 58 of 316, from "かるね". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 58 of 316, from "かるとしん". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,15 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "カルトしんじゃ\tカルト信者\t#1pioj\t¦cultist¦cult member",
+    "カルトナージュ\t\t#1p4tf\t¦cartonnage (box decorating)",
+    "カルトン\t\t#17pxy\t¦carton (e.g. of cigarettes)\t¦tray (in which money is placed when paying)¦dish",
+    "カルトン\t\t#1pi6j\t¦pasteboard",
+    "カルドン\t\t#1pg6z\t¦cardoon (Cynara cardunculus)¦artichoke thistle",
+    "カルナバル\t\t#m7q0\t¦carnival",
+    "カルナローリ\t\t#1on2v\t¦carnaroli (Italian variety of rice)",
+    "カルナヴァル\t\t#m7q0\t¦carnival",
+    "カルニチン\t\t#1gd0u\t¦carnitine",
     "カルネアデスのいた\tカルネアデスの板\t#1p95e\tphil¦plank of Carneades (thought experiment)",
     "カルノーサイクル\t\t#1gq4i\t¦Carnot cycle¦Carnot's cycle",
     "カルノーず\tカルノー図\t#1acuc\t¦Karnaugh map¦Karnaugh diagram (for mapping Boolean expressions)",
@@ -840,16 +849,5 @@ export const PIECE: WordsPiece = {
     "かんかんせったい\t官官接待|官々接待\t#1i8c6\tyoji¦bureaucrats entertaining bureaucrats using public funds",
     "かんかんでり\tカンカン照り|かんかん照り\t#1nxjy\t¦scorching heat¦fierce glare of the Sun",
     "かんかんどうりつ\t関関同立\t#1p6ch\t¦Kansai University, Kwansei Gakuin University, Doshisha University and Ritsumeikan University (four leading private universities in the Kansai region)",
-    "かんかんぼう\tカンカン帽|かんかん帽\t#18qg4\t¦boater¦(flat) straw hat",
-    "かんが\t閑雅\tn#11o86\t¦refined¦elegant",
-    "かんが\t官衙\t#1jnvg\t¦government office¦government agency",
-    "かんが\t閑暇|間暇\t#q20w\t¦leisure",
-    "かんがい\t感慨\tC~n15#pzfa\t¦deep emotion¦strong feelings",
-    "かんがい\t灌漑|潅漑\tsC~mi42#q05y\t¦irrigation",
-    "かんがい\t寒害\t#pxy8\t¦damage from cold weather¦frost damage",
-    "かんがい\t干害|旱害\t#pz78\t¦drought disaster¦drought damage",
-    "かんがい\t函蓋\t#vn5g\t¦box and cover",
-    "かんがい\t館外\t#zpf0\t¦outside a library, museum, etc.¦off the premises",
-    "かんがい\t管外\t#18qge\t¦outside the jurisdiction (of)",
   ],
 };

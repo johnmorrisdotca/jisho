@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 54 of 219, from "0xvjc". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 54 of 219, from "0xvce". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,33 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0xvce\t商人\tしょうにん|あきんど|あきうど~ok|あきゅうど~ok|あきびと~ok\tn¦¦merchant¦trader¦tradesman¦dealer¦shopkeeper",
+    "0xvco\t小便|ション便~sK\tしょうべん|しょんべん|ションベン~sk\tn,vs,vi¦¦urine¦piss¦pee¦urination\tn,vs,vi¦col¦breaking a contract",
+    "0xvcy\t少女|小女~rK\tしょうじょ\tn¦¦girl (usu. between 7 and 17)¦young lady\tn¦arch¦female between 17 and 20 years old (ritsuryō period)",
+    "0xvd8\t手のひら|掌|手の平\tてのひら|たなごころ~~掌|しょう~~掌\tn¦¦palm (of the hand)",
+    "0xvdi\t消耗\tしょうもう|しょうこう\tn,vs,vt,vi¦¦exhaustion¦consumption¦using up¦dissipation¦waste",
+    "0xvds\t省筆\tしょうひつ|せいひつ\tn,vs,vi¦¦omission (of words and passages)¦abbreviation\tn,vs,vi¦¦writing a character in a simplified form¦omitting strokes from a kanji",
+    "0xve2\t上がり口\tあがりくち|あがりぐち\tn¦¦entrance",
+    "0xvec\t上着|上衣|表着~rK\tうわぎ|じょうい~~上衣\tn¦¦coat¦jacket¦outerwear\tn¦¦top¦upper-body garment",
+    "0xvem\t上院\tじょういん\tn¦¦upper house¦upper legislative chamber¦senate¦下院",
+    "0xvew\t上顎|上あご\tうわあご|じょうがく~~上顎\tn¦¦upper jaw¦palate",
+    "0xvf6\t上向き\tうわむき|うえむき\tn,adj-no¦¦pointing up¦pointing upward¦upturn¦uptrend¦upward tendency¦下向き・1",
+    "0xvfg\t上向く\tうわむく|うえむく\tv5k,vi¦¦to point upward¦to look upward¦下向く\tv5k,vi¦¦to improve",
+    "0xvfq\t上座\tかみざ|じょうざ\tn,vs,adj-no¦¦chief seat¦seat of honor¦seat of honour¦head of the table",
+    "0xvg0\t上手\tうわて|かみて\tadj-na,n¦¦upper part\tn¦¦upper stream¦upper course of a river¦かみて\tn¦¦right side of the stage (audience's or camera's POV)¦stage left (actor's POV)¦かみて\tadj-na,n¦¦skillful (in comparisons)¦dexterity¦うわて\tn¦sumo¦over-arm grip on opponent's belt¦うわて",
+    "0xvga\t上唇|上くちびる\tうわくちびる|じょうしん~~上唇\tn¦anat¦upper lip\tn¦zool¦labrum¦じょうしん",
+    "0xvgk\t上世\tかみつよ|じょうせい\tn¦¦antiquity¦ancient times",
+    "0xvgu\t上側|上がわ~sK\tうわかわ|うわがわ\tn,adj-no¦¦upper side¦surface",
+    "0xvh4\t上皮\tうわかわ|じょうひ\tn,adj-no¦¦outer layer (e.g. of skin)¦cuticle¦epidermis¦bark¦rind¦crust¦film (on the surface of a liquid)¦scum¦うわかわ\tn,adj-no¦anat¦epithelium¦esp. じょうひ",
+    "0xvhe\t上敷き|上敷\tうわしき|うわじき\tn¦¦bordered matting¦rug¦carpet\tn¦arch¦saddlecloth¦harness",
+    "0xvho\t上方\tかみがた\tn¦¦Kyoto and vicinity (esp. during Edo period)¦Kyoto-Osaka region¦Kansai region",
+    "0xvht\t上方\tじょうほう\tn,adj-no¦¦upper part¦upper region¦region above¦下方",
+    "0xvhy\t上様\tうえさま|うえざま|かみさま\tn¦¦emperor¦shogun\tn¦¦honored person (honoured)\tn¦pol¦(another person's) wife¦かみさま",
+    "0xvi8\t丈夫\tじょうぶ\tadj-na¦¦healthy¦robust¦strong¦solid¦durable¦sometimes じょうふ",
+    "0xvid\t丈夫|益荒男\tじょうふ~~丈夫|ますらお\tn¦¦hero¦manly person¦warrior",
+    "0xvii\t乗客\tじょうきゃく|じょうかく\tn¦¦passenger",
+    "0xvis\t剰え~rK|剰~sK\tあまつさえ|あまっさえ~sk\tadv¦dated,uk¦besides¦moreover¦in addition¦to make matters worse¦usu. negative nuance",
+    "0xvj2\t情緒\tじょうちょ|じょうしょ\tn,adj-no¦¦emotion¦feeling\tn,adj-no¦¦atmosphere¦mood¦spirit",
     "0xvjc\t情緒纏綿|情緒てんめん|情緒纒綿\tじょうしょてんめん|じょうちょてんめん\tn,adj-na,adj-no,adj-t,adv-to¦yoji¦tender sentiments¦being overcome with emotions¦having a tender feeling (for a person)",
     "0xvjm\t蒸籠|蒸篭|井籠~iK|井篭~iK\tせいろ|せいろう\tn¦uk¦bamboo steamer¦steaming basket¦wooden frame holder with reed base used to steam food over a pot¦井籠 (rarely 井篭) refers to a square basket\tn¦uk¦soba served on a small wickerwork tray¦wickerwork tray (for serving soba)",
     "0xvjw\t食客\tしょっかく|しょっきゃく\tn¦¦free-loader¦hanger-on¦parasite¦居候\tn¦¦house guest¦orig. meaning",
@@ -547,6 +574,7 @@ export const PIECE: WordsPiece = {
     "0xzum\t相乗り|合い乗り~sK|合乗り~sK\tあいのり\tn,vs,vi¦¦riding together¦sharing a car (taxi, etc.)¦ridesharing\tn,vs,vi¦¦doing in collaboration\tn,vs,vi¦¦backing of the same candidate by different political parties",
     "0xzuw\t逢引|逢い引き|逢引き|媾曳~rK|媾曳き~rK|逢いびき~sK\tあいびき\tn,vs,vi¦dated¦clandestine meeting (of lovers)¦assignation¦tryst¦(lovers') rendezvous",
     "0xzv6\t哀愍|哀憫|哀びん|哀みん\tあいびん~~哀愍,哀憫,哀びん|あいみん~~哀愍,哀憫,哀みん\tn,vs¦¦pity",
+    "0xzvg\t愛欲|愛慾\tあいよく\tn¦Buddh¦attachment (esp. to one's family or a member of the opposite sex)¦2",
     "0xzvq\t青々|青青|蒼々~rK|蒼蒼~rK|碧々~rK|碧碧~rK\tあおあお\tadv,adv-to,vs¦¦vividly green¦lush green¦fresh and green¦verdant¦deep blue",
     "0xzw0\t青浮草|青萍\tあおうきくさ\tn¦¦duckweed",
     "0xzwa\t梧桐|青桐\tあおぎり|ごとう|アオギリ~~~!\tn¦uk¦Chinese parasol-tree (Firmiana simplex)¦Chinese-bottletree¦Japanese varnishtree¦phoenix-tree",
@@ -750,30 +778,5 @@ export const PIECE: WordsPiece = {
     "0y1hs\t打ち取る|討ち取る|撃ち取る~rK|打ちとる~sK|討ちとる~sK|打取る~sK|討取る~sK\tうちとる\tv5r,vt¦¦to kill (with a weapon)¦to slay\tv5r,vt¦¦to defeat (an opponent)¦to beat\tv5r,vt¦baseb¦to get (a batter) out¦打ち取る",
     "0y1i2\t内堀|内壕|内濠\tうちぼり\tn¦¦inner moat¦moat within the castle walls",
     "0y1ic\t打ちまくる|打ち捲る~rK\tうちまくる\tv5r,vt¦¦to hit repeatedly¦to belt hit after hit (e.g. in baseball)¦to unleash a barrage of blows¦to pound away (at a keyboard)¦to hammer away¦to pummel",
-    "0y1im\tうっ血|鬱血|欝血~sK\tうっけつ\tn,vs,vi¦med¦congestion (of blood)¦engorgement",
-    "0y1iw\t鬱蒼|欝蒼|鬱葱~rK\tうっそう\tadj-t,adv-to¦¦thick¦dense¦luxuriant",
-    "0y1j6\tうっ滞|鬱滞\tうったい\tn,vs¦¦congestion¦stagnation¦stasis\tn,vs¦¦pent-up feelings",
-    "0y1jg\t鬱憤|うっ憤|欝憤~rK\tうっぷん\tn¦¦resentment¦grudge¦pent-up anger¦frustration¦bitterness",
-    "0y1jq\t鬱鬱|鬱々|欝々~sK|欝欝~sK\tうつうつ\tadj-t,adv-to¦uk¦gloomy¦melancholy¦pessimistic\tadj-t,adv-to¦rare¦luxuriant (of vegetation)",
-    "0y1k0\t写す|撮す~sK\tうつす\tv5s,vt¦¦to copy¦to duplicate¦to reproduce¦to trace¦to transcribe\tv5s,vt¦¦to describe¦to depict¦to portray¦to express\tv5s,vt¦¦to imitate¦to model after\tv5s,vt¦¦to take (a photo)¦to photograph¦to film¦to shoot¦also written as 撮す",
-    "0y1ka\t映す\tうつす\tv5s,vt¦¦to project¦to reflect¦to cast (shadow)",
-    "0y1kk\t虚ろ|空ろ|洞ろ~rK|洞~rK\tうつろ\tn,adj-na¦¦cavity¦hollow¦void\tadj-na¦¦hollow (voice, smile, etc.)¦blank (eyes, look, etc.)¦vacant (expression, stare, etc.)¦empty (words, heart, etc.)¦虚ろ|空ろ",
-    "0y1ku\t疎々しい|疎疎しい\tうとうとしい\tadj-i¦¦unfriendly¦distant¦cold",
-    "0y1l4\tうなぎ登り|うなぎ上り|鰻登り|鰻上り|鰻昇り~sK|うなぎ昇り~sK|ウナギ上り~sK|ウナギ登り~sK|ウナギ昇り~sK|鰻のぼり~sK\tうなぎのぼり\tn,adj-no¦¦rising rapidly (e.g. prices, popularity)¦soaring¦skyrocketing¦going through the roof",
-    "0y1le\t海胆~rK|海栗~rK|雲丹~rK\tうに~gikun|ウニ~~~!\tn¦uk¦sea urchin\tn¦uk,food¦seasoned sea urchin eggs¦usu. 雲丹 if written with kanji",
-    "0y1m8\t旨々|旨旨\tうまうま|ウマウマ~~~!\tadv-to¦uk¦successfully¦nicely\texp¦uk,chn¦(yummy) food¦yum-yum",
-    "0y1mi\t生む|産む\tうむ\tv5m,vt¦¦to give birth¦to bear (child)¦to lay (eggs)\tv5m,vt¦¦to produce¦to yield¦to give rise to¦to deliver",
-    "0y1ms\t埋め合わせる|埋め合せる~sK|埋めあわせる~sK\tうめあわせる\tv1,vt¦¦to make up for¦to compensate for¦to offset",
-    "0y1n2\t埋め立て地|埋立地|埋立て地~sK\tうめたてち\tn¦¦reclaimed land",
-    "0y1nc\t裏書|裏書き\tうらがき\tn,vs,vt¦¦endorsement (of a cheque, bill, etc.)\tn,vs,vt¦¦verification of authenticity (written on the back of a scroll)¦certificate of authenticity\tn,vs,vt¦¦note written on the back of a scroll¦comment\tn,vs,vt¦¦proof¦confirmation¦substantiation¦corroboration",
-    "0y1nm\t裏付け|裏づけ|裏付~io\tうらづけ\tn¦¦support (e.g. for an argument)¦backing¦proof¦evidence¦corroboration¦substantiation¦guarantee¦security",
-    "0y1nw\t占い師|占師\tうらないし\tn¦¦diviner¦fortune teller¦soothsayer",
-    "0y1o6\t占書|卜書\tうらぶみ\tn¦¦diviner's book",
-    "0y1og\t盂蘭盆|うら盆~sK\tうらぼん\tn¦¦Bon festival (Buddhist ceremony held around July 15)¦Feast of Lanterns",
-    "0y1oq\t盂蘭盆会|うら盆会~sK\tうらぼんえ\tn¦¦Bon festival (Buddhist ceremony held around July 15)¦Feast of Lanterns¦盂蘭盆",
-    "0y1p0\t売り上げ|売上|売上げ~sK|売り上~sK\tうりあげ\tn¦¦amount sold¦sales¦proceeds¦takings¦turnover",
-    "0y1pa\t売掛金|売り掛け金~sK\tうりかけきん\tn¦¦accounts receivable¦outstanding sales account",
-    "0y1pk\t売り子|売子~sK|売り児~sK\tうりこ\tn¦¦salesperson¦shop assistant¦hawker¦peddler¦vendor¦販売員",
-    "0y1pu\t売り出し|売出し|売出\tうりだし\tn¦¦(bargain) sale",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 49 of 172, from "earthr". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 49 of 172, from "earth i". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,36 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "earth i\tろじ",
+    "earth onmyōdō\tつち|つし",
+    "earth overcomes\tそうこく",
+    "earth sand\tどしゃ|どさ",
+    "earth science\tちがく",
+    "earth stones\tどせき",
+    "earth tremor\tじひびき",
+    "earth water\tげんそ",
+    "earth when\tうね",
+    "earth's\tちじょう|ふんいき|じめん|ちかくへんどう|ちかく|ちじく|たいきけんがい|たいきけんない|じゆうたいき",
+    "earth's atmosphere\tふんいき",
+    "earth's crust\tちかくへんどう|ちかく",
+    "earth's surface\tちじょう|じめん",
+    "earthen\tどせい|アースン|どぞう|どぐう|どべい|どるい|しちりん|どがま|どかん|どばし|つちばし|めどう|らくだずみ|どがまずみ|すいきんくつ|かきあげじろ|くろがまえ|めんどう|めど|うまみち",
+    "earthen figure\tどぐう",
+    "earthen wall\tどべい",
+    "earthen walls\tどぞう",
+    "earthenware\tどき|かわらけ|せともの|とうき|やきもの|すえもの|セトモノ|じょうもん|かめ|どなべ|つちなべ|ほうろく|ほうらく|みか|みかわ|すりばち|どびん|つちやき|いとぞこ|へいじ",
+    "earthenware pot\tかめ|どなべ|つちなべ",
+    "earthfill\tどえんてい",
+    "earthing\tアース|アーシング",
+    "earthling\tちきゅうじん",
+    "earthly\tアースリ|けらく|せんにん|りそうきょう|げだつ|とうげんきょう|ぶりょうとうげん|とうげん|ちし|ちじんごだい|たいてん|ちじょうのらくえん|ちせん",
+    "earthly desires\tけらく|せんにん|げだつ",
+    "earthly paradise\tりそうきょう",
+    "earthnomat\tアースノーマット",
+    "earthquake\tじしん|アースクエイク|アースクエーク|ちどう|ない|アースクェイク|アース・クエイク|アースクウェイク|しんげん|ひさい|だいしんさい|びしん|けいしん|じゃくしん|しんさい|げきしん|ゆうかんじしん|ちゅうしん|れっしん|きょうしん",
+    "earthquake disaster\tしんさい|だいしんさい",
+    "earthquake typhoon\tひさい",
+    "earthquakes\tたいしん|ぐんぱつじしん|たいしんせい|じしんかみなりかじおやじ|リヒタースケール|リヒター・スケール|えどのはな|だいきぼじしんたいさくとくべつそちほう|たいしんほう|オオナマズ|おおなまず",
     "earthrise\tちきゅうので",
     "earthshaking\tちかくへんどう",
     "earthshaking changes\tちかくへんどう",
@@ -660,28 +690,5 @@ export const PIECE: WordsPiece = {
     "elbling\tエルブリング",
     "elbow\tひじ|ヒジ|エルボー|エルボ|くっきょくぶ|よびどい|テニスエルボー|テニス・エルボー|いたくしゃげき|ひじまくら|テニスひじ|たまき|えんぴうち|ひじうち|ちゅうかんせつ|みぎひじ|けんわんちょくひつ|けんわん|かたひじ|やきゅうひじ",
     "elbowing\tひじてつ|ひじでっぽう|ひじてっぽう",
-    "elbowroom\tゆとり",
-    "elbows\tりょうひじ|かたひじ|ヤンキーすわり|ヤンキーずわり|ひじばる",
-    "elder\tちょうろう|せんせい|せんぱい|ちょうじゃ|ちょうしゃ|ちょうざ|あにき|アニキ|ころう|ふろう|あに|あね|おにいさん|おねえさん|にいさん|あにさん|ねえさん|あねさん|げんろう|じっし",
-    "elder brother\tあにき|アニキ|あに|おにいさん|にいさん|あにさん",
-    "elder sister\tあね|おねえさん|ねえさん|あねさん|じっし",
-    "elder statesman\tげんろう",
-    "elderberry\tソクズ|そくず",
-    "elderly\tねんぱい|おい|しせつ|こうれいしゃ|おかあさん|おとうさん|せいじんびょう|ろうじょ|ろうふうふ|しょろう|ようろう|おとしより|ころう|シルバーホン|シルバー・ホン|ねんぱいしゃ|ろうじょう|こうねんしゃ|ろうこう|ろうせい",
-    "elderly couple\tろうふうふ",
-    "elderly orphans\tしせつ",
-    "elderly people\tせいじんびょう",
-    "elderly person\tこうれいしゃ|おとしより|ころう|おかあさん|おとうさん",
-    "elderly woman\tろうじょ",
-    "elders\tろうじゅう|ろうぢゅう|ちょうじょう|ごたいろう|ごようべや|てい|ほうろくずきん|ほうらくずきん",
-    "eldest\tさいねんちょう|ちょうなん|ちょうじょ|いちなん|いちじょ|はくちゅう|ちょうけい|ちょうし|ひめぎみ|そうりょう|ちゃくそん|ちゃくなん|はっけい|そうりょうむすめ|へやずみ|そうりょうむすこ|もうじょ|おおあね|こうたいそん|このかみ",
-    "eldest brother\tちょうけい|はくちゅう",
-    "eldest child\tちょうし",
-    "eldest daughter\tちょうじょ|いちじょ|ひめぎみ",
-    "eldest second\tはくちゅう",
-    "eldest son\tちょうなん|いちなん|ちょうし",
-    "eleatic\tエレアがくは",
-    "elect\tほうていとくひょうすう|しょうすうせいえい|ろくはらみつ|ろっぱらみつ",
-    "elected\tえらばれる|とうせん|らくせん|とうかく|リコール|こうそくめいぼしきひれいだいひょうせい|れんざせい|かくだいれんざせい|ひこうそくめいぼしきひれいだいひょうせい|こいずみチルドレン|はちさんかい|とうせんとうかく|たせん",
   ],
 };

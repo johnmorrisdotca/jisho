@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 98 of 144, from "0yjo". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 98 of 144, from "0yjiy". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,21 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0yjiy\t1¦｜彼女《かのじょ》の｜名前《なまえ》のつづりが｜間違《まちが》っていた。¦Her name was spelled wrong.¦3¦20go¦¦CK¦間違っていた\t2¦｜番号《ばんごう》を｜間違《まちが》っていると｜思《おも》います。¦I think you have the wrong number.¦3¦2lht¦¦CK¦間違っている\t3¦｜彼《あれ》はとても｜若《わか》く｜見《み》えるのでよく｜学生《がくせい》と｜間違《まちが》われる。¦He is often taken for a student because he looks so young.¦3¦2e3a¦¦sundown¦間違われる",
+    "0yjj8\t1¦｜町中《まちなか》で、｜珍《めずら》しい｜物《もの》を｜見《み》つけました。¦I found something interesting in the town.¦2¦1mjf¦mookeee¦CK¦町中",
+    "0yjjs\t1¦３時間議論したが、我々は話がまとまらなかった。¦After three hours of discussion we got nowhere.¦1¦51kf¦e4zh1nmcz¦¦まとまらなかった",
+    "0yjk2\t1¦この｜機種《きしゅ》は｜気《き》に｜入《い》らないが、これで｜間《ま》に｜合《あ》わせなければならない。¦I don't like this model but I'll have to make do with it.¦3¦4rn9¦¦¦間に合わせ\t2¦｜締《し》め｜切《き》りに｜間《ま》に｜合《あ》わせるために、｜私《わたし》は｜夜通《よどお》し｜働《はたら》いた。¦I worked all night so as to meet the deadline.¦1¦2or8¦KK_kaku_¦pip¦間に合わせる",
+    "0yjkc\t1¦あの｜娘《こ》だってまんざらじゃないさ。¦She isn't so against the idea.¦3¦4xt6¦¦¦まんざら",
+    "0yjkm\t2¦｜満面《まんめん》｜朱《しゅ》をそそいで｜怒《おこ》った。¦He went red in the face with rage.¦1¦1lqy¦fcbond¦fcbond¦満面",
+    "0yjkw\t1¦ジョーンは｜夫《おっと》をさっさと｜見限《みかぎ》って｜別《わか》れてしまった。¦Joan dropped her husband like a hot potato.¦3¦4mc2¦¦CP¦見限って",
+    "0yjl6\t1¦｜捕《と》らえることのできないもの、｜身軽《みがる》で｜素早《すばや》いもののたとえ、だそうです。¦It's apparently a metaphor for something uncatchable, light of body and fleet of foot.¦¦8mic¦blay_paul¦blay_paul¦身軽",
+    "0yjlg\t1¦その｜船《ふね》は｜岬《さき》を｜回《めぐ》った。¦The ship sailed around the cape.¦1¦4gt3¦¦CK¦岬",
+    "0yjlq\t1¦たまには｜夫婦《ふうふ》｜水入《みずい》らずで｜温泉《おんせん》に｜行《おこな》ってのんびりするのもいいもんだ。¦Sometimes it's good for a married couple to go to a hot spring together―just the two of them.¦2¦4cup¦small_snow¦¦水入らず",
+    "0yjm0\t1¦そう｜水《みず》くさくするな。¦Don't be so reserved.¦5¦4ky0¦¦CK¦水くさく",
+    "0yjma\t1¦どうして見ず知らずの男が自分の名前を知っているんだろう？¦How did a total stranger know his name?¦¦4bgb¦¦Delian¦見ず知らずの",
+    "0yjmu\t1¦｜彼女《かのじょ》はみためにかわいい｜少女《しょうじょ》だ。¦She is a pretty girl to look at.¦3¦1yjp¦¦Zifre¦みため",
+    "0yjn4\t1¦｜帰《かえ》り｜道《みち》で｜道草《みちくさ》するんじゃないのよ。¦Don't play around too much after school.¦3¦3xg4¦small_snow¦CK¦道草",
+    "0yjne\t1¦｜地下鉄《ちかてつ》の｜駅《えき》までの｜道順《みちじゅん》を｜教《おし》えていただけませんか。¦Can you give me directions to the subway station?¦2¦2q04¦¦CK¦道順",
     "0yjoi\t1¦｜彼女《かのじょ》の｜顔《かお》の｜美《うつく》しさに、｜僕《ぼく》はただ｜見《み》とれていた。¦I was simply entranced by the beauty of her face.¦1¦8j8r¦blay_paul¦blay_paul¦見とれていた",
     "0yjos\t1¦｜彼《あれ》は｜私《わたし》の｜耳元《みみもと》でその｜答《こた》えを｜囁《ささや》いた。¦He whispered the answer in my ear.¦¦29nb¦¦CK¦耳元",
     "0yjp2\t1¦｜耳寄《みみよ》りな｜話《はなし》がある。¦I've got an attractive proposition for you.¦3¦37uu¦small_snow¦CK¦耳寄りな",
@@ -199,18 +214,5 @@ export const PIECE: WordsPiece = {
     "0yq6o\t1¦｜人工《じんこう》｜干潟《ひがた》を｜造成《ぞうせい》する｜試《こころ》みが｜全国的《ぜんこくてき》に｜展開《てんかい》されている。¦Artificial tidelands are being developed on a country-wide basis.¦¦1mmh¦mookeee¦¦造成",
     "0yq9g\t1¦｜地球上《ちきゅうじょう》にはたくさんの｜文化《ぶんか》がある。¦There are many cultures on Earth.¦3¦2pxv¦¦CM¦地球上",
     "0yqb4\t2¦｜空気《くうき》｜中《うち》のごく｜小《ちい》さい｜粒子《りゅうし》がガンのもとになり｜得《え》る。¦Tiny particles in the air can cause cancer.¦2¦3ueh¦mookeee¦papabear¦中\t2¦ある調査によると、今日では５人中３人が外交問題には無関心のようだ。¦According to a survey, three in five people today are indifferent to foreign affairs.¦¦4xc5¦¦¦中\t2¦１０人中３人はビデオを持っている。¦Three out of ten persons have a video.¦4¦524d¦mookeee¦¦中\t3¦｜彼《あれ》は｜旅行《りょこう》｜中《うち》に｜病気《びょうき》になった。¦He got sick during the trip.¦3¦24dx¦¦CK¦中\t4¦｜隣《となり》の｜部屋《へや》では｜会議《かいぎ》｜中《うち》です。¦There is a conference going on in the next room.¦1¦1nzy¦mookeee¦¦中",
-    "0yqdc\t1¦かぜの｜治療《ちりょう》には｜蜂蜜入《はちみつい》りのホットレモンがよく｜効《き》く。¦Hot lemon with honey is a good remedy for colds.¦¦4uok¦mookeee¦CK¦蜂蜜入りの",
-    "0yqdm\t1¦｜彼《あれ》は｜生《は》え｜抜《ぬ》きの｜外交官《がいこうかん》として｜一生《いっしょう》の｜大部分《だいぶぶん》を｜送《おく》ってきた。¦He has spent most of his time as a career diplomat.¦¦27og¦¦¦生え抜きの",
-    "0yqf0\t1¦｜偶然《ぐうぜん》、はるかかなたを｜友人《ゆうじん》が｜歩《ある》いているのが｜見《み》えた。¦It happened that I saw my friend walking in the distance.¦3¦3uc3¦¦Dejo¦はるかかなた",
-    "0yqfu\t1¦その色白の女の子は１９歳でとおっている。¦The girl with fair skin passes for nineteen.¦3¦4h6d¦¦¦色白の",
-    "0yqhs\t1¦もっとも｜重要《じゅうよう》な｜点《てん》は、エメットの｜理論《りろん》が｜物理学《ぶつりがく》の｜従前《じゅうぜん》の｜理論《りろん》と｜矛盾《むじゅん》しないということである。¦It is that Emmet's theory is compatible with previous theories in physics that is of most significance.¦1¦456c¦¦AlanF_US¦従前の",
-    "0yqly\t1¦それは｜木製《もくせい》ですか、それとも｜金属製《きんぞくせい》ですか。¦Is it made of wood or metal?¦1¦4e1c¦arnab¦CK¦金属製",
-    "0yqmi\t1¦大型と小型の２台の飛行機が、ハンガー内で停止していました。¦Two airplanes, one large and one small, were at rest in the hangar.¦2¦1mka¦wakatyann630¦shekitten¦小型の",
-    "0yqnm\t1¦｜私《わたし》はこの｜種《しゅ》の｜鳥《とり》は｜見《み》たことがない。¦I've never seen this sort of bird.¦3¦3g4e¦bunbuku¦CK¦この種の",
-    "0yqp0\t1¦｜虹《にじ》は｜空《から》に｜弓《ゆみ》じょうにかかる。¦The rainbow forms an arc in the sky.¦1¦2mvq¦¦shekitten¦弓じょう",
-    "0yqq4\t1¦｜彼《あ》の｜言《い》ったことは｜的《まと》はずれだった。¦What he said was beside the point.¦¦2ipw¦small_snow¦CH¦的はずれ",
-    "0yqqe\t1¦｜君《きみ》と｜一緒《いっしょ》に｜行《い》きたいけれど｜文無《もんな》しなんだ。¦I want to go with you, but I'm broke.¦¦3txg¦Blanka_Meduzo¦CK¦文無し",
-    "0yqsc\t1¦この｜薩摩芋《さつまいも》は｜生焼《なまや》けでがりがりする。¦This sweet potato is only half-baked and is still crunchy.¦¦1n7n¦¦¦生焼け",
-    "0yqu0\t1¦天の川は、遠方の星が巨大な帯状に見えるものであって、その１つ１つは、われわれの知る太陽に似たものである。¦The Milky Way is a vast belt of distant stars, each star a sun like ours.¦2¦2omb¦¦AlanF_US¦帯状",
   ],
 };

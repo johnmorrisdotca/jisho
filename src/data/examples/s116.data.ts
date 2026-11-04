@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 117 of 144, from "16gi". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 117 of 144, from "16g9". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,19 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "16g98\t1¦｜式《しき》に｜余分《よぶん》の｜変数《へんすう》を｜加《くわ》えたことによって、この｜実験結果《じっけんけっか》は｜不明瞭《ふめいりょう》なものになっている。¦The result of this experiment is obscured by the extra variables added in the formula.¦¦37gm¦¦¦実験結果",
+    "16gac\t1¦「｜日本《にほん》の｜経営陣《けいえいじん》は｜米国《べいこく》の｜労働者《ろうどうしゃ》の｜扱《あつか》い｜方《かた》を｜身《み》につけなければいけない」と｜彼《あれ》は｜言《い》った。¦Japanese management must learn how to deal with American workers, he said.¦¦529d¦mookeee¦AlanF_US¦身につけ\t2¦ダイヤの｜指輪《ゆびわ》なんて｜身《み》につけていないけど、｜私《わたし》は｜幸《しあわ》せだ。¦I'm not wearing a diamond ring, but I'm happy.¦¦4db8¦¦Swift¦身につけていない",
+    "16gaw\t1¦｜弱《よわ》り｜目《め》に｜祟《たた》り｜目《め》。¦Misfortunes never come singly.¦¦36r1¦huizi99¦shekitten¦祟り目",
+    "16gbg\t1¦｜真昼《まひる》の｜太陽《たいよう》がテニスコートを｜目《め》も｜眩《くら》むほどに照らしあげた。¦The noonday sun beat down with dazzling brightness on the tennis court.¦¦1lg1¦fcbond¦fcbond¦眩む",
+    "16gbq\t1¦トムの｜話《はな》し｜方《かた》は｜私《わたし》の｜癇《かん》にさわる。¦Tom's way of speaking gets on my nerves.¦¦4afj¦¦CK¦癇",
+    "16gck\t1¦｜彼《あれ》はわきの｜下《した》に｜本《もと》を｜抱《かか》えている。¦He is holding his books under his arm.¦3¦2d3c¦¦CK¦わきの下",
+    "16gcu\t1¦気苦労で彼女は１０歳もふけこんだ。¦Worry has made her look ten years older.¦3¦3xda¦mookeee¦shekitten¦ふけこんだ",
+    "16gd4\t1¦｜猫《ねこ》は｜生《い》きたネズミをもて｜遊《あそ》んでいた。¦The cat was playing with a live mouse.¦3¦2m39¦¦CM¦もて遊んでいた\t2¦あなたは｜彼《あ》の｜気持《きも》ちを｜弄《もてあそ》んではいけない。¦You should not trifle with his feelings.¦¦4yqz¦¦¦弄んで\t3¦｜私《わたし》は｜数奇《すき》な｜運命《うんめい》にもてあそばれてきた。¦I have lived a life of a puppet of fortune.¦1¦3c26¦¦¦もてあそばれて",
+    "16ges\t1¦｜昔《むかし》は｜長電話《ながでんわ》して、よく｜怒《おこ》られたものだ。¦I used to get yelled at for hogging the phone.¦3¦31v6¦¦CN¦長電話",
+    "16gf2\t1¦いとこは｜私《わたし》を｜町中《まちなか》｜案内《あんない》してくれた。¦My cousin took me around the town.¦1¦4wdq¦¦CK¦町中",
+    "16ggg\t1¦｜私《わたし》は｜電話《でんわ》を｜切《き》って、もう｜一度《いちど》｜彼女《かのじょ》にかけなおした。¦I hung up and called her again.¦3¦3bj2¦¦blay_paul¦かけなおした",
+    "16gha\t1¦｜彼《あれ》は｜行《ぎょう》｜儀《ぎ》には｜気《き》を｜配《くば》っている。¦He is careful about his manners.¦1¦2ate¦¦CK¦気を配っている",
+    "16ghk\t1¦ライトビールはありますか。¦Do you have any light beer?¦5¦44no¦bunbuku¦CK¦ライトビール",
     "16gie\t1¦ウチは｜俗《ぞく》に｜言《い》うシングルマザーの｜家庭《かてい》だ。｜父親《ちちおや》の｜顔《かお》を｜僕《ぼく》は｜知《し》らない。¦We're what they colloquially call a single mother family. I haven't seen my father's face.¦1¦1mbj¦bunbuku¦¦シングルマザー",
     "16gp2\t1¦｜彼《あれ》は｜当校《とうこう》の｜名《な》を｜汚《けが》した。¦He blotted the good reputation of our school.¦2¦26i7¦¦¦当校",
     "16gso\t1¦｜明日《あした》、｜大事《だいじ》なプレゼンがあるって｜言《い》うのに、｜余裕綽々《よゆうしゃくしゃく》だね。¦You're pretty calm, cool and collected for somebody who has a major presentation tomorrow.¦¦1q8b¦small_snow¦CM¦プレゼン",
@@ -179,16 +192,5 @@ export const PIECE: WordsPiece = {
     "16sic\t1¦｜新《あたら》しい｜共和国《きょうわこく》の｜指導者《しどうしゃ》は｜政治的圧力《せいじてきあつりょく》につぶされそうです。¦The leader of the new republic is buckling under political pressures.¦¦347u¦¦¦政治的圧力",
     "16siw\t1¦この｜問題《もんだい》は｜両国間《りょうこくかん》で｜政治的解決《せいじてきかいけつ》を｜見《み》た。¦The two countries came to a political settlement over this dispute.¦¦4p91¦¦¦政治的解決",
     "16sqe\t1¦この工場は週に２５０台の車の生産能力がある。¦This factory's productive capacity is 250 cars a week.¦3¦4ra6¦¦¦生産能力",
-    "16t8g\t1¦｜世界的《せかいてき》な｜全面核戦争《ぜんめんかくせんそう》が｜起《お》これば、｜地球規模《ちきゅうきぼ》でこの「｜核《かく》の｜冬《ふゆ》」が｜数《かず》カ｜月《げつ》｜間《あいだ》も｜続《つづ》くと｜言《い》われています。¦If there's a world-wide all-out nuclear war it's said that there will be a \"nuclear winter\" all over the planet for several months.¦¦1mm7¦mookeee¦¦全面核戦争",
-    "16t90\t1¦｜新《あたら》しい｜法律《ほうりつ》は｜組織犯罪《そしきはんざい》を｜減少《げんしょう》させるでしょう。¦The new law should take a bite out of organized crime.¦1¦344v¦¦CK¦組織犯罪",
-    "16tcm\t1¦｜騒音公害《そうおんこうがい》は、｜人々《ひとびと》が｜環境《かんきょう》にもっと｜敏感《びんかん》でありさえすれば｜避《さ》けることができるのに。¦Noise pollution could be avoided if only people were more sensitive to the environment.¦1¦307i¦¦¦騒音公害",
-    "16tfy\t1¦｜太陽《たいよう》エネルギーについて｜話《はな》そう。¦Let's talk about solar energy.¦3¦2yn2¦¦CK¦太陽エネルギー\t1¦｜問題《もんだい》は、｜太陽《たいよう》エネルギーにはコストがかかりすぎるということだ。¦The problem is that solar energy costs too much.¦3¦1pm4¦mookeee¦CK¦太陽エネルギー",
-    "16ti6\t1¦その｜争《あらそ》いの｜根源《こんげん》は｜二国間《にこくかん》の｜対立関係《たいりつかんけい》にある。¦The quarrel originated in rivalry between the two countries.¦1¦4gro¦¦¦対立関係",
-    "16tky\t1¦アメリカ｜大恐慌《だいきょうこう》の｜際《さい》には｜多《おお》くの｜人《じん》が｜失業《しつぎょう》してた。¦A lot of people were out of work during the Great Depression in America.¦¦4xjg¦¦CM¦大恐慌",
-    "16tmm\t1¦｜社会党《しゃかいとう》が｜大統領候補《だいとうりょうこうほ》として｜立《た》つ｜準備《じゅんび》を｜彼《あれ》にさせた。¦The Socialist Party groomed him as a presidential candidate.¦1¦2xy8¦¦JimBreen¦大統領候補",
-    "16tn6\t1¦｜私《わたし》の｜夢《ゆめ》は｜大統領夫人《だいとうりょうふじん》になることです。¦My dream is to be the First Lady.¦1¦3hfz¦¦sacredceltic¦大統領夫人",
-    "16tp4\t1¦｜脱水症状《だっすいしょうじょう》には、｜塩《しお》をひと｜舐《な》め。¦For dehydration, take a lick of salt.¦¦1lpl¦fcbond¦fcbond¦脱水症状",
-    "16trm\t1¦｜今日《きょう》は｜暖房器具《だんぼうきぐ》を｜使《つか》っていません。¦I'm not using my home heater today.¦1¦1mqx¦mookeee¦Zifre¦暖房器具",
-    "16tta\t1¦そして｜第三《だいさん》が｜地球環境《ちきゅうかんきょう》の｜保全《ほぜん》であり、｜省《しょう》エネルギー、｜省資源《しょうしげん》｜型《かた》の｜生活《せいかつ》を｜送《おく》る｜仕組《しく》みが｜必要《ひつよう》となる。¦The third is the preservation of environment. In this case, the conservation of energy and resources is needed.¦1¦4kqb¦¦papabear¦地球環境",
   ],
 };

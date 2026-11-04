@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 37 of 172, from "costume ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 37 of 172, from "cost r". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,21 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "cost responsibility\tふたん",
+    "cost total\tけいじょう",
+    "costa\tコスタリカ|コスタ・リカ|サンホセ|サン・ホセ|コスタリカきょうわこく|コロン",
+    "costa rica\tコスタリカ|コスタ・リカ",
+    "costal\tろくおう|ろくなんこつ",
+    "costar\tきょうえんしゃ",
+    "costarring\tかおあわせ",
+    "costarum\tろっこつきょきん",
+    "costatum\tきさご|きしゃご|キサゴ|しただみ",
+    "costing\tかつどうきじゅんげんかけいさん",
+    "costlier\tこぶくろとこむすめ",
+    "costly\tがったりさんりょう",
+    "costochondritis\tろくなんこつえん",
+    "costs\tかかり|カカリ|そしょうひよう|よさん|じんけんひ|ぜひとも|まかなう|ぜがひでも|くるまだい|しょきひよう|いじひ|しゅっぱんひ|あたまわり|ばんなんをはいして|こうじひ|ぞうえいひ|そうぎょうひ|せいさんひ|けいえいひ|けんせつひ",
+    "costume\tコスチューム|しょうぞく|かそう|いしょう|そうぞく|そうずく|はやがわり|ひきぬき|ナショナルコスチューム|ナショナル・コスチューム|かみしも|かそうぎょうれつ|じょうえ|のうしょうぞく|はなよめいしょう|みんぞくいしょう|きぐるみ|みずかみしも|コスチュームジュエリー|コスチューム・ジュエリー",
     "costume change\tひきぬき",
     "costumed\tゆるキャラ|ごとうちキャラ|ユルキャラ",
     "costumes\tぶたいいしょう|かしいしょう|きめこみにんぎょう|しかけもの",
@@ -682,13 +697,5 @@ export const PIECE: WordsPiece = {
     "creative power\tそうぞうりょく",
     "creative work\tそうさく",
     "creativity\tそうぞうりょく|クリエイティビティ|クリエイティビティー|クリエーティビティ|クリエーティビティー|そうぞうせい|どくそうせい|そういくふうこうろうしゃしょう|そういくふういくせいこうろうがっこうしょう|てんばこうくう|にっぽんそうぞうがっかい",
-    "creator\tさくしゃ|クリエイター|クリエーター|うみのおや|そうさくしゃ|そうぞうしゃ|そうぞうしゅ|そうぞうぬし|ぞうぶつしゅ|むすびのかみ|じょうてい|しょうてい|ぼんてんおう|ぼんてんのう|ぼんてん|ぼんでん|ぞうかのさんしん|ぞうかのさんじん|ブラフマー|じしんさく",
-    "creator work\tさくしゃ",
-    "creature\tせいぶつ|そうぞうぶつ|クリーチャー|いきもの|うみうなぎ|ニューネッシー|ニュー・ネッシー|とうてつ|せいりょう|しょうりょう|せいりゅう|げんじゅう|きほうもん|かわたろう|がわたろう|がたろう|かはく|かわろう|クリーチャーデザイン|クリーチャー・デザイン",
-    "creatures\tぐんせい|いっさいしゅじょう|いるいいぎょう|ピクシー|ピグシ|ピスキー|りしょう|ぐんじょう",
-    "crecca\tこがも|コガモ",
-    "creche\tたくじしょ",
-    "credence\tしんにん",
-    "credentials\tしんにんじょう|しょうめいしょ|がくれき|がくれきロンダリング|がくれきしんこう",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 43 of 316, from "おやもと". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 43 of 316, from "おやむす". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "おやむすめ\t親娘\t#1ia2e\t¦parent and daughter",
+    "おやもじ\t親文字\t#10vo4\t¦entry kanji in a kanji dictionary\t¦capital letter\t¦matrix (printing)\t¦kanji corresponding to furigana",
     "おやもと\t親元|親許|親もと\t~m25#t9cu\t¦one's parents' home",
     "おやもとをはなれる\t親元を離れる|親もとを離れる|親許を離れる\ti#1l7cy\t¦to leave home¦to leave one's parental roof¦to leave the nest",
     "おやゆずり\t親譲り\tC~mt42#t9ei\t¦inheritance from a parent (property, trait, physique, etc.)",
@@ -842,8 +844,5 @@ export const PIECE: WordsPiece = {
     "おんすいプール\t温水プール\t#13xqw\t¦heated swimming pool",
     "おんすう\t音数\t#1leo0\t¦number of syllabic sounds in a language",
     "おんすうりつ\t音数律\t#1leky\t¦syllabic meter (poetry)",
-    "オンスクリーン\t\t#1or1e\tcomp¦on-screen",
-    "オンスクリーンディスプレイ\t\t#1d2t0\tcomp¦on-screen display",
-    "オンスケ\t\t#1pber\tabbr¦(proceeding) on-schedule¦(going) according to schedule¦(going) according to plan",
   ],
 };

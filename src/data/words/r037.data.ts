@@ -116,7 +116,8 @@ export const PIECE: WordsPiece = {
     "おかまぼう\tお釜帽|御釜帽\t#1oorw\trare¦bowler hat¦felt hat",
     "おかまをおこす\tお竈を起こす|お竈を興す\tg#1p2oo\tid,obs¦to make a fortune",
     "おかまをほる\tおかまを掘る|オカマを掘る|お釜を掘る\tg#1ahhk\tcol¦to crash a car into the back of another¦to rear-end",
-    "おかみ\t御上|お上\t#r89g\thon¦the Emperor¦His Majesty\thon¦the government¦the authorities\thon,arch¦your wife¦his wife\thon,arch¦lord¦(one's) master",
+    "おかみ\t女将\t~m25#styo\t¦proprietress (of a traditional Japanese inn, restaurant, or shop)¦landlady¦hostess",
+    "おかみ\t御上|お上\t#r89g\thon¦the Emperor¦His Majesty\thon¦the government¦the authorities\t¦proprietress¦hostess¦landlady\thon,arch¦your wife¦his wife",
     "おかみ\t内儀\t#v914\thon¦your wife¦his wife",
     "おかみ\t傍見\t#wjya\t¦looking on by an outsider",
     "おかみ\t龗\t#1mmmi\trare¦water god¦rain and snow god¦dragon god",
@@ -741,7 +742,5 @@ export const PIECE: WordsPiece = {
     "おごと\t小琴\t#13wya\tarch¦koto (usu. small)",
     "おごのり\t海髪\t#1204s\t¦ogo (seaweed)",
     "オゴポゴ\t\t#1ahbg\t¦Ogopogo (lake monster reported to live in Canada's Lake Okanagan)",
-    "おごり\t奢り\tU#185zq\tuk¦luxury¦extravagance\tuk¦treat (i.e. at someone's expense)",
-    "おごり\t驕り|傲り\t#1g3dc\t¦arrogance¦haughtiness¦conceitedness",
   ],
 };

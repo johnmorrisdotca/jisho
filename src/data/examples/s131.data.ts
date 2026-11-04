@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 132 of 144, from "1awf". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 132 of 144, from "1aub". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,21 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "1aubs\t1¦カーペットには｜埃《ほこり》を｜吸収《きゅうしゅう》するダストポケット｜効果《こうか》があり、｜埃《ほこり》の｜飛散《ひさん》を｜防《ふせ》ぐ｜特長《とくちょう》があるのだが、それが｜仇《あだ》になった｜結果《けっか》といえる。¦Carpets have the effect of a dust pocket, with merit of sucking up dust and stopping it flying around, but you can say that effect backfires.¦¦1n9d¦mookeee¦¦ダスト",
+    "1audg\t1¦あの｜学生《がくせい》たちのことを｜考《かんが》えると｜本当《ほんとう》に｜頭痛《ずつう》の｜種《たね》だ。¦Those college students give me a bad headache.¦3¦4ybw¦¦¦頭痛の種",
+    "1aue0\t1¦｜彼《かれ》らはその｜車《くるま》が｜残《のこ》していった｜跡《あと》を｜追《お》った。¦They followed the tracks the car had left.¦2¦23ju¦¦CK¦跡を追った",
+    "1auea\t1¦｜彼《あれ》は｜誰《だれ》に｜対《たい》しても｜腰《こし》が｜低《ひく》い。¦He is humble towards everyone.¦¦26xa¦tommy__san¦¦腰が低い",
+    "1auoa\t1¦スペイン料理ってパエリアの他に何があるの？¦What Spanish food is there apart from paella?¦3¦246j4¦tommy_san¦tsp_2¦パエリア",
+    "1av5i\t1¦「腰は痛む？」「いや、別に」「そう、それは不幸中の幸いね」¦\"Does your back hurt?\" \"No, not really.\" \"Oh, that's something then, isn't it?\"¦2¦1nep¦mookeee¦Zifre¦不幸中の幸い",
+    "1av9e\t1¦｜現場《げんば》には｜彼《あれ》に｜不利《ふり》な｜証拠品《しょうこひん》は｜何《なに》もなかった。¦There was no evidence against him found at the scene.¦1¦3qx5¦¦CM¦証拠品",
+    "1av9o\t1¦｜先週《せんしゅう》｜米国《べいこく》からのみやげ｜品《ひん》を｜彼《あれ》に｜郵送《ゆうそう》した。¦Last week, I mailed him some souvenirs from the U.S.¦2¦31f3¦¦CK¦みやげ品",
+    "1avdk\t1¦｜明後日《あさって》ティーパーティーを｜開《ひら》きましょう。¦Let's have a tea party the day after tomorrow.¦4¦1q9j¦¦CK¦ティーパーティー",
+    "1ave4\t1¦｜私《わたし》は｜古《ふる》い｜真鍮《しんちゅう》のティーポットが｜好《す》きです。¦I like my old brass tea pot.¦¦3dbj¦¦CK¦ティーポット",
+    "1avi0\t1¦もー、｜弥生《やよい》のナビが｜判《わか》りにくいから、｜同《おな》じトコぐるぐる｜回《めぐ》ったじゃない。¦Hmph, Yayoi's navigation was difficult to follow so we ended up going round and round the same places.¦1¦1mxw¦mookeee¦¦ナビ",
+    "1avoo\t1¦｜順《じゅん》を｜追《お》って｜基本的《きほんてき》なタグを｜覚《おぼ》えていこう。¦Let's learn the basic tags in order.¦¦1mnu¦mookeee¦¦順を追って",
+    "1avqm\t1¦その｜古《ふる》い｜置《お》き｜時計《どけい》はまだ｜使《つか》われている。¦The old clock is still in use.¦3¦4ipx¦¦CK¦置き時計",
+    "1avxu\t1¦｜投函《とうかん》｜完了《かんりょう》、と。｜後《あと》は｜頼《たの》んだぞ、ポストマンよ。¦Mailing complete. I leave the rest to you, postman!¦¦1miw¦mookeee¦¦ポストマン",
+    "1aw66\t1¦ファーストキスは、もっとロマンチックなの｜想像《そうぞう》してたのに。¦I imagined my first kiss would be more romantic.¦2¦1n02¦bunbuku¦CK¦ファーストキス",
     "1awfw\t1¦｜仕事《しごと》を｜片付《かたづ》けようと｜全力《ぜんりょく》を｜挙《あ》げた。¦We went all out to get the job done.¦1¦3mfa¦¦CK¦全力を挙げた",
     "1awg6\t1¦走行中の箱乗りはご遠慮下さい！¦Please don't lean out of the window when we're moving.¦1¦1mks¦mookeee¦CK¦箱乗り",
     "1awiy\t1¦｜彼《あれ》は｜仕事《しごと》で｜成功《せいこう》をおさめられなかった。¦He couldn't make it in business.¦1¦2aau¦bunbuku¦CK¦成功をおさめられなかった",
@@ -181,20 +196,5 @@ export const PIECE: WordsPiece = {
     "1baye\t1¦アメリカの｜大学《だいがく》に｜応募《おうぼ》する｜際《さい》に、トフルの｜成績《せいせき》は｜一《ひと》つの｜要因《よういん》でしかない。¦When applying to American universities, your TOEFL score is only one factor.¦1¦4xmd¦¦CK¦トフル",
     "1bazs\t1¦ランチボックスからは、｜色《いろ》んなオカズの｜匂《にお》いが、｜立《た》ちのぼっている。¦The smell of various foodstuffs drifted up from the lunch box.¦¦1mxi¦¦¦ランチボックス",
     "1bb02\t1¦ガイドブックによれば、ここがここいらで｜一番《いちばん》｜美味《おい》しい｜店《みせ》なんだって。¦According to the guidebook, this is the best restaurant around here.¦3¦1n9b¦mookeee¦CK¦ここいら",
-    "1bb0m\t1¦この｜話《はなし》をすると｜彼《あれ》は｜間違《まちが》った｜印象《いんしょう》を｜与《あた》えるんじゃないかな。¦I'm afraid the story will give him a wrong impression.¦2¦4p2s¦¦¦印象を与える",
-    "1bb0w\t1¦｜私《わたし》は｜彼女《かのじょ》をまるで｜嫌《きら》っているかのようにそっぽを｜向《む》いた。¦I turned away as if I didn't like her.¦1¦3a7l¦¦jakov¦そっぽを向いた",
-    "1bb34\t1¦｜禅坊主《ぜんぼうず》じゃあるまいし、｜毎日毎日《まいにちまいにち》、｜一汁一菜《いちじゅういっさい》のダイエットメニューは｜勘弁《かんべん》してよ。¦What? A little soup and celery is all I get? I'm not a Zen monk. I can't survive on an austerity diet like this.¦¦30l6¦¦voxbubnya¦禅坊主",
-    "1bb3e\t1¦｜天《てん》におわす｜神《かみ》のお｜力添《ちからぞ》えがあった。¦God above helped us.¦1¦2omd¦¦¦おわす",
-    "1bb4s\t1¦｜火《ひ》がぼんぼん｜燃《も》えている。¦The fire is burning furiously.¦2¦403y¦¦CK¦ぼんぼん",
-    "1bb52\t2¦このポンコツ｜車《くるま》はえんこばかりしている。¦This old car breaks down all the time.¦5¦4s6d¦small_snow¦CK¦えんこ",
-    "1bb5c\t1¦｜大統領《だいとうりょう》のボディーガードは｜入《い》り｜口《ぐち》に｜配置《はいち》されている。¦The President's guards are stationed in front of the entrance.¦1¦2xzn¦¦¦ボディーガード",
-    "1bb5w\t1¦｜良《よ》いボールボーイやボールガールは｜精神《せいしん》を｜集中《しゅうちゅう》することができ、また、｜速《はや》く｜走《はし》ることができなければならない。¦A good ballboy or ballgirl must be able to concentrate hard and run fast.¦3¦1o3p¦mookeee¦CM¦ボールガール",
-    "1bba2\t1¦このペーズリー柄のネクタイ、あなたに似合うんじゃない？¦Don't you think this paisley tie would look good on you?¦1¦4s8h¦KK_kaku_¦CK¦ペーズリー",
-    "1bbac\t1¦｜新《あたら》しいシャツにフルーツジュースを｜少《すこ》しこぼしてしまった。¦I spilled some fruit juice on my new shirt.¦4¦349e¦bunbuku¦CK¦フルーツジュース",
-    "1bbde\t1¦｜私《わたし》は｜日本《にほん》でフリーライターをしています。¦I'm a free-lance writer in Japan.¦4¦3bef¦KK_kaku_¦¦フリーライター",
-    "1bbdy\t1¦この｜昇進《しょうしん》は、あなたの｜熱心《ねっしん》で｜質《しつ》の｜高《たか》い｜仕事《しごと》ぶりを｜反映《はんえい》したものでしょう。¦This promotion properly reflects the quality and diligence of your work.¦2¦4qmf¦¦Lumi_alt¦仕事ぶり",
-    "1bbe8\t1¦ローマ｜人《じん》は｜古代《こだい》ブリトン｜人《じん》の｜文明《ぶんめい》｜化《か》を｜試《こころ》みた。¦The Romans tried to civilize the ancient Britons.¦3¦44by¦¦Dejo¦ブリトン人",
-    "1bbji\t1¦｜絶《た》え｜間《ま》ない｜騒音《そうおん》で｜耳《みみ》ががーんとなった。¦The continual noise deafened us.¦1¦31j8¦¦¦がーん",
-    "1bbjs\t1¦※｜誤字《ごじ》｜直《なお》しました。ご｜指摘《してき》サンクスです。¦NOTE: Typo corrected. Thanks for pointing it out.¦1¦1ndw¦¦¦サンクス",
   ],
 };

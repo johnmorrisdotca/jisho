@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 56 of 144, from "0tju". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 56 of 144, from "0tjsy". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,9 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0tjsy\t1¦あなたは｜何座《なにざ》｜生《う》まれですか。¦What sign were you born under?¦3¦4z6b¦¦¦生まれ",
+    "0tjti\t1¦｜信《しん》じて。｜生《う》まれ｜変《か》わるよ。¦Believe me. I'll be a new man.¦3¦34ge¦small_snow¦¦生まれ変わる",
+    "0tjts\t1¦このことがよい｜人間関係《にんげんかんけい》を｜生《う》みだす。¦This makes good human relations.¦3¦4soh¦¦¦生みだす\t2¦あなたはそのチームを｜誰《た》が｜生《う》み｜出《だ》したか｜知《し》っていますか。¦Do you know who brought that team into being?¦¦4zhs¦¦¦生み出した",
     "0tjuw\t1¦あごひげをはやした｜神様《かみさま》は｜自分《じぶん》が｜離《はな》れたのと｜同《おな》じ｜方法《ほうほう》で｜戻《もど》ってくると｜約束《やくそく》していた。¦The bearded god had promised to return someday in the same way he had left.¦¦50xs¦¦CM¦はやした",
     "0tjv6\t1¦この｜生《う》まれつきのあざに｜悩《なや》んでいます。¦I'm troubled by this birth-mark.¦2¦4swi¦¦¦生まれつき",
     "0tjvg\t1¦｜暑《あつ》い｜日《ひ》の｜生《なま》ビールの｜味《あじ》はまた｜格別《かくべつ》だ。¦Draft beer tastes especially good on a hot day.¦1¦35sb¦bunbuku¦CK¦生ビール",
@@ -200,8 +203,5 @@ export const PIECE: WordsPiece = {
     "0tnhq\t1¦｜彼女《かのじょ》は｜赤十字《せきじゅうじ》に｜寄付《きふ》した。¦She contributed to the Red Cross.¦3¦1w46¦¦CK¦赤十字",
     "0tnk8\t1¦｜船《ふね》は｜今夜《こんや》｜赤道《せきどう》を｜越《こ》すだろう。¦The ship will cross the equator tonight.¦3¦30w2¦¦CK¦赤道",
     "0tnl2\t1¦｜赤貧《せきひん》｜戸口《とぐち》に｜至《し》らば、｜恋《こい》は｜窓《まど》より｜飛《と》び｜去《さ》る。¦When poverty comes in at the door, love flies out the window.¦1¦31nq¦¦Hybrid¦赤貧",
-    "0tnlm\t1¦｜私《わたし》は｜赤帽《あかぼう》にスーツケースを｜運《はこ》んでもらった。¦I had the porter carry my suitcase.¦2¦3bzt¦¦CK¦赤帽",
-    "0tnlw\t1¦その｜時《とき》｜自分《じぶん》がなんとばかであったかを｜考《かんが》えると｜赤面《せきめん》する。¦I blush to think of what a fool I was then.¦¦4hta¦¦CK¦赤面\t2¦｜君《きみ》の｜行《おこな》いには｜赤面《せきめん》する。¦I am ashamed of your conduct.¦3¦3tl4¦¦Zifre¦赤面",
-    "0tnnk\t1¦その｜女性《じょせい》の｜顔《かお》には｜悲《かな》しみの｜跡《あと》があった。¦The woman's face was marked with grief.¦2¦4hj9¦¦¦跡\t2¦ここは｜城《しろ》の｜跡《あと》です。¦This is the site of a castle.¦2¦4t2i¦KK_kaku_¦¦跡\t3¦｜虫《むし》に｜刺《さ》された｜跡《あと》を｜引《ひ》っかかないようにした｜方《ほう》がいいよ。¦You should try not to scratch insect bites.¦2¦2pgu¦¦CM¦跡",
   ],
 };

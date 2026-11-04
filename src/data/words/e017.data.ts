@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 18 of 219, from "0puvy". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 18 of 219, from "0puua". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,12 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0puua\t隔靴掻痒|隔靴搔痒~sK\tかっかそうよう|かくかそうよう\tn¦yoji¦being frustrated because something is not quite as hoped (just as one cannot scratch an itch from outside a shoe)¦having an itch that one cannot scratch",
+    "0puuk\t隔月\tかくげつ\tn,adj-no¦¦every second month¦every other month",
+    "0puuu\t隔絶\tかくぜつ\tn,vs,vt,vi¦¦isolation¦separation¦remoteness¦seclusion¦reclusion¦inaccessibility¦sequestration",
+    "0puv4\t隔日\tかくじつ|かくにち\tn¦¦every other day¦every second day",
+    "0puve\t隔年\tかくねん\tn,adv¦¦biennially¦every second year¦every other year",
+    "0puvo\t隔壁\tかくへき\tn,adj-no¦¦barrier wall¦bulkhead¦partition¦septum¦diaphragm",
     "0puvy\t隔膜\tかくまく\tn¦¦partition¦diaphragm",
     "0puw8\t隔離\tかくり\tn,vs,vt,vi,adj-no¦¦isolation¦segregation¦separation¦quarantine",
     "0puws\t革靴|皮靴|革沓\tかわぐつ\tn¦¦leather shoes¦leather boots",
@@ -952,15 +958,5 @@ export const PIECE: WordsPiece = {
     "0q2ji\t丸瓦\tまるがわら\tn¦¦convex roof tile¦平瓦",
     "0q2js\t丸見え|まる見え~sK|丸みえ~sK\tまるみえ\tn,adj-no¦¦full view¦plain sight¦completely visible",
     "0q2k2\t丸公\tまるこう\tn¦¦official price",
-    "0q2kc\t丸鋼\tまるこう\tn¦¦round steel bar",
-    "0q2km\t丸腰\tまるごし\tadj-no¦¦unarmed¦without weapons",
-    "0q2kw\t丸剤\tがんざい\tn,adj-no¦¦pill",
-    "0q2l6\t丸ごと|丸事~iK|丸毎~iK\tまるごと\tadv¦uk¦in its entirety¦whole¦wholly",
-    "0q2lg\t丸持ち\tまるもち\tn¦¦moneyed man",
-    "0q2lq\t丸写し\tまるうつし\tn,vs¦¦copying in entirety (verbatim)",
-    "0q2m0\t丸取り\tまるどり\tn,vs,vt¦¦monopolizing¦monopolising¦monopolization¦monopolisation",
-    "0q2ma\t丸首\tまるくび\tn¦¦round-necked (T-shirt)",
-    "0q2mk\t丸十\tまるじゅう\tn¦¦cross in a circle",
-    "0q2mu\t丸出し|丸だし~sK|まる出し~sK\tまるだし\tadj-no,n¦¦(fully) exposed¦bare¦uncovered¦in full view¦undisguised¦broad (accent)",
   ],
 };

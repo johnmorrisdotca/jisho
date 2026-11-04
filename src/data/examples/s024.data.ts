@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 25 of 144, from "0pwas". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 25 of 144, from "0pw9". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,9 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0pw9e\t1¦｜将軍《しょうぐん》の｜堂々《どうどう》とした｜恰幅《かっぷく》は｜誰《だれ》でも｜威圧《いあつ》される。¦The general's massive presence awes everyone.¦¦35i5¦¦¦恰幅",
+    "0pw9y\t1¦｜書類《しょるい》は｜全部《ぜんぶ》テープでくくられて｜金庫《きんこ》におさめられた。¦All the papers were taped up and kept in the safe.¦2¦35qf¦¦¦くくられて",
+    "0pwa8\t1¦カッコ｜内《ない》の｜言葉《ことば》を｜短縮形《たんしゅくけい》にしなさい。¦Put the words in parentheses into abbreviated form.¦1¦4unj¦arnab¦orcrist¦カッコ",
     "0pwas\t1¦その｜活火山《かっかざん》は｜周期的《しゅうきてき》に｜噴火《ふんか》する。¦The active volcano erupts at regular intervals.¦¦4ja9¦¦witbrock¦活火山",
     "0pwb2\t1¦その｜街《まち》は｜活気《かっき》にあふれていた。¦The town was full of activity.¦1¦4jc8¦bunbuku¦CM¦活気",
     "0pwbc\t1¦｜株式市場《かぶしきしじょう》は｜活況《かっきょう》を｜呈《てい》している。¦The stock market is very active.¦1¦3y19¦¦CK¦活況",
@@ -204,8 +207,5 @@ export const PIECE: WordsPiece = {
     "0q0ze\t1¦テニスをすることは｜私《わたし》には｜簡単《かんたん》だ。¦Playing tennis is easy for me.¦2¦4bzv¦¦Eldad¦簡単",
     "0q10s\t1¦この｜辞書《じしょ》は｜簡約《かんやく》｜版《はん》だ。¦This dictionary is an abridged edition.¦2¦4qx5¦¦Eldad¦簡約",
     "0q11m\t1¦この｜靴《くつ》は｜少《すこ》し｜緩《ゆる》い。¦These shoes are a little loose.¦1¦4rhq¦bunbuku¦CM¦緩い",
-    "0q12g\t1¦その｜規則《きそく》は｜最近《さいきん》｜緩《ゆる》められた。¦The rules were recently relaxed.¦1¦4j78¦¦CK¦緩められた",
-    "0q12q\t2¦Ｖの角度が広ければ広いほど、スピードは緩やかになる。¦The wider the V angle, the slower the speed.¦1¦515o¦Chus¦Chus¦緩やか\t3¦この｜学校《がっこう》は｜規律《きりつ》がやや｜緩《ゆる》やかだ。¦Discipline is rather mild at this school.¦1¦4rrb¦¦¦緩やか",
-    "0q13a\t3¦いつもお｜世話《せわ》になっていますから、｜一旦緩急《いったんかんきゅう》あれば、すぐさま｜馳《は》せ｜参《さん》じます。¦You're always there for me, so if you're ever in dire straits, just let me know and I'll come running.¦¦4win¦KK_kaku_¦Vortarulo¦緩急",
   ],
 };

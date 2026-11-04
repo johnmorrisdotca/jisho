@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 83 of 144, from "0wvl". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 83 of 144, from "0wvf". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,16 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0wvfc\t1¦｜彼女《かのじょ》はその｜皿《さら》の｜模様《もよう》が｜気《き》に｜入《い》っている。¦She likes the design on the plate.¦1¦1zd1¦small_snow¦CK¦模様",
+    "0wvfm\t1¦｜猫《ねこ》は｜茂《しげ》みに｜隠《かく》れていた。¦The cat lay hidden in the bushes.¦1¦2m2y¦Sim5634¦CK¦茂み",
+    "0wvfw\t1¦｜丘《おか》には｜低《ひく》い｜木《き》がたくさん｜茂《しげ》っている。¦Lots of low trees grow on the hill.¦1¦3x0r¦¦RJH¦茂っている",
+    "0wvi4\t1¦｜飼《か》い｜猫《ねこ》の｜毛《け》のつやが｜悪《わる》くなった。¦Our cat's fur has lost its luster.¦1¦38hw¦¦CK¦毛",
+    "0wvio\t1¦｜刺激《しげき》を｜受《う》け｜続《つづ》けると｜肌《はだ》の｜保護《ほご》｜作用《さよう》により｜角質《かくしつ》が｜肥厚《ひこう》して、ゴワゴワしたり｜硬《かた》くなって、｜毛穴《けあな》が｜目立《めだ》ってきます。¦If it continues to be stimulated the skin's protective function causes thickening and it becomes stiff and hard with pores that stand out.¦1¦1mq1¦¦¦毛穴",
+    "0wviy\t1¦｜彼《あれ》はユダヤ｜人《じん》を｜毛嫌《けぎら》いする。¦He has a prejudice against Jews.¦1¦2d93¦¦shekitten¦毛嫌い",
+    "0wvj8\t1¦｜赤《あか》ん｜坊《ぼう》が｜毛糸《けいと》の｜玉《たま》をもつれさせた。¦The baby tangled the ball of yarn.¦¦31q6¦¦Luornu¦毛糸",
+    "0wvji\t1¦スコットランドは｜毛織物《けおりもの》で｜有名《ゆうめい》だ。¦Scotland is famous for its woollen textiles.¦1¦4lns¦bunbuku¦BE¦毛織物",
+    "0wvjs\t1¦｜蝶《ちょう》は｜成長《せいちょう》した｜毛虫《けむし》である。¦A butterfly is a mature caterpillar.¦1¦2p93¦KK_kaku_¦CM¦毛虫",
+    "0wvkc\t1¦｜私《わたし》は｜誰《だれ》にもこの｜時計《とけい》を｜貸《か》すつもりはありません。ましてや｜手放《てばな》すつもりなど｜毛頭《もうとう》ありません。¦I have no intention of lending this watch to anyone, much less parting with it.¦¦3bq0¦wat¦CM¦毛頭\t1¦｜引退《いんたい》するつもりは｜毛頭《もうとう》ない。¦I have no intention whatever of resigning.¦2¦1r9p¦¦CK¦毛頭",
     "0wvl6\t1¦｜開拓者《かいたくしゃ》｜達《たち》は｜現地人《げんちじん》たちから｜毛皮《けがわ》を｜物々交換《ぶつぶつこうかん》で｜手《て》に｜入《い》れた。¦The colonists bartered with the natives for fur.¦1¦3yom¦¦CK¦毛皮",
     "0wvlg\t1¦｜彼女《かのじょ》は｜毛筆《もうひつ》を｜使《つか》うのがいやだった。¦She doesn't like to use a writing brush.¦2¦1urz¦¦¦毛筆",
     "0wvlq\t1¦この｜柔《やわ》らかい｜毛布《もうふ》は｜赤《あか》ちゃんにちょうどいい。¦This soft blanket is just right for babies.¦2¦4qpl¦¦_undertoad¦毛布\t1¦ケンは｜毛布《もうふ》を｜二《ふた》つに｜畳《たた》んだ。¦Ken folded the blanket in half.¦2¦4toq¦¦CN¦毛布",
@@ -218,14 +228,5 @@ export const PIECE: WordsPiece = {
     "0wzdu\t1¦｜私《わたし》の｜手荷物《てにもつ》は｜輸送《ゆそう》｜中《うち》に｜紛失《ふんしつ》した。¦My baggage was lost in transit.¦1¦3i2s¦¦Lumi¦輸送",
     "0wzee\t1¦１９９８年日本の輸出が輸入を７７８億ドル上回った。¦Japan's exports exceeded imports by $77.8 billion in 1998.¦2¦5202¦mookeee¦CK¦輸入",
     "0wzf8\t1¦｜私《わたし》はただの｜名無《なな》しの｜権兵衛《ごんべえ》です。¦I am just a nobody.¦¦3f4t¦¦CK¦ただ\t2¦｜私《わたし》はその｜切符《きっぷ》をただで｜手《て》にいれた。¦I got the ticket for nothing.¦2¦3fge¦¦CK¦ただ\t3¦｜彼《あれ》は｜結構《けっこう》しぶといね。｜転《ころ》んでもただでは｜起《お》きぬ、いい｜根性《こんじょう》しているよ。¦He's a tenacious guy who always manages to come out on top. He's the kind of guy who can turn any situation to his advantage.¦1¦2b6g¦¦¦ただ\t4¦｜君《きみ》はただ｜皿《さら》を｜洗《あら》いさえすればいい。¦All you have to do is wash the dishes.¦2¦3t39¦¦CK¦ただ\t5¦ただ、｜面白《おもしろ》いブログを｜書《か》くために、｜人《じん》のブログを｜読《よ》むのなら｜今日《きょう》から｜出来《でき》る。¦However, if you're going to read people's blogs in order to write an interesting blog, you can do that right away.¦3¦1li5¦fcbond¦fcbond¦ただ",
-    "0wzfs\t1¦｜初《はじ》めの｜一歩《いっぽ》が｜唯一《ゆいいつ》の｜難関《なんかん》。¦The first step is the hardest.¦1¦35u3¦¦CK¦唯一の",
-    "0wzg2\t1¦この｜地上《ちじょう》で｜唯一無二《ゆいいつむに》の｜平等《びょうどう》は｜死《し》である。¦The sole equality on earth is death.¦¦4q7g¦¦¦唯一無二の",
-    "0wzgc\t1¦｜本人《ほんにん》は｜唯我独尊《ゆいがどくそん》を｜決《き》め｜込《こ》んでいるようだけども、｜周《まわ》りから｜見《み》れば｜単《たん》なるわがままだよね。¦He's completely convinced of his own greatness but to the people around him he's just a selfish jerk.¦1¦1qy4¦KK_kaku_¦papabear¦唯我独尊",
-    "0wzgw\t1¦ただいま、お｜母《かあ》さん。¦I'm home, Mom!¦5¦4d59¦arnab¦CM¦ただいま\t2¦｜申《もう》し｜訳《わけ》ありませんが、ただ｜今《いま》｜満室《まんしつ》になっています。¦I'm afraid we're quite full at the moment.¦1¦33wt¦KK_kaku_¦Zifre¦ただ今\t3¦メアリーはただいま｜戻《もど》ったところです。¦Mary has just come home.¦3¦46b8¦¦CK¦ただいま\t4¦ただいま｜参《まい》ります。¦I will be with you right away.¦3¦4d55¦arnab¦CK¦ただいま",
-    "0wzj4\t1¦｜彼《あ》の｜優《やさ》しい｜言葉《ことば》で｜彼女《かのじょ》の｜気持《きも》ちが｜和《やわ》らいだ。¦She melted at his kind words.¦3¦2hhb¦¦CK¦優しい",
-    "0wzjo\t1¦ここから郵便局まではゆうに５キロあります。¦The post office is a good five kilometers away from here.¦2¦4te9¦¦CK¦ゆうに",
-    "0wzk8\t1¦｜彼女《かのじょ》は｜現代《げんだい》の｜最《もっと》も｜優《まさ》れた｜画家《がか》の｜一人《ひとり》である。¦She is among the best artists of today.¦3¦1xlv¦¦Dejo¦優れた",
-    "0wzks\t1¦｜広告《こうこく》に｜関《かん》してはコークの｜方《ほう》が｜優位《ゆうい》にたっている。¦When it comes to advertising, Coke is ahead of the game.¦3¦3pyz¦¦¦優位に",
-    "0wzlc\t1¦｜憲法《けんぽう》の｜規定《きてい》に｜従《したが》い｜衆院《しゅういん》の｜議決《ぎけつ》が｜参院《さんいん》に｜優越《ゆうえつ》する。¦Under the Constitution, the lower chamber's resolutions override those of the upper chamber.¦1¦1mso¦mookeee¦bmorsello¦優越",
   ],
 };

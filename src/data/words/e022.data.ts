@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 23 of 219, from "0qzok". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 23 of 219, from "0qzmc". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,13 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0qzmc\t見せ掛け|見せかけ\tみせかけ\tn,adj-no¦¦seeming¦pose¦show¦pretense¦sham¦mock",
+    "0qzmm\t見せつける|見せ付ける\tみせつける\tv1,vt¦¦to make a display of¦to show off¦to flaunt",
+    "0qzmw\t見世物~ateji|見せ物\tみせもの\tn¦hist¦misemono¦type of Edo- and Meiji-period side show often held outdoors or in small temporarily erected shacks on temple and shrine grounds\tn¦¦show¦exhibition¦spectacle¦freakshow¦side show",
+    "0qzn6\t見っともない~rK|見っとも無い~sK\tみっともない\tadj-i¦uk¦shameful¦disgraceful¦unsightly¦indecent¦unseemly¦unbecoming¦improper",
+    "0qzng\t見て取る|見てとる\tみてとる\tv5r,vt¦¦to perceive¦to grasp (the situation)",
+    "0qzo0\t見やる|見遣る\tみやる\tv5r,vt¦¦to look at¦to gaze¦to stare at",
+    "0qzoa\t見る|観る|視る|覧る~sK\tみる\tv1,vt¦¦to see¦to look¦to watch¦to view¦to observe\tv1,vt¦¦to examine¦to look over¦to assess¦to check¦to judge\tv1,vt¦¦to look after¦to attend to¦to take care of¦to keep an eye on¦看る\tv1,vt¦¦to experience¦to meet with (misfortune, success, etc.)\taux-v,v1¦uk¦to try ...¦to have a go at ...¦to give ... a try¦after the -te form of a verb\taux-v,v1¦uk¦to see (that) ...¦to find (that) ...¦as 〜てみると, 〜てみたら, 〜てみれば, etc.",
     "0qzok\t見違える|見ちがえる~sK\tみちがえる\tv1,vt¦¦to mistake (for something or someone else)¦to be unable to recognize",
     "0qzou\t見逸れる\tみそれる\tv1,vt¦¦to fail to recognize¦お見逸れ・1¦usu. as お見それする\tv1,vt¦¦to underestimate (someone)¦お見逸れ・2¦usu. as お見それする",
     "0qzp4\t見栄を張る|見栄をはる~sK|見えを張る~sK|見えをはる~sK\tみえをはる\texp,v5r¦¦to be pretentious¦to put on airs¦to show off",
@@ -982,22 +989,5 @@ export const PIECE: WordsPiece = {
     "0r7ho\t後ろ姿|後姿|うしろ姿~sK\tうしろすがた\tn¦¦(a person's) appearance from behind¦person as seen from behind¦back view¦retreating figure",
     "0r7hy\t後ろ盾|後ろ楯|後ろだて~sK\tうしろだて\tn¦¦backing¦support¦backer¦supporter¦patron¦sponsor\tn¦¦shield that protects one's back",
     "0r7i8\t後ろ足|後ろ脚|うしろ足~sK|後ろ肢~sK|後ろあし~sK\tうしろあし\tn¦¦hind leg¦hind foot",
-    "0r7ii\t後遺症\tこういしょう\tn¦med¦prognostic symptoms¦after-effect¦sequela",
-    "0r7is\t後胤\tこういん\tn¦¦descendant¦scion",
-    "0r7j2\t後援\tこうえん\tn,vs,vt,vi¦¦support¦backing",
-    "0r7jc\t後押し|あと押し~sK\tあとおし\tn,vs,vt¦¦pushing¦support¦backing¦supporter¦backer\tn,vs,vt¦¦pushing from behind (a cart, etc.)¦pusher",
-    "0r7jm\t後家\tごけ\tn¦¦widow",
-    "0r7jw\t後回し\tあとまわし\tn¦¦putting off¦postponing",
-    "0r7k6\t後悔\tこうかい\tn,vs,vt,vi,adj-no¦¦regret¦repentance¦remorse",
-    "0r7kg\t後学\tこうがく\tn¦¦younger scholar¦先学\tn¦¦future reference",
-    "0r7kq\t後釜|後がま~sK\tあとがま\tn¦¦successor¦replacement\tn¦¦second wife",
-    "0r7l0\t後期\tこうき\tn,adj-no¦¦latter period¦second half¦late stage¦third trimester¦second semester¦前期",
-    "0r7la\t後期印象派\tこうきいんしょうは\tn¦¦post-impressionism¦postimpressionism",
-    "0r7lk\t後記\tこうき\tn¦¦postscript\tadj-no,n,vs¦¦undermentioned¦described below",
-    "0r7lu\t後技\tうしろわざ\tn¦MA¦Aikido rear defence (defense)",
-    "0r7m4\t後金\tあときん\tn¦¦rest of the payment",
-    "0r7me\t後継\tこうけい\tn,adj-no¦¦succession\tn¦¦successor",
-    "0r7mo\t後継者\tこうけいしゃ\tn¦¦successor",
-    "0r7my\t後件\tこうけん\tn¦¦(the) latter¦following matter¦前件・1\tn¦logic¦consequent¦前件・2",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 54 of 316, from "かつどうり". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 54 of 316, from "かつどうしゃし". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,10 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "かつどうしゃしん\t活動写真\t#11g70\tdated¦moving picture",
+    "かつどうせいか\t活動成果\t#pweo\t¦results (of an activity)",
+    "かつどうてき\t活動的\tn#11g7a\t¦active¦dynamic¦energetic",
+    "かつどうはんい\t活動範囲\t#1ifuq\t¦sphere of action¦scope of activity¦range of work",
     "かつどうりょうけい\t活動量計\t#1p1ok\t¦activity tracker¦fitness tracker",
     "かつどうりょく\t活動力\t#15evy\t¦energy¦vitality",
     "カツどん\tカツ丼\t#m8q4\tfood¦katsudon",
@@ -813,7 +817,5 @@ export const PIECE: WordsPiece = {
     "かのえね\t庚子\t#1oulj\t¦Metal Rat (37th term of the sexagenary cycle, e.g. 1960, 2020, 2080)",
     "かのきし\t彼の岸\t#1l5fs\tarch¦nirvana",
     "かのくうほどにもおもわぬ\t蚊の食うほどにも思わぬ|蚊の食う程にも思わぬ\t#13k0q\t¦untroubled¦unworried¦unaffected",
-    "かのくつ\t靴の沓\t#1lk2q\t¦black-lacquered cowhide boots with curved toes, metal buckles, and brocade tops (worn with ceremonial dress)",
-    "かのくに\tかの国|彼の国\t#1l5f8\t¦that country\tarch¦nirvana",
   ],
 };

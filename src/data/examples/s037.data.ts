@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 38 of 144, from "0rh6". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 38 of 144, from "0rgy". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,20 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0rgy8\t1¦｜最《もっと》も｜荒涼《こうりょう》たる｜日《ひ》は｜一日中《いちにちじゅう》｜笑《わら》わなかった｜日《ひ》である。¦The most wasted day of all is that on which we have not laughed.¦2¦3ns5¦¦¦荒涼たる",
+    "0rgyi\t1¦彼は１０行に１０個の間違いをした。¦He made ten mistakes in as many lines.¦2¦2gza¦¦sundown¦行",
+    "0rgys\t1¦ふと通りに目をやると、行き交う人の中に、１人立ち止まり俺を見下ろす者がいた。¦As I glanced at the street there was somebody looking down at me in the middle of those walking past each other.¦¦1mzx¦mookeee¦¦行き交う",
+    "0rgzc\t1¦｜彼《あれ》は｜行《い》き｜先《さき》の｜違《ちが》う｜列車《れっしゃ》に｜乗《の》るほど｜不注意《ふちゅうい》ではない。¦He is not so careless as to take the wrong train.¦3¦2atj¦¦¦行き先\t2¦｜行《い》き｜先《さき》の｜住所《じゅうしょ》はおわかりですか。¦Do you have an address?¦3¦3psf¦¦CM¦行き先",
+    "0rgzm\t1¦「｜時間通《じかんどお》りに、｜教室《きょうしつ》にうまく｜行《い》き｜着《つ》くことができる」と｜彼《あれ》は｜思《おも》った。¦\"I can make it to my class on time,\" he thought.¦3¦52bh¦e4zh1nmcz¦CM¦行き着く\t2¦｜労働《ろうどう》｜側《そば》と｜経営《けいえい》｜側《そば》の｜意見《いけん》｜不一致《ふいっち》はストライキに｜行《い》きつくかもしれない。¦The disagreement between the union and management could lead to a strike.¦1¦1noj¦arnab¦CK¦行きつく",
+    "0rh06\t1¦その｜庭《にわ》は｜手入《てい》れが｜行《い》き｜届《とど》いている。¦The garden is tended with great care.¦2¦4g9p¦¦sundown¦行き届いている",
+    "0rh0q\t1¦｜激《はげ》しい｜雨《あめ》が｜彼《かれ》らの｜行《ゆ》く｜手《て》を｜妨《さまた》げた。¦The heavy rain prevented them from going there.¦1¦3rs6¦bunbuku¦CK¦行く手",
+    "0rh10\t1¦マウスとキーボードを行ったりきたりするのが煩雑なので、キーボードのみで操作できるようショートカットキーはないのでしょうか？¦It's a fiddle going to and fro between the keyboard and mouse so are there shortcuts to allow operation using only the keyboard?¦1¦1m32¦fcbond¦fcbond¦行ったりきたり",
+    "0rh2e\t1¦｜彼《あれ》は｜自分《じぶん》の｜行為《こうい》を｜正当化《せいとうか》しようとしている。¦He is trying to justify his act.¦¦28zw¦Ianagisacos¦¦行為",
+    "0rh2o\t1¦｜行員《こういん》は｜私《わたし》に｜過《あやま》ちを｜認《みと》めた。¦The clerk admitted his mistake to me.¦3¦3pra¦¦CK¦行員",
+    "0rh3s\t1¦｜文字《もじ》を｜大《おお》きくし、｜文字間《もじかん》や｜行《ぎょう》｜間《あいだ》に｜余裕《よゆう》をもたせ、｜高齢者《こうれいしゃ》の｜方《ほう》や、｜視力《しりょく》に｜障害《しょうがい》のある｜方《ほう》が｜読《よ》み｜易《やす》いように｜注意《ちゅうい》しました。¦I took care to make the letters large and be generous with character and line spacing in order for it to be easy to read for the elderly and those who have problems with their sight.¦1¦1lw2¦fcbond¦fcbond¦行間",
+    "0rh42\t1¦｜彼女《かのじょ》は｜行《ぎょう》｜儀《ぎ》が｜極《き》めて｜上品《じょうひん》である。¦She is quite decent in conduct.¦1¦1xiw¦¦¦行儀",
+    "0rh4m\t1¦ニクソンはウォーターゲート｜事件《じけん》に｜関《かん》し、｜黙秘権《もくひけん》を｜行使《こうし》して｜無視《むし》しようとしたが、｜結局《けっきょく》｜明《あか》るみにでた。¦Nixon tried to stonewall through Watergate by ignoring it, but it didn't work.¦¦49e1¦¦RoyalBee¦行使",
+    "0rh56\t1¦メグは｜学校《がっこう》のいろいろな｜行《ぎょう》｜事《こと》に｜参加《さんか》する。¦Meg attends many school affairs.¦3¦466k¦¦CP¦行事",
     "0rh6k\t1¦｜道《みち》は｜行進《こうしん》にさしつかえない。¦The way is free for an advance.¦3¦2ncs¦¦¦行進",
     "0rh74\t1¦そのタクシーはいきなり｜左《ひだり》に｜曲《ま》がった。¦The taxi abruptly turned left.¦3¦4kcf¦small_snow¦CM¦いきなり",
     "0rh7e\t1¦その｜省《しょう》は｜内政問題《ないせいもんだい》の｜行政《ぎょうせい》をつかさどる。¦The ministry administers the internal affairs.¦2¦4h9p¦¦¦行政",
@@ -195,28 +209,5 @@ export const PIECE: WordsPiece = {
     "0rljs\t1¦｜待《ま》っていたのは｜黒光《くろびか》りのする｜大型車《おおがたしゃ》だった。¦The waiting car was big and black and shiny.¦2¦2yfm¦mookeee¦¦黒光り",
     "0rll6\t1¦あの｜人《ひと》は｜眼《め》の｜横《よこ》にほくろがある。¦That person has a mole at the side of his eye.¦1¦4y12¦mookeee¦¦ほくろ",
     "0rllq\t1¦｜今月《こんげつ》は｜黒字《くろじ》である。¦We are in the black this month.¦4¦3p2e¦small_snow¦CC¦黒字",
-    "0rlno\t1¦「なんだか｜焦《こ》げ｜臭《くさ》いね」「うっかりパンを｜黒《くろ》こげにしちゃったの」¦\"Can you smell something burning?\" \"Oh, I went and burnt the toast.\"¦1¦49if¦¦magnificentgoddess¦黒こげ",
-    "0rlny\t1¦｜三原色《さんげんしょく》を｜混合《こんごう》すると｜黒色《くろいろ》ができる。¦Mixture of the three primary colors creates black.¦2¦3msi¦¦¦黒色",
-    "0rlp2\t1¦マーテイン・ルーサー・キング・ジュニアは、｜黒人《こくじん》｜牧師《ぼくし》を｜父《ちち》として｜生《う》まれた。¦Martin Luther King, Jr., was the son of a black minister.¦1¦4737¦¦AlanF_US¦黒人",
-    "0rlti\t2¦｜太陽《たいよう》の｜黒点《こくてん》を｜観察《かんさつ》しよう。¦Let's observe sunspots.¦3¦1lqw¦fcbond¦fcbond¦黒点",
-    "0rlts\t1¦｜黒塗《くろぬ》りのリムジンがキーというタイヤの｜音《おと》と｜共《とも》に｜角《かど》を｜曲《ま》がった。¦A black limo rounded the corner with a squeal of tires.¦2¦1mrj¦mookeee¦Dejo¦黒塗り",
-    "0rlvg\t1¦テーブルの｜下《もと》には｜黒猫《くろねこ》がいた。¦Under the table was a black cat.¦3¦4c6n¦mookeee¦orcrist¦黒猫",
-    "0rlw0\t1¦｜黒板《こくばん》に｜書《か》きますね。¦I'll write it on the blackboard.¦2¦3f8g¦small_snow¦CK¦黒板",
-    "0rlxo\t1¦｜赤《あか》いドレスの｜女《おんな》は、｜黒服《くろふく》の｜男《おとこ》を｜無視《むし》して、ケイタイで｜友達《ともだち》にかけた。¦The woman in a red dress ignored the black-clothed man and called a friend on her mobile.¦¦1ln0¦fcbond¦fcbond¦黒服",
-    "0rly8\t2¦｜私《わたし》は｜誰《た》が｜黒幕《くろまく》か｜知《し》っている。¦I know who is pulling the strings.¦¦3bq5¦bunbuku¦CC¦黒幕",
-    "0rm24\t1¦その｜囚人《しゅうじん》は｜獄舎《ごくしゃ》につながれている。¦The prisoner is in chains.¦1¦4hmc¦¦CK¦獄舎",
-    "0rm2y\t1¦その｜液体《えきたい》はうまくこせない。¦The liquid does not strain well.¦2¦4jqm¦¦Dejo¦こせない",
-    "0rm38\t1¦｜腰《こし》に｜持病《じびょう》があります。¦I have back problems.¦2¦1dd02¦bunbuku¦CK¦腰",
-    "0rm3i\t1¦｜彼女《かのじょ》は｜腰掛《こしか》けて｜足《あし》を｜組《く》んだ。¦She sat down and crossed her legs.¦2¦1xhv¦¦CK¦腰掛けて",
-    "0rm3s\t1¦｜腰《こし》を｜下《お》ろし、｜手帳《てちょう》を｜開《ひら》きました。¦I sat down and opened my notebook.¦1¦3pgp¦¦CK¦腰を下ろし",
-    "0rm42\t1¦｜君《きみ》が｜座《すわ》っている｜腰掛《こしか》けのペンキはまだ｜塗《ぬ》り｜立《た》てだよ。¦The paint on the seat on which you are sitting is still wet.¦2¦3u45¦¦Zifre¦腰掛け",
-    "0rm5q\t1¦｜腰痛《ようつう》がひどいんです。¦I have a bad pain in my lower back.¦2¦3pgl¦bunbuku¦CK¦腰痛",
-    "0rm6a\t1¦なによ！出来ないの？この度胸なし！腰抜けッ！¦What? You can't do it? You coward! Chicken!¦2¦1m8g¦fcbond¦fcbond¦腰抜けッ",
-    "0rm74\t1¦｜切符《きっぷ》はたちまち｜売《う》り｜切《き》れた。¦The tickets were sold out in a moment.¦2¦31n4¦¦CM¦たちまち",
-    "0rm7e\t1¦最近、物忘れが激しくて。少しボケてきたのかな？¦Could I be going soft in the head? I forget things so easily these days.¦1¦3nqg¦small_snow¦¦ボケて",
-    "0rm7o\t1¦ビルはどうもメアリーに｜惚《ほ》れているらしい。¦Bill seems to be stuck on Mary.¦¦48a2¦¦CP¦惚れている",
-    "0rm7y\t1¦｜彼女《かのじょ》は｜男性《だんせい》がほれぼれとするような｜着物《きもの》をきていた。¦She was dressed fit to kill.¦3¦1vuw¦¦¦ほれぼれ",
-    "0rm88\t1¦｜彼女《かのじょ》は｜一目《ひとめ》で｜彼《あれ》に｜惚《ほ》れ｜込《こ》んだ。¦She fell in love with him at first sight.¦¦1yan¦¦CK¦惚れ込んだ",
-    "0rm8i\t1¦「うちの愛妻がケチでさー」「のろけてる？愚痴ってる？」¦\"My wonderful wife is so stingy that ...\" \"You boasting? Or complaining?\"¦1¦1ng9¦mookeee¦¦のろけてる",
   ],
 };

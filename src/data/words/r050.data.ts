@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 51 of 316, from "かさかさな". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 51 of 316, from "かさかさ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "カサカサ\t\tnsC~i#m896\ton-mim¦dry and rough¦desiccated\ton-mim¦rustling",
+    "かさかさ\t\tnsC~i#m896\ton-mim¦dry and rough¦desiccated\ton-mim¦rustling",
     "カサカサなる\tカサカサ鳴る\tg#yz1a\t¦to rustle¦to make a rustling sound¦to crinkle",
     "かさかさなる\tかさかさ鳴る\tg#yz1a\t¦to rustle¦to make a rustling sound¦to crinkle",
     "かさがい\t笠貝|傘貝\tU#1cii6\tuk¦limpet (esp. species Cellana mazatlandica)",
@@ -853,8 +855,5 @@ export const PIECE: WordsPiece = {
     "カスバ\t\tC~g#m8g4\t¦kasbah¦casbah¦qasbah",
     "カスピかい\tカスピ海\tC~s#z2qw\t¦Caspian Sea",
     "カスピヤツメぞく\tカスピヤツメ属\t#1ioj8\t¦Caspiomyzon (genus of lampreys)",
-    "かすふだ\tカス札\t#1okxl\thanaf¦1-point card¦junk card¦plain card",
-    "カスマグサ\t\tU#1pfys\tuk¦smooth tare (Vicia tetrasperma)¦smooth vetch¦lentil vetch",
-    "かすまぐさ\tかす間草\tU#1pfys\tuk¦smooth tare (Vicia tetrasperma)¦smooth vetch¦lentil vetch",
   ],
 };

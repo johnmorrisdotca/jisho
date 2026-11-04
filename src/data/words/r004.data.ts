@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 5 of 316, from "あけくれ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 5 of 316, from "あけが". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,9 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "あけがた\t明け方|明方\tC~ni24#wubw\t¦dawn¦daybreak",
+    "あけがらす\t明烏|あけ烏|明け烏\t#17eda\t¦daybreak sound of a crow\t¦(name of) poetry anthology",
+    "あけくち\t開け口\t#1pjdi\t¦opening\t¦pull tab",
     "あけくれ\t明け暮れ\tsC~n23#zw6w\t¦morning and evening¦daily routine\t¦to spend all one's time doing¦to do day in, day out\t¦all the time¦always¦constantly",
     "あけくれる\t明け暮れる\ti#17edk\t¦to spend all one's time doing¦to do day in, day out¦to do nothing but ...\t¦to pass (of days)",
     "あけぐち\t開け口\t#1pjdi\t¦opening\t¦pull tab",
@@ -785,7 +788,5 @@ export const PIECE: WordsPiece = {
     "あしわら\t葦原\t#1lq9s\t¦reed bed",
     "アシわら\tアシ原\t#1lq9s\t¦reed bed",
     "あしをあらう\t足を洗う\tg#13sdk\tid¦to quit (a shady business)¦to wash one's hands of¦to cut one's ties with\t¦to wash one's feet",
-    "あしをうばわれる\t足を奪われる\ti#19fnw\t¦to be stranded¦to lose means of transportation",
-    "あしをくずす\t足を崩す\tg#1i8o4\t¦to sit cross-legged¦to sit at ease",
   ],
 };

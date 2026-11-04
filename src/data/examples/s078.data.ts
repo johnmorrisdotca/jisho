@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 79 of 144, from "0wef". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 79 of 144, from "0we3". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,13 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0we3g\t1¦｜表面上《ひょうめんじょう》、｜本書《ほんしょ》の｜大部分《だいぶぶん》は｜一連《いちれん》の｜事例《じれい》の｜変遷《へんせん》を｜記録《きろく》したものである。¦On the surface the book consists mostly of a series of case histories.¦¦1tv1¦¦¦変遷",
+    "0we40\t1¦｜変装《へんそう》していた｜彼《あれ》に｜気《き》づかなかった｜人《じん》も｜多《おお》かった。¦There were many who couldn't recognize him in that disguise.¦2¦1sbv¦¦CM¦変装",
+    "0we8q\t1¦｜人口《じんこう》は｜変動《へんどう》しないでいる。¦The population remains stationary.¦3¦339z¦¦¦変動",
+    "0wea4\t1¦｜日本《にほん》は｜工業化《こうぎょうか》の｜結果《けっか》｜急激《きゅうげき》な｜変貌《へんぼう》を｜遂《と》げた。¦Japan has undergone a drastic change as a result of industrialization.¦¦2mi2¦mookeee¦CK¦変貌",
+    "0wecm\t1¦｜火事《かじ》のさなかに｜靴《くつ》を｜片一方《かたいっぽう》なくしてしまいました。¦I lost my shoe in the fire.¦2¦401y¦¦CK¦片一方",
+    "0wed6\t1¦その｜学校《がっこう》は、｜中《うち》・｜高《たか》｜一貫校《いっかんこう》だということを｜頭《とう》の｜片隅《かたすみ》にでも｜入《い》れておいて｜下《くだ》さい。¦Bear in mind that that school is an integrated junior high and high school.¦1¦4jbo¦bunbuku¦CK¦片隅",
+    "0wee0\t1¦そのアメリカ｜人《じん》の｜男《おとこ》の｜子《こ》は｜片言《かたこと》の｜日本語《にほんご》を｜話《はな》した。¦The American boy spoke broken Japanese.¦2¦4knu¦¦CK¦片言",
     "0wefe\t1¦｜私《わたし》はボールを｜片手《かたて》で｜受《う》けた。¦I caught the ball with one hand.¦2¦3en5¦¦CK¦片手",
     "0weg8\t1¦おまわりさんに｜車《くるま》を｜片側《かたがわ》に｜寄《よ》せるように｜合図《あいず》された。¦The patrolman motioned me to pull over.¦2¦4vjl¦¦CK¦片側",
     "0wegs\t1¦｜彼《あれ》は｜板《いた》の｜片端《かたはし》を｜持《も》ち｜上《あ》げた。¦He upped one end of the plank.¦1¦263q¦¦sundown¦片端",
@@ -206,13 +213,5 @@ export const PIECE: WordsPiece = {
     "0wi3w\t1¦その｜犬《いぬ》はボールを｜放《はな》そうとしなかった。¦The dog wouldn't let go of the ball.¦3¦4it1¦¦CK¦放そう",
     "0wi4g\t1¦いいから｜社長《しゃちょう》の｜言《い》うことなどほっとけよ。¦Don't pay any attention to the boss.¦4¦4x0h¦bunbuku¦CK¦ほっとけ",
     "0wi4q\t1¦｜彼《あれ》はその｜兵士《へいし》をねらって｜矢《や》を｜放《ほう》った。¦He shot an arrow at the soldier.¦1¦2eqk¦¦CK¦放った\t2¦それは｜虎《とら》を｜野《の》に｜放《はな》つようなものだ。¦It is like letting a tiger run loose.¦1¦4eck¦¦CM¦放つ\t3¦そのごみ｜箱《ばこ》は｜悪臭《あくしゅう》を｜放《はな》っていた。¦The garbage-can gave off a bad smell.¦1¦4kfk¦¦Dejo¦放っていた",
-    "0wi50\t1¦｜口《くち》いっぱいに｜物《もの》を｜放《ほう》り｜込《こ》んで｜話《はなし》をするのは｜無作法《ぶさほう》だ。¦It is rude to talk when your mouth is full.¦¦3q83¦¦CM¦放り込んで",
-    "0wi5a\t1¦｜彼《あれ》は｜家《いえ》から｜放《ほう》り｜出《だ》された。¦He got thrown out of the house.¦3¦2cc6¦helmfer¦CK¦放り出された",
-    "0wi5k\t1¦｜農夫《のうふ》は｜荷馬車《にばしゃ》の｜上《うえ》へ｜干《ほ》し｜草《くさ》を｜放《ほう》り｜上《あ》げた。¦The farmer pitched the hay onto the wagon.¦2¦2lw9¦mookeee¦CM¦放り上げた",
-    "0wi5u\t1¦いい｜球《きゅう》を｜放《ほう》るようになったな、｜恵《え》｜一《ひとつ》｜君《きみ》。¦You throw a good ball nowadays, Keiichi.¦1¦1ldy¦fcbond¦fcbond¦放る\t2¦その｜車《くるま》は｜何《なに》｜週間《しゅうかん》も｜放《ほう》ってある。¦The car has been kicking around the roadside for weeks.¦3¦4hpj¦¦AlanF_US¦放って",
-    "0wi6e\t1¦｜何《なん》らかの｜技術的問題《ぎじゅつてきもんだい》により、｜予告《よこく》された｜番組《ばんぐみ》の｜代《か》わりに｜映画《えいが》が｜放映《ほうえい》された。¦Because of some technical problem, a movie was shown in place of the announced program.¦¦40s4¦¦CM¦放映",
-    "0wi6o\t1¦｜誰《だれ》かがその｜家《いえ》に｜放火《ほうか》した。¦Someone set fire to the house.¦¦2xst¦¦CK¦放火",
-    "0wi6y\t1¦｜私《わたし》は｜放課後《ほうかご》にギターを｜弾《はじ》きます。¦I play the guitar after school.¦1¦39xj¦¦CK¦放課後",
-    "0wi78\t1¦｜日本国民《にほんこくみん》は｜戦争《せんそう》を｜放棄《ほうき》している。¦The Japanese people have renounced war.¦1¦2mdq¦¦¦放棄",
   ],
 };

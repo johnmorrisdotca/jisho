@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 33 of 144, from "0qw5". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 33 of 144, from "0qw1q". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,6 +10,14 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "0qw1q\t3¦その｜国《くに》は｜貿易《ぼうえき》｜上《うえ》の｜赤字《あかじ》の｜穴埋《あなう》めに｜懸命《けんめい》である。¦The country is trying hard to make up for her trade deficit.¦1¦4ih7¦¦¦穴埋め",
+    "0qw20\t1¦｜彼女《かのじょ》は｜髪《かみ》を｜結《ゆ》ってもらうために｜美容院《びよういん》に｜行《おこな》った。¦She went to the hairdresser's to have her hair done.¦1¦1vj8¦¦CK¦結って",
+    "0qw34\t1¦｜彼《あ》の｜努力《どりょく》が｜好成績《こうせいせき》に｜結《むす》びついた。¦His efforts led to good results.¦1¦2huv¦¦¦結びついた",
+    "0qw3e\t1¦ロープを｜木《き》に｜結《むす》び｜付《つ》けなさい。¦Fasten the rope to the tree.¦1¦44cr¦¦CM¦結び付け\t2¦｜我々《われわれ》はしばしば｜黒色《くろいろ》を｜死《し》と｜結《むす》び｜付《つ》けて｜考《かんが》える。¦We often associate black with death.¦1¦3zlb¦¦CK¦結び付けて",
+    "0qw3o\t1¦その｜結《むす》び｜目《め》を｜守《まも》るのは｜重要《じゅうよう》なことだ。¦Maintaining that tie is important.¦1¦4iwx¦¦CK¦結び目",
+    "0qw3y\t1¦｜彼《かれ》らは｜都市《とし》を｜鉄道《てつどう》で｜結《むす》ぶことを｜計画《けいかく》｜中《うち》だ。¦They are planning to connect the cities with a railroad.¦1¦22g2¦¦CK¦結ぶ\t2¦実も結ぶが、挿し木でも根付くらしい？¦It bears fruit, but it seems it may even set root from cuttings?¦1¦1l70¦fcbond¦fcbond¦結ぶ",
+    "0qw48\t1¦母は１本の紐で３本の鉛筆を結わえた。¦Mother tied up three pencils with a piece of string.¦¦1s49¦¦¦結わえた",
+    "0qw4i\t1¦｜私達《わたしたち》は｜息《いき》を｜殺《ころ》して｜実験《じっけん》の｜結果《けっか》を｜待《ま》った。¦We held our breath and waited for the result of the experiment.¦1¦38ue¦¦¦結果\t1¦｜結果《けっか》は｜気《き》にするな。¦Don't worry about the results.¦1¦3rp0¦small_snow¦CK¦結果\t2¦｜結果《けっか》、｜計算《けいさん》ミスが｜多《おお》い。¦There are a lot of results and a calculation mistakes.¦1¦3rpo¦¦¦結果\t2¦｜結果《けっか》、｜雨《あめ》の｜日《ひ》は｜部屋《へや》の｜中《うち》でボール｜遊《あそ》びをしています。¦As a result, we play ball inside on rainy days.¦1¦1l4u¦fcbond¦fcbond¦結果\t3¦｜大雪《おおゆき》の｜結果《けっか》、｜彼女《かのじょ》は｜遅《おく》れた。¦She was late as a result of the heavy snow.¦1¦2y14¦¦CK¦結果\t3¦｜私《わたし》は｜十分《じゅうぶん》｜考慮《こうりょ》した｜結果《けっか》、｜申《もう》し｜出《で》に｜応《おう》じることにした。¦I accepted the offer after due consideration.¦¦3cdq¦bunbuku¦CK¦結果\t3¦｜汚染《おせん》の｜結果《けっか》、その｜湖《みずうみ》には｜生物《せいぶつ》が｜何一《なにひと》ついない。¦As a result of pollution, the lake is without any form of life.¦1¦41hx¦¦carlosalberto¦結果\t3¦｜連邦議会《れんぽうぎかい》がその｜法案《ほうあん》を｜可決《かけつ》した｜結果《けっか》、それまで｜以上《いじょう》に｜多《おお》くの｜国旗《こっき》が｜焼《や》き｜捨《す》てられたに｜違《ちが》いありません。¦I am sure that more flags were burned as a result of Congress passing that law than had ever been burned before.¦¦1nqf¦mookeee¦¦結果",
     "0qw52\t1¦｜何年《なんねん》か｜前《さき》には、｜結核《けっかく》にかかっていると｜知《し》らされることは｜死《し》の｜宣告《せんこく》を｜聞《き》くのに｜等《ひと》しかった。¦Some years ago, learning that one had tuberculosis amounted to hearing a sentence of death.¦1¦40jk¦bunbuku¦auxitt¦結核",
     "0qw5m\t1¦ゆっくりと｜着実《ちゃくじつ》なのが｜結局《けっきょく》｜勝《か》つ。¦Slow and steady wins the race.¦1¦44w5¦¦CK¦結局",
     "0qw6g\t1¦｜好奇心《こうきしん》がお｜旺盛《おうせい》なのは｜大変《たいへん》に｜結構《けっこう》なことである。¦A healthy curiosity is truly a fine thing.¦1¦1ltt¦fcbond¦fcbond¦結構な\t2¦どちらの｜日《ひ》でも｜結構《けっこう》です。¦Either day is OK.¦1¦4avw¦tommy__san¦CM¦結構\t3¦いや｜結構《けっこう》です。たくさんいただきました。¦No more, thank you. I'm full.¦1¦4wag¦bunbuku¦CK¦結構\t4¦｜彼女《かのじょ》の｜髪《かみ》の｜毛《け》は｜結構《けっこう》｜短《みじか》い。¦The woman's hair is quite short.¦1¦20lb¦¦CK¦結構",
@@ -113,6 +121,7 @@ export const PIECE: WordsPiece = {
     "0qyak\t1¦｜彼《かれ》らは｜家《いえ》の｜建築《けんちく》にとりかかった。¦They set about building a house.¦2¦2379¦bunbuku¦CM¦建築",
     "0qyau\t1¦｜建築家《けんちくか》は｜芸術家《げいじゅつか》ぶってはならない。¦An architect should not pretend to be an artist.¦2¦3rc3¦¦CM¦建築家",
     "0qybo\t1¦あそこの｜建物《たてもの》が｜燃《も》えているに｜違《ちが》いない。¦That building must be on fire.¦2¦50uq¦¦CK¦建物",
+    "0qyby\t1¦システィナ礼拝堂は、１４７３年にバティカン宮殿内に建立された壮大な礼拝堂です。¦The Sistine Chapel is a vast chapel built inside the Vatican Palace in 1473.¦1¦1lmy¦fcbond¦fcbond¦建立",
     "0qyc8\t1¦｜首相《しゅしょう》は｜憲章《けんしょう》に｜署名《しょめい》した。¦The Premier subscribed his name to the charter.¦1¦36if¦¦¦憲章",
     "0qyci\t1¦｜憲政《けんせい》の｜危機《きき》が｜始《はじ》まったのは、このような｜状況《じょうきょう》のもとであった。¦It was under these circumstances that the constitutional crisis began.¦1¦3rbx¦¦sundown¦憲政",
     "0qyd2\t1¦アメリカには｜憲法上《けんぽうじょう》の｜抑制《よくせい》と｜均衡《きんこう》という｜入念《にゅうねん》な｜制度《せいど》がある。¦America has an elaborate system of constitutional checks and balances.¦1¦4xng¦¦¦憲法",
@@ -192,21 +201,5 @@ export const PIECE: WordsPiece = {
     "0qzrw\t1¦その｜小《ちい》さい｜男《おとこ》の｜子《こ》は｜目《め》を｜大《おお》きく｜見開《みひら》いて｜巨大《きょだい》な｜象《しょう》を｜見《み》た。¦The little boy gazed at the huge elephant, eyes wide open.¦2¦4hhr¦¦¦見開いて",
     "0qzsg\t1¦その｜実施《じっし》｜見学《けんがく》は｜非常《ひじょう》にためになった。¦I found the field trip very educational.¦1¦4hr1¦¦CK¦見学",
     "0qzta\t1¦ノートを｜教科書《きょうかしょ》と｜見間違《みまちが》えた。¦I mistook a notebook for a textbook.¦3¦3etf¦KK_kaku_¦¦見間違えた",
-    "0qztk\t1¦｜何《なに》か｜新《あたら》しい｜考《かんが》えを｜思《おも》いつくたびに、｜彼《あれ》は｜前後《ぜんご》の｜見境《みさかい》もなくそれを｜実行《じっこう》する｜傾向《けいこう》がある。¦He's given to going overboard every time he gets a new idea.¦2¦4108¦¦AMIKEMA¦見境",
-    "0qztu\t3¦｜眼《め》は｜手《て》を｜見極《みきわ》め｜得《え》るが、｜心《こころ》までは｜見極《みきわ》め｜得《え》ない。¦The eye may see for the hand, but not for the mind.¦1¦3xq3¦zurajama¦Whiskkebarr¦見極め",
-    "0qzu4\t1¦ここだけの｜話《はなし》だけれど、あの｜太《ふと》った｜見苦《みぐる》しい｜魔女《まじょ》は｜減量《げんりょう》｜中《うち》なのだ。¦Between ourselves, the fat ugly witch is on a diet.¦1¦4td3¦mookeee¦¦見苦しい",
-    "0qzue\t1¦これらの｜品物《しなもの》は｜見《み》｜計《はか》らい｜品《しな》です。¦Those goods are on approval.¦4¦4o1z¦¦¦見計らい",
-    "0qzv8\t1¦｜彼女《かのじょ》は｜弁護士《べんごし》になった｜途端《とたん》に｜古《ふる》い｜友達《ともだち》を｜見向《みむ》きもしようとしなかった。¦Soon after she became a lawyer, she wouldn't even give her old friends the time of day.¦1¦1uyz¦¦papabear¦見向き",
-    "0qzvi\t1¦｜私《わたし》は｜彼《あれ》がおじさんの｜世話《せわ》で｜今日《きょう》｜見合《みあ》いをすることを｜知《し》っています。¦I know that he will be introduced to a lady by his uncle today.¦3¦3ba6¦¦CM¦見合い",
-    "0qzvs\t1¦｜三人《さんにん》の｜少年《しょうねん》たちは｜互《たが》いに｜顔《かお》を｜見合《みあ》った。¦The three boys looked at one another.¦3¦3ms9¦¦CK¦見合った\t2¦このお｜金《かね》であなたの｜要求《ようきゅう》に｜見合《みあ》いますか。¦Will this amount of money meet your need?¦3¦4ssx¦¦CM¦見合います",
-    "0qzw2\t1¦ガラクタを｜見《み》て、｜彼《かれ》らは｜互《たが》いに｜顔《かお》を｜見合《みあ》わせました。¦They looked at the rubbish, then they looked at each other.¦3¦4uj8¦¦voxbubnya¦見合わせました",
-    "0qzwc\t1¦｜今年《ことし》の｜売《う》り｜上《あ》げは｜倍増《ばいぞう》と｜見込《みこ》んでいます。¦Sales should double this year.¦2¦3o7z¦¦CK¦見込んでいます\t2¦｜君《きみ》を｜見込《みこ》んで｜頼《たの》んでいるんだ。¦I'm asking you to do this because I trust you.¦3¦3sed¦bunbuku¦CK¦見込んで",
-    "0qzwm\t1¦｜桜《さくら》が｜見《み》ごろだ。¦The cherry blossoms are at their best.¦1¦3mux¦bunbuku¦CK¦見ごろ",
-    "0qzww\t1¦｜彼《あれ》は｜私《わたし》を｜見殺《みごろ》しにした。¦He sold me down the river.¦3¦29gb¦¦¦見殺し",
-    "0qzxg\t1¦｜彼《あ》のスイングは｜実《じつ》に｜見事《みごと》だ。¦He has a perfect swing.¦3¦1mhh¦mookeee¦CM¦見事",
-    "0qzxq\t1¦｜我々《われわれ》は｜時代《じだい》に｜一歩《いっぽ》｜先《さき》んじた｜見識《けんしき》を｜持《じ》たねばならない。¦We must be a step ahead of the times in our outlook.¦1¦1mv3¦mookeee¦¦見識",
-    "0qzy0\t1¦｜我々《われわれ》は｜群衆《ぐんしゅう》の｜中《うち》で｜彼女《かのじょ》を｜見失《みうしな》った。¦We lost sight of her in the crowd.¦1¦3zfx¦¦CK¦見失った",
-    "0qzyk\t1¦｜彼《あれ》は｜友人《ゆうじん》から｜見捨《みす》てられてしまった。¦He was deserted by his friends.¦2¦52w2¦mookeee¦CK¦見捨てられて",
-    "0qzz4\t1¦あなたの｜両親《りょうしん》が｜私《わたし》たちを｜見守《みまも》ってくれました。¦Your parents kept an eye on us.¦3¦4zr0¦¦CK¦見守って",
   ],
 };

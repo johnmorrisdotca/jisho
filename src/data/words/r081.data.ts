@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 82 of 316, from "くらりてぃー". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 82 of 316, from "くらりす". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "クラリス\t\t#2zrga\tcompany¦Claris",
+    "クラリティ\t\t#1fciy\t¦clarity",
     "クラリティー\t\t#1fciy\t¦clarity",
     "クラリネット\t\t#16xiw\t¦clarinet",
     "クラリーノ\t\t#1oskw\tmusic¦clarino (baroque high trumpet)",

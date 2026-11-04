@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 39 of 316, from "おごりた". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 39 of 316, from "おごり". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,6 +9,8 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
+    "おごり\t奢り\tU#185zq\tuk¦luxury¦extravagance\tuk¦treat (i.e. at someone's expense)",
+    "おごり\t驕り|傲り\t#1g3dc\t¦arrogance¦haughtiness¦conceitedness",
     "おごりたかぶる\tおごり高ぶる|驕り高ぶる|驕りたかぶる|傲り高ぶる\tg#1m2p0\t¦to act arrogantly¦to be puffed up with success¦to behave like one is better than others",
     "おごる\t奢る\tgCU~i#xkac\tuk¦to treat (someone) to (something)¦to give (someone) a treat¦to buy (someone a meal, drink, etc.)\tuk¦to be extravagant¦to live in luxury",
     "おごる\t驕る|傲る\tgCU~i#1p96h\tuk¦to be proud¦to be haughty¦to be arrogant",
@@ -710,6 +712,5 @@ export const PIECE: WordsPiece = {
     "おだまき\t苧環|小田巻\tU#18hjk\tuk¦fan columbine (Aquilegia flabellata)\tuk¦hemp yarn wound into a hollow ball\tabbr,uk¦egg custard dish on a base of udon noodles",
     "オダマキ\t\tU#18hjk\tuk¦fan columbine (Aquilegia flabellata)\tuk¦hemp yarn wound into a hollow ball\tabbr,uk¦egg custard dish on a base of udon noodles",
     "おだまきむし\tおだまき蒸し|小田巻蒸し|苧環蒸し\t#1p1xt\tfood¦odamaki mushi",
-    "おだやか\t穏やか\tnC~ni10#pd9i\t¦calm¦quiet¦gentle\t¦moderate¦reasonable¦amicable",
   ],
 };
