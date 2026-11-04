@@ -33,6 +33,7 @@ export type WordsPieceKind =
   | "extra-entries"
   | "examples"
   | "extra-examples"
+  | "strokes"
   | "common"
   | "manifest";
 

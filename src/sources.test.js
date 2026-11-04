@@ -40,6 +40,20 @@ describe("the data's sources", () => {
     }
   });
 
+  it("name KanjiVG and its terms, in the notice and at the head of every file of the strokes", () => {
+    for (const name of ["KanjiVG", "Ulrich Apel", "CC BY-SA 3.0", "kanjivg.tagaini.net"])
+      expect(notice, name).toContain(name);
+    const folder = "src/data/strokes";
+    const files = readdirSync(folder);
+    expect(files.length).toBeGreaterThan(50);
+    for (const file of files) {
+      const head = readFileSync(`${folder}/${file}`, "utf8").slice(0, 1400);
+      expect(head, file).toContain("KanjiVG");
+      expect(head, file).toContain("Attribution-Share Alike 3.0");
+      expect(head, file).toContain("kanjivg.tagaini.net");
+    }
+  });
+
   it("record the JMdict file the words were made from, with its date and SHA-256", () => {
     const { jmdict } = JSON.parse(readFileSync("data-sources/sources.json", "utf8"));
     expect(jmdict.sha256).toMatch(/^[0-9a-f]{64}$/);

@@ -1,0 +1,75 @@
+import type { EntryManifest } from "../../words.types.ts";
+
+/**
+ * Where the pieces of the strokes are: the first kanji of each, and how to fetch it. 56 pieces of 2,967 kanji. Written by `scripts/build-strokes.mjs` from KanjiVG r20260714, never edited by hand.
+ *
+ * Made from KanjiVG (https://kanjivg.tagaini.net), copyright Ulrich Apel and its contributors, which is distributed under the Creative
+ * Commons Attribution-Share Alike 3.0 licence (https://creativecommons.org/licenses/by-sa/3.0/). This table is derived from it and is under
+ * the same licence: you are free to share and adapt it, with attribution to KanjiVG and a link to its website, and any work you make from it
+ * may be distributed only under the same or a similar licence.
+ */
+export const STROKES_MANIFEST: EntryManifest = {
+  source: "KanjiVG",
+  release: "r20260714",
+  entries: {
+    starts: ["", "住", "傑", "冷", "勅", "叢", "喝", "城", "壞", "婆", "察", "崇", "広", "彰", "悦", "懇", "拡", "揺", "数", "晨", "杖", "梓", "様", "歩", "洛", "源", "瀧", "牒", "瑛", "痴", "石", "禪", "窪", "簿", "絡", "績", "耗", "膚", "茄", "蓑", "虞", "複", "詣", "謁", "貼", "軍", "逝", "部", "銃", "閑", "雁", "頁", "饗", "鯉", "黙", "穀"],
+    load: [
+      () => import("./t00.data.ts").then((one) => one.PIECE),
+      () => import("./t01.data.ts").then((one) => one.PIECE),
+      () => import("./t02.data.ts").then((one) => one.PIECE),
+      () => import("./t03.data.ts").then((one) => one.PIECE),
+      () => import("./t04.data.ts").then((one) => one.PIECE),
+      () => import("./t05.data.ts").then((one) => one.PIECE),
+      () => import("./t06.data.ts").then((one) => one.PIECE),
+      () => import("./t07.data.ts").then((one) => one.PIECE),
+      () => import("./t08.data.ts").then((one) => one.PIECE),
+      () => import("./t09.data.ts").then((one) => one.PIECE),
+      () => import("./t10.data.ts").then((one) => one.PIECE),
+      () => import("./t11.data.ts").then((one) => one.PIECE),
+      () => import("./t12.data.ts").then((one) => one.PIECE),
+      () => import("./t13.data.ts").then((one) => one.PIECE),
+      () => import("./t14.data.ts").then((one) => one.PIECE),
+      () => import("./t15.data.ts").then((one) => one.PIECE),
+      () => import("./t16.data.ts").then((one) => one.PIECE),
+      () => import("./t17.data.ts").then((one) => one.PIECE),
+      () => import("./t18.data.ts").then((one) => one.PIECE),
+      () => import("./t19.data.ts").then((one) => one.PIECE),
+      () => import("./t20.data.ts").then((one) => one.PIECE),
+      () => import("./t21.data.ts").then((one) => one.PIECE),
+      () => import("./t22.data.ts").then((one) => one.PIECE),
+      () => import("./t23.data.ts").then((one) => one.PIECE),
+      () => import("./t24.data.ts").then((one) => one.PIECE),
+      () => import("./t25.data.ts").then((one) => one.PIECE),
+      () => import("./t26.data.ts").then((one) => one.PIECE),
+      () => import("./t27.data.ts").then((one) => one.PIECE),
+      () => import("./t28.data.ts").then((one) => one.PIECE),
+      () => import("./t29.data.ts").then((one) => one.PIECE),
+      () => import("./t30.data.ts").then((one) => one.PIECE),
+      () => import("./t31.data.ts").then((one) => one.PIECE),
+      () => import("./t32.data.ts").then((one) => one.PIECE),
+      () => import("./t33.data.ts").then((one) => one.PIECE),
+      () => import("./t34.data.ts").then((one) => one.PIECE),
+      () => import("./t35.data.ts").then((one) => one.PIECE),
+      () => import("./t36.data.ts").then((one) => one.PIECE),
+      () => import("./t37.data.ts").then((one) => one.PIECE),
+      () => import("./t38.data.ts").then((one) => one.PIECE),
+      () => import("./t39.data.ts").then((one) => one.PIECE),
+      () => import("./t40.data.ts").then((one) => one.PIECE),
+      () => import("./t41.data.ts").then((one) => one.PIECE),
+      () => import("./t42.data.ts").then((one) => one.PIECE),
+      () => import("./t43.data.ts").then((one) => one.PIECE),
+      () => import("./t44.data.ts").then((one) => one.PIECE),
+      () => import("./t45.data.ts").then((one) => one.PIECE),
+      () => import("./t46.data.ts").then((one) => one.PIECE),
+      () => import("./t47.data.ts").then((one) => one.PIECE),
+      () => import("./t48.data.ts").then((one) => one.PIECE),
+      () => import("./t49.data.ts").then((one) => one.PIECE),
+      () => import("./t50.data.ts").then((one) => one.PIECE),
+      () => import("./t51.data.ts").then((one) => one.PIECE),
+      () => import("./t52.data.ts").then((one) => one.PIECE),
+      () => import("./t53.data.ts").then((one) => one.PIECE),
+      () => import("./t54.data.ts").then((one) => one.PIECE),
+      () => import("./t55.data.ts").then((one) => one.PIECE),
+    ],
+  },
+};

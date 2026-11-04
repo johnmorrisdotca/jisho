@@ -96,5 +96,14 @@
         "sha256": "69a55057566127a4c2f5cd618ae47167cb66972d67a3f8f39f368c106cd6f50c"
       }
     }
+  },
+  "kanjivg": {
+    "address": "https://github.com/KanjiVG/kanjivg/releases/download/r20260714/kanjivg-20260714-main.zip",
+    "site": "https://kanjivg.tagaini.net",
+    "terms": "https://github.com/KanjiVG/kanjivg#readme",
+    "licence": "CC BY-SA 3.0",
+    "release": "r20260714",
+    "sha256": "b5df6cd2bc249dd49b8041eb99e38ba9f8dc6b9ea57962a80084b4a315d1a7fc",
+    "retrieved": "2026-11-03"
   }
 }

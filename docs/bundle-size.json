@@ -33,9 +33,13 @@
       "minified": 160804,
       "gzip": 35421
     },
+    "./strokes": {
+      "minified": 2715480,
+      "gzip": 1087000
+    },
     "./words": {
-      "minified": 67135570,
-      "gzip": 14815000
+      "minified": 67137584,
+      "gzip": 14816000
     },
     "./words-common": {
       "minified": 2880964,

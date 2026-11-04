@@ -42,6 +42,10 @@
       "en": "Pairs of kanji that look alike",
       "ja": "形の似た漢字の組"
     },
+    "./strokes": {
+      "en": "Stroke order from KanjiVG: draw it, and find a kanji by drawing it",
+      "ja": "KanjiVG由来の筆順：描く、描いた漢字から探す"
+    },
     "./words": {
       "en": "Look words up by reading, written form, English meaning, kanji or romaji",
       "ja": "読み、表記、英語の意味、漢字、ローマ字から単語を引く"

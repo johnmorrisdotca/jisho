@@ -43,4 +43,5 @@ export { allWords, isLoaded, meaningOf, wordsOf } from "./words-lookup.ts";
 export { WordsLoadError, type WordsPieceKind } from "./words-pieces.ts";
 export { commonestFirst, priorityTags, rankOfTags, readRow } from "./words-rows.ts";
 export { findByMeaning, kanjiOfWord, searchMeanings, wordsWithKanji } from "./words-search.ts";
+export { type Suggestion, suggestWords } from "./words-suggest.ts";
 export { foldKana, normalizeText } from "./words-text.ts";
