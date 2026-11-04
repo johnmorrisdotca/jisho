@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 26 of 145, from "0q0r". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 26 of 144, from "0q14". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,22 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0q0r2\t1¦｜医者《いしゃ》は｜病気《びょうき》の｜老人《ろうじん》を｜看病《かんびょう》して｜夜《よ》を｜明《あ》かした。¦The doctor sat up all night with the sick old man.¦1¦436p¦¦CK¦看病",
-    "0q0sq\t1¦その｜件《けん》は｜通産省《つうさんしょう》の｜管轄《かんかつ》｜下《もと》にある。¦The matter comes under MITI.¦1¦4ius¦mookeee¦¦管轄",
-    "0q0u4\t1¦｜管弦楽団《かんげんがくだん》は｜郷愁《きょうしゅう》に｜満《み》ちた｜音楽《おんがく》を｜演奏《えんそう》し｜始《はじ》めた。¦The orchestra struck up nostalgic music.¦1¦3xur¦¦ToxicFriu¦管弦楽団",
-    "0q0uy\t1¦ジェット｜機《き》は｜管制塔《かんせいとう》からの｜誘導《ゆうどう》で｜着陸《ちゃくりく》した。¦The jet plane landed following the instructions of the control tower.¦1¦4myz¦¦¦管制塔",
-    "0q0vs\t1¦｜彼《あれ》に｜財産《ざいさん》｜管理《かんり》を｜任《まか》せた。¦I entrusted my property to him.¦2¦2jib¦¦Eldad¦管理",
-    "0q0wm\t1¦｜仕事場《しごとば》の｜管理者《かんりしゃ》は、｜正確《せいかく》さ、｜効率性《こうりつせい》、｜献身《けんしん》を｜期待《きたい》する。¦Office managers expect accuracy, efficiency, and dedication.¦¦3mf3¦mookeee¦CM¦管理者\t2¦｜管理《かんり》｜用《よう》｜画面《がめん》に｜管理者《かんりしゃ》しかアクセスできないようにしました。¦I made it so only root could access the administrative screen.¦2¦1lni¦fcbond¦fcbond¦管理者",
-    "0q0x6\t1¦このセミナーは、｜日本企業《にほんきぎょう》のマーケティング｜担当《たんとう》｜管理職《かんりしょく》を｜対象《たいしょう》としたものです。¦This seminar will target senior marketing leaders from Japanese firms.¦1¦4sj2¦¦¦管理職",
-    "0q0xg\t1¦｜管理人《かんりにん》によってアカウントの｜認証《にんしょう》が｜行《おこな》われたあと、あなたに｜確認《かくにん》のメールが｜送《おく》られます。¦You will receive a confirmation email after your account has been activated by an administrator.¦1¦1m5f¦fcbond¦fcbond¦管理人",
-    "0q0ya\t1¦｜簡潔《かんけつ》は｜機知《きち》の｜精髄《せいずい》。¦Brevity is the soul of wit.¦1¦3xum¦¦Ooneykcall¦簡潔",
-    "0q0yk\t1¦｜芝刈《しばか》り｜機《き》が｜簡素《かんそ》な｜作《つく》りの｜荷車《にぐるま》に｜積《つ》んである。¦Some lawn equipment is loaded into the jerry-built cart.¦1¦376n¦¦¦簡素な",
-    "0q0ze\t1¦テニスをすることは｜私《わたし》には｜簡単《かんたん》だ。¦Playing tennis is easy for me.¦2¦4bzv¦¦Eldad¦簡単",
-    "0q10s\t1¦この｜辞書《じしょ》は｜簡約《かんやく》｜版《はん》だ。¦This dictionary is an abridged edition.¦2¦4qx5¦¦Eldad¦簡約",
-    "0q11m\t1¦この｜靴《くつ》は｜少《すこ》し｜緩《ゆる》い。¦These shoes are a little loose.¦1¦4rhq¦bunbuku¦CM¦緩い",
-    "0q12g\t1¦その｜規則《きそく》は｜最近《さいきん》｜緩《ゆる》められた。¦The rules were recently relaxed.¦1¦4j78¦¦CK¦緩められた",
-    "0q12q\t2¦Ｖの角度が広ければ広いほど、スピードは緩やかになる。¦The wider the V angle, the slower the speed.¦1¦515o¦Chus¦Chus¦緩やか\t3¦この｜学校《がっこう》は｜規律《きりつ》がやや｜緩《ゆる》やかだ。¦Discipline is rather mild at this school.¦1¦4rrb¦¦¦緩やか",
-    "0q13a\t3¦いつもお｜世話《せわ》になっていますから、｜一旦緩急《いったんかんきゅう》あれば、すぐさま｜馳《は》せ｜参《さん》じます。¦You're always there for me, so if you're ever in dire straits, just let me know and I'll come running.¦¦4win¦KK_kaku_¦Vortarulo¦緩急",
     "0q14o\t1¦コンピューターは、たとえ｜緩慢《かんまん》にせよ｜大《おお》きな｜変化《へんか》を｜引《ひ》き｜起《お》こした。¦Computers caused a great, if gradual, change.¦1¦4nmy¦¦¦緩慢",
     "0q14y\t1¦｜公定歩合《こうていぶあい》の｜引《ひ》き｜下《さ》げは｜産業界《さんぎょうかい》を｜苦《くる》しめてきた｜厳《きび》しい｜金融逼迫《きんゆうひっぱく》を｜緩和《かんわ》するだろうと｜期待《きたい》されている。¦The bank rate cut is expected to relieve the severe financial squeeze that has hit industry.¦¦3q91¦¦CM¦緩和",
     "0q158\t1¦この缶にはおよそ４ガロン入る。¦This can holds about 4 gallons.¦2¦4rqm¦¦blay_paul¦缶",
@@ -191,5 +175,23 @@ export const PIECE: WordsPiece = {
     "0q4kk\t1¦｜彼女《かのじょ》は｜器量《きりょう》の｜点《てん》では｜姉《あね》に｜劣《おと》らない。¦She is not less beautiful than her sister.¦1¦1xwu¦¦CM¦器量",
     "0q4lo\t1¦シンガポールの｜中央《ちゅうおう》｜基金《ききん》は｜年金《ねんきん》を｜支給《しきゅう》する。¦Singapore's Central Fund provides pensions.¦1¦4m12¦¦AlanF_US¦基金",
     "0q4ms\t1¦その｜考《かんが》えが｜彼《あ》の｜理論《りろん》の｜基礎《きそ》となっている。¦The idea underlies his theory.¦1¦4ikz¦¦¦基礎",
+    "0q4o6\t1¦この｜近《ちか》くに｜軍《ぐん》の｜基地《きち》がある。¦There is a military base near here.¦1¦4rj4¦¦CK¦基地",
+    "0q4oq\t1¦バナーと｜同《おな》じ、｜白《しろ》を｜基調《きちょう》としたデザイン。¦Like the banner, the design was based around the colour white.¦1¦1m51¦fcbond¦fcbond¦基調",
+    "0q4p0\t1¦そして｜記念碑《きねんひ》の｜基底《きてい》｜部分《ぶぶん》には｜願《ねが》い｜事《ごと》が｜刻《きざ》まれている。¦And a wish is engraved on the base of the statue.¦¦4kqt¦¦¦基底",
+    "0q4pu\t1¦２１世紀は経済力を基盤とするようになるだろう。¦The 21st century is going to be based on economic power.¦1¦51rg¦e4zh1nmcz¦¦基盤",
+    "0q4qe\t1¦「これは・・・」「｜軍手《ぐんて》とスコップ。｜園芸《えんげい》｜部《ぶ》｜基本《きほん》｜道具《どうぐ》のひとつだよ」¦\"This is ...\" \"Working glove and trowel. One of a gardening club's basic tools.\"¦1¦1nfu¦mookeee¦¦基本",
+    "0q4sc\t1¦｜順《じゅん》を｜追《お》って｜基本的《きほんてき》なタグを｜覚《おぼ》えていこう。¦Let's learn the basic tags in order.¦¦1mnu¦mookeee¦¦基本的な",
+    "0q4sm\t1¦｜人間《にんげん》は｜基本的《きほんてき》には｜善良《ぜんりょう》だと｜私《わたし》は｜信《しん》じている。¦I believe people are basically good.¦¦33c7¦¦CK¦基本的に",
+    "0q4sw\t1¦くしくも、レジでの合計額は７７７円であった。¦Strangely, the cash register's total was 777 yen.¦2¦1n8x¦¦shekitten¦くしくも",
+    "0q4t6\t1¦｜岩《いわ》が｜風化《ふうか》して｜奇異《きい》な｜形《かたち》になる。¦The rocks are weathered into fantastic forms.¦1¦3xpt¦¦Zifre¦奇異な",
+    "0q4tg\t1¦｜彼《あれ》は｜奇怪《きかい》な｜体験《たいけん》を｜詳《くわ》しく｜話《はな》した。¦He recounted his unusual experiences.¦1¦2btq¦¦¦奇怪な",
+    "0q4wi\t1¦１、３、５は奇数である。¦One, three, and five are odd numbers.¦1¦5273¦mookeee¦CK¦奇数",
+    "0q4x2\t1¦このミステリーのトリックは、｜奇想天外《きそうてんがい》だ。¦This mystery has a plot twist that's completely novel.¦1¦4s61¦¦¦奇想天外",
+    "0q4xw\t1¦｜彼《あれ》は、｜奇抜《きばつ》なアイデアを｜出《だ》すため、もっと｜保守的《ほしゅてき》な｜同僚《どうりょう》と｜何度《なんど》ももめごとをおこしている。¦His novel ideas are time and again getting him into trouble with his more conservative colleagues.¦¦2h65¦¦CM¦奇抜な",
+    "0q4yq\t1¦これはとても｜奇妙《きみょう》な｜手紙《てがみ》です。¦This is a very strange letter.¦1¦4ona¦¦CK¦奇妙な",
+    "0q4za\t1¦あなたに｜再会《さいかい》できてうれしい。¦I am pleased to see you again.¦2¦50be¦¦CK¦うれしい",
+    "0q4zk\t1¦その｜結果《けっか》の｜報道《ほうどう》に｜満足《まんぞく》して｜彼《あれ》は｜手《て》をもんでうれしがっていた。¦He was rubbing his hands over the report of the result.¦1¦4iwm¦¦fekundulo¦うれしがっていた",
+    "0q50o\t1¦｜道《みち》の｜脇《かたわら》に｜寄《よ》せてください。¦Pull over to the side, please.¦¦2nd7¦¦pip¦寄せて\t2¦いすをもっと｜火《ひ》の｜近《ちか》くに｜寄《よ》せなさい。¦Draw your chair closer to the fire.¦3¦4wrr¦¦¦寄せ\t3¦｜誤字《ごじ》・｜誤訳《ごやく》のご｜指摘《してき》｜等《など》は｜下記《かき》メールアドレスよりお｜寄《よ》せください。¦Please send reports of mistypings and mistranslations to the email address below.¦1¦1lg7¦fcbond¦fcbond¦お寄せ",
+    "0q518\t1¦｜二人《ふたり》は｜仲間《なかま》、｜三人《さんにん》は｜寄《よ》せ｜集《あつ》めの｜群《む》れ。¦Two's company, three's a crowd.¦2¦2myg¦¦CK¦寄せ集め",
   ],
 };

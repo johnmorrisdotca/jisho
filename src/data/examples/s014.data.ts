@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 15 of 145, from "0oj0c". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 15 of 144, from "0ojq". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,24 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0oj0c\t1¦あのレースは｜八百長《やおちょう》だった。¦The race was fixed.¦5¦4yf5¦small_snow¦CK¦レース",
-    "0oj0w\t1¦その｜船《ふね》にはレーダーが｜装備《そうび》されていた。¦The boat was equipped with radar.¦2¦4guf¦¦CK¦レーダー",
-    "0oj1g\t1¦ドルの｜交換《こうかん》レートは、｜今《いま》いくらですか。¦What is the exchange rate for dollars now?¦2¦4a2s¦bunbuku¦CK¦レート",
-    "0oj34\t1¦レール温度が上昇した影響で、列車は３０分遅れで到着した。¦The train arrived 30 minutes late due to a rise in the temperature of the rails.¦¦624y4¦bunbuku¦JimBreen¦レール\t2¦｜彼女《かのじょ》はレールのように｜痩《や》せていた。¦She was as thin as a rail.¦¦1yfr¦¦CM¦レール",
-    "0oj3y\t2¦ステーキはレアが｜好《す》きです。¦I like my steak rare.¦3¦4lln¦small_snow¦CK¦レア",
-    "0oj7a\t1¦レイプ｜危機《きき》｜運動《うんどう》の｜内部《ないぶ》においては、グリーンサイトによる｜異議《いぎ》｜表明《ひょうめい》は｜重要《じゅうよう》な｜意義《いぎ》を｜持《も》っている。¦Within the rape crisis movement, Greensite's dissent is significant.¦1¦44fv¦¦AlanF_US¦レイプ",
-    "0oj7u\t1¦これらのグラフィック・デザインの｜背景《はいけい》に｜配置《はいち》されているレイヤーの｜機能《きのう》に｜注目《ちゅうもく》しよう。¦Note the function of the background layers of these graphic designs.¦3¦4o78¦¦¦レイヤー",
-    "0oj98\t1¦｜雨《あめ》が｜私《わたし》のレインコートの｜下《もと》までしみとおった。¦The rain penetrated my raincoat.¦4¦42ct¦¦leo_eich65¦レインコート",
-    "0ojbq\t2¦｜彼《あれ》はサッカー｜部《ぶ》のレギュラーだった。¦He was a regular member of the soccer club.¦3¦2fos¦¦¦レギュラー\t3¦レギュラー｜満《まん》タンでお｜願《ねが》いします。¦Fill it with regular, please.¦3¦44fe¦small_snow¦CK¦レギュラー",
-    "0ojdo\t1¦スキーをすることは｜良《よ》いレクリエーションである。¦Skiing is a good form of recreation.¦3¦4lwf¦¦CK¦レクリエーション",
-    "0ojei\t1¦レゲエのことをどう｜思《おも》いますか。¦What do you think of reggae?¦4¦44fd¦¦Dejo¦レゲエ",
-    "0ojfw\t1¦ＣＤはすっかりレコードに取って代わった。¦Compact discs have entirely taken the place of phonograph records.¦3¦517y¦e4zh1nmcz¦¦レコード",
-    "0ojj8\t1¦レシートはなくしてしまったのですが、｜返金《へんきん》できますか。¦I lost my receipt. Can I still get a refund?¦3¦44f8¦¦CK¦レシート",
-    "0ojl6\t1¦くしくも、レジでの合計額は７７７円であった。¦Strangely, the cash register's total was 777 yen.¦2¦1n8x¦¦shekitten¦レジ\t2¦レジはどこですか。¦Where's the checkout counter?¦5¦44f6¦bunbuku¦CK¦レジ",
-    "0ojmk\t3¦4つのレジスタは、｜呼《よ》び｜出《だ》された｜関数《かんすう》｜側《そば》が｜保存《ほぞん》する。¦The contents of the four registers are preserved by the called subroutine.¦1¦1l73¦fcbond¦fcbond¦レジスタ",
-    "0ojno\t1¦｜彼女《かのじょ》はここにレジャーで｜来《き》たのですか。¦Did she come here to relax?¦3¦1zom¦¦CK¦レジャー",
-    "0ojox\t1¦｜男性《だんせい》からの｜投稿《とうこう》や｜記事《きじ》へのレスは｜一切《いっさい》お｜断《ことわ》りしております。¦Men are absolutely not allowed to post or reply to articles.¦1¦1m4z¦fcbond¦fcbond¦レス",
-    "0ojpc\t1¦｜兄《あに》はレスキュー｜隊《たい》のメンバーだ。¦My brother is a member of the rescue squad.¦1¦3s9l¦¦CK¦レスキュー",
     "0ojq6\t1¦いいレストランをご｜存知《ぞんじ》でしょうか。¦Do you know a good restaurant?¦3¦4wzp¦¦CK¦レストラン",
     "0ojru\t1¦｜喫茶店《きっさてん》に｜入《い》ったら、｜二人《ふたり》の｜青年《せいねん》がテレビでレスリングの｜試合《しあい》を｜見《み》ていた。¦As I entered the café, I found two young men watching a wrestling match on television.¦2¦3x1o¦¦shekitten¦レスリング",
     "0ojse\t1¦｜旧友《きゅうゆう》がレセプションに｜招《まね》かれた。¦Old friends were invited to the reception.¦2¦3wp0¦¦alpucca¦レセプション",
@@ -137,12 +119,10 @@ export const PIECE: WordsPiece = {
     "0ony4\t1¦いやだったけど｜愛車《あいしゃ》を｜手放《てばな》した。¦I parted with my old car, though I hated to do so.¦3¦4l0r¦ayc¦¦愛車",
     "0onzs\t1¦｜私《わたし》たちは｜彼女《かのじょ》を「アン」という｜愛称《あいしょう》で｜呼《よ》んだ。¦We nicknamed her \"Ann\".¦1¦3jgu¦¦Luornu¦愛称",
     "0oo0c\t1¦とりわけ｜子供《こども》たちは｜愛情《あいじょう》を｜必要《ひつよう》とする。¦Above all, children need love.¦3¦4a2z¦¦CM¦愛情",
-    "0oo0m\t1¦ここだけの｜話《はなし》だが、｜彼《あれ》には｜愛人《あいじん》がいる。¦Between ourselves, he keeps a mistress.¦3¦4tdf¦¦¦愛人",
     "0oo34\t1¦｜私《わたし》の｜両親《りょうしん》は｜愛知県《あいちけん》で｜生《う》まれた。¦My parents were born in Aichi Prefecture.¦2¦3hc1¦tommy__san¦CN¦愛知県",
     "0oo3y\t1¦この｜本《もと》は｜学生《がくせい》に｜愛読《あいどく》されている。¦This book is popular with students.¦3¦4phl¦¦CK¦愛読",
     "0oo48\t1¦｜彼《あれ》はスティーヴン・キングの｜熱心《ねっしん》な｜愛読者《あいどくしゃ》です。¦He is a keen Stephen King fan.¦3¦1lkb¦fcbond¦fcbond¦愛読者",
     "0oo4s\t1¦｜私《わたし》の｜愛猫《あいびょう》がもう｜一週間《いっしゅうかん》も｜行方《ゆくえ》が｜解《わか》らない。¦My dear little cat has been missing for a week.¦3¦3ily¦¦shekitten¦愛猫",
-    "0oo5w\t1¦｜彼女《かのじょ》は｜赤《あか》ちゃんを｜優《やさ》しく｜愛撫《あいぶ》した。¦She caressed her baby lovingly.¦¦1w4o¦¦CM¦愛撫",
     "0oo6q\t1¦｜彼《あれ》はいまだに｜古《ふる》い｜車《くるま》を｜愛用《あいよう》している。¦He still cherishes his old car.¦3¦2ga8¦¦CM¦愛用",
     "0oo7k\t1¦｜彼女《かのじょ》はにっこり｜挨拶《あいさつ》をした。¦She greeted us with a smile.¦¦1yuf¦bunbuku¦CK¦挨拶\t2¦この｜場《ば》をお｜借《か》りして｜一言《ひとこと》｜挨拶《あいさつ》を｜申《もう》し｜上《あ》げます。¦Please allow me to say a few words on this occasion.¦¦4qlg¦¦CK¦挨拶\t3¦｜挨拶《あいさつ》に｜困《こま》った。¦I was at a loss for an answer.¦¦43rw¦¦CM¦挨拶",
     "0oo8o\t1¦｜友《とも》｜理《り》｜子《こ》はたまの｜逢瀬《おうせ》を｜心行《こころゆ》くまで｜楽《たの》しんでしまいました。¦Yuriko thoroughly enjoyed her occasional secret meetings with her lover.¦¦1mea¦mookeee¦¦逢瀬",
@@ -217,5 +197,17 @@ export const PIECE: WordsPiece = {
     "0opx8\t1¦｜橋《はし》が｜圧力《あつりょく》で｜落《お》ちた。¦The bridge crashed under the pressure.¦2¦3uzv¦¦jmfcomo¦圧力\t2¦その｜計画《けいかく》は｜世論《よろん》の｜圧力《あつりょく》で｜中止《ちゅうし》になった。¦The plan was given up under the pressure of public opinion.¦2¦4izp¦¦¦圧力",
     "0opz6\t1¦｜彼《あれ》は｜友人《ゆうじん》のあっせんでその｜仕事《しごと》についた。¦He obtained the job through the good offices of his friend.¦3¦24mo¦¦¦あっせん",
     "0opzq\t1¦この｜旅館《りょかん》は｜客《きゃく》の｜扱《あつか》いがよい。¦This inn gives good service.¦1¦4p4w¦¦¦扱い\t1¦｜彼女《かのじょ》は｜息子《むすこ》がひどい｜扱《あつか》いを｜受《う》けたと｜憤慨《ふんがい》していた。¦She was indignant at the way her son had been treated.¦1¦1w0k¦bunbuku¦CM¦扱い\t2¦｜彼《あれ》はピストルの｜扱《あつか》いに｜注意《ちゅうい》を｜欠《か》いた。¦He was careless in handling his pistol.¦1¦2ds7¦¦CK¦扱い\t3¦｜少年《しょうねん》は｜厄介者《やっかいもの》｜扱《あつか》いをされて｜憤慨《ふんがい》した。¦The boy was fed up with being treated as a burden.¦1¦351r¦¦¦扱い",
+    "0oq00\t1¦｜心理学《しんりがく》は｜人間《にんげん》の｜感情《かんじょう》を｜扱《あつか》う。¦Psychology deals with human emotions.¦1¦34a8¦¦CK¦扱う\t2¦この｜問題《もんだい》は｜私《わたし》が｜扱《あつか》います。¦I will deal with this problem.¦1¦4p9u¦¦CK¦扱います\t3¦｜彼女《かのじょ》はこの｜機械《きかい》を｜扱《あつか》うのに｜慣《な》れている。¦She is used to handling this machine.¦1¦1zo4¦¦xtofu80¦扱う\t4¦ブラウンさんは｜羊毛《ようもう》を｜扱《あつか》う｜商人《しょうにん》です。¦Mr Brown is a wool merchant.¦1¦482e¦¦zzxjoanw¦扱う",
+    "0oq0a\t1¦｜彼《あれ》は｜自分《じぶん》のライバルをひどくこきおろした。¦He criticized his rival severely.¦¦292k¦¦¦こきおろした",
+    "0oq0u\t1¦こびへつらうウェイターは｜最上《さいじょう》のテーブルをあてがわれる。なぜなら、そうしたウェイターは、いつもマネージャーや｜上役《うわやく》のきげんをとるから。¦The obsequious waiter is usually assigned the best table because he always curries favor with his manager and superiors.¦3¦4p2a¦¦papabear¦あてがわれる\t2¦｜彼《あれ》に｜食物《しょくもつ》をあてがった。¦I provided him with food.¦3¦2jhd¦¦CS¦あてがった\t3¦クリスマスの｜当日《とうじつ》になっても、トムの｜右足《みぎあし》には｜依然《いぜん》としてギブスがあてがわれたままであった。¦On Christmas Day, Tom still had his right leg in plaster.¦2¦4tz0¦blay_paul¦sundown¦あてがわれた",
+    "0oq14\t1¦｜同一《どういつ》｜差出人《さしだしにん》から｜同一《どういつ》｜受取人《うけとりにん》に｜宛《あ》てて｜郵袋《ゆうたい》という、｜文字通《もじどお》り｜袋《ふくろ》に｜印刷物《いんさつぶつ》を｜入《い》れて｜郵送《ゆうそう》します。¦A mailbag from a single sender addressed to one recipient, as the name suggests, is for delivering a bag of printed matter.¦¦1mir¦¦¦宛てて",
+    "0oq1e\t1¦３人の少年はさながら猿のように木に登った。¦Three boys climbed the trees like a bunch of monkeys.¦1¦51jx¦e4zh1nmcz¦shekitten¦さながら",
+    "0oq1y\t1¦｜見《み》たこともないような｜数《かず》の｜虻《あぶ》が、｜私《わたし》にまとわりついてきたのです。¦More horseflies than I'd ever seen came and flew around me.¦¦1lox¦fcbond¦fcbond¦虻",
+    "0oq28\t1¦｜息子《むすこ》は｜箱《はこ》から｜飴《あめ》を｜一《ひと》つ｜取《と》った。¦My son took a candy from the box.¦¦2zyd¦¦Dejo¦飴",
+    "0oq4q\t1¦｜彼女《かのじょ》は｜夫《おっと》が｜苦境《くきょう》にある｜時《とき》はいつも｜手助《てだす》けをした。¦She stood by her husband whenever he was in trouble.¦2¦1v3s¦¦CK¦ある時",
+    "0oq50\t1¦ある｜人《ひと》が｜間違《まちが》いをしたからといってそれを｜笑《わら》うのは｜無作法《ぶさほう》である。¦It is not good manners to laugh at someone when he makes mistakes.¦¦4xct¦¦CS¦ある人",
+    "0oq5a\t1¦ある｜日《ひ》、｜彼《あれ》は｜弱《よわ》いカメを｜助《たす》けた。¦One day he helped a weak turtle.¦2¦4xbg¦¦¦ある日",
+    "0oq5u\t1¦どうしてなのか、｜心《こころ》が｜粟立《あわだ》つのを｜感《かん》じていた。¦I don't know what, but I felt in my heart something that gives me the chills.¦¦1n1u¦¦¦粟立つ",
+    "0oq6e\t1¦これはバーゲン｜商品《しょうひん》なので｜定価《ていか》よりやすくなっているんじゃないですか。¦Aren't you selling this at a discount price?¦1¦4omh¦¦CK¦やすく",
   ],
 };

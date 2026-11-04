@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 51 of 145, from "0szfm". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 51 of 144, from "0szl". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,9 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0szfm\t1¦２階へ上がると赤城山がよく見える。¦There's a good view of Mt. Akagi from upstairs.¦2¦52uz¦mookeee¦CN¦上がる\t1¦｜我々《われわれ》はエレベーターで｜上《あ》がったり｜降《お》りたりした。¦We went up and down by elevator.¦1¦3zm5¦¦CK¦上がったり\t2¦｜家《いえ》にあがる｜前《さき》に｜靴《くつ》を｜脱《ぬ》げば｜靴《くつ》の｜泥《どろ》を｜家《いえ》の｜中《うち》に｜持《も》ち込まずにすむ。¦If you take your shoes off before coming into the house you won't bring in any dirt from your shoes.¦1¦40dy¦¦papabear¦あがる\t2¦｜彼《あれ》は｜私《わたし》の｜部屋《へや》へ｜上《あ》がってきた。¦He came up to my room.¦3¦29k4¦¦CK¦上がって\t4¦｜父《ちち》はちょうど｜風呂《ふろ》からあがったところだ。¦My father has just come out of the bath.¦1¦1tcl¦¦CN¦あがった\t4¦｜軽《かる》くひと｜泳《およ》ぎした｜僕《ぼく》は、｜水《みず》から｜上《あ》がってプールサイドに｜腰《こし》を｜下《お》ろす。¦After a light swim, I came up from the water and sat down on the poolside.¦1¦1msu¦mookeee¦¦上がって\t5¦｜死体《したい》はまだ｜上《あ》がらない。¦The drowned body has not been recovered.¦4¦3lq2¦¦¦上がらない\t6¦４月に給料があがりました。¦Our rates increased in April.¦3¦51hp¦e4zh1nmcz¦¦あがりました\t6¦｜来月《らいげつ》タクシー｜料金《りょうきん》があがります。¦Taxi fares will go up next month.¦4¦1ops¦bunbuku¦CK¦あがります\t7¦｜僕《ぼく》は｜学校《がっこう》の｜成績《せいせき》が｜上《あ》がったよ。¦I have got higher grades.¦1¦1r93¦bunbuku¦¦上がった\t7¦｜彼《あれ》は｜腕《うで》が｜上《あ》がった。¦He has improved in skill.¦2¦249g¦¦¦上がった\t9¦ここからあがる｜所得《しょとく》は｜無税《むぜい》である。¦The income from this source is tax-free.¦¦4tgj¦¦gall¦あがる\t12¦「要さんって、何時にあがれます？」「終わりまでだから八時までかかるわ」¦\"Kaname, when can you leave?\" \"It's till closing so it takes till eight.\"¦3¦1ne2¦mookeee¦¦あがれます\t13¦「｜雨《あめ》がすぐあがるでしょうか」「あがらないと｜思《おも》うよ」¦\"Will it stop raining soon?\" \"I'm afraid not.\"¦4¦52el¦mookeee¦CK¦あがらない\t13¦やがて｜雨《あめ》は｜上《あ》がると｜思《おも》う。¦I hope it will clear up soon.¦4¦450p¦¦¦上がる\t14¦｜車《くるま》のバッテリーが｜上《あ》がってるよ。¦The car battery is dead.¦5¦370n¦small_snow¦CK¦上がってる\t14¦｜翌日《よくじつ》、またバッテリーが｜上《あ》がってる。¦The next day the battery was flat again.¦2¦1orb¦mookeee¦sundown¦上がってる\t16¦｜人々《ひとびと》から｜叫《さけ》び｜声《ごえ》があがった。¦A shout arose from the people.¦2¦3394¦¦¦あがった\t16¦｜動議《どうぎ》が｜提出《ていしゅつ》され、｜賛成《さんせい》の｜声《こえ》も｜上《あ》がっています。¦The motion is proposed and seconded.¦1¦2nih¦¦CM¦上がっています\t17¦｜私《わたし》は｜演説《えんぜつ》をすると｜決《き》まってあがる。¦I never make a speech without being nervous.¦3¦3e3r¦¦Dejo¦あがる\t17¦｜僕《ぼく》は｜舞台《ぶたい》の｜上《うえ》であがった。¦I got nervous on stage.¦1¦1r36¦¦bekindtoall¦あがった\t19¦６時にお迎えに上がります。¦I'll call for you at six.¦3¦51de¦e4zh1nmcz¦¦上がります\t19¦｜明日《あした》それをいただきに｜上《あ》がります。¦I will call for it tomorrow.¦4¦1q6u¦¦Alkrasnov¦上がります\t23¦｜聴衆《ちょうしゅう》から｜歓声《かんせい》があがった。¦A cheer went up from the audience.¦1¦2pa6¦tommy__san¦CK¦あがった",
-    "0szfw\t1¦｜追《お》い｜風《かぜ》の｜時《とき》に｜帆《ほ》を｜上《あ》げよ。¦Hoist your sail when the wind is fair.¦1¦2ozr¦¦shekitten¦上げ",
-    "0szgg\t1¦両手をあげろ！¦Hands up!¦3¦1o8t¦wat¦Liface¦あげろ\t1¦｜左《ひだり》｜手《て》を｜上《あ》げなさい。¦Raise your left hand.¦4¦3nvn¦¦CK¦上げ\t1¦｜右《みぎ》｜腕《うで》を｜上《あ》げられません。¦I can't lift my right arm.¦2¦42iq¦small_snow¦CK¦上げられません\t2¦これ｜荷物《にもつ》を｜上《うえ》にあげてもよろしい。¦Can I put this up for you?¦2¦4nvh¦¦CK¦あげて\t2¦｜彼《かれ》らは｜冷蔵庫《れいぞうこ》を｜階段《かいだん》の｜上《うえ》まで｜運《はこ》び｜上《あ》げた。¦They lugged the refrigerator up the stairs.¦2¦223d¦¦CK¦上げた\t3¦｜彼《あれ》は｜給料《きゅうりょう》をすぐにあげてくれと｜要求《ようきゅう》した。¦He demanded that his salary should be increased right away.¦3¦2bo3¦¦CM¦あげて\t3¦｜彼《あれ》はスピードを｜上《あ》げた。¦He accelerated.¦3¦2fgo¦bunbuku¦CM¦上げた\t3¦その｜店《みせ》は｜値段《ねだん》を｜全部《ぜんぶ》｜上《あ》げた。¦The store raised all the prices.¦3¦4g73¦mookeee¦CM¦上げた\t5¦｜彼《あれ》に｜本《もと》をあげたの。¦I gave him the book.¦3¦2jvm¦small_snow¦CK¦あげた\t5¦｜私《わたし》は｜妹《いもうと》に｜辞書《じしょ》をあげた。¦I gave my sister a dictionary.¦3¦39vp¦bunbuku¦CK¦あげた\t5¦あなたは｜時《とき》には｜妹《いもうと》さんにおこづかいをあげますか。¦Do you sometimes give your sister money?¦4¦4yy8¦¦CM¦あげます\t6¦｜私《わたし》は｜息子《むすこ》を｜大学《だいがく》に｜上《あ》げた。¦I put my son through college.¦3¦3bu1¦¦CK¦上げた\t7¦｜生産性《せいさんせい》をあげるため｜新《あら》たなツールを｜探《さが》してます。¦We'll employ a new tool to increase productivity.¦3¦3265¦¦CM¦あげる\t7¦｜彼《あれ》は｜成績《せいせき》を｜上《あ》げなければ、｜卒業《そつぎょう》するのが｜大変《たいへん》になるでしょう。¦He will struggle to graduate if he does not make progress.¦2¦27r9¦¦¦上げ\t8¦彼はその販売で１万ドルの利益をあげた。¦He made a profit of ten thousand dollars on the sale.¦1¦2erc¦¦CK¦あげた\t8¦｜試合《しあい》が｜始《はじ》まるとすぐに、｜彼《かれ》らは｜先制点《せんせいてん》をあげた。¦The game had hardly started when they scored the first point.¦3¦38jx¦¦Eldad¦あげた\t8¦｜彼《あれ》は｜立派《りっぱ》な｜成績《せいせき》を｜上《あ》げた。¦He got wonderful results.¦1¦24ep¦¦CK¦上げた\t9¦｜彼《あれ》は｜質問《しつもん》するために｜手《て》を｜挙《あ》げた。¦He raised his hand to ask a question.¦1¦28th¦KK_kaku_¦CK¦挙げた\t11¦｜彼《あれ》は｜悲鳴《ひめい》をあげて｜逃《に》げて｜行《おこな》った。¦He cried out and ran away.¦3¦25r5¦¦Dejo¦あげて\t11¦｜学生《がくせい》はみな｜歓《かん》｜声《こえ》をあげた。¦All the students shouted with joy.¦1¦3y69¦¦fishda¦あげた\t11¦｜彼《あれ》は｜痛《いた》くて｜大《おお》｜声《こえ》を｜上《あ》げた。¦He cried out in pain.¦3¦26pz¦mookeee¦CM¦上げた\t12¦｜少女《しょうじょ》はまだ｜涙《なみだ》でぬれている｜顔《かお》を｜上《あ》げた。¦The girl lifted her face, still wet with tears.¦2¦357c¦¦¦上げた\t12¦｜母《はは》は、｜新聞《しんぶん》から｜目《め》を｜上《あ》げて｜私《わたし》を｜見《み》た。¦Mother looked up from her paper and saw me.¦4¦1s4h¦¦CM¦上げて\t13¦｜髪《かみ》も｜上《あ》げたほうが｜私《わたし》は｜好《す》きだ。¦I also prefer it with the hair worn up.¦3¦1l4g¦fcbond¦fcbond¦上げた\t23¦｜待《ま》ってあげる。¦I'll wait for you.¦4¦2yfp¦KK_kaku_¦CK¦あげる\t23¦｜彼《あれ》に｜雑誌《ざっし》を｜買《か》ってあげた。¦I bought him a magazine.¦2¦3axv¦small_snow¦CK¦あげた\t23¦｜解《と》き｜方《かた》を｜教《おし》えてあげるよ。¦I will show you how to solve it.¦3¦3ywi¦small_snow¦CK¦あげる\t24¦｜彼《あれ》はその｜手《て》｜紙《かみ》を｜声《こえ》｜高《たか》らかに｜読《よ》みあげた。¦He read the letter in a loud voice.¦3¦2ey9¦¦CM¦あげた\t24¦｜真昼《まひる》の｜太陽《たいよう》がテニスコートを｜目《め》も｜眩《くら》むほどに照らしあげた。¦The noonday sun beat down with dazzling brightness on the tennis court.¦¦1lg1¦fcbond¦fcbond¦あげた\t24¦｜彼《あれ》は｜立派《りっぱ》な｜商売《しょうばい》を｜築《ちく》きあげた。¦He has built up an excellent business.¦1¦24er¦¦CK¦あげた\t25¦｜反対《はんたい》｜申《もう》し｜上《あ》げるつもりは｜全然《ぜんぜん》なかったのです。¦I had no desire to say anything against you.¦3¦2ljt¦¦CK¦上げる",
     "0szlg\t1¦｜君《きみ》はいつもうわの｜空《そら》だ。¦You are always hearing but not listening.¦3¦3tae¦¦cromwellt¦うわの空",
     "0szlq\t1¦｜道《みち》はここからゆるやかな｜上《のぼ》りだ。¦The road ascends gently here.¦4¦2nd5¦¦mirorakonto¦上り",
     "0szm0\t1¦｜私《わたし》は｜丘《おか》を｜登《のぼ》り｜下《くだ》りして｜息切《いきぎ》れがした。¦I was out of breath from walking up and down hills.¦1¦3dom¦¦¦登り下り\t1¦エレベーターが｜昇《のぼ》り｜降《くだ》りしている。¦The elevator is moving up and down.¦2¦4vub¦¦AlanF_US¦昇り降り",
@@ -119,7 +116,6 @@ export const PIECE: WordsPiece = {
     "0t2ju\t1¦｜彼《あ》の｜私《わたし》に｜対《たい》する｜情熱《じょうねつ》はさめない。¦His passion for me doesn't cool.¦3¦2ieg¦¦¦情熱",
     "0t2ky\t1¦この｜情報《じょうほう》は｜正《ただ》しいか。¦Is this information right?¦3¦4ql3¦shanghainese¦CK¦情報",
     "0t2mm\t1¦｜記者《きしゃ》はその｜情報源《じょうほうげん》を｜明《あ》かすことを｜拒《こば》んだ。¦The reporter refused to name his sources.¦1¦3x9f¦¦CK¦情報源",
-    "0t2ok\t1¦｜彼《あれ》は｜理性《りせい》で｜情欲《じょうよく》を｜制《せい》することが｜出来《でき》る。¦He is able to subordinate passion to reason.¦3¦24g4¦¦Dejo¦情欲",
     "0t2ou\t1¦そちらの｜条件《じょうけん》を｜受《う》け｜入《い》れましょう。¦We will accept your conditions.¦1¦4kpy¦bunbuku¦CC¦条件",
     "0t2p4\t1¦たとえ｜条件付《じょうけんつ》きの｜妥協《だきょう》｜策《さく》だとしても、｜何《なに》も｜決《き》めないよりはましだ。¦A watered down compromise resolution is better than none at all.¦1¦4d0d¦¦CK¦条件付き",
     "0t2py\t1¦｜最初《さいしょ》の｜条項《じょうこう》には｜何《なに》と｜書《か》いてあるか。¦How does the first article run?¦1¦3niw¦¦¦条項",
@@ -171,5 +167,48 @@ export const PIECE: WordsPiece = {
     "0t3gm\t1¦｜彼《あ》の｜職業《しょくぎょう》は｜弁護士《べんごし》です。¦He is a lawyer by profession.¦1¦2i6s¦¦CK¦職業",
     "0t3gw\t1¦｜彼《あれ》は｜職権《しょっけん》を｜乱用《らんよう》する。¦He abuses his authority.¦2¦2877¦bunbuku¦CK¦職権",
     "0t3hg\t1¦私は職場から１時間の所に住んでいる。¦I live an hour away from work.¦3¦3c7o¦bunbuku¦CK¦職場",
+    "0t3hq\t1¦｜私《わたし》はその｜職人《しょくにん》がとても｜腕《うで》がよいと｜分《わ》かった。¦I found the workman very good.¦¦3fgn¦¦¦職人",
+    "0t3ik\t1¦｜私《わたし》が｜君《きみ》の｜職務《しょくむ》を｜引《ひ》き｜継《つ》ごう。¦I'll take over your duties.¦1¦3lgk¦¦CK¦職務",
+    "0t3iu\t1¦｜政府《せいふ》での｜私《わたし》の｜職歴《しょくれき》は｜数多《かずおお》くの｜海外《かいがい》｜勤務《きんむ》を｜含《ふく》む。¦My career in the government includes many overseas assignments.¦2¦32go¦¦¦職歴",
+    "0t3j4\t1¦その｜色《いろ》は｜彼女《かのじょ》の｜髪《かみ》の｜毛《け》とよく｜合《あ》った。¦The color went beautifully with her hair.¦2¦4h6f¦¦¦色\t3¦｜満足《まんぞく》の｜色《いろ》が｜彼《あ》の｜顔《かお》に｜浮《う》かんだ。¦A look of contentment appeared on his face.¦3¦1qk1¦mookeee¦CK¦色",
+    "0t3jy\t1¦この｜石鹸《せっけん》を｜使《つか》えば｜彼女《かのじょ》の｜顔《かお》の｜色艶《いろつや》がよくなるだろう。¦This soap will improve her complexion.¦¦4qfe¦¦Lumi_alt¦色艶",
+    "0t3l2\t4¦｜色気《いろけ》より｜食《く》い｜気《け》。¦Fair words fill not the belly.¦4¦34ma¦small_snow¦¦色気",
+    "0t3lw\t1¦｜彼女《かのじょ》の｜色香《いろか》に｜迷《まよ》った。¦He was fascinated with her beauty.¦2¦20qr¦¦CK¦色香",
+    "0t3m6\t1¦その｜建物《たてもの》は｜実《じつ》に｜美《うつく》しい｜色合《いろあ》いの｜大理石《だいりせき》でできている。¦The building is built of marble of a most lovely color.¦3¦4iu1¦mookeee¦¦色合い",
+    "0t3mg\t1¦｜雄《おす》のくじゃくは｜尾《お》の｜羽毛《うもう》が｜色彩豊《しきさいゆた》かである。¦The male peacock has colorful tail feathers.¦1¦1p2n¦¦papabear¦色彩",
+    "0t3n0\t1¦｜彼女《かのじょ》は｜色仕掛《いろじか》けで｜男《おとこ》を｜誘惑《ゆうわく》する。¦She knows how to use her good looks to get what she wants out of men.¦1¦1wdl¦¦CK¦色仕掛け",
+    "0t3qc\t1¦｜原画《げんが》と｜複製《ふくせい》とでは｜色調《しきちょう》に｜微妙《びみょう》な｜差異《さい》がある。¦Subtle differences in tone discriminate the original from the copy.¦1¦3r1i¦¦jakov¦色調",
+    "0t3s0\t1¦｜色盲《しきもう》のために、｜色彩《しきさい》の｜区別《くべつ》ができない｜人《じん》もいる。¦Some people are color blind; they cannot tell one color from another.¦1¦34m2¦¦qdii¦色盲の",
+    "0t3sa\t1¦あなたが｜長《ちょう》｜島《しま》さんに｜色目《いろめ》をつかってるのをみたわよ。¦I saw you making eyes at Mr Nagashima.¦2¦50jb¦¦sundown¦色目",
+    "0t3to\t1¦｜触《さわ》らぬ｜神《かみ》に｜祟《たた》りなし。¦Let sleeping dogs lie.¦¦34lz¦bunbuku¦CK¦触らぬ",
+    "0t3ty\t1¦｜何《なに》かが｜足《あし》に｜触《ふ》れるのを｜感《かん》じた。¦I felt something touch my feet.¦2¦415h¦bunbuku¦CK¦触れる\t4¦｜彼《あ》の｜手紙《てがみ》はその｜事《こと》｜件《けん》にそれとなくふれている。¦His letter alludes to the event.¦3¦2iav¦¦Shiawase¦ふれている",
+    "0t3u8\t1¦｜彼女《かのじょ》はそのうわさを｜町中《まちなか》にふれ｜回《まわ》った。¦She spread the gossip all over the town.¦3¦1zgu¦¦¦ふれ回った",
+    "0t3ui\t1¦｜彼《あれ》には｜子供《こども》と｜触《ふ》れ｜合《あ》う｜時《とき》｜間《ま》がなかった。¦He didn't have time to spend with his children.¦2¦2jp6¦¦CK¦触れ合う",
+    "0t3vw\t1¦｜最初《さいしょ》に、この｜実験《じっけん》で｜使用《しよう》された｜触媒《しょくばい》について｜吟味《ぎんみ》したい。¦As a beginning I would like to examine the catalyzer used in this experiment.¦1¦3nk1¦¦¦触媒",
+    "0t3wg\t1¦｜目標《もくひょう》は｜授業《じゅぎょう》｜設計《せっけい》をするときの、｜学生《がくせい》の｜思考《しこう》を｜触発《しょくはつ》するメディア｜教材《きょうざい》の｜選択《せんたく》および｜活用《かつよう》｜方法《ほうほう》について｜理解《りかい》することである。¦Our aim is that, when planning classes, we know how to select stimulating material for the students and how to put it into use.¦1¦1meg¦mookeee¦¦触発",
+    "0t3x0\t1¦２人の意見には大きな食い違いがあった。¦There was a great gap between the views of the two.¦3¦51oo¦e4zh1nmcz¦¦食い違い",
+    "0t3xa\t2¦｜私《わたし》たちの｜意見《いけん》が｜食《く》い｜違《ちが》うのはこの｜点《てん》です。¦It is on this point that our opinions differ.¦3¦3kx6¦¦CC¦食い違う",
+    "0t3y4\t1¦｜色気《いろけ》より｜食《く》い｜気《け》。¦Fair words fill not the belly.¦4¦34ma¦small_snow¦¦食い気",
+    "0t3yo\t1¦｜虫《むし》に｜食《く》い｜荒《あ》らされて｜桃《もも》は｜中空《ちゅうくう》になっていた。¦The insect ate the peach hollow.¦1¦2pgt¦¦¦食い荒らされて",
+    "0t3z8\t1¦｜医者《いしゃ》の｜費用《ひよう》は｜本当《ほんとう》に｜貯金《ちょきん》に｜食《く》い｜込《こ》む。¦Doctors' bills really cut into our savings.¦2¦439t¦¦CK¦食い込む",
+    "0t402\t1¦｜被害《ひがい》は｜最小限《さいしょうげん》に｜食《く》い｜止《と》められた。¦The damage was held to a minimum.¦2¦1u8b¦tommy__san¦CM¦食い止められた",
+    "0t40c\t1¦｜彼《あれ》は｜賭《か》け｜事《ごと》で｜財産《ざいさん》を｜食《く》いつぶした。¦He ate up his fortune by gambling.¦¦26ln¦¦¦食いつぶした",
+    "0t40w\t1¦｜男《おとこ》はレストランで｜食《く》い｜逃《に》げした。¦The guy jumped his bill at the restaurant.¦3¦2q5m¦¦¦食い逃げ",
+    "0t41g\t1¦しかし｜今《いま》は、｜一目見《ひとめみ》て、サメがその｜人《ひと》にくらいつくのは｜避《さ》けられないようだということに｜気《き》づかずにはいられない。¦However, I can't help noticing, at this moment, that at first glance it seems inevitable that the shark will devour the man.¦1¦4mup¦¦¦くらいつく",
+    "0t420\t1¦もっと｜果物《くだもの》を｜食《た》べるべきです。¦You should eat more fruit.¦3¦456o¦¦CK¦食べる\t2¦｜僕《ぼく》は｜脚本家《きゃくほんか》で｜食《た》べていく｜決心《けっしん》をした。¦I am determined to make a living as a playwright.¦1¦1r8s¦¦CM¦食べて",
+    "0t42a\t1¦｜彼《あれ》は｜食《た》べ｜過《す》ぎに｜注意《ちゅうい》した。¦He was cautious about overeating.¦3¦286o¦¦¦食べ過ぎ",
+    "0t42k\t1¦｜昨日《きのう》｜食《た》べすぎた。¦I ate too much food yesterday.¦3¦3n2k¦tommy__san¦CK¦食べすぎた",
+    "0t434\t1¦｜私《わたし》は｜食《た》べ｜残《のこ》しを｜犬《いぬ》にやった。¦I fed the leftovers to my dog.¦3¦3c7k¦bunbuku¦CK¦食べ残し",
+    "0t43o\t1¦｜冷蔵庫《れいぞうこ》の｜中《うち》にたくさんの｜食《た》べ｜物《もの》が｜入《い》っていますか。¦Is there much food in the refrigerator?¦2¦1nwo¦mookeee¦CK¦食べ物",
+    "0t448\t1¦｜先週《せんしゅう》はパチンコで｜勝《まさ》った｜友人《ゆうじん》に｜焼《や》き｜肉《にく》をごちそうになりました。｜食《た》べ｜放題《ほうだい》でたらふく｜食《た》べました。¦Last week I was treated to dinner by my friend who'd won at pachinko. It was all-you-can-eat so I ate to my heart's content.¦2¦1m8d¦fcbond¦fcbond¦食べ放題",
+    "0t44i\t1¦｜彼《あ》の｜食《た》べ｜方《かた》といったら、｜胸《むね》が｜悪《わる》くなるね。¦Speaking of his eating habits, they're revolting aren't they?¦2¦2i6o¦¦CM¦食べ方",
+    "0t44s\t2¦｜彼《あ》の｜靴《くつ》はとても｜古《ふる》かったので｜足《あし》の｜指《ゆび》が｜靴《くつ》からはみ｜出《で》ていた。¦His shoes were so old that his toes were sticking out of them.¦3¦2iuz¦¦CK¦はみ出ていた",
+    "0t452\t1¦私は彼のあごに１発食らわしてやった。¦I landed him a blow on the chin.¦3¦3aus¦bunbuku¦¦食らわして",
+    "0t45c\t1¦オーブントースターのタイマーが｜鳴《な》る。｜食《しょく》パンがコンガリ｜焼《や》けた、｜香《こう》ばしい｜匂《にお》い。¦The toaster-oven's timer rings. The fragrant smell of well toasted bread.¦¦1na5¦mookeee¦¦食パン",
+    "0t45m\t1¦めんどうですが｜食塩《しょくえん》をとっていただけませんか。¦May I trouble you for the salt?¦2¦464y¦¦CM¦食塩",
+    "0t466\t1¦｜弟《おとうと》は｜銀《ぎん》の｜食器類《しょっきるい》を｜磨《みが》いた。¦My brother polished the silver.¦1¦2osa¦¦CK¦食器",
+    "0t46g\t1¦｜食券《しょっけん》はここで｜出《だ》しているのですか。¦Are you giving out meal tickets here?¦2¦34k7¦¦CK¦食券",
+    "0t46q\t1¦食後に２カプセル飲みなさい。¦Take two capsules after a meal.¦4¦34k4¦¦¦食後",
+    "0t47u\t1¦あなたのロボットは｜食事《しょくじ》の｜支度《したく》、｜掃除《そうじ》、｜皿洗《さらあら》いその｜他《ほか》の｜家《いえ》｜事《こと》ができるでしょう。¦Your robot will prepare meals, clean, wash dishes, and perform other household tasks.¦2¦505g¦¦CK¦食事\t2¦｜彼女《かのじょ》はやせるために｜食事《しょくじ》を｜制限《せいげん》した。¦She went on a reducing diet.¦3¦1yh8¦¦¦食事",
   ],
 };

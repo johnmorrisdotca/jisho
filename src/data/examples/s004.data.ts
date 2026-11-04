@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 5 of 145, from "0lqg". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 5 of 144, from "0lqg". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -210,7 +210,6 @@ export const PIECE: WordsPiece = {
     "0m1z2\t1¦それはエチケットの｜問題《もんだい》だ。¦It's a matter of etiquette.¦4¦4el9¦bunbuku¦CM¦エチケット",
     "0m206\t1¦念のためＸ線写真をとりましょう。¦Let's take an X-ray just in case.¦2¦2lyh¦¦CK¦Ｘ線",
     "0m224\t1¦｜彼女《かのじょ》はエッセイを｜書《か》き｜始《はじ》めた。¦She set about writing the essay.¦3¦1zvi¦¦sundown¦エッセイ",
-    "0m23i\t2¦ちなみにここ一週間は、例えばフラグが立っていようとも、Ｈシーンが無い事は確定事項だからな。暫くの間、辛抱な！¦By the way, this week - no matter what flags are set - it's a certainty that there will be no ecchi scenes. You'll just have to bear with it a while.¦¦1n2u¦¦¦Ｈ\t2¦｜私《わたし》よりもっとエッチな｜人《じん》もいて｜安心《あんしん》しました。¦I was relieved that there are people more wanton than me.¦4¦1llv¦fcbond¦fcbond¦エッチな\t3¦｜女性《じょせい》だってエッチしたい。¦Women want to have sex too.¦3¦1llw¦fcbond¦fcbond¦エッチ",
     "0m26a\t1¦フロイトは、｜親子《おやこ》｜間《あいだ》の｜愛憎関係《あいぞうかんけい》をエディプス・コンプレックスとして｜展開《てんかい》しました。¦Freud developed the love-hate relationship between parents and child as the Oedipus complex.¦1¦1lk4¦fcbond¦fcbond¦エディプス・コンプレックス",
     "0m2a6\t1¦神様の名前はやっぱりＮＧだと思うよ〜。もう名づけた時点で名前負けなわけじゃん。¦I think a god's name has got to be out. From the moment the kid's named you know he's not going to be able to live up to it!¦3¦1mmo¦mookeee¦¦ＮＧ",
     "0m2ba\t1¦｜熱《ねつ》はエネルギーの｜一種《いっしゅ》である。¦Heat is a form of energy.¦3¦2m1u¦¦Eldad¦エネルギー\t2¦｜僕《ぼく》はエネルギーを｜使《つか》い｜果《は》たした。¦I have exhausted my energy.¦1¦1rd5¦mookeee¦¦エネルギー\t4¦カロリーは｜食物《しょくもつ》が｜持《も》つエネルギーを｜正確《せいかく》に｜示《しめ》す｜尺度《しゃくど》である。¦The calorie is an exact measure of the energy in food.¦1¦4uha¦¦¦エネルギー",
@@ -224,5 +223,9 @@ export const PIECE: WordsPiece = {
     "0m2tw\t1¦｜警察《けいさつ》はそのエリアを｜封鎖《ふうさ》した。¦The police have blocked off the area.¦1¦54vgn¦small_snow¦CK¦エリア",
     "0m31e\t1¦｜兄《あに》はエレキギターを｜買《か》いました。¦My brother bought an electric guitar.¦4¦3s9v¦¦CK¦エレキギター",
     "0m33w\t1¦｜彼《あれ》はエレクトロニクスについて｜何《なに》も｜知《し》らない。¦He knows nothing about electronics.¦3¦2g6j¦¦CK¦エレクトロニクス",
+    "0m38m\t1¦エレベーターの｜中《うち》でのタバコはご｜遠慮下《えんりょくだ》さい。¦You may not smoke in an elevator.¦1¦4vu7¦¦CS¦エレベーター",
+    "0m3f0\t1¦iTunesのＭＰ３エンコーダは音質が悪いって本当？¦Is it true that the iTunes' MP3 encoder has poor sound quality?¦3¦1lr1¦fcbond¦fcbond¦エンコーダ",
+    "0m3ge\t1¦どうしてビルはエンジニアになる｜決心《けっしん》をしたのか。¦What made Bill decide to be an engineer?¦3¦4bht¦¦CN¦エンジニア",
+    "0m3go\t1¦エンジニアリングの｜仕事《しごと》は｜日本《にほん》の｜会社《かいしゃ》が｜担当《たんとう》することになっています。¦Engineering service will be taken up by the Japanese company.¦2¦4vtw¦¦¦エンジニアリング",
   ],
 };

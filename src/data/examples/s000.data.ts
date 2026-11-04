@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 1 of 145, from "". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 1 of 144, from "". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -17,7 +17,7 @@ export const PIECE: WordsPiece = {
     "0lft0\t1¦｜王女《おうじょ》があくどい｜化粧《けしょう》をしていた。¦The princess was wearing too much makeup.¦¦1mw5¦¦CK¦あくどい\t2¦あくどい｜事《こと》をするな。¦Don't do wicked things.¦4¦50xz¦small_snow¦CM¦あくどい",
     "0lftk\t2¦｜彼《あれ》はいろいろ｜他人《たにん》の｜欠点《けってん》をあげつらうのにうんざりしてしまった。そこで｜彼《かれ》らの｜言《い》うことは｜何《なん》でも、たとえどんなにくだらなくてもそのまま｜認《みと》めることにしている。¦He got tired of being the devil's advocate and now agrees with every idea they suggest, no matter how dumb.¦3¦2g9n¦¦CM¦あげつらう",
     "0lfu4\t1¦｜彼《あれ》はいいかげんにあしらえない｜人《じん》である。¦He is not a man to trifle with.¦3¦2gj2¦¦CM¦あしらえない",
-    "0lfuo\t1¦あそこから｜人影《ひとかげ》が｜見《み》えた。¦A form appeared from over there.¦1¦50vy¦¦CM¦あそこ\t2¦｜先生《せんせい》、アソコがかゆいんです。¦Doctor, I've got an itch in my crotch.¦5¦1ml1m¦JimBreen¦JimBreen¦アソコ",
+    "0lfuo\t1¦あそこから｜人影《ひとかげ》が｜見《み》えた。¦A form appeared from over there.¦1¦50vy¦¦CM¦あそこ",
     "0lfvs\t1¦｜彼《あれ》はあっさり｜罪《つみ》を｜白状《はくじょう》した。¦He confessed his crime frankly.¦3¦2gox¦¦secokit¦あっさり",
     "0lfwm\t1¦｜休暇《きゅうか》はあっという｜間《ま》に｜終《お》わった。¦The holiday ended all too soon.¦1¦3wyf¦¦shekitten¦あっという間に",
     "0lfww\t2¦３日連続で徹夜してるから、もうアップアップだよ。¦After three straight late nights at work, I feel like I'm drowning in work.¦1¦51j3¦e4zh1nmcz¦¦アップアップ",
@@ -31,7 +31,7 @@ export const PIECE: WordsPiece = {
     "0lfzo\t1¦｜赤《あか》ん｜坊《ぼう》を｜膝《ひざ》の｜上《うえ》であやした。¦I dandled the baby on my knee.¦¦31ok¦bunbuku¦¦あやした",
     "0lfzy\t1¦あやふやな｜手《て》つきで｜一枚《いちまい》の｜紙《かみ》を｜動《うご》かした。¦She fumbled with a piece of paper.¦2¦4xj6¦¦CK¦あやふやな",
     "0lg08\t1¦あら、アンジェラと｜呼《よ》んでください。¦Oh, please call me Angela.¦3¦4xj3¦¦¦あら",
-    "0lg1w\t1¦あれがこの｜町《まち》の｜大通《おおどお》りだ。¦That is the main street of this city.¦4¦4xai¦¦Lumi_alt¦あれ\t2¦あれなら絶対大丈夫！¦Yeah, she must be the sure thing!¦¦4x9u¦small_snow¦¦あれ\t3¦そう言えば、あれから３０年以上も経つのね。¦Now that you mention it, it's been more than 30 years since then.¦3¦4kyx¦mookeee¦¦あれ\t5¦アレが痛いんですよ、アレが。んー、何て言うの？コーガン？とにかく、男性の大事なものです。¦Down there hurts, down there. Er, what do you call them? Testicles? In any case a male's 'important parts'.¦3¦1nbn¦¦¦アレ",
+    "0lg1w\t1¦あれがこの｜町《まち》の｜大通《おおどお》りだ。¦That is the main street of this city.¦4¦4xai¦¦Lumi_alt¦あれ\t2¦あれなら絶対大丈夫！¦Yeah, she must be the sure thing!¦¦4x9u¦small_snow¦¦あれ\t3¦そう言えば、あれから３０年以上も経つのね。¦Now that you mention it, it's been more than 30 years since then.¦3¦4kyx¦mookeee¦¦あれ",
     "0lg26\t1¦あんな｜男《おとこ》｜見《み》ても｜胸《むな》くそが｜悪《わる》い。¦I can't bear the sight of him.¦2¦4x3w¦¦CK¦あんな",
     "0lg30\t1¦｜私《わたし》はいやいやその｜仕事《しごと》をした。¦I did the work against my will.¦4¦3ghm¦¦CK¦いやいや",
     "0lg3a\t1¦あの｜宗教団体《しゅうきょうだんたい》はかなりいかがわしい｜教義《きょうぎ》にとりつかれている。¦That religious cult has got some pretty off the wall ideas.¦1¦4y5w¦¦Lumi_alt¦いかがわしい\t2¦｜学生《がくせい》たるものはいかがわしい｜場所《ばしょ》にちかづかない｜方《ほう》がよい。¦Students are expected to stay away from dubious places.¦3¦3y77¦¦Stalwartlover¦いかがわしい",
@@ -194,5 +194,6 @@ export const PIECE: WordsPiece = {
     "0li88\t1¦｜私《わたし》の｜時計《とけい》はきちんと｜動《うご》いている。¦My watch is running all right.¦4¦3i5g¦bunbuku¦¦きちんと\t2¦｜自分《じぶん》の｜部屋《へや》は｜出来《でき》るだけきちんとしておきたい。¦I want to keep my room as neat as possible.¦¦37kd¦bunbuku¦CK¦きちんと",
     "0li8i\t2¦ケイトは５時きっかりに来た。¦Kate came at five sharp.¦5¦4twu¦¦CP¦きっかり",
     "0li8s\t1¦私はきっちり３時間待った。¦I have waited a full three hours.¦4¦3gc8¦bunbuku¦CK¦きっちり\t2¦｜彼女《かのじょ》は｜入《い》ってからきっちりドアを｜閉《し》めた。¦She closed the door tightly behind her.¦3¦1vlp¦bunbuku¦CK¦きっちり",
+    "0li92\t1¦でもよー、オラのおとうさんは｜良《い》い｜気《き》しねーよ、きっと。¦But I don't think Dad would like me to.¦3¦4bxn¦¦¦きっと",
   ],
 };

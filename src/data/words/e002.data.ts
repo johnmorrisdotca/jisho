@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 3 of 220, from "0lrg". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 3 of 219, from "0lriy". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,16 +9,7 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0lrg6\t\tアクチュアリティー\tn¦¦actuality",
-    "0lrgg\t\tアクチュアル|アクチャル\tadj-na,n¦¦actual",
-    "0lrgq\t\tアクチュアルタイム|アクチュアル・タイム\tn¦¦actual time",
-    "0lrh0\t\tアクティビティ|アクティビティー~sk|アクティヴィティ~sk|アクテビティ~sk|アクティヴィティー~sk|アクテビティー~sk\tn¦¦activity",
-    "0lrha\t\tアクティブ|アクティヴ~sk|アクチブ~sk\tadj-na¦¦active",
-    "0lrhu\t\tアクティブソーラーハウス|アクティブ・ソーラー・ハウス\tn¦¦active solar house",
-    "0lri4\t\tアクティブホーミング|アクティブ・ホーミング\tn¦¦active homing",
-    "0lrie\t\tアクティベーション|アクチベーション~rk\tn¦¦activation\tn¦abbr,comp¦product activation¦プロダクトアクティベーション",
     "0lriy\t\tアクトレス\tn¦¦actress",
-    "0lrj8\t\tアクメ\tn¦¦orgasm¦fre~acmé",
     "0lrji\t\tアクリル\tn,adj-no¦¦acrylic (esp. fibre or resin)¦ger~Acryl",
     "0lrjs\tアクリル酸\tアクリルさん\tn¦chem¦acrylic acid",
     "0lrk2\t\tアクリロニトリル\tn¦¦acrylonitrile",
@@ -107,9 +98,8 @@ export const PIECE: WordsPiece = {
     "0lsag\t\tアダージョ|アダジオ\tn¦music¦adagio¦ita~",
     "0lsb0\t\tアダプター|アダプタ\tn¦¦adapter",
     "0lsba\t\tアダプティブ|アダプティヴ\tadj-na¦¦adaptive",
-    "0lsbu\t\tアダルト\tadj-na,n¦¦adult\tadj-na,n¦¦adult¦pornographic¦explicit",
+    "0lsbu\t\tアダルト\tadj-na,n¦¦adult",
     "0lsc4\t\tアダルトエデュケーション|アダルト・エデュケーション\tn¦¦adult education",
-    "0lsce\t\tアダルトショップ|アダルト・ショップ\tn¦¦sex shop¦adult shop¦porn shop",
     "0lsco\t\tアチーブ|アチーヴ~sk\tn¦abbr¦achievement test¦アチーブメントテスト",
     "0lscy\t\tアチーブメントテスト|アチーブメント・テスト\tn¦¦achievement test",
     "0lsd8\t\tアッチェレランド|アチェレランド\tn¦music¦accelerando¦ita~",
@@ -541,7 +531,6 @@ export const PIECE: WordsPiece = {
     "0lw3y\t\tイタリック\tn¦¦italics¦italic typeface",
     "0lw4i\t\tイッチ\tn¦net-sl¦original poster (of an Internet thread)¦OP¦スレ主",
     "0lw4s\t\tイッテルビウム\tn¦¦ytterbium (Yb)",
-    "0lw52\t\tイット\tn¦¦\"it\"¦sex appeal",
     "0lw5c\t\tイットリウム\tn¦¦yttrium (Y)",
     "0lw5m\t\tイッピー\tn¦¦yippie",
     "0lw5w\t\tイデー\tn¦phil¦idea¦理念¦ger~Idee",
@@ -656,7 +645,6 @@ export const PIECE: WordsPiece = {
     "0lx3i\t\tインスペクション\tn¦¦inspection",
     "0lx3s\t\tインスペクター\tn¦¦inspector",
     "0lx42\t\tインセキュリティ|インセキュリティー\tn¦rare¦insecurity",
-    "0lx4c\t\tインセスト\tn¦¦incest",
     "0lx4m\t\tインセンス\tn¦¦incense",
     "0lx4w\t\tインセンティブ|インセンティヴ\tn¦¦incentive",
     "0lx56\t\tインセンティブセール|インセンティブ・セール\tn¦¦incentive sale",
@@ -831,7 +819,6 @@ export const PIECE: WordsPiece = {
     "0lypk\t\tインポータント\tn¦¦important",
     "0lypu\t\tインポート\tn¦¦import¦imported goods\tn,vs,vt¦comp¦importing (data)¦エクスポート・2",
     "0lyq4\t\tインポシブル|インポッシブル\tadj-na¦¦impossible",
-    "0lyqe\t\tインポテンツ|インポテンス\tn¦¦(sexual) impotence¦ger~Impotenz",
     "0lyr8\t\tインライン\tn,adj-no¦comp¦in-line¦inline",
     "0lys2\t\tインヴァリアント\tn¦¦invariant",
     "0lysc\t\tインヴェンション|インベンション\tn¦¦invention",
@@ -1130,5 +1117,17 @@ export const PIECE: WordsPiece = {
     "0m1kw\t\tエシャロット\tn¦¦shallot¦fre~échalote\tn¦¦Chinese onion (harvested when young; Allium chinense)¦Chinese scallion¦エシャレット|ラッキョウ・1",
     "0m1lg\t埃及~ateji,rK\tエジプト|エジブト~sk\tn¦uk¦Egypt",
     "0m1lq\tＳ|ｓ\tエス\tn¦¦S¦s\tn¦¦south\tn¦¦sulfur¦硫黄\tpref¦¦nth year in the Shōwa era (1926.12.25-1989.1.7)¦昭和・1\tn¦¦small\tn¦¦second\tn¦gramm¦subject¦主語\tn¦¦sadist¦sadistic¦Ｍ・3\tn¦¦sister (female partner in a homosexual relationship)\tn¦¦S rank (top rank on a SABCDEF scale)¦S grade¦best class¦likely from スーパー or スペシャル",
+    "0m1m0\tＳＦ\tエス・エフ|エスエフ~sk\tn¦¦science fiction¦sci-fi¦SF",
+    "0m1ma\tＳＭ\tエス・エム|エスエム~sk\tn¦¦SM¦S&M¦sado-masochism\tn¦¦shopping mall",
+    "0m1mk\tＳＯＳ\tエス・オー・エス|エスオーエス~sk\tn¦¦SOS (distress signal)",
+    "0m1n4\t\tエスカルゴ\tn¦¦(edible) snail (esp. Roman snail, Helix pomatia)¦fre~escargot",
+    "0m1ne\t\tエスカレーション\tn¦¦escalation",
+    "0m1no\t\tエスカレーター|エスカレータ\tn¦¦escalator",
+    "0m1ny\t\tエスカレート\tn,vs,vi¦¦escalation",
+    "0m1o8\t\tエスカロップ|エスカロープ~sk|エスカロプ~sk\tn¦¦escalope¦fre~",
+    "0m1oi\t\tエスキス|エスキース\tn¦¦sketch¦fre~esquisse",
+    "0m1os\t\tエスキモー\tn¦¦Eskimo¦イヌイット",
+    "0m1p2\t\tエスクワイア\tn¦¦esquire",
+    "0m1pc\t\tエスケープ\tn,vs,vi¦¦escape\tn,vs,vt¦dated¦skipping (a class)¦cutting class¦cutting school¦playing truant\tn¦comp¦escape (key)¦エスケープキー\tn¦¦escapement (clock mechanism)¦脱進機",
   ],
 };

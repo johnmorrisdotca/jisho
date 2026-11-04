@@ -2,7 +2,7 @@
 // and `scripts/build-words.mjs` only has to fetch the file and write what these return. Nothing here reads a file or a network.
 //
 // One row is one reading of one entry: the reading, the written forms that go with it, flags, and its senses, each with the marks
-// JMdict gives it. A row also has the form it takes for children: the same without what carries one of four marks. See
+// JMdict gives it. A row also has the form it takes for children: the same without what carries one of four marks or a gloss that names sex or the sex trade. See
 // docs/guides/words.md for the format.
 
 /** JMdict's own "common word" tags, on any written form or reading of an entry. The same five UmaKuma's common table keeps. */
@@ -10,6 +10,9 @@ export const COMMON_TAGS = ["news1", "ichi1", "spec1", "spec2", "gai1"];
 /** A sense carrying one of these marks is left out in safe mode: vulgar, X-rated, sensitive or derogatory. Kotoba's bar, kept in step. */
 export const SAFE_MARKS = ["vulg", "X", "sens", "derog"];
 const OUT_IN_SAFE_MODE = new Set(SAFE_MARKS);
+/** A gloss that names sex or the sex trade, which JMdict does not always mark: a sense with one is left out in safe mode too. Kotoba's bar (scripts/children-bar.mjs), kept in step. */
+export const ADULT_GLOSS =
+  /\b(sex|sexual|sexually|erection|genital\w*|penis|vagina|vulva|clitoris|testicle\w*|pubic|semen|sperm(?!\s+whales?)|orgasm\w*|ejaculat\w*|masturbat\w*|fellatio|cunnilingus|copulat\w*|fornicat\w*|promiscuous|incest\w*|rape[sd]?|raping|rapist|pornograph\w*|erotic\w*|lewd|prostitut\w*|whore|brothel|bordello|pimp|mistress(?!\s*\(?of\b)|concubine|courtesan|adulter\w*|lustful|nipple)\b/i;
 /** A row keeps this many senses, and a sense this many glosses: the plain ones first. */
 export const SENSES_KEPT = 4;
 export const GLOSSES_KEPT = 3;
@@ -102,6 +105,13 @@ export function glossesOf(sense) {
   return first === undefined ? [] : [first, ...kept.filter((text) => text !== first)];
 }
 
+/** Whether a sense is left out in safe mode: it carries one of the marks, or a gloss (any of them, kept or not) names sex or the sex trade. */
+export function unfitSense(marks, body) {
+  if (marks.some((one) => OUT_IN_SAFE_MODE.has(one))) return true;
+  const glosses = tags(body, "gloss").map((gloss) => decode(gloss.trim()));
+  return ADULT_GLOSS.test(glosses.join(" ; "));
+}
+
 /** Every `<entry>` of a JMdict file, as text. */
 export function entriesOf(xml) {
   return xml.split("<entry>").slice(1);
@@ -114,7 +124,7 @@ export function entriesOf(xml) {
  * it common, whether it is usually written in kana (by its first sense), the rank, and `clean`: the row as safe mode has it,
  * or null when nothing of it is left.
  *
- * A sense JMdict marks vulgar, X-rated, sensitive or derogatory is left out of `clean`, with the written forms that only such a
+ * A sense JMdict marks vulgar, X-rated, sensitive or derogatory, or whose gloss names sex or the sex trade, is left out of `clean`, with the written forms that only such a
  * sense applies to (a sense JMdict limits to some forms, with `stagk`, does not carry the others), and the reading that only such
  * a sense applies to (limited with `stagr`) has no `clean` at all, as has a word of which every sense is marked.
  *
@@ -148,7 +158,7 @@ export function rowsOfEntry(entry) {
       return {
         glosses: glossesOf(body).slice(0, GLOSSES_KEPT),
         marks,
-        unfit: marks.some((one) => OUT_IN_SAFE_MODE.has(one)),
+        unfit: unfitSense(marks, body),
         pos: tags(body, "pos").map(code),
         usuallyKana: marks.includes("uk"),
         onlyForms: tags(body, "stagk").map(decode),

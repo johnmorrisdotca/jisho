@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 14 of 172, from "authentica". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 14 of 172, from "authoris". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,18 +9,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "authenticated\tこうせいしょうしょげんぽんふじつきさいざい",
-    "authentication\tにんしょう|こうしょう|データかくにん|はこがき|データはっしんもとにんしょう|メッセージはっせいげんにんしょう|ユーザーにんしょう|かんいにんしょう|だしんはっせいげんにんしょう|どういエンティティにんしょう|にんしょうトークン|にんしょうこうかん|にんしょうじょうほう|りようしゃのにんしょう|かおにんしょう|にんしょうばいたい|にんしょうコード|たようそにんしょう|にようそにんしょう|にだんかいにんしょう",
-    "authenticity\tしんらいせい|しんぎ|しんがん|しんぴょうせい|オーセンティシティ|おりがみ|うらがき|しんがんろんそう|けんしん|はんかがみ",
-    "authenticity written\tうらがき",
-    "author\tさっか|ちょしゃ|さくしゃ|ろんしゃ|ろんじゃ|ひっしゃ|げんちょしゃ|せんじゃ|オーサー|かがみ|さくふう|ぶんごう|おそざき|しょし|よみびとしらず|ていほん|げんさくしゃ|どくしゃのこえ|じこえんしゅつ|ウェブはくしゅ",
-    "author artist\tさくふう",
-    "author etc\tかがみ|おそざき",
-    "author subject\tしょし",
-    "author unknown\tよみびとしらず",
-    "author usu\tちょしゃ",
-    "author's\tこうこうひょう|げんちゅう|ちょさくしゃじんかくけん|しんぺんしょうせつ",
-    "authoring\tしっぴつ|オーサリングシステム|オーサリング・システム|オーサリングソフト|オーサリング・ソフト|オーサリングソフトウェア|オーサリング・ソフトウェア|オーサリングツール|オーサリング・ツール|オーサリングプラットフォーム|オーサリング・プラットフォーム|オーサリングプログラム|オーサリング・プログラム",
     "authorisation\tにんてい|じゅけん",
     "authorised\tごしゅいんせん",
     "authoritarian\tけんいてき|どくさいしゅぎしゃ|ちゅうおうしゅうけん|けんいしゅぎせいふ|かいはつどくさい",
@@ -137,7 +125,6 @@ export const PIECE: WordsPiece = {
     "autoscaling\tオートスケーリング",
     "autoscopy\tじこぞうげんし",
     "autosomal\tじょうせんしょくたいゆうせいいでん",
-    "autosome\tじょうせんしょくたい",
     "autostrada\tアウトストラーダ",
     "autosuggestion\tじこあんじ",
     "autotherapy\tしぜんちりょう",
@@ -279,7 +266,7 @@ export const PIECE: WordsPiece = {
     "awaiting opportunity\tたいき",
     "awaji\tあわじ|しましこく|はんしんあわじだいしんさい|あわじようごがっこう",
     "awake\tめがさめる|おきる|めざめる|アウェイク|アウエイク|ねぼける|ねとぼける|めざまし|ゆすりおこす|ゆりおこす|ねむけざまし|ゆめうつつ|ねむりからさめる|めがさえる|りにさとい|はんすいはんせい|はんせいはんすい|ねぼけごえ|ごび|ごみ",
-    "awaken\tさます|めがさめる|めざめる|よびおこす|めぶく|ねざめ|アウェイクン|アウエイクン|かげうらのまめもはじけどき",
+    "awaken\tさます|めがさめる|めざめる|よびおこす|めぶく|ねざめ|アウェイクン|アウエイクン",
     "awaken instinct\tめざめる",
     "awaken truth\tめがさめる",
     "awakeness\tかくせいすいじゅん",
@@ -451,7 +438,7 @@ export const PIECE: WordsPiece = {
     "baboon\tひひ|ヒヒ|マントひひ|マントヒヒ|チャクマひひ|チャクマヒヒ|アヌビスひひ|アヌビスヒヒ|ギニアひひ|ギニアヒヒ|きいろひひ|キイロヒヒ",
     "baboons\tヒヒぞく",
     "babushka\tバブーシュカ|バーブシュカ|バブシカ",
-    "baby\tあかちゃん|あかんぼう|あかんぼ|ベビー|ベイビー|あかご|おさなご|せきし|ちいさ|やや|おんなのこ|おとこのこ|じょじ|だんかい|にゅうじ|しんせいじ|みじゅくじ|こなミルク|ミルク|メリー",
+    "baby\tあかちゃん|あかんぼう|あかんぼ|ベビー|ベイビー|あかご|まめ|マメ|おさなご|せきし|おんなのこ|おとこのこ|じょじ|だんかい|にゅうじ|しんせいじ|みじゅくじ|こなミルク|ミルク|メリー",
     "baby boom\tだんかい",
     "baby boy\tおとこのこ",
     "baby e\tたいきょう",
@@ -627,5 +614,27 @@ export const PIECE: WordsPiece = {
     "backslash\tバックスラッシュ",
     "backspace\tこうたい|バックスペース|こうたいもじ",
     "backspace key\tこうたい",
+    "backspin\tバックスピン|スライス",
+    "backspin shot\tスライス",
+    "backstab\tバックスタッブ",
+    "backstage\tぶたいうら|がくや|バックステージ|つうこうしょう|つうこうきょかしょう|はしがかり|かげアナ|カゲアナ|かげナレ|カゲナレ",
+    "backstep\tバックステップ|バック・ステップ",
+    "backstitch\tかえしぬい|はんがえしぬい",
+    "backstop\tバックネット|バック・ネット|バックストップ",
+    "backstreet\tバックストリート|まちこうば|まちこうじょう|ろうこう",
+    "backstreet workshop\tまちこうば|まちこうじょう",
+    "backstretch\tバックストレッチ",
+    "backstroke\tせおよぎ|バックストローク|はいえい",
+    "backstroke swimming\tせおよぎ",
+    "backswimmer\tまつもむし|マツモムシ",
+    "backswing\tバックスイング",
+    "backtrack\tバックトラック",
+    "backtracking\tあともどり",
+    "backup\tひかえ|バックアップ|たいひ|インクリメンタルバックアップ|インクリメンタル・バックアップ|オンラインバックアップ|オンライン・バックアップ|テープバックアップ|テープ・バックアップ|バックアップコピー|バックアップ・コピー|バックアップスナップショット|バックアップ・スナップショット|バックアップディスケット|バックアップ・ディスケット|バックアップバッテリ|バックアップ・バッテリ|バックアップファイル|バックアップ・ファイル|バックアップルート",
+    "backup data\tたいひ",
+    "backus\tバッカスきほう",
+    "backward\tみかいはつ|うしろむき|そる|あともどり|ぎゃっこう|ぎゃくこう|きりかえし|ぎゃくりゅう|こうしんこく|はんしん|いっぽさがる|いっぽひく|うしろざまにたおれる|うしろにたおれる|からだをそらす|すんしんしゃくたい|うっちゃり|たいえいしゅぎ|バクてん|バックてん",
+    "backward body\tそる",
+    "backward country\tこうしんこく",
   ],
 };

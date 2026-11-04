@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 12 of 145, from "0noj". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 12 of 144, from "0np". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,20 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0noj4\t1¦ビジネススクールに｜行《い》きたいのです。¦I would like to go to a business school.¦5¦48gt¦¦CK¦ビジネススクール",
-    "0nojy\t1¦｜日本《にほん》のビジネスホテルはそんなに｜高《たか》くない。¦In Japan it is less expensive to stay in a Business hotel.¦5¦2mnm¦¦¦ビジネスホテル",
-    "0nok8\t1¦｜彼《あれ》は｜一介《いっかい》のビジネスマンにすぎない。¦He is nothing but a businessman.¦2¦2cwg¦¦CK¦ビジネスマン",
-    "0nooe\t1¦あなたは｜自分《じぶん》の｜将来《しょうらい》のビジョンを｜持《も》っていますか。¦Do you have a vision of your future?¦¦4yxk¦bunbuku¦CM¦ビジョン",
-    "0nop8\t1¦「ママ、ビスケット｜食《た》べてもいいでしょ」「だめです。｜間食《かんしょく》はいけません」¦\"Mom, please can I have a biscuit?\" \"No, you can't; you shouldn't eat between meals.\"¦5¦52fk¦mookeee¦¦ビスケット",
-    "0noqw\t1¦ビタミンが｜豊富《ほうふ》にある｜野菜《やさい》を｜食《た》べた｜方《ほう》がいい。¦You should eat some vegetables rich in vitamins.¦2¦48gk¦¦CK¦ビタミン",
-    "0nor6\t1¦ビタミン｜剤《ざい》｜売《う》り｜場《ば》はどこですか。¦Where's the aisle for vitamins?¦1¦48gj¦¦CK¦ビタミン剤",
-    "0norq\t1¦東京をビッグミカンってよぼうよ！¦Let's call Tokyo the Big Mikan!¦4¦2ntj¦¦¦ビッグ",
-    "0nou8\t1¦これがビッグベンと｜呼《よ》ばれる｜鐘《かね》です。¦This is the bell called Big Ben.¦1¦4oyx¦¦¦ビッグベン",
-    "0nowg\t2¦ビデオで｜映画《えいが》を｜見《み》ました。¦I watched a movie on video.¦4¦48fz¦¦CM¦ビデオ\t3¦ビデオの代金を５回に分けて払った。¦I paid for the video in five installments.¦¦48fy¦small_snow¦AlanF_US¦ビデオ",
-    "0noxk\t1¦ちょっとあなたのビデオカメラを｜見《み》せて｜下《くだ》さい。¦Let me have a look at your video camera.¦5¦4cj4¦¦CN¦ビデオカメラ",
-    "0noy4\t1¦ビデオゲームは｜割《わり》に｜合《あ》わない。¦It doesn't pay to play video games.¦3¦48g1¦¦AlanF_US¦ビデオゲーム",
-    "0noye\t1¦ビデオショップは３時まで営業しています。¦The video shop is open until 3 o'clock.¦2¦48g0¦KK_kaku_¦CN¦ビデオショップ",
-    "0nozi\t1¦｜私《わたし》は｜今朝《けさ》、ビデオテープを｜借《か》りてきた。¦I rented a videotape this morning.¦4¦3d5h¦¦CN¦ビデオテープ",
     "0np0m\t1¦その｜現在《げんざい》｜建設中《けんせつちゅう》の｜工場《こうじょう》は、｜一日《いちにち》｜当《あ》たり3000｜台《だい》のビデオデッキを｜組《く》み｜立《た》てられる。¦The factory now under construction will assemble 3,000 VCR units per day.¦2¦3qxw¦wat¦CM¦ビデオデッキ",
     "0np2k\t1¦ビニールは｜熱《ねつ》に｜弱《よわ》いのが｜難点《なんてん》だ。¦The weakness of vinyl is that it is easily affected by heat.¦2¦48cx¦¦CM¦ビニール",
     "0np2u\t1¦ビニールハウスでトマトを｜栽培《さいばい》しています。¦I grow tomatoes in plastic houses.¦1¦48cy¦KK_kaku_¦Catriona¦ビニールハウス",
@@ -220,5 +206,16 @@ export const PIECE: WordsPiece = {
     "0ny4e\t1¦これらのプロセスのどれも｜意識《いしき》されていないということを｜強調《きょうちょう》することがもっとも｜重要《じゅうよう》である。¦It is most important to emphasize that none of these processes are conscious.¦3¦4o6q¦¦¦プロセス",
     "0ny6c\t1¦あの｜若《わか》い｜歌手《かしゅ》は、プロダクションが｜育《そだ》て｜上《あ》げた。¦The agent built up the young singer.¦3¦4y60¦¦¦プロダクション",
     "0ny7g\t1¦このプロダクトはインテリジェント｜総合《そうごう》｜情報《じょうほう》システムです。¦This product is an intelligent integrated information system.¦2¦1n80¦¦¦プロダクト",
+    "0nyee\t1¦ドールが｜通信《つうしん》プロトコルの｜構成《こうせい》を｜変《か》えることは｜意図《いと》していなかったということに｜注意《ちゅうい》すべきである。¦It should be noted that Dole did not intend to change the configuration of the communication protocol.¦3¦4b5h¦¦papabear¦プロトコル",
+    "0nyik\t1¦その｜新聞《しんぶん》は｜新《あたら》しい｜主筆《しゅひつ》のプロフィールを｜載《の》せた。¦The paper published a profile of its new editor.¦1¦4h4m¦¦CM¦プロフィール",
+    "0nyje\t1¦｜彼女《かのじょ》は｜中年《ちゅうねん》の｜都会派《とかいは》プロフェッショナルでした。¦She was a middle-aged urban professional.¦1¦2pk9¦xtofu80¦xtofu80¦プロフェッショナル",
+    "0nyjy\t1¦ジェット｜機《き》はプロペラ｜機《き》よりもずっと｜速《はや》い。¦Jet planes fly much faster than propeller planes.¦3¦4mz0¦mookeee¦CM¦プロペラ機",
+    "0nyks\t1¦｜彼女《かのじょ》は｜喜《よろこ》んで｜彼《あ》のプロポーズを｜受《う》け｜入《い》れた。¦She gladly accepted his proposal.¦3¦1xww¦¦CK¦プロポーズ",
+    "0nynk\t1¦｜私《わたし》はプロレスが｜好《す》きです。¦I like pro wrestling.¦3¦3enw¦¦CK¦プロレス",
+    "0nyq2\t1¦｜部屋《へや》は｜香水《こうすい》のにおいでぷんぷんしていた。¦The room was pervaded with the scent of perfume.¦2¦1sxe¦¦¦ぷんぷん",
+    "0nyrq\t1¦メアリーの｜新《あたら》しいヘアスタイルは｜人《ひと》ごみの｜中《なか》でも｜彼女《かのじょ》を｜目立《めだ》たせた。¦Mary's new hairstyle made her stand out in the crowd.¦3¦46cd¦¦CM¦ヘアスタイル\t1¦｜率直《そっちょく》に｜言《い》って、｜君《きみ》のヘアースタイルは｜好《す》きじゃないよ。¦Frankly speaking, I don't like your haircut.¦1¦1of1¦mookeee¦CK¦ヘアースタイル",
+    "0nysk\t1¦｜彼女《かのじょ》はヘアドライヤーの｜使《つか》い｜方《かた》を｜私《わたし》に｜説明《せつめい》してくれた。¦She explained to me how to use the hair drier.¦3¦1ynp¦¦CK¦ヘアドライヤー",
+    "0nyty\t1¦このシャンプーを｜買《か》うと、｜素敵《すてき》なヘアブラシがついてきます。¦This shampoo comes with a nice hair brush.¦1¦4sli¦bunbuku¦CK¦ヘアブラシ",
+    "0nyui\t1¦｜熱帯雨林《ねったいうりん》は｜一日《いちにち》｜数万《すうまん》ヘクタールの｜割合《わりあい》でなくなっている。¦The rainforests are disappearing at the rate of tens of thousands of hectares a day.¦2¦2m15¦¦CK¦ヘクタール",
   ],
 };

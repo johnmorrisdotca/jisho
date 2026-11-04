@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 5 of 172, from "actualiz". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 5 of 172, from "actually ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,9 +9,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "actualization\tぐたいか|じこじつげん",
-    "actualized\tけんざいか",
-    "actually\tげんに|じじつ|じじつじょう|はたして|じっさいは|そもそも|じっさいに|アクチュアリ|アクチャリ|じっさいのところ|じっかん|りんじょうかん|ペーパードライバー|ペーパードライバ|ペーパー・ドライバー|ペーパー・ドライバ|いんぎんぶれい|そらめ|じつかぶ|みせがね",
     "actually being\tりんじょうかん",
     "actually feel\tじっかん",
     "actuary\tアクチュアリー|ほけんけいりにん",
@@ -106,9 +103,9 @@ export const PIECE: WordsPiece = {
     "adderall\tアデロール",
     "addict\tアディクト|ちゅうどくしゃ|いぞんしょうしゃ|カウチポテト|カウチ・ポテト|ジャンキー|まやくじょうようしゃ|まやくかんじゃ|ペイかん|ペイちゅう|まやくちゅうどくしゃ|シャブちゅう|ポンちゅう|コカインちゅうどくしゃ|ギャンブルきょう|ジャンキ",
     "addicted\tおぼれる|やみつき|ヤミツキ|ネトゲはいじん",
-    "addiction\tぬま|ちゅうどく|じょうようへき|しへき|アディクション|まやくじょうしゅう|まやくじょうよう|まやくちゅうどく|アヘンちゅうどく|あへんちゅうどく|かつじちゅうどく|まんせいちゅうどく|やくちゅう|セックスいぞんしょう|インターネットいぞんしょう|ギャンブルいぞんしょう|ギャンブルいそんしょう|せいいぞん|ようへき|せいいぞんしょう",
+    "addiction\tぬま|ちゅうどく|じょうようへき|しへき|アディクション|まやくじょうしゅう|まやくじょうよう|まやくちゅうどく|アヘンちゅうどく|あへんちゅうどく|かつじちゅうどく|まんせいちゅうどく|やくちゅう|インターネットいぞんしょう|ギャンブルいぞんしょう|ギャンブルいそんしょう|ようへき|ネットちゅうどく",
     "addictive\tしゅうかんせいやくぶつ",
-    "adding\tぞうせつ|うわのせ|しゅうよう|うわづみ|かさん|こんにゅう|ふかい|りっこう|かてん|せきさん|トータル|がっさん|ついひ|かすい|かねん|くちぢゃ|うわもり|てんせい|しょめいなついん|おいごえ",
+    "adding\tぞうせつ|うわのせ|しゅうよう|うわづみ|かさん|ふかい|りっこう|かてん|せきさん|トータル|がっさん|ついひ|かすい|かねん|くちぢゃ|うわもり|てんせい|しょめいなついん|おいごえ|ぞうけつ",
     "adding equipment\tぞうせつ",
     "adding extra\tうわのせ|ついひ",
     "adding points\tかてん",
@@ -204,7 +201,7 @@ export const PIECE: WordsPiece = {
     "adhering view\tけんじ",
     "adhesion\tゆちゃく|せっちゃく|ゆうごう|しゅうちゃく|しゅうじゃく|ふちゃく|きゅうちゃく|ねんちゃく|ぎょうちゃく|ぎょうちゃくりょく|みっちゃく|ふちゃくりょく|ねんちゃくせい|つきぐあい|さいぼうせっちゃく|いんけいゆちゃく|にっぽんせっちゃくがっかい",
     "adhesion suction\tきゅうちゃく",
-    "adhesive\tボンド|ねばる|せっちゃくざい|こうちゃくざい|ねんちゃくざい|せつごうざい|ステッカー|セロハンテープ|セロハン・テープ|セロテープ|ペースト|ねんちゃくりょく|ばんそうこう|バンソウコウ|かんあつせっちゃくざい|のりつきテープ|のりつきふうとう|ねんちゃくテープ|ねんちゃくゴム|ニプレス",
+    "adhesive\tボンド|ねばる|せっちゃくざい|こうちゃくざい|ねんちゃくざい|せつごうざい|ステッカー|セロハンテープ|セロハン・テープ|セロテープ|ペースト|ねんちゃくりょく|ばんそうこう|バンソウコウ|かんあつせっちゃくざい|のりつきテープ|のりつきふうとう|ねんちゃくテープ|ねんちゃくゴム|ラベルシール",
     "adhesive label\tステッカー",
     "adhesive tape\tセロハンテープ|セロハン・テープ|セロテープ",
     "adhesives\tセメダイン",
@@ -409,12 +406,6 @@ export const PIECE: WordsPiece = {
     "adult form\tせいけい",
     "adult insect\tせいちゅう",
     "adult japan\tしんせいじん",
-    "adulterated\tふじゅん",
-    "adulteration\tまぜもの",
-    "adulterer\tかんぷ|うわきおんな|かんぷかんぷ",
-    "adulteress\tかんぷ|かんぷかんぷ",
-    "adulterous\tしゃないふりん|うわきあいて",
-    "adultery\tふりん|かんつう|ふぎ|かんいん|こんがいせいこう|ふりんざい|みっつう|かんつうざい|ふぎみっつう|ごあく|そうかん|かんする|うわきしょう|しじゅうきん|しじゅうごん|そうかんこん",
     "adulthood\tていねん|としごろ|しんせいじん",
     "adulthood year\tしんせいじん",
     "adultness\tおとなげ",
@@ -448,8 +439,8 @@ export const PIECE: WordsPiece = {
     "advanced course\tこうとうか",
     "advanced proficiency\tだん",
     "advanced rank\tだんい",
-    "advancement\tすいしん|はってん|しょうしん|はったつ|しょうきゅう|しょうにん|しんがくりつ|うだつのあがらない|マックジョブ|まくらえいぎょう|エスカレーターしき|こくさいかがくしんこうざいだん|べいこくかがくしんこうきょうかい",
-    "advances\tやくしん|きゅうあい|くどく|いどむ|すえぜんくわぬはおとこのはじ|モーションをかける|しんるいだ|すえぜんくわぬ",
+    "advancement\tすいしん|はってん|しょうしん|はったつ|しょうきゅう|しょうにん|しんがくりつ|うだつのあがらない|マックジョブ|エスカレーターしき|こくさいかがくしんこうざいだん|べいこくかがくしんこうきょうかい",
+    "advances\tやくしん|きゅうあい|くどく|すえぜんくわぬはおとこのはじ|モーションをかける|しんるいだ|すえぜんくわぬ",
     "advancing\tなみ|しんがく|にゅうまく|いっしんいったい|たてかえ|うちがし|ぶんしん|ばんしいっしょう|よるとしなみにはかてない|であしばらい|であしはらい",
     "advancing first\tにゅうまく",
     "advancing money\tたてかえ",
@@ -601,5 +592,16 @@ export const PIECE: WordsPiece = {
     "aerophone\tきめいがっき",
     "aeroplane\tひこうき|ジェットき|ミグ|しゅよく|たんぱつ|きじょう|いちにんのり|はっかん|せんようき|しゃばくじょう|きび|たはつき|あいき|ふくざき",
     "aeroplane airplane\tミグ|しゅよく|きじょう",
+    "aeroplankton\tくうちゅうふゆうせいぶつ",
+    "aerosol\tエアゾール|エアロゾル|エーロゾル|えんむしつ|ボンベ|パウダースプレー|パウダー・スプレー",
+    "aerosol spray\tエアゾール|ボンベ",
+    "aerospace\tこうう|こうくううちゅう|こうくううちゅうぎじゅつけんきゅうじょ|こうくううちゅうこうぎょう|こうくううちゅうさんぎょう|こうくううちゅうこうがく|ジャクサ|うちゅうきこう|うちゅうこうくうけんきゅうかいはつきこう|かんこくこうくううちゅうけんきゅうじょ",
+    "aerospace laboratory\tこうくううちゅうぎじゅつけんきゅうじょ",
+    "aerotropism\tこうきせい",
+    "aeruginosa\tりょくのうきん",
+    "aeschylus\tアイスキュロス",
+    "aeschynomene\tクサネム|くさねむ",
+    "aesculus\tマロニエ|とちのき|とち|トチノキ|せいようとちのき|セイヨウトチノキ|うまぐり|ウマグリ",
+    "aeshnidae\tやんま|ヤンマ",
   ],
 };

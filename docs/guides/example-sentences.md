@@ -42,7 +42,7 @@ The sentences are Tatoeba's, under CC BY 2.0 FR, and a page that shows one has t
 
 ## Safe by default
 
-`loadExamples(word)` is in safe mode. It leaves out an example of a sense JMdict marks vulgar, X-rated, sensitive or derogatory, a sentence that the file also links to such a sense of another word, and a sentence in which safe mode does not find the words unfiltered mode finds. Nothing that holds them is fetched. `loadExamples(word, { mode: "unfiltered" })` gives every example, from one more piece. Jisho keeps no list of words of its own, so a sentence that is rude only in its English, with words JMdict does not mark, is among the default ones. A page for children should check what it shows.
+`loadExamples(word)` is in safe mode. It leaves out an example of a sense JMdict marks vulgar, X-rated, sensitive or derogatory or whose gloss names sex or the sex trade, a sentence that the file also links to such a sense of another word, and a sentence in which safe mode does not find the words unfiltered mode finds. Nothing that holds them is fetched. `loadExamples(word, { mode: "unfiltered" })` gives every example, from one more piece. Jisho keeps no list of words of its own, so a sentence that is rude only in its English, with words JMdict does not mark, is among the default ones. A page for children should check what it shows.
 
 ## Where the furigana and the levels come from
 
@@ -50,4 +50,4 @@ The links from a sense to a sentence are the EDRDG's (JMdict_e_examp). The furig
 
 ## What it costs
 
-The examples are 145 pieces of about 20 kB gzipped for 28,813 words, and one more for the words whose list safe mode cuts. Together they make the package 2.9 MB larger to download.
+The examples are 144 pieces of about 20 kB gzipped for 28,730 words, and two more for the words whose list safe mode cuts. Together they make the package 2.9 MB larger to download.

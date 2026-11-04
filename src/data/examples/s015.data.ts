@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 16 of 145, from "0oq". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 16 of 144, from "0oq6o". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,18 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0oq00\t1¦｜心理学《しんりがく》は｜人間《にんげん》の｜感情《かんじょう》を｜扱《あつか》う。¦Psychology deals with human emotions.¦1¦34a8¦¦CK¦扱う\t2¦この｜問題《もんだい》は｜私《わたし》が｜扱《あつか》います。¦I will deal with this problem.¦1¦4p9u¦¦CK¦扱います\t3¦｜彼女《かのじょ》はこの｜機械《きかい》を｜扱《あつか》うのに｜慣《な》れている。¦She is used to handling this machine.¦1¦1zo4¦¦xtofu80¦扱う\t4¦ブラウンさんは｜羊毛《ようもう》を｜扱《あつか》う｜商人《しょうにん》です。¦Mr Brown is a wool merchant.¦1¦482e¦¦zzxjoanw¦扱う",
-    "0oq0a\t1¦｜彼《あれ》は｜自分《じぶん》のライバルをひどくこきおろした。¦He criticized his rival severely.¦¦292k¦¦¦こきおろした",
-    "0oq0u\t1¦こびへつらうウェイターは｜最上《さいじょう》のテーブルをあてがわれる。なぜなら、そうしたウェイターは、いつもマネージャーや｜上役《うわやく》のきげんをとるから。¦The obsequious waiter is usually assigned the best table because he always curries favor with his manager and superiors.¦3¦4p2a¦¦papabear¦あてがわれる\t2¦｜彼《あれ》に｜食物《しょくもつ》をあてがった。¦I provided him with food.¦3¦2jhd¦¦CS¦あてがった\t3¦クリスマスの｜当日《とうじつ》になっても、トムの｜右足《みぎあし》には｜依然《いぜん》としてギブスがあてがわれたままであった。¦On Christmas Day, Tom still had his right leg in plaster.¦2¦4tz0¦blay_paul¦sundown¦あてがわれた",
-    "0oq14\t1¦｜同一《どういつ》｜差出人《さしだしにん》から｜同一《どういつ》｜受取人《うけとりにん》に｜宛《あ》てて｜郵袋《ゆうたい》という、｜文字通《もじどお》り｜袋《ふくろ》に｜印刷物《いんさつぶつ》を｜入《い》れて｜郵送《ゆうそう》します。¦A mailbag from a single sender addressed to one recipient, as the name suggests, is for delivering a bag of printed matter.¦¦1mir¦¦¦宛てて",
-    "0oq1e\t1¦３人の少年はさながら猿のように木に登った。¦Three boys climbed the trees like a bunch of monkeys.¦1¦51jx¦e4zh1nmcz¦shekitten¦さながら",
-    "0oq1y\t1¦｜見《み》たこともないような｜数《かず》の｜虻《あぶ》が、｜私《わたし》にまとわりついてきたのです。¦More horseflies than I'd ever seen came and flew around me.¦¦1lox¦fcbond¦fcbond¦虻",
-    "0oq28\t1¦｜息子《むすこ》は｜箱《はこ》から｜飴《あめ》を｜一《ひと》つ｜取《と》った。¦My son took a candy from the box.¦¦2zyd¦¦Dejo¦飴",
-    "0oq4q\t1¦｜彼女《かのじょ》は｜夫《おっと》が｜苦境《くきょう》にある｜時《とき》はいつも｜手助《てだす》けをした。¦She stood by her husband whenever he was in trouble.¦2¦1v3s¦¦CK¦ある時",
-    "0oq50\t1¦ある｜人《ひと》が｜間違《まちが》いをしたからといってそれを｜笑《わら》うのは｜無作法《ぶさほう》である。¦It is not good manners to laugh at someone when he makes mistakes.¦¦4xct¦¦CS¦ある人",
-    "0oq5a\t1¦ある｜日《ひ》、｜彼《あれ》は｜弱《よわ》いカメを｜助《たす》けた。¦One day he helped a weak turtle.¦2¦4xbg¦¦¦ある日",
-    "0oq5u\t1¦どうしてなのか、｜心《こころ》が｜粟立《あわだ》つのを｜感《かん》じていた。¦I don't know what, but I felt in my heart something that gives me the chills.¦¦1n1u¦¦¦粟立つ",
-    "0oq6e\t1¦これはバーゲン｜商品《しょうひん》なので｜定価《ていか》よりやすくなっているんじゃないですか。¦Aren't you selling this at a discount price?¦1¦4omh¦¦CK¦やすく",
     "0oq6o\t1¦｜彼女《かのじょ》の｜服《ふく》はとても｜安《やす》っぽい｜生地《きじ》でできていた。¦Her dress was made of very cheap material.¦3¦20in¦¦CM¦安っぽい",
     "0oq6y\t1¦｜心安《こころやす》ければ｜眠《ねむ》りも｜安《やす》らか。¦A good conscience is a soft pillow.¦3¦34bq¦¦CM¦安らか",
     "0oq78\t1¦｜私《わたし》の｜望《のぞ》むのは｜安《やす》らぎと｜静《しず》けさだけです。¦All I want is peace and quiet.¦3¦3hhm¦¦CK¦安らぎ",
@@ -82,7 +70,7 @@ export const PIECE: WordsPiece = {
     "0or9u\t1¦その｜仕事《しごと》｜以外《いがい》ならなんでもやる。¦I'll do anything but that job.¦4¦4i9x¦tommy__san¦CM¦以外",
     "0ora4\t1¦｜以後《いご》こんなことはいたしません。¦I'll never do this again.¦4¦43jl¦small_snow¦CK¦以後\t2¦それ｜以後《いご》｜彼女《かのじょ》に｜会《あ》っていません。¦I haven't seen her since then.¦3¦4dsk¦¦CK¦以後",
     "0orae\t1¦それ｜以降《いこう》｜彼《あれ》は｜辛《から》い｜一生《いっしょう》を｜送《おく》った。¦He led a hard life after that.¦2¦4dsj¦¦CK¦以降",
-    "0orao\t1¦６歳以上の子供は学校に通わなければならない。¦Children of six and above should attend school.¦3¦51dm¦e4zh1nmcz¦Eldad¦以上\t2¦これ｜以上《いじょう》の｜値引《ねび》きは、｜私《わたくし》どもを｜赤字《あかじ》に｜追《お》いやるでしょう。¦A further reduction would make us go into the red.¦3¦4nw9¦¦CM¦以上\t2¦｜必要《ひつよう》｜以上《いじょう》にお｜金《かね》を｜使《つか》わないようにしなさい。¦Try not to spend more money than is necessary.¦3¦1tx3¦KK_kaku_¦CM¦以上\t3¦以上のように、実にシンプルな誰でも出来るノウハウで十分な利益と顧客は確保できるのです！¦As shown above, it is possible to obtain ample profit and customers with truly simple know-how that anyone can do!¦¦1ls3¦fcbond¦fcbond¦以上\t4¦｜公僕《こうぼく》も｜人間《にんげん》であること、また、｜人間《にんげん》である｜以上《いじょう》｜過《あやま》ちを｜犯《おか》す｜可能性《かのうせい》があることを、｜彼《あれ》は｜認識《にんしき》している。¦He realizes that public officials are human, and that as human beings they are capable of misjudgement.¦¦3q8f¦mookeee¦papabear¦以上\t5¦以上ですか？¦Is that all?¦4¦43jk¦small_snow¦CK¦以上",
+    "0orao\t1¦６歳以上の子供は学校に通わなければならない。¦Children of six and above should attend school.¦3¦51dm¦e4zh1nmcz¦Eldad¦以上\t2¦｜必要《ひつよう》｜以上《いじょう》にお｜金《かね》を｜使《つか》わないようにしなさい。¦Try not to spend more money than is necessary.¦3¦1tx3¦KK_kaku_¦CM¦以上\t3¦以上のように、実にシンプルな誰でも出来るノウハウで十分な利益と顧客は確保できるのです！¦As shown above, it is possible to obtain ample profit and customers with truly simple know-how that anyone can do!¦¦1ls3¦fcbond¦fcbond¦以上\t4¦｜公僕《こうぼく》も｜人間《にんげん》であること、また、｜人間《にんげん》である｜以上《いじょう》｜過《あやま》ちを｜犯《おか》す｜可能性《かのうせい》があることを、｜彼《あれ》は｜認識《にんしき》している。¦He realizes that public officials are human, and that as human beings they are capable of misjudgement.¦¦3q8f¦mookeee¦papabear¦以上\t5¦以上ですか？¦Is that all?¦4¦43jk¦small_snow¦CK¦以上",
     "0oray\t1¦｜彼《あれ》とはツーと｜言《い》えばカーの｜仲《なか》だよ。｜以心伝心《いしんでんしん》の｜仲《なか》とでも｜言《い》っておこう。¦He and I have a near-telepathic understanding of each other. No sooner does one of us say something than the other is already responding.¦2¦2k08¦bunbuku¦CM¦以心伝心",
     "0orbi\t1¦｜最善《さいぜん》を｜尽《つ》くしますが、よくいっても｜木曜《もくよう》｜以前《いぜん》に｜終《お》える｜事《こと》は｜出来《でき》ません。¦I'll do my best, but I'll not be able to finish it before Thursday at best.¦1¦3nha¦¦CK¦以前\t2¦｜以前《いぜん》はこの｜丘《おか》の｜上《うえ》に｜城《しろ》があった。¦There used to be a castle on this hill.¦1¦43im¦¦CK¦以前",
     "0orcc\t1¦１週間以内に電話します。¦I'll call you within a week.¦3¦51wo¦e4zh1nmcz¦CK¦以内",
@@ -121,7 +109,6 @@ export const PIECE: WordsPiece = {
     "0osbm\t1¦｜初《はじ》めから｜意気込《いきご》みすぎると、｜途中《とちゅう》で｜息切《いきぎ》れするぞ。¦You have to pace yourself or you'll choke halfway through.¦3¦35v3¦tommy_san¦CM¦意気込み",
     "0osbw\t1¦｜君《きみ》の｜犬《いぬ》は｜本当《ほんとう》に｜意気消沈《いきしょうちん》しているのだろう。¦Your dog may be really depressed.¦2¦3tnb¦¦papabear¦意気消沈",
     "0osda\t1¦ボブとはすっかり｜意気投合《いきとうごう》した。¦I found a kindred spirit in Bob.¦3¦47ai¦¦CP¦意気投合",
-    "0osdk\t1¦レイプ｜危機《きき》｜運動《うんどう》の｜内部《ないぶ》においては、グリーンサイトによる｜異議《いぎ》｜表明《ひょうめい》は｜重要《じゅうよう》な｜意義《いぎ》を｜持《も》っている。¦Within the rape crisis movement, Greensite's dissent is significant.¦1¦44fv¦¦AlanF_US¦意義",
     "0osdu\t1¦ここではどんどん｜意見《いけん》をおっしゃってかまいません。¦You can speak out freely here.¦4¦4tbj¦¦¦意見",
     "0ose4\t1¦｜彼女《かのじょ》はガードレールの｜強度《きょうど》について、ぜひ｜意見交換《いけんこうかん》をしたいと｜望《のぞ》んでいます。¦She would value the opportunity to exchange views on the strength of guard-rails.¦2¦1zsy¦¦¦意見交換",
     "0oseo\t1¦｜意志《いし》に｜反《はん》して｜何《なに》かを｜無理《むり》にさせる｜事《こと》はできない。¦No one can force you to do anything against your will.¦¦43f0¦mookeee¦CK¦意志",
@@ -166,7 +153,6 @@ export const PIECE: WordsPiece = {
     "0otc0\t1¦そんなにたくさん｜食《た》べるのは｜異常《いじょう》だ。¦It is abnormal to eat so much.¦1¦4dmx¦¦Swift¦異常",
     "0otd4\t1¦ｘ線写真で異状が認められます。¦We have detected an abnormality on your x-ray.¦1¦515i¦¦CK¦異状",
     "0otde\t1¦われわれの｜仲間《なかま》ではあなたは｜異色《いしょく》の｜存在《そんざい》だった。¦You stood out in our circle.¦1¦43xc¦bunbuku¦Nina¦異色",
-    "0otes\t1¦｜彼女《かのじょ》は｜異性《いせい》の｜前《さき》では｜非常《ひじょう》に｜恥《は》ずかしがる。¦She feels very shy in the presence of the opposite sex.¦1¦1yd7¦¦¦異性",
     "0otfw\t1¦｜私《わたし》としては｜異存《いぞん》はありません。¦There is no objection on my part.¦1¦3j9b¦¦CK¦異存",
     "0oth0\t1¦｜異端《いたん》という｜非難《ひなん》に｜関《かん》しては、ここでの｜証拠《しょうこ》ははるかに｜弱《よわ》いものである。¦As for the accusations of heresy, here the evidence is much weaker.¦1¦43dz¦¦Dejo¦異端",
     "0otk2\t1¦｜僕《ぼく》が｜恋《こい》するたびに、｜相手《あいて》の｜女《おんな》の｜子《こ》は｜僕《ぼく》の｜異母妹《いぼまい》だっておとうさんは｜言《い》うんだ。¦Every time I fall in love, Dad tells me the girl is my half sister.¦1¦1rjs¦¦¦異母",
@@ -199,5 +185,26 @@ export const PIECE: WordsPiece = {
     "0ou56\t1¦｜彼《かれ》らは｜衣服《いふく》をほとんど｜着用《ちゃくよう》しない。¦They wear very little clothing.¦2¦239o¦¦CK¦衣服",
     "0ou5q\t1¦｜衣料品《いりょうひん》がだぶついている。¦We have an oversupply of clothing.¦2¦43cw¦¦Yepthatscool¦衣料",
     "0ou6k\t1¦この｜刀《かたな》には｜不思議《ふしぎ》ないわれがある。¦This sword has a strange history.¦1¦4q0f¦bunbuku¦CK¦いわれ",
+    "0ou6u\t1¦私は１分違いで列車に乗り遅れた。¦I missed the train by a minute.¦¦3h0c¦¦CK¦違い",
+    "0ou74\t1¦その｜点《てん》では｜私《わたし》は｜君《きみ》と｜意見《いけん》が｜違《ちが》う。¦I differ from you on that point.¦3¦4g6i¦¦orcrist¦違う\t2¦そんなばかなことを｜言《い》うなんて｜彼《あれ》は｜気《き》でも｜違《ちが》ったのか。¦Is he mad that he should say such a foolish thing?¦3¦4dkj¦¦¦違った\t3¦｜君《きみ》は｜違《ちが》う｜方《ほう》にいきますよ。¦You're going the wrong way.¦3¦4sco¦¦CK¦違う",
+    "0ou8s\t1¦｜法律《ほうりつ》が｜多《おお》ければ｜多《おお》いほど、｜違反者《いはんしゃ》も｜多《おお》くなる。¦The more laws, the more offenders.¦2¦1rsh¦¦CM¦違反者",
+    "0ou92\t1¦｜相次《あいつ》ぐ｜不祥事《ふしょうじ》にも｜関《かか》わらず、｜警察《けいさつ》はオメオメ｜違反《いはん》｜切符《きっぷ》を｜切《き》っている。¦Despite their own scandals, the police continue to make arrests as though nothing had happened at all.¦1¦30dq¦¦papabear¦違反",
+    "0ou9c\t1¦あそこに｜駐車《ちゅうしゃ》するのは｜違法《いほう》です。¦It is illegal to park a car there.¦2¦50vd¦bunbuku¦CK¦違法",
+    "0oub0\t1¦これまで｜我《わ》が｜社《しゃ》にそうしたシステムがなかったけど、｜別《べつ》に｜違和感《いわかん》はないよ。¦Our company has never had that kind of system, and it's never made us feel uncomfortable.¦1¦4o8h¦¦CK¦違和感",
+    "0oucy\t1¦それは｜遺憾《いかん》ながら｜本当《ほんとう》だ。¦That, while regrettable, is true.¦1¦4efw¦¦pip¦遺憾",
+    "0oue2\t1¦｜彼《あれ》は｜遺言《ゆいごん》で｜妻《つま》に｜全財産《ぜんざいさん》を｜残《のこ》した。¦He left all his property to his wife in his will.¦1¦2cy4¦¦CK¦遺言",
+    "0ouec\t1¦｜父《ちち》は｜弁護士《べんごし》に｜遺言書《ゆいごんしょ》を｜作成《さくせい》してもらった。¦Father had his lawyer draw up his will.¦1¦1t3s¦Kaede¦CM¦遺言書",
+    "0ouem\t1¦｜事務弁護士《じむべんごし》に｜遺言状《ゆいごんじょう》の｜作成《さくせい》を｜依頼《いらい》した。¦I asked the solicitor to make out my will.¦1¦38be¦¦sundown¦遺言状",
+    "0ougk\t1¦｜彼《あ》の｜遺骨《いこつ》はここに｜埋《う》められている。¦His ashes are buried here.¦1¦2j5h¦¦CK¦遺骨",
+    "0ougu\t1¦この｜部屋《へや》には｜遺恨《いこん》がたくさんありますが、｜好意《こうい》はほとんどありません。¦There is much hatred in this room, and little kindness.¦1¦4prx¦¦¦遺恨",
+    "0ouho\t1¦｜彼《あれ》は｜莫大《ばくだい》な｜遺産《いさん》を｜受《う》け｜継《つ》いだ。¦He inherited a great fortune.¦¦264s¦¦AlanF_US¦遺産",
+    "0oujm\t1¦｜一番《いちばん》｜近《ちか》い｜遺失物取扱所《いしつぶつとりあつかいじょ》はどこですか。¦Where is the nearest lost and found?¦1¦42ou¦bunbuku¦CK¦遺失物",
+    "0oujw\t1¦｜叔父《おじ》は｜去年《きょねん》｜遺書《いしょ》を｜作《つく》った。¦My uncle made a will last year.¦1¦3650¦¦CK¦遺書",
+    "0oul0\t1¦｜新《あたら》しい｜遺跡《いせき》で｜未《ひつじ》｜発掘《はっくつ》はいくつだったのですか。¦How many new sites were uncovered?¦1¦348f¦¦¦遺跡",
+    "0oum4\t1¦｜音楽家《おんがくか》が｜死《し》んで｜遺族《いぞく》は｜貧困《ひんこん》にさらされた。¦The musician left his family poor.¦1¦419b¦¦CaspieChi¦遺族",
+    "0oume\t1¦その｜遺体《いたい》の｜身元《みもと》は｜頬《つら》のほくろで｜確認《かくにん》された。¦The dead body was identified by a mole on the cheek.¦¦4jux¦¦CM¦遺体",
+    "0oun8\t1¦この｜犯罪者《はんざいしゃ》は｜遺伝《いでん》の｜犠牲者《ぎせいしゃ》だ。¦This criminal is a victim of his heredity.¦1¦4pvi¦¦¦遺伝",
+    "0ouoc\t1¦デオキシリボ｜核酸《かくさん》は、｜遺伝子《いでんし》を｜作《つく》っている｜複雑《ふくざつ》な｜化学物質《かがくぶっしつ》である。¦DNA is a complex chemical that makes up a gene.¦1¦4c5d¦¦¦遺伝子",
+    "0oupq\t1¦｜子供《こども》は｜遺伝病《いでんびょう》を｜持《も》っています。¦My baby has a hereditary disease.¦1¦3m20¦¦CK¦遺伝病",
   ],
 };

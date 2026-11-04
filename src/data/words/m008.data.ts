@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 9 of 172, from "anandr". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 9 of 172, from "anarchy". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,19 +9,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "anandria\tせんぼんやり|センボンヤリ|むらさきたんぽぽ",
-    "anapaest\tアナパイストス",
-    "anapest\tよくよくようかく",
-    "anaphalis\tやまははこ|ヤマハハコ",
-    "anaphylactic\tアナフィラキシーショック|アナフィラキシー・ショック",
-    "anaphylaxis\tアナフィラキシー|アナフィラキシ",
-    "anaphylaxy\tペニシリンアナフィラキシー|ペニシリン・アナフィラキシー",
-    "anaplasmosis\tアナプラズマびょう",
-    "anaplastic\tたいけいせいせい|みぶんかさいぼう",
-    "anapsid\tむきゅうるい",
-    "anarchism\tむせいふしゅぎ|アナーキズム|アナキズム",
-    "anarchist\tしゅぎしゃ|アナーキスト|アナキスト|むせいふしゅぎしゃ|だいぎゃくじけん|たいぎゃくじけん",
-    "anarcho\tアナルコサンジカリズム|アナルコサンディカリスム|アナルコサンジカリスム|アナルコサンディカリズム|アナルコ・サンジカリズム|アナルコ・サンディカリスム|アナルコ・サンジカリスム|アナルコ・サンディカリズム|あかはたじけん|むせいふしほんしゅぎ|むせいふきょうさんしゅぎ|アナルコキャピタリズム|アナルコ・キャピタリズム",
     "anarchy\tむせいふ|アナーキー|むけいさつ|らんま|むせいふじょうたい",
     "anarhichas\tおおかみうお|オオカミウオ",
     "anarhynchus\tはしまがりちどり|ハシマガリチドリ",
@@ -286,7 +273,7 @@ export const PIECE: WordsPiece = {
     "animalia\tどうぶつかい",
     "animalism\tアニマリズム",
     "animalization\tどうぶつか",
-    "animals\tどうぶつたち|ひき|どうしょくぶつ|かちく|ちょうじゅう|ちょうきょう|おいこみ|トレーナー|たち|とう|いくしゅ|しゆう|こうび|はなしがい|こせいぶつ|ぐんせい|ともぐい|わな|けっとうしょ|じんちく",
+    "animals\tどうぶつたち|ひき|どうしょくぶつ|かちく|ちょうじゅう|ちょうきょう|おいこみ|トレーナー|たち|とう|いくしゅ|しゆう|はなしがい|こせいぶつ|ぐんせい|ともぐい|わな|けっとうしょ|じんちく|てんけい",
     "animals added\tてんけい",
     "animals e\tとう",
     "animals fish\tおいこみ",
@@ -299,7 +286,7 @@ export const PIECE: WordsPiece = {
     "animated film\tアニメ|アニメーション",
     "animated icon\tマイコン",
     "animating\tアニメーションか",
-    "animation\tアニメ|アニメーション|どうが|アニメート|アニメイト|げんが|じっしゃ|せいゆう|かし|コンピューターアニメ|コンピューター・アニメ|コマどり|こまどり|エロアニメ|エロ・アニメ|アニメーションソフト|アニメーション・ソフト|セルアニメーション|セル・アニメーション|セルが",
+    "animation\tアニメ|アニメーション|どうが|アニメート|アニメイト|げんが|じっしゃ|せいゆう|かし|コンピューターアニメ|コンピューター・アニメ|コマどり|こまどり|アニメーションソフト|アニメーション・ソフト|セルアニメーション|セル・アニメーション|セルが|セルアニメ|セル・アニメ",
     "animation etc\tせいゆう",
     "animatism\tアニマティズム|アニマチズム",
     "animato\tアニマート",
@@ -667,5 +654,16 @@ export const PIECE: WordsPiece = {
     "anti tank\tエー・ティー・エム",
     "anti war\tはんせん|ふせん",
     "antibacterial\tこうきん|こうきんせい|こうきんやく",
+    "antiballistic\tエー・ビー・エム|エービーエム",
+    "antibiosis\tこうせい",
+    "antibiotic\tこうせいぶっしつ|こうせいざい|たいせいきん|ふくごうこうせいぶっしつせいざい|ベータラクタムけい|アミセチン|オレアンドマイシン|カルバペネムけいこうせいぶっしつ|こうせいぶっしつたいせい|セフェムけいこうせいぶっしつ",
+    "antibiotic resistant\tたいせいきん",
+    "antibody\tこうたい|めんえきたい|モノクローナル|たいしょう|こうげんこうたいはんのう|こうたいさんせい|モノクローナルこうたい|ちゅうわこうたい|こうたいカクテルりょうほう|こうたいカクテル|こうたいけんさ|こうかくこうたい",
+    "antibonding\tはんけつごう",
+    "anticancer\tこうがん|こうがんざい|こうガンざい",
+    "anticarcinogen\tナイトロジェンマスタード|ナイトロジェン・マスタード",
+    "anticholinergic\tこうコリンやく|こうコリンざい",
+    "antichrist\tはんキリスト|アンチキリスト|アンチクリスト",
+    "anticipate\tみこむ|みこす|まつ|あてこむ|さきんじる|おもいもうける|よみきる",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 21 of 145, from "0pdzm". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 21 of 144, from "0peug". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,28 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0pdzm\t1¦スキャンダルが｜発覚《はっかく》したとき、その｜下院議員《かいんぎいん》の｜支持者《しじしゃ》たちは｜激怒《げきど》しました。¦When the scandal broke, the Congressman's constituents were seething.¦1¦4lw9¦mookeee¦¦下院議員",
-    "0pe10\t1¦｜化学《かがく》｜業界《ぎょうかい》はすべてが｜下火《したび》になるまで｜再投資《さいとうし》を｜控《ひか》えています。¦Chemical companies are waiting until everything dies down before reinvesting.¦1¦417y¦¦auxitt¦下火",
-    "0pe1u\t1¦日本の１９９８年末の金・外貨準備高は６８９億ドルで、１年前の７７０億ドルを下回った。¦Japan's gold and foreign exchange reserves stood at $68.9 billion at the end of 1998, down from $77.0 billion a year earlier.¦2¦2mnz¦arnab¦CM¦下回った",
-    "0pe42\t1¦｜私《わたし》の｜本当《ほんとう》の｜住所《じゅうしょ》は｜下記《かき》の｜通《どお》りです。¦My real address is as follows.¦3¦3hhe¦¦¦下記の",
-    "0pe7y\t1¦場所の確認：見合いの場所を本人か付き添い人が下見をしておきましょう。¦Location check: The parties involved themselves or their attendants should look over the place for the miai meeting in advance.¦1¦1mn6¦mookeee¦¦下見",
-    "0peag\t1¦どの生徒も６時までに下校しなければならない。¦Every student has to leave school by six.¦3¦4ajm¦¦CK¦下校",
-    "0peba\t1¦｜彼《あ》の｜人《ひと》｜気《き》は｜下降線《かこうせん》をたどっている。¦His popularity is falling.¦2¦2i43¦¦Denizar¦下降線",
-    "0pee2\t1¦｜私《わたし》は｜頂上《ちょうじょう》から｜下山《げざん》する｜途中《とちゅう》｜彼《かれ》らに｜会《あ》った。¦I met them during my descent from the peak.¦3¦3blv¦¦¦下山",
-    "0pehe\t1¦｜私《わたし》は｜駅《えき》を｜間違《まちが》えて｜下車《げしゃ》しました。¦I got off at the wrong station.¦3¦3e3v¦¦CK¦下車",
-    "0peho\t1¦｜車《くるま》を｜下取《したど》りに｜出《だ》して｜新車《しんしゃ》を｜買《か》った。¦I traded in my car for a new one.¦3¦36xq¦mookeee¦CK¦下取り",
-    "0pei3\t2¦そこでベス下手より登場！¦Now Beth enters, stage right!¦3¦1lvl¦fcbond¦fcbond¦下手",
-    "0pei8\t1¦｜彼《あれ》はイギリス｜生《う》まれだが、｜英語《えいご》がとても｜下手《へた》である。¦He comes from England, but is very poor at English.¦3¦2ghv¦¦¦下手\t2¦｜下手《へた》な｜動《うご》き｜方《ほう》をしない｜様《よう》に｜気《き》をつけなさい。¦Take care not to make a foolish move.¦3¦418i¦¦CK¦下手な",
-    "0peii\t1¦｜私《わたし》のテニスは｜下手《へた》の｜横好《よこず》きだ。¦I like playing tennis, though I'm not very good at it.¦3¦3inq¦small_snow¦CK¦下手の横好き",
-    "0pekq\t1¦｜彼女《かのじょ》は｜学生《がくせい》を｜下宿《げしゅく》させている。¦She boards students.¦3¦1xz5¦¦CM¦下宿\t2¦｜私《わたし》は｜下宿《げしゅく》を｜探《さが》していました。¦I was on the hunt for lodgings.¦3¦3e1x¦¦sundown¦下宿",
-    "0pel0\t1¦｜高《たか》い｜料金《りょうきん》を｜下宿屋《げしゅくや》に払わねばならない。¦I have to pay high rates to the boarding.¦3¦3poc¦¦¦下宿屋",
-    "0pela\t1¦隣の下宿人は月３万円ぐらいで暮らしている。¦The lodger next door lives on about 30,000 yen a month.¦1¦1o0i¦mookeee¦sundown¦下宿人",
-    "0pelu\t1¦８月下旬に彼らは繁殖のために長い旅に出発します。¦In late August, they set off on a long journey for breeding.¦1¦51a9¦e4zh1nmcz¦Jesse¦下旬",
-    "0pemy\t1¦｜私《わたし》はスピーチの｜下書《したが》きを｜書《か》いています。¦I am writing a draft of the speech.¦4¦3fuf¦¦CM¦下書き",
-    "0pep6\t1¦｜彼《あれ》はあの｜女性《じょせい》に｜下心《したごころ》を｜抱《いだ》いている。¦He has designs on that girl.¦3¦2gnh¦¦¦下心",
-    "0pequ\t1¦｜下水《げすい》が｜完全《かんぜん》に｜詰《つ》まっている。¦The drains are blocked up.¦2¦418e¦¦CK¦下水",
-    "0pero\t1¦そして｜汚水《おすい》を｜流《なが》すために｜地下《ちか》に｜下水道《げすいどう》を｜持《も》っていた。¦The house has pipes under the ground to carry dirty water away.¦2¦4kqy¦¦¦下水道",
-    "0peu6\t2¦｜彼《あ》の｜一生《いっしょう》は｜社会《しゃかい》の｜下積《したづ》みで｜終《お》わった。¦He lived and died in obscurity.¦3¦2jda¦Kaede¦CM¦下積み",
     "0peug\t1¦｜下線《かせん》のある｜文《ふみ》を｜訳《やく》しなさい。¦Translate the underlined sentences.¦1¦418c¦¦CK¦下線",
     "0peuq\t1¦｜下線部《かせんぶ》を｜訳《わけ》せ。¦Translate the underlined part.¦1¦418a¦bunbuku¦CK¦下線部",
     "0pevk\t1¦｜彼女《かのじょ》の｜収入《しゅうにゅう》では｜下層《かそう》｜中流階級《ちゅうりゅうかいきゅう》の｜生活《せいかつ》を｜続《つづ》けるのがやっとだった。¦Her income barely maintained her in the lower middle class.¦1¦20rs¦¦¦下層",
@@ -214,5 +192,26 @@ export const PIECE: WordsPiece = {
     "0pk00\t1¦｜家庭教師《かていきょうし》の｜先生《せんせい》は｜私《わたし》が｜馬鹿《ばか》なことをしたと｜叱《しか》った。¦My tutor scolded me for my stupid behavior.¦¦407s¦¦kremel¦家庭教師",
     "0pk0u\t1¦このカーペットは｜家庭用《かていよう》にデザインされている。¦This carpet is designed for residential use.¦3¦4sry¦¦CK¦家庭用",
     "0pk2s\t1¦｜家内《かない》は｜海外旅行《かいがいりょこう》｜中《うち》で、よく｜電話《でんわ》をかけてくる。¦My wife often rings me up, while she travels abroad.¦3¦407l¦¦mcq¦家内",
+    "0pk3w\t1¦｜彼《あれ》は｜金持《かねも》ちで、その｜上《うえ》｜家柄《いえがら》がよい。¦He is rich and, moreover, well-born.¦1¦2bh7¦¦rul¦家柄",
+    "0pk46\t1¦この｜先祖伝来《せんぞでんらい》の｜家宝《かほう》は｜君《きみ》の｜物《もの》だ。¦This heirloom shall be yours.¦2¦4qeg¦¦¦家宝",
+    "0pk50\t1¦家名を嵯峨と改姓したのは明治３年でした。¦It was the third year of Meiji when their family name was changed to Saga.¦¦1lj2¦fcbond¦fcbond¦家名\t2¦お｜父《とう》さんの｜破産《はさん》は｜家名《かめい》の｜汚《よご》れでした。¦Father's bankruptcy was a blot on the family's reputation.¦2¦1lj3¦fcbond¦fcbond¦家名",
+    "0pk5u\t1¦ハンプティダンプティ、｜壁《かべ》の｜上《うえ》に｜座《すわ》って、ハンプティダンプティ、ドシンと｜落《お》ちた。｜王様《おうさま》の｜馬《うま》のみんなも｜王様《おうさま》の｜家来《けらい》のみんなもハンプティを｜元《もと》に｜戻《もど》せなかった。¦Humpty Dumpty sat on a wall. Humpty Dumpty had a great fall. All the king's horses and all the king's men couldn't put Humpty Dumpty together again.¦1¦1n0b¦¦shanghainese¦家来",
+    "0pk6o\t1¦｜夜《よる》になってきたので、｜私《わたし》たちは｜家路《いえじ》に｜着《つ》いた。¦Night coming on, we left for home.¦3¦1pj6¦¦CM¦家路",
+    "0pkaa\t1¦｜裁判官《さいばんかん》は｜彼《あれ》に｜重《おも》い｜罰金《ばっきん》を｜科《か》せるのだろうか。¦Will the judge fine him heavily?¦1¦3nda¦¦¦科せる",
+    "0pkak\t1¦｜科学《かがく》は｜観察《かんさつ》に｜基《もと》づいている。¦Science rests upon observation.¦1¦406u¦¦shekitten¦科学",
+    "0pkb4\t1¦｜科学技術《かがくぎじゅつ》は｜確実《かくじつ》に｜発達《はったつ》している。¦Technology progresses steadily.¦2¦406e¦KK_kaku_¦blay_paul¦科学技術",
+    "0pkby\t1¦｜彼《あれ》は｜科学者《かがくしゃ》であると｜同時《どうじ》に｜音楽家《おんがくか》でもある。¦He is a scientist and musician.¦3¦2c9u¦fcbond¦CK¦科学者",
+    "0pkc8\t1¦｜彼《あ》の｜方《かた》｜法《ほう》は｜科学的《かがくてき》ではない。¦His methods are not scientific.¦¦2hly¦¦CK¦科学的",
+    "0pkcs\t1¦彼は酔払い運転のかどで５ポンドの科料に処せられた。¦He was fined five pounds for drunken driving.¦1¦27uc¦¦¦科料",
+    "0pkd2\t1¦｜暇《ひま》なときはいつでも｜遊《あそ》びに｜来《き》て｜下《くだ》さい。¦Come and see me whenever you are free.¦1¦405h¦KK_kaku_¦CC¦暇なとき",
+    "0pkdw\t1¦｜暇潰《ひまつぶ》しに｜街《まち》をぶらぶらした。¦I strolled along the streets to kill time.¦¦4058¦¦CM¦暇潰し",
+    "0pkeq\t1¦｜君《きみ》はその｜義務《ぎむ》を｜果《は》たすべきである。¦You must perform your duty.¦1¦3t5o¦¦Swift¦果たす",
+    "0pkf0\t1¦この｜汽車《きしゃ》は｜世界《せかい》の｜果《は》て｜行《い》きの｜終列車《しゅうれっしゃ》です。¦This train is the last train to the world's end.¦1¦32oc¦¦¦果て",
+    "0pkfu\t1¦この果てしない宇宙にいるのは、私たち人類だけですか？¦Are we humans alone in this infinite universe?¦1¦1lja¦fcbond¦fcbond¦果てしない",
+    "0pkgo\t1¦｜初《はじ》めから｜果敢《かかん》に｜前《さき》へ｜出《で》て｜圧倒《あっとう》し、｜体勢《たいせい》を｜崩《くず》した｜相手《あいて》を｜押《お》し｜出《だ》した。¦He resolutely pushed forward from the start, overwhelming and pushing out his off-balance opponent.¦1¦1lgm¦fcbond¦fcbond¦果敢に",
+    "0pkh8\t1¦｜果実《かじつ》になる｜花《はな》は｜少《すく》ない。¦Few flowers develop into fruit.¦3¦4055¦¦auxitt¦果実",
+    "0pki2\t1¦｜陽気《ようき》が｜暖《あたた》かでやがて｜果樹《かじゅ》の｜花《はな》が｜咲《さ》くだろう。¦The warm weather will bring the fruit trees into blossom soon.¦1¦1osh¦¦¦果樹",
+    "0pkic\t1¦その｜農夫《のうふ》は｜男《おとこ》の｜子《こ》｜達《たち》が｜自分《じぶん》の｜果樹園《かじゅえん》でリンゴを｜盗《ぬす》んでいるのをみつけた。¦The farmer caught the boy stealing the apples in his orchard.¦¦4fxo¦¦¦果樹園",
+    "0pkkk\t1¦｜彼《あれ》は｜果物《くだもの》の｜他《た》｜何《なに》も｜食《た》べない。¦He eats nothing else but fruit.¦3¦2c9j¦¦¦果物",
   ],
 };

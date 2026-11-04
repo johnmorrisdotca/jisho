@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 2 of 318, from "あいでんてぃふぃけーしょん・". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 2 of 316, from "あいとうし". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,13 +9,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "アイデンティフィケーション・カード\t\t#lqnk\t¦identification card",
-    "アイデンティフケイション\t\t#lqna\t¦identification",
-    "アイデンテティ\t\t#lqm6\t¦identity",
-    "アイデンテファイ\t\ts#lqn0\t¦identify",
-    "アイデンテフィケイション\t\t#lqna\t¦identification",
-    "あいとう\t哀悼\tsC~n18#onm6\t¦condolence¦regret¦tribute",
-    "あいとう\t愛刀\t#1p3du\t¦favorite sword¦cherished sword",
     "あいとうしん\t愛党心\t#15ck2\t¦party loyalty",
     "あいとうつうせき\t哀悼痛惜\t#17i7m\t¦condolence¦mourning¦sorrow",
     "あいとうのい\t哀悼の意\t#1oiso\t¦one's condolences¦feelings of sympathy",
@@ -198,7 +191,6 @@ export const PIECE: WordsPiece = {
     "あいふだ\t合札|合い札\t#15tuu\t¦check (e.g. baggage claim)¦tag¦token\t¦tally¦score",
     "アイフック\t\t#1a6zs\t¦eye hook¦eyehook",
     "アイフル\t\t#2zcph\tcompany¦Aiful (consumer loan firm)",
-    "あいぶ\t愛撫\ts#oo5w\t¦caressing¦fondling¦(sexual) petting",
     "あいぶ\t歩ぶ\t#1lwtw\tarch¦to walk¦to go on foot",
     "アイブイエフ\tＩＶＦ\t#1p2l5\tmed¦in vitro fertilization¦IVF",
     "アイブック\tｉＢｏｏｋ\t#3f2gl\tproduct¦iBook",
@@ -249,11 +241,8 @@ export const PIECE: WordsPiece = {
     "あいまいせい\tあいまい性|曖昧性\t#1gjek\t¦ambiguity¦fuzziness",
     "あいまいせいかいしょう\t曖昧性解消\ts#1omaj\t¦disambiguation",
     "あいまいせいぎょ\tあいまい制御\t#1ct4y\trare,comp¦fuzzy control",
-    "あいまいぢゃや\t曖昧茶屋\t#1lp5i\t¦brothel fronting as a tea house, inn, restaurant, etc.",
     "あいまいど\tあいまい度|曖昧度\t#1ct58\tcomp¦equivocation",
     "あいまいもこ\t曖昧模糊\tn#xltw\tyoji¦obscure¦vague¦ambiguous",
-    "あいまいや\t曖昧屋\t#1lp58\t¦brothel fronting as a tea house, inn, restaurant, etc.",
-    "あいまいやど\t曖昧宿\t#1lp4y\t¦brothel fronting as a tea house, inn, restaurant, etc.",
     "あいまいりょう\tあいまい量|曖昧量\t#1ct5s\tcomp¦equivocation",
     "あいまいりろん\tあいまい理論|曖昧理論\t#1ct5i\tcomp¦fuzzy theory",
     "あいまいろんり\tあいまい論理|曖昧論理\t#1ct62\tcomp¦fuzzy logic",
@@ -305,12 +294,10 @@ export const PIECE: WordsPiece = {
     "あいよう\t相擁\ts#1j488\t¦embrace¦hug",
     "あいようしゃ\t愛用者\t#15ckc\t¦regular user¦person who favors (favours) (something)",
     "あいよかけよ\t\t#1onw8\tShinto¦coexistence¦mutual fulfilment",
-    "あいよく\t愛欲|愛慾\t~m48#xzvg\t¦passion¦sexual desire¦lust\tBuddh¦attachment (esp. to one's family or a member of the opposite sex)",
     "アイライナー\t\t#1g3og\t¦eye liner¦eyeliner",
     "アイライナーペンシル\t\t#1oyqb\t¦eyeliner pencil",
     "アイライナー・ペンシル\t\t#1oyqb\t¦eyeliner pencil",
     "アイライン\t\t~h#lqte\t¦eyeliner",
-    "アイライン\tＩライン\t#1pbmw\t¦female genital area (extending to the anus)",
     "あいらく\t哀楽\t#onhg\t¦grief and pleasure",
     "アイラグ\t\t#1nzis\t¦kumis (fermented mare's milk)",
     "あいらしい\t愛らしい\ta~m38#onqm\t¦pretty¦charming¦lovely",
@@ -496,7 +483,7 @@ export const PIECE: WordsPiece = {
     "アウター・スペース\t\t#lqwq\t¦outer space",
     "アウター・マッスル\t\t#1pbr3\tanat¦outer muscles",
     "アウチ\t\t#1a73o\t¦ouch",
-    "アウティング\t\t#1a73y\t¦outing (someone's sexual orientation or gender identity)\t¦outing¦trip¦excursion\t¦outing (in a sporting event)¦appearance",
+    "アウティング\t\t#1a73y\t¦outing¦trip¦excursion\t¦outing (in a sporting event)¦appearance",
     "アウテリア\t\t#lqxa\trare¦exterior (of a building)",
     "アウディ\t\t#2zctn\tcompany¦Audi (car company)",
     "アウト\tＯＵＴ\tnC~ig#lqxk\tsports¦out (of a ball; in tennis, etc.)¦outside the line\tbaseb¦out¦putout\t¦outer¦external¦outside\t¦exit¦exit here",
@@ -714,7 +701,7 @@ export const PIECE: WordsPiece = {
     "アオカビチーズ\t青カビチーズ|青かびチーズ|青黴チーズ\t#1pbp3\tfood¦blue cheese",
     "あおかわらひわ\t青河原鶸\tU#1b4oa\tuk¦European greenfinch (Carduelis chloris)",
     "アオカワラヒワ\t\tU#1b4oa\tuk¦European greenfinch (Carduelis chloris)",
-    "あおかん\t青姦|青かん\tU#18x6c\tuk,col¦sleeping under the stars\t¦having sex outdoors",
+    "あおかん\t青かん\tU#18x6c\tuk,col¦sleeping under the stars",
     "あおかん\t青看\t#1phoj\thob¦road directional sign",
     "あおがい\t青貝\t#11ieq\t¦limpet",
     "あおがえる\t青蛙\t#11ij6\t¦green (tree) frog",
@@ -806,9 +793,7 @@ export const PIECE: WordsPiece = {
     "あおず\t青酢\t#1m4vw\tfood¦liquid seasoning made from leaf vegetables mixed with sake, mirin, sugar, etc.",
     "あおずみ\t青墨\t#1paur\t¦indigo wax shaped as an inkstick",
     "あおセパ\t青セパ\t#1p3mo\tabbr¦blue release liner",
-    "あおせん\t青線\t#1onl7\t¦blue line\thist,abbr¦area around a red-light district where illegal prostitution occurred (marked on police maps by a blue line; 1940s-1956)\t¦non-legal public waterway (denoted by a blue line on cadastral maps; sometimes no longer physically existing)",
-    "あおせんくいき\t青線区域\t#1onl8\thist¦area around a red-light district where illegal prostitution occurred (marked on police maps by a blue line; 1940s-1956)",
-    "あおせんちたい\t青線地帯\t#1onl6\thist¦area around a red-light district where illegal prostitution occurred (marked on police maps by a blue line; 1940s-1956)",
+    "あおせん\t青線\t#1onl7\t¦blue line\t¦non-legal public waterway (denoted by a blue line on cadastral maps; sometimes no longer physically existing)",
     "あおそ\t青麻|青苧\t#1jzua\t¦ramie fibre (fiber)",
     "あおそこひ\t青そこひ|青底翳|青内障\t#11ib4\tcol¦glaucoma",
     "あおぞら\t青空\tC~ni12#tly6\t¦blue sky",
@@ -860,5 +845,23 @@ export const PIECE: WordsPiece = {
     "あおに\t青二\t#1p5cr\tcards¦2 of batons (high-scoring card in mekuri karuta)",
     "あおにく\t青肉\t#1os0y\t¦green flesh (melon, etc.)\t¦green meat (e.g. discolored tuna meat)",
     "あおにび\t青鈍\t#1mdoa\t¦grey tinged with green¦grey tinged with blue",
+    "あおぬた\t青饅|青ぬた\t#1ni7g\tfood¦salad of fish and vegetables, dressed with crushed mustard leaves and greens seasoned with sake lees, miso and vinegar",
+    "あおね\t青嶺\t#1mvqu\t¦lush mountain¦green mountain",
+    "あおねぎ\t青ネギ|青ねぎ|青葱\t#1ak68\t¦green spring onion",
+    "あおねろ\t青嶺\t#1mvqu\t¦lush mountain¦green mountain",
+    "あおのく\t仰く|仰のく\tg#qjwi\tdated¦to look up¦to face upwards¦to turn one's face upwards",
+    "あおのける\t仰ける|仰のける\ti#qjws\tdated¦to turn up (e.g. one's face)¦to lay (something) on its back¦to tilt (one's head) back",
+    "あおのつがざくら\t青の栂桜\tU#1omu5\tuk¦Aleutian mountainheath (Phyllodoce aleutica)",
+    "アオノツガザクラ\t\tU#1omu5\tuk¦Aleutian mountainheath (Phyllodoce aleutica)",
+    "アオノメハタ\t\t#1iaug\t¦peacock grouper (Cephalopholis argus)",
+    "あおのり\t青のり|青海苔\t#11ig4\t¦green laver (Enteromorpha)¦green dried seaweed¦nori",
+    "あおはあいよりいでてあいよりあおし\t青は藍より出でて藍より青し\t#19vzy\tproverb¦the student has become the master",
+    "あおはいいろ\t青灰色\t#1phcn\t¦grayish blue¦greyish blue¦ash grey",
+    "あおはしこう\t青嘴鸛\t#1oo7o\t¦Abdim's stork (Ciconia abdimii)¦white-bellied stork",
+    "アオハシコウ\t\t#1oo7o\t¦Abdim's stork (Ciconia abdimii)¦white-bellied stork",
+    "アオハタ\t\tU#1ph3g\tuk¦yellow grouper (Epinephelus awoara)¦banded grouper",
+    "あおはた\t青羽太\tU#1ph3g\tuk¦yellow grouper (Epinephelus awoara)¦banded grouper",
+    "あおはだ\t青肌|青膚\tU#18azq\tuk¦Ilex macropoda (species of holly)",
+    "アオハダ\t\tU#18azq\tuk¦Ilex macropoda (species of holly)",
   ],
 };

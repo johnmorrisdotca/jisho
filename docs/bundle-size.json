@@ -2,20 +2,20 @@
   "measured": "esbuild 0.28.2, bundled, minified, ES2020, gzip level 9",
   "entries": {
     ".": {
-      "minified": 1638,
-      "gzip": 898
+      "minified": 1639,
+      "gzip": 900
     },
     "./deinflect": {
       "minified": 7089,
-      "gzip": 2105
+      "gzip": 2132
     },
     "./entries": {
-      "minified": 31489954,
-      "gzip": 9079000
+      "minified": 31560593,
+      "gzip": 9059849
     },
     "./examples": {
-      "minified": 11913258,
-      "gzip": 2918000
+      "minified": 11924010,
+      "gzip": 2907583
     },
     "./grades": {
       "minified": 18121,
@@ -31,23 +31,23 @@
     },
     "./look-alike": {
       "minified": 230041,
-      "gzip": 50672
+      "gzip": 50561
     },
     "./strokes": {
       "minified": 2715480,
-      "gzip": 1087000
+      "gzip": 1083779
     },
     "./words": {
-      "minified": 67137584,
-      "gzip": 14816000
+      "minified": 67853236,
+      "gzip": 14915589
     },
     "./words-common": {
-      "minified": 2880964,
-      "gzip": 915000
+      "minified": 2874110,
+      "gzip": 908470
     },
     "./words-common-extra": {
-      "minified": 75116,
-      "gzip": 24600
+      "minified": 92781,
+      "gzip": 30370
     }
   }
 }

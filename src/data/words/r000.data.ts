@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 1 of 318, from "". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 1 of 316, from "". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -124,7 +124,6 @@ export const PIECE: WordsPiece = {
     "あいえ\t藍絵\t#1liws\thist,art¦ukiyo-e print produced with various shades of indigo (and sometimes small amounts of vermilion or yellow)",
     "アイエイチ\tＩＨ\t#1ous8\t¦induction heating¦IH",
     "アイエイチちょうりき\tＩＨ調理器\t#1byrc\t¦induction cooker",
-    "あいえき\t愛液\t#onrg\tcol¦arousal fluid¦genital secretions¦sexual fluids\tcol¦semen¦cum",
     "アイエス\tＩＳ\t#1os3s\t¦Islamic State¦IS¦Daesh\tcomp¦information separator¦delimiter",
     "アイエスオー\tＩＳＯ\t#1ctps\t¦International Organization for Standardization¦ISO",
     "アイエスオーかんど\tＩＳＯ感度\t#1oquf\tphoto¦ISO speed¦ISO sensitivity",
@@ -166,7 +165,7 @@ export const PIECE: WordsPiece = {
     "あいか\t哀歌\t#onh6\t¦lament (song)¦elegy¦dirge\t¦Lamentations (book of the Bible)",
     "あいかぎ\t合鍵|合い鍵\t#xzse\t¦duplicate key\t¦master key¦passkey¦skeleton key",
     "あいかた\t合方|合い方\t#yg96\tnoh¦accompaniment to a chant¦musician accompanying a chant\tkabuki¦samisen accompaniment to a recitation¦samisen player accompanying a recitation\tmusic¦samisen music played between the sections of a nagauta¦samisen interlude",
-    "あいかた\t相方|敵娼\t#16tb8\t¦partner (esp. in manzai)¦companion\t¦partner for the night (e.g. at a brothel)",
+    "あいかた\t相方\t#16tb8\t¦partner (esp. in manzai)¦companion",
     "あいかた\t相肩\t#1lm6a\t¦partner¦someone who shares one's load",
     "あいかたらう\t相語らふ\t#1lm6k\tarch¦to talk together\tarch¦to be close¦to be intimate¦to form an intimate relationship (between a man and a woman)\tarch¦to win someone over",
     "アイカメラ\t\t#1h92g\t¦eye camera¦eye tracker",
@@ -344,7 +343,7 @@ export const PIECE: WordsPiece = {
     "あいし\t哀思\t#1lmhy\t¦sad feeling",
     "あいし\t合紙\t#1oz4r\tprint¦slip sheet",
     "あいしあいされる\t愛し愛される\ti#1i09w\t¦to love and be loved back¦to love and be loved in return¦to give and receive love",
-    "あいしあう\t愛し合う|愛しあう\tg#16ha6\t¦to love one another¦to be affectionate towards each other\t¦to have sex¦to make love",
+    "あいしあう\t愛し合う|愛しあう\tg#16ha6\t¦to love one another¦to be affectionate towards each other",
     "アイシェード\t\t#lqcq\t¦eyeshade",
     "アイシクル\t\t#1a6qc\t¦icicle",
     "アイシス\tＩＳＩＳ\t#1pgsd\t¦ISIS¦Islamic State of Iraq and Syria",
@@ -364,7 +363,6 @@ export const PIECE: WordsPiece = {
     "あいしょう\t相性|合性|合い性\tC~n15#xzti\t¦affinity¦compatibility¦chemistry (between people)",
     "あいしょう\t愛唱\ts~m41#onyo\t¦loving to sing (a song)¦singing with great fondness",
     "あいしょう\t哀傷\ts#onjy\t¦sorrow¦grief",
-    "あいしょう\t愛妾\t#onzi\t¦beloved concubine¦favourite concubine (e.g. of the shogun)",
     "あいしょう\t愛誦\ts#oo7a\t¦loving to recite (e.g. a poem)¦reciting with great fondness",
     "あいしょううらない\t相性占い\t#1kn0g\t¦compatibility horoscope (esp. for love)¦compatibility reading",
     "あいしょうか\t愛唱歌\t#onyy\t¦song one likes to sing¦(one's) favourite song",
@@ -413,7 +411,6 @@ export const PIECE: WordsPiece = {
     "あいじょうをかたむける\t愛情を傾ける\ti#13s26\t¦to fix one's affection on",
     "あいじるし\t合印|合い印|合い標|合標\t#xzts\t¦identifying mark (esp. a mark of comradeship)\t¦mark placed where two pieces of cloth are to be sewn together (or two pieces of wood joined, etc.)\t¦verification seal¦tally",
     "あいじろ\t藍白\t#1p0k6\t¦pale cyan¦pale azure",
-    "あいじん\t愛人\tC~n13#oo0m\t¦lover¦mistress",
     "あいじんかんけい\t愛人関係\t#17qs8\t¦being lovers",
     "アイジングラス\t\t#1a6qm\t¦isinglass",
     "アイス\t\tC~ig#lqdu\t¦ice\tabbr¦ice cream\tabbr¦ice pop¦ice lolly¦popsicle\t¦cold¦iced (e.g. iced tea, iced coffee)",
@@ -820,5 +817,12 @@ export const PIECE: WordsPiece = {
     "アイデンティファイ\t\ts#lqn0\t¦identify",
     "アイデンティフィケーション\t\t#lqna\t¦identification",
     "アイデンティフィケーションカード\t\t#lqnk\t¦identification card",
+    "アイデンティフィケーション・カード\t\t#lqnk\t¦identification card",
+    "アイデンティフケイション\t\t#lqna\t¦identification",
+    "アイデンテティ\t\t#lqm6\t¦identity",
+    "アイデンテファイ\t\ts#lqn0\t¦identify",
+    "アイデンテフィケイション\t\t#lqna\t¦identification",
+    "あいとう\t哀悼\tsC~n18#onm6\t¦condolence¦regret¦tribute",
+    "あいとう\t愛刀\t#1p3du\t¦favorite sword¦cherished sword",
   ],
 };

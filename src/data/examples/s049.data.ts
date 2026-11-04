@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 50 of 145, from "0sw7". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 50 of 144, from "0swtq". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,43 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0sw78\t1¦その｜帝国《ていこく》はすべての｜小国《しょうこく》を｜併合《へいごう》した。¦The empire absorbed all the small states.¦1¦4g9v¦¦¦小国",
-    "0sw82\t1¦それらの｜小作農《こさくのう》は、｜米《めーとる》を｜作《つく》る｜土地《とち》をとても｜必要《ひつよう》としている。¦Those peasants badly need land to grow rice.¦2¦4dze¦¦Swift¦小作農",
-    "0sw8w\t1¦あいつは｜小山《こやま》の｜大将《たいしょう》だった。¦He was the cock of the walk.¦2¦5110¦¦¦小山",
-    "0sw96\t1¦｜小指《こゆび》がはれました。¦My little finger is swollen.¦3¦35e9¦small_snow¦CK¦小指",
-    "0sw9g\t1¦｜小枝《こえだ》で｜火《ひ》はおこせますか。¦Can you build a fire with twigs?¦2¦35e8¦¦¦小枝",
-    "0sw9q\t1¦｜彼《あれ》は｜五歳《ごさい》の｜時《とき》に｜小児麻痺《しょうにまひ》にかかった。¦He was struck with polio when he was five.¦¦2ay7¦¦¦小児",
-    "0swbe\t1¦｜私《わたし》たちは｜小船《こぶね》でその｜川《かわ》を｜渡《わた》った。¦We went down the river in a small boat.¦3¦3jsn¦bunbuku¦CK¦小船",
-    "0swd2\t1¦かぜには｜大食《たいしょく》、｜熱《ねつ》には｜小食《しょうしょく》。¦Feed a cold and starve a fever.¦3¦4uol¦¦CM¦小食",
-    "0swe6\t1¦５歳未満の小人は、入場料は要りません。¦There is no admission fee for children under five.¦3¦51fq¦mookeee¦CK¦小人",
-    "0swfa\t1¦｜小生《しょうせい》のレポートをご｜高覧《こうらん》に｜供《とも》したいと｜思《おも》います。¦I would like to submit my report for your perusal.¦1¦6i6xj¦JimBreen¦JimBreen¦小生",
-    "0swfk\t1¦｜少年《しょうねん》は｜犬《いぬ》をめがけて｜小石《こいし》を｜投《な》げつけた。¦The boy threw a stone at the dog.¦3¦3530¦¦CK¦小石",
-    "0swfu\t1¦この｜小切手《こぎって》を｜現金《げんきん》にしてくれますか。¦Can you cash this check for me?¦3¦4qns¦¦CK¦小切手",
-    "0swg4\t1¦懐かしい１２小節のブルース。¦There go the twelve bars blues.¦1¦3yv5¦¦¦小節",
-    "0swge\t1¦｜事実《じじつ》は｜小説《しょうせつ》よりも｜奇《き》なり。¦Fact is stranger than fiction.¦1¦38cx¦¦CK¦小説\t1¦トムは｜小説《しょうせつ》を｜読《よ》んでいる。¦Tom is reading a novel.¦3¦1dko9¦tommy_san¦Amastan¦小説",
-    "0swgo\t1¦｜彼《あれ》は、｜詩人《しじん》ではなくて｜小説家《しょうせつか》だ。¦He is not a poet but a novelist.¦1¦2h4h¦¦shekitten¦小説家",
-    "0swgy\t1¦みんなクリスマスに｜小雪《こゆき》がちらつくのを｜望《のぞ》んでいた。¦Everyone hoped for a snow flurry for Christmas.¦3¦46g9¦¦AlanF_US¦小雪",
-    "0swh8\t1¦｜小川《おがわ》がさらさらと｜流《なが》れる｜音《おと》が｜聞《き》こえる。¦We can hear a brook murmuring.¦3¦35dg¦KK_kaku_¦¦小川",
-    "0swhi\t1¦｜私《わたし》は｜小銭《こぜに》の｜持《も》ち｜合《あ》わせがない。¦I have no small change on me.¦1¦3cab¦¦Aoshiroi¦小銭\t2¦｜彼《あれ》は｜就寝《しゅうしん》｜前《さき》にポケットから｜小銭《こぜに》を｜取《と》り｜出《だ》して、テーブルの｜上《うえ》にどさっと｜置《お》く。¦Before retiring he usually dumps the chicken feed from all his pockets onto the table.¦1¦28jr¦¦¦小銭",
-    "0swhs\t1¦また｜僕《ぼく》をかつごうとしているのかい、このいたずら｜小僧《こぞう》め。¦Are you going to play tricks on me again, you naughty boy?¦1¦46tx¦¦CM¦小僧\t2¦｜門前《もんぜん》の｜小僧習《こぞうなら》わぬ｜経《きょう》を｜読《よ》む。¦A saint's maid quotes Latin.¦1¦1pk1¦KK_kaku_¦¦小僧",
-    "0swi2\t1¦ったくケイコちゃんって｜可愛《かわい》いんだか｜小憎《こにく》らしいんだか・・・。¦Sheesh, that Keiko - she's cute or she's hateful, just can't make her out.¦¦1n2g¦mookeee¦¦小憎らしい",
-    "0swiw\t1¦浅｜草《くさ》｜小町《こまち》と｜呼《よ》ばれたものだ。¦She used to be called the Belle of Asakusa.¦2¦4xqej¦JimBreen¦JimBreen¦小町",
-    "0swj6\t1¦｜小鳥《ことり》たちはたのしそうにさえずっています。¦The birds are singing merrily.¦4¦35cz¦KK_kaku_¦shekitten¦小鳥",
-    "0swjq\t1¦｜我々《われわれ》の｜船《ふね》はその｜小島《こじま》に｜近《ちか》づいた。¦Our boat approached the small island.¦1¦3zp5¦¦CK¦小島",
-    "0swkk\t1¦これらの｜小道具《こどうぐ》は｜役《やく》に｜立《た》ちそうにない。¦These gadgets seem to be of no use.¦3¦4o3m¦¦CM¦小道具",
-    "0swku\t1¦｜俺《おれ》はおまえだろうと｜誰《だれ》だろうと、こづき｜回《まわ》されるような｜事《こと》はさせないぞ。¦I'm not going to be pushed around by you or anyone else.¦¦41cp¦¦CK¦こづき",
-    "0swl4\t1¦｜小脳《しょうのう》は｜血液《けつえき》の｜不断《ふだん》の｜供給《きょうきゅう》を｜必要《ひつよう》とする。¦The brain needs a continuous supply of blood.¦2¦35cg¦mookeee¦¦小脳",
-    "0swly\t1¦この｜小麦《こむぎ》は｜粉《こな》にされる。¦This wheat is made into flour.¦2¦4qmt¦¦¦小麦",
-    "0swm8\t1¦｜私《わたし》はこんがりと｜小麦色《こむぎいろ》に｜日焼《ひや》けした。¦I was browned to a nice tan.¦2¦3fzv¦¦¦小麦色",
-    "0swmi\t1¦｜麺《めん》はふつう｜小麦粉《こむぎこ》から｜作《つく》られる。¦Noodles are usually made from wheat.¦¦1pve¦¦CK¦小麦粉",
-    "0swn2\t1¦それじゃ｜猫《ねこ》に｜小判《こばん》だ。¦It is like casting pearls before swine.¦3¦4et3¦small_snow¦CM¦小判",
-    "0swnm\t1¦｜面疔《めんちょう》ができた。｜小鼻《こばな》の｜奥《おく》に1｜個《こ》、｜痛《いた》い｜塊《かたまり》がある。¦I have a facial boil. There's a painful lump at the back of one nostril.¦¦1l9j¦fcbond¦fcbond¦小鼻",
-    "0swoq\t1¦ライザは｜大変《たいへん》｜器用《きよう》なので、｜自分《じぶん》でネジや｜同《どう》じような｜小物《こもの》を｜作《つく》ることさえできる。¦Lisa is so skillful that she can even make screws and similar small objects for herself.¦¦44nx¦¦qdii¦小物",
-    "0swpu\t1¦｜彼《かれ》らはその｜少女《しょうじょ》は｜小柄《こがら》だと｜言《い》った。¦They described the girl as being small.¦1¦23jp¦¦CK¦小柄",
-    "0swrs\t1¦｜少年《しょうねん》はバットを｜小脇《こわき》に｜抱《かか》えている。¦The boy has a bat under his arm.¦¦353g¦¦CK¦小脇",
-    "0swsm\t1¦｜子供《こども》に｜少《すこ》し｜愛情《あいじょう》を｜注《そそ》いで｜見《み》｜給《たま》え、すると｜君《きみ》におびただしい｜愛情《あいじょう》が｜戻《もど》ってくる。¦Give a little love to a child, and you get a great deal back.¦3¦3m53¦¦Objectivesea¦少し\t2¦｜少《すこ》しテレビを｜見《み》てもいいですか。¦Do you mind if I watch TV for a while?¦4¦35bc¦¦CK¦少し",
-    "0swsw\t1¦｜彼《あれ》は｜少《すこ》しずつよくなっています。¦He is getting better bit by bit.¦3¦28c9¦bunbuku¦CK¦少しずつ",
-    "0swtg\t1¦コックさんは｜少《すこ》しもかけていない。¦The cook hasn't put any on it.¦4¦4sy2¦¦¦少しも",
     "0swtq\t1¦この｜病気《びょうき》に｜勝《か》てる｜人《じん》は｜少《すく》ない。¦Not many survive this disease.¦3¦4pu4¦¦CK¦少ない",
     "0swv4\t2¦｜小額《しょうがく》の｜札《ふだ》にいたしますか、それとも｜高額《こうがく》の｜札《ふだ》にいたしましょうか。¦Do you want small bills or large?¦2¦3587¦stephenmk¦CK¦小額",
     "0sww8\t1¦｜少佐《しょうさ》は｜大尉《たいい》の｜上官《じょうかん》である。¦A major is above a captain.¦1¦3586¦¦CK¦少佐",
@@ -200,5 +163,8 @@ export const PIECE: WordsPiece = {
     "0szd4\t1¦｜物価《ぶっか》の｜上《あ》がり｜下《さ》がりが｜金融危機《きんゆうきき》を｜引《ひ》き｜起《お》こした。¦The rise and fall of prices caused a financial crisis.¦1¦1lgu¦fcbond¦fcbond¦上がり下がり",
     "0szdy\t1¦｜彼《かれ》らは｜夜遅《よるおそ》くどかどかと｜私《わたし》の｜家《いえ》に｜上《あ》がり｜込《こ》んできた。¦They crowded into my house late at night.¦3¦2253¦¦CK¦上がり込んで",
     "0szfc\t2¦｜物価《ぶっか》は｜上《あ》がり｜目《め》だった。¦Prices showed a tendency of going up.¦1¦1snd¦¦¦上がり目",
+    "0szfm\t1¦２階へ上がると赤城山がよく見える。¦There's a good view of Mt. Akagi from upstairs.¦2¦52uz¦mookeee¦CN¦上がる\t1¦｜我々《われわれ》はエレベーターで｜上《あ》がったり｜降《お》りたりした。¦We went up and down by elevator.¦1¦3zm5¦¦CK¦上がったり\t2¦｜家《いえ》にあがる｜前《さき》に｜靴《くつ》を｜脱《ぬ》げば｜靴《くつ》の｜泥《どろ》を｜家《いえ》の｜中《うち》に｜持《も》ち込まずにすむ。¦If you take your shoes off before coming into the house you won't bring in any dirt from your shoes.¦1¦40dy¦¦papabear¦あがる\t2¦｜彼《あれ》は｜私《わたし》の｜部屋《へや》へ｜上《あ》がってきた。¦He came up to my room.¦3¦29k4¦¦CK¦上がって\t4¦｜父《ちち》はちょうど｜風呂《ふろ》からあがったところだ。¦My father has just come out of the bath.¦1¦1tcl¦¦CN¦あがった\t4¦｜軽《かる》くひと｜泳《およ》ぎした｜僕《ぼく》は、｜水《みず》から｜上《あ》がってプールサイドに｜腰《こし》を｜下《お》ろす。¦After a light swim, I came up from the water and sat down on the poolside.¦1¦1msu¦mookeee¦¦上がって\t5¦｜死体《したい》はまだ｜上《あ》がらない。¦The drowned body has not been recovered.¦4¦3lq2¦¦¦上がらない\t6¦４月に給料があがりました。¦Our rates increased in April.¦3¦51hp¦e4zh1nmcz¦¦あがりました\t6¦｜来月《らいげつ》タクシー｜料金《りょうきん》があがります。¦Taxi fares will go up next month.¦4¦1ops¦bunbuku¦CK¦あがります\t7¦｜僕《ぼく》は｜学校《がっこう》の｜成績《せいせき》が｜上《あ》がったよ。¦I have got higher grades.¦1¦1r93¦bunbuku¦¦上がった\t7¦｜彼《あれ》は｜腕《うで》が｜上《あ》がった。¦He has improved in skill.¦2¦249g¦¦¦上がった\t9¦ここからあがる｜所得《しょとく》は｜無税《むぜい》である。¦The income from this source is tax-free.¦¦4tgj¦¦gall¦あがる\t12¦「要さんって、何時にあがれます？」「終わりまでだから八時までかかるわ」¦\"Kaname, when can you leave?\" \"It's till closing so it takes till eight.\"¦3¦1ne2¦mookeee¦¦あがれます\t13¦「｜雨《あめ》がすぐあがるでしょうか」「あがらないと｜思《おも》うよ」¦\"Will it stop raining soon?\" \"I'm afraid not.\"¦4¦52el¦mookeee¦CK¦あがらない\t13¦やがて｜雨《あめ》は｜上《あ》がると｜思《おも》う。¦I hope it will clear up soon.¦4¦450p¦¦¦上がる\t14¦｜車《くるま》のバッテリーが｜上《あ》がってるよ。¦The car battery is dead.¦5¦370n¦small_snow¦CK¦上がってる\t14¦｜翌日《よくじつ》、またバッテリーが｜上《あ》がってる。¦The next day the battery was flat again.¦2¦1orb¦mookeee¦sundown¦上がってる\t16¦｜人々《ひとびと》から｜叫《さけ》び｜声《ごえ》があがった。¦A shout arose from the people.¦2¦3394¦¦¦あがった\t16¦｜動議《どうぎ》が｜提出《ていしゅつ》され、｜賛成《さんせい》の｜声《こえ》も｜上《あ》がっています。¦The motion is proposed and seconded.¦1¦2nih¦¦CM¦上がっています\t17¦｜私《わたし》は｜演説《えんぜつ》をすると｜決《き》まってあがる。¦I never make a speech without being nervous.¦3¦3e3r¦¦Dejo¦あがる\t17¦｜僕《ぼく》は｜舞台《ぶたい》の｜上《うえ》であがった。¦I got nervous on stage.¦1¦1r36¦¦bekindtoall¦あがった\t19¦６時にお迎えに上がります。¦I'll call for you at six.¦3¦51de¦e4zh1nmcz¦¦上がります\t19¦｜明日《あした》それをいただきに｜上《あ》がります。¦I will call for it tomorrow.¦4¦1q6u¦¦Alkrasnov¦上がります\t23¦｜聴衆《ちょうしゅう》から｜歓声《かんせい》があがった。¦A cheer went up from the audience.¦1¦2pa6¦tommy__san¦CK¦あがった",
+    "0szfw\t1¦｜追《お》い｜風《かぜ》の｜時《とき》に｜帆《ほ》を｜上《あ》げよ。¦Hoist your sail when the wind is fair.¦1¦2ozr¦¦shekitten¦上げ",
+    "0szgg\t1¦両手をあげろ！¦Hands up!¦3¦1o8t¦wat¦Liface¦あげろ\t1¦｜左《ひだり》｜手《て》を｜上《あ》げなさい。¦Raise your left hand.¦4¦3nvn¦¦CK¦上げ\t1¦｜右《みぎ》｜腕《うで》を｜上《あ》げられません。¦I can't lift my right arm.¦2¦42iq¦small_snow¦CK¦上げられません\t2¦これ｜荷物《にもつ》を｜上《うえ》にあげてもよろしい。¦Can I put this up for you?¦2¦4nvh¦¦CK¦あげて\t2¦｜彼《かれ》らは｜冷蔵庫《れいぞうこ》を｜階段《かいだん》の｜上《うえ》まで｜運《はこ》び｜上《あ》げた。¦They lugged the refrigerator up the stairs.¦2¦223d¦¦CK¦上げた\t3¦｜彼《あれ》は｜給料《きゅうりょう》をすぐにあげてくれと｜要求《ようきゅう》した。¦He demanded that his salary should be increased right away.¦3¦2bo3¦¦CM¦あげて\t3¦｜彼《あれ》はスピードを｜上《あ》げた。¦He accelerated.¦3¦2fgo¦bunbuku¦CM¦上げた\t3¦その｜店《みせ》は｜値段《ねだん》を｜全部《ぜんぶ》｜上《あ》げた。¦The store raised all the prices.¦3¦4g73¦mookeee¦CM¦上げた\t5¦｜彼《あれ》に｜本《もと》をあげたの。¦I gave him the book.¦3¦2jvm¦small_snow¦CK¦あげた\t5¦｜私《わたし》は｜妹《いもうと》に｜辞書《じしょ》をあげた。¦I gave my sister a dictionary.¦3¦39vp¦bunbuku¦CK¦あげた\t5¦あなたは｜時《とき》には｜妹《いもうと》さんにおこづかいをあげますか。¦Do you sometimes give your sister money?¦4¦4yy8¦¦CM¦あげます\t6¦｜私《わたし》は｜息子《むすこ》を｜大学《だいがく》に｜上《あ》げた。¦I put my son through college.¦3¦3bu1¦¦CK¦上げた\t7¦｜生産性《せいさんせい》をあげるため｜新《あら》たなツールを｜探《さが》してます。¦We'll employ a new tool to increase productivity.¦3¦3265¦¦CM¦あげる\t7¦｜彼《あれ》は｜成績《せいせき》を｜上《あ》げなければ、｜卒業《そつぎょう》するのが｜大変《たいへん》になるでしょう。¦He will struggle to graduate if he does not make progress.¦2¦27r9¦¦¦上げ\t8¦彼はその販売で１万ドルの利益をあげた。¦He made a profit of ten thousand dollars on the sale.¦1¦2erc¦¦CK¦あげた\t8¦｜試合《しあい》が｜始《はじ》まるとすぐに、｜彼《かれ》らは｜先制点《せんせいてん》をあげた。¦The game had hardly started when they scored the first point.¦3¦38jx¦¦Eldad¦あげた\t8¦｜彼《あれ》は｜立派《りっぱ》な｜成績《せいせき》を｜上《あ》げた。¦He got wonderful results.¦1¦24ep¦¦CK¦上げた\t9¦｜彼《あれ》は｜質問《しつもん》するために｜手《て》を｜挙《あ》げた。¦He raised his hand to ask a question.¦1¦28th¦KK_kaku_¦CK¦挙げた\t11¦｜彼《あれ》は｜悲鳴《ひめい》をあげて｜逃《に》げて｜行《おこな》った。¦He cried out and ran away.¦3¦25r5¦¦Dejo¦あげて\t11¦｜学生《がくせい》はみな｜歓《かん》｜声《こえ》をあげた。¦All the students shouted with joy.¦1¦3y69¦¦fishda¦あげた\t11¦｜彼《あれ》は｜痛《いた》くて｜大《おお》｜声《こえ》を｜上《あ》げた。¦He cried out in pain.¦3¦26pz¦mookeee¦CM¦上げた\t12¦｜少女《しょうじょ》はまだ｜涙《なみだ》でぬれている｜顔《かお》を｜上《あ》げた。¦The girl lifted her face, still wet with tears.¦2¦357c¦¦¦上げた\t12¦｜母《はは》は、｜新聞《しんぶん》から｜目《め》を｜上《あ》げて｜私《わたし》を｜見《み》た。¦Mother looked up from her paper and saw me.¦4¦1s4h¦¦CM¦上げて\t13¦｜髪《かみ》も｜上《あ》げたほうが｜私《わたし》は｜好《す》きだ。¦I also prefer it with the hair worn up.¦3¦1l4g¦fcbond¦fcbond¦上げた\t23¦｜待《ま》ってあげる。¦I'll wait for you.¦4¦2yfp¦KK_kaku_¦CK¦あげる\t23¦｜彼《あれ》に｜雑誌《ざっし》を｜買《か》ってあげた。¦I bought him a magazine.¦2¦3axv¦small_snow¦CK¦あげた\t23¦｜解《と》き｜方《かた》を｜教《おし》えてあげるよ。¦I will show you how to solve it.¦3¦3ywi¦small_snow¦CK¦あげる\t24¦｜彼《あれ》はその｜手《て》｜紙《かみ》を｜声《こえ》｜高《たか》らかに｜読《よ》みあげた。¦He read the letter in a loud voice.¦3¦2ey9¦¦CM¦あげた\t24¦｜真昼《まひる》の｜太陽《たいよう》がテニスコートを｜目《め》も｜眩《くら》むほどに照らしあげた。¦The noonday sun beat down with dazzling brightness on the tennis court.¦¦1lg1¦fcbond¦fcbond¦あげた\t24¦｜彼《あれ》は｜立派《りっぱ》な｜商売《しょうばい》を｜築《ちく》きあげた。¦He has built up an excellent business.¦1¦24er¦¦CK¦あげた\t25¦｜反対《はんたい》｜申《もう》し｜上《あ》げるつもりは｜全然《ぜんぜん》なかったのです。¦I had no desire to say anything against you.¦3¦2ljt¦¦CK¦上げる",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 25 of 145, from "0pvt". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 25 of 144, from "0pwas". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,25 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0pvt0\t1¦その｜事《こと》で｜先生《せんせい》に｜掛《か》け｜合《あ》ってもらうように｜彼女《かのじょ》を｜選《えら》んだ。¦We elected her to approach our teacher on the matter.¦3¦4i1m¦¦¦掛け合って",
-    "0pvu4\t1¦このバーの｜持《も》ち｜主《ぬし》は｜酒《さけ》を｜決《けっ》して｜掛《か》け｜売《う》りしない。¦The owner of this bar never sells liquor on credit.¦3¦4sd3¦¦¦掛け売り",
-    "0pvuy\t1¦｜丘《おか》の｜上《うえ》にかしの｜木《き》がはえていますか。¦Are there oak trees on the hill?¦1¦3x0h¦¦CK¦かし",
-    "0pvw2\t1¦その｜少女《しょうじょ》はその｜布《ぬの》を｜裂《さ》いた。¦The girl tore the cloth.¦1¦4hfh¦¦CK¦裂いた\t4¦｜貴重《きちょう》なお｜時間《じかん》の｜数分《すうふん》をさいていただけますか。¦Can you spare me a few minutes of your valuable time?¦¦3x8b¦¦CK¦さいて",
-    "0pvwc\t1¦｜私《わたし》、｜先週《せんしゅう》｜貰《もら》った｜割引券《わりびきけん》があるの。¦I have some coupons I got last week.¦¦3lpi¦bunbuku¦CM¦割引券",
-    "0pvwm\t2¦｜彼《あ》の｜話《はなし》は｜割《わ》り｜引《び》いて｜聞《き》いた｜方《ほう》がいい。¦You'd better take his words with a grain of salt.¦3¦2hc0¦¦¦割り引いて",
-    "0pvya\t1¦｜登場人物《とうじょうじんぶつ》がうまく｜割《わ》り｜振《ふ》られていた。¦The characters were well cast.¦1¦2o4z¦¦¦割り振られていた",
-    "0pvyk\t2¦９０の約数のうち、９でわり切れない数は何個あるでしょうか。¦Among the divisors of 90, how many numbers are not divisible by 9?¦2¦1ndh¦mookeee¦¦わり切れない",
-    "0pvz4\t1¦あなたのおっしゃることはもっともだけれど、｜何《なに》か｜割《わ》り｜切《き》れないものがありますねえ。¦What you're saying is perfectly viable, but I can't shake off my unease.¦3¦509h¦¦¦割り切れない",
-    "0pw08\t1¦｜私《わたし》に｜新《あたら》しい｜部屋《へや》が｜割《わ》り｜当《あ》てられた。¦A new room was assigned to me.¦3¦3ito¦¦CK¦割り当てられた",
-    "0pw2q\t1¦彼は１万円私に割り戻した。¦He gave me a ten thousand yen rebate.¦3¦2gw8¦¦papabear¦割り戻した",
-    "0pw3k\t3¦マイケルは｜皿《さら》を｜割《わ》ってしまった。¦Michael broke the dishes.¦2¦470e¦¦une_monica¦割って",
-    "0pw44\t1¦プラスチックは｜割《わ》れにくい。¦Plastic does not break easily.¦3¦4818¦bunbuku¦CK¦割れ",
-    "0pw4y\t1¦その｜事《こと》｜件《けん》の｜説明《せつめい》は、｜紙面《しめん》が｜足《た》りないため｜割愛《かつあい》された。¦The explanation of the event was omitted for lack of space.¦3¦4i0g¦¦¦割愛",
-    "0pw8a\t1¦｜彼《あ》の｜行為《こうい》は｜世間《せけん》のかっさいを｜浴《あ》びた。¦His behavior won general applause.¦1¦2iky¦¦¦かっさい",
-    "0pw8u\t1¦｜彼《あれ》はあたかも｜病気《びょうき》であったかのような｜顔《かお》つきをしていた。¦He looked as if he had been ill.¦3¦2gpa¦¦CK¦あたかも",
-    "0pw9e\t1¦｜将軍《しょうぐん》の｜堂々《どうどう》とした｜恰幅《かっぷく》は｜誰《だれ》でも｜威圧《いあつ》される。¦The general's massive presence awes everyone.¦¦35i5¦¦¦恰幅",
-    "0pw9y\t1¦｜書類《しょるい》は｜全部《ぜんぶ》テープでくくられて｜金庫《きんこ》におさめられた。¦All the papers were taped up and kept in the safe.¦2¦35qf¦¦¦くくられて",
-    "0pwa8\t1¦カッコ｜内《ない》の｜言葉《ことば》を｜短縮形《たんしゅくけい》にしなさい。¦Put the words in parentheses into abbreviated form.¦1¦4unj¦arnab¦orcrist¦カッコ",
     "0pwas\t1¦その｜活火山《かっかざん》は｜周期的《しゅうきてき》に｜噴火《ふんか》する。¦The active volcano erupts at regular intervals.¦¦4ja9¦¦witbrock¦活火山",
     "0pwb2\t1¦その｜街《まち》は｜活気《かっき》にあふれていた。¦The town was full of activity.¦1¦4jc8¦bunbuku¦CM¦活気",
     "0pwbc\t1¦｜株式市場《かぶしきしじょう》は｜活況《かっきょう》を｜呈《てい》している。¦The stock market is very active.¦1¦3y19¦¦CK¦活況",
@@ -210,5 +191,21 @@ export const PIECE: WordsPiece = {
     "0q0mm\t1¦なぜ｜看護婦《かんごふ》になりたいのですか。¦Why do you want to be a nurse?¦1¦49pj¦¦CK¦看護婦",
     "0q0ou\t1¦｜囚人《しゅうじん》は｜連行《れんこう》していた｜看守《かんしゅ》の｜手《て》を｜振《ふ》り｜切《き》って｜脱走《だっそう》した。¦The prisoner broke away from the guards who were holding him.¦1¦36fc¦¦CK¦看守",
     "0q0py\t1¦｜日光《にっこう》で｜看板《かんばん》の｜文字《もじ》があせた。¦The sun had faded the lettering on the sign.¦1¦2mtf¦¦sundown¦看板",
+    "0q0r2\t1¦｜医者《いしゃ》は｜病気《びょうき》の｜老人《ろうじん》を｜看病《かんびょう》して｜夜《よ》を｜明《あ》かした。¦The doctor sat up all night with the sick old man.¦1¦436p¦¦CK¦看病",
+    "0q0sq\t1¦その｜件《けん》は｜通産省《つうさんしょう》の｜管轄《かんかつ》｜下《もと》にある。¦The matter comes under MITI.¦1¦4ius¦mookeee¦¦管轄",
+    "0q0u4\t1¦｜管弦楽団《かんげんがくだん》は｜郷愁《きょうしゅう》に｜満《み》ちた｜音楽《おんがく》を｜演奏《えんそう》し｜始《はじ》めた。¦The orchestra struck up nostalgic music.¦1¦3xur¦¦ToxicFriu¦管弦楽団",
+    "0q0uy\t1¦ジェット｜機《き》は｜管制塔《かんせいとう》からの｜誘導《ゆうどう》で｜着陸《ちゃくりく》した。¦The jet plane landed following the instructions of the control tower.¦1¦4myz¦¦¦管制塔",
+    "0q0vs\t1¦｜彼《あれ》に｜財産《ざいさん》｜管理《かんり》を｜任《まか》せた。¦I entrusted my property to him.¦2¦2jib¦¦Eldad¦管理",
+    "0q0wm\t1¦｜仕事場《しごとば》の｜管理者《かんりしゃ》は、｜正確《せいかく》さ、｜効率性《こうりつせい》、｜献身《けんしん》を｜期待《きたい》する。¦Office managers expect accuracy, efficiency, and dedication.¦¦3mf3¦mookeee¦CM¦管理者\t2¦｜管理《かんり》｜用《よう》｜画面《がめん》に｜管理者《かんりしゃ》しかアクセスできないようにしました。¦I made it so only root could access the administrative screen.¦2¦1lni¦fcbond¦fcbond¦管理者",
+    "0q0x6\t1¦このセミナーは、｜日本企業《にほんきぎょう》のマーケティング｜担当《たんとう》｜管理職《かんりしょく》を｜対象《たいしょう》としたものです。¦This seminar will target senior marketing leaders from Japanese firms.¦1¦4sj2¦¦¦管理職",
+    "0q0xg\t1¦｜管理人《かんりにん》によってアカウントの｜認証《にんしょう》が｜行《おこな》われたあと、あなたに｜確認《かくにん》のメールが｜送《おく》られます。¦You will receive a confirmation email after your account has been activated by an administrator.¦1¦1m5f¦fcbond¦fcbond¦管理人",
+    "0q0ya\t1¦｜簡潔《かんけつ》は｜機知《きち》の｜精髄《せいずい》。¦Brevity is the soul of wit.¦1¦3xum¦¦Ooneykcall¦簡潔",
+    "0q0yk\t1¦｜芝刈《しばか》り｜機《き》が｜簡素《かんそ》な｜作《つく》りの｜荷車《にぐるま》に｜積《つ》んである。¦Some lawn equipment is loaded into the jerry-built cart.¦1¦376n¦¦¦簡素な",
+    "0q0ze\t1¦テニスをすることは｜私《わたし》には｜簡単《かんたん》だ。¦Playing tennis is easy for me.¦2¦4bzv¦¦Eldad¦簡単",
+    "0q10s\t1¦この｜辞書《じしょ》は｜簡約《かんやく》｜版《はん》だ。¦This dictionary is an abridged edition.¦2¦4qx5¦¦Eldad¦簡約",
+    "0q11m\t1¦この｜靴《くつ》は｜少《すこ》し｜緩《ゆる》い。¦These shoes are a little loose.¦1¦4rhq¦bunbuku¦CM¦緩い",
+    "0q12g\t1¦その｜規則《きそく》は｜最近《さいきん》｜緩《ゆる》められた。¦The rules were recently relaxed.¦1¦4j78¦¦CK¦緩められた",
+    "0q12q\t2¦Ｖの角度が広ければ広いほど、スピードは緩やかになる。¦The wider the V angle, the slower the speed.¦1¦515o¦Chus¦Chus¦緩やか\t3¦この｜学校《がっこう》は｜規律《きりつ》がやや｜緩《ゆる》やかだ。¦Discipline is rather mild at this school.¦1¦4rrb¦¦¦緩やか",
+    "0q13a\t3¦いつもお｜世話《せわ》になっていますから、｜一旦緩急《いったんかんきゅう》あれば、すぐさま｜馳《は》せ｜参《さん》じます。¦You're always there for me, so if you're ever in dire straits, just let me know and I'll come running.¦¦4win¦KK_kaku_¦Vortarulo¦緩急",
   ],
 };

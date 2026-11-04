@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 14 of 145, from "0o84". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 14 of 144, from "0o8o". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,19 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0o844\t1¦マンパワーは｜世界《せかい》で｜一番《いちばん》｜大《おお》きな｜人材派遣会社《じんざいはけんかいしゃ》です。¦\"Manpower\" is the world's largest temp agency.¦1¦46k8¦¦Dejo¦マンパワー",
-    "0o85s\t1¦わたしたちの｜会社《かいしゃ》はマンモス｜会社《かいしゃ》で、｜繁雑《はんざつ》な｜面《つら》を｜少《しょう》くし｜能率《のうりつ》を｜上《あ》げるために、｜改正《かいせい》あるいは｜撤廃《てっぱい》すべき｜規則《きそく》とか｜規約《きやく》がいくつかある。¦Our firm is a giant one, and there are some rules and regulations, which should be revised or rescinded to reduce red tape and increase efficiency.¦1¦443s¦¦Dejo¦マンモス",
-    "0o87g\t1¦ミーティングを｜中止《ちゅうし》しなければならない。¦We have to call off the meeting.¦4¦46k1¦KK_kaku_¦CK¦ミーティング",
-    "0o89e\t1¦｜私《わたし》たちは｜博物館《はくぶつかん》でミイラを｜見《み》た。¦We saw a mummy at the museum.¦1¦3jl0¦bunbuku¦CK¦ミイラ",
-    "0o8cg\t1¦ミサは、｜食《た》べたり｜飲《の》んだりしてイエスキリストを｜偲《しの》ぶカトリックの｜儀式《ぎしき》だ。¦Mass is a Catholic ceremony of remembering Jesus Christ by eating and drinking.¦1¦46js¦¦Mar1L¦ミサ",
-    "0o8cq\t1¦ミサイル｜攻撃《こうげき》で｜多《おお》くの｜人命《じんめい》が｜失《うしな》われた。¦The missile attack took a heavy toll of lives.¦1¦46jw¦mookeee¦Dejo¦ミサイル",
-    "0o8du\t1¦ランシングはミシガンの｜州都《しゅうと》である。¦Lansing is the state capital of Michigan.¦2¦44kx¦¦CN¦ミシガン",
-    "0o8eo\t1¦｜私《わたし》は｜新《あたら》しいミシンを｜買《か》った。¦I bought a new sewing machine.¦4¦3c69¦mookeee¦CK¦ミシン",
-    "0o8ey\t1¦｜印刷《いんさつ》ミスはすぐに｜指摘《してき》されなければならない。¦Mistakes in the printing should be pointed out at once.¦1¦42lt¦¦CK¦ミス",
-    "0o8g2\t1¦｜上司《じょうし》のミスター｜田《た》｜中《うち》が｜君《きみ》を｜飲《の》みに｜誘《さそ》うかもしれないってことを｜言《い》っておくね。¦I should tell you that my boss, Mr Tanaka, might try to take you drinking.¦1¦34uf¦¦¦ミスター",
-    "0o8hg\t1¦このミステリーのトリックは、｜奇想天外《きそうてんがい》だ。¦This mystery has a plot twist that's completely novel.¦1¦4s61¦¦¦ミステリー",
-    "0o8jy\t1¦この｜教科書《きょうかしょ》は、｜急《いそ》いで｜印刷《いんさつ》したためにミスプリントがたくさんある。¦This textbook, having been printed in haste, has a lot of printing mistakes.¦2¦4rkh¦bunbuku¦CM¦ミスプリント",
-    "0o8l2\t1¦｜彼《かれ》らはミズーリ｜州《しゅう》に｜植民《しょくみん》する｜計画《けいかく》を｜立《た》てている。¦They are planning to settle Missouri.¦2¦23cq¦¦¦ミズーリ",
     "0o8oe\t1¦｜明日《あした》は｜朝《あさ》イチで｜大事《だいじ》なミッションがあるのだ。こんなことしてる｜場合《ばあい》じゃない。¦Tomorrow, I've got an important mission first thing in the morning. I shouldn't be wasting my time with this.¦3¦1mem¦mookeee¦papabear¦ミッション",
     "0o8p8\t1¦｜木綿《もめん》のミットをつければ｜赤《あか》ちゃんは｜自分《じぶん》の｜顔《かお》をひっかかなくなる。¦Cotton mittens will prevent the baby from scratching his own face.¦¦1prz¦¦CM¦ミット",
     "0o8pi\t1¦その｜色《いろ》は「ミッドナイト・ブルー」と｜言《い》います。¦We call that color \"midnight blue\".¦4¦4h6k¦¦¦ミッドナイト",
@@ -146,7 +133,6 @@ export const PIECE: WordsPiece = {
     "0of42\t1¦その｜言葉《ことば》はラテン｜語《ご》から｜来《き》ている。¦The word is derived from Latin.¦3¦4iqg¦¦orcrist¦ラテン語",
     "0ofbu\t1¦｜君《きみ》はラブストーリーが｜好《す》きじゃないんだね。¦You don't like love stories.¦3¦3sy5¦¦slyfin¦ラブストーリー",
     "0ofc4\t1¦この｜歌《うた》はラブソングです。¦This song is a love song.¦4¦4rwd¦small_snow¦CK¦ラブソング",
-    "0ofd8\t1¦｜今度《こんど》｜書《か》く｜小説《しょうせつ》でラブホテルが｜舞台《ぶたい》になるんで、｜一度《いちど》｜実際《じっさい》に｜見《み》ておきたかったんです。¦The novel I'm writing next is set in a love hotel so I wanted to see what one actually looks like.¦3¦1lxc¦fcbond¦fcbond¦ラブホテル",
     "0ofdi\t1¦これは｜一種《いっしゅ》のラブレターだよ。¦This is a kind of love letter.¦3¦4olf¦small_snow¦sundown¦ラブレター",
     "0ofew\t1¦このラベルは｜簡単《かんたん》につきますよ。¦This label sticks easily.¦2¦4s38¦¦rul¦ラベル",
     "0offq\t1¦この｜山《やま》を｜登《のぼ》ればラボに｜着《つ》きます。¦If you climb up this mountain, you'll reach the lab.¦3¦1n7m¦mookeee¦CM¦ラボ",
@@ -216,5 +202,22 @@ export const PIECE: WordsPiece = {
     "0oixk\t1¦｜見《み》｜日《ひ》はレークジェニーバをかたどって｜池《いけ》を｜造《つく》った。¦Ken'nichi made a pond in the shape of Lake Geneva.¦2¦1msl¦¦CP¦レーク",
     "0oixu\t1¦グランプリに｜勝《か》つことは｜有名《ゆうめい》なレーサーにとっては｜名誉《めいよ》であった。¦Winning the Grand Prix was a feather in the cap of the famous drivers.¦1¦4u0s¦¦¦レーサー",
     "0oj02\t1¦レーシング・カーのドライバー｜達《たち》は、｜大金《たいきん》をねらうばかりでなく、また、レースのスリルを｜味《あじ》わおうとするのである。¦Racing car drivers aren't just in it for the prize money but also for the thrill of racing.¦3¦44fp¦¦papabear¦レーシング・カー",
+    "0oj0c\t1¦あのレースは｜八百長《やおちょう》だった。¦The race was fixed.¦5¦4yf5¦small_snow¦CK¦レース",
+    "0oj0w\t1¦その｜船《ふね》にはレーダーが｜装備《そうび》されていた。¦The boat was equipped with radar.¦2¦4guf¦¦CK¦レーダー",
+    "0oj1g\t1¦ドルの｜交換《こうかん》レートは、｜今《いま》いくらですか。¦What is the exchange rate for dollars now?¦2¦4a2s¦bunbuku¦CK¦レート",
+    "0oj34\t1¦レール温度が上昇した影響で、列車は３０分遅れで到着した。¦The train arrived 30 minutes late due to a rise in the temperature of the rails.¦¦624y4¦bunbuku¦JimBreen¦レール\t2¦｜彼女《かのじょ》はレールのように｜痩《や》せていた。¦She was as thin as a rail.¦¦1yfr¦¦CM¦レール",
+    "0oj3y\t2¦ステーキはレアが｜好《す》きです。¦I like my steak rare.¦3¦4lln¦small_snow¦CK¦レア",
+    "0oj7u\t1¦これらのグラフィック・デザインの｜背景《はいけい》に｜配置《はいち》されているレイヤーの｜機能《きのう》に｜注目《ちゅうもく》しよう。¦Note the function of the background layers of these graphic designs.¦3¦4o78¦¦¦レイヤー",
+    "0oj98\t1¦｜雨《あめ》が｜私《わたし》のレインコートの｜下《もと》までしみとおった。¦The rain penetrated my raincoat.¦4¦42ct¦¦leo_eich65¦レインコート",
+    "0ojbq\t2¦｜彼《あれ》はサッカー｜部《ぶ》のレギュラーだった。¦He was a regular member of the soccer club.¦3¦2fos¦¦¦レギュラー\t3¦レギュラー｜満《まん》タンでお｜願《ねが》いします。¦Fill it with regular, please.¦3¦44fe¦small_snow¦CK¦レギュラー",
+    "0ojdo\t1¦スキーをすることは｜良《よ》いレクリエーションである。¦Skiing is a good form of recreation.¦3¦4lwf¦¦CK¦レクリエーション",
+    "0ojei\t1¦レゲエのことをどう｜思《おも》いますか。¦What do you think of reggae?¦4¦44fd¦¦Dejo¦レゲエ",
+    "0ojfw\t1¦ＣＤはすっかりレコードに取って代わった。¦Compact discs have entirely taken the place of phonograph records.¦3¦517y¦e4zh1nmcz¦¦レコード",
+    "0ojj8\t1¦レシートはなくしてしまったのですが、｜返金《へんきん》できますか。¦I lost my receipt. Can I still get a refund?¦3¦44f8¦¦CK¦レシート",
+    "0ojl6\t1¦くしくも、レジでの合計額は７７７円であった。¦Strangely, the cash register's total was 777 yen.¦2¦1n8x¦¦shekitten¦レジ\t2¦レジはどこですか。¦Where's the checkout counter?¦5¦44f6¦bunbuku¦CK¦レジ",
+    "0ojmk\t3¦4つのレジスタは、｜呼《よ》び｜出《だ》された｜関数《かんすう》｜側《そば》が｜保存《ほぞん》する。¦The contents of the four registers are preserved by the called subroutine.¦1¦1l73¦fcbond¦fcbond¦レジスタ",
+    "0ojno\t1¦｜彼女《かのじょ》はここにレジャーで｜来《き》たのですか。¦Did she come here to relax?¦3¦1zom¦¦CK¦レジャー",
+    "0ojox\t1¦｜男性《だんせい》からの｜投稿《とうこう》や｜記事《きじ》へのレスは｜一切《いっさい》お｜断《ことわ》りしております。¦Men are absolutely not allowed to post or reply to articles.¦1¦1m4z¦fcbond¦fcbond¦レス",
+    "0ojpc\t1¦｜兄《あに》はレスキュー｜隊《たい》のメンバーだ。¦My brother is a member of the rescue squad.¦1¦3s9l¦¦CK¦レスキュー",
   ],
 };

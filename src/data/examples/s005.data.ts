@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 6 of 145, from "0m38". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 6 of 144, from "0m3h". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,10 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0m38m\t1¦エレベーターの｜中《うち》でのタバコはご｜遠慮下《えんりょくだ》さい。¦You may not smoke in an elevator.¦1¦4vu7¦¦CS¦エレベーター",
-    "0m3f0\t1¦iTunesのＭＰ３エンコーダは音質が悪いって本当？¦Is it true that the iTunes' MP3 encoder has poor sound quality?¦3¦1lr1¦fcbond¦fcbond¦エンコーダ",
-    "0m3ge\t1¦どうしてビルはエンジニアになる｜決心《けっしん》をしたのか。¦What made Bill decide to be an engineer?¦3¦4bht¦¦CN¦エンジニア",
-    "0m3go\t1¦エンジニアリングの｜仕事《しごと》は｜日本《にほん》の｜会社《かいしゃ》が｜担当《たんとう》することになっています。¦Engineering service will be taken up by the Japanese company.¦2¦4vtw¦¦¦エンジニアリング",
     "0m3h8\t1¦｜彼《あれ》は｜最後《さいご》の｜試合《しあい》をエンジョイしたんだろうか。¦I wonder if he enjoyed the last match.¦3¦1llu¦fcbond¦fcbond¦エンジョイ",
     "0m3hi\t1¦そのエンジンは｜蒸気《じょうき》で｜動《うご》く。¦The engine is driven by steam.¦2¦4klw¦¦CK¦エンジン",
     "0m3iw\t1¦彼は３回エンストを起こしてしまった。¦He stalled the engine three times.¦3¦2guc¦¦CK¦エンスト",
@@ -221,5 +217,10 @@ export const PIECE: WordsPiece = {
     "0mdi2\t1¦｜観客《かんきゃく》は｜映画《えいが》がクライマックスの｜間《あいだ》すすり｜泣《な》きした。¦The audience sobbed throughout the climax of the movie.¦1¦3xu0¦¦shekitten¦クライマックス",
     "0mdjg\t1¦｜新《あたら》しいクラウンをかぶせる｜必要《ひつよう》があります。¦You have to have a new crown.¦3¦349m¦¦¦クラウン",
     "0mdjq\t1¦｜渋滞《じゅうたい》にいらいらして｜大勢《おおぜい》の｜運転手《うんてんしゅ》｜達《たち》はクラクションを鳴らし｜出《だ》した。¦Impatient at the delay, many drivers began to blow their horns.¦1¦366u¦¦CM¦クラクション",
+    "0mdkk\t1¦クラシックはありません。¦I don't have any classical music.¦5¦4u2z¦¦CK¦クラシック",
+    "0mdku\t1¦どんなに｜高《たか》くてもあのクラシックカーを｜手《て》に｜入《い》れたい。¦I will get that classic car at all costs.¦4¦49yh¦¦RoyalBee¦クラシックカー",
+    "0mdly\t1¦あなたはうちのクラスで｜歓迎《かんげい》されています。¦You are welcomed in our class.¦1¦4zmj¦¦¦クラス",
+    "0mdnw\t1¦｜私《わたし》たちはクラスメイトです。¦We're classmates.¦4¦3kik¦KK_kaku_¦CK¦クラスメイト",
+    "0mdqe\t1¦クラッチペダルを｜数回《すうかい》｜踏《ふ》むと、なんとかクラッチが｜切《き》れたので、｜騙《だま》し｜騙《だま》し｜運転《うんてん》しました。¦Repeatedly slamming the clutch pedal, I somehow managed to get the clutch disengaged so I could just about drive for the time being.¦¦1n8v¦¦al_ex_an_der¦クラッチ",
   ],
 };

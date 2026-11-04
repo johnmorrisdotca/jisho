@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 3 of 145, from "0lkww". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 3 of 144, from "0lkx". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,7 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0lkww\t1¦この｜本《もと》はおもしろい、その｜上《うえ》、｜非常《ひじょう》にためになる。¦This book is interesting and, what is more, very instructive.¦3¦4pj8¦¦¦その上\t2¦その上さらに５ドル払った。¦I paid five dollars in addition.¦3¦4h95¦¦¦その上",
     "0lkxg\t1¦｜何《なに》｜本《もと》か｜花《はな》がある。｜一本《いっぽん》は｜赤《あか》、もう｜一本《いっぽん》は｜白《しろ》で、その｜他《ほか》は｜黄《き》だ。¦There are several flowers. One is red, another is white, and the others are yellow.¦2¦40iu¦¦ToxicFriu¦その他\t2¦｜私《わたし》はその｜他《ほか》の｜計画《けいかく》を｜思《おも》い｜付《つ》かない。¦I can't think of any other plan.¦3¦3fg0¦¦CK¦その他",
     "0lky0\t1¦｜何《なに》かあったらそのつど｜知《し》らせてください。¦Please keep me informed.¦4¦416t¦bunbuku¦CK¦そのつど",
     "0lkya\t1¦そのうち｜一緒《いっしょ》に｜仕《し》｜事《こと》ができるといいなと｜思《おも》っています。¦Hope we can work together soon.¦3¦4kn4¦¦jakov¦そのうち",

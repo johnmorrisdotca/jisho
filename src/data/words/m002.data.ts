@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 3 of 172, from "50 ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 3 of 172, from "500 ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,10 +9,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "50 home\tぐん|こおり",
-    "50 homes\tり",
-    "50 standard\tへんさち",
-    "500\tごひゃく|いお|しゃっきん|せいれいしていとし|ワンコイン|ごこ|ごひゃくえんだま|りょ|ワンコインタクシー|ワンコイン・タクシー|ワンコインべんとう|ロングかん|インジレース",
     "500 mark\tしゃっきん",
     "500m\tしんかいへいげん",
     "502\tりょう|なんせい",
@@ -220,12 +216,12 @@ export const PIECE: WordsPiece = {
     "7th lunar\tちゅうげん",
     "7th month\tさる",
     "7th rank\tかのえ|こう",
-    "8\tはち|や|いちおく|はん|めいじ|へいせい|はつ|たつ|かん|エイチ|いぬ|ぶんじ|おく|ナンバーエイト|ナンバー・エイト|いっけん|いっしょう|いっしょうびん|じっちゅうはっく|じゅうちゅうはっく",
+    "8\tはち|や|いちおく|はん|めいじ|へいせい|はつ|たつ|かん|エッチ|エイチ|いぬ|ぶんじ|おく|ナンバーエイト|ナンバー・エイト|いっけん|いっしょう|いっしょうびん|じっちゅうはっく",
     "8 10am\tたつ",
     "8 10pm\tいぬ",
     "8 14\tぶんじ",
     "8 1912\tめいじ",
-    "8 2019\tへいせい|エイチ",
+    "8 2019\tへいせい|エッチ|エイチ",
     "8 3\tかん",
     "8 30\tはつ",
     "8 m\tはん",
@@ -528,10 +524,10 @@ export const PIECE: WordsPiece = {
     "ableism\tしょうがいしゃさべつ",
     "ablute\tみそぐ",
     "ablutions\tかんごり|みずごり|こり|みずぎょう|すいぎょう",
-    "abnormal\tいじょう|かわった|アブノーマル|へんたいてき|ふせいみゃく|だっすい|ちがう|いじょうしゅうりょう|へんたいしんり|へんたいしんりがく|へんたいせいよく|りょうき|いじょうきしょう|いじょうしんりがく|いじょうにんしん|いじょうぶんべん|いじょうこうどう|せきがきゅうしょう|ちゅうえい|いじょうせつだん",
+    "abnormal\tいじょう|かわった|アブノーマル|へんたいてき|ふせいみゃく|だっすい|ちがう|いじょうしゅうりょう|へんたいしんり|へんたいしんりがく|りょうき|いじょうきしょう|いじょうしんりがく|いじょうにんしん|いじょうぶんべん|いじょうこうどう|せきがきゅうしょう|ちゅうえい|いじょうせつだん|のうていぶいじょうけっかんもうしょう",
     "abnormal heartbeat\tふせいみゃく",
     "abnormal loss\tだっすい",
-    "abnormality\tかわり|いじょう|へんちょう|へんたい|いじょうせい|いじょうせいよく|せんしょくたいいじょう|せんてんいじょう",
+    "abnormality\tかわり|いじょう|へんちょう|へんたい|いじょうせい|せんしょくたいいじょう|せんてんいじょう",
     "abnormally\tいじょうこうおん|だんとういへん|ごうよくひどう",
     "abo\tエービーオーしきけつえきがた",
     "aboard\tつみこむ|のりくむ|きじょう|かんじょう|しゃちゅうだん|ふなかじ|しゃじょう|かんさい|ラッシュせん|ドクターカー|ドクター・カー",
@@ -543,7 +539,7 @@ export const PIECE: WordsPiece = {
     "abolished 2006\tゆうげんがいしゃ",
     "abolishing\tだは|はいち",
     "abolishment\tはいとうれい",
-    "abolition\tはいし|はいぜつ|てっぱい|とりけし|ぜんぱい|そんぱい|かいはい|はいごう|はいはんちけん|はいはん|かくはいぜつ|そんぱいもんだい|しけいはいし|どれいせいどはいし|きせいてっぱい|はいしょう|きゅうはいし|はいちょう",
+    "abolition\tはいし|はいぜつ|てっぱい|とりけし|ぜんぱい|そんぱい|かいはい|はいごう|はいはんちけん|はいはん|かくはいぜつ|そんぱいもんだい|しけいはいし|どれいせいどはいし|きせいてっぱい|きゅうはいし|はいちょう",
     "abolition system\tそんぱい",
     "abolitionist\tぜんぱいろんしゃ",
     "abomasum\tだいよんい|しわい|しゅうい|すうい",
@@ -651,7 +647,7 @@ export const PIECE: WordsPiece = {
     "abscisic\tアブシジンさん|アブサイジンさん|アプサイジンさん",
     "abscissa\tよこじく|よこざひょう",
     "absconded\tもちにげ",
-    "absconding\tしっせき|もちにげ|ドロン|どろん|かいたい|あしぬき",
+    "absconding\tしっせき|もちにげ|ドロン|どろん|かいたい",
     "abseiling\tアプザイレン|アップザイレン",
     "absence\tふざい|けっせき|るす|けつじょう|けっきん|やすみ|けつじょ|きゅうじょう|けつ|おやすみ|うむ|むだん|きゅうしょく|むじつ|ふせん|むとどけ|けつらく|きゅうがく|しゅっけつ|けっきんとどけ",
     "absence advance\tむだん",
@@ -712,7 +708,7 @@ export const PIECE: WordsPiece = {
     "abstemious\tきんよくてき|ストイック",
     "abstention\tきけん|ふかんしょう|ひし",
     "abstention voting\tきけん",
-    "abstinence\tきんよく|ものだち|ものたち|しょうさい|きんしゅ|けっさい|しおだち|ものいみ|ものいまい|ぶっき|しょうじんび|しょうじんおち|だんしゅ|オナきん",
+    "abstinence\tきんよく|ものだち|ものたち|しょうさい|きんしゅ|けっさい|しおだち|ものいみ|ものいまい|ぶっき|しょうじんび|しょうじんおち|だんしゅ",
     "abstinence alcohol\tきんしゅ",
     "abstract\tちゅうしょうてき|しょうろく|アブストラクト|アプストレー|アブスト|た|しょうちょう|くうろん|けしん|ちゅうしょうろん|ちゅうしょうびじゅつ|ふめいすう|ちゅうしょうげいじゅつ|ちゅうしょうが|ちゅうしょうめいし|アブストラクトアート|アブストラクト・アート|ちゅうしょうだいすうがく|メッセージはっしんちゅうしょうそうさ|いちらんちゅうしょうそうさ",
     "abstract argument\tちゅうしょうろん",
@@ -747,8 +743,8 @@ export const PIECE: WordsPiece = {
     "abura age\tあぶらあげ|あぶらげ|あげ",
     "aburaage\tいなりあげ",
     "aburasoba\tあぶらそば",
-    "abuse\tらんよう|ぎゃくたい|ののしる|あくよう|わるぐち|わるくち|ふりまわす|あっこう|ひぼう|ごよう|せいてき|れんぱつ|なげつける|こくし|あくたれぐち|ばせい|ばりぞうごん|つうば|しゅくへい|めんばばとう",
-    "abuse etc\tせいてき|れんぱつ",
+    "abuse\tらんよう|ぎゃくたい|ののしる|あくよう|わるぐち|わるくち|ふりまわす|あっこう|ひぼう|ごよう|れんぱつ|なげつける|こくし|あくたれぐち|ばせい|ばりぞうごん|つうば|しゅくへい|めんばばとう|きひ",
+    "abuse etc\tれんぱつ",
     "abuse insults\tなげつける",
     "abuse power\tふりまわす",
     "abuse verbally\tののしる",
@@ -796,5 +792,13 @@ export const PIECE: WordsPiece = {
     "academy etc\tいんちょう",
     "académie\tどくりつとけいしアカデミー",
     "acala\tふどう|ふどうみょうおう|ふどうそん|おふどうさん|ごだいみょうおう|はちだいみょうおう|ふどうのかなしばり|しつしつざ",
+    "acala wisdom\tふどう",
+    "acala's\tてんちげん",
+    "acanthamoeba\tアカントアメーバ",
+    "acanthaster\tおにひとで|オニヒトデ",
+    "acanthias\tあぶらつのざめ|アブラツノザメ|あぶらざめ|アブラザメ",
+    "acanthite\tしんぎんこう",
+    "acanthocephala\tこうとうどうぶつもん|こうとうちゅう",
+    "acanthocephalans\tこうとうちゅうるい",
   ],
 };

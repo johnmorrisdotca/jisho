@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 8 of 145, from "0mo9k". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 8 of 144, from "0mol". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,11 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0mo9k\t1¦かしこまりました。サラダバーはあちらです。¦All right, sir. The salad bar is over there.¦5¦4upa¦arnab¦Sudajaengi¦サラダバー",
-    "0mobi\t1¦｜彼《あれ》はサラリーだけによって｜仕事《しごと》を｜選《えら》びます。¦He chooses his job only in term of salary.¦3¦2fo6¦¦¦サラリー",
-    "0mobs\t1¦なあに、しがないサラリーマンですよ。¦Me? I'm a plain old salaryman.¦5¦49tq¦¦RoyalBee¦サラリーマン",
-    "0mog8\t1¦｜鶏卵《けいらん》｜生産《せいさん》におけるサルモネラ｜汚染《おせん》を｜防止《ぼうし》することが｜必要《ひつよう》です。¦It is essential to prevent salmonella contamination in hen egg production.¦1¦ape8¦blay_paul¦blay_paul¦サルモネラ",
-    "0mohc\t1¦｜落《お》ち｜着《つ》いた｜雰囲気《ふんいき》のサロンでゆったりとした｜時間《じかん》をお｜楽《たの》しみください。¦Please enjoy a calm time in a relaxed atmosphere beauty salon.¦1¦1mdz¦mookeee¦¦サロン",
     "0mol8\t1¦｜度《たび》の｜強《つよ》いサングラスが｜欲《ほ》しいのですが。¦I need a good pair of sunglasses.¦3¦2o2l¦¦CK¦サングラス",
     "0mook\t1¦｜彼《あれ》はサンタクロースの｜扮装《ふんそう》をした。¦He got himself up as Santa Claus.¦¦2fo5¦¦¦サンタクロース",
     "0moq8\t1¦あんな｜底《そこ》の｜厚《あつ》いサンダル｜履《は》いてたら、｜転《ころ》んで｜捻挫《ねんざ》しちゃうぞ。¦You're going to fall and sprain your ankle wearing sandals with such huge platforms.¦¦4x3u¦small_snow¦¦サンダル",
@@ -227,5 +222,11 @@ export const PIECE: WordsPiece = {
     "0my1i\t2¦｜焦《あせ》らずに、｜目《め》の｜前《まえ》のステップを｜一《ひと》つ｜一《ひと》つのぼっていきたい。¦I want to take things one step at a time without getting flustered. I want to live in the moment.¦1¦34y2¦¦papabear¦ステップ\t3¦ダンサーたちは｜楽団《がくだん》の｜音楽《おんがく》にあわせてステップを｜踏《ふ》んだ。¦The dancers timed their steps to the music of the band.¦1¦4cpb¦¦Swift¦ステップ",
     "0my36\t2¦ジャックとベティは１ヶ月前からステディだ。¦Jack and Betty have been going steady for a month.¦5¦4mk4¦¦CN¦ステディ",
     "0my4a\t2¦｜私《わたし》はあの｜店《みせ》で｜新《あたら》しいステレオを｜買《か》った。¦I got a new stereo at that store.¦4¦3gns¦¦CK¦ステレオ",
+    "0my7w\t1¦「あの｜人《ひと》たちは、またストをやるんだろうか」「どうもそうらしいね」¦\"Will they go on strike again?\" \"I'm afraid so.\"¦5¦532q¦mookeee¦CK¦スト",
+    "0my86\t1¦｜彼《あれ》はストーブで｜体《からだ》を｜暖《あたた》めた。¦He warmed himself at the stove.¦1¦2fh1¦¦CK¦ストーブ",
+    "0my9a\t1¦｜今回《こんかい》｜発売《はつばい》されたアルバムは、ストーリー｜仕立《した》てになっていて｜力作《りきさく》だ。¦Her latest album is a tour de force. It even has a storyline.¦3¦3p3d¦¦¦ストーリー",
+    "0myc2\t1¦どうぞわたしにＸＹＺストアへ行く道を教えて下さい。¦Please tell me the way to the XYZ store.¦4¦4bbs¦¦¦ストア",
+    "0mye0\t1¦このストッキングはとても｜高《たか》い。¦These stockings are very dear.¦5¦4sjt¦¦¦ストッキング",
+    "0myea\t1¦｜一生懸命《いっしょうけんめい》｜磨《みが》きました。｜困《こま》ったのは、｜意外《いがい》と｜低級《ていきゅう》｜宝石《ほうせき》のストックがないことです。¦I polished for all I was worth. The trouble is that my stock of low-grade gems was surprisingly low.¦1¦1l9n¦fcbond¦fcbond¦ストック",
   ],
 };

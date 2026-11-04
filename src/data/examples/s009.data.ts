@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 10 of 145, from "0n3z". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 10 of 144, from "0n49o". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,15 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0n3z4\t1¦｜私《わたし》が｜我慢《がまん》できないことは、｜黒板《こくばん》でキーキーとチョークが｜音《おと》を｜立《た》てることだ。¦What I can't bear is the sound of chalk squeaking on a chalkboard.¦1¦3lic¦¦CM¦チョーク",
-    "0n3zo\t1¦｜私《わたし》はジムのためにチョコを｜買《か》った。¦I bought the chocolate for Jim.¦4¦3fxl¦¦CN¦チョコ",
-    "0n3zy\t1¦｜私《わたし》のお｜気《き》に｜入《い》りの｜味《あじ》はチョコレートです。¦My favorite flavor is chocolate.¦4¦3iq5¦¦CK¦チョコレート",
-    "0n41c\t1¦｜今日《きょう》の｜新聞《しんぶん》によれば、｜昨日《きのう》チリで｜大地震《おおじしん》があったそうだ。¦According to today's paper, there was a big earthquake in Chile yesterday.¦2¦3oml¦¦CK¦チリ",
-    "0n43u\t1¦｜生産性《せいさんせい》をあげるため｜新《あら》たなツールを｜探《さが》してます。¦We'll employ a new tool to increase productivity.¦3¦3265¦¦CM¦ツール",
-    "0n444\t1¦そのツアーには｜昼食《ちゅうしょく》は｜含《ふく》まれていますか。¦Is lunch included in the tour?¦2¦4kbq¦¦¦ツアー",
-    "0n44e\t1¦｜彼《あれ》は｜古《ふる》いツイードの｜服《ふく》を｜着《き》ている。¦He is dressed in an old tweed suit.¦3¦2azv¦¦CK¦ツイード",
-    "0n44o\t1¦ツインの｜部屋《へや》にエキストラベッドを｜入《い》れてください。¦I'd like a twin with an extra bed.¦3¦4cbt¦¦orcrist¦ツイン",
-    "0n494\t1¦｜極端《きょくたん》に｜言《い》うと、｜彼《あれ》は、｜自己《じこ》のテーゼに｜完全《かんぜん》に｜自信《じしん》を｜持《も》っているものが｜発揮《はっき》できる｜虚心坦懐《きょしんたんかい》さで｜書《か》いてはいないのである。¦He does not, in short, write with the candor of a man who is completely confident of his thesis.¦¦3uw1¦¦papabear¦テーゼ",
     "0n49o\t1¦｜赤木《あかぎ》キャプテンは｜練習《れんしゅう》｜中《うち》に｜足《あし》を｜捻挫《ねんざ》したので、｜試合《しあい》｜前《さき》にテーピングでガチガチに｜固《かた》めた。¦Captain Akagi sprained his ankle during practice, so, before the game, he taped it up until it was stiff as a board.¦¦31np¦bunbuku¦pip¦テーピング",
     "0n49y\t1¦このテーブルを｜頼《たの》んだのではない。¦I didn't ask for a table here.¦3¦4sgz¦¦Luornu¦テーブル",
     "0n4ai\t1¦テーブルクロスは｜戸棚《とだな》にありますよ。¦The tablecloth is in the cabinet.¦1¦4c71¦¦CK¦テーブルクロス",
@@ -219,5 +210,14 @@ export const PIECE: WordsPiece = {
     "0nfzw\t1¦以上のように、実にシンプルな誰でも出来るノウハウで十分な利益と顧客は確保できるのです！¦As shown above, it is possible to obtain ample profit and customers with truly simple know-how that anyone can do!¦¦1ls3¦fcbond¦fcbond¦ノウハウ",
     "0ng2o\t1¦｜誰《だれ》かがドアをノックした。¦Someone knocked on the door.¦¦2xsq¦bunbuku¦CK¦ノック",
     "0ng2y\t1¦｜彼《あれ》はノックアウト｜勝《か》ちした。¦He won the fight by a knockout.¦3¦2dwx¦¦ddnktr¦ノックアウト",
+    "0ng60\t1¦シート｜横《よこ》にあるノブを｜前《さき》に｜動《どう》かし、シートを｜倒《たお》します。¦Move the knob at the side of the seat forwards, collapse the seat.¦3¦4n4e¦¦¦ノブ\t2¦ノブを｜回《まわ》して、ドアをあけなさい。¦Turn the knob and open the door.¦3¦497g¦bunbuku¦CK¦ノブ",
+    "0ng7o\t1¦｜彼女《かのじょ》はアカデミー｜賞《しょう》の｜最優秀《さいゆうしゅう》｜助演《じょえん》｜女優《じょゆう》にノミネートされた。¦She won an Oscar nomination for best supporting actress.¦1¦204d¦¦CK¦ノミネート",
+    "0ng8s\t1¦ノルウェーやフィンランドのような｜国《くに》では｜冬《ふゆ》には｜雪《ゆき》が｜多《おお》い。¦In such countries as Norway and Finland, they have lots of snow in winter.¦3¦497e¦¦Dejo¦ノルウェー",
+    "0ng92\t1¦アルペンスキーの｜方《ほう》がノルディックより｜好《す》きです。¦I like Alpine skiing better than Nordic skiing.¦3¦4xeo¦¦CK¦ノルディック",
+    "0ngba\t1¦｜列車《れっしゃ》は｜名古屋《なごや》までノンストップで｜走《はし》ります。¦This train runs nonstop to Nagoya.¦3¦1nro¦arnab¦CK¦ノンストップ",
+    "0ngec\t1¦あなたは｜創作《そうさく》とノンフィクションのどちらが｜好《す》きですか。¦Which do you like better, fiction or non-fiction?¦1¦4yu9¦e4zh1nmcz¦Zifre¦ノンフィクション",
+    "0ngga\t1¦｜次《つぎ》の｜瞬間《しゅんかん》ヘラクレスは｜怪獣《かいじゅう》を｜捕《つか》まえた。¦The next instant Hercules caught hold of the monster.¦1¦37ya¦¦¦ヘラクレス",
+    "0ngho\t1¦｜彼女《かのじょ》はハート｜型《がた》のイヤリングをしていた。¦She wore heart-shaped earrings.¦2¦1yt6¦¦CK¦ハート",
+    "0ngi8\t1¦ウーッ、｜今日《きょう》の｜練習《れんしゅう》はいつになくハードで｜辛《から》い。¦Whoo! Today's practice is tough - much harder than usual.¦2¦4w67¦¦¦ハード\t2¦Xbox 360については「いいハードです」と｜開口一番《かいこういちばん》｜切《き》り｜出《だ》した。¦On the Xbox 360 the very first thing he said was \"good hardware.\"¦3¦1l5z¦fcbond¦fcbond¦ハード\t3¦ハードが｜断片化《だんぺんか》を｜起《お》こしてるみたい。¦It looks like your hard disk is fragmented.¦2¦493n¦¦spockofvulcan¦ハード",
   ],
 };

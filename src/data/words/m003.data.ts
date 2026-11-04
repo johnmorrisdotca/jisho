@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 4 of 172, from "acala ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 4 of 172, from "acanthocephale". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,14 +9,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "acala wisdom\tふどう",
-    "acala's\tてんちげん",
-    "acanthamoeba\tアカントアメーバ",
-    "acanthaster\tおにひとで|オニヒトデ",
-    "acanthias\tあぶらつのざめ|アブラツノザメ|あぶらざめ|アブラザメ",
-    "acanthite\tしんぎんこう",
-    "acanthocephala\tこうとうどうぶつもん|こうとうちゅう",
-    "acanthocephalans\tこうとうちゅうるい",
     "acanthocephales\tこうとうどうぶつ",
     "acanthocybium\tカマスサワラ|かますさわら",
     "acanthodes\tアカントーデス",
@@ -108,7 +100,7 @@ export const PIECE: WordsPiece = {
     "accessories etc\tスポーティ|スポーティー|じゅんせい",
     "accessories furniture\tコーディネート|コーディネイト",
     "accessories ornaments\tそうしんぐ",
-    "accessory\tアクセサリー|アクセサリ|ふたい|ふぞくひん|じゅうぶつ|アクセ|スパッツ|ポーチ|パウチ|こものいれ|ふたいはん|ふくしんけい|ふくせいしょくき|だてめがね|じごじゅうはんにん|じごじゅうはん|じぜんじゅうはんにん|じぜんじゅうはん|デスクアクセサリ|デスク・アクセサリ",
+    "accessory\tアクセサリー|アクセサリ|ふたい|ふぞくひん|じゅうぶつ|アクセ|スパッツ|ポーチ|パウチ|こものいれ|ふたいはん|ふくしんけい|だてめがね|じごじゅうはんにん|じごじゅうはん|じぜんじゅうはんにん|じぜんじゅうはん|デスクアクセサリ|デスク・アクセサリ|キノボリウオあもく",
     "accessory audio\tアクセサリー|アクセサリ",
     "accessory case\tポーチ|パウチ",
     "accessory fashion\tアクセサリー|アクセサリ",
@@ -447,7 +439,6 @@ export const PIECE: WordsPiece = {
     "act accordance\tそう",
     "act agent\tとりつぐ",
     "act barbarity\tばんこう",
-    "act building\tこんりゅう|けんりつ",
     "act coldly\tつきはなす",
     "act deeds\tとっこう",
     "act drinking\tみずのみ",
@@ -544,12 +535,11 @@ export const PIECE: WordsPiece = {
     "activating\tもうようたいふかつけい",
     "activation\tきどう|アクティベーション|アクチベーション|アクティベート|アクティブか|ふかつ|ライセンスにんしょう|かっせいかエネルギー|アクトビット|アクト・ビット|はっぽう|プロダクトアクティベーション|プロダクト・アクティベーション|ねつかっせいか|アクティベーションコード|アクティベーション・コード|アクティベーションキー|アクティベーション・キー",
     "activator\tかっせいざい|アクティベータ|アクティベーター|アクチベーター|アクチベータ|そしきプラスミノーゲンかっせいかいんし",
-    "active\tせっきょく|しゃっきょく|アクティブ|のうどうてき|せっきょくてき|かっぱつ|かっせい|さかん|しゅたいてき|のうどう|はってん|かつやく|げんえき|ひやく|かっかざん|かつかざん|アクティブディフェンス|アクティブ・ディフェンス|アクティブソーラーハウス|アクティブ・ソーラー・ハウス",
+    "active\tせっきょく|しゃっきょく|アクティブ|のうどうてき|せっきょくてき|かっぱつ|かっせい|さかん|しゅたいてき|のうどう|かつやく|げんえき|ひやく|かっかざん|かつかざん|アクティブディフェンス|アクティブ・ディフェンス|アクティブソーラーハウス|アクティブ・ソーラー・ハウス|アクティブホーミング",
     "active duty\tげんえき",
     "active part\tひやく",
     "active participation\tかつやく",
     "active service\tげんえき",
-    "active sex\tはってん",
     "active volcano\tかっかざん|かつかざん",
     "active wider\tひやく",
     "actively\tさかんに|かべのはな",
@@ -567,7 +557,7 @@ export const PIECE: WordsPiece = {
     "activity center\tメッカ",
     "activity e\tかけごえ|ひびき",
     "activity esp\tかつやく|パーティー|パーティ",
-    "activity etc\tていし|ちょうじ|せい",
+    "activity etc\tていし|ちょうじ",
     "activity person\tかつどう",
     "activity time\tやすむ",
     "actomyosin\tアクトミオシン",
@@ -621,5 +611,8 @@ export const PIECE: WordsPiece = {
     "actual state\tじっきょう|じつじょう|じょうじつ",
     "actual work\tじつどう",
     "actuality\tげんじつ|じっさい|ほんとう|ほんと|にょじつ|アクチュアリティー",
+    "actualization\tぐたいか|じこじつげん",
+    "actualized\tけんざいか",
+    "actually\tげんに|じじつ|じじつじょう|はたして|じっさいは|そもそも|じっさいに|アクチュアリ|アクチャリ|じっさいのところ|じっかん|りんじょうかん|ペーパードライバー|ペーパードライバ|ペーパー・ドライバー|ペーパー・ドライバ|いんぎんぶれい|そらめ|じつかぶ|みせがね",
   ],
 };

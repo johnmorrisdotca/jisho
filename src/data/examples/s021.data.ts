@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 22 of 145, from "0pk3". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 22 of 144, from "0pkku". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,27 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0pk3w\t1¦｜彼《あれ》は｜金持《かねも》ちで、その｜上《うえ》｜家柄《いえがら》がよい。¦He is rich and, moreover, well-born.¦1¦2bh7¦¦rul¦家柄",
-    "0pk46\t1¦この｜先祖伝来《せんぞでんらい》の｜家宝《かほう》は｜君《きみ》の｜物《もの》だ。¦This heirloom shall be yours.¦2¦4qeg¦¦¦家宝",
-    "0pk50\t1¦家名を嵯峨と改姓したのは明治３年でした。¦It was the third year of Meiji when their family name was changed to Saga.¦¦1lj2¦fcbond¦fcbond¦家名\t2¦お｜父《とう》さんの｜破産《はさん》は｜家名《かめい》の｜汚《よご》れでした。¦Father's bankruptcy was a blot on the family's reputation.¦2¦1lj3¦fcbond¦fcbond¦家名",
-    "0pk5u\t1¦ハンプティダンプティ、｜壁《かべ》の｜上《うえ》に｜座《すわ》って、ハンプティダンプティ、ドシンと｜落《お》ちた。｜王様《おうさま》の｜馬《うま》のみんなも｜王様《おうさま》の｜家来《けらい》のみんなもハンプティを｜元《もと》に｜戻《もど》せなかった。¦Humpty Dumpty sat on a wall. Humpty Dumpty had a great fall. All the king's horses and all the king's men couldn't put Humpty Dumpty together again.¦1¦1n0b¦¦shanghainese¦家来",
-    "0pk6o\t1¦｜夜《よる》になってきたので、｜私《わたし》たちは｜家路《いえじ》に｜着《つ》いた。¦Night coming on, we left for home.¦3¦1pj6¦¦CM¦家路",
-    "0pkaa\t1¦｜裁判官《さいばんかん》は｜彼《あれ》に｜重《おも》い｜罰金《ばっきん》を｜科《か》せるのだろうか。¦Will the judge fine him heavily?¦1¦3nda¦¦¦科せる",
-    "0pkak\t1¦｜科学《かがく》は｜観察《かんさつ》に｜基《もと》づいている。¦Science rests upon observation.¦1¦406u¦¦shekitten¦科学",
-    "0pkb4\t1¦｜科学技術《かがくぎじゅつ》は｜確実《かくじつ》に｜発達《はったつ》している。¦Technology progresses steadily.¦2¦406e¦KK_kaku_¦blay_paul¦科学技術",
-    "0pkby\t1¦｜彼《あれ》は｜科学者《かがくしゃ》であると｜同時《どうじ》に｜音楽家《おんがくか》でもある。¦He is a scientist and musician.¦3¦2c9u¦fcbond¦CK¦科学者",
-    "0pkc8\t1¦｜彼《あ》の｜方《かた》｜法《ほう》は｜科学的《かがくてき》ではない。¦His methods are not scientific.¦¦2hly¦¦CK¦科学的",
-    "0pkcs\t1¦彼は酔払い運転のかどで５ポンドの科料に処せられた。¦He was fined five pounds for drunken driving.¦1¦27uc¦¦¦科料",
-    "0pkd2\t1¦｜暇《ひま》なときはいつでも｜遊《あそ》びに｜来《き》て｜下《くだ》さい。¦Come and see me whenever you are free.¦1¦405h¦KK_kaku_¦CC¦暇なとき",
-    "0pkdw\t1¦｜暇潰《ひまつぶ》しに｜街《まち》をぶらぶらした。¦I strolled along the streets to kill time.¦¦4058¦¦CM¦暇潰し",
-    "0pkeq\t1¦｜君《きみ》はその｜義務《ぎむ》を｜果《は》たすべきである。¦You must perform your duty.¦1¦3t5o¦¦Swift¦果たす",
-    "0pkf0\t1¦この｜汽車《きしゃ》は｜世界《せかい》の｜果《は》て｜行《い》きの｜終列車《しゅうれっしゃ》です。¦This train is the last train to the world's end.¦1¦32oc¦¦¦果て",
-    "0pkfu\t1¦この果てしない宇宙にいるのは、私たち人類だけですか？¦Are we humans alone in this infinite universe?¦1¦1lja¦fcbond¦fcbond¦果てしない",
-    "0pkgo\t1¦｜初《はじ》めから｜果敢《かかん》に｜前《さき》へ｜出《で》て｜圧倒《あっとう》し、｜体勢《たいせい》を｜崩《くず》した｜相手《あいて》を｜押《お》し｜出《だ》した。¦He resolutely pushed forward from the start, overwhelming and pushing out his off-balance opponent.¦1¦1lgm¦fcbond¦fcbond¦果敢に",
-    "0pkh8\t1¦｜果実《かじつ》になる｜花《はな》は｜少《すく》ない。¦Few flowers develop into fruit.¦3¦4055¦¦auxitt¦果実",
-    "0pki2\t1¦｜陽気《ようき》が｜暖《あたた》かでやがて｜果樹《かじゅ》の｜花《はな》が｜咲《さ》くだろう。¦The warm weather will bring the fruit trees into blossom soon.¦1¦1osh¦¦¦果樹",
-    "0pkic\t1¦その｜農夫《のうふ》は｜男《おとこ》の｜子《こ》｜達《たち》が｜自分《じぶん》の｜果樹園《かじゅえん》でリンゴを｜盗《ぬす》んでいるのをみつけた。¦The farmer caught the boy stealing the apples in his orchard.¦¦4fxo¦¦¦果樹園",
-    "0pkkk\t1¦｜彼《あれ》は｜果物《くだもの》の｜他《た》｜何《なに》も｜食《た》べない。¦He eats nothing else but fruit.¦3¦2c9j¦¦¦果物",
     "0pkku\t1¦｜彼《あれ》は｜最初《さいしょ》くだもの｜屋《や》に｜行《おこな》った。¦He went to a fruit store first.¦3¦2aib¦¦CK¦くだもの屋",
     "0pkl4\t1¦｜彼《あれ》は｜果報《かほう》な｜男《おとこ》だ。¦He's a lucky guy.¦3¦4douv¦JimBreen¦Hybrid¦果報な",
     "0pkle\t1¦できることはすべてやったよ。｜後《あと》は、｜果報《かほう》は｜寝《ね》て｜待《ま》て、の｜心境《しんきょう》だね。¦I feel like I've done all I can. Now all there is to do is wait and see what comes of it.¦2¦4c4u¦¦pip¦果報は寝て待て",
@@ -206,5 +185,26 @@ export const PIECE: WordsPiece = {
     "0pou6\t1¦「｜私《わたし》も｜頂《いただ》いていいですか」「ああ、｜勿論《もちろん》｜構《かま》わないよ、｜今日《きょう》は｜会社持《かいしゃも》ちだからね」¦\"May I have one as well?\" \"Yes, certainly. Today's on the company after all.\"¦¦1m54¦fcbond¦fcbond¦会社持ち",
     "0poug\t1¦ただ｜会釈《えしゃく》をするだけなのに、｜妙《みょう》にしゃちほこ｜張《ば》ってしまった。¦It was just a simple greeting, but somehow I got strangely tense.¦1¦1mcu¦mookeee¦¦会釈",
     "0pov0\t1¦｜会衆《かいしゅう》は｜素晴《すば》らしい｜説教《せっきょう》に｜感動《かんどう》した。¦The congregation was moved by the fine sermon.¦1¦3yx2¦¦CK¦会衆",
+    "0pow4\t1¦｜私《わたし》たちは｜会場《かいじょう》の｜後《うし》ろに｜座《すわ》った。¦We sat at the back of the hall.¦3¦3k3c¦mookeee¦CM¦会場",
+    "0poyw\t1¦会談は２日間続いた。¦The talks continued for two days.¦3¦3ywy¦¦CK¦会談",
+    "0poz6\t1¦｜協会《きょうかい》は｜彼《あれ》を｜会長《かいちょう》にした。¦The society made him president.¦2¦3vc2¦¦shekitten¦会長",
+    "0pp0a\t1¦｜会堂《かいどう》に｜鐘《かね》の｜音《ね》が｜響《ひび》き｜渡《わた》った。¦The hall resounded with pealing bells.¦1¦3ywu¦¦Objectivesea¦会堂",
+    "0pp1o\t1¦｜各《かく》｜会員《かいいん》は｜会費《かいひ》を｜払《はら》うべし。¦Each member has to pay a membership fee.¦2¦3ygl¦¦CK¦会費",
+    "0pp28\t1¦｜機知《きち》は｜会話《かいわ》に｜趣《おもむき》を｜添《そ》える。¦Wit gives zest to conversation.¦1¦3xgv¦¦fishda¦会話",
+    "0pp2i\t3¦この｜医師《いし》はガンの｜多《おお》くの｜不可解《ふかかい》な｜点《てん》を｜解《と》こうと｜努力《どりょく》している。¦The doctor is trying to solve many of the riddles of cancer.¦¦4s16¦¦¦解こう\t4¦｜彼《あれ》は｜重責《じゅうせき》を｜解《と》かれた。¦He was relieved of his heavy responsibility.¦3¦28ib¦¦CK¦解かれた\t7¦｜外出《がいしゅつ》する｜前《さき》に｜髪《かみ》を｜櫛《くし》でときなさい。¦Comb your hair before you go out.¦¦3yjf¦bunbuku¦CK¦とき\t7¦｜彼女《かのじょ》は｜髪《かみ》をくしでといてリボンで｜結《むす》んだ。¦She combed her hair and bound it with a ribbon.¦1¦1vjc¦¦CK¦といて",
+    "0pp2s\t1¦これらの｜包《つつ》みをほどくのを｜手伝《てつだ》って｜下《くだ》さい。¦Lend a hand with these parcels, please.¦2¦4o1l¦¦rul¦ほどく",
+    "0pp32\t1¦いちばん｜頭《あたま》の｜良《い》い｜生徒《せいと》でさえ、その｜問題《もんだい》は｜解《と》けなかった。¦Even the brightest student couldn't solve the problem.¦3¦4wqj¦¦CK¦解けなかった\t2¦｜靴《くつ》ひもがとけた。¦My shoelaces came undone.¦3¦1l5l¦fcbond¦fcbond¦とけた\t4¦そのおかげで｜誤解《ごかい》が｜解《と》ける。¦It removes misunderstandings.¦3¦4klr¦¦shekitten¦解ける",
+    "0pp3c\t1¦ネクタイがほどけてるよ。¦Your tie has come undone.¦5¦3tqm¦small_snow¦CK¦ほどけてる",
+    "0pp3w\t1¦セーターの｜袖《そで》がほぐれ｜始《はじ》めた。¦The sleeves of the sweater began to unravel.¦¦4l6f¦¦FC_Barcelona¦ほぐれ",
+    "0pp46\t1¦｜鮎漁《あゆりょう》が｜解禁《かいきん》になった。¦The ayu season has opened.¦1¦43n4¦small_snow¦AlanF_US¦解禁",
+    "0pp4g\t1¦その｜問題《もんだい》はまだ｜解決《かいけつ》されていない。¦The problem is not settled yet.¦3¦4fau¦mookeee¦CK¦解決",
+    "0pp4q\t1¦｜彼女《かのじょ》はいい｜解決策《かいけつさく》を｜思《おも》いついた。¦She thought of a good solution.¦1¦2015¦¦CK¦解決策",
+    "0pp50\t1¦いきなり｜解雇《かいこ》を｜言《い》い｜渡《わた》された。¦I was discharged without notice.¦2¦4wwj¦bunbuku¦CM¦解雇",
+    "0pp5k\t1¦｜警察《けいさつ》は、｜群衆《ぐんしゅう》を｜解散《かいさん》させた。¦The police broke up the crowd.¦1¦3s05¦¦CK¦解散\t1¦｜会《かい》は｜八時《はちじ》に｜解散《かいさん》した。¦The meeting broke up at eight.¦3¦3z2v¦¦CK¦解散\t3¦｜首相《しゅしょう》は｜国会《こっかい》を｜解散《かいさん》した。¦The prime minister dissolved the Diet.¦3¦36ic¦tommy__san¦¦解散",
+    "0pp5u\t1¦それは２通りに解釈できる。¦That reads two different ways.¦1¦4emn¦¦¦解釈",
+    "0pp6e\t2¦｜貿易障壁《ぼうえきしょうへき》は｜戦争《せんそう》｜終結《しゅうけつ》｜後《あと》｜解除《かいじょ》されました。¦Trade barriers were lifted after the war ended.¦1¦1rmy¦¦CM¦解除",
+    "0pp6o\t1¦｜私《わたし》は｜婚約《こんやく》を｜解消《かいしょう》しました。¦I have broken off our engagement.¦3¦1lsb¦fcbond¦fcbond¦解消",
+    "0pp78\t1¦ヒートアイランド｜現象《げんしょう》の｜実体《じったい》｜解析《かいせき》と｜対策《たいさく》のあり｜方《かた》について。¦An analysis of the nature of the heat island phenomenon and countermeasures.¦1¦1ldm¦fcbond¦fcbond¦解析",
+    "0pp7s\t1¦｜彼《あ》の｜解説《かいせつ》がわかった｜人《じん》はほとんどいなかった。¦Few people understood his comment.¦3¦2iz3¦bunbuku¦CK¦解説",
   ],
 };

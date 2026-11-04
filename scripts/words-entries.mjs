@@ -2,14 +2,13 @@
 // its cross-references and antonyms, its notes, the languages a loanword comes from, every gloss, and which written forms and
 // readings it is limited to; and the marks of the written forms and readings. Pure functions over the dictionary's text, like
 // words-parse.mjs, which makes the short rows of the same entries. See docs/guides/entries.md for the format.
-import { SAFE_MARKS } from "./words-parse.mjs";
+import { unfitSense } from "./words-parse.mjs";
 
 const ENTITIES = { "&amp;": "&", "&lt;": "<", "&gt;": ">", "&quot;": '"', "&apos;": "'" };
 const decode = (text) => text.replace(/&(?:amp|lt|gt|quot|apos);/g, (entity) => ENTITIES[entity]);
 const tags = (body, name) =>
   [...body.matchAll(new RegExp(`<${name}(?:\\s[^>]*)?>([\\s\\S]*?)</${name}>`, "g"))].map((match) => match[1]);
 const code = (text) => text.replace(/^&|;$/g, "");
-const OUT_IN_SAFE_MODE = new Set(SAFE_MARKS);
 
 /** Between the fields of an entry's line; the fields of a sense; a list in a field; the parts of an item of a list. Characters no JMdict text holds. */
 export const ENTRY_BREAK = "\t";
@@ -51,7 +50,7 @@ function senseOf(body) {
     notes: tags(body, "s_inf").map(decode),
     sources,
     glosses: glosses.filter((gloss) => gloss.text !== ""),
-    unfit: marks.some((one) => OUT_IN_SAFE_MODE.has(one)),
+    unfit: unfitSense(marks, body),
   };
 }
 
@@ -164,7 +163,7 @@ export function packEntry(entry) {
 }
 
 /**
- * The entry as safe mode has it: the senses marked vulgar, X-rated, sensitive or derogatory left out, and with them the written
+ * The entry as safe mode has it: the senses marked vulgar, X-rated, sensitive or derogatory, or with a gloss that names sex or the sex trade, left out, and with them the written
  * forms and the readings that only such senses apply to. Null when no sense is left.
  */
 export function cleanEntry(entry) {

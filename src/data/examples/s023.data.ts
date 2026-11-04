@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 24 of 145, from "0pslq". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 24 of 144, from "0pt2". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,26 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0pslq\t1¦｜今朝《けさ》は｜外気《がいき》が｜冷《つめ》たく｜感《かん》じる、もう｜冬《ふゆ》が｜近《ちか》づいている。¦The air feels cold this morning; winter is approaching.¦3¦3oxh¦¦sundown¦外気",
-    "0psn4\t1¦その｜学校《がっこう》は｜外見《がいけん》が｜刑務所《けいむしょ》に｜似《に》ている。¦The school looks like a prison.¦1¦4jbk¦¦CK¦外見",
-    "0psno\t1¦｜英語《えいご》は｜外交《がいこう》や｜観光《かんこう》｜事業《じぎょう》に｜有効《ゆうこう》である。¦English is useful in diplomacy and tourism.¦2¦41xu¦¦CK¦外交",
-    "0pso8\t1¦私は３人兄弟がいる。１人はパイロット、１人は外交官、もう一人は大工だ。¦I have three brothers; one is pilot, another a diplomat and the other a carpenter.¦3¦3gyw¦¦¦外交官\t1¦その会議には１５０人の外交官がきた。¦The conference drew 150 diplomats.¦3¦52tf¦mookeee¦CM¦外交官",
-    "0psoi\t1¦その｜国《くに》は｜米国《べいこく》との｜外交関係《がいこうかんけい》を｜断絶《だんぜつ》した。¦That country broke off diplomatic relations with the United States.¦3¦4ih8¦¦orcrist¦外交関係",
-    "0psos\t1¦｜外交的《がいこうてき》な｜対話《たいわ》によって、その｜紛争《ふんそう》に｜終止符《しゅうしふ》を｜打《う》つことができた。¦Diplomatic dialogue helped put an end to the conflict.¦¦3ym7¦¦Swift¦外交的な",
-    "0psp2\t1¦ある調査によると、今日では５人中３人が外交問題には無関心のようだ。¦According to a survey, three in five people today are indifferent to foreign affairs.¦¦4xc5¦¦¦外交問題",
-    "0pspc\t1¦内気な人は外向的な人より短命？¦Do introverts not live as long as extroverts?¦¦1lj6¦fcbond¦fcbond¦外向",
-    "0pspw\t1¦あなたは｜外国《がいこく》の｜本《もと》を｜持《も》っていますか。¦Do you have any foreign books?¦4¦4z4z¦¦CK¦外国",
-    "0psqg\t1¦あなたはなぜ｜外国語《がいこくご》を｜勉強《べんきょう》するのですか。¦What do you study a foreign language for?¦4¦4zcn¦¦orcrist¦外国語",
-    "0psqq\t1¦｜日本《にほん》の｜天井《てんじょう》は｜外国人《がいこくじん》には｜低《ひく》すぎる。¦In Japan the ceilings are quite low for foreigners.¦1¦2mnc¦¦¦外国人\t1¦この｜国《くに》には｜外国人《がいこくじん》の｜観光客《かんこうきゃく》が｜大勢《おおぜい》いる。¦Foreign tourists in this country are numerous.¦2¦4r97¦¦Lumi_alt¦外国人\t1¦ある｜外国人《がいこくじん》が｜私《わたし》に｜駅《えき》がどこにあるかと｜聞《き》いた。¦A foreigner asked me where the station was.¦4¦4xe1¦¦CK¦外国人\t1¦「｜居住《きょじゅう》｜外国人《がいこくじん》」とは、どういう｜意味《いみ》ですか。¦What does \"resident alien\" mean?¦3¦52cm¦mookeee¦CK¦外国人",
-    "0psrk\t1¦｜彼女《かのじょ》の｜外国製《がいこくせい》の｜香水《こうすい》はほのかな｜香《かお》りがする。¦Her exotic perfume has a subtle scent.¦1¦20zg¦¦¦外国製",
-    "0psts\t1¦｜彼《あれ》は｜外車《がいしゃ》を｜買《か》えるぐらい｜金持《かねも》ちだ。¦He is rich enough to buy a foreign-made car.¦3¦2c25¦¦CM¦外車",
-    "0psum\t1¦｜見《み》た｜目《め》には｜優《やさ》しそうだけど、｜彼《あれ》って｜皆《みな》から｜外柔内剛《がいじゅうないごう》の｜結構《けっこう》なタフネゴシエータと｜言《い》われているよ。¦He seems like a softy on the surface, but at the core he's got an iron will that makes him an extremely tough negotiator.¦1¦3r69¦¦CM¦外柔内剛",
-    "0psuw\t1¦ヒーターをつけたまま｜外出《がいしゅつ》した。¦I went out with the heater on.¦5¦48j7¦¦AlanF_US¦外出",
-    "0psv6\t1¦｜彼《あ》の｜負《お》った｜傷《きず》はすべて｜外傷《がいしょう》だ。¦All his injuries are external.¦1¦2hoj¦¦¦外傷",
-    "0psvq\t1¦｜食事《しょくじ》は｜家庭《かてい》で｜食《た》べますか、｜外食《がいしょく》ですか。¦Do you eat at home or eat out?¦3¦34iy¦¦¦外食",
-    "0psxy\t1¦この｜電話《でんわ》で｜外線《がいせん》がかけられますか。¦Can I make an outside call on this phone?¦2¦4q1o¦small_snow¦sundown¦外線",
-    "0psys\t1¦｜外相《がいしょう》は、｜戦争《せんそう》は｜避《さ》けられないと｜言《い》った。¦The Foreign Minister said that war was inevitable.¦1¦3yj4¦KK_kaku_¦shekitten¦外相",
-    "0pt1a\t1¦｜父《ちち》は｜外泊《がいはく》するときはたいてい｜帽子《ぼうし》をかぶる。¦My father usually wears a hat when he goes out for the night.¦2¦1tad¦¦¦外泊",
     "0pt24\t1¦｜外付《そとづ》けのハードディスクに｜保存《ほぞん》しといて。¦Save it on the external hard drive.¦1¦3yj2¦small_snow¦CK¦外付け",
     "0pt2e\t1¦｜秘密《ひみつ》が｜外部《がいぶ》に｜漏《も》れた。¦The secret leaked out.¦1¦1u8x¦bunbuku¦CK¦外部\t2¦｜田舎《いなか》の｜人々《ひとびと》は｜外部《がいぶ》の｜人《じん》に｜対《たい》して｜昔《むかし》から｜疑《うたが》い｜深《ぶか》い。¦Country people are traditionally suspicious of strangers.¦1¦2odg¦¦CK¦外部の",
     "0pt2y\t1¦｜外米《がいまい》はぼそぼそしていて、｜日本《にほん》｜人《ひと》の｜口《くち》には｜合《あ》わない。¦Foreign rice is hard and tasteless, and doesn't appeal to the Japanese palate.¦3¦1muq¦mookeee¦¦外米",
@@ -199,5 +179,24 @@ export const PIECE: WordsPiece = {
     "0pvs6\t1¦あれだけのコインを｜収集《しゅうしゅう》するのにどれだけの｜年月《としつき》がかかりましたか。¦How long did it take you to collect so many coins?¦3¦4xa7¦¦CK¦かかりました\t2¦｜壁《かべ》に｜地図《ちず》がかかっています。¦There is a map on the wall.¦1¦1se9¦¦CK¦かかっています\t4¦｜所得税《しょとくぜい》は｜控除額《こうじょがく》を｜上回《うわまわ》るいかなる｜所得《しょとく》にもかかる。¦An income tax is levied on any income that exceeds deductions.¦1¦35sx¦¦¦かかる\t5¦どうしたらエンジンがかかりますか。¦How can I start the engine?¦5¦4bjt¦¦CK¦かかります\t6¦｜歯《は》が｜痛《いた》むなら、｜歯医者《はいしゃ》さんにかかるべきです。¦If your tooth hurts, you should see a dentist.¦3¦38hn¦¦CK¦かかる\t7¦それはほとんど｜終《お》わりかかっています。¦It's almost over.¦4¦4ehl¦¦CK¦かかっています\t9¦｜彼《あれ》がよると｜馬《うま》が｜彼《あれ》を｜蹴《け》りかかった。¦The horse kicked at him when he approached it.¦¦2l4i¦¦¦かかった\t10¦ご｜自分《じぶん》のシートベルトが｜安全《あんぜん》にかかっているかお｜確《たし》かめ｜願《ねが》います。¦Please make sure that your seat belt is securely fastened.¦¦4njy¦¦CM¦かかっているか\t11¦この｜機械《きかい》にほこりがかからないようにしておかなければなりません。¦You must keep this machine free from dust.¦2¦4roe¦¦CM¦かからない\t12¦ジョージは｜詐欺《さぎ》にかかってその｜土地《とち》を｜買《か》わされた。¦George was tricked into buying the land.¦1¦4med¦¦CN¦かかって\t13¦｜間違《まちが》えてかかっています。¦You have the wrong number.¦3¦3xrl¦¦CK¦かかっています\t14¦｜州《しゅう》の｜選手権《せんしゅけん》がかかっているので、チームのみんなは｜一生懸命《いっしょうけんめい》｜試合《しあい》をした。¦The team played hard because the championship of the state was at stake.¦1¦36dp¦¦CK¦かかっている\t14¦｜我々《われわれ》の｜成功《せいこう》は｜彼《あれ》が｜手伝《てつだ》ってくれるかどうかにかかっている。¦Our success depends on whether he helps us or not.¦1¦3zpb¦¦CK¦かかっている",
     "0pvsg\t1¦｜長《なが》くつき｜合《あ》うには｜掛《か》けは｜禁物《きんもつ》。¦Short accounts make long friends.¦2¦2p5i¦¦¦掛け\t3¦｜彼《あれ》は｜上着《うわぎ》をコート｜掛《か》けにかけた。¦He hung his coat on a hook.¦3¦1d78h¦bunbuku¦CK¦掛け",
     "0pvsq\t1¦コートをハンガーに｜掛《か》けておきなさい。¦Put your coat on a hanger.¦3¦4tkw¦KK_kaku_¦CK¦掛けて\t2¦ウエートレスはテーブルの｜上《うえ》に｜白《しろ》いテーブルクロスをかけた。¦The waitress spread a white cloth over the table.¦5¦4w5u¦bunbuku¦CK¦かけた\t4¦１０円で電話がかけられますか。¦Can I make a phone call for ten yen?¦5¦525m¦mookeee¦¦かけられます\t5¦スーツにそんなにお｜金《かね》をかけるにはためらいがある。¦I hesitate to pay so much for a suit.¦5¦4ly4¦¦CM¦かける\t6¦コックさんは｜少《すこ》しもかけていない。¦The cook hasn't put any on it.¦4¦4sy2¦¦¦かけていない\t8¦｜大変《たいへん》ご｜迷惑《めいわく》をおかけして｜申《もう》し｜訳《わけ》ありません。¦I am sorry to trouble you so much.¦1¦2xx1¦bunbuku¦CC¦おかけ\t8¦ご｜迷惑《めいわく》をおかけして、｜本当《ほんとう》に｜申《もう》し｜訳《わけ》ありません。¦I really appreciate all the trouble you've gone to.¦1¦4ng3¦bunbuku¦CK¦おかけ\t9¦４掛ける２は８だ。¦Four multiplied by two is eight.¦3¦51i1¦e4zh1nmcz¦Eldad¦掛ける\t11¦どうぞおかけ｜下《くだ》さい。¦Please have a seat.¦5¦52v3¦mookeee¦CK¦おかけ\t12¦その｜箱《はこ》に｜飾《かざ》りのテープをかけてください。¦Do up the box with decorative tape.¦1¦4fw6¦¦¦かけて\t14¦あいつに｜魔法《まほう》をかけてカエルにしてやろう。¦I'll bewitch him into a frog!¦1¦512e¦Sim5634¦¦かけて\t16¦だれもがその｜囚人《しゅうじん》に｜情《なさ》けをかけた。¦Everybody showed sympathy toward the prisoner.¦1¦4cqp¦¦CK¦かけた\t17¦その｜問題《もんだい》は｜委員会《いいんかい》にかけられている。¦The question is before the committee.¦2¦4fal¦¦orcrist¦かけられている\t22¦その｜貨物《かもつ》にはあらゆる｜危険《きけん》に｜対《たい》する｜保険《ほけん》が｜掛《か》けられた。¦The freight was insured against all risks.¦1¦4jip¦¦¦掛けられた\t25¦しかし、｜農園主《のうえんしゅ》は｜彼《あれ》に｜微笑《ほほえ》みかけました。¦But the farmer smiled at him.¦1¦4mw8¦¦cheeeeesus¦かけました",
+    "0pvt0\t1¦その｜事《こと》で｜先生《せんせい》に｜掛《か》け｜合《あ》ってもらうように｜彼女《かのじょ》を｜選《えら》んだ。¦We elected her to approach our teacher on the matter.¦3¦4i1m¦¦¦掛け合って",
+    "0pvu4\t1¦このバーの｜持《も》ち｜主《ぬし》は｜酒《さけ》を｜決《けっ》して｜掛《か》け｜売《う》りしない。¦The owner of this bar never sells liquor on credit.¦3¦4sd3¦¦¦掛け売り",
+    "0pvuy\t1¦｜丘《おか》の｜上《うえ》にかしの｜木《き》がはえていますか。¦Are there oak trees on the hill?¦1¦3x0h¦¦CK¦かし",
+    "0pvw2\t1¦その｜少女《しょうじょ》はその｜布《ぬの》を｜裂《さ》いた。¦The girl tore the cloth.¦1¦4hfh¦¦CK¦裂いた\t4¦｜貴重《きちょう》なお｜時間《じかん》の｜数分《すうふん》をさいていただけますか。¦Can you spare me a few minutes of your valuable time?¦¦3x8b¦¦CK¦さいて",
+    "0pvwc\t1¦｜私《わたし》、｜先週《せんしゅう》｜貰《もら》った｜割引券《わりびきけん》があるの。¦I have some coupons I got last week.¦¦3lpi¦bunbuku¦CM¦割引券",
+    "0pvwm\t2¦｜彼《あ》の｜話《はなし》は｜割《わ》り｜引《び》いて｜聞《き》いた｜方《ほう》がいい。¦You'd better take his words with a grain of salt.¦3¦2hc0¦¦¦割り引いて",
+    "0pvya\t1¦｜登場人物《とうじょうじんぶつ》がうまく｜割《わ》り｜振《ふ》られていた。¦The characters were well cast.¦1¦2o4z¦¦¦割り振られていた",
+    "0pvyk\t2¦９０の約数のうち、９でわり切れない数は何個あるでしょうか。¦Among the divisors of 90, how many numbers are not divisible by 9?¦2¦1ndh¦mookeee¦¦わり切れない",
+    "0pvz4\t1¦あなたのおっしゃることはもっともだけれど、｜何《なに》か｜割《わ》り｜切《き》れないものがありますねえ。¦What you're saying is perfectly viable, but I can't shake off my unease.¦3¦509h¦¦¦割り切れない",
+    "0pw08\t1¦｜私《わたし》に｜新《あたら》しい｜部屋《へや》が｜割《わ》り｜当《あ》てられた。¦A new room was assigned to me.¦3¦3ito¦¦CK¦割り当てられた",
+    "0pw2q\t1¦彼は１万円私に割り戻した。¦He gave me a ten thousand yen rebate.¦3¦2gw8¦¦papabear¦割り戻した",
+    "0pw3k\t3¦マイケルは｜皿《さら》を｜割《わ》ってしまった。¦Michael broke the dishes.¦2¦470e¦¦une_monica¦割って",
+    "0pw44\t1¦プラスチックは｜割《わ》れにくい。¦Plastic does not break easily.¦3¦4818¦bunbuku¦CK¦割れ",
+    "0pw4y\t1¦その｜事《こと》｜件《けん》の｜説明《せつめい》は、｜紙面《しめん》が｜足《た》りないため｜割愛《かつあい》された。¦The explanation of the event was omitted for lack of space.¦3¦4i0g¦¦¦割愛",
+    "0pw8a\t1¦｜彼《あ》の｜行為《こうい》は｜世間《せけん》のかっさいを｜浴《あ》びた。¦His behavior won general applause.¦1¦2iky¦¦¦かっさい",
+    "0pw8u\t1¦｜彼《あれ》はあたかも｜病気《びょうき》であったかのような｜顔《かお》つきをしていた。¦He looked as if he had been ill.¦3¦2gpa¦¦CK¦あたかも",
+    "0pw9e\t1¦｜将軍《しょうぐん》の｜堂々《どうどう》とした｜恰幅《かっぷく》は｜誰《だれ》でも｜威圧《いあつ》される。¦The general's massive presence awes everyone.¦¦35i5¦¦¦恰幅",
+    "0pw9y\t1¦｜書類《しょるい》は｜全部《ぜんぶ》テープでくくられて｜金庫《きんこ》におさめられた。¦All the papers were taped up and kept in the safe.¦2¦35qf¦¦¦くくられて",
+    "0pwa8\t1¦カッコ｜内《ない》の｜言葉《ことば》を｜短縮形《たんしゅくけい》にしなさい。¦Put the words in parentheses into abbreviated form.¦1¦4unj¦arnab¦orcrist¦カッコ",
   ],
 };

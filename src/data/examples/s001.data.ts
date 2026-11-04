@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 2 of 145, from "0li9". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 2 of 144, from "0li9c". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,7 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0li92\t1¦でもよー、オラのおとうさんは｜良《い》い｜気《き》しねーよ、きっと。¦But I don't think Dad would like me to.¦3¦4bxn¦¦¦きっと",
     "0li9c\t1¦｜彼《あれ》は｜私《わたし》を｜中《うち》に｜入《い》れるのをきっぱりと｜断《ことわ》った。¦He flatly refused to let me in.¦3¦29fh¦bunbuku¦CK¦きっぱりと",
     "0li9m\t1¦フーッ、この｜坂道《さかみち》はきついよ。でも｜帰《かえ》りは｜楽《らく》だよね。¦Whew! This is a tough hill. But coming back sure will be a breeze.¦2¦53bg¦mookeee¦¦きつい\t3¦トムは｜頭《とう》にきつい｜一発《いっぱつ》を｜受《う》けた。¦Tom received a heavy blow on the head.¦3¦4a7c¦bunbuku¦CK¦きつい\t4¦ちょっとウエストがきついね。¦The waist is a little small.¦5¦4ciy¦bunbuku¦orcrist¦きつい",
     "0li9w\t1¦｜彼《あ》の｜娘《こ》は｜動作《どうさ》がきびきびしている。¦His daughter is quick in her movements.¦3¦2hk0¦¦¦きびきび",
@@ -203,5 +202,6 @@ export const PIECE: WordsPiece = {
     "0lkvi\t1¦｜毎日《まいにち》、｜放課後《ほうかご》に｜私《わたし》はその｜本屋《ほんや》で｜彼女《かのじょ》を｜待《ま》った。¦Every day I waited for her at the bookstore after school.¦2¦1qqw¦¦CM¦その",
     "0lkw2\t1¦そのため、｜派遣労働者《はけんろうどうしゃ》は｜劣悪《れつあく》な｜労働条件《ろうどうじょうけん》の｜下《もと》で｜働《はたら》いている。¦For that reason, temporary workers are working under inferior conditions.¦1¦1lbl¦fcbond¦fcbond¦そのため",
     "0lkwc\t1¦その｜後《あと》の｜話《はなし》はご｜存《ぞん》じでしょう。¦You know the rest of the story.¦3¦4ioj¦small_snow¦CK¦その後",
+    "0lkww\t1¦この｜本《もと》はおもしろい、その｜上《うえ》、｜非常《ひじょう》にためになる。¦This book is interesting and, what is more, very instructive.¦3¦4pj8¦¦¦その上\t2¦その上さらに５ドル払った。¦I paid five dollars in addition.¦3¦4h95¦¦¦その上",
   ],
 };

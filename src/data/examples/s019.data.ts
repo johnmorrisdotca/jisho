@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 20 of 145, from "0p8l". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 20 of 144, from "0p94w". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,26 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0p8lg\t1¦｜縁起《えんぎ》に｜塩《しお》をまいて｜清《す》める。¦We sprinkle salt to ward off bad luck.¦1¦41m5¦¦JimBreen¦縁起",
-    "0p8o8\t1¦お｜庭《にわ》の｜方《ほう》にも｜縁台《えんだい》を｜並《なら》べれば、かなり｜座席数《ざせきすう》を｜確保《かくほ》できそうだなーと｜思《おも》いました。¦I thought that if we lined up benches in the garden as well, we could achieve quite a seating capacity.¦1¦1n9h¦¦papabear¦縁台",
-    "0p8pc\t1¦｜飼《か》い｜猫《ねこ》の｜毛《け》のつやが｜悪《わる》くなった。¦Our cat's fur has lost its luster.¦1¦38hw¦¦CK¦つや",
-    "0p8qg\t1¦｜彼女《かのじょ》はあでやかな｜肢体《したい》で｜男性《だんせい》の｜人気《にんき》を｜得《え》た。¦Her bewitching body made her very popular with men.¦1¦1mgc¦mookeee¦CM¦あでやかな",
-    "0p8so\t1¦｜彼《あ》の｜家《いえ》はここから｜遠《とお》くない。¦His house is not far from here.¦3¦2j1l¦bunbuku¦CK¦遠くない\t2¦｜君《きみ》の｜夢《ゆめ》が｜実現《じつげん》する｜日《ひ》も｜遠《とお》くないだろう。¦It won't be long before your dream comes true.¦3¦3tdn¦¦Fanki¦遠くない\t3¦｜彼《あれ》は｜彼女《かのじょ》の｜遠《とお》い｜親戚《しんせき》だ。¦He is a distant relation of hers.¦¦25zh¦bunbuku¦CK¦遠い",
-    "0p8sy\t1¦｜私《わたし》も｜遠《とお》からずおとなになるだろう。¦I will also become a grown-up before long.¦3¦39fp¦¦¦遠からず",
-    "0p8t8\t1¦｜遠《とお》くに｜富士《ふじ》｜山《やま》が｜見《み》えた。¦Mt. Fuji could be seen in the distance.¦1¦41l1¦small_snow¦CK¦遠く",
-    "0p8ti\t1¦｜船《ふね》は｜岸壁《がんぺき》からしだいに｜遠《とお》ざかって｜行《おこな》った。¦The boat moved slowly away from the quay.¦1¦30wd¦¦sundown¦遠ざかって",
-    "0p8ts\t1¦｜彼女《かのじょ》は｜彼《あれ》を｜遠《とお》ざけたいと｜思《おも》っている。¦She wants to keep him at a distance.¦3¦1vao¦bunbuku¦CM¦遠ざけたい",
-    "0p8vg\t1¦｜魚《さかな》は｜遠火《とおび》でゆっくり、こんがり｜焼《や》き｜上《あ》げます。¦The fish is baked slowly till browned over a not-too-close fire.¦2¦1mtl¦mookeee¦¦遠火",
-    "0p8w0\t1¦｜遠《とお》まわしに｜彼《あ》の｜意見《いけん》を｜探《さぐ》った。¦I sounded him out about his views.¦3¦41kr¦¦AMIKEMA¦遠まわしに",
-    "0p8wa\t1¦もし｜遠回《とおまわ》りでなければポストに｜入《い》れてください。¦Please drop it in the mail if it's not out of your way.¦3¦45i4¦¦CM¦遠回り",
-    "0p8wk\t1¦｜傷《いた》むのを｜防《ふせ》ぐために、｜遠海《えんかい》で｜捕獲《ほかく》した｜魚《さかな》は｜直《ただ》ちに｜冷却《れいきゃく》される。¦To avoid spoiling, fish caught far out at sea are immediately cooled or even frozen.¦1¦35l2¦¦¦遠海",
-    "0p8yi\t1¦｜彼《あれ》は｜遠隔地《えんかくち》を｜旅《たび》するのを｜楽《たの》しんでいる。¦He enjoys exploring remote areas.¦1¦2cjc¦¦CM¦遠隔地",
-    "0p8zw\t1¦｜遠近感《えんきんかん》がとぼしいのです。¦I'm afraid my depth perception is very poor.¦3¦41ki¦¦CM¦遠近",
-    "0p906\t1¦｜遠近法《えんきんほう》がとられてないので、その｜絵《え》は｜変《へん》にみえる。¦The picture looks strange because it has no perspective.¦3¦41kh¦¦Luornu¦遠近法",
-    "0p90g\t1¦その｜絵《え》の｜遠景《えんけい》には｜城《しろ》がある。¦There is a castle in the background of the picture.¦2¦4jdp¦mookeee¦CK¦遠景",
-    "0p90q\t1¦｜山《やま》は｜遠見《えんけん》の｜方《ほう》がよい。¦Mountains look better viewed from a distance.¦3¦3mpv¦¦CM¦遠見",
-    "0p93s\t1¦これは｜遠心力《えんしんりょく》ですがニュートンは｜絶対運動《ぜったいうんどう》と｜見《み》なしています。¦This is centrifugal force, which Newton viewed as absolute motion.¦3¦1l8c¦fcbond¦blay_paul¦遠心力",
-    "0p942\t1¦｜彼《あれ》はエベレスト｜登頂《とうちょう》の｜遠征隊《えんせいたい》の｜一員《いちいん》であった。¦He was a member of the expedition which climbed Mount Everest.¦1¦2g6k¦¦sundown¦遠征\t2¦｜私《わたし》たちは｜遠征試合《えんせいじあい》でほとんど｜負《ま》けてしまった。¦We lost almost all our away games.¦1¦3k4c¦bunbuku¦CK¦遠征",
     "0p94w\t1¦「まだ｜浅《あさ》いね。｜足《あし》とどく」「｜結構《けっこう》｜遠浅《とおあさ》だな。よつばもまだ｜足《あし》つくだろ」¦\"It's still shallow, eh. My feet still touch the bottom.\" \"It's quite a shallow beach. Yotsuba, you can still touch the bottom can't you?\"¦1¦1luu¦fcbond¦fcbond¦遠浅",
     "0p95g\t1¦｜学校《がっこう》の｜遠足《えんそく》で｜奈良《なら》に｜行《おこな》った。¦We went on a school trip to Nara.¦1¦3ybg¦small_snow¦Zifre¦遠足",
     "0p95q\t1¦｜太鼓《たいこ》の｜音《おと》は｜遠《とお》のいていった。¦The drum faded away.¦1¦2ynb¦small_snow¦AlanF_US¦遠のいて",
@@ -90,7 +70,6 @@ export const PIECE: WordsPiece = {
     "0papk\t1¦｜警察《けいさつ》は｜私《わたし》をわきへ｜押《お》しのけた。¦The policeman thrust me aside.¦3¦3rxs¦¦¦押しのけた",
     "0papu\t1¦｜彼《あれ》は｜保守党《ほしゅとう》｜一辺倒《いっぺんとう》で｜押《お》し｜通《とお》した。¦He has remained pro-conservative throughout.¦1¦258c¦¦¦押し通した",
     "0paqe\t1¦｜天井《てんじょう》が｜落《お》ちれば、｜彼《あれ》は｜押《お》しつぶされるだろう。¦If the ceiling fell, he would be crushed.¦1¦2om7¦¦CK¦押しつぶされる",
-    "0paqo\t1¦｜彼《あれ》は｜車《くるま》に｜押《お》し｜倒《たお》された。¦He was knocked over by the car.¦3¦28ra¦¦CK¦押し倒された",
     "0paqy\t1¦｜彼《あれ》は｜壁《かべ》に｜耳《みみ》を｜押《お》しあてた。¦He pressed his ear against the wall.¦1¦259x¦¦CK¦押しあてた",
     "0par8\t1¦｜賊《あだ》が｜彼《あ》の｜家《いえ》に｜押《お》し｜入《い》った。¦Burglars broke into his house.¦1¦2zs7¦¦CK¦押し入った",
     "0pars\t1¦｜先月《せんげつ》の｜日直《にっちょく》｜当番《とうばん》｜全部《ぜんぶ》｜私《わたし》に｜押《お》し｜付《つ》けた｜形《かたち》でエスケープした｜野郎《やろう》だ。¦He's the pest that, on last month's class-help day, escaped leaving me with all the work.¦1¦1ml9¦mookeee¦¦押し付けた",
@@ -216,5 +195,27 @@ export const PIECE: WordsPiece = {
     "0pdxe\t1¦｜山《やま》を｜下《くだ》ったところに｜学校《がっこう》がある。¦There is a school down the mountain.¦5¦3mpp¦KK_kaku_¦CM¦下った\t2¦｜彼《あれ》は｜懲役《ちょうえき》｜十年《じゅうねん》で、｜女房《にょうぼう》には｜三年《さんねん》の｜刑《けい》が｜下《くだ》った。¦He was given ten years and his wife three.¦1¦26sm¦¦¦下った",
     "0pdy8\t1¦｜彼《あれ》は｜組《く》んだ｜下位《かい》｜候補者《こうほしゃ》が｜悪《にく》かったので｜落選《らくせん》しました。¦He was dropped because of his running mate.¦2¦27dw¦¦¦下位",
     "0pdz2\t1¦イギリス｜国会《こっかい》は｜下院《かいん》と｜上院《じょういん》とに｜分《わ》かれている。¦The British Parliament is divided into the House of Commons and the House of Lords.¦¦4wvl¦¦CM¦下院",
+    "0pdzm\t1¦スキャンダルが｜発覚《はっかく》したとき、その｜下院議員《かいんぎいん》の｜支持者《しじしゃ》たちは｜激怒《げきど》しました。¦When the scandal broke, the Congressman's constituents were seething.¦1¦4lw9¦mookeee¦¦下院議員",
+    "0pe10\t1¦｜化学《かがく》｜業界《ぎょうかい》はすべてが｜下火《したび》になるまで｜再投資《さいとうし》を｜控《ひか》えています。¦Chemical companies are waiting until everything dies down before reinvesting.¦1¦417y¦¦auxitt¦下火",
+    "0pe1u\t1¦日本の１９９８年末の金・外貨準備高は６８９億ドルで、１年前の７７０億ドルを下回った。¦Japan's gold and foreign exchange reserves stood at $68.9 billion at the end of 1998, down from $77.0 billion a year earlier.¦2¦2mnz¦arnab¦CM¦下回った",
+    "0pe42\t1¦｜私《わたし》の｜本当《ほんとう》の｜住所《じゅうしょ》は｜下記《かき》の｜通《どお》りです。¦My real address is as follows.¦3¦3hhe¦¦¦下記の",
+    "0pe7y\t1¦場所の確認：見合いの場所を本人か付き添い人が下見をしておきましょう。¦Location check: The parties involved themselves or their attendants should look over the place for the miai meeting in advance.¦1¦1mn6¦mookeee¦¦下見",
+    "0peag\t1¦どの生徒も６時までに下校しなければならない。¦Every student has to leave school by six.¦3¦4ajm¦¦CK¦下校",
+    "0peba\t1¦｜彼《あ》の｜人《ひと》｜気《き》は｜下降線《かこうせん》をたどっている。¦His popularity is falling.¦2¦2i43¦¦Denizar¦下降線",
+    "0pee2\t1¦｜私《わたし》は｜頂上《ちょうじょう》から｜下山《げざん》する｜途中《とちゅう》｜彼《かれ》らに｜会《あ》った。¦I met them during my descent from the peak.¦3¦3blv¦¦¦下山",
+    "0pehe\t1¦｜私《わたし》は｜駅《えき》を｜間違《まちが》えて｜下車《げしゃ》しました。¦I got off at the wrong station.¦3¦3e3v¦¦CK¦下車",
+    "0peho\t1¦｜車《くるま》を｜下取《したど》りに｜出《だ》して｜新車《しんしゃ》を｜買《か》った。¦I traded in my car for a new one.¦3¦36xq¦mookeee¦CK¦下取り",
+    "0pei3\t2¦そこでベス下手より登場！¦Now Beth enters, stage right!¦3¦1lvl¦fcbond¦fcbond¦下手",
+    "0pei8\t1¦｜彼《あれ》はイギリス｜生《う》まれだが、｜英語《えいご》がとても｜下手《へた》である。¦He comes from England, but is very poor at English.¦3¦2ghv¦¦¦下手\t2¦｜下手《へた》な｜動《うご》き｜方《ほう》をしない｜様《よう》に｜気《き》をつけなさい。¦Take care not to make a foolish move.¦3¦418i¦¦CK¦下手な",
+    "0peii\t1¦｜私《わたし》のテニスは｜下手《へた》の｜横好《よこず》きだ。¦I like playing tennis, though I'm not very good at it.¦3¦3inq¦small_snow¦CK¦下手の横好き",
+    "0pekq\t1¦｜彼女《かのじょ》は｜学生《がくせい》を｜下宿《げしゅく》させている。¦She boards students.¦3¦1xz5¦¦CM¦下宿\t2¦｜私《わたし》は｜下宿《げしゅく》を｜探《さが》していました。¦I was on the hunt for lodgings.¦3¦3e1x¦¦sundown¦下宿",
+    "0pel0\t1¦｜高《たか》い｜料金《りょうきん》を｜下宿屋《げしゅくや》に払わねばならない。¦I have to pay high rates to the boarding.¦3¦3poc¦¦¦下宿屋",
+    "0pela\t1¦隣の下宿人は月３万円ぐらいで暮らしている。¦The lodger next door lives on about 30,000 yen a month.¦1¦1o0i¦mookeee¦sundown¦下宿人",
+    "0pelu\t1¦８月下旬に彼らは繁殖のために長い旅に出発します。¦In late August, they set off on a long journey for breeding.¦1¦51a9¦e4zh1nmcz¦Jesse¦下旬",
+    "0pemy\t1¦｜私《わたし》はスピーチの｜下書《したが》きを｜書《か》いています。¦I am writing a draft of the speech.¦4¦3fuf¦¦CM¦下書き",
+    "0pep6\t1¦｜彼《あれ》はあの｜女性《じょせい》に｜下心《したごころ》を｜抱《いだ》いている。¦He has designs on that girl.¦3¦2gnh¦¦¦下心",
+    "0pequ\t1¦｜下水《げすい》が｜完全《かんぜん》に｜詰《つ》まっている。¦The drains are blocked up.¦2¦418e¦¦CK¦下水",
+    "0pero\t1¦そして｜汚水《おすい》を｜流《なが》すために｜地下《ちか》に｜下水道《げすいどう》を｜持《も》っていた。¦The house has pipes under the ground to carry dirty water away.¦2¦4kqy¦¦¦下水道",
+    "0peu6\t2¦｜彼《あ》の｜一生《いっしょう》は｜社会《しゃかい》の｜下積《したづ》みで｜終《お》わった。¦He lived and died in obscurity.¦3¦2jda¦Kaede¦CM¦下積み",
   ],
 };

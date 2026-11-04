@@ -131,6 +131,33 @@ describe("what is not for children", () => {
     expect(said(adults, "チンピラ")).toMatch(/hoodlum/);
   });
 
+  it("is cut by the gloss where JMdict marks nothing: a sense that names sex or the sex trade goes, the others stay", async () => {
+    const texts = ["セックス", "売春", "ポルノ", "レイプ", "せがれ", "菜種", "社交", "抹香鯨", "主婦"];
+    const words = await loadWords(texts);
+    const adults = await loadWords(texts, { mode: "unfiltered" });
+    const said = (from: typeof words, text: string) =>
+      wordsOf(from, text)
+        .map((one) => one.meaning)
+        .join(" | ");
+    for (const text of ["セックス", "売春", "ポルノ", "レイプ"]) {
+      expect(wordsOf(words, text), text).toEqual([]);
+      expect(wordsOf(adults, text).length, text).toBeGreaterThan(0);
+    }
+    expect(said(words, "せがれ")).toMatch(/brat/);
+    expect(said(words, "せがれ")).not.toMatch(/penis/);
+    expect(wordsOf(adults, "せがれ").flatMap((one) => one.senses.flatMap((sense) => sense.glosses))).toContain("penis");
+    expect(wordsOf(words, "せがれ").flatMap((one) => one.senses.flatMap((sense) => sense.glosses))).not.toContain(
+      "penis",
+    );
+    for (const [text, kept] of [
+      ["菜種", "rapeseed"],
+      ["社交", "social intercourse"],
+      ["抹香鯨", "sperm whale"],
+      ["主婦", "housewife"],
+    ] as const)
+      expect(said(words, text), text).toContain(kept);
+  });
+
   it("is cut from a written form's answer as well: 吐かす is a form of ぬかす only for the sense that is not for children", async () => {
     const words = await loadWords(["吐かす", "抜かす", "ぬかす"]);
     const adults = await loadWords(["吐かす", "ぬかす"], { mode: "unfiltered" });

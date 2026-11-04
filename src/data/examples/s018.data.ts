@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 19 of 145, from "0p32k". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 19 of 144, from "0p3ts". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,30 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0p32k\t1¦ツベルクリン｜反応《はんのう》は｜陰性《いんせい》でした。¦The result of the tuberculin test was negative.¦1¦4cap¦small_snow¦AlanF_US¦陰性",
-    "0p348\t1¦｜陰徳《いんとく》あれば｜陽報《ようほう》あり。¦Secret gifts are openly rewarded.¦1¦42jx¦¦gin¦陰徳",
-    "0p35m\t1¦うちの｜前《さき》のやせ｜犬《いぬ》・｜陰弁慶《かげべんけい》。¦Every dog is a lion at home.¦1¦4w2g¦¦shekitten¦陰弁慶",
-    "0p35w\t1¦｜私《わたし》は｜彼《かれ》らの｜陰謀《いんぼう》をすぐに｜見抜《みぬ》いた。¦I saw through their plot at once.¦1¦3al9¦¦¦陰謀",
-    "0p37a\t1¦｜雨《あめ》が｜降《ふ》って、その｜秋《あき》の｜日《ひ》を｜陰《いん》うつにした。¦The rain made the autumn day dismal.¦1¦42fv¦¦sundown¦陰うつ",
-    "0p38y\t1¦｜彼《あれ》は｜僕《ぼく》に｜何《なに》か｜隠《かく》し｜事《ごと》をしてるに｜違《ちが》いない。¦I'm sure he is keeping something from me.¦1¦254k¦¦CM¦隠し事",
-    "0p39s\t1¦なぜ｜君《きみ》はそんなに｜隠《かく》し｜立《だ》てするのか。¦Why are you being so secretive?¦1¦49p7¦¦CK¦隠し立て",
-    "0p3a2\t1¦｜私《わたし》は｜母《はは》がケーキを｜隠《かく》すのを｜見《み》た。¦I saw my mother hide the cake.¦1¦39yi¦bunbuku¦CK¦隠す",
-    "0p3ac\t1¦｜子《こ》どもは｜箱《はこ》の｜中《うち》に｜隠《かく》れていた。¦The child was hiding in the box.¦1¦3mag¦small_snow¦CK¦隠れていた\t2¦｜太陽《たいよう》が｜雲《くも》のかげに｜隠《かく》れた。¦The sun disappeared behind a cloud.¦1¦2ymg¦¦CK¦隠れた",
-    "0p3aw\t1¦その｜倉庫《そうこ》は｜麻薬密売《まやくみつばい》｜者《もの》の｜隠《かく》れみのだった。¦The warehouse was a front for drug traffickers.¦1¦4grs¦bunbuku¦CM¦隠れみの",
-    "0p3ck\t1¦｜隠者《いんじゃ》は｜木造《もくぞう》の｜小屋《こや》に｜住《す》んでいた。¦The hermit lived in a wooden hut.¦1¦42ju¦¦CK¦隠者",
-    "0p3fm\t1¦これまた｜政府《せいふ》の｜隠《いん》ぺい｜策《さく》のようです。¦This looks like another government cover-up.¦1¦4o94¦mookeee¦¦隠ぺい",
-    "0p3hk\t1¦「｜怒《おこ》ると｜彼《あれ》はトラになる」というのは｜隠喩《いんゆ》の｜例《れい》である。¦\"He's a tiger when he's angry\" is an example of metaphor.¦¦529i¦mookeee¦CM¦隠喩",
-    "0p3j8\t1¦｜彼《あれ》はいくつかの｜戯曲《ぎきょく》を｜韻文《いんぶん》で｜書《か》いた。¦He wrote several plays in verse.¦1¦2ghq¦¦¦韻文",
-    "0p3ji\t1¦｜言葉《ことば》による｜詩《うた》とは、｜要約《ようやく》して｜言《い》えば、｜韻律《いんりつ》｜的《てき》｜美《び》の｜創造《そうぞう》であるとしたい。¦I would define, in brief, the poetry of words as the Rhythmical Creation of Beauty.¦¦3qsv¦¦¦韻律",
-    "0p3k2\t1¦２つ目の角を右に曲がりなさい。¦Turn right at the second corner.¦2¦51qk¦e4zh1nmcz¦CK¦右",
-    "0p3n4\t1¦｜右手《みぎて》がしびれます。¦My right hand is numb.¦4¦42j8¦bunbuku¦CK¦右手",
-    "0p3no\t1¦｜右上《みぎうえ》の｜親知《おやし》らずが｜痛《いた》みます。¦My upper right wisdom tooth hurts.¦3¦42j4¦bunbuku¦CK¦右上",
-    "0p3ny\t1¦｜右折《うせつ》しなさい、そうすれば｜私《わたし》の｜事務所《じむしょ》が｜見《み》つかります。¦Turn to the right, and you'll find my office.¦3¦42j3¦¦al_ex_an_der¦右折",
-    "0p3oi\t1¦｜本日《ほんじつ》｜乗馬《じょうば》｜後《あと》、｜馬《うま》の｜手入《てい》れをしている｜時《とき》にうっかり｜右足《みぎあし》を｜踏《ふ》まれた。¦Today, after riding, while grooming the horse I carelessly got my right foot trod on.¦1¦1mev¦mookeee¦¦右足\t2¦｜私《わたし》はその｜事《こと》｜故《ゆえ》で｜右足《みぎあし》を｜負傷《ふしょう》した。¦I got my right leg hurt in the accident.¦1¦3fjd¦bunbuku¦CK¦右足",
-    "0p3qq\t1¦２年前に右目を失明しました。¦I lost the eyesight in my right eye two years ago.¦3¦51n4¦e4zh1nmcz¦CM¦右目",
-    "0p3ru\t1¦｜右腕《みぎうで》を｜骨折《こっせつ》したようです。¦I think my right arm is broken.¦2¦42ir¦¦CK¦右腕",
-    "0p3s4\t1¦｜宇宙《うちゅう》には｜限《き》りはない。¦There is no limit to the universe.¦1¦42il¦¦CK¦宇宙",
-    "0p3t8\t1¦｜地球《ちきゅう》は｜宇宙空間《うちゅうくうかん》に｜漂《ただよ》う｜球体《きゅうたい》にすぎない。¦The earth is just a sphere suspended in space.¦1¦2pz0¦¦U2FS¦宇宙空間",
     "0p3ts\t1¦みんな｜宇宙人《うちゅうじん》になったつもりで。¦Let's pretend we are aliens.¦1¦46f3¦¦Hautis¦宇宙人",
     "0p3uc\t1¦｜宇宙船《うちゅうせん》は｜月《つき》を｜回《めぐ》る｜軌道《きどう》を｜外《はず》れている。¦The spaceship is out of orbit around the moon.¦1¦42i4¦¦frpzzd¦宇宙船",
     "0p3uw\t1¦その｜宇宙飛行士《うちゅうひこうし》は｜月《つき》に｜降《お》り｜立《た》つのを｜見《み》られた。¦The astronaut was seen to land on the moon.¦1¦4jtr¦¦¦宇宙飛行士",
@@ -218,5 +194,25 @@ export const PIECE: WordsPiece = {
     "0p8k2\t1¦｜金《かね》の｜切《き》れ｜目《め》が｜縁《えん》の｜切《き》れ｜目《め》。¦The end of money is the end of love.¦1¦3uoz¦small_snow¦AlanF_US¦縁\t2¦｜戸籍《こせき》｜上《うえ》の｜縁《ふち》は｜切《き》れても、｜昔日《せきじつ》の｜絆《きずな》はそのままだ。¦Our connection may be cut on paper but the bonds of old remain as they were.¦¦1ms6¦mookeee¦¦縁",
     "0p8kc\t1¦｜彼《かれ》らは｜水瓶《みずがめ》を｜縁《ふち》まで｜一杯《いっぱい》にした。¦They filled the jug to the brim.¦1¦22nq¦¦AlanF_US¦縁",
     "0p8kw\t1¦｜私《わたし》の｜読《よ》んだ｜冒険談《ぼうけんだん》は｜実生活《じっせいかつ》とは｜縁遠《えんどお》い。¦The adventures I read about are absent from my life.¦1¦3hqm¦¦¦縁遠い",
+    "0p8lg\t1¦｜縁起《えんぎ》に｜塩《しお》をまいて｜清《す》める。¦We sprinkle salt to ward off bad luck.¦1¦41m5¦¦JimBreen¦縁起",
+    "0p8o8\t1¦お｜庭《にわ》の｜方《ほう》にも｜縁台《えんだい》を｜並《なら》べれば、かなり｜座席数《ざせきすう》を｜確保《かくほ》できそうだなーと｜思《おも》いました。¦I thought that if we lined up benches in the garden as well, we could achieve quite a seating capacity.¦1¦1n9h¦¦papabear¦縁台",
+    "0p8pc\t1¦｜飼《か》い｜猫《ねこ》の｜毛《け》のつやが｜悪《わる》くなった。¦Our cat's fur has lost its luster.¦1¦38hw¦¦CK¦つや",
+    "0p8qg\t1¦｜彼女《かのじょ》はあでやかな｜肢体《したい》で｜男性《だんせい》の｜人気《にんき》を｜得《え》た。¦Her bewitching body made her very popular with men.¦1¦1mgc¦mookeee¦CM¦あでやかな",
+    "0p8so\t1¦｜彼《あ》の｜家《いえ》はここから｜遠《とお》くない。¦His house is not far from here.¦3¦2j1l¦bunbuku¦CK¦遠くない\t2¦｜君《きみ》の｜夢《ゆめ》が｜実現《じつげん》する｜日《ひ》も｜遠《とお》くないだろう。¦It won't be long before your dream comes true.¦3¦3tdn¦¦Fanki¦遠くない\t3¦｜彼《あれ》は｜彼女《かのじょ》の｜遠《とお》い｜親戚《しんせき》だ。¦He is a distant relation of hers.¦¦25zh¦bunbuku¦CK¦遠い",
+    "0p8sy\t1¦｜私《わたし》も｜遠《とお》からずおとなになるだろう。¦I will also become a grown-up before long.¦3¦39fp¦¦¦遠からず",
+    "0p8t8\t1¦｜遠《とお》くに｜富士《ふじ》｜山《やま》が｜見《み》えた。¦Mt. Fuji could be seen in the distance.¦1¦41l1¦small_snow¦CK¦遠く",
+    "0p8ti\t1¦｜船《ふね》は｜岸壁《がんぺき》からしだいに｜遠《とお》ざかって｜行《おこな》った。¦The boat moved slowly away from the quay.¦1¦30wd¦¦sundown¦遠ざかって",
+    "0p8ts\t1¦｜彼女《かのじょ》は｜彼《あれ》を｜遠《とお》ざけたいと｜思《おも》っている。¦She wants to keep him at a distance.¦3¦1vao¦bunbuku¦CM¦遠ざけたい",
+    "0p8vg\t1¦｜魚《さかな》は｜遠火《とおび》でゆっくり、こんがり｜焼《や》き｜上《あ》げます。¦The fish is baked slowly till browned over a not-too-close fire.¦2¦1mtl¦mookeee¦¦遠火",
+    "0p8w0\t1¦｜遠《とお》まわしに｜彼《あ》の｜意見《いけん》を｜探《さぐ》った。¦I sounded him out about his views.¦3¦41kr¦¦AMIKEMA¦遠まわしに",
+    "0p8wa\t1¦もし｜遠回《とおまわ》りでなければポストに｜入《い》れてください。¦Please drop it in the mail if it's not out of your way.¦3¦45i4¦¦CM¦遠回り",
+    "0p8wk\t1¦｜傷《いた》むのを｜防《ふせ》ぐために、｜遠海《えんかい》で｜捕獲《ほかく》した｜魚《さかな》は｜直《ただ》ちに｜冷却《れいきゃく》される。¦To avoid spoiling, fish caught far out at sea are immediately cooled or even frozen.¦1¦35l2¦¦¦遠海",
+    "0p8yi\t1¦｜彼《あれ》は｜遠隔地《えんかくち》を｜旅《たび》するのを｜楽《たの》しんでいる。¦He enjoys exploring remote areas.¦1¦2cjc¦¦CM¦遠隔地",
+    "0p8zw\t1¦｜遠近感《えんきんかん》がとぼしいのです。¦I'm afraid my depth perception is very poor.¦3¦41ki¦¦CM¦遠近",
+    "0p906\t1¦｜遠近法《えんきんほう》がとられてないので、その｜絵《え》は｜変《へん》にみえる。¦The picture looks strange because it has no perspective.¦3¦41kh¦¦Luornu¦遠近法",
+    "0p90g\t1¦その｜絵《え》の｜遠景《えんけい》には｜城《しろ》がある。¦There is a castle in the background of the picture.¦2¦4jdp¦mookeee¦CK¦遠景",
+    "0p90q\t1¦｜山《やま》は｜遠見《えんけん》の｜方《ほう》がよい。¦Mountains look better viewed from a distance.¦3¦3mpv¦¦CM¦遠見",
+    "0p93s\t1¦これは｜遠心力《えんしんりょく》ですがニュートンは｜絶対運動《ぜったいうんどう》と｜見《み》なしています。¦This is centrifugal force, which Newton viewed as absolute motion.¦3¦1l8c¦fcbond¦blay_paul¦遠心力",
+    "0p942\t1¦｜彼《あれ》はエベレスト｜登頂《とうちょう》の｜遠征隊《えんせいたい》の｜一員《いちいん》であった。¦He was a member of the expedition which climbed Mount Everest.¦1¦2g6k¦¦sundown¦遠征\t2¦｜私《わたし》たちは｜遠征試合《えんせいじあい》でほとんど｜負《ま》けてしまった。¦We lost almost all our away games.¦1¦3k4c¦bunbuku¦CK¦遠征",
   ],
 };

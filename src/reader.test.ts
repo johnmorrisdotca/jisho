@@ -107,4 +107,11 @@ describe("readText", () => {
     expect(unfiltered.tokens[0]?.word?.senses.some((sense) => sense.marks.includes("sens"))).toBe(true);
     await expect(readText("外人", { mode: "bogus" as never })).rejects.toThrow(TypeError);
   });
+
+  it("finds no word for one whose every sense names sex, in safe mode, and finds it unfiltered", async () => {
+    const safe = await readText("売春");
+    expect(safe.tokens.some((token) => token.word !== undefined && token.text === "売春")).toBe(false);
+    const unfiltered = await readText("売春", { mode: "unfiltered" });
+    expect(unfiltered.tokens[0]?.word?.reading).toBe("ばいしゅん");
+  });
 });

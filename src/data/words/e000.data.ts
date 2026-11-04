@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 1 of 220, from "". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 1 of 219, from "". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -32,7 +32,7 @@ export const PIECE: WordsPiece = {
     "0lftk\t論う\tあげつらう\tv5u,vt¦uk¦to discuss\tv5u,vt¦uk¦to find fault with¦to criticize¦to criticise",
     "0lfu4\t遇う~rK|配う~sK\tあしらう\tv5u,vt¦uk¦to treat¦to handle¦to deal with\tv5u,vt¦uk¦to arrange¦to decorate (with)¦to adorn (with)¦to dress (with)¦to garnish (with)",
     "0lfue\t馬酔木\tあせび|あしび|あせぼ|あせぶ|アセビ~~~!\tn¦uk¦Japanese andromeda (Pieris japonica)¦lily-of-the-valley",
-    "0lfuo\t彼処~rK|彼所~rK\tあそこ|あすこ|かしこ|アソコ~~~!|あしこ~ok\tpn¦uk¦there¦over there¦that place¦yonder¦you-know-where¦どこ・1|ここ・1|そこ・1¦place physically distant from both speaker and listener\tn¦col,uk,euph¦genitals¦private parts¦nether regions¦あそこ|あすこ|アソコ\tn¦uk¦that far¦that much¦that point¦あれほど¦something psychologically distant from both speaker and listener",
+    "0lfuo\t彼処~rK|彼所~rK\tあそこ|あすこ|かしこ|アソコ~~~!|あしこ~ok\tpn¦uk¦there¦over there¦that place¦yonder¦you-know-where¦どこ・1|ここ・1|そこ・1¦place physically distant from both speaker and listener\tn¦uk¦that far¦that much¦that point¦あれほど¦something psychologically distant from both speaker and listener¦3",
     "0lfvs\t\tあっさり|アッサリ\tadv,adv-to,vs¦on-mim¦easily¦readily¦quickly¦flatly (refuse)\tadv,adv-to,vs¦on-mim¦lightly (seasoned food, applied make-up, etc.)¦plainly¦simply",
     "0lfwm\tあっという間に|あっと言う間に|アッという間に~sK|アッと言う間に~sK|あっとゆう間に~sK|アッとゆう間に~sK\tあっというまに\texp,adv¦¦in an instant¦in a flash¦in the blink of an eye¦in no time at all¦just like that",
     "0lfww\t\tあっぷあっぷ\tadv,adv-to,vs¦¦floundering while nearly drowning\tadv,adv-to,vs¦¦suffering",
@@ -49,7 +49,7 @@ export const PIECE: WordsPiece = {
     "0lfzy\t\tあやふや\tadj-na¦on-mim¦uncertain¦indefinite¦vague¦ambiguous¦equivocal¦dubious¦doubtful¦non-committal",
     "0lg08\t\tあら|あらー\tint¦fem¦oh!¦ah!¦oh no",
     "0lg0d\t𩺊\tあら|アラ~~~!\tn¦uk¦saw-edged perch (Niphon spinosus)",
-    "0lg1w\t彼~rK|彼れ~rK\tあれ|アレ~sk\tpn¦uk¦that¦that thing¦これ・1|それ・1|どれ・1¦indicating something distant from both speaker and listener (in space, time or psychologically), or something understood without naming it directly\tpn¦uk¦that person¦used to refer to one's equals or inferiors\tpn¦uk¦then¦that time\tpn¦uk¦that place (over there)\tn¦col,euph,uk¦down there (i.e. one's genitals)¦oft. written as アレ\tn¦col,euph,uk¦period¦menses¦oft. written as アレ",
+    "0lg1w\t彼~rK|彼れ~rK\tあれ|アレ~sk\tpn¦uk¦that¦that thing¦これ・1|それ・1|どれ・1¦indicating something distant from both speaker and listener (in space, time or psychologically), or something understood without naming it directly\tpn¦uk¦that person¦used to refer to one's equals or inferiors\tpn¦uk¦then¦that time\tpn¦uk¦that place (over there)\tn¦col,euph,uk¦period¦menses¦oft. written as アレ¦6",
     "0lg26\t\tあんな\tadj-pn¦¦that sort of¦that kind of¦like that¦such¦so¦あんなに|こんな|そんな・1|どんな・1¦about something or someone distant from both speaker and listener, or about a situation unfamiliar to both speaker and listener",
     "0lg2g\tいい加減にしなさい\tいいかげんにしなさい\texp¦¦shape up!¦act properly!",
     "0lg2q\tいい年をして|いい歳をして\tいいとしをして\texp¦¦(in spite of) being old enough to know better¦いい年して",
@@ -84,7 +84,6 @@ export const PIECE: WordsPiece = {
     "0lgcg\t\tうじうじ|ウジウジ\tadv,adv-to,vs¦on-mim¦indecisively¦hesitantly¦irresolutely¦wishy-washily",
     "0lgcq\t\tうじゃうじゃ|ウジャウジャ\tadv,adv-to,vs¦on-mim¦in swarms¦in clusters\tadv,adv-to,vs¦on-mim¦tediously¦slowly",
     "0lgd0\t\tうずうず|ウズウズ\tadv,adv-to,vs¦on-mim¦itching to do something¦impatient¦sorely tempted¦eager",
-    "0lgda\t\tうぞうぞ\tadv¦on-mim¦irrepressibly aroused (esp. sexually)¦stimulated",
     "0lgdk\t\tうだうだ|ウダウダ\tadv,vs¦on-mim¦going on and on (about inconsequential things)¦talking nonsense\tadv,vs¦on-mim¦idling away the time¦dawdling",
     "0lgdu\t\tうっかり|ウッカリ\tadv,adv-to,vs¦on-mim¦carelessly¦thoughtlessly¦inadvertently",
     "0lgee\t\tうとうと|ウトウト|うとっと~sk|ウトッと~sk|ウトっと~sk\tadv,adv-to,vs¦on-mim¦falling into a doze¦dozing off¦nodding off",
@@ -112,7 +111,6 @@ export const PIECE: WordsPiece = {
     "0lglc\t\tおしゃぶり\tn¦¦teething ring¦pacifier¦dummy",
     "0lglm\t悍ましい~rK|悍しい~sK\tおぞましい\tadj-i¦uk¦appalling¦horrifying¦dreadful¦hideous¦revolting¦disgusting",
     "0lglw\t\tオタオタ|おたおた\tadv,adv-to,vs¦on-mim¦flustered¦flurried¦(shocked) speechless",
-    "0lgm6\t\tおちんちん\tn¦chn¦penis¦ちんちん・1",
     "0lgmq\t\tおっかない\tadj-i¦col¦frightening¦scary\tadj-i¦arch¦extreme¦exaggerated¦huge",
     "0lgn0\t落っこちる\tおっこちる\tv1,vi¦ktb¦to fall¦to drop¦落ちる・1\tv1,vi¦ktb¦to fail (an exam)¦to lose (a contest, election, etc.)¦to be unsuccessful¦落ちる・8",
     "0lgna\t\tおっさん|オッサン\tn¦fam¦Buddhist priest¦2",
@@ -644,5 +642,7 @@ export const PIECE: WordsPiece = {
     "0llai\t\tだけど\tconj¦¦but¦however¦although",
     "0llas\t丈に~rK\tだけに\texp,conj¦uk¦as one would expect from ...¦given that ... (naturally ...)¦because ...¦being ...\texp,conj¦uk¦precisely because ...¦all the more because of ...¦used with unexpected results\texp,conj¦uk¦on account of ...¦... being what it is¦as ＡがＡだけに\texp¦uk¦only to¦only for¦only in¦だけ・1",
     "0llb2\t\tダサい|ださい\tadj-i¦col¦uncool¦lame¦unfashionable¦unstylish¦tacky¦tasteless¦ugly¦corny¦pathetic (behaviour)¦sad",
+    "0llbc\t\tだったら\tconj¦¦if it's the case¦だ",
+    "0llc6\t\tだぶだぶ|ダブダブ\tadj-na,adj-no,adv,adv-to,vs¦on-mim¦loose (of clothing)¦baggy¦ぶかぶか・1|ゆったり・2|たぶたぶ・2\tadv,adv-to,vs¦on-mim¦flabby¦saggy\tadv,adv-to,adj-na,vs¦on-mim¦sloshing¦slopping¦overflowing\tadv,adv-to¦on-mim¦plenty (of pouring a liquid)¦drowning (e.g. in a sauce)",
   ],
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 6 of 172, from "aeroplank". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 6 of 172, from "aeso". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,17 +9,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "aeroplankton\tくうちゅうふゆうせいぶつ",
-    "aerosol\tエアゾール|エアロゾル|エーロゾル|えんむしつ|ボンベ|パウダースプレー|パウダー・スプレー",
-    "aerosol spray\tエアゾール|ボンベ",
-    "aerospace\tこうう|こうくううちゅう|こうくううちゅうぎじゅつけんきゅうじょ|こうくううちゅうこうぎょう|こうくううちゅうさんぎょう|こうくううちゅうこうがく|ジャクサ|うちゅうきこう|うちゅうこうくうけんきゅうかいはつきこう|かんこくこうくううちゅうけんきゅうじょ",
-    "aerospace laboratory\tこうくううちゅうぎじゅつけんきゅうじょ",
-    "aerotropism\tこうきせい",
-    "aeruginosa\tりょくのうきん",
-    "aeschylus\tアイスキュロス",
-    "aeschynomene\tクサネム|くさねむ",
-    "aesculus\tマロニエ|とちのき|とち|トチノキ|せいようとちのき|セイヨウトチノキ|うまぐり|ウマグリ",
-    "aeshnidae\tやんま|ヤンマ",
     "aesop\tきんのおの",
     "aesop's\tイソップものがたり|イソップどうわ|イソップぐうわ|いそほものがたり",
     "aesthetic\tびてき|たんびてき|びがくてき|しんびてき|びいしき|がかい|しんび|しんびがん|びてきけんお|びてきせいかつ|たんびは|かんじゃくこたん|じょうそうきょういく|びてきかんかく|びかんちく|にっぽんびようげかがっかい",
@@ -41,7 +30,7 @@ export const PIECE: WordsPiece = {
     "afer\tつちぶた|ツチブタ",
     "affability\tあたり|アタリ|あいそ|あいそう",
     "affable\tあいそのいい|あいそのよい|ひとあたりがいい|ひとあたりがよい|ひとあたりのよい|ひとあたりのいい|あいそがいい|あいそがよい|くだける|おとこはどきょうおんなはあいきょう",
-    "affair\tじけん|さた|こと|アフェア|アフェアー|きょく|ぎ|けん|ことがら|ふりん|いちじょう|うわき|よろめく|ロマン|ローマン|ろうまん|ロマンス|ローマンス|しろもの|シロモノ",
+    "affair\tじけん|さた|こと|アフェア|アフェアー|きょく|ぎ|けん|ことがら|しろもの|いちじょう|よろめく|ロマン|ローマン|ろうまん|ロマンス|ローマンス|シロモノ|じょうじ|いちだいじ",
     "affair event\tいちじょう",
     "affairs\tじぶつ|がいむしょう|ぐんじ|ざいせい|じょうせい|じょうきょう|じたい|じじ|じんじ|そうむ|ようす|がいむ|ゆうせいしょう|じつじょう|ざいむ|じつむ|せわ|ないせい|かじ|こくむ",
     "affairs bureau\tそうむきょく",
@@ -397,7 +386,7 @@ export const PIECE: WordsPiece = {
     "aggregating\tアグリゲート|アグリゲイト",
     "aggregation\tしゅうせい|しゅうけい|まとめ|しゅうぐん|しゅうぞく|アグリゲーション|けっしょうばんぎょうしゅう|しゅうごうフェロモン",
     "aggression\tこうせい|しんりゃく|ひのて|せんそうちょうはつ|アグレション|アグレッション|アグレッシン|こうにち|ぐんじてきしんりゃく|しんりゃくせんそう|ふかしんじょうやく|しんりゃくこうい|ぐんじしんりゃく|どくソふかしんじょうやく|こうにちせんそう",
-    "aggressive\tアグレッシブ|アグレッシヴ|アグレシブ|アグレシヴ|しんりゃくてき|せっきょくかかん|おしのつよい|いなおる|おしうり|ことをかまえる|こわもてだんぱん|ざっしょくけい|じゅどうこうげきせい|こうげきしょうどう",
+    "aggressive\tアグレッシブ|アグレッシヴ|アグレシブ|アグレシヴ|しんりゃくてき|せっきょくかかん|おしのつよい|いなおる|おしうり|ことをかまえる|こわもてだんぱん|じゅどうこうげきせい|こうげきしょうどう",
     "aggressive peddling\tおしうり",
     "aggressively\tそうしょくけい|ゴンぜめ|しょうこんたくましい",
     "aggressiveness\tはなっぱしら|はなっぱり|こうげきせいしん|むこうき|むこうぎ|むこういき|こうげきせい|むこうっき|はなっぱし",
@@ -508,7 +497,6 @@ export const PIECE: WordsPiece = {
     "ahead time\tさきに|あらかじめ",
     "ahead wins\tかちこす",
     "ahead work\tはかどる",
-    "ahegao\tアヘがお",
     "ahem\tえへん|えっへん|エッヘン|エヘン|おほん|おっほん|ゲフンゲフン|げふんげふん",
     "ahimsa\tアヒンサー|アヒムサー|ふせっしょう",
     "ahlquist\tシブリーアールキストちょうるいぶんるい",
@@ -537,8 +525,7 @@ export const PIECE: WordsPiece = {
     "aide powerful\tそっきん",
     "aided\tコンピューターえんようせいさん|コンピューターえんようせっけい|キャド|キャム|キャドキャム|シー・エー・イー|ケース|ケイス|シーエーイー",
     "aiding\tじさつほうじょ|ごうとうほうじょ|ほうじょざい|はんにんいんぴ|さつじんほうじょ",
-    "aids\tエイズ|わらい|エイズ・ウイルス|しちょうかくきき|ふくしきき|エイズワクチン|エイズ・ワクチン|てんぽん|むてんぼん|すほん|そほん|しかくきょうざい|こくさいこうろひょうしききょうかい|エイズウイルス",
-    "aids e\tわらい",
+    "aids\tエイズ|エイズ・ウイルス|しちょうかくきき|ふくしきき|エイズワクチン|エイズ・ワクチン|てんぽん|むてんぼん|すほん|そほん|しかくきょうざい|こくさいこうろひょうしききょうかい|エイズウイルス",
     "aiff\tエー・アイ・エフ・エフ|エーアイエフエフ",
     "aiful\tアイフル",
     "aiguille\tエギーユ",
@@ -567,7 +554,7 @@ export const PIECE: WordsPiece = {
     "aim occupy\tじんとり",
     "aim weapon\tねらう",
     "aimai\tあいまいアクセント",
-    "aimed\tむけ|しょしんしゃむけ|きょうみほんい|イメージビデオ|イメージ・ビデオ|イメージディーブイディー|ふきゅうけいはつ|アイヌしんぽう|あてる|おとながい|キッズページ|キッズ・ページ|デモわり|レディースコミック|レディスコミック|レディース・コミック|レディス・コミック|レディコミ|おとなむけ|がいこくじんむけ",
+    "aimed\tむけ|しょしんしゃむけ|きょうみほんい|イメージビデオ|イメージ・ビデオ|イメージディーブイディー|ふきゅうけいはつ|アイヌしんぽう|あてる|おとながい|キッズページ|キッズ・ページ|デモわり|レディースコミック|レディスコミック|レディース・コミック|レディス・コミック|おとなむけ|がいこくじんむけ",
     "aimed beginners\tしょしんしゃむけ",
     "aiming\tたかのぞみ|しょうじゅんきごう|うけねらい",
     "aimless\tあてのない|まんぜん|やみよにてっぽう|やみよのてっぽう|やみよのつぶて",
@@ -692,5 +679,20 @@ export const PIECE: WordsPiece = {
     "airship\tひこうせん|エアシップ|ゴンドラ|ツェッペリンひこうせん|ツェッペリン|なんしきひこうせん|こうしきひこうせん",
     "airship etc\tゴンドラ",
     "airsick\tエアシックバッグ|エアシック・バッグ",
+    "airsickness\tエアシックネス|こうくうびょう|ひこうきよい",
+    "airsoft\tサバゲ|サバゲー|サバイバルゲーム|サバイバル・ゲーム|エアガン|エアーガン|エア・ガン|エアー・ガン|でんどうガン|ビービーだん|エアソフトガン|エアーソフトガン|エアソフト・ガン|エアーソフト・ガン|ガスガン|ガス・ガン",
+    "airspace\tくういき|くうかん|りょうくう|おかす|くういきかんり|りょうくうしんぱん|こうくう",
+    "airspace etc\tおかす",
+    "airspeed\tたいきそくど",
+    "airstair\tエアステア",
+    "airstrip\tかっそうろ",
+    "airtech\tにほんエアーテックかぶしきがいしゃ",
+    "airtight\tきみつ|レトルト|みっぺい|きみつしつ|みっぺいようき",
+    "airtight vessel\tレトルト",
+    "airtightness\tきみつせい|こうきみつ",
+    "airwaves\tのせる",
+    "airwaves etc\tのせる",
+    "airway\tエアウェイ|エアウエイ|ふうどう|きどうへいそく",
+    "airways\tタイこくさいこうくう|ぜんにっくう|ぜんにっぽんくうゆ|みなみアフリカこうくう|にほんアジアこうくうかぶしきがいしゃ|にっぽんきんきょりこうくう|カンタスこうくう|エバーこうくう|えいこくこうくう",
   ],
 };

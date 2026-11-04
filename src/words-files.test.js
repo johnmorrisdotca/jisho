@@ -48,7 +48,7 @@ describe("the files a default lookup fetches", () => {
 
   it("hold no sense JMdict marks vulgar, derogatory or sensitive, in the row of the word that has it", () => {
     // [the word's reading, the text of the marked sense]. JMdict's marks are its own and are not complete: a sense it has not marked
-    // (クンニ, 口淫) is in the default files and is not a fault of these.
+    // is left out by its gloss (scripts/words-parse.mjs), and the next test holds that.
     const unfit = [
       ["ハーモニカ", "cunnilingus"], // vulgar
       ["しゃくはち", "blow job"],
@@ -66,6 +66,20 @@ describe("the files a default lookup fetches", () => {
       expect(everyDefaultFile, `${reading} ${left}`).not.toMatch(row);
       expect(everyExtraFile, `${reading} ${left}`).toMatch(row);
     }
+  });
+
+  it("hold no sense whose gloss names sex or the sex trade either, though JMdict marks nothing, in the row of the word that has it", () => {
+    for (const [reading, left] of [
+      ["クンニ", "cunnilingus"],
+      ["こういん", "fellatio"],
+      ["ポルノ", "pornography"],
+      ["ばいしゅん", "prostitution"],
+    ]) {
+      const row = new RegExp(`"${reading}\\\\t[^"]*${left}`);
+      expect(everyDefaultFile, `${reading} ${left}`).not.toMatch(row);
+    }
+    for (const left of ["sexual intercourse", "pornography", "prostitution", "ejaculation"])
+      expect(everyExtraFile, left).toContain(left);
   });
 
   it("hold no sense JMdict marks vulgar, derogatory or sensitive in the whole entries either, and keep the plain ones", () => {

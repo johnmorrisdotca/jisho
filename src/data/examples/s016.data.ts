@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 17 of 145, from "0ou6u". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 17 of 144, from "0ous". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,27 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0ou6u\t1¦私は１分違いで列車に乗り遅れた。¦I missed the train by a minute.¦¦3h0c¦¦CK¦違い",
-    "0ou74\t1¦その｜点《てん》では｜私《わたし》は｜君《きみ》と｜意見《いけん》が｜違《ちが》う。¦I differ from you on that point.¦3¦4g6i¦¦orcrist¦違う\t2¦そんなばかなことを｜言《い》うなんて｜彼《あれ》は｜気《き》でも｜違《ちが》ったのか。¦Is he mad that he should say such a foolish thing?¦3¦4dkj¦¦¦違った\t3¦｜君《きみ》は｜違《ちが》う｜方《ほう》にいきますよ。¦You're going the wrong way.¦3¦4sco¦¦CK¦違う",
-    "0ou8s\t1¦｜法律《ほうりつ》が｜多《おお》ければ｜多《おお》いほど、｜違反者《いはんしゃ》も｜多《おお》くなる。¦The more laws, the more offenders.¦2¦1rsh¦¦CM¦違反者",
-    "0ou92\t1¦｜相次《あいつ》ぐ｜不祥事《ふしょうじ》にも｜関《かか》わらず、｜警察《けいさつ》はオメオメ｜違反《いはん》｜切符《きっぷ》を｜切《き》っている。¦Despite their own scandals, the police continue to make arrests as though nothing had happened at all.¦1¦30dq¦¦papabear¦違反",
-    "0ou9c\t1¦あそこに｜駐車《ちゅうしゃ》するのは｜違法《いほう》です。¦It is illegal to park a car there.¦2¦50vd¦bunbuku¦CK¦違法",
-    "0oub0\t1¦これまで｜我《わ》が｜社《しゃ》にそうしたシステムがなかったけど、｜別《べつ》に｜違和感《いわかん》はないよ。¦Our company has never had that kind of system, and it's never made us feel uncomfortable.¦1¦4o8h¦¦CK¦違和感",
-    "0oucy\t1¦それは｜遺憾《いかん》ながら｜本当《ほんとう》だ。¦That, while regrettable, is true.¦1¦4efw¦¦pip¦遺憾",
-    "0oue2\t1¦｜彼《あれ》は｜遺言《ゆいごん》で｜妻《つま》に｜全財産《ぜんざいさん》を｜残《のこ》した。¦He left all his property to his wife in his will.¦1¦2cy4¦¦CK¦遺言",
-    "0ouec\t1¦｜父《ちち》は｜弁護士《べんごし》に｜遺言書《ゆいごんしょ》を｜作成《さくせい》してもらった。¦Father had his lawyer draw up his will.¦1¦1t3s¦Kaede¦CM¦遺言書",
-    "0ouem\t1¦｜事務弁護士《じむべんごし》に｜遺言状《ゆいごんじょう》の｜作成《さくせい》を｜依頼《いらい》した。¦I asked the solicitor to make out my will.¦1¦38be¦¦sundown¦遺言状",
-    "0ougk\t1¦｜彼《あ》の｜遺骨《いこつ》はここに｜埋《う》められている。¦His ashes are buried here.¦1¦2j5h¦¦CK¦遺骨",
-    "0ougu\t1¦この｜部屋《へや》には｜遺恨《いこん》がたくさんありますが、｜好意《こうい》はほとんどありません。¦There is much hatred in this room, and little kindness.¦1¦4prx¦¦¦遺恨",
-    "0ouho\t1¦｜彼《あれ》は｜莫大《ばくだい》な｜遺産《いさん》を｜受《う》け｜継《つ》いだ。¦He inherited a great fortune.¦¦264s¦¦AlanF_US¦遺産",
-    "0oujm\t1¦｜一番《いちばん》｜近《ちか》い｜遺失物取扱所《いしつぶつとりあつかいじょ》はどこですか。¦Where is the nearest lost and found?¦1¦42ou¦bunbuku¦CK¦遺失物",
-    "0oujw\t1¦｜叔父《おじ》は｜去年《きょねん》｜遺書《いしょ》を｜作《つく》った。¦My uncle made a will last year.¦1¦3650¦¦CK¦遺書",
-    "0oul0\t1¦｜新《あたら》しい｜遺跡《いせき》で｜未《ひつじ》｜発掘《はっくつ》はいくつだったのですか。¦How many new sites were uncovered?¦1¦348f¦¦¦遺跡",
-    "0oum4\t1¦｜音楽家《おんがくか》が｜死《し》んで｜遺族《いぞく》は｜貧困《ひんこん》にさらされた。¦The musician left his family poor.¦1¦419b¦¦CaspieChi¦遺族",
-    "0oume\t1¦その｜遺体《いたい》の｜身元《みもと》は｜頬《つら》のほくろで｜確認《かくにん》された。¦The dead body was identified by a mole on the cheek.¦¦4jux¦¦CM¦遺体",
-    "0oun8\t1¦この｜犯罪者《はんざいしゃ》は｜遺伝《いでん》の｜犠牲者《ぎせいしゃ》だ。¦This criminal is a victim of his heredity.¦1¦4pvi¦¦¦遺伝",
-    "0ouoc\t1¦デオキシリボ｜核酸《かくさん》は、｜遺伝子《いでんし》を｜作《つく》っている｜複雑《ふくざつ》な｜化学物質《かがくぶっしつ》である。¦DNA is a complex chemical that makes up a gene.¦1¦4c5d¦¦¦遺伝子",
-    "0oupq\t1¦｜子供《こども》は｜遺伝病《いでんびょう》を｜持《も》っています。¦My baby has a hereditary disease.¦1¦3m20¦¦CK¦遺伝病",
     "0ouss\t1¦｜強盗《ごうとう》は｜遺留品《いりゅうひん》の｜一《ひと》つから｜足《あし》がついた。¦The burglar was traced by one of the things he had left on the scene.¦1¦3v9b¦bunbuku¦CK¦遺留品",
     "0ouu6\t1¦｜金髪《きんぱつ》｜女性《じょせい》が｜精神科医《せいしんかい》と｜会《かい》｜話《はなし》をしている。¦A blonde is speaking to her psychiatrist.¦3¦3ulw¦¦orcrist¦医",
     "0ouuq\t1¦｜手術《しゅじゅつ》は｜医院《いいん》｜内《うち》で｜三十分《さんじゅっぷん》｜以内《いない》に｜完了《かんりょう》します。¦The surgery, performed at our clinic, is over in half an hour.¦¦1lk9¦fcbond¦fcbond¦医院",
@@ -207,5 +186,26 @@ export const PIECE: WordsPiece = {
     "0oyu2\t1¦｜彼《あれ》は｜仕事《しごと》が｜終《お》わるとすぐ｜一直線《いっちょくせん》にパブへ｜向《む》かう。¦As soon as work is over, he makes a beeline for the pub.¦2¦2ab0¦¦CS¦一直線",
     "0oyuc\t1¦｜一通《いっつう》に｜署名《しょめい》の｜上《うえ》ご｜返送《へんそう》ください。¦Please return one set to us with your signature.¦2¦42v2¦¦auxitt¦一通",
     "0oyvq\t1¦｜金利《きんり》｜自由化《じゆうか》の｜方向性《ほうこうせい》を｜一定《いってい》するのはむずかしいことです。¦It is difficult to peg the direction of interest deregulation.¦3¦3ul0¦¦anjin¦一定\t2¦｜国民総生産《こくみんそうせいさん》は｜一定《いってい》の｜期間《きかん》における｜一国《いっこく》の｜財《たから》｜及《およ》びサービスを｜貨幣価値《かへいかち》で｜計《はか》った｜総《ふさ》｜生産高《せいさんだか》である。¦Gross national product is a nation's total output of goods and services during a given period of time as measured in monetary value.¦1¦3phx¦¦¦一定の",
+    "0oywa\t1¦しかし｜一定期間《いっていきかん》がたてば、｜全額《ぜんがく》お｜支払《しはら》いできるようになると｜考《かんが》えております。¦We believe, however, that over a period of time, we will be able to make remittance in full settlement.¦2¦4muu¦¦¦一定期間",
+    "0oywu\t1¦｜乗客《じょうきゃく》は｜一定量《いっていりょう》の｜荷物《にもつ》を｜機内《きない》に｜持《も》ち｜込《こ》むことができる。¦Passengers can take a certain amount of baggage on the airplane.¦2¦34rs¦¦CM¦一定量",
+    "0oyx4\t1¦私が見つけたのは１丁のハサミだけだった。¦I found nothing but a pair of scissors.¦1¦3lg9¦¦CK¦丁",
+    "0oyxe\t1¦｜私《わたし》は｜頭《とう》に｜一滴《いってき》の｜雨《あめ》を｜感《かん》じた。¦I felt a drop of rain on my head.¦2¦3bh3¦¦CK¦一滴",
+    "0oyxo\t1¦｜頑固一徹《がんこいってつ》のボスだと｜思《おも》っていたけれど、｜結構《けっこう》かわいいところもあるじゃない。¦I thought our boss was stubborn as a mule but actually he has his cute side.¦1¦3xpi¦¦al_ex_an_der¦一徹",
+    "0oyzm\t2¦｜我々《われわれ》の｜関心《かんしん》はその｜一点《いってん》に｜集中《しゅうちゅう》する。¦Our interest converges on that point.¦1¦3zr0¦¦auxitt¦一点\t3¦｜試合《しあい》は｜終始《しゅうし》｜一点《いってん》を｜争《あらそ》うシーソーゲームだった。¦The game was one point back and forth the whole game.¦3¦38iy¦¦¦一点",
+    "0oz06\t1¦｜彼女《かのじょ》は｜利己《りこ》｜一点張《いってんば》りの｜女《おんな》だ。¦She puts her own interests above everything else.¦1¦1htvm¦JimBreen¦JimBreen¦一点張り",
+    "0oz38\t1¦１等になるなんて夢にも思わなかった。¦Never did I dream of winning first prize.¦3¦51vl¦mookeee¦Zifre¦１等",
+    "0oz42\t1¦ここは｜一等車《いっとうしゃ》ではありません。¦These are not first-class carriages.¦3¦4t3c¦¦shekitten¦一等車",
+    "0oz4c\t1¦１等賞を得たのはジャネットだった。¦It was Janet that won first prize.¦2¦51vi¦mookeee¦CN¦１等賞",
+    "0oz60\t1¦｜動物園《どうぶつえん》から｜一頭《いっとう》のトラが｜脱走《だっそう》した。¦A tiger has escaped from the zoo.¦1¦2nh6¦bunbuku¦CK¦一頭",
+    "0oz6k\t1¦｜我々《われわれ》｜一同《いちどう》｜恐怖《きょうふ》にさいなまれた。¦We were all assailed with fears.¦1¦3z4f¦¦meidan¦一同",
+    "0oz6u\t1¦これだけまあ、｜多士済済《たしせいせい》の｜人材《じんざい》が｜一堂《いちどう》に｜集《あつ》まったもんだよな。¦Not bad―not bad at all. This is quite a gathering of talent to have under one roof.¦1¦4otd¦¦¦一堂",
+    "0oz88\t1¦これは｜一読《いちどく》に｜値《あたい》する｜本《もと》だ。¦This is a worthwhile book.¦3¦4ole¦¦CK¦一読",
+    "0oz8s\t1¦｜一難去《いちなんさ》ってまた｜一難《いちなん》。¦Out of the frying pan and into the fire.¦3¦42tr¦KK_kaku_¦shekitten¦一難",
+    "0oz9m\t1¦｜年《とし》の｜功《こう》というのか、｜彼《あ》の｜意見《いけん》はさすがに｜一日《いちじつ》の｜長《ちょう》があるね。¦Maybe it's his age but his opinions seem a little more grounded in experience than everyone else's.¦1¦2m0m¦¦papabear¦一日の長",
+    "0oz9w\t2¦｜一日一日《いちにちいちにち》と｜寒《さむ》くなってきた。¦It is getting colder and colder day by day.¦3¦42t1¦¦CK¦一日一日と",
+    "0ozb0\t1¦１日中テニスをしていたのだから。¦He was playing tennis all day.¦5¦51uy¦e4zh1nmcz¦CH¦１日中",
+    "0ozbu\t1¦その｜知《し》らせで｜私達《わたしたち》の｜喜《よろこ》びもひとしおでした。¦The news added to our happiness.¦3¦4gh9¦¦Zifre¦ひとしお",
+    "0ozcy\t1¦｜彼《あれ》は｜東京《とうきょう》に｜一年間《いちねんかん》ずっといます。¦He has been in Tokyo for a year.¦3¦26j5¦bunbuku¦CK¦一年間",
+    "0ozd8\t1¦わたしは｜去年《きょねん》｜一年《いちねん》｜生《うぶ》でした。¦I was a first year student last year.¦4¦4405¦¦CK¦一年生\t3¦なぜ｜一種《いっしゅ》の｜植物《しょくぶつ》が｜一年生《いちねんせい》の｜草本《そうほん》になったり、｜多年生《たねんせい》の｜木本《もくほん》になったりするのでしょうか。¦I wonder why it is that some plants become annuals and others perennials?¦2¦1n14¦¦rul¦一年生",
   ],
 };

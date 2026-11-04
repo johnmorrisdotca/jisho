@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 3 of 318, from "あおぬ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Rows of JMdict that safe mode keeps, by reading, each: reading, written forms joined by "|", flags, then one field for each sense. Piece 3 of 316, from "あおはな". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,24 +9,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "あおぬた\t青饅|青ぬた\t#1ni7g\tfood¦salad of fish and vegetables, dressed with crushed mustard leaves and greens seasoned with sake lees, miso and vinegar",
-    "あおね\t青嶺\t#1mvqu\t¦lush mountain¦green mountain",
-    "あおねぎ\t青ネギ|青ねぎ|青葱\t#1ak68\t¦green spring onion",
-    "あおねろ\t青嶺\t#1mvqu\t¦lush mountain¦green mountain",
-    "あおのく\t仰く|仰のく\tg#qjwi\tdated¦to look up¦to face upwards¦to turn one's face upwards",
-    "あおのける\t仰ける|仰のける\ti#qjws\tdated¦to turn up (e.g. one's face)¦to lay (something) on its back¦to tilt (one's head) back",
-    "あおのつがざくら\t青の栂桜\tU#1omu5\tuk¦Aleutian mountainheath (Phyllodoce aleutica)",
-    "アオノツガザクラ\t\tU#1omu5\tuk¦Aleutian mountainheath (Phyllodoce aleutica)",
-    "アオノメハタ\t\t#1iaug\t¦peacock grouper (Cephalopholis argus)",
-    "あおのり\t青のり|青海苔\t#11ig4\t¦green laver (Enteromorpha)¦green dried seaweed¦nori",
-    "あおはあいよりいでてあいよりあおし\t青は藍より出でて藍より青し\t#19vzy\tproverb¦the student has become the master",
-    "あおはいいろ\t青灰色\t#1phcn\t¦grayish blue¦greyish blue¦ash grey",
-    "あおはしこう\t青嘴鸛\t#1oo7o\t¦Abdim's stork (Ciconia abdimii)¦white-bellied stork",
-    "アオハシコウ\t\t#1oo7o\t¦Abdim's stork (Ciconia abdimii)¦white-bellied stork",
-    "アオハタ\t\tU#1ph3g\tuk¦yellow grouper (Epinephelus awoara)¦banded grouper",
-    "あおはた\t青羽太\tU#1ph3g\tuk¦yellow grouper (Epinephelus awoara)¦banded grouper",
-    "あおはだ\t青肌|青膚\tU#18azq\tuk¦Ilex macropoda (species of holly)",
-    "アオハダ\t\tU#18azq\tuk¦Ilex macropoda (species of holly)",
     "アオハナホソオオトカゲ\t\t#1isee\t¦canopy goanna (Varanus keithhornei)¦blue-nosed goanna¦Nesbit River monitor",
     "アオハル\t\t#1pc8w\tsl¦youth¦adolescence",
     "あおはる\t\t#1pc8w\tsl¦youth¦adolescence",
@@ -217,7 +199,6 @@ export const PIECE: WordsPiece = {
     "あかおび\t赤帯|紅帯\t#1p4vc\t¦red sash\tMA¦red belt",
     "あかかえでのり\t赤かえでのり\t#1k7pm\t¦red carrageen (Chondrus crispus)¦red carragheen¦red Irish moss",
     "あかかがち\t赤酸漿\t#1c3ls\tarch¦winter cherry (Physalis alkekengi)",
-    "あかかき\t垢かき|垢掻き|垢掻\t#1jjg0\thist¦female assistant who scrubbed customers at public baths and also offered sexual services (Edo period)",
     "あかかざりふうちょう\t赤飾風鳥\tU#1mzck\tuk¦Raggiana bird-of-paradise (Paradisaea raggiana)¦Count Raggi's bird-of-paradise",
     "アカカザリフウチョウ\t\tU#1mzck\tuk¦Raggiana bird-of-paradise (Paradisaea raggiana)¦Count Raggi's bird-of-paradise",
     "あかかびびょう\t赤かび病|赤黴病\t#1nw36\tmed¦Fusarium ear blight¦Fusarium head blight¦scab",
@@ -759,5 +740,25 @@ export const PIECE: WordsPiece = {
     "あきしつ\t空き室\t#1p80g\t¦vacant room¦vacancy¦unoccupied room",
     "あきしも\t秋霜\t#1162k\t¦autumn frost¦fall frost",
     "アキシャル\t\t#1osjh\t¦axial",
+    "アキシャルオフセット\t\t#1a7c0\t¦axial offset",
+    "アキシャル・オフセット\t\t#1a7c0\t¦axial offset",
+    "あきしょ\t明所|空所\t#1owpa\tarch¦empty place¦unoccupied space",
+    "あきしょう\t飽き性|厭き性\t#p6z4\t¦fickle nature¦flighty temperament¦inconstant person",
+    "あきじかん\t空き時間\t#zx4s\t¦free time¦spare time",
+    "あきじょうきょう\t空き状況\t#1p75f\t¦availability (of rooms, parking, appointments, etc.)",
+    "あきす\t空き巣|空巣|明き巣\tC~mt34#xzxo\t¦empty nest\t¦empty house¦empty home\tabbr¦burglary (of an empty house)¦burglar (who targets empty houses)¦sneak thief",
+    "あきすずし\t秋涼し\t#1jovk\tarch¦pleasantly cool (as in the arrival of autumn)",
+    "あきすだれ\t秋簾\t#1jo9w\trare¦bamboo screen still in place in autumn",
+    "あきすねらい\t空き巣狙い|空き巣ねらい|空巣狙い\t#qowi\t¦burglary (of an empty house)¦burglar (who targets empty houses)¦sneak thief",
+    "あきすひがい\t空き巣被害\t#1on5g\t¦burglary (carried out while a house is temporarily vacated)",
+    "あきずしま\t秋津島|秋津洲|蜻蛉島|蜻蛉洲\t#1160w\tarch¦Japan\tarch¦Yamato Province",
+    "あきぜみ\t秋蝉\t#1nhp4\t¦cicadas that sing when autumn comes",
+    "あきぞら\t秋空\t#1j438\t¦autumn sky¦clear blue autumnal sky",
+    "あきた\t秋田\t#1ozb4\t¦Akita (city, prefecture)",
+    "あきたいぬ\t秋田犬\t#zndo\t¦Akita (dog breed)",
+    "あきたかんごふくしだいがく\t秋田看護福祉大学\t#3f398\torganization¦Akita University of Nursing and Welfare",
+    "あきたかんとうまつり\t秋田竿燈まつり|秋田竿燈祭り|秋田竿灯祭り\t#18zv0\t¦Akita Kantō Festival (3-6 August)",
+    "あきたがい\t秋田貝\tU#1gex6\tuk¦Japanese scallop (Patinopecten yessoensis)",
+    "アキタガイ\t\tU#1gex6\tuk¦Japanese scallop (Patinopecten yessoensis)",
   ],
 };

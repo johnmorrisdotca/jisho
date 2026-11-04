@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 18 of 145, from "0oyw". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 18 of 144, from "0ozds". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,27 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0oywa\t1¦しかし｜一定期間《いっていきかん》がたてば、｜全額《ぜんがく》お｜支払《しはら》いできるようになると｜考《かんが》えております。¦We believe, however, that over a period of time, we will be able to make remittance in full settlement.¦2¦4muu¦¦¦一定期間",
-    "0oywu\t1¦｜乗客《じょうきゃく》は｜一定量《いっていりょう》の｜荷物《にもつ》を｜機内《きない》に｜持《も》ち｜込《こ》むことができる。¦Passengers can take a certain amount of baggage on the airplane.¦2¦34rs¦¦CM¦一定量",
-    "0oyx4\t1¦私が見つけたのは１丁のハサミだけだった。¦I found nothing but a pair of scissors.¦1¦3lg9¦¦CK¦丁",
-    "0oyxe\t1¦｜私《わたし》は｜頭《とう》に｜一滴《いってき》の｜雨《あめ》を｜感《かん》じた。¦I felt a drop of rain on my head.¦2¦3bh3¦¦CK¦一滴",
-    "0oyxo\t1¦｜頑固一徹《がんこいってつ》のボスだと｜思《おも》っていたけれど、｜結構《けっこう》かわいいところもあるじゃない。¦I thought our boss was stubborn as a mule but actually he has his cute side.¦1¦3xpi¦¦al_ex_an_der¦一徹",
-    "0oyzm\t2¦｜我々《われわれ》の｜関心《かんしん》はその｜一点《いってん》に｜集中《しゅうちゅう》する。¦Our interest converges on that point.¦1¦3zr0¦¦auxitt¦一点\t3¦｜試合《しあい》は｜終始《しゅうし》｜一点《いってん》を｜争《あらそ》うシーソーゲームだった。¦The game was one point back and forth the whole game.¦3¦38iy¦¦¦一点",
-    "0oz06\t1¦｜彼女《かのじょ》は｜利己《りこ》｜一点張《いってんば》りの｜女《おんな》だ。¦She puts her own interests above everything else.¦1¦1htvm¦JimBreen¦JimBreen¦一点張り",
-    "0oz38\t1¦１等になるなんて夢にも思わなかった。¦Never did I dream of winning first prize.¦3¦51vl¦mookeee¦Zifre¦１等",
-    "0oz42\t1¦ここは｜一等車《いっとうしゃ》ではありません。¦These are not first-class carriages.¦3¦4t3c¦¦shekitten¦一等車",
-    "0oz4c\t1¦１等賞を得たのはジャネットだった。¦It was Janet that won first prize.¦2¦51vi¦mookeee¦CN¦１等賞",
-    "0oz60\t1¦｜動物園《どうぶつえん》から｜一頭《いっとう》のトラが｜脱走《だっそう》した。¦A tiger has escaped from the zoo.¦1¦2nh6¦bunbuku¦CK¦一頭",
-    "0oz6k\t1¦｜我々《われわれ》｜一同《いちどう》｜恐怖《きょうふ》にさいなまれた。¦We were all assailed with fears.¦1¦3z4f¦¦meidan¦一同",
-    "0oz6u\t1¦これだけまあ、｜多士済済《たしせいせい》の｜人材《じんざい》が｜一堂《いちどう》に｜集《あつ》まったもんだよな。¦Not bad―not bad at all. This is quite a gathering of talent to have under one roof.¦1¦4otd¦¦¦一堂",
-    "0oz88\t1¦これは｜一読《いちどく》に｜値《あたい》する｜本《もと》だ。¦This is a worthwhile book.¦3¦4ole¦¦CK¦一読",
-    "0oz8s\t1¦｜一難去《いちなんさ》ってまた｜一難《いちなん》。¦Out of the frying pan and into the fire.¦3¦42tr¦KK_kaku_¦shekitten¦一難",
-    "0oz9m\t1¦｜年《とし》の｜功《こう》というのか、｜彼《あ》の｜意見《いけん》はさすがに｜一日《いちじつ》の｜長《ちょう》があるね。¦Maybe it's his age but his opinions seem a little more grounded in experience than everyone else's.¦1¦2m0m¦¦papabear¦一日の長",
-    "0oz9w\t2¦｜一日一日《いちにちいちにち》と｜寒《さむ》くなってきた。¦It is getting colder and colder day by day.¦3¦42t1¦¦CK¦一日一日と",
-    "0ozb0\t1¦１日中テニスをしていたのだから。¦He was playing tennis all day.¦5¦51uy¦e4zh1nmcz¦CH¦１日中",
-    "0ozbu\t1¦その｜知《し》らせで｜私達《わたしたち》の｜喜《よろこ》びもひとしおでした。¦The news added to our happiness.¦3¦4gh9¦¦Zifre¦ひとしお",
-    "0ozcy\t1¦｜彼《あれ》は｜東京《とうきょう》に｜一年間《いちねんかん》ずっといます。¦He has been in Tokyo for a year.¦3¦26j5¦bunbuku¦CK¦一年間",
-    "0ozd8\t1¦わたしは｜去年《きょねん》｜一年《いちねん》｜生《うぶ》でした。¦I was a first year student last year.¦4¦4405¦¦CK¦一年生\t3¦なぜ｜一種《いっしゅ》の｜植物《しょくぶつ》が｜一年生《いちねんせい》の｜草本《そうほん》になったり、｜多年生《たねんせい》の｜木本《もくほん》になったりするのでしょうか。¦I wonder why it is that some plants become annuals and others perennials?¦2¦1n14¦¦rul¦一年生",
     "0ozds\t1¦その｜島《しま》は｜一年中《いちねんじゅう》あたたかい。¦The island is warm all year.¦2¦4g3l¦bunbuku¦CK¦一年中",
     "0ozf6\t1¦｜小説《しょうせつ》の｜新《あたら》しい｜一派《いっぱ》が｜起《お》こった。¦A new school of fiction has grown up.¦1¦35dq¦¦¦一派",
     "0ozfq\t1¦コップ１杯の水をください。¦Give me a glass of water, please.¦3¦4sxl¦mookeee¦CK¦１杯\t2¦仕事の後で、一杯どう？¦How about going out for a drink after work?¦3¦3mi7¦small_snow¦CK¦一杯\t3¦｜列車《れっしゃ》は｜乗客《じょうきゃく》でいっぱいだった。¦The train was full of passengers.¦3¦1nsd¦mookeee¦CK¦いっぱい\t4¦このボトルに｜水《みず》をいっぱい｜入《い》れてください。¦Please fill this bottle with water.¦5¦4s6e¦small_snow¦CK¦いっぱい\t5¦｜彼女《かのじょ》は｜香港《ほんこん》に｜友人《ゆうじん》がいっぱいいる。¦She has many friends in Hong Kong.¦2¦1xis¦¦CK¦いっぱい\t6¦たとえ｜一日《いちにち》いっぱい｜掛《か》かってもそのタイプを｜仕上《しあ》げます。¦Even if it takes me the whole day, I will do the typing.¦3¦1ny8¦¦CC¦いっぱい",
@@ -194,11 +173,34 @@ export const PIECE: WordsPiece = {
     "0p2rg\t1¦この｜水《みず》は、｜飲用《いんよう》に｜適《てき》している。¦This water is good to drink.¦3¦4qi9¦¦CK¦飲用",
     "0p2rq\t1¦この｜飲料《いんりょう》に｜含《ふく》まれている｜成分《せいぶん》には｜有害《ゆうがい》なものがある。とりわけ｜妊娠《にんしん》｜中《なか》の｜人《ひと》に。¦Some of the ingredients in this beverage are harmful, especially if you are pregnant.¦¦4s0t¦¦hecko¦飲料",
     "0p2s0\t1¦緊急時の飲料水の確保は、大丈夫ですか？¦Are you OK for drinking water in an emergency?¦¦1mcg¦bunbuku¦¦飲料水",
-    "0p2sa\t1¦｜彼《あれ》は｜淫《みだ》らな｜生活《せいかつ》から｜足《あし》を｜洗《あら》った。¦He was converted from his licentious living.¦¦2cqx¦¦¦淫らな",
     "0p2x0\t1¦その｜会社《かいしゃ》では、｜会長《かいちょう》が｜院政《いんせい》を｜敷《し》いていて、｜社長《しゃちょう》はお｜飾《かざ》りにすぎない。¦The \"retired\" president of that company runs the whole show from behind the scenes, so the current president is nothing but a figurehead.¦1¦4jh3¦mookeee¦¦院政",
     "0p2zs\t1¦その｜家《いえ》は｜見《み》かけがたいへん｜陰気《いんき》だった。¦The house looked very dismal.¦1¦4jnd¦¦CM¦陰気",
     "0p316\t1¦｜彼《あれ》は｜表面上《ひょうめんじょう》は｜陰険《いんけん》そうに｜見《み》える。¦He appears sly on the surface.¦1¦25mu¦¦¦陰険",
     "0p31g\t1¦だれか｜人《じん》に、｜言《い》い｜分《ぶん》があったら、｜陰口《かげぐち》をいわないで、その｜人《ひと》に｜面《めん》と｜向《む》かっていいなさい。¦If you have a bone to pick with a person, tell it to his face instead of saying things behind his back.¦¦4cs6¦¦AlanF_US¦陰口",
     "0p320\t1¦｜中学《ちゅうがく》・｜高校《こうこう》では｜陰湿《いんしつ》ないじめが｜増《ふ》える｜傾向《けいこう》にあるという。¦In junior high and high schools, they say insidious forms of bullying are on the rise.¦1¦2pmg¦KK_kaku_¦¦陰湿な",
+    "0p32k\t1¦ツベルクリン｜反応《はんのう》は｜陰性《いんせい》でした。¦The result of the tuberculin test was negative.¦1¦4cap¦small_snow¦AlanF_US¦陰性",
+    "0p348\t1¦｜陰徳《いんとく》あれば｜陽報《ようほう》あり。¦Secret gifts are openly rewarded.¦1¦42jx¦¦gin¦陰徳",
+    "0p35m\t1¦うちの｜前《さき》のやせ｜犬《いぬ》・｜陰弁慶《かげべんけい》。¦Every dog is a lion at home.¦1¦4w2g¦¦shekitten¦陰弁慶",
+    "0p35w\t1¦｜私《わたし》は｜彼《かれ》らの｜陰謀《いんぼう》をすぐに｜見抜《みぬ》いた。¦I saw through their plot at once.¦1¦3al9¦¦¦陰謀",
+    "0p37a\t1¦｜雨《あめ》が｜降《ふ》って、その｜秋《あき》の｜日《ひ》を｜陰《いん》うつにした。¦The rain made the autumn day dismal.¦1¦42fv¦¦sundown¦陰うつ",
+    "0p38y\t1¦｜彼《あれ》は｜僕《ぼく》に｜何《なに》か｜隠《かく》し｜事《ごと》をしてるに｜違《ちが》いない。¦I'm sure he is keeping something from me.¦1¦254k¦¦CM¦隠し事",
+    "0p39s\t1¦なぜ｜君《きみ》はそんなに｜隠《かく》し｜立《だ》てするのか。¦Why are you being so secretive?¦1¦49p7¦¦CK¦隠し立て",
+    "0p3a2\t1¦｜私《わたし》は｜母《はは》がケーキを｜隠《かく》すのを｜見《み》た。¦I saw my mother hide the cake.¦1¦39yi¦bunbuku¦CK¦隠す",
+    "0p3ac\t1¦｜子《こ》どもは｜箱《はこ》の｜中《うち》に｜隠《かく》れていた。¦The child was hiding in the box.¦1¦3mag¦small_snow¦CK¦隠れていた\t2¦｜太陽《たいよう》が｜雲《くも》のかげに｜隠《かく》れた。¦The sun disappeared behind a cloud.¦1¦2ymg¦¦CK¦隠れた",
+    "0p3aw\t1¦その｜倉庫《そうこ》は｜麻薬密売《まやくみつばい》｜者《もの》の｜隠《かく》れみのだった。¦The warehouse was a front for drug traffickers.¦1¦4grs¦bunbuku¦CM¦隠れみの",
+    "0p3ck\t1¦｜隠者《いんじゃ》は｜木造《もくぞう》の｜小屋《こや》に｜住《す》んでいた。¦The hermit lived in a wooden hut.¦1¦42ju¦¦CK¦隠者",
+    "0p3fm\t1¦これまた｜政府《せいふ》の｜隠《いん》ぺい｜策《さく》のようです。¦This looks like another government cover-up.¦1¦4o94¦mookeee¦¦隠ぺい",
+    "0p3hk\t1¦「｜怒《おこ》ると｜彼《あれ》はトラになる」というのは｜隠喩《いんゆ》の｜例《れい》である。¦\"He's a tiger when he's angry\" is an example of metaphor.¦¦529i¦mookeee¦CM¦隠喩",
+    "0p3j8\t1¦｜彼《あれ》はいくつかの｜戯曲《ぎきょく》を｜韻文《いんぶん》で｜書《か》いた。¦He wrote several plays in verse.¦1¦2ghq¦¦¦韻文",
+    "0p3ji\t1¦｜言葉《ことば》による｜詩《うた》とは、｜要約《ようやく》して｜言《い》えば、｜韻律《いんりつ》｜的《てき》｜美《び》の｜創造《そうぞう》であるとしたい。¦I would define, in brief, the poetry of words as the Rhythmical Creation of Beauty.¦¦3qsv¦¦¦韻律",
+    "0p3k2\t1¦２つ目の角を右に曲がりなさい。¦Turn right at the second corner.¦2¦51qk¦e4zh1nmcz¦CK¦右",
+    "0p3n4\t1¦｜右手《みぎて》がしびれます。¦My right hand is numb.¦4¦42j8¦bunbuku¦CK¦右手",
+    "0p3no\t1¦｜右上《みぎうえ》の｜親知《おやし》らずが｜痛《いた》みます。¦My upper right wisdom tooth hurts.¦3¦42j4¦bunbuku¦CK¦右上",
+    "0p3ny\t1¦｜右折《うせつ》しなさい、そうすれば｜私《わたし》の｜事務所《じむしょ》が｜見《み》つかります。¦Turn to the right, and you'll find my office.¦3¦42j3¦¦al_ex_an_der¦右折",
+    "0p3oi\t1¦｜本日《ほんじつ》｜乗馬《じょうば》｜後《あと》、｜馬《うま》の｜手入《てい》れをしている｜時《とき》にうっかり｜右足《みぎあし》を｜踏《ふ》まれた。¦Today, after riding, while grooming the horse I carelessly got my right foot trod on.¦1¦1mev¦mookeee¦¦右足\t2¦｜私《わたし》はその｜事《こと》｜故《ゆえ》で｜右足《みぎあし》を｜負傷《ふしょう》した。¦I got my right leg hurt in the accident.¦1¦3fjd¦bunbuku¦CK¦右足",
+    "0p3qq\t1¦２年前に右目を失明しました。¦I lost the eyesight in my right eye two years ago.¦3¦51n4¦e4zh1nmcz¦CM¦右目",
+    "0p3ru\t1¦｜右腕《みぎうで》を｜骨折《こっせつ》したようです。¦I think my right arm is broken.¦2¦42ir¦¦CK¦右腕",
+    "0p3s4\t1¦｜宇宙《うちゅう》には｜限《き》りはない。¦There is no limit to the universe.¦1¦42il¦¦CK¦宇宙",
+    "0p3t8\t1¦｜地球《ちきゅう》は｜宇宙空間《うちゅうくうかん》に｜漂《ただよ》う｜球体《きゅうたい》にすぎない。¦The earth is just a sphere suspended in space.¦1¦2pz0¦¦U2FS¦宇宙空間",
   ],
 };

@@ -1,7 +1,7 @@
 import type { EntryManifest } from "../../words.types.ts";
 
 /**
- * Where the pieces of the example sentences are: the first number of each, and how to fetch it. 145 pieces. Written by `scripts/build-examples.mjs`, never edited by hand.
+ * Where the pieces of the example sentences are: the first number of each, and how to fetch it. 144 pieces. Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -12,7 +12,7 @@ export const EXAMPLE_MANIFEST: EntryManifest = {
   source: "JMdict_e_examp and Tatoeba",
   release: "2026-11-03",
   entries: {
-    starts: ["", "0li9", "0lkww", "0ln", "0lqg", "0m38", "0mdk", "0mo9k", "0my7", "0n3z", "0ng6", "0noj", "0nye", "0o84", "0oj0c", "0oq", "0ou6u", "0oyw", "0p32k", "0p8l", "0pdzm", "0pk3", "0pow", "0pslq", "0pvt", "0q0r", "0q4o", "0q7z", "0qc5", "0qhr", "0qmc", "0qri", "0qvrg", "0qzls", "0r36e", "0r7t", "0rcl", "0rgkc", "0rl5", "0rpo", "0ru4", "0rzd", "0s33q", "0s74g", "0sax", "0sfkw", "0si8", "0smim", "0srve", "0sw7", "0szfm", "0t3hq", "0t6w", "0ta2", "0tevq", "0tia", "0tm9", "0tqfk", "0tv", "0u0b", "0u3v", "0u82", "0ubt", "0ufms", "0uk6o", "0uo4", "0urrg", "0uwm", "0v1lm", "0v58", "0v9y", "0vfg", "0vjim", "0vo6", "0vsvk", "0vxp", "0w2c", "0w6r", "0wbvq", "0wgum", "0wkty", "0wq6", "0wue", "0wy9k", "0x3ae", "0x7h", "0xb6", "0xfv", "0xm4", "0xse", "0xw5a", "0xzv", "0y2o", "0y5om", "0y8xu", "0ybn", "0yefc", "0yihq", "0ylm", "0ywp", "0z1r", "0zaz", "0zky", "100h", "10it", "10zw", "11ho", "11y7", "12hi", "12z2", "13i6", "13st", "14ha", "153b", "15hd", "15ob", "15y6", "16l3", "16y9k", "171yw", "174nk", "179fs", "17hoq", "1834o", "18fm", "18lx", "18r9", "192s", "19fdm", "19oq", "19yo", "1ajdw", "1b6c", "1bel", "1bnuk", "1ca6", "1cgw", "1fclg", "1fhwu", "1gi3", "1jt", "1nip", "1or33", "1p16", "1peb"],
+    starts: ["", "0li9c", "0lkx", "0ln", "0lqg", "0m3h", "0mdr", "0mol", "0myg", "0n49o", "0ngk", "0np", "0nz", "0o8o", "0ojq", "0oq6o", "0ous", "0ozds", "0p3ts", "0p94w", "0peug", "0pkku", "0pp8", "0pt2", "0pwas", "0q14", "0q51i", "0q86u", "0qcm", "0qi7y", "0qmse", "0qsp", "0qw5", "0qzze", "0r3oq", "0r8i", "0rdge", "0rh6", "0rm8s", "0rqi", "0ruud", "0s02", "0s3j", "0s7n", "0sbfq", "0sfum", "0siuy", "0snmw", "0sse", "0swtq", "0szl", "0t48", "0t7g", "0tb5", "0tflu", "0tju", "0tno", "0tsf", "0twtk", "0u1eu", "0u57", "0u95", "0ucwg", "0ugky", "0ulhm", "0uple", "0ut0q", "0uyb", "0v2n", "0v6n", "0vc2u", "0vgq", "0vkr", "0vq5", "0vu2w", "0vz5", "0w3w", "0w8v", "0wef", "0wi7s", "0wmw", "0ws7", "0wvl", "0wzlm", "0x4zi", "0x91m", "0xcws", "0xhj", "0xpe", "0xu8o", "0xxiq", "0y1", "0y3qw", "0y7ae", "0ya6k", "0ycy", "0yft", "0yjo", "0yquu", "0yzc", "0z64", "0zge", "0zqnq", "108v", "10pr", "117u", "11p", "1284", "12p2k", "1388", "13nh", "143r", "14qv", "15df", "15kd", "15s5q", "16gi", "16ty", "170s", "173ls", "1775", "17gpq", "17onk", "18bc", "18kf", "18nz", "18yh", "1972", "19jn", "19tk", "1a4y", "1awf", "1bbk", "1bk8u", "1c1", "1cdzy", "1cr1", "1ffw", "1fl1w", "1its", "1mi", "1olu", "1owxl", "1p8wp"],
     load: [
       () => import("./s000.data.ts").then((one) => one.PIECE),
       () => import("./s001.data.ts").then((one) => one.PIECE),
@@ -158,7 +158,6 @@ export const EXAMPLE_MANIFEST: EntryManifest = {
       () => import("./s141.data.ts").then((one) => one.PIECE),
       () => import("./s142.data.ts").then((one) => one.PIECE),
       () => import("./s143.data.ts").then((one) => one.PIECE),
-      () => import("./s144.data.ts").then((one) => one.PIECE),
     ],
   },
 };

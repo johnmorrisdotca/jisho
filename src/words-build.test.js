@@ -16,6 +16,7 @@ import {
   releaseOf,
   rowsOfDictionary,
   rowsOfEntry,
+  unfitSense,
 } from "../scripts/words-parse.mjs";
 import {
   indexesOf,
@@ -512,5 +513,47 @@ describe("the indexes by meaning and by kanji", () => {
       expect(termsOf(text), text).toEqual(tsTermsOf(text));
       expect(termsInOrder(text), text).toEqual(tsTermsInOrder(text));
     }
+  });
+});
+
+describe("a sense is left out in safe mode for a mark or for a gloss that names sex or the sex trade", () => {
+  const body = (misc, ...glosses) => sense(["n"], misc, glosses);
+  const unfit = (misc, ...glosses) => unfitSense(misc, body(misc, ...glosses));
+
+  it("leaves out a marked sense, and a sense whose gloss names sex or the sex trade though JMdict marks nothing", () => {
+    for (const mark of ["vulg", "X", "sens", "derog"]) expect(unfit([mark], "a"), mark).toBe(true);
+    for (const gloss of ["sexual intercourse", "prostitution", "pornography", "rape", "penis", "adultery", "erotic"])
+      expect(unfit([], gloss), gloss).toBe(true);
+    expect(unfit([], "plain", "a lewd joke")).toBe(true);
+  });
+
+  it("reads every gloss of the sense, those a row does not show too", () => {
+    expect(unfit([], "one", "two", "three", "four", "sexual intercourse")).toBe(true);
+    expect(unfit(["g_type"], `<gloss g_type="lit">sex</gloss>`)).toBe(true);
+  });
+
+  it("keeps what only looks like it: rapeseed, sperm whales, social intercourse, the mistress of a house", () => {
+    for (const gloss of [
+      "rapeseed",
+      "sperm whale",
+      "dwarf sperm whale (Kogia sima)",
+      "social intercourse",
+      "mistress (of the house)",
+      "mistress of a household",
+      "spermaceti",
+    ])
+      expect(unfit([], gloss), gloss).toBe(false);
+    expect(unfit(["col"], "paper")).toBe(false);
+  });
+
+  it("leaves it out of the row safe mode has, and the row of a word with nothing else is none", () => {
+    const rows = rowsOfEntry(
+      entry(`<k_ele><keb>倅</keb></k_ele><r_ele><reb>せがれ</reb></r_ele>${body([], "my son")}${body([], "penis")}`),
+    );
+    expect(rows[0].senses).toHaveLength(2);
+    expect(rows[0].clean.senses.map((one) => one.glosses[0])).toEqual(["my son"]);
+    const only = rowsOfEntry(entry(`<r_ele><reb>ほるの</reb></r_ele>${body([], "pornography")}`));
+    expect(only[0].clean).toBeNull();
+    expect(packClean(only[0])).toBeNull();
   });
 });

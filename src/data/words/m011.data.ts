@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 12 of 172, from "arrive ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 12 of 172, from "arrow ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,27 +9,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "arrive car\tのりつける",
-    "arrive certain\tとげる",
-    "arrive e\tいたる",
-    "arrive no\tひっちゃく",
-    "arrive present\tやってくる",
-    "arrive season\tおとずれる",
-    "arrived\tしんにゅう|しんちゃく|みちゃく|しんらい|きんちゃく",
-    "arrives\tよこす|いなおおせどり",
-    "arrives received\tよこす",
-    "arriving\tちゃく|せんちゃく|とびこみ|にゅうこう|ちこく|きちゃく|くろふね|とうきょうちゃく|ばっぱい|どうちゃく|みやこいり|ちゃくはつ|ちゃくべい|じゅうやくしゅっきん|ちそうじかん|しゅうちゃく|らいとう|げんざいにいたる|ばっしゅ|ちゃくじん",
-    "arriving first\tせんちゃく",
-    "arriving harbor\tにゅうこう",
-    "arriving home\tきちゃく",
-    "arriving late\tちこく",
-    "arriving unannounced\tとびこみ",
-    "arriving west\tくろふね",
-    "arrogance\tぼうじゃくぶじん|ごうがんぶれい|きょうまん|おごり|ごうがんふそん|ごうまんぶれい",
-    "arrogant\tおうへい|おごる|こうまん|のほうず|ごうまん|ほこらしい|おうふう|こうまんちき|ひとをくった|いたか|とのさま|ぞうちょう|えいようえいが|えようえいが|そんだいふそん|ふうきえいが|あごでつかう|ひともなげ|あごでひとをつかう|おおへい",
-    "arrogant man\tとのさま",
-    "arrogantly\tとらのいをかるきつね|おごりたかぶる",
-    "arrow\tや|アロー|やじるし|そや|さ|やさき|はなつ|むく|やおもて|いる|いっし|ちょうど|はざま|ゆみや|きゅうし|はず|それや|とおや|こういんやのごとし|にのや",
     "arrow bolt\tいる",
     "arrow compass\tむく",
     "arrow fired\tやおもて",
@@ -301,8 +280,7 @@ export const PIECE: WordsPiece = {
     "asellus hilgendorfi\tみずむし",
     "asepsis\tむきんほう",
     "aseptic\tむきんせい|むきんせいずいまくえん",
-    "asexual\tアセックス|アセクシャル|アセクシュアル|むせいせいしょく|むせいはんしょく|かんせいでんせつ|むせいせだい",
-    "asexuality\tむせいあい",
+    "asexual\tアセックス|むせいせいしょく|むせいはんしょく|かんせいでんせつ|むせいせだい",
     "asfur\tアラビアンエンジェルフィッシュ|アラビアン・エンジェルフィッシュ|アズファーエンジェル",
     "ash\tはい|かいぶん|かいじん|アッシュ|かざんばい|ふる|はいのすいようび|はいおさえ|はいおし|はいならし|はいうけ|はいふき|はいおとし|はいふるい|こっかい|こっぱい|こつばい|めつぶし|じゅうかい|とねりこ",
     "ash etc\tふる",
@@ -456,9 +434,8 @@ export const PIECE: WordsPiece = {
     "assassinate\tアサシネイト|だいぎゃくじけん|たいぎゃくじけん",
     "assassinating\tむへん|ぼうへん",
     "assassination\tあんさつ|あんさつじけん|ひときり|アサシネイション|アサシネーション|あんさつみすい|あんさつをはかる|せいじてきあんさつ|とらのもんじけん|ケネディだいとうりょうあんさつじけん|あいざわじけん|ケネディあんさつ|ごいちごじけん",
-    "assault\tぼうこう|しゅうげき|きょうしゅう|こうげき|せめる|らんぼう|なぐりこみ|きゅうしゅう|かがい|アサルト|おそう|ふじょぼうこう|アタック|レイプ|ひさん|ごうかん|きりとり|きりどり|きりかかる|とくしゅきゅうしゅうぶたい",
+    "assault\tぼうこう|しゅうげき|きょうしゅう|こうげき|せめる|らんぼう|なぐりこみ|きゅうしゅう|かがい|アサルト|おそう|アタック|ひさん|きりとり|きりどり|きりかかる|とくしゅきゅうしゅうぶたい|きょうせいわいせつざい|とつげきほう|アサルトライフル",
     "assault summit\tアタック",
-    "assault woman\tふじょぼうこう",
     "assay\tしけんほう|しきん|エライザほう",
     "assaying\tぶんせきしけん|しきんせき",
     "assaying tool\tしきんせき",
@@ -537,7 +514,7 @@ export const PIECE: WordsPiece = {
     "assistant official\tじょやく",
     "assistant professor\tじょきょうじゅ|じょしゅ",
     "assisted\tせいしょくほじょぎじゅつ|シー・エー・アイ|せいしょくいりょう|せいしょくほじょいりょう|アート|でんどうアシストじてんしゃ|アール・ティー・エー|ガスファンヒーター|ガス・ファン・ヒーター|ふんしんだん|いしじさつほうじょ|シーエーアイ|アールティーエー",
-    "assisting\tじょせい|じりつ|ばんそう|ないじょのこう|ちょうだい|まちだい|シコリティ|とうみつ",
+    "assisting\tじょせい|じりつ|ばんそう|ないじょのこう|ちょうだい|まちだい|とうみつ",
     "assistive\tふくしきき|パワーアシストスーツ|パワー・アシスト・スーツ|アシストスーツ|アシスト・スーツ",
     "assists\tすいじぶ",
     "assize\tりっぽうふ",
@@ -603,5 +580,22 @@ export const PIECE: WordsPiece = {
     "asteraceae\tキクか|きくか|もみじがさ|モミジガサ",
     "asterisk\tほし|スター|アスタリスク|アステリ|アスター|アステリスク|ふせじ",
     "asterism\tアステリズム|せいぐん|せいさい|せいれつ|サザンクロス|サザン・クロス|しちせい|しちしょう|みなみじゅうじせい|ほくとしちせい|ほくとせい|みなみじゅうじ|ななつぼし|ななつのほし|ほくと|しちようせい|しそうのほし|きたじゅうじせい|なつのだいさんかく|ふゆのだいさんかく",
+    "asterism formed\tサザンクロス|サザン・クロス",
+    "asteroid\tしょうわくせい|アステロイド|たい|エロス|エロース|しょうわくせいたい|ちきゅうきんぼうしょうわくせい|メインベルト|メイン・ベルト|アステロイドベルト|アステロイド・ベルト",
+    "asteroid etc\tたい",
+    "asters\tキクか|きくか|ブラキカム",
+    "asthenosphere\tアセノスフェア|がんりゅうけん",
+    "asthma\tぜんそく|しょうにぜんそく|きかんしぜんそく|ぜんそくがおこる|よっかいちぜんそく|よんだいこうがいびょう|アスピリンぜんそく|ぜんそくほっさ",
+    "astigmatism\tらんし|ひてんしゅうさ|アナスチグマート|ふせいらんし",
+    "astilbe\tアスチルベ|ちだけさし|チダケサシ|アワモリショウマ|あわもりしょうま",
+    "astir\tざわめく",
+    "astomatous\tむこう",
+    "astonish\tどぎもをぬく|アストニッシュ",
+    "astonished\tあきれる|おどろきいる|たまげる|がくぜん|びっくりぎょうてん|きっきょうぎょうてん|がいぜん|したをまく|たまぎる|あきれてものがいえない|きいてあきれる",
+    "astonishing\tおそるべき|おどろくべき",
+    "astonishment\tきょうがく|おどろき|オドロキ|かんしん|かんたん|アストニッシメント|アストニッシュメント|どうじゃくたらしめる|めをみはる|あきれわらい",
+    "astounding\tおそるべき|きょうてんどうち|とっぴょうしもない",
+    "astraeus\tつちぐり|ツチグリ",
+    "astragalus\tれんげ|レンゲ|ゲンゲ|げんげ|れんげそう|おうぎ|きばなおうぎ|キバナオウギ",
   ],
 };

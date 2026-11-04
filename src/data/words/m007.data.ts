@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 8 of 172, from "alpine ". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 8 of 172, from "already ent". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,17 +9,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "alpine mountain\tこうざん",
-    "alpinia\tげっとう|ゲットウ|はなみょうが|ハナミョウガ",
-    "alpinism\tアルピニズム",
-    "alpinist\tやまおとこ|アルピニスト|がくじん",
-    "alpinum\tエーデルワイス|エーデルヴァイス|エーデルバイス",
-    "alpinus\tアカオオカミ|あかおおかみ|アークティックチャー|アークティック・チャー|ほっきょくいわな|ホッキョクイワナ|アルプスいわな|アルプスイワナ|ドール",
-    "alprenolol\tアルプレノロール",
-    "alps\tアルプス|アルプスさんみゃく|にほんアルプス|アルプスせき|アルプススタンド|アルプス・スタンド",
-    "already\tすでに|はや|もう|もはや|とっくに|そろそろ|ソロソロ|かねて|せんこく|はやくも|けっこう|ざいらい|おいうち|だから|いいかげん|いまさら|って|て|もうすっかり|きかん",
-    "already completely\tもうすっかり",
-    "already enough\tいいかげん",
     "already entirely\tもうすっかり",
     "already having\tけっこう",
     "already much\tいまさら",
@@ -242,7 +231,7 @@ export const PIECE: WordsPiece = {
     "ambiguity\tあいまいさ|たぎせい|あいまいせい|アンビギュイティ|ブーカ|ブカ",
     "ambiguous\tたまむしいろ|いみふめい|あいまい|かいじゅう|たぎてき|ぼかす|にごす|ぼやかす",
     "ambiguously\tくちをにごす",
-    "ambition\tやしん|やぼう|たいし|たいがん|ほうふ|しぼう|はき|こうみょうしん|こうじょうしん|アンビション|だいそれた|たいがんじょうじゅ|だいがんじょうじゅ|そし|ひぼう|しゅくし|ゆうし|せいうんのこころざし|やしんまんまん|ほんかいじょうじゅ",
+    "ambition\tやしん|やぼう|たいし|たいがん|ほうふ|しぼう|いろけ|はき|こうみょうしん|こうじょうしん|だいそれた|たいがんじょうじゅ|だいがんじょうじゅ|そし|ひぼう|しゅくし|ゆうし|せいうんのこころざし|やしんまんまん|ほんかいじょうじゅ",
     "ambition idea\tだいそれた",
     "ambitions\tしゃばけ|しゃばき",
     "ambitious\tえんだい|やしんてき|アンビシャス|そうきょ|やしんか|ゆうと|そうと|りょうざんぱく|ふううんにじょうずる|しょうねんよ、たいしをいだけ",
@@ -393,8 +382,7 @@ export const PIECE: WordsPiece = {
     "amoghasiddhi\tふくうじょうじゅ",
     "amoghavajra\tすくようきょう|しゅくようきょう|すくようぎょう|でんじのはっそ|ふほうのはっそ",
     "amok\tらっかろうぜき|らんぼうろうぜき",
-    "among\tなかでも|なかにも|あいだ|うち|そなわる|なか|かん|なかには|さんかん|つどい|いわま|そのうち|とか|このうち|こうび|こうきしゅくせい|なかまうち|わりふる|みずいらず|だんじょどうけん",
-    "among animals\tこうび",
+    "among\tなかでも|なかにも|あいだ|うち|そなわる|なか|かん|なかには|さんかん|つどい|いわま|そのうち|とか|このうち|こうきしゅくせい|なかまうち|わりふる|みずいらず|だんじょどうけん|たくいつ",
     "among close\tみずいらず",
     "among friends\tつどい|なかまうち",
     "among government\tこうきしゅくせい",
@@ -409,7 +397,7 @@ export const PIECE: WordsPiece = {
     "amongst\tうち|ひこうそくめいぼしきひれいだいひょうせい|かがもん",
     "amor\tあいのかみ|あいのしょうり",
     "amoroso\tアモロソ",
-    "amorous\tいろっぽい|ういた|アバンチュール|アヴァンチュール|いろめ|びかちょう|しゅうは|えんしょうこばなし|あんそうしゅうは|ういたうわさ|ういたウワサ|しゅうはをおくる|れんあいかんじょう|こうしょくいちだいおとこ",
+    "amorous\tういた|アバンチュール|アヴァンチュール|いろめ|びかちょう|しゅうは|えんしょうこばなし|あんそうしゅうは|ういたうわさ|ういたウワサ|しゅうはをおくる|れんあいかんじょう|こうしょくいちだいおとこ",
     "amorpha\tいたちはぎ|イタチハギ",
     "amorphophallus\tこんにゃく|コンニャク|スマトラおおこんにゃく|スマトラオオコニャク",
     "amorphous\tアモルファス|むていけい|ひしょうしつ|ひけっしょうせい|ひけっしょうしつ|アモルファスきんぞく|アモルファスたいようでんち|アモルファスはんどうたい|むていけいたんそ|アモルファスシリコン|アモルファス・シリコン",
@@ -450,7 +438,7 @@ export const PIECE: WordsPiece = {
     "amphiaster\tそうせい",
     "amphibia\tりょうせいるい|りょうせいこう",
     "amphibian\tりょうせいるい|りょうようき|あしなしいもり|アシナシイモリ|はだかへび|むそくるい",
-    "amphibians\tゆうびるい|カエルツボカビしょう|かえるつぼかびしょう|むびるい|りょうせいこう|ほうせい|ほうらん",
+    "amphibians\tゆうびるい|カエルツボカビしょう|かえるつぼかびしょう|むびるい|りょうせいこう|ほうらん",
     "amphibious\tすいりくりょうよう|りょうせい|りょうせいどうぶつ|きょうしゅうようりくかん|すいりくりょうようぐんだん",
     "amphibius\tかば|カバ",
     "amphibole\tかくせんせき",
@@ -554,7 +542,7 @@ export const PIECE: WordsPiece = {
     "anaguma castle\tあなぐま|アナグマ",
     "anaima\tヒメニラミベニハゼ",
     "anakuma\tにほんあなぐま|ニホンアナグマ",
-    "anal\tアナル|じろう|きれじ|だっこう|しりびれ|こうもんしゅっけつ|こうもんじょうひ|こうもんき|アナルセックス|アナル・セックス|こうもんせいこう|こうもんかつやくきん|れっこう|こうもんせいかく|こうもんべん|きくびらかいてん|こうごうび|こうもんせん|アナニー|ないこうもんかつやくきん",
+    "anal\tアナル|じろう|きれじ|だっこう|しりびれ|こうもんしゅっけつ|こうもんじょうひ|こうもんき|こうもんかつやくきん|れっこう|こうもんせいかく|こうもんべん|こうごうび|こうもんせん|ないこうもんかつやくきん",
     "analcite\tほうふつせき",
     "analects\tごろく|ろんご|しちけん|ろんもう|はちいつ",
     "analects confucius\tろんご",
@@ -589,5 +577,18 @@ export const PIECE: WordsPiece = {
     "ananassa\tいちご|イチゴ|オランダいちご|オランダイチゴ|とちおとめ",
     "ananassoides\tなつひめ|ナツヒメ",
     "anandamide\tアナンダミド|アナンダマイド",
+    "anandria\tせんぼんやり|センボンヤリ|むらさきたんぽぽ",
+    "anapaest\tアナパイストス",
+    "anapest\tよくよくようかく",
+    "anaphalis\tやまははこ|ヤマハハコ",
+    "anaphylactic\tアナフィラキシーショック|アナフィラキシー・ショック",
+    "anaphylaxis\tアナフィラキシー|アナフィラキシ",
+    "anaphylaxy\tペニシリンアナフィラキシー|ペニシリン・アナフィラキシー",
+    "anaplasmosis\tアナプラズマびょう",
+    "anaplastic\tたいけいせいせい|みぶんかさいぼう",
+    "anapsid\tむきゅうるい",
+    "anarchism\tむせいふしゅぎ|アナーキズム|アナキズム",
+    "anarchist\tしゅぎしゃ|アナーキスト|アナキスト|むせいふしゅぎしゃ|だいぎゃくじけん|たいぎゃくじけん",
+    "anarcho\tアナルコサンジカリズム|アナルコサンディカリスム|アナルコサンジカリスム|アナルコサンディカリズム|アナルコ・サンジカリズム|アナルコ・サンディカリスム|アナルコ・サンジカリスム|アナルコ・サンディカリズム|あかはたじけん|むせいふしほんしゅぎ|むせいふきょうさんしゅぎ|アナルコキャピタリズム|アナルコ・キャピタリズム",
   ],
 };

@@ -1,7 +1,7 @@
 import type { EntryManifest } from "../../words.types.ts";
 
 /**
- * Where the pieces of the whole entries are: the first number of each, and how to fetch it. 220 pieces. Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Where the pieces of the whole entries are: the first number of each, and how to fetch it. 219 pieces. Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -11,7 +11,7 @@ export const ENTRY_MANIFEST: EntryManifest = {
   source: "JMdict",
   release: "2026-11-03",
   entries: {
-    starts: ["", "0llbc", "0lrg", "0m1m", "0mbz", "0mma", "0mwtm", "0n7p", "0nife", "0nss", "0o37", "0oe5w", "0oox", "0ox3k", "0p4mo", "0pd6", "0plwc", "0pu3m", "0q1vm", "0qa2m", "0qilk", "0qqks", "0qyoq", "0r6lg", "0rf0s", "0rnc", "0rvjs", "0s3ao", "0sbow", "0sjc", "0sraa", "0sz7", "0t6ak", "0teei", "0tmj", "0ttwu", "0u27", "0ua3w", "0uhus", "0upmi", "0ux4s", "0v57c", "0vd8d", "0vl8a", "0vt9", "0w1n", "0w9bs", "0whw", "0wq8o", "0wyfo", "0x6u", "0xeia", "0xmn", "0xu3", "0y09m", "0y5ss", "0yb3", "0ygiw", "0yoji", "0yxq", "0z5k", "0zet", "0znx", "0zxf", "107d", "10gye", "10qsu", "1109y", "11ac", "11k6m", "11tv", "123qi", "12d4a", "12n6s", "12xls", "137n", "13hae", "13pho", "1418g", "14e7o", "14rfi", "154jg", "15do", "15nr", "15y3", "167vk", "16i2s", "16qrk", "1706q", "178a", "17gg", "17mua", "17txk", "180we", "188na", "18h1", "18oos", "18x8a", "194u", "19clc", "19jow", "19rdk", "19yjw", "1a5yu", "1ae3c", "1alwq", "1atbo", "1b0qc", "1b7w", "1bfc", "1bmuq", "1buqc", "1c1yc", "1c9bw", "1cgom", "1co4o", "1cxiq", "1d8nk", "1djfw", "1dtr", "1e42e", "1ee2e", "1enwu", "1exie", "1f7gq", "1fgb", "1fnwe", "1fuk", "1g20g", "1gawg", "1gk8", "1gsyq", "1h30y", "1hfzw", "1hr2i", "1hzvq", "1i7ya", "1igi", "1io3", "1iv5", "1j2sa", "1ja7s", "1jhv", "1jpku", "1jy2y", "1k64e", "1kdwe", "1km3e", "1kuae", "1l27y", "1laa", "1lix", "1lqso", "1lyhm", "1m5vq", "1md4", "1mkys", "1mssq", "1n0oc", "1n83a", "1ng3", "1nnx", "1nuuq", "1o2dk", "1oatq", "1oj6u", "1ol39", "1olxv", "1omoq", "1onfh", "1oo6j", "1ooya", "1oppl", "1oqhz", "1or7q", "1oryn", "1osoz", "1otfe", "1ou9n", "1ov11", "1ovtg", "1owlf", "1oxel", "1oy6f", "1oyz1", "1ozqq", "1p0ju", "1p1az", "1p23l", "1p2wg", "1p3p5", "1p4h8", "1p5bl", "1p66c", "1p6zc", "1p7ue", "1p8pa", "1p9iu", "1pabl", "1pb47", "1pbyv", "1pcts", "1pdn6", "1peh3", "1pfbs", "1pg72", "1ph1v", "1phtu", "1pikm", "1pjam", "1pk04", "1pkpg", "30d", "3428e", "372x", "3b0vh", "3bnu7", "3f1uk", "3f37r", "3f6aq"],
+    starts: ["", "0llcg", "0lriy", "0m1pm", "0mc8", "0mmm", "0mx3m", "0n82w", "0nir", "0nt9o", "0o3qc", "0oeyi", "0opjm", "0oxrq", "0p5by", "0pdvg", "0pmte", "0puvy", "0q2n", "0qasg", "0qjj", "0qrts", "0qzok", "0r7n", "0rg5m", "0rod", "0rwom", "0s4eo", "0scxm", "0skhk", "0sscm", "0szu", "0t7li", "0tfva", "0tnvm", "0tvm", "0u3rk", "0ubp", "0ujh", "0uqju", "0uyv", "0v6yy", "0vews", "0vmvq", "0vuxq", "0w36e", "0wb8y", "0wjm", "0wsaa", "0x05", "0x8iq", "0xgco", "0xooe", "0xvjc", "0y1q", "0y79k", "0yc9u", "0yiey", "0yr2w", "0yzn", "0z7q", "0zhey", "0zqdg", "1007", "10a8", "10jq", "10tiw", "1137", "11dbe", "11n2i", "11x1o", "126tw", "12g6u", "12qgk", "1316o", "13b3m", "13kk", "13sqw", "145w", "14j2", "14wcq", "157zc", "15hf", "15rqq", "161ys", "16bqq", "16l2", "16ugm", "1736s", "17bp", "17ipo", "17q4w", "17wsw", "183ye", "18br", "18kds", "18rvi", "190p", "198f", "19g2c", "19nc", "19uxc", "1a2bq", "1aa7w", "1ahuw", "1apko", "1ax8", "1b4jk", "1bbv", "1bj5", "1br5g", "1byw", "1c5y", "1cdc", "1ckso", "1csi", "1d44s", "1dee", "1dovg", "1dzd", "1e9m", "1ejfg", "1et6u", "1f31u", "1fclg", "1fkli", "1fsi", "1fyqe", "1g75", "1gggq", "1gpbc", "1gyxg", "1haio", "1hnek", "1hwge", "1i4uc", "1id4", "1il0k", "1ismq", "1j05k", "1j7l", "1jf1o", "1jn2", "1jvja", "1k3ss", "1kblm", "1kju", "1ks5", "1l04", "1l85u", "1lgny", "1lowm", "1lwu", "1m46m", "1mblk", "1mj7", "1mrdc", "1mzi", "1n6v", "1neru", "1nmm", "1ntv", "1o18q", "1o9pg", "1oi5", "1okzw", "1oluk", "1omm5", "1oncp", "1oo4f", "1oow6", "1opo7", "1oqg1", "1or69", "1orx3", "1osns", "1otea", "1ou8r", "1ov03", "1ovt6", "1owlc", "1oxet", "1oy72", "1oyzr", "1ozro", "1p0kz", "1p1ck", "1p25q", "1p2yp", "1p3rn", "1p4ju", "1p5e7", "1p69a", "1p727", "1p7xq", "1p8si", "1p9mc", "1paf1", "1pb7x", "1pc34", "1pcy7", "1pds4", "1pel9", "1pfgo", "1pgc3", "1ph6o", "1phyy", "1piqb", "1pjfl", "1pk4v", "1pkvu", "30th", "352ol", "3865o", "3bc0j", "3cef", "3f26o", "3f3e7", "3f784"],
     load: [
       () => import("./e000.data.ts").then((one) => one.PIECE),
       () => import("./e001.data.ts").then((one) => one.PIECE),
@@ -232,7 +232,6 @@ export const ENTRY_MANIFEST: EntryManifest = {
       () => import("./e216.data.ts").then((one) => one.PIECE),
       () => import("./e217.data.ts").then((one) => one.PIECE),
       () => import("./e218.data.ts").then((one) => one.PIECE),
-      () => import("./e219.data.ts").then((one) => one.PIECE),
     ],
   },
 };

@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 10 of 172, from "antibal". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * Terms of the English meanings of JMdict that safe mode keeps, each: the key, then the readings of the words that have it joined by "|", the commonest first. Piece 10 of 172, from "anticipated". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,17 +9,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "antiballistic\tエー・ビー・エム|エービーエム",
-    "antibiosis\tこうせい",
-    "antibiotic\tこうせいぶっしつ|こうせいざい|たいせいきん|ふくごうこうせいぶっしつせいざい|ベータラクタムけい|アミセチン|オレアンドマイシン|カルバペネムけいこうせいぶっしつ|こうせいぶっしつたいせい|セフェムけいこうせいぶっしつ",
-    "antibiotic resistant\tたいせいきん",
-    "antibody\tこうたい|めんえきたい|モノクローナル|たいしょう|こうげんこうたいはんのう|こうたいさんせい|モノクローナルこうたい|ちゅうわこうたい|こうたいカクテルりょうほう|こうたいカクテル|こうたいけんさ|こうかくこうたい",
-    "antibonding\tはんけつごう",
-    "anticancer\tこうがん|こうがんざい|こうガンざい",
-    "anticarcinogen\tナイトロジェンマスタード|ナイトロジェン・マスタード",
-    "anticholinergic\tこうコリンやく|こうコリンざい",
-    "antichrist\tはんキリスト|アンチキリスト|アンチクリスト",
-    "anticipate\tみこむ|みこす|まつ|あてこむ|さきんじる|おもいもうける|よみきる",
     "anticipated\tしょき|そうていもんどうしゅう|そうていもんどう",
     "anticipating\tさきまわり|きぼう|まちごま",
     "anticipation\tこころまち|きたい|よそう|みこみ|たのしみ|おもわく|よき|せんけん|さきどり|もくさん|きたいかん|ぜんく|かけね|こころづもり|さいけんほぜん|みこし|さきやすかん|アンティシペーション",
@@ -167,7 +156,7 @@ export const PIECE: WordsPiece = {
     "anura\tむびもく|カエルもく",
     "anurans\tむびるい",
     "anuria\tむにょう",
-    "anus\tこうもん|アヌス|けつめど|ケツメド|きくもん|しりこだま|ちゅうぎ|カンチョー|じんこうこうもん|ハイジニーナ|アイライン|さこう|こうもんきょきん|しりごだま",
+    "anus\tこうもん|アヌス|けつめど|ケツメド|きくもん|しりこだま|ちゅうぎ|カンチョー|じんこうこうもん|さこう|こうもんきょきん|しりごだま",
     "anutpattika\tむしょうほうにん|むしょうにん",
     "anuttara\tあのくたらさんみゃくさんぼだい",
     "anvil\tかなしき|かなとこ|てっちん|アンビル|アンヴィル|かなとこぐも",
@@ -242,7 +231,7 @@ export const PIECE: WordsPiece = {
     "apache people\tアパッチ",
     "apalopteron\tめぐろ|メグロ",
     "apalopteron familiare\tめぐろ|メグロ",
-    "apareunia\tせいこうふのうしょう|せいこうふのう",
+    "apareunia\tせいこうふのう",
     "apart\tそれより|それはさておき|べつに|はなれる|として|ビリビリ|びりびり|ともかく|いがい|はなればなれ|へいこうせん|べっきょ|こわれる|ひきさく|のける|たんしんふにん|ほころびる|かけはなれる|ばらす|バラす",
     "apart e\tへいこうせん",
     "apart family\tたんしんふにん",
@@ -291,8 +280,7 @@ export const PIECE: WordsPiece = {
     "aphonia\tしっせいしょう",
     "aphorism\tけいく|ことわざ|かくげん|アフォリズム|アフォルズム",
     "aphotic\tむこうそう",
-    "aphrodisia\tきょうせい",
-    "aphrodisiac\tさいいんざい|びやく|きょうせいざい|きょうせいやく|せいりょくざい|たけり",
+    "aphrodisiac\tさいいんざい|びやく|きょうせいざい|きょうせいやく|せいりょくざい",
     "aphrodite\tアフロディーテ|アフロディテ|アプロディテ|アプロディーテ|アプロディーテー|ミロのビーナス|こちょうらん|コチョウラン",
     "aphtha\tアフタ",
     "aphthous\tアフタせいこうないえん",
@@ -386,9 +374,8 @@ export const PIECE: WordsPiece = {
     "apparently\tいっけん|どうやら|とさ|てな|ってな|てね|ってね",
     "apparition\tようかい|おばけ|オバケ|ぼうれい|ばけもの|ばけもん|おんりょう|げんし|けしょうのもの|ようかいへんげ|おくりいぬ|おんがい",
     "appassionato\tアパッシオナート",
-    "appeal\tようせい|こうこく|アピール|アッピール|こんせい|うんどう|あじ|よびかけ|ちんじょう|あじわい|こうそ|こうぼ|じょうこく|よびかける|はたらきかける|いろけ|はき|つや|ツヤ|くすぐる",
+    "appeal\tようせい|こうこく|アピール|アッピール|こんせい|うんどう|あじ|よびかけ|ちんじょう|あじわい|こうそ|こうぼ|じょうこく|よびかける|はたらきかける|はき|つや|ツヤ|くすぐる|じょうこくしん",
     "appeal e\tこうぼ|よびかける|アピール|アッピール",
-    "appeal esp\tいろけ",
     "appeal hearing\tじょうこくしん",
     "appeal higher\tこうそ",
     "appeal highest\tじょうこく",
@@ -658,5 +645,16 @@ export const PIECE: WordsPiece = {
     "april 22\tアースデー|アースデイ|アース・デー|アース・デイ",
     "april 5\tせいめい",
     "april fool\tエイプリルフール|エープリルフール|エイプリル・フール|エープリル・フール",
+    "april fools\tエイプリルフール|エープリルフール|エイプリル・フール|エープリル・フール",
+    "aprion\tあおちびき|アオチビキ",
+    "apristurus\tヘラザメぞく|ヘラザメ|ナガヘラザメ|テングヘラザメ|ヤリヘラザメ|ニホンヘラザメ|アキヘラザメ|カリブヘラザメ|ヒメヘラザメ|アイスランドキャットシャーク|アイスランド・キャットシャーク",
+    "apron\tエプロン|スポット|まえかけ|まえだれ|さがり|サガリ|エプロンステージ|エプロン・ステージ|サロンエプロン|サロン・エプロン|ひぶた|かっぽうぎ|まえぶたい|はらがけ|けしょうまわし|ちゅうきじょう|はだかエプロン",
+    "apron airport\tエプロン",
+    "apron stage\tエプロン",
+    "apropos\tとつぜんだけど",
+    "après\tアフタースキー|アフター・スキー",
+    "apse\tアプス",
+    "apso\tラサアプソ|ラサ・アプソ",
+    "apt\tさんまい|ざんまい|ともすれば|がち|ともすると|じどうプログラムツール|とかく|ややもすれば|しげん|ややともすれば|てきひょう|めいもんく|ろあくしゅみ|こうげんれいしょくすくなしじん|ややもすると|おもいがち|しがち|ややともすると",
   ],
 };

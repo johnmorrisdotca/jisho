@@ -72,6 +72,18 @@ describe("the whole entry of a word", () => {
     expect(whole?.senses.map((sense) => sense.number)).toEqual(whole?.senses.map((_, at) => at + 1));
   });
 
+  it("leaves out in safe mode a sense whose gloss names sex, though JMdict marks nothing, and an entry with nothing else", async () => {
+    const word = await first("せがれ", "unfiltered");
+    const safe = await loadEntry(word);
+    const whole = await loadEntry(word, { mode: "unfiltered" });
+    expect(JSON.stringify(safe)).toContain("brat");
+    expect(JSON.stringify(safe)).not.toContain("penis");
+    expect(JSON.stringify(whole)).toContain("penis");
+    const sex = await first("セックス", "unfiltered");
+    expect(await loadEntry(sex)).toBeNull();
+    expect(await loadEntry(sex, { mode: "unfiltered" })).not.toBeNull();
+  });
+
   it("gives an entry JMdict has no word for as null, and refuses what is not an entry", async () => {
     expect(await loadEntry(1)).toBeNull();
     expect(await loadEntry(999_999_999_999)).toBeNull();

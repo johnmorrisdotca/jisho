@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 23 of 145, from "0pow". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 23 of 144, from "0pp8". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,27 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0pow4\t1¦｜私《わたし》たちは｜会場《かいじょう》の｜後《うし》ろに｜座《すわ》った。¦We sat at the back of the hall.¦3¦3k3c¦mookeee¦CM¦会場",
-    "0poyw\t1¦会談は２日間続いた。¦The talks continued for two days.¦3¦3ywy¦¦CK¦会談",
-    "0poz6\t1¦｜協会《きょうかい》は｜彼《あれ》を｜会長《かいちょう》にした。¦The society made him president.¦2¦3vc2¦¦shekitten¦会長",
-    "0pp0a\t1¦｜会堂《かいどう》に｜鐘《かね》の｜音《ね》が｜響《ひび》き｜渡《わた》った。¦The hall resounded with pealing bells.¦1¦3ywu¦¦Objectivesea¦会堂",
-    "0pp1o\t1¦｜各《かく》｜会員《かいいん》は｜会費《かいひ》を｜払《はら》うべし。¦Each member has to pay a membership fee.¦2¦3ygl¦¦CK¦会費",
-    "0pp28\t1¦｜機知《きち》は｜会話《かいわ》に｜趣《おもむき》を｜添《そ》える。¦Wit gives zest to conversation.¦1¦3xgv¦¦fishda¦会話",
-    "0pp2i\t3¦この｜医師《いし》はガンの｜多《おお》くの｜不可解《ふかかい》な｜点《てん》を｜解《と》こうと｜努力《どりょく》している。¦The doctor is trying to solve many of the riddles of cancer.¦¦4s16¦¦¦解こう\t4¦｜彼《あれ》は｜重責《じゅうせき》を｜解《と》かれた。¦He was relieved of his heavy responsibility.¦3¦28ib¦¦CK¦解かれた\t7¦｜外出《がいしゅつ》する｜前《さき》に｜髪《かみ》を｜櫛《くし》でときなさい。¦Comb your hair before you go out.¦¦3yjf¦bunbuku¦CK¦とき\t7¦｜彼女《かのじょ》は｜髪《かみ》をくしでといてリボンで｜結《むす》んだ。¦She combed her hair and bound it with a ribbon.¦1¦1vjc¦¦CK¦といて",
-    "0pp2s\t1¦これらの｜包《つつ》みをほどくのを｜手伝《てつだ》って｜下《くだ》さい。¦Lend a hand with these parcels, please.¦2¦4o1l¦¦rul¦ほどく",
-    "0pp32\t1¦いちばん｜頭《あたま》の｜良《い》い｜生徒《せいと》でさえ、その｜問題《もんだい》は｜解《と》けなかった。¦Even the brightest student couldn't solve the problem.¦3¦4wqj¦¦CK¦解けなかった\t2¦｜靴《くつ》ひもがとけた。¦My shoelaces came undone.¦3¦1l5l¦fcbond¦fcbond¦とけた\t4¦そのおかげで｜誤解《ごかい》が｜解《と》ける。¦It removes misunderstandings.¦3¦4klr¦¦shekitten¦解ける",
-    "0pp3c\t1¦ネクタイがほどけてるよ。¦Your tie has come undone.¦5¦3tqm¦small_snow¦CK¦ほどけてる",
-    "0pp3w\t1¦セーターの｜袖《そで》がほぐれ｜始《はじ》めた。¦The sleeves of the sweater began to unravel.¦¦4l6f¦¦FC_Barcelona¦ほぐれ",
-    "0pp46\t1¦｜鮎漁《あゆりょう》が｜解禁《かいきん》になった。¦The ayu season has opened.¦1¦43n4¦small_snow¦AlanF_US¦解禁",
-    "0pp4g\t1¦その｜問題《もんだい》はまだ｜解決《かいけつ》されていない。¦The problem is not settled yet.¦3¦4fau¦mookeee¦CK¦解決",
-    "0pp4q\t1¦｜彼女《かのじょ》はいい｜解決策《かいけつさく》を｜思《おも》いついた。¦She thought of a good solution.¦1¦2015¦¦CK¦解決策",
-    "0pp50\t1¦いきなり｜解雇《かいこ》を｜言《い》い｜渡《わた》された。¦I was discharged without notice.¦2¦4wwj¦bunbuku¦CM¦解雇",
-    "0pp5k\t1¦｜警察《けいさつ》は、｜群衆《ぐんしゅう》を｜解散《かいさん》させた。¦The police broke up the crowd.¦1¦3s05¦¦CK¦解散\t1¦｜会《かい》は｜八時《はちじ》に｜解散《かいさん》した。¦The meeting broke up at eight.¦3¦3z2v¦¦CK¦解散\t3¦｜首相《しゅしょう》は｜国会《こっかい》を｜解散《かいさん》した。¦The prime minister dissolved the Diet.¦3¦36ic¦tommy__san¦¦解散",
-    "0pp5u\t1¦それは２通りに解釈できる。¦That reads two different ways.¦1¦4emn¦¦¦解釈",
-    "0pp6e\t2¦｜貿易障壁《ぼうえきしょうへき》は｜戦争《せんそう》｜終結《しゅうけつ》｜後《あと》｜解除《かいじょ》されました。¦Trade barriers were lifted after the war ended.¦1¦1rmy¦¦CM¦解除",
-    "0pp6o\t1¦｜私《わたし》は｜婚約《こんやく》を｜解消《かいしょう》しました。¦I have broken off our engagement.¦3¦1lsb¦fcbond¦fcbond¦解消",
-    "0pp78\t1¦ヒートアイランド｜現象《げんしょう》の｜実体《じったい》｜解析《かいせき》と｜対策《たいさく》のあり｜方《かた》について。¦An analysis of the nature of the heat island phenomenon and countermeasures.¦1¦1ldm¦fcbond¦fcbond¦解析",
-    "0pp7s\t1¦｜彼《あ》の｜解説《かいせつ》がわかった｜人《じん》はほとんどいなかった。¦Few people understood his comment.¦3¦2iz3¦bunbuku¦CK¦解説",
     "0pp82\t1¦その｜解説者《かいせつしゃ》は｜食糧危機《しょくりょうきき》を｜強調《きょうちょう》しすぎる。¦The newscaster puts too much emphasis on the food crisis.¦1¦4je4¦¦CM¦解説者",
     "0pp8c\t1¦この｜画像《がぞう》、｜解像度《かいぞうど》が｜低《ひく》すぎてすごく｜汚《きたな》い。¦The image quality is really bad - the resolution is so low.¦2¦4rtx¦KK_kaku_¦¦解像度",
     "0ppa0\t1¦あなたの｜解答《かいとう》には｜私《わたし》たちとしてはまったく｜不満《ふまん》だ。¦Your answer is anything but satisfactory to us.¦3¦503o¦mookeee¦CM¦解答",
@@ -211,5 +190,25 @@ export const PIECE: WordsPiece = {
     "0psji\t1¦｜父《ちち》は｜熟練《じゅくれん》した｜外科医《げかい》です。¦My father is an expert surgeon.¦1¦1t5o¦KK_kaku_¦¦外科医",
     "0psk2\t1¦どこで｜外貨《がいか》の｜交換《こうかん》をすることができますか。¦Where can I get my money exchanged?¦2¦4b2j¦bunbuku¦CK¦外貨",
     "0pslg\t1¦Windows Media Playerの｜新《あたら》しいスキンを｜入手《にゅうしゅ》し、プレーヤーの｜外観《がいかん》を｜変《か》えてみましょう。¦Why don't you try out getting a new Windows Media Player skin and changing the player's look?¦3¦1mcd¦wakatyann630¦¦外観",
+    "0pslq\t1¦｜今朝《けさ》は｜外気《がいき》が｜冷《つめ》たく｜感《かん》じる、もう｜冬《ふゆ》が｜近《ちか》づいている。¦The air feels cold this morning; winter is approaching.¦3¦3oxh¦¦sundown¦外気",
+    "0psn4\t1¦その｜学校《がっこう》は｜外見《がいけん》が｜刑務所《けいむしょ》に｜似《に》ている。¦The school looks like a prison.¦1¦4jbk¦¦CK¦外見",
+    "0psno\t1¦｜英語《えいご》は｜外交《がいこう》や｜観光《かんこう》｜事業《じぎょう》に｜有効《ゆうこう》である。¦English is useful in diplomacy and tourism.¦2¦41xu¦¦CK¦外交",
+    "0pso8\t1¦私は３人兄弟がいる。１人はパイロット、１人は外交官、もう一人は大工だ。¦I have three brothers; one is pilot, another a diplomat and the other a carpenter.¦3¦3gyw¦¦¦外交官\t1¦その会議には１５０人の外交官がきた。¦The conference drew 150 diplomats.¦3¦52tf¦mookeee¦CM¦外交官",
+    "0psoi\t1¦その｜国《くに》は｜米国《べいこく》との｜外交関係《がいこうかんけい》を｜断絶《だんぜつ》した。¦That country broke off diplomatic relations with the United States.¦3¦4ih8¦¦orcrist¦外交関係",
+    "0psos\t1¦｜外交的《がいこうてき》な｜対話《たいわ》によって、その｜紛争《ふんそう》に｜終止符《しゅうしふ》を｜打《う》つことができた。¦Diplomatic dialogue helped put an end to the conflict.¦¦3ym7¦¦Swift¦外交的な",
+    "0psp2\t1¦ある調査によると、今日では５人中３人が外交問題には無関心のようだ。¦According to a survey, three in five people today are indifferent to foreign affairs.¦¦4xc5¦¦¦外交問題",
+    "0pspc\t1¦内気な人は外向的な人より短命？¦Do introverts not live as long as extroverts?¦¦1lj6¦fcbond¦fcbond¦外向",
+    "0pspw\t1¦あなたは｜外国《がいこく》の｜本《もと》を｜持《も》っていますか。¦Do you have any foreign books?¦4¦4z4z¦¦CK¦外国",
+    "0psqg\t1¦あなたはなぜ｜外国語《がいこくご》を｜勉強《べんきょう》するのですか。¦What do you study a foreign language for?¦4¦4zcn¦¦orcrist¦外国語",
+    "0psqq\t1¦｜日本《にほん》の｜天井《てんじょう》は｜外国人《がいこくじん》には｜低《ひく》すぎる。¦In Japan the ceilings are quite low for foreigners.¦1¦2mnc¦¦¦外国人\t1¦この｜国《くに》には｜外国人《がいこくじん》の｜観光客《かんこうきゃく》が｜大勢《おおぜい》いる。¦Foreign tourists in this country are numerous.¦2¦4r97¦¦Lumi_alt¦外国人\t1¦ある｜外国人《がいこくじん》が｜私《わたし》に｜駅《えき》がどこにあるかと｜聞《き》いた。¦A foreigner asked me where the station was.¦4¦4xe1¦¦CK¦外国人\t1¦「｜居住《きょじゅう》｜外国人《がいこくじん》」とは、どういう｜意味《いみ》ですか。¦What does \"resident alien\" mean?¦3¦52cm¦mookeee¦CK¦外国人",
+    "0psrk\t1¦｜彼女《かのじょ》の｜外国製《がいこくせい》の｜香水《こうすい》はほのかな｜香《かお》りがする。¦Her exotic perfume has a subtle scent.¦1¦20zg¦¦¦外国製",
+    "0psts\t1¦｜彼《あれ》は｜外車《がいしゃ》を｜買《か》えるぐらい｜金持《かねも》ちだ。¦He is rich enough to buy a foreign-made car.¦3¦2c25¦¦CM¦外車",
+    "0psum\t1¦｜見《み》た｜目《め》には｜優《やさ》しそうだけど、｜彼《あれ》って｜皆《みな》から｜外柔内剛《がいじゅうないごう》の｜結構《けっこう》なタフネゴシエータと｜言《い》われているよ。¦He seems like a softy on the surface, but at the core he's got an iron will that makes him an extremely tough negotiator.¦1¦3r69¦¦CM¦外柔内剛",
+    "0psuw\t1¦ヒーターをつけたまま｜外出《がいしゅつ》した。¦I went out with the heater on.¦5¦48j7¦¦AlanF_US¦外出",
+    "0psv6\t1¦｜彼《あ》の｜負《お》った｜傷《きず》はすべて｜外傷《がいしょう》だ。¦All his injuries are external.¦1¦2hoj¦¦¦外傷",
+    "0psvq\t1¦｜食事《しょくじ》は｜家庭《かてい》で｜食《た》べますか、｜外食《がいしょく》ですか。¦Do you eat at home or eat out?¦3¦34iy¦¦¦外食",
+    "0psxy\t1¦この｜電話《でんわ》で｜外線《がいせん》がかけられますか。¦Can I make an outside call on this phone?¦2¦4q1o¦small_snow¦sundown¦外線",
+    "0psys\t1¦｜外相《がいしょう》は、｜戦争《せんそう》は｜避《さ》けられないと｜言《い》った。¦The Foreign Minister said that war was inevitable.¦1¦3yj4¦KK_kaku_¦shekitten¦外相",
+    "0pt1a\t1¦｜父《ちち》は｜外泊《がいはく》するときはたいてい｜帽子《ぼうし》をかぶる。¦My father usually wears a hat when he goes out for the night.¦2¦1tad¦¦¦外泊",
   ],
 };

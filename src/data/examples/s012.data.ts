@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 13 of 145, from "0nye". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 13 of 144, from "0nz". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,17 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0nyee\t1¦ドールが｜通信《つうしん》プロトコルの｜構成《こうせい》を｜変《か》えることは｜意図《いと》していなかったということに｜注意《ちゅうい》すべきである。¦It should be noted that Dole did not intend to change the configuration of the communication protocol.¦3¦4b5h¦¦papabear¦プロトコル",
-    "0nyik\t1¦その｜新聞《しんぶん》は｜新《あたら》しい｜主筆《しゅひつ》のプロフィールを｜載《の》せた。¦The paper published a profile of its new editor.¦1¦4h4m¦¦CM¦プロフィール",
-    "0nyje\t1¦｜彼女《かのじょ》は｜中年《ちゅうねん》の｜都会派《とかいは》プロフェッショナルでした。¦She was a middle-aged urban professional.¦1¦2pk9¦xtofu80¦xtofu80¦プロフェッショナル",
-    "0nyjy\t1¦ジェット｜機《き》はプロペラ｜機《き》よりもずっと｜速《はや》い。¦Jet planes fly much faster than propeller planes.¦3¦4mz0¦mookeee¦CM¦プロペラ機",
-    "0nyks\t1¦｜彼女《かのじょ》は｜喜《よろこ》んで｜彼《あ》のプロポーズを｜受《う》け｜入《い》れた。¦She gladly accepted his proposal.¦3¦1xww¦¦CK¦プロポーズ",
-    "0nynk\t1¦｜私《わたし》はプロレスが｜好《す》きです。¦I like pro wrestling.¦3¦3enw¦¦CK¦プロレス",
-    "0nyq2\t1¦｜部屋《へや》は｜香水《こうすい》のにおいでぷんぷんしていた。¦The room was pervaded with the scent of perfume.¦2¦1sxe¦¦¦ぷんぷん",
-    "0nyrq\t1¦メアリーの｜新《あたら》しいヘアスタイルは｜人《ひと》ごみの｜中《なか》でも｜彼女《かのじょ》を｜目立《めだ》たせた。¦Mary's new hairstyle made her stand out in the crowd.¦3¦46cd¦¦CM¦ヘアスタイル\t1¦｜率直《そっちょく》に｜言《い》って、｜君《きみ》のヘアースタイルは｜好《す》きじゃないよ。¦Frankly speaking, I don't like your haircut.¦1¦1of1¦mookeee¦CK¦ヘアースタイル",
-    "0nysk\t1¦｜彼女《かのじょ》はヘアドライヤーの｜使《つか》い｜方《かた》を｜私《わたし》に｜説明《せつめい》してくれた。¦She explained to me how to use the hair drier.¦3¦1ynp¦¦CK¦ヘアドライヤー",
-    "0nyty\t1¦このシャンプーを｜買《か》うと、｜素敵《すてき》なヘアブラシがついてきます。¦This shampoo comes with a nice hair brush.¦1¦4sli¦bunbuku¦CK¦ヘアブラシ",
-    "0nyui\t1¦｜熱帯雨林《ねったいうりん》は｜一日《いちにち》｜数万《すうまん》ヘクタールの｜割合《わりあい》でなくなっている。¦The rainforests are disappearing at the rate of tens of thousands of hectares a day.¦2¦2m15¦¦CK¦ヘクタール",
     "0nz16\t1¦ヘッドホンから｜音《おと》が｜漏《も》れているのは｜彼《あれ》です。¦The noisy headphones are that guy's.¦1¦47uc¦¦AlanF_US¦ヘッドホン",
     "0nz1q\t1¦ヘッドライトをつけてみてください。¦Could you turn on your headlights?¦5¦47u5¦small_snow¦CK¦ヘッドライト",
     "0nz4i\t1¦ヘヴィなサウンドが｜求《もと》められている。¦Heavy sound is being looked for.¦3¦47wf¦¦¦ヘヴィな\t1¦｜彼《あれ》はまだヘビー｜級《きゅう》の｜選手権《せんしゅけん》を｜保持《ほじ》している。¦He still holds the heavyweight title.¦1¦2dj3¦¦voxbubnya¦ヘビー",
@@ -154,7 +143,6 @@ export const PIECE: WordsPiece = {
     "0o4lq\t1¦｜彼《かれ》らは｜自分《じぶん》たちの｜新《あたら》しいコンセプトを｜広《ひろ》めるためにあるコミュニケーションポリシーを｜採用《さいよう》した。¦They implemented a communication policy so as to promote their new concept.¦¦lb75¦mookeee¦U2FS¦ポリシー",
     "0o4s4\t1¦アンゴラはかつてポルトガルの｜領土《りょうど》だった。¦Angola was once a Portuguese territory.¦2¦4x64¦bunbuku¦CK¦ポルトガル",
     "0o4se\t1¦ニックはポルトガル語をとても上手に話せます。というのも５年間勉強しているからです。¦Nick can speak Portuguese very well. That's because he's been studying it for 5 years.¦4¦49dr¦¦mailohilohi¦ポルトガル語",
-    "0o4so\t1¦ポルノ｜映画《えいが》はたいてい｜町《まち》のみすぼらしい｜所《ところ》にある｜古《ふる》びた｜映画館《えいがかん》で｜上映《じょうえい》される。¦Skinflicks usually play in old theaters in a sleazy part of town.¦3¦476s¦¦Dejo¦ポルノ",
     "0o4ti\t1¦｜元来《がんらい》フットボールとは、ポロのように｜馬《うま》に｜乗《の》って｜行《おこな》われる｜競技《きょうぎ》とは｜違《ちが》って、｜足《あし》で、ボールを｜使《つか》って｜行《おこな》われる｜競技《きょうぎ》のことでした。¦Football originally meant \"a game played with a ball on foot\" - unlike a game played on horseback, such as polo.¦2¦3r1m¦¦handsomelyian¦ポロ",
     "0o4um\t1¦彼女はバターを２ポンド買いました。¦She bought two pounds of butter.¦3¦1ys0¦¦CK¦ポンド\t2¦５ポンド紙幣をお持ちですか。¦Do you have a five-pound note?¦1¦51g5¦e4zh1nmcz¦CM¦ポンド",
     "0o4uw\t1¦ポンプはちゃんと｜動《うご》かなかった。¦The pump didn't work properly.¦4¦474f¦small_snow¦CK¦ポンプ",
@@ -230,5 +218,18 @@ export const PIECE: WordsPiece = {
     "0o81m\t1¦マントルピースの｜上《うえ》にあるよ。¦It's on the mantelpiece.¦5¦46kb¦bunbuku¦CK¦マントルピース",
     "0o830\t1¦この｜番組《ばんぐみ》はマンネリになっている。¦This program has become stereotyped.¦3¦4pva¦¦¦マンネリ",
     "0o83k\t1¦毎日マンハッタンの中心部にいくには１時間半もかかる。¦The daily trek to midtown Manhattan takes about an hour and a half.¦3¦1qqc¦¦CM¦マンハッタン",
+    "0o844\t1¦マンパワーは｜世界《せかい》で｜一番《いちばん》｜大《おお》きな｜人材派遣会社《じんざいはけんかいしゃ》です。¦\"Manpower\" is the world's largest temp agency.¦1¦46k8¦¦Dejo¦マンパワー",
+    "0o85s\t1¦わたしたちの｜会社《かいしゃ》はマンモス｜会社《かいしゃ》で、｜繁雑《はんざつ》な｜面《つら》を｜少《しょう》くし｜能率《のうりつ》を｜上《あ》げるために、｜改正《かいせい》あるいは｜撤廃《てっぱい》すべき｜規則《きそく》とか｜規約《きやく》がいくつかある。¦Our firm is a giant one, and there are some rules and regulations, which should be revised or rescinded to reduce red tape and increase efficiency.¦1¦443s¦¦Dejo¦マンモス",
+    "0o87g\t1¦ミーティングを｜中止《ちゅうし》しなければならない。¦We have to call off the meeting.¦4¦46k1¦KK_kaku_¦CK¦ミーティング",
+    "0o89e\t1¦｜私《わたし》たちは｜博物館《はくぶつかん》でミイラを｜見《み》た。¦We saw a mummy at the museum.¦1¦3jl0¦bunbuku¦CK¦ミイラ",
+    "0o8cg\t1¦ミサは、｜食《た》べたり｜飲《の》んだりしてイエスキリストを｜偲《しの》ぶカトリックの｜儀式《ぎしき》だ。¦Mass is a Catholic ceremony of remembering Jesus Christ by eating and drinking.¦1¦46js¦¦Mar1L¦ミサ",
+    "0o8cq\t1¦ミサイル｜攻撃《こうげき》で｜多《おお》くの｜人命《じんめい》が｜失《うしな》われた。¦The missile attack took a heavy toll of lives.¦1¦46jw¦mookeee¦Dejo¦ミサイル",
+    "0o8du\t1¦ランシングはミシガンの｜州都《しゅうと》である。¦Lansing is the state capital of Michigan.¦2¦44kx¦¦CN¦ミシガン",
+    "0o8eo\t1¦｜私《わたし》は｜新《あたら》しいミシンを｜買《か》った。¦I bought a new sewing machine.¦4¦3c69¦mookeee¦CK¦ミシン",
+    "0o8ey\t1¦｜印刷《いんさつ》ミスはすぐに｜指摘《してき》されなければならない。¦Mistakes in the printing should be pointed out at once.¦1¦42lt¦¦CK¦ミス",
+    "0o8g2\t1¦｜上司《じょうし》のミスター｜田《た》｜中《うち》が｜君《きみ》を｜飲《の》みに｜誘《さそ》うかもしれないってことを｜言《い》っておくね。¦I should tell you that my boss, Mr Tanaka, might try to take you drinking.¦1¦34uf¦¦¦ミスター",
+    "0o8hg\t1¦このミステリーのトリックは、｜奇想天外《きそうてんがい》だ。¦This mystery has a plot twist that's completely novel.¦1¦4s61¦¦¦ミステリー",
+    "0o8jy\t1¦この｜教科書《きょうかしょ》は、｜急《いそ》いで｜印刷《いんさつ》したためにミスプリントがたくさんある。¦This textbook, having been printed in haste, has a lot of printing mistakes.¦2¦4rkh¦bunbuku¦CM¦ミスプリント",
+    "0o8l2\t1¦｜彼《かれ》らはミズーリ｜州《しゅう》に｜植民《しょくみん》する｜計画《けいかく》を｜立《た》てている。¦They are planning to settle Missouri.¦2¦23cq¦¦¦ミズーリ",
   ],
 };

@@ -6,6 +6,20 @@ All notable changes to this project are written here. The format follows
 
 ## [Unreleased]
 
+## [2.10.0] - 2026-11-04
+
+A minor version: nothing that 2.9.0 gave is taken away except, in safe mode, what children should not have been handed. Unfiltered mode is as it was.
+
+### Changed
+
+- **Safe mode also leaves out a sense whose gloss names sex or the sex trade** (MODULES-390). It left out only the senses JMdict marks vulgar, X-rated, sensitive or derogatory, and JMdict does not always mark such a sense (it gives 朝雲暮雨 "sexual liaison" no mark). The rule is Kotoba's `ADULT_GLOSS` (`scripts/children-bar.mjs` in Kotoba, kept in step here in `scripts/words-parse.mjs`), applied to every gloss of the sense, so it holds for lookups, the common table, the readers, the whole entries and the examples alike, and it keeps what only looks like it (菜種 "rapeseed", 抹香鯨 "sperm whale", 社交 "social intercourse", 主婦 "mistress (of the house)"). The data is made again from the same JMdict (2026-11-03) and the same Tatoeba files, so nothing else in it moves:
+  - 1,413 senses of 1,387 entries are left out in safe mode; 1,034 of the entries have nothing else to say (セックス, 売春, ポルノ, レイプ, 精子, 性交, 射精, 乳首, 娼婦 ...) and are not found in safe mode, the others lose the sense (倅 is "son; punk, brat", no longer also "penis").
+  - Rows of safe mode 265,107 to 263,857 (1,250 fewer; 847 rows were left out whole, now 2,097); the common words 26,039 to 25,999 (40 fewer); the pieces of safe mode 318 + 71 to 316 + 70; the pieces that hold what safe mode leaves out 9 + 1 to 13 + 2 (they are fetched only unfiltered).
+  - Examples of safe mode: 32,299 to 32,196 (103 fewer), for 28,730 words (from 28,813).
+  - Like the rule it is copied from, it also takes out a few ordinary senses whose gloss uses one of the words: 性別 "gender, (distinction of) sex", 異性 "the opposite sex", 共学 "coeducation, mixed-sex education", 建立 "erection (of a building)", 混ぜ物 "adulteration". Unfiltered mode has them all.
+  - The package is 70 kB smaller unpacked (88.00 to 87.93 MB with the build as `npm pack` sees it) and 45 kB smaller to download: the safe pieces shrank by about what the extra pieces grew.
+- A test holds the rule to small entries (`src/words-build.test.js`), and others hold the real data: the words, the whole entries and the reader (`src/words.test.ts`, `src/words-entry.test.ts`, `src/reader.test.ts`) and the bytes of the files a safe lookup fetches (`src/words-files.test.js`). The guides, the README and NOTICE.md say what safe mode leaves out, in English and in Japanese.
+
 ## [2.9.0] - 2026-11-04
 
 A minor version: nothing that 2.8.0 gave is taken away. The table has 2,882 more pairs, so an answer of `lookAlikes` may now hold a kanji it did not, and each answer has a `shape`.

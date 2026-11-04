@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 9 of 145, from "0my7". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 9 of 144, from "0myg". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,12 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0my7w\t1¦「あの｜人《ひと》たちは、またストをやるんだろうか」「どうもそうらしいね」¦\"Will they go on strike again?\" \"I'm afraid so.\"¦5¦532q¦mookeee¦CK¦スト",
-    "0my86\t1¦｜彼《あれ》はストーブで｜体《からだ》を｜暖《あたた》めた。¦He warmed himself at the stove.¦1¦2fh1¦¦CK¦ストーブ",
-    "0my9a\t1¦｜今回《こんかい》｜発売《はつばい》されたアルバムは、ストーリー｜仕立《した》てになっていて｜力作《りきさく》だ。¦Her latest album is a tour de force. It even has a storyline.¦3¦3p3d¦¦¦ストーリー",
-    "0myc2\t1¦どうぞわたしにＸＹＺストアへ行く道を教えて下さい。¦Please tell me the way to the XYZ store.¦4¦4bbs¦¦¦ストア",
-    "0mye0\t1¦このストッキングはとても｜高《たか》い。¦These stockings are very dear.¦5¦4sjt¦¦¦ストッキング",
-    "0myea\t1¦｜一生懸命《いっしょうけんめい》｜磨《みが》きました。｜困《こま》ったのは、｜意外《いがい》と｜低級《ていきゅう》｜宝石《ほうせき》のストックがないことです。¦I polished for all I was worth. The trouble is that my stock of low-grade gems was surprisingly low.¦1¦1l9n¦fcbond¦fcbond¦ストック",
     "0mygs\t1¦｜厳《きび》しい｜資金不足《しきんぶそく》で｜計画《けいかく》はストップしている。¦An acute lack of funds is holding up the plan.¦1¦3r0m¦¦¦ストップ",
     "0myh2\t1¦これは｜日本製《にほんせい》のストップウオッチ。¦This is a stop watch made in Japan.¦1¦4obw¦¦¦ストップウオッチ",
     "0myj0\t1¦｜労働者《ろうどうしゃ》｜達《たち》はストライキ｜中《うち》です。¦The workers are on strike.¦3¦1nov¦mookeee¦CK¦ストライキ",
@@ -97,8 +91,6 @@ export const PIECE: WordsPiece = {
     "0n12e\t1¦｜道《みち》の｜向《むこ》う｜側《がわ》にセクシーな｜女《おんな》の｜子《こ》が｜歩《ある》いている。¦There goes a hot little number across the street.¦3¦2ndd¦¦¦セクシーな",
     "0n12y\t1¦｜引用《いんよう》した｜問題《もんだい》ではありませんが、｜関係代名詞《かんけいだいめいし》と｜関係副詞《かんけいふくし》の｜使《つか》い｜分《わ》けを｜問《と》う｜問題《もんだい》がリーディングセクションにはあります。¦The problem quoted isn't one, but there are problems in the reading section that ask you to distinguish relative pronouns from relative adverbs.¦¦1lw9¦fcbond¦fcbond¦セクション",
     "0n138\t1¦｜各種《かくしゅ》の｜調査《ちょうさ》では、｜民間《みんかん》セクターが｜政策決定《せいさくけってい》にほとんど｜影響力《えいきょうりょく》をもたないことが｜示《しめ》されている。¦It has been demonstrated in various studies that the private sector has little influence over policy making.¦1¦3yge¦¦GiggyMantis¦セクター",
-    "0n13i\t1¦｜女性《じょせい》の｜権利《けんり》を｜主張《しゅちょう》する｜団体《だんたい》はセクハラ｜問題《もんだい》を｜追求《ついきゅう》しています。¦Women's rights groups are going after sexual harassment.¦1¦35mn¦¦¦セクハラ",
-    "0n156\t1¦｜今《いま》ではセックスの｜話《はなし》をすることは｜顔《かお》を｜赤《あか》らめることではなくなった。¦Now talking about sex is no blushing affair.¦3¦3pbr¦¦¦セックス",
     "0n15g\t1¦｜数人《すうにん》から、その｜日《ひ》の｜後半《こうはん》にあたるテクニカルセッションの｜中《なか》にも｜出席《しゅっせき》したいセッションがあるという｜意見《いけん》が｜出《で》ました。¦A few people mentioned they would like to attend some sessions later in the day on the Technical Session Agenda.¦3¦32r2¦¦CM¦セッション",
     "0n15q\t1¦セッティングは整えておいたから、後はまーくんが根性見せなきゃダメだからね？¦I've set the stage so now you just have to show some guts, OK?¦1¦1map¦mookeee¦¦セッティング",
     "0n160\t1¦｜当店《とうてん》にはベートーベンの｜交響曲《こうきょうきょく》の｜録音《ろくおん》の｜完全《かんぜん》なセットがございます。¦We have a complete set of the recordings of Beethoven's symphonies.¦1¦2nnl¦¦CK¦セット\t2¦目覚ましを７時にセットしよう。¦I'll set the alarm for seven o'clock.¦3¦1pnp¦bunbuku¦CK¦セット\t3¦｜洗髪《せんぱつ》とセットの｜予約《よやく》をしたいのですが。¦I'd like to make an appointment for a shampoo and a set.¦3¦30y7¦¦CM¦セット\t5¦セットを｜片《かた》づけろ。¦Strike the set.¦2¦4l5a¦¦¦セット",
@@ -218,5 +210,14 @@ export const PIECE: WordsPiece = {
     "0n3uy\t1¦このチュートリアルではサンプルマンガを｜使用《しよう》して、ダウンロードを｜含《ふく》めてマンガを｜見《み》る｜手順《てじゅん》に｜慣《な》れていただきます。¦With this tutorial you will use the sample manga to become accustomed to the procedures for seeing the manga including download.¦2¦1m5j¦fcbond¦fcbond¦チュートリアル",
     "0n3wc\t1¦｜彼《あれ》は｜歯磨《はみが》きをチューブから｜絞《しぼ》り｜出《だ》した。¦He squeezed the toothpaste out of a tube.¦1¦29bh¦xtofu80¦CK¦チューブ",
     "0n3ww\t1¦チューリップはまもなく｜咲《さ》く。¦Tulips come into bloom soon.¦2¦4cla¦bunbuku¦sundown¦チューリップ",
+    "0n3z4\t1¦｜私《わたし》が｜我慢《がまん》できないことは、｜黒板《こくばん》でキーキーとチョークが｜音《おと》を｜立《た》てることだ。¦What I can't bear is the sound of chalk squeaking on a chalkboard.¦1¦3lic¦¦CM¦チョーク",
+    "0n3zo\t1¦｜私《わたし》はジムのためにチョコを｜買《か》った。¦I bought the chocolate for Jim.¦4¦3fxl¦¦CN¦チョコ",
+    "0n3zy\t1¦｜私《わたし》のお｜気《き》に｜入《い》りの｜味《あじ》はチョコレートです。¦My favorite flavor is chocolate.¦4¦3iq5¦¦CK¦チョコレート",
+    "0n41c\t1¦｜今日《きょう》の｜新聞《しんぶん》によれば、｜昨日《きのう》チリで｜大地震《おおじしん》があったそうだ。¦According to today's paper, there was a big earthquake in Chile yesterday.¦2¦3oml¦¦CK¦チリ",
+    "0n43u\t1¦｜生産性《せいさんせい》をあげるため｜新《あら》たなツールを｜探《さが》してます。¦We'll employ a new tool to increase productivity.¦3¦3265¦¦CM¦ツール",
+    "0n444\t1¦そのツアーには｜昼食《ちゅうしょく》は｜含《ふく》まれていますか。¦Is lunch included in the tour?¦2¦4kbq¦¦¦ツアー",
+    "0n44e\t1¦｜彼《あれ》は｜古《ふる》いツイードの｜服《ふく》を｜着《き》ている。¦He is dressed in an old tweed suit.¦3¦2azv¦¦CK¦ツイード",
+    "0n44o\t1¦ツインの｜部屋《へや》にエキストラベッドを｜入《い》れてください。¦I'd like a twin with an extra bed.¦3¦4cbt¦¦orcrist¦ツイン",
+    "0n494\t1¦｜極端《きょくたん》に｜言《い》うと、｜彼《あれ》は、｜自己《じこ》のテーゼに｜完全《かんぜん》に｜自信《じしん》を｜持《も》っているものが｜発揮《はっき》できる｜虚心坦懐《きょしんたんかい》さで｜書《か》いてはいないのである。¦He does not, in short, write with the candor of a man who is completely confident of his thesis.¦¦3uw1¦¦papabear¦テーゼ",
   ],
 };

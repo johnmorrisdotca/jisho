@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 2 of 220, from "0llbc". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
+ * The entries of JMdict as safe mode has them, each: its number in base 36, its written forms, its readings, then one field for each sense. Only for a lookup of a whole entry. Piece 2 of 219, from "0llcg". Written by `scripts/build-words.mjs` from JMdict, never edited by hand.
  *
  * JMdict is the property of the Electronic Dictionary Research and Development Group (EDRDG), used under the Creative
  * Commons Attribution-ShareAlike 4.0 licence and the Group's conditions: https://www.edrdg.org/edrdg/licence.html.
@@ -9,8 +9,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0llbc\t\tだったら\tconj¦¦if it's the case¦だ",
-    "0llc6\t\tだぶだぶ|ダブダブ\tadj-na,adj-no,adv,adv-to,vs¦on-mim¦loose (of clothing)¦baggy¦ぶかぶか・1|ゆったり・2|たぶたぶ・2\tadv,adv-to,vs¦on-mim¦flabby¦saggy\tadv,adv-to,adj-na,vs¦on-mim¦sloshing¦slopping¦overflowing\tadv,adv-to¦on-mim¦plenty (of pouring a liquid)¦drowning (e.g. in a sauce)",
     "0llcg\tだぼ鯊\tだぼはぜ|ダボハゼ~~~!\tn¦uk¦goby (fish)",
     "0llcq\tだまし取る|騙し取る|騙しとる~sK\tだましとる\tv5r,vt¦¦to take by deception¦to defraud someone of¦to swindle someone out of¦to cheat someone out of",
     "0lld0\t駄目になる\tだめになる\texp,v5r¦¦to spoil¦to break¦to go bad¦to go wrong¦to fail¦駄目・1",
@@ -56,11 +54,9 @@ export const PIECE: WordsPiece = {
     "0llpi\t\tちらちら|チラチラ|チラッチラッ\tadv-to,vs¦on-mim¦falling lightly (e.g. snow, petals, confetti)¦fluttering\tadv-to,vs¦on-mim¦flickering¦twinkling¦glimmering¦sparkling¦dazzling\tadv-to,vs¦on-mim¦appearing and disappearing¦catching glimpses\tadv-to,vs¦on-mim¦glancing (repeatedly)¦ちらっと\tadv-to,vs¦on-mim¦(hear, see) from time to time¦intermittently",
     "0llps\t\tちらっと|チラッと|チラっと|ちらと|チラと\tadv¦on-mim¦at a glance¦by accident",
     "0llqc\t\tちんこ|チンコ\tn¦ktb¦practice¦2",
-    "0llqw\t\tちんちん|チンチン\tn¦chn¦penis\tadv,adv-to¦on-mim¦with a tinkle¦with a jingle\tadv,adv-to¦on-mim¦with a whistle (of a kettle)\tn,vs,vi¦¦sitting up and begging (of a dog)\tn¦ktb¦juvenile black porgy¦クロダイ\tn¦¦children's game in which one hops on one foot¦ちんちんもがもが\tadj-na¦¦very hot (e.g. of tea)¦Aichi dialect\tn¦obs¦flirting¦fondling¦ちんちんかもかも\tn¦obs¦jealousy",
+    "0llqw\t\tちんちん|チンチン\tadv,adv-to¦on-mim¦with a tinkle¦with a jingle¦2\tadv,adv-to¦on-mim¦with a whistle (of a kettle)¦3\tn,vs,vi¦¦sitting up and begging (of a dog)¦4\tn¦ktb¦juvenile black porgy¦クロダイ¦5\tn¦¦children's game in which one hops on one foot¦ちんちんもがもが¦6\tadj-na¦¦very hot (e.g. of tea)¦Aichi dialect¦7\tn¦obs¦flirting¦fondling¦ちんちんかもかも¦8\tn¦obs¦jealousy¦9",
     "0llr6\tちんちん鳴る\tちんちんなる\tv5r¦¦to jingle¦to tinkle¦to whistle (kettle)",
     "0llrg\tチンドン屋|ちんどん屋\tちんどんや\tn¦¦eccentrically dressed band of advertisers",
-    "0lls0\t\tチンポ|チンボ|ちんぽ|ちんぼ\tn¦chn¦penis",
-    "0llsa\t\tちんぽこ|チンポコ|ちんぼこ|チンボコ\tn¦chn¦penis¦チンポ",
     "0llsk\tっ放し\tっぱなし\tsuf¦uk¦leaving (on, open, unfinished, etc.)¦after the -masu stem of a verb; indicates that something is left in an improper state\tsuf¦uk¦(doing) continuously¦constantly¦keep ...-ing¦after the -masu stem of a verb",
     "0llsu\t\tつい\tadv¦¦just (now)\tadv¦¦quite (near)\tadv¦¦unintentionally¦subconsciously¦by mistake¦against one's better judgement (judgment)",
     "0llte\t序でに~rK|序に~rK\tついでに\tadv¦uk¦while (one is at it)¦when¦on the occasion of¦at the same time (as)¦on one's way (to)¦by the way¦incidentally¦in passing",
@@ -273,7 +269,7 @@ export const PIECE: WordsPiece = {
     "0lnni\t\tパッチリ|ぱっちり\tadv,adv-to,vs¦on-mim¦wide open (of eyes)¦large and bright (eyes)",
     "0lnns\t\tパッと|ぱっと|パっと~sk\tadv¦on-mim¦suddenly¦in a flash¦quickly¦rapidly¦swiftly¦nimbly\tadv,vs¦on-mim¦conspicuously¦prominently¦showily¦attractively¦impressively¦ぱっとしない",
     "0lno2\t\tパリパリ|ぱりぱり\tadj-na,adv,n¦on-mim¦crispy¦crunchy\tadj-na,adv,n¦on-mim¦tearing¦ripping¦cracking\tadj-na,n¦on-mim¦spirited¦energetic¦vigorous\tadj-na,n¦on-mim¦brand-new and high quality (clothing)¦well-starched¦crisp (bill)",
-    "0lnoc\t\tパンパン|ぱんぱん\tadv,adv-to¦on-mim¦kapow¦bang¦slap¦clap\tadj-na¦on-mim¦bulging¦filled to bursting\tn¦hist¦prostitute (catering to Occupation soldiers in Japan after WWII)¦パンパン¦パンパンガール",
+    "0lnoc\t\tパンパン|ぱんぱん\tadv,adv-to¦on-mim¦kapow¦bang¦slap¦clap\tadj-na¦on-mim¦bulging¦filled to bursting",
     "0lnom\t延いては\tひいては\tadv¦uk¦by extension¦in turn¦by the same token¦in addition¦as well¦consequently",
     "0lnow\t\tひかり\tn¦¦Hikari¦high-speed Tōkaidō and Sanyō-line Shinkansen train service (faster than Kodama; slower than Nozomi)¦こだま|のぞみ",
     "0lnp6\t\tひくひく\tadv,adv-to,vs¦on-mim¦twitching",
@@ -410,7 +406,6 @@ export const PIECE: WordsPiece = {
     "0losw\t呆んやり~sK\tぼんやり|ボンヤリ\tadv,adv-to,vs¦on-mim¦dimly¦faintly¦indistinctly¦vaguely\tadv,adv-to,vs¦on-mim¦absentmindedly¦vacantly¦carelessly¦in a spaced out manner\tadv,adv-to,vs¦on-mim¦idly¦aimlessly\tn¦¦absentmindedness\tn¦¦absentminded person¦fool¦dunce",
     "0lot6\t\tぽかぽか|ポカポカ|ぽっかぽか|ポッカポカ\tadj-no,adv-to,adv,vs¦on-mim¦pleasantly warm¦nice and warm\tadv-to,adv,vs¦on-mim¦repeatedly (hitting someone)¦again and again¦over and over",
     "0lotg\t\tぽかん|ポカン|ぱかん|パカン\tadv-to¦on-mim¦vacantly¦blankly¦absentmindedly\tadv-to¦on-mim¦openmouthed¦with one's mouth wide-open¦gaping¦flabbergasted\tadv-to¦on-mim¦with a whack¦with a thump",
-    "0lotq\t\tポコチン|ぽこちん\tn¦chn¦willy¦penis",
     "0lou0\t\tポタポタ|ぽたぽた|ボタボタ|ぼたぼた|ぼとぼと|ボトボト|ポトポト|ぽとぽと\tadv,adv-to,vs¦on-mim¦dripping¦trickling¦drop by drop¦in drops\tadv,adv-to,vs¦on-mim¦wet and heavy (snow, clay, etc.)¦ボタボタ|ぼたぼた\tadv,adv-to¦on-mim,arch¦(moving) slowly¦ボタボタ|ぼたぼた",
     "0loua\tポタポタ落ちる|ぽたぽた落ちる\tポタポタおちる~~ポタポタ落ちる|ぽたぽたおちる~~ぽたぽた落ちる\texp,v1¦¦to fall in drops¦to drip down¦to trickle down¦ぽたぽた・1",
     "0louk\t\tぽちゃぽちゃ|ちゃぽちゃぽ|ぼちゃぼちゃ|ぴちゃぴちゃ|パチャパチャ|チャポチャポ|バチャバチャ|ピチャピチャ\tadv,adv-to,vs¦on-mim¦splashing (water)\tadv,adv-to,vs¦on-mim¦chubby (and cute)¦plump¦ぽちゃぽちゃ",
@@ -418,7 +413,7 @@ export const PIECE: WordsPiece = {
     "0lov4\t\tぽってり\tadv,adv-to,vs¦on-mim¦plump¦fat¦thick (e.g. curry)¦full (e.g. lips)",
     "0love\t\tポツポツ|ぽつぽつ\tn¦¦dots¦spots\tadv,adv-to¦on-mim¦bit by bit¦little by little¦gradually\tadv,adv-to¦on-mim¦here and there¦scattered¦dotted\tadv,adv-to¦on-mim¦in drops¦(falling) lightly",
     "0lovy\t\tぽろぽろ|ポロポロ\tadj-na,adv,n,vs¦on-mim¦in large drops¦ぼろぼろ・3",
-    "0low8\tポン引き|ぽん引き\tポンびき~~ポン引き|ポンぴき~~ポン引き|ぽんびき~~ぽん引き|ぽんぴき~~ぽん引き\tn¦¦tout¦swindler¦con-man\tn¦¦pimp",
+    "0low8\tポン引き|ぽん引き\tポンびき~~ポン引き|ポンぴき~~ポン引き|ぽんびき~~ぽん引き|ぽんぴき~~ぽん引き\tn¦¦tout¦swindler¦con-man",
     "0lowi\t\tまあ|まー|まぁ|ま\tadv¦¦just (e.g. \"just wait here\")¦come now¦now, now¦when urging or consoling\tadv¦¦tolerably¦passably¦moderately¦reasonably¦fairly¦rather¦somewhat\tadv¦¦well ...¦I think ...¦it would seem ...¦you might say ...¦Hmmm, I guess so ...¦when hesitating to express an opinion\tint¦fem¦oh!¦oh dear!¦oh, my!¦wow!¦goodness gracious!¦good heavens!",
     "0lows\t\tまあね\texp¦¦well, I must admit ...",
     "0lox2\t\tまあまあ\tadj-no,adj-na,adv¦¦so-so¦passable¦not (so) bad¦reasonable\tint¦¦now, now¦there, there¦there now¦used to comfort someone or calm someone down\tint¦fem¦my, my¦oh my!¦dear me!¦expression of surprise or wonder",
@@ -466,7 +461,6 @@ export const PIECE: WordsPiece = {
     "0lpay\t\tもじもじ|モジモジ\tadv,vs¦on-mim¦bashfully¦hesitantly¦fidgety¦restlessly¦squirming¦wriggling¦haltingly",
     "0lpb8\t捩り\tもじり\tn¦uk¦parody (of a famous work)\tn¦uk¦pun",
     "0lpbs\t\tもたもた|モタモタ\tadv,adv-to,vs¦on-mim¦slowly¦inefficiently¦tardily¦dawdling",
-    "0lpc2\t\tもっこり|モッコリ\tadv,adv-to,vs,n¦on-mim¦bulging (esp. of male genitals under clothing)",
     "0lpcc\t\tもっと\tadv¦¦(some) more¦even more¦longer¦further",
     "0lpcm\t持て成し~rK|持てなし~rK\tもてなし\tn¦uk¦hospitality¦reception¦treatment¦service¦entertainment\tn¦uk¦(light) refreshment¦entertaining with food and drink¦treat",
     "0lpcw\t\tもどかしい\tadj-i¦¦irritating¦irritated¦frustrating¦vexing¦(feeling things are) not quick enough¦(feeling) too slow-going¦(feeling) impatient¦tantalizing¦tantalising",
@@ -710,5 +704,13 @@ export const PIECE: WordsPiece = {
     "0lrfc\t\tアクター|アクタ\tn¦¦actor",
     "0lrfm\t\tアクチニウム\tn¦¦actinium (Ac)",
     "0lrfw\t\tアクティブディフェンス|アクティブ・ディフェンス\tn¦¦active defense¦active defence",
+    "0lrg6\t\tアクチュアリティー\tn¦¦actuality",
+    "0lrgg\t\tアクチュアル|アクチャル\tadj-na,n¦¦actual",
+    "0lrgq\t\tアクチュアルタイム|アクチュアル・タイム\tn¦¦actual time",
+    "0lrh0\t\tアクティビティ|アクティビティー~sk|アクティヴィティ~sk|アクテビティ~sk|アクティヴィティー~sk|アクテビティー~sk\tn¦¦activity",
+    "0lrha\t\tアクティブ|アクティヴ~sk|アクチブ~sk\tadj-na¦¦active",
+    "0lrhu\t\tアクティブソーラーハウス|アクティブ・ソーラー・ハウス\tn¦¦active solar house",
+    "0lri4\t\tアクティブホーミング|アクティブ・ホーミング\tn¦¦active homing",
+    "0lrie\t\tアクティベーション|アクチベーション~rk\tn¦¦activation\tn¦abbr,comp¦product activation¦プロダクトアクティベーション",
   ],
 };

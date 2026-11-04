@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 11 of 145, from "0ng6". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 11 of 144, from "0ngk". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,15 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0ng60\t1¦シート｜横《よこ》にあるノブを｜前《さき》に｜動《どう》かし、シートを｜倒《たお》します。¦Move the knob at the side of the seat forwards, collapse the seat.¦3¦4n4e¦¦¦ノブ\t2¦ノブを｜回《まわ》して、ドアをあけなさい。¦Turn the knob and open the door.¦3¦497g¦bunbuku¦CK¦ノブ",
-    "0ng7o\t1¦｜彼女《かのじょ》はアカデミー｜賞《しょう》の｜最優秀《さいゆうしゅう》｜助演《じょえん》｜女優《じょゆう》にノミネートされた。¦She won an Oscar nomination for best supporting actress.¦1¦204d¦¦CK¦ノミネート",
-    "0ng8s\t1¦ノルウェーやフィンランドのような｜国《くに》では｜冬《ふゆ》には｜雪《ゆき》が｜多《おお》い。¦In such countries as Norway and Finland, they have lots of snow in winter.¦3¦497e¦¦Dejo¦ノルウェー",
-    "0ng92\t1¦アルペンスキーの｜方《ほう》がノルディックより｜好《す》きです。¦I like Alpine skiing better than Nordic skiing.¦3¦4xeo¦¦CK¦ノルディック",
-    "0ngba\t1¦｜列車《れっしゃ》は｜名古屋《なごや》までノンストップで｜走《はし》ります。¦This train runs nonstop to Nagoya.¦3¦1nro¦arnab¦CK¦ノンストップ",
-    "0ngec\t1¦あなたは｜創作《そうさく》とノンフィクションのどちらが｜好《す》きですか。¦Which do you like better, fiction or non-fiction?¦1¦4yu9¦e4zh1nmcz¦Zifre¦ノンフィクション",
-    "0ngga\t1¦｜次《つぎ》の｜瞬間《しゅんかん》ヘラクレスは｜怪獣《かいじゅう》を｜捕《つか》まえた。¦The next instant Hercules caught hold of the monster.¦1¦37ya¦¦¦ヘラクレス",
-    "0ngho\t1¦｜彼女《かのじょ》はハート｜型《がた》のイヤリングをしていた。¦She wore heart-shaped earrings.¦2¦1yt6¦¦CK¦ハート",
-    "0ngi8\t1¦ウーッ、｜今日《きょう》の｜練習《れんしゅう》はいつになくハードで｜辛《から》い。¦Whoo! Today's practice is tough - much harder than usual.¦2¦4w67¦¦¦ハード\t2¦Xbox 360については「いいハードです」と｜開口一番《かいこういちばん》｜切《き》り｜出《だ》した。¦On the Xbox 360 the very first thing he said was \"good hardware.\"¦3¦1l5z¦fcbond¦fcbond¦ハード\t3¦ハードが｜断片化《だんぺんか》を｜起《お》こしてるみたい。¦It looks like your hard disk is fragmented.¦2¦493n¦¦spockofvulcan¦ハード",
     "0ngkq\t1¦｜外付《そとづ》けのハードディスクに｜保存《ほぞん》しといて。¦Save it on the external hard drive.¦1¦3yj2¦small_snow¦CK¦ハードディスク",
     "0ngm4\t1¦あいつはハードボイルドなやつだ。¦He is a hard boiled egg.¦5¦511j¦mookeee¦¦ハードボイルドな",
     "0ngn8\t1¦バイクに｜乗《の》るのとハードロックのコンサートが｜大好《だいす》き。¦I love biking and hard rock concerts.¦3¦491m¦¦CK¦ハードロック",
@@ -233,5 +224,19 @@ export const PIECE: WordsPiece = {
     "0noee\t1¦ビクトリア｜女王《じょおう》は｜英国《えいこく》の｜君主《くんしゅ》だった。¦Queen Victoria was the sovereign of Great Britain.¦3¦48hq¦KK_kaku_¦Objectivesea¦ビクトリア",
     "0noeo\t1¦このビザの｜有効期限《ゆうこうきげん》はどれくらいですか。¦How long is this visa good for?¦2¦4sab¦bunbuku¦CK¦ビザ",
     "0nogc\t1¦｜私《わたし》のビジネスは｜再《ふたた》び｜回復《かいふく》しつつあります。¦My business is picking up again.¦2¦3imy¦¦CK¦ビジネス",
+    "0noj4\t1¦ビジネススクールに｜行《い》きたいのです。¦I would like to go to a business school.¦5¦48gt¦¦CK¦ビジネススクール",
+    "0nojy\t1¦｜日本《にほん》のビジネスホテルはそんなに｜高《たか》くない。¦In Japan it is less expensive to stay in a Business hotel.¦5¦2mnm¦¦¦ビジネスホテル",
+    "0nok8\t1¦｜彼《あれ》は｜一介《いっかい》のビジネスマンにすぎない。¦He is nothing but a businessman.¦2¦2cwg¦¦CK¦ビジネスマン",
+    "0nooe\t1¦あなたは｜自分《じぶん》の｜将来《しょうらい》のビジョンを｜持《も》っていますか。¦Do you have a vision of your future?¦¦4yxk¦bunbuku¦CM¦ビジョン",
+    "0nop8\t1¦「ママ、ビスケット｜食《た》べてもいいでしょ」「だめです。｜間食《かんしょく》はいけません」¦\"Mom, please can I have a biscuit?\" \"No, you can't; you shouldn't eat between meals.\"¦5¦52fk¦mookeee¦¦ビスケット",
+    "0noqw\t1¦ビタミンが｜豊富《ほうふ》にある｜野菜《やさい》を｜食《た》べた｜方《ほう》がいい。¦You should eat some vegetables rich in vitamins.¦2¦48gk¦¦CK¦ビタミン",
+    "0nor6\t1¦ビタミン｜剤《ざい》｜売《う》り｜場《ば》はどこですか。¦Where's the aisle for vitamins?¦1¦48gj¦¦CK¦ビタミン剤",
+    "0norq\t1¦東京をビッグミカンってよぼうよ！¦Let's call Tokyo the Big Mikan!¦4¦2ntj¦¦¦ビッグ",
+    "0nou8\t1¦これがビッグベンと｜呼《よ》ばれる｜鐘《かね》です。¦This is the bell called Big Ben.¦1¦4oyx¦¦¦ビッグベン",
+    "0nowg\t2¦ビデオで｜映画《えいが》を｜見《み》ました。¦I watched a movie on video.¦4¦48fz¦¦CM¦ビデオ\t3¦ビデオの代金を５回に分けて払った。¦I paid for the video in five installments.¦¦48fy¦small_snow¦AlanF_US¦ビデオ",
+    "0noxk\t1¦ちょっとあなたのビデオカメラを｜見《み》せて｜下《くだ》さい。¦Let me have a look at your video camera.¦5¦4cj4¦¦CN¦ビデオカメラ",
+    "0noy4\t1¦ビデオゲームは｜割《わり》に｜合《あ》わない。¦It doesn't pay to play video games.¦3¦48g1¦¦AlanF_US¦ビデオゲーム",
+    "0noye\t1¦ビデオショップは３時まで営業しています。¦The video shop is open until 3 o'clock.¦2¦48g0¦KK_kaku_¦CN¦ビデオショップ",
+    "0nozi\t1¦｜私《わたし》は｜今朝《けさ》、ビデオテープを｜借《か》りてきた。¦I rented a videotape this morning.¦4¦3d5h¦¦CN¦ビデオテープ",
   ],
 };

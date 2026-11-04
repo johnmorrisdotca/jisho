@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 27 of 145, from "0q4o". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 27 of 144, from "0q51i". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,24 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0q4o6\t1¦この｜近《ちか》くに｜軍《ぐん》の｜基地《きち》がある。¦There is a military base near here.¦1¦4rj4¦¦CK¦基地",
-    "0q4oq\t1¦バナーと｜同《おな》じ、｜白《しろ》を｜基調《きちょう》としたデザイン。¦Like the banner, the design was based around the colour white.¦1¦1m51¦fcbond¦fcbond¦基調",
-    "0q4p0\t1¦そして｜記念碑《きねんひ》の｜基底《きてい》｜部分《ぶぶん》には｜願《ねが》い｜事《ごと》が｜刻《きざ》まれている。¦And a wish is engraved on the base of the statue.¦¦4kqt¦¦¦基底",
-    "0q4pu\t1¦２１世紀は経済力を基盤とするようになるだろう。¦The 21st century is going to be based on economic power.¦1¦51rg¦e4zh1nmcz¦¦基盤",
-    "0q4qe\t1¦「これは・・・」「｜軍手《ぐんて》とスコップ。｜園芸《えんげい》｜部《ぶ》｜基本《きほん》｜道具《どうぐ》のひとつだよ」¦\"This is ...\" \"Working glove and trowel. One of a gardening club's basic tools.\"¦1¦1nfu¦mookeee¦¦基本",
-    "0q4sc\t1¦｜順《じゅん》を｜追《お》って｜基本的《きほんてき》なタグを｜覚《おぼ》えていこう。¦Let's learn the basic tags in order.¦¦1mnu¦mookeee¦¦基本的な",
-    "0q4sm\t1¦｜人間《にんげん》は｜基本的《きほんてき》には｜善良《ぜんりょう》だと｜私《わたし》は｜信《しん》じている。¦I believe people are basically good.¦¦33c7¦¦CK¦基本的に",
-    "0q4sw\t1¦くしくも、レジでの合計額は７７７円であった。¦Strangely, the cash register's total was 777 yen.¦2¦1n8x¦¦shekitten¦くしくも",
-    "0q4t6\t1¦｜岩《いわ》が｜風化《ふうか》して｜奇異《きい》な｜形《かたち》になる。¦The rocks are weathered into fantastic forms.¦1¦3xpt¦¦Zifre¦奇異な",
-    "0q4tg\t1¦｜彼《あれ》は｜奇怪《きかい》な｜体験《たいけん》を｜詳《くわ》しく｜話《はな》した。¦He recounted his unusual experiences.¦1¦2btq¦¦¦奇怪な",
-    "0q4wi\t1¦１、３、５は奇数である。¦One, three, and five are odd numbers.¦1¦5273¦mookeee¦CK¦奇数",
-    "0q4x2\t1¦このミステリーのトリックは、｜奇想天外《きそうてんがい》だ。¦This mystery has a plot twist that's completely novel.¦1¦4s61¦¦¦奇想天外",
-    "0q4xw\t1¦｜彼《あれ》は、｜奇抜《きばつ》なアイデアを｜出《だ》すため、もっと｜保守的《ほしゅてき》な｜同僚《どうりょう》と｜何度《なんど》ももめごとをおこしている。¦His novel ideas are time and again getting him into trouble with his more conservative colleagues.¦¦2h65¦¦CM¦奇抜な",
-    "0q4yq\t1¦これはとても｜奇妙《きみょう》な｜手紙《てがみ》です。¦This is a very strange letter.¦1¦4ona¦¦CK¦奇妙な",
-    "0q4za\t1¦あなたに｜再会《さいかい》できてうれしい。¦I am pleased to see you again.¦2¦50be¦¦CK¦うれしい",
-    "0q4zk\t1¦その｜結果《けっか》の｜報道《ほうどう》に｜満足《まんぞく》して｜彼《あれ》は｜手《て》をもんでうれしがっていた。¦He was rubbing his hands over the report of the result.¦1¦4iwm¦¦fekundulo¦うれしがっていた",
-    "0q50o\t1¦｜道《みち》の｜脇《かたわら》に｜寄《よ》せてください。¦Pull over to the side, please.¦¦2nd7¦¦pip¦寄せて\t2¦いすをもっと｜火《ひ》の｜近《ちか》くに｜寄《よ》せなさい。¦Draw your chair closer to the fire.¦3¦4wrr¦¦¦寄せ\t3¦｜誤字《ごじ》・｜誤訳《ごやく》のご｜指摘《してき》｜等《など》は｜下記《かき》メールアドレスよりお｜寄《よ》せください。¦Please send reports of mistypings and mistranslations to the email address below.¦1¦1lg7¦fcbond¦fcbond¦お寄せ",
-    "0q518\t1¦｜二人《ふたり》は｜仲間《なかま》、｜三人《さんにん》は｜寄《よ》せ｜集《あつ》めの｜群《む》れ。¦Two's company, three's a crowd.¦2¦2myg¦¦CK¦寄せ集め",
     "0q51i\t1¦｜彼《かれ》らは｜母《はは》への｜贈《おく》り｜物《もの》を｜買《か》うだけの｜金《かね》を｜寄《よ》せ｜集《あつ》めた。¦They scraped up enough money to buy a gift for their mother.¦2¦227h¦¦CK¦寄せ集めた",
     "0q52w\t1¦｜彼女《かのじょ》は｜夫《おっと》のそばにぴったり｜寄《よ》り｜添《そ》っていた。¦She stood close to her husband.¦1¦1v3b¦bunbuku¦CK¦寄り添っていた",
     "0q536\t1¦ぶらぶら｜寄《よ》り｜道《みち》していこうよ。¦Let's just wander and see where it takes us.¦3¦480u¦KK_kaku_¦orcrist¦寄り道",
@@ -121,7 +103,6 @@ export const PIECE: WordsPiece = {
     "0q6mq\t1¦ごめんね｜今《いま》は｜気《き》が｜立《た》っているからやめようね。¦Sorry, he's over excited now, so let's leave it.¦4¦1lik¦fcbond¦fcbond¦気が立っている",
     "0q6n0\t1¦ある｜意味《いみ》では、｜丁寧語《ていねいご》は｜気《き》さくな｜雰囲気《ふんいき》を｜壊《こわ》す。¦Polite language, in a sense, spoils a casual atmosphere.¦1¦4xeb¦¦al_ex_an_der¦気さくな",
     "0q6na\t1¦｜彼《かれ》らは｜夫婦《ふうふ》きどりだ。¦They pretend to be man and wife.¦3¦228p¦¦CK¦きどり",
-    "0q6nu\t2¦気になる男性の性欲を刺激するにはどうすればよいのでしょうか？¦What should I do to arouse desire in the man I'm interested in?¦1¦1ldb¦fcbond¦fcbond¦気になる",
     "0q6o4\t1¦｜他人《たにん》のいうことを｜気《き》にかけるな。¦Don't worry about what others say.¦3¦2yw9¦mookeee¦CK¦気にかける",
     "0q6oo\t1¦あの｜音楽《おんがく》は｜彼《あ》の｜気《き》にさわる。¦That music gets on his nerves.¦3¦4ydv¦¦CK¦気にさわる",
     "0q6oy\t1¦｜何《なに》がそんなに｜気《き》にくわないのですか。¦What makes you so dissatisfied?¦5¦414s¦¦Luornu¦気にくわない",
@@ -210,5 +191,20 @@ export const PIECE: WordsPiece = {
     "0q7xo\t1¦｜今日《きょう》の｜式典《しきてん》は、わが｜校《こう》の100｜周年《しゅうねん》を｜記念《きねん》するものです。¦Today's ceremony marks the 100th anniversary of our school.¦1¦3omz¦KK_kaku_¦¦記念\t2¦アメリカ｜旅行《りょこう》のよい｜記念《きねん》になります。¦This will be a good souvenir of my trip around the United States.¦3¦4xjb¦¦CK¦記念",
     "0q7y8\t1¦｜記念式典《きねんしきてん》は｜閉会《へいかい》の｜辞《じ》で｜幕《まく》を｜閉《と》じた。¦The commemorative ceremony ended with the closing address.¦1¦3x96¦tommy__san¦shekitten¦記念式典",
     "0q7ys\t1¦｜今日《きょう》は｜私達《わたしたち》の｜記念日《きねんび》なので、｜夕御飯《ゆうごはん》もスペシャルでいこう。¦Today is our anniversary so let's make this a special dinner.¦3¦3oex¦¦CM¦記念日",
+    "0q7z2\t1¦この｜記念碑《きねんひ》は｜祖国《そこく》に｜命《いのち》を｜捧《ささ》げた｜兵士《へいし》を｜祭《まつ》っている。¦This monument is dedicated to the soldiers who gave their lives to their country.¦¦4rlw¦¦CK¦記念碑",
+    "0q806\t1¦｜持《も》ち｜物《もの》すべてに｜記名《きめい》してください。¦Please put their name on everything they take with them.¦3¦1lsh¦fcbond¦fcbond¦記名",
+    "0q80g\t1¦｜今年《ことし》になってやっとこれらの｜記録《きろく》がみんなに｜利用《りよう》できるようになった。¦It was not until this year that these documents were made available to the public.¦2¦3o9b¦¦CK¦記録\t1¦｜無言《むごん》が｜記録《きろく》されたためしはない。¦No silence was ever written down.¦¦1qg8¦¦¦記録\t2¦｜日本《にほん》の｜貿易黒字《ぼうえきくろじ》は｜史上最高《しじょうさいこう》を｜記録《きろく》しました。¦Japan's trade surplus soared to a record high.¦2¦2mk5¦small_snow¦CM¦記録\t2¦この｜種《しゅ》は｜長距離《ちょうきょり》｜移動《いどう》の｜記録《きろく》を｜持《も》っています。¦This species holds the record for long-distance migration.¦1¦4qq9¦¦¦記録",
+    "0q80q\t1¦｜昨夜《ゆうべ》エイズの｜記録映画《きろくえいが》を｜見《み》て、その｜恐《こわ》ろしさがしみじみ｜分《わ》かった。¦The danger of AIDS came home to me when I saw a documentary film on it last night.¦¦3mxo¦bunbuku¦¦記録映画",
+    "0q82e\t1¦｜当社《とうしゃ》には｜貴社《きしゃ》のシステムに｜対《たい》するニーズがありません。¦Your system isn't suited to our company's needs.¦1¦2npl¦¦¦貴社",
+    "0q82o\t1¦あれは｜貴重《きちょう》な｜経験《けいけん》だった。¦That was a valuable experience.¦1¦4x91¦bunbuku¦CK¦貴重な",
+    "0q82y\t1¦この｜貴重品《きちょうひん》を｜預《あず》かってもらえますか。¦Could you hold these valuables?¦1¦4rlv¦¦mccarras¦貴重品",
+    "0q83i\t1¦｜彼《あれ》は｜貴族《きぞく》の｜出《で》である。¦He springs from a noble family.¦1¦2br6¦small_snow¦¦貴族の",
+    "0q84c\t1¦｜貴殿《きでん》の｜娘《むすめ》さんは｜麻薬《まやく》｜漬《づ》けです。¦Your daughter's on drugs.¦1¦3x7v¦¦CM¦貴殿",
+    "0q84w\t1¦｜彼女《かのじょ》には｜貴婦人《きふじん》の｜風格《ふうかく》がある。¦She has the air of being a lady.¦1¦21a3¦mookeee¦CM¦貴婦人",
+    "0q85b\t1¦｜毎晩《まいばん》｜十分《じゅうぶん》な｜睡眠《すいみん》をとれば、あなたはずっと｜気分《きぶん》がよくなるだろう。¦If you get enough rest every night, you'll feel much better.¦¦1qob¦¦CK¦あなた\t2¦ねえあなたたち｜行《い》かないで。¦Don't go, dears.¦5¦499s¦¦Eldad¦あなた",
+    "0q85q\t1¦｜職業《しょくぎょう》に｜貴賎《きせん》をつけちゃいけないよ〜。¦You can't go putting your values on people's work!¦¦1mn3¦mookeee¦¦貴賎",
+    "0q860\t1¦６時ごろ起きた。¦I got up at about six.¦4¦51dh¦bunbuku¦CK¦起きた\t2¦お｜子《こ》さんはまだ｜起《お》きているのですか。¦Is the kid still up?¦4¦4v8o¦¦¦起きている\t3¦「｜事故《じこ》が｜起《お》きれば、すぐにわかるよ」と｜彼《あれ》は｜言《い》う。¦\"If there is an accident,\" he says, \"they will know right away.\"¦1¦52bi¦mookeee¦¦起きれば",
+    "0q86a\t1¦これを｜見《み》ると、｜彼《あれ》は｜起《お》き｜上《あ》がってでていった。¦At this, he got up and went out.¦3¦4ny1¦¦sundown¦起き上がって",
+    "0q86k\t1¦わたしたちはその｜木《き》を｜起《お》こした。¦We got the tree up.¦4¦443f¦¦Dejo¦起こした\t1¦｜六時《ろくじ》｜半《はん》に｜起《お》こしてください。¦Please wake me up at 6:30.¦4¦1nle¦mookeee¦CK¦起こして\t1¦｜病気《びょうき》の｜子供《こども》はベッドの｜上《うえ》で｜体《からだ》を｜起《お》こした。¦The sick child sat up in bed.¦3¦1tsc¦¦CK¦起こした\t2¦メアリーを｜起《お》こして｜来《き》て。¦Go and wake up Mary.¦4¦4683¦bunbuku¦Eldad¦起こして\t2¦ジョンは｜眠《ねむ》っている｜赤《あか》ん｜坊《ぼう》を｜起《お》こさないようにした。¦John tried not to wake the sleeping baby.¦¦4m2d¦¦Swift¦起こさない\t3¦｜彼《あれ》は｜不注意《ふちゅうい》な｜運転《うんてん》で｜事故《じこ》を｜起《お》こした。¦He drove carelessly and had an accident.¦1¦25iq¦¦CK¦起こした\t3¦かんしゃくを｜起《お》こしても｜何《ど》の｜得《とく》もない。¦There is no advantage in losing your temper.¦3¦4ug7¦small_snow¦¦起こして\t3¦｜小《ちい》さな｜火花《ひばな》はしばしば｜大《おお》きな｜炎《ほのお》を｜起《お》こす。¦A small spark often kindles a large flame.¦1¦8cor¦Scott¦¦起こす\t4¦｜私《わたし》はその｜医者《いしゃ》を｜相手取《あいてど》って｜訴訟《そしょう》を｜起《お》こした。¦I brought a suit against the doctor.¦1¦3for¦mookeee¦CM¦起こした\t4¦どう｜考《かんが》えても｜今《いま》は｜新《しん》｜事業《じぎょう》を｜起《お》こすべきではない。¦This is hardly the time to start a new enterprise.¦4¦4b6a¦¦handsomelyian¦起こす\t4¦ある｜団体《だんたい》が｜雨林《うりん》を｜保護《ほご》する｜運動《うんどう》を｜起《お》こした。¦A group started a campaign to preserve rain forests.¦1¦4xcf¦¦CM¦起こした\t6¦｜教師《きょうし》｜達《たち》は｜生徒《せいと》にやる｜気《き》を｜起《お》こさせるように｜努力《どりょく》している。¦The teachers are trying to motivate their students.¦3¦3v17¦¦CK¦起こさせる\t6¦これが｜彼《あれ》にかんしゃくを｜起《お》こさせた。¦This flung him into a passion.¦3¦4ouy¦¦¦起こさせた\t7¦｜昨日《きのう》｜父《ちち》が｜心臓発作《しんぞうほっさ》を｜起《お》こしたが、｜診療所《しんりょうじょ》が｜近《ちか》くにあるのは｜好運《こううん》だった。¦My father had a heart attack yesterday, but he was lucky to have a clinic close at hand.¦1¦3n12¦¦papabear¦起こした\t7¦ジムはスキーをしていて｜脚《あし》に｜肉離《にくばな》れを｜起《お》こした。¦Jim pulled a muscle in his leg while skiing.¦1¦4mog¦¦CN¦起こした",
   ],
 };

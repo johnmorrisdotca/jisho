@@ -1,7 +1,7 @@
 import type { WordsPiece } from "../../words.types.ts";
 
 /**
- * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 7 of 145, from "0mdk". Written by `scripts/build-examples.mjs`, never edited by hand.
+ * The example sentences of JMdict that safe mode keeps, by the number of the entry in base 36: each line is the entry's number, then each example, apart by tabs. An example is the number of the sense it shows, the sentence with the kana that read each kanji marked ｜kanji《かな》, the English, the JLPT level of its kanji (5 to 1), the Tatoeba number in base 36, the authors of the two sentences and the form of the word in the sentence, apart by ¦. Piece 7 of 144, from "0mdr". Written by `scripts/build-examples.mjs`, never edited by hand.
  *
  * The sentences are from the Tatoeba project (https://tatoeba.org), under the Creative Commons Attribution 2.0 France licence (CC BY 2.0 FR,
  * https://creativecommons.org/licenses/by/2.0/fr/), each with its author's name. The links from a sense of a word to the sentences that show it are
@@ -10,11 +10,6 @@ import type { WordsPiece } from "../../words.types.ts";
  */
 export const PIECE: WordsPiece = {
   rows: [
-    "0mdkk\t1¦クラシックはありません。¦I don't have any classical music.¦5¦4u2z¦¦CK¦クラシック",
-    "0mdku\t1¦どんなに｜高《たか》くてもあのクラシックカーを｜手《て》に｜入《い》れたい。¦I will get that classic car at all costs.¦4¦49yh¦¦RoyalBee¦クラシックカー",
-    "0mdly\t1¦あなたはうちのクラスで｜歓迎《かんげい》されています。¦You are welcomed in our class.¦1¦4zmj¦¦¦クラス",
-    "0mdnw\t1¦｜私《わたし》たちはクラスメイトです。¦We're classmates.¦4¦3kik¦KK_kaku_¦CK¦クラスメイト",
-    "0mdqe\t1¦クラッチペダルを｜数回《すうかい》｜踏《ふ》むと、なんとかクラッチが｜切《き》れたので、｜騙《だま》し｜騙《だま》し｜運転《うんてん》しました。¦Repeatedly slamming the clutch pedal, I somehow managed to get the clutch disengaged so I could just about drive for the time being.¦¦1n8v¦¦al_ex_an_der¦クラッチ",
     "0mdr8\t1¦クラッチペダルを｜数回《すうかい》｜踏《ふ》むと、なんとかクラッチが｜切《き》れたので、｜騙《だま》し｜騙《だま》し｜運転《うんてん》しました。¦Repeatedly slamming the clutch pedal, I somehow managed to get the clutch disengaged so I could just about drive for the time being.¦¦1n8v¦¦al_ex_an_der¦クラッチペダル",
     "0mduk\t1¦撮影は３日間でクランクアップします。¦The picture will finish shooting in three days.¦1¦3mu3¦¦¦クランクアップ",
     "0mdw8\t1¦クリーニング｜取《と》ってきておいて。¦Please pick up my dry cleaning.¦3¦4u0o¦¦CK¦クリーニング",
@@ -217,5 +212,10 @@ export const PIECE: WordsPiece = {
     "0mo72\t1¦サミットが｜開《ひら》かれるのはこの｜部屋《へや》です。¦It is in this room that the summit will be held.¦3¦4n8j¦¦CM¦サミット",
     "0mo8q\t1¦もう｜少《すこ》しサラダはいかがですか。¦Would you like some more salad?¦4¦45sp¦small_snow¦CK¦サラダ",
     "0mo90\t1¦私はサラダオイルを１びん買った。¦I bought a bottle of salad oil.¦4¦3fyo¦¦CK¦サラダオイル",
+    "0mo9k\t1¦かしこまりました。サラダバーはあちらです。¦All right, sir. The salad bar is over there.¦5¦4upa¦arnab¦Sudajaengi¦サラダバー",
+    "0mobi\t1¦｜彼《あれ》はサラリーだけによって｜仕事《しごと》を｜選《えら》びます。¦He chooses his job only in term of salary.¦3¦2fo6¦¦¦サラリー",
+    "0mobs\t1¦なあに、しがないサラリーマンですよ。¦Me? I'm a plain old salaryman.¦5¦49tq¦¦RoyalBee¦サラリーマン",
+    "0mog8\t1¦｜鶏卵《けいらん》｜生産《せいさん》におけるサルモネラ｜汚染《おせん》を｜防止《ぼうし》することが｜必要《ひつよう》です。¦It is essential to prevent salmonella contamination in hen egg production.¦1¦ape8¦blay_paul¦blay_paul¦サルモネラ",
+    "0mohc\t1¦｜落《お》ち｜着《つ》いた｜雰囲気《ふんいき》のサロンでゆったりとした｜時間《じかん》をお｜楽《たの》しみください。¦Please enjoy a calm time in a relaxed atmosphere beauty salon.¦1¦1mdz¦mookeee¦¦サロン",
   ],
 };
