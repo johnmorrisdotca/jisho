@@ -6,6 +6,25 @@ All notable changes to this project are written here. The format follows
 
 ## [Unreleased]
 
+## [2.7.0] - 2026-11-03
+
+A minor version: nothing that 2.6.0 gave is taken away. The package is 2.2 MB larger to download (26.4 to 28.6 MB), all of it the strokes, which an entry point of their own holds and fetches only when asked for.
+
+### Added
+
+- **Stroke order.** `@johnmorrisdotca/jisho/strokes`: `loadStrokes(text)` fetches the strokes of the kanji in a text (a piece of about 20 kB gzipped for each place they are in), `strokesOf(table, kanji)` reads one kanji's paths, in the order they are written, and `strokeOrderSvg(strokes, options)` draws them as an SVG that writes itself stroke by stroke, with CSS the SVG carries, so it needs no script and shows every stroke at once for a reader who asks for less motion. It takes `size`, `numbers`, `color`, `label`, `strokeMs` and `animate`. The strokes are KanjiVG's (release r20260714, CC BY-SA 3.0): the paths of 2,967 of the 2,999 kanji, in 57 pieces made by `node scripts/build-strokes.mjs`, each file crediting KanjiVG and linking its website as its licence asks. `NOTICE.md` says what the licence asks of a page that shows them.
+- **Search by drawing a kanji.** `findByDrawing(table, strokes, { limit })` takes the strokes as drawn (lists of points in any units, in the order drawn) and gives the nearest kanji first, each with a distance. It compares the strokes one by one, in the order drawn, with a stroke more or fewer allowed at a cost, whatever the size and place of the drawing. On KanjiVG's own strokes drawn at random sizes and places with noise, the right kanji is first for 98 in 100 and among the first five for all; it is not handwriting recognition. `loadAllStrokes()` fetches every piece (1.1 MB gzipped) for it, and `pathPoints(path)` turns a path into points.
+- **Typo-tolerant search.** `suggestWords(text, { limit, mode, block, allow })`, in `words`, gives the common words whose reading is one slip away from romaji or kana that found nothing: a letter or kana too many, too few, wrong or swapped (`arigatuo` gives ありがとう, `nihonngo` 日本語, `にほんこ` 日本語). It reads the table of the common words, which it fetches once, so it covers those 26,039 words and no others, only by reading.
+- The demo's kanji card writes the kanji's strokes out, with Replay and Numbers; the kanji view has a pad to draw a kanji on, with Undo and Clear, which lists the kanji nearest to it; and a word lookup that finds nothing offers "Did you mean". Guides for stroke order and for typos, in English and Japanese.
+
+### Changed
+
+- `package.json`'s `license` adds `CC-BY-SA-3.0` for the strokes. The strokes keep that licence, not CC BY-SA 4.0, and say so in each file.
+
+### Not added
+
+- Pitch accent. NHK's dictionary is never used. Kanjium's accent list says everything in its repository is CC BY-SA 4.0, but credits its accents to a database of "Uros O." that it names no source or terms for, and says the EDRDG files in it are the Group's without saying whether the accents are among them; Wiktionary has accents on some entries only and needs its whole dump read; OJAD is for non-commercial use. Using a list whose origin is not named is not something an MIT package can rely on, so the choice is John's (MODULES-340).
+
 ## [2.6.0] - 2026-11-03
 
 A minor version: nothing that 2.5.0 gave is taken away. The package is 12.6 MB larger to download (13.8 to 26.4 MB, 49 to 83 MB unpacked) for the whole entries and the example sentences, which two new entry points hold and fetch only when asked for.
