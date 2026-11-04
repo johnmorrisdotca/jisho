@@ -101,6 +101,62 @@ await takePictures({
       ready: '[data-testid="entry-sense"]',
       target: "#entry-card",
     },
+    // The stroke order of 語, written out, on the kanji's card.
+    {
+      subject: "strokes",
+      views: ["desk"],
+      url: "/?lang=en&help=off&list=g2&kanji=%E8%AA%9E&view=kanji",
+      ready: '[data-testid="strokes-picture"] svg',
+      target: "#card",
+    },
+    // A kanji drawn on the pad, and the kanji nearest to it.
+    {
+      subject: "draw",
+      views: ["desk"],
+      url: "/?lang=en&help=off&list=g1",
+      ready: READY,
+      target: ".setup",
+      async prepare(page) {
+        await page.locator('[data-testid="draw-toggle"]').click();
+        const box = await page.locator('[data-testid="draw-canvas"]').boundingBox();
+        const at = (x, y) => [box.x + box.width * x, box.y + box.height * y];
+        // 日, in the order it is written: the left side, the top and right side with the middle bar, then the bottom.
+        for (const stroke of [
+          [
+            [0.3, 0.2],
+            [0.3, 0.8],
+          ],
+          [
+            [0.3, 0.2],
+            [0.7, 0.2],
+            [0.7, 0.8],
+          ],
+          [
+            [0.3, 0.5],
+            [0.7, 0.5],
+          ],
+          [
+            [0.3, 0.8],
+            [0.7, 0.8],
+          ],
+        ]) {
+          const [first, ...rest] = stroke.map(([x, y]) => at(x, y));
+          await page.mouse.move(first[0], first[1]);
+          await page.mouse.down();
+          for (const [x, y] of rest) await page.mouse.move(x, y, { steps: 8 });
+          await page.mouse.up();
+        }
+        await page.locator('[data-testid="draw-result"]').first().waitFor();
+      },
+    },
+    // A typo that found nothing, and the words it may have meant.
+    {
+      subject: "suggest",
+      views: ["desk"],
+      url: "/?lang=en&help=off&view=words&word=arigatuo",
+      ready: '[data-testid="suggestion"]',
+      target: "#words-view",
+    },
     // A search by meaning.
     {
       subject: "search",

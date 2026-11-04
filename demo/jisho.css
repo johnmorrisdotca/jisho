@@ -68,6 +68,8 @@
 .jisho-words-view[hidden],
 #reader-card[hidden],
 #entry-card[hidden],
+.jisho-draw[hidden],
+#suggest-row[hidden],
 .jisho-board[hidden] {
   display: none;
 }
@@ -402,4 +404,46 @@ header nav a[data-say="pageDocs"] {
 .jisho-example-ja {
   font-size: 1.15rem;
   line-height: 1.9;
+}
+.jisho-draw {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-start;
+}
+.jisho-canvas {
+  width: min(260px, 100%);
+  aspect-ratio: 1;
+  touch-action: none;
+  cursor: crosshair;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+}
+.jisho-draw-side {
+  display: grid;
+  gap: 8px;
+  flex: 1 1 14rem;
+  min-width: 0;
+}
+.jisho-strokes {
+  display: grid;
+  gap: 6px;
+  margin-top: 8px;
+}
+.jisho-strokes-title {
+  margin: 0;
+}
+.jisho-strokes-picture svg {
+  width: 140px;
+  height: 140px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+}
+.jisho-strokes-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }

@@ -28,6 +28,18 @@
           <label class="fam-label" for="search" data-say="searchLabel"></label>
           <input class="jisho-input" id="search" data-testid="search" type="search" autocomplete="off" spellcheck="false">
         </div>
+        <div class="fam-row" data-kanji-view data-help-en="Draw a kanji with a finger or the mouse, one stroke after the other in the order you write them, and the kanji that look most like it appear." data-help-ja="指かマウスで、書く順番に1画ずつ漢字を描くと、形のいちばん近い漢字が出ます。">
+          <span class="fam-label" id="draw-label" data-say="drawLabel"></span>
+          <div class="fam-seg" role="group" aria-labelledby="draw-label"><button type="button" id="draw-toggle" data-testid="draw-toggle" aria-pressed="false" data-say="drawLabel"></button></div>
+        </div>
+        <div class="jisho-draw" id="draw-pad" data-testid="draw-pad" hidden>
+          <canvas class="jisho-canvas" id="draw-canvas" data-testid="draw-canvas" width="260" height="260"></canvas>
+          <div class="jisho-draw-side">
+            <p class="fam-muted" id="draw-status" data-testid="draw-status" aria-live="polite"></p>
+            <div class="fam-row"><button class="fam-button" type="button" id="draw-undo" data-testid="draw-undo"></button><button class="fam-button" type="button" id="draw-clear" data-testid="draw-clear"></button></div>
+            <div class="jisho-examples" id="draw-results" data-testid="draw-results" lang="ja"></div>
+          </div>
+        </div>
         <p class="fam-muted" id="count" data-testid="count" data-kanji-view aria-live="polite"></p>
       </section>
       <section class="jisho-words-view" id="words-view" data-testid="words-view" aria-labelledby="choose-title" hidden>
@@ -49,6 +61,10 @@
           <div class="fam-seg" id="audience" role="group" aria-labelledby="audience-label" data-testid="audience"></div>
         </div>
         <p class="fam-muted" id="word-count" data-testid="word-count" aria-live="polite"></p>
+        <div class="fam-row" id="suggest-row" data-testid="suggest-row" hidden>
+          <span class="fam-label" id="suggest-label" data-say="suggestLabel"></span>
+          <div class="jisho-examples" id="suggestions" role="group" aria-labelledby="suggest-label" data-testid="suggestions" lang="ja"></div>
+        </div>
         <div class="jisho-board jisho-words-board">
           <ul class="jisho-words" id="word-list" data-testid="word-list" aria-labelledby="word-count" tabindex="0"></ul>
           <article class="fam-panel jisho-card jisho-entry-card" id="entry-card" data-testid="entry-card" aria-live="polite" hidden></article>

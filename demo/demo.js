@@ -14,9 +14,10 @@ import {
   SCHOOL_GRADES,
   searchKanji,
 } from "./dist/index.js";
-import { findByMeaning, inflectedOf, kanjiOfWord, loadWords, wordsWithKanji } from "./dist/words.js";
+import { findByMeaning, inflectedOf, kanjiOfWord, loadWords, suggestWords, wordsWithKanji } from "./dist/words.js";
 import { createEntryCard, ENTRY_WORDS } from "./entry.js";
 import { createReader, READER_WORDS } from "./reader.js";
+import { createDrawPad, STROKE_WORDS, strokeOrderBox } from "./strokes.js";
 
 const $ = (id) => document.getElementById(id);
 
@@ -53,6 +54,7 @@ const WORDS = {
     wordCountMany: "{n} words for {text}.",
     wordNone: "JMdict has no word for {text}.",
     wordNoneSafe: "No word to show for {text}.",
+    suggestLabel: "Did you mean",
     wordLoading: "Looking up {text}…",
     wordFailed: "Could not look {text} up. Try again.",
     wordCommon: "common",
@@ -131,6 +133,7 @@ const WORDS = {
     wordCountMany: "「{text}」の単語は{n}語見つかりました。",
     wordNone: "JMdictに「{text}」の単語はありません。",
     wordNoneSafe: "「{text}」について表示できる単語はありません。",
+    suggestLabel: "もしかして",
     wordLoading: "「{text}」を調べています…",
     wordFailed: "「{text}」を調べられませんでした。もう一度お試しください。",
     wordCommon: "よく使う",
@@ -188,8 +191,8 @@ function docsLink(lang) {
 const language = familyLanguage({
   id: "jisho",
   words: {
-    en: { ...WORDS.en, ...READER_WORDS.en, ...ENTRY_WORDS.en },
-    ja: { ...WORDS.ja, ...READER_WORDS.ja, ...ENTRY_WORDS.ja },
+    en: { ...WORDS.en, ...READER_WORDS.en, ...ENTRY_WORDS.en, ...STROKE_WORDS.en },
+    ja: { ...WORDS.ja, ...READER_WORDS.ja, ...ENTRY_WORDS.ja, ...STROKE_WORDS.ja },
   },
   onChange: (lang) => {
     docsLink(lang);
@@ -201,6 +204,15 @@ const t = (key, values = {}) => language.word(key).replace(/\{(\w+)\}/g, (_match
 
 const kanji = readKanji(KANJI);
 const byKanji = new Map(kanji.map((one) => [one.kanji, one]));
+let drawing = false;
+const drawPad = createDrawPad({
+  t,
+  known: byKanji,
+  onPick: (character) => {
+    state.kanji = character;
+    draw();
+  },
+});
 
 /** What a path of conjugation is called in Japanese: the demo says each step in the language it speaks. */
 const PATH_JA = {
@@ -378,7 +390,7 @@ function drawCard() {
     }
     fact(facts, t("cardAlike"), row);
   }
-  card.replaceChildren(big, facts);
+  card.replaceChildren(big, facts, strokeOrderBox({ t, kanji: one.kanji }));
 }
 
 /** A row of buttons of which one is pressed. */
@@ -415,7 +427,8 @@ async function search(text) {
   if (by === "kanji") return { text, by, mode, words: await wordsWithKanji(text, { mode, limit: 20 }), release: "" };
   const loaded = await loadWords(text, { mode, romaji: true, inflected: true });
   const words = inflectedOf(loaded, text, { romaji: true }).map((one) => ({ ...one.word, path: one.path }));
-  return { text, by, mode, words, release: loaded.release };
+  const suggestions = words.length > 0 ? [] : await suggestWords(text, { mode, limit: 6 }).catch(() => []);
+  return { text, by, mode, words, release: loaded.release, suggestions };
 }
 
 async function lookUp(text) {
@@ -619,6 +632,19 @@ function drawWords() {
     else if (entryCard.shown?.id !== named.id) void entryCard.show(named);
     markEntry();
   }
+  const suggested = looked?.suggestions ?? [];
+  $("suggest-row").hidden = pending !== null || suggested.length === 0;
+  $("suggestions").replaceChildren(
+    ...suggested.map(({ word }) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.textContent = word.written;
+      button.title = word.meaning;
+      button.dataset.testid = "suggestion";
+      button.addEventListener("click", () => void lookUp(word.written));
+      return button;
+    }),
+  );
   $("word-release").textContent =
     looked === null || looked.release === "" ? "" : t("wordRelease", { release: looked.release });
 }
@@ -631,6 +657,10 @@ function draw() {
   $("reader-view").hidden = state.view !== "reader";
   drawWords();
   entryCard.draw();
+  $("draw-toggle").setAttribute("aria-pressed", String(drawing));
+  if (inKanji && drawing) drawPad.open();
+  else drawPad.close();
+  drawPad.draw();
   if (state.view === "reader") reader.draw();
   segment(
     $("grades"),
@@ -669,6 +699,11 @@ function draw() {
   drawCard();
   writeAddress();
 }
+
+$("draw-toggle").addEventListener("click", () => {
+  drawing = !drawing;
+  draw();
+});
 
 $("word-form").addEventListener("submit", (event) => {
   event.preventDefault();
