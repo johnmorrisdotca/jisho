@@ -447,3 +447,13 @@ header nav a[data-say="pageDocs"] {
   flex-wrap: wrap;
   gap: 8px;
 }
+kazoku-embed-panel {
+  --kazoku-ink: var(--ink);
+  --kazoku-surface: var(--surface);
+  --kazoku-line: var(--rule);
+  --kazoku-accent: var(--accent);
+}
+.jisho-embed-options {
+  display: grid;
+  gap: 8px;
+}

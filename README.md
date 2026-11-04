@@ -219,7 +219,7 @@ Each way is a file in [`examples/`](examples), built, type-checked or run agains
 | Vite or webpack | [Vite and webpack](https://johnmorrisdotca.github.io/jisho/docs/guides/bundlers.html) |
 | React (with server rendering), Vue, Svelte or Angular | [React, Vue, Svelte and Angular](https://johnmorrisdotca.github.io/jisho/docs/guides/frameworks.html) |
 | TypeScript, and Node on a server or in a script | [TypeScript and Node](https://johnmorrisdotca.github.io/jisho/docs/guides/typescript-and-node.html) |
-| Any page, with one iframe and no script | [Embed it with an iframe](https://johnmorrisdotca.github.io/jisho/docs/guides/embed-in-an-iframe.html) |
+| Any page, with one iframe and no script (the demo's "Put it in your page" writes it, and the code for every way a page is made) | [Embed it with an iframe](https://johnmorrisdotca.github.io/jisho/docs/guides/embed-in-an-iframe.html) |
 
 ### In an iframe
 

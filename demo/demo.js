@@ -97,6 +97,9 @@ const WORDS = {
       "Look-alike pairs from Lars Yencken's kanji confusion datasets (CC BY 3.0). They cover the 1,945 everyday kanji of before 2010, so a newer kanji has none.",
     sourceJmdict:
       "Words from JMdict, the property of the Electronic Dictionary Research and Development Group, used under the Group's licence (CC BY-SA 4.0).",
+    embedTitle: "Put it in your page",
+    embedText:
+      "Choose what to look up, then pick how your page is made and copy the code. The picture beside the code is the embed page, made from the same choices.",
     moreTitle: "Using it",
     moreText:
       "Each table is its own entry point, so a page loads only what it reads. Words are fetched in pieces of about 25 kB gzipped, only the ones a lookup needs.",
@@ -176,6 +179,9 @@ const WORDS = {
       "形の似た漢字の組はLars Yenckenのkanji confusionデータ（CC BY 3.0）から。2010年より前の常用漢字1,945字が対象なので、2010年以降に加わった漢字にはありません。",
     sourceJmdict:
       "単語はJMdictから。JMdictはElectronic Dictionary Research and Development Groupの所有物で、同グループのライセンス（CC BY-SA 4.0）のもとで使っています。",
+    embedTitle: "自分のページに入れる",
+    embedText:
+      "引くものを選んで、ページの作り方を選び、コードをコピーします。コードの横の絵は、同じ選択から作った埋め込みページです。",
     moreTitle: "使い方",
     moreText:
       "表はそれぞれ独立したエントリポイントなので、ページは読むものだけを読み込みます。単語は数キロバイトずつに分かれていて、引くときに必要な分だけを取得します。",

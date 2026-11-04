@@ -24,8 +24,8 @@ importers:
         specifier: 2.6.4
         version: 2.6.4
       '@johnmorrisdotca/kazoku-ui':
-        specifier: ^0.14.0
-        version: 0.14.0
+        specifier: ^0.15.1
+        version: 0.15.1
       '@playwright/test':
         specifier: ^1.63.0
         version: 1.64.1
@@ -370,8 +370,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@johnmorrisdotca/kazoku-ui@0.14.0':
-    resolution: {integrity: sha512-KFN0XowCn6Va7mrWasQluQEGvpANRFUSjoB4CvLBWsk9Uw9wv0uKllOgXlpsqYVSNNN1DDIMKkruNXgNPQf3WA==}
+  '@johnmorrisdotca/kazoku-ui@0.15.1':
+    resolution: {integrity: sha512-vRsEPyrvJEattAkumncfifHpGo0pd0/KnmJXo0F9RRgc1l0qzdmAYjZYLln7hQWgrlk1tft6B2Umw3Z0llLatA==}
     engines: {node: '>=22'}
     peerDependencies:
       three: '>=0.160.0'
@@ -1506,7 +1506,7 @@ snapshots:
   '@esbuild/win32-x64@0.28.2':
     optional: true
 
-  '@johnmorrisdotca/kazoku-ui@0.14.0': {}
+  '@johnmorrisdotca/kazoku-ui@0.15.1': {}
 
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:

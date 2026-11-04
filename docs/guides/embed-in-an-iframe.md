@@ -5,7 +5,9 @@ order: 12
 description: "Put the words for a reading, a meaning or a kanji in any page with one iframe and no script."
 ---
 
-The demo site has a page made to be framed, `embed.html`. It draws what its address says and fetches nothing but its own files, so it needs no script, no build and no package on your side:
+The demo site has a page made to be framed, `embed.html`. It draws what its address says and fetches nothing but its own files, so it needs no script, no build and no package on your side. The demo's ["Put it in your page"](https://johnmorrisdotca.github.io/jisho/#embed-title) is the family's embed panel: choose what to look up (a reading or a word, an English meaning or a kanji), how many rows and the audience, and it writes the iframe below and the same lookup for plain HTML, an ES module, React, Vue, Angular and Svelte, with the embed page itself beside the code.
+
+The iframe:
 
 ```html
 <!doctype html>

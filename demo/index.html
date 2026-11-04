@@ -106,6 +106,31 @@
         <article class="fam-panel jisho-card" id="card" data-testid="card" aria-live="polite"></article>
       </section>
       <!-- family:unreviewed -->
+      <section class="more" aria-labelledby="embed-title">
+        <h2 id="embed-title" data-say="embedTitle"></h2>
+        <p data-say="embedText"></p>
+        <kazoku-embed-panel id="embed-panel" sizes="280 360 480" size="360" aspect="1.1667" address data-testid="embed-panel">
+          <div slot="options" class="jisho-embed-options">
+            <div class="fam-row">
+              <span class="fam-label" id="embed-what-label"></span>
+              <div class="fam-seg" id="embed-what" role="group" aria-labelledby="embed-what-label" data-testid="embed-what"></div>
+            </div>
+            <div class="fam-row">
+              <label class="fam-label" for="embed-text" id="embed-text-label"></label>
+              <input class="jisho-input" id="embed-text" data-testid="embed-text" type="text" autocomplete="off" autocapitalize="off" spellcheck="false">
+            </div>
+            <p class="fam-muted" id="embed-note" aria-live="polite"></p>
+            <div class="fam-row" data-embed-words>
+              <span class="fam-label" id="embed-limit-label"></span>
+              <div class="fam-seg" id="embed-limit" role="group" aria-labelledby="embed-limit-label" data-testid="embed-limit"></div>
+            </div>
+            <div class="fam-row" data-embed-words>
+              <span class="fam-label" id="embed-audience-label"></span>
+              <div class="fam-seg" id="embed-audience" role="group" aria-labelledby="embed-audience-label" data-testid="embed-audience"></div>
+            </div>
+          </div>
+        </kazoku-embed-panel>
+      </section>
       <section class="more" aria-labelledby="sources-title">
         <h2 id="sources-title" data-say="sourcesTitle"></h2>
         <p data-say="sourceKanjidic" data-testid="source-kanjidic"></p>
@@ -124,5 +149,6 @@
     </main>
     <!-- family:script -->
     <script type="module" src="demo.js"></script>
+    <script type="module" src="panel.js"></script>
   </body>
 </html>

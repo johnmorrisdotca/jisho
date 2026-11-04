@@ -213,6 +213,8 @@ test("says so, and does not make a word up, when there is nothing to show", asyn
 function watch(page) {
   const asked = [];
   page.on("request", (request) => {
+    // The picture in "Put it in your page" is a framed page that asks for its own pieces: only the demo's own requests count.
+    if (request.frame() !== page.mainFrame()) return;
     const { pathname } = new URL(request.url());
     if (/\/dist\/(?:words|data\/words\/)/.test(pathname)) asked.push(pathname.slice(pathname.lastIndexOf("/") + 1));
   });

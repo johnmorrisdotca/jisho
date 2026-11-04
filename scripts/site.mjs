@@ -79,6 +79,17 @@ await build({
   minify: true,
   logLevel: "silent",
 });
+// The panel for "Put it in your page" (the family's embed panel and the code it writes), bundled into one module beside the demo's script.
+await build({
+  entryPoints: ["demo/panel.js"],
+  outfile: "site/panel.js",
+  allowOverwrite: true,
+  bundle: true,
+  format: "esm",
+  minify: true,
+  external: ["./dist/*"],
+  logLevel: "silent",
+});
 // The API reference, made from the source: every export of every entry point.
 writeFileSync("site/api.css", API_CSS);
 writeFileSync("site/api.html", apiPage({ id, name: "Jisho", icon: ICON }));
