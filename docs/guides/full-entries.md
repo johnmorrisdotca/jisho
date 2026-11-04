@@ -52,7 +52,7 @@ Look the `written` of a reference up with `loadWords` to follow it.
 
 ## Safe by default
 
-`loadEntry(word)` is in safe mode: a sense JMdict marks vulgar, X-rated, sensitive or derogatory is not in the entry, nor the written forms and readings that only such a sense applies to, and an entry of which every sense is marked is not there at all. Nothing that holds them is fetched. `loadEntry(word, { mode: "unfiltered" })` gives the entry whole, from one more piece. Use the mode the word was found in.
+`loadEntry(word)` is in safe mode: a sense JMdict marks vulgar, X-rated, sensitive or derogatory is not in the entry, nor the written forms and readings that only such a sense applies to, and an entry of which every sense is marked is not there at all. Nothing that holds them is fetched. `loadEntry(word, { mode: "unfiltered" })` gives the entry whole, from one more piece. Use the mode the word was found in. JMdict's marks are its own and are not complete: a sense it has not marked is in the safe entry, and the whole entry shows senses that the short row of a word leaves out (猫 has a sense, marked only as slang, that a page for children should not show). A page that needs more than JMdict's marks checks the senses it shows, or leaves the entry out.
 
 ```ts
 import { loadEntry } from "@johnmorrisdotca/jisho/entries";
