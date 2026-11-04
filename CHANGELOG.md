@@ -6,10 +6,14 @@ All notable changes to this project are written here. The format follows
 
 ## [Unreleased]
 
+## [2.9.0] - 2026-11-04
+
+A minor version: nothing that 2.8.0 gave is taken away. The table has 2,882 more pairs, so an answer of `lookAlikes` may now hold a kanji it did not, and each answer has a `shape`.
+
 ### Added
 
 - **Look-alike pairs for the kanji Lars Yencken's measures never scored** (MODULES-57). 2,882 pairs, scored by shape from the stroke paths of KanjiVG by the new `scripts/build-shapes.mjs` (`pnpm shapes`): a stroke edit distance over the strokes as written. The table has 10,093 pairs, from 7,211. 187 of the 196 kanji added to the jōyō list in 2010 now have a look-alike (9 have none: 臼, 瓦, 乞, 嫉, 遡, 遜, 溺, 藤, 鬱), 794 of the 858 kanji for names that his data did not score do, and pairs his measures ranked too low are in: 己 and 巳, 崎 and 埼.
-- `lookAlikes` gives each answer a `shape` score beside `strokes` and `parts`, and its `score` is the highest of the three. A pair of Yencken's has `shape` 0, so no answer that was there before changes; a shape pair has 0 for the other two. `PackedLookAlikes` pairs may carry a fourth number, the shape score.
+- `lookAlikes` gives each answer a `shape` score beside `strokes` and `parts`, and its `score` is the highest of the three. A pair of Yencken's keeps its scores and has `shape` 0; a shape pair has 0 for the other two. `PackedLookAlikes` pairs may carry a fourth number, the shape score.
 - The guide "How the look-alike pairs are measured" says how the shape score is made and what it misses, in English and Japanese.
 
 ### Changed

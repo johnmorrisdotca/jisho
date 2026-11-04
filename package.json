@@ -1,6 +1,6 @@
 {
   "name": "@johnmorrisdotca/jisho",
-  "version": "2.8.0",
+  "version": "2.9.0",
   "description": "Jisho 辞書 — Japanese word and kanji data for JavaScript: look words up by reading, written form, English meaning, a kanji in them or romaji, fetched about 25 kB at a time, safe by default or unfiltered with every sense's JMdict marks, and bring your own block and allow lists; and the grades, JLPT levels, readings and look-alikes of 2,999 kanji. Typed, no dependencies.",
   "keywords": [
     "child-safe",
