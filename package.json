@@ -147,6 +147,7 @@
     "check:standard": "node scripts/check-standard.mjs",
     "data": "node scripts/build-data.mjs",
     "words": "node scripts/build-words.mjs",
+    "shapes": "node scripts/build-shapes.mjs",
     "examples": "node scripts/build-examples.mjs",
     "docs:site": "pnpm build && node scripts/docs-site.mjs build",
     "docs:check": "pnpm build && node scripts/docs-site.mjs check",

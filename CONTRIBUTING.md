@@ -90,4 +90,4 @@ not published again.
 
 Bug reports and ideas go in the [issues](https://github.com/johnmorrisdotca/jisho/issues).
 
-The data in `src/data/` is machine output: `pnpm data` writes it from KANJIDIC2 and from `data-sources/`, `pnpm words` writes `src/data/words/` from JMdict, and a row is never edited by hand. A wrong grade or reading belongs with the source, and the [NOTICE](NOTICE.md) says where each one is kept. Nothing goes in from a commercial study service, or from any source whose terms do not clearly allow it.
+The data in `src/data/` is machine output: `pnpm data` writes it from KANJIDIC2 and from `data-sources/`, `pnpm words` writes `src/data/words/` from JMdict, `pnpm shapes` scores look-alike pairs from the stroke paths (run it before `pnpm data` when the strokes change), and a row is never edited by hand. A wrong grade or reading belongs with the source, and the [NOTICE](NOTICE.md) says where each one is kept. Nothing goes in from a commercial study service, or from any source whose terms do not clearly allow it.

@@ -12,7 +12,7 @@ description: "The four sources, their terms, and what you must credit."
 | `grades` | KANJIDIC2, of the Electronic Dictionary Research and Development Group | CC BY-SA 4.0 and the Group's conditions |
 | `jlpt` | Jonathan Waller's JLPT Resources, tanos.co.uk | CC BY |
 | `kanji` | KANJIDIC2, with Waller's levels | CC BY-SA 4.0 and the Group's conditions; the levels CC BY |
-| `look-alike` | Lars Yencken's kanji confusion datasets | CC BY 3.0 |
+| `look-alike` | Lars Yencken's kanji confusion datasets, and scores by shape made from KanjiVG's strokes | CC BY-SA 3.0 (Yencken's scores are CC BY 3.0) |
 | `words-common`, and the pieces `words` fetches | JMdict, of the Electronic Dictionary Research and Development Group | CC BY-SA 4.0 and the Group's conditions |
 | `entries` | JMdict, the whole entries | CC BY-SA 4.0 and the Group's conditions |
 | `examples` | The Tatoeba project's sentences, linked to JMdict's senses by the Group's JMdict_e_examp | CC BY 2.0 FR for the sentences, each credited to its author; CC BY-SA 4.0 for the links |

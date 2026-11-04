@@ -344,15 +344,18 @@ export function searchKanji(kanji: readonly Kanji[], text: string): Kanji[] {
  * ```ts
  * import type { PackedLookAlikes } from "@johnmorrisdotca/jisho";
  *
- * const packed: PackedLookAlikes = { source: "a study", pairs: [["士土", 100, 67]] };
+ * const packed: PackedLookAlikes = { source: "a study", pairs: [["士土", 100, 67], ["己巳", 0, 0, 84]] };
  * console.log(packed.pairs.length);
  * ```
  */
 export type PackedLookAlikes = {
   /** Whose scores they are. */
   readonly source: string;
-  /** The two kanji written together, then the score by strokes and the score by parts, each out of 100, 0 where not scored. */
-  readonly pairs: readonly (readonly [string, number, number])[];
+  /**
+   * The two kanji written together, then the score by strokes and the score by parts, each out of 100, 0 where not scored, and
+   * the score by shape where there is one (the pairs the first two did not hold).
+   */
+  readonly pairs: readonly (readonly [string, number, number] | readonly [string, number, number, number])[];
 };
 
 /**
@@ -362,19 +365,21 @@ export type PackedLookAlikes = {
  * ```ts
  * import type { LookAlike } from "@johnmorrisdotca/jisho";
  *
- * const one: LookAlike = { kanji: "士", score: 100, strokes: 100, parts: 67 };
+ * const one: LookAlike = { kanji: "士", score: 100, strokes: 100, parts: 67, shape: 0 };
  * console.log(one.kanji);
  * ```
  */
 export type LookAlike = {
   /** The kanji it looks like. */
   readonly kanji: string;
-  /** The higher of the two scores, out of 100. */
+  /** The highest of the scores, out of 100. */
   readonly score: number;
   /** Out of 100, by how few stroke edits separate them; 0 where this measure did not rank the pair. */
   readonly strokes: number;
   /** Out of 100, by the parts they share; 0 where this measure did not rank the pair. */
   readonly parts: number;
+  /** Out of 100, by how alike their strokes are drawn (KanjiVG); 0 where the pair has no such score. */
+  readonly shape: number;
 };
 
 /**
@@ -401,8 +406,8 @@ export type LookAlikeOptions = {
  * @param table - `LOOK_ALIKE`, from `@johnmorrisdotca/jisho/look-alike`.
  * @param kanji - One kanji.
  * @param options - How low to go and how many to give back.
- * @returns The kanji that look like it; none when none reaches the score. None does not say a kanji has no look-alike: the two
- * measures cover only the 1,945 jōyō kanji of before 2010.
+ * @returns The kanji that look like it; none when none reaches the score. None does not say a kanji has no look-alike: Yencken's two
+ * measures cover only the 1,945 jōyō kanji of before 2010, and the shape scores that make up for it keep only the nearest.
  * @example
  * ```ts
  * import { lookAlikes } from "@johnmorrisdotca/jisho";
@@ -414,11 +419,11 @@ export type LookAlikeOptions = {
 export function lookAlikes(table: PackedLookAlikes, kanji: string, options: LookAlikeOptions = {}): LookAlike[] {
   const { atLeast = 70, max = 6 } = options;
   const found: LookAlike[] = [];
-  for (const [pair, strokes, parts] of table.pairs) {
+  for (const [pair, strokes, parts, shape = 0] of table.pairs) {
     const [first, second] = [...pair] as [string, string];
     if (first !== kanji && second !== kanji) continue;
-    const score = Math.max(strokes, parts);
-    if (score >= atLeast) found.push({ kanji: first === kanji ? second : first, score, strokes, parts });
+    const score = Math.max(strokes, parts, shape);
+    if (score >= atLeast) found.push({ kanji: first === kanji ? second : first, score, strokes, parts, shape });
   }
   return found.sort((a, b) => b.score - a.score || a.kanji.localeCompare(b.kanji, "ja")).slice(0, max);
 }

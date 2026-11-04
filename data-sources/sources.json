@@ -105,5 +105,13 @@
     "release": "r20260714",
     "sha256": "b5df6cd2bc249dd49b8041eb99e38ba9f8dc6b9ea57962a80084b4a315d1a7fc",
     "retrieved": "2026-11-03"
+  },
+  "lookAlikeShape": {
+    "madeFrom": "kanjivg",
+    "file": "data-sources/look-alike/shape-pairs.tsv",
+    "script": "scripts/build-shapes.mjs",
+    "licence": "CC BY-SA 3.0",
+    "note": "Pairs scored from the stroke paths of KanjiVG release r20260714 (the paths in src/data/strokes/); derived from it, so under its licence.",
+    "made": "2026-11-04"
   }
 }

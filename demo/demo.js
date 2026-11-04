@@ -94,7 +94,7 @@ const WORDS = {
     sourceWaller:
       "JLPT levels from Jonathan Waller's JLPT Resources, tanos.co.uk (CC BY). The test itself has published no list of kanji since 2010, so these are one person's.",
     sourceYencken:
-      "Look-alike pairs from Lars Yencken's kanji confusion datasets (CC BY 3.0). They cover the 1,945 everyday kanji of before 2010, so a newer kanji has none.",
+      "Look-alike pairs from Lars Yencken's kanji confusion datasets (CC BY 3.0) for the 1,945 everyday kanji of before 2010; for newer kanji and a few more pairs, scored by shape from KanjiVG's strokes (CC BY-SA 3.0).",
     sourceJmdict:
       "Words from JMdict, the property of the Electronic Dictionary Research and Development Group, used under the Group's licence (CC BY-SA 4.0).",
     embedTitle: "Put it in your page",
@@ -176,7 +176,7 @@ const WORDS = {
     sourceWaller:
       "JLPTレベルはJonathan WallerのJLPT Resources（tanos.co.uk、CC BY）から。試験そのものは2010年以降、漢字のリストを公開していないので、これは一個人によるリストです。",
     sourceYencken:
-      "形の似た漢字の組はLars Yenckenのkanji confusionデータ（CC BY 3.0）から。2010年より前の常用漢字1,945字が対象なので、2010年以降に加わった漢字にはありません。",
+      "形の似た漢字の組は、2010年より前の常用漢字1,945字についてはLars Yenckenのkanji confusionデータ（CC BY 3.0）から。それより新しい漢字と一部の組は、KanjiVGの筆画から形で採点したものです（CC BY-SA 3.0）。",
     sourceJmdict:
       "単語はJMdictから。JMdictはElectronic Dictionary Research and Development Groupの所有物で、同グループのライセンス（CC BY-SA 4.0）のもとで使っています。",
     embedTitle: "自分のページに入れる",

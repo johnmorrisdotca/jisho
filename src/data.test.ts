@@ -1,3 +1,4 @@
+import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { GRADES } from "./data/grades.data.ts";
 import { JLPT } from "./data/jlpt.data.ts";
@@ -146,6 +147,39 @@ describe("the pairs that look alike", () => {
     expect(found.find((one) => one.kanji === "士")).toMatchObject({ score: 100, strokes: 100, parts: 67 });
     expect(lookAlikes(LOOK_ALIKE, "土", { max: 1 })).toHaveLength(1);
     expect(lookAlikes(LOOK_ALIKE, "A")).toEqual([]);
+  });
+
+  it("hold the pairs people confuse that Yencken's measures left out, scored by shape", () => {
+    for (const [a, b] of [
+      ["己", "巳"],
+      ["崎", "埼"],
+    ] as const) {
+      expect(
+        lookAlikes(LOOK_ALIKE, a).find((one) => one.kanji === b),
+        `${a} ${b}`,
+      ).toMatchObject({ strokes: 0, parts: 0 });
+      expect(lookAlikes(LOOK_ALIKE, b).find((one) => one.kanji === a)?.shape, `${b} ${a}`).toBeGreaterThanOrEqual(80);
+    }
+    expect(lookAlikes(LOOK_ALIKE, "埼")[0]).toMatchObject({ kanji: "崎" });
+  });
+
+  it("give a pair of Yencken's no shape score and a shape pair none of his", () => {
+    for (const [pair, strokes, parts, shape] of LOOK_ALIKE.pairs) {
+      if (shape === undefined) expect(strokes > 0 || parts > 0, pair).toBe(true);
+      else expect([strokes, parts, shape >= 62], pair).toEqual([0, 0, true]);
+    }
+  });
+
+  it("give nearly every kanji added to the jōyō list in 2010 a look-alike, which Yencken's measures could not", () => {
+    const scored = new Set<string>();
+    for (const file of ["jyouyou__strokeEditDistance.csv", "jyouyou__yehAndLiRadical.csv"])
+      for (const line of readFileSync(`data-sources/look-alike/${file}`, "utf8").split("\n"))
+        scored.add(line.split(/\s+/)[0] ?? "");
+    const added = JOYO_GRADES.flatMap((grade) => kanjiOfGrade(GRADES, grade)).filter((one) => !scored.has(one));
+    expect(added).toHaveLength(196);
+    const inPairs = new Set(LOOK_ALIKE.pairs.flatMap(([pair]) => [...pair]));
+    expect(added.filter((one) => inPairs.has(one)).length).toBeGreaterThanOrEqual(185);
+    for (const one of ["埼", "熊", "俺", "椅"]) expect(inPairs.has(one), one).toBe(true);
   });
 
   it("name only kanji in the table, each pair once and in order", () => {

@@ -15,7 +15,7 @@ description: "Why a kanji has no level, no grade or no look-alike, and why a wor
 
 ## A kanji has no look-alike
 
-The measures cover the 1,945 jōyō kanji of before 2010, and each kept only ten for each kanji: see [how the pairs are measured](look-alike.md).
+Yencken's two measures cover the 1,945 jōyō kanji of before 2010, and the shape score that reaches the rest keeps only the ten nearest for each kanji: 9 of the 196 kanji added in 2010 have none. See [how the pairs are measured](look-alike.md).
 
 ## A common kanji is said to have no meaning
 

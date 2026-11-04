@@ -84,6 +84,15 @@ test("a look-alike leads to the kanji it looks like, and back", async ({ page })
   await sound(page, errors);
 });
 
+test("a kanji added in 2010 has look-alikes too, and leads to them", async ({ page }) => {
+  const errors = await open(page, "?lang=en&kanji=埼");
+  const alike = page.locator('[data-testid="alike"]');
+  await tap(alike.getByRole("button", { name: "崎" }));
+  await expect(page.locator(".jisho-big")).toHaveText("崎");
+  await expect(alike.getByRole("button", { name: "埼" })).toBeVisible();
+  await sound(page, errors);
+});
+
 test("search finds by meaning and by reading, and says so when nothing holds it", async ({ page }) => {
   const errors = await open(page);
   await page.getByTestId("search").fill("mountain");

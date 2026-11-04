@@ -12,7 +12,7 @@ description: "四つの出典、その条件、示すべきこと。"
 | `grades` | Electronic Dictionary Research and Development GroupのKANJIDIC2 | CC BY-SA 4.0と同グループの条件 |
 | `jlpt` | Jonathan WallerのJLPT Resources（tanos.co.uk） | CC BY |
 | `kanji` | KANJIDIC2とWallerのレベル | CC BY-SA 4.0と同グループの条件。レベルはCC BY |
-| `look-alike` | Lars Yenckenのkanji confusionデータ | CC BY 3.0 |
+| `look-alike` | Lars Yenckenのkanji confusionデータと、KanjiVGの筆画から作った形のスコア | CC BY-SA 3.0（Yenckenのスコアは CC BY 3.0） |
 | `words-common`と、`words`が取得するチャンク | Electronic Dictionary Research and Development GroupのJMdict | CC BY-SA 4.0と同グループの条件 |
 | `entries` | JMdictの完全な項目 | CC BY-SA 4.0と同グループの条件 |
 | `examples` | Tatoebaプロジェクトの文を、同グループのJMdict_e_exampがJMdictの語義に結び付けたもの | 文はCC BY 2.0 FR（それぞれ書いた人を示す）。結び付けはCC BY-SA 4.0 |

@@ -83,7 +83,7 @@ console.log(lookAlikes(LOOK_ALIKE, "土")[0]?.kanji); // the closest look-alike 
 - **[School grades](#the-school-grades)**: 2,999 kanji by grade, 1,026 of them taught in elementary school and 2,136 in all for everyday use.
 - **[JLPT levels](#the-jlpt-levels)**: 2,211 kanji on Jonathan Waller's five lists, N5 to N1.
 - **[A table of the kanji](#the-table)**: strokes, grade, level, newspaper rank, on and kun readings, and meanings in English and French.
-- **[Look-alike pairs](#the-look-alike-pairs)**: 7,211 pairs with two published scores each, by strokes and by parts.
+- **[Look-alike pairs](#the-look-alike-pairs)**: 10,093 pairs, scored by strokes, by parts and by shape.
 - **Plain functions**: which grade, which level, the kanji in a text, a search by reading or meaning.
 - **Each table an entry point**: importing the grades loads 8 KB gzipped, not the table of 146 KB. The 26,039 common words that safe mode keeps are one table of their own.
 
@@ -703,9 +703,9 @@ From Jonathan Waller's [JLPT Resources](http://www.tanos.co.uk/jlpt/), under CC 
 
 ### The look-alike pairs
 
-7,211 pairs from Lars Yencken's [kanji confusion datasets](https://lars.yencken.org/datasets/kanji-confusion/), under CC BY 3.0, each with two scores out of 100: by how few stroke edits separate two kanji, and by the parts they share. A pair is kept at 60 or more by strokes, or 70 or more by parts, and `lookAlikes` answers from 70 unless told otherwise.
+10,093 pairs, each scored out of 100. 7,211 are from Lars Yencken's [kanji confusion datasets](https://lars.yencken.org/datasets/kanji-confusion/), under CC BY 3.0: by how few stroke edits separate two kanji, and by the parts they share. They cover only the 1,945 jōyō kanji of before 2010, so 2,882 more are scored by shape, from the stroke paths of [KanjiVG](https://kanjivg.tagaini.net) (CC BY-SA 3.0): for newer kanji, and pairs such as 己/巳 and 崎/埼. `lookAlikes` answers from 70 by default.
 
-The two measures cover only the 1,945 jōyō kanji of before 2010, and keep only ten for each kanji, so an empty answer does not say a kanji has no look-alike. No pair is added by hand: see [how the pairs are measured](https://johnmorrisdotca.github.io/jisho/docs/guides/look-alike.html).
+Each kanji keeps its ten nearest, so an empty answer proves nothing. None is added by hand: see [how the pairs are measured](https://johnmorrisdotca.github.io/jisho/docs/guides/look-alike.html).
 
 ## API
 
@@ -764,7 +764,7 @@ The package draws nothing, so there is nothing of its own to theme: it hands bac
 - The dictionary is about 50 MB in all, and 14.8 MB gzipped as one bundle. A server that bundles `words` carries it, and a bundler that follows every piece carries all of it; see [Look words up](https://johnmorrisdotca.github.io/jisho/docs/guides/words.html).
 - 2,999 kanji: those with a school grade in KANJIDIC2. Rarer kanji have no row.
 - The JLPT levels are one person's lists, not the test's.
-- The look-alike pairs cover the 1,945 jōyō kanji of before 2010: the 196 added in 2010 and nearly all the kanji for names have none.
+- Each kanji keeps its ten nearest look-alikes: 9 of the 196 added in 2010 have none.
 - No meanings in Japanese: KANJIDIC2 has none. English for almost all, French for two in three.
 - Stroke order is KanjiVG's, for 2,967 of the 2,999 kanji (32 old forms have none), and the search by drawing needs the right strokes in the right order. No radicals: [Bushu](https://github.com/johnmorrisdotca/bushu) has the parts. No pitch accent.
 - `suggestWords` covers the 26,039 common words, by reading, one slip away; it is not a spell checker for text, and not for kanji.
@@ -901,4 +901,4 @@ See the [changelog](CHANGELOG.md). Nothing has been released yet.
 
 ## Licence
 
-The code is under the [MIT licence](LICENSE). The data is under its sources' terms, set out in full in [NOTICE.md](NOTICE.md), which ships in the package: `grades`, `kanji` and the words are CC BY-SA 4.0 with the Electronic Dictionary Research and Development Group's conditions, the JLPT levels are CC BY (Jonathan Waller), and `look-alike` is CC BY 3.0 (Lars Yencken). A page that shows the data credits it, and NOTICE.md has wording to use.
+The code is under the [MIT licence](LICENSE). The data is under its sources' terms, set out in full in [NOTICE.md](NOTICE.md), which ships in the package: `grades`, `kanji` and the words are CC BY-SA 4.0 with the Electronic Dictionary Research and Development Group's conditions, the JLPT levels are CC BY (Jonathan Waller), and `look-alike` is CC BY-SA 3.0 (Yencken's scores CC BY 3.0, the shape scores from KanjiVG). A page that shows the data credits it, and NOTICE.md has wording to use.
