@@ -72,8 +72,10 @@ console.log(lookAlikes(LOOK_ALIKE, "土")[0]?.kanji); // the closest look-alike 
 
 - **[Words](#the-words)**: JMdict's rows, found by reading or written form, commonest first, each with a short English meaning and how common it is, in 318 pieces by reading and 71 of an index of written forms, so a lookup fetches about 25 kB gzipped.
 - **[Find by meaning, by kanji, or in romaji](#find-words-by-what-they-mean-or-by-a-kanji)**: `findByMeaning("water")`, `wordsWithKanji("山")` and `loadWords("kami", { romaji: true })`, each with an index in small pieces of its own that a plain lookup never fetches.
-- **[The whole entry](#the-whole-entry)**: `loadEntry(word)` fetches every sense of a word with its part of speech, field, dialect, cross-references, antonyms, notes and loanword sources, and the marks of its written forms and readings, from an entry point of its own and one piece of about 40 kB gzipped, in safe mode unless asked otherwise.
-- **[Example sentences](#example-sentences)**: `loadExamples(word)` gives the sentences that show each sense of a word, 32,434 of them from the Tatoeba project, with the furigana, the English, the JLPT level of their kanji and each one's credit, from an entry point of its own and one piece of about 20 kB gzipped; safe mode leaves out the sentences that are not for it.
+- **[The whole entry](#the-whole-entry)**: `loadEntry(word)` fetches every sense of a word with its part of speech, marks, cross-references, antonyms, notes and loanword sources, from an entry point of its own, in safe mode unless asked otherwise.
+- **[Example sentences](#example-sentences)**: `loadExamples(word)` gives the Tatoeba sentences that show each sense of a word, with furigana, English, a JLPT level and a credit, safe by default.
+- **[Stroke order, and a kanji found by drawing it](#stroke-order-and-drawing)**: `strokeOrderSvg` draws a kanji's strokes, from KanjiVG, as an SVG that writes itself in order, and `findByDrawing` finds the kanji nearest to strokes drawn on a pad.
+- **[A typo finds a suggestion](#did-you-mean)**: `suggestWords("arigatuo")` gives the common words one slip away from romaji or kana that found nothing.
 - **[Conjugated words](#a-word-as-a-sentence-writes-it)**: `findInflected("食べなかった")` finds 食べる and says how, `negative, past`, from a rule table of 2 kB gzipped that works offline; the dictionary keeps only the proposals that are the right kind of word.
 - **[Read a text](#read-a-text)**: `readText("私は寿司を食べなかった。")` cuts Japanese into words by the longest match on the dictionary and on conjugated forms, with the furigana, meaning, JLPT level and kanji grades of each, lists what it cannot find, and `studyList` takes the words away as rows, CSV or TSV. No tokenizer: Jisho's own pieces, fetched as the text needs them.
 - **Odd input is nothing, never a crash**: full-width and half-width, stray spaces, invisible characters and far too much text are made plain or answered with no words, and a piece that cannot be fetched is asked for once more and then rejects with a `WordsLoadError` that names it.
@@ -418,7 +420,7 @@ console.log(deinflect("食べさせられた").map((one) => one.base).includes("
 
 ### The whole entry
 
-A word is a short row. `loadEntry` fetches its whole entry from JMdict: every sense with its part of speech, marks, cross-references, antonyms, notes and the languages a loanword comes from, and the marks of its written forms and readings. It is an entry point of its own, `@johnmorrisdotca/jisho/entries`, so a page that only looks words up never carries it, and safe mode leaves out the senses JMdict marks vulgar, X-rated, sensitive or derogatory and fetches nothing that holds them.
+A word is a short row. `loadEntry` fetches its whole entry from JMdict, from `@johnmorrisdotca/jisho/entries`, an entry point of its own that a page that only looks words up never carries. Safe mode leaves out the senses JMdict marks vulgar, X-rated, sensitive or derogatory and fetches nothing that holds them.
 
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/entry-senses-desk-dark.webp">
@@ -435,9 +437,50 @@ const entry = word === undefined ? null : await loadEntry(word);
 console.log(entry?.senses[0]?.pos, entry?.senses[0]?.antonyms.map((one) => referenceOf(one).written));
 ```
 
+### Stroke order and drawing
+
+`@johnmorrisdotca/jisho/strokes` draws the strokes of a kanji in order, from KanjiVG (CC BY-SA 3.0, credited in [NOTICE.md](NOTICE.md)), and finds a kanji from strokes drawn on a pad. `loadStrokes` fetches a piece of about 20 kB for a kanji; `loadAllStrokes` fetches all (1.1 MB) for the search.
+
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/strokes-desk-dark.webp">
+<img src="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/strokes-desk-light.webp" alt="The card of 語 in the demo with its stroke order drawn below its facts, the strokes numbered in the order they are written, and the Replay and Numbers buttons." width="360">
+</picture><br>
+<em>The stroke order of 語, written out on its card.</em>
+
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/draw-desk-dark.webp">
+<img src="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/draw-desk-light.webp" alt="The demo's drawing pad with a 日 drawn on it in four strokes, and the kanji nearest to it listed beside the pad, 日 first." width="560">
+</picture><br>
+<em>A kanji drawn on the pad, and the kanji nearest to it.</em>
+
+```ts
+import { findByDrawing, loadAllStrokes, loadStrokes, strokeOrderSvg, strokesOf } from "@johnmorrisdotca/jisho/strokes";
+
+const svg = strokeOrderSvg(strokesOf(await loadStrokes("日"), "日"), { size: 160, numbers: true });
+console.log(svg.includes("<path")); // true: four paths, written one after the other
+const drawn = [[[10, 50], [90, 50]], [[50, 10], [50, 90]]] as const; // a stroke across, then a stroke down
+console.log(findByDrawing(await loadAllStrokes(), drawn, { limit: 1 })[0]?.kanji); // 十
+```
+
+### Did you mean
+
+A lookup is exact, so a typo finds nothing. `suggestWords` gives the common words whose reading is one slip away, for the lookup that found nothing:
+
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/suggest-desk-dark.webp">
+<img src="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/suggest-desk-light.webp" alt="The demo's word view after a lookup of arigatuo that found nothing: "No word to show for arigatuo", and under it a "Did you mean" row with ありがとう among the buttons." width="560">
+</picture><br>
+<em>A typo that found nothing, and the words it may have meant.</em>
+
+```ts
+import { suggestWords } from "@johnmorrisdotca/jisho/words";
+
+console.log((await suggestWords("arigatuo"))[0]?.word.written); // ありがとう
+```
+
 ### Example sentences
 
-`loadExamples` gives the sentences that show a word, each linked to the sense it shows (`Entry.senses[].number`), with the Japanese and its furigana, the English, the JLPT level of the hardest kanji in it and its credit. They are in `@johnmorrisdotca/jisho/examples`, an entry point of their own, and come from the Tatoeba project under CC BY 2.0 FR: `exampleCredit` makes the line that has to be shown with each one.
+`loadExamples`, from `@johnmorrisdotca/jisho/examples`, gives the sentences that show a word, each linked to the sense it shows, with its furigana, English, JLPT level and credit. They are the Tatoeba project's, under CC BY 2.0 FR: `exampleCredit` makes the line to show with each.
 
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johnmorrisdotca/jisho/main/docs/images/entry-desk-dark.webp">
@@ -712,7 +755,7 @@ The package draws nothing, so there is nothing of its own to theme: it hands bac
 
 ## Limits
 
-- Meanings are English only, from JMdict_e. A word's `meaning` is short: two senses at most, cut at about 60 characters, to show beside a word. `loadEntry` has the whole entry. The package is 26.4 MB to download (it was 13.8 MB before the entries and the examples), of which the entries are 9.7 MB and the examples 2.9 MB, fetched only when asked for.
+- Meanings are English only, from JMdict_e. A word's `meaning` is short: two senses at most, cut at about 60 characters, to show beside a word. `loadEntry` has the whole entry. The package is 28.6 MB to download (it was 13.8 MB before the entries, the examples and the strokes), of which the entries are 9.7 MB, the examples 2.9 MB and the strokes 2.2 MB, each fetched only when asked for.
 - Safe mode keeps what it leaves out in pieces of their own, fetched only unfiltered, so it never reaches a browser that did not ask. The pieces are in the package, so anybody who installs it or asks for them can read them. JMdict's marks are its own and are not complete: a sense it has not marked is not left out, and a consumer that needs more brings its own `block` list, which Jisho does not supply.
 - Options are checked: `block` and `allow` must be lists of texts and `mode` must be `"safe"` or `"unfiltered"`; anything else throws a `TypeError` before anything is fetched, rather than turning the filter off.
 - `wordsOf` and `loadWords` are exact: 食べた finds nothing, 食べる does. `findInflected` reads conjugated forms: godan, ichidan, する (and a noun with する), 来る, い and な adjectives, in the polite, negative, past, te, conditional, volitional, potential, passive, causative, want-to, looks-like, too-much, easy-to and hard-to forms, and the helper verbs a te-form leads (ている, てしまう, ておく, てみる, ていく, てくる, てくれる, てあげる, てもらう), and their chains. It does not read the imperative, honorific (keigo) forms, 〜ず, 〜なければならない, a noun with だ (only な adjectives), or the stem alone (食べ). A な adjective needs its dictionary form (静かだった finds 静か); 愛する-type verbs that conjugate their own way (愛さない) are found only as godan 愛す. The rules are tested on a golden set of 395 forms written from the conjugation rules, and no native reader has checked it yet. The text is made plain first, but a typo finds nothing.
@@ -723,7 +766,8 @@ The package draws nothing, so there is nothing of its own to theme: it hands bac
 - The JLPT levels are one person's lists, not the test's.
 - The look-alike pairs cover the 1,945 jōyō kanji of before 2010: the 196 added in 2010 and nearly all the kanji for names have none.
 - No meanings in Japanese: KANJIDIC2 has none. English for almost all, French for two in three.
-- No stroke order and no radicals: [Bushu](https://github.com/johnmorrisdotca/bushu) has the parts.
+- Stroke order is KanjiVG's, for 2,967 of the 2,999 kanji (32 old forms have none), and the search by drawing needs the right strokes in the right order. No radicals: [Bushu](https://github.com/johnmorrisdotca/bushu) has the parts. No pitch accent.
+- `suggestWords` covers the 26,039 common words, by reading, one slip away; it is not a spell checker for text, and not for kanji.
 - `readText` takes the longest word, not the best reading of a sentence: it has no grammar, so a rare word that happens to be longer can win, a name is not found or is cut into small words (ジョンモリス), and a word with several readings gets the commonest one JMdict ranks, which for one kanji can be the wrong one (本 is もと before ほん; the card lists the others). In safe mode a word the mode leaves out is not found, so its text is listed as not found. It reads up to 5,000 characters and is not a tool for books; a page of text fetches tens of pieces. The levels are those of the kanji, not of the word.
 
 ## Accessibility
@@ -742,6 +786,7 @@ The demo and the guides are in English and Japanese; the Japanese has not yet be
 
 - Words in other languages. JMdict has glosses in eight, but the EDRDG licence puts only its Japanese and English parts under CC BY-SA 4.0 and says the rest are under their compilers' own copyright, so none is used until a language's terms are read and allow it.
 - Look-alike scores for the kanji the two measures do not cover, measured here from a public set of stroke data.
+- Pitch accent, when a source with a named origin and terms that allow it is found (Kanjium's list does not name its origin; NHK's dictionary is never used).
 - Nothing from a commercial study service, and no hand-kept pairs: every row stays traceable to a published file.
 
 ## Architecture

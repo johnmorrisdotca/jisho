@@ -5,7 +5,7 @@ order: 4
 description: "四つの出典、その条件、示すべきこと。"
 ---
 
-## 四つの出典と、それぞれの条件
+## 出典と、それぞれの条件
 
 | エントリポイント | 元のデータ | 条件 |
 | --- | --- | --- |
@@ -14,8 +14,11 @@ description: "四つの出典、その条件、示すべきこと。"
 | `kanji` | KANJIDIC2とWallerのレベル | CC BY-SA 4.0と同グループの条件。レベルはCC BY |
 | `look-alike` | Lars Yenckenのkanji confusionデータ | CC BY 3.0 |
 | `words-common`と、`words`が取得するチャンク | Electronic Dictionary Research and Development GroupのJMdict | CC BY-SA 4.0と同グループの条件 |
+| `entries` | JMdictの完全な項目 | CC BY-SA 4.0と同グループの条件 |
+| `examples` | Tatoebaプロジェクトの文を、同グループのJMdict_e_exampがJMdictの語義に結び付けたもの | 文はCC BY 2.0 FR（それぞれ書いた人を示す）。結び付けはCC BY-SA 4.0 |
+| `strokes` | Ulrich Apelたちの作るKanjiVG | CC BY-SA 3.0。筆順を表示する場所で出典を示す |
 
-全文は[NOTICE.md](../../../NOTICE.md)（英語）に、各ファイルのアドレス、日付、SHA-256は[sources.json](../../../data-sources/sources.json)にあります。
+JMdictのほかの言語の訳は使っていません。同グループのライセンスは、JMdictのうち日本語と英語の部分だけをCC BY-SA 4.0とし、ほかの言語は編纂者の別の著作権の対象だとしているためです。全文は[NOTICE.md](../../../NOTICE.md)（英語）に、各ファイルのアドレス、日付、SHA-256は[sources.json](../../../data-sources/sources.json)にあります。
 
 ## 必要な対応
 

@@ -5,6 +5,10 @@ order: 6
 description: "バージョンごとの変更と、データ更新の扱い。"
 ---
 
+## 2.5.0から2.7.0へ
+
+呼び出し側で変わるものはなく、2.5.0にあったものはすべて残っています。新しく加わったのは、どれも専用のエントリポイントにあり、呼ぶまで何も取得しないものです。`@johnmorrisdotca/jisho/entries`の`loadEntry`、`readEntry`、`referenceOf`（単語の完全な項目）、`@johnmorrisdotca/jisho/examples`の`loadExamples`、`exampleCredit`、`furiganaOfExample`（単語の例文）、`@johnmorrisdotca/jisho/strokes`の`loadStrokes`、`loadAllStrokes`、`strokesOf`、`strokeOrderSvg`、`pathPoints`、`findByDrawing`（筆順と、描いて漢字を探す）、そして`words`の`suggestWords`です。`Word`には、JMdictがその項目に付けた番号`id`が加わり、どの行にもそれが付いています。そのため行のチャンクは、294個から同じ大きさの318個になり、wordsエントリを1つのバンドルにしたときのgzipの大きさは1 MB増えました。パッケージのダウンロードは14.8 MB増え（13.8 MBから28.6 MB）、すべて新しいエントリポイントの分です。そのデータ（項目、例文、筆順）にはそれぞれのライセンスがあります。`NOTICE.md`に書いてあり、例文や筆順を表示するページは出典を示す必要があります。
+
 ## 2.3.0から2.4.0へ
 
 呼び出し側で変わるものはありません。新しく加わったのは、`readText`、`studyList`、`studyListText`、`furiganaOf`、`furiganaOfSurface`（テキストを読み、単語、ふりがな、意味、レベル、学習リストを得る）です。`InflectedWord`には、引いたときの辞書形を表す`form`が加わりました。バンドラーがすべてのチャンクをたどる場合、wordsのエントリはgzip圧縮後で約17 kB大きくなります（リーダー本体と、漢字の学年とJLPTの表（14 kB）。表は`readText`を呼んだときだけ取得されます）。

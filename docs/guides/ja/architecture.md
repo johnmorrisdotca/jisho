@@ -18,6 +18,8 @@ src/
 ├── words-filter.ts  引いた結果を絞る小さな道具
 ├── examples.ts 例文のエントリポイント：loadExamples、exampleCredit、furiganaOfExample。wordsには入れていないので、単語を引くだけのページは例文を読み込まない
 ├── words-examples.ts loadExamples：単語の例文を、示す語義に結び付けて、専用のチャンクから取得
+├── strokes.ts  筆順のエントリポイント：loadStrokes、strokeOrderSvg（筆順を描く）、findByDrawing（描いた漢字から探す）
+├── words-suggest.ts suggestWords：何も見つからなかった検索のために、入力から1文字違いのよく使う単語を返す
 ├── words-entry.ts  loadEntry：単語の完全な項目（すべての語義とJMdictが記すこと）を、専用のチャンクから取得
 ├── words-inflected.ts 活用した文字列を、もとの辞書形から見つける（findInflected、inflectedOf）
 ├── reader.ts     readText：テキストを最長一致で単語に分け、ふりがな、意味、レベルを付ける
@@ -30,6 +32,9 @@ src/
     ├── jlpt.data.ts        JLPTレベル
     ├── kanji.data.ts       読み、意味、画数、順位
     ├── look-alike.data.ts  形の似た漢字の組
+    ├── strokes/            漢字の筆順（スクリプトが書き出す）
+    │   ├── stroke-manifest.data.ts  筆順のチャンクの始まりと取得の方法
+    │   └── t00.data.ts …     漢字ごとの筆順のチャンク（KanjiVG由来）
     ├── examples/           例文（スクリプトが書き出す）
     │   ├── example-manifest.data.ts  例文のチャンクの始まりと取得の方法
     │   ├── example-extra-manifest.data.ts  セーフモードが除く一覧についての同じもの（フィルターなしのときだけ取得）

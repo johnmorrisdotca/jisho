@@ -5,7 +5,7 @@ order: 4
 description: "The four sources, their terms, and what you must credit."
 ---
 
-## Four sources, each with its own terms
+## Each source has its own terms
 
 | Entry point | Made from | Terms |
 | --- | --- | --- |
@@ -14,8 +14,11 @@ description: "The four sources, their terms, and what you must credit."
 | `kanji` | KANJIDIC2, with Waller's levels | CC BY-SA 4.0 and the Group's conditions; the levels CC BY |
 | `look-alike` | Lars Yencken's kanji confusion datasets | CC BY 3.0 |
 | `words-common`, and the pieces `words` fetches | JMdict, of the Electronic Dictionary Research and Development Group | CC BY-SA 4.0 and the Group's conditions |
+| `entries` | JMdict, the whole entries | CC BY-SA 4.0 and the Group's conditions |
+| `examples` | The Tatoeba project's sentences, linked to JMdict's senses by the Group's JMdict_e_examp | CC BY 2.0 FR for the sentences, each credited to its author; CC BY-SA 4.0 for the links |
+| `strokes` | KanjiVG, by Ulrich Apel and its contributors | CC BY-SA 3.0, credited where the strokes are shown |
 
-The full notices are in [NOTICE.md](../../NOTICE.md), and each file's address, date and SHA-256 in [sources.json](../../data-sources/sources.json).
+JMdict's glosses in other languages are not used: the Group's licence puts only the Japanese and English parts under CC BY-SA 4.0 and says the others are under their compilers' own copyright. The full notices are in [NOTICE.md](../../NOTICE.md), and each file's address, date and SHA-256 in [sources.json](../../data-sources/sources.json).
 
 ## What you must do
 

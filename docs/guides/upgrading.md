@@ -5,6 +5,10 @@ order: 6
 description: "What changes between versions, and what a data refresh does."
 ---
 
+## From 2.5.0 to 2.7.0
+
+Nothing you call changes, and everything 2.5.0 gave is kept. New, each in an entry point of its own that nothing fetches until it is called: `loadEntry`, `readEntry` and `referenceOf` (the whole entry of a word) at `@johnmorrisdotca/jisho/entries`; `loadExamples`, `exampleCredit` and `furiganaOfExample` (the example sentences of a word) at `@johnmorrisdotca/jisho/examples`; `loadStrokes`, `loadAllStrokes`, `strokesOf`, `strokeOrderSvg`, `pathPoints` and `findByDrawing` (stroke order, and a kanji found by drawing it) at `@johnmorrisdotca/jisho/strokes`; and `suggestWords` in `words`. A `Word` has `id`, the number JMdict gives its entry, and each row carries it: the rows are 318 pieces of the same size where they were 294, and the words entry is 1 MB larger gzipped as one bundle. The package is 14.8 MB larger to download (13.8 to 28.6 MB), all of it in the new entry points, whose data (the entries, the sentences and the strokes) has licences of its own: `NOTICE.md` names them, and a page that shows a sentence or a stroke has to credit it.
+
 ## From 2.3.0 to 2.4.0
 
 Nothing you call changes. New: `readText`, `studyList`, `studyListText`, `furiganaOf` and `furiganaOfSurface` (read a text, with the words, their furigana, meanings and levels, and a study list), and an `InflectedWord` now has `form`, the dictionary form as it was looked up. The words entry gains about 17 kB gzipped when a bundler follows every piece (the reader, and the grade and JLPT tables of the kanji, 14 kB, which it fetches only when `readText` is called).

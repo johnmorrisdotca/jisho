@@ -26,6 +26,8 @@ src/
 ├── words-filter.ts  the small tools for what a lookup returned
 ├── examples.ts the examples entry point: loadExamples, exampleCredit and furiganaOfExample, which are not in words, so a page that looks words up never carries the sentences
 ├── words-examples.ts loadExamples: the example sentences of a word, each linked to the sense it shows, fetched in a piece of their own
+├── strokes.ts  the strokes entry point: loadStrokes, strokeOrderSvg (the stroke order, written out) and findByDrawing (a kanji found by drawing it)
+├── words-suggest.ts suggestWords: the common words one slip from what was typed, for a lookup that found nothing
 ├── words-entry.ts  loadEntry: the whole entry of a word, with every sense and what JMdict says of it, fetched in a piece of its own
 ├── words-inflected.ts findInflected and inflectedOf: a conjugated text, found by the dictionary form it comes from
 ├── reader.ts     readText: a text cut into words by the longest match, with furigana, meanings and levels
@@ -39,6 +41,9 @@ src/
     ├── jlpt.data.ts        the JLPT levels
     ├── kanji.data.ts       readings, meanings, strokes and ranks
     ├── look-alike.data.ts  the pairs that look alike
+    ├── strokes/            the stroke order of the kanji, written by a script
+    │   ├── stroke-manifest.data.ts  where each piece of the strokes starts, and how to fetch it
+    │   └── t00.data.ts …     pieces of the strokes, by kanji, from KanjiVG
     ├── examples/           the example sentences, written by a script
     │   ├── example-manifest.data.ts  where each piece of the examples starts, and how to fetch it
     │   ├── example-extra-manifest.data.ts  the same for the lists safe mode cuts, fetched only unfiltered
