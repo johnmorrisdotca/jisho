@@ -395,28 +395,7 @@ console.log(wordsOf(words, "かみ").slice(0, 3).map((one) => [one.written, one.
 
 ### A word as a sentence writes it
 
-`findInflected` looks a text up as it is written, conjugated or not: 食べなかった finds 食べる, and says how the one comes from the other, `negative, past`. A rule table of the endings (godan, ichidan, する, 来る, い and な adjectives; polite, negative, past, te, conditional, volitional, potential, passive, causative, want-to, looks-like and chains of them) proposes the dictionary forms, and the dictionary keeps only those that are the kind of word the ending needs, so 取った is 取る and never an ichidan 取る. It costs the pieces of the proposals, a few more than a plain lookup.
-
-```ts
-import { findInflected } from "@johnmorrisdotca/jisho/words";
-
-for (const text of ["食べなかった", "高くて", "勉強していた"]) {
-  const [found] = await findInflected(text);
-  console.log(text, found?.word.written, found?.path.join(", ")); // 食べなかった 食べる negative, past
-}
-```
-
-For many texts, load them with `inflected: true` and read each with `inflectedOf`, which waits for nothing. The rules alone, with no dictionary and no fetch, are `deinflect` at `@johnmorrisdotca/jisho/deinflect` (about 2.1 kB gzipped); they only propose, and what is real is for the dictionary to say.
-
-```ts
-import { deinflect } from "@johnmorrisdotca/jisho/deinflect";
-import { inflectedOf, loadWords } from "@johnmorrisdotca/jisho/words";
-
-const words = await loadWords(["見ませんでした", "書いている"], { inflected: true });
-console.log(inflectedOf(words, "見ませんでした")[0]?.path); // ["polite", "negative", "past"]
-console.log(inflectedOf(words, "書いている")[0]?.word.written); // 書く
-console.log(deinflect("食べさせられた").map((one) => one.base).includes("食べる")); // true
-```
+`findInflected` looks a text up as it is written, conjugated or not: 食べなかった finds 食べる, and says how the one comes from the other, `negative, past`. For many texts, load them with `inflected: true` and read each with `inflectedOf`; the rules alone, with no dictionary, are `deinflect` at `@johnmorrisdotca/jisho/deinflect` (about 2.1 kB gzipped). The rule table, the examples and what they print are in [A word as a sentence writes it](docs/INFLECTED_WORDS.md).
 
 ### The whole entry
 
@@ -500,20 +479,7 @@ console.log(first === undefined ? "" : exampleCredit(first));
 
 ### Read a text
 
-`readText` cuts a text into words. From each place it takes the longest stretch the dictionary has a word for, as it stands or as a conjugated form (食べなかった is 食べる), and looks ahead one word so that 今日はいい天気 is 今日, は and いい天気, not 今日, はい and い天気. Each word has its `furigana` (the kanji with the kana that read them), its `reading` in hiragana, its `meaning`, the hardest JLPT `level` among its kanji and each kanji's grade and level. Japanese that no word fits is `unknown` and is listed; spaces, punctuation, Latin letters and digits are kept as `other`. It fetches Jisho's own pieces as the text needs them, about 25 kB gzipped each: a first sentence of fifteen characters took about 30 of them, and the next text reuses what is already fetched.
-
-```ts
-import { readText, studyList, studyListText } from "@johnmorrisdotca/jisho/words";
-
-const result = await readText("私は寿司を食べなかった。");
-console.log(result.tokens.map((token) => token.text)); // ["私", "は", "寿司", "を", "食べなかった", "。"]
-const token = result.tokens[4];
-console.log(token?.furigana, token?.form, token?.path); // 食 (た) べなかった, 食べる, ["negative", "past"]
-console.log(result.unknown); // []
-console.log(studyListText(studyList(result), "csv").split("\n")[1]); // 私,わたし,"I, me",N4,6,1,私
-```
-
-`studyList(result)` gives each word once, in order, with how often it came and the form it first came in; `studyListText(rows, "csv")` has a header and quotes what needs it, and `"tsv"` has tabs and no header, to paste into a spreadsheet or import into a flashcard program. Jisho has JLPT levels for kanji and none for words, so a word's level is that of its hardest kanji, and null for a word with no kanji.
+`readText` cuts a text into words: from each place it takes the longest stretch the dictionary has a word for, as it stands or as a conjugated form, and gives each word its `furigana`, `reading`, `meaning` and JLPT `level`; Japanese no word fits is `unknown`. `studyList(result)` and `studyListText(rows, "csv")` turn the words into a list for a spreadsheet or flashcards. The example, the pieces it fetches and how the levels are found are in [Read a text](docs/READ_A_TEXT.md).
 
 ### Leave out by mark
 
